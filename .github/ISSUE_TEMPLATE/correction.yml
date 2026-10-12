@@ -1,0 +1,18 @@
+name: Mathematical or source correction
+description: Report a correction to a statement, attribution, source, or assessment.
+title: 'Correction: '
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record identifier or page
+      description: Give an MI, P, family, pattern, or case-study identifier.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and supporting evidence
+      description: State the current wording, proposed correction, and public source or argument.
+    validations:
+      required: true

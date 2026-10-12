@@ -1,0 +1,454 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "initial_release_manuscripts": 722,
+  "inspected_snapshot_manuscripts": 719,
+  "family_count_in_source": 372,
+  "selected_families": [
+    "002",
+    "003",
+    "004",
+    "007",
+    "010",
+    "017",
+    "032",
+    "040",
+    "074",
+    "087",
+    "102",
+    "103",
+    "107",
+    "112",
+    "143",
+    "156",
+    "157",
+    "158",
+    "159",
+    "193",
+    "196",
+    "197",
+    "221",
+    "248",
+    "263",
+    "265",
+    "266",
+    "268",
+    "285",
+    "287",
+    "293",
+    "297",
+    "304",
+    "309",
+    "325",
+    "340",
+    "362",
+    "376"
+  ],
+  "manuscript_readmes": [
+    {
+      "repository_path": "preprints/A-Conditional-Reduction-for-Algebraic-Kuga-Satake-Correspondences-September-10-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Conditional-Reduction-for-Algebraic-Kuga-Satake-Correspondences-September-10-2026/README.md",
+      "sha256": "7429d868952b21162373fb1503f383c62604fa6b79a0d684890e6480ba7f89bb"
+    },
+    {
+      "repository_path": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/README.md",
+      "sha256": "45883f2e1378c28775c648d2afd9a87a50e109567a1753329c4dcd07074e7dfa"
+    },
+    {
+      "repository_path": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/README.md",
+      "sha256": "f54888191fd40836954efcc4325bcd766fb7c69d789a894f02bfa875865697b8"
+    },
+    {
+      "repository_path": "preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/README.md",
+      "sha256": "f10f8d6b22a3c7f6f56c1f3d41d83f4c323a3a11895bb5644fe23d673e98e9b1"
+    },
+    {
+      "repository_path": "preprints/A-Direct-Proof-of-Optimal-Max-Cut-Hardness-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Direct-Proof-of-Optimal-Max-Cut-Hardness-September-23-2026/README.md",
+      "sha256": "eca71f1c29a7ea64bf16aa5190d04ac8d052c8130736013e85ed4c1f1552658a"
+    },
+    {
+      "repository_path": "preprints/A-Fixed-Particle-Test-for-Computation-in-a-Forced-Viscous-Flow-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Fixed-Particle-Test-for-Computation-in-a-Forced-Viscous-Flow-September-27-2026/README.md",
+      "sha256": "f8abc7676a096d6ebf077722ba656a68bfef3090cf2dd60dbd82ada91deb05a0"
+    },
+    {
+      "repository_path": "preprints/A-Torsion-Free-Counterexample-to-Reduced-Baum-Connes-Injectivity-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Torsion-Free-Counterexample-to-Reduced-Baum-Connes-Injectivity-September-23-2026/README.md",
+      "sha256": "450536ff71c4198efaee62b8af1f9a799ea09da07f0a878a1cb9692fd7d29dfb"
+    },
+    {
+      "repository_path": "preprints/A-Torsion-Free-Counterexample-to-the-Kadison-Kaplansky-Projection-Conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Torsion-Free-Counterexample-to-the-Kadison-Kaplansky-Projection-Conjecture-September-23-2026/README.md",
+      "sha256": "a0cedda326df31d0481fbd1ff9e1ef6533c19211cc54fbdd9c0599585aee60d8"
+    },
+    {
+      "repository_path": "preprints/A-Torsion-Free-Group-Algebra-That-Is-Not-Directly-Finite-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Torsion-Free-Group-Algebra-That-Is-Not-Directly-Finite-October-4-2026/README.md",
+      "sha256": "3bdae29ba4de89d85e645d9898e9911a0f01e138b230740a69676f399b0e2628"
+    },
+    {
+      "repository_path": "preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/README.md",
+      "sha256": "43e3933305c4313c0e1e80c37587dbed65204f9baa9c5384ace8ca3afa0ad285"
+    },
+    {
+      "repository_path": "preprints/A-boundary-field-gap-for-the-spin-one-Heisenberg-chain-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-boundary-field-gap-for-the-spin-one-Heisenberg-chain-September-24-2026/README.md",
+      "sha256": "0c00fc5b694994a1ce7c17cd956bc749dc7f564e3c4f9cdf63a78600ecbbde0f"
+    },
+    {
+      "repository_path": "preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/README.md",
+      "sha256": "b6022c2c034deb8cb8adefcab12d72776f3d674a0dd389c43673dc629f3633c3"
+    },
+    {
+      "repository_path": "preprints/A-counterexample-to-Naimarks-problem-in-ZFC-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-Naimarks-problem-in-ZFC-September-24-2026/README.md",
+      "sha256": "d8cc8ef04d13b6c65f824cd4937c9d4ecd39a72fd57987161f30e192f2f5e8ee"
+    },
+    {
+      "repository_path": "preprints/A-counterexample-to-the-Colin-de-Verdiere-chromatic-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-the-Colin-de-Verdiere-chromatic-conjecture-September-23-2026/README.md",
+      "sha256": "21e1acc59b79b02a792df9f7a8defcdc039c13801e62d5cf6fcda8285c644f7f"
+    },
+    {
+      "repository_path": "preprints/A-counterexample-to-the-nearby-Lagrangian-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-counterexample-to-the-nearby-Lagrangian-conjecture-September-23-2026/README.md",
+      "sha256": "f931002195aca4bf1fe2fd0713b91479171f02fc4e792bbc366699fbd63c3526"
+    },
+    {
+      "repository_path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/README.md",
+      "sha256": "30acd8ce8494d76f343f2468bc5e4d3678f95ee9b1c97b20104ae389ed60a607"
+    },
+    {
+      "repository_path": "preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/README.md",
+      "sha256": "416f3ff2c1389d5a8624c22584996e29377c2adfaf8c465ef8c5d8175648475b"
+    },
+    {
+      "repository_path": "preprints/A-nine-dimensional-counterexample-to-Borsuks-covering-assertion-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-nine-dimensional-counterexample-to-Borsuks-covering-assertion-September-23-2026/README.md",
+      "sha256": "3a7c7fe8fa7a5043b340fabda9588103d325a956a02cc2fba9bf2d751d3c13d2"
+    },
+    {
+      "repository_path": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/README.md",
+      "sha256": "726f9e1db1714770550bcca18ce068774986c4bad5dbd7a80667923aa1ae1547"
+    },
+    {
+      "repository_path": "preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/README.md",
+      "sha256": "be57c8666f0cd26a8db23d006fffabfc894db8abbe02e7735aea9546f793cf56"
+    },
+    {
+      "repository_path": "preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026/README.md",
+      "sha256": "4a2d98e458dc9a3b28304c4ddb61f87d8cb663e31afe7a8a8f0b5a37b44f16b9"
+    },
+    {
+      "repository_path": "preprints/Algebraic-Kuga-Satake-correspondences-and-Hodge-conjectures-on-a-K3-quadratic-locus-September-30-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Algebraic-Kuga-Satake-correspondences-and-Hodge-conjectures-on-a-K3-quadratic-locus-September-30-2026/README.md",
+      "sha256": "aa809eebb17f26453935da227d7717c7edfaecf879dbbc1bdb4bdac2260d9973"
+    },
+    {
+      "repository_path": "preprints/An-Irrational-Trace-Counterexample-to-Reduced-Baum-Connes-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-Irrational-Trace-Counterexample-to-Reduced-Baum-Connes-September-23-2026/README.md",
+      "sha256": "fd4290141c15f67823c935344bb05b317350c83fab8cc7249d38e819ddcdfa7f"
+    },
+    {
+      "repository_path": "preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/README.md",
+      "sha256": "442b4810d8cf12ac5f7940bfa7a29cd702409e2f78cba42116425e97e739e013"
+    },
+    {
+      "repository_path": "preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/README.md",
+      "sha256": "2513ae1cc12993d090260acfb5146294bc89414b1b566486ee1823a5fb4b53df"
+    },
+    {
+      "repository_path": "preprints/Beyond-the-Square-Root-Exponent-for-Depth-Three-Boolean-Circuits-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Beyond-the-Square-Root-Exponent-for-Depth-Three-Boolean-Circuits-September-23-2026/README.md",
+      "sha256": "6cf04ae96403cbe0cb0361aebd601d7805abb6f507afe297d95112563f9f0da1"
+    },
+    {
+      "repository_path": "preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/README.md",
+      "sha256": "74d09bbfa910f24ff238de112fdd852e7e9e4bcab5a1c6a6f2817833e16af59d"
+    },
+    {
+      "repository_path": "preprints/Complex-Matrix-Multiplication-Below-2.258-and-Rectangular-Bounds-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Complex-Matrix-Multiplication-Below-2.258-and-Rectangular-Bounds-September-24-2026/README.md",
+      "sha256": "84246b85f17fc5b32f4194f44813921bc5b5f784120c3b259a69b54b10c56549"
+    },
+    {
+      "repository_path": "preprints/Computation-under-Rapidly-Vanishing-Navier-Stokes-Forcing-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Computation-under-Rapidly-Vanishing-Navier-Stokes-Forcing-September-27-2026/README.md",
+      "sha256": "0f132d057a4b8133ecaea64ec350059a4b297c256ca08119ad121a9d5ab6443c"
+    },
+    {
+      "repository_path": "preprints/Constant-factor-hardness-of-Min-UnCut-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Constant-factor-hardness-of-Min-UnCut-September-23-2026/README.md",
+      "sha256": "961eebb219715fd61c1ff7c0eb716accaf025162106404b627b517ade75c7691"
+    },
+    {
+      "repository_path": "preprints/Constant-factor-hardness-of-directed-feedback-vertex-set-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Constant-factor-hardness-of-directed-feedback-vertex-set-September-23-2026/README.md",
+      "sha256": "fac89341ecb3a11e73ccaa6ef821371f7ab38f1b9fecb26ceef54aa77295518b"
+    },
+    {
+      "repository_path": "preprints/Every-four-dimensional-Kakeya-set-has-full-Hausdorff-dimension-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Every-four-dimensional-Kakeya-set-has-full-Hausdorff-dimension-September-24-2026/README.md",
+      "sha256": "e42b3bfb940cbb384ac2e3732fcd8ba24ba38505620ea8a1d35251c7c1edcddb"
+    },
+    {
+      "repository_path": "preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026/README.md",
+      "sha256": "d1526672c647f8fc5b5699473e8fb3fc36796530036d5e595d02e7e55e57c9e8"
+    },
+    {
+      "repository_path": "preprints/Exact-Derandomization-of-Logarithmic-Space-L-equals-RL-equals-BPL-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Derandomization-of-Logarithmic-Space-L-equals-RL-equals-BPL-September-23-2026/README.md",
+      "sha256": "63b314cea019a59a6dbdfc32bebc0c7245db6c91e324c4b3e1473d346f944ada"
+    },
+    {
+      "repository_path": "preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/README.md",
+      "sha256": "0a93439b9b59be90edb7b7009f5c962c90d1820c0bbcddea5ae259281e81f1f8"
+    },
+    {
+      "repository_path": "preprints/Finite-Instructions-and-Solenoidal-Shear-Flows-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Finite-Instructions-and-Solenoidal-Shear-Flows-September-27-2026/README.md",
+      "sha256": "17b26441b12d14fa7a57ac1b473e4bee308a53fff8a6f873fb6f31c9c129424d"
+    },
+    {
+      "repository_path": "preprints/Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026/README.md",
+      "sha256": "510acf7d170c22e9b195ed97d605121d1d08df8bed318e31581ca97baedf5983"
+    },
+    {
+      "repository_path": "preprints/Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026/README.md",
+      "sha256": "0b0d193a74989d4b3f6a70fbbfbf43db6c47e974e3537516cbf542913497a987"
+    },
+    {
+      "repository_path": "preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/README.md",
+      "sha256": "0955bdc41aca080260398d3ea0ccdb680b481262abae93e6e580a0cd853efdf6"
+    },
+    {
+      "repository_path": "preprints/Geometric-Programs-for-Solenoidal-Forcing-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Geometric-Programs-for-Solenoidal-Forcing-September-27-2026/README.md",
+      "sha256": "c55a8da59e9b727540d9dbfd56775d96c52f9c98d05b7201f10f26a14f65f03f"
+    },
+    {
+      "repository_path": "preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/README.md",
+      "sha256": "ceb1270373ac609e16f44070b021260c29d7e6588ef85cf88ab7321f2e9a6e9f"
+    },
+    {
+      "repository_path": "preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/README.md",
+      "sha256": "014b05b2393a6a5e4a1c6cdff91476b3eb6a17574f0fd4c52d8dcd277588c3bf"
+    },
+    {
+      "repository_path": "preprints/Incompressible-Box-Transport-and-Finite-Computation-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Incompressible-Box-Transport-and-Finite-Computation-October-6-2026/README.md",
+      "sha256": "4f1b4609cfb9220d75a919b21b8ef10b80a81e68accdf8813969eda007a38e1e"
+    },
+    {
+      "repository_path": "preprints/Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026/README.md",
+      "sha256": "c7f47e4f1f1c8615ef9fd48f2f8ef3e93b27fb04b1ebf7edf1cfb7b2a5b3225b"
+    },
+    {
+      "repository_path": "preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/README.md",
+      "sha256": "1857fc06d04a43588207ba2f726679c50a418299a5fd0313423a354680a783a7"
+    },
+    {
+      "repository_path": "preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/README.md",
+      "sha256": "919914473e87dd8f9667b8b153816ee1fff49debe338ce35db224492ed6bfa88"
+    },
+    {
+      "repository_path": "preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/README.md",
+      "sha256": "b82ea8ffaa18cecb51a40dc7808b29abaed0446c9adf02e1f852cd7d17269ebf"
+    },
+    {
+      "repository_path": "preprints/Positivity-of-Serres-Intersection-Multiplicity-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Positivity-of-Serres-Intersection-Multiplicity-September-23-2026/README.md",
+      "sha256": "cc016da9a7f02d50ec67b6f0470ddbc95cfb3ff69c8e00be1ea059abc324fc28"
+    },
+    {
+      "repository_path": "preprints/Prefix-Instructions-and-Incompressible-Flows-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Prefix-Instructions-and-Incompressible-Flows-September-27-2026/README.md",
+      "sha256": "c8542dbada66646bea15268ec0bd82a6bcf0325e71b06b8d87cafe01d28564ef"
+    },
+    {
+      "repository_path": "preprints/Quasipolynomial-Bounds-for-Arithmetic-Progressions-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Quasipolynomial-Bounds-for-Arithmetic-Progressions-September-23-2026/README.md",
+      "sha256": "ce3cd0116f3551d0a48d4ebdb1f3ff2e7051bb18626a27882409970dfe7f3179"
+    },
+    {
+      "repository_path": "preprints/Scalar-Potentials-and-Slow-Clocks-for-Forced-Fluid-Computation-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Scalar-Potentials-and-Slow-Clocks-for-Forced-Fluid-Computation-September-27-2026/README.md",
+      "sha256": "fa04d54f53e3375ad6c163fec472a6fa4181ec7019cac6808a35397c0a469642"
+    },
+    {
+      "repository_path": "preprints/Staggered-extraction-for-exact-matrix-multiplication-over-every-field-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Staggered-extraction-for-exact-matrix-multiplication-over-every-field-September-24-2026/README.md",
+      "sha256": "8138ec883831ae251fa9b562584698467441b07fa1bb8d08e940326b4f86a746"
+    },
+    {
+      "repository_path": "preprints/Symplectic-Balls-in-Symmetric-Polar-Products-September-22-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Symplectic-Balls-in-Symmetric-Polar-Products-September-22-2026/README.md",
+      "sha256": "5fed4e242f2665a5814f6b5434727791efd613467e9bb90176ffb6b00a515388"
+    },
+    {
+      "repository_path": "preprints/The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026/README.md",
+      "sha256": "8a61469198ecfadae11c4437d625d7d28f5b1cabfc71f00f54123a0e21e78962"
+    },
+    {
+      "repository_path": "preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/README.md",
+      "sha256": "42cf54fc1dfcab4fc32e4bf35f598ccc2cf9c9907e3e88e744ee7679269ad5b0"
+    },
+    {
+      "repository_path": "preprints/The-Factor-Two-Hardness-Threshold-for-Vertex-Cover-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Factor-Two-Hardness-Threshold-for-Vertex-Cover-September-23-2026/README.md",
+      "sha256": "c22b3bb26a9b4ec3e3185f437354420848d19197fc180c73b0ce2f042913e546"
+    },
+    {
+      "repository_path": "preprints/The-Hilbert-Smith-conjecture-in-every-finite-dimension-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Hilbert-Smith-conjecture-in-every-finite-dimension-September-23-2026/README.md",
+      "sha256": "333aa08e130933b13338120a07f6711600768ff297fafbeabb50756c6ccef332"
+    },
+    {
+      "repository_path": "preprints/The-Kakeya-maximal-conjecture-in-three-dimensions-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Kakeya-maximal-conjecture-in-three-dimensions-September-23-2026/README.md",
+      "sha256": "d4dc70eb400123ce3b002b869d9c3e7f2717cbd0ef074e55facbb09bdb8543df"
+    },
+    {
+      "repository_path": "preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/README.md",
+      "sha256": "93b1f02172348661ea5d95bd06f4a9a9574ad957170d6b73284d1acd7ad31966"
+    },
+    {
+      "repository_path": "preprints/The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026/README.md",
+      "sha256": "acbc2bd0786a037100174d0db1c36aa3c698b14880939d72c800c1bb79073028"
+    },
+    {
+      "repository_path": "preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/README.md",
+      "sha256": "cfb2eda868e864d9dcb118d0843d0155556b53fb9abf68b15b20e99f74148353"
+    },
+    {
+      "repository_path": "preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/README.md",
+      "sha256": "35c877a13fd9208ac0d4fb82a21560d9d7c79679982387760c73da9f82220026"
+    },
+    {
+      "repository_path": "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/README.md",
+      "sha256": "5a9c5ef1322c1e0051f58bee69ce422984eb523ba85d56529eae18f05771bd32"
+    },
+    {
+      "repository_path": "preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026/README.md",
+      "sha256": "0a6fdc8a40429fe2c744f14c6de143deb6584b4e9590da01f3fbb9bc0706b45c"
+    },
+    {
+      "repository_path": "preprints/The-Unique-Games-Theorem-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-Unique-Games-Theorem-September-23-2026/README.md",
+      "sha256": "6bb90d029569d77fe982ee8ca5d12647dc30914da4136f661191579636278a4b"
+    },
+    {
+      "repository_path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-complete-Crouzeix-theorem-September-23-2026/README.md",
+      "sha256": "56858fa983870da1753c3365395039c88dc1a72ff12e70e878a3a542dd8520ee"
+    },
+    {
+      "repository_path": "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/README.md",
+      "sha256": "91a4f24b4576c3fb2f13341ea946947c9f16ba613d57ebb09b0ea14bec068c1e"
+    },
+    {
+      "repository_path": "preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/README.md",
+      "sha256": "6c57d3fc09a0a0e10dd34a03d51fe73e73eb0b19dbc5871410c7c0ddab65826d"
+    },
+    {
+      "repository_path": "preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/README.md",
+      "sha256": "1eb0a3799cdbbced5d816965abbf6676382dfad65b80d14c364504b0e71a93f4"
+    },
+    {
+      "repository_path": "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/README.md",
+      "sha256": "142a2f0c5f48bbcc772c0dbd1f95b68876f9dc09ed5d580a2741d83551c8de5d"
+    },
+    {
+      "repository_path": "preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/README.md",
+      "sha256": "426632be2836e24b94064689f7932c5ec321bf99c55b435b31cd53f3a0284153"
+    },
+    {
+      "repository_path": "preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026/README.md",
+      "sha256": "9d12792b5b95fa773ba51b6292634d1057bdeaae6f1a37cd46aa9badf058d2e6"
+    },
+    {
+      "repository_path": "preprints/Thompsons-group-F-is-nonamenable-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Thompsons-group-F-is-nonamenable-September-23-2026/README.md",
+      "sha256": "29fba2df2724aadaaee77242edb4399242224c2a29657e140e7fb1bde0e05201"
+    },
+    {
+      "repository_path": "preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/README.md",
+      "sha256": "6ae00e5f105c247936112861bb18cc37caa0643d543c1613d5326f59e7e6c1e2"
+    },
+    {
+      "repository_path": "preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/README.md",
+      "sha256": "52acef9c7db3c63e6e1ee623cb8fd1c92e098aa8785e5ad2a434ede0088fc7fd"
+    },
+    {
+      "repository_path": "preprints/Universal-Computation-with-Eventually-Stationary-Navier-Stokes-Forcing-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Universal-Computation-with-Eventually-Stationary-Navier-Stokes-Forcing-September-27-2026/README.md",
+      "sha256": "87e430b2202ee0b1383a0382d5716657eeb6b6df724f78d128334fbaa1aea7f7"
+    },
+    {
+      "repository_path": "preprints/Unrestricted-pro-modularity-at-the-prime-two-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Unrestricted-pro-modularity-at-the-prime-two-October-6-2026/README.md",
+      "sha256": "379d40bff382023fa6ec16e551df3f634be1c48ff4c5163a66a0a7a52619e423"
+    },
+    {
+      "repository_path": "preprints/Velocity-Field-Detection-of-Computation-in-Forced-Navier-Stokes-Flows-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Velocity-Field-Detection-of-Computation-in-Forced-Navier-Stokes-Flows-September-27-2026/README.md",
+      "sha256": "51cecd1deccfc00e9577d33f498ca2617bcc10ac44fb6ea8c6996180f7848fb0"
+    },
+    {
+      "repository_path": "preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/README.md",
+      "sha256": "a6d147f6495168f93acd3edaca508a293b4fd4c9e1c6824640ab05fb6f9bb76a"
+    },
+    {
+      "repository_path": "preprints/two-limit-cycles-for-quintic-lienard-systems-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/two-limit-cycles-for-quintic-lienard-systems-September-24-2026/README.md",
+      "sha256": "f2cc5e127bbd3cca6d701db1912c0ca91e7d8afc093b4b22bba8ef00a746d073"
+    },
+    {
+      "repository_path": "preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/README.md",
+      "sha256": "31e52adf32dfff2a4a4ecf78212fb8de5533d8e210d06fc6de7337f358b3ba92"
+    }
+  ]
+}

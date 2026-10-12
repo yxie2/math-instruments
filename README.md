@@ -1,0 +1,56 @@
+# Math Instruments
+
+**Extraction, Curation, and Applications**
+
+A growing collection of mathematical instruments extracted from OpenAI’s research papers, with source references, structured descriptions, and studies of subsequent applications.
+
+The aim is to identify new lemmas, constructions, inequalities, objects, structures and proof mechanisms introduced in the source arguments. Extraction comes first; validity, novelty and possible reuse are then subjects for further study. The structured descriptions also give readers a route into the source papers.
+
+## Direction paper
+
+**Ying Xie — [What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics](https://zenodo.org/records/23319145)**. Preprint, 2026.
+
+[Research direction](direction/README.md) · [Extraction method](methodology/extraction.md) · [How to cite](CITATION.cff)
+
+## Browse the collection
+
+<!-- catalogue-navigation:start -->
+
+| Browse | Contents |
+| --- | --- |
+| [Mathematical instruments](tables/instruments.md) | 115 extracted entries, each with a stable identifier |
+| [Source papers](tables/papers.md) | 81 manuscript records across the selected families |
+| [Problem families](tables/families.md) | 38 family accounts with claims, antecedents and caveats |
+| [Recurring patterns](catalog/patterns/README.md) | 11 approaches connecting the source arguments |
+| [Tables and review status](tables/README.md) | Family maps, formalization, dependencies and antecedents |
+| [Extraction batches](batches/README.md) | Extraction rounds and source versions |
+| [Use case studies](case-studies/README.md) | Subsequent investigations using extracted instruments |
+| [Catalogue exports](exports/README.md) | JSON and CSV for search and further analysis |
+
+<!-- catalogue-navigation:end -->
+
+## First release
+
+Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
+
+The source is the public [OpenAI mathematics repository](https://github.com/openai/math), pinned to revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` for this batch. Its initial release contained 722 manuscripts; the inspected snapshot contains 719 after three withdrawals. This project is maintained independently by Ying Xie.
+
+The descriptions retain the source claims, qualifications and preliminary novelty assessments. Inclusion does not establish novelty or certify a proof. [Assessment and evidence](methodology/assessment.md) explains the separate treatment of mathematical review, formalization and reuse.
+
+## Grow the catalogue
+
+Use the [record templates](templates/README.md) and [contribution guide](CONTRIBUTING.md) to add instruments, source comparisons, corrections or case studies. Keep existing identifiers when updating an entry. A later batch can revisit an existing family or introduce new families.
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/build_indexes.py
+python scripts/validate_catalog.py
+```
+
+## Citation and attribution
+
+Cite the [direction paper](https://zenodo.org/records/23319145) for this research approach, identify the repository release or commit when using its curated records, and cite the linked source manuscripts for their mathematical contributions. Source references and hashes are recorded under [sources/](sources/README.md).
+
+Maintainer: **Ying Xie**, Kennesaw State University — yxie2@kennesaw.edu.
+
+See [LICENSE](LICENSE), [NOTICE](NOTICE), and the [changelog](CHANGELOG.md).

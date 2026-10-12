@@ -1,0 +1,284 @@
+id: B001
+title: Initial direction-paper extraction
+date: '2026-10-12'
+source_commit: fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+family_ids:
+- openai-math-003
+- openai-math-004
+- openai-math-017
+- openai-math-032
+- openai-math-074
+- openai-math-087
+- openai-math-362
+- openai-math-304
+- openai-math-102
+- openai-math-107
+- openai-math-157
+- openai-math-158
+- openai-math-159
+- openai-math-196
+- openai-math-197
+- openai-math-248
+- openai-math-287
+- openai-math-002
+- openai-math-007
+- openai-math-010
+- openai-math-040
+- openai-math-193
+- openai-math-143
+- openai-math-263
+- openai-math-265
+- openai-math-268
+- openai-math-103
+- openai-math-112
+- openai-math-156
+- openai-math-266
+- openai-math-221
+- openai-math-285
+- openai-math-293
+- openai-math-297
+- openai-math-309
+- openai-math-325
+- openai-math-340
+- openai-math-376
+instrument_ids:
+- MI-000001
+- MI-000002
+- MI-000003
+- MI-000004
+- MI-000005
+- MI-000006
+- MI-000007
+- MI-000008
+- MI-000009
+- MI-000010
+- MI-000011
+- MI-000012
+- MI-000013
+- MI-000014
+- MI-000015
+- MI-000016
+- MI-000017
+- MI-000018
+- MI-000019
+- MI-000020
+- MI-000021
+- MI-000022
+- MI-000023
+- MI-000024
+- MI-000025
+- MI-000026
+- MI-000027
+- MI-000028
+- MI-000029
+- MI-000030
+- MI-000031
+- MI-000032
+- MI-000033
+- MI-000034
+- MI-000035
+- MI-000036
+- MI-000037
+- MI-000038
+- MI-000039
+- MI-000040
+- MI-000041
+- MI-000042
+- MI-000043
+- MI-000044
+- MI-000045
+- MI-000046
+- MI-000047
+- MI-000048
+- MI-000049
+- MI-000050
+- MI-000051
+- MI-000052
+- MI-000053
+- MI-000054
+- MI-000055
+- MI-000056
+- MI-000057
+- MI-000058
+- MI-000059
+- MI-000060
+- MI-000061
+- MI-000062
+- MI-000063
+- MI-000064
+- MI-000065
+- MI-000066
+- MI-000067
+- MI-000068
+- MI-000069
+- MI-000070
+- MI-000071
+- MI-000072
+- MI-000073
+- MI-000074
+- MI-000075
+- MI-000076
+- MI-000077
+- MI-000078
+- MI-000079
+- MI-000080
+- MI-000081
+- MI-000082
+- MI-000083
+- MI-000084
+- MI-000085
+- MI-000086
+- MI-000087
+- MI-000088
+- MI-000089
+- MI-000090
+- MI-000091
+- MI-000092
+- MI-000093
+- MI-000094
+- MI-000095
+- MI-000096
+- MI-000097
+- MI-000098
+- MI-000099
+- MI-000100
+- MI-000101
+- MI-000102
+- MI-000103
+- MI-000104
+- MI-000105
+- MI-000106
+- MI-000107
+- MI-000108
+- MI-000109
+- MI-000110
+- MI-000111
+- MI-000112
+- MI-000113
+- MI-000114
+- MI-000115
+paper_ids:
+- P-000001
+- P-000002
+- P-000003
+- P-000004
+- P-000005
+- P-000006
+- P-000007
+- P-000008
+- P-000009
+- P-000010
+- P-000011
+- P-000012
+- P-000013
+- P-000014
+- P-000015
+- P-000016
+- P-000017
+- P-000018
+- P-000019
+- P-000020
+- P-000021
+- P-000022
+- P-000023
+- P-000024
+- P-000025
+- P-000026
+- P-000027
+- P-000028
+- P-000029
+- P-000030
+- P-000031
+- P-000032
+- P-000033
+- P-000034
+- P-000035
+- P-000036
+- P-000037
+- P-000038
+- P-000039
+- P-000040
+- P-000041
+- P-000042
+- P-000043
+- P-000044
+- P-000045
+- P-000046
+- P-000047
+- P-000048
+- P-000049
+- P-000050
+- P-000051
+- P-000052
+- P-000053
+- P-000054
+- P-000055
+- P-000056
+- P-000057
+- P-000058
+- P-000059
+- P-000060
+- P-000061
+- P-000062
+- P-000063
+- P-000064
+- P-000065
+- P-000066
+- P-000067
+- P-000068
+- P-000069
+- P-000070
+- P-000071
+- P-000072
+- P-000073
+- P-000074
+- P-000075
+- P-000076
+- P-000077
+- P-000078
+- P-000079
+- P-000080
+- P-000081
+original_groups:
+  first:
+  - openai-math-003
+  - openai-math-004
+  - openai-math-017
+  - openai-math-032
+  - openai-math-074
+  - openai-math-087
+  - openai-math-362
+  - openai-math-304
+  - openai-math-102
+  - openai-math-107
+  - openai-math-157
+  - openai-math-158
+  - openai-math-159
+  - openai-math-196
+  - openai-math-197
+  - openai-math-248
+  - openai-math-287
+  second:
+  - openai-math-002
+  - openai-math-007
+  - openai-math-010
+  - openai-math-040
+  - openai-math-193
+  - openai-math-143
+  - openai-math-263
+  - openai-math-265
+  - openai-math-268
+  - openai-math-103
+  - openai-math-112
+  - openai-math-156
+  - openai-math-266
+  - openai-math-221
+  - openai-math-285
+  - openai-math-293
+  - openai-math-297
+  - openai-math-309
+  - openai-math-325
+  - openai-math-340
+  - openai-math-376
+next_instrument_id: MI-000116
+next_paper_id: P-000082

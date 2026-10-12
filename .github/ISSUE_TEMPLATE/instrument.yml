@@ -1,0 +1,16 @@
+name: Instrument or application proposal
+description: Suggest a source instrument, comparison, or use case.
+title: 'Proposal: '
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Mathematical proposal
+      description: Identify the source, instrument, hypotheses, and extraction or application to investigate.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources and current status
+      description: Provide public references and distinguish extracted claims, proposed extensions, and checked results.
