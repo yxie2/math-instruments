@@ -33319,6 +33319,329 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000781.md",
       "body": "# Retain angle-dependent pressure in a graph Jacobi equation\n\n[Family 336](../families/openai-math-336.md) · [Source manuscript](../papers/P-000517.md) · [Batch B084](../../batches/B084/README.md)\n\n## Mathematical content\n\nFor the graph u with omega=(1+|du|^2)^(-1/2), nu=(omega grad u,-omega), Z=-partial_z and X=-grad t, suppose H+<X,nu>=p(x,u,omega). The vertical angle obeys L omega=-p_z, where\nL=Delta_Gamma+<X_top-p_omega Z_top,grad_Gamma>+|II|^2+Ric(nu,nu)+Hess t(nu,nu)+partial_nu p.\nIn the final term omega is held fixed while differentiating p in the ambient variables.\n\nFor normal speed V, the angle variation is -<Z_top,grad V>. The pressure variation therefore contributes the extra first-order term involving p_omega. Linearizing the residual gives -LV. Vertical translation along Z has normal speed omega; the residual changes by p_z, since the geometry and angle are translation invariant. Its tangential derivative vanishes on the solution, giving the equation.\n\nOmitting -p_omega Z_top changes the operator whenever the prescribed pressure depends on angle.\n\n## Role in the source argument\n\nKeeping the correct drift and zeroth-order terms when designing graph equations with a pressure that reacts to the graph angle.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pre:angle](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026/build/sections/preprocessing.tex#L113)\n- [pre:angle-equation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026/build/sections/preprocessing.tex#L129)\n\n## Antecedents and comparison\n\nThis is the normal-variation/Jacobi method with the dependence of pressure on the angle made explicit. Exact priority of the source formulation is not established.\n\n## Checks and limitations\n\nA manufactured curved graph in a flat product with nonconstant drift and pressure depending on both height and angle checks the full equation. The same example rejects omission of the pressure-angle drift.\n\nThe manufactured solution checks a local identity only. It does not establish existence, global gradient bounds or the source width theorem.\n\n## Possible applications\n\nKeeping the correct drift and zeroth-order terms when designing graph equations with a pressure that reacts to the graph angle.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000782",
+      "record_type": "instrument",
+      "title": "Balance an atomless measure using an inward-pointing parameter cylinder",
+      "forms": [
+        "center-scale-spherical-balancing",
+        "uniform-atomlessness-brouwer-cylinder"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-337"
+      ],
+      "source_paper_ids": [
+        "P-000518"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex",
+          "label": "lem:balancing",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex#L187",
+          "sha256": "753f168360f2c932922eba92ab29a6c996c359fbe928c58bfb971c881d0c38d2"
+        },
+        {
+          "path": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex",
+          "label": "eq:uniform-atomless",
+          "line": 234,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex#L234",
+          "sha256": "753f168360f2c932922eba92ab29a6c996c359fbe928c58bfb971c881d0c38d2"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000782.md",
+      "body": "# Balance an atomless measure using an inward-pointing parameter cylinder\n\n[Family 337](../families/openai-math-337.md) · [Source manuscript](../papers/P-000518.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nOn a complete simply connected manifold with Sec<=-b^2, b=0 or 1, let mu be an atomless probability measure supported compactly inside B_D(o). For r=d(p,x), theta=exp_p^(-1)(x)/r and z=a sn_b(r/2)/cs_b(r/2), define Phi_(p,a)=(2z theta/(1+z^2),(1-z^2)/(1+z^2)). At p use the north pole. There are p in B_D(o) and finite a>0 with integral Phi_(p,a) dmu=0.\n\nTransport the vector integral to T_o M and write p=exp_o xi. On |xi|=D, convexity of distance to o makes its horizontal component strictly inward. At a sufficiently small lower scale its last component is positive. Atomlessness gives uniform small-ball mass on the compact set of centers: otherwise shrinking balls with a fixed positive mass and converging centers create an atom. Choose delta with all such masses below 1/4, and a large finite upper scale with a t_b(delta)>=sqrt(3). The last component is then at most -1/8.\n\nBrouwer applied to the projection of zeta+F(zeta) onto the cylinder gives a fixed point. The projection inequality and each inward face condition exclude the boundary, including corners. An interior fixed point has F=0.\n\n## Role in the source argument\n\nSelecting test functions with zero weighted mean while keeping the map center and scale finite.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:balancing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex#L187)\n- [eq:uniform-atomless](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/02-maps.tex#L234)\n\n## Antecedents and comparison\n\nClassical spherical centering, made explicit through a two-parameter cylinder. The source relates it to Li-Yau conformal centering; that original paper was not independently read in this batch.\n\n## Checks and limitations\n\nContinuous circular probability measures check the scale and inward face signs by high-order quadrature. An atom of mass greater than one half demonstrates why universal balancing cannot ignore atomlessness.\n\nNumerical quadrature does not prove Brouwer or the curved-space comparison. This lemma alone gives no isoperimetric inequality.\n\n## Possible applications\n\nSelecting test functions with zero weighted mean while keeping the map center and scale finite.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000783",
+      "record_type": "instrument",
+      "title": "Exclude critical mass loss below a local Sobolev threshold",
+      "forms": [
+        "strict-threshold-critical-mass-exclusion",
+        "squared-partition-sobolev-localization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-337"
+      ],
+      "source_paper_ids": [
+        "P-000518"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex",
+          "label": "lem:local-sobolev-threshold",
+          "line": 137,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex#L137",
+          "sha256": "5a82f6464a65d234ec434178f456455376cad6a9fe290dde60ff8c8fde1f6e1b"
+        },
+        {
+          "path": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex",
+          "label": "lem:subthreshold-minimizer",
+          "line": 210,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex#L210",
+          "sha256": "5a82f6464a65d234ec434178f456455376cad6a9fe290dde60ff8c8fde1f6e1b"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000783.md",
+      "body": "# Exclude critical mass loss below a local Sobolev threshold\n\n[Family 337](../families/openai-math-337.md) · [Source manuscript](../papers/P-000518.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nLet q=2m/(m-2)>2 and let Q on H^1_0(U), U relatively compact, be a nonnegative quadratic energy with positive Dirichlet coefficient and bounded potential. Suppose local chart estimates give (Y_m-epsilon)||v||_q^2 <= c||grad v||_2^2+C_epsilon||v||_2^2. If Y=inf_{||v||_q=1}Q(v)<Y_m, it is attained.\n\nUse a squared partition sum chi_i^2=1. The identity sum |grad(chi_i v)|^2=|grad v|^2+v^2 sum |grad chi_i|^2 and the triangle inequality in L^(q/2) patch the Euclidean threshold with only a lower-order error. Zero extension and finitely many charts give compact L^2 inclusion without requiring regularity of the boundary of U.\n\nA normalized minimizing sequence converges weakly in H^1 and strongly in L^2. Put t=||psi||_q^q. Brezis-Lieb splitting and the local threshold imply Y>=Y t^(2/q)+Y_m(1-t)^(2/q). Strict threshold and strict concavity force t=1, also when Y=0. Lower semicontinuity gives attainment.\n\n## Role in the source argument\n\nIdentifying exactly which strict inequality prevents a minimizing sequence from concentrating.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:local-sobolev-threshold](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex#L137)\n- [lem:subthreshold-minimizer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/sections/03-sobolev.tex#L210)\n\n## Antecedents and comparison\n\n[Brezis and Lieb, original paper](https://sites.math.rutgers.edu/~brezis/PUBlications/99-journal.pdf), Theorem 1 (printed p. 487) and Section 4(B) (pp. 489-490), were read. Both mass splitting and the below-threshold variational application are established antecedents; the source localizes them to its metric and potential.\n\n## Checks and limitations\n\nSymbolic squared-partition identities and scalar mass-splitting inequalities are checked, including Y=0 and the failure of the exclusion at threshold.\n\nThe numerical scalar check does not prove weak compactness or Brezis-Lieb. The source geometric nonnegativity of Q is an input, not certified here.\n\n## Possible applications\n\nIdentifying exactly which strict inequality prevents a minimizing sequence from concentrating.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000784",
+      "record_type": "instrument",
+      "title": "Retain integral torsion in a Morse lower bound after stabilization",
+      "forms": [
+        "integral-torsion-chain-rank-bound",
+        "quadratic-at-infinity-relative-morse-pair"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-347"
+      ],
+      "source_paper_ids": [
+        "P-000519"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex",
+          "label": "morse:chain-bound",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex#L20",
+          "sha256": "ffaf7cc5fef410bdaa2c96387bf48479e79cbae5e56c45f281e7b39bc4c5d391"
+        },
+        {
+          "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex",
+          "label": "morse:stable-lower",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex#L45",
+          "sha256": "ffaf7cc5fef410bdaa2c96387bf48479e79cbae5e56c45f281e7b39bc4c5d391"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000784.md",
+      "body": "# Retain integral torsion in a Morse lower bound after stabilization\n\n[Family 347](../families/openai-math-347.md) · [Source manuscript](../papers/P-000519.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nFor a finite free integral chain complex, let rho_i be the rank of H_i and tau_i the minimum number of generators of its torsion subgroup. Then rank C_i>=rho_i+tau_i+tau_(i-1), hence total chain rank>=sum rho_i+2 sum tau_i. Indeed rank C_i=rho_i+rank B_i+rank B_(i-1), and Smith normal form gives rank B_i>=tau_i.\n\nFor a Morse function F on W times R^k equal outside a compact set to Q=-|u|^2+|v|^2, choose endpoint levels +/-A outside the core range and a truncation ball of radius T with T^2>A. The side boundary has Q-critical values only +/-T^2, so it introduces no cells in the level band. The relative Morse complex has one generator per critical point. Shrinking v to zero retracts the endpoint pair to W times a disk-annulus pair in the d negative directions. Its homology is H_(i-d)(W), including d=0 and both definite signatures.\n\nThe chain bound is unchanged by this degree shift and gives the stated stable-Morse lower bound under the exact-quadratic convention.\n\n## Role in the source argument\n\nPreserving information that can be lost by using one field of coefficients throughout a stabilized counting problem.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [morse:chain-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex#L20)\n- [morse:stable-lower](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/morse.tex#L45)\n\n## Antecedents and comparison\n\nThese are classical Smith normal form and relative Morse-theory arguments. The source contribution here is explicit control of the truncation boundary and convention at infinity; no new general Morse inequality is claimed.\n\n## Checks and limitations\n\nExact Smith normal forms of two-term complexes check primary torsion and degree bounds. Mixed-prime examples show that the generator count is a maximum over primes, not their sum.\n\nThe checks do not establish geometric handle cancellation or any counterexample. A weaker condition at infinity needs an additional reduction argument.\n\n## Possible applications\n\nPreserving information that can be lost by using one field of coefficients throughout a stabilized counting problem.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000785",
+      "record_type": "instrument",
+      "title": "Square a commuting perturbation to locate all fixed points",
+      "forms": [
+        "hamiltonian-involution-commuting-perturbation",
+        "short-period-fixed-set-exhaustion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-347"
+      ],
+      "source_paper_ids": [
+        "P-000519"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex",
+          "label": "dyn:short-period",
+          "line": 25,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex#L25",
+          "sha256": "980505ed03e7440a8481ca137a67666edcf11f47f692a5887d60c35ead6dc47e"
+        },
+        {
+          "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex",
+          "label": "dyn:involution",
+          "line": 75,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex#L75",
+          "sha256": "980505ed03e7440a8481ca137a67666edcf11f47f692a5887d60c35ead6dc47e"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000785.md",
+      "body": "# Square a commuting perturbation to locate all fixed points\n\n[Family 347](../families/openai-math-347.md) · [Source manuscript](../papers/P-000519.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nLet g be a Hamiltonian involution of a closed symplectic manifold and h_j Morse functions on its fixed components F_j. Extend them smoothly and average over g to obtain an invariant f. Its Hamiltonian flow psi commutes with g and restricts on F_j to the Hamiltonian flow of h_j.\n\nA smooth vector field on a compact manifold has a positive lower bound tau for periods of nonconstant orbits. In a common flow chart, if m is the maximum speed on a period-T trajectory and L its Lipschitz constant, averaging the velocity around the closed trajectory gives m<=LTm; sufficiently small T forces m=0.\n\nFor 2epsilon<tau, (psi^epsilon g)^2=psi^(2epsilon). Every fixed point is therefore an equilibrium of f and then a fixed point of g, so the entire fixed set is the union of Crit(h_j). At such a point the derivative splits into + and - eigenspaces of dg. On the tangent space, (exp(epsilon A_+)-I)/epsilon tends to the invertible Hamiltonian Hessian A_+. On the normal space, -exp(epsilon A_-)-I tends to -2I. Thus all fixed points are nondegenerate for one sufficiently small epsilon. Smooth time reparameterizations in successive intervals give a periodic Hamiltonian generating the composition.\n\n## Role in the source argument\n\nReplacing a fixed submanifold by prescribed isolated critical points while proving there are no extra fixed points elsewhere.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [dyn:short-period](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex#L25)\n- [dyn:involution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/build/sections/dynamics.tex#L75)\n\n## Antecedents and comparison\n\nThe source explicitly relates its short-period estimate to Yorke; the required bound is only positive and need not have the optimal constant. Commuting finite-order perturbations and the tangent/normal linearization are classical mechanisms.\n\n## Checks and limitations\n\nBlock Hamiltonian matrix examples check the square identity, tangent and normal nondegeneracy and a resonant-time negative control. The tests do not enumerate fixed points on the constructed compact manifolds.\n\nCommutation is essential; smallness must exclude periodic orbits and tangent resonances. This does not construct the source involution or establish the headline deficit.\n\n## Possible applications\n\nReplacing a fixed submanifold by prescribed isolated critical points while proving there are no extra fixed points elsewhere.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000786",
+      "record_type": "instrument",
+      "title": "Turn a weighted Laplacian estimate into an inverse-weight variance bound",
+      "forms": [
+        "poisson-duality-inverse-weight-variance",
+        "weighted-bochner-variance-interface"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-348"
+      ],
+      "source_paper_ids": [
+        "P-000520"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/03-analytic.tex",
+          "label": "prop:weighted-variance",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/03-analytic.tex#L20",
+          "sha256": "05cc41514bf127de7bb73f3196c2ffa5048a1807e71d689cebd8a1b6e38f7574"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000786.md",
+      "body": "# Turn a weighted Laplacian estimate into an inverse-weight variance bound\n\n[Family 348](../families/openai-math-348.md) · [Source manuscript](../papers/P-000520.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nOn a closed connected manifold with normalized volume, suppose K is bounded above and below by positive constants and E[(Delta phi)^2]>=E[K|grad phi|^2] for all smooth phi. Then Var(a)<=E[|grad a|^2/K] for a in H^1.\n\nSolve Delta phi=a-Ea with zero mean. Integration by parts expresses Var(a)=-E<grad a,grad phi>. Weighted Cauchy-Schwarz bounds this by the square root of E[|grad a|^2/K] times the square root of E[K|grad phi|^2], which is at most Var(a)^(1/2). Divide when nonzero and pass by H^1 density.\n\nIn the source Ric=3g and K=4+v^2+b^2, where v=|W_+|/sqrt(6), b=|W_-|/sqrt(6) in its endomorphism normalization. Its preceding curvature contraction and the nonnegative-sectional-curvature bound supply the required Laplacian inequality. This card isolates the duality step and treats that geometric inequality as an input.\n\n## Role in the source argument\n\nTurning a differential coercivity estimate into a usable variance bound while preserving spatially varying gains.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:weighted-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/03-analytic.tex#L20)\n\n## Antecedents and comparison\n\nPoisson duality and weighted Cauchy-Schwarz are classical. The source-specific proposed weight rests on the curvature identities, which are not independently certified by the finite analogue.\n\n## Checks and limitations\n\nConnected weighted-graph Laplacians check the analogous operator inequality and inverse-edge-weight variance conclusion for random vectors. A weight exceeding the spectral bound gives a failing control.\n\nThe graph calculation does not certify the manifold curvature contraction, and the conclusion cannot be asserted for an arbitrary positive K without the stated operator inequality.\n\n## Possible applications\n\nTurning a differential coercivity estimate into a usable variance bound while preserving spatially varying gains.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000787",
+      "record_type": "instrument",
+      "title": "Certify scalar and matrix polynomial signs by normalized Bernstein coefficients",
+      "forms": [
+        "rational-bernstein-triangle-certificate",
+        "matrix-bernstein-convex-combination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-348"
+      ],
+      "source_paper_ids": [
+        "P-000520"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/07-certificates.tex",
+          "label": "lem:bernstein-conversion",
+          "line": 22,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/07-certificates.tex#L22",
+          "sha256": "3865f324bdab0b3462313d3511319ae0b08c9f8159cc305a71b01211680c9a57"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000787.md",
+      "body": "# Certify scalar and matrix polynomial signs by normalized Bernstein coefficients\n\n[Family 348](../families/openai-math-348.md) · [Source manuscript](../papers/P-000520.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nOn an interval write p(r+(s-r)z)=sum a_j z^j with degree at most N. Its normalized Bernstein coefficient is h_i=sum_(j<=i) a_j binom(i,j)/binom(N,j). Since the basis binom(N,i)z^i(1-z)^(N-i) is nonnegative and sums to one, min h_i is a certified lower bound.\n\nOn a triangle, substitute its affine coordinates to obtain P(z,w)=sum P_de z^d w^e. The coefficient at (i,j), i+j<=N, is sum_(d<=i,e<=j) P_de binom(i,d)binom(j,e)/(binom(N,d+e)binom(d+e,d)). Expanding z^d w^e(z+w+1-z-w)^(N-d-e) proves the formula. The corresponding multinomial basis is a nonnegative partition of unity.\n\nApply conversion entrywise to a symmetric polynomial matrix. If every coefficient matrix is positive semidefinite, the matrix is positive semidefinite throughout the triangle. Exact rational arithmetic can retain boundary zeros; testing only vertices or a floating-point grid cannot replace the coefficient certificate.\n\n## Role in the source argument\n\nReducing a continuum of scalar or matrix inequalities to auditable finite exact data.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:bernstein-conversion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/build/sections/07-certificates.tex#L22)\n\n## Antecedents and comparison\n\nThis is established Bernstein-basis positivity, also explicitly attributed in the source to Boudaoud-Caruso-Roy and Roy. The conversion proof was read; no independent review of the source-specific large certificate tables or supplied verification package is claimed.\n\n## Checks and limitations\n\nExact rational reconstructions check interval and triangular formulas, degree elevation and matrix-valued convex combinations. A polynomial positive at vertices but negative inside rejects vertex-only testing; a nonnegative polynomial with a negative Bernstein coefficient shows the condition is not necessary.\n\nA negative coefficient does not disprove positivity. Certifying the general conversion does not validate the source-specific polynomials or the geometric inequalities from which they were derived.\n\n## Possible applications\n\nReducing a continuum of scalar or matrix inequalities to auditable finite exact data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000788",
+      "record_type": "instrument",
+      "title": "Normalize a subharmonic profile to control its logarithmic potential",
+      "forms": [
+        "normalized-subharmonic-riesz-mass-bound",
+        "pointwise-log-potential-harmonic-decomposition"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-350"
+      ],
+      "source_paper_ids": [
+        "P-000521"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex",
+          "label": "lem:potential-decomposition",
+          "line": 71,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L71",
+          "sha256": "fffb1eb465984af61cb103bbb962170218246f811cb9b8eb405a1e360545a52a"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000788.md",
+      "body": "# Normalize a subharmonic profile to control its logarithmic potential\n\n[Family 350](../families/openai-math-350.md) · [Source manuscript](../papers/P-000521.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nLet V be subharmonic on D_R, R=1000, with V<=0 and sup over closed D_1 at least -1. Choose x_* in closed D_1 with V(x_*)>=-1. The submean inequality on D_10(x_*) gives integral_(D_8)|V|<=100 pi. Testing the nonnegative Riesz measure eta=(2pi)^(-1)Delta V against a fixed cutoff equal to one on D_5 bounds eta(D_5).\n\nRestrict eta to D_4 as nu and put P(x)=integral log|x-z| dnu(z). The logarithmic kernel has uniformly bounded local L^1 norm as z varies in D_4, so P is locally integrable and Delta(V-P)=0 on D_3. Thus V=h+P there, with h harmonic and uniformly bounded first and second derivatives on D_2 by interior estimates.\n\nThe equality initially holds almost everywhere. Taking the limiting disk averages of the subharmonic representatives makes it pointwise, including possible values -infinity at atoms. The normalization supplies the uniform constants; arbitrary additive downward shifts would destroy the L^1 bound.\n\n## Role in the source argument\n\nObtaining uniform mass and harmonic derivative bounds before applying local corrections to a family of singular profiles.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:potential-decomposition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L71)\n\n## Antecedents and comparison\n\nThis is a quantitative use of classical Riesz decomposition and harmonic estimates. No new potential representation is claimed.\n\n## Checks and limitations\n\nExplicit radial logarithmic potentials check the normalization, Riesz mass and integrability at an atom; numerical radial integration checks the singular disk-average formula against its closed form.\n\nThe example checks do not establish general compactness or prove that the source eigenfunction profiles are subharmonic.\n\n## Possible applications\n\nObtaining uniform mass and harmonic derivative bounds before applying local corrections to a family of singular profiles.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000789",
+      "record_type": "instrument",
+      "title": "Subtract the far-field slope before averaging logarithmic growth",
+      "forms": [
+        "truncated-logarithmic-gradient-affine-correction",
+        "two-dimensional-dyadic-kernel-average"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-350"
+      ],
+      "source_paper_ids": [
+        "P-000521"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex",
+          "label": "lem:affine-profile",
+          "line": 132,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L132",
+          "sha256": "fffb1eb465984af61cb103bbb962170218246f811cb9b8eb405a1e360545a52a"
+        },
+        {
+          "path": "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex",
+          "label": "eq:affine-error",
+          "line": 152,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L152",
+          "sha256": "fffb1eb465984af61cb103bbb962170218246f811cb9b8eb405a1e360545a52a"
+        }
+      ],
+      "batch_id": "B085",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000789.md",
+      "body": "# Subtract the far-field slope before averaging logarithmic growth\n\n[Family 350](../families/openai-math-350.md) · [Source manuscript](../papers/P-000521.md) · [Batch B085](../../batches/B085/README.md)\n\n## Mathematical content\n\nFor V=h+integral log|x-z| dnu(z) as in the preceding decomposition, subdivide the unit square into A^2 squares, A>10R, with rho=1/A and centers y. Set c_y=grad h(y)+integral_(|z-y|>2Rrho) (y-z)/|y-z|^2 dnu(z). Then the difference of suprema of V(x)-c_y dot x on the outer disk D_(Rrho)(y) and inner disk D_rho(y) is at most\nC[rho^2+integral min(1,rho^2/|z-y|^2) dnu(z)].\n\nLower-bound the inner supremum by its disk average. Harmonic Taylor remainder and the far-source logarithmic Hessian give the quadratic error after subtracting the slope. For near sources, rescaling cancels log rho; the unit-disk average of log|xi-t| equals (|t|^2-1)/2 for |t|<=1 and log|t| otherwise. It remains bounded below even when the source is an atom at the center.\n\nDyadic annuli give average_y min(1,rho^2/|z-y|^2)<=C rho^2(1+|log rho|), uniformly in z, and average of the truncated inverse-distance kernel is bounded. Integrating yields bounded average |c_y| and the stated small average residual. Without the affine subtraction, a nonzero linear profile retains first-order growth.\n\n## Role in the source argument\n\nReducing mean local growth faster than the subdivision scale while keeping the cumulative change of slope controlled.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:affine-profile](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L132)\n- [eq:affine-error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/subdivision.tex#L152)\n\n## Antecedents and comparison\n\nClassical logarithmic kernel estimates and affine Taylor subtraction are assembled for the source normalized growth problem. Exact priority of this particular averaged interface is not established.\n\n## Checks and limitations\n\nQuadrature checks the atom-safe disk-average identity. Finite grids check the dyadic kernel scaling, and explicit far sources compare corrected and uncorrected local growth. The finite grids test the kernel mechanism, not the source A>10000 regime or nodal theorem.\n\nThe measure must be nonnegative for the integrated upper bounds. The transfer from these profiles to eigenfunctions and the later persistence/packing argument are separate claims.\n\n## Possible applications\n\nReducing mean local growth faster than the subdivision scale while keeping the cumulative change of slope controlled.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -43144,6 +43467,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000517.md",
       "body": "# Spectral scalar curvature and uniform Urysohn width\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000780: Convert a spectral lower bound to a logarithmic drift weight](../instruments/MI-000780.md)\n- [MI-000781: Retain angle-dependent pressure in a graph Jacobi equation](../instruments/MI-000781.md)\n\n[Family review and dependencies](../families/openai-math-336.md) · [Batch B084](../../batches/B084/README.md)"
+    },
+    {
+      "id": "P-000518",
+      "record_type": "paper",
+      "title": "Generalized Cartan–Hadamard isoperimetry and Euclidean equality rigidity",
+      "source_collection": "openai/math",
+      "upstream_slug": "Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-337"
+      ],
+      "batch_id": "B085",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b0d4069293044503d2a7289c2edc8c4bd0b84ce66647f89f2826723c2609e29d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000518.md",
+      "body": "# Generalized Cartan–Hadamard isoperimetry and Euclidean equality rigidity\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000782: Balance an atomless measure using an inward-pointing parameter cylinder](../instruments/MI-000782.md)\n- [MI-000783: Exclude critical mass loss below a local Sobolev threshold](../instruments/MI-000783.md)\n\n[Family review and dependencies](../families/openai-math-337.md) · [Batch B085](../../batches/B085/README.md)"
+    },
+    {
+      "id": "P-000519",
+      "record_type": "paper",
+      "title": "Hamiltonian Fixed Points Below the Stable Morse Number in Dimension Twenty-Two",
+      "source_collection": "openai/math",
+      "upstream_slug": "Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-347"
+      ],
+      "batch_id": "B085",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b82aecae6a2beafdca90ab10395870675d2dca37b669313fc7ab69ef0506a525",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000519.md",
+      "body": "# Hamiltonian Fixed Points Below the Stable Morse Number in Dimension Twenty-Two\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/hamiltonian-fixed-points-below-stable-morse-number.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000784: Retain integral torsion in a Morse lower bound after stabilization](../instruments/MI-000784.md)\n- [MI-000785: Square a commuting perturbation to locate all fixed points](../instruments/MI-000785.md)\n\n[Family review and dependencies](../families/openai-math-347.md) · [Batch B085](../../batches/B085/README.md)"
+    },
+    {
+      "id": "P-000520",
+      "record_type": "paper",
+      "title": "Zero-Plane Rigidity for Einstein Four-Manifolds",
+      "source_collection": "openai/math",
+      "upstream_slug": "Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-348"
+      ],
+      "batch_id": "B085",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0fe90d36f5e7c6b0c52f14d8695aa8860c2b80b8704714087e8f00b7e9e150ba",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000520.md",
+      "body": "# Zero-Plane Rigidity for Einstein Four-Manifolds\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/einstein-boundary.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000786: Turn a weighted Laplacian estimate into an inverse-weight variance bound](../instruments/MI-000786.md)\n- [MI-000787: Certify scalar and matrix polynomial signs by normalized Bernstein coefficients](../instruments/MI-000787.md)\n\n[Family review and dependencies](../families/openai-math-348.md) · [Batch B085](../../batches/B085/README.md)"
+    },
+    {
+      "id": "P-000521",
+      "record_type": "paper",
+      "title": "Sharp nodal length on smooth surfaces",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-nodal-length-on-smooth-surfaces-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-350"
+      ],
+      "batch_id": "B085",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "118ae7e642eb45fbf206ae9b0a0c199bcfba8f8741be490b097d9d0d86805b96",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000521.md",
+      "body": "# Sharp nodal length on smooth surfaces\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000788: Normalize a subharmonic profile to control its logarithmic potential](../instruments/MI-000788.md)\n- [MI-000789: Subtract the far-field slope before averaging logarithmic growth](../instruments/MI-000789.md)\n\n[Family review and dependencies](../families/openai-math-350.md) · [Batch B085](../../batches/B085/README.md)"
     }
   ],
   "families": [
@@ -52381,6 +52780,33 @@
       "body": "# Spectral preprocessing and graph-angle linearization\n\n## Source manuscripts and claim\n\n- [Spectral scalar curvature and uniform Urysohn width](../papers/P-000517.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Spectral scalar curvature and Urysohn width in dimension three](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-scalar-curvature-and-Urysohn-width-in-dimension-three-October-5-2026)\n- [Positive scalar curvature and uniform codimension-two width](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-scalar-curvature-and-uniform-codimension-two-width-September-23-2026)\n\nThe family claims codimension-two Urysohn-width estimates from scalar or spectral scalar curvature.\n\n## Extracted instruments\n\n- [MI-000780: Convert a spectral lower bound to a logarithmic drift weight](../instruments/MI-000780.md)\n- [MI-000781: Retain angle-dependent pressure in a graph Jacobi equation](../instruments/MI-000781.md)\n\n## Dependencies and antecedents\n\nPositive Dirichlet ground states, Harnack compactness, elliptic regularity and normal variation.\n\nClassical positive-solution principles and Jacobi equations for graphs.\n\n## Review and formalization scope\n\nRead the complete supersolution lemma and graph-angle proof. Two companions are inventory-only. The global graph construction, reserve estimates and width theorem are not certified.\n\nNo family scope is supplied; no Lean verification is claimed.\n\nThe manifold is complete, connected and boundaryless; the graph-angle identity assumes a smooth solution of the prescribed equation.\n\n[Batch record](../../batches/B084/README.md)"
     },
     {
+      "id": "openai-math-337",
+      "record_type": "family",
+      "title": "Spherical balancing and critical-mass compactness",
+      "source_family": "337",
+      "source_collection": "openai/math",
+      "batch_id": "B085",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000518"
+      ],
+      "instrument_ids": [
+        "MI-000782",
+        "MI-000783"
+      ],
+      "headline": "The family claims generalized Cartan-Hadamard isoperimetry and sharp integral fillings in CAT(0) spaces.",
+      "central_instrument": "Balance a measure by center and scale; exclude concentration when a variational value is strictly below the local threshold.",
+      "novelty_assessment": "Classical mechanisms are identified explicitly; exact priority of source-specific interfaces is not established.",
+      "formalization_summary": "Read the scope and both complete Comparators. They concern the CAT(0) integral-current companion rather than the selected smooth isoperimetry manuscript. Their targets have sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The measure is atomless and compactly supported. The variational argument uses nonnegative energy, a bounded potential and a strict threshold gap.",
+      "dependencies": "Cartan-Hadamard geometry, Brouwer projection, local Sobolev estimates, Rellich compactness and Brezis-Lieb splitting.",
+      "antecedents": "Classical conformal centering and critical Sobolev compactness.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-337.md",
+      "body": "# Spherical balancing and critical-mass compactness\n\n## Source manuscripts and claim\n\n- [Generalized Cartan–Hadamard isoperimetry and Euclidean equality rigidity](../papers/P-000518.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Sharp integral fillings in CAT(0) spaces](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-integral-fillings-in-CAT%280%29-spaces-September-23-2026)\n\nThe family claims generalized Cartan-Hadamard isoperimetry and sharp integral fillings in CAT(0) spaces.\n\n## Extracted instruments\n\n- [MI-000782: Balance an atomless measure using an inward-pointing parameter cylinder](../instruments/MI-000782.md)\n- [MI-000783: Exclude critical mass loss below a local Sobolev threshold](../instruments/MI-000783.md)\n\n## Dependencies and antecedents\n\nCartan-Hadamard geometry, Brouwer projection, local Sobolev estimates, Rellich compactness and Brezis-Lieb splitting.\n\nClassical conformal centering and critical Sobolev compactness.\n\n## Review and formalization scope\n\nRead complete balancing, local-threshold and subthreshold-attainment proofs. One companion is inventory-only; the sharp isoperimetric comparison and equality theorem are not certified.\n\nRead the scope and both complete Comparators. They concern the CAT(0) integral-current companion rather than the selected smooth isoperimetry manuscript. Their targets have sorry; no separate solution or Lean build was checked.\n\nThe measure is atomless and compactly supported. The variational argument uses nonnegative energy, a bounded potential and a strict threshold gap.\n\n[Batch record](../../batches/B085/README.md)"
+    },
+    {
       "id": "openai-math-338",
       "record_type": "family",
       "title": "Hermitian contact certificates and volume-preserving jet realization",
@@ -52629,6 +53055,60 @@
       "body": "# Positive height from frequency control and integer projection counts\n\n## Source manuscripts and claim\n\n- [A Codimension-One Bound for the Singular Set of a Stationary Integral Varifold](../papers/P-000375.md): selected passages extracted.\n- [Almost-everywhere regularity of stationary integral varifolds](../papers/P-000376.md): selected passages extracted.\n\nThe sources claim a codimension-one singular-set bound and almost-everywhere regularity for stationary integral varifolds.\n\n## Extracted instruments\n\n- [MI-000606: Rule out an open zero-height region using finite-radius frequency control](../instruments/MI-000606.md)\n- [MI-000607: Compare projected mass with integer counts using determinant and tilt errors](../instruments/MI-000607.md)\n\n## Dependencies and antecedents\n\nPositive matrix measures, compact radial kernels, differential inequalities, projection spectra and the rectifiable area formula.\n\nClassical frequency continuation and area formulas; the source companion supplies the finite-radius argument.\n\n## Review and formalization scope\n\nRead the complete positive-limit-height proof and its kernel identities, and the complete projection-and-integer-count proof with its tensor definitions. Construction of the limiting measures, signed excess and global dimension reduction remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe height lemma assumes positive matrix measures, all distributional identities and the local signed stress bound. The projection error may contain a singular pushforward; absolute continuity is not inferred.\n\n[Batch record](../../batches/B063/README.md)"
     },
     {
+      "id": "openai-math-347",
+      "record_type": "family",
+      "title": "Integral chain bounds and finite-order Hamiltonian perturbations",
+      "source_family": "347",
+      "source_collection": "openai/math",
+      "batch_id": "B085",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000519"
+      ],
+      "instrument_ids": [
+        "MI-000784",
+        "MI-000785"
+      ],
+      "headline": "The family claims fixed-point examples below stable-Morse, Morse or critical-number bounds in several dimensions.",
+      "central_instrument": "Keep integral torsion in a stabilized Morse lower bound; use commutation and a short-period estimate to identify every fixed point after perturbation.",
+      "novelty_assessment": "Classical mechanisms are identified explicitly; exact priority of source-specific interfaces is not established.",
+      "formalization_summary": "Read the full scope and ArnoldCounterexample Comparator. Its target is the degenerate quadric example, not the selected nondegenerate dimension-22 manuscript. The target has sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The stable-Morse convention here is exactly quadratic outside a compact set. The perturbed map starts from a Hamiltonian involution and an invariant extension.",
+      "dependencies": "Smith normal form, relative Morse theory, compact flow charts, symplectic eigenspaces and matrix exponentials.",
+      "antecedents": "Classical torsion-sensitive Morse inequalities and finite-order perturbation methods.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-347.md",
+      "body": "# Integral chain bounds and finite-order Hamiltonian perturbations\n\n## Source manuscripts and claim\n\n- [Hamiltonian Fixed Points Below the Stable Morse Number in Dimension Twenty-Two](../papers/P-000519.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Sharpness of the Cyclic Integral Floer Bound Below the Stable Morse Number](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharpness-of-the-Cyclic-Integral-Floer-Bound-Below-the-Stable-Morse-Number-October-5-2026)\n- [Hamiltonian Fixed Points Below the Stable Morse Number](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-October-5-2026)\n- [A nondegenerate counterexample to the Morse-number Arnold bound](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-nondegenerate-counterexample-to-the-Morse-number-Arnold-bound-September-23-2026)\n- [Three fixed points on the symplectic quadric threefold](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-degenerate-counterexample-to-the-critical-number-Arnold-bound-September-23-2026)\n\nThe family claims fixed-point examples below stable-Morse, Morse or critical-number bounds in several dimensions.\n\n## Extracted instruments\n\n- [MI-000784: Retain integral torsion in a Morse lower bound after stabilization](../instruments/MI-000784.md)\n- [MI-000785: Square a commuting perturbation to locate all fixed points](../instruments/MI-000785.md)\n\n## Dependencies and antecedents\n\nSmith normal form, relative Morse theory, compact flow charts, symplectic eigenspaces and matrix exponentials.\n\nClassical torsion-sensitive Morse inequalities and finite-order perturbation methods.\n\n## Review and formalization scope\n\nRead the complete free-chain bound, exact-quadratic stable lower-bound proof, short-period lemma and involution perturbation proposition. Four companions are inventory-only. The claimed counterexample manifolds, counts and handle cancellation are not certified.\n\nRead the full scope and ArnoldCounterexample Comparator. Its target is the degenerate quadric example, not the selected nondegenerate dimension-22 manuscript. The target has sorry; no separate solution or Lean build was checked.\n\nThe stable-Morse convention here is exactly quadratic outside a compact set. The perturbed map starts from a Hamiltonian involution and an invariant extension.\n\n[Batch record](../../batches/B085/README.md)"
+    },
+    {
+      "id": "openai-math-348",
+      "record_type": "family",
+      "title": "Inverse-weight variance and exact polynomial certificates",
+      "source_family": "348",
+      "source_collection": "openai/math",
+      "batch_id": "B085",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000520"
+      ],
+      "instrument_ids": [
+        "MI-000786",
+        "MI-000787"
+      ],
+      "headline": "The family claims rigidity and classification of Einstein four-manifolds under curvature assumptions.",
+      "central_instrument": "Dualize a strengthened Laplacian estimate into weighted variance; certify polynomial and matrix signs through Bernstein coefficients.",
+      "novelty_assessment": "Classical mechanisms are identified explicitly; exact priority of source-specific interfaces is not established.",
+      "formalization_summary": "Read the scope and selected EinsteinFour definitions (1-45) and target/classification portion (151-222). The intermediate coordinate curvature definitions were not read in full. Its strictly positive-curvature target differs from the selected nonnegative-curvature boundary argument. Targets have sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The inverse-weight variance conclusion is conditional on the full differential estimate. Nonnegative Bernstein coefficients are sufficient, not necessary, at a fixed degree.",
+      "dependencies": "Poisson solvability, integration by parts, weighted Cauchy-Schwarz and nonnegative polynomial partitions of unity.",
+      "antecedents": "Classical Poisson duality and Bernstein positivity certificates.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-348.md",
+      "body": "# Inverse-weight variance and exact polynomial certificates\n\n## Source manuscripts and claim\n\n- [Zero-Plane Rigidity for Einstein Four-Manifolds](../papers/P-000520.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [An L² Einstein Gap for Nonnegatively Curved Four-Manifolds](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L2-Einstein-Gap-for-Nonnegatively-Curved-Four-Manifolds-October-5-2026)\n- [Positively curved Einstein four-manifolds](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positively-curved-Einstein-four-manifolds-September-23-2026)\n\nThe family claims rigidity and classification of Einstein four-manifolds under curvature assumptions.\n\n## Extracted instruments\n\n- [MI-000786: Turn a weighted Laplacian estimate into an inverse-weight variance bound](../instruments/MI-000786.md)\n- [MI-000787: Certify scalar and matrix polynomial signs by normalized Bernstein coefficients](../instruments/MI-000787.md)\n\n## Dependencies and antecedents\n\nPoisson solvability, integration by parts, weighted Cauchy-Schwarz and nonnegative polynomial partitions of unity.\n\nClassical Poisson duality and Bernstein positivity certificates.\n\n## Review and formalization scope\n\nRead complete weighted-variance and Bernstein-conversion proofs, with the curvature-block notation. Two companions are inventory-only. The full geometric contraction chain and the large source-specific certificate tables were not independently verified.\n\nRead the scope and selected EinsteinFour definitions (1-45) and target/classification portion (151-222). The intermediate coordinate curvature definitions were not read in full. Its strictly positive-curvature target differs from the selected nonnegative-curvature boundary argument. Targets have sorry; no separate solution or Lean build was checked.\n\nThe inverse-weight variance conclusion is conditional on the full differential estimate. Nonnegative Bernstein coefficients are sufficient, not necessary, at a fixed degree.\n\n[Batch record](../../batches/B085/README.md)"
+    },
+    {
       "id": "openai-math-349",
       "record_type": "family",
       "title": "Complementary fillings, projective detection and a strict perimeter gap",
@@ -52654,6 +53134,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-349.md",
       "body": "# Complementary fillings, projective detection and a strict perimeter gap\n\n## Source manuscripts and claim\n\n- [The Solomon–Yau least-volume theorem](../papers/P-000258.md): selected passages extracted.\n\nThe source claims the Solomon-Yau least-volume theorem.\n\n## Extracted instruments\n\n- [MI-000478: Detect a projective cup power using complementary boundary fillings](../instruments/MI-000478.md)\n- [MI-000479: Force a strict geometric gap by an odd constraint map and compactness](../instruments/MI-000479.md)\n\n## Dependencies and antecedents\n\nSmall fillings and the filling double cover, projective cohomology, BV compactness and lower semicontinuity, and the hemisphere equality case of spherical isoperimetry.\n\nHatcher Theorem 3.19; Boglein-Duzaar-Fusco, Section 2.3 equation (2.2); standard odd-map obstruction and the direct method.\n\n## Review and formalization scope\n\nRead the filling-cover proof, projective criterion and complete detection-gap proof. Read the cited projective cohomology statement and spherical isoperimetry/equality statement directly. The source geometric sweepout construction, min-max implementation and headline least-volume argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nUse the filling double cover and mod-two cycles. Detection requires a nonzero pth cup power; an arbitrary family of cycles need not meet the constrained class.\n\n[Batch record](../../batches/B047/README.md)"
+    },
+    {
+      "id": "openai-math-350",
+      "record_type": "family",
+      "title": "Normalized logarithmic potentials and local affine correction",
+      "source_family": "350",
+      "source_collection": "openai/math",
+      "batch_id": "B085",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000521"
+      ],
+      "instrument_ids": [
+        "MI-000788",
+        "MI-000789"
+      ],
+      "headline": "The family claims sharp surface nodal length and higher-dimensional counterexamples to nodal upper bounds.",
+      "central_instrument": "Control the mass of a logarithmic potential from one normalization, then remove its far-field affine part before averaging growth.",
+      "novelty_assessment": "Classical mechanisms are identified explicitly; exact priority of source-specific interfaces is not established.",
+      "formalization_summary": "Read the full scope and all three complete Comparators. Their targets concern surface nodal length and two higher-dimensional constructions. Targets have sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The profile is subharmonic, nonpositive and nontrivial. The source measure is nonnegative; atoms are allowed. Constants depend on the fixed outer radius.",
+      "dependencies": "Submean inequalities, the Riesz measure, harmonic interior estimates, disk averages and dyadic annuli.",
+      "antecedents": "Classical planar potential theory and Taylor subtraction of a far-field singular kernel.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-350.md",
+      "body": "# Normalized logarithmic potentials and local affine correction\n\n## Source manuscripts and claim\n\n- [Sharp nodal length on smooth surfaces](../papers/P-000521.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Smooth counterexamples to Yau's nodal upper bound in dimensions three and four](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026)\n- [Power-law violations of Yau's nodal upper bound](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Power-law-violations-of-Yaus-nodal-upper-bound-September-23-2026)\n\nThe family claims sharp surface nodal length and higher-dimensional counterexamples to nodal upper bounds.\n\n## Extracted instruments\n\n- [MI-000788: Normalize a subharmonic profile to control its logarithmic potential](../instruments/MI-000788.md)\n- [MI-000789: Subtract the far-field slope before averaging logarithmic growth](../instruments/MI-000789.md)\n\n## Dependencies and antecedents\n\nSubmean inequalities, the Riesz measure, harmonic interior estimates, disk averages and dyadic annuli.\n\nClassical planar potential theory and Taylor subtraction of a far-field singular kernel.\n\n## Review and formalization scope\n\nRead complete uniform potential decomposition and affine-profile correction proofs and the growth definitions. Two companions are inventory-only. Subharmonic extraction from eigenfunctions, persistence packing and the final nodal theorem were not certified.\n\nRead the full scope and all three complete Comparators. Their targets concern surface nodal length and two higher-dimensional constructions. Targets have sorry; no separate solution or Lean build was checked.\n\nThe profile is subharmonic, nonpositive and nontrivial. The source measure is nonnegative; atoms are allowed. Constants depend on the fixed outer radius.\n\n[Batch record](../../batches/B085/README.md)"
     },
     {
       "id": "openai-math-352",
