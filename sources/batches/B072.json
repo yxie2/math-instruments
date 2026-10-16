@@ -1,0 +1,349 @@
+{
+  "batch_id": "B072",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T19:17:44.216648+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/AtomicGaussian.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/AtomicGaussian.lean",
+      "sha256": "6207d477e9c4c19689e5df96f485417ef4534a1ac8c5aed1cfdef8ec76ad303d",
+      "bytes": 8851
+    },
+    {
+      "path": "lean/ComparatorChallenges/DyadicAvoidance.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DyadicAvoidance.lean",
+      "sha256": "3bea183a0716a2a82c045746478382b80b5a5af310fc2a30768a627722964fd7",
+      "bytes": 473
+    },
+    {
+      "path": "lean/ComparatorChallenges/HyperbolicCones.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HyperbolicCones.lean",
+      "sha256": "88c428351740c111e39d35aed94f3cfc08010f3dce0d9589ca5bcfde8308f9bf",
+      "bytes": 2616
+    },
+    {
+      "path": "lean/ComparatorChallenges/PlanarPacking.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PlanarPacking.lean",
+      "sha256": "6f2ffada083cfcceddcfbcfc01409e046d7fdb729994443d285cfd9552c1c202",
+      "bytes": 1196
+    },
+    {
+      "path": "lean/ComparatorChallenges/TriangularHilbert.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TriangularHilbert.lean",
+      "sha256": "768eef032a27b868cbeba17c167787a2183aacb6368c2d1733b400d55d264acc",
+      "bytes": 1471
+    },
+    {
+      "path": "lean/docs/082.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/082.md",
+      "sha256": "a010a21dcde470de99bcbf7db425e0213980e6b504462ba5a0d290634b0c2d97",
+      "bytes": 1008
+    },
+    {
+      "path": "lean/docs/084.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/084.md",
+      "sha256": "f99894e7555f06b3f19195bc893e910884cd473755286e6006a6b96aae5ec01f",
+      "bytes": 911
+    },
+    {
+      "path": "lean/docs/090.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/090.md",
+      "sha256": "d349dc455d0c4c6621153f61ca639dd4932f0bbcb8fc5508e2a1805b95f6de26",
+      "bytes": 2364
+    },
+    {
+      "path": "lean/docs/095.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/095.md",
+      "sha256": "0c4f351e99145df6e4ef319c6f2e561f3e4638680ad578fef8914ba957d158c0",
+      "bytes": 891
+    },
+    {
+      "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/README.md",
+      "sha256": "3258617ad46d1faeaa67e8b98c0df7bea60a623bab0555193ffa5734c60cb9e3",
+      "bytes": 1464
+    },
+    {
+      "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+      "sha256": "b7d75f5c8462ac154c38d11e19b1f32b323104fcb627b45b727e2cacd68c7435",
+      "bytes": 13295
+    },
+    {
+      "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/README.md",
+      "sha256": "c6fa0452642c71ed333d4167b26294604e6a1274e9693353811831a9883b24e5",
+      "bytes": 801
+    },
+    {
+      "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex",
+      "sha256": "74168b4a03392b554ed1a592c07f8d24fe3ad8d126585b3ddd097332688c041e",
+      "bytes": 1960
+    },
+    {
+      "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex",
+      "sha256": "e7783884f9ca091d58209b84e4774574ae2ed88d6db659c259c36825b51f41bc",
+      "bytes": 3559
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/README.md",
+      "sha256": "e9ff7a854dd30c4d1a2e4fe08a0edd3bc7bfe8032c5856c477a92c036218c2d9",
+      "bytes": 642
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex",
+      "sha256": "06b69df9362e0bde5175805332743e8cbc8fa1a1f7ce5b015d29e707dd8a5dd1",
+      "bytes": 5062
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex",
+      "sha256": "ff3c213f86a15ec53ea00222779bd6adbfc1db17a2e7144b2c330da2635f7ad1",
+      "bytes": 4194
+    },
+    {
+      "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/README.md",
+      "sha256": "bc8fde5bd747b0af2a9bc8a06a6a288bd95c01af1aef2d263a099b5196f02d3d",
+      "bytes": 1036
+    },
+    {
+      "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+      "sha256": "bfa619a454d49596b65f310f0bfdce3ae3f5ed6545bd9058d0c6316843ded2a6",
+      "bytes": 103614
+    },
+    {
+      "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/README.md",
+      "sha256": "bfcf7488cac15bd5253c9f69f54a99f49f3b847f838f97152e033f6e507ec54c",
+      "bytes": 752
+    },
+    {
+      "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+      "sha256": "914af3c5e87cd4af52b1c7a9e7f2a4ac03d82b9456b8be50b69ffbbbee59f9ad",
+      "bytes": 16488
+    },
+    {
+      "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/README.md",
+      "sha256": "31c8b334c185b04495f6e68c3ddad9ec31b6c3261b8e7bd02921d6f30b9cfc48",
+      "bytes": 617
+    },
+    {
+      "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+      "sha256": "931a3d0b43444f9cbe714a28d69ebe3f44801695d96ff98c2f7384d03de18d6c",
+      "bytes": 5025
+    },
+    {
+      "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/README.md",
+      "sha256": "67d9100a7aa6d79ea5d7dab2ca005029fec5b3127a6ea6043f8139576942fa7a",
+      "bytes": 615
+    },
+    {
+      "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+      "sha256": "b520f91a72117bb1dcaeb45d1235bd55d00641f87d9776d1c1cc2b6239ca16b2",
+      "bytes": 5130
+    },
+    {
+      "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/README.md",
+      "sha256": "ecc5efb7990223f9fa6ef43eec586a60b776c4e45254bde32d6366344faa0c2e",
+      "bytes": 660
+    },
+    {
+      "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+      "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0",
+      "bytes": 7439
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000678",
+      "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+      "label": "lem:joint-convexity",
+      "line": 183,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L183",
+      "sha256": "914af3c5e87cd4af52b1c7a9e7f2a4ac03d82b9456b8be50b69ffbbbee59f9ad"
+    },
+    {
+      "instrument_id": "MI-000678",
+      "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+      "label": "lem:hessian",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L54",
+      "sha256": "914af3c5e87cd4af52b1c7a9e7f2a4ac03d82b9456b8be50b69ffbbbee59f9ad"
+    },
+    {
+      "instrument_id": "MI-000679",
+      "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex",
+      "label": "prop:increase",
+      "line": 52,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex#L52",
+      "sha256": "ff3c213f86a15ec53ea00222779bd6adbfc1db17a2e7144b2c330da2635f7ad1"
+    },
+    {
+      "instrument_id": "MI-000679",
+      "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex",
+      "label": "prop:trace",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex#L22",
+      "sha256": "06b69df9362e0bde5175805332743e8cbc8fa1a1f7ce5b015d29e707dd8a5dd1"
+    },
+    {
+      "instrument_id": "MI-000680",
+      "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+      "label": "lem:window-span",
+      "line": 76,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L76",
+      "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+    },
+    {
+      "instrument_id": "MI-000680",
+      "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+      "label": "lem:stability",
+      "line": 112,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L112",
+      "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+    },
+    {
+      "instrument_id": "MI-000680",
+      "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+      "label": "lem:separation",
+      "line": 155,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L155",
+      "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+    },
+    {
+      "instrument_id": "MI-000681",
+      "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+      "label": "subsec:repair",
+      "line": 2,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L2",
+      "sha256": "b520f91a72117bb1dcaeb45d1235bd55d00641f87d9776d1c1cc2b6239ca16b2"
+    },
+    {
+      "instrument_id": "MI-000681",
+      "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+      "label": "eq:exceptional-centers",
+      "line": 43,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L43",
+      "sha256": "b520f91a72117bb1dcaeb45d1235bd55d00641f87d9776d1c1cc2b6239ca16b2"
+    },
+    {
+      "instrument_id": "MI-000682",
+      "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+      "label": "energy:low-frequency",
+      "line": 410,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L410",
+      "sha256": "bfa619a454d49596b65f310f0bfdce3ae3f5ed6545bd9058d0c6316843ded2a6"
+    },
+    {
+      "instrument_id": "MI-000682",
+      "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+      "label": "energy:lp",
+      "line": 453,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L453",
+      "sha256": "bfa619a454d49596b65f310f0bfdce3ae3f5ed6545bd9058d0c6316843ded2a6"
+    },
+    {
+      "instrument_id": "MI-000683",
+      "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+      "label": "normalization:origin-lemma",
+      "line": 59,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L59",
+      "sha256": "b7d75f5c8462ac154c38d11e19b1f32b323104fcb627b45b727e2cacd68c7435"
+    },
+    {
+      "instrument_id": "MI-000683",
+      "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+      "label": "normalization:second-poisson",
+      "line": 268,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L268",
+      "sha256": "b7d75f5c8462ac154c38d11e19b1f32b323104fcb627b45b727e2cacd68c7435"
+    },
+    {
+      "instrument_id": "MI-000684",
+      "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+      "label": "prop:hyperbolic",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L26",
+      "sha256": "931a3d0b43444f9cbe714a28d69ebe3f44801695d96ff98c2f7384d03de18d6c"
+    },
+    {
+      "instrument_id": "MI-000684",
+      "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+      "label": "prop:epigraph",
+      "line": 96,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L96",
+      "sha256": "931a3d0b43444f9cbe714a28d69ebe3f44801695d96ff98c2f7384d03de18d6c"
+    },
+    {
+      "instrument_id": "MI-000685",
+      "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex",
+      "label": "lem:gram",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex#L32",
+      "sha256": "74168b4a03392b554ed1a592c07f8d24fe3ad8d126585b3ddd097332688c041e"
+    },
+    {
+      "instrument_id": "MI-000685",
+      "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex",
+      "label": "lem:slice",
+      "line": 51,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex#L51",
+      "sha256": "e7783884f9ca091d58209b84e4774574ae2ed88d6db659c259c36825b51f41bc"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-082",
+      "extracted_slugs": [
+        "Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026",
+        "An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "The-maximal-triangular-Hilbert-transform-at-the-symmetric-point-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-084",
+      "extracted_slugs": [
+        "The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026",
+        "The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-090",
+      "extracted_slugs": [
+        "An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026",
+        "A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "Universal-optimality-of-the-triangular-lattice-September-23-2026",
+        "Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-095",
+      "extracted_slugs": [
+        "Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026",
+        "An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-Nonspectrahedral-Hyperbolicity-Cone-September-24-2026"
+      ]
+    }
+  ]
+}
