@@ -1,8 +1,8 @@
 # Completion of the remaining October-release families
 
-Snapshot through **B085**, at `b2ffcd8745ff89360ae00b0f3de6a46d30a8c5f9`. This continuation begins after the completed nine-hour run and has the requested target of selected extraction coverage for all 372 pinned release families.
+Snapshot through **B086**, at `89e035c72078878c5a9964d02675aabc51faa999`. This continuation completes the requested 161 remaining families in 40 merged batches, B047-B086. It adds 328 instrument entries and 272 extracted manuscript records to the previous catalogue.
 
-At this snapshot: **789 instruments, 521 manuscript records, 367 families and 14 recurring patterns**. **5 families remain pending.** The [live coverage table](../../../tables/coverage.md) may include later batches.
+At this snapshot: **799 instruments, 526 manuscript records, 372 families and 14 recurring patterns**. **0 families remain pending.** The [coverage table](../../../tables/coverage.md) accounts for every family in the pinned release. This is complete family coverage by selected extraction, not complete proof review of all 719 manuscripts.
 
 | Batch | Families added | Instruments added | Manuscripts extracted | Publication |
 | --- | --- | --- | --- | --- |
@@ -45,9 +45,29 @@ At this snapshot: **789 instruments, 521 manuscript records, 367 families and 14
 | [B083](../../../batches/B083/README.md) | 4 | 8 | 4 | [PR](https://github.com/yxie2/math-instruments/pull/85) |
 | [B084](../../../batches/B084/README.md) | 4 | 8 | 4 | [PR](https://github.com/yxie2/math-instruments/pull/86) |
 | [B085](../../../batches/B085/README.md) | 4 | 8 | 4 | [PR](https://github.com/yxie2/math-instruments/pull/87) |
+| [B086](../../../batches/B086/README.md) | 5 | 10 | 5 | [PR](https://github.com/yxie2/math-instruments/pull/88) |
 
 The [machine-readable checkpoint](checkpoint.json) records merged batches and the next identifiers. The [earlier timed-run checkpoint](../2026-10-16/README.md) remains a separate historical record.
 
 Starting with B047, source manifests explicitly distinguish extracted manuscripts from inventory-only companions. Each source passage must belong to its instrument's listed manuscript, and the companion partition must match the pinned inventory. Inventory-only status does not imply that a manuscript's arguments were read. The earlier inventory path for the CAT(0) companion in family 337 was corrected against the pinned source tree; release counts did not change.
 
 Each batch records selected proof reads, primary-source comparisons and checks with their limitations. Numerical and finite algebraic checks do not certify the source headline theorems. Comparator target statements containing `sorry` are not successful Lean builds. No exhaustive novelty certification or independent human review is claimed. The fixed edition of the direction paper is unchanged.
+
+## Completion audit
+
+The [coverage audit](coverage-audit.json) compares all 372 family identifiers against the pinned inventory and the 211-family starting catalogue. It verifies that the 161 added families are exactly the missing set, and that every continuation manuscript partition matches its family inventory. The fixed direction-paper edition is unchanged.
+
+All **84 finite verification programs** passed a fresh run from isolated copies. The [finite-check audit](finite-check-audit.json) records every program hash, exit status and duration. The hashes match the merged catalogue. B001 is an import and B045 is a curation round; neither has a mathematical verification program.
+
+The final [source-binding audit](source-binding-audit.json) matched **1,618 distinct source files and 1,586 exact label bindings across 84 manifests**. Catalogue structure, references and generated views also passed validation. These are separate checks: source binding establishes provenance, finite programs check their stated mechanisms or analogues, and neither certifies the source headline claims.
+
+To reproduce the finite audit without replacing the recorded results:
+
+```sh
+python -m pip install -r requirements.txt -r batches/verification-requirements.txt
+python scripts/check_batches.py --output verification-runs/completion-check
+python scripts/validate_catalog.py
+python scripts/check_source_bindings.py --source-root PATH
+```
+
+`PATH` must contain the pinned upstream files identified by the source manifests. No Lean solution was built or kernel-checked during this continuation.

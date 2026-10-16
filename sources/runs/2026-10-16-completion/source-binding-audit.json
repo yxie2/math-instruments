@@ -1,0 +1,9 @@
+{
+  "catalogue_commit": "89e035c72078878c5a9964d02675aabc51faa999",
+  "status": "passed",
+  "manifests": 84,
+  "unique_source_files": 1618,
+  "label_bindings": 1586,
+  "command": "python scripts/check_source_bindings.py --source-root PATH",
+  "scope": "Final B086 source audit passed before publication. Byte and location audit only; no mathematical proof verification."
+}
