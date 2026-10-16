@@ -24785,6 +24785,407 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000577.md",
       "body": "# Transfer nearby metrics while protecting a prescribed subspace\n\n[Family 251](../families/openai-math-251.md) · [Source manuscript](../papers/P-000346.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nLet A,B be positive Hilbert-space operators between I/2 and 2I, with A-B=h Gamma, Gamma self-adjoint, ||Gamma||<=1 and 0<=h<=1/8. Let P commute with B, let R=PE, and assume ||P Gamma P||<=eta<=1. There is an explicit invertible S_R satisfying S_R^* A S_R=B, S_R(R)=R, ||S_R-I||<=Ch and ||(S_R-I)P||<=Ch eta, with dimension-independent C.\n\nWhiten B and write B^(-1/2)AB^(-1/2)=[a b; b^* d] relative to R and its original orthogonal complement. Put E_0=d-b^*a^(-1)b and\n\nQ_R=[a^(-1/2), -a^(-1)b E_0^(-1/2); 0, E_0^(-1/2)],\nS_R=B^(-1/2)Q_R B^(1/2).\n\nMultiplication proves the metric identity, and the zero lower-left block preserves R. The spectral bounds give ||a-I||<=2h eta, ||b||<=2h, E_0>=1-2h and ||E_0-I||<=2h+4h^2/(1-2h). Functional calculus yields the two error scales. In particular eta=0 makes S_R exactly the identity on R. For nested protected subspaces R contained in R', S_(R')^(-1)S_R is B-unitary, O(h) globally and O(h eta) on R. No preservation of the original complementary subspace is asserted.\n\nTo fix an almost-fixed subspace exactly, let U be unitary with ||U-I||<=t<1/2 and ||(U-I)P||<=e<=1/2. In block form [a b;c d], replace U by I on R and the polar factor d(d^*d)^(-1/2) on its complement. The compression d is invertible because ||d-I||<1. Since d^*d=I-b^*b, the polar correction costs at most e^2, and the discarded blocks cost at most 2e. The resulting unitary fixes R and differs from U by at most 3e.\n\n## Role in the source argument\n\nLets the source compose metric transfers without disturbing coordinates needed by the next circuit layer.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:priority](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L514)\n- [eq:priority-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L564)\n- [lem:truncate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L624)\n\n## Antecedents and comparison\n\nSchur-complement elimination and positive square roots are classical. [Higham, Computing the Polar Decomposition with Applications](https://eprints.maths.manchester.ac.uk/694/1/high86p.pdf), Section 2.1 and Lemma 2.1 on printed page 1161, records the polar formulas used for the final correction; that section was read. The source combines these ingredients with a designated-subspace error scale. Earliest priority of that precise interface is not established.\n\n## Checks and limitations\n\n18 complex metric pairs, including nine zero-compression controls and zero/full-subspace endpoints, verify transfer identities, protection and nested B-unitarity. Thirty-six unitary examples verify exact fixing and the 3e correction bound. Maximum metric residual is below 4e-15.\n\nObserved finite norm ratios do not establish a universal constant; the dimension-independent estimate rests on the inspected spectral argument. The global Ulam-stability construction is not tested.\n\n## Possible applications\n\nChanging inner products while preserving a designated subspace and repairing a nearly fixed subspace exactly.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000578",
+      "record_type": "instrument",
+      "title": "Regularize a determinant potential while preserving every subset rank",
+      "forms": [
+        "regularized-radial-isotropy",
+        "projected-trace-tree-packing"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-174"
+      ],
+      "source_paper_ids": [
+        "P-000347"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex",
+          "label": "lem:auxiliary-representation",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex#L14",
+          "sha256": "06054993baf604bbcd8837846fd8dd63cf048bd1bb05548ff98055ea9627b4cc"
+        },
+        {
+          "path": "preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex",
+          "label": "lem:projected-trace-packing",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex#L83",
+          "sha256": "06054993baf604bbcd8837846fd8dd63cf048bd1bb05548ff98055ea9627b4cc"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-determinant-method-with-explicit-slack",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000578.md",
+      "body": "# Regularize a determinant potential while preserving every subset rank\n\n[Family 174](../families/openai-math-174.md) · [Source manuscript](../papers/P-000347.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet B be the indexed union of q edge-disjoint spanning trees on n>=2 vertices, and rho>0. There are vectors z_e in R^(n-1) with sum z_e z_e^T=I, squared norms at most (1+rho)/q, and exactly the same rank for every edge subset as its incidence vectors.\n\nWrite b_e for incidence vectors in an orthonormal coordinate system on 1-perp. Set N(a)=sum exp(a_e)b_e b_e^T and h(a)=log det N(a)-(1/q)sum a_e. The q disjoint tree terms in Cauchy-Binet, followed by AM-GM, bound h below by a finite L. Minimize h(a)+gamma||a||^2. At its minimizer, gamma||a||^2<=h(0)-L and ||grad h||<=2 sqrt(gamma(h(0)-L)). Choosing gamma sufficiently small makes each coordinate of the gradient at most rho/q. The derivative formula gives exp(a_e)b_e^T N(a)^(-1)b_e<= (1+rho)/q. Thus z_e=exp(a_e/2)N(a)^(-1/2)b_e has the claimed properties. Positive individual scalings and a common invertible map preserve every subset rank. This is an existence argument, not a bit-complexity estimate.\n\nIf A is a subset of B and sum_(e in A) z_e z_e^T >= cI, consider a partition into d nonempty parts. The span of within-part incidence vectors has dimension at most n-d. Projecting onto its orthogonal complement and taking traces gives c(d-1)<=((1+rho)/q)|A crossing the partition|. The Nash-Williams-Tutte criterion then supplies floor(cq/(1+rho)) edge-disjoint spanning trees in A.\n\n## Role in the source argument\n\nTurns an isotropic spectral lower bound into an integral tree-packing guarantee without losing the graphic rank structure.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:auxiliary-representation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex#L14)\n- [lem:projected-trace-packing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/build/source/sections/sparsification.tex#L83)\n\n## Antecedents and comparison\n\n[Barthe, On a reverse form of the Brascamp-Lieb inequality](https://arxiv.org/abs/math/9705210), Section 2.2, Proposition 3, uses the same determinant quotient, Cauchy-Binet and weighted AM-GM lower bound. Pages 10-11, including the sufficiency argument, were read. The source adds an explicit regularization and projected-trace interface; no earliest-priority claim is made.\n\n## Checks and limitations\n\nEight small indexed tree unions verify isotropy, the norm bound, all subset ranks and partition lower bounds for selected subfamilies. Numerical residuals and counts are recorded in results.json.\n\nNumerical minimizers do not certify arbitrary-size existence or polynomial running time. The selected proof establishes existence analytically; the full thin-tree argument is not checked.\n\n## Possible applications\n\nPassing from matrix lower bounds to combinatorial packing when rank preservation matters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000579",
+      "record_type": "instrument",
+      "title": "Separate partition capacity constraints using minimum spanning trees",
+      "forms": [
+        "kruskal-partition-integral",
+        "mst-capacity-separation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-174"
+      ],
+      "source_paper_ids": [
+        "P-000348"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex",
+          "label": "lem:ta-separation",
+          "line": 305,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L305",
+          "sha256": "7d96fe5312eb3ce708f7edfcf18a696b1a86fa0348f9e8b3d15566b3bceb4842"
+        },
+        {
+          "path": "preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex",
+          "label": "eq:ta-MST-inequalities",
+          "line": 318,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L318",
+          "sha256": "7d96fe5312eb3ce708f7edfcf18a696b1a86fa0348f9e8b3d15566b3bceb4842"
+        },
+        {
+          "path": "preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex",
+          "label": "eq:ta-MST-LP",
+          "line": 338,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L338",
+          "sha256": "7d96fe5312eb3ce708f7edfcf18a696b1a86fa0348f9e8b3d15566b3bceb4842"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-spanning-tree-polyhedral-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000579.md",
+      "body": "# Separate partition capacity constraints using minimum spanning trees\n\n[Family 174](../families/openai-math-174.md) · [Source manuscript](../papers/P-000348.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nFor a connected finite loopless graph H, nonnegative capacities z_e and q>=0, the inequalities z(cross(P))>=q(|P|-1) for all vertex partitions P are equivalent to\n\nsum z_e ell_e >= q MST(ell) for every ell in [0,1]^E.\n\nFor necessity, let P_a be the components of edges of length less than a. Kruskal gives MST(ell)=integral_0^1 (|P_a|-1) da. Every edge crossing P_a has length at least a, so integrating its partition inequality proves the displayed bound. Conversely set ell=1 on edges crossing a fixed partition and zero elsewhere. Every spanning tree has length at least |P|-1, yielding the partition inequality. This direction does not assume that the parts induce connected graphs.\n\nWith rational input, maximize qv-z dot ell subject to 0<=ell<=1, 0<=v<=n and v<=ell(T) for every spanning tree T. An MST oracle separates the last constraints. A positive optimum supplies a violated inequality in z; a nonpositive optimum certifies all partition inequalities. Polynomial separation follows from rational optimization-separation equivalence. This local oracle does not itself construct a thin tree or analyze the full algorithm's binary multiplicities.\n\n## Role in the source argument\n\nReplaces exponentially many vertex-partition tests by a standard combinatorial optimization oracle.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:ta-separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L305)\n- [eq:ta-MST-inequalities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L318)\n- [eq:ta-MST-LP](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/build/source/sections/extraction.tex#L338)\n\n## Antecedents and comparison\n\nThe ingredients are classical Kruskal integration and spanning-tree polyhedral separation. The full selected source proof was read; the cited general optimization-separation theorem is a dependency, not re-proved or independently audited here.\n\n## Checks and limitations\n\nThirty LP instances agree with exhaustive partition deficits. One hundred twenty rational length assignments satisfy the exact Kruskal integral identity.\n\nSmall LPs validate the interface and signs, not the asymptotic bit complexity of ellipsoid optimization or the global thin-tree algorithm.\n\n## Possible applications\n\nTesting whether nonnegative capacities support a prescribed fractional tree-packing level.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000580",
+      "record_type": "instrument",
+      "title": "Compress a cover after independent Bernoulli smoothing",
+      "forms": [
+        "greedy-smoothed-cover-compression",
+        "uniform-noisy-witness-cover"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "source_paper_ids": [
+        "P-000349"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex",
+          "label": "lem:compression",
+          "line": 299,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex#L299",
+          "sha256": "c40e3b32954b715c0e755bf763d5fbe675f4134d3b6b0a2936579751cb7cba7f"
+        },
+        {
+          "path": "preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex",
+          "label": "eq:smoothed-test",
+          "line": 290,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex#L290",
+          "sha256": "c40e3b32954b715c0e755bf763d5fbe675f4134d3b6b0a2936579751cb7cba7f"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "elementary-greedy-probability-budget",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000580.md",
+      "body": "# Compress a cover after independent Bernoulli smoothing\n\n[Family 175](../families/openai-math-175.md) · [Source manuscript](../papers/P-000349.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet R be a nonempty family of subsets of a finite ground set, each of size between 1 and s, and let 0<r<1. There is a nonempty Q contained in R, of size at most ceil(2r^(-s)), such that for every S containing a member of R, independent Bernoulli-r noise Z satisfies\n\nPr(S union Z contains a member of Q)>=1/2.\n\nStarting with Q empty, add a witness T in R whenever Pr(Z contains a member of Q | Z contains T)<1/2. Adding T increases the unconditional success probability by more than r^|T|/2 >= r^s/2. Thus fewer than 2r^(-s) additions are possible, no witness can repeat, and the process stops. Conditioning Z to contain T has the same law as T union fresh Bernoulli noise. At termination every witness has smoothed success at least 1/2, and monotonicity transfers this to every S containing a witness. This conclusion concerns success after adding noise; it does not say that Q deterministically covers every such S.\n\n## Role in the source argument\n\nReduces the number of tests needed for the source smoothed transfer argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:compression](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex#L299)\n- [eq:smoothed-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex#L290)\n\n## Antecedents and comparison\n\nThe probability-increment proof is an elementary greedy packing argument. The complete source proof was inspected; no priority claim or external novelty certification is made for this formulation.\n\n## Checks and limitations\n\nThirty-six finite families are checked with exact rational product probabilities, verifying each increment, stopping bound and every relevant superset.\n\nThe program does not prove the subsequent decomposition or expectation-threshold transfer.\n\n## Possible applications\n\nReplacing a large witness family by a bounded subfamily when success is measured after independent noise.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000581",
+      "record_type": "instrument",
+      "title": "Use a maximal truncation to bound the strictly heavy set",
+      "forms": [
+        "maximal-admissible-cutoff",
+        "heavy-coordinate-slope-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "source_paper_ids": [
+        "P-000350"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex",
+          "label": "sel:truncation",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex#L59",
+          "sha256": "85b481bd81d91511b6090e913ad826ec91a23914c9e9314358ecf15f211983a8"
+        },
+        {
+          "path": "preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex",
+          "label": "sel:admissible-cutoff",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex#L64",
+          "sha256": "85b481bd81d91511b6090e913ad826ec91a23914c9e9314358ecf15f211983a8"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-selector-truncation-variant",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000581.md",
+      "body": "# Use a maximal truncation to bound the strictly heavy set\n\n[Family 175](../families/openai-math-175.md) · [Source manuscript](../papers/P-000350.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet lambda be a probability distribution on finite X, let A be a subset, m>=0 and 0<d<1. Call u in [0,1] admissible when {x:lambda_x>u} is contained in A and\n\nsum_x min(lambda_x,u)(1_A(x)-(1-d)) >= m u.\n\nIf any u is admissible, a largest epsilon exists. Indeed, the containment condition is the closed inequality u>=max_(x outside A) lambda_x, taking the maximum as zero when the complement is empty; the remaining inequality is continuous. Put R={x:lambda_x>epsilon}. Then R is contained in A and |R|<=m/d. If epsilon=1, R is empty. Otherwise the right derivative of the left side minus m u at epsilon is d|R|-m: all unsaturated coordinates lie in A, and coordinates exactly at epsilon contribute zero to that right derivative. A positive derivative would permit a larger admissible value. Hence it is nonpositive. The strict inequality in the definition of R handles ties and the epsilon=0 endpoint.\n\n## Role in the source argument\n\nControls the heavy tail of a witness distribution before counting fragments.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [sel:truncation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex#L59)\n- [sel:admissible-cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/build/source/sections/selector.tex#L64)\n\n## Antecedents and comparison\n\n[Bednorz, Martynek and Meller](https://arxiv.org/abs/2212.14636), Lemma 3.6 and its proof on pages 9-10, use a largest admissible truncation and its right slope to find a deficient heavy prefix. Those pages were read. The source variant adds containment in A and a linear budget m u; the cutoff principle is not new.\n\n## Checks and limitations\n\nExact rational piecewise-linear maximization tests random feasible instances, ties and both endpoint values. Every strictly heavy set satisfies its containment and cardinality bounds.\n\nThis is a local truncation fact; the multiscale selector and global threshold theorem remain outside the check.\n\n## Possible applications\n\nConverting a weighted truncation condition into a cardinality bound without a generic-position assumption.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000582",
+      "record_type": "instrument",
+      "title": "Repair a sampled cover using the quadratic number of pair failures",
+      "forms": [
+        "regularize-sample-repair-cover",
+        "ordered-pair-residual-suppression"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "source_paper_ids": [
+        "P-000351"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex",
+          "label": "lem:covering",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L13",
+          "sha256": "ef42deaf8d7641f06695e7c628d4d64e6d5b3d54fa8dad13ade4d859320f5369"
+        },
+        {
+          "path": "preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex",
+          "label": "eq:covering-extension",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L74",
+          "sha256": "ef42deaf8d7641f06695e7c628d4d64e6d5b3d54fa8dad13ade4d859320f5369"
+        },
+        {
+          "path": "preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex",
+          "label": "eq:covering-residual-cost",
+          "line": 170,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L170",
+          "sha256": "ef42deaf8d7641f06695e7c628d4d64e6d5b3d54fa8dad13ade4d859320f5369"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 3,
+      "subject": "Combinatorics",
+      "novelty_status": "source-quantitative-cover-with-classical-sampled-union-antecedent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000582.md",
+      "body": "# Repair a sampled cover using the quadratic number of pair failures\n\n[Family 175](../families/openai-math-175.md) · [Source manuscript](../papers/P-000351.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet H consist of r-subsets of X, 1<=r<=h, h>=64, and |H|rho^r<=2^(h+1), where 0<rho<1. Sets containing at least 2^(12h) members of H have a containment cover G with sum_(I in G) rho^|I|<=3 times 2^(-h).\n\nSet m=2^(12h), T=2^(4h) and pi=2^(-8h). Include every I of size at most r whose weighted degree d(I)=#{e in H:I subset e}rho^(r-|I|) exceeds T. Their total cost is at most 2^r|H|rho^r/T. Call edges avoiding these generators regular. Grouping regular edges by intersection with B gives sum_e rho^|e minus B| <= T sum_(i=0)^r binom(|B|,i).\n\nSample every ordered pair of regular edges independently with probability pi, including diagonal pairs, and add its union. Expected cost is at most pi |H|rho^r 2^r T. For every ordered m-tuple of distinct regular edges with no sampled pair among them, add its full union. This repairs every remaining target set for every outcome. Its m squared ordered pair indices are distinct, so survival has probability (1-pi)^(m squared). Iterating the extension estimate bounds the sum of tuple-union costs by [T(1+rm)^r]^m. Thus expected repair cost is at most that quantity times 2^(-pi m squared), at most 2^(-m). The inequality 4h+13rh+1<=18h^2<=2^(4h) supplies the final exponent. Total expected cost is at most 2^(2-2h)+2^(-m)<=3 times 2^(-h). Coincident unions reduce cost but do not merge the independent sampling indices.\n\n## Role in the source argument\n\nProduces a small integral cover for a level set with many witnesses, for use in the discrete-convexity argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:covering](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L13)\n- [eq:covering-extension](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L74)\n- [eq:covering-residual-cost](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/build/source/sections/01_covering.tex#L170)\n\n## Antecedents and comparison\n\n[Fischer and Person, Further remarks on fractional vs. expectation thresholds](https://arxiv.org/abs/2505.21782v1), Section 1.1 Definition 3 and Section 2 Lemma 6, already construct covers from unions of sampled edges. Pages 2-3 were read. Their construction is an antecedent, not a proof of this exact regularize-pair-repair bound; earliest priority for the latter was not established.\n\n## Checks and limitations\n\nSmall analogues enumerate all ordered-pair sampling outcomes and verify deterministic coverage, exact expected-cost bounds and the extension inequality. Integer exponent estimates are checked for h=64 through 512.\n\nThe enormous h>=64 cover is not enumerated; its bound rests on the inspected proof. Tests do not certify the later discrete-convexity theorem.\n\n## Possible applications\n\nConstructing cheap covers where an uncovered large tuple must avoid quadratically many independent local choices.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000583",
+      "record_type": "instrument",
+      "title": "Concentrate a sum by counting how often each independent input is read",
+      "forms": [
+        "bounded-input-participation-holder",
+        "heterogeneous-read-k-hoeffding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-184"
+      ],
+      "source_paper_ids": [
+        "P-000352"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex",
+          "label": "lem:read-concentration",
+          "line": 251,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex#L251",
+          "sha256": "850b676392d1e412f35ea9c48289ebcf2ead6af0986289b21bc924c474a98c96"
+        },
+        {
+          "path": "preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex",
+          "label": "eq:input-holder",
+          "line": 267,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex#L267",
+          "sha256": "850b676392d1e412f35ea9c48289ebcf2ead6af0986289b21bc924c474a98c96"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-read-k-concentration",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000583.md",
+      "body": "# Concentrate a sum by counting how often each independent input is read\n\n[Family 184](../families/openai-math-184.md) · [Source manuscript](../papers/P-000352.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet X_j be bounded functions of independent inputs, with range lengths b_j. If each input enters at most p functions, where p>=1 may be real, each one-sided tail at distance a>0 of sum_j(X_j-E X_j) is at most exp(-2a^2/(p sum_j b_j^2)). When all ranges vanish, the tails are zero.\n\nFor nonnegative Z_j with the same input sets, integrate inputs one at a time and apply Holder with exponent p, padding with a constant factor if fewer than p functions use the input. This gives E product Z_j <= product (E Z_j^p)^(1/p). For a variable of range length b, the second derivative of its centered log moment-generating function is a tilted variance at most b^2/4. Integrating twice yields the Hoeffding bound s^2 b^2/8. Apply these two facts to Z_j=exp(s(X_j-E X_j)) and optimize exponential Markov.\n\nThe source uses this because correspondence-coloring matchings do not provide globally independent color labels. Its support bound controls input participation instead.\n\n## Role in the source argument\n\nMakes local expectation estimates simultaneous while allowing dependence between list entries.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:read-concentration](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex#L251)\n- [eq:input-holder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/build/sections/rounds.tex#L267)\n\n## Antecedents and comparison\n\n[Gavinsky, Lovett, Saks and Srinivasan](https://arxiv.org/abs/1205.1478), Theorem 1.1 on page 2, gives a sharper KL-form read-k inequality for indicators; that statement and its repeated-input sharpness example were read. The source proves the bounded heterogeneous-range variant using generalized Holder and Hoeffding. No novelty is claimed for the principle.\n\n## Checks and limitations\n\nThirty dependent finite-product models verify 900 one-sided tails, with unequal ranges and noninteger p. A repeated-input control shows that substituting p=1 can give a false bound.\n\nFinite tails do not verify the source support-count estimates or its complete coloring iteration.\n\n## Possible applications\n\nConcentration for local functions sharing independent flags, with explicit dependence cost.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000584",
+      "record_type": "instrument",
+      "title": "Couple all probability rows through one rejection stream",
+      "forms": [
+        "shared-rejection-multirow-coupling",
+        "simultaneous-tv-disagreement-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-184"
+      ],
+      "source_paper_ids": [
+        "P-000353"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/build/sections/coupling.tex",
+          "label": "lem:shared-rejection",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/build/sections/coupling.tex#L19",
+          "sha256": "fdd52cc88cc9d3c5a6b01e871df31bed3919ba49465548ae081008be1c1a02d3"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-kleinberg-tardos-angel-spinka-coupling",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000584.md",
+      "body": "# Couple all probability rows through one rejection stream\n\n[Family 184](../families/openai-math-184.md) · [Source manuscript](../papers/P-000353.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nFor probability distributions p_i on a common finite nonempty set J, there is a joint law of Y_i with the prescribed marginals and\n\nPr(Y_i != Y_j)<=2d/(1+d), where d=TV(p_i,p_j).\n\nUse one shared sequence of independent trials (Z,U), with Z uniform on J and U uniform on [0,1]. Row i accepts its first trial with U<=p_i(Z). Its acceptance probability per trial is 1/|J|, and its accepted label has law p_i. Every row stops almost surely. For two rows, the first trial accepted by either is accepted by both with probability sum min(p_i,p_j)/sum max(p_i,p_j)=(1-d)/(1+d). This implies the disagreement bound; later acceptance can also produce equal labels. Although the trial sequence is infinite, the resulting label vector lies in finite J^I and hence has finite support.\n\nThe source groups neighbors by these simultaneous labels. It does not assert that every pair attains the optimal disagreement d, which is generally impossible for three or more rows.\n\n## Role in the source argument\n\nPreserves agreement across related local transition rows when splitting graph vertices.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:shared-rejection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/build/sections/coupling.tex#L19)\n\n## Antecedents and comparison\n\n[Angel and Spinka](https://arxiv.org/abs/1903.00632), Section 2.1 Proposition 5 and its proof on pages 4-5, give this construction in greater generality, and identify its finite form with Kleinberg-Tardos rounding. Those pages and their three-variable obstruction on page 1 were read. This is an explicitly classical extraction.\n\n## Checks and limitations\n\nSixteen exact rational joint laws are computed by eliminating the no-acceptance self-loop recursively. All marginals and 48 pairwise bounds pass. The three overlapping two-point laws give disagreement 2/3 while pairwise TV is 1/2.\n\nThe program verifies the coupling, not the later triangle-mass or independence-number estimates.\n\n## Possible applications\n\nCoordinating many local samples while controlling disagreement for every pair simultaneously.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000585",
+      "record_type": "instrument",
+      "title": "Capture a hypergraph support by hitting one low-degree vertex",
+      "forms": [
+        "single-vertex-hypergraph-capture",
+        "restricted-to-original-degree-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-186"
+      ],
+      "source_paper_ids": [
+        "P-000354"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex",
+          "label": "lem:capture",
+          "line": 72,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex#L72",
+          "sha256": "fbe09a56ccf1e02c5dcbb1463ea0a81f1d24f2c7138822bb881db1945b74c22a"
+        },
+        {
+          "path": "preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex",
+          "label": "eq:capture-condition",
+          "line": 78,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex#L78",
+          "sha256": "fbe09a56ccf1e02c5dcbb1463ea0a81f1d24f2c7138822bb881db1945b74c22a"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "elementary-hypergraph-extension-of-graph-capture",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000585.md",
+      "body": "# Capture a hypergraph support by hitting one low-degree vertex\n\n[Family 186](../families/openai-math-186.md) · [Source manuscript](../papers/P-000354.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nLet n>=r>=3, 1<=m<=n, k>0 and L=(k/r)^(r/(r-1)). Assume rL(m-1)/(n-1)<=1/2. For any set S of distinct r-edges with 1<=|S|<=L, a uniform m-subset B of vertices satisfies\n\nPr(1<=#{e in S:e meets B}<=k)>=m/(2n).\n\nWrite s=|S|, V=union S and v=|V|. Since s<=binom(v,r)<=v^r, the average degree is rs/v<=r s^((r-1)/r)<=k. Choose a nonisolated vertex u of degree at most k before sampling B. Conditional on u belonging to B, a union bound gives probability at least 1-(v-1)(m-1)/(n-1)>=1/2 that no other vertex of V belongs to B. On this event the surviving support edges are exactly all those incident with u. The chosen u may depend on S, since the probability inequality is used separately for each nonnegative Fourier summand.\n\nThus a bound on restricted Fourier degrees through k can detect original support sizes through (k/r)^(r/(r-1)). The source combines this with a separate analytic averaged-restriction bound. That analytic input is not part of this extracted lemma.\n\n## Role in the source argument\n\nBridges hypergraph vertex degrees and numbers of Fourier support edges.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:capture](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex#L72)\n- [eq:capture-condition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/build/restriction.tex#L78)\n\n## Antecedents and comparison\n\nThe source explicitly extends the graph companion single-vertex capture argument. The proof uses only average degree and a fixed-size sampling union bound. No claim of an independently new capture principle is made.\n\n## Checks and limitations\n\nForty supports of 3- and 4-uniform hypergraphs are tested by enumerating every two-vertex block in admissible ambient sizes. The selected vertex degree and capture probability both pass.\n\nThe check does not establish the separate low-degree influence estimate, its asymptotic regime or the headline hypergraph bound.\n\n## Possible applications\n\nTransferring estimates for conditionally retained coordinates to larger original combinatorial supports.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000586",
+      "record_type": "instrument",
+      "title": "Average a Fourier restriction without discarding exterior degree",
+      "forms": [
+        "biased-fourier-restriction-parseval",
+        "restricted-pivotal-influence-identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-186"
+      ],
+      "source_paper_ids": [
+        "P-000355"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex",
+          "label": "lem:restriction",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L26",
+          "sha256": "2d44115f1ba1d86248213b4c11ff893723258af8dfda26810f3426e7adbba7c8"
+        },
+        {
+          "path": "preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex",
+          "label": "eq:restriction-mass",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L36",
+          "sha256": "2d44115f1ba1d86248213b4c11ff893723258af8dfda26810f3426e7adbba7c8"
+        },
+        {
+          "path": "preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex",
+          "label": "eq:restriction-influence",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L38",
+          "sha256": "2d44115f1ba1d86248213b4c11ff893723258af8dfda26810f3426e7adbba7c8"
+        }
+      ],
+      "batch_id": "B060",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "standard-product-fourier-restriction-identity",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000586.md",
+      "body": "# Average a Fourier restriction without discarding exterior degree\n\n[Family 186](../families/openai-math-186.md) · [Source manuscript](../papers/P-000355.md) · [Batch B060](../../batches/B060/README.md)\n\n## Mathematical content\n\nFor a Boolean function on a finite Bernoulli-p product space, 0<p<1, split coordinates into free F and assigned H. Let f_y(x)=f(x,y), with y sampled from the product law on H. For each A contained in F, orthonormal product Fourier expansion gives\n\nhat(f_y)(A)=sum_(D subset H) hat f(A union D) chi_D(y),\n\nso E_y hat(f_y)(A)^2=sum_(D subset H) hat f(A union D)^2. Therefore the expected restricted Fourier mass on 1<=|A|<=k equals the original mass on supports S satisfying 1<=|S intersect F|<=k. There is no bound on |S intersect H|.\n\nFor each free coordinate e, averaging the conditional pivotal event gives E_y I_e(f_y)=I_e(f), hence E_y I(f_y)=sum_(e in F) I_e(f). These are exact identities and require neither graph symmetry nor monotonicity. The source later chooses F as every edge incident with a vertex block, allowing permutations supported on that block to survive arbitrary conditioning outside it.\n\n## Role in the source argument\n\nPreserves exactly the Fourier mass and influence needed before applying a bound to each conditional function.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:restriction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L26)\n- [eq:restriction-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L36)\n- [eq:restriction-influence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/build/sections/graph.tex#L38)\n\n## Antecedents and comparison\n\n[Kelman, Kindler, Lifshitz, Minzer and Safra](https://arxiv.org/abs/1911.10579v2), Lemma 2.7 and its Parseval proof on page 8, give the standard uniform-product restriction identity; that proof was read. The selected source writes out the biased-product version and the influence identity. No novelty is claimed for orthogonality under restriction.\n\n## Checks and limitations\n\nFifty-four restrictions at biases .2, .5 and .8 verify every coefficient-square identity and averaged influence. Cases include parity, monotone thresholds and arbitrary truth tables, so symmetry and monotonicity are not silently assumed.\n\nNumerical finite-product identities do not verify the subsequent low-degree analytic estimate or sharp threshold-width theorem.\n\n## Possible applications\n\nAveraging conditional Fourier estimates without imposing an unintended bound on the assigned-coordinate degree.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -31361,6 +31762,177 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000346.md",
       "body": "# Strong Ulam Stability Characterizes Amenability\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/strong-ulam-stability.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000577: Transfer nearby metrics while protecting a prescribed subspace](../instruments/MI-000577.md)\n\n[Family review and dependencies](../families/openai-math-251.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000347",
+      "record_type": "paper",
+      "title": "The strong thin tree conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-strong-thin-tree-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-174"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "67874b5de56c84f04892846508aaaa2b3ac1ad6017bdd2b51c249ab3729b2d37",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000347.md",
+      "body": "# The strong thin tree conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-strong-thin-tree-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000578: Regularize a determinant potential while preserving every subset rank](../instruments/MI-000578.md)\n\n[Family review and dependencies](../families/openai-math-174.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000348",
+      "record_type": "paper",
+      "title": "A polynomial-time construction of strong thin trees",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-polynomial-time-construction-of-strong-thin-trees-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-174"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6e1ece099b8af1b12692bd4f2d131405f4d1fcb684c0ab4576a8739f747d28ed",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000348.md",
+      "body": "# A polynomial-time construction of strong thin trees\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-construction-of-strong-thin-trees-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000579: Separate partition capacity constraints using minimum spanning trees](../instruments/MI-000579.md)\n\n[Family review and dependencies](../families/openai-math-174.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000349",
+      "record_type": "paper",
+      "title": "Graph Decompositions at the Integral Expectation Threshold",
+      "source_collection": "openai/math",
+      "upstream_slug": "Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bcaa8f937083ed9e5be4ff1cffce363c79339806adcd0906f0b44cece4df5ea9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000349.md",
+      "body": "# Graph Decompositions at the Integral Expectation Threshold\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/graph-threshold-decompositions.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000580: Compress a cover after independent Bernoulli smoothing](../instruments/MI-000580.md)\n\n[Family review and dependencies](../families/openai-math-175.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000350",
+      "record_type": "paper",
+      "title": "Integral and fractional expectation thresholds are equivalent",
+      "source_collection": "openai/math",
+      "upstream_slug": "Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "10b55e5c871d8e071eaebf026529768143f5dfdad48d5cbd60a3ed12e60e3722",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000350.md",
+      "body": "# Integral and fractional expectation thresholds are equivalent\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-and-fractional-expectation-thresholds-are-equivalent-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000581: Use a maximal truncation to bound the strictly heavy set](../instruments/MI-000581.md)\n\n[Family review and dependencies](../families/openai-math-175.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000351",
+      "record_type": "paper",
+      "title": "Talagrand’s discrete-convexity conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "Talagrands-discrete-convexity-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-175"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "238d1a2c432a8ad901877203a8348f1d3d23b4a9abe2726679fa7f42a70ad1fa",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000351.md",
+      "body": "# Talagrand’s discrete-convexity conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Talagrands-discrete-convexity-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000582: Repair a sampled cover using the quadratic number of pair failures](../instruments/MI-000582.md)\n\n[Family review and dependencies](../families/openai-math-175.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000352",
+      "record_type": "paper",
+      "title": "Correspondence coloring graphs with a forbidden clique",
+      "source_collection": "openai/math",
+      "upstream_slug": "Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-184"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "cea01e625c41c73d716b26782f54e105a34e653c20af1af3745cdefe2d12ce2d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000352.md",
+      "body": "# Correspondence coloring graphs with a forbidden clique\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/correspondence-coloring-forbidden-clique.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Correspondence-Coloring-Graphs-with-a-Forbidden-Clique-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000583: Concentrate a sum by counting how often each independent input is read](../instruments/MI-000583.md)\n\n[Family review and dependencies](../families/openai-math-184.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000353",
+      "record_type": "paper",
+      "title": "A logarithmic independence bound for clique-free graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-184"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "24c6045484164ff7105fbb3f14acf2f3a36d72ff4b1c8adcf509647744134244",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000353.md",
+      "body": "# A logarithmic independence bound for clique-free graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Logarithmic-Independence-Bound-for-Clique-Free-Graphs-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000584: Couple all probability rows through one rejection stream](../instruments/MI-000584.md)\n\n[Family review and dependencies](../families/openai-math-184.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000354",
+      "record_type": "paper",
+      "title": "A uniform influence bound for hypergraph properties",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-uniform-influence-bound-for-hypergraph-properties-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-186"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6a448f55fb044623934ce3d9362e854ec15d805c6229b96a9f3c91df99df01e3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000354.md",
+      "body": "# A uniform influence bound for hypergraph properties\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/hypergraph-influences.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-influence-bound-for-hypergraph-properties-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000585: Capture a hypergraph support by hitting one low-degree vertex](../instruments/MI-000585.md)\n\n[Family review and dependencies](../families/openai-math-186.md) · [Batch B060](../../batches/B060/README.md)"
+    },
+    {
+      "id": "P-000355",
+      "record_type": "paper",
+      "title": "A Sharp Threshold Bound for Monotone Graph Properties",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-186"
+      ],
+      "batch_id": "B060",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c8b818b034d4edd25b0b5517d89758f3d8ad454fe151c0d7d3ff95dc2de75b7a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000355.md",
+      "body": "# A Sharp Threshold Bound for Monotone Graph Properties\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Sharp-Threshold-Bound-for-Monotone-Graph-Properties-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000586: Average a Fourier restriction without discarding exterior degree](../instruments/MI-000586.md)\n\n[Family review and dependencies](../families/openai-math-186.md) · [Batch B060](../../batches/B060/README.md)"
     }
   ],
   "families": [
@@ -34670,6 +35242,64 @@
       "body": "# Rank-charged pruning and transitive blowup deficits\n\n## Source manuscript and claim\n\n[A proof of Seymour’s second-neighborhood conjecture](../papers/P-000119.md), by OpenAI, September 23, 2026.\n\nThe source claims that every nonempty finite oriented graph has a vertex with at least as many strict second out-neighbors as first out-neighbors.\n\n## Extracted instruments\n\n- [MI-000196: An augmented matching cover charges rectangular conflict pruning to corner sets](../instruments/MI-000196.md)\n- [MI-000197: Transitive blowups amplify integer subset deficits with bounded block error](../instruments/MI-000197.md)\n\n## Dependencies and antecedents\n\nBipartite matching and covers; generic matrices with fixed zero patterns; a maximum-rank kernel observation; rank of a composition; transitive tournaments and integer subset deficits.\n\nEdmonds identifies matching size with generic matrix rank. Seacrest supplies an earlier minimal-counterexample subset reduction. These do not by themselves establish the selected pruning or blowup conclusions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full pruning proof and transitive-blowup argument. The preceding minimal-counterexample reduction and subsequent incompatibility argument were not completely audited.\n\nSeymourSecondNeighborhood.lean states the finite nonempty loopless asymmetric relation theorem with strict second neighbors excluding the initial vertex and its first neighbors. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nThe pruning lemma permits an arbitrary relation. The blowup uses raw image iteration F squared, which must not be confused with the strict second neighborhood in the headline statement.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/173.md) · [Batch record](../../batches/B012/README.md)"
     },
     {
+      "id": "openai-math-174",
+      "record_type": "family",
+      "title": "Isotropic representations and spanning-tree separation",
+      "source_family": "174",
+      "source_collection": "openai/math",
+      "batch_id": "B060",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000347",
+        "P-000348"
+      ],
+      "instrument_ids": [
+        "MI-000578",
+        "MI-000579"
+      ],
+      "headline": "The two sources claim a constant-factor strong thin-tree theorem and a deterministic polynomial-time construction, including binary multiplicities.",
+      "central_instrument": "Regularize a determinant potential to obtain an isotropic representation without changing any subset rank. Convert partition inequalities into minimum-spanning-tree inequalities through the Kruskal integral.",
+      "novelty_assessment": "The determinant potential and Cauchy-Binet lower bound have classical Barthe antecedents. The separation mechanism is a spanning-tree polyhedral argument. No new priority or complete thin-tree proof is certified.",
+      "formalization_summary": "StrongThinTree asserts a universal positive constant for finite loopless multigraphs with at least two vertices. AlgorithmicThinTrees defines a finite-stack machine, explicit and binary-multiplicity encodings, polynomial fuel in input length, and a thin-tree output; it also includes the one-vertex empty-output case. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Edges remain indexed when parallel. The representation assumes an explicit union of q disjoint spanning trees and permits positive slack rho. The separator concerns connected finite graphs and nonnegative rational capacities.",
+      "dependencies": "Cauchy-Binet, arithmetic-geometric mean, positive definite square roots, regularized minimization, Nash-Williams-Tutte packing, Kruskal and optimization-separation equivalence.",
+      "antecedents": "Barthe determinant minimization; classical spanning-tree packing and separation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-174.md",
+      "body": "# Isotropic representations and spanning-tree separation\n\n## Source manuscripts and claim\n\n- [The strong thin tree conjecture](../papers/P-000347.md): selected passages extracted.\n- [A polynomial-time construction of strong thin trees](../papers/P-000348.md): selected passages extracted.\n\nThe two sources claim a constant-factor strong thin-tree theorem and a deterministic polynomial-time construction, including binary multiplicities.\n\n## Extracted instruments\n\n- [MI-000578: Regularize a determinant potential while preserving every subset rank](../instruments/MI-000578.md)\n- [MI-000579: Separate partition capacity constraints using minimum spanning trees](../instruments/MI-000579.md)\n\n## Dependencies and antecedents\n\nCauchy-Binet, arithmetic-geometric mean, positive definite square roots, regularized minimization, Nash-Williams-Tutte packing, Kruskal and optimization-separation equivalence.\n\nBarthe determinant minimization; classical spanning-tree packing and separation.\n\n## Review and formalization scope\n\nRead both complete representation and projected-trace proofs, and the complete partition-separation argument in the algorithmic companion. The spectral selection and full bit-complexity construction were not audited.\n\nStrongThinTree asserts a universal positive constant for finite loopless multigraphs with at least two vertices. AlgorithmicThinTrees defines a finite-stack machine, explicit and binary-multiplicity encodings, polynomial fuel in input length, and a thin-tree output; it also includes the one-vertex empty-output case. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.\n\nEdges remain indexed when parallel. The representation assumes an explicit union of q disjoint spanning trees and permits positive slack rho. The separator concerns connected finite graphs and nonnegative rational capacities.\n\n[Batch record](../../batches/B060/README.md)"
+    },
+    {
+      "id": "openai-math-175",
+      "record_type": "family",
+      "title": "Smoothed covers, maximal cutoffs and pair-sampled repair",
+      "source_family": "175",
+      "source_collection": "openai/math",
+      "batch_id": "B060",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000349",
+        "P-000350",
+        "P-000351"
+      ],
+      "instrument_ids": [
+        "MI-000580",
+        "MI-000581",
+        "MI-000582"
+      ],
+      "headline": "The three sources concern graph decomposition at the integral expectation threshold, integral-fractional threshold equivalence and Talagrand discrete convexity.",
+      "central_instrument": "A greedy probability increment compresses a smoothed cover; a maximal truncation controls heavy coordinates; pair sampling makes an uncovered m-tuple pay m squared independent failures.",
+      "novelty_assessment": "The maximal-cutoff mechanism has an explicit earlier analogue in Bednorz-Martynek-Meller. Sampled unions appear in Fischer-Person. The source arrangements and parameters are recorded without claiming these general ideas are new.",
+      "formalization_summary": "The scope and linked targets cover integral-fractional comparison with constant 25 times 512^4, and discrete convexity with k=2^75 and budget 1/2. Fractional covers include the empty set. The convexity target permits repeated union members and arbitrary input families. No graph-decomposition target is linked. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Compression gives a probabilistic smoothed cover, not a deterministic containment cover. Strictly heavy coordinates are used at a possibly tied cutoff. Ordered sampled pairs, including diagonals, remain independent even when unions coincide.",
+      "dependencies": "Finite Bernoulli product measures, greedy probability increments, piecewise-linear truncation, weighted-degree counting and first moments.",
+      "antecedents": "Maximal truncation in selector processes; sampled unions in Fischer-Person; elementary greedy measure increments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-175.md",
+      "body": "# Smoothed covers, maximal cutoffs and pair-sampled repair\n\n## Source manuscripts and claim\n\n- [Graph Decompositions at the Integral Expectation Threshold](../papers/P-000349.md): selected passages extracted.\n- [Integral and fractional expectation thresholds are equivalent](../papers/P-000350.md): selected passages extracted.\n- [Talagrand’s discrete-convexity conjecture](../papers/P-000351.md): selected passages extracted.\n\nThe three sources concern graph decomposition at the integral expectation threshold, integral-fractional threshold equivalence and Talagrand discrete convexity.\n\n## Extracted instruments\n\n- [MI-000580: Compress a cover after independent Bernoulli smoothing](../instruments/MI-000580.md)\n- [MI-000581: Use a maximal truncation to bound the strictly heavy set](../instruments/MI-000581.md)\n- [MI-000582: Repair a sampled cover using the quadratic number of pair failures](../instruments/MI-000582.md)\n\n## Dependencies and antecedents\n\nFinite Bernoulli product measures, greedy probability increments, piecewise-linear truncation, weighted-degree counting and first moments.\n\nMaximal truncation in selector processes; sampled unions in Fischer-Person; elementary greedy measure increments.\n\n## Review and formalization scope\n\nRead the full compression proof, maximal-truncation proof and 185-line elementary covering argument. Global threshold comparison, discrete-convexity transfer and graph-decomposition theorem are not certified.\n\nThe scope and linked targets cover integral-fractional comparison with constant 25 times 512^4, and discrete convexity with k=2^75 and budget 1/2. Fractional covers include the empty set. The convexity target permits repeated union members and arbitrary input families. No graph-decomposition target is linked. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.\n\nCompression gives a probabilistic smoothed cover, not a deterministic containment cover. Strictly heavy coordinates are used at a possibly tied cutoff. Ordered sampled pairs, including diagonals, remain independent even when unions coincide.\n\n[Batch record](../../batches/B060/README.md)"
+    },
+    {
       "id": "openai-math-176",
       "record_type": "family",
       "title": "Planted resampling and ratio-maximizing graph cores",
@@ -34859,6 +35489,34 @@
       "body": "# Activity-to-distance conversion and fixed-scale power gains\n\n## Source manuscript and claim\n\n[A power saving for planar halving lines](../papers/P-000250.md), by OpenAI, September 25, 2026.\n\nThe source claims a power saving for planar halving lines and k-sets.\n\n## Extracted instruments\n\n- [MI-000462: Expose returning sweep activity by shifting the rank](../instruments/MI-000462.md)\n- [MI-000463: Turn uniform small packing constants into a fixed exponent saving](../instruments/MI-000463.md)\n\n## Dependencies and antecedents\n\nSingle-crossing affine comparisons, complementary ranks, greedy activity blocks, hereditary restriction and induction at one fixed scale.\n\nClassical sweep and crossing-number framework; fixed-scale recurrence improvement. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite activity and greedy lemmas and packing-to-power proof, including the subsequent conditional k-sensitive reduction. The uniform activity-packing theorem was not audited.\n\nRead HalvingLines.lean in full and the scope document. power_bounds contains sorry; it states existential positive exponent savings, with generic assumptions for all ranks. No Lean build.\n\nActivity counts distinct participating points, not endpoint distance or switches. The packing estimate must be uniform in size and rank; the selected argument provides no numerical exponent without an explicit scale.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/183.md) · [Batch record](../../batches/B044/README.md)"
     },
     {
+      "id": "openai-math-184",
+      "record_type": "family",
+      "title": "Bounded input participation and simultaneous coupling",
+      "source_family": "184",
+      "source_collection": "openai/math",
+      "batch_id": "B060",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000352",
+        "P-000353"
+      ],
+      "instrument_ids": [
+        "MI-000583",
+        "MI-000584"
+      ],
+      "headline": "The sources claim correspondence-coloring bounds for forbidden cliques and logarithmic independence bounds for clique-free graphs.",
+      "central_instrument": "Generalized Holder reduces dependence to input participation. Shared rejection sampling couples every probability row at once with a pairwise total-variation bound.",
+      "novelty_assessment": "Both selected tools are classical and explicitly attributed in the sources. Their application interfaces are useful, but no novelty is claimed for the concentration or coupling theorem.",
+      "formalization_summary": "Despite the family title, the only linked target is CliqueFreeLog: for each fixed r>=4 a positive c_r gives independent-set size at least c_r n log(d)/d in K_r-free graphs with average degree d>=2. It does not state the correspondence-coloring companion theorem. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Inputs are independent, output functions need not be. Range lengths may differ and the participation parameter may be real. Coupling is simultaneous; pairwise maximality is not asserted.",
+      "dependencies": "Generalized Holder, Hoeffding exponential moments, Markov inequality and elementary rejection sampling.",
+      "antecedents": "Finner; Gavinsky-Lovett-Saks-Srinivasan; Kleinberg-Tardos; Angel-Spinka.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-184.md",
+      "body": "# Bounded input participation and simultaneous coupling\n\n## Source manuscripts and claim\n\n- [Correspondence coloring graphs with a forbidden clique](../papers/P-000352.md): selected passages extracted.\n- [A logarithmic independence bound for clique-free graphs](../papers/P-000353.md): selected passages extracted.\n\nThe sources claim correspondence-coloring bounds for forbidden cliques and logarithmic independence bounds for clique-free graphs.\n\n## Extracted instruments\n\n- [MI-000583: Concentrate a sum by counting how often each independent input is read](../instruments/MI-000583.md)\n- [MI-000584: Couple all probability rows through one rejection stream](../instruments/MI-000584.md)\n\n## Dependencies and antecedents\n\nGeneralized Holder, Hoeffding exponential moments, Markov inequality and elementary rejection sampling.\n\nFinner; Gavinsky-Lovett-Saks-Srinivasan; Kleinberg-Tardos; Angel-Spinka.\n\n## Review and formalization scope\n\nRead the complete bounded-participation proof and its local use, and the complete shared-rejection proof. Full coloring rounds, entropy smoothing and the global clique-free bounds remain unaudited.\n\nDespite the family title, the only linked target is CliqueFreeLog: for each fixed r>=4 a positive c_r gives independent-set size at least c_r n log(d)/d in K_r-free graphs with average degree d>=2. It does not state the correspondence-coloring companion theorem. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.\n\nInputs are independent, output functions need not be. Range lengths may differ and the participation parameter may be real. Coupling is simultaneous; pairwise maximality is not asserted.\n\n[Batch record](../../batches/B060/README.md)"
+    },
+    {
       "id": "openai-math-185",
       "record_type": "family",
       "title": "Self-dual covering reductions and ordinal descent along a double ray",
@@ -34884,6 +35542,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-185.md",
       "body": "# Self-dual covering reductions and ordinal descent along a double ray\n\n## Source manuscript and claim\n\n[A Counterexample to the Infinite Matroid Packing/Covering Conjecture](../papers/P-000122.md), by OpenAI, September 24, 2026.\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and antecedents\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nBowler and Carmesin establish packing/covering and intersection equivalences. Bowler and Geschke construct self-dual uniform infinite matroids with additional set-theoretic hypotheses; that is background, not verification of the source local construction in ZFC. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nSelf-duality is equality with the dual on the same labeled ground set. The ordinal descent needs strict decrease on every selected step; finite windows cannot certify an infinite counterexample.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/185.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-186",
+      "record_type": "family",
+      "title": "Capture supports and average restricted Fourier mass exactly",
+      "source_family": "186",
+      "source_collection": "openai/math",
+      "batch_id": "B060",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000354",
+        "P-000355"
+      ],
+      "instrument_ids": [
+        "MI-000585",
+        "MI-000586"
+      ],
+      "headline": "The sources claim a uniform influence bound for hypergraph properties and a sharp threshold-width bound for monotone graph properties.",
+      "central_instrument": "A block meeting one low-degree support vertex captures a nonempty low Fourier level. Orthogonality expresses averaged restricted coefficients exactly in terms of the original coefficients.",
+      "novelty_assessment": "Fourier restriction averaging is standard, with a directly inspected earlier lemma. The hypergraph capture argument is an elementary extension of the graph companion, with explicit degree conversion; independent priority of that particular extension is unresolved.",
+      "formalization_summary": "SharpThreshold defines Bernoulli graph means and quantiles and asserts width at most 2^19 log(1/(2 epsilon))/(log n)^2 for invariant increasing nontrivial graph properties. It does not state the hypergraph companion influence theorem. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "A support is a set of distinct r-edges. Capturing one vertex retains all its incident support edges, not necessarily one edge. Fourier mass conditions only the free-coordinate degree; outside degree is unrestricted.",
+      "dependencies": "Hypergraph average degree, uniform fixed-size sampling, a union bound, product Fourier orthogonality and pivotal-event conditioning.",
+      "antecedents": "Standard random-restriction Fourier identity; Kelman-Kindler-Lifshitz-Minzer-Safra Lemma 2.7; the graph companion capture method.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-186.md",
+      "body": "# Capture supports and average restricted Fourier mass exactly\n\n## Source manuscripts and claim\n\n- [A uniform influence bound for hypergraph properties](../papers/P-000354.md): selected passages extracted.\n- [A Sharp Threshold Bound for Monotone Graph Properties](../papers/P-000355.md): selected passages extracted.\n\nThe sources claim a uniform influence bound for hypergraph properties and a sharp threshold-width bound for monotone graph properties.\n\n## Extracted instruments\n\n- [MI-000585: Capture a hypergraph support by hitting one low-degree vertex](../instruments/MI-000585.md)\n- [MI-000586: Average a Fourier restriction without discarding exterior degree](../instruments/MI-000586.md)\n\n## Dependencies and antecedents\n\nHypergraph average degree, uniform fixed-size sampling, a union bound, product Fourier orthogonality and pivotal-event conditioning.\n\nStandard random-restriction Fourier identity; Kelman-Kindler-Lifshitz-Minzer-Safra Lemma 2.7; the graph companion capture method.\n\n## Review and formalization scope\n\nRead the full hypergraph restriction and capture section and the full exact restriction lemma in the graph paper. The low-degree analytic estimate and global influence and threshold arguments were not audited.\n\nSharpThreshold defines Bernoulli graph means and quantiles and asserts width at most 2^19 log(1/(2 epsilon))/(log n)^2 for invariant increasing nontrivial graph properties. It does not state the hypergraph companion influence theorem. All four scope documents and all six linked Comparators in this batch were read in full. Their headline targets have sorry proof bodies. No separate solution or Lean project was built.\n\nA support is a set of distinct r-edges. Capturing one vertex retains all its incident support edges, not necessarily one edge. Fourier mass conditions only the free-coordinate degree; outside degree is unrestricted.\n\n[Batch record](../../batches/B060/README.md)"
     },
     {
       "id": "openai-math-187",
