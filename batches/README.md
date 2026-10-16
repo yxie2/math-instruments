@@ -34,7 +34,9 @@
 
 | [B023](B023/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Moving measures, overlapping seeds, compensated thinning, cancellation, particle births and nested projections |
 
-Future rounds use `B024` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B024](B024/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Product rank, composition moments, homogeneous lookup, Gaussian absorption, stationary flows and modular sign recovery |
+
+Future rounds use `B025` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

@@ -1,0 +1,288 @@
+{
+  "batch_id": "B024",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T10:28:18.842318+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/DepthFive.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DepthFive.lean",
+      "sha256": "f9c478730e4609f5ae2ad51ffac1e21f55c1391f41290664af7fe9eb4e7c1196",
+      "bytes": 4970
+    },
+    {
+      "path": "lean/ComparatorChallenges/LogConcaveQuery.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LogConcaveQuery.lean",
+      "sha256": "e35be4c9d8352ba082385717f8209296b6ddf264fbe03228df4daee47f7aedf2",
+      "bytes": 3733
+    },
+    {
+      "path": "lean/ComparatorChallenges/OneTapeSpace.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/OneTapeSpace.lean",
+      "sha256": "8582043a2836b5625a970d63f9c0c508347ad1c39ef12a7aef0168e555e02c81",
+      "bytes": 7268
+    },
+    {
+      "path": "lean/docs/135.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/135.md",
+      "sha256": "baea76413169892e9baa9e36dda5b2c01ea78151e0bf693bbd9dd2fe61e393cc",
+      "bytes": 1296
+    },
+    {
+      "path": "lean/docs/137.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/137.md",
+      "sha256": "f42fe0a6e7e9ce242c5402f1fa24d5e0715d85658c62291c70a2cde5aaa4bac0",
+      "bytes": 1317
+    },
+    {
+      "path": "lean/docs/139.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/139.md",
+      "sha256": "01a80d3457fd2b8abf1a013c484a14dd7b52f4585a759f5aef3cfc9849d6ce27",
+      "bytes": 1123
+    },
+    {
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/README.md",
+      "sha256": "5a37733df5845326526613fd7f70ac60e09c9a8995391274000c7be3a3eeef1e",
+      "bytes": 695
+    },
+    {
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919",
+      "bytes": 21770
+    },
+    {
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/README.md",
+      "sha256": "ac374ce6a03f17cc89cbbe3fbc2abc8882d7b2985b07a962bebc6e9621c5d035",
+      "bytes": 855
+    },
+    {
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/02-rank.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/02-rank.tex",
+      "sha256": "1e13adc7dff363323bc8255c998cce6836029e0c36a3df45587d6aa03c51d0a2",
+      "bytes": 5737
+    },
+    {
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex",
+      "sha256": "ab652d5b59ad0e3d52206762ecf324af3907a3e206383c0d498d25b59710eb2a",
+      "bytes": 11090
+    },
+    {
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex",
+      "sha256": "c290f8ac699bfb21f00cd5f6e43385756823be87d43707fc7645a8b8a72acdb2",
+      "bytes": 14900
+    },
+    {
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/README.md",
+      "sha256": "36ee4558b4d397c3fbe93117a897ca66c8168bdf14e831e81c354f78d1825a21",
+      "bytes": 614
+    },
+    {
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1",
+      "bytes": 20189
+    },
+    {
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/README.md",
+      "sha256": "8033d0538131895069c3b9203f94325d16038244a9ccb0efc1c1671f4ae0c2e5",
+      "bytes": 725
+    },
+    {
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex",
+      "sha256": "9f371eaa5a4375c164af0f97f411bb2d4eb903e45d75fea654e0af3958416b20",
+      "bytes": 17805
+    },
+    {
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex",
+      "sha256": "b29306f158ee12993bc10db1e09aed76a117df7f2801d75d4b742dbff5a2f49d",
+      "bytes": 32720
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000296",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex",
+      "label": "lem:product-rank",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex#L44",
+      "sha256": "ab652d5b59ad0e3d52206762ecf324af3907a3e206383c0d498d25b59710eb2a"
+    },
+    {
+      "instrument_id": "MI-000296",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex",
+      "label": "eq:intermediate-dimension",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/03-circuits.tex#L90",
+      "sha256": "ab652d5b59ad0e3d52206762ecf324af3907a3e206383c0d498d25b59710eb2a"
+    },
+    {
+      "instrument_id": "MI-000296",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/02-rank.tex",
+      "label": "eq:rank-map",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/02-rank.tex#L33",
+      "sha256": "1e13adc7dff363323bc8255c998cce6836029e0c36a3df45587d6aa03c51d0a2"
+    },
+    {
+      "instrument_id": "MI-000297",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex",
+      "label": "lem:occupation-moments",
+      "line": 89,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex#L89",
+      "sha256": "c290f8ac699bfb21f00cd5f6e43385756823be87d43707fc7645a8b8a72acdb2"
+    },
+    {
+      "instrument_id": "MI-000297",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex",
+      "label": "eq:composition-moment",
+      "line": 96,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex#L96",
+      "sha256": "c290f8ac699bfb21f00cd5f6e43385756823be87d43707fc7645a8b8a72acdb2"
+    },
+    {
+      "instrument_id": "MI-000297",
+      "path": "preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex",
+      "label": "eq:occupation-ratio",
+      "line": 144,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Homogeneous-depth-five-lower-bounds-for-iterated-matrix-multiplication-September-25-2026/build/sections/04-moments.tex#L144",
+      "sha256": "c290f8ac699bfb21f00cd5f6e43385756823be87d43707fc7645a8b8a72acdb2"
+    },
+    {
+      "instrument_id": "MI-000298",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "lem:homogenization",
+      "line": 59,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L59",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000298",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "eq:homogeneous-basis",
+      "line": 71,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L71",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000298",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "eq:lookup-extension",
+      "line": 79,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L79",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000299",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "lem:top-coefficient",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L113",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000299",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "eq:top-coefficient",
+      "line": 121,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L121",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000299",
+      "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex",
+      "label": "eq:translation-extraction",
+      "line": 125,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026/build/source/sections/evaluation.tex#L125",
+      "sha256": "e8b0f75c8c77663e1aa5b7affe871a4902ef9ac9437b3cc12010d04aee29e1a1"
+    },
+    {
+      "instrument_id": "MI-000300",
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex",
+      "label": "lem:compiler-absorption",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex#L36",
+      "sha256": "b29306f158ee12993bc10db1e09aed76a117df7f2801d75d4b742dbff5a2f49d"
+    },
+    {
+      "instrument_id": "MI-000300",
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex",
+      "label": "eq:mean-shift-warmup",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/implementation.tex#L28",
+      "sha256": "b29306f158ee12993bc10db1e09aed76a117df7f2801d75d4b742dbff5a2f49d"
+    },
+    {
+      "instrument_id": "MI-000301",
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex",
+      "label": "prop:centering-law",
+      "line": 214,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex#L214",
+      "sha256": "9f371eaa5a4375c164af0f97f411bb2d4eb903e45d75fea654e0af3958416b20"
+    },
+    {
+      "instrument_id": "MI-000301",
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex",
+      "label": "eq:centering-flow",
+      "line": 216,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex#L216",
+      "sha256": "9f371eaa5a4375c164af0f97f411bb2d4eb903e45d75fea654e0af3958416b20"
+    },
+    {
+      "instrument_id": "MI-000301",
+      "path": "preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex",
+      "label": "eq:centering-output",
+      "line": 222,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-query-complexity-for-well-conditioned-log-concave-sampling-September-26-2026/build/sections/centering.tex#L222",
+      "sha256": "9f371eaa5a4375c164af0f97f411bb2d4eb903e45d75fea654e0af3958416b20"
+    },
+    {
+      "instrument_id": "MI-000302",
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "label": "lem:field-coefficient",
+      "line": 189,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex#L189",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919"
+    },
+    {
+      "instrument_id": "MI-000302",
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "label": "eq:field-coefficient",
+      "line": 203,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex#L203",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919"
+    },
+    {
+      "instrument_id": "MI-000303",
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "label": "prop:crt-sign",
+      "line": 333,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex#L333",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919"
+    },
+    {
+      "instrument_id": "MI-000303",
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "label": "eq:crt-circle-identity",
+      "line": 385,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex#L385",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919"
+    },
+    {
+      "instrument_id": "MI-000303",
+      "path": "preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex",
+      "label": "eq:crt-circle-error",
+      "line": 401,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Existential-universal-real-sentences-in-the-counting-hierarchy-October-4-2026/build/sections/02-counting.tex#L401",
+      "sha256": "ff6d15c26433a1f5682d3dbb917e4357458e81bc465dfc76977cfdadf9b96919"
+    }
+  ]
+}
