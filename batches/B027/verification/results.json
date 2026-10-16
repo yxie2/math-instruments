@@ -1,0 +1,49 @@
+{
+  "batch": "B027",
+  "status": "passed",
+  "check_groups": {
+    "compact_projection": {
+      "exterior_modes": 36,
+      "unit_disk_projection": "exact",
+      "scope": "One discontinuous-field model and exterior harmonic modes; not the general projection existence proof."
+    },
+    "harmonic_interaction": {
+      "quadratic_minimum_checks": 420,
+      "nonminimal_harmonic_control": "nonconstant",
+      "scope": "Exact harmonic example and amplitude-polynomial implication; no absolute minimizer constructed."
+    },
+    "green_regularization": {
+      "regularized_matrices": 220,
+      "logarithmic_mean_integrals": 6,
+      "minimum_psd_eigenvalue": 0.0,
+      "scope": "Numerical finite matrices; not all disk configurations or the continuum resolvent limit."
+    },
+    "reciprocal_updates": {
+      "column_updates": 150,
+      "bordered_distance_matrices": 50,
+      "maximum_series_error": 8.645861804268407e-15,
+      "scope": "Finite inertia, Schur series and Hilbert-distance models; no boundary Green-kernel limit."
+    },
+    "localized_virial": {
+      "weighted_divergence_identity": "exact",
+      "paired_kernel_sums": 140,
+      "scope": "Algebra and finite nonsingular kernel sums; not integrability, existence or nonexistence of PDE solutions."
+    },
+    "interval_comparison": {
+      "interval_pairs": 175,
+      "maximum_midpoint_identity_error": 5.329070518200751e-15,
+      "scope": "Bounded separated intervals by quadrature; unbounded zero-weight cases follow the written nonnegative argument."
+    },
+    "splitting_obstruction": {
+      "deterministic_branch_assignments": 5460,
+      "component_total_control": "insufficient",
+      "scope": "Exact finite copies of the mass obstruction; no Coulomb dual support certificate checked."
+    },
+    "cell_mass_approximation": {
+      "exact_cell_mass_models": 40,
+      "coulomb_oscillation_checks": 2400,
+      "scope": "Exact block marginals and separated-cost samples; interval models are not three-dimensional density constructions or an attainment proof."
+    }
+  },
+  "limitations": "Selected finite mechanisms only. No global regularity, hot-spots, nonexistence or Coulomb counterexample proof is certified; no Lean build."
+}

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B027: eight selected mechanisms from PDE and transport families 366, 369, 370 and 373, with finite verification and explicit antecedents for reciprocal kernels and equality of transport infima.
+
 - Added B026: eight instruments from geometry families 038, 047, 048 and 050. Exact symbolic checks include the source polynomial cylinder certificate and inverse; other checks retain adapted filtrations, dual trace normalization, resonance and curvature atoms. Added SymPy to finite-verification requirements.
 
 - Added B025: eight algebraic and chain instruments from topology families 306, 310, 314 and 316. Eight exact check groups retain torsion, augmentation, stabilizers, exponent floors and nonprimitive Hopf generators; the global topology claims remain outside this audit.
