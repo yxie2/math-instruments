@@ -1,0 +1,61 @@
+{
+  "batch": "B055",
+  "status": "passed",
+  "elapsed_seconds": 1.985,
+  "checks": {
+    "fixed_channels": {
+      "rectangular_curves": 15,
+      "symbolic_riccati_profiles": 3,
+      "rotating_range_control": true
+    },
+    "trace_defects": {
+      "noncommuting_squares": 24,
+      "resolvent_riccati_models": 6,
+      "max_riccati_residual": 4.343592398143067e-15,
+      "scalar_normalization_and_duality": 9
+    },
+    "conjugation_kernel": {
+      "gamma_gaussian_mixture_models": 6,
+      "max_kernel_error": 1.2434497875801753e-14,
+      "repeated_eigenvalues": true
+    },
+    "polynomial_filter": {
+      "exact_polynomial_models": 6,
+      "integer_evaluations": 43,
+      "includes_interval_larger_than_count": true
+    },
+    "pruning": {
+      "adaptive_circuits": 24,
+      "deleted_gates": 21,
+      "retained_gates": 363,
+      "correlated_heavy_atom_models": 6
+    },
+    "contact_inverse": {
+      "signed_grid_models": 15,
+      "all_pair_distance_checks": 10628,
+      "independent_contact_constraints": 540,
+      "includes_square_cycles_and_extra_contacts": true
+    },
+    "form_elimination": {
+      "weighted_block_forms": 60,
+      "quadratic_scale_controls": 3,
+      "missing_gap_control": true
+    },
+    "odd_approximation": {
+      "gaussian_quadrature_nodes": 160,
+      "sine_modes": 80,
+      "final_L2_error": 0.013071757520813144,
+      "angle_error_bound": 0.020343201112263183,
+      "outer_first_lipschitz_checks": 3
+    },
+    "rational_certificate": {
+      "exact_remainder_coefficients": 22,
+      "weighted_squares": 5,
+      "coercive_coefficient": "1661507/1521000000",
+      "margin_over_one_thousandth": "140507/1521000000",
+      "negative_pointwise_control": -38,
+      "scope": "Algebra verified; PDE signs, integrability and boundary conditions remain hypotheses."
+    }
+  },
+  "scope": "Finite algebraic and numerical checks of selected mechanisms, not certification of source headline claims or Lean solutions."
+}
