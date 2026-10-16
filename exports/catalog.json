@@ -4442,6 +4442,335 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000141.md",
       "body": "# Causal predictor columns cancel rank-one contractions at a telescoping energy cost\n\n[Family 097](../families/openai-math-097.md) · [Source manuscript](../papers/P-000092.md) · [Batch B004](../../batches/B004/README.md)\n\n## Mathematical content\n\nFor Euclidean unit-ball vectors $v_i$, choose $0<\\sigma<1$, put $b_i=\\sigma v_i$, $\\eta_i=(1+\\sqrt{1-|b_i|^2})^{-1}$ and $C_i=I-\\eta_ib_ib_i^T=(I-b_ib_i^T)^{1/2}$. Define coefficient-to-state maps by $R_0x=x_{1:d}$ and $R_ix=C_iR_{i-1}x+b_ix_{d+i}$. Let $x^0$ zero the first d coordinates, and let the predictor rows be $m_ix=\\eta_ib_i^TR_{i-1}x^0$.\n\nThese rows involve only earlier noise coordinates. If M is their matrix, every column satisfies $|Me_j|^2\\le\\sigma^2$. For a column injected as b_j, follow $r_i=C_ir_{i-1}$ after its injection; the exact loss $|r_{i-1}|^2-|r_i|^2=(b_i^Tr_{i-1})^2$ telescopes. Since $\\eta_i\\le1$, it bounds the sum of squared predictor coefficients. Hence\n\n$$\\sum_i m_iQm_i^T\\le\\sigma^2\\operatorname{tr}Q$$\n\nfor every positive diagonal Q, independently of the sequence length.\n\nIf a final coefficient vector has zero initial block and $x_{d+i}=m_ix+\\epsilon_i$, then $R_ix=R_{i-1}x+\\epsilon_ib_i$ exactly, so all filtered states are the signed prefixes. The source chooses clipped adaptive shifts and imposes final slabs |m_ix|<1/4; causality then proves that clipping was inactive at every assignment.\n\n## Role in the source argument\n\nConnects the adaptive spectral-signing criterion to the separately controlled filtered path body. The small column cost makes all predictor slabs affordable, and cancellation removes the artificial contraction from the final signed walk.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:symmetric-filter](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L122)\n- [eq:predictor-columns](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L163)\n- [eq:unclipped-coordinates](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L217)\n- [eq:feedback-cancellation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L238)\n\n## Antecedents and comparison\n\nRank-one square-root filters, feedback cancellation and telescoping energy identities are elementary established techniques. The source’s candidate assembly combines them with adaptive spectral signing to obtain simultaneous prefixes. The geometric signing antecedents are [Guo–Fang–Lu](https://arxiv.org/abs/2609.11189v1) and [Akbas–Sra](https://arxiv.org/abs/2609.27172v2).\n\n## Checks and limitations\n\nFinite examples with noncommuting consecutive contractions check the square-root identity, column-energy budgets, causal support and simultaneous cancellation. Zero vectors are included.\n\nThe algebra does not by itself produce a bounded signed walk: the length-independent energy estimate for the filtered path body and the adaptive-sign existence theorem remain essential inputs. Final slab membership must be established before removing the clipping operation.\n\n## Possible applications\n\nBuilding rounding schemes in which a stable auxiliary dynamics is canceled by small causal corrections whose total coordinate cost can be bounded by an energy loss.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000142",
+      "record_type": "instrument",
+      "title": "Finite response bounds extend by limsup to a canonical infinite-volume drift",
+      "forms": [
+        "construction",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-231"
+      ],
+      "source_paper_ids": [
+        "P-000093"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+          "label": "lem:tree-response",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L14",
+          "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+          "label": "eq:finite-tilt",
+          "line": 216,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L216",
+          "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+          "label": "prop:canonical-drift",
+          "line": 276,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L276",
+          "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex",
+          "label": "lem:sr-response",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex#L14",
+          "sha256": "0edd0187ada0775ef144da2d936d534221cec2281734a075dd8ebd0703477df9"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "established-covariance-input-in-a-candidate-infinite-volume-construction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000142.md",
+      "body": "# Finite response bounds extend by limsup to a canonical infinite-volume drift\n\n[Family 231](../families/openai-math-231.md) · [Source manuscript](../papers/P-000093.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nFor a finite weighted spanning-tree law with log weights h and inclusion means p, differentiation gives $\\partial_{h_f}p_e=\\operatorname{Cov}(X_e,X_f)$. Negative off-diagonal covariances and the fixed tree size yield\n\n$$\\sum_f|\\partial_{h_f}p_e|=2p_e(1-p_e)\\le\\tfrac12.$$\n\nFor a general finite strongly Rayleigh binary law the equality becomes an inequality. Exponential tilting preserves that property, so the same uniform response bound holds at every finite field. This covariance estimate is an established input.\n\nFor the free uniform spanning forest law nu and finite edge set S, define\n\n$$b_{e,S}(t,y)=\\frac{\\mathbb E_\\nu[X_e\\exp\\{\\sum_{f\\in S}(y_f-t/2)X_f\\}]}{\\mathbb E_\\nu[\\exp\\{\\sum_{f\\in S}(y_f-t/2)X_f\\}]}.$$\n\nThe denominator is positive. A free finite-graph limit, taken with S fixed, preserves the response bound. Let $S_n(e)$ be the edges induced by the vertices within distance n of either endpoint of e, and set $b_e(t,y)=\\limsup_n b_{e,S_n(e)}(t,y)$. This produces a jointly Borel, root-free, isomorphism-equivariant drift on all real edge fields, with values in $[0,1]$, and\n\n$$\\sup_e|b_e(t,y)-b_e(t,y')|\\le\\tfrac12\\sup_f|y_f-y'_f|$$\n\nwhenever the right side is finite. Neither field is required to be bounded. Taking the two limsup inequalities in opposite directions proves the estimate. The outer limsup need not be a limit on arbitrary inputs; along the observation process it agrees almost surely at each fixed time with the posterior mean.\n\n## Role in the source argument\n\nMakes a posterior drift available on every path input without defining an infinite-volume partition function or imposing a bounded-field state space.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:tree-response](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L14)\n- [eq:finite-tilt](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L216)\n- [prop:canonical-drift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L276)\n- [lem:sr-response](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex#L14)\n\n## Antecedents and comparison\n\nThe row bound is already stated in [Alishahi, Barzegar and Zamani, Lemma 2.5 and equation (1)](https://arxiv.org/html/2203.03935v2), following earlier work of [Ghosh, Liggett and Pemantle](https://arxiv.org/abs/1607.03036v1). The extracted construction combines that input with fixed-field forest limits and an intrinsic outer limsup; the classical bound is not a new result.\n\n## Checks and limitations\n\nRead the finite matrix-tree response proof, the strongly Rayleigh homogenization argument, and the two ordered spatial limits. Exact rational enumeration checks weighted tree covariances, including bridges; finite determinant examples check the nonhomogeneous covariance inequality.\n\nThe order of limits matters: first the finite-graph limit with S fixed, then the limsup over S. Negative pairwise correlations alone do not supply the row bound. Equivariant exhaustions or another equivariant drift construction are needed for a factor conclusion.\n\n## Possible applications\n\nConstructing globally defined posterior drifts for other negatively dependent infinite-volume laws, with the finite response estimate as a reusable criterion.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000143",
+      "record_type": "instrument",
+      "title": "Picard inversion on the full product path space gives a Brownian sampler",
+      "forms": [
+        "construction",
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-231"
+      ],
+      "source_paper_ids": [
+        "P-000093"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+          "label": "lem:inverse",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L13",
+          "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+          "label": "eq:picard-bound",
+          "line": 46,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L46",
+          "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+          "label": "prop:brownian-sampler",
+          "line": 101,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L101",
+          "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+        },
+        {
+          "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex",
+          "label": "lem:innovation",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex#L88",
+          "sha256": "35e4460d8f525f885560c1392d153788af2aad2a74f4ef3fa90217bc7c3de72d"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-product-path-formulation-of-established-inversion-and-sampling-methods",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000143.md",
+      "body": "# Picard inversion on the full product path space gives a Brownian sampler\n\n[Family 231](../families/openai-math-231.md) · [Source manuscript](../papers/P-000093.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nLet I be countable. Suppose $b:[0,\\infty)\\times\\mathbb R^I\\to[0,1]^I$ is jointly Borel and satisfies $\\|b(t,y)-b(t,y')\\|_\\infty\\le L\\|y-y'\\|_\\infty$ whenever the difference is bounded. Every input $w\\in\\prod_i C([0,\\infty),\\mathbb R)$ then has a unique solution\n\n$$Z_i(w)(t)=w_i(t)+\\int_0^t b_i(s,Z(w)(s))\\,ds.$$\n\nStarting with $Z^0=w$, the Picard increments obey\n\n$$\\sup_i|Z_i^{k+1}(t)-Z_i^k(t)|\\le \\frac{L^kt^{k+1}}{(k+1)!}.$$\n\nThese summable majorants control differences uniformly over coordinates and compact time intervals. They do not bound w itself or require a common coordinate modulus of continuity. Parameterized integration and rational-time evaluations give a Borel causal solution map; it inherits every equivariance of b.\n\nFor a binary law nu, form finite posterior tilts as in MI-000142 along finite exhaustions of I. If these are uniformly L-Lipschitz, their limsup drift satisfies the hypotheses. In the planted model $Y_i(t)=tX_i+B_i(t)$, $X\\sim\\nu$, the innovations $W_i=Y_i-\\int_0^t b_i(s,Y(s))ds$ have joint product Wiener law. Deterministic uniqueness gives $Y=Z(W)$. Hence\n\n$$\\Psi_i(w)=\\mathbf1\\{\\limsup_{n\\to\\infty}Z_i(w)(n)/n>1/2\\}$$\n\nis a Borel sampler with full configuration law nu. Gaussian tails and a countable Borel-Cantelli argument identify all integer-time slopes simultaneously.\n\n## Role in the source argument\n\nConverts a dimension-free posterior response estimate into a measurable sampling rule from independent noise, preserving the symmetries of the target law.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:inverse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L13)\n- [eq:picard-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L46)\n- [prop:brownian-sampler](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L101)\n- [lem:innovation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex#L88)\n\n## Antecedents and comparison\n\nPicard iteration and Brownian innovations are classical. [Nam, Sly and Zhang](https://arxiv.org/abs/2012.09484v2) already construct Ising factors through an infinite-dimensional Brownian observation equation. The particular reusable feature here is an everywhere-defined inverse on the unrestricted product path space, under a uniform finite-tilt response criterion. This is not an assertion that Brownian posterior sampling originated in the release.\n\n## Checks and limitations\n\nChecked the factorial induction, uniqueness relative to the same unbounded input, and law transfer through the reference observation model. Finite quadrature examples exercise the Picard majorants, with discretization error reported separately.\n\nUniform finite-tilt response is a substantive assumption. This is an exact existence criterion, not a finite-time approximation guarantee. Integer-time slope recovery is an infinite-time operation.\n\n## Possible applications\n\nSampling invariant binary fields and testing whether a finite-dimensional sensitivity estimate suffices for an infinite-volume IID factor.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000144",
+      "record_type": "instrument",
+      "title": "Weak convergence plus support-edge convergence controls the capped R-transform uniformly",
+      "forms": [
+        "lemma",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-234"
+      ],
+      "source_paper_ids": [
+        "P-000094"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+          "label": "gen:R-continuity",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L18",
+          "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+        },
+        {
+          "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+          "label": "gen:R-at-zero",
+          "line": 90,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L90",
+          "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+        },
+        {
+          "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+          "label": "gen:variational-continuity",
+          "line": 31,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L31",
+          "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-spectral-continuity-formulation-with-classical-transform-input",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000144.md",
+      "body": "# Weak convergence plus support-edge convergence controls the capped R-transform uniformly\n\n[Family 234](../families/openai-math-234.md) · [Source manuscript](../papers/P-000094.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nFor a probability tau supported in $[-K,K]$, let $e_\\tau=\\max\\operatorname{supp}\\tau$ and $H_\\tau(z)=\\int(z-\\lambda)^{-1}d\\tau(\\lambda)$ for $z>e_\\tau$. For x>0, define $b_\\tau(x)$ as the unique solution of $H_\\tau(b)=x$ above the edge when it exists, and otherwise set $b_\\tau(x)=e_\\tau$. Put $R_\\tau(x)=b_\\tau(x)-1/x$ and $R_\\tau(0)=\\int\\lambda\\,d\\tau$.\n\nIf $\\nu_j\\Rightarrow\\nu$, all supports lie in a common bounded interval, and $e_{\\nu_j}\\to e_\\nu$, then\n\n$$\\sup_{0\\le x\\le1}|R_{\\nu_j}(x)-R_\\nu(x)|\\longrightarrow0.$$\n\nAway from zero, subsequences of inverse values are compact. Limits above the edge obey the inverse equation; a hypothetical wrong edge limit is excluded by evaluating H at a fixed intermediate point. Near zero the uniform estimate\n\n$$R_\\tau(x)=\\int\\lambda\\,d\\tau+O(K^2x)$$\n\ncompletes the argument. It follows by expanding $1=\\int[1+x(R_\\tau(x)-\\lambda)]^{-1}d\\tau$, using $|R_\\tau|\\le K$ and $x<(4K)^{-1}$.\n\nFor the source functional $\\mathcal F(\\nu)=\\inf_p[S(p)+\\tfrac12\\int_0^1R_\\nu(D_p(r))dr]$, where the common admissible class, S and $0\\le D_p\\le1$ do not depend on nu, this gives\n\n$$|\\mathcal F(\\nu_j)-\\mathcal F(\\nu)|\\le\\tfrac12\\|R_{\\nu_j}-R_\\nu\\|_\\infty.$$\n\nNo density regularity near the edge is assumed.\n\n## Role in the source argument\n\nAllows approximation by finite spectral alphabets while retaining the edge-capped branch of the variational term.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [gen:R-continuity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L18)\n- [gen:R-at-zero](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L90)\n- [gen:variational-continuity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L31)\n\n## Antecedents and comparison\n\nThe transform and its edge-sensitive role in spherical integrals belong to the framework of [Guionnet and Maida](https://arxiv.org/abs/math/0406121v3). [Fan and Wu](https://arxiv.org/abs/2105.02797v3) study the corresponding invariant Ising setting in the replica-symmetric regime. This card isolates the source’s compactness-and-origin argument, without claiming a new R-transform theory or established priority for the lemma.\n\n## Checks and limitations\n\nChecked both inverse branches and the uniform origin remainder. Computations test atomic approximations and the scalar transform equation. A vanishing-mass distant atom is a negative control showing why support-edge convergence cannot simply be omitted.\n\nThe shared support bound and convergence of the upper edges are explicit hypotheses. The conclusion does not by itself prove that the variational functional equals thermodynamic pressure.\n\n## Possible applications\n\nPassing from finite alphabets to rough compact spectral laws in variational problems with edge-capped Stieltjes inverses.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000145",
+      "record_type": "instrument",
+      "title": "Eigenspace symmetry bounds pressure changes caused by spectral multiplicity errors",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-234"
+      ],
+      "source_paper_ids": [
+        "P-000094"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+          "label": "gen:counts",
+          "line": 127,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L127",
+          "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+        },
+        {
+          "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+          "label": "gen:count-comparison",
+          "line": 133,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L133",
+          "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-Haar-multiplicity-comparison",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000145.md",
+      "body": "# Eigenspace symmetry bounds pressure changes caused by spectral multiplicity errors\n\n[Family 234](../families/openai-math-234.md) · [Source manuscript](../papers/P-000094.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nFix distinct real eigenvalues $\\lambda_1,\\ldots,\\lambda_m$ with diameter $L=\\max\\lambda_a-\\min\\lambda_a$. Let diagonal spectra Lambda and tilde-Lambda have positive integer multiplicities $k_a,\\widetilde k_a$, both summing to N. For Haar orthogonal U and any fixed probability prior rho on $\\{-1,1\\}^N$, set\n\n$$P_N(\\Lambda,U)=N^{-1}\\log\\sum_\\sigma\\rho(\\sigma)\\exp\\{\\tfrac12(U\\sigma)^T\\Lambda(U\\sigma)\\}.$$\n\nThen\n\n$$|\\mathbb EP_N(\\Lambda,U)-\\mathbb EP_N(\\widetilde\\Lambda,U)|\n\\le\\frac L2\\max_a\\frac{|k_a-\\widetilde k_a|}{\\min(k_a,\\widetilde k_a)}.$$\n\nArrange the spectra to retain $\\min(k_a,\\widetilde k_a)$ axes at each eigenvalue, and interpolate by Delta=tilde-Lambda minus Lambda. Convexity bounds the pressure difference between the two endpoint derivatives. At either endpoint, Haar row rotations make expected Gibbs squared projections equal within each eigenspace. A group with q axes, c of which change, therefore contributes the fraction c/q of its total expected squared norm. The total is N, and each changed eigenvalue moves by at most L, proving the bound. Deterministic external fields can be absorbed into the fixed prior.\n\n## Role in the source argument\n\nControls rounding errors in positive spectral proportions even when the aligned matrices are not close in operator norm.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [gen:counts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L127)\n- [gen:count-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L133)\n\n## Antecedents and comparison\n\nConvex interpolation and rotational invariance are established tools in invariant spin glasses; see [Bhattacharya and Sen](https://arxiv.org/abs/1507.05067v2) and [Fan and Wu](https://arxiv.org/abs/2105.02797v3). The extracted estimate packages endpoint eigenspace symmetry into a relative multiplicity bound. Targeted searches did not establish its historical priority.\n\n## Checks and limitations\n\nRead the alignment and endpoint derivative proof. Finite permutation averaging inside equal-eigenvalue blocks verifies the changed-axis fraction and derivative bound for arbitrary fixed Gibbs weights, including an external-field prior.\n\nThis is an expectation under Haar rotation, not a pointwise bound for each U. Every listed multiplicity is positive; a small number of new outlier eigenvalues is not covered by a vanishing relative-error conclusion.\n\n## Possible applications\n\nRemoving rational-proportion restrictions in finite-alphabet spectral models and handling deterministic rounding in invariant random-matrix variational arguments.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000146",
+      "record_type": "instrument",
+      "title": "Compatible conditional copies turn innovation uniqueness into measurable recovery",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-236"
+      ],
+      "source_paper_ids": [
+        "P-000095"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+          "label": "prop:compatible-copies",
+          "line": 67,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L67",
+          "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+          "label": "eq:past-compatibility",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L97",
+          "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+          "label": "eq:copy-coordinate-variance",
+          "line": 222,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L222",
+          "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex",
+          "label": "prop:factor-extraction",
+          "line": 86,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex#L86",
+          "sha256": "66754a274cd207403b360a9cebe5701caee96a5783233310bdeb58685ce0a439"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "established-compatible-coupling-method-in-a-source-specific-recovery-construction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000146.md",
+      "body": "# Compatible conditional copies turn innovation uniqueness into measurable recovery\n\n[Family 236](../families/openai-math-236.md) · [Source manuscript](../papers/P-000095.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nLet X be the source’s countable continuous observation array and W its causal innovations, which form independent Brownian coordinates relative to the observation history. Disintegrate the joint path law as $K(w,dx)\\,\\mathsf w(dw)$ and, conditional on the entire W path, sample two independent copies $X^1,X^2$ from K.\n\nThe necessary compatibility identity is\n\n$$\\mathbb E[F(X_{\\le t})\\mid W]=\\mathbb E[F(X_{\\le t})\\mid W_{\\le t}]$$\n\nfor bounded past functionals F. Future W increments are independent of the original observation past, and W up to t is a function of that past. The identity implies that W remains Brownian in the joint past filtration of the two copies. Equations involving stochastic integrals are transported using causal elementary approximations, the Itô isometry and maximal $L^2$ convergence; equal pair laws alone are not a substitute for this step.\n\nIf an applicable comparison proves $X^1=X^2$ almost surely, then for each coordinate v and rational q,\n\n$$\\mathbb E[(X_v^1(q)-X_v^2(q))^2\\mid W]=2\\operatorname{Var}(X_v(q)\\mid W)=0.$$\n\nThe countably many evaluations determine continuous paths, so K is almost surely a point mass. Integrating rational evaluations against K and taking dyadic piecewise-linear limits gives a Borel recovery map $X=F(W)$, with a fixed default on exceptional inputs. In the Ising observation law $X_v(t)=t\\sigma_v+B_v(t)$, integer-time slopes then recover every spin almost surely.\n\n## Role in the source argument\n\nProvides a rigorous route from equality of two specially coupled observations to an IID factor, including the filtration condition needed to compare their stochastic equations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:compatible-copies](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L67)\n- [eq:past-compatibility](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L97)\n- [eq:copy-coordinate-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L222)\n- [prop:factor-extraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex#L86)\n\n## Antecedents and comparison\n\nThis is an application of the established compatible-coupling and strong-solution framework of [Kurtz](https://arxiv.org/html/1305.6747v2), especially the conditional point-mass principle and joint compatibility lemmas. [Nam, Sly and Zhang](https://arxiv.org/abs/2012.09484v2) already use Brownian observation equations for Ising IID factors. The release’s detailed path recovery is not presented here as a new general Yamada-Watanabe theorem.\n\n## Checks and limitations\n\nChecked the future-increment independence argument, transport by elementary stochastic integrals, and rational-coordinate recovery. A finite conditional-kernel calculation tests the variance identity and includes a non-Dirac negative control.\n\nEquality of the copies must be proved; it is not supplied by disintegration. The innovations must be Brownian relative to the full observation past. The source’s pointwise equivariance upgrade is a separate local symmetrization argument, not an uncountable intersection of almost-sure events.\n\n## Possible applications\n\nTesting whether an equivariant observation model can be decoded from independent innovations once a suitable conditional-copy uniqueness estimate is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000147",
+      "record_type": "instrument",
+      "title": "Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-236"
+      ],
+      "source_paper_ids": [
+        "P-000095"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+          "label": "lem:small-log-loss",
+          "line": 208,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L208",
+          "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+          "label": "eq:variance-cutoff",
+          "line": 296,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L296",
+          "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+          "label": "lem:cutoff-sums",
+          "line": 318,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L318",
+          "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+          "label": "eq:integrable-osgood",
+          "line": 427,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L427",
+          "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+        },
+        {
+          "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+          "label": "eq:osgood-coefficient",
+          "line": 437,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L437",
+          "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+        }
+      ],
+      "batch_id": "B005",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-critical-small-field-and-cutoff-combination",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000147.md",
+      "body": "# Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable\n\n[Family 236](../families/openai-math-236.md) · [Source manuscript](../papers/P-000095.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nAt the critical tree parameter $b=d-1\\ge2$, $\\theta=b^{-1/2}$, let $V(t)=\\mathbb E(\\Delta h_o(t))^2$ for the compatible copies. On a finite horizon assume the source’s established comparison inputs: V is absolutely continuous, $V(0)=0$, $0\\le V\\le H^2$, and its weighted path estimates hold. Write $K>\\max(1,H^2)$, $I=1+\\log(K/V)$ when V>0, and $\\omega=\\min(\\sqrt t,1)$.\n\nFor $a(z)=(1-\\tanh^2z)/(1-\\theta^2\\tanh^2z)$, put $S=\\mathbb E[\\log a(Y)-\\log a(Y')]^2$ using corresponding cavity fields. The source supplies $\\mathbb E|Y-Y'|^2\\le CV$, a deterministic difference bound, and the marginal tail $\\Pr(|Y|>t^{1/8})\\le \\exp[-c\\log^2(1/t)]$. Because $|(\\log a)'(z)|\\le2|\\tanh z|$, splitting small and large fields gives\n\n$$S\\le C_TV\\left(t^{1/4}+\\frac{I}{\\log^2(1/t)}\\right),\\qquad S\\le CV.$$\n\nThe exceptional contribution is bounded by $\\min(CV,C_Te^{-c\\log^2(1/t)})$; a split according to whether $V\\le e^{-c\\log^2(1/t)/2}$ proves the logarithmic gain without independence of Y and Y'.\n\nThe weighted path inputs are $Q_r\\le CrS$, $L_r\\le V$, and, for $r\\ge C_0/\\omega$, exponentially damped versions with errors $C_Tr^2e^{-\\alpha b^{\\gamma r}}$ and $C_Te^{-\\alpha b^{\\gamma r}}$. Choosing\n\n$$R=\\left\\lceil C_1(\\omega^{-1}+\\log I)\\right\\rceil$$\n\nabsorbs the double-exponential tails beyond R into V-squared times a summable sequence. Consequently\n\n$$\\sum Q_r\\le C_T[S(\\omega^{-2}+\\log^2 I)+V^2],$$\n$$\\sum\\sqrt{Q_r}\\le C_T[\\sqrt S(\\omega^{-3/2}+(\\log I)^{3/2})+V],$$\n$$\\sum L_r\\le C_T[V(\\omega^{-1}+\\log I)+V^2].$$\n\nInserting these in the source’s variance bound $V'\\le C(V+\\sum Q_r+\\sum L_r+\\sqrt V\\sum\\sqrt{Q_r})$ yields $V'\\le k_T(t)V[1+\\log(K/V)]$, where for sufficiently small $t\\le t_*\\le e^{-1}$ one can take\n\n$$k_T(t)=C_T\\left(1+t^{-3/4}+\\frac1{t\\log^2(1/t)}\\right),$$\n\nand k is bounded later. This is integrable at zero. The Osgood integral diverges at V=0, forcing $V\\equiv0$. The small-field gain specifically replaces the nonintegrable term V/t that the coarse estimate S<=CV would leave.\n\n## Role in the source argument\n\nIsolates the analytic mechanism used at the threshold, where the tree’s branching growth cancels the squared correlation decay and a direct Gronwall bound is insufficient.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:small-log-loss](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L208)\n- [eq:variance-cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L296)\n- [lem:cutoff-sums](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L318)\n- [eq:integrable-osgood](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L427)\n- [eq:osgood-coefficient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L437)\n\n## Antecedents and comparison\n\nOsgood uniqueness and exponential path summation are classical. The earlier [Nam-Sly-Zhang construction](https://arxiv.org/abs/2012.09484v2) supplies the Brownian Ising-factor setting below a constant multiple of the reconstruction scale. The candidate refinement here is the particular small-field gain, discrepancy-dependent cutoff and integrable critical coefficient. Targeted comparison does not establish priority for all components.\n\n## Checks and limitations\n\nRead the moment-to-tail argument, small-log-loss split, three path sums and final absolutely continuous comparison. Scalar tests check the bad-event bound and cutoff absorption in logarithmic coordinates; exact integral formulas verify the displayed coefficient is integrable.\n\nThe preceding critical information and weighted path estimates are substantial hypotheses, not consequences of this scalar calculation. These selected checks do not certify the full sharp threshold theorem or arbitrary-solution pathwise uniqueness.\n\n## Possible applications\n\nOther critical stochastic comparisons in which a coarse 1/t divergence can be improved using a vanishing derivative at typical small fields and rapidly decaying exceptional path events.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -6192,6 +6521,63 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000092.md",
       "body": "# The Euclidean Steinitz–Bergström theorem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims one signing controlling all prescribed-order Euclidean prefixes by C sqrt(d), independent of sequence length, and derives the same-order zero-sum rearrangement bound by established transference.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000140: Diagonal spectral energy supports signs with bounded adaptive shifts](../instruments/MI-000140.md)\n- [MI-000141: Causal predictor columns cancel rank-one contractions at a telescoping energy cost](../instruments/MI-000141.md)\n\n## Dependencies and review\n\nConvex separation of coordinate energies, Sobolev compactness, lifted Steiner symmetrization, Dirichlet-energy convexity under Minkowski averaging, filtered-path energy estimates and rank-one contraction identities.\n\nRead the simultaneous-density and shifted-section proofs and the complete predictor assembly. Checked constants, adaptive quantifiers, telescoping columns and feedback cancellation. The long matrix variation and Brownian survival arguments proving the filtered-body energy estimate were not fully audited.\n\nSteinitzBergstrom quantifies over finite indexed vector sequences, including repeated and zero vectors, with one absolute constant for signed prescribed prefixes and unsigned zero-sum rearrangements. It is existential and does not assert an online algorithm. No Lean solution was built.\n\n[Family context](../families/openai-math-097.md) · [Batch B004](../../batches/B004/README.md)"
+    },
+    {
+      "id": "P-000093",
+      "record_type": "paper",
+      "title": "The free uniform spanning forest is a factor of IID",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-231"
+      ],
+      "batch_id": "B005",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "854ffdcdd86351fa88e40705130e2747632cb9673e6cccc1f73fbfdcc2f4189a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000093.md",
+      "body": "# The free uniform spanning forest is a factor of IID\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source constructs one Borel, root-free rule sampling the free uniform spanning forest from vertex IID labels on every infinite connected locally finite simple unweighted graph, and extends the method to invariant strongly Rayleigh laws on countable groups.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000142: Finite response bounds extend by limsup to a canonical infinite-volume drift](../instruments/MI-000142.md)\n- [MI-000143: Picard inversion on the full product path space gives a Brownian sampler](../instruments/MI-000143.md)\n\n## Dependencies and review\n\nWeighted matrix-tree differentiation and negative dependence; finite-field weak limits; martingale convergence and Brownian innovations; deterministic Picard iteration on a countable product; integer-time slope recovery.\n\nRead the finite response, canonical drift, posterior, innovations and deterministic decoder arguments, and the strongly Rayleigh response proof. Selected finite checks cover covariance algebra and Picard majorants. The full graph coding and all determinantal supplements were not separately audited.\n\nThe FreeUniformSpanningForest Comparator specifies one Borel rule equivariant for every relabeling and every label input, with the forest law on all infinite connected locally finite coded graphs. StronglyRayleighDPP also targets countable-group IID factors and determinantal positive-contraction kernels without a trace-class or amenability hypothesis. Statements were inspected; no Lean build was run.\n\n[Family context](../families/openai-math-231.md) · [Batch B005](../../batches/B005/README.md)"
+    },
+    {
+      "id": "P-000094",
+      "record_type": "paper",
+      "title": "All-temperature pressure for orthogonally invariant Ising spin glasses",
+      "source_collection": "openai/math",
+      "upstream_slug": "All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-234"
+      ],
+      "batch_id": "B005",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4036285adb65d20245b24864962886a828de11e175634e4d5af2a9c4ac354975",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000094.md",
+      "body": "# All-temperature pressure for orthogonally invariant Ising spin glasses\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an all-temperature variational pressure formula for orthogonally invariant Ising interactions, including compact spectral laws without outliers. This extraction selects two standalone approximation arguments.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000144: Weak convergence plus support-edge convergence controls the capped R-transform uniformly](../instruments/MI-000144.md)\n- [MI-000145: Eigenspace symmetry bounds pressure changes caused by spectral multiplicity errors](../instruments/MI-000145.md)\n\n## Dependencies and review\n\nInverse Stieltjes transforms with an edge cap; uniform expansion at the origin; convexity of log partition functions; Haar symmetry inside endpoint eigenspaces.\n\nRead both approximation lemmas in section 60-general and their full proofs. Checked the edge branch, origin expansion, and endpoint derivative symmetry. The overlap arrays, cavity limit and global variational identification were not fully audited.\n\nInvariantIsing targets expected and almost-sure limits for deterministic spectra, positive temperatures and ground states, plus conditional-Haar random spectra, Gaussian patterns and Wasserstein-one field extensions. The target statements were inspected; no Lean solution was built.\n\n[Family context](../families/openai-math-234.md) · [Batch B005](../../batches/B005/README.md)"
+    },
+    {
+      "id": "P-000095",
+      "record_type": "paper",
+      "title": "The sharp factor-of-IID threshold for the free Ising model on regular trees",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-236"
+      ],
+      "batch_id": "B005",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d113290d37b7782397fe960470820b63daa3a92a5e83e52a5aaaf18a49a6b574",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000095.md",
+      "body": "# The sharp factor-of-IID threshold for the free Ising model on regular trees\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the sharp factor-of-IID threshold tanh(beta) <= 1/sqrt(d-1) for the free Ising law on a d-regular tree, including equality. This extraction separates its recovery mechanism from the conditional analytic estimate at criticality.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000146: Compatible conditional copies turn innovation uniqueness into measurable recovery](../instruments/MI-000146.md)\n- [MI-000147: Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable](../instruments/MI-000147.md)\n\n## Dependencies and review\n\nPosterior innovations; compatible disintegration on Polish path spaces; transport of stochastic integrals; critical field tails and weighted path estimates; an absolutely continuous Osgood comparison.\n\nRead the compatible-copy construction and transport, recovery proof, critical moment and small-log-loss argument, cutoff sums and final Osgood comparison. The earlier posterior field equations, critical information estimate and weighted path estimates remain inputs rather than a fully audited proof chain.\n\nFreeIsing targets d>=3, beta>=0 and equivalence between the free-law IID factor property and the threshold, including equality. Its equivariance is almost sure for each fixed automorphism; the manuscript additionally supplies an everywhere-equivariant spin version. The Comparator was inspected, not built.\n\n[Family context](../families/openai-math-236.md) · [Batch B005](../../batches/B005/README.md)"
     }
   ],
   "families": [
@@ -7126,6 +7512,87 @@
       "map_formalization_summary": "yes (not in catalogue)",
       "path": "catalog/families/openai-math-221.md",
       "body": "# Mézard–Parisi formula for diluted spin glasses\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000061](../papers/P-000061.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 405 files, not in catalogue new\n\nFor Poisson-diluted even-arity models whose interaction law satisfies the Panchenko–Talagrand factorization and positivity hypotheses (model-class conditions, verified for Viana–Bray and soft K-SAT, not assumptions on the Gibbs measure), the free energy equals the infimum over finite-depth hierarchical trial laws, with only first-moment integrability. The lower bound is stated for every bounded interaction whose law is permutation invariant, without the even-arity or factorization restrictions needed for the matching upper bound. Under the stated model-class hypotheses, no additional Gibbs-measure factorization assumption is imposed; establishing that factorization is the step Panchenko’s conditional results left open.\n\n## Extracted instruments.\n\n- [MI-000092: Marked-depth Poisson perturbations with prescribed-tree identities](../instruments/MI-000092.md)\n\n- [MI-000093: Depth shift with charging fresh splits](../instruments/MI-000093.md)\n\n- [MI-000094: Recursive law encoding of a single site](../instruments/MI-000094.md)\n\n## Reused.\n\nGuerra, Franz–Leone and Panchenko–Talagrand interpolation (upper bound, reproved); Aizenman–Sims–Starr cavity; Panchenko’s spin-distribution viewpoint; Ruelle probability cascades; Efron–Stein.\n\n## Caveats.\n\nThe architecture and selected estimates in §8 were inspected, without checking every inequality. The repository supplies a Lean development with review status “unchecked”; it was not compiled here. A textual search for admitted proofs would not establish kernel verification.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: files, not in catalogue\n- Statement coverage: yes, faithful statement\n- Dependencies: no\n- Antecedents: Mourrat–Panchenko; Barbier–Panchenko"
+    },
+    {
+      "id": "openai-math-231",
+      "record_type": "family",
+      "title": "Uniform posterior response and equivariant sampling of forests",
+      "source_family": "231",
+      "source_collection": "openai/math",
+      "batch_id": "B005",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000093"
+      ],
+      "instrument_ids": [
+        "MI-000142",
+        "MI-000143"
+      ],
+      "headline": "The source constructs one Borel, root-free rule sampling the free uniform spanning forest from vertex IID labels on every infinite connected locally finite simple unweighted graph, and extends the method to invariant strongly Rayleigh laws on countable groups.",
+      "central_instrument": "A finite covariance-row bound supplies an everywhere-defined infinite-volume drift; deterministic Picard inversion of Brownian innovations recovers the target law.",
+      "novelty_assessment": "The strongly Rayleigh covariance bound and innovation identity are established inputs. The source-specific combination is the canonical drift and sampling construction on an unrestricted countable product path space. Priority of these formulations is not certified.",
+      "formalization_summary": "The FreeUniformSpanningForest Comparator specifies one Borel rule equivariant for every relabeling and every label input, with the forest law on all infinite connected locally finite coded graphs. StronglyRayleighDPP also targets countable-group IID factors and determinantal positive-contraction kernels without a trace-class or amenability hypothesis. Statements were inspected; no Lean build was run.",
+      "statement_faithfulness": "The construction is a measurable factor, with no finite coding radius or runtime bound. The drift estimate controls bounded differences between fields; the fields themselves need not be bounded.",
+      "dependencies": "Weighted matrix-tree differentiation and negative dependence; finite-field weak limits; martingale convergence and Brownian innovations; deterministic Picard iteration on a countable product; integer-time slope recovery.",
+      "antecedents": "The covariance estimate is explicitly present in Alishahi, Barzegar and Zamani, with earlier input from Ghosh, Liggett and Pemantle. Brownian posterior sampling and infinite-dimensional Ising factors have precedents in stochastic localization and Nam, Sly and Zhang.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-231.md",
+      "body": "# Uniform posterior response and equivariant sampling of forests\n\n## Source manuscript and claim\n\n[The free uniform spanning forest is a factor of IID](../papers/P-000093.md), by OpenAI, September 25, 2026.\n\nThe source constructs one Borel, root-free rule sampling the free uniform spanning forest from vertex IID labels on every infinite connected locally finite simple unweighted graph, and extends the method to invariant strongly Rayleigh laws on countable groups.\n\n## Extracted instruments\n\n- [MI-000142: Finite response bounds extend by limsup to a canonical infinite-volume drift](../instruments/MI-000142.md)\n- [MI-000143: Picard inversion on the full product path space gives a Brownian sampler](../instruments/MI-000143.md)\n\n## Dependencies and antecedents\n\nWeighted matrix-tree differentiation and negative dependence; finite-field weak limits; martingale convergence and Brownian innovations; deterministic Picard iteration on a countable product; integer-time slope recovery.\n\nThe covariance estimate is explicitly present in Alishahi, Barzegar and Zamani, with earlier input from Ghosh, Liggett and Pemantle. Brownian posterior sampling and infinite-dimensional Ising factors have precedents in stochastic localization and Nam, Sly and Zhang. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite response, canonical drift, posterior, innovations and deterministic decoder arguments, and the strongly Rayleigh response proof. Selected finite checks cover covariance algebra and Picard majorants. The full graph coding and all determinantal supplements were not separately audited.\n\nThe FreeUniformSpanningForest Comparator specifies one Borel rule equivariant for every relabeling and every label input, with the forest law on all infinite connected locally finite coded graphs. StronglyRayleighDPP also targets countable-group IID factors and determinantal positive-contraction kernels without a trace-class or amenability hypothesis. Statements were inspected; no Lean build was run.\n\nThe construction is a measurable factor, with no finite coding radius or runtime bound. The drift estimate controls bounded differences between fields; the fields themselves need not be bounded.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/231.md) · [Batch record](../../batches/B005/README.md)"
+    },
+    {
+      "id": "openai-math-234",
+      "record_type": "family",
+      "title": "Spectral approximation tools for invariant Ising pressure",
+      "source_family": "234",
+      "source_collection": "openai/math",
+      "batch_id": "B005",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000094"
+      ],
+      "instrument_ids": [
+        "MI-000144",
+        "MI-000145"
+      ],
+      "headline": "The source claims an all-temperature variational pressure formula for orthogonally invariant Ising interactions, including compact spectral laws without outliers. This extraction selects two standalone approximation arguments.",
+      "central_instrument": "Continuity of an edge-capped inverse Stieltjes transform and a multiplicity comparison based on eigenspace symmetry remove regularity and arithmetic restrictions.",
+      "novelty_assessment": "The R-transform and Haar interpolation framework are established. The two displayed approximation lemmas are candidate useful formulations; their historical priority and the global all-temperature formula have not been certified.",
+      "formalization_summary": "InvariantIsing targets expected and almost-sure limits for deterministic spectra, positive temperatures and ground states, plus conditional-Haar random spectra, Gaussian patterns and Wasserstein-one field extensions. The target statements were inspected; no Lean solution was built.",
+      "statement_faithfulness": "Weak convergence alone is insufficient for the selected transform-continuity statement: upper support edges must converge. The multiplicity estimate concerns Haar expectations and positive multiplicities, not arbitrary deterministic rotations or negligible-rank perturbations.",
+      "dependencies": "Inverse Stieltjes transforms with an edge cap; uniform expansion at the origin; convexity of log partition functions; Haar symmetry inside endpoint eigenspaces.",
+      "antecedents": "Guionnet and Maida develop the R-transform and spherical-integral framework. Bhattacharya and Sen and Fan and Wu treat high-temperature or replica-symmetric invariant Ising pressure. The present extraction does not reclassify those inputs as new.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-234.md",
+      "body": "# Spectral approximation tools for invariant Ising pressure\n\n## Source manuscript and claim\n\n[All-temperature pressure for orthogonally invariant Ising spin glasses](../papers/P-000094.md), by OpenAI, September 25, 2026.\n\nThe source claims an all-temperature variational pressure formula for orthogonally invariant Ising interactions, including compact spectral laws without outliers. This extraction selects two standalone approximation arguments.\n\n## Extracted instruments\n\n- [MI-000144: Weak convergence plus support-edge convergence controls the capped R-transform uniformly](../instruments/MI-000144.md)\n- [MI-000145: Eigenspace symmetry bounds pressure changes caused by spectral multiplicity errors](../instruments/MI-000145.md)\n\n## Dependencies and antecedents\n\nInverse Stieltjes transforms with an edge cap; uniform expansion at the origin; convexity of log partition functions; Haar symmetry inside endpoint eigenspaces.\n\nGuionnet and Maida develop the R-transform and spherical-integral framework. Bhattacharya and Sen and Fan and Wu treat high-temperature or replica-symmetric invariant Ising pressure. The present extraction does not reclassify those inputs as new. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead both approximation lemmas in section 60-general and their full proofs. Checked the edge branch, origin expansion, and endpoint derivative symmetry. The overlap arrays, cavity limit and global variational identification were not fully audited.\n\nInvariantIsing targets expected and almost-sure limits for deterministic spectra, positive temperatures and ground states, plus conditional-Haar random spectra, Gaussian patterns and Wasserstein-one field extensions. The target statements were inspected; no Lean solution was built.\n\nWeak convergence alone is insufficient for the selected transform-continuity statement: upper support edges must converge. The multiplicity estimate concerns Haar expectations and positive multiplicities, not arbitrary deterministic rotations or negligible-rank perturbations.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/234.md) · [Batch record](../../batches/B005/README.md)"
+    },
+    {
+      "id": "openai-math-236",
+      "record_type": "family",
+      "title": "Compatible innovation couplings and a critical Osgood comparison",
+      "source_family": "236",
+      "source_collection": "openai/math",
+      "batch_id": "B005",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000095"
+      ],
+      "instrument_ids": [
+        "MI-000146",
+        "MI-000147"
+      ],
+      "headline": "The source claims the sharp factor-of-IID threshold tanh(beta) <= 1/sqrt(d-1) for the free Ising law on a d-regular tree, including equality. This extraction separates its recovery mechanism from the conditional analytic estimate at criticality.",
+      "central_instrument": "Compatible conditional copies reduce recovery to a discrepancy variance; a small-field logarithmic gain and discrepancy-dependent path cutoff yield an integrable Osgood coefficient.",
+      "novelty_assessment": "Conditional-copy compatibility and the point-mass recovery principle are established stochastic tools. The source’s critical small-field and cutoff combination is a candidate specialized refinement. The full critical theorem and priority are not independently certified.",
+      "formalization_summary": "FreeIsing targets d>=3, beta>=0 and equivalence between the free-law IID factor property and the threshold, including equality. Its equivariance is almost sure for each fixed automorphism; the manuscript additionally supplies an everywhere-equivariant spin version. The Comparator was inspected, not built.",
+      "statement_faithfulness": "The law is the free zero-field Ising law. Nonreconstruction alone is not a factor construction. Recovery is measurable and has no finitary coding or algorithmic guarantee.",
+      "dependencies": "Posterior innovations; compatible disintegration on Polish path spaces; transport of stochastic integrals; critical field tails and weighted path estimates; an absolutely continuous Osgood comparison.",
+      "antecedents": "Nam, Sly and Zhang previously built Ising IID factors beyond the uniqueness regime using Brownian observations. Kurtz supplies the general compatibility and strong-solution framework; Osgood comparison is classical. The correlation obstruction above the threshold is also an established input.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-236.md",
+      "body": "# Compatible innovation couplings and a critical Osgood comparison\n\n## Source manuscript and claim\n\n[The sharp factor-of-IID threshold for the free Ising model on regular trees](../papers/P-000095.md), by OpenAI, September 26, 2026.\n\nThe source claims the sharp factor-of-IID threshold tanh(beta) <= 1/sqrt(d-1) for the free Ising law on a d-regular tree, including equality. This extraction separates its recovery mechanism from the conditional analytic estimate at criticality.\n\n## Extracted instruments\n\n- [MI-000146: Compatible conditional copies turn innovation uniqueness into measurable recovery](../instruments/MI-000146.md)\n- [MI-000147: Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable](../instruments/MI-000147.md)\n\n## Dependencies and antecedents\n\nPosterior innovations; compatible disintegration on Polish path spaces; transport of stochastic integrals; critical field tails and weighted path estimates; an absolutely continuous Osgood comparison.\n\nNam, Sly and Zhang previously built Ising IID factors beyond the uniqueness regime using Brownian observations. Kurtz supplies the general compatibility and strong-solution framework; Osgood comparison is classical. The correlation obstruction above the threshold is also an established input. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the compatible-copy construction and transport, recovery proof, critical moment and small-log-loss argument, cutoff sums and final Osgood comparison. The earlier posterior field equations, critical information estimate and weighted path estimates remain inputs rather than a fully audited proof chain.\n\nFreeIsing targets d>=3, beta>=0 and equivalence between the free-law IID factor property and the threshold, including equality. Its equivariance is almost sure for each fixed automorphism; the manuscript additionally supplies an everywhere-equivariant spin version. The Comparator was inspected, not built.\n\nThe law is the free zero-field Ising law. Nonreconstruction alone is not a factor construction. Recovery is measurable and has no finitary coding or algorithmic guarantee.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/236.md) · [Batch record](../../batches/B005/README.md)"
     },
     {
       "id": "openai-math-248",

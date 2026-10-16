@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "numpy_version": "2.4.4",
+  "seed": 231234236,
+  "scope": "Selected finite checks, not proof or novelty certification.",
+  "checks": {
+    "response": {
+      "weighted_tree_examples": 24,
+      "exact_determinantal_examples": 12,
+      "arithmetic": "rational",
+      "limitation": "Finite covariance identities only; no infinite-forest construction is simulated."
+    },
+    "picard": {
+      "grids": [
+        1024,
+        2048
+      ],
+      "iterations": 8,
+      "max_majorant_ratio": 0.75,
+      "grid_refinement_differences": [
+        1.9763127578897866e-08
+      ],
+      "limitation": "Deterministic finite path quadrature, with additive floating tolerance 2e-10; not Brownian sampling or a proof for countably many paths."
+    },
+    "spectral_transform": {
+      "atomic_approximations": [
+        16,
+        32,
+        64
+      ],
+      "sampled_uniform_errors": [
+        0.020907338345415916,
+        0.005452984126725013,
+        0.0013886751823566357
+      ],
+      "weak_only_negative_control": [
+        2.1401754250991383,
+        2.0148891565092217,
+        2.0014988766843427,
+        2.000149988751687
+      ],
+      "limitation": "Sampled transform values, including an active capped branch; neither a uniform error enclosure nor a thermodynamic pressure computation."
+    },
+    "multiplicity": {
+      "endpoint_examples": 24,
+      "max_block_averaging_error": 5.551115123125783e-17,
+      "limitation": "Checks the endpoint symmetry algebra by finite permutations; does not approximate the full Haar expected pressure or certify an infinite-size limit."
+    },
+    "conditional_kernel": {
+      "exact_conditional_laws": 3,
+      "non_dirac_negative_control": true,
+      "limitation": "Finite conditional variance identity only; Brownian compatibility and stochastic integral transport require the analytic argument."
+    },
+    "critical_comparison": {
+      "logarithmic_bad_event_examples": 4900,
+      "adaptive_cutoff_examples": 120,
+      "coefficient_integral_on_zero_to_exp_minus_one": 4.483082573457062,
+      "quadrature_error": 1.0622613899613498e-12,
+      "limitation": "Scalar examples and integrability algebra; the critical information and weighted path estimates are not reproduced."
+    }
+  }
+}

@@ -18,7 +18,7 @@ Extraction date: 2026-10-16. This batch adds 3 previously uncatalogued families,
 
 The source revision is [`1581d4cbdd69a0faf34b2089614fe2a814316a6a`](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a). Its preprint tree is identical to the B001 snapshot; intervening upstream commits changed repository administration. Records give exact manuscript bindings, labelled source passages and SHA-256 hashes in the [source manifest](../../sources/batches/B004.json).
 
-Selection covers auxiliary analytic and matrix mechanisms in log-concave measures, Gaussian partitions and vector balancing. The extracted statements and the proof sections listed on each card were read from pinned sources. Primary antecedents were retrieved for Lieb trace concavity, Beigi interpolation, Khot?Naor partition duality, the three-dimensional propeller theorem and recent density/Dirichlet-energy signing methods. Candidate refinements are distinguished from credited inputs; searches were targeted and do not certify priority.
+Selection covers auxiliary analytic and matrix mechanisms in log-concave measures, Gaussian partitions and vector balancing. The extracted statements and the proof sections listed on each card were read from pinned sources. Primary antecedents were retrieved for Lieb trace concavity, Beigi interpolation, Khot-Naor partition duality, the three-dimensional propeller theorem and recent density/Dirichlet-energy signing methods. Candidate refinements are distinguished from credited inputs; searches were targeted and do not certify priority.
 
 ## Mathematical checks and scope
 
@@ -28,6 +28,6 @@ The [verification program](verification/check_instruments.py) and [results](veri
 - Family 096: GaussianPropeller targets arbitrary cell masses and empty cells. Its selected Comparator excludes the separate kernel-clustering consequences. The scalar elimination certificates were not fully reproduced here.
 - Family 097: the prefix-signing target is existential, not online. The complete predictor assembly was read, but the long matrix-variation and Brownian-survival estimates are outside this selected review.
 
-The source?s cited Akbas?Sra v2 is dated September 29, 2026. Manuscript filename dates are not treated as definitive priority dates.
+The source's cited Akbas-Sra v2 is dated September 29, 2026. Manuscript filename dates are not treated as definitive priority dates.
 
 Potential applications are labelled as proposals. This extraction adds no claim of independent human review or exhaustive novelty certification.
