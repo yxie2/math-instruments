@@ -4,6 +4,7 @@
 - [All mathematical instruments](instruments.md)
 - [All source manuscripts](papers.md)
 - [All problem families](families.md)
+- [Coverage of the full source release](coverage.md)
 - [Initial map: first group](map-first-group.md)
 - [Initial map: second group](map-second-group.md)
 - [Formalization and review](formalization-and-review.md)

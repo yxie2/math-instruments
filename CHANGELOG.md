@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Added B002: nine instruments from four previously uncatalogued quantum-information families (272, 273, 276 and 277), with exact manuscript and labelled-passage bindings.
+- Added a pinned inventory and coverage table for all 372 release families and 719 manuscripts. Metadata inventory entries are not counted as extracted instruments or source-paper records.
+- Recorded differences between manuscript claims and selected Comparator statements, and credited established ingredients separately from candidate new combinations.
+- Added reproducible finite checks for thermal decomposition, interpolation identities, channel completion and tested-set sampling; catalogue checks now validate new batch membership and source-locator consistency.
 - Added CS-002, a public preprint on stationary descent and its information cost, with the Zenodo record and a summary of the exploration and proved results.
 - Linked the study from the repository overview and case-study index, and recorded its use of MI-000098 and MI-000014 with reciprocal links.
 - Regenerated the instrument index and catalogue exports while preserving the original extraction descriptions and fixed import edition.

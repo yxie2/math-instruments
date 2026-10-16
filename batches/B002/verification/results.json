@@ -1,0 +1,38 @@
+{
+  "seed": 20261016,
+  "numpy_version": "2.4.4",
+  "scope": "Finite algebraic and numerical checks only; not proof verification, a novelty audit, or a Lean build.",
+  "thermal_decomposition": {
+    "exact_rational_mixtures": 337,
+    "complex_gram_examples": 320,
+    "minimum_entropy_slack": -2.220446049250313e-16,
+    "maximum_equal_input_error": 1.27675647831893e-15
+  },
+  "four_weight_minimization": {
+    "scalar_parameter_pairs": 81,
+    "includes_coincident_opposite_and_zero_parameters": true,
+    "maximum_absolute_error": 4.440892098500626e-16,
+    "not_checked": "Stieltjes representation and infinite-dimensional form comparison"
+  },
+  "channel_completion": {
+    "input_dimensions": [
+      2,
+      3
+    ],
+    "maximum_corner_error": 2.9627251506259655e-17,
+    "minimum_choi_or_partial_transpose_eigenvalue": -2.23649245240804e-16,
+    "scope": "PPT measure-and-prepare examples test the completion identity, not existence of an entangled composite."
+  },
+  "tested_set_sampling": {
+    "exact_rational_joint_distributions": 80,
+    "indicator_counts": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "support_budget_arithmetic": "81/512 < 1/4",
+    "scope": "Finite sampling-lemma instances and constant arithmetic, not the quantum conditioning theorem."
+  },
+  "passed": true
+}
