@@ -1,0 +1,234 @@
+{
+  "batch_id": "B019",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T09:16:27.980726+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/DuttaDomain.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DuttaDomain.lean",
+      "sha256": "66c3e3c1254e9e71ac0c3a48c0aab3fe64a3c06e79cfdcf197bfd1e05fc8abb7",
+      "bytes": 2645
+    },
+    {
+      "path": "lean/ComparatorChallenges/FinitisticAsymmetry.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FinitisticAsymmetry.lean",
+      "sha256": "64ea38db9933f0082a04d2fa181083fbe01a7a823c9ce07f32d0835dce83cf96",
+      "bytes": 1335
+    },
+    {
+      "path": "lean/ComparatorChallenges/LittleFinitistic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LittleFinitistic.lean",
+      "sha256": "22840db694ba3cbc43bbb286270fdc624656e6fcbf1fd96ff51f8dee6ff958f3",
+      "bytes": 948
+    },
+    {
+      "path": "lean/docs/194.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/194.md",
+      "sha256": "9d92190a28df7e9d9daf0a822cdea6cf4d7aa74f7d0f5991d5bc6213ff58fcbe",
+      "bytes": 1052
+    },
+    {
+      "path": "lean/docs/198.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/198.md",
+      "sha256": "e2d8195941ced611e210088da40499b2060a6ecd7a476490166f933ed4dc170f",
+      "bytes": 1270
+    },
+    {
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/README.md",
+      "sha256": "f9142100c73c220d70c90b0c37dc5e2e003f5ed023fa52b6cabf3a5cbe133c71",
+      "bytes": 609
+    },
+    {
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex",
+      "sha256": "c8493d32cb1bde96f3bd47aa078cf4f1e1633384199045be560f6da804ce46b1",
+      "bytes": 12225
+    },
+    {
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+      "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5",
+      "bytes": 11518
+    },
+    {
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/README.md",
+      "sha256": "ebe69f94d9b14a9c67df67d5cd72d56a9c22d6443a1e57b5c360a2ad14280f89",
+      "bytes": 610
+    },
+    {
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+      "sha256": "2dbb052ffbf54fd4d553df2ea707806b9bf05ae8477565c7f8fde936f532d948",
+      "bytes": 14535
+    },
+    {
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+      "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99",
+      "bytes": 13890
+    },
+    {
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/README.md",
+      "sha256": "0841f95f5334d526e35c4876913f4b5ee46b1f784bc27c9bd2511f309b2bae38",
+      "bytes": 507
+    },
+    {
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex",
+      "sha256": "0dc85aa420251208fa71d1c584fb7e8a14eb6fe8fe006ce67f57aa398cb0916d",
+      "bytes": 28411
+    },
+    {
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+      "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e",
+      "bytes": 19846
+    },
+    {
+      "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/README.md",
+      "sha256": "c4ad3f5b603d13653d7496239d4ee0c9dd8eca0c649377061b8021f3ad1b2656",
+      "bytes": 652
+    },
+    {
+      "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+      "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662",
+      "bytes": 25659
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000255",
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+      "label": "eq:normalized-finite-stage",
+      "line": 93,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L93",
+      "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+    },
+    {
+      "instrument_id": "MI-000255",
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+      "label": "eq:normalized-supremum",
+      "line": 102,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L102",
+      "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+    },
+    {
+      "instrument_id": "MI-000255",
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+      "label": "lem:normalized-limit",
+      "line": 115,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L115",
+      "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+    },
+    {
+      "instrument_id": "MI-000256",
+      "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex",
+      "label": "lem:complex-root-bundle",
+      "line": 468,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex#L468",
+      "sha256": "0dc85aa420251208fa71d1c584fb7e8a14eb6fe8fe006ce67f57aa398cb0916d"
+    },
+    {
+      "instrument_id": "MI-000257",
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+      "label": "eq:selection-functor",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L9",
+      "sha256": "2dbb052ffbf54fd4d553df2ea707806b9bf05ae8477565c7f8fde936f532d948"
+    },
+    {
+      "instrument_id": "MI-000257",
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+      "label": "eq:selection-iterates",
+      "line": 361,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L361",
+      "sha256": "2dbb052ffbf54fd4d553df2ea707806b9bf05ae8477565c7f8fde936f532d948"
+    },
+    {
+      "instrument_id": "MI-000258",
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+      "label": "prop:bar-splitting",
+      "line": 20,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L20",
+      "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+    },
+    {
+      "instrument_id": "MI-000258",
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+      "label": "eq:bar-block",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L74",
+      "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+    },
+    {
+      "instrument_id": "MI-000258",
+      "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+      "label": "cor:pd-detection",
+      "line": 158,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L158",
+      "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+    },
+    {
+      "instrument_id": "MI-000259",
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+      "label": "lem:killed-pole",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L14",
+      "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+    },
+    {
+      "instrument_id": "MI-000259",
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+      "label": "eq:killed-pole-limit",
+      "line": 30,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L30",
+      "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+    },
+    {
+      "instrument_id": "MI-000259",
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+      "label": "eq:fixed-complement-inverse",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L38",
+      "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+    },
+    {
+      "instrument_id": "MI-000260",
+      "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex",
+      "label": "lem:schur-polynomial",
+      "line": 207,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex#L207",
+      "sha256": "c8493d32cb1bde96f3bd47aa078cf4f1e1633384199045be560f6da804ce46b1"
+    },
+    {
+      "instrument_id": "MI-000261",
+      "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+      "label": "lem:filtered-intersection",
+      "line": 309,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L309",
+      "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+    },
+    {
+      "instrument_id": "MI-000261",
+      "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+      "label": "tail:intersection-formula",
+      "line": 319,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L319",
+      "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+    },
+    {
+      "instrument_id": "MI-000262",
+      "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+      "label": "tail:centralizer",
+      "line": 360,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L360",
+      "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+    }
+  ]
+}
