@@ -7,7 +7,8 @@
 | [B003](B003/README.md) | 4 new families; 10 instruments; 4 source manuscripts | Moment-coordinate estimates, relative-moment embeddings, metric obstructions and Jacobian rigidity |
 | [B004](B004/README.md) | 3 new families; 7 instruments; 3 source manuscripts | Entropy-deficit identities, symmetric tensors, covariance stability, Gaussian score bounds and adaptive signing |
 | [B005](B005/README.md) | 3 new families; 6 instruments; 3 source manuscripts | Infinite-volume sampling, spectral approximation, compatible couplings and critical Osgood comparison |
+| [B006](B006/README.md) | 3 new families; 6 instruments; 3 source manuscripts | Energy bootstraps, finite-energy tests, damped exterior insertions, nesting positivity and conditional Gaussian kernels |
 
-Future rounds use `B006` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B007` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.

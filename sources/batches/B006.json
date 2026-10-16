@@ -1,0 +1,236 @@
+{
+  "batch_id": "B006",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T05:56:39.530220+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/README.md",
+      "sha256": "2c63ba862443c76aea3d4b283b00ebc856a86fc00500082283901ed46ea90412",
+      "bytes": 1141
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b",
+      "bytes": 58533
+    },
+    {
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/README.md",
+      "sha256": "28b60eb8879a59fcd15995e1df7bd2d6f390d8bf093d0c0c29d7947cc1ad4080",
+      "bytes": 594
+    },
+    {
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+      "sha256": "f48cee341ddc384d3e2b275273c32bdcc7be12076c6140e5d7bb47882ea28c9e",
+      "bytes": 23710
+    },
+    {
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e",
+      "bytes": 24676
+    },
+    {
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/README.md",
+      "sha256": "c748c1e155fbcf824c8fa5eec3157ec35b717e8dc4f37e4dd9abc2b83681bb06",
+      "bytes": 966
+    },
+    {
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b",
+      "bytes": 58567
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000148",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "lem:ordinary-moments",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L38",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000148",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "eq:prob-two-sided",
+      "line": 85,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L85",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000148",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "eq:prob-double-commutator",
+      "line": 93,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L93",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000148",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "eq:prob-power-energy",
+      "line": 150,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L150",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000149",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "lem:log-integrability",
+      "line": 558,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L558",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000149",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "prop:finite-energy",
+      "line": 596,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L596",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000149",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "eq:prob-rounded-log-bound",
+      "line": 618,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L618",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000149",
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "label": "eq:prob-energy-mollification",
+      "line": 663,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L663",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+    },
+    {
+      "instrument_id": "MI-000150",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+      "label": "lem:spectrum",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L141",
+      "sha256": "f48cee341ddc384d3e2b275273c32bdcc7be12076c6140e5d7bb47882ea28c9e"
+    },
+    {
+      "instrument_id": "MI-000150",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+      "label": "eq:all-state-sum",
+      "line": 171,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L171",
+      "sha256": "f48cee341ddc384d3e2b275273c32bdcc7be12076c6140e5d7bb47882ea28c9e"
+    },
+    {
+      "instrument_id": "MI-000150",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "lem:sandwiched-insertion",
+      "line": 133,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L133",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000150",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "eq:insertion-minor",
+      "line": 166,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L166",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000151",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "eq:arch-weight",
+      "line": 379,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L379",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000151",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "lem:cap-weight-decrease",
+      "line": 396,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L396",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000151",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "lem:two-chain-positivity",
+      "line": 440,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L440",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000151",
+      "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+      "label": "eq:pointwise-detection",
+      "line": 513,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L513",
+      "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+    },
+    {
+      "instrument_id": "MI-000152",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "lem:reverse-buffer",
+      "line": 107,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L107",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000152",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "eq:projection-variance",
+      "line": 156,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L156",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000152",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "eq:projection-strong",
+      "line": 182,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L182",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000153",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "lem:local-kernel",
+      "line": 206,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L206",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000153",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "eq:kernel-cm-coordinate",
+      "line": 295,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L295",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000153",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "eq:kernel-cm-continuity",
+      "line": 316,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L316",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    },
+    {
+      "instrument_id": "MI-000153",
+      "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+      "label": "lem:kernel-exhaustion",
+      "line": 424,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L424",
+      "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+    }
+  ]
+}

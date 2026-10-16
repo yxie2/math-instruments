@@ -4771,6 +4771,341 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000147.md",
       "body": "# Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable\n\n[Family 236](../families/openai-math-236.md) · [Source manuscript](../papers/P-000095.md) · [Batch B005](../../batches/B005/README.md)\n\n## Mathematical content\n\nAt the critical tree parameter $b=d-1\\ge2$, $\\theta=b^{-1/2}$, let $V(t)=\\mathbb E(\\Delta h_o(t))^2$ for the compatible copies. On a finite horizon assume the source’s established comparison inputs: V is absolutely continuous, $V(0)=0$, $0\\le V\\le H^2$, and its weighted path estimates hold. Write $K>\\max(1,H^2)$, $I=1+\\log(K/V)$ when V>0, and $\\omega=\\min(\\sqrt t,1)$.\n\nFor $a(z)=(1-\\tanh^2z)/(1-\\theta^2\\tanh^2z)$, put $S=\\mathbb E[\\log a(Y)-\\log a(Y')]^2$ using corresponding cavity fields. The source supplies $\\mathbb E|Y-Y'|^2\\le CV$, a deterministic difference bound, and the marginal tail $\\Pr(|Y|>t^{1/8})\\le \\exp[-c\\log^2(1/t)]$. Because $|(\\log a)'(z)|\\le2|\\tanh z|$, splitting small and large fields gives\n\n$$S\\le C_TV\\left(t^{1/4}+\\frac{I}{\\log^2(1/t)}\\right),\\qquad S\\le CV.$$\n\nThe exceptional contribution is bounded by $\\min(CV,C_Te^{-c\\log^2(1/t)})$; a split according to whether $V\\le e^{-c\\log^2(1/t)/2}$ proves the logarithmic gain without independence of Y and Y'.\n\nThe weighted path inputs are $Q_r\\le CrS$, $L_r\\le V$, and, for $r\\ge C_0/\\omega$, exponentially damped versions with errors $C_Tr^2e^{-\\alpha b^{\\gamma r}}$ and $C_Te^{-\\alpha b^{\\gamma r}}$. Choosing\n\n$$R=\\left\\lceil C_1(\\omega^{-1}+\\log I)\\right\\rceil$$\n\nabsorbs the double-exponential tails beyond R into V-squared times a summable sequence. Consequently\n\n$$\\sum Q_r\\le C_T[S(\\omega^{-2}+\\log^2 I)+V^2],$$\n$$\\sum\\sqrt{Q_r}\\le C_T[\\sqrt S(\\omega^{-3/2}+(\\log I)^{3/2})+V],$$\n$$\\sum L_r\\le C_T[V(\\omega^{-1}+\\log I)+V^2].$$\n\nInserting these in the source’s variance bound $V'\\le C(V+\\sum Q_r+\\sum L_r+\\sqrt V\\sum\\sqrt{Q_r})$ yields $V'\\le k_T(t)V[1+\\log(K/V)]$, where for sufficiently small $t\\le t_*\\le e^{-1}$ one can take\n\n$$k_T(t)=C_T\\left(1+t^{-3/4}+\\frac1{t\\log^2(1/t)}\\right),$$\n\nand k is bounded later. This is integrable at zero. The Osgood integral diverges at V=0, forcing $V\\equiv0$. The small-field gain specifically replaces the nonintegrable term V/t that the coarse estimate S<=CV would leave.\n\n## Role in the source argument\n\nIsolates the analytic mechanism used at the threshold, where the tree’s branching growth cancels the squared correlation decay and a direct Gronwall bound is insufficient.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:small-log-loss](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L208)\n- [eq:variance-cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L296)\n- [lem:cutoff-sums](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L318)\n- [eq:integrable-osgood](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L427)\n- [eq:osgood-coefficient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L437)\n\n## Antecedents and comparison\n\nOsgood uniqueness and exponential path summation are classical. The earlier [Nam-Sly-Zhang construction](https://arxiv.org/abs/2012.09484v2) supplies the Brownian Ising-factor setting below a constant multiple of the reconstruction scale. The candidate refinement here is the particular small-field gain, discrepancy-dependent cutoff and integrable critical coefficient. Targeted comparison does not establish priority for all components.\n\n## Checks and limitations\n\nRead the moment-to-tail argument, small-log-loss split, three path sums and final absolutely continuous comparison. Scalar tests check the bad-event bound and cutoff absorption in logarithmic coordinates; exact integral formulas verify the displayed coefficient is integrable.\n\nThe preceding critical information and weighted path estimates are substantial hypotheses, not consequences of this scalar calculation. These selected checks do not certify the full sharp threshold theorem or arbitrary-solution pathwise uniqueness.\n\n## Possible applications\n\nOther critical stochastic comparisons in which a coarse 1/t divergence can be improved using a vanishing derivative at typical small fields and rapidly decaying exceptional path events.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000148",
+      "record_type": "instrument",
+      "title": "A double commutator upgrades low-energy compression to a moment bootstrap",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-225"
+      ],
+      "source_paper_ids": [
+        "P-000096"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "lem:ordinary-moments",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L38",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "eq:prob-two-sided",
+          "line": 85,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L85",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "eq:prob-double-commutator",
+          "line": 93,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L93",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "eq:prob-power-energy",
+          "line": 150,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L150",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-source-specific-spectral-energy-bootstrap",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000148.md",
+      "body": "# A double commutator upgrades low-energy compression to a moment bootstrap\n\n[Family 225](../families/openai-math-225.md) · [Source manuscript](../papers/P-000096.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nThe source’s energy argument has the following abstract form. Let E be nonnegative self-adjoint, D bounded self-adjoint, and $B_a=\\mathbf1_{\\{E\\le a/R\\}}$, with R>0. Assume the relevant commutator identities are valid on the operator domain, $\\|B_2DB_2\\|\\le A$, and $\\|[D,[E,D]]\\|\\le C/R$. Then\n\n$$\\|DB_1\\|^2=\\|B_1D\\|^2\\le2A^2+C/2.$$\n\nIndeed, setting $m=\\|DB_1\\|$, a unit vector in the range of B1 satisfies\n\n$$\\langle Du,EDu\\rangle=\\tfrac12\\langle u,[D,[E,D]]u\\rangle+\\operatorname{Re}\\langle Du,DEu\\rangle\\le(C/2+m^2)/R.$$\n\nIts component above energy 2/R has squared norm at most C/4+m-squared/2; the low component is bounded by A. Taking the supremum absorbs the remaining half of m-squared.\n\nIf additionally $E\\Omega=0$, $\\|\\Omega\\|=1$, and the local structure gives\n\n$$\\langle D^k\\Omega,ED^k\\Omega\\rangle\\le(c_k/R)(1+\\|D^{k-1}\\Omega\\|^2),$$\n\nsplitting at B1 yields the recursion $\\|D^k\\Omega\\|^2\\le c_k+(2A^2+C/2+c_k)\\|D^{k-1}\\Omega\\|^2$. Thus all fixed moments are controlled whenever these constants are uniform.\n\nIn the six-vertex application $D=\\sum_lg_lZ_l$. The conditions $\\sum|g_l|\\le AR$, $\\sum|g_{l+1}-g_l|\\le A$, and $\\sum|g_{l+1}-g_l|^2\\le A/R$ provide the needed bounds. Neighboring spin exchange preserves $Z_l+Z_{l+1}$, so the double commutator costs squared coefficient differences. The source separately verifies domain preservation on its local-spin subspace.\n\n## Role in the source argument\n\nTurns estimates for spectrally compressed current operators into ordinary equal-time moments, which can then control neutral height averages.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:ordinary-moments](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L38)\n- [eq:prob-two-sided](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L85)\n- [eq:prob-double-commutator](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L93)\n- [eq:prob-power-energy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L150)\n\n## Antecedents and comparison\n\nDouble-commutator energy estimates and spectral projection arguments are classical. The closer six-vertex transfer and reflection framework is [Duminil-Copin, Kozlowski, Lammers and Manolescu](https://arxiv.org/abs/2603.06268v1). This card gives an explicit abstraction of the source’s absorption step, not a claim that its general ingredients are new.\n\n## Checks and limitations\n\nChecked the double-commutator sign, the factor two in the projection cutoff, and the power-moment recursion. Finite Hermitian examples test the stated bound; a two-level example shows that a compression bound alone does not control the one-sided norm.\n\nThe bounded commutator and domain hypotheses must be established in each application. The power-energy estimate is additional input; the initial compression estimate alone does not imply uniform moments.\n\n## Possible applications\n\nObtaining ordinary moments of spatial observables from low-energy operator estimates in lattice and transfer-matrix models.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000149",
+      "record_type": "instrument",
+      "title": "Logarithmic variogram domination extends smooth limits to finite-energy signed measures",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-225"
+      ],
+      "source_paper_ids": [
+        "P-000096"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "lem:log-integrability",
+          "line": 558,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L558",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "prop:finite-energy",
+          "line": 596,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L596",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "eq:prob-rounded-log-bound",
+          "line": 618,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L618",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        },
+        {
+          "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+          "label": "eq:prob-energy-mollification",
+          "line": 663,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L663",
+          "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "established-energy-approximation-in-a-source-specific-lattice-form",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000149.md",
+      "body": "# Logarithmic variogram domination extends smooth limits to finite-energy signed measures\n\n[Family 225](../families/openai-math-225.md) · [Source manuscript](../papers/P-000096.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nSuppose a centered height field has stationary lattice increments, variogram $V(a)=4\\kappa\\log(1\\vee|a|)+O(1)$ uniformly in lattice displacement a, convergence of separated increment covariances to those of $K_\\kappa(x,y)=-2\\kappa\\log|x-y|$, and a Gaussian limit on smooth compactly supported neutral tests. The source extends this limit to every compactly supported finite signed measure mu of mass zero satisfying\n\n$$\\iint\\log_+\\frac1{|x-y|}\\,|\\mu|(dx)|\\mu|(dy)<\\infty.$$\n\nThis is ordinary absolute integrability for the total variation product; it implies that mu is nonatomic. Mixed absolute logarithmic integrals are finite for any two such measures, by dyadic-square Cauchy-Schwarz, first over cells and then over scales.\n\nFor arbitrary real mesh delta, rounded lattice points obey\n\n$$|V(\\lfloor x/\\delta\\rfloor-\\lfloor y/\\delta\\rfloor)-4\\kappa\\log\\delta^{-1}|\\le C(1+|\\log|x-y||).$$\n\nThe bound includes distinct points rounded to the same face. The covariance of two increments is a four-variogram combination, so its four divergent constants cancel. Represent a neutral measure by differences integrated against its equal-mass Jordan parts; the resulting four-logarithm bound is integrable. Dominated convergence gives all pairing covariances.\n\nMollification $\\mu_\\epsilon=\\mu*\\rho_\\epsilon$ converges in logarithmic energy. Applying the covariance limit to $\\mu-\\mu_\\epsilon$ gives $\\lim_{\\epsilon\\downarrow0}\\limsup_{\\delta\\downarrow0}\\|\\langle h_\\delta,\\mu-\\mu_\\epsilon\\rangle\\|_2=0$. The smooth Gaussian limit and the same approximation for the limiting field then identify the joint law for every finite family of these measures.\n\n## Role in the source argument\n\nExtends a distributional height limit to rough but finite-energy observables without treating point evaluations as finite-variance GFF variables.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:log-integrability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L558)\n- [prop:finite-energy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L596)\n- [eq:prob-rounded-log-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L618)\n- [eq:prob-energy-mollification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex#L663)\n\n## Antecedents and comparison\n\nMollification in logarithmic energy and approximation in L2 are established potential-theoretic methods. The source packages them with a lattice-rounding bound and ordinary signed integrability in the six-vertex setting. The related [DKLM theorem](https://arxiv.org/abs/2603.06268v1) is an antecedent and input, not a new theorem attributed to this extraction.\n\n## Checks and limitations\n\nRead the dyadic mixed-energy proof, four-variogram cancellation and mollification argument. Finite positive covariance examples verify the increment and neutral-pairing identities; rounding examples include distinct continuum points that land in the same cell.\n\nA neutral atomic measure generally fails the absolute-energy hypothesis. Smooth-test convergence alone is insufficient: the uniform variogram majorant and separated covariance limit are required. Finite covariance tests do not prove those model-specific estimates.\n\n## Possible applications\n\nPassing scaling limits from smooth tests to line, curve or singular measures whose absolute logarithmic energy is finite.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000150",
+      "record_type": "instrument",
+      "title": "Delocalized exterior minors and spectral damping give a quadratic short-interval bound",
+      "forms": [
+        "identity",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-226"
+      ],
+      "source_paper_ids": [
+        "P-000097"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+          "label": "lem:spectrum",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L141",
+          "sha256": "f48cee341ddc384d3e2b275273c32bdcc7be12076c6140e5d7bb47882ea28c9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex",
+          "label": "eq:all-state-sum",
+          "line": 171,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L171",
+          "sha256": "f48cee341ddc384d3e2b275273c32bdcc7be12076c6140e5d7bb47882ea28c9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "lem:sandwiched-insertion",
+          "line": 133,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L133",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "eq:insertion-minor",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L166",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-damped-exterior-insertion-combination",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000150.md",
+      "body": "# Delocalized exterior minors and spectral damping give a quadratic short-interval bound\n\n[Family 226](../families/openai-math-226.md) · [Source manuscript](../papers/P-000097.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nLet Q be an orthogonal one-particle mode matrix on n sites with $|Q_{ir}|\\le C/\\sqrt n$, let S be a set of sites, and put $P_S=Q^T\\mathbf1_SQ$. The two-replica operator that deletes two occupied sites in the first exterior factor and creates them in the second has mode-pair coefficient\n\n$$\\sum_{i<j\\in S}\\det Q_{\\{i,j\\},R}\\det Q_{\\{i,j\\},T}=\\det(P_S)_{R,T}$$\n\nfor increasing two-element mode sets R,T. This is Cauchy-Binet. Each coefficient has absolute value at most $2C^4(|S|/n)^2$; the wedge signs do not alter that bound.\n\nSuppose normalized transfers on each side are diagonal in compatible mode bases with nonnegative weights $d_-(\\mu),d_+(\\nu)$ and bounded sums. Then the sandwiched insertion satisfies\n\n$$\\|D_+\\mathcal O_SD_-\\|\\le2C^4(|S|/n)^2\\Bigl(\\sum_\\nu d_+(\\nu)\\Bigr)\\Bigl(\\sum_\\mu d_-(\\mu)\\Bigr).$$\n\nThe source supplies those state sums for odd width $n=2p+1$. With $u_l=\\operatorname{arsinh}(\\cos(\\pi l/(n+1)))$, single-particle singular values are $e^{u_l},1,e^{-u_l}$. Relative to the filled expanding modes,\n\n$$\\sum_Jw_t(J)=2\\prod_{l=1}^p(1+e^{-tu_l})^2\\le C_\\eta\\quad(t\\ge\\eta n).$$\n\nThe factor two retains the zero mode. Thus positive macroscopic transfer distances before and after the insertion convert mode delocalization into a quadratic bound uniform in n. The source’s marked-cap norm and partition comparisons then give the same order for the normalized observable expectation.\n\n## Role in the source argument\n\nSupplies the small expectation needed to exclude signed crossing anomalies on short transverse intervals. The subsequent positivity argument turns it into a probability bound.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:spectrum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L141)\n- [eq:all-state-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/20-transfer.tex#L171)\n- [lem:sandwiched-insertion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L133)\n- [eq:insertion-minor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L166)\n\n## Antecedents and comparison\n\nThe transfer-matrix method is due to [Lieb](https://collaborate.princeton.edu/en/publications/solution-of-the-dimer-problem-by-the-transfer-matrix-method/); open-boundary spectral sectors are developed by [Rasmussen and Ruelle](https://arxiv.org/abs/1207.0385). Cauchy-Binet and exterior powers are classical. The extraction concerns the insertion after propagation on both sides and its use with a separate planar positivity construction.\n\n## Checks and limitations\n\nChecked the minor identity, uniqueness of the removed/added pair for a matrix entry, the zero-mode factor and the entrywise absolute-sum norm estimate. Finite sine-mode and exterior-state computations test these identities and bounds.\n\nAn entrywise minor bound alone does not imply a dimension-uniform operator bound. Summable damped state weights and compatible bases are essential. This calculation does not establish the source’s cap comparison or full curve tightness.\n\n## Possible applications\n\nLocalizing multi-particle observables in transfer systems when delocalized modes and a positive propagation gap make occupation-state sums uniformly finite.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000151",
+      "record_type": "instrument",
+      "title": "Geometric nesting weights make a two-chain signed observable quantitatively positive",
+      "forms": [
+        "inequality",
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-226"
+      ],
+      "source_paper_ids": [
+        "P-000097"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "eq:arch-weight",
+          "line": 379,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L379",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "lem:cap-weight-decrease",
+          "line": 396,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L396",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "lem:two-chain-positivity",
+          "line": 440,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L440",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        },
+        {
+          "path": "preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex",
+          "label": "eq:pointwise-detection",
+          "line": 513,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L513",
+          "sha256": "4deed196dd4af713b286807e23804d9eb4e1ec53a80b052c4dda6706434cbf9e"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-nesting-weight-positivity-device",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000151.md",
+      "body": "# Geometric nesting weights make a two-chain signed observable quantitatively positive\n\n[Family 226](../families/openai-math-226.md) · [Source manuscript](../papers/P-000097.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nConsider at most two finite chains, ordered from outside inward. Signs $t_g\\in\\{-1,1\\}$ alternate on each chain, with opposite outermost signs if both chains are present. Suppose $U_g,V_g\\ge0$ each decrease by a factor of at least two at every inward step. Then\n\n$$-\\frac14\\sum_{g\\ne g'}U_gV_{g'}t_gt_{g'}\\ge0.$$\n\nIf every positive weight is at least q>0 and some distinct pair has $U_gV_{g'}>0$, the left side is at least $q^2/16$. Within one chain, grouping by the outer index gives alternating tails at least half their first term. Between chains, the alternating sums have opposite signs and magnitude at least half their outer weight.\n\nIn the double-dimer construction, at most M eligible arches occur in each cap. Give an arch A the cap-local weight $w(A)=(2M)^{-b(A)}$, where b(A) counts eligible arches in that cap whose endpoints strictly span A. Every eligible inner arch is spanned by an eligible outer arch. The additional factor 1/(2M), summed over at most M choices, gives the required one-half decay of total weights U and V. All positive totals are at least $q_M=(2M)^{-(M-1)}$.\n\nThe source’s color calculation makes the same-loop contribution nonnegative and gives the displayed signed expression for distinct loops. Consequently the full observable X obeys $X\\ge(q_M^2/16)\\mathbf1_{E_M\\cap B_I}$, where $E_M$ is the cap cutoff and $B_I$ is the specified crossing anomaly. Combined with the quadratic insertion estimate, a partition into intervals of length h gives\n\n$$\\Pr(B_{\\delta,h})\\le\\Pr(E_M^c)+C_M(h+\\delta)^2/h.$$\n\nThe useful order is delta to zero, then h to zero, then M to infinity.\n\n## Role in the source argument\n\nPrevents cancellation in a signed transfer observable, so its small expectation can detect geometric excursions invisible to puncture data.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:arch-weight](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L379)\n- [lem:cap-weight-decrease](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L396)\n- [lem:two-chain-positivity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L440)\n- [eq:pointwise-detection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/build/sections/30-short-segment.tex#L513)\n\n## Antecedents and comparison\n\nAlternating-series positivity is elementary; the candidate device is the cap-local choice that enforces it while respecting the transfer factorization. Established topological and nesting-field limits, including [Basok and Izyurov](https://arxiv.org/abs/2501.01574v1), do not by themselves supply the curve-control conclusion. Targeted comparison has not established priority for this weighting device.\n\n## Checks and limitations\n\nRead the arch-spanning argument and all color contractions. Exact rational examples test one and two chains, zero weights and the q-squared lower bound. A negative control shows that arbitrary nondecaying weights can make the expression negative.\n\nThe alternating sign pattern, at most two chains and quantitative decay are hypotheses. General signed observables do not become positive without the planar structure and cap cutoff. The final probability estimate also needs the source’s marked-cap identity.\n\n## Possible applications\n\nBuilding positive detection observables from signed planar expansions while keeping each weight dependent only on one local boundary diagram.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000152",
+      "record_type": "instrument",
+      "title": "Converging conditional Gaussian projection norms preserve locality of bounded tests",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-233"
+      ],
+      "source_paper_ids": [
+        "P-000098"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "lem:reverse-buffer",
+          "line": 107,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L107",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        },
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "eq:projection-variance",
+          "line": 156,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L156",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        },
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "eq:projection-strong",
+          "line": 182,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L182",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-buffered-Gaussian-locality-transfer",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000152.md",
+      "body": "# Converging conditional Gaussian projection norms preserve locality of bounded tests\n\n[Family 233](../families/openai-math-233.md) · [Source manuscript](../papers/P-000098.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nFix buffers $K\\Subset B\\Subset D$, with B a regular polygon. Let cable GFFs in admissible approximations of D have full harmonic-extension Green forms converging to $G_D$. The local sigma-field $\\mathcal G_n(B)$ contains the entire cable restriction on the complete cells of B, including perimeter bridges. After conditioning, extend the zero-clamped residual by zero on those cables and then use the original ambient extension. The source identifies its covariance limit as $G_{D\\setminus\\overline B}$.\n\nFor any bounded local tests $0\\le T_n\\le1$ supported in K and any joint limit $(\\widehat\\Phi_n,T_n)\\Rightarrow(\\Phi,T)$,\n\n$$\\mathbb E[T\\mid\\Phi]=\\mathbb E[T\\mid\\mathcal G(B)],\\qquad\\mathcal G(B)=\\sigma\\{\\Phi(f):f\\in C_c^\\infty(B)\\}.$$\n\nThe mechanism is more general than the cable application. For a finite vector of full-field pairings F_n, let $Q_n=\\mathbb E[F_n\\mid\\mathcal G_n(B)]$. Its covariance is the total covariance minus the clamped residual covariance. Approximate Q_n by projection onto r interior smooth pairings, denoted $Q_n^{(r)}$. Convergence of both covariance forms and density of the interior coordinates give\n\n$$\\lim_{r\\to\\infty}\\limsup_{n\\to\\infty}\\mathbb E|Q_n-Q_n^{(r)}|^2=0.$$\n\nGaussian conditioning expresses conditional expectations of bounded Lipschitz cylinder functions as convolution with the residual Gaussian. The displayed approximation makes them uniformly approximable in L1 by continuous functions of finitely many interior pairings. Multiplication by the arbitrary bounded T_n preserves that error. Passing to the limit and a monotone class gives conditional locality without continuity of T_n.\n\n## Role in the source argument\n\nPrevents information outside the buffer from entering the conditional limit of a local path indicator when ordinary weak convergence of the field is insufficient.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:reverse-buffer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L107)\n- [eq:projection-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L156)\n- [eq:projection-strong](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L182)\n\n## Antecedents and comparison\n\nGaussian projection and domain Markov decomposition are classical. The clamped covariance convergence invokes [Aru, Lupu and Sepulveda’s metric-graph/local-set results](https://arxiv.org/abs/1805.09204v1). The source’s selected argument uses convergence of projection norms to handle arbitrary bounded local tests; priority for this exact buffered formulation remains unverified.\n\n## Checks and limitations\n\nRead the projection approximation and conditional factorization proof. Finite Gaussian linear-algebra examples test residual/projection covariance identities. A disappearing-coordinate negative control illustrates why field convergence alone cannot justify conditional locality.\n\nThe clamped residual covariance convergence is essential. Deleting perimeter edges is not the same operation as keeping their zero trace before ambient extension. The selected Gaussian calculation does not prove metric-graph Green convergence for an arbitrary approximation.\n\n## Possible applications\n\nPassing discontinuous local events through Gaussian-field limits while preserving conditional locality in a fixed interior buffer.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000153",
+      "record_type": "instrument",
+      "title": "Cameron-Martin comparison transfers one local test kernel across domains",
+      "forms": [
+        "construction",
+        "criterion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-233"
+      ],
+      "source_paper_ids": [
+        "P-000098"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "lem:local-kernel",
+          "line": 206,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L206",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        },
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "eq:kernel-cm-coordinate",
+          "line": 295,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L295",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        },
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "eq:kernel-cm-continuity",
+          "line": 316,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L316",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        },
+        {
+          "path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex",
+          "label": "lem:kernel-exhaustion",
+          "line": 424,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L424",
+          "sha256": "4043ad1b781140bf94fe0f5de0fb589e4642f1cdf86c782ccf95b48b0ebe242b"
+        }
+      ],
+      "batch_id": "B006",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "candidate-common-kernel-transfer-with-classical-Gaussian-inputs",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000153.md",
+      "body": "# Cameron-Martin comparison transfers one local test kernel across domains\n\n[Family 233](../families/openai-math-233.md) · [Source manuscript](../papers/P-000098.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nFix regular buffers $K\\Subset B\\Subset P$ and a sequence of bounded tests of the cables in K. In a zero-boundary reference GFF on P, select a joint subsequence and use the reverse-buffer lemma to write the conditional test mean as $k(\\Phi|_B)$, with $0\\le k\\le1$.\n\nThe same selected k governs mixed expectations in admissible domains D containing the closure of P, provided their approximations contain the identical subdivided reference cable domain, with unchanged edges and resistances. Prescribed harmonic means must converge both in the full-field extension topology and smoothly on the buffers in the source’s finite-difference sense. Along the selected subsequence,\n\n$$\\mathbb E[T_n v(\\widehat\\Phi_n)]\\longrightarrow\\mathbb E[k(\\Phi|_B)v(\\Phi)]$$\n\nfor bounded continuous full-field v. No evaluation of the discontinuous k on a discrete field is required.\n\nThe transfer uses Gaussian shifts. With $\\|u\\|_\\nabla^2=(2\\pi)^{-1}\\int|\\nabla u|^2$, their likelihoods satisfy\n\n$$L_u=\\exp\\{X_u-\\|u\\|_\\nabla^2/2\\},\\quad\\mathbb EL_u^r=e^{r(r-1)\\|u\\|_\\nabla^2/2},\\quad\\|L_u-L_v\\|_1\\le\\min(2,\\|u-v\\|_\\nabla).$$\n\nThe cable likelihood coordinate converges in L2 to the full-field pairing with $-\\Delta u/(2\\pi)$. This permits multiplication by arbitrary bounded tests. Domain Markov decomposition supplies a harmonic shift; cutoff, smooth finite nets and interior estimates transfer the reference limit. The reverse-buffer argument then restores conditioning on the full field.\n\nOne subsequence works for countably many prescribed tests. A fixed random parameter may select the domain and mean if the conditional parent law is the corresponding GFF and the approximation hypotheses hold almost surely. The result identifies the conditional kernel of the auxiliary joint limit and equality in law of its field marginal with the parent, not equality of their realizations. The same cutoff method yields total-variation convergence of GFF restrictions on a fixed interior buffer under regular inner exhaustion.\n\n## Role in the source argument\n\nAllows a local test calibrated in one deterministic reference domain to be used after a separate random exploration, with a common kernel and controlled conditioning.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:local-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L206)\n- [eq:kernel-cm-coordinate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L295)\n- [eq:kernel-cm-continuity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L316)\n- [lem:kernel-exhaustion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L424)\n\n## Antecedents and comparison\n\nCameron-Martin likelihoods and Pinsker are classical. [Aru, Lupu and Sepulveda](https://arxiv.org/abs/1805.09204v1) provide the metric-graph approximation context. The application addresses the current-cluster extension discussed by [Alcalde Lopez, Heeney and Lis](https://arxiv.org/abs/2602.05886v1). The extracted package is not a new Gaussian change-of-measure theorem.\n\n## Checks and limitations\n\nChecked the three-covariance L2 identification, likelihood moment formula, L1 constant, cutoff argument and the fixed-parameter integration step. Finite Gaussian quadrature tests likelihood normalization and the shift-distance bound.\n\nThe common local graph, buffer separation, convergence of harmonic means and conditional GFF premise must all be retained. The subsequence is fixed before realizing a random domain. This does not establish the later forcing or no-crossing claims.\n\n## Possible applications\n\nComparing local crossing or sign tests across deterministic and explored domains without asserting continuity of those events as functions of a distribution-valued field.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -6578,6 +6913,63 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000095.md",
       "body": "# The sharp factor-of-IID threshold for the free Ising model on regular trees\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the sharp factor-of-IID threshold tanh(beta) <= 1/sqrt(d-1) for the free Ising law on a d-regular tree, including equality. This extraction separates its recovery mechanism from the conditional analytic estimate at criticality.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000146: Compatible conditional copies turn innovation uniqueness into measurable recovery](../instruments/MI-000146.md)\n- [MI-000147: Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable](../instruments/MI-000147.md)\n\n## Dependencies and review\n\nPosterior innovations; compatible disintegration on Polish path spaces; transport of stochastic integrals; critical field tails and weighted path estimates; an absolutely continuous Osgood comparison.\n\nRead the compatible-copy construction and transport, recovery proof, critical moment and small-log-loss argument, cutoff sums and final Osgood comparison. The earlier posterior field equations, critical information estimate and weighted path estimates remain inputs rather than a fully audited proof chain.\n\nFreeIsing targets d>=3, beta>=0 and equivalence between the free-law IID factor property and the threshold, including equality. Its equivariance is almost sure for each fixed automorphism; the manuscript additionally supplies an everywhere-equivariant spin version. The Comparator was inspected, not built.\n\n[Family context](../families/openai-math-236.md) · [Batch B005](../../batches/B005/README.md)"
+    },
+    {
+      "id": "P-000096",
+      "record_type": "paper",
+      "title": "The Gaussian free field limit of the balanced six-vertex model with variance multiplier 1/arcsin(c/2)",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-225"
+      ],
+      "batch_id": "B006",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2c63ba862443c76aea3d4b283b00ebc856a86fc00500082283901ed46ea90412",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000096.md",
+      "body": "# The Gaussian free field limit of the balanced six-vertex model with variance multiplier 1/arcsin(c/2)\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a Gaussian free field limit for the iterated balanced-torus plane state throughout a=b=1 and 0<c<=2, with variance multiplier 1/arcsin(c/2). This extraction selects two auxiliary convergence mechanisms.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000148: A double commutator upgrades low-energy compression to a moment bootstrap](../instruments/MI-000148.md)\n- [MI-000149: Logarithmic variogram domination extends smooth limits to finite-energy signed measures](../instruments/MI-000149.md)\n\n## Dependencies and review\n\nThe source’s positive endpoint Hamiltonian and low-band estimates; bounded local commutators; stationary increment variograms; absolute logarithmic energy; mollification and an L2 approximation argument.\n\nRead the ordinary-moment proof, the endpoint-generator statement and its local domain justification, and the complete finite-energy extension argument. The thermodynamic Bethe-ansatz bounds, chiral collision argument and full-range normalization were not fully audited.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-225.md) · [Batch B006](../../batches/B006/README.md)"
+    },
+    {
+      "id": "P-000097",
+      "record_type": "paper",
+      "title": "The curve scaling limit of half-plane double dimers",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-226"
+      ],
+      "batch_id": "B006",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "28b60eb8879a59fcd15995e1df7bd2d6f390d8bf093d0c0c29d7947cc1ad4080",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000097.md",
+      "body": "# The curve scaling limit of half-plane double dimers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-curve-scaling-limit-of-half-plane-double-dimers-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims convergence of all nested half-plane Temperleyan double-dimer loops as curves to nested CLE4, strengthening established puncture and nesting-field information. This extraction selects the short-segment operator and positivity mechanisms.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000150: Delocalized exterior minors and spectral damping give a quadratic short-interval bound](../instruments/MI-000150.md)\n- [MI-000151: Geometric nesting weights make a two-chain signed observable quantitatively positive](../instruments/MI-000151.md)\n\n## Dependencies and review\n\nLieb transfer matrices and open-boundary singular modes; exterior-algebra insertion signs; summable damped occupation weights; planar nesting and alternating intersection signs; marked-cap normalization.\n\nRead the spectral state-sum proof, sandwiched insertion proof, color contraction calculation and cap-weight positivity argument. The localization via Wilson sampling and the full no-backtracking identification were not audited in detail.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-226.md) · [Batch B006](../../batches/B006/README.md)"
+    },
+    {
+      "id": "P-000098",
+      "record_type": "paper",
+      "title": "The joint scaling limit of critical Ashkin-Teller currents",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-233"
+      ],
+      "batch_id": "B006",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c748c1e155fbcf824c8fa5eec3157ec35b717e8dc4f37e4dd9abc2b83681bb06",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000098.md",
+      "body": "# The joint scaling limit of critical Ashkin-Teller currents\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a joint critical-line limit of Ashkin-Teller heights and complete primal and dual current supports, including the Potts endpoint. The selected instruments concern auxiliary Gaussian tests used in the random-domain identification.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000152: Converging conditional Gaussian projection norms preserve locality of bounded tests](../instruments/MI-000152.md)\n- [MI-000153: Cameron-Martin comparison transfers one local test kernel across domains](../instruments/MI-000153.md)\n\n## Dependencies and review\n\nMetric-graph GFF convergence and local sets; Gaussian Hilbert-space projections and residual covariances; Cameron-Martin likelihoods and Pinsker; interior harmonic estimates; conditional mixed-expectation limits.\n\nRead the reverse-buffer proof, common-kernel proof and interior-exhaustion corollary, preserving the exact whole-cable extension and random-parameter conditions. The finite current coupling, screening, Gaussian collision arguments and no-crossing/cluster identification were not fully audited.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-233.md) · [Batch B006](../../batches/B006/README.md)"
     }
   ],
   "families": [
@@ -7514,6 +7906,60 @@
       "body": "# Mézard–Parisi formula for diluted spin glasses\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000061](../papers/P-000061.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 405 files, not in catalogue new\n\nFor Poisson-diluted even-arity models whose interaction law satisfies the Panchenko–Talagrand factorization and positivity hypotheses (model-class conditions, verified for Viana–Bray and soft K-SAT, not assumptions on the Gibbs measure), the free energy equals the infimum over finite-depth hierarchical trial laws, with only first-moment integrability. The lower bound is stated for every bounded interaction whose law is permutation invariant, without the even-arity or factorization restrictions needed for the matching upper bound. Under the stated model-class hypotheses, no additional Gibbs-measure factorization assumption is imposed; establishing that factorization is the step Panchenko’s conditional results left open.\n\n## Extracted instruments.\n\n- [MI-000092: Marked-depth Poisson perturbations with prescribed-tree identities](../instruments/MI-000092.md)\n\n- [MI-000093: Depth shift with charging fresh splits](../instruments/MI-000093.md)\n\n- [MI-000094: Recursive law encoding of a single site](../instruments/MI-000094.md)\n\n## Reused.\n\nGuerra, Franz–Leone and Panchenko–Talagrand interpolation (upper bound, reproved); Aizenman–Sims–Starr cavity; Panchenko’s spin-distribution viewpoint; Ruelle probability cascades; Efron–Stein.\n\n## Caveats.\n\nThe architecture and selected estimates in §8 were inspected, without checking every inequality. The repository supplies a Lean development with review status “unchecked”; it was not compiled here. A textual search for admitted proofs would not establish kernel verification.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: files, not in catalogue\n- Statement coverage: yes, faithful statement\n- Dependencies: no\n- Antecedents: Mourrat–Panchenko; Barbier–Panchenko"
     },
     {
+      "id": "openai-math-225",
+      "record_type": "family",
+      "title": "Energy bootstraps and finite-energy tests for six-vertex height limits",
+      "source_family": "225",
+      "source_collection": "openai/math",
+      "batch_id": "B006",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000096"
+      ],
+      "instrument_ids": [
+        "MI-000148",
+        "MI-000149"
+      ],
+      "headline": "The source claims a Gaussian free field limit for the iterated balanced-torus plane state throughout a=b=1 and 0<c<=2, with variance multiplier 1/arcsin(c/2). This extraction selects two auxiliary convergence mechanisms.",
+      "central_instrument": "A double-commutator estimate upgrades low-energy compression to ordinary moment bounds; logarithmic variogram domination extends smooth-test limits to ordinary finite-energy signed measures.",
+      "novelty_assessment": "Spectral energy methods, logarithmic potential theory and approximation of Gaussian fields are established. The extracted arguments are candidate useful packages in this source; the full-range theorem and historical priority are not certified.",
+      "formalization_summary": "No family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.",
+      "statement_faithfulness": "The source uses a specific zero-slope state obtained by taking one torus length to infinity before the other. It makes no uniqueness claim for all Gibbs states or uniform claim as c tends to zero. Ordinary signed-measure energy excludes cancellation between divergent positive and negative terms.",
+      "dependencies": "The source’s positive endpoint Hamiltonian and low-band estimates; bounded local commutators; stationary increment variograms; absolute logarithmic energy; mollification and an L2 approximation argument.",
+      "antecedents": "Duminil-Copin, Kozlowski, Lammers and Manolescu prove the six-vertex GFF theorem on sqrt(3)<=c<=2 and provide several broader-range inputs. Earlier dimer GFF results and Bethe-ansatz formulas are established background, not new extractions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-225.md",
+      "body": "# Energy bootstraps and finite-energy tests for six-vertex height limits\n\n## Source manuscript and claim\n\n[The Gaussian free field limit of the balanced six-vertex model with variance multiplier 1/arcsin(c/2)](../papers/P-000096.md), by OpenAI, September 23, 2026.\n\nThe source claims a Gaussian free field limit for the iterated balanced-torus plane state throughout a=b=1 and 0<c<=2, with variance multiplier 1/arcsin(c/2). This extraction selects two auxiliary convergence mechanisms.\n\n## Extracted instruments\n\n- [MI-000148: A double commutator upgrades low-energy compression to a moment bootstrap](../instruments/MI-000148.md)\n- [MI-000149: Logarithmic variogram domination extends smooth limits to finite-energy signed measures](../instruments/MI-000149.md)\n\n## Dependencies and antecedents\n\nThe source’s positive endpoint Hamiltonian and low-band estimates; bounded local commutators; stationary increment variograms; absolute logarithmic energy; mollification and an L2 approximation argument.\n\nDuminil-Copin, Kozlowski, Lammers and Manolescu prove the six-vertex GFF theorem on sqrt(3)<=c<=2 and provide several broader-range inputs. Earlier dimer GFF results and Bethe-ansatz formulas are established background, not new extractions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the ordinary-moment proof, the endpoint-generator statement and its local domain justification, and the complete finite-energy extension argument. The thermodynamic Bethe-ansatz bounds, chiral collision argument and full-range normalization were not fully audited.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\nThe source uses a specific zero-slope state obtained by taking one torus length to infinity before the other. It makes no uniqueness claim for all Gibbs states or uniform claim as c tends to zero. Ordinary signed-measure energy excludes cancellation between divergent positive and negative terms.\n\n[Batch record](../../batches/B006/README.md)"
+    },
+    {
+      "id": "openai-math-226",
+      "record_type": "family",
+      "title": "Damped exterior insertions and positivity for double-dimer curves",
+      "source_family": "226",
+      "source_collection": "openai/math",
+      "batch_id": "B006",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000097"
+      ],
+      "instrument_ids": [
+        "MI-000150",
+        "MI-000151"
+      ],
+      "headline": "The source claims convergence of all nested half-plane Temperleyan double-dimer loops as curves to nested CLE4, strengthening established puncture and nesting-field information. This extraction selects the short-segment operator and positivity mechanisms.",
+      "central_instrument": "Two-particle insertion coefficients are minors of a localized projection; spectral damping controls their state sum. Geometrically decaying cap weights make the resulting signed observable nonnegative.",
+      "novelty_assessment": "Transfer matrices, exterior powers and Cauchy-Binet are established. The candidate combination is the damped short-segment insertion with cap-local nesting weights and quantitative positivity. The full curve limit and historical priority remain unverified here.",
+      "formalization_summary": "No family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.",
+      "statement_faithfulness": "The source concerns the standard half-plane Temperleyan law and matching of loops as unrooted curves with multiplicities, not merely convergence of loop traces or finite puncture data. Its limits take the mesh to zero before the short interval and cap cutoff limits.",
+      "dependencies": "Lieb transfer matrices and open-boundary singular modes; exterior-algebra insertion signs; summable damped occupation weights; planar nesting and alternating intersection signs; marked-cap normalization.",
+      "antecedents": "Lieb and Rasmussen-Ruelle supply transfer and spectral precedents. Kenyon, Dubedat, Basok-Chelkak, Bai-Wan and Basok-Izyurov supply topological and nesting-field convergence. Those results are not themselves the new geometric estimates selected here.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-226.md",
+      "body": "# Damped exterior insertions and positivity for double-dimer curves\n\n## Source manuscript and claim\n\n[The curve scaling limit of half-plane double dimers](../papers/P-000097.md), by OpenAI, None.\n\nThe source claims convergence of all nested half-plane Temperleyan double-dimer loops as curves to nested CLE4, strengthening established puncture and nesting-field information. This extraction selects the short-segment operator and positivity mechanisms.\n\n## Extracted instruments\n\n- [MI-000150: Delocalized exterior minors and spectral damping give a quadratic short-interval bound](../instruments/MI-000150.md)\n- [MI-000151: Geometric nesting weights make a two-chain signed observable quantitatively positive](../instruments/MI-000151.md)\n\n## Dependencies and antecedents\n\nLieb transfer matrices and open-boundary singular modes; exterior-algebra insertion signs; summable damped occupation weights; planar nesting and alternating intersection signs; marked-cap normalization.\n\nLieb and Rasmussen-Ruelle supply transfer and spectral precedents. Kenyon, Dubedat, Basok-Chelkak, Bai-Wan and Basok-Izyurov supply topological and nesting-field convergence. Those results are not themselves the new geometric estimates selected here. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the spectral state-sum proof, sandwiched insertion proof, color contraction calculation and cap-weight positivity argument. The localization via Wilson sampling and the full no-backtracking identification were not audited in detail.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\nThe source concerns the standard half-plane Temperleyan law and matching of loops as unrooted curves with multiplicities, not merely convergence of loop traces or finite puncture data. Its limits take the mesh to zero before the short interval and cap cutoff limits.\n\n[Batch record](../../batches/B006/README.md)"
+    },
+    {
       "id": "openai-math-231",
       "record_type": "family",
       "title": "Uniform posterior response and equivariant sampling of forests",
@@ -7539,6 +7985,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-231.md",
       "body": "# Uniform posterior response and equivariant sampling of forests\n\n## Source manuscript and claim\n\n[The free uniform spanning forest is a factor of IID](../papers/P-000093.md), by OpenAI, September 25, 2026.\n\nThe source constructs one Borel, root-free rule sampling the free uniform spanning forest from vertex IID labels on every infinite connected locally finite simple unweighted graph, and extends the method to invariant strongly Rayleigh laws on countable groups.\n\n## Extracted instruments\n\n- [MI-000142: Finite response bounds extend by limsup to a canonical infinite-volume drift](../instruments/MI-000142.md)\n- [MI-000143: Picard inversion on the full product path space gives a Brownian sampler](../instruments/MI-000143.md)\n\n## Dependencies and antecedents\n\nWeighted matrix-tree differentiation and negative dependence; finite-field weak limits; martingale convergence and Brownian innovations; deterministic Picard iteration on a countable product; integer-time slope recovery.\n\nThe covariance estimate is explicitly present in Alishahi, Barzegar and Zamani, with earlier input from Ghosh, Liggett and Pemantle. Brownian posterior sampling and infinite-dimensional Ising factors have precedents in stochastic localization and Nam, Sly and Zhang. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite response, canonical drift, posterior, innovations and deterministic decoder arguments, and the strongly Rayleigh response proof. Selected finite checks cover covariance algebra and Picard majorants. The full graph coding and all determinantal supplements were not separately audited.\n\nThe FreeUniformSpanningForest Comparator specifies one Borel rule equivariant for every relabeling and every label input, with the forest law on all infinite connected locally finite coded graphs. StronglyRayleighDPP also targets countable-group IID factors and determinantal positive-contraction kernels without a trace-class or amenability hypothesis. Statements were inspected; no Lean build was run.\n\nThe construction is a measurable factor, with no finite coding radius or runtime bound. The drift estimate controls bounded differences between fields; the fields themselves need not be bounded.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/231.md) · [Batch record](../../batches/B005/README.md)"
+    },
+    {
+      "id": "openai-math-233",
+      "record_type": "family",
+      "title": "Conditional projection and local-kernel transfer for planar Gaussian fields",
+      "source_family": "233",
+      "source_collection": "openai/math",
+      "batch_id": "B006",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000098"
+      ],
+      "instrument_ids": [
+        "MI-000152",
+        "MI-000153"
+      ],
+      "headline": "The source claims a joint critical-line limit of Ashkin-Teller heights and complete primal and dual current supports, including the Potts endpoint. The selected instruments concern auxiliary Gaussian tests used in the random-domain identification.",
+      "central_instrument": "Convergence of conditional Gaussian projection norms preserves locality of arbitrary bounded tests; Cameron-Martin comparison transfers one selected local kernel across domains and conditional random environments.",
+      "novelty_assessment": "Gaussian projection, domain Markov decomposition and Cameron-Martin comparison are established. The candidate contribution is their precise combination for discontinuous cable tests with fixed buffers and a common subsequence. The global current-cluster theorem and historical priority are not certified.",
+      "formalization_summary": "No family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.",
+      "statement_faithfulness": "Auxiliary cable mesh and current mesh are distinct. Tests use the whole cable field, including bridges, with the specified ambient harmonic extension. Random-domain conclusions require the stated conditional GFF law and admissible approximations; equality of field marginals is not an identification of two fields path by path.",
+      "dependencies": "Metric-graph GFF convergence and local sets; Gaussian Hilbert-space projections and residual covariances; Cameron-Martin likelihoods and Pinsker; interior harmonic estimates; conditional mixed-expectation limits.",
+      "antecedents": "Aru, Lupu and Sepulveda supply metric-graph convergence and first-passage-set machinery. Established double-current results and the conjectural critical-line extension of Alcalde Lopez, Heeney and Lis motivate the source. Classical Gaussian change of measure remains an input.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-233.md",
+      "body": "# Conditional projection and local-kernel transfer for planar Gaussian fields\n\n## Source manuscript and claim\n\n[The joint scaling limit of critical Ashkin-Teller currents](../papers/P-000098.md), by OpenAI, None.\n\nThe source claims a joint critical-line limit of Ashkin-Teller heights and complete primal and dual current supports, including the Potts endpoint. The selected instruments concern auxiliary Gaussian tests used in the random-domain identification.\n\n## Extracted instruments\n\n- [MI-000152: Converging conditional Gaussian projection norms preserve locality of bounded tests](../instruments/MI-000152.md)\n- [MI-000153: Cameron-Martin comparison transfers one local test kernel across domains](../instruments/MI-000153.md)\n\n## Dependencies and antecedents\n\nMetric-graph GFF convergence and local sets; Gaussian Hilbert-space projections and residual covariances; Cameron-Martin likelihoods and Pinsker; interior harmonic estimates; conditional mixed-expectation limits.\n\nAru, Lupu and Sepulveda supply metric-graph convergence and first-passage-set machinery. Established double-current results and the conjectural critical-line extension of Alcalde Lopez, Heeney and Lis motivate the source. Classical Gaussian change of measure remains an input. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the reverse-buffer proof, common-kernel proof and interior-exhaustion corollary, preserving the exact whole-cable extension and random-parameter conditions. The finite current coupling, screening, Gaussian collision arguments and no-crossing/cluster identification were not fully audited.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\nAuxiliary cable mesh and current mesh are distinct. Tests use the whole cable field, including bridges, with the specified ambient harmonic extension. Random-domain conclusions require the stated conditional GFF law and admissible approximations; equality of field marginals is not an identification of two fields path by path.\n\n[Batch record](../../batches/B006/README.md)"
     },
     {
       "id": "openai-math-234",
