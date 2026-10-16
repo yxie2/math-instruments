@@ -4,7 +4,7 @@
 
 - **Novelty assessments depend on the search scope.** “No precedent found” means that the literature comparison described in the card found no matching instrument; a device in a 1980s Russian paper or an unpublished talk could be missed. The verdicts are provisional judgments relative to the literature searched; the subsequent mathematical review did not independently validate them, and mixed labels are not counted as disjoint classes.
 
-- **Choice of thirty-eight.** The release has 372 families; this set was selected for the prominence of the problems, which favors major conjectures and particularly strong claims. Families centered on improvements to existing bounds were not examined systematically.
+- **Initial choice of thirty-eight.** B001 selected 38 of the release's 372 families for the prominence of the problems, favoring major conjectures and particularly strong claims. Later batches broaden the selection across subjects, including improvements to existing bounds. Current counts and pending families appear in the [coverage table](../tables/coverage.md). A family is marked catalogued when selected instruments have records, not when every associated manuscript has been fully audited.
 
 - **Search coverage.** Some entries in the second group used directly retrieved primary sources without a fresh literature search. Their novelty assessments have correspondingly narrower support.
 
@@ -20,3 +20,5 @@
 - **Reuse:** record proposed, attempted and demonstrated applications separately from extraction.
 
 B001 imports the direction paper’s descriptions and assessments. The repository import adds no independent proof verification. Source titles and headline statements describe the source manuscripts’ claims. No Lean project was built for B001.
+
+B002–B044 add exact source labels and hashes, selected argument readings, targeted antecedent comparisons and finite verification programs. Their [aggregate audit](../batches/B045/README.md) checks reproducibility and provenance. A program that verifies a finite identity or sampled example does not establish an asymptotic theorem, an infinite-dimensional limit or the truth of every dependency. Comparator files containing `sorry` are theorem targets, not evidence of a completed proof. Curation patterns connect methods and proposed uses without increasing the extraction or demonstrated-application counts.
