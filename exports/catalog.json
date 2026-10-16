@@ -30490,6 +30490,357 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000717.md",
       "body": "# Fix a deterministic scale with a bounded monotone center\n\n[Family 211](../families/openai-math-211.md) · [Source manuscript](../papers/P-000483.md) · [Batch B076](../../batches/B076/README.md)\n\n## Mathematical content\n\nFor any finite real random variable Y, define m(Y) as the unique zero of F_Y(r)=E arctan(Y-r). Bounded convergence makes F_Y continuous with limits pi/2 and -pi/2; strict decrease gives uniqueness. Translation gives m(Y+c)=m(Y)+c. If Y_j converges in distribution to Y, bounded continuous testing gives pointwise convergence of F_(Y_j). Opposite signs at m(Y) plus or minus epsilon trap the zeros, so m(Y_j)->m(Y), without moment assumptions.\n\nSuppose a_n Delta_n converges in distribution to a finite positive Delta, where Delta_n=max(1,diameter of the graph). Define ahat_n=exp(m(log Delta)-m(log Delta_n)) using unconditional laws. The constants ahat_n are deterministic. The center identity gives log(a_n/ahat_n)=m(log(a_n Delta_n))-m(log Delta)->0, proving ahat_n/a_n->1.\n\nPositivity and finiteness of the limiting diameter are essential to taking logarithms and applying weak convergence. An ordinary expectation of log diameter could fail without integrability; bounded arctangent avoids that requirement.\n\n## Role in the source argument\n\nAligns a geometrically supplied scale with the deterministic convention used by a spectral companion.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:space-normalization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026/build/sections/inputs.tex#L75)\n\n## Antecedents and comparison\n\nThis is a bounded monotone location-functional argument and a continuous-mapping application. The source supplies a convenient explicit choice; exhaustive priority of that choice is not established.\n\n## Checks and limitations\n\nFinite atomic laws test translation covariance, root bracketing, scale recovery and vanishing contamination at diverging outliers, where ordinary means fail to converge.\n\nNumerical root checks do not establish metric-measure convergence or identify any Liouville geometry.\n\n## Possible applications\n\nChoosing canonical deterministic scales under weak convergence without moment bounds.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000718",
+      "record_type": "instrument",
+      "title": "Measure calibration error by a decreasing raywise sequence",
+      "forms": [
+        "raywise-busemann-monotonicity",
+        "vanishing-calibration-defect"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-212"
+      ],
+      "source_paper_ids": [
+        "P-000484"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+          "label": "lem:busemann-basic",
+          "line": 55,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L55",
+          "sha256": "84c4e09c3439e1d4d26b7ba619b78debde8ba61e48a8b32cecc293ba692ea13f"
+        },
+        {
+          "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+          "label": "eq:calibration-defect",
+          "line": 68,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L68",
+          "sha256": "84c4e09c3439e1d4d26b7ba619b78debde8ba61e48a8b32cecc293ba692ea13f"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000718.md",
+      "body": "# Measure calibration error by a decreasing raywise sequence\n\n[Family 212](../families/openai-math-212.md) · [Source manuscript](../papers/P-000484.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nFor a geodesic ray p_0,p_1,... in a metric T, define a_j(x)=T(x,p_j)-T(p_0,p_j). The geodesic property and triangle inequality make this sequence decreasing and bounded below by -T(p_0,x). Let a_infinity(x) be its limit. Then B_p(x,y)=a_infinity(x)-a_infinity(y) is the limit of T(x,p_j)-T(y,p_j), is additive and antisymmetric, and satisfies |B_p(x,y)|<=T(x,y).\n\nOn the ray, B_p(p_i,p_j)=T(p_i,p_j) for i<=j. Removing a finite prefix leaves B unchanged, so coalescing rays have the same function. Moreover B_p(x,p_j)=a_infinity(x)+T(p_0,p_j), giving the exact nonnegative defect\nT(x,p_j)-B_p(x,p_j)=a_j(x)-a_infinity(x) ->0.\n\nThese are deterministic consequences of a minimizing ray. They do not imply linearity of B, coalescence of arbitrary rays, or absence of a two-sided geodesic.\n\n## Role in the source argument\n\nProvides calibrated potentials and a quantitative error term for later path comparisons.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:busemann-basic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L55)\n- [eq:calibration-defect](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L68)\n\n## Antecedents and comparison\n\n[Ahlberg and Hoffman, arXiv:1609.02447](https://arxiv.org/abs/1609.02447), Lemma 4.1 on page 10 and its proof on page 11 of the retrieved PDF, were read. They contain the monotone-limit argument and basic Busemann properties. The displayed defect is an immediate bookkeeping consequence; it is not a new existence theorem.\n\n## Checks and limitations\n\nExact tree metrics check additivity, calibration and tail invariance; Euclidean rays exhibit positive defects decreasing to zero. A nongeodesic path gives a monotonicity failure control.\n\nFinite models do not test the probabilistic geometric structure used by the source headline theorem.\n\n## Possible applications\n\nTracking how close a finite route is to being calibrated by its asymptotic direction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000719",
+      "record_type": "instrument",
+      "title": "Upgrade unique supports to a regular C1 norm sphere",
+      "forms": [
+        "unique-support-frechet-upgrade",
+        "compact-dual-gradient-continuity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-212"
+      ],
+      "source_paper_ids": [
+        "P-000485"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex",
+          "label": "df:convex-regularity",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex#L9",
+          "sha256": "eaa30d409ebe443a9a25bcdd1aedc2b0560f7805fc51734a66932ee1a9656fae"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000719.md",
+      "body": "# Upgrade unique supports to a regular C1 norm sphere\n\n[Family 212](../families/openai-math-212.md) · [Source manuscript](../papers/P-000485.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nFor a norm mu on R2, fix u nonzero and a transverse vector e. The left and right derivatives a_-<=a_+ of t->mu(u+te) determine the extreme supporting functionals at u: both take value mu(u) on u, and their values on e are a_- and a_+. If the support is unique, these slopes agree at a. Homogeneity then yields mu(xu+re)=x mu(u)+a r+o(|r|) as xu+re->u with x>0. Since |r| is controlled by the displacement, this is Frechet differentiability.\n\nIf supports are unique everywhere off zero, any convergent subsequence of supports at u_j->u lies in the compact dual unit ball and limits to a support at u. Uniqueness forces convergence of the entire sequence, so the derivative is continuous. Homogeneity gives Dmu(u)[u]=1 on the unit sphere. The implicit function theorem supplies a regular C1 curve. Conversely every support at a regular C1 convex boundary point annihilates its tangent and hence determines its unique tangent line.\n\nThis is smoothness of the norm sphere. It is distinct from strict convexity: a regular C1 centrally symmetric convex curve can contain a straight segment.\n\n## Role in the source argument\n\nIdentifies precisely what a no-corner argument must prove before one can claim a C1 boundary.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [df:convex-regularity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex#L9)\n\n## Antecedents and comparison\n\nThis is standard convex analysis. The source includes a self-contained planar proof connecting directional slopes, Frechet derivatives and boundary parametrizations; no new convex regularity principle is claimed.\n\n## Checks and limitations\n\nSmooth p-norms test supporting gradients and first-order remainders. A max norm tests nonunique support at a corner. A stadium unit ball supplies a C1 boundary with flat segments, separating smoothness from strict convexity.\n\nThe checks do not show that a first-passage time constant has unique supports.\n\n## Possible applications\n\nKeeping differentiability and strict convexity claims distinct in random-metric arguments.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000720",
+      "record_type": "instrument",
+      "title": "Recover nonnegative cluster-column coordinates by conditional resampling",
+      "forms": [
+        "ordered-cluster-column-cone",
+        "deleted-cluster-resampling-contraction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-213"
+      ],
+      "source_paper_ids": [
+        "P-000486"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:cone",
+          "line": 46,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L46",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        },
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:column-identity",
+          "line": 157,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L157",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        },
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:residual-sample",
+          "line": 173,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L173",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000720.md",
+      "body": "# Recover nonnegative cluster-column coordinates by conditional resampling\n\n[Family 213](../families/openai-math-213.md) · [Source manuscript](../papers/P-000486.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nIn a finite independent hypergraph with every p_e<1, order distinct nodes x_1,...,x_n, not necessarily all nodes. Let E_k say that C(x_k) avoids earlier listed nodes, d_k=P(E_k)>0, and mu_k be its conditional cluster law. Set h_k(i)=mu_k(x_i in U), H=(h_1,...,h_n), and v_k^F(i)=E_mu_k[1_(x_i in U) F(U)]. For nonnegative inclusion-increasing F,\nv_k^F-mu_k(F)h_k belongs to cone{h_j:j>k}; in particular H^(-1)v_k^F>=0.\n\nH is unit lower triangular. For S={x_i:i<k}, s=x_k, let W_U=C^(G minus U)(S), c(w)=E F(C^(G minus w)(s)), and PF(U)=E c(W_U). The first-listed-node partition gives v_k^F=v_k^(PF)+sum_(j>k)(d_j/d_k)v_j^(R_F), where R_F(U)=E[1_(s notin W_U)(c(W_U)-c(W_U union U))].\n\nCouple deletion graphs using the same open bits. On s notin W_U, the identity C^(G minus (W_U union U))(s)=C^(G minus U)(s) makes the second cluster shrink as U grows, while the first cluster C^(G minus W_U)(s) grows. Thus R_F is nonnegative increasing. P alternately resamples the separated clusters, so mu_k is stationary. Every row has mass at least a=product_(e containing s)(1-p_e)>0 at {s}, giving oscillation(Pg)<=(1-a)oscillation(g), even at states of zero mu_k mass. Hence P^tF converges uniformly to mu_k(F). Descending induction, iteration of the column identity and closure of the finitely generated cone prove the assertion.\n\n## Role in the source argument\n\nMakes conditional correlation information usable as a nonnegative linear algebra representation.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [cmp:cone](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L46)\n- [cmp:column-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L157)\n- [cmp:residual-sample](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L173)\n\n## Antecedents and comparison\n\n[van den Berg, Haggstrom and Kahn, arXiv:math/0408176](https://arxiv.org/abs/math/0408176), Section 2.1, pages 9-11 of the retrieved PDF, was read through the alternating cluster-chain construction and stationarity argument. This establishes the resampling antecedent, not the source column-cone theorem. Exact priority of that stronger finite formulation is not established.\n\n## Checks and limitations\n\nExact enumeration with rational edge probabilities checks triangular columns, nonnegative inverse coordinates for increasing cluster functions, the first-node mass identity and a separately assembled conditional-resampling matrix.\n\nThe checks cover small independent hypergraphs and do not certify any critical-percolation result or extension to dependent edge laws.\n\n## Possible applications\n\nBuilding nonnegative relay coefficients from conditional cluster laws.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000721",
+      "record_type": "instrument",
+      "title": "Transfer relay reliability through a joint connection inequality",
+      "forms": [
+        "finite-hypergraph-relay-comparison",
+        "site-incidence-self-connection-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-213"
+      ],
+      "source_paper_ids": [
+        "P-000486"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:joint",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L15",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        },
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:first-node-mass",
+          "line": 252,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L252",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        },
+        {
+          "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+          "label": "cmp:failure",
+          "line": 284,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L284",
+          "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000721.md",
+      "body": "# Transfer relay reliability through a joint connection inequality\n\n[Family 213](../families/openai-math-213.md) · [Source manuscript](../papers/P-000486.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nFor independent percolation on a finite undirected hypergraph and a nonempty node set A,\nP(o connected to A and o connected to T)>=P(o connected to A) min_(a in A)P(a connected to T).\n\nFor probabilities below one, the cluster-column cone gives h_k=e_k+sum_(j>k)Gamma_(jk)h_j with Gamma>=0. Thus H^(-1)=I-Gamma. First-listed-node probabilities give Hd=1, so row n of Gamma sums to 1-d_n. List A first and o last. For F(U)=1_(U meets A and T), the vector y_i=E F(C(x_i)) obeys (I-Gamma)y>=0. The last row has y_n at least the weighted sum of relay probabilities y_i=P(x_i connected to T), with weights totaling P(o connected to A). If o is in A the result is immediate. Finite-event continuity extends the bound to probabilities zero or one.\n\nConsequently, if every relay reaches T with probability at least 1-b, then P(o reaches A but not T)<=b P(o reaches A)<=b for bonds. For site percolation replace each vertex by a starred node and each edge by a connector; the open hyperedge at x joins x* to its incident connectors. Distinct starred vertices reproduce open site paths. Hypergraph self-connection is automatic, but site self-connection requires the site open. On the site failure event the origin is open, so its connections agree and event inclusion gives the bound <=b. Deterministically fixed bits are allowed.\n\n## Role in the source argument\n\nControls the chance of reaching a relay set yet failing to reach a reliably accessible target.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [cmp:joint](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L15)\n- [cmp:first-node-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L252)\n- [cmp:failure](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L284)\n\n## Antecedents and comparison\n\nThe proof uses the preceding source cone lemma, whose resampling ingredient has a classical antecedent. The stronger joint inequality is not identified here with ordinary Harris association, and its exhaustive novelty is not established. The source cites a separate site-incidence discussion; that discussion was not independently audited.\n\n## Checks and limitations\n\nExact hypergraph enumeration checks the joint inequality over all targets and relay sets in small models. Site configurations verify the incidence map, the self-connection discrepancy and the failure bound with deterministic bits.\n\nFinite connection comparison alone does not prove absence of an infinite cluster at criticality.\n\n## Possible applications\n\nTransferring local relay estimates through explorations while preserving the distinction between bond and site conventions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000722",
+      "record_type": "instrument",
+      "title": "Condition transverse spin coordinates to inherit a lower-dimensional bound",
+      "forms": [
+        "conditional-three-component-gibbs-law",
+        "uniform-coupling-dimension-reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-215"
+      ],
+      "source_paper_ids": [
+        "P-000487"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex",
+          "label": "lem:conditioning",
+          "line": 447,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex#L447",
+          "sha256": "ced47d66649d01695e49af86916cc4fc9fcc1ed5cf624e06356d4696d4ea61d1"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000722.md",
+      "body": "# Condition transverse spin coordinates to inherit a lower-dimensional bound\n\n[Family 215](../families/openai-math-215.md) · [Source manuscript](../papers/P-000487.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nWrite a spin sigma_x in S^(n-1), n>3, as (rho_x s_x,v_x), where v_x is in R^(n-3), rho_x=sqrt(1-|v_x|^2) and s_x is in S2. Under the independent uniform sphere reference, represent sigma by (U,V)/sqrt(|U|^2+|V|^2), with independent standard Gaussian blocks U in R3 and V in R^(n-3). The direction U/|U| is uniform and independent of (|U|,V), hence independent of v. At all sites the conditional reference directions remain independent uniform S2 variables.\n\nConditioning on all v splits the interaction into the constant sum b_xy v_x dot v_y plus sum b_xy rho_x rho_y s_x dot s_y. Thus the conditional directions have exactly the free O(3) Gibbs law with couplings b_xy rho_x rho_y. If 0<=b_xy<=beta these remain in [0,beta]. A first-component bound 0<=<s_x^1 s_y^1><=A0 exp(-m0 distance), uniform over all such arrays, transfers after multiplication by rho_x rho_y<=1 and averaging. Coordinate symmetry then yields the O(n) dot-product bound with prefactor n A0.\n\nZero rho has probability zero under the finite Gibbs law; alternatively an arbitrary independent direction there decouples. Uniformity in the entire coupling array, not just constant couplings, is essential for the transfer.\n\n## Role in the source argument\n\nReduces higher-dimensional spin estimates to a three-component estimate with quenched inhomogeneous couplings.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:conditioning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex#L447)\n\n## Antecedents and comparison\n\n[Aru, Garban and Sepulveda, arXiv:2212.06767](https://arxiv.org/abs/2212.06767), Proposition 2.4 and the preceding conditional-density calculation on page 9 of the retrieved PDF, were read. They give the established O(N)-to-O(N-1) projection. The source uses its block-coordinate form and a uniform O(3) input; no new projection principle is claimed.\n\n## Checks and limitations\n\nFinite conditional angular grids compare normalized full and reduced Gibbs weights for multiple dimensions and inhomogeneous couplings. Gaussian samples illustrate independence of direction and transverse data.\n\nDiscrete angular grids test the density factorization, not the continuous sphere law or the required O(3) exponential bound.\n\n## Possible applications\n\nTransferring estimates that are uniform over bounded ferromagnetic conductances to larger spin dimensions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000723",
+      "record_type": "instrument",
+      "title": "Obtain positive off-diagonal decay without presuming a spectral atom",
+      "forms": [
+        "positive-mass-shell-kernel-decay",
+        "mass-support-without-atom"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-215"
+      ],
+      "source_paper_ids": [
+        "P-000488"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+          "label": "inp:kernel",
+          "line": 110,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L110",
+          "sha256": "9a6cfd488b717ce61bde4403f61386894eb169775a3e21643a3f84a0be4dd396"
+        },
+        {
+          "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+          "label": "inp:euclidean",
+          "line": 117,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L117",
+          "sha256": "9a6cfd488b717ce61bde4403f61386894eb169775a3e21643a3f84a0be4dd396"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000723.md",
+      "body": "# Obtain positive off-diagonal decay without presuming a spectral atom\n\n[Family 215](../families/openai-math-215.md) · [Source manuscript](../papers/P-000488.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nAssume a nonzero positive Kallen-Lehmann measure rho with polynomial growth, supported on masses mu>=m_*>0, and Euclidean invariance. For t>0 the separated kernel is\nC(t,b)=integral rho(dmu^2) integral_(R) dp/(2pi) exp(ipb-t sqrt(p^2+mu^2))/(2 sqrt(p^2+mu^2)).\nExponential damping makes this and its derivatives locally absolutely convergent for t>0. Rotate a separation of length r>0 to (r,0); every integrand is then positive, so C is strictly positive away from coincidence. For r>=1, factor out exp(-m_* r) and bound exp(-r(E-m_*)) by exp(-(E-m_*)). The remaining integral is finite by polynomial growth, giving C(r)<=C0 exp(-m_* r).\n\nIn the source, positivity of m_* is deduced from an already supplied Hilbert-space mass gap and a nonzero one-field norm: spectral weight below the gap would produce forbidden low energies at small spatial momentum. That gap is an input here. Neither positivity nor exponential decay requires rho to have an atom at its lower edge. They therefore do not establish an isolated particle pole.\n\n## Role in the source argument\n\nSeparates the basic massive two-point bound from the stronger pole-isolation task.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [inp:kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L110)\n- [inp:euclidean](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L117)\n\n## Antecedents and comparison\n\nThe Kallen-Lehmann representation and exponential damping of positive spectral measures are classical. The original representation papers were not independently audited in this batch. The card makes the no-atom distinction explicit and claims no new spectral-representation theorem.\n\n## Checks and limitations\n\nNumerical quadrature compares momentum integrals with modified Bessel kernels and verifies the decay envelope for atomic and continuous compactly supported mass measures, including an atomless lower edge.\n\nThe quadrature does not certify the source continuum axioms, gap, spectral measure or particle pole.\n\n## Possible applications\n\nAvoiding the mistaken inference from an exponential correlation bound to a one-particle spectral atom.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000724",
+      "record_type": "instrument",
+      "title": "Glue tree-shaped blocks without losing a translation multiplicity",
+      "forms": [
+        "tree-block-translation-bijection",
+        "joint-exterior-gluing-kernel"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-216"
+      ],
+      "source_paper_ids": [
+        "P-000489"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+          "label": "kernels:multiplication",
+          "line": 108,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L108",
+          "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+        },
+        {
+          "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+          "label": "kernels:product",
+          "line": 111,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L111",
+          "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000724.md",
+      "body": "# Glue tree-shaped blocks without losing a translation multiplicity\n\n[Family 216](../families/openai-math-216.md) · [Source manuscript](../papers/P-000489.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nSuppose a core and successive annuli form a tree of block adjacencies. Fix full relative height data on a separating guard in each annulus. Given these data, the inner and outer configurations are conditionally independent. Let m_i be the guard law in an isolated block, and T_i the ratio of restored to cut partition functions at an interface, with one common translation in the numerator and one translation per block in the denominator.\n\nThen Z_full=Z_core product_i Z_i times integral T_0(u_1) product_(i=1)^(N-1) T_i(u_i,u_(i+1)) product_i dm_i(u_i). Integer block constants modulo one common constant correspond bijectively to edge differences on a tree: fix a root value and recover the others along unique paths. This explains why no multiplicity factor appears and why relative translations can be summed independently at interfaces.\n\nFor several nests attached to one connected exterior, integrate the exterior once as a joint kernel in all incident guard data. Its different boundary portions need not be independent. A cycle of block adjacencies would instead impose a zero-sum constraint on the edge differences; the same free product formula would not apply.\n\n## Role in the source argument\n\nProvides an exact partition representation before estimating losses across many annuli.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [kernels:multiplication](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L108)\n- [kernels:product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L111)\n\n## Antecedents and comparison\n\nTree incidence coordinates and conditional-independence factorization are classical. The source applies them with separate translation quotients and an unsplit exterior kernel; no new general tree factorization is claimed.\n\n## Checks and limitations\n\nFinite cyclic height models enumerate global block constants and compare tree-edge coordinates. A triangle exhibits the missing cycle constraint, and a common-exterior example shows why separate marginal kernels cannot replace its joint kernel.\n\nThe finite model does not verify the infinite integer-height sums, the chosen guards or the source prescribed-data inequalities.\n\n## Possible applications\n\nChecking topology and gauge normalization before multiplying local partition ratios.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000725",
+      "record_type": "instrument",
+      "title": "Forget an uneven positive core under small average interface loss",
+      "forms": [
+        "positive-core-kernel-stability",
+        "backward-density-core-mass-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-216"
+      ],
+      "source_paper_ids": [
+        "P-000489"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+          "label": "kernels:stability",
+          "line": 232,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L232",
+          "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+        },
+        {
+          "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+          "label": "kernels:core-mass",
+          "line": 284,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L284",
+          "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+        },
+        {
+          "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+          "label": "kernels:contraction",
+          "line": 299,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L299",
+          "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+        }
+      ],
+      "batch_id": "B077",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000725.md",
+      "body": "# Forget an uneven positive core under small average interface loss\n\n[Family 216](../families/openai-math-216.md) · [Source manuscript](../papers/P-000489.md) · [Batch B077](../../batches/B077/README.md)\n\n## Mathematical content\n\nLet (X_i,m_i) be probability spaces and 0<t_i(u,v)<=1 satisfy integral(1-t_i) d(m_i tensor m_(i+1))<=xi<1/64. Fix 0<g<=1 almost everywhere on X_1. Under density proportional to g(u_1) product_i t_i(u_i,u_(i+1)), the last-coordinate density is eventually at most 2, without a positive essential lower bound on g.\n\nWrite L_i f(v)=integral t_i(u,v) f(u) dm_i(u). Propagate q_1=1 with q_(i+1)=L_i q_i/beta_i and beta_i=integral L_i q_i. Induction gives q_i<=2, beta_i>=1-2xi, and q_(i+1)<=(1-2xi)^(-1)=M<2. Reversed kernels give the same bound on backward densities. Propagate f_1=g using these same beta_i, and set c_i=integral f_i, E_i=f_i-c_i q_i. Choose delta>0 with m_1(g<delta)<1/4. Since any backward density is at most 2, c_i>=delta/2 uniformly.\n\nFor mean-zero E, L_i E uses kernel t_i-1, with L2 operator norm at most sqrt(xi). The exact centered recurrence gives ||E_(i+1)||_2<=3 sqrt(xi)/(1-2xi)||E_i||_2, a strict contraction, and ||E_(i+1)||_infinity<=3/(1-2xi)||E_i||_2. Therefore f_N/c_N=q_N+E_N/c_N is eventually bounded by 2. The backward lower mass bound prevents normalization from undoing contraction. The threshold may depend on the fixed core g.\n\n## Role in the source argument\n\nPrevents a fixed multiplicative error from accumulating at every interface while controlling the last guard law.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [kernels:stability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L232)\n- [kernels:core-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L284)\n- [kernels:contraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L299)\n\n## Antecedents and comparison\n\nThe proof combines a rank-one averaging perturbation with backward density estimates. These are established operator tools; exhaustive priority of this precise positive-core, average-loss formulation is not established.\n\n## Checks and limitations\n\nWeighted finite spaces compute forward and backward propagation, the exact centered recurrence and both contraction bounds, including cores with extremely small minimum weights. A high-loss identity-like kernel gives a persistent concentrated-marginal control.\n\nFinite positive cores have positive minima, so the absence of a uniform lower bound in general rests on the proof. The tests do not supply the source XY small-loss estimates or scaling limits.\n\n## Possible applications\n\nTransferring average interface estimates to marginals influenced by a fixed interior boundary condition.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -39669,6 +40020,120 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000483.md",
       "body": "# Random Walks on Critical FK–Ising Maps and Liouville Brownian Motion\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026/fk-ising-walk-limit.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000716: Keep loop attempts when matching discrete and continuous clocks](../instruments/MI-000716.md)\n- [MI-000717: Fix a deterministic scale with a bounded monotone center](../instruments/MI-000717.md)\n\n[Family review and dependencies](../families/openai-math-211.md) · [Batch B076](../../batches/B076/README.md)"
+    },
+    {
+      "id": "P-000484",
+      "record_type": "paper",
+      "title": "No bigeodesics in planar first-passage percolation",
+      "source_collection": "openai/math",
+      "upstream_slug": "No-bigeodesics-in-planar-first-passage-percolation-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-212"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "304d9e9ba124a4d1b4f8f46f3230d885ca31bde08a3415f5ff5670c929d914de",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000484.md",
+      "body": "# No bigeodesics in planar first-passage percolation\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000718: Measure calibration error by a decreasing raywise sequence](../instruments/MI-000718.md)\n\n[Family review and dependencies](../families/openai-math-212.md) · [Batch B077](../../batches/B077/README.md)"
+    },
+    {
+      "id": "P-000485",
+      "record_type": "paper",
+      "title": "Strict convexity and differentiability of the planar exponential first-passage limit shape",
+      "source_collection": "openai/math",
+      "upstream_slug": "Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-212"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5cb6e3daf99a282b1dd55b17705da1bd076ba1f953c7f442e2e881747a3b9531",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000485.md",
+      "body": "# Strict convexity and differentiability of the planar exponential first-passage limit shape\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000719: Upgrade unique supports to a regular C1 norm sphere](../instruments/MI-000719.md)\n\n[Family review and dependencies](../families/openai-math-212.md) · [Batch B077](../../batches/B077/README.md)"
+    },
+    {
+      "id": "P-000486",
+      "record_type": "paper",
+      "title": "Critical bond and site percolation on the cubic lattice",
+      "source_collection": "openai/math",
+      "upstream_slug": "Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-213"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0d53a0daff41378f25f2502b1689c1a67687ee4a49944753be61f690ba1a7aa5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000486.md",
+      "body": "# Critical bond and site percolation on the cubic lattice\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000720: Recover nonnegative cluster-column coordinates by conditional resampling](../instruments/MI-000720.md)\n- [MI-000721: Transfer relay reliability through a joint connection inequality](../instruments/MI-000721.md)\n\n[Family review and dependencies](../families/openai-math-213.md) · [Batch B077](../../batches/B077/README.md)"
+    },
+    {
+      "id": "P-000487",
+      "record_type": "paper",
+      "title": "Exponential decay in two-dimensional classical O(n) models",
+      "source_collection": "openai/math",
+      "upstream_slug": "Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-215"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c03fb430ca90a6b5370ad51b909e01ad113dbdb30bf91ea393397b27e7d3bdbd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000487.md",
+      "body": "# Exponential decay in two-dimensional classical O(n) models\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000722: Condition transverse spin coordinates to inherit a lower-dimensional bound](../instruments/MI-000722.md)\n\n[Family review and dependencies](../families/openai-math-215.md) · [Batch B077](../../batches/B077/README.md)"
+    },
+    {
+      "id": "P-000488",
+      "record_type": "paper",
+      "title": "An Isolated Particle Pole for the Two-Dimensional O(3) Spin Field",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-215"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f8a9d39b45a6e2cc9404779bb58a2b28fd33cec9a77cb5b21d82d8b22109e00c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000488.md",
+      "body": "# An Isolated Particle Pole for the Two-Dimensional O(3) Spin Field\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/o3-particle-pole.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000723: Obtain positive off-diagonal decay without presuming a spectral atom](../instruments/MI-000723.md)\n\n[Family review and dependencies](../families/openai-math-215.md) · [Batch B077](../../batches/B077/README.md)"
+    },
+    {
+      "id": "P-000489",
+      "record_type": "paper",
+      "title": "The Critical Spin Field of the Planar XY Model",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-216"
+      ],
+      "batch_id": "B077",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d794d2c0da89052786eea6966e7f6c4fffce06a6f3f1203b982729e6b536ac9e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000489.md",
+      "body": "# The Critical Spin Field of the Planar XY Model\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000724: Glue tree-shaped blocks without losing a translation multiplicity](../instruments/MI-000724.md)\n- [MI-000725: Forget an uneven positive core under small average interface loss](../instruments/MI-000725.md)\n\n[Family review and dependencies](../families/openai-math-216.md) · [Batch B077](../../batches/B077/README.md)"
     }
   ],
   "families": [
@@ -45434,6 +45899,61 @@
       "body": "# Attempt clocks and deterministic spatial normalization\n\n## Source manuscripts and claim\n\n- [Random Walks on Critical FK–Ising Maps and Liouville Brownian Motion](../papers/P-000483.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Spectral convergence for critical FK–Ising planar maps](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Spectral-convergence-for-critical-FK-Ising-planar-maps-October-5-2026)\n- [A Linear Clock for Random Walk on Tree-Weighted Planar Maps](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Linear-Clock-for-Random-Walk-on-Tree-Weighted-Planar-Maps-October-5-2026)\n- [Canonical conformal limits of subcritical FK planar maps](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-conformal-limits-of-subcritical-FK-planar-maps-September-24-2026)\n- [The critical Liouville quantum sphere and geometric limits of FK maps at q=4](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-Liouville-quantum-sphere-and-geometric-limits-of-FK-maps-at-q-equals-4-September-24-2026)\n- [Metric-measure limits of subcritical FK and spanning-tree planar maps](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-measure-limits-of-subcritical-FK-and-spanning-tree-planar-maps-September-24-2026)\n- [Brownian continuum random tree limits of finite Fortuin–Kasteleyn maps above four](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brownian-continuum-random-tree-limits-of-finite-Fortuin-Kasteleyn-maps-above-four-September-24-2026)\n\nThe family claims geometric limits, diffusion limits and spectral convergence for several regimes of random planar maps.\n\n## Extracted instruments\n\n- [MI-000716: Keep loop attempts when matching discrete and continuous clocks](../instruments/MI-000716.md)\n- [MI-000717: Fix a deterministic scale with a bounded monotone center](../instruments/MI-000717.md)\n\n## Dependencies and antecedents\n\nReversible Markov chains, martingale maximal inequalities, path moduli, weak convergence and bounded monotone tests.\n\nClassical Poissonization, Dirichlet-form normalization and continuous location functionals.\n\n## Review and formalization scope\n\nRead complete graph-energy, attempt-clock and spatial-normalization proofs in the FK-Ising random-walk manuscript. Six companion manuscripts are inventory-only. Their geometric, Green-kernel, recovery and spectral inputs are not certified.\n\nThe scope and FKCRT Comparator concern the Brownian CRT limit for q>4 through all positive edge sizes, with normalized degree measure. They do not state the q=2 diffusion or spectral conclusions of the extracted manuscript. The complete scope and Comparator were read. The inspected target contains sorry; no separate solution or Lean build was checked.\n\nClock comparison assumes vanishing cable-edge lengths and a continuous limiting path law in a common ambient space. Spatial normalization assumes a finite strictly positive limiting diameter.\n\n[Batch record](../../batches/B076/README.md)"
     },
     {
+      "id": "openai-math-212",
+      "record_type": "family",
+      "title": "Raywise metric limits and convex boundary regularity",
+      "source_family": "212",
+      "source_collection": "openai/math",
+      "batch_id": "B077",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000484",
+        "P-000485"
+      ],
+      "instrument_ids": [
+        "MI-000718",
+        "MI-000719"
+      ],
+      "headline": "The family claims absence of planar bigeodesics, differentiability of Gamma first-passage norms and strict convexity in the exponential case.",
+      "central_instrument": "Subtract distance along a calibrated ray to obtain a monotone limit; turn unique supports into continuous derivatives and regular boundary charts.",
+      "novelty_assessment": "Selected mechanisms are separated from source headline claims and credited to known antecedents where established. Exhaustive priority is not established.",
+      "formalization_summary": "PlanarFirstPassage and GammaPassage target actual deterministic passage-time norms with differentiability and regular C1 boundary charts. The selected targets omit strict convexity and absence of bigeodesics. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "A ray must minimize every finite subsegment. Convex regularity assumes uniqueness of supports at every nonzero direction; that uniqueness is not supplied by the final deterministic lemma.",
+      "dependencies": "Triangle inequalities, geodesic calibration, one-sided convex derivatives, compact dual balls and the implicit function theorem.",
+      "antecedents": "Classical Busemann functions and finite-dimensional convex analysis.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-212.md",
+      "body": "# Raywise metric limits and convex boundary regularity\n\n## Source manuscripts and claim\n\n- [No bigeodesics in planar first-passage percolation](../papers/P-000484.md): selected passages extracted.\n- [Strict convexity and differentiability of the planar exponential first-passage limit shape](../papers/P-000485.md): selected passages extracted.\n\nThe family claims absence of planar bigeodesics, differentiability of Gamma first-passage norms and strict convexity in the exponential case.\n\n## Extracted instruments\n\n- [MI-000718: Measure calibration error by a decreasing raywise sequence](../instruments/MI-000718.md)\n- [MI-000719: Upgrade unique supports to a regular C1 norm sphere](../instruments/MI-000719.md)\n\n## Dependencies and antecedents\n\nTriangle inequalities, geodesic calibration, one-sided convex derivatives, compact dual balls and the implicit function theorem.\n\nClassical Busemann functions and finite-dimensional convex analysis.\n\n## Review and formalization scope\n\nRead the complete finite-minimizer and elementary Busemann proofs in the bigeodesic manuscript and the convex-boundary proof in the limit-shape manuscript. Both manuscripts receive extractions. The probabilistic no-corner and no-bigeodesic arguments are not certified.\n\nPlanarFirstPassage and GammaPassage target actual deterministic passage-time norms with differentiability and regular C1 boundary charts. The selected targets omit strict convexity and absence of bigeodesics. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nA ray must minimize every finite subsegment. Convex regularity assumes uniqueness of supports at every nonzero direction; that uniqueness is not supplied by the final deterministic lemma.\n\n[Batch record](../../batches/B077/README.md)"
+    },
+    {
+      "id": "openai-math-213",
+      "record_type": "family",
+      "title": "Cluster resampling and finite relay inequalities",
+      "source_family": "213",
+      "source_collection": "openai/math",
+      "batch_id": "B077",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000486"
+      ],
+      "instrument_ids": [
+        "MI-000720",
+        "MI-000721"
+      ],
+      "headline": "The family claims no critical infinite clusters on the cubic lattice and on every locally finite quasi-transitive graph with pc<1.",
+      "central_instrument": "Ordered cluster columns form a cone with nonnegative coefficients; their inverse supplies relay weights for a joint connection comparison.",
+      "novelty_assessment": "Selected mechanisms are separated from source headline claims and credited to known antecedents where established. Exhaustive priority is not established.",
+      "formalization_summary": "CriticalZ3 targets bond and site critical clusters on Z3. CriticalPercolation targets independent bonds on infinite connected locally finite quasi-transitive graphs with pc<1, allowing multiplicities. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The finite model is independent undirected hyperedge percolation. Cone arguments use probabilities below one; the final event inequality extends to deterministic bits by continuity.",
+      "dependencies": "Exact-cluster conditioning, deletion couplings, alternating conditional resampling, finite triangular matrices and a common-atom contraction.",
+      "antecedents": "van den Berg-Haggstrom-Kahn conditional cluster resampling and elementary Markov-chain minorization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-213.md",
+      "body": "# Cluster resampling and finite relay inequalities\n\n## Source manuscripts and claim\n\n- [Critical bond and site percolation on the cubic lattice](../papers/P-000486.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [No percolation at criticality on quasi-transitive graphs](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-percolation-at-criticality-on-quasi-transitive-graphs-September-24-2026)\n\nThe family claims no critical infinite clusters on the cubic lattice and on every locally finite quasi-transitive graph with pc<1.\n\n## Extracted instruments\n\n- [MI-000720: Recover nonnegative cluster-column coordinates by conditional resampling](../instruments/MI-000720.md)\n- [MI-000721: Transfer relay reliability through a joint connection inequality](../instruments/MI-000721.md)\n\n## Dependencies and antecedents\n\nExact-cluster conditioning, deletion couplings, alternating conditional resampling, finite triangular matrices and a common-atom contraction.\n\nvan den Berg-Haggstrom-Kahn conditional cluster resampling and elementary Markov-chain minorization.\n\n## Review and formalization scope\n\nRead the entire finite connection section, including the residual coupling, resampling convergence, cone iteration, relay comparison and site-incidence proof. The quasi-transitive companion is inventory-only. The infinite-volume exploration arguments are not certified.\n\nCriticalZ3 targets bond and site critical clusters on Z3. CriticalPercolation targets independent bonds on infinite connected locally finite quasi-transitive graphs with pc<1, allowing multiplicities. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nThe finite model is independent undirected hyperedge percolation. Cone arguments use probabilities below one; the final event inequality extends to deterministic bits by continuity.\n\n[Batch record](../../batches/B077/README.md)"
+    },
+    {
       "id": "openai-math-214",
       "record_type": "family",
       "title": "Unimodular traces and sprinkling resolvents",
@@ -45459,6 +45979,61 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-214.md",
       "body": "# Unimodular traces and sprinkling resolvents\n\n## Source manuscripts and claim\n\n- [Nonuniqueness of percolation on nonamenable quasi-transitive graphs](../papers/P-000286.md): selected passages extracted.\n\nThe source claims a nonuniqueness phase and critical mean-field laws on every nonamenable quasi-transitive graph.\n\n## Extracted instruments\n\n- [MI-000510: Use stabilizer weights to obtain a finite invariant trace](../instruments/MI-000510.md)\n- [MI-000511: Control percolation sprinkling by a positive connection-kernel series](../instruments/MI-000511.md)\n\n## Dependencies and antecedents\n\nUnimodular Haar stabilizer volumes, mass transport, absolute summability and positive square roots; product percolation, disjoint-witness inequality and Neumann-series convergence.\n\nBenjamini-Lyons-Peres-Schramm mass transport; Aldous-Lyons invariant trace; Hutchcroft connection-operator sprinkling.\n\n## Review and formalization scope\n\nRead the full weighted mass-transport, invariant-trace and sprinkling proofs. Also read the monotone endpoint-passage proof for context. The critical boundedness argument and nonuniqueness theorem remain unverified here.\n\nThe targets include critical operator boundedness, pc<p_(2-to-2)<=pu, a single coupled interval with infinitely many infinite clusters, critical tail and susceptibility laws, exponential decay, and every finite symmetric Cayley generating set. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nRoot-type weights do not change the counting-measure Hilbert space. Sprinkling is an entrywise kernel comparison, not a positive-semidefinite order assertion, and its useful norm conclusion requires a convergent series.\n\n[Batch record](../../batches/B051/README.md)"
+    },
+    {
+      "id": "openai-math-215",
+      "record_type": "family",
+      "title": "Conditional spin dimension reduction and massive kernels",
+      "source_family": "215",
+      "source_collection": "openai/math",
+      "batch_id": "B077",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000487",
+        "P-000488"
+      ],
+      "instrument_ids": [
+        "MI-000722",
+        "MI-000723"
+      ],
+      "headline": "The family claims exponential decay for O(n), canonical O(3) continuum limits, a particle pole and exact O(4) mass asymptotics.",
+      "central_instrument": "Conditioning transverse coordinates reduces the spin dimension with bounded effective couplings; a positive spectral representation gives decay without assuming an atom.",
+      "novelty_assessment": "Selected mechanisms are separated from source headline claims and credited to known antecedents where established. Exhaustive priority is not established.",
+      "formalization_summary": "ClassicalON targets finite-volume exponential correlation decay uniformly over square-lattice subgraphs and couplings in [0,beta], for each n>=3. It does not state a continuum limit or the O(4) spectral assertions. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Spin reduction uses the free finite-volume sphere law. Massive-kernel decay assumes the spectral representation, a positive mass gap and polynomial spectral growth; it does not prove a particle pole.",
+      "dependencies": "Gaussian polar coordinates, conditional Gibbs densities, positive mass-shell measures and exponential damping.",
+      "antecedents": "Conditional O(N) projections and the classical Kallen-Lehmann representation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-215.md",
+      "body": "# Conditional spin dimension reduction and massive kernels\n\n## Source manuscripts and claim\n\n- [Exponential decay in two-dimensional classical O(n) models](../papers/P-000487.md): selected passages extracted.\n- [An Isolated Particle Pole for the Two-Dimensional O(3) Spin Field](../papers/P-000488.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [The canonical massive continuum limit of the two-dimensional O(3) model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-canonical-massive-continuum-limit-of-the-two-dimensional-O3-model-October-4-2026)\n- [Exact mass asymptotics for the two-dimensional O(4) lattice model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-mass-asymptotics-for-the-two-dimensional-O4-lattice-model-October-5-2026)\n- [Sharp mass bounds for the two-dimensional O(4) model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-mass-bounds-for-the-two-dimensional-O4-model-September-23-2026)\n\nThe family claims exponential decay for O(n), canonical O(3) continuum limits, a particle pole and exact O(4) mass asymptotics.\n\n## Extracted instruments\n\n- [MI-000722: Condition transverse spin coordinates to inherit a lower-dimensional bound](../instruments/MI-000722.md)\n- [MI-000723: Obtain positive off-diagonal decay without presuming a spectral atom](../instruments/MI-000723.md)\n\n## Dependencies and antecedents\n\nGaussian polar coordinates, conditional Gibbs densities, positive mass-shell measures and exponential damping.\n\nConditional O(N) projections and the classical Kallen-Lehmann representation.\n\n## Review and formalization scope\n\nRead the full three-component conditional-law proof and its correlation-transfer application, plus the full massive Euclidean kernel proof. Two of five manuscripts receive extractions; three companions are inventory-only. The O(3) gap, continuum construction and isolated-pole arguments are not certified.\n\nClassicalON targets finite-volume exponential correlation decay uniformly over square-lattice subgraphs and couplings in [0,beta], for each n>=3. It does not state a continuum limit or the O(4) spectral assertions. The complete scope and named Comparators were read. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nSpin reduction uses the free finite-volume sphere law. Massive-kernel decay assumes the spectral representation, a positive mass gap and polynomial spectral growth; it does not prove a particle pole.\n\n[Batch record](../../batches/B077/README.md)"
+    },
+    {
+      "id": "openai-math-216",
+      "record_type": "family",
+      "title": "Tree gluing and stability through positive interfaces",
+      "source_family": "216",
+      "source_collection": "openai/math",
+      "batch_id": "B077",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000489"
+      ],
+      "instrument_ids": [
+        "MI-000724",
+        "MI-000725"
+      ],
+      "headline": "The family claims critical XY exponents, logarithmic corrections, spin-field limits and correlation-length asymptotics.",
+      "central_instrument": "Tree structure removes translation multiplicity in partition gluing; small average kernel losses eventually bound the outer marginal even from an uneven positive core.",
+      "novelty_assessment": "Selected mechanisms are separated from source headline claims and credited to known antecedents where established. Exhaustive priority is not established.",
+      "formalization_summary": "The pinned inventory supplies no scope document or linked Comparator for this family. No Lean verification is claimed.",
+      "statement_faithfulness": "Exact gluing assumes a tree of blocks and guards that actually separate inside from outside. Kernel stability assumes one fixed initial weight, strict positivity almost everywhere and a uniform average loss below 1/64.",
+      "dependencies": "Conditional independence, tree incidence coordinates, positive kernels, Hilbert-Schmidt estimates and backward density bounds.",
+      "antecedents": "Classical junction-tree factorization and contraction around a rank-one averaging operator.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-216.md",
+      "body": "# Tree gluing and stability through positive interfaces\n\n## Source manuscripts and claim\n\n- [The Critical Spin Field of the Planar XY Model](../papers/P-000489.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [The critical logarithmic correction for the planar XY model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-logarithmic-correction-for-the-planar-XY-model-October-5-2026)\n- [Critical Center Magnetization in the Planar XY Model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-Center-Magnetization-in-the-Planar-XY-Model-October-5-2026)\n- [Essential Singularity of the Correlation Length in the Planar XY Model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Essential-Singularity-of-the-Correlation-Length-in-the-Planar-XY-Model-October-5-2026)\n- [The critical correlation exponent of the planar XY model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-correlation-exponent-of-the-planar-XY-model-September-24-2026)\n- [BKT universality for height and planar spin fields](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/BKT-universality-for-height-and-planar-spin-fields-September-24-2026)\n\nThe family claims critical XY exponents, logarithmic corrections, spin-field limits and correlation-length asymptotics.\n\n## Extracted instruments\n\n- [MI-000724: Glue tree-shaped blocks without losing a translation multiplicity](../instruments/MI-000724.md)\n- [MI-000725: Forget an uneven positive core under small average interface loss](../instruments/MI-000725.md)\n\n## Dependencies and antecedents\n\nConditional independence, tree incidence coordinates, positive kernels, Hilbert-Schmidt estimates and backward density bounds.\n\nClassical junction-tree factorization and contraction around a rank-one averaging operator.\n\n## Review and formalization scope\n\nRead the full kernel-bound, exact multiplication and positive-initial-weight stability proofs in the critical spin-field manuscript. Five companions remain inventory-only. The prescribed-data comparison and small-average-loss analytic inputs are not certified.\n\nThe pinned inventory supplies no scope document or linked Comparator for this family. No Lean verification is claimed.\n\nExact gluing assumes a tree of blocks and guards that actually separate inside from outside. Kernel stability assumes one fixed initial weight, strict positivity almost everywhere and a uniform average loss below 1/64.\n\n[Batch record](../../batches/B077/README.md)"
     },
     {
       "id": "openai-math-217",

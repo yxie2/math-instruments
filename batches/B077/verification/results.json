@@ -1,0 +1,80 @@
+{
+  "batch": "B077",
+  "status": "pass",
+  "elapsed_seconds": 1.506,
+  "scope": "Selected finite mechanisms and explicit dependency controls; no headline or Lean certification.",
+  "checks": {
+    "ray_calibration": {
+      "status": "pass",
+      "details": {
+        "tree_metric_pairs": 2304,
+        "euclidean_positive_defects": [
+          2.1622776601683795,
+          1.6055512754639891,
+          1.0,
+          0.5440037453175304,
+          0.2788205960997061,
+          0.14031735997639316,
+          0.07027391856539111
+        ],
+        "nongeodesic_control": true
+      }
+    },
+    "support_regularities": {
+      "status": "pass",
+      "details": {
+        "smooth_norm_models": 120,
+        "nonunique_corner_supports": 21,
+        "c1_flat_segment_control": true
+      }
+    },
+    "cluster_columns": {
+      "status": "pass",
+      "details": {
+        "exact_cone_functions": 240,
+        "full_deletion_resampling_matrices": 12
+      }
+    },
+    "relay_events": {
+      "status": "pass",
+      "details": {
+        "exact_joint_inequalities": 11520,
+        "site_incidence_configurations": 64,
+        "deterministic_site_bits": true
+      }
+    },
+    "spin_projection": {
+      "status": "pass",
+      "details": {
+        "exact_grid_density_models": 24,
+        "gaussian_moment_illustration": 0.33678961130886514,
+        "gaussian_independence_illustration": 0.0021662617138384094
+      }
+    },
+    "massive_kernels": {
+      "status": "pass",
+      "details": {
+        "quadrature_and_decay_checks": 106,
+        "max_bessel_comparison_error": 3.427813588530171e-15,
+        "atomless_mass_measure_tested": true
+      }
+    },
+    "tree_gluing": {
+      "status": "pass",
+      "details": {
+        "tree_translation_bijections": 12,
+        "cycle_constraint_controls": 3,
+        "joint_exterior_control": true
+      }
+    },
+    "positive_core": {
+      "status": "pass",
+      "details": {
+        "centered_recurrence_steps": 540,
+        "uneven_positive_cores": 30,
+        "minimum_core_weight": 1e-90,
+        "high_loss_negative_control": true
+      }
+    }
+  }
+}
