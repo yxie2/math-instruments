@@ -1,0 +1,284 @@
+{
+  "batch_id": "B004",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T05:33:33.032540+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/GaussianPropeller.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GaussianPropeller.lean",
+      "sha256": "4130e2ee06a20af2578cf886bacc86cc22750a0e17080e69e8675aae25cf608c",
+      "bytes": 1401
+    },
+    {
+      "path": "lean/ComparatorChallenges/SteinitzBergstrom.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SteinitzBergstrom.lean",
+      "sha256": "c36334eff43ee1dc46d565c80a4a537fea67951e727ab7b88b5c64fca0dfe63d",
+      "bytes": 965
+    },
+    {
+      "path": "lean/docs/096.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/096.md",
+      "sha256": "1acb27ad704ecaa1c1b91d7e8ecda7afd30f56cb5de955bbfe6bb4e6e8fd7528",
+      "bytes": 1025
+    },
+    {
+      "path": "lean/docs/097.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/097.md",
+      "sha256": "fe10f69f8fbd488593d1d9b15632ccb8e086caf4c02877e5f598806b6e6d1472",
+      "bytes": 1014
+    },
+    {
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/README.md",
+      "sha256": "7f5adb927bfae3d0f2b1e4579c96a6eb007bf81d2182fb5c506245f36b4e9684",
+      "bytes": 780
+    },
+    {
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "sha256": "7578a33ef76216413bd90e43d10572ada8451ff41e4aba80a2dc66039735242b",
+      "bytes": 33407
+    },
+    {
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex",
+      "sha256": "8531578f2cacc3c9e33e27483a7b4bf230579b727981064f3c4e1ace7d85d8a1",
+      "bytes": 37291
+    },
+    {
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "sha256": "eed2817d82f03649d1b7384968e309083b7aefcf6155b1a1aa779d3048e27867",
+      "bytes": 41568
+    },
+    {
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/README.md",
+      "sha256": "39209e9970797cabc5e591813c27a2e9c10bacd32565c9eb1baa37adba87201c",
+      "bytes": 674
+    },
+    {
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5",
+      "bytes": 10643
+    },
+    {
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex",
+      "sha256": "5209c7c0d0bab770423ed56651029582bf40cd3981b66b9a054e004ace5fae53",
+      "bytes": 13114
+    },
+    {
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/README.md",
+      "sha256": "ce1d00f5119846af52315c2a77b10c8004ff7a060da7ac42c7b9ca7990eadcfd",
+      "bytes": 571
+    },
+    {
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/extremizers.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/extremizers.tex",
+      "sha256": "1614fb87ca6bc460ff264b1f9f75542ab517ae2eab9fe5e901049fb3542a20df",
+      "bytes": 7092
+    },
+    {
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex",
+      "sha256": "d33c3b97205de25544c8b7b71cc11ce5642b0ccaf0495ba0b5efc9705083e745",
+      "bytes": 7032
+    },
+    {
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex",
+      "sha256": "49dbe014d994fd65e99c25610ac6c8328b335748aca94f17f433b3149fe5a075",
+      "bytes": 9941
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000135",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "label": "lem:critical-change-reference",
+      "line": 400,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex#L400",
+      "sha256": "7578a33ef76216413bd90e43d10572ada8451ff41e4aba80a2dc66039735242b"
+    },
+    {
+      "instrument_id": "MI-000135",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "label": "eq:critical-exact-deficit",
+      "line": 451,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex#L451",
+      "sha256": "7578a33ef76216413bd90e43d10572ada8451ff41e4aba80a2dc66039735242b"
+    },
+    {
+      "instrument_id": "MI-000135",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "label": "eq:critical-score-equation",
+      "line": 410,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex#L410",
+      "sha256": "7578a33ef76216413bd90e43d10572ada8451ff41e4aba80a2dc66039735242b"
+    },
+    {
+      "instrument_id": "MI-000136",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex",
+      "label": "lem:matrix-copied-slots",
+      "line": 114,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex#L114",
+      "sha256": "8531578f2cacc3c9e33e27483a7b4bf230579b727981064f3c4e1ace7d85d8a1"
+    },
+    {
+      "instrument_id": "MI-000136",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex",
+      "label": "eq:matrix-copied-slots",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex#L119",
+      "sha256": "8531578f2cacc3c9e33e27483a7b4bf230579b727981064f3c4e1ace7d85d8a1"
+    },
+    {
+      "instrument_id": "MI-000137",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "label": "eq:obs-covariance-definition",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex#L37",
+      "sha256": "eed2817d82f03649d1b7384968e309083b7aefcf6155b1a1aa779d3048e27867"
+    },
+    {
+      "instrument_id": "MI-000137",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "label": "lem:obs-integrated-stability",
+      "line": 202,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex#L202",
+      "sha256": "eed2817d82f03649d1b7384968e309083b7aefcf6155b1a1aa779d3048e27867"
+    },
+    {
+      "instrument_id": "MI-000137",
+      "path": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "label": "eq:obs-matrix-stability",
+      "line": 210,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex#L210",
+      "sha256": "eed2817d82f03649d1b7384968e309083b7aefcf6155b1a1aa779d3048e27867"
+    },
+    {
+      "instrument_id": "MI-000138",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/extremizers.tex",
+      "label": "ext:structure",
+      "line": 91,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/extremizers.tex#L91",
+      "sha256": "1614fb87ca6bc460ff264b1f9f75542ab517ae2eab9fe5e901049fb3542a20df"
+    },
+    {
+      "instrument_id": "MI-000138",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex",
+      "label": "sc:loss-lower",
+      "line": 118,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex#L118",
+      "sha256": "49dbe014d994fd65e99c25610ac6c8328b335748aca94f17f433b3149fe5a075"
+    },
+    {
+      "instrument_id": "MI-000138",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex",
+      "label": "sc:translation-derivative",
+      "line": 136,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex#L136",
+      "sha256": "49dbe014d994fd65e99c25610ac6c8328b335748aca94f17f433b3149fe5a075"
+    },
+    {
+      "instrument_id": "MI-000138",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex",
+      "label": "sc:loss-upper",
+      "line": 158,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/scalars.tex#L158",
+      "sha256": "49dbe014d994fd65e99c25610ac6c8328b335748aca94f17f433b3149fe5a075"
+    },
+    {
+      "instrument_id": "MI-000139",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex",
+      "label": "geo:pair",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex#L63",
+      "sha256": "d33c3b97205de25544c8b7b71cc11ce5642b0ccaf0495ba0b5efc9705083e745"
+    },
+    {
+      "instrument_id": "MI-000139",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex",
+      "label": "geo:centroid-identities",
+      "line": 79,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex#L79",
+      "sha256": "d33c3b97205de25544c8b7b71cc11ce5642b0ccaf0495ba0b5efc9705083e745"
+    },
+    {
+      "instrument_id": "MI-000139",
+      "path": "preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex",
+      "label": "geo:density-bound",
+      "line": 95,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-Propeller-Bound-in-Every-Dimension-September-24-2026/build/sections/geometry.tex#L95",
+      "sha256": "d33c3b97205de25544c8b7b71cc11ce5642b0ccaf0495ba0b5efc9705083e745"
+    },
+    {
+      "instrument_id": "MI-000140",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "label": "prop:adaptive",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L32",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5"
+    },
+    {
+      "instrument_id": "MI-000140",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex",
+      "label": "lem:simultaneous-density",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex#L36",
+      "sha256": "5209c7c0d0bab770423ed56651029582bf40cd3981b66b9a054e004ace5fae53"
+    },
+    {
+      "instrument_id": "MI-000140",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex",
+      "label": "lem:shift-section",
+      "line": 159,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex#L159",
+      "sha256": "5209c7c0d0bab770423ed56651029582bf40cd3981b66b9a054e004ace5fae53"
+    },
+    {
+      "instrument_id": "MI-000140",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex",
+      "label": "eq:height-lower",
+      "line": 274,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/signing.tex#L274",
+      "sha256": "5209c7c0d0bab770423ed56651029582bf40cd3981b66b9a054e004ace5fae53"
+    },
+    {
+      "instrument_id": "MI-000141",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "label": "eq:symmetric-filter",
+      "line": 122,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L122",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5"
+    },
+    {
+      "instrument_id": "MI-000141",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "label": "eq:predictor-columns",
+      "line": 163,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L163",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5"
+    },
+    {
+      "instrument_id": "MI-000141",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "label": "eq:unclipped-coordinates",
+      "line": 217,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L217",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5"
+    },
+    {
+      "instrument_id": "MI-000141",
+      "path": "preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex",
+      "label": "eq:feedback-cancellation",
+      "line": 238,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Euclidean-Steinitz-Bergstrom-theorem-September-24-2026/build/assembly.tex#L238",
+      "sha256": "e61f1403718fde0bbbd6ca6af1c778c58846f29bb8f9e725cd1139ce43d6acd5"
+    }
+  ]
+}

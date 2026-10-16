@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "seed": 20261016,
+  "numpy_version": "2.4.4",
+  "checks": {
+    "deficit_model": {
+      "exact_gaussian_mean_models": 12,
+      "scope": "Deficit algebra only; not the strict optimizer-existence lemma."
+    },
+    "symmetric_slots": {
+      "direct_sum_examples": 48,
+      "singular_reductions": 8,
+      "minimum_averaging_slack": 0.09735073886886345,
+      "minimum_correlation_slack": 0.0,
+      "scope": "Finite symmetric tensors, not the asymptotic hierarchy."
+    },
+    "covariance_stability": {
+      "matrix_examples": 64,
+      "quadrature_nodes": 384,
+      "K_L_estimates": {
+        "1.0": 0.27258872223977815,
+        "2.0": 0.4718776495032464,
+        "10.0": 1.3014532800860388,
+        "100.0": 3.19788443922982
+      },
+      "maximum_bound_ratio": 0.9997509718530359,
+      "scope": "Numerical quadrature including singular noncommuting inputs; no rigorous error enclosure."
+    },
+    "deletion_and_triangle": {
+      "exact_recentered_lists": 52,
+      "exact_triangle_integrals": 24,
+      "tail_integral_max_error": 1.8318679906315083e-15,
+      "scope": "Algebra and tail integrals only; arbitrary lists in this check are not claimed to be extremal partitions."
+    },
+    "shift_constants": {
+      "exact_height_margin": "19/16",
+      "exact_interval_examples": 15249,
+      "scope": "Margins in the section argument; not its analytic spectral hypothesis."
+    },
+    "predictor_columns": {
+      "finite_filter_examples": 16,
+      "max_column_budget_ratio": 0.15772817112936122,
+      "max_filter_identity_error": 4.154568224013502e-16,
+      "max_prefix_cancellation_error": 1.027758879826067e-15,
+      "scope": "Predictor algebra with arbitrary signs; does not assert these coefficients lie in the required path body."
+    }
+  },
+  "limitation": "Finite calculations do not certify the global source theorems, formalizations or novelty."
+}

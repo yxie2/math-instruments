@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B004: seven auxiliary instruments from families 093, 096 and 097, with exact source passages, comparisons to trace and signing antecedents, and six groups of finite checks. The records separate selected lemma review from the source papers’ global conjecture claims.
 - Added B003: ten instruments from families 091, 094, 098 and 101, with exact source bindings, targeted antecedent comparisons and seven groups of finite checks. Established entropy–cone transfer and electrical localization are credited separately from candidate combinations.
 - Added B002: nine instruments from four previously uncatalogued quantum-information families (272, 273, 276 and 277), with exact manuscript and labelled-passage bindings.
 - Added a pinned inventory and coverage table for all 372 release families and 719 manuscripts. Metadata inventory entries are not counted as extracted instruments or source-paper records.
