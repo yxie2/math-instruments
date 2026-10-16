@@ -1,0 +1,41 @@
+{
+  "batch": "B036",
+  "status": "pass",
+  "scope": "Selected finite interfaces only; no headline theorem or Lean build certified.",
+  "checks": {
+    "affine_square": {
+      "prime_fields": 5,
+      "kernel_dimension": 3,
+      "clean_square_bounds": 2
+    },
+    "stacking": {
+      "finite_models": 48,
+      "complements_decoded": 385
+    },
+    "rough_interpolation": {
+      "exact_models": 9,
+      "coprimality_negative_control": true
+    },
+    "product_chain": {
+      "conditional_cardinality_models": 16,
+      "ramsey_bound_computed": false
+    },
+    "distance_separators": {
+      "exact_point_sets": 3
+    },
+    "singular_interpolation": {
+      "nonreduced_isolated_points": 2,
+      "positive_component_model": 1,
+      "first_jet_checks": 8
+    },
+    "height_one_lattice": {
+      "rational_coordinate_models": 80,
+      "detected_nonmembers": 80,
+      "nonfree_ideal_negative_control": true
+    },
+    "saturated_quotient": {
+      "exact_polynomial_models": 120,
+      "proportional_label_negative_control": true
+    }
+  }
+}
