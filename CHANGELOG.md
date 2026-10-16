@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B051: 8 selected instruments from 4 families and 4 manuscripts. Eight selected instruments covering matrix growth geometry, positive dilation balances, entropy localization, ordered radial itineraries, stationary chord estimates, weighted scale selection, unimodular traces and percolation sprinkling.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B050: 8 selected instruments from 4 families and 8 manuscripts. Eight selected instruments covering masked finite-field mixing, multiscale metric repair, population-radius budgets, rational support reduction, semigroup corners, configuration-tree tours, borrowed-memory replay and conditional tensor amplification.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B049: 8 selected instruments from 4 families and 8 manuscripts. One-pass scaling, covariance trace, affine slack centers, restricted empirical variance, residual exact sampling, capacity forests, binary curvature and Boolean compression.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

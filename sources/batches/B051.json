@@ -1,0 +1,326 @@
+{
+  "batch_id": "B051",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T15:13:44.202686+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BenjaminiSchramm.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BenjaminiSchramm.lean",
+      "sha256": "1751e2795328a58a27f29568bf993f63c29cfeb82d87a80d87038e2428a67a47",
+      "bytes": 9159
+    },
+    {
+      "path": "lean/ComparatorChallenges/C1EntropyCounterexample.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/C1EntropyCounterexample.lean",
+      "sha256": "b9f1cb9746a9a6a1fecbd02ae44612cba8a91d19a7067deb8c0bef198797330a",
+      "bytes": 2833
+    },
+    {
+      "path": "lean/ComparatorChallenges/CayleyPercolation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CayleyPercolation.lean",
+      "sha256": "5463089f0bf586fb4725d712bdd0bf68a0b823ccb028f11216c4b6445e8311f2",
+      "bytes": 3194
+    },
+    {
+      "path": "lean/ComparatorChallenges/SmoothObstruction.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SmoothObstruction.lean",
+      "sha256": "096a65243fb33f71fe673f9ccecc7ce8e73faa73b7b3e8a3a4f641838525c47b",
+      "bytes": 4753
+    },
+    {
+      "path": "lean/ComparatorChallenges/StandardMapComponents.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/StandardMapComponents.lean",
+      "sha256": "2721f512debeb26332a5c9512783a6a6704f02b9aaa073497f9b01ec916b27a3",
+      "bytes": 4785
+    },
+    {
+      "path": "lean/ComparatorChallenges/StandardMapEntropy.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/StandardMapEntropy.lean",
+      "sha256": "5d2a9b57428139199c440e53c836319872f75d7b2788207d710e5d04c49bfd16",
+      "bytes": 1792
+    },
+    {
+      "path": "lean/ComparatorChallenges/StandardMapLyapunov.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/StandardMapLyapunov.lean",
+      "sha256": "24a41c753ba939041e74edcae43cd1f4a32a9b80955b4ab45769e23ca9dee235",
+      "bytes": 4547
+    },
+    {
+      "path": "lean/docs/146.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/146.md",
+      "sha256": "cd5cd8e072d08c3a555c208ff9cc6a436b2a29d5b258b925da1288142302d750",
+      "bytes": 1415
+    },
+    {
+      "path": "lean/docs/151.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/151.md",
+      "sha256": "05329b44d70457879c2b8a7893f8b50e62a43554945f89780d6644b92377cdcc",
+      "bytes": 1052
+    },
+    {
+      "path": "lean/docs/152.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/152.md",
+      "sha256": "23ec0c64877b645dd082996df4cf5205064f89ba422246470d07d22aa400b8fa",
+      "bytes": 1155
+    },
+    {
+      "path": "lean/docs/214.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/214.md",
+      "sha256": "da93a0ed83eb2815e89c0993091833c7769f05f18dd60486a2ea306d8b8bca87",
+      "bytes": 1455
+    },
+    {
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/README.md",
+      "sha256": "7984f19384803ddd2f1283d4e510e551e94d0cde7b9359f7828e2602113503bd",
+      "bytes": 572
+    },
+    {
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8",
+      "bytes": 9903
+    },
+    {
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/README.md",
+      "sha256": "c8d1247377eac90d2ed9fcd5998ea614ff584db6ea808dd582fad3dfb8306e2c",
+      "bytes": 645
+    },
+    {
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+      "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89",
+      "bytes": 10861
+    },
+    {
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex",
+      "sha256": "afae7bc3191c20fb060879b9e3e75c4f8c9391b9b0b74edd9e614967cbf9b301",
+      "bytes": 22841
+    },
+    {
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex",
+      "sha256": "513443851f812a6ef0911e01d5cc2f93cd94a11bfbcb9f01be16ba1d30c2d05c",
+      "bytes": 15171
+    },
+    {
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/README.md",
+      "sha256": "a5da66c9d680146b49b0b9e089230b6a9708e0b185b37625681d4bf88b235a6d",
+      "bytes": 721
+    },
+    {
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242",
+      "bytes": 22698
+    },
+    {
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/README.md",
+      "sha256": "033c06401f586c2945463213e88cfd9ab8745d5bd9e32fa0b64b39ac70398b01",
+      "bytes": 680
+    },
+    {
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467",
+      "bytes": 22584
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000504",
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "label": "scale:fourpoint",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L28",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+    },
+    {
+      "instrument_id": "MI-000504",
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "label": "scale:R-comparison",
+      "line": 48,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L48",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+    },
+    {
+      "instrument_id": "MI-000504",
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "label": "scale:truncation",
+      "line": 79,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L79",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+    },
+    {
+      "instrument_id": "MI-000505",
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "label": "scale:decomposition",
+      "line": 513,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L513",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+    },
+    {
+      "instrument_id": "MI-000505",
+      "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+      "label": "scale:measure-decomposition",
+      "line": 520,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L520",
+      "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+    },
+    {
+      "instrument_id": "MI-000506",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "lemma:localization",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L15",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000506",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "eq:sparse-entropy-blocks",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L45",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000506",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "eq:entropy-description-count",
+      "line": 83,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L83",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000507",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "lemma:register-entropy",
+      "line": 116,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L116",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000507",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "eq:radius-itinerary-count",
+      "line": 159,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L159",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000507",
+      "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+      "label": "eq:register-separated-count",
+      "line": 180,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L180",
+      "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+    },
+    {
+      "instrument_id": "MI-000508",
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+      "label": "lem:dyadic",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L27",
+      "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+    },
+    {
+      "instrument_id": "MI-000508",
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+      "label": "eq:dyadic-convolution",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L33",
+      "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+    },
+    {
+      "instrument_id": "MI-000508",
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+      "label": "eq:dyadic-square-sum",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L39",
+      "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+    },
+    {
+      "instrument_id": "MI-000509",
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex",
+      "label": "lem:cheap-scales",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex#L64",
+      "sha256": "513443851f812a6ef0911e01d5cc2f93cd94a11bfbcb9f01be16ba1d30c2d05c"
+    },
+    {
+      "instrument_id": "MI-000509",
+      "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex",
+      "label": "eq:word-rate-divergence",
+      "line": 503,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex#L503",
+      "sha256": "afae7bc3191c20fb060879b9e3e75c4f8c9391b9b0b74edd9e614967cbf9b301"
+    },
+    {
+      "instrument_id": "MI-000510",
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "label": "pre:mass-transport",
+      "line": 235,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L235",
+      "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+    },
+    {
+      "instrument_id": "MI-000510",
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "label": "pre:trace",
+      "line": 268,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L268",
+      "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+    },
+    {
+      "instrument_id": "MI-000511",
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "label": "pre:sprinkling",
+      "line": 499,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L499",
+      "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+    },
+    {
+      "instrument_id": "MI-000511",
+      "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+      "label": "eq:s05",
+      "line": 501,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L501",
+      "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-146",
+      "extracted_slugs": [
+        "Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-151",
+      "extracted_slugs": [
+        "A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-152",
+      "extracted_slugs": [
+        "A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-214",
+      "extracted_slugs": [
+        "Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}

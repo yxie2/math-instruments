@@ -1,0 +1,64 @@
+{
+  "batch": "B051",
+  "status": "passed",
+  "scope": "Finite checks of selected mechanisms. Numerical matrix norms and convolution evaluations are identified; no source headline theorem or infinite limiting construction is certified.",
+  "checks": {
+    "matrices": {
+      "numerical_matrix_pairs": 1000,
+      "four_point_triples": 5000,
+      "transfer_truncations": 150,
+      "dimension_three_failure_control": true
+    },
+    "dilation": {
+      "exact_shift_identities": 3720,
+      "positive_source_and_invariant_remainder": true,
+      "finite_total_mass_control": true
+    },
+    "localization": {
+      "exact_orbit_block_tests": 11220,
+      "compactness_argument_checked_analytically": true
+    },
+    "itineraries": {
+      "exact_ordered_map_itinerary_checks": 18816,
+      "nonmonotone_eight_state_control": true
+    },
+    "stationary": {
+      "exact_periodic_stationary_laws": 54,
+      "numerical_convolution_inequalities": 378,
+      "mean_centering_failure_control": true
+    },
+    "scales": {
+      "exact_weighted_windows": 100,
+      "dyadic_selected_ratios": [
+        "2/9",
+        "4/49",
+        "8/225",
+        "16/961",
+        "32/3969",
+        "64/16129",
+        "128/65025",
+        "256/261121",
+        "512/1046529",
+        "1024/4190209",
+        "2048/16769025"
+      ],
+      "overlapping_window_failure_control": true
+    },
+    "traces": {
+      "exact_invariant_operator_pairs": 35,
+      "unequal_orbit_weights": [
+        "1/4",
+        "3/4"
+      ],
+      "equal_type_weight_failure_control": true,
+      "trace_norm_checks": "numerical"
+    },
+    "sprinkling": {
+      "exact_percolation_resolvents": 16,
+      "graph_count": 4,
+      "scalar_norm_checks": "numerical",
+      "no_infinite_graph_threshold_certified": true
+    }
+  },
+  "elapsed_seconds": 1.689
+}
