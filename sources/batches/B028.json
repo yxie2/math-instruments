@@ -1,0 +1,324 @@
+{
+  "batch_id": "B028",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T11:09:23.109340+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BernoulliNonflatInSeven.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BernoulliNonflatInSeven.lean",
+      "sha256": "47d90c7719ce7b54acbc5262a488f8f5c610691206f978ef84a9fad2c0803447",
+      "bytes": 3466
+    },
+    {
+      "path": "lean/ComparatorChallenges/ElasticityUniqueness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ElasticityUniqueness.lean",
+      "sha256": "c4c928a811cce5bd5bc46642e8dbf7e6ffd698856f1bf6ff12a511dddfaccb20",
+      "bytes": 3681
+    },
+    {
+      "path": "lean/docs/367.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/367.md",
+      "sha256": "ad770d8f4449129cb95ad6c1b0b248e033f85e97cbcdcc20c25842a14e40d4fb",
+      "bytes": 1081
+    },
+    {
+      "path": "lean/docs/372.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/372.md",
+      "sha256": "5c6a8e21366181a580d561cfdc50d32306ac2f428ea487084db21bc5d603e3d6",
+      "bytes": 1004
+    },
+    {
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/README.md",
+      "sha256": "3149fbde994e342ccc927ab53458d359be8bb357021a66b88966e788e6ffa6af",
+      "bytes": 616
+    },
+    {
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0",
+      "bytes": 26555
+    },
+    {
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+      "sha256": "07a905757ac037b7cb7799f706e9ad22e0bc9b85acaeee81d80b90beca8d5fc9",
+      "bytes": 60948
+    },
+    {
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/README.md",
+      "sha256": "7ad925c0e5d494e8c642e767990255b06011b9cc147edd5247f9773571c6966d",
+      "bytes": 709
+    },
+    {
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016",
+      "bytes": 12002
+    },
+    {
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/README.md",
+      "sha256": "e0a533137936a2b3779921606ad2d0d4eb47b84e15a15990c84b9241eb8f5e50",
+      "bytes": 1784
+    },
+    {
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217",
+      "bytes": 31282
+    },
+    {
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/README.md",
+      "sha256": "f99c43e3ffeb04dbcff060f4fd334ec5e810abe3c64d7e035cfb21bae2b1fc14",
+      "bytes": 740
+    },
+    {
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex",
+      "sha256": "50521fb6e7492fb3e866ca76d603200fa085b2159ada9d5a331361d47abf96eb",
+      "bytes": 27687
+    },
+    {
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+      "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e",
+      "bytes": 20142
+    },
+    {
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+      "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8",
+      "bytes": 24040
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000328",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:positive-projections",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L141",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000328",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:sym2",
+      "line": 127,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L127",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000328",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:sym3",
+      "line": 130,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L130",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000328",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:hook",
+      "line": 138,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L138",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000329",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:tensor-bounds",
+      "line": 310,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L310",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000329",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:trace-bounds",
+      "line": 316,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L316",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000329",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:five-sevenths",
+      "line": 318,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L318",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000329",
+      "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+      "label": "cert:mixed-bound",
+      "line": 321,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L321",
+      "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+    },
+    {
+      "instrument_id": "MI-000330",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "lem:conic-bundle",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L17",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000330",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "eq:conic-quotient",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L26",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000330",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "eq:conic-frame",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L54",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000331",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "lem:finite-type",
+      "line": 150,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L150",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000331",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "eq:finite-type-hypothesis",
+      "line": 154,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L154",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000331",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "eq:finite-type-system",
+      "line": 180,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L180",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000331",
+      "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+      "label": "eq:finite-type-coefficients",
+      "line": 187,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L187",
+      "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+    },
+    {
+      "instrument_id": "MI-000332",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "label": "eq:diffuse-variables",
+      "line": 51,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L51",
+      "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+    },
+    {
+      "instrument_id": "MI-000332",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "label": "eq:diffuse-D",
+      "line": 60,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L60",
+      "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+    },
+    {
+      "instrument_id": "MI-000332",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "label": "eq:diffuse-q",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L61",
+      "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+    },
+    {
+      "instrument_id": "MI-000332",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+      "label": "eq:q-stability",
+      "line": 88,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L88",
+      "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+    },
+    {
+      "instrument_id": "MI-000333",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+      "label": "lem:interface-immersed-test",
+      "line": 172,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L172",
+      "sha256": "07a905757ac037b7cb7799f706e9ad22e0bc9b85acaeee81d80b90beca8d5fc9"
+    },
+    {
+      "instrument_id": "MI-000333",
+      "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+      "label": "eq:L4",
+      "line": 186,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L186",
+      "sha256": "07a905757ac037b7cb7799f706e9ad22e0bc9b85acaeee81d80b90beca8d5fc9"
+    },
+    {
+      "instrument_id": "MI-000334",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+      "label": "lem:quadratic-envelopes",
+      "line": 256,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L256",
+      "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+    },
+    {
+      "instrument_id": "MI-000334",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+      "label": "eq:envelope-composition",
+      "line": 262,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L262",
+      "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+    },
+    {
+      "instrument_id": "MI-000334",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+      "label": "eq:path-envelope-convexity",
+      "line": 268,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L268",
+      "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+    },
+    {
+      "instrument_id": "MI-000334",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex",
+      "label": "eq:limit-pde",
+      "line": 7,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex#L7",
+      "sha256": "50521fb6e7492fb3e866ca76d603200fa085b2159ada9d5a331361d47abf96eb"
+    },
+    {
+      "instrument_id": "MI-000335",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+      "label": "lem:barycentric-envelope",
+      "line": 58,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L58",
+      "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+    },
+    {
+      "instrument_id": "MI-000335",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+      "label": "eq:barycentric-duality",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L62",
+      "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+    },
+    {
+      "instrument_id": "MI-000335",
+      "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+      "label": "eq:barycentric-sandwich",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L45",
+      "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B028: eight selected mechanisms from PDE families 367, 372, 375 and 377. Checks include exact full tensor projections, differential identities and finite envelope duality; established inverse-profile antecedents are explicit.
+
 - Added B027: eight selected mechanisms from PDE and transport families 366, 369, 370 and 373, with finite verification and explicit antecedents for reciprocal kernels and equality of transport infima.
 
 - Added B026: eight instruments from geometry families 038, 047, 048 and 050. Exact symbolic checks include the source polynomial cylinder certificate and inverse; other checks retain adapted filtrations, dual trace normalization, resonance and curvature atoms. Added SymPy to finite-verification requirements.
