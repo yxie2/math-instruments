@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B006: six auxiliary instruments from planar-model families 225, 226 and 233, with source-bound hypotheses, antecedent comparisons and finite checks. Negative controls distinguish selected analytic mechanisms from unverified global scaling-limit claims.
 - Added B005: six instruments from families 231, 234 and 236, with exact source passages, explicit credit for established covariance and coupling methods, and six groups of finite checks including negative controls for missing hypotheses.
 - Added B004: seven auxiliary instruments from families 093, 096 and 097, with exact source passages, comparisons to trace and signing antecedents, and six groups of finite checks. The records separate selected lemma review from the source papers’ global conjecture claims.
 - Added B003: ten instruments from families 091, 094, 098 and 101, with exact source bindings, targeted antecedent comparisons and seven groups of finite checks. Established entropy–cone transfer and electrical localization are credited separately from candidate combinations.

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "numpy_version": "2.4.4",
+  "seed": 225226233,
+  "scope": "Selected finite identities and negative controls; not proof or novelty certification.",
+  "checks": {
+    "energy": {
+      "examples": 36,
+      "max_bound_ratio": 0.4987361060172178,
+      "compression_only_negative_control": [
+        1.0,
+        10.0,
+        100.0
+      ],
+      "limitation": "Finite Hermitian matrices; no infinite-operator domain verification or uniform lattice moment estimate."
+    },
+    "variogram": {
+      "covariance_examples": 60,
+      "max_identity_error": 4.263256414560601e-14,
+      "rounding_examples": 320,
+      "same_cell_examples": 220,
+      "max_rounding_ratio": 1.8883687431668408,
+      "limitation": "Checks finite covariance cancellation and sampled rounding bounds. The finite weights are not asserted to be continuum finite-energy atomic measures."
+    },
+    "insertion": {
+      "minor_examples": 10725,
+      "max_minor_error": 6.661338147750939e-16,
+      "state_sum_examples": 12,
+      "max_state_sum_error": 3.552713678800501e-15,
+      "limitation": "Finite mode-pair matrices and occupation sums; does not reproduce marked-cap partition normalization or a curve scaling limit."
+    },
+    "alternating_chains": {
+      "exact_rational_examples": 2000,
+      "min_positive_ratio": "1/4",
+      "nondecaying_negative_control": "-1/2",
+      "limitation": "Abstract one- and two-chain inequality only; does not enumerate planar cap diagrams or prove arch spanning."
+    },
+    "conditional_projection": {
+      "gaussian_examples": 90,
+      "max_covariance_error": 1.4069455689295439e-14,
+      "disappearing_coordinate_residual_mismatch": 1.0,
+      "indicator_hidden_coordinate_correlation": 0.3989422804014327,
+      "limitation": "Finite Gaussian projection algebra and a counterexample to a missing covariance hypothesis; not metric-graph Green convergence."
+    },
+    "likelihood": {
+      "likelihood_moment_examples": 18,
+      "max_relative_quadrature_error": 5.276997409716665e-15,
+      "shift_distance_examples": 81,
+      "limitation": "One-dimensional Gaussian identities after reduction to the shift direction; no random-domain or infinite-dimensional convergence is simulated."
+    }
+  }
+}
