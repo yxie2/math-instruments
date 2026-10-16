@@ -1,0 +1,94 @@
+{
+  "batch": "B078",
+  "status": "pass",
+  "elapsed_seconds": 0.227,
+  "scope": "Finite selected mechanisms and dependency controls; no headline or Lean certification.",
+  "checks": {
+    "conditional_coupling": {
+      "status": "pass",
+      "details": {
+        "environment_couplings": 60,
+        "maximum_order_failure": 0.3148378312758016,
+        "zero_conditioning_event_included": true
+      }
+    },
+    "scale_errors": {
+      "status": "pass",
+      "details": {
+        "early_tail_bounds": 24,
+        "nonsummable_sequence_values": [
+          1.0391327583118382,
+          0.8657025005763328,
+          0.7421038765314178,
+          0.6493915771877875,
+          0.5772605423204441,
+          0.5195445960998111
+        ],
+        "constant_error_control": 3.6012687359157085,
+        "averaged_tv": 0.0,
+        "expected_quenched_tv": 0.5
+      }
+    },
+    "departure_rows": {
+      "status": "pass",
+      "details": {
+        "exact_environment_assignments": 24,
+        "repeated_row_second_moment": "17/50",
+        "incorrect_fresh_row_product": "1/4"
+      }
+    },
+    "positive_trials": {
+      "status": "pass",
+      "details": {
+        "fresh_column_lengths": 7,
+        "smallest_positive_probability": 1e-12,
+        "zero_probability_control": true
+      }
+    },
+    "bounded_reweighting": {
+      "status": "pass",
+      "details": {
+        "extra_replica_expansions": 5,
+        "same_field_second_moment": 1.1110000000000002,
+        "refreshed_field_second_moment": 1.048576,
+        "singular_covariance_values": [
+          1.7676910451499385e-18,
+          0.37084556391722834,
+          0.391991237605325,
+          0.39408594335063735,
+          0.3943185181895582
+        ]
+      }
+    },
+    "gaussian_calculus": {
+      "status": "pass",
+      "details": {
+        "replica_hessian_cases": 2,
+        "max_hessian_error": 8.462463618741367e-09,
+        "quadrature_derivative_error": 3.780691038013373e-13,
+        "partition_moments": [
+          1.2678070108864221,
+          2.2236793699061583,
+          1.0807313593341201,
+          1.5896104249058602
+        ]
+      }
+    },
+    "rc_conditioning": {
+      "status": "pass",
+      "details": {
+        "exact_quotient_laws": 12,
+        "adaptive_leaf_hidden_event_controls": 4,
+        "wiring_shortcut_control": true
+      }
+    },
+    "planar_loops": {
+      "status": "pass",
+      "details": {
+        "loop_configurations": 64,
+        "heterogeneous_duality_checks": 256,
+        "bridge_dual_loop_included": true
+      }
+    }
+  }
+}
