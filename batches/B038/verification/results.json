@@ -1,0 +1,52 @@
+{
+  "batch": "B038",
+  "status": "pass",
+  "scope": "Finite interfaces only; no global geometric theorem or Lean build certified.",
+  "checks": {
+    "ellipsoid_contacts": {
+      "finite_optimizations": 16,
+      "max_matrix_error": 1.1388277319818764e-07
+    },
+    "volume_shears": {
+      "exact_spanning_dimensions": 7,
+      "exact_shear_inverses_and_jacobians": 40
+    },
+    "definite_pairs": {
+      "exact_wedge_models": 120
+    },
+    "mixed_cones": {
+      "pairs": 100,
+      "convex_points": 1100,
+      "basic_additions": 1100
+    },
+    "closed_lift": {
+      "exact_nonzero_fourier_symbols": 100,
+      "harmonic_mode": true
+    },
+    "separator_correction": {
+      "exact_linear_and_affine_models": 100
+    },
+    "inverse_increments": {
+      "noncommuting_matrix_steps": 600,
+      "telescoped_sums": 30
+    },
+    "factorial_inverse": {
+      "convolution_ratios": {
+        "1": {
+          "20": 0.47352974478140336,
+          "50": 0.1690153240649742,
+          "100": 0.08211648035100823,
+          "200": 0.04051400491638626
+        },
+        "2": {
+          "20": 0.035730101986709215,
+          "50": 0.006063059815978799,
+          "100": 0.001555024233148305,
+          "200": 0.0003941919048162529
+        }
+      },
+      "exact_matrix_series_models": 18,
+      "orders_each": 12
+    }
+  }
+}

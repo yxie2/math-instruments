@@ -62,7 +62,9 @@
 
 | [B037](B037/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Frobenius separation, formal smoothness, globular spines, dense limits, compact Nakayama and nerve covers |
 
-Future rounds use `B038` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B038](B038/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Hermitian contacts, polynomial shears, definite pairs, current corrections and inverse-matrix budgets |
+
+Future rounds use `B039` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
