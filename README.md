@@ -12,6 +12,8 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 
 [Research direction](direction/README.md) · [Extraction method](methodology/extraction.md) · [How to cite](CITATION.cff)
 
+[Find an instrument for your problem](methodology/research-guide.md): a guide to exact constraints, adaptive choices and operator estimates, with concrete starting points and the hypotheses needed for reuse.
+
 ## Browse the collection
 
 <!-- catalogue-navigation:start -->
@@ -21,7 +23,7 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 | [Mathematical instruments](tables/instruments.md) | 463 extracted entries, each with a stable identifier |
 | [Source papers](tables/papers.md) | 250 manuscript records across the selected families |
 | [Problem families](tables/families.md) | 207 family accounts with claims, antecedents and caveats |
-| [Recurring patterns](catalog/patterns/README.md) | 11 approaches connecting the source arguments |
+| [Recurring patterns](catalog/patterns/README.md) | 14 approaches connecting the source arguments |
 | [Tables and review status](tables/README.md) | Family maps, formalization, dependencies and antecedents |
 | [Extraction batches](batches/README.md) | Extraction rounds and source versions |
 | [Release coverage](tables/coverage.md) | 207 of 372 families catalogued; 165 pending |

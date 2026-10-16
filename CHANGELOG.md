@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B045 curation: three cross-family patterns, a practical research guide, reproducible batch runners and an aggregate B002-B044 source/verification audit. Clarified coverage and evidence scopes.
+
 - Added B044: eight selected interfaces from families 136, 169, 172 and 183, with exact constraint preservation and explicit uniformity requirements.
 
 - Added B043: eight selected interfaces from families 280, 282, 323 and 371, with explicit spectral, infinite-dimensional and tail hypotheses.

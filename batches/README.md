@@ -17,66 +17,38 @@
 | [B013](B013/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Paired greedy queries, path budgets, weighted forests, binary edit obstructions, determinant digits and singular residue orbits |
 | [B014](B014/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Finite phase tests, spectral whitening, dependent cancellation, operator squares, pair capacity and conditional entropy gains |
 | [B015](B015/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Balanced sampling, retained-event posteriors, spread cores, partial homology resolutions, skeleton weights and graph exposure identities |
-
 | [B016](B016/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Mixed-state kinetic certificates, exact dyadic filters, feedback fields, sparse near-isometries, adaptive products and fractional quantum tournaments |
-
 | [B017](B017/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Prime-coordinate kernels, orbit variance, exact stopping bins, collision fibers, phase limits and protected Egyptian-fraction descent |
-
 | [B018](B018/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Rectangular derivations, varying-dimension gaps, predecessor periodicity, Baire generation and retained-ensemble entropy deficits |
-
 | [B019](B019/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Normalized lengths, cohomological roots, derived square-zero extensions, noncommutative Schur equations and nilpotent filtrations |
-
 | [B020](B020/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Affine sign counts, cyclic digits, density transfers, conditional local obstructions and a complete Snaky certificate reconstruction |
-
 | [B021](B021/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Oracle recovery, unique arithmetic witnesses, ordinal slices, covariant selectors and mixed-order fixed points |
-
 | [B022](B022/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Weighted density, uniform arithmetic fields, two flags, shared entropy, periodic bounds and residue separation |
-
 | [B023](B023/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Moving measures, overlapping seeds, compensated thinning, cancellation, particle births and nested projections |
-
 | [B024](B024/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Product rank, composition moments, homogeneous lookup, Gaussian absorption, stationary flows and modular sign recovery |
-
 | [B025](B025/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Nilpotent lifting, congruence recurrence, chain residues, shuffles, groupoid weights and Cartier halving |
-
 | [B026](B026/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Restriction growth, rational supports, polynomial cylinder certificates, trace normalization, jet resonance and curvature measures |
-
 | [B027](B027/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Compact jump projections, reciprocal Green kernels, localized virial and interval estimates, deterministic transport obstructions and approximations |
-
 | [B028](B028/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Tensor projections, null-conic bundles, finite-type uniqueness, profile defects, overlap variance and quadratic envelopes |
-
 | [B029](B029/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Positive loop means, transverse jets, prescribed curvature, smooth accumulation, rearrangements, relative Moser fields and interval certificates |
-
 | [B030](B030/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Crossing duality, local word degree, quaternion cancellation, modular rank, line certificates, density speed and Folner extraction |
-
 | [B031](B031/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Haar averaging, constrained recurrence, count couplings, cone means, marker graphings, finite plus construction and Fox minors |
-
 | [B032](B032/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Fiber pruning, collisions, thermal forms, entropy duality, actual marginals, conformal waves and capacity allocation |
-
 | [B033](B033/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Holomorphic gluing, disc curvature, moving-basis traces, rational-curve involutions and exact/modular certificates |
-
 | [B034](B034/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Continuous matrix scaling, central homotopies, tensor labels, trace ideals and normalized rank averaging |
-
 | [B035](B035/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Rank-counted shears, synthetic FFT layout, sparse matching reductions, block entropy and priority-list compression |
-
 | [B036](B036/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Affine shadows, tiling stacks, rational snapping, product chains, singular interpolation and kernel saturation |
-
 | [B037](B037/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Frobenius separation, formal smoothness, globular spines, dense limits, compact Nakayama and nerve covers |
-
 | [B038](B038/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Hermitian contacts, polynomial shears, definite pairs, current corrections and inverse-matrix budgets |
-
 | [B039](B039/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Lefschetz comparison, cut ideals, coefficient-preserving polarization and cyclic descent |
-
 | [B040](B040/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Adaptive witnesses, juntas, signed permanent gadgets and cyclic norm extraction |
-
 | [B041](B041/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Cutoff transport, finite-energy coarea, integral interpolation and homology representatives |
-
 | [B042](B042/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Bounded-degree avoidance, logarithmic energies, saturated lattices and integral characters |
-
 | [B043](B043/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Dense domains, spectral comparison, separable quotients and stable evolution |
-
 | [B044](B044/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Unconditioned sampling, graph alphabets, exact convolution constraints and power gains |
+| [B045](B045/README.md) | Curation only; 3 new patterns; no extraction-count increase | Research guide, cross-family connections and aggregate reproducibility audit |
 
-Future rounds use `B045` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B046` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
