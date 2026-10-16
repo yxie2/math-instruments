@@ -1,0 +1,294 @@
+{
+  "batch_id": "B005",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T05:47:10.932356+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/FreeIsing.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FreeIsing.lean",
+      "sha256": "cf2fd894b22f094ccc071e57557c916ec3dc3a5664a45b0f106ff4e7bbfebcca",
+      "bytes": 3042
+    },
+    {
+      "path": "lean/ComparatorChallenges/FreeUniformSpanningForest.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FreeUniformSpanningForest.lean",
+      "sha256": "65256a3edbf550d34d54125b8fbdb4859845daee77601ea41c97e78aacb3fb39",
+      "bytes": 4539
+    },
+    {
+      "path": "lean/ComparatorChallenges/InvariantIsing.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/InvariantIsing.lean",
+      "sha256": "263b69bab61b46e895a209086945257493ad311c313c07e8ea11340db392bfc7",
+      "bytes": 25443
+    },
+    {
+      "path": "lean/ComparatorChallenges/StronglyRayleighDPP.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/StronglyRayleighDPP.lean",
+      "sha256": "2058dbda79146234fc04b8d1d1168dc48814d8af2e2295be6ecbbe47f2dfca60",
+      "bytes": 7383
+    },
+    {
+      "path": "lean/docs/231.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/231.md",
+      "sha256": "845749e5c67607039ce5a266a849a1d5c239ca34f063f37aad0787c6eec360c1",
+      "bytes": 1407
+    },
+    {
+      "path": "lean/docs/234.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/234.md",
+      "sha256": "1e483bc7d54fd2d118f1c072974ba97a4c16eb3c51d609f6b65dfb9fd8d53ae5",
+      "bytes": 1363
+    },
+    {
+      "path": "lean/docs/236.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/236.md",
+      "sha256": "495552b15acee5c71d186e8059ad04e480ed549ba8c5996fe13aeb932fd516dc",
+      "bytes": 1001
+    },
+    {
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/README.md",
+      "sha256": "4036285adb65d20245b24864962886a828de11e175634e4d5af2a9c4ac354975",
+      "bytes": 710
+    },
+    {
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6",
+      "bytes": 25933
+    },
+    {
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/README.md",
+      "sha256": "854ffdcdd86351fa88e40705130e2747632cb9673e6cccc1f73fbfdcc2f4189a",
+      "bytes": 743
+    },
+    {
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+      "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c",
+      "bytes": 9978
+    },
+    {
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex",
+      "sha256": "35e4460d8f525f885560c1392d153788af2aad2a74f4ef3fa90217bc7c3de72d",
+      "bytes": 7301
+    },
+    {
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+      "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c",
+      "bytes": 14349
+    },
+    {
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex",
+      "sha256": "0edd0187ada0775ef144da2d936d534221cec2281734a075dd8ebd0703477df9",
+      "bytes": 8625
+    },
+    {
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/README.md",
+      "sha256": "d113290d37b7782397fe960470820b63daa3a92a5e83e52a5aaaf18a49a6b574",
+      "bytes": 739
+    },
+    {
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+      "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9",
+      "bytes": 20202
+    },
+    {
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a",
+      "bytes": 17979
+    },
+    {
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex",
+      "sha256": "66754a274cd207403b360a9cebe5701caee96a5783233310bdeb58685ce0a439",
+      "bytes": 10627
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000142",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+      "label": "lem:tree-response",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L14",
+      "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+    },
+    {
+      "instrument_id": "MI-000142",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+      "label": "eq:finite-tilt",
+      "line": 216,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L216",
+      "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+    },
+    {
+      "instrument_id": "MI-000142",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex",
+      "label": "prop:canonical-drift",
+      "line": 276,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/response.tex#L276",
+      "sha256": "9d929e17b839fe38aa49e54f716ece23e69e553d04c10f70927ef9637fc84a5c"
+    },
+    {
+      "instrument_id": "MI-000142",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex",
+      "label": "lem:sr-response",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/strongly-rayleigh.tex#L14",
+      "sha256": "0edd0187ada0775ef144da2d936d534221cec2281734a075dd8ebd0703477df9"
+    },
+    {
+      "instrument_id": "MI-000143",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+      "label": "lem:inverse",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L13",
+      "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+    },
+    {
+      "instrument_id": "MI-000143",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+      "label": "eq:picard-bound",
+      "line": 46,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L46",
+      "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+    },
+    {
+      "instrument_id": "MI-000143",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex",
+      "label": "prop:brownian-sampler",
+      "line": 101,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/decoder.tex#L101",
+      "sha256": "cc95c74cd44ce38b0acced7739fd779b955e041540b6048840abd46afc55708c"
+    },
+    {
+      "instrument_id": "MI-000143",
+      "path": "preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex",
+      "label": "lem:innovation",
+      "line": 88,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-uniform-spanning-forest-is-a-factor-of-IID-September-25-2026/build/sections/observation.tex#L88",
+      "sha256": "35e4460d8f525f885560c1392d153788af2aad2a74f4ef3fa90217bc7c3de72d"
+    },
+    {
+      "instrument_id": "MI-000144",
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "label": "gen:R-continuity",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L18",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+    },
+    {
+      "instrument_id": "MI-000144",
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "label": "gen:R-at-zero",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L90",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+    },
+    {
+      "instrument_id": "MI-000144",
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "label": "gen:variational-continuity",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L31",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+    },
+    {
+      "instrument_id": "MI-000145",
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "label": "gen:counts",
+      "line": 127,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L127",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+    },
+    {
+      "instrument_id": "MI-000145",
+      "path": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex",
+      "label": "gen:count-comparison",
+      "line": 133,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/60-general.tex#L133",
+      "sha256": "bfe25afe1fd4b27b8a34d2f5ddbc6f54b8bb8d794a14d16fbe3c2506a84957b6"
+    },
+    {
+      "instrument_id": "MI-000146",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+      "label": "prop:compatible-copies",
+      "line": 67,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L67",
+      "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+    },
+    {
+      "instrument_id": "MI-000146",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+      "label": "eq:past-compatibility",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L97",
+      "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+    },
+    {
+      "instrument_id": "MI-000146",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex",
+      "label": "eq:copy-coordinate-variance",
+      "line": 222,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/05-coupling.tex#L222",
+      "sha256": "8f2bda03851bae6606a5ba33eeb9471f93fbb8c7a47367621ae8436d8de4a4d9"
+    },
+    {
+      "instrument_id": "MI-000146",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex",
+      "label": "prop:factor-extraction",
+      "line": 86,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08b-recovery.tex#L86",
+      "sha256": "66754a274cd207403b360a9cebe5701caee96a5783233310bdeb58685ce0a439"
+    },
+    {
+      "instrument_id": "MI-000147",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "label": "lem:small-log-loss",
+      "line": 208,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L208",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+    },
+    {
+      "instrument_id": "MI-000147",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "label": "eq:variance-cutoff",
+      "line": 296,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L296",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+    },
+    {
+      "instrument_id": "MI-000147",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "label": "lem:cutoff-sums",
+      "line": 318,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L318",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+    },
+    {
+      "instrument_id": "MI-000147",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "label": "eq:integrable-osgood",
+      "line": 427,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L427",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+    },
+    {
+      "instrument_id": "MI-000147",
+      "path": "preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex",
+      "label": "eq:osgood-coefficient",
+      "line": 437,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-factor-of-IID-threshold-for-the-free-Ising-model-on-regular-trees-September-26-2026/build/sections/08-critical-comparison.tex#L437",
+      "sha256": "27d6d4f60d225fa9a4d2b829e9d340cfaf4e44a9baafab68aff32732c663597a"
+    }
+  ]
+}
