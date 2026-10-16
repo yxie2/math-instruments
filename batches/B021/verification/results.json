@@ -1,0 +1,58 @@
+{
+  "batch": "B021",
+  "python": "3.13.12",
+  "checks": {
+    "bounded_recovery": {
+      "exact_rational_runs": 58,
+      "arbitrary_interior_decisions": 58000,
+      "Borel_uniformization_tested": false,
+      "irrational_cut_termination_tested": false
+    },
+    "cut_transcripts": {
+      "two_coordinate_tables": 256,
+      "open_rectangle_transcripts": 16,
+      "category_cone_theorem_tested": false
+    },
+    "unique_branch_witnesses": {
+      "exact_max_inputs": 36,
+      "unfrozen_spurious_multiplicity": 252,
+      "ties_assigned_to_one_branch": true
+    },
+    "rational_codes": {
+      "enumerated_valid_codes": 511,
+      "distinct_values": 511,
+      "rational_arithmetic_outputs": 1599,
+      "zero_and_denominator_one": true
+    },
+    "binary_masking": {
+      "exact_digit_extractions": 5151,
+      "true_memberships": 1259,
+      "single_fold_power_graph_verified": false
+    },
+    "ordinal_slices_finite_model": {
+      "presentations": 500,
+      "local_injections_not_sections": 399,
+      "nonwellorderable_sets_modeled": false,
+      "choice_preservation_tested": false
+    },
+    "covariant_selection": {
+      "nonabelian_covariance_checks": 720,
+      "unmoved_generic_formula_failures": 504,
+      "infinite_detector_separation_tested": false
+    },
+    "finite_syntax_support": {
+      "random_full_beta_steps": 183,
+      "annotation_reduction_control": true,
+      "raw_weak_not_strong_control": true,
+      "conversion_expansion_can_add_sorts": true,
+      "typing_metatheory_verified": false
+    },
+    "mixed_order_fixed_points": {
+      "finite_lattice_models": 180,
+      "comparable_pairs": 32760,
+      "odd_negative_loop_no_fixed_point_control": true,
+      "general_candidate_interface_verified": false
+    }
+  },
+  "scope": "Exact finite models of selected arithmetic, combinatorial and syntactic mechanisms; not global computability, set-theoretic or type-theoretic certification."
+}

@@ -28,7 +28,9 @@
 
 | [B020](B020/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Affine sign counts, cyclic digits, density transfers, conditional local obstructions and a complete Snaky certificate reconstruction |
 
-Future rounds use `B021` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B021](B021/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Oracle recovery, unique arithmetic witnesses, ordinal slices, covariant selectors and mixed-order fixed points |
+
+Future rounds use `B022` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
