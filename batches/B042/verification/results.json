@@ -1,0 +1,41 @@
+{
+  "batch": "B042",
+  "status": "pass",
+  "scope": "Selected finite interfaces only; no arithmetic headline or Lean build certified.",
+  "checks": {
+    "bounded_avoidance": {
+      "monomial_models": 20,
+      "distinct_monomials": 451,
+      "coefficient_field_fixed": true
+    },
+    "lagrangian_intersections": {
+      "exact_transversality_models": 72,
+      "maximum_symplectic_dimension": 8
+    },
+    "matched_damping": {
+      "high_precision_cross_kernel_models": 144,
+      "closest_endpoint_distance": "1e-20"
+    },
+    "moment_squares": {
+      "damped_kernel_and_tangent_models": 60,
+      "series_terms": 700,
+      "max_identity_error": 8.881784197001252e-16
+    },
+    "ihara_depth": {
+      "exact_associative_expansion_pairs": 81
+    },
+    "saturated_lattice": {
+      "odd_minor_models": 100,
+      "dependent_reduction_negative_control": true
+    },
+    "frobenius_finite_precision": {
+      "bounded_integral_polynomial_models": 360,
+      "geometric_local_constancy_tested": false
+    },
+    "integral_character_evaluation": {
+      "ramified_residue_algebra_models": 120,
+      "projector_denominator_invertible": false,
+      "geometric_group_ring_freeness_tested": false
+    }
+  }
+}
