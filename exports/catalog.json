@@ -25989,6 +25989,343 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000605.md",
       "body": "# Control functional calculus with a class of state-continuous right multipliers\n\n[Family 300](../families/openai-math-300.md) · [Source manuscript](../papers/P-000374.md) · [Batch B062](../../batches/B062/README.md)\n\n## Mathematical content\n\nFor a faithful normal state phi, let R_phi consist of uniformly operator-bounded sequences R_n such that ||D_n R_n||_phi tends to zero whenever D_n are uniformly bounded and ||D_n||_phi tends to zero. This is an algebra, closed in the uniform operator norm. It contains constant sequences, bounded centralizer sequences, and bounded sequences converging in state norm. Adding a bounded state-null sequence preserves membership, since ||D_n E_n||_phi<=||D_n|| ||E_n||_phi.\n\nFor a fixed right multiplier z, choose c prime in the commutant with c prime xi close to z xi. Then ||Dz xi||<=||D|| ||z xi-c prime xi||+||c prime|| ||D xi||. This proves uniform continuity for bounded D, and a finite net extends it to state-precompact right multipliers. For b in the centralizer, ||Db||_phi<=||b|| ||D||_phi.\n\nIf self-adjoint U_n,V_n belong to R_phi, have a common operator bound, and ||U_n-V_n||_phi tends to zero, then every continuous f on a common spectral interval gives f(U_n),f(V_n) in R_phi and ||f(U_n)-f(V_n)||_phi tending to zero. Telescope powers, use the right-multiplier property for each term, and approximate f uniformly by polynomials. Arbitrary bounded moving right multipliers do not suffice: with diagonal state weights w_j tending to zero, D_n=e_nn has state norm sqrt(w_n), but D_n e_n0=e_n0 has the fixed norm sqrt(w_0).\n\n## Role in the source argument\n\nJustifies cutoff and functional-calculus transfers in a nontracial state norm.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:multiplier-calculus](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/build/source/sections/completion.tex#L7)\n- [lem:state-multipliers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/build/source/sections/transfer.tex#L221)\n\n## Antecedents and comparison\n\nThe proof is classical bounded-set strong continuity made explicit for sequences. The source packages the required right-multiplier hypothesis for its paving construction. No uniform state-norm right-multiplication bound is asserted outside that class.\n\n## Checks and limitations\n\nGrowing matrix corners of a fixed diagonal trace-class state exhibit the moving-multiplier obstruction. Centralizer controls and continuous spectral cutoffs check the permitted estimates in explicit models.\n\nFinite corner sequences illustrate the topology but do not establish a dimension-uniform paving bound or all infinite-dimensional functional-calculus limits.\n\n## Possible applications\n\nPreventing an invalid tracial estimate when passing small state errors through products and cutoffs.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000606",
+      "record_type": "instrument",
+      "title": "Rule out an open zero-height region using finite-radius frequency control",
+      "forms": [
+        "finite-radius-positive-height-continuation",
+        "matrix-measure-frequency-identities"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-346"
+      ],
+      "source_paper_ids": [
+        "P-000375"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex",
+          "label": "lem:positive-limit-height",
+          "line": 109,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex#L109",
+          "sha256": "f2d8892fc2eac25d9c9181851e410ed095f33d32364d9869b5d413e896ac514b"
+        },
+        {
+          "path": "preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex",
+          "label": "eq:exact-frequency-identities",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex#L83",
+          "sha256": "f2d8892fc2eac25d9c9181851e410ed095f33d32364d9869b5d413e896ac514b"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000606.md",
+      "body": "# Rule out an open zero-height region using finite-radius frequency control\n\n[Family 346](../families/openai-math-346.md) · [Source manuscript](../papers/P-000375.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nOn a connected open subset of R^m, let nu be a nonzero nonnegative Radon measure, f a vector measure and beta a symmetric matrix measure, with [[nu,f transpose],[f,beta]] positive semidefinite. Put d0=tr(beta). Assume grad(nu)=2f, div(f)=d0, and integral div(X) dm0=integral DX:dbeta. Also assume 2m0<=d0 and |m0|<=C d0 locally. For p>=4 set phi_l=l^(-m)(1-|y-x|²/l²)_+^p and psi_l=2p l^(-m)(1-|y-x|²/l²)_+^(p-1). Define H=int psi_l dnu, A=l² int phi_l dm0, D=l² int phi_l dd0 and R=int psi_l dbeta[y-x,y-x]. Dots denote log-radius derivatives. Integration by parts and matrix Cauchy-Schwarz give\n\nA dot=2A-D+R, H dot=2D, D²<=RH, 2A<=D.\n\nThen H>0 at every positive interior radius. Otherwise choose x outside the support at distance l0>0 with a larger interior ball. On t=log(l)>t0, H>0 and P=A/H,n=D/H,q=R/H satisfy n>=0, n>=2P, q>=n² and P dot>= (n-1)(n-2P). Thus P is bounded above when moving inward. Since A tends to zero at t0 and (exp(-2t)A) dot>=-exp(-2t)H/4, monotonicity of H also bounds P below by -(exp(2(t-t0))-1)/8. Hence P dot>=n²/2-C on this finite interval. Integration bounds integral n², so n is integrable down to t0. But (log H) dot=2n then prevents H from tending to zero, a contradiction. All stated measure identities are inputs, not consequences of positivity alone.\n\n## Role in the source argument\n\nJustifies dividing by height before the later dimension-reduction frequency argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:positive-limit-height](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex#L109)\n- [eq:exact-frequency-identities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/build/sections/07-dimension-reduction.tex#L83)\n\n## Antecedents and comparison\n\nThe source explicitly attributes this finite-radius continuation step to the failed-fit analysis in its almost-everywhere-regularity companion. Its ingredients are classical frequency and Riccati inequalities. No independent novelty claim is made for the abstract measure formulation.\n\n## Checks and limitations\n\nHarmonic-polynomial height, flux and stress models verify the radial kernel identities and inequalities by exact polynomial integration. Random admissible frequency parameters check the algebraic lower bounds.\n\nPolynomial models do not construct limiting measures from a varifold or prove the source singular-set dimension theorem.\n\n## Possible applications\n\nEstablishing positivity of a normalization from coupled stress identities without assuming it at every center.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000607",
+      "record_type": "instrument",
+      "title": "Compare projected mass with integer counts using determinant and tilt errors",
+      "forms": [
+        "projection-jacobian-integer-count",
+        "signed-second-order-tilt-error"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-346"
+      ],
+      "source_paper_ids": [
+        "P-000376"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex",
+          "label": "lt:jacobian",
+          "line": 210,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex#L210",
+          "sha256": "4525586fe417b2043ab13e410fc6457e089549e473c6806fc76552e7de4bcab8"
+        },
+        {
+          "path": "preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex",
+          "label": "eq:lt-projection-identities",
+          "line": 94,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex#L94",
+          "sha256": "4525586fe417b2043ab13e410fc6457e089549e473c6806fc76552e7de4bcab8"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000607.md",
+      "body": "# Compare projected mass with integer counts using determinant and tilt errors\n\n[Family 346](../families/openai-math-346.md) · [Source manuscript](../papers/P-000376.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nLet P be orthogonal projection onto an m-plane, decomposed relative to an m-dimensional reference tangent plane and its normal complement. Put B=I-P_hh and e=tr B=tr P_vv. Then 0<=B<=I and P_hv P_vh=B-B², so |P_vh a|²<=B[a,a]. For nearest-point projection onto a smooth reference submanifold, J_z=I-A_z is the tubular tangential factor and\n\nJ_pi=sqrt(det P_hh)/det J_z.\n\nWith the tube uniformly small, the source obtains |J_pi-1|<=C(e+lambda), where lambda=|z|²+|H_S|²+|grad-perp H_S|² uses physical units. The key expansions are 1-sqrt(product(1-b_i))<=sum b_i=e, det J_z=1-<H_S,z>+O(|z|²), and sqrt(det(I-B))=1-e/2+O(e²). In particular, for small e, 2(1-J_pi)-e<=C e²+C(|z|²+|H_S|²).\n\nFor an integral rectifiable measure mu, the area formula yields pi_#(J_pi mu)=N vol_S with integer N counting nonzero-Jacobian preimages with multiplicity. Thus |pi_#mu-N vol_S| is bounded by the pushforward of |1-J_pi|mu. A deficient projection has e>=1 and is paid for by this error. Its pushforward need not be absolutely continuous.\n\n## Role in the source argument\n\nSeparates integer sheet counts from geometric projection defects without discarding degenerate pieces.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lt:jacobian](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex#L210)\n- [eq:lt-projection-identities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/sections/local.tex#L94)\n\n## Antecedents and comparison\n\n[Simon, Introduction to Geometric Measure Theory](https://web.stanford.edu/class/math285/ts-gmt.pdf), Chapter 3, equations (2.3)-(2.5), gives the Jacobian and weighted rectifiable area formula. Printed pages 76-77 were inspected visually because text extraction was corrupted. The determinant estimates are elementary consequences, not new area formulas.\n\n## Checks and limitations\n\nRandom orthogonal tangent projections, curved tubular factors and a rank-deficient control check the determinant, block identity and second-order tilt behavior. Linear graph sheets verify integer multiplicity.\n\nFinite matrices and linear sheets do not verify stationary first-variation estimates, signed excess or almost-everywhere regularity.\n\n## Possible applications\n\nTransferring geometric mass to an integer-valued base count while retaining singular projection errors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000608",
+      "record_type": "instrument",
+      "title": "Separate the affine maximal equation with a square-root graph ansatz",
+      "forms": [
+        "affine-maximal-square-root-reduction",
+        "radial-two-function-divergence-system"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-353"
+      ],
+      "source_paper_ids": [
+        "P-000377"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex",
+          "label": "prop:reduction",
+          "line": 123,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex#L123",
+          "sha256": "72593e7c344863b0eb11abbf06b982c11b33f3b9a94c0b8d8aa66e931068ee4b"
+        },
+        {
+          "path": "preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex",
+          "label": "eq:radial",
+          "line": 203,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex#L203",
+          "sha256": "72593e7c344863b0eb11abbf06b982c11b33f3b9a94c0b8d8aa66e931068ee4b"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000608.md",
+      "body": "# Separate the affine maximal equation with a square-root graph ansatz\n\n[Family 353](../families/openai-math-353.md) · [Source manuscript](../papers/P-000377.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nLet F,P>0 on an open subset of R^m, with H=D²F positive definite, and put k=m+2, gamma=(m+3)/(m+2). If det H=F P^(-gamma) and tr(H^(-1)D²P)+kP/F=0, then u(x,t)=sqrt(F(x)²+t²) has positive Hessian and solves the classical affine maximal equation in n=m+1 variables.\n\nThe quadratic-form identity is D²u=(F/u)H+(F²/u³)(dt-(t/F)dF)². The determinant-one basis X_i=e_i+(t/F)F_i e_t diagonalizes it, giving det D²u=F^(m+2)u^(-(m+3))det H. With zeta=t/F, its determinant weight w=(det D²u)^(-(m+2)/(m+3)) equals P h(zeta), where h=(1+zeta²)^(k/2). Direct Hessian evaluation gives\n\n(F/u)tr((D²u)^(-1)D²w)=h tr(H^(-1)D²P)+(P/F)((1+zeta²)h''-m zeta h').\n\nThe last bracket is kh. Thus the second equation makes the affine operator vanish. If F,P are radial and y=F'>0,y'>0, the equations become y^(m-1)y'=r^(m-1)F P^(-gamma), (y^(m-1)P')'=-k r^(m-1)P^(1-gamma), F'=y. Smooth initialization at r=0 and global positivity are separate tasks.\n\n## Role in the source argument\n\nReduces construction of affine-maximal graphs to a radial second-order system.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex#L123)\n- [eq:radial](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex#L203)\n\n## Antecedents and comparison\n\n[Wang, Affine maximal hypersurfaces](https://arxiv.org/abs/math/0304398), equations (1.3)-(1.4) and (6.1), records the classical equation and singular graph sqrt(|x prime|^9+x_10²). PDF pages 1-2 and 9 were read. This directly motivates the ansatz; it does not establish the source smooth continuation or priority for the general two-function reduction.\n\n## Checks and limitations\n\nSymbolic differentiation checks the Hessian determinant and separated trace identity in several dimensions, and the scalar identity for h. Finite positive-Hessian samples check definiteness.\n\nThe checks do not solve the reduced system globally, construct the smooth dimension-ten example or certify its asymptotics.\n\n## Possible applications\n\nConverting a fourth-order geometric equation into coupled lower-order equations with an explicit convexity test.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000609",
+      "record_type": "instrument",
+      "title": "Derive an inverse-Hessian cap identity from affine stationarity",
+      "forms": [
+        "affine-stationary-cap-test",
+        "inverse-hessian-support-weight-identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-353"
+      ],
+      "source_paper_ids": [
+        "P-000378"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex",
+          "label": "lem:stationarity",
+          "line": 41,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex#L41",
+          "sha256": "ed55cba7c8b8c2507004bf8c541ae5e4b9a4522cc378c2cd73e14222340c7fce"
+        },
+        {
+          "path": "preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex",
+          "label": "lem:cap-identity",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex#L98",
+          "sha256": "ed55cba7c8b8c2507004bf8c541ae5e4b9a4522cc378c2cd73e14222340c7fce"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000609.md",
+      "body": "# Derive an inverse-Hessian cap identity from affine stationarity\n\n[Family 353](../families/openai-math-353.md) · [Source manuscript](../papers/P-000378.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nFor a stationary locally strictly convex graph or its invertible affine image, let dA be affine area, nu an inward conormal, H_ij=nu X_ij its positive second form, o an interior point and ell an ambient affine function. If psi(ell),psi'(ell),psi''(ell) vanish outside a compact subset of the hypersurface, then\n\nintegral [nu(o-X)|d ell|_(H inverse)² psi''(ell)+n(ell(o)-ell(X))psi'(ell)-n(n+1)psi(ell)] dA=0.\n\nFor X=(x,u), put q=ell(X), Z=nu(o-X)=o_(n+1)-u+(x-o prime).Du, H=D²u and delta=1/(n+2). Then DZ=H(x-o prime), tr(H^(-1)D²Z)=n+(x-o prime).D log det H and D²q=ell_z H. Test affine stationarity with Z psi(q). Integrating the log-determinant derivative against dA=(det H)^delta dx replaces it by -delta^(-1)[n psi+(x-o prime).Dq psi']. The remaining coefficients are -n(n+1) and n(ell(o)-q), giving the identity.\n\nStationarity follows from divergence-free Hessian cofactors and the affine maximal equation. Affine area scales by |det L|^(n/(n+2)); hence the identity transfers to affine images. If an interior ball of radius r is centered at o, the supporting-plane inequality also gives nu(o-X)>=r|nu|.\n\n## Role in the source argument\n\nControls the inverse-Hessian directional weight on a compact cap.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:stationarity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex#L41)\n- [lem:cap-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/build/sections/area.tex#L98)\n\n## Antecedents and comparison\n\n[Wang, Affine maximal hypersurfaces](https://arxiv.org/abs/math/0304398), pages 1-2, records affine area, its Euler-Lagrange equation and divergence-free cofactors. The selected source supplies the particular cap test explicitly. No external earliest-priority claim is made for the final cap identity.\n\n## Checks and limitations\n\nExact radial integrals on paraboloids check all three coefficients, including -n(n+1), for compact cap tests in multiple dimensions.\n\nParaboloid tests validate the identity in an explicit stationary family. They do not verify the source thin-cap estimates or global rigidity.\n\n## Possible applications\n\nExtracting weighted inverse-Hessian information from geometric stationarity with compact support.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000610",
+      "record_type": "instrument",
+      "title": "Flatten model distance while keeping its upper Hessian bound",
+      "forms": [
+        "bounded-model-distance-modification",
+        "monotone-radial-hessian-cutoff"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-356"
+      ],
+      "source_paper_ids": [
+        "P-000379"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex",
+          "label": "weight:distance-modification",
+          "line": 60,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex#L60",
+          "sha256": "b5e355cb68e73886a404d5395d21464224e819dd3554295525b3f36e7c4570c0"
+        },
+        {
+          "path": "preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex",
+          "label": "weight:weak-chain",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex#L97",
+          "sha256": "b5e355cb68e73886a404d5395d21464224e819dd3554295525b3f36e7c4570c0"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000610.md",
+      "body": "# Flatten model distance while keeping its upper Hessian bound\n\n[Family 356](../families/openai-math-356.md) · [Source manuscript](../papers/P-000379.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nAssume the source local distributional Hessian comparison for q=d(p,.)²/2 on a radius R*. Let s_kappa(r) be the model sine, c_kappa=s_kappa', and m_kappa(r)=integral_0^r s_kappa. Choose 0<a<b<R*, with b<pi/(2sqrt(kappa)) if kappa>0. For a smooth nonincreasing cutoff theta equal to one through a²/2 and zero after b²/2, define chi(0)=0, chi'(q)=theta(q)s_kappa(sqrt(2q))/sqrt(2q), and F=chi(q).\n\nThen F is bounded and globally Lipschitz, agrees with m_kappa(d(p,.)) on B_a(p), and is constant outside B_b(p). The weak chain rule gives H_F(Z,Z)(h)=H_q(Z,Z)(h chi')+integral h chi'' <grad q,Z>². The comparison coefficients in radial and transverse directions become A(r)=theta c_kappa+r theta' s_kappa and B(r)=theta c_kappa. Since theta'<=0 and s_kappa>=0, A<=B. Multiplication by chi'>=0 preserves any nonpositive singular Hessian part. Therefore G=theta(q)c_kappa(r) is a bounded continuous upper Hessian coefficient. On B_a, G=1-kappa F. No global L² assumption on the constant tail of F is required.\n\n## Role in the source argument\n\nMakes a local distance comparison admissible for a theorem requiring bounded global functions.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [weight:distance-modification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex#L60)\n- [weight:weak-chain](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/build/sections/comparison.tex#L97)\n\n## Antecedents and comparison\n\nThe mechanism is classical radial chain-rule calculus. The source carefully retains the sign of the singular Hessian measure. The local distributional Hessian comparison is an input, not proved by this cutoff.\n\n## Checks and limitations\n\nPositive, zero and negative model curvatures check the differentiated radial formulas, A<=B, the inner model equation and the constant outer tail.\n\nSmooth model checks do not prove the underlying RCD Hessian comparison or its transfer to every geodesic.\n\n## Possible applications\n\nGlobalizing local semiconcavity estimates without introducing a positive cutoff error in the radial direction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000611",
+      "record_type": "instrument",
+      "title": "Obtain weighted-generator regularity from the original heat resolvent",
+      "forms": [
+        "bounded-drift-resolvent-contraction",
+        "weighted-generator-domain-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-356"
+      ],
+      "source_paper_ids": [
+        "P-000380"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex",
+          "label": "weight:resolvent",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex#L12",
+          "sha256": "1d6ede98284dcdbf2847d5c7749497402aa6c103a9164d9cc0b8942bc2e8c000"
+        },
+        {
+          "path": "preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex",
+          "label": "weight:resolvent-bounds",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex#L63",
+          "sha256": "1d6ede98284dcdbf2847d5c7749497402aa6c103a9164d9cc0b8942bc2e8c000"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000611.md",
+      "body": "# Obtain weighted-generator regularity from the original heat resolvent\n\n[Family 356](../families/openai-math-356.md) · [Source manuscript](../papers/P-000380.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nOn a full-support RCD(K,N) space with finite N>1, let V be bounded and globally Lipschitz and m_V=exp(V)m. Equivalent bounded densities preserve weak gradients and W^(1,2). Testing the weak generator with exp(plus-or-minus V) times a Sobolev test gives D(Delta_V)=D(Delta), Delta_V u=Delta u+Gamma(V,u), with equivalent graph norms. The energy identity controls the gradient term. This does not assert preservation of the narrower test class.\n\nFor sufficiently large a, the original resolvent R_a=(a-Delta)^(-1) has L² and L-infinity norm at most a^(-1), and gradient bounds C a^(-1/2) in both norms. The infinity gradient estimate follows by integrating the original heat-gradient estimate. On E={z in W^(1,2):z and |grad z| bounded}, with the sum of the four L² and L-infinity norms, z -> R_a(h+Gamma(V,z)) is a contraction for large a. Its fixed point solves (a-Delta_V)z=h. Weighted energy gives uniqueness. If xi lies in D(Delta_V) with xi and Delta_V xi bounded, set h=(a-Delta_V)xi; uniqueness identifies xi with this fixed point, and Sobolev-to-Lipschitz yields a globally Lipschitz representative.\n\nThe argument uses original heat estimates before assigning any curvature bound to the weighted space, avoiding dependence on a weighted regularity statement that the later proof needs to establish.\n\n## Role in the source argument\n\nSupplies regular weighted multipliers for a subsequent Bochner approximation argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [weight:resolvent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex#L12)\n- [weight:resolvent-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/build/sections/drift.tex#L63)\n\n## Antecedents and comparison\n\n[Brena and Gigli, Fine representation of Hessian of convex functions and Ricci tensor on RCD spaces](https://arxiv.org/abs/2310.07536), Remark 2.4, explicitly identifies a weighted heat regularity obstacle in reversing weak Hessian bounds to convexity. Pages 13-15 were read. The source uses bounded Lipschitz weights and a resolvent contraction to obtain the particular generator regularity above; this comparison does not certify its full later measure-change theorem.\n\n## Checks and limitations\n\nFourier-Galerkin circle models compare the drift-resolvent fixed point with a direct linear solve and check the norm contraction for sufficiently large a.\n\nFinite Fourier models do not prove heat-gradient bounds, infinite-dimensional domain equality or the every-geodesic theorem.\n\n## Possible applications\n\nProving regularity after a bounded measure change using estimates available before the change.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000612",
+      "record_type": "instrument",
+      "title": "Turn bounded Hartogs coordinates into a forbidden holomorphic real-part bound",
+      "forms": [
+        "hartogs-zero-section-jacobian-obstruction",
+        "cauchy-determinant-pluriharmonic-minorant"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-359"
+      ],
+      "source_paper_ids": [
+        "P-000381"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex",
+          "label": "map:obstruction",
+          "line": 111,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex#L111",
+          "sha256": "2dc9f5c4616fbf11495120a30ac084baf332b9dab55d834660eb9f87a5aaaf4e"
+        },
+        {
+          "path": "preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex",
+          "label": "map:determinant-bound",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex#L151",
+          "sha256": "2dc9f5c4616fbf11495120a30ac084baf332b9dab55d834660eb9f87a5aaaf4e"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000612.md",
+      "body": "# Turn bounded Hartogs coordinates into a forbidden holomorphic real-part bound\n\n[Family 359](../families/openai-math-359.md) · [Source manuscript](../papers/P-000381.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nLet B be the unit ball in C² and M_phi={(z,w):z in B, exp(phi(z))|w|²<1}. Assume no holomorphic H on B and constant C_H satisfy Re H(z)<=C_H+4log(1/(1-|z|))+phi(z). Then no bounded holomorphic F:M_phi->C³ has a nowhere-zero complex Jacobian.\n\nIf all components are bounded by B0>=1, restrict F to the zero section. Cauchy estimates in base coordinate disks of radius delta=1-|z| give |partial_(z_j)F_l(z,0)|<=B0/delta. The fiber radius is exp(-phi(z)/2), so |partial_w F_l(z,0)|<=B0 exp(phi(z)/2). The six determinant terms imply |d(z)|<=6B0³ delta^(-2)exp(phi(z)/2), where d is the Jacobian on the zero section. If d never vanishes, simple connectedness supplies a holomorphic logarithm ell. Then H=2ell has Re H=log|d|²<=2log6+6logB0+4log(1/delta)+phi, a contradiction.\n\nThe base estimate uses only the zero section and needs no neighboring uniform fiber radius. The conclusion rules out bounded coordinates and hence a biholomorphism to a bounded domain. It does not assert that a bounded map's determinant is identically zero or that every bounded holomorphic function is constant: the two base coordinates are bounded nonconstant functions.\n\n## Role in the source argument\n\nSeparates an analytic no-minorant construction from the geometric metric-transfer problem.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [map:obstruction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex#L111)\n- [map:determinant-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/build/sections/02-reduction.tex#L151)\n\n## Antecedents and comparison\n\nThe proof combines classical Cauchy estimates, the determinant expansion and a holomorphic logarithm. Targeted searching did not establish an external source for this exact Hartogs interface. The no-minorant potential and negative metric construction are separate source claims.\n\n## Checks and limitations\n\nRandom derivative matrices with the prescribed column bounds check the determinant and logarithmic exponents. Explicit bounded polynomial maps on a constant-radius product domain check the Cauchy estimates and illustrate that such a domain does not satisfy the no-minorant hypothesis.\n\nThese calculations do not construct the obstructing potential or prove completeness or curvature pinching.\n\n## Possible applications\n\nConverting the absence of a holomorphic minorant into a global obstruction to bounded local coordinates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000613",
+      "record_type": "instrument",
+      "title": "Extract one Taylor residue class with a root-of-unity filter",
+      "forms": [
+        "holomorphic-root-of-unity-filter",
+        "uniform-homogeneous-tail-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-359"
+      ],
+      "source_paper_ids": [
+        "P-000382"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/build/03-analytic.tex",
+          "label": "grid:frequency",
+          "line": 476,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/build/03-analytic.tex#L476",
+          "sha256": "2726ad2bf7393fb51f7465adeb81b231b07bf804b0bab086fc182f7312654925"
+        }
+      ],
+      "batch_id": "B063",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000613.md",
+      "body": "# Extract one Taylor residue class with a root-of-unity filter\n\n[Family 359](../families/openai-math-359.md) · [Source manuscript](../papers/P-000382.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nLet g be holomorphic near the closed ball of radius S and bounded there by K, with homogeneous Taylor pieces g_r. For 0<=h<N and R|v|<S,\n\n(1/N)sum_(q=0)^(N-1) exp(-2pi i hq/N)g(R exp(2pi i q/N)v)=sum_(j>=0)g_(h+jN)(Rv).\n\nCauchy's estimate on the line through v gives |g_r(Rv)|<=K theta^r, theta=R|v|/S. If theta<=exp(-0.99c/N) and c>=1, the tail after j=k-1 has magnitude at most K exp(-0.99kc)/(1-exp(-0.99c)). The denominator is uniformly positive, so the bound is C K exp(-0.99kc) with absolute C independent of N,h,R,S. Taking k=1 isolates the leading term to error C K exp(-0.99c). Absolute convergence justifies swapping the Taylor series and finite Fourier sum. The h<N restriction avoids missing lower nonnegative degrees in the same residue class.\n\n## Role in the source argument\n\nSeparates a low-degree holomorphic jet from higher degrees in a disk-testing construction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [grid:frequency](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/build/03-analytic.tex#L476)\n\n## Antecedents and comparison\n\nThis is classical finite Fourier orthogonality and the Cauchy coefficient estimate. The source uses the uniform-in-N tail in a much larger phase-grid and geometric construction; that application is not a new Fourier-filter theorem.\n\n## Checks and limitations\n\nRandom polynomials check residue-class extraction. Analytic geometric-series models check the infinite-series identity and the explicit uniform tail bound. An h>=N control detects the missing lower residue term.\n\nThe filter checks do not establish the phase-grid separation, testing criterion or negatively curved Liouville construction.\n\n## Possible applications\n\nRecovering homogeneous holomorphic coefficients from finitely many phase samples with an explicit aliasing tail.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -33097,6 +33434,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000374.md",
       "body": "# Quadratic Strong-Operator Paving over Arbitrary Maximal Abelian Subalgebras\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000605: Control functional calculus with a class of state-continuous right multipliers](../instruments/MI-000605.md)\n\n[Family review and dependencies](../families/openai-math-300.md) · [Batch B062](../../batches/B062/README.md)"
+    },
+    {
+      "id": "P-000375",
+      "record_type": "paper",
+      "title": "A Codimension-One Bound for the Singular Set of a Stationary Integral Varifold",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-346"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c435e442cc26f9197df63ee00550d32c41e5705860403fb573b2c122e1ce85bd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000375.md",
+      "body": "# A Codimension-One Bound for the Singular Set of a Stationary Integral Varifold\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/varifold-singular-dimension.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000606: Rule out an open zero-height region using finite-radius frequency control](../instruments/MI-000606.md)\n\n[Family review and dependencies](../families/openai-math-346.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000376",
+      "record_type": "paper",
+      "title": "Almost-everywhere regularity of stationary integral varifolds",
+      "source_collection": "openai/math",
+      "upstream_slug": "Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-346"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "46e2526e8b957048ac78aef7ce37ec82760aaedb448017b9431721613e7aa859",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000376.md",
+      "body": "# Almost-everywhere regularity of stationary integral varifolds\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000607: Compare projected mass with integer counts using determinant and tilt errors](../instruments/MI-000607.md)\n\n[Family review and dependencies](../families/openai-math-346.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000377",
+      "record_type": "paper",
+      "title": "A Smooth Nonquadratic Entire Affine Maximal Graph in Dimension Ten",
+      "source_collection": "openai/math",
+      "upstream_slug": "Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-353"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "318e4a37d6d0727d9d8689ebd6f76fb117392ae2a95178d82acfc61e91a695f5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000377.md",
+      "body": "# A Smooth Nonquadratic Entire Affine Maximal Graph in Dimension Ten\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/affine-maximal-dimension-ten.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000608: Separate the affine maximal equation with a square-root graph ansatz](../instruments/MI-000608.md)\n\n[Family review and dependencies](../families/openai-math-353.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000378",
+      "record_type": "paper",
+      "title": "The affine Bernstein theorem in dimensions three through nine",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-353"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bcc018caa6e12983ce3981fd74db07dc2814f3b4750aff093761baccceaff2f9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000378.md",
+      "body": "# The affine Bernstein theorem in dimensions three through nine\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000609: Derive an inverse-Hessian cap identity from affine stationarity](../instruments/MI-000609.md)\n\n[Family review and dependencies](../families/openai-math-353.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000379",
+      "record_type": "paper",
+      "title": "Gigli’s distributional curvature characterization of Alexandrov spaces",
+      "source_collection": "openai/math",
+      "upstream_slug": "Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-356"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1ecb0b50e0637f31ac56cef5c14d4433a1da125000dd7ee50ca78cb91be0c202",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000379.md",
+      "body": "# Gigli’s distributional curvature characterization of Alexandrov spaces\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000610: Flatten model distance while keeping its upper Hessian bound](../instruments/MI-000610.md)\n\n[Family review and dependencies](../families/openai-math-356.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000380",
+      "record_type": "paper",
+      "title": "Weak Hessian bounds along every geodesic in RCD spaces",
+      "source_collection": "openai/math",
+      "upstream_slug": "Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-356"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f930f160a11672b4ab8e4ee5e5ef99ed08f08ce61278d677cf7b0250bfa1b123",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000380.md",
+      "body": "# Weak Hessian bounds along every geodesic in RCD spaces\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/weak-hessian-geodesics.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000611: Obtain weighted-generator regularity from the original heat resolvent](../instruments/MI-000611.md)\n\n[Family review and dependencies](../families/openai-math-356.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000381",
+      "record_type": "paper",
+      "title": "A negatively pinched Kähler threefold without bounded holomorphic coordinates",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-359"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "917ee3f8bbf313e5feee58e99f08c9e4b9bf8c869567ac8385153207f46340c7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000381.md",
+      "body": "# A negatively pinched Kähler threefold without bounded holomorphic coordinates\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000612: Turn bounded Hartogs coordinates into a forbidden holomorphic real-part bound](../instruments/MI-000612.md)\n\n[Family review and dependencies](../families/openai-math-359.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000382",
+      "record_type": "paper",
+      "title": "One-sided negative sectional curvature and the holomorphic Liouville property",
+      "source_collection": "openai/math",
+      "upstream_slug": "One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-359"
+      ],
+      "batch_id": "B063",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "518026251afe2e3eb1eeb8e169467e7e7c88ae5de02ce9e0f4c28790695beb3c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000382.md",
+      "body": "# One-sided negative sectional curvature and the holomorphic Liouville property\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000613: Extract one Taylor residue class with a root-of-unity filter](../instruments/MI-000613.md)\n\n[Family review and dependencies](../families/openai-math-359.md) · [Batch B063](../../batches/B063/README.md)"
     }
   ],
   "families": [
@@ -40235,6 +40724,34 @@
       "body": "# Finite-cut module counts and bounded-death comparison\n\n## Source manuscripts and claim\n\n- [Infinitely many closed geodesic images on every Riemannian sphere](../papers/P-000257.md): selected passages extracted.\n\nThe source claims infinitely many closed-geodesic images on every Riemannian sphere.\n\n## Extracted instruments\n\n- [MI-000476: Separate free rank and torsion in a graded finite-cut count](../instruments/MI-000476.md)\n- [MI-000477: Use a bounded death horizon to turn local persistence into global injectivity](../instruments/MI-000477.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional quotient H/UH, nonnegative grading, a specified Gysin exact sequence, uniform ordinary death, and bounded local degree support.\n\nGraded Nakayama induction, modules over a polynomial PID, exact-sequence dimension counts and the elementary factorization of a persistence map through a later cut.\n\n## Review and formalization scope\n\nRead the complete finite-cut module lemma and complete degree-gap comparison proof. Extracted the algebraic rank calculation and its preliminary ordinary persistence step only. Localization, Gysin construction, uniform ordinary death and the later transient budget were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nThe module calculation needs a grading bounded below and positive degree of U. The persistence step uses a uniform death horizon and excludes every local event in the necessary degree window.\n\n[Batch record](../../batches/B047/README.md)"
     },
     {
+      "id": "openai-math-346",
+      "record_type": "family",
+      "title": "Positive height from frequency control and integer projection counts",
+      "source_family": "346",
+      "source_collection": "openai/math",
+      "batch_id": "B063",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000375",
+        "P-000376"
+      ],
+      "instrument_ids": [
+        "MI-000606",
+        "MI-000607"
+      ],
+      "headline": "The sources claim a codimension-one singular-set bound and almost-everywhere regularity for stationary integral varifolds.",
+      "central_instrument": "A finite-radius frequency argument rules out open regions of zero height. Projection determinants compare pushed mass with integer sheet counts, including deficient-rank errors.",
+      "novelty_assessment": "The projection calculation uses the classical area formula. The positive-height argument is explicitly shared with the source companion; external priority for its exact measure formulation was not established.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The height lemma assumes positive matrix measures, all distributional identities and the local signed stress bound. The projection error may contain a singular pushforward; absolute continuity is not inferred.",
+      "dependencies": "Positive matrix measures, compact radial kernels, differential inequalities, projection spectra and the rectifiable area formula.",
+      "antecedents": "Classical frequency continuation and area formulas; the source companion supplies the finite-radius argument.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-346.md",
+      "body": "# Positive height from frequency control and integer projection counts\n\n## Source manuscripts and claim\n\n- [A Codimension-One Bound for the Singular Set of a Stationary Integral Varifold](../papers/P-000375.md): selected passages extracted.\n- [Almost-everywhere regularity of stationary integral varifolds](../papers/P-000376.md): selected passages extracted.\n\nThe sources claim a codimension-one singular-set bound and almost-everywhere regularity for stationary integral varifolds.\n\n## Extracted instruments\n\n- [MI-000606: Rule out an open zero-height region using finite-radius frequency control](../instruments/MI-000606.md)\n- [MI-000607: Compare projected mass with integer counts using determinant and tilt errors](../instruments/MI-000607.md)\n\n## Dependencies and antecedents\n\nPositive matrix measures, compact radial kernels, differential inequalities, projection spectra and the rectifiable area formula.\n\nClassical frequency continuation and area formulas; the source companion supplies the finite-radius argument.\n\n## Review and formalization scope\n\nRead the complete positive-limit-height proof and its kernel identities, and the complete projection-and-integer-count proof with its tensor definitions. Construction of the limiting measures, signed excess and global dimension reduction remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe height lemma assumes positive matrix measures, all distributional identities and the local signed stress bound. The projection error may contain a singular pushforward; absolute continuity is not inferred.\n\n[Batch record](../../batches/B063/README.md)"
+    },
+    {
       "id": "openai-math-349",
       "record_type": "family",
       "title": "Complementary fillings, projective detection and a strict perimeter gap",
@@ -40287,6 +40804,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-352.md",
       "body": "# Small particular errors and short-time spatial regularity\n\n## Source manuscripts and claim\n\n- [A finite-time singularity of Calabi flow on projective space](../papers/P-000291.md): selected passages extracted.\n\nThe source claims a finite-time Calabi-flow singularity on complex projective ten-space, with scalar curvature growing at inverse-square-root rate.\n\n## Extracted instruments\n\n- [MI-000520: Preserve smallness of a particular error through a Neumann correction](../instruments/MI-000520.md)\n- [MI-000521: Gain short-time spatial smallness by lowering the Holder exponent](../instruments/MI-000521.md)\n\n## Dependencies and antecedents\n\nBanach-space Neumann series, support separation, a continuous embedding into a weaker space, parabolic Holder interpolation and a uniform higher-regularity estimate.\n\nClassical parametrix correction and interpolation inequalities; no priority claim for their combination in this source.\n\n## Review and formalization scope\n\nRead the complete right-inverse correction and special-error proofs, the short-time forward estimate, the spatial interpolation proof and the Fourier-mode limitation. The shooting certificate, shrinking profile and global nonlinear construction were not audited.\n\nNo family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.\n\nThe right-inverse statement is conditional on a parametrix with small defect; it does not require injectivity. Short-time spatial smallness requires zero initial traces and a strictly higher Holder exponent.\n\n[Batch record](../../batches/B053/README.md)"
+    },
+    {
+      "id": "openai-math-353",
+      "record_type": "family",
+      "title": "Separated affine-maximal equations and a stationary cap identity",
+      "source_family": "353",
+      "source_collection": "openai/math",
+      "batch_id": "B063",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000377",
+        "P-000378"
+      ],
+      "instrument_ids": [
+        "MI-000608",
+        "MI-000609"
+      ],
+      "headline": "The sources claim a smooth nonquadratic entire affine-maximal graph in dimension ten and rigidity for Euclidean-complete graphs in dimensions three through nine.",
+      "central_instrument": "A square-root ansatz separates a fourth-order equation into two second-order equations. A compact cap variation controls an inverse-Hessian weight.",
+      "novelty_assessment": "The ansatz has the classical singular Trudinger-Wang example as a direct antecedent. Affine area and its stationarity are classical. Exact priority for the source general reduction and cap identity is unresolved.",
+      "formalization_summary": "AffineBernstein covers smooth positive-Hessian graphs on nonempty open convex domains, complete in the induced Euclidean path metric, for dimensions 3 through 9. It concludes full domain and a positive-definite quadratic polynomial plus affine term, and an affine-image paraboloid description. It does not cover the smooth dimension-ten companion or the immersed-hypersurface extension. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "The reduction assumes positive F,P and positive Hessian of F. It does not itself prove global existence. The cap identity requires compactly supported restrictions of the test and its derivatives.",
+      "dependencies": "Hessian block diagonalization, determinant weights, radial divergence form, divergence-free cofactors and affine-area first variation.",
+      "antecedents": "Trudinger-Wang affine maximal equation and singular dimension-ten graph; Calabi affine area.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-353.md",
+      "body": "# Separated affine-maximal equations and a stationary cap identity\n\n## Source manuscripts and claim\n\n- [A Smooth Nonquadratic Entire Affine Maximal Graph in Dimension Ten](../papers/P-000377.md): selected passages extracted.\n- [The affine Bernstein theorem in dimensions three through nine](../papers/P-000378.md): selected passages extracted.\n\nThe sources claim a smooth nonquadratic entire affine-maximal graph in dimension ten and rigidity for Euclidean-complete graphs in dimensions three through nine.\n\n## Extracted instruments\n\n- [MI-000608: Separate the affine maximal equation with a square-root graph ansatz](../instruments/MI-000608.md)\n- [MI-000609: Derive an inverse-Hessian cap identity from affine stationarity](../instruments/MI-000609.md)\n\n## Dependencies and antecedents\n\nHessian block diagonalization, determinant weights, radial divergence form, divergence-free cofactors and affine-area first variation.\n\nTrudinger-Wang affine maximal equation and singular dimension-ten graph; Calabi affine area.\n\n## Review and formalization scope\n\nRead the complete separated-variable reduction, radial divergence calculation, affine stationarity and cap-identity proofs. The invariant-box continuation and global Bernstein rigidity proofs remain unaudited.\n\nAffineBernstein covers smooth positive-Hessian graphs on nonempty open convex domains, complete in the induced Euclidean path metric, for dimensions 3 through 9. It concludes full domain and a positive-definite quadratic polynomial plus affine term, and an affine-image paraboloid description. It does not cover the smooth dimension-ten companion or the immersed-hypersurface extension. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.\n\nThe reduction assumes positive F,P and positive Hessian of F. It does not itself prove global existence. The cap identity requires compactly supported restrictions of the test and its derivatives.\n\n[Batch record](../../batches/B063/README.md)"
     },
     {
       "id": "openai-math-354",
@@ -40343,6 +40888,34 @@
       "body": "# Delayed error summation and Gevrey bounds from stopped approximants\n\n## Source manuscripts and claim\n\n- [Uniqueness of tangent flows at the first singular time of embedded surface mean-curvature flow](../papers/P-000292.md): selected passages extracted.\n\nThe source claims uniqueness, in the fixed ambient frame, of every tangent flow at the first singular time of a closed embedded surface in three-space.\n\n## Extracted instruments\n\n- [MI-000522: Absorb delayed Gaussian errors on every finite energy prefix](../instruments/MI-000522.md)\n- [MI-000523: Convert exponentially close stopped approximants into all-orders Gevrey bounds](../instruments/MI-000523.md)\n\n## Dependencies and antecedents\n\nEnergy monotonicity, concavity, good/bad index splitting, finite nonnegative convolution sums; Cauchy estimates, exponential moments and stopped Taylor expansions.\n\nColding-Minicozzi discrete Lojasiewicz length estimates; the classical Ramis-Sibuya mechanism for Gevrey asymptotics.\n\n## Review and formalization scope\n\nRead the full delayed-radius setup and finite-prefix summation proof, and the complete geometric-telescoping proof including coefficient identification and transfer to sector arrays. The geometric propagation, normalized contour inverses and no-critical-arc argument remain unverified.\n\nNo family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.\n\nFinite-length control assumes the discrete gradient inequality and a sufficiently small initial energy. Gevrey control assumes holomorphy on complete shrinking disks and exponential differences; it does not follow from a merely formal series.\n\n[Batch record](../../batches/B053/README.md)"
     },
     {
+      "id": "openai-math-356",
+      "record_type": "family",
+      "title": "Bounded distance modifications and resolvent control under measure change",
+      "source_family": "356",
+      "source_collection": "openai/math",
+      "batch_id": "B063",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000379",
+        "P-000380"
+      ],
+      "instrument_ids": [
+        "MI-000610",
+        "MI-000611"
+      ],
+      "headline": "The sources claim a distributional characterization of Alexandrov curvature and transfer of weak Hessian bounds to every prescribed geodesic in finite-dimensional RCD spaces.",
+      "central_instrument": "A monotone cutoff flattens model distance without worsening its radial Hessian coefficient. Original heat-flow resolvents control the weighted generator before any weighted curvature theorem is invoked.",
+      "novelty_assessment": "The cutoff is classical chain-rule calculus. Brena-Gigli explicitly identify the regularity obstacle for measure changes; the selected source uses a bounded-drift resolvent argument under bounded Lipschitz weights.",
+      "formalization_summary": "WeakHessian defines test-plan weak gradients, the nonpositive Laplacian, unreduced CD(K,N) and quadratic Cheeger energy. It assumes completeness, separability, full support and finite measure on bounded sets, N>1, bounded globally Lipschitz F and bounded continuous G. It concludes the distributional second derivative inequality for every constant-speed minimizing geodesic, including constants. It states neither the first manuscript curvature characterization nor a separate weighted generator theorem. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Distance flattening is conditional on the stated local Hessian comparison. Bounded weights preserve the generator domain, not automatically the test-function class. Finite models check the contraction mechanism only.",
+      "dependencies": "Distributional chain rules, model sine functions, equivalent weighted Sobolev norms, heat-gradient bounds, resolvents and Banach contraction.",
+      "antecedents": "Classical Hessian comparison and bounded drift; Brena-Gigli Remark 2.4 identifies the weighted regularity issue.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-356.md",
+      "body": "# Bounded distance modifications and resolvent control under measure change\n\n## Source manuscripts and claim\n\n- [Gigli’s distributional curvature characterization of Alexandrov spaces](../papers/P-000379.md): selected passages extracted.\n- [Weak Hessian bounds along every geodesic in RCD spaces](../papers/P-000380.md): selected passages extracted.\n\nThe sources claim a distributional characterization of Alexandrov curvature and transfer of weak Hessian bounds to every prescribed geodesic in finite-dimensional RCD spaces.\n\n## Extracted instruments\n\n- [MI-000610: Flatten model distance while keeping its upper Hessian bound](../instruments/MI-000610.md)\n- [MI-000611: Obtain weighted-generator regularity from the original heat resolvent](../instruments/MI-000611.md)\n\n## Dependencies and antecedents\n\nDistributional chain rules, model sine functions, equivalent weighted Sobolev norms, heat-gradient bounds, resolvents and Banach contraction.\n\nClassical Hessian comparison and bounded drift; Brena-Gigli Remark 2.4 identifies the weighted regularity issue.\n\n## Review and formalization scope\n\nRead the full bounded-modification proof and full bounded-drift proof, plus source background on the generator/test-class distinction. The distributional curvature theorem, weighted Bochner closure and every-geodesic conclusion remain unaudited.\n\nWeakHessian defines test-plan weak gradients, the nonpositive Laplacian, unreduced CD(K,N) and quadratic Cheeger energy. It assumes completeness, separability, full support and finite measure on bounded sets, N>1, bounded globally Lipschitz F and bounded continuous G. It concludes the distributional second derivative inequality for every constant-speed minimizing geodesic, including constants. It states neither the first manuscript curvature characterization nor a separate weighted generator theorem. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.\n\nDistance flattening is conditional on the stated local Hessian comparison. Bounded weights preserve the generator domain, not automatically the test-function class. Finite models check the contraction mechanism only.\n\n[Batch record](../../batches/B063/README.md)"
+    },
+    {
       "id": "openai-math-357",
       "record_type": "family",
       "title": "Noncommuting inverse increments and factorial derivative budgets",
@@ -40395,6 +40968,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-358.md",
       "body": "# Torus shear obstructions and boundary-penalty duality\n\n## Source manuscripts and claim\n\n- [A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric](../papers/P-000290.md): selected passages extracted.\n\nThe source claims a closed smooth three-manifold with no conjugate points but no metric of nonpositive sectional curvature.\n\n## Extracted instruments\n\n- [MI-000518: Obstruct nonpositive curvature by incompatible torus orthogonality](../instruments/MI-000518.md)\n- [MI-000519: Optimize a boundary penalty in the dual energy norm](../instruments/MI-000519.md)\n\n## Dependencies and antecedents\n\nAmalgamated product injections, flat torus/minset structure and centralizer characters; Hilbert-space duality, Cauchy-Schwarz and quadratic minimization.\n\nLeeb two-piece graph-manifold incompatibility; classical minset splitting and rank-one inverse formulas.\n\n## Review and formalization scope\n\nRead the full topology obstruction and its two corollaries, and the full turning-duality proof with its energy setup. The neck construction, returning-geodesic uniform bounds and global no-conjugate-points argument were not certified.\n\nThe target asserts a closed connected orientable smooth three-manifold with a smooth metric having no conjugate points for all geodesics and Jacobi fields, but no smooth nonpositive-sectional-curvature metric. The additional no-focal-points and CAT(0) consequences are outside the target. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.\n\nThe CAT(0) obstruction requires a proper cocompact action on a proper space and an embedded Z2 torus subgroup. The dual penalty uses mu>0 and an actual bound of the endpoint functional by the bulk energy.\n\n[Batch record](../../batches/B052/README.md)"
+    },
+    {
+      "id": "openai-math-359",
+      "record_type": "family",
+      "title": "A conditional bounded-coordinate obstruction and holomorphic Fourier extraction",
+      "source_family": "359",
+      "source_collection": "openai/math",
+      "batch_id": "B063",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000381",
+        "P-000382"
+      ],
+      "instrument_ids": [
+        "MI-000612",
+        "MI-000613"
+      ],
+      "headline": "The sources claim a negatively pinched Kahler threefold without bounded coordinates and a separate one-sided-curvature construction with the holomorphic Liouville property.",
+      "central_instrument": "Cauchy estimates on a Hartogs zero section turn a nowhere-zero Jacobian into a forbidden pluriharmonic minorant. Root-of-unity averaging isolates homogeneous Taylor degrees with a uniform tail.",
+      "novelty_assessment": "Both mechanisms use classical complex analysis. Exact priority for the source Hartogs obstruction interface was not established; root-of-unity filtering is classical finite Fourier orthogonality.",
+      "formalization_summary": "PinchedKahler states existence of a nonempty contractible domain in C^3 with a complete negatively pinched Kahler metric and no bounded holomorphic coordinates. It separately targets a controlled no-minorant potential and the Hartogs metric transfer, with explicit chart Hessian and derivative bounds. It does not cover the one-sided-curvature Liouville companion. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.",
+      "statement_faithfulness": "The Jacobian argument assumes a globally nowhere-zero determinant and a no-minorant potential. It does not imply all bounded holomorphic functions are constant. Fourier tails require h<N and a specified radial margin.",
+      "dependencies": "Cauchy estimates, determinant expansion, holomorphic logarithms on a simply connected base, homogeneous Taylor series and geometric sums.",
+      "antecedents": "Classical Cauchy and logarithm arguments; root-of-unity Fourier filters.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-359.md",
+      "body": "# A conditional bounded-coordinate obstruction and holomorphic Fourier extraction\n\n## Source manuscripts and claim\n\n- [A negatively pinched Kähler threefold without bounded holomorphic coordinates](../papers/P-000381.md): selected passages extracted.\n- [One-sided negative sectional curvature and the holomorphic Liouville property](../papers/P-000382.md): selected passages extracted.\n\nThe sources claim a negatively pinched Kahler threefold without bounded coordinates and a separate one-sided-curvature construction with the holomorphic Liouville property.\n\n## Extracted instruments\n\n- [MI-000612: Turn bounded Hartogs coordinates into a forbidden holomorphic real-part bound](../instruments/MI-000612.md)\n- [MI-000613: Extract one Taylor residue class with a root-of-unity filter](../instruments/MI-000613.md)\n\n## Dependencies and antecedents\n\nCauchy estimates, determinant expansion, holomorphic logarithms on a simply connected base, homogeneous Taylor series and geometric sums.\n\nClassical Cauchy and logarithm arguments; root-of-unity Fourier filters.\n\n## Review and formalization scope\n\nRead the complete bounded-map obstruction and the two geometric inputs it assumes, and the complete root-of-unity extraction lemma. Construction of the no-minorant potential, metric pinching, phase grids and the global Liouville example remain unaudited.\n\nPinchedKahler states existence of a nonempty contractible domain in C^3 with a complete negatively pinched Kahler metric and no bounded holomorphic coordinates. It separately targets a controlled no-minorant potential and the Hartogs metric transfer, with explicit chart Hessian and derivative bounds. It does not cover the one-sided-curvature Liouville companion. All three available scope documents and all three linked Comparators in this batch were read in full. Their target theorems have sorry proof bodies. No separate solution or Lean project was built.\n\nThe Jacobian argument assumes a globally nowhere-zero determinant and a no-minorant potential. It does not imply all bounded holomorphic functions are constant. Fourier tails require h<N and a specified radial margin.\n\n[Batch record](../../batches/B063/README.md)"
     },
     {
       "id": "openai-math-360",

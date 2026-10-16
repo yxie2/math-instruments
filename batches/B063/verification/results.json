@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 1.451,
+  "checks": {
+    "frequency": {
+      "exact_harmonic_models": 6,
+      "frequency_algebra_cases": 300,
+      "scope": "Kernel and differential identities only; no limiting-varifold construction."
+    },
+    "projection": {
+      "plane_models": 160,
+      "max_identity_residual": 9.648327255439614e-16,
+      "deficient_rank_control": true
+    },
+    "affine_reduction": {
+      "dimension_identities": 9,
+      "positive_hessian_models": 60,
+      "max_residual": 1.4210854715202004e-14,
+      "scope": "Algebraic reduction with arbitrary positive F,P; no reduced-system solution claimed."
+    },
+    "cap_identity": {
+      "exact_paraboloid_cap_integrals": 36,
+      "test": "(1-q)_+^6 is C5 with compact cap support; the C2 identity follows also by smooth approximation."
+    },
+    "model_cutoff": {
+      "model_points": 300,
+      "max_derivative_residual": 6.95947299789168e-10
+    },
+    "drift_resolvent": {
+      "fourier_models": 9,
+      "max_contraction_factor": 0.01777962382569202,
+      "max_solve_residual": 6.788428682395068e-16,
+      "scope": "Galerkin contraction and signs only; no infinite-dimensional domain or Lipschitz regularity test."
+    },
+    "hartogs": {
+      "derivative_matrix_models": 300,
+      "max_determinant_ratio": 0.3080516666599677,
+      "constant_potential_control": true
+    },
+    "fourier_filter": {
+      "residue_classes": 31,
+      "max_identity_error": 5.68677367621777e-16,
+      "out_of_range_degree_control": true
+    }
+  },
+  "scope": "Selected local identities and finite models; no global geometric source theorem is certified."
+}
