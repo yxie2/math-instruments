@@ -1,0 +1,222 @@
+{
+  "batch_id": "B042",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T13:11:23.569700+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Catalan.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Catalan.lean",
+      "sha256": "9bf391e5c1a95dd82d78e53774b9f2223d8c0fae0396fc3ad59332f895de8561",
+      "bytes": 209
+    },
+    {
+      "path": "lean/ComparatorChallenges/DeligneDrinfeld.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DeligneDrinfeld.lean",
+      "sha256": "b2fc1de28eb29eb1e8934f52978a64a1cd9fc13f3b4379e84171d4f8a106e3cd",
+      "bytes": 7290
+    },
+    {
+      "path": "lean/docs/005.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/005.md",
+      "sha256": "37dc6d183e395184ebfb3bf0f570603ab06e6640e7bda9cac9fa02736089f764",
+      "bytes": 600
+    },
+    {
+      "path": "lean/docs/008.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/008.md",
+      "sha256": "45829bd7e8ea32a33fe881d5168307b2cd03dd50f4a5b34f0659f1211a6622e0",
+      "bytes": 953
+    },
+    {
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/README.md",
+      "sha256": "fb356a111c3c2ef8e53db3af79b54222d609cabf13fa51940e5f0192bc9311e5",
+      "bytes": 516
+    },
+    {
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb",
+      "bytes": 11930
+    },
+    {
+      "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/README.md",
+      "sha256": "d395f54883fb66fa170b7dbbe5630769e1b81be5a54dd9799355a7e67d7c413f",
+      "bytes": 810
+    },
+    {
+      "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+      "sha256": "7971d8c4d3b842bd63984f7dddfbf0f2e5281fe195ac77abe78265f2dbb3b4d2",
+      "bytes": 20696
+    },
+    {
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/README.md",
+      "sha256": "13617dab3004b176ea730c8cebafd84cee5c1088d10c0b0ba970dc3d61cdcb9b",
+      "bytes": 653
+    },
+    {
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+      "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c",
+      "bytes": 18410
+    },
+    {
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+      "sha256": "2fa4d198be592f4c479995eb2a5636006a2494e5cba175bee5e2a01c8a10c050",
+      "bytes": 12143
+    },
+    {
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/README.md",
+      "sha256": "0e7051c38d9490698600907567efb858c69f5ff651b531ffe427a2a1ee2f1836",
+      "bytes": 516
+    },
+    {
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex",
+      "sha256": "99e677b6f41d628e1e333c8f7846a3dcb6db7f61ffaea748d4b973a6114288e5",
+      "bytes": 9541
+    },
+    {
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+      "sha256": "884fe270df08933f8e7a38a6910f211c66d6596a1fdf9471c7acb9b638f2a084",
+      "bytes": 8983
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000440",
+      "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+      "label": "lem:avoidance",
+      "line": 88,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L88",
+      "sha256": "7971d8c4d3b842bd63984f7dddfbf0f2e5281fe195ac77abe78265f2dbb3b4d2"
+    },
+    {
+      "instrument_id": "MI-000441",
+      "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+      "label": "lem:lagrangian-intersection",
+      "line": 131,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L131",
+      "sha256": "7971d8c4d3b842bd63984f7dddfbf0f2e5281fe195ac77abe78265f2dbb3b4d2"
+    },
+    {
+      "instrument_id": "MI-000442",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "eq:energy-damping",
+      "line": 118,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L118",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000442",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "eq:energy-cross-comparison",
+      "line": 163,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L163",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000442",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "eq:energy-second-square",
+      "line": 187,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000443",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "prop:energy-reduction",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L33",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000443",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "eq:energy-first-square",
+      "line": 180,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L180",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000443",
+      "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+      "label": "eq:energy-second-square",
+      "line": 187,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187",
+      "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+    },
+    {
+      "instrument_id": "MI-000444",
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+      "label": "lem:depth-addition",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L19",
+      "sha256": "884fe270df08933f8e7a38a6910f211c66d6596a1fdf9471c7acb9b638f2a084"
+    },
+    {
+      "instrument_id": "MI-000444",
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex",
+      "label": "eq:ihara",
+      "line": 46,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex#L46",
+      "sha256": "99e677b6f41d628e1e333c8f7846a3dcb6db7f61ffaea748d4b973a6114288e5"
+    },
+    {
+      "instrument_id": "MI-000445",
+      "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+      "label": "lem:hall-saturation",
+      "line": 40,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L40",
+      "sha256": "884fe270df08933f8e7a38a6910f211c66d6596a1fdf9471c7acb9b638f2a084"
+    },
+    {
+      "instrument_id": "MI-000446",
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+      "label": "loc:torsion",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L17",
+      "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+    },
+    {
+      "instrument_id": "MI-000446",
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+      "label": "loc:frobenius",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L54",
+      "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+    },
+    {
+      "instrument_id": "MI-000446",
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+      "label": "loc:constancy",
+      "line": 99,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L99",
+      "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+    },
+    {
+      "instrument_id": "MI-000447",
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+      "label": "sys:integral-evaluation",
+      "line": 199,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L199",
+      "sha256": "2fa4d198be592f4c479995eb2a5636006a2494e5cba175bee5e2a01c8a10c050"
+    },
+    {
+      "instrument_id": "MI-000447",
+      "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+      "label": "sys:congruences",
+      "line": 256,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L256",
+      "sha256": "2fa4d198be592f4c479995eb2a5636006a2494e5cba175bee5e2a01c8a10c050"
+    }
+  ]
+}

@@ -18592,6 +18592,350 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000439.md",
       "body": "# Lift a kernel cycle through a square-zero perturbation using a commutator\n\n[Family 320](../families/openai-math-320.md) · [Source manuscript](../papers/P-000238.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nIn the source truncated differential forms, D=dF wedge (-) anticommutes with the exterior differential d. Thus d induces a differential delta on H(Omega,D). Multiplication by b commutes with D and induces B. The commutator delta B-B delta is induced by db wedge (-).\n\nLet x be homogeneous in ker B intersect ker delta and let a be a D-cycle representing x. Both terms of the induced commutator kill x, so db wedge a is a D-boundary. Choose a prime of the same exterior degree with D a prime=-db wedge a. Then\n\n$$(D+t\\,db\\wedge(-))(a+t a')=0\\quad\\text{mod }t^2.$$\n\nThe expansion has zero constant term, its linear term is the chosen boundary equation, and higher terms vanish because t^2=0. Lifts on independent tensor factors combine over separate square-zero parameters with the graded tensor convention, retaining mixed parameter products.\n\n## Role in the source argument\n\nProduces parameter-dependent cycle representatives used to contract source law identities without losing kernel information.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [ten:lift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L464)\n- [ten:kernels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L427)\n\n## Antecedents and comparison\n\nStandard first-order obstruction theory: a perturbation of a cycle exists exactly when its first obstruction is a boundary. The commutator supplies that boundary condition for the selected kernel cycles.\n\n## Checks and limitations\n\nSixty exact finite chain models check the first-order boundary equation and cycle expansion.\n\nThe tests do not implement the source full graph-form construction. A first-order lift does not imply unobstructed lifts in powers of one parameter.\n\n## Possible applications\n\nCycle representatives compatible with infinitesimal parameter deformations and tensor contractions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000440",
+      "record_type": "instrument",
+      "title": "Avoid all bounded-degree polynomial equations over one fixed coefficient field",
+      "forms": [
+        "finite-extension-bounded-degree-avoidance",
+        "ramified-kronecker-substitution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-001"
+      ],
+      "source_paper_ids": [
+        "P-000239"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+          "label": "lem:avoidance",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L88",
+          "sha256": "7971d8c4d3b842bd63984f7dddfbf0f2e5281fe195ac77abe78265f2dbb3b4d2"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-kronecker-and-ramification-avoidance",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000440.md",
+      "body": "# Avoid all bounded-degree polynomial equations over one fixed coefficient field\n\n[Family 001](../families/openai-math-001.md) · [Source manuscript](../papers/P-000239.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nLet K be the fixed discretely valued characteristic-zero coefficient field in the source, containing Q_p and with v(p)=1 and value group (1/e)Z. For r,b>=1, choose N>b and B=b sum_(i=0)^(r-1) N^i. Choose a prime q>max(B,e) and theta with theta^q=p.\n\nThe value 1/q has order q modulo (1/e)Z, so [K(theta):K]>=q; the defining polynomial gives equality. Set x_i=theta^(N^i). Substituting X_i=T^(N^i) maps distinct monomials of total degree at most b to distinct powers of T, by base-N uniqueness, all of degree at most B<q. No nonzero such polynomial over K can vanish at this point.\n\nThis avoids all bounded-degree polynomials over K simultaneously, regardless of their cardinality, using coordinates in Q_p(theta). It is not algebraic independence: higher-degree equations remain, and allowing coefficients in K(theta) would already permit X_i-x_i.\n\n## Role in the source argument\n\nMakes all relevant bounded-degree transversality minors nonzero over one finite extension.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:avoidance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L88)\n\n## Antecedents and comparison\n\nClassical monomial encoding and a valuation degree argument; no first-priority claim.\n\n## Checks and limitations\n\nTwenty monomial models check injectivity for 451 monomials and that every encoded degree lies below the chosen extension degree.\n\nThe tests model coefficient-basis independence over Q; they do not construct the source p-adic comparison field or filtration.\n\n## Possible applications\n\nSimultaneous generic choices when infinitely many conditions have a common degree bound and coefficient field.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000441",
+      "record_type": "instrument",
+      "title": "Bound the degree needed to force minimal Lagrangian intersections",
+      "forms": [
+        "lagrangian-minimal-intersection-minor",
+        "uniform-degree-symplectic-transversality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-001"
+      ],
+      "source_paper_ids": [
+        "P-000239"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+          "label": "lem:lagrangian-intersection",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L131",
+          "sha256": "7971d8c4d3b842bd63984f7dddfbf0f2e5281fe195ac77abe78265f2dbb3b4d2"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-lagrangian-incidence-and-rank-minors",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000441.md",
+      "body": "# Bound the degree needed to force minimal Lagrangian intersections\n\n[Family 001](../families/openai-math-001.md) · [Source manuscript](../papers/P-000239.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nLet M be symplectic of dimension 2m over a characteristic-zero field and W a subspace of dimension a. A nonempty open set of Lagrangians L satisfies dim(L intersect W)=max(0,a-m). On any fixed symmetric-matrix big cell, this open contains the nonvanishing locus of one nonzero polynomial of degree at most m, uniformly in W.\n\nFor 1<=a<=m, the incidence of lines in W contained in a Lagrangian has dimension a-1+m(m-1)/2<m(m+1)/2, so its image is proper. For a>m use dim(L intersect W)=a-m+dim(L intersect W-perp). The remaining cases are immediate.\n\nOn the big cell write L as the columns of [I;T], T symmetric. Compose with M -> M/W. Minimal intersection means rank min(m,2m-a). Since the open meets this cell, some minor of this size is a nonzero polynomial, of degree at most m. If the size is zero use 1. Combining with bounded-degree avoidance allows simultaneous transversality for every W defined over one fixed coefficient field.\n\n## Role in the source argument\n\nSupplies the uniform minor-degree bound needed by the source simultaneous filtration choice.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:lagrangian-intersection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex#L131)\n\n## Antecedents and comparison\n\nStandard symplectic incidence geometry and determinantal rank conditions. The combination with finite-extension avoidance is the recorded interface.\n\n## Checks and limitations\n\nSeventy-two exact rational transversality models cover symplectic dimensions two through eight and all subspace dimensions.\n\nThese finite examples do not prove the incidence statement or construct the source admissible filtration.\n\n## Possible applications\n\nUniform generic Lagrangian choices subject to many subspace intersection inequalities.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000442",
+      "record_type": "instrument",
+      "title": "Match logarithmic-kernel damping to the singular endpoint scales",
+      "forms": [
+        "matched-logarithmic-kernel-damping",
+        "uniform-endpoint-cross-kernel-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-005"
+      ],
+      "source_paper_ids": [
+        "P-000240"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "eq:energy-damping",
+          "line": 118,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L118",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        },
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "eq:energy-cross-comparison",
+          "line": 163,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L163",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        },
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "eq:energy-second-square",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-kernel-regularization-with-source-specific-matching",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000442.md",
+      "body": "# Match logarithmic-kernel damping to the singular endpoint scales\n\n[Family 005](../families/openai-math-005.md) · [Source manuscript](../papers/P-000240.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nFor -1<=x<1, 0<s<1 and 0<epsilon<1/8, set rho(x)=1-epsilon(1-x), sigma(s)=1-epsilon sqrt(1-s), and tau=1-epsilon. Write z=1-x exp(i arccos s) and z_epsilon=1-rho(x)sigma(s)x exp(i arccos s). The identity |z|^2=(1-x)^2+2x(1-s), together with separate estimates for x<=0, 0<=x<=1/2 and x>=1/2, gives\n\n$$|z_\\epsilon-z|\\le3\\epsilon|z|,\\qquad\n-\\log|z|^2\\le-\\log|z_\\epsilon|^2+6\\epsilon.$$\n\nThe endpoint scales are therefore matched uniformly even as x,s approach 1. Use rho(x)rho(x prime) in the pure power kernel and sigma(s)sigma(s prime) in the pure Chebyshev kernel. Their moments are the same B_k and C_k that occur in the cross kernel, so the combined interaction is exactly -log 2-(1/2) sum_k (B_k-2C_k)^2/k after inserting diagonals.\n\nFor the pure power kernel with xx prime<0, the correct upper comparison costs at most 4epsilon; monotonicity alone applies only to nonnegative products. Diagonal removals must be handled separately.\n\n## Role in the source argument\n\nMakes the source many-variable majorant estimate uniform near a joint singular endpoint while preserving square completion.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:energy-damping](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L118)\n- [eq:energy-cross-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L163)\n- [eq:energy-second-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187)\n\n## Antecedents and comparison\n\n[Garoufalidis-Popescu, Lemma 3.1](https://people.mpim-bonn.mpg.de/stavros/publications/popescu.pdf) records Haagerup s Chebyshev logarithmic identity; its statement was checked. The matched factors and endpoint estimates were checked directly in the source.\n\n## Checks and limitations\n\n144 sixty-digit cross-kernel tests include distances 1e-20 from endpoints. Sixty separate damped-kernel models check the square identity with 700 terms.\n\nNumerical checks do not establish uniform inequalities or the final irrationality certificate. Those claims are separated in the source argument.\n\n## Possible applications\n\nRegularizing coupled logarithmic energies without losing their common moment structure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000443",
+      "record_type": "instrument",
+      "title": "Turn negative moment squares into one-variable upper certificates",
+      "forms": [
+        "moment-square-tangent-upper-certificate",
+        "endpoint-coercive-supremum-reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-005"
+      ],
+      "source_paper_ids": [
+        "P-000240"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "prop:energy-reduction",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L33",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        },
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "eq:energy-first-square",
+          "line": 180,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L180",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        },
+        {
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex",
+          "label": "eq:energy-second-square",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187",
+          "sha256": "046baf5cfb1c774d0a398f47958bfbf2d4e7551e66f9bdd361347e1af51cc9eb"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-quadratic-duality-with-uniform-endpoint-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000443.md",
+      "body": "# Turn negative moment squares into one-variable upper certificates\n\n[Family 005](../families/openai-math-005.md) · [Source manuscript](../papers/P-000240.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nSuppose a regularized interaction has negative moment terms -kappa sum A_k^2/k-(1/2) sum(B_k-2C_k)^2/k. For freely chosen trial sequences p,v, the inequality -a^2<=b^2-2ab gives the upper bound\n\n$$\\kappa\\sum_k\\frac{p_k^2}{k}+\\frac12\\sum_k\\frac{v_k^2}{k}\n-2\\kappa\\sum_k\\frac{p_kA_k}{k}-\\sum_k\\frac{v_kB_k}{k}+2\\sum_k\\frac{v_kC_k}{k}.$$\n\nIf A,B,C are empirical moments, the linear terms separate into one-variable averages. Add the external fields and bound each average by its one-variable supremum. Every admissible trial sequence gives a valid upper certificate; it need not be an optimizer.\n\nIn the source, p,v decay geometrically. Removing empirical diagonals adds O_epsilon(1/n) and endpoint-log corrections. The retained endpoint coefficients stay positive for n>=24, forcing uniform decay to minus infinity at singular endpoints. This confines maximizers to common compact sets. Trial-series damping errors are bounded by epsilon times their l1 norms. Take n -> infinity first, then epsilon -> 0; reversing these limits would not remove O_epsilon(1/n). A nonnegative multiplier for a separately proved moment constraint can also be added, with its finite-size cost retained.\n\n## Role in the source argument\n\nReduces the source many-particle determinant majorant to explicit trial functions and one-dimensional supremum bounds.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:energy-reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L33)\n- [eq:energy-first-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L180)\n- [eq:energy-second-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/energy.tex#L187)\n\n## Antecedents and comparison\n\nStandard tangent duality for negative quadratic forms, combined with the classical logarithmic-kernel expansion. No novelty claim for the abstract certificate principle.\n\n## Checks and limitations\n\nSixty damped-kernel models verify both square completion and the trial-sequence upper inequality; maximum kernel identity error is below 9e-16.\n\nThe source external-field majorants and the final successful certificate are inputs outside this extraction audit. No conclusion about Catalan s irrationality is certified.\n\n## Possible applications\n\nBuilding checkable upper bounds for coupled logarithmic energies from arbitrary trial coefficients.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000444",
+      "record_type": "instrument",
+      "title": "Track ordinary depth additively through the Ihara bracket",
+      "forms": [
+        "ihara-bracket-depth-addition",
+        "depth-one-indecomposable-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-008"
+      ],
+      "source_paper_ids": [
+        "P-000241"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+          "label": "lem:depth-addition",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L19",
+          "sha256": "884fe270df08933f8e7a38a6910f211c66d6596a1fdf9471c7acb9b638f2a084"
+        },
+        {
+          "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex",
+          "label": "eq:ihara",
+          "line": 46,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex#L46",
+          "sha256": "99e677b6f41d628e1e333c8f7846a3dcb6db7f61ffaea748d4b973a6114288e5"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ihara-depth-filtration",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000444.md",
+      "body": "# Track ordinary depth additively through the Ihara bracket\n\n[Family 008](../families/openai-math-008.md) · [Source manuscript](../papers/P-000241.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nIn the free Lie algebra on x,y, define ordinary y-depth as the least number of y letters in a nonzero associative word. Let D_psi(x)=0 and D_psi(y)=[y,psi], with Ihara bracket {psi,phi}=D_psi(phi)-D_phi(psi)+[psi,phi].\n\nIf psi has depth at least p and phi at least q, every derivation term replaces one y by a word with at least p+1 y letters, increasing the count by at least p. The ordinary commutator also adds counts. Hence {psi,phi} has depth at least p+q.\n\nA homogeneous Lie polynomial of weight greater than one has depth at least one, because the Lie algebra on x alone has no such component. Thus every bracket word of length at least two in these elements has zero depth-one component. This can distinguish a new generator from old brackets. The source B-count filtration after reduction is a different filtration and cannot be substituted without proof.\n\n## Role in the source argument\n\nSeparates prospective depth-one generators from the rational span of old bracket words.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:depth-addition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L19)\n- [eq:ihara](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/01-introduction.tex#L46)\n\n## Antecedents and comparison\n\nDirect derivation bookkeeping in the classical Ihara bracket; no new algebra theorem claimed.\n\n## Checks and limitations\n\nEighty-one exact associative-expansion pairs check the depth inequality under the stated sign convention.\n\nNo membership in the full pentagon equation space or generator existence is tested.\n\n## Possible applications\n\nDetecting indecomposable classes by a filtration component that all brackets must miss.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000445",
+      "record_type": "instrument",
+      "title": "Certify saturation of a rational span from independent prime reductions",
+      "forms": [
+        "mod-two-independent-lattice-saturation",
+        "unit-minor-integral-span-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-008"
+      ],
+      "source_paper_ids": [
+        "P-000241"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex",
+          "label": "lem:hall-saturation",
+          "line": 40,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L40",
+          "sha256": "884fe270df08933f8e7a38a6910f211c66d6596a1fdf9471c7acb9b638f2a084"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-localized-integer-lattice-saturation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000445.md",
+      "body": "# Certify saturation of a rational span from independent prime reductions\n\n[Family 008](../families/openai-math-008.md) · [Source manuscript](../papers/P-000241.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nLet K be finite free over Z_(2), and let w_1,...,w_s have linearly independent images in K/2K. Then they are rationally independent and\n\n$$(\\operatorname{span}_{\\mathbb Q}\\{w_i\\})\\cap K\n=\\operatorname{span}_{\\mathbb Z_{(2)}}\\{w_i\\}.$$\n\nFor rational independence, scale a nonzero relation so all coefficients lie in Z_(2) and at least one is a unit; reduction gives a contradiction. For saturation, if v=sum c_i w_i lies in K but some coefficient has a power of two in its denominator, multiply by the smallest 2^e clearing all such denominators. At least one resulting coefficient is a unit, while the sum lies in 2K, again contradicting independence.\n\nThe same argument works over Z_(p). Equivalently, the column matrix has a maximal minor that is a unit in the local ring, providing a left inverse there. This does not say every modular solution of an unrelated equation lifts.\n\n## Role in the source argument\n\nEnsures old Hall-word values cannot acquire a new leading class merely through rational coefficients with hidden powers-of-two denominators.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:hall-saturation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/build/sections/08-induction.tex#L40)\n\n## Antecedents and comparison\n\nStandard local-ring linear algebra and saturation. The source applies it to Hall words, whose independent reductions must be proved separately.\n\n## Checks and limitations\n\nOne hundred exact odd-minor examples recover localized coefficients and reject half-integral ones. The vector 2 in Z_(2) is a negative control when reduction independence is dropped.\n\nThe Hall-word independence and the final dimension bound are not established by these lattice models.\n\n## Possible applications\n\nTransferring modular independence to rational independence while controlling integral intersections.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000446",
+      "record_type": "instrument",
+      "title": "Recover a semistable Frobenius polynomial from sufficiently precise finite torsion",
+      "forms": [
+        "bounded-frobenius-polynomial-finite-precision",
+        "local-semistable-type-from-finite-torsion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-030"
+      ],
+      "source_paper_ids": [
+        "P-000242"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+          "label": "loc:torsion",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L17",
+          "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+        },
+        {
+          "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+          "label": "loc:frobenius",
+          "line": 54,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L54",
+          "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+        },
+        {
+          "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex",
+          "label": "loc:constancy",
+          "line": 99,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L99",
+          "sha256": "bdea439554943ef9e61f11039622e91882bcac2da809c65de4e44491a2e9343c"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-semistable-filtration-and-finite-precision-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000446.md",
+      "body": "# Recover a semistable Frobenius polynomial from sufficiently precise finite torsion\n\n[Family 030](../families/openai-math-030.md) · [Source manuscript](../papers/P-000242.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nFor a semistable abelian variety of dimension g over a local field with residue cardinality Q, the full auxiliary Tate-module Frobenius polynomial is integral and independent of the Frobenius lift. Its graded eigenvalues have magnitudes 1 on a rank-r lattice, sqrt(Q) on a 2(g-r)-dimensional good-reduction part, and Q on a rank-r toric part. Thus its coefficient of T^(2g-j) is bounded by binomial(2g,j)Q^j, giving a finite set of possibilities. The distinct magnitudes determine r; when r=0, residue-characteristic valuations of the roots give the Newton polygon.\n\nChoose auxiliary odd d different from the residue characteristic. A modulus d^j larger than twice every coefficient bound distinguishes these integral polynomials. In a characteristic-zero abelian scheme, finite-etale torsion is locally constant as a Galois module, using local sections of the level torsor over a finite Galois extension and shrinking compatibly with its finite actions.\n\nAfter a fixed extension rationalizes d-torsion, nearby fibers are semistable: inertia eigenvalues are roots of unity congruent to 1 with valuation at least one, hence equal 1 for odd d. Shrink again to fix d^j-torsion. The full Frobenius polynomials, toric ranks and, in the good case, Newton polygons then agree. The geometric semistable filtration and criterion are inputs from standard theory.\n\n## Role in the source argument\n\nPrescribes a common local reduction type throughout a small parameter neighborhood before automorphy lifting.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [loc:torsion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L17)\n- [loc:frobenius](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L54)\n- [loc:constancy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/local.tex#L99)\n\n## Antecedents and comparison\n\nClassical semistable filtration and finite-etale local constancy, combined with elementary bounded-integer reconstruction. No independent priority claim.\n\n## Checks and limitations\n\nThree hundred sixty bounded integral polynomial models verify coefficient bounds and uniqueness after reduction at the selected precision.\n\nThe tests do not construct abelian schemes, Galois actions or the local neighborhoods. They certify only the finite-polynomial interface.\n\n## Possible applications\n\nReplacing a locally varying arithmetic invariant by a finite torsion condition once its possible integral values are bounded.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000447",
+      "record_type": "instrument",
+      "title": "Compare residual character summands by integral group-ring evaluation",
+      "forms": [
+        "integral-character-evaluation-lattice",
+        "bad-prime-character-congruence-without-projectors"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-030"
+      ],
+      "source_paper_ids": [
+        "P-000242"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+          "label": "sys:integral-evaluation",
+          "line": 199,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L199",
+          "sha256": "2fa4d198be592f4c479995eb2a5636006a2494e5cba175bee5e2a01c8a10c050"
+        },
+        {
+          "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex",
+          "label": "sys:congruences",
+          "line": 256,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L256",
+          "sha256": "2fa4d198be592f4c479995eb2a5636006a2494e5cba175bee5e2a01c8a10c050"
+        }
+      ],
+      "batch_id": "B042",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-integral-base-change-for-character-congruences",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000447.md",
+      "body": "# Compare residual character summands by integral group-ring evaluation\n\n[Family 030](../families/openai-math-030.md) · [Source manuscript](../papers/P-000242.md) · [Batch B042](../../batches/B042/README.md)\n\n## Mathematical content\n\nSuppose T is free of rank r over Z_l[C_n] and carries a continuous group action commuting with the group ring. For a character theta:C_n -> O* into a finite extension valuation ring, set T_theta=T tensor_(Z_l[C_n],theta) O. It is a free rank-r stable lattice. Over characteristic zero it realizes the theta character summand by semisimplicity.\n\nIf theta and theta prime have the same residue character, reducing these tensor products gives the identical module T tensor_(Z_l[C_n],bar theta) k, with its group action. This holds even if l divides n. A rational character projector contains 1/n and cannot replace the integral freeness hypothesis.\n\nFor n=3p and chi=psi eta with orders p and 3, p-power roots of unity reduce to 1 at p, and 3-power roots reduce to 1 at 3. Consequently the corresponding reductions link eta to chi at p, chi to psi at 3, and psi to the trivial character at p, provided the free integral module is available. Passing through rational isomorphisms preserves semisimplified reductions, even when a natural integral pullback has nonunit index.\n\n## Role in the source argument\n\nSupplies the source congruence chain without using nonintegral character projectors at the switching primes.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [sys:integral-evaluation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L199)\n- [sys:congruences](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/build/sections/systems.tex#L256)\n\n## Antecedents and comparison\n\nStandard base-change and residual-character algebra. The geometric freeness needed by the source is a separate theorem, not implied by rational character decomposition.\n\n## Checks and limitations\n\n120 dual-number residue-algebra models compare evaluations at characters 1 and 1+epsilon when the characteristic divides the cyclic group order.\n\nThe tests do not verify the source cohomological group-ring freeness or any automorphy-lifting hypotheses.\n\n## Possible applications\n\nConstructing congruent stable lattices when the residual characteristic divides a symmetry-group order.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -23116,9 +23460,112 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000238.md",
       "body": "# Nonhomeomorphic closed aspherical four-manifolds with the same homotopy type\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims nonhomeomorphic closed aspherical four-manifolds with the same homotopy type.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000438: Choose a homology projection preserving a subspace that is not a subcomplex](../instruments/MI-000438.md)\n- [MI-000439: Lift a kernel cycle through a square-zero perturbation using a commutator](../instruments/MI-000439.md)\n\n## Dependencies and review\n\nFinite-dimensional graded linear algebra, chain homotopies, induced commutators and square-zero deformation.\n\nRead the complete subspace-projection and kernel-cycle-lifting proofs and their differential definitions. The finite specialization argument was also read, but the global endpoint-assignment and manifold construction were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-320.md) · [Batch B041](../../batches/B041/README.md)"
+    },
+    {
+      "id": "P-000239",
+      "record_type": "paper",
+      "title": "Milne's rationality conjecture for abelian varieties",
+      "source_collection": "openai/math",
+      "upstream_slug": "Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026",
+      "source_date": "October 7, 2026",
+      "family_ids": [
+        "openai-math-001"
+      ],
+      "batch_id": "B042",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d395f54883fb66fa170b7dbbe5630769e1b81be5a54dd9799355a7e67d7c413f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000239.md",
+      "body": "# Milne's rationality conjecture for abelian varieties\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 7, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims Milne s rationality conjecture for abelian varieties.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000440: Avoid all bounded-degree polynomial equations over one fixed coefficient field](../instruments/MI-000440.md)\n- [MI-000441: Bound the degree needed to force minimal Lagrangian intersections](../instruments/MI-000441.md)\n\n## Dependencies and review\n\nDiscrete valuations, base-N monomial encoding, incidence dimensions and determinantal rank conditions.\n\nRead the complete two selected lemmas. The source admissible-filtration, realization and rationality arguments were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-001.md) · [Batch B042](../../batches/B042/README.md)"
+    },
+    {
+      "id": "P-000240",
+      "record_type": "paper",
+      "title": "Catalan's constant is irrational",
+      "source_collection": "openai/math",
+      "upstream_slug": "Catalans-constant-is-irrational-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-005"
+      ],
+      "batch_id": "B042",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "fb356a111c3c2ef8e53db3af79b54222d609cabf13fa51940e5f0192bc9311e5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000240.md",
+      "body": "# Catalan's constant is irrational\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Catalans-constant-is-irrational-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims irrationality of Catalan s constant.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000442: Match logarithmic-kernel damping to the singular endpoint scales](../instruments/MI-000442.md)\n- [MI-000443: Turn negative moment squares into one-variable upper certificates](../instruments/MI-000443.md)\n\n## Dependencies and review\n\nChebyshev expansions, endpoint-scaled damping, negative quadratic completion, geometric trial coefficients and uniform coercivity.\n\nRead the complete energy-reduction proof. The majorant construction, nonvanishing, finite-place estimates and final rational certificate were not audited.\n\nRead Catalan.lean in full. Its catalan_irrational target contains sorry. No Lean build or numerical irrationality-certificate audit.\n\n[Family context](../families/openai-math-005.md) · [Batch B042](../../batches/B042/README.md)"
+    },
+    {
+      "id": "P-000241",
+      "record_type": "paper",
+      "title": "The Deligne-Drinfeld conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Deligne-Drinfeld-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-008"
+      ],
+      "batch_id": "B042",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0e7051c38d9490698600907567efb858c69f5ff651b531ffe427a2a1ee2f1836",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000241.md",
+      "body": "# The Deligne-Drinfeld conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Deligne-Drinfeld conjecture for the rational Grothendieck-Teichmuller Lie algebra.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000444: Track ordinary depth additively through the Ihara bracket](../instruments/MI-000444.md)\n- [MI-000445: Certify saturation of a rational span from independent prime reductions](../instruments/MI-000445.md)\n\n## Dependencies and review\n\nFree associative expansions, derivations, localized integer lattices and reduction modulo a prime.\n\nRead both selected proofs and their Ihara convention. Holonomy, deletion representations, characteristic-two image bounds and the final dimension squeeze were not audited.\n\nRead selected DeligneDrinfeld.lean sections defining the equation space, Ihara bracket, grading, completions and main statement. The main target contains sorry. The tangent Lie implementation was not audited. No Lean build.\n\n[Family context](../families/openai-math-008.md) · [Batch B042](../../batches/B042/README.md)"
+    },
+    {
+      "id": "P-000242",
+      "record_type": "paper",
+      "title": "Modularity of elliptic curves over imaginary quadratic fields",
+      "source_collection": "openai/math",
+      "upstream_slug": "Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-030"
+      ],
+      "batch_id": "B042",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "13617dab3004b176ea730c8cebafd84cee5c1088d10c0b0ba970dc3d61cdcb9b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000242.md",
+      "body": "# Modularity of elliptic curves over imaginary quadratic fields\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims modularity of elliptic curves over imaginary quadratic fields.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000446: Recover a semistable Frobenius polynomial from sufficiently precise finite torsion](../instruments/MI-000446.md)\n- [MI-000447: Compare residual character summands by integral group-ring evaluation](../instruments/MI-000447.md)\n\n## Dependencies and review\n\nFinite-etale torsion, semistable Tate-module filtration, Weil root bounds, bounded integer coefficients and integral group-ring base change.\n\nRead local finite-torsion constancy, finite Frobenius polynomials and semistable-type constancy proofs, plus integral evaluation and its congruence corollary. The geometric group-ring freeness and automorphy inputs were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-030.md) · [Batch B042](../../batches/B042/README.md)"
     }
   ],
   "families": [
+    {
+      "id": "openai-math-001",
+      "record_type": "family",
+      "title": "Bounded-degree avoidance and simultaneous Lagrangian transversality",
+      "source_family": "001",
+      "source_collection": "openai/math",
+      "batch_id": "B042",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000239"
+      ],
+      "instrument_ids": [
+        "MI-000440",
+        "MI-000441"
+      ],
+      "headline": "The source claims Milne s rationality conjecture for abelian varieties.",
+      "central_instrument": "A high-degree ramified element realizes a point avoiding every bounded-degree polynomial over a fixed coefficient field. Lagrangian intersection conditions have uniformly bounded minor degrees.",
+      "novelty_assessment": "Kronecker substitution, ramification degree and Grassmannian incidence are classical. Their combination provides an explicit simultaneous-choice interface, without a new-priority certification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "The coefficient field is fixed before adjoining the avoidance point. The result is false if coefficients may lie in the enlarged field. The Lagrangian lemma is characteristic zero.",
+      "dependencies": "Discrete valuations, base-N monomial encoding, incidence dimensions and determinantal rank conditions.",
+      "antecedents": "Classical Kronecker substitution and symplectic Grassmannian transversality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-001.md",
+      "body": "# Bounded-degree avoidance and simultaneous Lagrangian transversality\n\n## Source manuscript and claim\n\n[Milne's rationality conjecture for abelian varieties](../papers/P-000239.md), by OpenAI, October 7, 2026.\n\nThe source claims Milne s rationality conjecture for abelian varieties.\n\n## Extracted instruments\n\n- [MI-000440: Avoid all bounded-degree polynomial equations over one fixed coefficient field](../instruments/MI-000440.md)\n- [MI-000441: Bound the degree needed to force minimal Lagrangian intersections](../instruments/MI-000441.md)\n\n## Dependencies and antecedents\n\nDiscrete valuations, base-N monomial encoding, incidence dimensions and determinantal rank conditions.\n\nClassical Kronecker substitution and symplectic Grassmannian transversality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete two selected lemmas. The source admissible-filtration, realization and rationality arguments were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe coefficient field is fixed before adjoining the avoidance point. The result is false if coefficients may lie in the enlarged field. The Lagrangian lemma is characteristic zero.\n\n[Batch record](../../batches/B042/README.md)"
+    },
     {
       "id": "openai-math-002",
       "record_type": "family",
@@ -23218,6 +23665,33 @@
       "body": "# Hilbert’s tenth problem over ℚ\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000019](../papers/P-000019.md)\n- [P-000042](../papers/P-000042.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized new architecture depends on two other OpenAI papers\n\nNo algorithm decides whether an integer polynomial has a rational zero; the problem has Turing degree $`0'`$, already for degree $`\\le 4`$. The paper explicitly gives no existential definition of $`\\mathbb{Z}`$ in $`\\mathbb{Q}`$ and no Diophantine model, so this route does not conflict with Mazur’s conjecture.\n\n## Extracted instruments.\n\n- [MI-000004: Finite rational tests with compactness](../instruments/MI-000004.md)\n\n- [MI-000005: Five-point height estimate](../instruments/MI-000005.md)\n\n- [MI-000006: Pole-parity existential formula](../instruments/MI-000006.md)\n\n## Reused.\n\nDPRM; Poonen 2002 index reading; Cassels–Tate; Deligne canonical models; Darmon–Granville; Green–Tao–Ziegler with Selberg sieve; compactness.\n\n## Caveats.\n\nThe argument depends on two other unverified OpenAI manuscripts: “Fontaine–Mazur modularity at the prime 2” and “A pointwise 2-converse for elliptic curves with rational two-torsion”. The second is needed as written to eliminate Sha\\[2\\]. The proof of termination uses a non-constructive compactness argument.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: no\n- Statement coverage: —\n- Dependencies: yes: FM modularity at 2; pointwise 2-converse\n- Antecedents: —"
     },
     {
+      "id": "openai-math-005",
+      "record_type": "family",
+      "title": "Matched endpoint damping and moment-square upper certificates",
+      "source_family": "005",
+      "source_collection": "openai/math",
+      "batch_id": "B042",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000240"
+      ],
+      "instrument_ids": [
+        "MI-000442",
+        "MI-000443"
+      ],
+      "headline": "The source claims irrationality of Catalan s constant.",
+      "central_instrument": "Matched damping keeps pure and mixed logarithmic moments compatible. Negative moment squares admit trial-coefficient upper bounds reduced to one-variable suprema.",
+      "novelty_assessment": "Chebyshev logarithmic-kernel expansions and tangent upper bounds are classical. The source particular damping/certificate architecture is extracted without certifying the irrationality proof.",
+      "formalization_summary": "Read Catalan.lean in full. Its catalan_irrational target contains sorry. No Lean build or numerical irrationality-certificate audit.",
+      "statement_faithfulness": "Regularization must match the same moments in pure and cross terms. Endpoint diagonal corrections are retained before taking suprema; n tends to infinity before damping tends to zero.",
+      "dependencies": "Chebyshev expansions, endpoint-scaled damping, negative quadratic completion, geometric trial coefficients and uniform coercivity.",
+      "antecedents": "Haagerup logarithmic-kernel identity in Garoufalidis-Popescu Lemma 3.1; classical quadratic duality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-005.md",
+      "body": "# Matched endpoint damping and moment-square upper certificates\n\n## Source manuscript and claim\n\n[Catalan's constant is irrational](../papers/P-000240.md), by OpenAI, September 24, 2026.\n\nThe source claims irrationality of Catalan s constant.\n\n## Extracted instruments\n\n- [MI-000442: Match logarithmic-kernel damping to the singular endpoint scales](../instruments/MI-000442.md)\n- [MI-000443: Turn negative moment squares into one-variable upper certificates](../instruments/MI-000443.md)\n\n## Dependencies and antecedents\n\nChebyshev expansions, endpoint-scaled damping, negative quadratic completion, geometric trial coefficients and uniform coercivity.\n\nHaagerup logarithmic-kernel identity in Garoufalidis-Popescu Lemma 3.1; classical quadratic duality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete energy-reduction proof. The majorant construction, nonvanishing, finite-place estimates and final rational certificate were not audited.\n\nRead Catalan.lean in full. Its catalan_irrational target contains sorry. No Lean build or numerical irrationality-certificate audit.\n\nRegularization must match the same moments in pure and cross terms. Endpoint diagonal corrections are retained before taking suprema; n tends to infinity before damping tends to zero.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/005.md) · [Batch record](../../batches/B042/README.md)"
+    },
+    {
       "id": "openai-math-007",
       "record_type": "family",
       "title": "Ordinary two-point Chowla",
@@ -23247,6 +23721,33 @@
       "map_formalization_summary": "original: statements only; see card",
       "path": "catalog/families/openai-math-007.md",
       "body": "# Ordinary two-point Chowla\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000046](../papers/P-000046.md)\n\n## Family description\n\nSource status as recorded in the direction paper: repository reports Lean coverage; comparator and solution coverage not independently checked here combination bordering new\n\nFor fixed integers $`a_1,a_2\\ge1`$ and $`b_1,b_2\\ge0`$ satisfying $`a_1b_2-a_2b_1\\ne0`$, the source claims\n``` math\n\\left|\\sum_{1\\le n\\le X}\\lambda(a_1n+b_1)\\lambda(a_2n+b_2)\\right|\n \\le C_{a_1,a_2,b_1,b_2}\\frac{X}{(\\log X)^c}\\qquad(X\\ge3).\n```\nThe exponent $`c>0`$ is absolute; the implied constant can depend on the fixed forms, and no uniformity for coefficients growing with $`X`$ is asserted. The corrected binary Elliott conclusion is qualitative, under uniform non-pretentiousness of an original factor and the same conditions on the affine forms. The initial extraction describes ordinary two-point Chowla as open before this release. The exponent is not given numerically.\n\n## Extracted instruments.\n\n- [MI-000056: Terminal-scale divisor bins with padding anti-concentration](../instruments/MI-000056.md)\n\n- [MI-000057: Finite residue comparison via Braverman’s theorem](../instruments/MI-000057.md)\n\n- [MI-000058: Degree-normalized two-band divisor graph with matched centering](../instruments/MI-000058.md)\n\n## Reused.\n\nHelfgott–Radziwiłł divisibility graph and prohibited paths; Pilatte’s composite labels and non-backtracking operator; Matomäki–Radziwiłł–Tao short sums (corrected 2022 version); Granville–Soundararajan distance; Brun truncation.\n\n## Caveats.\n\nThe reasoning summary makes the conclusion conditional on simultaneous-witness elimination, forest counting, finite-residue comparison and spectral-transfer bounds, while the paper states these steps as proved. They are the main points identified for further checking. Part II gives no rate.\n\n## Recorded assessment\n\n- Novelty: combination bordering new\n- Formalization: original: statements; docs report coverage, unbuilt\n- Statement coverage: —\n- Dependencies: no\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-008",
+      "record_type": "family",
+      "title": "Ihara depth and saturated integral generator spans",
+      "source_family": "008",
+      "source_collection": "openai/math",
+      "batch_id": "B042",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000241"
+      ],
+      "instrument_ids": [
+        "MI-000444",
+        "MI-000445"
+      ],
+      "headline": "The source claims the Deligne-Drinfeld conjecture for the rational Grothendieck-Teichmuller Lie algebra.",
+      "central_instrument": "The Ihara bracket adds ordinary y-depth. Independent reductions of integral vectors ensure a saturated rational span over the localized integers.",
+      "novelty_assessment": "Both selected mechanisms are elementary classical algebra. The full dimension squeeze and generator construction rely on separate unaudited inputs.",
+      "formalization_summary": "Read selected DeligneDrinfeld.lean sections defining the equation space, Ihara bracket, grading, completions and main statement. The main target contains sorry. The tangent Lie implementation was not audited. No Lean build.",
+      "statement_faithfulness": "Ordinary y-depth is different from the source later B-count filtration. Independence modulo two is required for saturation; rational independence alone does not suffice.",
+      "dependencies": "Free associative expansions, derivations, localized integer lattices and reduction modulo a prime.",
+      "antecedents": "Classical depth filtration and unit-minor lattice saturation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-008.md",
+      "body": "# Ihara depth and saturated integral generator spans\n\n## Source manuscript and claim\n\n[The Deligne-Drinfeld conjecture](../papers/P-000241.md), by OpenAI, September 23, 2026.\n\nThe source claims the Deligne-Drinfeld conjecture for the rational Grothendieck-Teichmuller Lie algebra.\n\n## Extracted instruments\n\n- [MI-000444: Track ordinary depth additively through the Ihara bracket](../instruments/MI-000444.md)\n- [MI-000445: Certify saturation of a rational span from independent prime reductions](../instruments/MI-000445.md)\n\n## Dependencies and antecedents\n\nFree associative expansions, derivations, localized integer lattices and reduction modulo a prime.\n\nClassical depth filtration and unit-minor lattice saturation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead both selected proofs and their Ihara convention. Holonomy, deletion representations, characteristic-two image bounds and the final dimension squeeze were not audited.\n\nRead selected DeligneDrinfeld.lean sections defining the equation space, Ihara bracket, grading, completions and main statement. The main target contains sorry. The tangent Lie implementation was not audited. No Lean build.\n\nOrdinary y-depth is different from the source later B-count filtration. Independence modulo two is required for saturation; rational independence alone does not suffice.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/008.md) · [Batch record](../../batches/B042/README.md)"
     },
     {
       "id": "openai-math-010",
@@ -23608,6 +24109,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-028.md",
       "body": "# Shared entropy costs and uniform bounds from periodic obstructions\n\n## Source manuscript and claim\n\n[Bounded-Step Walks on Gaussian Primes](../papers/P-000161.md), by OpenAI, September 26, 2026.\n\nThe source claims that for each fixed step bound every connected component of the Gaussian-prime graph has uniformly bounded cardinality, and consequently no infinite injective walk with bounded steps exists.\n\n## Extracted instruments\n\n- [MI-000284: Pay a shared conditioning entropy once before averaging sampled coordinates](../instruments/MI-000284.md)\n- [MI-000285: A periodic graph without an infinite path has a finite-cell component bound](../instruments/MI-000285.md)\n\n## Dependencies and antecedents\n\nShannon entropy chain rule and subadditivity, uniform coordinate inclusion probabilities, locally finite path trees, lattice translations and a finite attachment-degree count.\n\nClassical Shannon entropy inequalities; Vardi, Prime percolation, Section 6, Proposition 6.2, as explicitly credited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete shared-conditioning lemma and periodic-component proposition. The finite sieve theorem, coverage-transfer schedule and geometric obstruction construction were not audited.\n\nRead GaussianMoat.lean, including Gaussian-prime vertices, the real step bound, the uniform finite component-cardinality target and its no-infinite-injective-walk consequence. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe sampled coordinate set is independent of all other random data; Y and the shared conditioning variable may depend on each other. The component bound is conditional on the existence of a periodic obstruction with no infinite path, and explicitly restores the finitely many removed Gaussian primes.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/028.md) · [Batch record](../../batches/B022/README.md)"
+    },
+    {
+      "id": "openai-math-030",
+      "record_type": "family",
+      "title": "Finite torsion control and integral character evaluation",
+      "source_family": "030",
+      "source_collection": "openai/math",
+      "batch_id": "B042",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000242"
+      ],
+      "instrument_ids": [
+        "MI-000446",
+        "MI-000447"
+      ],
+      "headline": "The source claims modularity of elliptic curves over imaginary quadratic fields.",
+      "central_instrument": "Bounded integral Frobenius polynomials are distinguishable at finite torsion precision. Evaluating a free integral group-ring module produces congruent lattices even at primes dividing the group order.",
+      "novelty_assessment": "These use classical semistable reduction, finite-etale local constancy and integral base change. The source global automorphy chain remains separate.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "Use the full Tate-module Frobenius polynomial, retaining both toric and lattice pieces. Integral group-ring freeness is assumed before character evaluation; rational character projectors cannot supply it.",
+      "dependencies": "Finite-etale torsion, semistable Tate-module filtration, Weil root bounds, bounded integer coefficients and integral group-ring base change.",
+      "antecedents": "Grothendieck semistable reduction and monodromy; standard integral character specialization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-030.md",
+      "body": "# Finite torsion control and integral character evaluation\n\n## Source manuscript and claim\n\n[Modularity of elliptic curves over imaginary quadratic fields](../papers/P-000242.md), by OpenAI, October 4, 2026.\n\nThe source claims modularity of elliptic curves over imaginary quadratic fields.\n\n## Extracted instruments\n\n- [MI-000446: Recover a semistable Frobenius polynomial from sufficiently precise finite torsion](../instruments/MI-000446.md)\n- [MI-000447: Compare residual character summands by integral group-ring evaluation](../instruments/MI-000447.md)\n\n## Dependencies and antecedents\n\nFinite-etale torsion, semistable Tate-module filtration, Weil root bounds, bounded integer coefficients and integral group-ring base change.\n\nGrothendieck semistable reduction and monodromy; standard integral character specialization. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead local finite-torsion constancy, finite Frobenius polynomials and semistable-type constancy proofs, plus integral evaluation and its congruence corollary. The geometric group-ring freeness and automorphy inputs were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nUse the full Tate-module Frobenius polynomial, retaining both toric and lattice pieces. Integral group-ring freeness is assumed before character evaluation; rational character projectors cannot supply it.\n\n[Batch record](../../batches/B042/README.md)"
     },
     {
       "id": "openai-math-031",
