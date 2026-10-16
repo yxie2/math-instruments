@@ -29191,6 +29191,329 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000685.md",
       "body": "# Linearize a quadratic matrix on angular planes by an explicit Gram factor\n\n[Family 095](../families/openai-math-095.md) · [Source manuscript](../papers/P-000454.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nFor the Choi-Lam matrix Q(y) with diagonal (y1^2+y2^2,y2^2+y3^2,y3^2+y1^2) and off-diagonal -yi yj, write y=(eta cos(theta),eta sin(theta),xi). Let c=cos(theta), s=sin(theta), w=exp(i theta), and\nU=2^-1/2[[-w^-1,-w],[s w^-2,s w^2],[c w^-2,-c w^2]],\nV=2^-1/2[[0,0],[i,i],[1,1]].\nThe realification of F=eta U+xi V has four real columns and satisfies F_real F_real^T=Q(y). Check the eta^2, xi^2 and eta xi coefficients separately; the last (2,3) entry uses s cos(2theta)-c sin(2theta)=-s.\n\nUsing the four columns as skew-block vectors gives a real symmetric size-20 pencil L_theta in X,Z,eta,xi, linear for fixed theta and with trigonometric coefficients of degree at most three. Its determinant equals p(X,Z,y) first for invertible X and then on the singular boundary by polynomial continuation. Since L_theta(I,I,0,0)=I20, cone membership on the slice is equivalent to L_theta>=0, including zero eigenvalues. Every y lies on such a plane. Producing a single finite global lift from these pencils is a further step, not a consequence asserted by this extraction.\n\n## Role in the source argument\n\nProvides exact local semidefinite descriptions of a matrix polynomial whose angular dependence is nonlinear globally.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:gram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex#L32)\n- [lem:slice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex#L51)\n\n## Antecedents and comparison\n\nGram realification and determinant continuation are classical. The explicit angular factors are the source-specific object. The underlying Choi-Lam positivity is established prior work; no new positivity theorem or global lift is claimed here.\n\n## Checks and limitations\n\nSymbolic trigonometric identities verify every Gram coefficient. Rational points on the unit circle produce exact size-20 slice matrices, with determinant and singular-boundary checks.\n\nThe tests do not verify the subsequent degree-two matching identity or moment-based global lift.\n\n## Possible applications\n\nSeparating tractable planar slices from the additional compatibility required for a global semidefinite lift.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000686",
+      "record_type": "instrument",
+      "title": "Remove alphabet size by collision-controlled hashing and a direct sum",
+      "forms": [
+        "alphabet-hashing-embedding",
+        "probability-weighted-l1-direct-sum"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-099"
+      ],
+      "source_paper_ids": [
+        "P-000455"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/build/sections/upper.tex",
+          "label": "prop:uniform-upper",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/build/sections/upper.tex#L34",
+          "sha256": "21db44702cc0ff65b34c340f7a25032c733328c64385cef6f43bc613676e692a"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000686.md",
+      "body": "# Remove alphabet size by collision-controlled hashing and a direct sum\n\n[Family 099](../families/openai-math-099.md) · [Source manuscript](../papers/P-000455.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nLet ID denote insertion-deletion distance on strings of length at most d. Relabel each alphabet symbol independently and uniformly in [q], q=4d^2. Relabeling cannot increase ID. For any fixed pair x,y, at most 2d symbols occur, and the probability of a collision on those symbols is at most choose(2d,2)/q<1/2. On the complementary event every equality pattern is preserved, so the longest common subsequence and ID are unchanged.\n\nSuppose a map g on the bounded alphabet satisfies a ID(u,v)<=||g(u)-g(v)||_1<=b ID(u,v). The finite direct sum over all hashes h, with coordinates Pr(h)[g(h(x))-g(h(empty))], has distance equal to the expected component distance. It is between a ID(x,y)/2 and b ID(x,y). The map is global even though the injective event is chosen separately for each pair.\n\nThe source supplies binary delimiter coding and a binary embedding as inputs, yielding component estimates ED(x,y)/4 and 4w D_m ED(x,y) on the appropriate sides, where w=2 ceil(log2 q)+3 and m=wd. Averaging yields ED/8 and 4wD_m ED, hence distortion 32wD_m independent of alphabet size. The extraction verifies the hashing and averaging step; the code estimates remain dependencies.\n\n## Role in the source argument\n\nTransfers a bounded-alphabet embedding to arbitrary finite alphabets with a constant loss at the averaging stage.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:uniform-upper](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/build/sections/upper.tex#L34)\n\n## Antecedents and comparison\n\n[Ostrovsky and Rabani, preliminary manuscript dated August 19, 2005](https://web.cs.ucla.edu/~rafail/PUBLIC/68.pdf), Theorem 7 on printed page 7, supplies the established binary upper-bound scale; that statement was read. The pairwise hashing/direct-sum reduction is the selected interface, not a new binary embedding theorem.\n\n## Checks and limitations\n\nExact enumeration of small hash families checks nonexpansion, injective-event preservation and the union bound, including empty strings. A finite l1 map checks that direct-sum distance equals its expectation.\n\nNo full edit-distance embedding, delimiter code or lower-bound witness is certified.\n\n## Possible applications\n\nUniformizing alphabet-dependent constructions when each tested pair uses few symbols.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000687",
+      "record_type": "instrument",
+      "title": "Convert finite l1 cuts into exponential collisions and histogram bounds",
+      "forms": [
+        "exponential-cut-partition",
+        "partition-histogram-l1-embedding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-099"
+      ],
+      "source_paper_ids": [
+        "P-000456"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex",
+          "label": "upper:partitions",
+          "line": 159,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex#L159",
+          "sha256": "d472e24b1402f9ea833d6a21cd1818891a41a31e1dc96ccc66d1d8d2a8237937"
+        },
+        {
+          "path": "preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex",
+          "label": "upper:histogram",
+          "line": 200,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex#L200",
+          "sha256": "d472e24b1402f9ea833d6a21cd1818891a41a31e1dc96ccc66d1d8d2a8237937"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000687.md",
+      "body": "# Convert finite l1 cuts into exponential collisions and histogram bounds\n\n[Family 099](../families/openai-math-099.md) · [Source manuscript](../papers/P-000456.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nA finite l1 metric has a finite cut representation rho(x,y)=sum_A a_A |1_A(x)-1_A(y)| with a_A>=0, obtained by thresholding coordinates and merging equal cuts. Even for infinitely many coordinates, sum_A a_A<=sum_(unordered pairs)rho is finite after ignoring constant cuts.\n\nSelect each cut A independently with probability 1-exp(-alpha a_A), and partition points by their membership in the selected cuts. Two points share a cell exactly when no separating cut is selected, with probability exp(-alpha rho(x,y)). For a list L of size s, let H_pi(L) count occurrences per cell. The probability-weighted direct sum H_alpha(L) has l1 distance T equal to E||H_pi(L)-H_pi(M)||_1.\n\nIf every cross-distance between L and M is at least a, a union bound on their s^2 occurrence pairs gives T>=2s(1-s^2 exp(-alpha a)). For any pairing of all but t entries on each side, the triangle inequality gives T<=2t+2 sum_paired(1-exp(-alpha rho))<=2t+2alpha sum_paired rho. Repetitions are counted with multiplicity, and histogram mass is s. Thus their normalized l1 distance is twice total variation.\n\n## Role in the source argument\n\nTurns metric separation and partial matchings into opposing bounds in one deterministic l1 target.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [upper:partitions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex#L159)\n- [upper:histogram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/sections/upper.tex#L200)\n\n## Antecedents and comparison\n\nThreshold-cut representations and independent-cut constructions are classical. The source packages the exact collision kernel with partial histogram matching; exact priority of that combination is not established.\n\n## Checks and limitations\n\nEnumerates every subset of a small cut family and all length-two lists, including repetitions; checks the exact collision probabilities, histogram distances and both matching and separation bounds.\n\nThe checks do not certify the source recursive embedding or distortion lower bound.\n\n## Possible applications\n\nComparing multisets using random partitions while retaining deterministic l1 output.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000688",
+      "record_type": "instrument",
+      "title": "Cover the plane by squares centered on a strongly sheared lattice",
+      "forms": [
+        "monotone-rounding-lattice-cover",
+        "trace-zero-affine-square-cover"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-100"
+      ],
+      "source_paper_ids": [
+        "P-000457"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex",
+          "label": "b:lattice",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex#L9",
+          "sha256": "4337af0a88d8398422f34457e6b29a1ce2f26e133435002ca6f5b86172328f37"
+        },
+        {
+          "path": "preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex",
+          "label": "b:affine-cover",
+          "line": 68,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex#L68",
+          "sha256": "4337af0a88d8398422f34457e6b29a1ce2f26e133435002ca6f5b86172328f37"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000688.md",
+      "body": "# Cover the plane by squares centered on a strongly sheared lattice\n\n[Family 100](../families/openai-math-100.md) · [Source manuscript](../papers/P-000457.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nClosed unit squares centered at (i+alpha j,beta i+j), i,j integers, cover the plane when 0<=alpha beta<1. For a target (u1,u2), set R(t)=floor(t+1/2) and F(i)=R(u1-alpha R(u2-beta i)). This integer map is nondecreasing when the shears have the same sign and constant if their product is zero. Since F(i)=alpha beta i+O(1), there are integers i-<i+ with F(i-)>=i- and F(i+)<=i+. Iteration from i- is nondecreasing and remains at most i+, so it reaches a fixed point. Take j=R(u2-beta i); both coordinate errors are at most 1/2.\n\nFor a real trace-zero planar matrix A, an orthonormal basis makes both diagonal entries zero: the quadratic form values on perpendicular unit vectors sum to zero, and continuity supplies a zero. Write the off-diagonal entries b,c, so bc=-det A. If -L^-2<det A<=0, then alpha=sb and beta=sc satisfy the covering condition for |s|<=L. This gives square coverings for the affine flow I+sA in one common orientation. The inverse bound ||(I+sA)^-1||<=(1+L||A||)/(1+L^2 det A) controls the relevant centers. Nilpotent A allows every finite time interval, even with large shear.\n\n## Role in the source argument\n\nSupplies a local linear covering with explicit center control for later nonlinear approximation.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [b:lattice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex#L9)\n- [b:affine-cover](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/build/sections/linear-coverings.tex#L68)\n\n## Antecedents and comparison\n\nThe fixed-point mechanism and trace-zero basis choice are elementary established tools. The source also cites lattice tilings by cubes; that primary comparison was not independently checked here. No priority claim is made for the covering statement.\n\n## Checks and limitations\n\nExact rational shears and target points test integer iteration, coverage, negative shears, zero products and unbounded individual shears; examples outside the product hypothesis show holes.\n\nFinite models do not establish the nonlinear cylinder approximation.\n\n## Possible applications\n\nCovering distorted grids without imposing a small norm on the linear map.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000689",
+      "record_type": "instrument",
+      "title": "Compute simplex shadow area from its longest parallel chord",
+      "forms": [
+        "simplex-chord-projection-identity",
+        "homothetic-overlap-layer-cake"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-100"
+      ],
+      "source_paper_ids": [
+        "P-000458"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/build/projections.tex",
+          "label": "prop:simplex",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/build/projections.tex#L18",
+          "sha256": "ce06419f15d0ed97b7562919b80220f02cdbd3ea849e97473ea48607e2bd6a85"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000689.md",
+      "body": "# Compute simplex shadow area from its longest parallel chord\n\n[Family 100](../families/openai-math-100.md) · [Source manuscript](../papers/P-000458.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nLet S be a full-dimensional simplex in R^d, d>=2, of volume V. For a unit direction u, put b_i=directional derivative of barycentric coordinate lambda_i and c=sum_(b_i>0)b_i=sum_(b_i<0)(-b_i)>0. The overlap S intersect (S-su) is described by lambda_i>=s max(0,-b_i). It is a translate of (1-sc)S for 0<=s<1/c, a point at 1/c and empty above it. Thus the longest u-parallel chord has length L=1/c.\n\nIf A is the (d-1)-volume of the orthogonal projection, the set of projected fibers whose chord exceeds s has measure A(1-s/L)^(d-1). Integrating those superlevel measures gives V=AL/d. Therefore A=dV/L, and minimizing over directions yields min A=dV/diam(S). For a regular tetrahedron of edge length ell this is ell^2/(2sqrt(2)). The homothetic overlap also yields the full chord-length distribution, not just its first moment.\n\n## Role in the source argument\n\nIdentifies the most economical cylinder direction for a simplex cell.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:simplex](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/build/projections.tex#L18)\n\n## Antecedents and comparison\n\n[Heinrich, Lower and Upper Bounds for Chord Power Integrals of Ellipsoids](https://www.m-hikari.com/ams/ams-2014/ams-165-168-2014/heinrichAMS165-168-2014.pdf), printed page 8268, states exactly A L=dV and attributes it to Martini and Weissbach (1992). That page and its reference were read. This is a known geometric identity used in the source application.\n\n## Checks and limitations\n\nRandom triangles and tetrahedra compare independently computed projected convex-hull volumes, simplex determinants and longest-chord linear programs.\n\nThe tests do not certify radial-sweep localization or the full cylinder bound.\n\n## Possible applications\n\nSelecting projection directions using a diameter or a chord optimization instead of a separate shadow minimization.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000690",
+      "record_type": "instrument",
+      "title": "Turn finite-valued gain and bounded bias into pathwise average bounds",
+      "forms": [
+        "finite-valued-submartingale-stabilization",
+        "gain-bias-pathwise-telescoping"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-104"
+      ],
+      "source_paper_ids": [
+        "P-000459"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex",
+          "label": "lem:finite-submartingale",
+          "line": 241,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L241",
+          "sha256": "ee6226b5c369099081a22bb4fc4c6de6e8ae11d0bffc7d4f6781e3f73ac58e58"
+        },
+        {
+          "path": "preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex",
+          "label": "lem:bounded-martingale-average",
+          "line": 270,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L270",
+          "sha256": "ee6226b5c369099081a22bb4fc4c6de6e8ae11d0bffc7d4f6781e3f73ac58e58"
+        },
+        {
+          "path": "preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex",
+          "label": "eq:gain-bias-telescoping",
+          "line": 350,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L350",
+          "sha256": "ee6226b5c369099081a22bb4fc4c6de6e8ae11d0bffc7d4f6781e3f73ac58e58"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000690.md",
+      "body": "# Turn finite-valued gain and bounded bias into pathwise average bounds\n\n[Family 104](../families/openai-math-104.md) · [Source manuscript](../papers/P-000459.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nA submartingale taking values in a fixed finite set is eventually constant almost surely. After shifting it to be nonnegative, E[(Y_(t+1)-Y_t)^2]<=E[Y_(t+1)^2-Y_t^2]. Telescoping bounds the expected sum of squared jumps. A positive minimum gap between distinct values then bounds the expected number of changes, so that number is finite almost surely. Its limit has expectation at least the starting value.\n\nBounded martingale differences have vanishing time average almost surely: orthogonality gives variance O(T), Chebyshev at T=j^2 is summable, and bounded increments control the gaps between squares.\n\nFor a fixed Max strategy, assume finite-state gains G and biases psi satisfy selected-edge equalities, chance conditional equalities, and at Min vertices G_next>=G_current with w+psi_next-psi_current>=G_current whenever gains agree. Then G(v_t) is a finite-valued submartingale. After stabilization, nonchance residuals R_t=w_t+psi_next-psi_current-G_current are nonnegative, and chance residuals form bounded martingale differences. The identity average(w)=average(G)+average(R)+(psi_start-psi_end)/T gives liminf average(w)>=G_infinity almost surely, hence the expected lower bound G_start. Reversing inequalities gives the Min upper bound. No stationarity of the opponent is needed.\n\n## Role in the source argument\n\nSeparates the probabilistic payoff conclusion from the algebraic construction of gains and biases.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:finite-submartingale](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L241)\n- [lem:bounded-martingale-average](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L270)\n- [eq:gain-bias-telescoping](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/build/build/sections/discount.tex#L350)\n\n## Antecedents and comparison\n\nFinite-valued submartingale convergence, martingale strong laws and potential telescoping are classical. The extracted interface assembles them for the source gain-bias system; it does not establish a new convergence theorem.\n\n## Checks and limitations\n\nExact finite Markov paths check squared-jump budgets and gain-bias telescoping. Exhaustive coin paths check martingale orthogonality and the variance estimate; these are finite diagnostics, not an almost-sure proof.\n\nExistence and efficient computation of the required gain-bias data remain dependencies.\n\n## Possible applications\n\nProving robust long-run guarantees from local certificates against history-dependent choices.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000691",
+      "record_type": "instrument",
+      "title": "Preserve all-prefix guarantees when restarting parity sub-strategies",
+      "forms": [
+        "increasing-round-prefix-budget",
+        "epsilon-independent-strategy-combination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-104"
+      ],
+      "source_paper_ids": [
+        "P-000460"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex",
+          "label": "lem:combine",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex#L42",
+          "sha256": "ffeaecae4d7eeec441ee6d97dad791068b15521a0b5e8343791deda4c0095ce3"
+        },
+        {
+          "path": "preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex",
+          "label": "eq:uniform-prefix",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex#L14",
+          "sha256": "ffeaecae4d7eeec441ee6d97dad791068b15521a0b5e8343791deda4c0095ce3"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000691.md",
+      "body": "# Preserve all-prefix guarantees when restarting parity sub-strategies\n\n[Family 104](../families/openai-math-104.md) · [Source manuscript](../papers/P-000460.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nAssume a finite arena H with |w|<=W has least even priority d, a positional nonnegative-mean-payoff strategy on H, and a winning parity/mean-payoff strategy on R=H minus the Max attractor of the d-priority vertices. Require the R strategy to satisfy, for every epsilon>0, every prefix bound weight>=-epsilon t-C_epsilon; the strategy itself is chosen before epsilon.\n\nIn round j, play the positional strategy for j steps, then the R strategy with its initial memory until leaving R, then the attractor strategy to a vertex of priority d. The positional segment has every prefix at least -B, B=(|H|-1)W, by deleting nonnegative cycles. For any delta>0 a round prefix loses at most delta times its length plus K_delta=B+C_delta+(1+|H|)W, including the exit edge.\n\nAt time T, at most 1+sqrt(2T) rounds have started. Thus every play prefix has weight at least -delta T-K_delta(1+sqrt(2T)). Put delta=epsilon/2 and bound the square-root term by epsilon T/2+K_delta^2/epsilon. The same strategy satisfies the uniform prefix property with C_epsilon=K_delta+K_delta^2/epsilon. Infinitely many completed rounds visit priority d infinitely often; an infinite unfinished R segment is won by its component strategy.\n\n## Role in the source argument\n\nStrengthens a qualitative strategy combination with a bound stable under repeated invocations.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:combine](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex#L42)\n- [eq:uniform-prefix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/build/sections/03-strategies.tex#L14)\n\n## Antecedents and comparison\n\n[Bouyer, Markey, Olschewski and Ummels, arXiv:1102.3615v2](https://arxiv.org/abs/1102.3615v2), Lemma 7 and its proof on pages 13-14, already use growing mean-payoff phases with an attractor and a subgame strategy. That full proof was read. The selected source adds an explicit all-prefix budget against arbitrary opponent histories.\n\n## Checks and limitations\n\nFinite paths verify the cycle-deletion budget. Increasing-round examples check every interrupted prefix and the square-root/epsilon estimates; a constant-round negative control retains a negative average.\n\nThe checks do not prove the recursive algorithm or its running time.\n\n## Possible applications\n\nComposing long-run strategies when components may restart before their asymptotic guarantee becomes effective.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000692",
+      "record_type": "instrument",
+      "title": "Extend finite-word policy constraints by compactness",
+      "forms": [
+        "compact-behavior-policy-space",
+        "finite-word-expected-cost-polynomial"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-110"
+      ],
+      "source_paper_ids": [
+        "P-000461"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/build/source/latex/sections/10_transfer.tex",
+          "label": "lem:compact-policy",
+          "line": 335,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/build/source/latex/sections/10_transfer.tex#L335",
+          "sha256": "d82ff302d4e85f50568619a8836c58fe129ba099c8f145709dae9259cd28d050"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000692.md",
+      "body": "# Extend finite-word policy constraints by compactness\n\n[Family 110](../families/openai-math-110.md) · [Source manuscript](../papers/P-000461.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nFor k labelled servers in an arbitrary metric, index histories by finite request words and preceding label choices. At each history choose a distribution in the finite simplex Delta_k. The product P of these compact simplices is compact, even for an uncountable metric.\n\nFor a fixed request word sigma of length m, expected cost is the finite polynomial sum_(j in [k]^m) c(sigma,j) product_t p_(request-prefix,label-history)(j_t). All coefficients are finite distances for this fixed word; no global diameter bound is required. Thus a prescribed expected-cost inequality is a closed subset of P. If every finite collection of these inequalities has a common feasible policy, the finite intersection property supplies one policy satisfying every finite word simultaneously.\n\nThe policy can be realized using independent uniforms, or one uniform seed by recursively dividing a half-open interval according to successive label probabilities. Each finite label prefix receives interval length equal to the product of its transition probabilities; zero-probability pieces are empty. This realizes the same expected costs and is measurable in the seed for each fixed oblivious input. No joint measurability in the request coordinates or computational effectiveness follows from the argument.\n\n## Role in the source argument\n\nRemoves a finite-input restriction once a compatible finite-family performance guarantee is available.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:compact-policy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/build/source/latex/sections/10_transfer.tex#L335)\n\n## Antecedents and comparison\n\nThis is a classical compactness argument using finite-coordinate continuity. The source-specific content is its unrestricted-metric behavioral-policy formulation and seed realization; the competitive bound is a separate hypothesis.\n\n## Checks and limitations\n\nExact rational policy trees compare path products with recursive expected costs and verify seed interval lengths and partitions on every tested input.\n\nFinite tests do not establish product compactness or the missing finite-family feasibility theorem.\n\n## Possible applications\n\nPassing from local feasibility to one horizon-independent online policy without a compact request space.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000693",
+      "record_type": "instrument",
+      "title": "Extract causal rational flow tables and round them with a diameter budget",
+      "forms": [
+        "finite-horizon-causal-flow-lp",
+        "dyadic-policy-rounding-coupling"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-110"
+      ],
+      "source_paper_ids": [
+        "P-000462"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/build/source/sections/02-finite-tables.tex",
+          "label": "prop:finite-table",
+          "line": 103,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/build/source/sections/02-finite-tables.tex#L103",
+          "sha256": "19ba7e9da001217fdbdbe8ada0b4041ba401ed8b93966a81a12f6faf76ad89cb"
+        }
+      ],
+      "batch_id": "B073",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000693.md",
+      "body": "# Extract causal rational flow tables and round them with a diameter budget\n\n[Family 110](../families/openai-math-110.md) · [Source manuscript](../papers/P-000462.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nOn a finite rational metric of diameter D, with k distinct initial servers and horizon H, use variables p_(w,c) for the configuration distribution after request prefix w and flows f_(wr,c,j) for a legal strongly lazy response to the next request r. Outflows equal p_(w,c); inflows give p_(wr,c'). Shared prefix variables enforce causality across every continuation. For each word, the sum of its prefix flow costs is constrained by a times its exact offline optimum.\n\nAssume the source existence input makes this finite rational LP feasible with a<=C0 log^2(k+1). Minimizing a>=0 gives an attained rational optimum: eliminate other variables by Fourier-Motzkin, minimize the resulting closed rational polyhedron on the line, and back-substitute. No numerical value of C0 is needed to perform this finite computation. Recover response probabilities f/p when p>0, and use a fixed legal response when p=0.\n\nReserve the smallest legal label; round every other probability down to a multiple of 2^-b and assign the residual to the reserved label. Total variation is at most k2^-b. Choose b=ceil(log2(kH^2)). Couple original and rounded policies until their first disagreement. By time h the disagreement probability is at most hk2^-b; each full trajectory costs at most hD, so expected cost increases by at most kh^2 2^-b D<=D. Formerly unreachable configurations are covered by their legal default rows. The table uses b fair bits per request, but this argument gives no efficient table size or construction time.\n\n## Role in the source argument\n\nTurns an existence-based competitive guarantee into a finite exact object with bounded random-bit consumption.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:finite-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/build/source/sections/02-finite-tables.tex#L103)\n\n## Antecedents and comparison\n\n[Mömke, A Competitive Ratio Approximation Scheme for the k-Server Problem in Fixed Finite Metrics](https://arxiv.org/abs/1303.2963), section 4, pages 6-7, already gives rational finite-horizon strategy polyhedra, prefix consistency and conditional-policy recovery; those pages were read. The source uses configuration flows and explicit dyadic coupling bounds. Rational LP elimination and coupling are established tools.\n\n## Checks and limitations\n\nSmall exact policy flows test conservation, reconstruction, legal zero-mass defaults and all short-word costs. Dyadic rounding is checked against exact cost enumeration and the additive-diameter budget; LP optimality is not inferred from these tests.\n\nThe checks do not establish the squared-logarithmic existence bound or polynomial per-request implementation.\n\n## Possible applications\n\nSeparating finite implementability and randomness precision from the further problem of efficient online computation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -37819,6 +38142,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000454.md",
       "body": "# An Exact Semidefinite Lift of a Nonspectrahedral Hyperbolicity Cone\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000685: Linearize a quadratic matrix on angular planes by an explicit Gram factor](../instruments/MI-000685.md)\n\n[Family review and dependencies](../families/openai-math-095.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000455",
+      "record_type": "paper",
+      "title": "Edit Distance in l1: Matching Bounds up to Constants in the Exponent",
+      "source_collection": "openai/math",
+      "upstream_slug": "Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-099"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0ac92ddb8db9d5d0d8ab83e02c826391168470db5d72fa2410dc5f32e26bd05b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000455.md",
+      "body": "# Edit Distance in l1: Matching Bounds up to Constants in the Exponent\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Edit-Distance-in-l1-Matching-Bounds-up-to-Constants-in-the-Exponent-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000686: Remove alphabet size by collision-controlled hashing and a direct sum](../instruments/MI-000686.md)\n\n[Family review and dependencies](../families/openai-math-099.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000456",
+      "record_type": "paper",
+      "title": "Finite-Circle Obstructions, Binary Codes, and Histogram Embeddings for Edit Distance",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-099"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a7a1942eb8cc84d43ad391439346c24b55e0167067b9e3cc9641e31bf2e7e98f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000456.md",
+      "body": "# Finite-Circle Obstructions, Binary Codes, and Histogram Embeddings for Edit Distance\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000687: Convert finite l1 cuts into exponential collisions and histogram bounds](../instruments/MI-000687.md)\n\n[Family review and dependencies](../families/openai-math-099.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000457",
+      "record_type": "paper",
+      "title": "Finite cylinder approximation of ruled sets",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-cylinder-approximation-of-ruled-sets-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026",
+      "source_date": "September 27, 2026",
+      "family_ids": [
+        "openai-math-100"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "468fa04859ad9a0d2310604e5146f41bce53e7be724a3b1880880dade7b93a0a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000457.md",
+      "body": "# Finite cylinder approximation of ruled sets\n\n## Source\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-cylinder-approximation-of-ruled-sets-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000688: Cover the plane by squares centered on a strongly sheared lattice](../instruments/MI-000688.md)\n\n[Family review and dependencies](../families/openai-math-100.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000458",
+      "record_type": "paper",
+      "title": "Finite triangular approximation of radial sweeps",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-triangular-approximation-of-radial-sweeps-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026",
+      "source_date": "September 27, 2026",
+      "family_ids": [
+        "openai-math-100"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "af80de9cf252318ca91134d5cd0ad4b5a48824307de654273c20318a70ea626f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000458.md",
+      "body": "# Finite triangular approximation of radial sweeps\n\n## Source\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-triangular-approximation-of-radial-sweeps-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000689: Compute simplex shadow area from its longest parallel chord](../instruments/MI-000689.md)\n\n[Family review and dependencies](../families/openai-math-100.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000459",
+      "record_type": "paper",
+      "title": "Turn-Based Stochastic Mean-Payoff Games in Deterministic Quasipolynomial Time",
+      "source_collection": "openai/math",
+      "upstream_slug": "Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-104"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6b0e3e2997510c38152669c3b18f8c0b9e47db0144b4388e24729f2999cd0868",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000459.md",
+      "body": "# Turn-Based Stochastic Mean-Payoff Games in Deterministic Quasipolynomial Time\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/stochastic-mean-payoff-games.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Turn-Based-Stochastic-Mean-Payoff-Games-in-Deterministic-Quasipolynomial-Time-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000690: Turn finite-valued gain and bounded bias into pathwise average bounds](../instruments/MI-000690.md)\n\n[Family review and dependencies](../families/openai-math-104.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000460",
+      "record_type": "paper",
+      "title": "Mean-payoff parity games in quasipolynomial time",
+      "source_collection": "openai/math",
+      "upstream_slug": "Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-104"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1d6f0d570ef4719c4e4909cb4a983e363f8a5a5e1e282a8d3119092ad9d0d5b2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000460.md",
+      "body": "# Mean-payoff parity games in quasipolynomial time\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/mean-payoff-parity.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Mean-payoff-parity-games-in-quasipolynomial-time-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000691: Preserve all-prefix guarantees when restarting parity sub-strategies](../instruments/MI-000691.md)\n\n[Family review and dependencies](../families/openai-math-104.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000461",
+      "record_type": "paper",
+      "title": "Squared-logarithmic randomized k-server on arbitrary metrics",
+      "source_collection": "openai/math",
+      "upstream_slug": "Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-110"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "cc857281322c5c906849ddd1c4d19caf5a44330ee87999f17b620ef28b0180e4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000461.md",
+      "body": "# Squared-logarithmic randomized k-server on arbitrary metrics\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squared-logarithmic-randomized-k-server-on-arbitrary-metrics-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000692: Extend finite-word policy constraints by compactness](../instruments/MI-000692.md)\n\n[Family review and dependencies](../families/openai-math-110.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000462",
+      "record_type": "paper",
+      "title": "Uniform computation of the squared-logarithmic k-server bound",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-110"
+      ],
+      "batch_id": "B073",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "599e4552ab8dd17cf680594f9146e311966f5cdfb89c0976f53221b41148c59f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000462.md",
+      "body": "# Uniform computation of the squared-logarithmic k-server bound\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000693: Extract causal rational flow tables and round them with a diameter budget](../instruments/MI-000693.md)\n\n[Family review and dependencies](../families/openai-math-110.md) · [Batch B073](../../batches/B073/README.md)"
     }
   ],
   "families": [
@@ -40484,6 +40959,62 @@
       "body": "# Separated scales, derivative rigidity and compact metric obstructions\n\n## Source manuscript and claim\n\n[A doubling Hilbert subset with no finite-dimensional bi-Lipschitz embedding](../papers/P-000088.md), by OpenAI, September 25, 2026.\n\nThe source claims a fixed doubling Hilbert subset with no finite-dimensional bi-Lipschitz embedding and a compact obstruction in every infinite-dimensional real Banach space.\n\n## Extracted instruments\n\n- [MI-000130: Separated displacement scales keep unbounded sheet multiplicity uniformly doubling](../instruments/MI-000130.md)\n- [MI-000131: Lexicographic derivative extrema turn crossing sheets into a packing obstruction](../instruments/MI-000131.md)\n- [MI-000132: Finite Hilbert obstructions can be assembled into a compact obstruction in any Banach space](../instruments/MI-000132.md)\n\n## Dependencies and antecedents\n\nEuclidean Rademacher differentiation, Lebesgue differentiation, compactness of derivative data, line integration, variance identities, finite-dimensional packing and the finite-dimensional Dvoretzky theorem.\n\nLang–Plaut formulate the Hilbert problem; Lafforgue–Naor and others give related obstructions above exponent two; Laakso supplies separation-versus-stretch precedents. The source distinguishes a withdrawn Schioppa preprint. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the construction, covering estimate, derivative-energy argument, crossing argument and compact transfer. Checked covering constants and the abstract compactness/packing implications. This is selected argument review, not an independent formal certification of the source theorem.\n\nThe DoublingHilbert Comparator specifies doubling constant 76800 for one fixed Hilbert subset. CompactBanach specifies a universal constant for compact subsets of all infinite-dimensional real Banach spaces and excludes all finite-dimensional normed targets. No Lean solution was built.\n\nThe initial sheet space has finite-support displacement tuples and is not asserted compact. Compactness is obtained by a separate finite-witness assembly. The set is chosen before the target dimension and distortion.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/098.md) · [Batch record](../../batches/B003/README.md)"
     },
     {
+      "id": "openai-math-099",
+      "record_type": "family",
+      "title": "Alphabet compression and finite partition histograms",
+      "source_family": "099",
+      "source_collection": "openai/math",
+      "batch_id": "B073",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000455",
+        "P-000456"
+      ],
+      "instrument_ids": [
+        "MI-000686",
+        "MI-000687"
+      ],
+      "headline": "The family claims matching exponential-order bounds for embedding edit distance into l1.",
+      "central_instrument": "Pairwise collision control removes alphabet size; independent cuts turn an l1 metric into an exact exponential collision kernel.",
+      "novelty_assessment": "Directly checked antecedents are identified below. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and both listed Comparators. EditDistance targets matching exponential-order bounds uniformly over finite alphabets. FiniteCircle includes specific binary code inequalities, finite witnesses and a histogram upper construction. Other listed Comparators were not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The first card is conditional on a bounded-alphabet embedding. The second concerns a finite l1 metric and lists with repetitions; the partition distribution is fixed for the whole point set.",
+      "dependencies": "Longest common subsequences, random hashing, l1 direct sums, threshold cuts and finite probability.",
+      "antecedents": "Ostrovsky-Rabani binary edit-distance embeddings and classical cut representations of l1 metrics.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-099.md",
+      "body": "# Alphabet compression and finite partition histograms\n\n## Source manuscripts and claim\n\n- [Edit Distance in l1: Matching Bounds up to Constants in the Exponent](../papers/P-000455.md): selected passages extracted.\n- [Finite-Circle Obstructions, Binary Codes, and Histogram Embeddings for Edit Distance](../papers/P-000456.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Tree Constructions for the l1 Distortion of Binary Edit Distance](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026)\n\nThe family claims matching exponential-order bounds for embedding edit distance into l1.\n\n## Extracted instruments\n\n- [MI-000686: Remove alphabet size by collision-controlled hashing and a direct sum](../instruments/MI-000686.md)\n- [MI-000687: Convert finite l1 cuts into exponential collisions and histogram bounds](../instruments/MI-000687.md)\n\n## Dependencies and antecedents\n\nLongest common subsequences, random hashing, l1 direct sums, threshold cuts and finite probability.\n\nOstrovsky-Rabani binary edit-distance embeddings and classical cut representations of l1 metrics.\n\n## Review and formalization scope\n\nRead the complete uniform-upper proof and the partition and histogram proofs. Two of three manuscripts receive extractions; the tree-construction manuscript remains inventory-only. The delimiter-code input and the lower-bound constructions are not certified.\n\nRead the scope and both listed Comparators. EditDistance targets matching exponential-order bounds uniformly over finite alphabets. FiniteCircle includes specific binary code inequalities, finite witnesses and a histogram upper construction. Other listed Comparators were not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.\n\nThe first card is conditional on a bounded-alphabet embedding. The second concerns a finite l1 metric and lists with repetitions; the partition distribution is fixed for the whole point set.\n\n[Batch record](../../batches/B073/README.md)"
+    },
+    {
+      "id": "openai-math-100",
+      "record_type": "family",
+      "title": "Sheared square coverings and simplex chords",
+      "source_family": "100",
+      "source_collection": "openai/math",
+      "batch_id": "B073",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000457",
+        "P-000458"
+      ],
+      "instrument_ids": [
+        "MI-000688",
+        "MI-000689"
+      ],
+      "headline": "The family claims finite cylinder approximations of ruled and radial swept sets.",
+      "central_instrument": "Monotone rounding produces full square coverings under strong shear; simplex intersections determine projection area from the longest chord.",
+      "novelty_assessment": "Directly checked antecedents are identified below. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete RuledCovering Comparator, including its hyperbolic, physical, logarithmic-cell, product, orthogonal-grid, nilpotent and singular statements. The other listed covering Comparators were not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Square covering requires 0<=alpha beta<1, not separate bounds on the shears. The projection identity is for a full-dimensional simplex, not an arbitrary convex body.",
+      "dependencies": "Integer monotone maps, trace-zero planar matrices, barycentric coordinates and layer-cake integration.",
+      "antecedents": "Lattice fixed-point arguments and the established Martini-Weissbach simplex identity.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-100.md",
+      "body": "# Sheared square coverings and simplex chords\n\n## Source manuscripts and claim\n\n- [Finite cylinder approximation of ruled sets](../papers/P-000457.md): selected passages extracted.\n- [Finite triangular approximation of radial sweeps](../papers/P-000458.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Finite angular cylinder covers below the half-area bound](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-angular-cylinder-covers-below-the-half-area-bound-September-27-2026)\n- [Slope-field perturbations of the two-cylinder covering](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Slope-field-perturbations-of-the-two-cylinder-covering-September-27-2026)\n\nThe family claims finite cylinder approximations of ruled and radial swept sets.\n\n## Extracted instruments\n\n- [MI-000688: Cover the plane by squares centered on a strongly sheared lattice](../instruments/MI-000688.md)\n- [MI-000689: Compute simplex shadow area from its longest parallel chord](../instruments/MI-000689.md)\n\n## Dependencies and antecedents\n\nInteger monotone maps, trace-zero planar matrices, barycentric coordinates and layer-cake integration.\n\nLattice fixed-point arguments and the established Martini-Weissbach simplex identity.\n\n## Review and formalization scope\n\nRead the full lattice-covering, zero-diagonal-basis and affine-cover proofs, and the full simplex projection proof. Two of four manuscripts receive extractions; the angular-cover and slope-field manuscripts remain inventory-only. Nonlinear localization and full swept-set covering results are not certified.\n\nRead the scope and complete RuledCovering Comparator, including its hyperbolic, physical, logarithmic-cell, product, orthogonal-grid, nilpotent and singular statements. The other listed covering Comparators were not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.\n\nSquare covering requires 0<=alpha beta<1, not separate bounds on the shears. The projection identity is for a full-dimensional simplex, not an arbitrary convex body.\n\n[Batch record](../../batches/B073/README.md)"
+    },
+    {
       "id": "openai-math-101",
       "record_type": "family",
       "title": "Jacobian compatibility and cone transfer in sharp entropy geometry",
@@ -40575,6 +41106,34 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-103.md",
       "body": "# L = RL = BPL\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000034](../papers/P-000034.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, multi-tape Turing-machine statement new\n\nDeterministic logspace equals randomized logspace, one- and two-sided error. The comparator states exactly $`\\mathrm{L}=\\mathrm{RL}\\wedge\\mathrm{RL}=\\mathrm{BPL}`$ for a multi-tape model with fresh coins per step and polynomial halting on every coin tape. The record stood at Hoza’s $`\\log^{3/2}n/\\sqrt{\\log\\log n}`$. The formalization has a narrower scope than the full construction: the effective compiler and numerical bounds are not formalized, and Lean identifiers are obfuscated, which limits the textual inspection reported here to the statement.\n\n## Extracted instruments.\n\n- [MI-000080: Exact correction and copy hierarchy](../instruments/MI-000080.md)\n\n- [MI-000081: Rank channels and conditional averaging in a shared environment](../instruments/MI-000081.md)\n\n- [MI-000082: Allowance/clock controller with catalytic key equality](../instruments/MI-000082.md)\n\n## Reused.\n\nNilpotent inverse of the configuration graph; k-wise independent hashing; relative property (T) expanders (Shalom, Kassabov); Riesz–Thorin; Carter–Wegman fingerprints; Cook–McKenzie traversal; Lange–McKenzie–Tapp reversibility; catalytic computation (BCKLS).\n\n## Caveats.\n\nThe source contains about 400 KB of text and an eight-step chain of sufficiently large constants. It avoids storing a seed hierarchy, the source of the $`\\log^{3/2}`$ space bound in the comparison made by the initial extraction.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: files; identifiers obfuscated\n- Statement coverage: yes, multi-tape TM, L = RL ∧ RL = BPL\n- Dependencies: no\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-104",
+      "record_type": "family",
+      "title": "Pathwise gain-bias arguments and uniform strategy restarts",
+      "source_family": "104",
+      "source_collection": "openai/math",
+      "batch_id": "B073",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000459",
+        "P-000460"
+      ],
+      "instrument_ids": [
+        "MI-000690",
+        "MI-000691"
+      ],
+      "headline": "The family claims quasipolynomial algorithms for several mean-payoff game models.",
+      "central_instrument": "Finite-valued gain stabilization converts one-step data to pathwise payoffs; increasing rounds preserve uniform prefix bounds under repeated restarts.",
+      "novelty_assessment": "Directly checked antecedents are identified below. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete RandomizedMeanPayoff Comparator. Its earlier target is a randomized quasipolynomial machine with success probability at least 7/8. It does not state the newer stochastic or parity targets. The other listed Comparator was not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Gain and bias data are assumed supplied. The parity strategy is fixed before an accuracy parameter is chosen, and controls every prefix against history-dependent play.",
+      "dependencies": "Finite-valued submartingales, bounded martingale differences, telescoping potentials, attractors and cycle deletion.",
+      "antecedents": "Classical martingale arguments and Bouyer-Markey-Olschewski-Ummels increasing-round strategy combinations.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-104.md",
+      "body": "# Pathwise gain-bias arguments and uniform strategy restarts\n\n## Source manuscripts and claim\n\n- [Turn-Based Stochastic Mean-Payoff Games in Deterministic Quasipolynomial Time](../papers/P-000459.md): selected passages extracted.\n- [Mean-payoff parity games in quasipolynomial time](../papers/P-000460.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Deterministic quasipolynomial-time mean-payoff games](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-quasipolynomial-time-mean-payoff-games-September-25-2026)\n- [Randomized quasipolynomial-time mean-payoff games](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Randomized-quasipolynomial-time-mean-payoff-games-September-25-2026)\n\nThe family claims quasipolynomial algorithms for several mean-payoff game models.\n\n## Extracted instruments\n\n- [MI-000690: Turn finite-valued gain and bounded bias into pathwise average bounds](../instruments/MI-000690.md)\n- [MI-000691: Preserve all-prefix guarantees when restarting parity sub-strategies](../instruments/MI-000691.md)\n\n## Dependencies and antecedents\n\nFinite-valued submartingales, bounded martingale differences, telescoping potentials, attractors and cycle deletion.\n\nClassical martingale arguments and Bouyer-Markey-Olschewski-Ummels increasing-round strategy combinations.\n\n## Review and formalization scope\n\nRead all selected pathwise lemmas and their payoff application, the one-step gain-bias conditions, the full parity combination proof and its mean-payoff prefix input. Two of four manuscripts receive extractions; earlier deterministic and randomized manuscripts remain inventory-only. Quasipolynomial bounds and construction of the gain-bias data are not certified.\n\nRead the scope and complete RandomizedMeanPayoff Comparator. Its earlier target is a randomized quasipolynomial machine with success probability at least 7/8. It does not state the newer stochastic or parity targets. The other listed Comparator was not inspected. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.\n\nGain and bias data are assumed supplied. The parity strategy is fixed before an accuracy parameter is chosen, and controls every prefix against history-dependent play.\n\n[Batch record](../../batches/B073/README.md)"
     },
     {
       "id": "openai-math-105",
@@ -40716,6 +41275,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-109.md",
       "body": "# Rank-counted shears and retained-order synthetic Fourier transforms\n\n## Source manuscript and claim\n\n[Integer multiplication below n log n](../papers/P-000211.md), by OpenAI, September 23, 2026.\n\nThe source claims exact integer multiplication in O(n (log n)^(1-kappa)) time on one fixed finite-tape Turing machine, with kappa=2^(-182).\n\n## Extracted instruments\n\n- [MI-000384: Implement a rational matrix shear with one interchange per rank](../instruments/MI-000384.md)\n- [MI-000385: Cancel synthetic characters without division and retain the FFT output order](../instruments/MI-000385.md)\n\n## Dependencies and antecedents\n\nRational elimination, unit denominators modulo prime powers, ordered field updates, negacyclic coefficient rotations and radix-two transforms.\n\nClassical Bruhat decomposition and Nussbaumer transforms; Harvey-van der Hoeven 2021 provides the established multiplication framework cited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete lower-triangular factorization, matrix-shear, synthetic character cancellation and stored-order transform arguments. The finite motifs, simultaneous-layer algorithm and final complexity assembly were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nThe matrix family and dimension are fixed before choosing the odd prime and input field width. Both Fourier signs are normalized by 1/t, so their composite is I/t, not I.\n\n[Batch record](../../batches/B035/README.md)"
+    },
+    {
+      "id": "openai-math-110",
+      "record_type": "family",
+      "title": "Compact policies and finite rational online tables",
+      "source_family": "110",
+      "source_collection": "openai/math",
+      "batch_id": "B073",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000461",
+        "P-000462"
+      ],
+      "instrument_ids": [
+        "MI-000692",
+        "MI-000693"
+      ],
+      "headline": "The family claims a squared-logarithmic randomized k-server bound on arbitrary metrics and a uniform efficient implementation on rational finite metrics.",
+      "central_instrument": "Finite-family feasibility extends by compactness to one policy; a rational causal flow table can be rounded to bounded random bits with an additive diameter loss.",
+      "novelty_assessment": "Directly checked antecedents are identified below. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and both complete Comparators. KServer targets a squared-logarithmic expected bound on arbitrary metrics, with zero additive term for distinct initial servers. UniformKServer additionally targets polynomial computation per request on rational finite metrics; its additive constant is not polynomially bounded in the statement. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Compactness assumes feasibility for every finite family of words and gives no effective algorithm. Table construction is finite but may be enormous; polynomial per-request scheduling is a separate unverified step.",
+      "dependencies": "Product compactness, finite expected-cost polynomials, rational linear programming, conditional probabilities and coupling.",
+      "antecedents": "Tychonoff compactness, finite-horizon online strategy linear programs and dyadic probability rounding.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-110.md",
+      "body": "# Compact policies and finite rational online tables\n\n## Source manuscripts and claim\n\n- [Squared-logarithmic randomized k-server on arbitrary metrics](../papers/P-000461.md): selected passages extracted.\n- [Uniform computation of the squared-logarithmic k-server bound](../papers/P-000462.md): selected passages extracted.\n\nThe family claims a squared-logarithmic randomized k-server bound on arbitrary metrics and a uniform efficient implementation on rational finite metrics.\n\n## Extracted instruments\n\n- [MI-000692: Extend finite-word policy constraints by compactness](../instruments/MI-000692.md)\n- [MI-000693: Extract causal rational flow tables and round them with a diameter budget](../instruments/MI-000693.md)\n\n## Dependencies and antecedents\n\nProduct compactness, finite expected-cost polynomials, rational linear programming, conditional probabilities and coupling.\n\nTychonoff compactness, finite-horizon online strategy linear programs and dyadic probability rounding.\n\n## Review and formalization scope\n\nRead the complete compact-policy proof and finite-table proposition, including singular probability rows and coupling after first disagreement. Both manuscripts receive extractions. The finite-family minimax bound, squared-logarithmic existence theorem and uniform scheduling construction are not certified.\n\nRead the scope and both complete Comparators. KServer targets a squared-logarithmic expected bound on arbitrary metrics, with zero additive term for distinct initial servers. UniformKServer additionally targets polynomial computation per request on rational finite metrics; its additive constant is not polynomially bounded in the statement. Inspected Comparator target bodies contain sorry; no separate solution or Lean build was checked.\n\nCompactness assumes feasibility for every finite family of words and gives no effective algorithm. Table construction is finite but may be enormous; polynomial per-request scheduling is a separate unverified step.\n\n[Batch record](../../batches/B073/README.md)"
     },
     {
       "id": "openai-math-111",
