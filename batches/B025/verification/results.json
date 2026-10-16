@@ -1,0 +1,51 @@
+{
+  "batch": "B025",
+  "status": "passed",
+  "check_groups": {
+    "nilpotent_lift": {
+      "nonfree_homology_models": 12,
+      "sharp_positive_recurrences": 12,
+      "scope": "Finite nilpotent ring complexes and recurrence; no labelled Floer construction."
+    },
+    "lattice_units": {
+      "all_GL2_matrices": 1638,
+      "torsion_complexes": 1,
+      "scope": "Finite congruence recurrence and a torsion-containing chain example; no instanton maps."
+    },
+    "saturated_residue": {
+      "subspaces": 15,
+      "flags": 49,
+      "chain_identities": 3528,
+      "scope": "Augmented finite subspace-poset identities, with an unsaturated failure control."
+    },
+    "product_shuffle": {
+      "flag_pairs": 256,
+      "scope": "Exact signed staircase shuffles, including empty flags and augmented boundaries."
+    },
+    "groupoid_weights": {
+      "cyclic_functors": 288,
+      "nonfaithful_functors": 210,
+      "composition_checks": 100,
+      "scope": "Finite groupoid homotopy masses and pushforward composition; no spectral character splitting."
+    },
+    "lattice_counts": {
+      "coefficient_comparisons": 150,
+      "p_adic_congruences": 210,
+      "triangular_bases": 224,
+      "scope": "Finite subgroup-basis enumeration and exact p-adic precision checks; no profinite kernel theorem."
+    },
+    "Cartier_halving": {
+      "Steenrod_identities": 600,
+      "GL_naturality": 75,
+      "Dickson_monomials": 65,
+      "exponent_floor_checks": 90,
+      "scope": "Exact polynomial Cartier identities and threshold arithmetic; no full Steenrod tensor obstruction."
+    },
+    "primitive_roots": {
+      "decomposable_monomials": 166,
+      "primitive_kernel_basis_vectors": 4,
+      "scope": "Exact coproduct kernels in a non-primitively generated polynomial Hopf algebra; no spherical-class classification."
+    }
+  },
+  "limitations": "Finite algebra does not certify cosmetic surgery, Quillen rational homology, chromatic fixed-point loss or Curtis claims."
+}
