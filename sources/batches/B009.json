@@ -1,0 +1,402 @@
+{
+  "batch_id": "B009",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T06:45:46.500972+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Brenier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Brenier.lean",
+      "sha256": "f8ab00911bc6b6716cc47acdde3e40044d99b5c826abc9aa31d00536c2c9b7bb",
+      "bytes": 4824
+    },
+    {
+      "path": "lean/ComparatorChallenges/DiscreteLipschitzFree.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DiscreteLipschitzFree.lean",
+      "sha256": "af1c691c7cff4a059a7fee5b6993892c0331de0ba4f0c5ab3915b7beee435e70",
+      "bytes": 5868
+    },
+    {
+      "path": "lean/ComparatorChallenges/MetricEntropyDuality.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MetricEntropyDuality.lean",
+      "sha256": "56e4e4aaa1c1cb998e03aca8f659471996a0428e35736316dfa4cb31f9457cc8",
+      "bytes": 1827
+    },
+    {
+      "path": "lean/ComparatorChallenges/RealL1Renorming.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/RealL1Renorming.lean",
+      "sha256": "63fc558d5283a7cf98f7605854227904d40612bc80afdbe7800d7064f5549c13",
+      "bytes": 1786
+    },
+    {
+      "path": "lean/ComparatorChallenges/ReflexiveFixedPoints.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ReflexiveFixedPoints.lean",
+      "sha256": "e82d18ae968de9efbb0ea83aa401e95302a4b80686949107a3d0223335718d0d",
+      "bytes": 960
+    },
+    {
+      "path": "lean/docs/328.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/328.md",
+      "sha256": "9f79d43bd015142bdc270e47722767be151f59742df8f77ae006fd89ab6ea098",
+      "bytes": 967
+    },
+    {
+      "path": "lean/docs/329.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/329.md",
+      "sha256": "1c44d84ab8638875d9c80d292e2b52ed5f9a6fe014f70069b95cf867b01cf6e5",
+      "bytes": 1034
+    },
+    {
+      "path": "lean/docs/330.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/330.md",
+      "sha256": "fad8486a7daeef55a8280172ea655b34a705cd8985a7491445f2015b31449b7f",
+      "bytes": 1427
+    },
+    {
+      "path": "lean/docs/374.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/374.md",
+      "sha256": "db319fc02b2a12ef2e60b7322c24b50f1ff41c16366da563da9dc9b3f11d0fa5",
+      "bytes": 1138
+    },
+    {
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/README.md",
+      "sha256": "639dc2f756936a4e70eb1834fda846aaeb1d8ce5b89fff3f51b63225502c74fd",
+      "bytes": 658
+    },
+    {
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+      "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa",
+      "bytes": 4401
+    },
+    {
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de",
+      "bytes": 11783
+    },
+    {
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/README.md",
+      "sha256": "453fbb75431a3db18eb28f6d44832f80078aa233d735afe21eae4681ef0e2864",
+      "bytes": 846
+    },
+    {
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+      "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35",
+      "bytes": 12632
+    },
+    {
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+      "sha256": "f8ad0a57fc8d4fe91679269ea6c92052f4022846c839d6261681663e9afdbf0a",
+      "bytes": 7742
+    },
+    {
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+      "sha256": "43a3ba589cf8db4a055a816328c3c2aa3798cb05ca79452673c9129325c969f6",
+      "bytes": 8959
+    },
+    {
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/README.md",
+      "sha256": "aaf8d11dafa84f05df7dc1adf76a1dea0fcdb55ad28f8469a6995e7a135fe639",
+      "bytes": 660
+    },
+    {
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+      "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55",
+      "bytes": 13754
+    },
+    {
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd",
+      "bytes": 9928
+    },
+    {
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/README.md",
+      "sha256": "6a9edf8accb9bc366d580abee0a219b08345832199b9be3e8e9722e93d9e30fd",
+      "bytes": 548
+    },
+    {
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex",
+      "sha256": "07eafd506c35c3e2e2708ad204b25e5b43e9659c1f66305eedb29cd46fb24f4e",
+      "bytes": 10119
+    },
+    {
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e",
+      "bytes": 6883
+    },
+    {
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+      "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17",
+      "bytes": 9617
+    },
+    {
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902",
+      "bytes": 7662
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000170",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+      "label": "lem:finite-tuples",
+      "line": 120,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L120",
+      "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+    },
+    {
+      "instrument_id": "MI-000170",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+      "label": "prop:anchor",
+      "line": 193,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L193",
+      "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+    },
+    {
+      "instrument_id": "MI-000170",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+      "label": "lem:adaptive-selection",
+      "line": 295,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L295",
+      "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+    },
+    {
+      "instrument_id": "MI-000171",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "label": "eq:block-detection",
+      "line": 186,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L186",
+      "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+    },
+    {
+      "instrument_id": "MI-000171",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "label": "eq:weighted-deficit",
+      "line": 210,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L210",
+      "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+    },
+    {
+      "instrument_id": "MI-000171",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "label": "eq:total-deficit",
+      "line": 220,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L220",
+      "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+    },
+    {
+      "instrument_id": "MI-000171",
+      "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+      "label": "eq:common-branch-vector",
+      "line": 259,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L259",
+      "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+    },
+    {
+      "instrument_id": "MI-000172",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "label": "lem:log-profile",
+      "line": 56,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L56",
+      "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+    },
+    {
+      "instrument_id": "MI-000172",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "label": "prop:compression",
+      "line": 102,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L102",
+      "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+    },
+    {
+      "instrument_id": "MI-000172",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "label": "eq:grouped-approximation",
+      "line": 229,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L229",
+      "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+    },
+    {
+      "instrument_id": "MI-000172",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+      "label": "cor:signed-compression",
+      "line": 285,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L285",
+      "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+    },
+    {
+      "instrument_id": "MI-000173",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+      "label": "lem:matrix-to-bodies",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L12",
+      "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+    },
+    {
+      "instrument_id": "MI-000173",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+      "label": "eq:row-support-function",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L63",
+      "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+    },
+    {
+      "instrument_id": "MI-000173",
+      "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+      "label": "eq:matrix-body-bounds",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L39",
+      "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+    },
+    {
+      "instrument_id": "MI-000174",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+      "label": "lem:exceptional-directions",
+      "line": 164,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L164",
+      "sha256": "43a3ba589cf8db4a055a816328c3c2aa3798cb05ca79452673c9129325c969f6"
+    },
+    {
+      "instrument_id": "MI-000174",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+      "label": "eq:record-inequalities",
+      "line": 186,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L186",
+      "sha256": "43a3ba589cf8db4a055a816328c3c2aa3798cb05ca79452673c9129325c969f6"
+    },
+    {
+      "instrument_id": "MI-000174",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+      "label": "lem:edge-test",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L11",
+      "sha256": "f8ad0a57fc8d4fe91679269ea6c92052f4022846c839d6261681663e9afdbf0a"
+    },
+    {
+      "instrument_id": "MI-000174",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+      "label": "eq:average-error",
+      "line": 115,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L115",
+      "sha256": "f8ad0a57fc8d4fe91679269ea6c92052f4022846c839d6261681663e9afdbf0a"
+    },
+    {
+      "instrument_id": "MI-000175",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+      "label": "prop:coefficients",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L18",
+      "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+    },
+    {
+      "instrument_id": "MI-000175",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+      "label": "eq:wedge-metric",
+      "line": 105,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L105",
+      "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+    },
+    {
+      "instrument_id": "MI-000175",
+      "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+      "label": "eq:finite-block-projection",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L200",
+      "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+    },
+    {
+      "instrument_id": "MI-000176",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+      "label": "moments:midpoint",
+      "line": 23,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L23",
+      "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17"
+    },
+    {
+      "instrument_id": "MI-000176",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+      "label": "moments:derivative",
+      "line": 8,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L8",
+      "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17"
+    },
+    {
+      "instrument_id": "MI-000177",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex",
+      "label": "cells:laplacian",
+      "line": 60,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex#L60",
+      "sha256": "07eafd506c35c3e2e2708ad204b25e5b43e9659c1f66305eedb29cd46fb24f4e"
+    },
+    {
+      "instrument_id": "MI-000177",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "label": "eq:finite-duality",
+      "line": 82,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L82",
+      "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+    },
+    {
+      "instrument_id": "MI-000177",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "label": "eq:finite-intercept-speed",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L113",
+      "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+    },
+    {
+      "instrument_id": "MI-000177",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "label": "eq:finite-potential-bound",
+      "line": 21,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L21",
+      "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+    },
+    {
+      "instrument_id": "MI-000178",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "label": "cells:optimality",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L11",
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+    },
+    {
+      "instrument_id": "MI-000178",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "label": "sharpness:potentials",
+      "line": 65,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L65",
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+    },
+    {
+      "instrument_id": "MI-000178",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "label": "sharpness:target-distance",
+      "line": 143,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L143",
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+    },
+    {
+      "instrument_id": "MI-000178",
+      "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "label": "sharpness:map-distance",
+      "line": 168,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L168",
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+    }
+  ]
+}
