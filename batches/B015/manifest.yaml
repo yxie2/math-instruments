@@ -1,0 +1,29 @@
+id: B015
+title: Sampling interfaces, skeleton weights and partial graph exposures
+date: '2026-10-16'
+source_commit: 1581d4cbdd69a0faf34b2089614fe2a814316a6a
+family_ids:
+- openai-math-171
+- openai-math-176
+- openai-math-177
+- openai-math-178
+instrument_ids:
+- MI-000221
+- MI-000222
+- MI-000223
+- MI-000224
+- MI-000225
+- MI-000226
+- MI-000227
+- MI-000228
+- MI-000229
+paper_ids:
+- P-000131
+- P-000132
+- P-000133
+- P-000134
+notes: New source-based extractions with exact manuscript bindings, selected argument
+  checks and targeted antecedent comparisons. No Lean project built; no exhaustive
+  proof or priority certification.
+next_instrument_id: MI-000230
+next_paper_id: P-000135
