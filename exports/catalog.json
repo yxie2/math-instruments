@@ -26326,6 +26326,315 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000613.md",
       "body": "# Extract one Taylor residue class with a root-of-unity filter\n\n[Family 359](../families/openai-math-359.md) · [Source manuscript](../papers/P-000382.md) · [Batch B063](../../batches/B063/README.md)\n\n## Mathematical content\n\nLet g be holomorphic near the closed ball of radius S and bounded there by K, with homogeneous Taylor pieces g_r. For 0<=h<N and R|v|<S,\n\n(1/N)sum_(q=0)^(N-1) exp(-2pi i hq/N)g(R exp(2pi i q/N)v)=sum_(j>=0)g_(h+jN)(Rv).\n\nCauchy's estimate on the line through v gives |g_r(Rv)|<=K theta^r, theta=R|v|/S. If theta<=exp(-0.99c/N) and c>=1, the tail after j=k-1 has magnitude at most K exp(-0.99kc)/(1-exp(-0.99c)). The denominator is uniformly positive, so the bound is C K exp(-0.99kc) with absolute C independent of N,h,R,S. Taking k=1 isolates the leading term to error C K exp(-0.99c). Absolute convergence justifies swapping the Taylor series and finite Fourier sum. The h<N restriction avoids missing lower nonnegative degrees in the same residue class.\n\n## Role in the source argument\n\nSeparates a low-degree holomorphic jet from higher degrees in a disk-testing construction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [grid:frequency](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/build/03-analytic.tex#L476)\n\n## Antecedents and comparison\n\nThis is classical finite Fourier orthogonality and the Cauchy coefficient estimate. The source uses the uniform-in-N tail in a much larger phase-grid and geometric construction; that application is not a new Fourier-filter theorem.\n\n## Checks and limitations\n\nRandom polynomials check residue-class extraction. Analytic geometric-series models check the infinite-series identity and the explicit uniform tail bound. An h>=N control detects the missing lower residue term.\n\nThe filter checks do not establish the phase-grid separation, testing criterion or negatively curved Liouville construction.\n\n## Possible applications\n\nRecovering homogeneous holomorphic coefficients from finitely many phase samples with an explicit aliasing tail.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000614",
+      "record_type": "instrument",
+      "title": "Extend a continuous zero trace by signed truncation",
+      "forms": [
+        "continuous-zero-trace-sobolev-extension",
+        "signed-truncation-across-closed-set"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-071"
+      ],
+      "source_paper_ids": [
+        "P-000383"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/build/sections/models.tex",
+          "label": "lem:zero-trace-extension",
+          "line": 227,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/build/sections/models.tex#L227",
+          "sha256": "b3cfb0912b27955f07cfcf2c7072c98e5ff604070725fdb4a2116993855c74be"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000614.md",
+      "body": "# Extend a continuous zero trace by signed truncation\n\n[Family 071](../families/openai-math-071.md) · [Source manuscript](../papers/P-000383.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nLet F be closed in the Riemann sphere and w continuous and real-valued, vanishing on F. If w is locally W^(1,2) off F and has finite Dirichlet energy there, then w is globally W^(1,2) and its weak gradient vanishes almost everywhere on F.\n\nFor delta>0, w_delta=sgn(w)(|w|-delta)_+ has compact support away from F by continuity and compactness. Local Sobolev calculus and a finite localization make it globally Sobolev. Its energy is at most the off-F energy of w, and its gradient is zero on F. Since ||w_delta-w||_infinity<=delta, weak compactness in W^(1,2) identifies the limit with w; testing the gradients on F preserves their zero value. No smoothness, measure-zero or capacity-zero assumption on F is needed. The source applies this to the difference between a continuous test and a locally smoothed test having exactly the same boundary trace.\n\n## Role in the source argument\n\nRestores exact boundary data after smoothing in a circle-domain model.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:zero-trace-extension](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/build/sections/models.tex#L227)\n\n## Antecedents and comparison\n\nThis is a classical Sobolev truncation and weak-compactness argument. The complete source proof was read; no new general extension theorem or uniformization theorem is claimed.\n\n## Checks and limitations\n\nPiecewise polynomial zero-trace functions on domains with multiple complementary intervals check uniform truncation error and exact nonincrease of Dirichlet energy.\n\nOne-dimensional energy models illustrate the chain rule and compact support. They do not verify circle-domain model construction or arbitrary planar boundary topology.\n\n## Possible applications\n\nExtending finite-energy corrections across a closed set while preserving an exact continuous trace.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000615",
+      "record_type": "instrument",
+      "title": "Convert arcwise measure control into a null trace image",
+      "forms": [
+        "arcwise-measure-null-image",
+        "outer-measure-trace-covering"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-071"
+      ],
+      "source_paper_ids": [
+        "P-000384"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/build/sections/01-topology.tex",
+          "label": "lem:trace-null",
+          "line": 458,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/build/sections/01-topology.tex#L458",
+          "sha256": "49718c1167b2010d82a3ffff4dcb5fad69d66f0f7ee20f66de9263ca872970af"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000615.md",
+      "body": "# Convert arcwise measure control into a null trace image\n\n[Family 071](../families/openai-math-071.md) · [Source manuscript](../papers/P-000384.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nLet L be a locally connected compact metric continuum, V relatively open, nu a finite Borel measure, and F contained in V with nu outer measure zero. A function v:F->R need not be measurable. Suppose |v(x)-v(y)|<=A nu(alpha) for every simple arc alpha in V joining x,y in F. Then v(F) has Lebesgue outer measure zero.\n\nGiven delta>0, choose relatively open O with F contained in O contained in V and nu(O)<delta. Components O_j are relatively open and at most countable by local connectedness and second countability. Each is arc connected, so diam v(F intersect O_j)<=A nu(O_j). Cover these images by intervals with arbitrarily small summable excess lengths. Their total length is at most A nu(O), which tends to zero. The same reasoning applies on countably many local real branches of a circle-valued trace, yielding Haar-null image. The proof uses outer measure throughout and does not infer measurability of v.\n\n## Role in the source argument\n\nConverts line or arc estimates into compatibility of boundary trace values.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:trace-null](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/build/sections/01-topology.tex#L458)\n\n## Antecedents and comparison\n\nThe argument is the standard measure-covering mechanism for absolute continuity, phrased for locally connected continua and outer measure. No external earliest-priority claim is made for the source interface.\n\n## Checks and limitations\n\nFinite metric-tree models with weighted edges and arc-controlled values check component diameter and image-cover length inequalities. Nested interval covers illustrate the null-limit step.\n\nFinite trees do not certify the local connectedness of the source generic level continua or its global trace-selection argument.\n\n## Possible applications\n\nProving a trace image is null even when no measurable representative has been selected.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000616",
+      "record_type": "instrument",
+      "title": "Translate conformal derivative integrability into a Sobolev pullback bound",
+      "forms": [
+        "conformal-derivative-sobolev-exponent",
+        "homogeneous-sobolev-pullback"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-072"
+      ],
+      "source_paper_ids": [
+        "P-000385"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/build/sections/06-integrability.tex",
+          "label": "cor:sobolev-pullback",
+          "line": 265,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/build/sections/06-integrability.tex#L265",
+          "sha256": "3bde3b512d0b94376157f8351da0a22725f24331cc201202e9e458fa5e6edd87"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000616.md",
+      "body": "# Translate conformal derivative integrability into a Sobolev pullback bound\n\n[Family 072](../families/openai-math-072.md) · [Source manuscript](../papers/P-000385.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nLet phi:Omega->D be a conformal bijection and suppose integral_Omega |phi'|^s is finite. For p>2 and s in (4/3,4), set q=ps/(p+s-2), so 1<q<p and s=q(p-2)/(p-q). Then\n\n||grad(u composed with phi)||_(L^q(Omega)) <= ||grad u||_(L^p(D)) (integral_Omega |phi'|^s)^(1/q-1/p).\n\nIndeed, write the q-th power integrand as (|grad u|^p composed with phi times |phi'|²)^(q/p) times |phi'|^(q-2q/p), apply Holder, and change variables in the first integral. Local approximation extends the calculation to the homogeneous Sobolev space. For p=infinity, q=s and the direct chain rule gives the factor (integral |phi'|^s)^(1/s). Constants depend on the map and exponents. The source obtains the integrability input from its much stronger Brennan theorem; this extraction is only the conditional composition implication.\n\n## Role in the source argument\n\nTurns a derivative-integrability statement into a concrete function-space mapping property.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [cor:sobolev-pullback](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/build/sections/06-integrability.tex#L265)\n\n## Antecedents and comparison\n\n[Goldshtein and Ukhlov, Brennan's conjecture for composition operators on Sobolev spaces](https://arxiv.org/abs/1212.3999), Composition and Equivalence Theorems and following Remark 2, gives this exponent relation and the infinity case. Pages 4-6 were read, including the equivalence proof. The catalogue treats this as a known implication, not a new result.\n\n## Checks and limitations\n\nExact exponent arithmetic and quadrature for disk automorphisms with polynomial test functions check the chain rule, change of variables and Holder bound.\n\nSmooth automorphisms do not prove the derivative-integrability input for arbitrary simply connected domains.\n\n## Possible applications\n\nConverting conformal integrability information into controlled Sobolev composition operators.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000617",
+      "record_type": "instrument",
+      "title": "Exclude a critical Jacobian equality by a growing harmonic barrier",
+      "forms": [
+        "harmonic-boundary-blowup-obstruction",
+        "pre-schwarzian-equality-barrier"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-072"
+      ],
+      "source_paper_ids": [
+        "P-000386"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/06-equality-barrier.tex",
+          "label": "lem:no-zero-J",
+          "line": 8,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/06-equality-barrier.tex#L8",
+          "sha256": "14cbcf0612bcd3b24855dfcf77335d6dc497620050dcc08433f04bd48aa8b2e8"
+        },
+        {
+          "path": "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/04-strict-pairing.tex",
+          "label": "eq:Jacobian",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/04-strict-pairing.tex#L18",
+          "sha256": "96b9c852ceee2c5c774341a105a904ac237d2dd6efc21b60347a6b0f9331f4bf"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000617.md",
+      "body": "# Exclude a critical Jacobian equality by a growing harmonic barrier\n\n[Family 072](../families/openai-math-072.md) · [Source manuscript](../papers/P-000386.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nFor a holomorphic locally univalent F on the upper half-plane, put q=-iy F''/F' and G=F-iyF'/k. Its normalized real Jacobian satisfies k²J=k(k-1)+(2k-1)Re(q)+|q|². At k=3/4, J identically zero would force |q+1/4|²=1/4, hence |F''/F'|>=1/(4y). This pre-Schwarzian has no zeros, so u=log|F''/F'| is harmonic and u>=-log4-log y.\n\nNo finite harmonic u on the upper half-plane can obey that lower bound. On [-1,1] times [epsilon,1], compare it with\n\nb_epsilon(x,y)=-log4+log(1/epsilon) cos(pi x/2) sinh(pi(1-y)/2)/sinh(pi/2).\n\nThis function is harmonic. On the sides and top its added term is zero, and on the bottom that term is at most log(1/epsilon), so b_epsilon<=u on the boundary. The minimum principle gives the same inequality inside. At (0,1/2) the positive coefficient of log(1/epsilon) is fixed, forcing u to infinity as epsilon decreases, a contradiction. This rules out exact global equality; passage from an equality law to a uniform exponent gap needs the source's separate compactness and transport arguments.\n\n## Role in the source argument\n\nProvides a deterministic obstruction at the proposed equality threshold.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:no-zero-J](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/06-equality-barrier.tex#L8)\n- [eq:Jacobian](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/sections/04-strict-pairing.tex#L18)\n\n## Antecedents and comparison\n\nThe proof uses the classical harmonic minimum principle and an explicit separated-variable rectangle barrier. The source specializes it to a pre-Schwarzian Jacobian equality. No independent novelty or integral-means gap certification is asserted.\n\n## Checks and limitations\n\nSymbolic Laplacian and Jacobian calculations, boundary comparisons and increasing center values check the barrier and the equality algebra.\n\nThe checks do not establish the weighted probability law, measurable pairing or strict integral-means theorem.\n\n## Possible applications\n\nRuling out an equality case that would impose uniform logarithmic blowup along a boundary interval.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000618",
+      "record_type": "instrument",
+      "title": "Convexify a capacity functional into a norm compatible with coordinate masks",
+      "forms": [
+        "lattice-atomic-capacity-norm",
+        "phase-aligned-atomic-domination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-077"
+      ],
+      "source_paper_ids": [
+        "P-000387"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex",
+          "label": "pkt:atomic",
+          "line": 173,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex#L173",
+          "sha256": "75976fc6089bd5ff60270226ee593cab729b46bfff48bf2457c80c50c0167875"
+        },
+        {
+          "path": "preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex",
+          "label": "eq:source-29",
+          "line": 149,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex#L149",
+          "sha256": "75976fc6089bd5ff60270226ee593cab729b46bfff48bf2457c80c50c0167875"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000618.md",
+      "body": "# Convexify a capacity functional into a norm compatible with coordinate masks\n\n[Family 077](../families/openai-math-077.md) · [Source manuscript](../papers/P-000387.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nFor a finite complex array c in one time bin, let K(c) be the source quadratic capacity supremum over independently translated frequency and position ellipses. Its normalization gives K(c)>=||c||_infinity². Put G(c)³=w²||c||_2² K(c)^(1/2) and\n\nA(c)=inf {sum_j G(a_j): |c|<=sum_j |a_j| coordinatewise, finitely many atoms}.\n\nThen A is a norm, depends only on absolute values, is monotone and is contracted by coordinate masks. Indeed G(c)>=w^(2/3)||c||_3, so Minkowski gives the same lower bound for A; singleton atoms give finiteness. Concatenation proves the triangle inequality and scaling proves homogeneity. Across bins of length r, the norm mathcal A=(r sum_I A(c_I)³)^(1/3) satisfies mathcal A(c)³>=r w² sum_v|c_v|³.\n\nIf a linear map T obeys B(Tb)<=C G(b) for every input on the specified support and B is an output norm, the same bound holds with A(b). For |d|<=sum|a_j|, allocate each coordinate of d among d_j with the phase of d, sum d_j=d and |d_j|<=|a_j|. First restrict atoms to the allowed support, using monotonicity of G. The output triangle inequality gives B(Td)<=C sum G(a_j); take the infimum. An estimate only on analyzed packet coefficients would not suffice for arbitrary atomic pieces.\n\n## Role in the source argument\n\nAllows packet estimates to survive arbitrary coordinate decompositions and masks.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pkt:atomic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex#L173)\n- [eq:source-29](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/build/sections/05-packets.tex#L149)\n\n## Antecedents and comparison\n\nThis is classical lattice atomic convexification and phase-aligned decomposition. The source capacity supplies the cubic lower bound. The exact full capacity supremum is not replaced by a numerical finite dictionary in the theorem.\n\n## Checks and limitations\n\nFinite mask-closed atom dictionaries test their associated linear-programming norms, triangle and mask inequalities, cubic lower bounds and phase-aligned allocations. These dictionary norms are upper approximations to the full A.\n\nThe program does not optimize the full continuum ellipse capacity or prove the packet propagation theorem.\n\n## Possible applications\n\nReplacing a nonconvex homogeneous input cost by a genuine norm without changing uniform linear operator estimates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000619",
+      "record_type": "instrument",
+      "title": "Insert an elliptic graph germ into a continued spherical phase",
+      "forms": [
+        "two-jet-elliptic-phase-insertion",
+        "annular-cutoff-phase-class-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-077"
+      ],
+      "source_paper_ids": [
+        "P-000388"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/build/sections/02-packets.tex",
+          "label": "lem:continuation",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/build/sections/02-packets.tex#L37",
+          "sha256": "098dabf4d019cc0c41087144bceaa7983a60bb9ef89df95510f6fc2c173747d7"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000619.md",
+      "body": "# Insert an elliptic graph germ into a continued spherical phase\n\n[Family 077](../families/openai-math-077.md) · [Source manuscript](../papers/P-000388.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nPut q_s(xi)=-sqrt(1-|xi|²), Q_s=-1+|xi|²/2. A continued spherical phase has form Q_s+zeta(q_s-Q_s), where 0<=zeta<=1, zeta=1 on a small inner ball and vanishes outside twice that ball. Choose zeta_0 with an annular plateau 1/2 near xi1. The resulting q has Hessian I+O(rho²), hence is uniformly convex for small fixed rho.\n\nFor a target germ h0 with H=h0''(0)>0 and B=q''(xi1), choose A=H^(-1/2)B^(1/2), so A transpose H A=B. An ambient affine change matches the value, gradient and Hessian of h0(A(xi-xi1)) with q; call the resulting graph psi. With a cutoff vartheta supported in a radius-2 ball and equal to one in the unit ball, set R_epsilon=vartheta((xi-xi1)/epsilon)(psi-q). Two-jet matching gives ||D^j R_epsilon||<=C epsilon^(3-j) for j=0,1,2. Thus q+R_epsilon stays uniformly convex and equals the target graph near xi1.\n\nOn this annulus D=q_s-Q_s is strictly positive. The modified cutoff zeta=zeta_0+R_epsilon/D is smooth, and for epsilon small stays in [1/4,3/4] on its support. Hence the modified phase still belongs to the stated spherical-continuation class. All choices depend on the fixed graph, not on packet scales or later exponents.\n\n## Role in the source argument\n\nChecks an exact phase-class hypothesis before transferring a packet result to arbitrary positive curvature.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:continuation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/build/sections/02-packets.tex#L37)\n\n## Antecedents and comparison\n\nThe ingredients are classical positive-matrix normalization, matching jets and a Taylor cutoff. The source adds the useful observation that the spherical remainder is nonzero in an annulus, allowing the perturbation to be absorbed into the cutoff itself. Exact external priority for this interface was not established.\n\n## Checks and limitations\n\nPositive matrices check two-jet normalization. Explicit annular cubic perturbations check Hessian positivity, cutoff range and the epsilon scaling of differentiated remainders.\n\nLocal finite checks do not certify any packet theorem, uniformity over varying graph families or global restriction estimates.\n\n## Possible applications\n\nTransferring a local analytic theorem whose phase class is narrower than merely uniformly convex graphs.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000620",
+      "record_type": "instrument",
+      "title": "Approximate uniformly locally integrable envelopes by Gaussians",
+      "forms": [
+        "uniform-local-mass-gaussian-approximation",
+        "positive-envelope-common-good-set"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-080"
+      ],
+      "source_paper_ids": [
+        "P-000389"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex",
+          "label": "lem:endpoint-heat-envelope",
+          "line": 578,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex#L578",
+          "sha256": "7f256970d466134e74ba12462cbbc0de15fbb184c2bd50bec6e7fe8594f907e4"
+        },
+        {
+          "path": "preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex",
+          "label": "eq:endpoint-uniform-gaussian-comparison",
+          "line": 685,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex#L685",
+          "sha256": "7f256970d466134e74ba12462cbbc0de15fbb184c2bd50bec6e7fe8594f907e4"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000620.md",
+      "body": "# Approximate uniformly locally integrable envelopes by Gaussians\n\n[Family 080](../families/openai-math-080.md) · [Source manuscript](../papers/P-000389.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nLet h>=0 on R² with A=sup_z integral_(B(z,1)) h<infinity, and K_a(z)=(4pi a)^(-1)exp(-|z|²/(4a)). Then K_a*h is finite at every point for every a>0 and converges to h at every Lebesgue point as a decreases to zero. Global L1 integrability is unnecessary.\n\nCover dyadic annuli beyond radius rho by O((1+2^ell rho)²) unit balls. Their contribution is at most C_rho A a^(-1)exp(-rho²/(8a)) for small a. At a Lebesgue point, H_x(r)=integral_(|z|<r)|h(x-z)-h(x)|=o(r²). Radial integration by parts against the decreasing Gaussian bounds the nearby contribution by C epsilon once H_x(r)<=epsilon r². The far contribution tends to zero.\n\nThe source uses countably many such error envelopes M_n for a time-continuous representative v and smooth approximants. If their common pointwise errors satisfy M_n(x)->0 and the smooth Gaussian errors R_n(a)->0 uniformly in time, positivity gives sup_t|K_a*v_t(x)-v_t(x)|<=K_a*M_n(x)+M_n(x)+R_n(a). First let a tend to zero, then n tend to infinity. This is conditional on the existence and uniform local mass bounds of those envelopes; it does not prove the preceding maximal estimate.\n\n## Role in the source argument\n\nControls Gaussian tails and avoids an uncountable intersection of time-dependent exceptional sets.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:endpoint-heat-envelope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex#L578)\n- [eq:endpoint-uniform-gaussian-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/build/sections/09-endpoint.tex#L685)\n\n## Antecedents and comparison\n\nThe lemma is a classical heat approximate-identity argument extended from global L1 to a uniform local mass class. The source spells out the annular estimate and the order of limits for time envelopes.\n\n## Checks and limitations\n\nPeriodic nonintegrable-in-total-mass functions and a locally integrable singular profile check Gaussian convolution limits, normalization and exponentially small distant tails.\n\nModel convolutions do not establish the endpoint maximal estimate, the error envelopes or all-time Schrodinger convergence.\n\n## Possible applications\n\nPassing from positive local error envelopes to a common pointwise Gaussian limit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000621",
+      "record_type": "instrument",
+      "title": "Preserve a polynomial envelope exponent through anisotropic sampling",
+      "forms": [
+        "anisotropic-packet-envelope-convolution",
+        "same-exponent-multiscale-sampling"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-080"
+      ],
+      "source_paper_ids": [
+        "P-000390"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/build/sections/packets.tex",
+          "label": "p:convolution",
+          "line": 785,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/build/sections/packets.tex#L785",
+          "sha256": "b1b1c39399c723bdd7b85ce55193932da02c33e6e3b058e126719d2487023d6b"
+        }
+      ],
+      "batch_id": "B064",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000621.md",
+      "body": "# Preserve a polynomial envelope exponent through anisotropic sampling\n\n[Family 080](../families/openai-math-080.md) · [Source manuscript](../papers/P-000390.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nFor nested caps with scales K' >= K >=1, use native packet coordinates X_(K,v)(x,t)=((x-2vt)/K,t/K²), unit cells T, centers z_T and w_T(z)=(1+dist(X_(K,v)(z),T))^(-P). For a fixed child T' and its parent grid, the source proves, for sufficiently large P>k+2,\n\nsum_T w_T(z)w_T'(z_T)<=C_P w_T'(z),\n\nwith the same exponent P on both sides and a constant independent of K'/K. Put r=K/K' and a=1+d_T'(z). The parent-to-child coordinate map has spatial coefficients O(r), time coefficient r², determinant r^(k+2) and bounded normalized shear. Parent centers at child distance at least a/2 contribute O(a^(-P)) times a bounded parent lattice sum. For the remaining centers, if a is large, parent distance is at least ca/r; their contribution is at most C(a/r)^(-P) times a child-scale lattice sum O(r^(-(k+2))). This is O(a^(-P)r^(P-k-2)). Bounded a is handled by the first lattice bound.\n\nRestricting to d_T(z)>L gives the bound C_P[L^(-(P-k-1))+r^(P-k-2)]w_T'(z). When child distance is bounded, the second term is unnecessary. The exponent loss is avoided because P exceeds the anisotropic volume exponent k+2, not just the spatial dimension k.\n\n## Role in the source argument\n\nKeeps one envelope power available through a hierarchy of packet resamplings.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [p:convolution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/build/sections/packets.tex#L785)\n\n## Antecedents and comparison\n\nThis is a classical near/far lattice-convolution split with anisotropic volume bookkeeping. The source provides the same-exponent and tail formulation. No packet, restriction or endpoint theorem follows from this local estimate alone.\n\n## Checks and limitations\n\nFinite parent lattice windows in one spatial dimension test the scale map, shear determinant, near/far split and normalized envelope sums at several scale ratios. Window truncation is reported explicitly.\n\nPositive finite sums are partial sums, not certificates of a universal infinite-lattice upper bound. The general bound rests on the inspected lattice-tail proof.\n\n## Possible applications\n\nPreventing repeated multiscale convolution from exhausting the polynomial decay of packet weights.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -33586,6 +33895,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000382.md",
       "body": "# One-sided negative sectional curvature and the holomorphic Liouville property\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000613: Extract one Taylor residue class with a root-of-unity filter](../instruments/MI-000613.md)\n\n[Family review and dependencies](../families/openai-math-359.md) · [Batch B063](../../batches/B063/README.md)"
+    },
+    {
+      "id": "P-000383",
+      "record_type": "paper",
+      "title": "Removable Boundaries and Rigidity of Circle Domains",
+      "source_collection": "openai/math",
+      "upstream_slug": "Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-071"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7adbfb67b4731a0bb547594ffd3f447a88c1917405ecd18792874de56420e238",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000383.md",
+      "body": "# Removable Boundaries and Rigidity of Circle Domains\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000614: Extend a continuous zero trace by signed truncation](../instruments/MI-000614.md)\n\n[Family review and dependencies](../families/openai-math-071.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000384",
+      "record_type": "paper",
+      "title": "Koebe's Circle-Domain Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "Koebes-Circle-Domain-Conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-071"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e24e22653adb248056495b77e768a9491707e15b262e731e401ed2f888cf7882",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000384.md",
+      "body": "# Koebe's Circle-Domain Conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000615: Convert arcwise measure control into a null trace image](../instruments/MI-000615.md)\n\n[Family review and dependencies](../families/openai-math-071.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000385",
+      "record_type": "paper",
+      "title": "Brennan's conjecture and sharp inverse-square integral means",
+      "source_collection": "openai/math",
+      "upstream_slug": "Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-072"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "94d7cffbbd5f1a72f0fb078181df1b09de0f87552fca8170a7b83ce1f6cf40d9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000385.md",
+      "body": "# Brennan's conjecture and sharp inverse-square integral means\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000616: Translate conformal derivative integrability into a Sobolev pullback bound](../instruments/MI-000616.md)\n\n[Family review and dependencies](../families/openai-math-072.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000386",
+      "record_type": "paper",
+      "title": "A strict inverse-first-power bound for univalent functions",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-072"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "717c3d792cad63866d45233c554370865adbf927a1ed73bbc29fabbfb5b31ba7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000386.md",
+      "body": "# A strict inverse-first-power bound for univalent functions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000617: Exclude a critical Jacobian equality by a growing harmonic barrier](../instruments/MI-000617.md)\n\n[Family review and dependencies](../families/openai-math-072.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000387",
+      "record_type": "paper",
+      "title": "Elliptic capacity propagation and Fourier restriction to the sphere",
+      "source_collection": "openai/math",
+      "upstream_slug": "Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-077"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "027dbcc7c8facd6c1495b70dbb2a9fe4a9db3aff58c575b3696db96b96d06a31",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000387.md",
+      "body": "# Elliptic capacity propagation and Fourier restriction to the sphere\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000618: Convexify a capacity functional into a norm compatible with coordinate masks](../instruments/MI-000618.md)\n\n[Family review and dependencies](../families/openai-math-077.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000388",
+      "record_type": "paper",
+      "title": "Diagonal Fourier extension for positively curved surfaces in three dimensions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-077"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f512536917b0c578b3cbf39a34cfa8c493b0059b046242cb4416e0749e65dd76",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000388.md",
+      "body": "# Diagonal Fourier extension for positively curved surfaces in three dimensions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000619: Insert an elliptic graph germ into a continued spherical phase](../instruments/MI-000619.md)\n\n[Family review and dependencies](../families/openai-math-077.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000389",
+      "record_type": "paper",
+      "title": "Endpoint convergence for the planar Schrodinger equation",
+      "source_collection": "openai/math",
+      "upstream_slug": "Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-080"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5fc93443a74d611306c21cfd012b03999222fbd78deb05087daaf2527e7ffad0",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000389.md",
+      "body": "# Endpoint convergence for the planar Schrodinger equation\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000620: Approximate uniformly locally integrable envelopes by Gaussians](../instruments/MI-000620.md)\n\n[Family review and dependencies](../families/openai-math-080.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000390",
+      "record_type": "paper",
+      "title": "Endpoint pointwise convergence for the Schrodinger equation in higher dimensions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-080"
+      ],
+      "batch_id": "B064",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "fc98eb116325b06760c9bb580e2f41eac8be9ec3de953dfc604f3a4052562670",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000390.md",
+      "body": "# Endpoint pointwise convergence for the Schrodinger equation in higher dimensions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000621: Preserve a polynomial envelope exponent through anisotropic sampling](../instruments/MI-000621.md)\n\n[Family review and dependencies](../families/openai-math-080.md) · [Batch B064](../../batches/B064/README.md)"
     }
   ],
   "families": [
@@ -34713,6 +35174,62 @@
       "body": "# Kummer inertia vanishing and bounded-weight tail detection\n\n## Source manuscript and claim\n\n[Global quantum geometric Langlands at irrational level](../papers/P-000254.md), by OpenAI, October 4, 2026.\n\nThe source claims global quantum geometric Langlands at irrational level.\n\n## Extracted instruments\n\n- [MI-000470: Use nonintegral inertia to force a twisted category to vanish](../instruments/MI-000470.md)\n- [MI-000471: Kill completed generators using a uniform weight gap](../instruments/MI-000471.md)\n\n## Dependencies and antecedents\n\nStrong Kummer equivariance, Laurent de Rham complexes, conservative pullback, completed finite modules, strict weight maps and finite generation.\n\nClassical Kummer acyclicity, Nakayama and strictness of mixed Hodge structures. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete inertia, non-torsion rank and logarithm-colimit proofs. Extracted only the elementary inertia calculation and the conditional bounded-weight killing step; geometric perfectness, rank constancy and the global equivalence were not independently verified.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nVanishing of a filtered colimit at one parameter does not imply finite-stage vanishing. Completed finite generation, compatible homogeneous lifts and a uniform target weight bound are required for the extracted tail argument.\n\n[Batch record](../../batches/B046/README.md)"
     },
     {
+      "id": "openai-math-071",
+      "record_type": "family",
+      "title": "Zero-trace Sobolev extension and null trace images",
+      "source_family": "071",
+      "source_collection": "openai/math",
+      "batch_id": "B064",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000383",
+        "P-000384"
+      ],
+      "instrument_ids": [
+        "MI-000614",
+        "MI-000615"
+      ],
+      "headline": "The sources claim removable-boundary rigidity and general circle-domain uniformization.",
+      "central_instrument": "Signed truncations extend continuous zero-trace functions across arbitrary closed sets. Arcwise oscillation bounded by a measure turns measure-null traces into null real images.",
+      "novelty_assessment": "Both are elementary extension and covering arguments. The source use in infinitely connected uniformization is not certified by these local tools.",
+      "formalization_summary": "KoebeCircleDomains states circle-domain uniformization on the Riemann sphere and the removability-to-rigidity implication without a component-count bound. Its removable-set definition uses orientation-preserving sphere homeomorphisms conformal off the set; rigidity concludes agreement with a Mobius transformation on the source domain. Both available scope documents and all four distinct linked Comparators in this batch were read in full. Target theorems have sorry proof bodies. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "The extension assumes continuity and zero values on the entire closed set. The trace criterion uses outer measure, local connectedness and a bound on every joining simple arc.",
+      "dependencies": "Sobolev truncation, weak compactness, regular Borel measures and local arc connectedness of metric continua.",
+      "antecedents": "Classical Sobolev zero extension and absolute-continuity covering principles.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-071.md",
+      "body": "# Zero-trace Sobolev extension and null trace images\n\n## Source manuscripts and claim\n\n- [Removable Boundaries and Rigidity of Circle Domains](../papers/P-000383.md): selected passages extracted.\n- [Koebe's Circle-Domain Conjecture](../papers/P-000384.md): selected passages extracted.\n\nThe sources claim removable-boundary rigidity and general circle-domain uniformization.\n\n## Extracted instruments\n\n- [MI-000614: Extend a continuous zero trace by signed truncation](../instruments/MI-000614.md)\n- [MI-000615: Convert arcwise measure control into a null trace image](../instruments/MI-000615.md)\n\n## Dependencies and antecedents\n\nSobolev truncation, weak compactness, regular Borel measures and local arc connectedness of metric continua.\n\nClassical Sobolev zero extension and absolute-continuity covering principles.\n\n## Review and formalization scope\n\nRead the complete zero-trace extension proof and its smoothing application, and the complete null-image criterion. The model transfer, compatible barriers, path laws and uniformization proofs remain unaudited.\n\nKoebeCircleDomains states circle-domain uniformization on the Riemann sphere and the removability-to-rigidity implication without a component-count bound. Its removable-set definition uses orientation-preserving sphere homeomorphisms conformal off the set; rigidity concludes agreement with a Mobius transformation on the source domain. Both available scope documents and all four distinct linked Comparators in this batch were read in full. Target theorems have sorry proof bodies. No separate solution or Lean build was checked.\n\nThe extension assumes continuity and zero values on the entire closed set. The trace criterion uses outer measure, local connectedness and a bound on every joining simple arc.\n\n[Batch record](../../batches/B064/README.md)"
+    },
+    {
+      "id": "openai-math-072",
+      "record_type": "family",
+      "title": "Conformal Sobolev pullback and a harmonic equality obstruction",
+      "source_family": "072",
+      "source_collection": "openai/math",
+      "batch_id": "B064",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000385",
+        "P-000386"
+      ],
+      "instrument_ids": [
+        "MI-000616",
+        "MI-000617"
+      ],
+      "headline": "The sources claim Brennan derivative integrability and a strict inverse-first-power integral-means bound.",
+      "central_instrument": "Derivative integrability supplies explicit Sobolev pullback exponents. A rectangular harmonic barrier rules out the pointwise equality case of a critical Jacobian.",
+      "novelty_assessment": "The pullback exponent relation is explicitly due to Goldshtein-Ukhlov. The harmonic barrier is classical; its use against the source equality case is recorded without certifying the transport law.",
+      "formalization_summary": "Brennan targets inverse-square means with arbitrary positive exponent loss, spectrum value one and the two open derivative-integrability intervals. BrennanSharp states the four Koebe endpoint divergences. StrictMeans states one positive, unspecified uniform improvement below exponent 1/4 for all normalized univalent disk maps and the bounded-spectrum consequence. None of these targets is a proof of the extracted corollary by itself. Both available scope documents and all four distinct linked Comparators in this batch were read in full. Target theorems have sorry proof bodies. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "Derivative integrability is an assumption in the extracted pullback implication. The harmonic obstruction excludes an identically zero Jacobian, not isolated zeros or near-equality without compactness.",
+      "dependencies": "Conformal chain rule, area change of variables, Holder, harmonic logarithms and the minimum principle.",
+      "antecedents": "Goldshtein-Ukhlov composition theorem and classical harmonic barriers.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-072.md",
+      "body": "# Conformal Sobolev pullback and a harmonic equality obstruction\n\n## Source manuscripts and claim\n\n- [Brennan's conjecture and sharp inverse-square integral means](../papers/P-000385.md): selected passages extracted.\n- [A strict inverse-first-power bound for univalent functions](../papers/P-000386.md): selected passages extracted.\n\nThe sources claim Brennan derivative integrability and a strict inverse-first-power integral-means bound.\n\n## Extracted instruments\n\n- [MI-000616: Translate conformal derivative integrability into a Sobolev pullback bound](../instruments/MI-000616.md)\n- [MI-000617: Exclude a critical Jacobian equality by a growing harmonic barrier](../instruments/MI-000617.md)\n\n## Dependencies and antecedents\n\nConformal chain rule, area change of variables, Holder, harmonic logarithms and the minimum principle.\n\nGoldshtein-Ukhlov composition theorem and classical harmonic barriers.\n\n## Review and formalization scope\n\nRead the full pullback corollary and its primary antecedent, the full harmonic equality-barrier proof, and definitions of the logarithmic derivative and critical Jacobian. Weighted laws, critical-point pairings and global integral-means bounds remain unaudited.\n\nBrennan targets inverse-square means with arbitrary positive exponent loss, spectrum value one and the two open derivative-integrability intervals. BrennanSharp states the four Koebe endpoint divergences. StrictMeans states one positive, unspecified uniform improvement below exponent 1/4 for all normalized univalent disk maps and the bounded-spectrum consequence. None of these targets is a proof of the extracted corollary by itself. Both available scope documents and all four distinct linked Comparators in this batch were read in full. Target theorems have sorry proof bodies. No separate solution or Lean build was checked.\n\nDerivative integrability is an assumption in the extracted pullback implication. The harmonic obstruction excludes an identically zero Jacobian, not isolated zeros or near-equality without compactness.\n\n[Batch record](../../batches/B064/README.md)"
+    },
+    {
       "id": "openai-math-073",
       "record_type": "family",
       "title": "Multiply local fiber bounds and compare positive collision energies",
@@ -34799,6 +35316,34 @@
       "body": "# Positive thermal Fourier coefficients and marginal-constrained entropy minimization\n\n## Source manuscript and claim\n\n[Almost-everywhere Fourier convergence in L log L](../papers/P-000200.md), by OpenAI, September 23, 2026.\n\nThe source claims almost-everywhere convergence of all symmetric Fourier partial sums for every complex-valued L log L function on the circle.\n\n## Extracted instruments\n\n- [MI-000362: Order thermal forms using positive Fourier coefficients and a covariance square](../instruments/MI-000362.md)\n- [MI-000363: Construct correlated letters with fixed marginals and a controlled noisy-sum cost](../instruments/MI-000363.md)\n\n## Dependencies and antecedents\n\nAbsolutely convergent Fourier series, torus Haar invariance, positive covariance, finite convex duality, conditional entropy and permutation symmetrization.\n\nGriffiths-Ginibre correlation method, discussed in Benassi-Lees-Ueltschi 2016; classical Gibbs variational principle and entropy minimization. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete thermal positivity proof, prescribed-marginal variational proof and block-gluing proof. The global entropy-compression search, spectral update, live budgets and delayed-transform convergence argument were not audited.\n\nRead FourierLLogL.lean: full symmetric partial sums converge to f outside one measurable null set under integrability of |f|log(2+|f|). Its target contains sorry; no Lean build was performed.\n\nThermal coefficients are nonnegative and only nonnegative form increments are ordered. The variational hypothesis holds for every single-letter probability law on S; the constructed letters may be correlated and are not claimed independent.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/075.md) · [Batch record](../../batches/B032/README.md)"
     },
     {
+      "id": "openai-math-077",
+      "record_type": "family",
+      "title": "Lattice atomic norms and insertion of a convex graph into a fixed phase class",
+      "source_family": "077",
+      "source_collection": "openai/math",
+      "batch_id": "B064",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000387",
+        "P-000388"
+      ],
+      "instrument_ids": [
+        "MI-000618",
+        "MI-000619"
+      ],
+      "headline": "The sources claim sharp sphere restriction and diagonal Fourier extension for positively curved surfaces in three dimensions.",
+      "central_instrument": "Coordinatewise atomic domination turns a homogeneous capacity functional into a mask-contracting norm. Matching two-jets inserts a general convex graph into the transition region of a continued spherical phase.",
+      "novelty_assessment": "Atomic convexification and Taylor-cutoff insertion are classical mechanisms. The precise source phase-class interface is retained without claiming the global restriction results.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "Atomic input estimates must hold for every supported input. Phase insertion fixes all choices before packet scales vary and uses an annular plateau where the spherical remainder is positive.",
+      "dependencies": "Coordinatewise domination, phase splitting, Minkowski, positive Hessian normalization and Taylor remainder estimates.",
+      "antecedents": "Classical atomic norms and localized smooth extension of positive-Hessian germs.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-077.md",
+      "body": "# Lattice atomic norms and insertion of a convex graph into a fixed phase class\n\n## Source manuscripts and claim\n\n- [Elliptic capacity propagation and Fourier restriction to the sphere](../papers/P-000387.md): selected passages extracted.\n- [Diagonal Fourier extension for positively curved surfaces in three dimensions](../papers/P-000388.md): selected passages extracted.\n\nThe sources claim sharp sphere restriction and diagonal Fourier extension for positively curved surfaces in three dimensions.\n\n## Extracted instruments\n\n- [MI-000618: Convexify a capacity functional into a norm compatible with coordinate masks](../instruments/MI-000618.md)\n- [MI-000619: Insert an elliptic graph germ into a continued spherical phase](../instruments/MI-000619.md)\n\n## Dependencies and antecedents\n\nCoordinatewise domination, phase splitting, Minkowski, positive Hessian normalization and Taylor remainder estimates.\n\nClassical atomic norms and localized smooth extension of positive-Hessian germs.\n\n## Review and formalization scope\n\nRead the complete atomic-norm proof with its frame and capacity definitions, and the complete elliptic graph insertion proof. Packet propagation, entropy profiles and global Fourier estimates remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nAtomic input estimates must hold for every supported input. Phase insertion fixes all choices before packet scales vary and uses an annular plateau where the spherical remainder is positive.\n\n[Batch record](../../batches/B064/README.md)"
+    },
+    {
       "id": "openai-math-078",
       "record_type": "family",
       "title": "From small information to product domination with actual retained marginals",
@@ -34851,6 +35396,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-079.md",
       "body": "# Conformal wave identities and capacity-respecting assignment transport\n\n## Source manuscript and claim\n\n[Critical local smoothing for the three-dimensional wave equation](../papers/P-000202.md), by OpenAI, September 24, 2026.\n\nThe source claims critical local smoothing for the three-dimensional wave equation and strict-range multiplier consequences.\n\n## Extracted instruments\n\n- [MI-000366: Flatten a quadratic null hypersurface with an explicit conformal wave chart](../instruments/MI-000366.md)\n- [MI-000367: Transfer labeled masses through cell capacities without exceeding available energy](../instruments/MI-000367.md)\n\n## Dependencies and antecedents\n\nRational coordinate transformations, the Lorentz quadratic form, the wave operator, chain rule and proportional fractional allocation.\n\nClassical conformal spacetime geometry, including Bateman, The Transformation of the Electrodynamical Equations; elementary capacity allocation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full flattening-chart proof, conformal-wave-transport proof and cell-capacity lemma. Symbolic checks cover the algebraic chart identities; the packet localization, spectral projection errors and global smoothing proof are not certified.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\nThe chart identities hold away from its denominator zero; quantitative use needs buffered domains. Exact conformal covariance alone does not preserve a chosen positive-frequency band or prove packet estimates. Capacity transfer loses the product of amplification and overlap constants.\n\n[Batch record](../../batches/B032/README.md)"
+    },
+    {
+      "id": "openai-math-080",
+      "record_type": "family",
+      "title": "Gaussian approximation from local mass and scale-stable packet envelopes",
+      "source_family": "080",
+      "source_collection": "openai/math",
+      "batch_id": "B064",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000389",
+        "P-000390"
+      ],
+      "instrument_ids": [
+        "MI-000620",
+        "MI-000621"
+      ],
+      "headline": "The sources claim endpoint pointwise Schrodinger convergence in the plane and higher dimensions.",
+      "central_instrument": "Uniform mass on unit balls suffices for Gaussian approximation without global integrability. An anisotropic lattice split preserves the envelope exponent across packet scales.",
+      "novelty_assessment": "Both use classical approximate-identity and polynomial-decay convolution arguments. Their exact source normalizations and exceptional-set interfaces are recorded without certifying endpoint convergence.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The Gaussian hypothesis is a uniform local L1 bound, not just local integrability. Packet envelopes use spatial ratio r and time ratio r², so the volume exponent is k+2.",
+      "dependencies": "Annular coverings, Lebesgue differentiation, radial integration by parts, anisotropic lattice sums and positive weights.",
+      "antecedents": "Classical heat approximate identities and almost-diagonal polynomial-decay estimates.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-080.md",
+      "body": "# Gaussian approximation from local mass and scale-stable packet envelopes\n\n## Source manuscripts and claim\n\n- [Endpoint convergence for the planar Schrodinger equation](../papers/P-000389.md): selected passages extracted.\n- [Endpoint pointwise convergence for the Schrodinger equation in higher dimensions](../papers/P-000390.md): selected passages extracted.\n\nThe sources claim endpoint pointwise Schrodinger convergence in the plane and higher dimensions.\n\n## Extracted instruments\n\n- [MI-000620: Approximate uniformly locally integrable envelopes by Gaussians](../instruments/MI-000620.md)\n- [MI-000621: Preserve a polynomial envelope exponent through anisotropic sampling](../instruments/MI-000621.md)\n\n## Dependencies and antecedents\n\nAnnular coverings, Lebesgue differentiation, radial integration by parts, anisotropic lattice sums and positive weights.\n\nClassical heat approximate identities and almost-diagonal polynomial-decay estimates.\n\n## Review and formalization scope\n\nRead the complete Gaussian-envelope lemma and the subsequent conditional uniform-in-time comparison, and the complete envelope-convolution proof with native packet coordinates. Maximal, fractal, frame and endpoint estimates remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe Gaussian hypothesis is a uniform local L1 bound, not just local integrability. Packet envelopes use spatial ratio r and time ratio r², so the volume exponent is k+2.\n\n[Batch record](../../batches/B064/README.md)"
     },
     {
       "id": "openai-math-081",

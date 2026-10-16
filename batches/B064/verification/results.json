@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 0.967,
+  "checks": {
+    "zero_trace": {
+      "tent_truncations": 320,
+      "scope": "Exact piecewise-linear energy in one-dimensional component models."
+    },
+    "trace_cover": {
+      "weighted_tree_covers": 27,
+      "cantor_cover_lengths": [
+        0.6666666666666666,
+        0.017341529915832606,
+        5.215095050846554e-06
+      ],
+      "scope": "Finite component-cover inequalities and nested interval examples, not arbitrary continuum topology."
+    },
+    "pullback": {
+      "automorphism_tests": 81,
+      "max_relative_change_of_variables_error": 2.016339591754359e-10
+    },
+    "harmonic_barrier": {
+      "symbolic_harmonicity": true,
+      "center_values": [
+        -0.5171379014226777,
+        1.221175017971748,
+        3.8286443970633863,
+        9.043583155246663
+      ],
+      "jacobian_cases": 400,
+      "max_residual": 3.552713678800501e-15
+    },
+    "atoms": {
+      "dictionary_atoms": 26,
+      "norm_models": 60,
+      "scope": "Mask-closed finite dictionary for the singleton-capacity toy G; an upper approximation, not the full ellipse atomic norm."
+    },
+    "insertion": {
+      "matrix_normalizations": 40,
+      "local_insertion_points": 480,
+      "min_hessian_eigenvalue": 0.8790654528293399,
+      "max_cutoff_correction": 0.002526526790717109,
+      "max_normalization_error": 1.1348195573628883e-14,
+      "scope": "C2 piecewise-polynomial cutoff model checks second-derivative estimates; no claim to test all smooth derivatives."
+    },
+    "gaussian": {
+      "periodic_limit_errors": [
+        0.5893432827156317,
+        0.1690022758228098,
+        0.018461318355390333,
+        0.0018627912790027956
+      ],
+      "singular_distant_tails": [
+        0.014041293551719002,
+        2.293837063729213e-05,
+        7.763575389779541e-13
+      ],
+      "scope": "Explicit uniformly local L1 models; no maximal estimate tested."
+    },
+    "envelope": {
+      "finite_windows": 36,
+      "parent_cells": 19881,
+      "max_normalized_partial_sum": 13.87456589971251,
+      "max_normalized_partial_tail": 12.744496285504168,
+      "scope": "Positive sums truncated to [-70,70]^2. Observed bounds are finite-model checks, not infinite-lattice certificates."
+    }
+  },
+  "scope": "Selected finite analytic mechanisms; no uniformization, Brennan, restriction or Schrodinger endpoint headline certified."
+}
