@@ -1,0 +1,65 @@
+{
+  "batch": "B023",
+  "status": "passed",
+  "check_groups": {
+    "moving_measure_cells": {
+      "models": 12,
+      "maximum_variance_bound_ratio": 0.5317753905383279,
+      "scope": "Atomic grid models of the exact cell identity and energy inequality; atoms do not satisfy the continuum AD hypotheses. Oscillating control loses second moments without compactness."
+    },
+    "seed_charging": {
+      "random_weighted_trees": 150,
+      "pointwise_leaf_checks": 9600,
+      "scope": "Full eligible-pair charge construction, overlapping seeds and nonuniform masses; does not prove geometric flat-seed or oscillation estimates."
+    },
+    "clock_thinning": {
+      "graphs": 32,
+      "exact_clock_orders": 6960,
+      "dependent_indicator_pairs": 181,
+      "scope": "Exact exponential-race law and r=p=2 compensation with vectors orthogonal on independent sets; not the source finite Fourier estimate."
+    },
+    "probability_transfer": {
+      "mixtures": 500,
+      "sharp_two_point_models": [
+        {
+          "eta": 0.01,
+          "deficit": 0.03,
+          "uniform_average": 1.0003030303030302
+        },
+        {
+          "eta": 0.1,
+          "deficit": 0.03,
+          "uniform_average": 1.0033333333333334
+        },
+        {
+          "eta": 0.4,
+          "deficit": 0.03,
+          "uniform_average": 1.02
+        }
+      ],
+      "scope": "Exact mixture inequality and numerical logarithmic blending. Band-limited majorant construction and source relative-drop bounds are not tested."
+    },
+    "scalar_pairing": {
+      "shared_descendant_models": 45,
+      "measure_reconstruction_identities": 540,
+      "scope": "Exact rational atomic measures with overlapping support and shared descendants; no disk estimates. Zero signed mass can carry positive cancellation cost."
+    },
+    "particle_births": {
+      "vector_refinement_models": 80,
+      "prefix_occupancy_checks": 8320,
+      "scope": "Finite positive path measures, exact up to floating-point tolerance; no spatial label process or analytic switch packing."
+    },
+    "nested_projection_products": {
+      "operator_norm_models": 108,
+      "maximum_cross_layer_commutator": 1.4377213859240727,
+      "scope": "Random real matrix families, checking all input vectors through operator norms. Does not certify the later analytic compression lemma."
+    },
+    "two_earliest_expansion": {
+      "exact_tensor_models": 90,
+      "grouped_terms": 2625,
+      "nonzero_terminal_remainders": 90,
+      "scope": "Exact finite algebra only. No claim that arbitrary approximants have vanishing terminal remainders or the source pairwise form-norm decay."
+    }
+  },
+  "limitations": "Finite algebra, numerical inequalities and models only. No full analytic theorem or Lean solution was certified."
+}
