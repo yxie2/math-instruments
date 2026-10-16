@@ -59,8 +59,9 @@
 | [B055](B055/README.md) | 4 new families; 9 instruments; 9 source manuscripts | Nine instruments from matrix spectral theory and quantum complexity: fixed channels, trace defects, Gaussian conjugation averages, integer filters, adaptive pruning, contact calibration, form-level energy elimination, odd formula approximation and exact rational coercivity. |
 | [B056](B056/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight instruments covering exact cocycle certificates, nonflat induction, coefficient-space Koszul filtrations, division-algebra bases, integral volume bounds, Sylow restriction, character recurrences and dominance chains |
 | [B057](B057/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Private lattice insertions, weighted Bass reductions, an explicit diagram obstruction, and Foulkes growth and shift mechanisms |
+| [B058](B058/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Affine moment and cover identities, triangular interpolation, paired-subspace rank budgets, fresh-test prediction and selection entropy |
 
-Future rounds use `B058` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B059` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
