@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 2.13,
+  "checks": {
+    "affine_moments": {
+      "point_sets": 120,
+      "prime_fields": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "arithmetic": "exact rational"
+    },
+    "cubic_coordinates": {
+      "cubic_shapes": 402,
+      "shape_line_pairs": 98352,
+      "deletion_outcomes": 625,
+      "mixed_covers_examined": 6794,
+      "equality_parallel_classes": 4,
+      "scope": "Cubic map and conditional-cover mechanism; no asymptotic gadget existence test."
+    },
+    "interpolation": {
+      "arbitrary_order_rational_models": 24,
+      "maximum_pairing_dimension": 12,
+      "checks": [
+        "both interpolation rectangles",
+        "row-shift factorization",
+        "nonzero determinant"
+      ]
+    },
+    "subspace_budget": {
+      "subspace_models": 15,
+      "filtration_stages": 57,
+      "equality_models": 5,
+      "sharp_rank_sum_models": 18,
+      "arithmetic": "exact rational linear algebra"
+    },
+    "off_diagonal": {
+      "pair_laws": 36,
+      "cell_identities": 7172,
+      "singleton_and_full_support_cases": true
+    },
+    "prediction": {
+      "wedge_models": 9,
+      "complete_test_sequences": 243,
+      "prefix_steps": 729,
+      "max_chain_rule_error": 4.444686806104325e-16,
+      "max_wedge_square_error": 2.9436088982981445e-17,
+      "independent_zero_information_controls": 3
+    },
+    "occupancy": {
+      "triangle_free_graphs": 64,
+      "exact_neighborhood_conditionings": 2655
+    },
+    "selected_tuples": {
+      "exhaustive_stream_models": 12,
+      "rare_event_comparisons": 3200,
+      "selector": "Most and least lexicographic subsequence in either orientation"
+    }
+  },
+  "scope": "Selected finite mechanisms only; no Ryser, crossing-number, planar-distance or Ramsey headline theorem is certified."
+}

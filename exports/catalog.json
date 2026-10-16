@@ -24062,6 +24062,371 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000561.md",
       "body": "# Cancel directional derivatives using a positive weight difference\n\n[Family 210](../families/openai-math-210.md) · [Source manuscript](../papers/P-000330.md) · [Batch B057](../../batches/B057/README.md)\n\n## Mathematical content\n\nLet U and Y be independent vector-variable blocks of the same size over C, and consider polynomials bihomogeneous of degrees p,q in these blocks, with any additional independent variables. Define D=sum_i Y_i partial_(U_i) and E=sum_i U_i partial_(Y_i). In the Fischer inner product, distinct monomials are orthogonal and the squared norm of X^alpha is alpha!. Differentiation is adjoint to multiplication, so D*=E.\n\nThe commutator is ED-DE=N_U-N_Y. Therefore every such polynomial h satisfies\n\n||Dh||^2-||Eh||^2=(p-q)||h||^2.\n\nIf p>q, this proves injectivity of D on the entire bihomogeneous space; indeed ||Dh||>=sqrt(p-q)||h||. Additional independent variables cause no change, since their monomial norms simply factor through. A sequence of such operators is injective whenever the appropriate degree inequality holds before each step, including after previous derivatives have shifted the degrees.\n\nThe strict inequality matters. At p=q=1 with two coordinates, U_1 Y_2-U_2 Y_1 is a nonzero element of the kernel. Characteristic zero also matters: in characteristic five the derivative of U_1^5 vanishes despite positive U-degree and zero Y-degree. The source uses the characteristic-zero statement to cancel intermediate derivatives in a larger vanishing-on-products induction; that induction is not part of this selected check.\n\n## Role in the source argument\n\nProvides the exact degree condition under which the source recovers a polynomial from its successive directional derivatives.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:shift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex#L260)\n- [eq:norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex#L286)\n\n## Antecedents and comparison\n\n[Ikenmeyer, On McKay's propagation theorem for the Foulkes conjecture](https://arxiv.org/abs/1509.04957v1), Claim 5.1 and its full proof on pages 6-7, uses a two-coordinate raising operator and GL2 weight spaces for injectivity. [Aldaz-Render](https://arxiv.org/abs/2403.10400), Section 2, equation (8) and Proposition 3 with its proof on pages 5-6, gives the Fischer inner product and adjoint identity. These passages were read. The source proof is a direct classical commutator argument.\n\n## Checks and limitations\n\nExact weighted Gram identities are checked on 57 bihomogeneous spaces in dimensions 1,2,3. Modular rank certifies full rational column rank on all 24 tested positive-weight spaces. Equal-degree and positive-characteristic examples test the limits.\n\nThese checks do not establish the source degree bookkeeping throughout the full induction or surjectivity of the canonical Foulkes-Howe map.\n\n## Possible applications\n\nJustifying cancellation of differential operators uniformly over a whole polynomial space, with a quantitative norm bound and explicit boundary cases.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000562",
+      "record_type": "instrument",
+      "title": "Use the exact affine incidence variance before any random selection",
+      "forms": [
+        "affine-incidence-second-moment",
+        "directional-variance-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-162"
+      ],
+      "source_paper_ids": [
+        "P-000331"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/elementary.tex",
+          "label": "lem:affine-second-moment",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/elementary.tex#L11",
+          "sha256": "00b82619dfc915a9c20b0a3c3755829fdb71f3aa8995738f51426c89602bd301"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-identity-with-source-directional-normalization",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000562.md",
+      "body": "# Use the exact affine incidence variance before any random selection\n\n[Family 162](../families/openai-math-162.md) · [Source manuscript](../papers/P-000331.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nFor U contained in F_q^2, let i(l)=|U intersect l| over all q(q+1) affine lines. Counting points and ordered pairs gives\n\nsum_l i(l)=(q+1)|U|, and sum_l i(l)^2=|U|^2+q|U|.\n\nConsequently sum_l (i(l)-|U|/q)^2=q|U|-|U|^2/q<=q^3/4. If V_d=(1/q)sum_(l parallel d)(i(l)-|U|/q)^2, then sum_d V_d=|U|-|U|^2/q^2.\n\nThe diagonal ordered pairs lie on q+1 lines, while every distinct ordered pair lies on exactly one. This proves the second moment without independence or regularity assumptions. The directional sum follows because parallel classes partition the line set. The identity therefore applies to a subset already produced by a random procedure, after fixing that subset; additional concentration claims still need their own probability argument.\n\n## Role in the source argument\n\nProvides a deterministic variance budget for incidence profiles of selected or deleted point sets.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:affine-second-moment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/elementary.tex#L11)\n\n## Antecedents and comparison\n\n[Murphy-Petridis](https://arxiv.org/abs/1601.03981), Lemma 1 on PDF page 2, states exactly the second-moment identity. Pages 1-2 were inspected. The centered equality and directional normalization are immediate algebraic consequences, so this is a reusable classical instrument, not a new identity.\n\n## Checks and limitations\n\n120 subsets in prime planes of orders 2,3,5,7,11 verify all moments and directional sums using exact rational arithmetic.\n\nThe finite checks use prime fields, while the counting proof covers prime powers. They do not validate the source random selection or counterexamples.\n\n## Possible applications\n\nBounding incidence fluctuations uniformly over all point sets, including adaptively selected ones.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000563",
+      "record_type": "instrument",
+      "title": "Turn deletion lines into curves and complete an almost-pencil cover",
+      "forms": [
+        "nonlinear-coordinate-cover-transfer",
+        "missing-line-cover-rigidity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-162"
+      ],
+      "source_paper_ids": [
+        "P-000332"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex",
+          "label": "lem:gadget",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex#L15",
+          "sha256": "6bdba1b586d8369d917f9be2907021dda920da0a59cdcd51900ee59a2eff8d5d"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex",
+          "label": "con-weighted-budget",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex#L33",
+          "sha256": "6bdba1b586d8369d917f9be2907021dda920da0a59cdcd51900ee59a2eff8d5d"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "elementary-geometric-assembly-with-conditional-cover-input",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000563.md",
+      "body": "# Turn deletion lines into curves and complete an almost-pencil cover\n\n[Family 162](../families/openai-math-162.md) · [Source manuscript](../papers/P-000332.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nFor a prime s congruent to 2 modulo 3, f(x,y)=(x^3,y) permutes the affine plane. The image of a line y=dx+z with d nonzero is F_(d,z)={(x^3,dx+z)}. Every affine line meets this curve in at most three points: vertical and horizontal lines give at most one, and other slopes give a nonzero cubic equation. Uniformly selecting z deletes any specified point with probability 1/s. Independent choices for the s-1 slopes therefore give survival probability (1-1/s)^(s-1), unchanged by f.\n\nHere is the deterministic cover step, separated from the probabilistic existence claim. Suppose Z meets every affine line in at least delta*s points, and a cover by a lines and b individual points has a+b/2<=s. Suppose a separate near-pencil result supplies at least (1-rho)s distinct cover lines through one projective point p. There are at most rho*s other lines and at most 2rho*s individual point resources. Any missing affine line through p would have at most 1+3rho*s of its points covered. If delta*s>1+3rho*s, no such line can be missing.\n\nA finite point p would require all s+1 lines, exceeding the budget. Thus p is at infinity, all s lines of its parallel class occur, and a=s,b=0. The source uses delta=1/8 and rho=1/100 for sufficiently large s. Its assertion that a random Z satisfies the near-pencil hypothesis depends on a separate deletion theorem, which is not established by this extracted step.\n\n## Role in the source argument\n\nCombines survival under changed coordinates with rigidity of low-cost mixed covers.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:gadget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex#L15)\n- [con-weighted-budget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/construction.tex#L33)\n\n## Antecedents and comparison\n\nThe map uses the classical criterion gcd(3,s-1)=1 and the polynomial root bound. The missing-line argument is an elementary conditional deduction. No earliest-priority claim is made for the source combination, and its asymptotic existence theorem remains a dependency.\n\n## Checks and limitations\n\n402 cubic images and 98,352 shape-line pairs over fields of orders 5,11,17 verify the intersection bound. All 625 deletion outcomes at order 5 verify equal survival. All 6,794 mixed covers within budget of the full order-3 plane yield exactly its four parallel-class equality covers.\n\nThe full-plane check is a model of cover rigidity, not a construction of the sparse source gadget. Neither the almost-pencil theorem nor the eventual Ryser counterexample is certified.\n\n## Possible applications\n\nSeparating the coordinate system convenient for deleting sets from the one convenient for proving cover rigidity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000564",
+      "record_type": "instrument",
+      "title": "Diagonalize an arbitrary node-order pairing on two triangles",
+      "forms": [
+        "even-node-two-triangle-interpolation",
+        "order-pairing-row-shift"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-165"
+      ],
+      "source_paper_ids": [
+        "P-000333"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex",
+          "label": "lem:weights",
+          "line": 362,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L362",
+          "sha256": "5ae2c60704054f1b45290463c038c32335cc1554c5cc7dcee53518a045472301"
+        },
+        {
+          "path": "preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex",
+          "label": "lem:triangles",
+          "line": 385,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L385",
+          "sha256": "5ae2c60704054f1b45290463c038c32335cc1554c5cc7dcee53518a045472301"
+        },
+        {
+          "path": "preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex",
+          "label": "lem:detector",
+          "line": 443,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L443",
+          "sha256": "5ae2c60704054f1b45290463c038c32335cc1554c5cc7dcee53518a045472301"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "source-interpolation-assembly-with-classical-weights",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000564.md",
+      "body": "# Diagonalize an arbitrary node-order pairing on two triangles\n\n[Family 165](../families/openai-math-165.md) · [Source manuscript](../papers/P-000333.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nFor 2s distinct real nodes, s>=2, label them in any prescribed order. Let P_(a,b) denote polynomials of separate degrees at most a,b. On\n\nL_s={(p,q):1<=q<p<=s} union {(p,q):s<p<q<=2s},\n\nevaluation is an isomorphism for both P_(s-1,s-2) and P_(s-2,s-1). To prove this simultaneously, the two central rows force two first-variable factors in the first space. Removing those rows leaves the second degree rectangle at s-1. The outer two columns give the converse induction. Dimensions agree at s(s-1), and s=2 is immediate.\n\nPut G(t)=product_p(t-u_p) and S(p,q)=1/2 for p<q, -1/2 for p>q, zero otherwise. Define M(A,B)=sum_(p,q) S(p,q)(u_p-u_q)A(u_p,u_q)B(u_p,u_q)/(G'(u_p)G'(u_q)). For A,B in the two respective rectangles, the product (u-v)AB has separate degrees at most 2s-2. Lagrange interpolation therefore annihilates every added row term r_p or column term c_q in S.\n\nReplace S off the diagonal by S-1/2+1_(p>s). This is -1 on the first triangle, +1 on the second and zero elsewhere. In the two evaluation bases, M is diagonal with nonzero weights. It is thus nonsingular regardless of the numerical order of the nodes. In particular, A in P_(s-2,s-2) vanishes if M(A,B)=0 for every B in P_(s-1,s-1).\n\n## Role in the source argument\n\nTurns cyclic-order data into algebraic detection of a polynomial test without requiring ordered numerical coordinates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L362)\n- [lem:triangles](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L385)\n- [lem:detector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/build/main.tex#L443)\n\n## Antecedents and comparison\n\nThe annihilation identity is the leading-coefficient comparison in classical Lagrange interpolation. The complete source induction and diagonalization were inspected. Targeted searches did not identify an earlier exact even-node formulation; this is not a proof of novelty.\n\n## Checks and limitations\n\n24 exact rational models with shuffled distinct nodes and s=2,3,4 check both interpolation determinants, the full and reduced pairing matrices, nonsingularity and all required Lagrange moments.\n\nThe tests do not construct drawings or establish the source conversion of crossings into these pairings.\n\n## Possible applications\n\nRecovering polynomial information from signed order data after quotienting out row and column contributions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000565",
+      "record_type": "instrument",
+      "title": "Charge paired-subspace intersections to polynomial root multiplicity",
+      "forms": [
+        "paired-subspace-intersection-budget",
+        "polynomial-filtration-rank-sum"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-165"
+      ],
+      "source_paper_ids": [
+        "P-000334"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+          "label": "lem:subspace",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L12",
+          "sha256": "e76cf72bfac2fd79fb97aa7392a568c6427ed90fa174bc593e012b3c4a2234ed"
+        },
+        {
+          "path": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+          "label": "eq:multiplicity-budget",
+          "line": 137,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L137",
+          "sha256": "e76cf72bfac2fd79fb97aa7392a568c6427ed90fa174bc593e012b3c4a2234ed"
+        },
+        {
+          "path": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+          "label": "cor:rank-sum",
+          "line": 169,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L169",
+          "sha256": "e76cf72bfac2fd79fb97aa7392a568c6427ed90fa174bc593e012b3c4a2234ed"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "source-sharp-subspace-bound-with-unresolved-priority",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000565.md",
+      "body": "# Charge paired-subspace intersections to polynomial root multiplicity\n\n[Family 165](../families/openai-math-165.md) · [Source manuscript](../papers/P-000334.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nLet W be an N-dimensional real vector space and let U_i,V_i, 1<=i<=m, satisfy U_i intersect V_i=0. The source proves\n\nsum_(i,j) dim(U_i intersect V_j)<=floor(m^2/4)N.\n\nChoose distinct nodes t_i. For Z contained in W, let P_h(Z) be the Z-valued polynomials of degree at most h satisfying P(t_i) in U_i, and write k_h(Z)=dim P_h(Z)-dim P_(h-1)(Z). Evaluation at a non-node t has kernel (x-t)P_(h-1)(Z), so its image dimension is k_h(Z). Lagrange interpolation gives sum_(h=0)^(m-1) k_h(Z)=sum_i dim(U_i intersect Z).\n\nThe nested evaluation images for Z=W have increments ell_h=k_h(W)-k_(h-1)(W)>=0. Choose columns introduced at degree h to extend their bases. A nonzero maximal minor at stage h has degree at most sum_(e<=h) e*ell_e. Projection modulo V_j bounds its rank at t_j by k_h(W)-k_h(V_j): the bound holds off the nodes by containment of evaluation images, extends by polynomial minors, and projection is injective on U_j. The determinant therefore vanishes to order at least k_h(V_j) at t_j. Thus sum_j k_h(V_j)<=sum_(e<=h)e*ell_e.\n\nSumming in h yields sum_(i,j)dim(U_i intersect V_j)<=sum_e e(m-e)ell_e<=floor(m^2/4)N. Equality occurs by splitting W=P direct-sum Q and assigning (P,Q) to floor(m/2) indices and (Q,P) to the others.\n\nFor real d by d matrices with X_i-Y_i invertible, take U_i,V_i to be the graphs of X_i,Y_i in R^(2d). Their intersections are the kernels of X_i-Y_j. Removing the m full-rank diagonal terms gives sum_(i!=j)rank(X_i-Y_j)>=2 floor(m/2)floor((m-1)/2)d, also sharply.\n\n## Role in the source argument\n\nConverts local diagonal disjointness into a global lower budget for ranks of off-diagonal matrix differences.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:subspace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L12)\n- [eq:multiplicity-budget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L137)\n- [cor:rank-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex#L169)\n\n## Antecedents and comparison\n\n[Guruswami-Kopparty, Explicit Subspace Designs](https://www.math.utoronto.ca/swastik/subspace-designs.pdf), Claim 16 on PDF page 10, converts intersection dimension into determinant root multiplicity and then sums a degree budget; that claim and proof were read. It concerns a structured polynomial construction and does not state the displayed inequality for arbitrary paired subspaces. Targeted searches leave earliest priority of the exact source inequality unresolved.\n\n## Checks and limitations\n\n15 exact rational subspace families test 57 polynomial-filtration stages, including evaluation dimensions, node-rank loss and multiplicity budgets. Five families attain equality. Eighteen graph-of-matrix examples attain the rank-sum bound. A one-pair control shows why diagonal disjointness is necessary.\n\nThese are finite checks of the selected proof, not a proof assistant certificate or a validation of the full crossing-number application.\n\n## Possible applications\n\nObtaining global rank or intersection constraints from a family of locally transverse pairs.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000566",
+      "record_type": "instrument",
+      "title": "Cancel singleton tails with an exact distinct-pair coupling",
+      "forms": [
+        "off-diagonal-marginal-coupling",
+        "finite-population-cell-variance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-167"
+      ],
+      "source_paper_ids": [
+        "P-000335"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex",
+          "label": "lem:variance",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex#L10",
+          "sha256": "03c02985bafc207797f52a62864e7c42d02141c99b6e497e89fb9aa2139b5fc9"
+        },
+        {
+          "path": "preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex",
+          "label": "eq:variance-finite",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex#L83",
+          "sha256": "03c02985bafc207797f52a62864e7c42d02141c99b6e497e89fb9aa2139b5fc9"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-sampling-with-source-cancellation-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000566.md",
+      "body": "# Cancel singleton tails with an exact distinct-pair coupling\n\n[Family 167](../families/openai-math-167.md) · [Source manuscript](../papers/P-000335.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nLet P have n points, alpha its uniform law, and B a subset of size 2<=k<=n with uniform law nu. Let P_B and pi be the uniform laws on distinct ordered pairs in B and P. Construct R_B by choosing X uniformly in B, then choosing Y uniformly in B excluding X with probability k/n, and otherwise uniformly outside B. When k=n take R_B=P_B=pi. The marginals of R_B are exactly nu and alpha.\n\nFor a cell C, put m=|C|, b=|B intersect C|, a=m/n and p=b/k. Direct counting gives P_B(C^2)=p^2-p(1-p)/(k-1), R_B(C^2)=ap-(k/n)p(1-p)/(k-1), and pi(C^2)=a^2-a(1-a)/(n-1). Hence\n\nH_B(C):=P_B(C^2)-2R_B(C^2)+pi(C^2)\n=(p-a)^2+(2k/n-1)p(1-p)/(k-1)-a(1-a)/(n-1).\n\nThe signed measure has zero total mass and its two marginals sum to zero. It annihilates every symmetric additive kernel h(x)+h(y). In the source, a separate integrated-overlap identity supplies just such a cancellation. Empty and singleton cells contribute exactly zero because every law excludes the diagonal; one must keep this cancellation together rather than integrate separate correction terms over an infinite singleton tail.\n\nOn cells with b>=2, P_B(C^2)>=p^2/2. On cells with m>=2, a^2/2<=pi(C^2)<=a^2. These elementary inequalities permit the source to handle large-cell discrepancy and small-cell mass separately, subject to its integrability and averaged-marginal hypotheses.\n\n## Role in the source argument\n\nPrevents infinitely many singleton levels from accumulating a spurious diagonal error in a cell-variance argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex#L10)\n- [eq:variance-finite](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/build/sections/variance.tex#L83)\n\n## Antecedents and comparison\n\nThe factors b(b-1)/(k(k-1)) and m(m-1)/(n(n-1)) are classical sampling-without-replacement probabilities. The source explicitly arranges the middle coupling and keeps the signed cancellation intact. No earliest-priority claim is made for that arrangement.\n\n## Checks and limitations\n\n36 distinct-pair models and 7,172 cell identities are checked exactly, including all singleton cells, full-support B=P, marginal identities and cancellation against random additive kernels.\n\nThe test does not construct the source infinite hierarchy or prove its integrated additive-overlap identity; the latter is a declared dependency.\n\n## Possible applications\n\nReplacing approximate diagonal corrections with exact cancellation in multiscale decompositions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000567",
+      "record_type": "instrument",
+      "title": "Predict bounded center tests from a short strict history prefix",
+      "forms": [
+        "posterior-history-prediction",
+        "fresh-test-fourth-root-information-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-167"
+      ],
+      "source_paper_ids": [
+        "P-000336"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex",
+          "label": "pred:device",
+          "line": 78,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L78",
+          "sha256": "e8317ebc5d3341b03a076185528fcc967569a5f95b566cf1d560616e0dad17ce"
+        },
+        {
+          "path": "preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex",
+          "label": "pred:conditional-kl",
+          "line": 124,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L124",
+          "sha256": "e8317ebc5d3341b03a076185528fcc967569a5f95b566cf1d560616e0dad17ce"
+        },
+        {
+          "path": "preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex",
+          "label": "pred:wedge-square",
+          "line": 156,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L156",
+          "sha256": "e8317ebc5d3341b03a076185528fcc967569a5f95b566cf1d560616e0dad17ce"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "wringing-related-source-posterior-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000567.md",
+      "body": "# Predict bounded center tests from a short strict history prefix\n\n[Family 167](../families/openai-math-167.md) · [Source manuscript](../papers/P-000336.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nLet omega(p,q) be a finite point-center law, with marginals mu,kappa. Draw two points p,r independently conditional on q, and let pi be their joint law. Put D=KL(pi || mu tensor mu), in natural units. An independent random test T specifies a code c_T:P->[M], features f_T(c) of norm at most B, and center coefficients g_T(q) of norm at most B'.\n\nTake K iid tests, choose J uniformly in {1,...,K}, and retain only H(p)=(c_(T_1)(p),...,c_(T_(J-1))(p)). For a fresh test T independent of that prefix, predict f_T(c_T(p)) by its mean m_(T,H(p)) under mu conditioned on that point own history. Then the average over prefixes and fresh tests of\n\n|E_omega <f_T(c_T(p))-m_(T,H(p)), g_T(q)>|\n\nis at most 4BB'(D/K)^(1/4). Some fixed prefix attains this bound averaged over the subsequent fresh test, and it has at most M^(K-1) history values.\n\nFor fixed tests, the KL chain rule for the pair of transcripts spends at most D across K steps. The reference next-code distribution uses the product of the two separate posterior marginals, even when their histories differ. Pinsker and averaging bound the mean conditional total variation by sqrt(D/(2K)). Each centered feature residual U has norm at most 2B. Its product expectation vanishes under the reference law, while under the wedge law E_pi<U(p),U(r)>=0 equals E_kappa ||E_(p|q) U(p)||^2. Cauchy-Schwarz against g and then across steps gives the fourth-root bound. The strict prefix makes replacing the next iid test by a fresh test valid.\n\n## Role in the source argument\n\nReplaces dependence on a center by bounded-complexity point histories while preserving a subsequent random test.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pred:device](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L78)\n- [pred:conditional-kl](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L124)\n- [pred:wedge-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/build/sections/02-prediction.tex#L156)\n\n## Antecedents and comparison\n\n[Ahlswede, An Elementary Proof of the Strong Converse Theorem for the Multiple-Access Channel](https://www.math.uni-bielefeld.de/ahlswede/homepage/public/44.pdf), Section 4, Lemma 3, pages 9-11 of this copy, uses short conditioning to reduce coordinate dependence; the lemma and proof were read. The source adds an own-posterior residual and a fresh-test discrepancy guarantee. This comparison identifies a methodological antecedent, not an equivalence or a proven novelty claim.\n\n## Checks and limitations\n\nNine finite wedge laws, including three independent controls, enumerate 243 complete test sequences and 729 prefix steps. Conditional KL spending, Pinsker, the wedge-square identity and the final average discrepancy pass, with chain-rule error below 5e-16.\n\nTests use finite code maps and features and do not prove the source geometric incidence bounds, integrated coordinate tests or unit-distance power saving.\n\n## Possible applications\n\nCompressing finite probability models for later bounded tests while keeping the test independent of the chosen history.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000568",
+      "record_type": "instrument",
+      "title": "Gain a logarithm from uniform independent-set occupancy",
+      "forms": [
+        "triangle-free-uniform-occupancy",
+        "neighborhood-completion-fixed-point"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-170"
+      ],
+      "source_paper_ids": [
+        "P-000337"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex",
+          "label": "lem:occupancy",
+          "line": 24,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex#L24",
+          "sha256": "66a92445e2227f5a67a871b4e3c2a6da21453cdea724bcc70b799081b3d3aedc"
+        },
+        {
+          "path": "preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex",
+          "label": "eq:occupancy-fixed-point",
+          "line": 57,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex#L57",
+          "sha256": "66a92445e2227f5a67a871b4e3c2a6da21453cdea724bcc70b799081b3d3aedc"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-alon-occupancy-method",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000568.md",
+      "body": "# Gain a logarithm from uniform independent-set occupancy\n\n[Family 170](../families/openai-math-170.md) · [Source manuscript](../papers/P-000337.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nIf a triangle-free graph H has n vertices and maximum degree at most a real D>=1, then alpha(H)>=n log(D+1)/(8(D+1)). The graph may be edgeless.\n\nChoose an independent set I uniformly from all independent sets, including the empty set. Fix x and condition on I outside its closed neighborhood. Let Z_x be the number of neighbors not blocked by that outside set. Triangle-freeness makes these Z_x vertices mutually nonadjacent. Exactly 1+2^(Z_x) completions remain: include x, or choose any subset of its available neighbors. Thus the conditional probability of x is 1/(1+2^(Z_x))>=2^(-Z_x)/2, while the conditional expected number of selected neighbors is Z_x 2^(Z_x-1)/(1+2^(Z_x))>=Z_x/4.\n\nWriting mu=E|I|/n and choosing x uniformly gives E Z_x<=4D mu by double counting selected neighbors. Jensen then yields mu>=2^(-4D mu)/2. If mu<log(D+1)/(8(D+1)), this fixed-point inequality forces mu>1/(2 sqrt(D+1)), contradicting log u<=sqrt u for u>=1. Finally alpha(H)>=E|I|. The logarithmic improvement comes from counting all neighborhood completions, not from a greedy maximal independent set.\n\n## Role in the source argument\n\nSupplies the classical logarithmic independence gain in the source upper-bound induction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:occupancy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex#L24)\n- [eq:occupancy-fixed-point](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/build/upper-bound.tex#L57)\n\n## Antecedents and comparison\n\n[Alon, Independence Numbers of Locally Sparse Graphs and a Ramsey Type Problem](https://web.math.princeton.edu/~nalon/PDFS/indrams1.pdf), proof of Proposition 2.1 on PDF pages 3-4, conditions a uniform independent set outside a closed neighborhood and counts available completions. Those proof pages were read. The source specializes this classical method to independent neighborhoods and chooses convenient constants.\n\n## Checks and limitations\n\n64 triangle-free graphs are checked by exhaustive independent-set enumeration. Their 2,655 outside-neighborhood conditionings satisfy the exact completion probabilities and expected-neighbor formula; the fixed-point and independence bounds also pass.\n\nThe tests do not establish the Ramsey lower-bound constructions or sharp logarithmic exponents.\n\n## Possible applications\n\nObtaining a logarithmic improvement over greedy independence bounds when neighborhoods have controlled structure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000569",
+      "record_type": "instrument",
+      "title": "Protect entropy against an arbitrarily biased subsequence selector",
+      "forms": [
+        "selected-subsequence-atom-cap",
+        "dominated-stream-entropy-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-170"
+      ],
+      "source_paper_ids": [
+        "P-000338"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex",
+          "label": "base:stream-parameters",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L9",
+          "sha256": "93d3cd4570386506db17442f4a4d8dcf66bd410d292ab4a769ab49e0e4e68cfb"
+        },
+        {
+          "path": "preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex",
+          "label": "base:selection-entropy",
+          "line": 172,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L172",
+          "sha256": "93d3cd4570386506db17442f4a4d8dcf66bd410d292ab4a769ab49e0e4e68cfb"
+        },
+        {
+          "path": "preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex",
+          "label": "base:event-transfer",
+          "line": 219,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L219",
+          "sha256": "93d3cd4570386506db17442f4a4d8dcf66bd410d292ab4a769ab49e0e4e68cfb"
+        }
+      ],
+      "batch_id": "B058",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-counting-entropy-with-source-scale-balance",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000569.md",
+      "body": "# Protect entropy against an arbitrarily biased subsequence selector\n\n[Family 170](../families/openai-math-170.md) · [Source manuscript](../papers/P-000338.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nSuppose a length-N stream law is pointwise at most C_0 times the iid uniform law on an alphabet of size A. A selector, with arbitrary dependent auxiliary randomness, outputs a deterministic-length ell subsequence in increasing order, or the reversed sequence with a fixed bijection applied to its symbols. For any prescribed tuple f, the event that f is output requires its occurrence in one of at most 2 binom(N,ell) position/orientation choices. Therefore\n\nPr(F=f)<=2 C_0 binom(N,ell) A^(-ell),\n\nand H(F)>=ell log A-log(2 C_0 binom(N,ell)). This remains true even if the selector is chosen adversarially from the entire stream. Conditioning on an event of probability at least c, including an event depending on auxiliary randomness, increases stream domination by at most 1/c.\n\nIn the source, A=Q_d Q_(d-1), Q_j=1+q+...+q^j, sigma=log q, N=floor(q^d sigma), and ell is comparable to k=floor(q sigma^(1+eta)). Since log A=(2d-1)sigma+O(1/q) and log(eN/ell)=(d-1)sigma-eta log sigma+O(1), the bound becomes H(F)>=d sigma ell+eta ell log sigma-O(k). The positive logarithmic surplus is what a separate compression argument would have to contradict.\n\nA related direction-sensitive event transfer states Q(E)<=(KL(P||Q)+P(E))/(1-e^(-1)). It follows by inserting f=-1_E into KL(P||Q)>=E_P f-log E_Q exp(f). This is a bound on the reference event mass Q(E) in terms of KL(P||Q), not a license to interchange the two measures.\n\n## Role in the source argument\n\nKeeps a quantitative entropy floor valid after adaptive selection and bounded-probability restrictions.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [base:stream-parameters](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L9)\n- [base:selection-entropy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L172)\n- [base:event-transfer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L219)\n\n## Antecedents and comparison\n\nThe proof is the classical maximum-atom bound for Shannon entropy plus a union bound over possible selected positions. The rare-event estimate is a direct exponential variational bound for relative entropy. The source contribution at this extraction level is its explicit parameter balance and orientation/conditioning interface; no new general entropy principle is asserted.\n\n## Checks and limitations\n\nTwelve exhaustive small-stream models use the lexicographically largest or smallest subsequence in either orientation, under uniform and nonuniform dominated laws. Atom caps, entropy and auxiliary-dependent conditioning pass. A further 3,200 finite event comparisons check the stated KL direction.\n\nThe verification does not implement the source projective flags, geometric support learning or recursive compression, and therefore does not certify a Ramsey lower bound.\n\n## Possible applications\n\nMaintaining entropy lower bounds through data-dependent choices where treating the selected objects as independent would be invalid.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -30334,6 +30699,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000330.md",
       "body": "# Quadratic stabilization of the canonical Foulkes--Howe map\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000561: Cancel directional derivatives using a positive weight difference](../instruments/MI-000561.md)\n\n[Family review and dependencies](../families/openai-math-210.md) · [Batch B057](../../batches/B057/README.md)"
+    },
+    {
+      "id": "P-000331",
+      "record_type": "paper",
+      "title": "Balanced counterexamples to Ryser's conjecture at prime orders",
+      "source_collection": "openai/math",
+      "upstream_slug": "Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026",
+      "source_date": "September 27, 2026",
+      "family_ids": [
+        "openai-math-162"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4a35ce9bacdec389d396ebd34d863fcd40417e15f6960028f6a519f498da1337",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000331.md",
+      "body": "# Balanced counterexamples to Ryser's conjecture at prime orders\n\n## Source\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000562: Use the exact affine incidence variance before any random selection](../instruments/MI-000562.md)\n\n[Family review and dependencies](../families/openai-math-162.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000332",
+      "record_type": "paper",
+      "title": "A counterexample to Ryser's covering conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-162"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2ade12984b1b57f3b697beec7f6ea623a42be87e92971e109dbf7402dd9e57cf",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000332.md",
+      "body": "# A counterexample to Ryser's covering conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000563: Turn deletion lines into curves and complete an almost-pencil cover](../instruments/MI-000563.md)\n\n[Family review and dependencies](../families/openai-math-162.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000333",
+      "record_type": "paper",
+      "title": "The crossing number of complete graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-crossing-number-of-complete-graphs-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-165"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d124e5388d0f6121a997c2dde2ef2d6becc327fbc5d0ce854eaf43e8dafb98ce",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000333.md",
+      "body": "# The crossing number of complete graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000564: Diagonalize an arbitrary node-order pairing on two triangles](../instruments/MI-000564.md)\n\n[Family review and dependencies](../families/openai-math-165.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000334",
+      "record_type": "paper",
+      "title": "The crossing number of complete bipartite graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-crossing-number-of-complete-bipartite-graphs-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-165"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5b0ec18c8e9f4d123a7e7c3ca6585c62925e1dad2f5bdaf37ee2675c451834c5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000334.md",
+      "body": "# The crossing number of complete bipartite graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000565: Charge paired-subspace intersections to polynomial root multiplicity](../instruments/MI-000565.md)\n\n[Family review and dependencies](../families/openai-math-165.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000335",
+      "record_type": "paper",
+      "title": "The weak pinned planar distance theorem",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-weak-pinned-planar-distance-theorem-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-167"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3808c841390eba6ff8996fa67f8128f691b8d97d098e410306fbcbf5d3ec5aca",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000335.md",
+      "body": "# The weak pinned planar distance theorem\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-pinned-planar-distance-theorem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000566: Cancel singleton tails with an exact distinct-pair coupling](../instruments/MI-000566.md)\n\n[Family review and dependencies](../families/openai-math-167.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000336",
+      "record_type": "paper",
+      "title": "A power saving for planar unit distances",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-power-saving-for-planar-unit-distances-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-167"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "753c3c19da2debf95550165d1ab193ce283388adca5290f9d155094122a70d35",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000336.md",
+      "body": "# A power saving for planar unit distances\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-unit-distances-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000567: Predict bounded center tests from a short strict history prefix](../instruments/MI-000567.md)\n\n[Family review and dependencies](../families/openai-math-167.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000337",
+      "record_type": "paper",
+      "title": "The sharp logarithmic exponent of r(5,t)",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-170"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6ee69ffa04d5e2461484364540f29194a517a038ecaaec78ab6032afed25d70d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000337.md",
+      "body": "# The sharp logarithmic exponent of r(5,t)\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Logarithmic-Exponent-of-r-5-t-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000568: Gain a logarithm from uniform independent-set occupancy](../instruments/MI-000568.md)\n\n[Family review and dependencies](../families/openai-math-170.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000338",
+      "record_type": "paper",
+      "title": "Sharp logarithmic exponents for fixed off-diagonal Ramsey numbers",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-170"
+      ],
+      "batch_id": "B058",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9c53395f7ad369b8208290cacf40136d99d75d0e793016596f2b17788f280a9b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000338.md",
+      "body": "# Sharp logarithmic exponents for fixed off-diagonal Ramsey numbers\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000569: Protect entropy against an arbitrarily biased subsequence selector](../instruments/MI-000569.md)\n\n[Family review and dependencies](../families/openai-math-170.md) · [Batch B058](../../batches/B058/README.md)"
     }
   ],
   "families": [
@@ -33341,6 +33858,34 @@
       "body": "# Transferring a density deficit to finite witnesses and nonconstant equalities\n\n## Source manuscript and claim\n\n[A counterexample to Sidorenko's conjecture](../papers/P-000152.md), by OpenAI, September 23, 2026.\n\nThe source claims a fixed bipartite graph H with 35 vertices and 66 edges and a finite nonempty simple graph G satisfying t(H,G)<p(G)^66.\n\n## Extracted instruments\n\n- [MI-000265: A strict kernel-density deficit gives an explicit finite-host threshold](../instruments/MI-000265.md)\n- [MI-000266: Orthogonal fixed-density interpolation preserves nonconstancy at an exact equality](../instruments/MI-000266.md)\n\n## Dependencies and antecedents\n\nIndependent vertex labels and edge trials, collision probability, convexity, even-subgraph expansions, polynomial continuity and the C4 equality case.\n\nLovasz-Szegedy dense graph limits and finite-kernel sampling; classical tensor-power and graph-density methods. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite-host lemma and both consequence proofs. The kernel, pinning, orbit and tail construction establishing the strict bipartite deficit was not audited.\n\nRead the scope document and SidorenkoCounterexample.lean pattern, density definitions and main target. The pattern is the incidence graph of 22 triples on 13 points; the forcing consequence is outside the selected target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\nDensities count all maps and use p=2|E|/n^2. Repeated host edges are not independent under sampling. The forcing transfer requires a cycle and supplies one density, not every density.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/161.md) · [Batch record](../../batches/B020/README.md)"
     },
     {
+      "id": "openai-math-162",
+      "record_type": "family",
+      "title": "Affine moments and a nonlinear change of covering coordinates",
+      "source_family": "162",
+      "source_collection": "openai/math",
+      "batch_id": "B058",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000331",
+        "P-000332"
+      ],
+      "instrument_ids": [
+        "MI-000562",
+        "MI-000563"
+      ],
+      "headline": "The sources claim balanced counterexamples to Ryser covering at sufficiently large prime orders and counterexamples at prime-power ranks.",
+      "central_instrument": "Exact point-line moments give a uniform variance budget. Cubing one coordinate turns deleted lines into bounded-intersection curves, while a conditional missing-line argument forces a complete parallel class.",
+      "novelty_assessment": "The affine identity is explicitly present in Murphy-Petridis. The coordinate map and conditional cover argument use elementary finite-field geometry; their assembly is recorded without certifying the probabilistic construction or asserting priority.",
+      "formalization_summary": "BalancedRyser states eventual balanced counterexamples for all sufficiently large primes. RyserCovering states one fixed prime congruent to two modulo three and all sufficiently large prime extension degrees; RyserOddExtensions states eventual odd-degree failures for every sufficiently large such prime and infinitely many ranks. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.",
+      "statement_faithfulness": "The first identity holds over every finite field and for arbitrary subsets. The cubic map uses primes congruent to two modulo three. The mixed-cover conclusion is conditional on both line density and a separate almost-pencil theorem.",
+      "dependencies": "Affine incidence counting, finite-field permutation monomials, polynomial root bounds and elementary covering budgets.",
+      "antecedents": "Murphy-Petridis, A Point-Line Incidence Identity in Finite Fields, and Applications, Lemma 1; elementary polynomial root counting.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-162.md",
+      "body": "# Affine moments and a nonlinear change of covering coordinates\n\n## Source manuscripts and claim\n\n- [Balanced counterexamples to Ryser's conjecture at prime orders](../papers/P-000331.md): selected passages extracted.\n- [A counterexample to Ryser's covering conjecture](../papers/P-000332.md): selected passages extracted.\n\nThe sources claim balanced counterexamples to Ryser covering at sufficiently large prime orders and counterexamples at prime-power ranks.\n\n## Extracted instruments\n\n- [MI-000562: Use the exact affine incidence variance before any random selection](../instruments/MI-000562.md)\n- [MI-000563: Turn deletion lines into curves and complete an almost-pencil cover](../instruments/MI-000563.md)\n\n## Dependencies and antecedents\n\nAffine incidence counting, finite-field permutation monomials, polynomial root bounds and elementary covering budgets.\n\nMurphy-Petridis, A Point-Line Incidence Identity in Finite Fields, and Applications, Lemma 1; elementary polynomial root counting.\n\n## Review and formalization scope\n\nRead the entire elementary-estimates appendix of the balanced manuscript and the entire two-coordinatization gadget proof in its companion. The imported deletion/near-pencil theorem and the remaining hypergraph construction are not certified.\n\nBalancedRyser states eventual balanced counterexamples for all sufficiently large primes. RyserCovering states one fixed prime congruent to two modulo three and all sufficiently large prime extension degrees; RyserOddExtensions states eventual odd-degree failures for every sufficiently large such prime and infinitely many ranks. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.\n\nThe first identity holds over every finite field and for arbitrary subsets. The cubic map uses primes congruent to two modulo three. The mixed-cover conclusion is conditional on both line density and a separate almost-pencil theorem.\n\n[Batch record](../../batches/B058/README.md)"
+    },
+    {
       "id": "openai-math-164",
       "record_type": "family",
       "title": "Rational snapping and ordered product chains",
@@ -33368,6 +33913,34 @@
       "body": "# Rational snapping and ordered product chains\n\n## Source manuscript and claim\n\n[Monochromatic finite sums and products in the positive integers](../papers/P-000216.md), by OpenAI, September 23, 2026.\n\nThe source claims finite monochromatic sums-and-products configurations in every finite coloring of the positive integers.\n\n## Extracted instruments\n\n- [MI-000394: Turn near-integral samples into exact repeated-root divisibility](../instruments/MI-000394.md)\n- [MI-000395: Choose monochromatic product blocks with ordered tails and pivots](../instruments/MI-000395.md)\n\n## Dependencies and antecedents\n\nRational Lagrange interpolation, smooth/rough coprimality, a repeated-root denominator lower bound, finite Ramsey and finite finite-sums selection.\n\nClassical integer-valued interpolation and finite Ramsey theory; Alweiss, Monochromatic sums and products over Q. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead rough interpolation, ordered-block definitions and the complete chain-selection proof. The source prediction and alignment principles, including nilsequence inputs, were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nInterpolation thresholds may depend on the fixed interval length; its approximation constant depends only on the degree. The chain lemma produces monochromatic products alone; simultaneous sums require additional analytic principles.\n\n[Batch record](../../batches/B036/README.md)"
     },
     {
+      "id": "openai-math-165",
+      "record_type": "family",
+      "title": "Order-sensitive polynomial pairings and total subspace intersections",
+      "source_family": "165",
+      "source_collection": "openai/math",
+      "batch_id": "B058",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000333",
+        "P-000334"
+      ],
+      "instrument_ids": [
+        "MI-000564",
+        "MI-000565"
+      ],
+      "headline": "The sources claim the Harary-Hill and Zarankiewicz formulas for complete and complete bipartite graph crossing numbers.",
+      "central_instrument": "Two triangular evaluation patterns diagonalize an order-dependent pairing. A polynomial filtration bounds all cross-intersection dimensions when each paired intersection is zero.",
+      "novelty_assessment": "Lagrange annihilation and determinant multiplicity are classical. The exact arbitrary-pair subspace inequality is distinct from the structured subspace-design theorem inspected here, but targeted searches do not establish its earliest priority. No crossing-number theorem is certified.",
+      "formalization_summary": "CompleteCrossing states equality of the infimum of crossing counts with the Hill expression for n>=3; its target does not separately assert a two-page construction. BipartiteCrossing explicitly states an attaining admissible drawing and a universal lower bound for positive m,n. Both definitions count spatial intersection points of continuous simple paths with finite proper crossings and no triple crossings. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.",
+      "statement_faithfulness": "All interpolation nodes are distinct real numbers with an arbitrary prescribed order. The subspace theorem assumes only U_i intersect V_i=0 and bounds the ordered double sum, with a sharp constant.",
+      "dependencies": "Lagrange interpolation, polynomial evaluation filtrations, rank loss, determinant divisibility and graphs of linear maps.",
+      "antecedents": "Classical interpolation; Guruswami-Kopparty, Explicit Subspace Designs, for the related conversion of intersection dimension into determinant root multiplicity.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-165.md",
+      "body": "# Order-sensitive polynomial pairings and total subspace intersections\n\n## Source manuscripts and claim\n\n- [The crossing number of complete graphs](../papers/P-000333.md): selected passages extracted.\n- [The crossing number of complete bipartite graphs](../papers/P-000334.md): selected passages extracted.\n\nThe sources claim the Harary-Hill and Zarankiewicz formulas for complete and complete bipartite graph crossing numbers.\n\n## Extracted instruments\n\n- [MI-000564: Diagonalize an arbitrary node-order pairing on two triangles](../instruments/MI-000564.md)\n- [MI-000565: Charge paired-subspace intersections to polynomial root multiplicity](../instruments/MI-000565.md)\n\n## Dependencies and antecedents\n\nLagrange interpolation, polynomial evaluation filtrations, rank loss, determinant divisibility and graphs of linear maps.\n\nClassical interpolation; Guruswami-Kopparty, Explicit Subspace Designs, for the related conversion of intersection dimension into determinant root multiplicity.\n\n## Review and formalization scope\n\nRead the complete even-node interpolation and detector proofs, and the complete paired-subspace inequality, equality construction and rank-sum corollary. The topological cycle identities and full crossing-count reduction are not audited.\n\nCompleteCrossing states equality of the infimum of crossing counts with the Hill expression for n>=3; its target does not separately assert a two-page construction. BipartiteCrossing explicitly states an attaining admissible drawing and a universal lower bound for positive m,n. Both definitions count spatial intersection points of continuous simple paths with finite proper crossings and no triple crossings. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.\n\nAll interpolation nodes are distinct real numbers with an arbitrary prescribed order. The subspace theorem assumes only U_i intersect V_i=0 and bounds the ordered double sum, with a sharp constant.\n\n[Batch record](../../batches/B058/README.md)"
+    },
+    {
       "id": "openai-math-166",
       "record_type": "family",
       "title": "Distance separators and interpolation through nonreduced points",
@@ -33393,6 +33966,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-166.md",
       "body": "# Distance separators and interpolation through nonreduced points\n\n## Source manuscript and claim\n\n[The higher-dimensional Erdős distinct-distances conjecture](../papers/P-000217.md), by OpenAI, September 23, 2026.\n\nThe source claims the higher-dimensional Erdos distinct-distances lower bound.\n\n## Extracted instruments\n\n- [MI-000396: Build exact defining equations from squared-distance separators](../instruments/MI-000396.md)\n- [MI-000397: Separate isolated singular points using a local Artin determinant](../instruments/MI-000397.md)\n\n## Dependencies and antecedents\n\nProducts of squared-distance factors, Bezout, regular sequences, Koszul complexes, local Artin quotients and coefficient functionals.\n\nClassical polynomial method and complete-intersection algebra; the source cites Chardin interpolation and standard Stacks Project regular-sequence facts. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete polynomial toolkit section, including separator, socle and isolated-point interpolation proofs. The later global incidence decomposition and distinct-distance theorem were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nReal point sets provide nonzero squared-distance factors, but the defining-equation conclusion concerns complex zeros too. General isolation allows nonreduced isolated points and other positive-dimensional zero components.\n\n[Batch record](../../batches/B036/README.md)"
+    },
+    {
+      "id": "openai-math-167",
+      "record_type": "family",
+      "title": "Distinct-pair cancellation and predictions from fresh tests",
+      "source_family": "167",
+      "source_collection": "openai/math",
+      "batch_id": "B058",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000335",
+        "P-000336"
+      ],
+      "instrument_ids": [
+        "MI-000566",
+        "MI-000567"
+      ],
+      "headline": "The sources claim a weak pinned planar distance theorem and a fixed power saving for planar unit distances.",
+      "central_instrument": "A deliberately off-diagonal coupling preserves the needed marginals and cancels singleton cells exactly. A random strict history prefix converts endpoint mutual information into bounded center-test prediction error.",
+      "novelty_assessment": "Finite-population corrections, KL chain rules and Pinsker are classical. The exact coupling and posterior/fresh-test interface are recorded as source implementations; no priority claim or geometric headline certification is made.",
+      "formalization_summary": "PinnedDistances states uniform decay of the supremal fraction of repeated distance fibers of size at least n^s for each s>0. Its target does not separately state the many-pins corollary. PlanarUnitDistances separately asserts constants C>0 and 1<=beta<4/3 bounding every finite planar set by C*n^beta unordered unit pairs. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.",
+      "statement_faithfulness": "The cell identity assumes a uniform subset with at least two elements. Its integrated conclusion needs the source additive-overlap identity. Prediction uses a conditional-independent wedge, each endpoint own posterior, natural-log KL and a fresh test independent of the retained prefix.",
+      "dependencies": "Sampling without replacement, signed measures, finite-population corrections, relative entropy, conditional expectation and Cauchy-Schwarz.",
+      "antecedents": "Classical sampling identities; Ahlswede wringing and the standard KL chain rule and Pinsker inequality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-167.md",
+      "body": "# Distinct-pair cancellation and predictions from fresh tests\n\n## Source manuscripts and claim\n\n- [The weak pinned planar distance theorem](../papers/P-000335.md): selected passages extracted.\n- [A power saving for planar unit distances](../papers/P-000336.md): selected passages extracted.\n\nThe sources claim a weak pinned planar distance theorem and a fixed power saving for planar unit distances.\n\n## Extracted instruments\n\n- [MI-000566: Cancel singleton tails with an exact distinct-pair coupling](../instruments/MI-000566.md)\n- [MI-000567: Predict bounded center tests from a short strict history prefix](../instruments/MI-000567.md)\n\n## Dependencies and antecedents\n\nSampling without replacement, signed measures, finite-population corrections, relative entropy, conditional expectation and Cauchy-Schwarz.\n\nClassical sampling identities; Ahlswede wringing and the standard KL chain rule and Pinsker inequality.\n\n## Review and formalization scope\n\nRead the complete variance lemma and its off-diagonal construction, and the complete arbitrary finite-law prediction device proof. The geometric hierarchy, its integrated overlap identity and the global distance arguments are not certified.\n\nPinnedDistances states uniform decay of the supremal fraction of repeated distance fibers of size at least n^s for each s>0. Its target does not separately state the many-pins corollary. PlanarUnitDistances separately asserts constants C>0 and 1<=beta<4/3 bounding every finite planar set by C*n^beta unordered unit pairs. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.\n\nThe cell identity assumes a uniform subset with at least two elements. Its integrated conclusion needs the source additive-overlap identity. Prediction uses a conditional-independent wedge, each endpoint own posterior, natural-log KL and a fresh test independent of the retained prefix.\n\n[Batch record](../../batches/B058/README.md)"
     },
     {
       "id": "openai-math-168",
@@ -33447,6 +34048,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-169.md",
       "body": "# Insertion coordinates and commuting graph alphabets\n\n## Source manuscript and claim\n\n[Elementary positivity of chromatic quasisymmetric functions](../papers/P-000248.md), by OpenAI, September 24, 2026.\n\nThe source claims elementary positivity of chromatic quasisymmetric functions for natural unit interval graphs.\n\n## Extracted instruments\n\n- [MI-000458: Encode admissible permutations by independent inversion digits](../instruments/MI-000458.md)\n- [MI-000459: Prove graph-alphabet commutation by switching odd path components](../instruments/MI-000459.md)\n\n## Dependencies and antecedents\n\nMonotone extensive endpoint functions, inversion counts, ordered bipartite path components and skew quantum-torus weights.\n\nShareshian-Wachs, Chromatic quasisymmetric functions, Lemma 4.4 and Theorem 4.5; noncommutative poset symmetric functions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete graph-alphabet section. Compared the two-color antecedent directly. The wall recursion, triangle construction and positivity witness were not audited.\n\nRead ElementaryPositivity.lean in full and the scope document. elementaryPositivityWitness contains sorry and asks for a permutation-indexed expansion over N[q] for every finite color alphabet. No Lean build.\n\nThe graph must be a natural unit interval graph, not an arbitrary graph. Commuting positive elementary generators do not imply positive monomial evaluations.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/169.md) · [Batch record](../../batches/B044/README.md)"
+    },
+    {
+      "id": "openai-math-170",
+      "record_type": "family",
+      "title": "Occupancy improvements and entropy under arbitrary tuple selection",
+      "source_family": "170",
+      "source_collection": "openai/math",
+      "batch_id": "B058",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000337",
+        "P-000338"
+      ],
+      "instrument_ids": [
+        "MI-000568",
+        "MI-000569"
+      ],
+      "headline": "The sources claim sharp logarithmic exponents for r(5,t) and for every fixed off-diagonal Ramsey parameter s>=6.",
+      "central_instrument": "Uniform independent-set occupancy gives a logarithmic gain for triangle-free graphs. An atom cap protects entropy of a selected subsequence against arbitrary adaptive selection and constant-probability restrictions.",
+      "novelty_assessment": "The occupancy method is classical and credited to Alon. The selected-tuple bound is a union-bound/min-entropy argument with a source-specific parameter balance. Neither is evidence for the full claimed Ramsey lower bound.",
+      "formalization_summary": "RamseyFive states eventual lower bounds t^4/log(t)^(3+epsilon), a constant upper bound with exponent three and convergence of the logarithmic exponent. SharpLogRamsey has the corresponding targets for each fixed s>=6, with a positive upper constant chosen independently of epsilon. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.",
+      "statement_faithfulness": "Occupancy permits any real degree bound D>=1. Selected tuples have deterministic length, only the two permitted orientations, and a bounded density ratio for the whole stream law; auxiliary randomness may depend arbitrarily on the stream.",
+      "dependencies": "Uniform independent sets, neighborhood conditioning, Jensen inequality, atom bounds, Shannon entropy and variational relative entropy.",
+      "antecedents": "Alon, Independence Numbers of Locally Sparse Graphs and a Ramsey Type Problem; classical maximum-atom entropy bounds and exponential variational bounds for KL.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-170.md",
+      "body": "# Occupancy improvements and entropy under arbitrary tuple selection\n\n## Source manuscripts and claim\n\n- [The sharp logarithmic exponent of r(5,t)](../papers/P-000337.md): selected passages extracted.\n- [Sharp logarithmic exponents for fixed off-diagonal Ramsey numbers](../papers/P-000338.md): selected passages extracted.\n\nThe sources claim sharp logarithmic exponents for r(5,t) and for every fixed off-diagonal Ramsey parameter s>=6.\n\n## Extracted instruments\n\n- [MI-000568: Gain a logarithm from uniform independent-set occupancy](../instruments/MI-000568.md)\n- [MI-000569: Protect entropy against an arbitrarily biased subsequence selector](../instruments/MI-000569.md)\n\n## Dependencies and antecedents\n\nUniform independent sets, neighborhood conditioning, Jensen inequality, atom bounds, Shannon entropy and variational relative entropy.\n\nAlon, Independence Numbers of Locally Sparse Graphs and a Ramsey Type Problem; classical maximum-atom entropy bounds and exponential variational bounds for KL.\n\n## Review and formalization scope\n\nRead the complete upper-bound section of the r(5,t) manuscript, selecting its occupancy lemma, and the full selected-tuple entropy and rare-event transfer proofs in the fixed-parameter companion. The geometric construction and recursive compression for lower bounds are not audited.\n\nRamseyFive states eventual lower bounds t^4/log(t)^(3+epsilon), a constant upper bound with exponent three and convergence of the logarithmic exponent. SharpLogRamsey has the corresponding targets for each fixed s>=6, with a positive upper constant chosen independently of epsilon. Every linked Comparator and the scope document were read in full. The headline Comparator proof bodies contain sorry; this does not describe the separate solution files. No solution or Lean project was built.\n\nOccupancy permits any real degree bound D>=1. Selected tuples have deterministic length, only the two permitted orientations, and a bounded density ratio for the whole stream law; auxiliary randomness may depend arbitrarily on the stream.\n\n[Batch record](../../batches/B058/README.md)"
     },
     {
       "id": "openai-math-171",

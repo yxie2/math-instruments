@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B058: 8 selected instruments from 4 families and 8 manuscripts. Affine moment and cover identities, triangular interpolation, paired-subspace rank budgets, fresh-test prediction and selection entropy. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B057: 8 selected instruments from 4 families and 8 manuscripts. Private lattice insertions, weighted Bass reductions, an explicit diagram obstruction, and Foulkes growth and shift mechanisms. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B056: 8 selected instruments from 4 families and 8 manuscripts. Eight instruments covering exact cocycle certificates, nonflat induction, coefficient-space Koszul filtrations, division-algebra bases, integral volume bounds, Sylow restriction, character recurrences and dominance chains. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
