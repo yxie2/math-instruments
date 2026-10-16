@@ -1,8 +1,8 @@
 # Completion of the remaining October-release families
 
-Snapshot through **B060**, at `d9f752f9aa4ee617bf05c12d733bc3864b76cb44`. This continuation begins after the completed nine-hour run and has the requested target of selected extraction coverage for all 372 pinned release families.
+Snapshot through **B061**, at `08b0b133b661922d954a667a736594caeb35fe77`. This continuation begins after the completed nine-hour run and has the requested target of selected extraction coverage for all 372 pinned release families.
 
-At this snapshot: **586 instruments, 355 manuscript records, 267 families and 14 recurring patterns**. **105 families remain pending.** The [live coverage table](../../../tables/coverage.md) may include later batches.
+At this snapshot: **596 instruments, 365 manuscript records, 271 families and 14 recurring patterns**. **101 families remain pending.** The [live coverage table](../../../tables/coverage.md) may include later batches.
 
 | Batch | Families added | Instruments added | Manuscripts extracted | Publication |
 | --- | --- | --- | --- | --- |
@@ -20,6 +20,7 @@ At this snapshot: **586 instruments, 355 manuscript records, 267 families and 14
 | [B058](../../../batches/B058/README.md) | 4 | 8 | 8 | [PR](https://github.com/yxie2/math-instruments/pull/60) |
 | [B059](../../../batches/B059/README.md) | 4 | 8 | 8 | [PR](https://github.com/yxie2/math-instruments/pull/61) |
 | [B060](../../../batches/B060/README.md) | 4 | 9 | 9 | [PR](https://github.com/yxie2/math-instruments/pull/62) |
+| [B061](../../../batches/B061/README.md) | 4 | 10 | 10 | [PR](https://github.com/yxie2/math-instruments/pull/63) |
 
 The [machine-readable checkpoint](checkpoint.json) records merged batches and the next identifiers. The [earlier timed-run checkpoint](../2026-10-16/README.md) remains a separate historical record.
 

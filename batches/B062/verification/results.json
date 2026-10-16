@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 0.639,
+  "checks": {
+    "absorption": {
+      "block_intertwining_identities": 722,
+      "max_residual": 1.93335067591649e-15
+    },
+    "germs": {
+      "free_word_power_tests": 2420,
+      "finite_non_icc_control": "S3 inner automorphisms collapse as germs",
+      "scope": "Bounded word checks, not a test of all finite-index subgroups."
+    },
+    "intertwiners": {
+      "models": 45,
+      "max_intertwining_error": 3.9286739663130725e-15,
+      "scope": "Explicit intertwiner and polar step only; no cb norm computed."
+    },
+    "clock_shift": {
+      "path_points": 56,
+      "max_index_error": 2.886579864025407e-15
+    },
+    "free_prefix": {
+      "vectors": 48,
+      "scope": "Full images of supported vectors; no truncation at the output boundary."
+    },
+    "gns_products": {
+      "dimensions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "max_gram_error": 2.54833454913442e-15
+    },
+    "moments": {
+      "nontracial_models": 12,
+      "phase_realizations": 768,
+      "max_fourth_moment_error": 5.919793776263569e-14,
+      "active_clippings": 2300,
+      "rademacher_extra_terms_detected": true
+    },
+    "pinching": {
+      "models": 36,
+      "max_state_preservation_error": 0.0,
+      "noncentralizer_control": true
+    },
+    "multipliers": {
+      "corners": [
+        3,
+        5,
+        9,
+        17,
+        33
+      ],
+      "state_null_norms": [
+        0.3535533905932738,
+        0.1767766952966369,
+        0.04419417382415922,
+        0.0027621358640099515,
+        1.0789593218788873e-05
+      ],
+      "bad_product_norms": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "cutoff_error_norms": [
+        0.3535533905932738,
+        0.1767766952966369,
+        0.04419417382415922,
+        0.0027621358640099515,
+        1.0789593218788873e-05
+      ],
+      "scope": "Finite compressions of a fixed diagonal state; restricted to explicit models."
+    }
+  },
+  "scope": "Selected finite mechanisms only; no arithmetic, universal stability, bicentralizer, modular recovery or paving headline certified."
+}
