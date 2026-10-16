@@ -1,0 +1,320 @@
+{
+  "batch_id": "B007",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T06:12:02.760525+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Jacobsthal.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Jacobsthal.lean",
+      "sha256": "a2fe296ccf4e70242e6ce3db976d236525f7ca823e4a9a5c6fede1335ca0031e",
+      "bytes": 630
+    },
+    {
+      "path": "lean/ComparatorChallenges/JacobsthalImproved.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/JacobsthalImproved.lean",
+      "sha256": "b1ca82177690ae1d9db59652ca64f126678f5fbe7c08b7a82243c07143f1e80a",
+      "bytes": 653
+    },
+    {
+      "path": "lean/ComparatorChallenges/JointDickman.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/JointDickman.lean",
+      "sha256": "b45c341c7339e3cf13b6c62ffea0c815739b5b3a27043bfa0fca05f8b3909141",
+      "bytes": 2093
+    },
+    {
+      "path": "lean/ComparatorChallenges/OstmannComplete.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/OstmannComplete.lean",
+      "sha256": "3dad56c197ce1e3c68b4127f50864b4f6e53081469ba6f5ca4b028ef7fff05b5",
+      "bytes": 1088
+    },
+    {
+      "path": "lean/ComparatorChallenges/OstmannPrimes.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/OstmannPrimes.lean",
+      "sha256": "9599ed18eb09a00cc0bd83d56706b63cc3d9193b32a4dd262a155a29d5d7140d",
+      "bytes": 241
+    },
+    {
+      "path": "lean/ComparatorChallenges/PowerFreeValues.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PowerFreeValues.lean",
+      "sha256": "5e42de8cf6611fb73cab28849edb8b473ab16a047c1fc29ec042463e87a1f2f1",
+      "bytes": 1380
+    },
+    {
+      "path": "lean/docs/012.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/012.md",
+      "sha256": "8d35d76e45f9ce263f96f9b8f5560330ca73f3eba93a08d7c6060dfed1758bcb",
+      "bytes": 933
+    },
+    {
+      "path": "lean/docs/013.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/013.md",
+      "sha256": "989f16a964977adea6adc59698fa9db64b32bb1f6ace870314370cd16847f5a1",
+      "bytes": 1071
+    },
+    {
+      "path": "lean/docs/020.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/020.md",
+      "sha256": "c8a12f6f4c351e1c5b9ab413acc7bb20afdbf3ba5ceaa354e2edc47dc6ac3bc7",
+      "bytes": 1048
+    },
+    {
+      "path": "lean/docs/021.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/021.md",
+      "sha256": "506a0d11753aa56926eb456406fcf975c17c0e604c3248c2500485825860f7a6",
+      "bytes": 1051
+    },
+    {
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/README.md",
+      "sha256": "b8c180c1fe87fd7b91863a8514027889535e3c4dd20be194d071f9afd7aabb68",
+      "bytes": 577
+    },
+    {
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754",
+      "bytes": 38502
+    },
+    {
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+      "sha256": "973d3a4d93493679f05a73fbabe96e3a22110faba0471d46d2224ae3d870d772",
+      "bytes": 27271
+    },
+    {
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/README.md",
+      "sha256": "f27adb1462c7591096d888a66c44c2b931663487e31cac8be1fe531322d67fa1",
+      "bytes": 704
+    },
+    {
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+      "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1",
+      "bytes": 23166
+    },
+    {
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860",
+      "bytes": 11511
+    },
+    {
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/README.md",
+      "sha256": "fc85be09ee27f4a63b1ac7f75bbddc7feacb3a62994c2315ba0e64b348a6a01d",
+      "bytes": 590
+    },
+    {
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5",
+      "bytes": 16898
+    },
+    {
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/README.md",
+      "sha256": "52790d63fe17e9f1d2ad235b9e3b3ab4c97c2acb24add1cff38d7e599c60b7dc",
+      "bytes": 580
+    },
+    {
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+      "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00",
+      "bytes": 30242
+    },
+    {
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+      "sha256": "978728b1fd71a523f01481731c6a474390b1b385b27869416de9999718cdda82",
+      "bytes": 15828
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000154",
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "label": "lem:sampling-skeleton",
+      "line": 166,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L166",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+    },
+    {
+      "instrument_id": "MI-000154",
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "label": "eq:46",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L97",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+    },
+    {
+      "instrument_id": "MI-000155",
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "label": "prop:sampling-comparison",
+      "line": 50,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L50",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+    },
+    {
+      "instrument_id": "MI-000155",
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "label": "lem:sampling-good",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L90",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+    },
+    {
+      "instrument_id": "MI-000155",
+      "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+      "label": "lem:sampling-conditional-mean",
+      "line": 224,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L224",
+      "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+    },
+    {
+      "instrument_id": "MI-000156",
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+      "label": "eq:tree-affine-coefficient",
+      "line": 323,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L323",
+      "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+    },
+    {
+      "instrument_id": "MI-000156",
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+      "label": "eq:tree-affine-coefficient-norm",
+      "line": 352,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L352",
+      "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+    },
+    {
+      "instrument_id": "MI-000156",
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+      "label": "eq:src42",
+      "line": 290,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L290",
+      "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+    },
+    {
+      "instrument_id": "MI-000157",
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+      "label": "eq:src60",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L17",
+      "sha256": "978728b1fd71a523f01481731c6a474390b1b385b27869416de9999718cdda82"
+    },
+    {
+      "instrument_id": "MI-000157",
+      "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+      "label": "eq:conclusion-bad-fraction",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L63",
+      "sha256": "978728b1fd71a523f01481731c6a474390b1b385b27869416de9999718cdda82"
+    },
+    {
+      "instrument_id": "MI-000158",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+      "label": "eq:affine-evaluation-kernel",
+      "line": 267,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L267",
+      "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+    },
+    {
+      "instrument_id": "MI-000158",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+      "label": "eq:affine-rank-record",
+      "line": 291,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L291",
+      "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+    },
+    {
+      "instrument_id": "MI-000158",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+      "label": "lem:affine-deletion",
+      "line": 298,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L298",
+      "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+    },
+    {
+      "instrument_id": "MI-000159",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "label": "prop:weighted-hilbert",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L36",
+      "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+    },
+    {
+      "instrument_id": "MI-000159",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "label": "eq:affine-extracted-cut",
+      "line": 73,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L73",
+      "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+    },
+    {
+      "instrument_id": "MI-000159",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "label": "eq:weighted-hilbert-series",
+      "line": 174,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L174",
+      "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+    },
+    {
+      "instrument_id": "MI-000159",
+      "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+      "label": "eq:field-degree-gain",
+      "line": 227,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L227",
+      "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+    },
+    {
+      "instrument_id": "MI-000160",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "label": "lem:derivative-weights",
+      "line": 261,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L261",
+      "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+    },
+    {
+      "instrument_id": "MI-000160",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "label": "eq:tilted-kernel",
+      "line": 345,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L345",
+      "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+    },
+    {
+      "instrument_id": "MI-000160",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "label": "eq:path-weight",
+      "line": 368,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L368",
+      "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+    },
+    {
+      "instrument_id": "MI-000160",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+      "label": "eq:functions-arrival-cutoff",
+      "line": 380,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L380",
+      "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+    },
+    {
+      "instrument_id": "MI-000161",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+      "label": "lem:random-variance",
+      "line": 183,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L183",
+      "sha256": "973d3a4d93493679f05a73fbabe96e3a22110faba0471d46d2224ae3d870d772"
+    },
+    {
+      "instrument_id": "MI-000161",
+      "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+      "label": "eq:variance-pair-factor",
+      "line": 220,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L220",
+      "sha256": "973d3a4d93493679f05a73fbabe96e3a22110faba0471d46d2224ae3d870d772"
+    }
+  ]
+}

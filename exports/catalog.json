@@ -5106,6 +5106,402 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000153.md",
       "body": "# Cameron-Martin comparison transfers one local test kernel across domains\n\n[Family 233](../families/openai-math-233.md) · [Source manuscript](../papers/P-000098.md) · [Batch B006](../../batches/B006/README.md)\n\n## Mathematical content\n\nFix regular buffers $K\\Subset B\\Subset P$ and a sequence of bounded tests of the cables in K. In a zero-boundary reference GFF on P, select a joint subsequence and use the reverse-buffer lemma to write the conditional test mean as $k(\\Phi|_B)$, with $0\\le k\\le1$.\n\nThe same selected k governs mixed expectations in admissible domains D containing the closure of P, provided their approximations contain the identical subdivided reference cable domain, with unchanged edges and resistances. Prescribed harmonic means must converge both in the full-field extension topology and smoothly on the buffers in the source’s finite-difference sense. Along the selected subsequence,\n\n$$\\mathbb E[T_n v(\\widehat\\Phi_n)]\\longrightarrow\\mathbb E[k(\\Phi|_B)v(\\Phi)]$$\n\nfor bounded continuous full-field v. No evaluation of the discontinuous k on a discrete field is required.\n\nThe transfer uses Gaussian shifts. With $\\|u\\|_\\nabla^2=(2\\pi)^{-1}\\int|\\nabla u|^2$, their likelihoods satisfy\n\n$$L_u=\\exp\\{X_u-\\|u\\|_\\nabla^2/2\\},\\quad\\mathbb EL_u^r=e^{r(r-1)\\|u\\|_\\nabla^2/2},\\quad\\|L_u-L_v\\|_1\\le\\min(2,\\|u-v\\|_\\nabla).$$\n\nThe cable likelihood coordinate converges in L2 to the full-field pairing with $-\\Delta u/(2\\pi)$. This permits multiplication by arbitrary bounded tests. Domain Markov decomposition supplies a harmonic shift; cutoff, smooth finite nets and interior estimates transfer the reference limit. The reverse-buffer argument then restores conditioning on the full field.\n\nOne subsequence works for countably many prescribed tests. A fixed random parameter may select the domain and mean if the conditional parent law is the corresponding GFF and the approximation hypotheses hold almost surely. The result identifies the conditional kernel of the auxiliary joint limit and equality in law of its field marginal with the parent, not equality of their realizations. The same cutoff method yields total-variation convergence of GFF restrictions on a fixed interior buffer under regular inner exhaustion.\n\n## Role in the source argument\n\nAllows a local test calibrated in one deterministic reference domain to be used after a separate random exploration, with a common kernel and controlled conditioning.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:local-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L206)\n- [eq:kernel-cm-coordinate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L295)\n- [eq:kernel-cm-continuity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L316)\n- [lem:kernel-exhaustion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/build/sections/08-local-kernel.tex#L424)\n\n## Antecedents and comparison\n\nCameron-Martin likelihoods and Pinsker are classical. [Aru, Lupu and Sepulveda](https://arxiv.org/abs/1805.09204v1) provide the metric-graph approximation context. The application addresses the current-cluster extension discussed by [Alcalde Lopez, Heeney and Lis](https://arxiv.org/abs/2602.05886v1). The extracted package is not a new Gaussian change-of-measure theorem.\n\n## Checks and limitations\n\nChecked the three-covariance L2 identification, likelihood moment formula, L1 constant, cutoff argument and the fixed-parameter integration step. Finite Gaussian quadrature tests likelihood normalization and the shift-distance bound.\n\nThe common local graph, buffer separation, convergence of harmonic means and conditional GFF premise must all be retained. The subsequence is fixed before realizing a random domain. This does not establish the later forcing or no-crossing claims.\n\n## Possible applications\n\nComparing local crossing or sign tests across deterministic and explored domains without asserting continuity of those events as functions of a distribution-valued field.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000154",
+      "record_type": "instrument",
+      "title": "A small column sample approximates a cut using total squared mass",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-012"
+      ],
+      "source_paper_ids": [
+        "P-000099"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+          "label": "lem:sampling-skeleton",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L166",
+          "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+        },
+        {
+          "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+          "label": "eq:46",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L97",
+          "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "established-cut-sampling-with-source-specific-moment-scaling",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000154.md",
+      "body": "# A small column sample approximates a cut using total squared mass\n\n[Family 012](../families/openai-math-012.md) · [Source manuscript](../papers/P-000099.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nLet E be a real symmetric n-by-n matrix, let $Q=n^{-1}\\sum_{i,j}E_{ij}^2$, and assume $\\max_i\\sum_j|E_{ij}|\\le d$. Use the source's normalization $\\|E\\|_\\square=n^{-1}\\max_{\\epsilon,\\delta\\in\\{-1,1\\}^n}|\\epsilon^TE\\delta|$. For every 1<=m<=n there are m columns J and signs sigma on J such that, writing R for its complement and\n\n$$g_i=\\operatorname{sgn}\\!\\left(\\sum_{j\\in J}E_{ij}\\sigma_j\\right),\\qquad \\operatorname{sgn}(0)=1,$$\n\none has the explicit abstraction of the source's bound\n\n$$\\|E\\|_\\square\\le\\frac1n\\sum_{k\\in R}\\left|\\sum_{i\\in R}E_{ik}g_i\\right|+2\\sqrt{nQ/m}+2md/n.$$\n\nChoose optimizing column signs delta and row sums $r_i=\\sum_kE_{ik}\\delta_k$. A uniform m-subset gives the unbiased estimator $\\widehat r_i=(n/m)\\sum_{j\\in J}E_{ij}\\delta_j$ with variance at most $(n/m)\\sum_kE_{ik}^2$. The inequality $|r|-r\\operatorname{sgn}(\\widehat r)\\le2|r-\\widehat r|$ and Cauchy-Schwarz yield the first error for some sample. Removing all ordered pairs incident to J costs at most 2md, using both row and column degree bounds; symmetry supplies the latter.\n\nThe source takes $n\\asymp B^{0.32}$, $m=\\lfloor nB^{-0.18}\\rfloor$, $Q\\le B^{-0.20}$ and $d=O(B^{0.07})$. The two normalized losses are $O(B^{-0.01})$ and $O(B^{-0.11})$. No pointwise bound on entries is used.\n\n## Role in the source argument\n\nReduces a cut selected after observing the full random matrix to a finite family indexed by sampled columns and signs.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:sampling-skeleton](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L166)\n- [eq:46](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L97)\n\n## Antecedents and comparison\n\nSmall-sample optimization is established in [Alon et al.](https://www.cs.yale.edu/homes/kannan/Papers/maxcut.pdf) and [Borgs et al.](https://arxiv.org/abs/math/0702004). The extracted form keeps the integrated squared-mass and degree costs explicit for the source scaling; it is not a new general sampling principle.\n\n## Checks and limitations\n\nRead the sampling-without-replacement variance argument, sign loss and deletion cost. Exhaustive small matrices and subsets check the explicit bound, including ties, sparse matrices and a large isolated entry.\n\nThe good sample is existential and may depend on the optimizing signs. A numerical search for it does not yield an efficient general cut optimizer. The two errors must both vanish in a proposed asymptotic application.\n\n## Possible applications\n\nApproximating adaptive bilinear tests of weighted random kernels when a uniform entry bound is unavailable.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000155",
+      "record_type": "instrument",
+      "title": "A common degree event transfers single-site tests to adaptive cut norms",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-012"
+      ],
+      "source_paper_ids": [
+        "P-000099"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+          "label": "prop:sampling-comparison",
+          "line": 50,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L50",
+          "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+        },
+        {
+          "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+          "label": "lem:sampling-good",
+          "line": 90,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L90",
+          "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+        },
+        {
+          "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex",
+          "label": "lem:sampling-conditional-mean",
+          "line": 224,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L224",
+          "sha256": "19746eae98f0077e1ef7b66555337f7de74151b2271a929f17291204e04d3ce5"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "candidate-unbounded-kernel-adaptive-sampling-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000155.md",
+      "body": "# A common degree event transfers single-site tests to adaptive cut norms\n\n[Family 012](../families/openai-math-012.md) · [Source manuscript](../papers/P-000099.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nLet $n\\asymp B^{0.32}$ independent finite site variables define symmetric zero-diagonal kernels $E_{ij}(S_i,S_j)$ and a nonnegative symmetric envelope H>=|E|. Assume, uniformly in i and every type of S_i,\n\n$$\\mathbb E[\\sum_jH_{ij}\\mid S_i]\\le C_0,\\qquad \\sum_j\\mathbb EH_{ij}^2\\le C_1B^{-0.21}=:q_B.$$\n\nAssume also that for all fixed single-site functions |g_i|,|h_i|<=1,\n\n$$\\left|\\frac1n\\sum_{i,j}\\mathbb E[E_{ij}g_i(S_i)h_j(S_j)]\\right|\\le E_0+o(1),$$\n\nwith the error uniform over the tests. Then the source's sampling proof gives $\\mathbb E\\|E(S)\\|_\\square\\le E_0+o(1)$, allowing the maximizing signs to depend on every site.\n\nConditional independence within a row gives a common degree event with maximum envelope degree $d_B=KB^{0.07}$, failure probability $O(B^{-0.03})$, and $\\mathbb E(n^{-1}\\sum|E_{ij}|)^2\\le C_0^2+q_B$. Markov adds the squared-mass event $n^{-1}\\sum E_{ij}^2\\le B^{-0.20}$ with failure $O(B^{-0.01})$.\n\nFor each fixed m-column set and sign assignment, m=floor(n B^-0.18), condition only on those site types. The remaining variables stay independent and the sampled row signs become fixed single-site functions. The residual absolute column sum Z has conditional mean at most $E_0+o(1)+\\sqrt{q_B}$. Between any two configurations in the induced degree event, Z is $4d_B/n$-Lipschitz in Hamming distance. This is a bound between arbitrary good configurations, not merely adjacent ones.\n\nClamp Z at a fixed level and extend from the good set by the infimum Lipschitz formula. Its mean changes by o(1), and bounded differences gives a tail at most $\\exp(-a^2n/(8d_B^2))$. The number of column/sign assignments has logarithm $O(B^{0.14}\\log B)$, smaller than the concentration exponent of order B^0.18. Union-bound only these exponential tails. The full degree event implies every induced degree event, so its polynomial failure probability is counted once. The bounded second moment of total mass removes the final exceptional event in expectation.\n\n## Role in the source argument\n\nAllows arithmetic labels to depend on the complete divisibility pattern while still using a comparison initially proved only against separate endpoint functions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:sampling-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L50)\n- [lem:sampling-good](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L90)\n- [lem:sampling-conditional-mean](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/sections/sampling.tex#L224)\n\n## Antecedents and comparison\n\nThe source combines established [cut sampling](https://arxiv.org/abs/math/0702004), McShane extension and [bounded differences](https://doi.org/10.1017/CBO9781107359949.008). The specific contribution selected here is its control of an unbounded kernel using integrated second moments and a single shared exceptional event. Targeted searches did not establish historical priority.\n\n## Checks and limitations\n\nRead the conditional-mean, global Hamming-Lipschitz and uniform-integrability arguments. Finite product-space calculations check the conditional variance bound and the clamped extension. The numerical checks do not prove the asymptotic transfer or the arithmetic inputs.\n\nAn unconditional mean degree bound cannot replace the every-type conditional bound used here. Conditioning on the optimizing assignment itself would destroy the stated independence. The source proves bounds uniform for each fixed position parameter, without requiring one good event for all positions.\n\n## Possible applications\n\nTransferring separable kernel comparisons to observables that adapt to a whole sampled graph or arithmetic configuration.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000156",
+      "record_type": "instrument",
+      "title": "A weighted affine family has small norm on mean-zero functions",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-013"
+      ],
+      "source_paper_ids": [
+        "P-000100"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+          "label": "eq:tree-affine-coefficient",
+          "line": 323,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L323",
+          "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+        },
+        {
+          "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+          "label": "eq:tree-affine-coefficient-norm",
+          "line": 352,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L352",
+          "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+        },
+        {
+          "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex",
+          "label": "eq:src42",
+          "line": 290,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L290",
+          "sha256": "290c22fc61a7787fdf8d7074e5df48c0c98a65531f7399caa0a0fe7d626b9d00"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "candidate-explicit-weighted-affine-mixing-calculation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000156.md",
+      "body": "# A weighted affine family has small norm on mean-zero functions\n\n[Family 013](../families/openai-math-013.md) · [Source manuscript](../papers/P-000100.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nLet q be an odd prime, use probability L2 on F_q, and let G(0)=0 with ||G||_2<=1. Define\n\n$$T_GF(t)=q^{-1}\\sum_{r\\ne0}\\overline{G(r)}F(r-r^2t).$$\n\nOn the mean-zero subspace,\n\n$$\\|T_G\\|_{2\\to2}^2\\le\\sqrt3\\,q^{-1/2},\\qquad \\|T_GG\\|_2^2\\le|\\mathbb EG|^4+\\sqrt3\\,q^{-1/2}.$$\n\nEach $U_rF(t)=F(r-r^2t)$ is unitary. In $T_G^*T_G$, $U_r^*U_s$ acts by $t\\mapsto(s/r)^2t+s-s^2/r$. Every nonidentity affine map has at most two ordered representations: its slope determines s/r up to two possibilities, and its translation then determines r. The identity coefficient is at most 1/q. Thus its affine coefficients c(a,b) satisfy $\\sum_{a,b}|c(a,b)|^2\\le3/q^2$. In the nonzero additive Fourier basis the squared Hilbert-Schmidt norm is at most $q\\sum|c|^2$, proving the estimate. Constants and mean-zero functions are preserved separately, and $T_G1=\\overline{\\mathbb EG}$.\n\nThe source applies this to bottom-pair Mellin coefficients. If g(0)=0, ||g||_2<=1 and $\\epsilon=\\max_{\\chi,a}|\\mathbb E_xg(x)\\chi(x)e_q(ax)|$, set\n\n$$P_\\chi(d)=\\frac q{q-1}\\mathbb E_x(g\\overline\\chi)(x)\\overline{(g\\overline\\chi)(x-d)}.$$\n\nThen $\\sum_\\chi|\\widehat{P_\\chi\\chi\\eta}(a)|^2\\le\\frac q{q-1}(\\epsilon^4+\\sqrt3q^{-1/2})$ for every eta,a. Multiplicative characters, including the principal character, vanish at zero. The autocorrelation value P_chi(0) is retained before the multiplicative twist sets it to zero. Inversion and the parametrization $1/x=r-tr^2$ reduce this assertion to the operator bound.\n\n## Role in the source argument\n\nControls mixed Fourier-Mellin terms in the source’s quartet analysis without a pointwise bound on g.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:tree-affine-coefficient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L323)\n- [eq:tree-affine-coefficient-norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L352)\n- [eq:src42](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/06-tree.tex#L290)\n\n## Antecedents and comparison\n\nThe source explicitly places the estimate beside [Gowers](https://arxiv.org/abs/0710.3877v1) and [Gill](https://doi.org/10.1017/fms.2016.8). The representation-count calculation is a concrete weighted instance of established mixing principles; no claim of a new general quasirandomness theorem is made.\n\n## Checks and limitations\n\nChecked the affine composition, the exceptional identity fiber and Fourier normalization. Finite-field matrix computations test the restricted operator norm, the affine fiber multiplicities and the Mellin inequality, including functions concentrated at one nonzero point.\n\nThis lemma alone does not prove the tree comparison or the arithmetic prime-sumset conclusion. The q^-1/2 bound is for the squared operator norm. Dropping the zero convention for the principal character changes the Mellin formula.\n\n## Possible applications\n\nWeighted finite-field incidence and correlation estimates where the function is controlled in L2 but can have large pointwise values.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000157",
+      "record_type": "instrument",
+      "title": "Overlap components give an entropy bound for bad block arrangements",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-013"
+      ],
+      "source_paper_ids": [
+        "P-000100"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+          "label": "eq:src60",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L17",
+          "sha256": "978728b1fd71a523f01481731c6a474390b1b385b27869416de9999718cdda82"
+        },
+        {
+          "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex",
+          "label": "eq:conclusion-bad-fraction",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L63",
+          "sha256": "978728b1fd71a523f01481731c6a474390b1b385b27869416de9999718cdda82"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "elementary-overlap-counting-in-a-source-specific-symmetrization",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000157.md",
+      "body": "# Overlap components give an entropy bound for bad block arrangements\n\n[Family 013](../families/openai-math-013.md) · [Source manuscript](../papers/P-000100.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nFix a partition of rm labeled variables into r labeled blocks of m slots, and compare it with a permutation into a second such set of slots. Join a first block to a second block for each shared variable, retaining parallel edges. Every vertex has degree m. Consequently each connected component contains the same number a_i of blocks on either side, and $\\sum_i a_i=r$.\n\nFor fixed paired component partitions, at most $\\prod_i(a_im)!$ permutations respect them. Let $A_r=\\sum_{t=1}^r S(r,t)^2t!$, an upper bound on the number of paired partitions, where S denotes a Stirling number of the second kind. If the overlap graph has more than (1-alpha)r components, 0<=alpha<=1, then $\\sum_i(a_i-1)<\\alpha r$ and\n\n$$N_{\\rm bad}\\le A_r(m!)^r\\exp\\{\\alpha rm(\\log r+1)\\}.$$\n\nIndeed, $(am)!\\le(m!)^a a^{am}$ and $a\\log a\\le(a-1)(\\log r+1)$ for 1<=a<=r. Therefore\n\n$$\\frac{N_{\\rm bad}}{(rm)!}\\le A_r\\exp\\{[-(1-\\alpha)\\log r+1+\\alpha]rm\\}.$$\n\nThis explicit bound is an abstraction of the source's alpha=1/4 estimate. There r=2^l, l is fixed while the number m of bulk variables per leaf grows, and additional nonbulk arrangements contribute a depth-dependent constant. The complementary pairs are handled by a separate finite-field correlation estimate.\n\n## Role in the source argument\n\nShows that the arrangements not covered by the source’s low-component correlation estimate have sufficiently small total proportion for symmetrization.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:src60](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L17)\n- [eq:conclusion-bad-fraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/sections/09-conclusion.tex#L63)\n\n## Antecedents and comparison\n\nThe proof uses elementary regular bipartite multigraph counting and multinomial bounds. It is an extracted combinatorial component of the source, not a claimed new counting theorem. The wider [inverse-sieve context](https://arxiv.org/abs/1311.6176v1) is separate from this finite estimate.\n\n## Checks and limitations\n\nRead the full component-count proof. Exhaustive permutations for small block systems verify the component balance, exact bad counts and displayed upper bound; integer partitions test the factorial inequalities.\n\nA_r depends strongly on r. The assertion does not give a useful small fraction for every small r,m, and it is not uniform when tree depth grows with the arithmetic scale. A small exceptional fraction must still be paired with a bound on individual exceptional contributions.\n\n## Possible applications\n\nSymmetrizing block-structured moments or diagram expansions when correlation depends on the number of connected overlap components.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000158",
+      "record_type": "instrument",
+      "title": "A monotone rank record controls bad primes chosen adaptively",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-020"
+      ],
+      "source_paper_ids": [
+        "P-000101"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+          "label": "eq:affine-evaluation-kernel",
+          "line": 267,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L267",
+          "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+        },
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+          "label": "eq:affine-rank-record",
+          "line": 291,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L291",
+          "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+        },
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex",
+          "label": "lem:affine-deletion",
+          "line": 298,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L298",
+          "sha256": "a91cab21740df45145457d8f2da7a365ad33a91b34f0e0bcc75bb228ffae3ae1"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "candidate-adaptive-prime-deletion-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000158.md",
+      "body": "# A monotone rank record controls bad primes chosen adaptively\n\n[Family 020](../families/openai-math-020.md) · [Source manuscript](../papers/P-000101.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nThe source's deletion argument has a finite probabilistic core. A subset A of a pool of N items determines an integer record R(A) in [0,R_max], nonincreasing when items are added, and adaptive data D(A). Assume that for nested sets differing by one item, equal records imply equal data. Each fixed data value marks at most b pool items. Choose t uniformly from ell,...,ell+T-1 (with ell+T-1<=N), then a uniform t-subset A. The expected fraction of its items marked by D(A) is at most\n\n$$R_{\\max}/T+\\frac b{N-\\ell-T+2}.$$\n\nDelete a uniform item q from A. The remainder is a uniform (t-1)-subset; conditional on it, q is uniform in its complement. If F(t)=E R(A) at size t, the probability that deletion changes the record is at most F(t-1)-F(t). Averaging consecutive sizes telescopes to R_max/T. Without conditioning on record stability, the probability q is marked by the deleted data is at most b/(N-t+1). If the record is stable, the data are identical, so a mark for the full data must come from one of these two events.\n\nIn the source, each path retains the entire space of bounded-degree polynomials vanishing on a residue class. Adding a prime shrinks the point set and enlarges its vanishing kernel. Until the first changed codimension, nested equal-dimensional kernels coincide, so deterministic subsequent patches coincide. Mixed-radix encoding of their codimensions gives a bounded monotone integer R. A single selected vanishing polynomial would not provide this stability.\n\nThe data are nonzero patch minors of size X^O(1). A pool prime is at least X^zeta, so their product has only O(1/zeta) such prime divisors. As the pool grows and the consecutive block sizes remain fixed, the bound becomes B0/T+o(1), uniformly in the point and the other fixed blocks. Paths are defined through all stages, even when an intended dimension drop fails.\n\n## Role in the source argument\n\nPrevents circularity when the variety and its bad reduction primes depend on the same auxiliary primes used to count points.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:affine-evaluation-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L267)\n- [eq:affine-rank-record](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L291)\n- [lem:affine-deletion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/03-affine-counting.tex#L298)\n\n## Antecedents and comparison\n\nGlobal determinant methods are developed by [Salberger](https://arxiv.org/abs/math/0508326v3) and [Xiao](https://arxiv.org/abs/1505.05587v2). The selected mechanism is the source’s full-kernel stability plus randomized deletion; the general telescoping argument is elementary. Targeted searches did not establish a priority claim.\n\n## Checks and limitations\n\nRead the rank monotonicity, equality-of-kernels implication and conditioning argument. Exact subset enumeration checks the finite deletion bound. A negative control with constant records but changing data shows why stability is necessary.\n\nPolynomial height and nonzero minors are essential for a uniform bounded number of bad large primes. Randomizing over consecutive subset sizes is part of the estimate. The lemma does not itself prove smooth patches, dimension decrease or the final point count.\n\n## Possible applications\n\nAdaptive algebraic counting arguments in which auxiliary primes change the equations whose exceptional reductions must be controlled.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000159",
+      "record_type": "instrument",
+      "title": "Selected coordinate pairs give a uniform weighted Hilbert coefficient",
+      "forms": [
+        "identity",
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-020"
+      ],
+      "source_paper_ids": [
+        "P-000101"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+          "label": "prop:weighted-hilbert",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L36",
+          "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+        },
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+          "label": "eq:affine-extracted-cut",
+          "line": 73,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L73",
+          "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+        },
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+          "label": "eq:weighted-hilbert-series",
+          "line": 174,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L174",
+          "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+        },
+        {
+          "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex",
+          "label": "eq:field-degree-gain",
+          "line": 227,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L227",
+          "sha256": "2d452f25d46bb07f02e2b9ac6427e8fc59dc77ddf6e51e68a1a4f9891c35f860"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "candidate-paired-coordinate-weighted-hilbert-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000159.md",
+      "body": "# Selected coordinate pairs give a uniform weighted Hilbert coefficient\n\n[Family 020](../families/openai-math-020.md) · [Source manuscript](../papers/P-000101.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nLet Y be an irreducible h-dimensional subvariety of $a_i^kb_i=n-\\theta_i$ with distinct theta_i, 2<=h<=d, a nonempty open where every a_i is nonzero, and n nonconstant. Choose h-1 of the a_i algebraically independent over C(n), then one further distinct index. The selected a_i and n satisfy one irreducible equation $F_1(a,n)=\\sum_I a^If_I(n)$, with no a_i dividing F1. Let the pair image retain these h pairs (a_i,b_i). Give a_i weight U>0 and b_i weight V>0, fixed rational numbers.\n\nPut $\\nu_{i,I}=\\operatorname{ord}_{n-\\theta_i}f_I$, $e_i=\\min_I(I_i+k\\nu_{i,I})$, and\n\n$$D=\\max_I\\{U|I|+(kU+V)\\deg f_I\\}-U\\sum_i e_i.$$\n\nThen D>0 and the source obtains\n\n$$H_{\\rm pair}(T)=\\frac{(kU+V)^{h-1}D}{U^hV^h}\\frac{T^h}{h!}+O(T^{h-1}+1).$$\n\nTo see the algebraic mechanism, factor $f_I(n)=\\prod_i(n-\\theta_i)^{\\nu_{i,I}}g_I(n)$. Extract the coordinate factors to get the polynomial\n\n$$C_1=\\sum_I a^{I+k\\nu_I-e}b^{\\nu_I}g_I(a_1^kb_1+\\theta_1).$$\n\nTogether with the h-1 equations equating $a_i^kb_i+\\theta_i$, it describes the pair image. At an affine boundary a_i=0, no other a_j can vanish, and the surviving distinct Laurent monomials show that C1 cuts the boundary dimension down. After weighted homogenization, the all-nonzero-a part at infinity is cut by a nonzero leading form; the other part lies in coordinate h-planes. These checks exclude top-dimensional boundary components and justify the complete-intersection Hilbert series.\n\nWith integer weights A=L U, B=L V, Q=kA+B, E=L D, that series is\n\n$$\\frac{(1-z^Q)^{h-1}(1-z^E)}{(1-z)(1-z^A)^h(1-z^B)^h}.$$\n\nThe pole at 1 has order h+1; every other root-of-unity pole has order at most h, so no periodic term changes the leading coefficient. Fixed weights and bounded degree make the error uniform even when coefficients and blockwise linear coordinates move. Pullback gives H_Y>=H_pair. If the function-field extension has degree at least two, a coordinate xi outside the image field gives $H_Y(T)\\ge H_{\\rm pair}(T)+H_{\\rm pair}(T-\\omega)$, doubling its leading lower bound.\n\n## Role in the source argument\n\nSupplies weighted polynomial-space growth uniformly for the moving subvarieties encountered by the affine counting argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:weighted-hilbert](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L36)\n- [eq:affine-extracted-cut](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L73)\n- [eq:weighted-hilbert-series](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L174)\n- [eq:field-degree-gain](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/build/sections/07-hilbert-bounds.tex#L227)\n\n## Antecedents and comparison\n\nWeighted homogenization and Hilbert-series asymptotics are classical tools in determinant methods; see the context in [Salberger](https://arxiv.org/abs/math/0508326v3) and [Xiao](https://arxiv.org/abs/1505.05587v2). The explicit extracted weight D and the paired-coordinate boundary checks are the selected source-specific calculation.\n\n## Checks and limitations\n\nRead the affine-boundary, weighted-infinity and function-field arguments. Exact rational examples verify the extracted equation on the nonzero-coordinate open. Formal power-series computations check leading coefficients, including nontrivial roots of unity in the weights; these are not a general symbolic proof of the geometric assertions.\n\nNonconstant n, distinct theta_i, irreducibility and the nonempty nonzero-a open must be retained. A Hilbert series for a guessed list of equations is insufficient without the boundary and saturation argument. Uniformity requires fixed weights and a degree bound.\n\n## Possible applications\n\nDeterminant estimates on families of paired multiplicative equations whose coefficients or lattice coordinates vary.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000160",
+      "record_type": "instrument",
+      "title": "Derivative weights turn harmonic sieve paths into a probability process",
+      "forms": [
+        "identity",
+        "construction",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-021"
+      ],
+      "source_paper_ids": [
+        "P-000102"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+          "label": "lem:derivative-weights",
+          "line": 261,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L261",
+          "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+        },
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+          "label": "eq:tilted-kernel",
+          "line": 345,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L345",
+          "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+        },
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+          "label": "eq:path-weight",
+          "line": 368,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L368",
+          "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+        },
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex",
+          "label": "eq:functions-arrival-cutoff",
+          "line": 380,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L380",
+          "sha256": "3f7c8f0d6b8c5b473deb9266eeace69f69749347dd0b1315879432b9446af754"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "candidate-sieve-derivative-change-of-measure-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000160.md",
+      "body": "# Derivative weights turn harmonic sieve paths into a probability process\n\n[Family 021](../families/openai-math-021.md) · [Source manuscript](../papers/P-000102.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nFor the standard lower and upper linear-sieve functions f,F, the source uses positive weights $\\phi_e(s)=s^2f'(s)$ and $\\phi_o(s)=-s^2F'(s)$, with its explicitly specified small starting extensions. They satisfy\n\n$$\\phi_i(s)=\\int_{m_i(s)}^\\infty\\frac{t+1}{t^2}\\phi_{i'}(t)\\,dt,\\quad m_e(s)=s-1,\\quad m_o(s)=\\max(2,s-1),$$\n\nwhere i' is the opposite parity. These identities follow by differentiating the sieve delay equations and integrating backwards from the vanishing tail. They normalize the transition\n\n$$K_i(s,dt)=\\frac{(t+1)\\phi_{i'}(t)}{t^2\\phi_i(s)}\\mathbf1_{t\\ge m_i(s)}\\,dt.$$\n\nAt gap r, cutoff b and ratio s=r/b, set $x=r/(t+1)$, $r'=rt/(t+1)$ and s'=t. The support gives x<=b, with s'>=2 on odd-to-even transitions. The original harmonic measure dx/x becomes dt/(t+1). Dividing it by K gives $(r'/r)^2\\phi_i(s)/\\phi_{i'}(s')$. Hence for every finite prefix,\n\n$$dW_{\\rm harmonic}=d\\mathbb P\\left(\\frac{r_{\\rm end}}{r_{\\rm in}}\\right)^2\\frac{\\phi_{i_{\\rm in}}(s_{\\rm in})}{\\phi_{i_{\\rm end}}(s_{\\rm end})}.$$\n\nAll intermediate weights cancel. If the starting ratio and endpoint ratio/gap lie in fixed compact ranges with positive weights and r_in is of order B, the endpoint factor is of order B^-2. This is a weight conversion, not a guarantee that the desired endpoint is reached. Subsequent cutoffs are the previously selected exponents, so all exponents exceed ell precisely when the last one does: $s_{\\rm end}<r_{\\rm end}/\\ell$.\n\nThe ordinary state ranges are even s>=2 and odd s>=1. The source permits the initial even extension down to 1.98 and odd down to 0.95; only the first odd state of its specified starts can fall below 1.\n\n## Role in the source argument\n\nConverts occupation probabilities for a continuous alternating process into the small positive harmonic contribution needed near the linear-sieve boundary.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:derivative-weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L261)\n- [eq:tilted-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L345)\n- [eq:path-weight](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L368)\n- [eq:functions-arrival-cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/functions.tex#L380)\n\n## Antecedents and comparison\n\nThe linear-sieve functions are established; [Iwaniec](https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/19/1/97719/on-the-error-term-in-the-linear-sieve) is a source antecedent. Normalization by a positive function and telescoping path likelihoods are classical. The selected package is the derivative normalization and its explicit squared-gap factor; it is not a new change-of-measure principle.\n\n## Checks and limitations\n\nChecked the Jacobian, support conditions and finite-prefix telescoping. Numerical checks use the explicit low-range derivative formulas and arbitrary finite positive endpoint weights to verify the algebraic identity; they do not certify tail asymptotics, regeneration or occupation limits.\n\nThe future-integral identities and positivity are required to call K a probability kernel. A finite product identity does not imply optional-stopping or an infinite-path identity without integrability. The source needs separate renewal and arithmetic estimates to obtain its final bound.\n\n## Possible applications\n\nAnalyzing weighted decreasing-prime trees through probabilistic occupation estimates while retaining an exact conversion back to the original sieve weights.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000161",
+      "record_type": "instrument",
+      "title": "Random forbidden classes have a second moment stable under measure changes",
+      "forms": [
+        "criterion",
+        "identity",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-021"
+      ],
+      "source_paper_ids": [
+        "P-000102"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+          "label": "lem:random-variance",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L183",
+          "sha256": "973d3a4d93493679f05a73fbabe96e3a22110faba0471d46d2224ae3d870d772"
+        },
+        {
+          "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex",
+          "label": "eq:variance-pair-factor",
+          "line": 220,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L220",
+          "sha256": "973d3a4d93493679f05a73fbabe96e3a22110faba0471d46d2224ae3d870d772"
+        }
+      ],
+      "batch_id": "B007",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "established-singular-series-average-with-stable-measure-form",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000161.md",
+      "body": "# Random forbidden classes have a second moment stable under measure changes\n\n[Family 021](../families/openai-math-021.md) · [Source manuscript](../papers/P-000102.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nAt each prime p<=w independently choose one uniform forbidden residue. Let I_j indicate that an integer j avoids all these classes, and let S count survivors in an interval of J integers. Put $V_0=\\prod_{p\\le w}(1-1/p)$. Then E S=J V0, and for each fixed delta>0,\n\n$$\\mathbb E(S-JV_0)^2=o((JV_0)^2)\\quad\\text{uniformly for }J\\ge w^\\delta.$$\n\nFor nonzero spacing h the pair probability divided by V0 squared is exactly\n\n$$2\\mathbf1_{2\\mid h}\\prod_{2<p\\le w}\\left(1-\\frac1{(p-1)^2}\\right)\\prod_{\\substack{2<p\\le w\\\\p\\mid h}}\\left(1+\\frac1{p-2}\\right).$$\n\nExpanding the last product over odd squarefree l gives $\\lambda_l=\\prod_{p\\mid l}(p-2)^{-1}$. The triangular average of $2\\mathbf1_{2l\\mid h}$ tends to 1/l and is uniformly O(1/l). The series $\\sum_l\\lambda_l/l$ converges, and its Euler product cancels the preceding product. This proves mean one for the off-diagonal pair factor. The diagonal contributes 1/(J V0)=o(1).\n\nThe stable version needs no normalization of the perturbed measure. Let mu be a finite positive measure carrying the same indexed indicators, with mass 1+O(zeta), single-point integrals V0(1+O(zeta)), and for i!=j,\n\n$$\\int I_iI_j\\,d\\mu\\le(1+O(\\zeta))\\mathbb P_{\\rm ind}(I_i=I_j=1),\\qquad0\\le\\zeta\\le1/2,$$\n\nwith uniform constants. Then $\\int(S-JV_0)^2d\\mu\\ll(\\zeta+o(1))(JV_0)^2$. Expand the square, using the upper second-moment bound, lower first-moment bound and upper total mass. A zero independent pair probability requires an exactly zero perturbed pair probability; an additive error there is not covered.\n\n## Role in the source argument\n\nTransfers small-variance survival counts to the weighted measures arising from structured prime boxes after the inverse step.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:random-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L183)\n- [eq:variance-pair-factor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L220)\n\n## Antecedents and comparison\n\nThe source identifies this as a truncated two-point version of [Gallagher singular-series averaging](https://www.cambridge.org/core/journals/mathematika/article/on-the-distribution-of-primes-in-short-intervals/DCE557AC8750333E68426FCEEC11858C). [Banks, Ford and Tao](https://arxiv.org/abs/1908.08613v3) provide related random-sieve context. The stable finite-measure formulation is the selected reusable variant.\n\n## Checks and limitations\n\nRead the divisor expansion, Euler-factor cancellation and finite-measure square expansion. Exhaustive small forbidden-class systems verify exact means, pair factors and variances. Controlled density perturbations verify the finite-measure comparison and preserve parity zeros.\n\nThe o(1) conclusion is asymptotic with fixed positive delta. Marginal survival estimates alone do not control variance; the pair upper bound and total mass are needed. The verification computes finite identities, not the claimed uniform asymptotic or the full Jacobsthal theorem.\n\n## Possible applications\n\nSecond-moment arguments for perturbed sieve distributions when only one-point accuracy and pairwise upper control survive a change of measure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -6970,6 +7366,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000098.md",
       "body": "# The joint scaling limit of critical Ashkin-Teller currents\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a joint critical-line limit of Ashkin-Teller heights and complete primal and dual current supports, including the Potts endpoint. The selected instruments concern auxiliary Gaussian tests used in the random-domain identification.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000152: Converging conditional Gaussian projection norms preserve locality of bounded tests](../instruments/MI-000152.md)\n- [MI-000153: Cameron-Martin comparison transfers one local test kernel across domains](../instruments/MI-000153.md)\n\n## Dependencies and review\n\nMetric-graph GFF convergence and local sets; Gaussian Hilbert-space projections and residual covariances; Cameron-Martin likelihoods and Pinsker; interior harmonic estimates; conditional mixed-expectation limits.\n\nRead the reverse-buffer proof, common-kernel proof and interior-exhaustion corollary, preserving the exact whole-cable extension and random-parameter conditions. The finite current coupling, screening, Gaussian collision arguments and no-crossing/cluster identification were not fully audited.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-233.md) · [Batch B006](../../batches/B006/README.md)"
+    },
+    {
+      "id": "P-000099",
+      "record_type": "paper",
+      "title": "The joint Dickman law for consecutive integers",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-joint-Dickman-law-for-consecutive-integers-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-012"
+      ],
+      "batch_id": "B007",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "fc85be09ee27f4a63b1ac7f75bbddc7feacb3a62994c2315ba0e64b348a6a01d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000099.md",
+      "body": "# The joint Dickman law for consecutive integers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the joint Dickman law for consecutive integers in ordinary natural density, and density one half for each ordering of their largest prime factors. This extraction selects the sampling argument that permits tests depending on the entire arithmetic configuration.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000154: A small column sample approximates a cut using total squared mass](../instruments/MI-000154.md)\n- [MI-000155: A common degree event transfers single-site tests to adaptive cut norms](../instruments/MI-000155.md)\n\n## Dependencies and review\n\nIndependent finite site types; symmetric zero-diagonal kernels; an every-type expected degree bound; integrated row second moments; a comparison uniform over bounded single-site tests; a small column sample and concentration after extension from one common degree event.\n\nRead the complete sampling section and the introduction, and compared the formalization scope with the challenge statements. The divisor amplifier, residue smoothing channels and multiplicative short-interval inputs were not fully audited.\n\nJointDickman.lean states natural density for both thresholds based at n, for fixed 0<a,b<1, and both strict ordering densities. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\n[Family context](../families/openai-math-012.md) · [Batch B007](../../batches/B007/README.md)"
+    },
+    {
+      "id": "P-000100",
+      "record_type": "paper",
+      "title": "The additive indecomposability of the primes",
+      "source_collection": "openai/math",
+      "upstream_slug": "the-additive-indecomposability-of-the-primes-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-013"
+      ],
+      "batch_id": "B007",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "52790d63fe17e9f1d2ad235b9e3b3ab4c97c2acb24add1cff38d7e599c60b7dc",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000100.md",
+      "body": "# The additive indecomposability of the primes\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/the-additive-indecomposability-of-the-primes-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that no sum of two subsets of the nonnegative integers, each with at least two elements, differs from the primes in only finitely many places. This extraction selects two finite auxiliary estimates.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000156: A weighted affine family has small norm on mean-zero functions](../instruments/MI-000156.md)\n- [MI-000157: Overlap components give an entropy bound for bad block arrangements](../instruments/MI-000157.md)\n\n## Dependencies and review\n\nProbability-normalized finite-field Fourier analysis; characters extended by zero at zero; bounded representation multiplicity in the affine group; equal-sized blocks and overlap multigraphs. The full source additionally uses inverse-sieve, prime-coverage and arithmetic transfer arguments.\n\nRead the finite affine-action calculation, bottom-pair autocorrelation identities and complete bad-arrangement count. The full finite-field tree comparison, the prime-supply estimate and the arithmetic transfer were not independently certified. The source labels its cross-release quasi-Riemann observation optional; these extracted estimates do not use it.\n\nOstmannPrimes.lean and OstmannComplete.lean state the infinite symmetric-difference assertion for nontrivial subsets of the natural numbers; the latter also states the two-infinite-summands case. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\n[Family context](../families/openai-math-013.md) · [Batch B007](../../batches/B007/README.md)"
+    },
+    {
+      "id": "P-000101",
+      "record_type": "paper",
+      "title": "Squarefree values of quartics and power-free values of polynomials",
+      "source_collection": "openai/math",
+      "upstream_slug": "Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-020"
+      ],
+      "batch_id": "B007",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f27adb1462c7591096d888a66c44c2b931663487e31cac8be1fe531322d67fa1",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000101.md",
+      "body": "# Squarefree values of quartics and power-free values of polynomials\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/manuscript.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims positive-density (d-2)-free values for every irreducible integer polynomial of degree d>=4 with no fixed prime (d-2)-power divisor. Its new large-prime analysis concerns degrees four through eight; higher degrees use earlier results.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000158: A monotone rank record controls bad primes chosen adaptively](../instruments/MI-000158.md)\n- [MI-000159: Selected coordinate pairs give a uniform weighted Hilbert coefficient](../instruments/MI-000159.md)\n\n## Dependencies and review\n\nDeterministic patch selection; full bounded-degree evaluation kernels; polynomial-size nonzero minors; random subsets of large auxiliary primes; weighted homogenization, complete intersections and bounded-degree projection estimates.\n\nRead the adaptive-path construction and deletion proof, and the weighted-Hilbert proposition with its affine and infinity boundary arguments. The full counting theorem, quartic exceptional curves and finite parameter certificate were not independently audited.\n\nPowerFreeValues.lean states convergence to a positive Euler-product density for irreducible polynomials over Q of degree at least four, with k=d-2 and the local admissibility hypothesis. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\n[Family context](../families/openai-math-020.md) · [Batch B007](../../batches/B007/README.md)"
+    },
+    {
+      "id": "P-000102",
+      "record_type": "paper",
+      "title": "A quadratic bound for Jacobsthal's function",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-quadratic-bound-for-Jacobsthals-function-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-021"
+      ],
+      "batch_id": "B007",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b8c180c1fe87fd7b91863a8514027889535e3c4dd20be194d071f9afd7aabb68",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000102.md",
+      "body": "# A quadratic bound for Jacobsthal's function\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims h(k)<=C k^2/(log log(3k))^2 for Jacobsthal intervals and every k>=1, uniformly over positive moduli with at most k distinct prime factors and signed interval starts. This extraction selects two probabilistic auxiliary tools.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000160: Derivative weights turn harmonic sieve paths into a probability process](../instruments/MI-000160.md)\n- [MI-000161: Random forbidden classes have a second moment stable under measure changes](../instruments/MI-000161.md)\n\n## Dependencies and review\n\nPositive derivative weights solving coupled future-integral equations; a telescoping change of path measure; independent random forbidden residue classes; a summable divisor expansion and first/second-moment comparisons under finite positive measures.\n\nRead the derivative-weight proof and exact path-density conversion, and the complete independent-class variance argument with its stable version. The regeneration estimates, inverse incidence theorem and stopped-tree comparison needed for the final Jacobsthal bound were not fully audited.\n\nJacobsthalImproved.lean states the iterated-logarithm saving with an absolute positive constant, all k>=1, arbitrary signed starts and moduli with at most k prime factors. Jacobsthal.lean retains the weaker quadratic statement. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\n[Family context](../families/openai-math-021.md) · [Batch B007](../../batches/B007/README.md)"
     }
   ],
   "families": [
@@ -7136,6 +7608,60 @@
       "body": "# Fontaine–Mazur modularity at the prime 2\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000037](../papers/P-000037.md)\n- [P-000054](../papers/P-000054.md)\n- [P-000077](../papers/P-000077.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination input to Hilbert’s tenth\n\nEvery continuous irreducible representation $`r:G_{\\mathbb Q}\\to\\mathrm{GL}_2(\\overline{\\mathbb Q}_2)`$ that is odd ($`\\det r(c)=-1`$ for complex conjugation $`c`$), unramified outside finitely many primes, and de Rham at 2 with two distinct Hodge–Tate weights is a Tate twist of the 2-adic Galois representation attached to a classical cuspidal eigenform, “including all residual representations”: scalar, reducible, dihedral. The earlier results cited by the initial extraction covered $`p=2`$ only for irreducible non-solvable and nearly-ordinary solvable residual images. Family 004 rests on this paper alone (not on its two satellites).\n\n## Extracted instruments.\n\n- [MI-000059: Marked lines and transverse charts](../instruments/MI-000059.md)\n\n- [MI-000060: Finite-jet ultrapatching at a characteristic-two curve](../instruments/MI-000060.md)\n\n- [MI-000061: Ordinary character family with Thorne points and a polynomial-orbit lemma](../instruments/MI-000061.md)\n\n## Reused.\n\nChenevier determinants; Wang-Erickson algebraization; Böckle–Iyengar–Paškūnas local geometry; Paškūnas–Tung blocks; Colmez–Dospinescu–Paškūnas; Breuil–Emerton; Newton–Thorne adjoint Selmer vanishing; Billerey–Menares lifts; Jacquet–Langlands and cyclic base change; Ramakrishna switching.\n\n## Caveats.\n\nThe principal external input is Thorne’s August 2026 preprint [source](../../direction/references.md#src:thorne); without that input, the stated argument for locally reducible targets, and the Hilbert’s-tenth reduction that uses it, would require a replacement. Tabaâ 2020 (unrefereed) is cited for normality of completed tensor products. The pro-modularity satellite is doubly dependent. The paper consistently attributes each device to Pan, Khare–Wintenberger, Skinner–Wiles, BIP and Thorne; the new mathematics is combination and $`p=2`$ bookkeeping. The initial extraction completed fresh searches and reports checking the statements of each essential citation against its primary source.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: no\n- Statement coverage: —\n- Dependencies: main paper none; pro-modularity satellite depends on main + Hecke-dimension. External: Thorne Aug 2026 (unrefereed)\n- Antecedents: —"
     },
     {
+      "id": "openai-math-012",
+      "record_type": "family",
+      "title": "Adaptive cut comparison through column sampling",
+      "source_family": "012",
+      "source_collection": "openai/math",
+      "batch_id": "B007",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000099"
+      ],
+      "instrument_ids": [
+        "MI-000154",
+        "MI-000155"
+      ],
+      "headline": "The source claims the joint Dickman law for consecutive integers in ordinary natural density, and density one half for each ordering of their largest prime factors. This extraction selects the sampling argument that permits tests depending on the entire arithmetic configuration.",
+      "central_instrument": "A deterministic column sample approximates an optimizing cut; degree control, a Lipschitz extension and uniform integrability then upgrade single-site comparisons to adaptive cut-norm comparisons.",
+      "novelty_assessment": "Small-sample cut approximation, Lipschitz extension and bounded differences are established. The source-specific package allows unbounded, position-dependent kernels with integrated rather than conditional row-second-moment control. Priority is not certified.",
+      "formalization_summary": "JointDickman.lean states natural density for both thresholds based at n, for fixed 0<a,b<1, and both strict ordering densities. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.",
+      "statement_faithfulness": "The main claim is ordinary, not logarithmic, density. Arithmetic scale x tends to infinity for each fixed B before B tends to infinity. Uniformity in a fixed auxiliary position parameter is a uniform expectation bound, not a simultaneous event over its continuum of values.",
+      "dependencies": "Independent finite site types; symmetric zero-diagonal kernels; an every-type expected degree bound; integrated row second moments; a comparison uniform over bounded single-site tests; a small column sample and concentration after extension from one common degree event.",
+      "antecedents": "The source credits Alon, Fernandez de la Vega, Kannan and Karpinski and Borgs, Chayes, Lovasz, Sos and Vesztergombi for sampling optimizing cuts. McShane extension and McDiarmid concentration are established inputs. The arithmetic comparison uses additional divisor-channel and multiplicative-function arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-012.md",
+      "body": "# Adaptive cut comparison through column sampling\n\n## Source manuscript and claim\n\n[The joint Dickman law for consecutive integers](../papers/P-000099.md), by OpenAI, September 24, 2026.\n\nThe source claims the joint Dickman law for consecutive integers in ordinary natural density, and density one half for each ordering of their largest prime factors. This extraction selects the sampling argument that permits tests depending on the entire arithmetic configuration.\n\n## Extracted instruments\n\n- [MI-000154: A small column sample approximates a cut using total squared mass](../instruments/MI-000154.md)\n- [MI-000155: A common degree event transfers single-site tests to adaptive cut norms](../instruments/MI-000155.md)\n\n## Dependencies and antecedents\n\nIndependent finite site types; symmetric zero-diagonal kernels; an every-type expected degree bound; integrated row second moments; a comparison uniform over bounded single-site tests; a small column sample and concentration after extension from one common degree event.\n\nThe source credits Alon, Fernandez de la Vega, Kannan and Karpinski and Borgs, Chayes, Lovasz, Sos and Vesztergombi for sampling optimizing cuts. McShane extension and McDiarmid concentration are established inputs. The arithmetic comparison uses additional divisor-channel and multiplicative-function arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete sampling section and the introduction, and compared the formalization scope with the challenge statements. The divisor amplifier, residue smoothing channels and multiplicative short-interval inputs were not fully audited.\n\nJointDickman.lean states natural density for both thresholds based at n, for fixed 0<a,b<1, and both strict ordering densities. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\nThe main claim is ordinary, not logarithmic, density. Arithmetic scale x tends to infinity for each fixed B before B tends to infinity. Uniformity in a fixed auxiliary position parameter is a uniform expectation bound, not a simultaneous event over its continuum of values.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/012.md) · [Batch record](../../batches/B007/README.md)"
+    },
+    {
+      "id": "openai-math-013",
+      "record_type": "family",
+      "title": "Affine mixing and overlap counting in a prime-sumset argument",
+      "source_family": "013",
+      "source_collection": "openai/math",
+      "batch_id": "B007",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000100"
+      ],
+      "instrument_ids": [
+        "MI-000156",
+        "MI-000157"
+      ],
+      "headline": "The source claims that no sum of two subsets of the nonnegative integers, each with at least two elements, differs from the primes in only finitely many places. This extraction selects two finite auxiliary estimates.",
+      "central_instrument": "A weighted affine-action calculation controls mixed additive and multiplicative correlations; factorial counting makes arrangements with many overlap components scarce.",
+      "novelty_assessment": "Affine mixing, Parseval and factorial entropy estimates are established. The explicit weighted operator and its combination with fixed-depth prime trees are candidate source-specific refinements; the full inverse Goldbach theorem and priority are not certified.",
+      "formalization_summary": "OstmannPrimes.lean and OstmannComplete.lean state the infinite symmetric-difference assertion for nontrivial subsets of the natural numbers; the latter also states the two-infinite-summands case. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.",
+      "statement_faithfulness": "Eventual equality with the primes requires both coverage of every sufficiently large prime and exclusion of every sufficiently large composite. It is stronger than density or thin prime-sumset statements. Tree depth is fixed before the arithmetic scale tends to infinity.",
+      "dependencies": "Probability-normalized finite-field Fourier analysis; characters extended by zero at zero; bounded representation multiplicity in the affine group; equal-sized blocks and overlap multigraphs. The full source additionally uses inverse-sieve, prime-coverage and arithmetic transfer arguments.",
+      "antecedents": "Gowers, Babai-Nikolov-Pyber and Gill provide quasirandom convolution and group-action context. Elsholtz-Harper and Green-Harper provide earlier inverse Goldbach and inverse-sieve restrictions. The source discusses a newer quadratic inverse theorem but does not equate a large intersection with near containment.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-013.md",
+      "body": "# Affine mixing and overlap counting in a prime-sumset argument\n\n## Source manuscript and claim\n\n[The additive indecomposability of the primes](../papers/P-000100.md), by OpenAI, September 24, 2026.\n\nThe source claims that no sum of two subsets of the nonnegative integers, each with at least two elements, differs from the primes in only finitely many places. This extraction selects two finite auxiliary estimates.\n\n## Extracted instruments\n\n- [MI-000156: A weighted affine family has small norm on mean-zero functions](../instruments/MI-000156.md)\n- [MI-000157: Overlap components give an entropy bound for bad block arrangements](../instruments/MI-000157.md)\n\n## Dependencies and antecedents\n\nProbability-normalized finite-field Fourier analysis; characters extended by zero at zero; bounded representation multiplicity in the affine group; equal-sized blocks and overlap multigraphs. The full source additionally uses inverse-sieve, prime-coverage and arithmetic transfer arguments.\n\nGowers, Babai-Nikolov-Pyber and Gill provide quasirandom convolution and group-action context. Elsholtz-Harper and Green-Harper provide earlier inverse Goldbach and inverse-sieve restrictions. The source discusses a newer quadratic inverse theorem but does not equate a large intersection with near containment. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite affine-action calculation, bottom-pair autocorrelation identities and complete bad-arrangement count. The full finite-field tree comparison, the prime-supply estimate and the arithmetic transfer were not independently certified. The source labels its cross-release quasi-Riemann observation optional; these extracted estimates do not use it.\n\nOstmannPrimes.lean and OstmannComplete.lean state the infinite symmetric-difference assertion for nontrivial subsets of the natural numbers; the latter also states the two-infinite-summands case. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\nEventual equality with the primes requires both coverage of every sufficiently large prime and exclusion of every sufficiently large composite. It is stronger than density or thin prime-sumset statements. Tree depth is fixed before the arithmetic scale tends to infinity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/013.md) · [Batch record](../../batches/B007/README.md)"
+    },
+    {
       "id": "openai-math-017",
       "record_type": "family",
       "title": "Irrationality exponent of π is 2",
@@ -7165,6 +7691,60 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-017.md",
       "body": "# Irrationality exponent of π is 2\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000067](../papers/P-000067.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 867 files, not in catalogue combination bordering new logarithm extension requires a separate argument\n\nFor every $`\\nu>2`$ and all large q, $`|\\pi-p/q|\\ge q^{-\\nu}`$; hence the Flint–Hills series converges. The previous bound cited by the initial extraction is 7.103 (Zeilberger–Zudilin 2020). The threshold is ineffective.\n\n## Extracted instruments.\n\n- [MI-000007: Separated-weight interpolation](../instruments/MI-000007.md)\n\n- [MI-000008: Weighted transverse multiplicity](../instruments/MI-000008.md)\n\n- [MI-000009: Two ways to make the determinant small](../instruments/MI-000009.md)\n\n## Reused.\n\nLaurent’s interpolation determinants; Roth’s separated denominators; Philippon zero estimates; Demailly’s jets; Mondal’s weighted Bézout; Stacks Project.\n\n## Caveats.\n\nAn analogue with centers $`(r^j,jp_i/q_i)`$ for $`r\\in\\mathbb Q_{>0}\\setminus\\{1\\}`$ is a proposed extension. The claim $`\\mu(\\log r)=2`$ needs a separate proof, including the interpolation hypotheses, rational-height costs and determinant estimates. It is not established by the source comparison in this survey. The initial extraction also flags the interpolation argument’s nearest prior art as requiring closer comparison.\n\n## Recorded assessment\n\n- Novelty: combination bordering new\n- Formalization: files, not in catalogue\n- Statement coverage: yes (eventual bound and sSup form)\n- Dependencies: no\n- Antecedents: Masser 1981; Fischler–Nakamaye 2014"
+    },
+    {
+      "id": "openai-math-020",
+      "record_type": "family",
+      "title": "Adaptive prime deletion and weighted Hilbert counts",
+      "source_family": "020",
+      "source_collection": "openai/math",
+      "batch_id": "B007",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000101"
+      ],
+      "instrument_ids": [
+        "MI-000158",
+        "MI-000159"
+      ],
+      "headline": "The source claims positive-density (d-2)-free values for every irreducible integer polynomial of degree d>=4 with no fixed prime (d-2)-power divisor. Its new large-prime analysis concerns degrees four through eight; higher degrees use earlier results.",
+      "central_instrument": "Keeping full evaluation kernels produces a monotone finite rank record for adaptive prime deletion. Selected conjugate pairs yield a weighted complete intersection with an explicit leading Hilbert coefficient.",
+      "novelty_assessment": "Determinant methods, Hilbert series and function-field dimension arguments are established. The adaptive deletion construction and the explicit paired-coordinate Hilbert calculation are candidate source-specific packages. The global power-free theorem and priority are not certified.",
+      "formalization_summary": "PowerFreeValues.lean states convergence to a positive Euler-product density for irreducible polynomials over Q of degree at least four, with k=d-2 and the local admissibility hypothesis. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.",
+      "statement_faithfulness": "The formalized statement allows nonmonic and nonprimitive integer polynomials, negative values and positive integer inputs; zero is not power-free. The source uses a separate content-transfer argument. Simultaneous polynomial conditions use unions of bad residues, not the product of individual density constants.",
+      "dependencies": "Deterministic patch selection; full bounded-degree evaluation kernels; polynomial-size nonzero minors; random subsets of large auxiliary primes; weighted homogenization, complete intersections and bounded-degree projection estimates.",
+      "antecedents": "Heath-Brown, Salberger, Browning and Xiao supply the determinant-method and power-free background. The source explicitly separates its low-degree analysis from Browning and Xiao results already sufficient in degree at least nine.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-020.md",
+      "body": "# Adaptive prime deletion and weighted Hilbert counts\n\n## Source manuscript and claim\n\n[Squarefree values of quartics and power-free values of polynomials](../papers/P-000101.md), by OpenAI, None.\n\nThe source claims positive-density (d-2)-free values for every irreducible integer polynomial of degree d>=4 with no fixed prime (d-2)-power divisor. Its new large-prime analysis concerns degrees four through eight; higher degrees use earlier results.\n\n## Extracted instruments\n\n- [MI-000158: A monotone rank record controls bad primes chosen adaptively](../instruments/MI-000158.md)\n- [MI-000159: Selected coordinate pairs give a uniform weighted Hilbert coefficient](../instruments/MI-000159.md)\n\n## Dependencies and antecedents\n\nDeterministic patch selection; full bounded-degree evaluation kernels; polynomial-size nonzero minors; random subsets of large auxiliary primes; weighted homogenization, complete intersections and bounded-degree projection estimates.\n\nHeath-Brown, Salberger, Browning and Xiao supply the determinant-method and power-free background. The source explicitly separates its low-degree analysis from Browning and Xiao results already sufficient in degree at least nine. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the adaptive-path construction and deletion proof, and the weighted-Hilbert proposition with its affine and infinity boundary arguments. The full counting theorem, quartic exceptional curves and finite parameter certificate were not independently audited.\n\nPowerFreeValues.lean states convergence to a positive Euler-product density for irreducible polynomials over Q of degree at least four, with k=d-2 and the local admissibility hypothesis. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\nThe formalized statement allows nonmonic and nonprimitive integer polynomials, negative values and positive integer inputs; zero is not power-free. The source uses a separate content-transfer argument. Simultaneous polynomial conditions use unions of bad residues, not the product of individual density constants.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/020.md) · [Batch record](../../batches/B007/README.md)"
+    },
+    {
+      "id": "openai-math-021",
+      "record_type": "family",
+      "title": "Probability weights and stable second moments for sieve paths",
+      "source_family": "021",
+      "source_collection": "openai/math",
+      "batch_id": "B007",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000102"
+      ],
+      "instrument_ids": [
+        "MI-000160",
+        "MI-000161"
+      ],
+      "headline": "The source claims h(k)<=C k^2/(log log(3k))^2 for Jacobsthal intervals and every k>=1, uniformly over positive moduli with at most k distinct prime factors and signed interval starts. This extraction selects two probabilistic auxiliary tools.",
+      "central_instrument": "Derivatives of the linear-sieve functions normalize harmonic path weights into a probability kernel with an exact endpoint factor; a two-point singular-series average remains valid under a controlled change of measure.",
+      "novelty_assessment": "Linear-sieve delay functions, positive-function changes of measure and Gallagher singular-series averages are established. The source combines derivative weights and a stable finite-measure variance estimate in a stopped sieve tree. Neither the global bound nor priority is certified.",
+      "formalization_summary": "JacobsthalImproved.lean states the iterated-logarithm saving with an absolute positive constant, all k>=1, arbitrary signed starts and moduli with at most k prime factors. Jacobsthal.lean retains the weaker quadratic statement. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.",
+      "statement_faithfulness": "The claim is uniform over moduli, not only primorials, and does not determine the optimal growth of h(k). The source does not provide an explicit usable constant. Auxiliary bin widths and tree parameters are fixed before the main scale tends to infinity.",
+      "dependencies": "Positive derivative weights solving coupled future-integral equations; a telescoping change of path measure; independent random forbidden residue classes; a summable divisor expansion and first/second-moment comparisons under finite positive measures.",
+      "antecedents": "Iwaniec supplies the linear-sieve background. Gallagher supplies mean-one singular-series averaging, and Banks-Ford-Tao provide related random-sieve context. Regeneration and renewal theory used later in the source are established probabilistic tools.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-021.md",
+      "body": "# Probability weights and stable second moments for sieve paths\n\n## Source manuscript and claim\n\n[A quadratic bound for Jacobsthal's function](../papers/P-000102.md), by OpenAI, None.\n\nThe source claims h(k)<=C k^2/(log log(3k))^2 for Jacobsthal intervals and every k>=1, uniformly over positive moduli with at most k distinct prime factors and signed interval starts. This extraction selects two probabilistic auxiliary tools.\n\n## Extracted instruments\n\n- [MI-000160: Derivative weights turn harmonic sieve paths into a probability process](../instruments/MI-000160.md)\n- [MI-000161: Random forbidden classes have a second moment stable under measure changes](../instruments/MI-000161.md)\n\n## Dependencies and antecedents\n\nPositive derivative weights solving coupled future-integral equations; a telescoping change of path measure; independent random forbidden residue classes; a summable divisor expansion and first/second-moment comparisons under finite positive measures.\n\nIwaniec supplies the linear-sieve background. Gallagher supplies mean-one singular-series averaging, and Banks-Ford-Tao provide related random-sieve context. Regeneration and renewal theory used later in the source are established probabilistic tools. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the derivative-weight proof and exact path-density conversion, and the complete independent-class variance argument with its stable version. The regeneration estimates, inverse incidence theorem and stopped-tree comparison needed for the final Jacobsthal bound were not fully audited.\n\nJacobsthalImproved.lean states the iterated-logarithm saving with an absolute positive constant, all k>=1, arbitrary signed starts and moduli with at most k prime factors. Jacobsthal.lean retains the weaker quadratic statement. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\nThe claim is uniform over moduli, not only primorials, and does not determine the optimal growth of h(k). The source does not provide an explicit usable constant. Auxiliary bin widths and tree parameters are fixed before the main scale tends to infinity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/021.md) · [Batch record](../../batches/B007/README.md)"
     },
     {
       "id": "openai-math-032",

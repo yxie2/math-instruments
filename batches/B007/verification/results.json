@@ -1,0 +1,266 @@
+{
+  "batch": "B007",
+  "status": "passed",
+  "seed": 12013020021,
+  "scope": "Eight finite checks of extracted auxiliary mechanisms. No global number-theory theorem, asymptotic estimate, Lean proof or novelty claim is certified.",
+  "checks": {
+    "cut_sampling": {
+      "cases": 189,
+      "minimum_bound_slack": 0.0,
+      "scope": "Exhaustive signs and column subsets for the deterministic inequality; no efficient optimization claim."
+    },
+    "adaptive_product_space": {
+      "conditioned_assignments": 24,
+      "extension_pair_checks": 24576,
+      "scope": "Exact finite product-space averages, conditional fluctuation bound and common-good-set extension; no asymptotic concentration certification."
+    },
+    "affine_mixing": {
+      "operator_cases": 36,
+      "mellin_frequency_cases": 5736,
+      "maximum_operator_bound_ratio": 0.6444905928594875,
+      "maximum_autocorrelation_identity_error": 1.7964926369292754e-15,
+      "scope": "Finite prime fields; includes L2-normalized spikes and all character/frequency pairs."
+    },
+    "overlap_counting": {
+      "enumerations": [
+        {
+          "blocks": 2,
+          "block_size": 3,
+          "permutations": 720,
+          "bad": 72
+        },
+        {
+          "blocks": 3,
+          "block_size": 2,
+          "permutations": 720,
+          "bad": 48
+        },
+        {
+          "blocks": 4,
+          "block_size": 2,
+          "permutations": 40320,
+          "bad": 384
+        }
+      ],
+      "exact_factorial_checks": 400,
+      "scope": "Small complete permutation enumerations and exact factorial bounds, not growing-depth asymptotics."
+    },
+    "adaptive_deletion": {
+      "exact_subset_models": 27,
+      "minimum_slack": "25/63",
+      "negative_control": {
+        "pool_size": 11,
+        "actual_fraction": 1,
+        "invalid_bound_without_stability": "1/11"
+      },
+      "scope": "Finite deletion lemma; polynomial heights and adaptive geometric patches are not computed."
+    },
+    "weighted_hilbert": {
+      "rational_equation_checks": 18,
+      "series": [
+        {
+          "h": 2,
+          "weights": [
+            1,
+            1
+          ],
+          "degrees": [
+            3,
+            3
+          ],
+          "leading_coefficient": "9/2",
+          "relative_errors_at_300_600_1200": [
+            0.0033185185185185184,
+            0.0016629629629629629,
+            0.0008324074074074074
+          ]
+        },
+        {
+          "h": 2,
+          "weights": [
+            1,
+            2
+          ],
+          "degrees": [
+            4,
+            4
+          ],
+          "leading_coefficient": "2",
+          "relative_errors_at_300_600_1200": [
+            0.003311111111111111,
+            0.001661111111111111,
+            0.0008319444444444444
+          ]
+        },
+        {
+          "h": 3,
+          "weights": [
+            2,
+            3
+          ],
+          "degrees": [
+            7,
+            4
+          ],
+          "leading_coefficient": "49/324",
+          "relative_errors_at_300_600_1200": [
+            0.010147673469387756,
+            0.0051388673469387755,
+            0.0025857257653061224
+          ]
+        },
+        {
+          "h": 3,
+          "weights": [
+            2,
+            4
+          ],
+          "degrees": [
+            8,
+            6
+          ],
+          "leading_coefficient": "1/8",
+          "relative_errors_at_300_600_1200": [
+            0.009689777777777778,
+            0.004922333333333333,
+            0.0024805694444444445
+          ]
+        }
+      ],
+      "scope": "Extracted-equation examples and formal Hilbert-series coefficients; no general irreducibility or saturation computation."
+    },
+    "sieve_path": {
+      "low_range_integral_checks": 80,
+      "finite_prefixes": 1800,
+      "maximum_relative_conversion_error": 2.1094237467877974e-15,
+      "scope": "Explicit low-range derivative identities and finite path likelihoods; not infinite-tail normalization or renewal estimates."
+    },
+    "forbidden_classes": {
+      "models": [
+        {
+          "primes": [
+            2,
+            3
+          ],
+          "length": 3,
+          "mean": "1",
+          "variance": "1/3"
+        },
+        {
+          "primes": [
+            2,
+            3
+          ],
+          "length": 8,
+          "mean": "8/3",
+          "variance": "2/9"
+        },
+        {
+          "primes": [
+            2,
+            3
+          ],
+          "length": 13,
+          "mean": "13/3",
+          "variance": "2/9"
+        },
+        {
+          "primes": [
+            2,
+            3
+          ],
+          "length": 24,
+          "mean": "8",
+          "variance": "0"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5
+          ],
+          "length": 3,
+          "mean": "4/5",
+          "variance": "9/25"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5
+          ],
+          "length": 8,
+          "mean": "32/15",
+          "variance": "86/225"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5
+          ],
+          "length": 13,
+          "mean": "52/15",
+          "variance": "101/225"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5
+          ],
+          "length": 24,
+          "mean": "32/5",
+          "variance": "6/25"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "length": 3,
+          "mean": "24/35",
+          "variance": "439/1225"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "length": 8,
+          "mean": "64/35",
+          "variance": "594/1225"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "length": 13,
+          "mean": "104/35",
+          "variance": "699/1225"
+        },
+        {
+          "primes": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "length": 24,
+          "mean": "192/35",
+          "variance": "656/1225"
+        }
+      ],
+      "pair_factor_checks": 132,
+      "perturbed_measures": 24,
+      "scope": "Exact finite means, variances and multiplicative pair controls; no uniform asymptotic conclusion from the finite samples."
+    }
+  }
+}
