@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B074: 8 selected instruments from 4 families and 8 manuscripts. Finite coefficient rings, integration jets, damping margins, overlap smoothing, parity duality, cycle potentials and sound language splits. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B073: 8 selected instruments from 4 families and 8 manuscripts. Alphabet compression, partition histograms, sheared square coverings, simplex chords, pathwise game bounds and finite online policies. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B072: 8 selected instruments from 4 families and 8 manuscripts. Eight instruments on supported matrix costs, dyadic energy increments, stable geometric grid keys, open repair, Fourier bounds, Poisson normalization and singular cone sections.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

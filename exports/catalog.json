@@ -29514,6 +29514,336 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000693.md",
       "body": "# Extract causal rational flow tables and round them with a diameter budget\n\n[Family 110](../families/openai-math-110.md) · [Source manuscript](../papers/P-000462.md) · [Batch B073](../../batches/B073/README.md)\n\n## Mathematical content\n\nOn a finite rational metric of diameter D, with k distinct initial servers and horizon H, use variables p_(w,c) for the configuration distribution after request prefix w and flows f_(wr,c,j) for a legal strongly lazy response to the next request r. Outflows equal p_(w,c); inflows give p_(wr,c'). Shared prefix variables enforce causality across every continuation. For each word, the sum of its prefix flow costs is constrained by a times its exact offline optimum.\n\nAssume the source existence input makes this finite rational LP feasible with a<=C0 log^2(k+1). Minimizing a>=0 gives an attained rational optimum: eliminate other variables by Fourier-Motzkin, minimize the resulting closed rational polyhedron on the line, and back-substitute. No numerical value of C0 is needed to perform this finite computation. Recover response probabilities f/p when p>0, and use a fixed legal response when p=0.\n\nReserve the smallest legal label; round every other probability down to a multiple of 2^-b and assign the residual to the reserved label. Total variation is at most k2^-b. Choose b=ceil(log2(kH^2)). Couple original and rounded policies until their first disagreement. By time h the disagreement probability is at most hk2^-b; each full trajectory costs at most hD, so expected cost increases by at most kh^2 2^-b D<=D. Formerly unreachable configurations are covered by their legal default rows. The table uses b fair bits per request, but this argument gives no efficient table size or construction time.\n\n## Role in the source argument\n\nTurns an existence-based competitive guarantee into a finite exact object with bounded random-bit consumption.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:finite-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/build/source/sections/02-finite-tables.tex#L103)\n\n## Antecedents and comparison\n\n[Mömke, A Competitive Ratio Approximation Scheme for the k-Server Problem in Fixed Finite Metrics](https://arxiv.org/abs/1303.2963), section 4, pages 6-7, already gives rational finite-horizon strategy polyhedra, prefix consistency and conditional-policy recovery; those pages were read. The source uses configuration flows and explicit dyadic coupling bounds. Rational LP elimination and coupling are established tools.\n\n## Checks and limitations\n\nSmall exact policy flows test conservation, reconstruction, legal zero-mass defaults and all short-word costs. Dyadic rounding is checked against exact cost enumeration and the additive-diameter budget; LP optimality is not inferred from these tests.\n\nThe checks do not establish the squared-logarithmic existence bound or polynomial per-request implementation.\n\n## Possible applications\n\nSeparating finite implementability and randomness precision from the further problem of efficient online computation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000694",
+      "record_type": "instrument",
+      "title": "Preserve a nonzero matrix evaluation through a finite coefficient ring",
+      "forms": [
+        "finite-coefficient-ring-descent",
+        "regular-representation-nonzero-preservation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-116"
+      ],
+      "source_paper_ids": [
+        "P-000463"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+          "label": "lem:coefficient-descent",
+          "line": 100,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L100",
+          "sha256": "eb9afb488fa56c559b14218bc19b0cb2135e8c04e2c7538ed2a8cc0cd4e98d81"
+        },
+        {
+          "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+          "label": "eq:t-truncation-length",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L64",
+          "sha256": "eb9afb488fa56c559b14218bc19b0cb2135e8c04e2c7538ed2a8cc0cd4e98d81"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000694.md",
+      "body": "# Preserve a nonzero matrix evaluation through a finite coefficient ring\n\n[Family 116](../families/openai-math-116.md) · [Source manuscript](../papers/P-000463.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet V_i be N by N matrices over k[t]_(t), the rational functions regular at zero. Reduce their entries modulo t^E and replace each residue by its E by E multiplication matrix on k[t]/(t^E). This produces matrices T_i of size NE over k.\n\nFor any extension field F/k and noncommutative polynomial f over F, suppose a polynomial D with D(0)!=0 makes D f(V) polynomial entrywise with every nonzero entry of degree less than E. If f(V)!=0, some such numerator survives modulo t^E. Reduction is a unital algebra map, so f of the reduced matrices is nonzero. Multiplication on F[t]/(t^E) is faithful, since a nonzero element acts nontrivially on 1. Its block extension is also faithful and commutes with evaluation and scalar extension. Hence f(T)!=0 over F.\n\nFor the source strictly triangular operators, each nonzero product follows a strictly increasing chain of indices. Its denominator uses each factor t^r-1 at most once, so D=product_(r=1 to N-1)(t^r-1) clears every polynomial evaluation. The numerator degree is at most binomial(N,2)+n(N-1), giving E one larger. Relative primality of the denominator factors is unnecessary, including in small characteristic. No shift automorphism on the truncated ring is needed.\n\n## Role in the source argument\n\nDescends rational-function matrix evaluations to matrices over the original coefficient field.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:coefficient-descent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L100)\n- [eq:t-truncation-length](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L64)\n\n## Antecedents and comparison\n\nTruncation of a local ring and its faithful regular representation are classical. The source-specific input is one denominator and degree bound valid for all relevant word evaluations; the descent lemma itself is elementary algebra.\n\n## Checks and limitations\n\nExact small-prime computations compare block-matrix evaluation with evaluation in the truncated ring. Boundary examples show why the strict degree bound and regular denominator matter.\n\nThe tests do not establish that the source rational-function tuple hits every bounded-size formula.\n\n## Possible applications\n\nReplacing field extensions or transcendental coefficients by finite matrices while retaining a known nonzero witness.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000695",
+      "record_type": "instrument",
+      "title": "Convert formal integration coefficients into a nonzero first column",
+      "forms": [
+        "formal-integration-jet-matrices",
+        "vanishing-order-to-matrix-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-116"
+      ],
+      "source_paper_ids": [
+        "P-000464"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+          "label": "eq:explicit-matrices",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L20",
+          "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+        },
+        {
+          "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+          "label": "eq:jet-intertwining",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L37",
+          "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+        },
+        {
+          "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+          "label": "eq:first-column",
+          "line": 50,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L50",
+          "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000695.md",
+      "body": "# Convert formal integration coefficients into a nonzero first column\n\n[Family 116](../families/openai-math-116.md) · [Source manuscript](../papers/P-000464.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nOver a characteristic-zero field, define J_i(a)=integral_0^z a(t)/(t+i) dt for positive integers i. This raises vanishing order and therefore acts on F[[z]]/(z^d). In the monomial basis its strictly lower triangular matrix is (T_i)_(r,q)=(-1)^(r-q-1)/(r i^(r-q)) for 0<=q<r<d, and zero otherwise. Expansion of 1/(z+i) and termwise integration prove the formula.\n\nIf pi_d retains the first d coefficients, pi_d J_i=T_i pi_d. Thus for a word w=i1...ik, T_i1...T_ik e0 is the truncated coefficient vector of J_i1...J_ik(1), with the rightmost operator acting first. Constants use scalar identity matrices and the empty word is included. For any polynomial f, f(T)e0=pi_d(h_f), so h_f!=0 with order below d implies f(T)!=0.\n\nThe source invokes separate independence and multiplicity inputs to bound order(h_f)<2ns^2 for its formula class, taking d=2ns^2. That bound is a dependency of the hitting theorem, not proved by this coefficient identity. The entries have directly controlled rational bit length and can be constructed by integer powers and products.\n\n## Role in the source argument\n\nMakes a formal-series witness into an explicit rational matrix test.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [eq:explicit-matrices](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L20)\n- [eq:jet-intertwining](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L37)\n- [eq:first-column](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L50)\n\n## Antecedents and comparison\n\nFormal integration and jet representations are established constructions. The selected step is the explicit coefficient formula and its first-column detection interface. The source multiplicity input is not independently audited in this card.\n\n## Checks and limitations\n\nExact rational matrices are compared with independently expanded and integrated series for words and commutators; tests check multiplication order, constants and truncation.\n\nNo universal hitting theorem follows from finite examples or from the jet identity alone.\n\n## Possible applications\n\nTurning a proved order-of-vanishing bound into an explicit finite-dimensional evaluation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000696",
+      "record_type": "instrument",
+      "title": "Keep a product uniformly inside the Cayley half-plane",
+      "forms": [
+        "controlled-damping-product",
+        "factor-count-cayley-margin"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-122"
+      ],
+      "source_paper_ids": [
+        "P-000465"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex",
+          "label": "lem:product-cayley",
+          "line": 188,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex#L188",
+          "sha256": "5634ae3938de7fed6737e19b4527f2df1c3ccd96f94b6c718a62e24f25e95326"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000696.md",
+      "body": "# Keep a product uniformly inside the Cayley half-plane\n\n[Family 122](../families/openai-math-122.md) · [Source manuscript](../papers/P-000465.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet 0<gamma<=1, and let z be a nonempty product of at most N numbers exp(-a_j+i theta_j), with a_j>0 and a_j>=gamma min(|theta_j|,N theta_j^2). Then Re((1+z)/(1-z))>=c gamma for an absolute c>0.\n\nWrite T=sum a_j and psi=sum theta_j. Split absolute angles into U=sum_(|theta|>=1/N)|theta| and V=sum_(|theta|<1/N)|theta|. Cauchy-Schwarz on at most N small angles gives T>=gamma(U+V^2). If either U or V exceeds one, this bounds T below by gamma; otherwise U+V^2>=(U+V)^2/2. Therefore T>=gamma min(1,psi^2)/2, with no choice of a principal angle required.\n\nThe Cayley real part is (1-exp(-2T))/|1-exp(-T+i psi)|^2. For T<=1, the numerator is at least (1-exp(-2))T and the denominator is at most T^2+4min(1,psi^2)<=9T/gamma. For T>1, the ratio is at least (1-exp(-2))/4. Thus c=(1-exp(-2))/9 is one valid explicit choice from the proof. In the source recursion, N_j<=4N_(j-1)+1 counts elementary factors; conjugation preserves the damping condition but does not remove a factor from that budget.\n\n## Role in the source argument\n\nProvides a quantitative domain margin for later analytic continuation of products of parameters.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:product-cayley](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex#L188)\n\n## Antecedents and comparison\n\nThe Cayley identity and the two-regime Cauchy-Schwarz estimate are elementary. The source packages them with its recursive multiplicity count; exact priority of that interface is not established.\n\n## Checks and limitations\n\nNumerical tests include cancellation, large angles, tiny damping and repeated factors. A negative control omitting the factor-count multiplier loses the uniform margin.\n\nThese checks do not verify the multiscale signal construction or the reconstruction upper bound.\n\n## Possible applications\n\nKeeping multiplicatively combined analytic parameters away from a continuation boundary.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000697",
+      "record_type": "instrument",
+      "title": "Amplify adjacent-power overlap by hiding labels in a fixed-count schedule",
+      "forms": [
+        "common-part-fixed-count-smoothing",
+        "hypergeometric-adjacent-total-variation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-122"
+      ],
+      "source_paper_ids": [
+        "P-000466"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex",
+          "label": "lem:lift",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex#L28",
+          "sha256": "be92f8fea551a9df6d4c1e8fa98dacf26b851708f59c0087deb0bf3ee21d2932"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000697.md",
+      "body": "# Amplify adjacent-power overlap by hiding labels in a fixed-count schedule\n\n[Family 122](../families/openai-math-122.md) · [Source manuscript](../papers/P-000466.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nSuppose trace laws for w^k and w^(k+1) share a sublaw omega U, with 0<omega<1/8. Use g=2 floor(FP/(2k+1)) chunks and a common tail. A uniform schedule has g/2 or g/2+P long chunks, giving total exponents FP or FP+P. For each chunk, independently emit U with probability omega, hiding its short/long label; otherwise reveal the label and emit the normalized residual law. Joining the outputs gives the genuine trace law.\n\nConditional on the hidden-flag set of size M, the visible long count has hypergeometric mass p_m(v)=choose(g-M,v) choose(M,m-v)/choose(g,m). Visible label sequences are exchangeable, so their total variation is exactly that of the count. Coupling schedules with m and m+1 long labels by flipping a uniform short label yields p_(m+1)(v)-p_m(v)=t(v-1)p_m(v-1)-t(v)p_m(v), t(v)=(g-M-v)/(g-m). The sequence t(v)p_m(v) is unimodal; hence the adjacent total variation equals its maximum and is at most max p_m.\n\nWhen M is between omega g/2 and 2omega g and m is central, Stirling bounds max p_m=O((omega g)^(-1/2)). Summing P adjacent changes costs O(P/sqrt(omega g)); atypical flags have exponentially small probability. With F>=CkP, C sufficiently large compared with 1/omega, and sufficiently large P, the final overlap is at least 2/3. Only the common component hides the labels; revealing those labels would destroy this smoothing mechanism.\n\n## Role in the source argument\n\nTurns weak overlap of neighboring powers into strong overlap after a controlled increase in length.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:lift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex#L28)\n\n## Antecedents and comparison\n\nCommon-part coupling and hypergeometric smoothing are established probabilistic mechanisms. The source cites Zaharopol (1989) for a related positive-contraction smoothing argument; that primary paper was located but its propositions were not independently checked. No priority claim is made for this quantitative word-power formulation.\n\n## Checks and limitations\n\nExact hypergeometric masses verify the adjacent difference identity, unimodal flux formula and total-variation bound, including endpoint supports. Small common-component models check hiding and postprocessing.\n\nFinite checks do not verify the asymptotic Stirling constants or the source recursive lower-bound construction.\n\n## Possible applications\n\nSmoothing a hidden fixed-count perturbation without assuming independent labels in the schedule.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000698",
+      "record_type": "instrument",
+      "title": "Compare parity lifts by binary solvability and expose a dual witness",
+      "forms": [
+        "parity-lift-count-duality",
+        "noncancelling-homomorphism-count-comparison"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-133"
+      ],
+      "source_paper_ids": [
+        "P-000467"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+          "label": "def:lifts",
+          "line": 44,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L44",
+          "sha256": "96a483eebe04af02bcaa648509ddbbd9744e37ebc801a365416f9477063338c3"
+        },
+        {
+          "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+          "label": "lem:lift-duality",
+          "line": 82,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L82",
+          "sha256": "96a483eebe04af02bcaa648509ddbbd9744e37ebc801a365416f9477063338c3"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000698.md",
+      "body": "# Compare parity lifts by binary solvability and expose a dual witness\n\n[Family 133](../families/openai-math-133.md) · [Source manuscript](../papers/P-000467.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet tau:G->T be a homomorphism to a connected finite simple type graph with positive degrees. In X_b, a vertex over u is a binary tag z on every neighbor type of tau(u), with sum z=b(tau(u)). Adjacency requires a base edge and equality of the two tags on the opposite types. Each fiber has 2^(degree-1) tags, independently of parity.\n\nFix phi:F->G and put a=tau phi. Its lifts are solutions in source-indexed variables z_(x,a') of vertex equations sum_(a') z_(x,a')=b(a(x)) and edge equations z_(x,a(y))+z_(y,a(x))=0. The coefficient matrix is independent of b. At b=0 its kernel is nonempty; at a twist on type 1 the solution set is either empty or a kernel coset. Summing over projections gives hom(F,X0)>=hom(F,Xstar), with strictness exactly when at least one twisted system is inconsistent. Other projections cannot cancel that deficit.\n\nBinary duality says inconsistency is witnessed by vertex weights s and edge weights r such that sum_(y adjacent x, a(y)=a') r(xy)=s(x) for every neighbor type a', and sum_(a(x)=1)s(x)=1. For adjacent types, summing the same edge weights from either side equates their total vertex weights. Connectedness therefore forces every type mass to be one. Variables at distinct source vertices remain distinct even if phi maps them to the same base vertex.\n\n## Role in the source argument\n\nTurns a graph-count inequality into a local parity witness suitable for a later separator argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [def:lifts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L44)\n- [lem:lift-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L82)\n\n## Antecedents and comparison\n\n[Roberson, arXiv:2206.10321v1](https://arxiv.org/abs/2206.10321v1), Theorem 3.6 and Lemma 3.8 on pages 11-12, give the corresponding lift-count comparison and binary duality. Both were read, including the theorem proof. The source keeps an additional base vertex over each template type; the mechanism is explicitly an antecedent, not a new counting principle.\n\n## Checks and limitations\n\nSmall graphs compare direct homomorphism enumeration, projected binary-system counts and dual certificates, including repeated projected images. Type masses are checked for every enumerated dual witness.\n\nThe tests do not establish bounded-treewidth choice extraction or WL/complexity claims.\n\n## Possible applications\n\nPreventing cancellation when aggregating many possible projections of a combinatorial witness.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000699",
+      "record_type": "instrument",
+      "title": "Recover vertex potentials from a vanishing cyclic sum",
+      "forms": [
+        "binary-cycle-potential-lifting",
+        "rectangular-difference-separability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-133"
+      ],
+      "source_paper_ids": [
+        "P-000468"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex",
+          "label": "lem:cycle-lifting",
+          "line": 139,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex#L139",
+          "sha256": "09f7c5877dd50bb7a2db6e7f364d6643b4200d670a24110cbcf931a221966f25"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000699.md",
+      "body": "# Recover vertex potentials from a vanishing cyclic sum\n\n[Family 133](../families/openai-math-133.md) · [Source manuscript](../papers/P-000468.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet r>=3, let each A_i be nonempty, and let g_i:A_i x A_(i+1)->F2, with cyclic indices. If sum_i g_i(a_i,a_(i+1))=0 for every full address in the product, there are Y_i:A_i->F2 with g_i(u,v)=Y_i(u)+Y_(i+1)(v).\n\nFix a base address b. Taking the rectangular difference in coordinates i,i+1 kills every term except g_i, so g_i(u,v)=c_i+alpha_i(u)+gamma_i(v), where c_i=g_i(b_i,b_(i+1)) and the deviations vanish at their base points. Varying coordinate i alone gives alpha_i=gamma_(i-1); evaluating at b gives sum c_i=0. Choose C_1 arbitrarily and solve C_i+C_(i+1)=c_i around the cycle; over F2 the final equation holds exactly because the constants sum to zero. Set Y_i=alpha_i+C_i.\n\nSingleton factors cause no difficulty. The full-product hypothesis allows independent rectangular variations, and r>=3 ensures there is no second edge depending on the same pair of coordinates. For r=2, two equal nonseparable tables can cancel in the global sum, so the conclusion need not hold.\n\n## Role in the source argument\n\nUpgrades consistent image sums to actual offsets on shared graph readouts.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:cycle-lifting](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex#L139)\n\n## Antecedents and comparison\n\nThis is an elementary mixed-difference and potential decomposition. Exact priority of its use in this graph encoding is not established; no new general cohomology theorem is claimed.\n\n## Checks and limitations\n\nExhaustive binary tables on a three-cycle verify every zero-sum instance and reconstruct its potentials. Additional singleton examples and a two-cycle counterexample test the hypotheses.\n\nThe local identity does not verify the source global isomorphism criterion or EXPTIME reduction.\n\n## Possible applications\n\nPatching local pairwise data when a global cancellation identity holds on every independent coordinate choice.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000700",
+      "record_type": "instrument",
+      "title": "Compile deterministic episode updates from universally sound splits",
+      "forms": [
+        "prefix-code-split-expression",
+        "affine-update-linear-recovery"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-134"
+      ],
+      "source_paper_ids": [
+        "P-000469"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+          "label": "lem:split",
+          "line": 65,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L65",
+          "sha256": "0196893828fbcf3dd77bcd0f2a3488a5468c35906a8b54c7c23c22d9ff729d08"
+        },
+        {
+          "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+          "label": "lem:affine-recovery",
+          "line": 123,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L123",
+          "sha256": "0196893828fbcf3dd77bcd0f2a3488a5468c35906a8b54c7c23c22d9ff729d08"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000700.md",
+      "body": "# Compile deterministic episode updates from universally sound splits\n\n[Family 134](../families/openai-math-134.md) · [Source manuscript](../papers/P-000469.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet E be a prefix code, D' subset D subset E, and let each episode e have a total deterministic state update G_e on finite S. Suppose P_x,Q_y are universally sound: whenever uv is a prefix of w in D* with u in P_x and v in Q_y, uv is exactly the first episode e and G_e(x)=y. Require a successful split for each e in D minus D' and each input state.\n\nWrite W_(x,y) for exact graph tests on (D')*. Then the graph test on D* is\nD* intersect [W_(x,y) union (union_a W_(x,a)P_a)(union_(b,c) Q_b W_(b,c)P_c)* (union_r Q_r W_(r,y))].\nMembership in D* fixes the true episode parsing. Each adjacent P,Q pair starts at an actual boundary, so universal soundness advances the deterministic computation by one episode; W consumes skipped episodes. Conversely split every non-skipped episode. The empty word is handled by W. If D,P,Q have heights at most 1,0,1 and W has height H, the displayed expression has height at most max(2,H+1).\n\nAffine updates v->vA_e+b_e may be used without losing the desired product of linear parts: the composite has linear part g_w(v)-g_w(0). On a finite vector space, the graph test for output y is union_z [R_(v,y+z) intersect R_(0,z)], using the same word in both tests. Boolean operations do not increase star height; invertibility is unnecessary.\n\n## Role in the source argument\n\nSeparates a language-expression identity from the harder construction of sound local tests.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:split](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L65)\n- [lem:affine-recovery](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L123)\n\n## Antecedents and comparison\n\nPrefix-code parsing, expression concatenation and recovery of an affine map from its value at zero are established ideas. The selected source emphasizes universal soundness of independently accepted split witnesses; that condition must be proved by later constructions.\n\n## Checks and limitations\n\nA concrete prefix code and deterministic updates compare the expression against direct parsing on every short binary word. An omitted-domain negative control detects spurious words. Exact affine composites check recovery with singular linear maps.\n\nThe tests do not establish the source marker rules, universal end guard or uniform height bound.\n\n## Possible applications\n\nAuditing recursive language constructions for hidden synchronization assumptions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000701",
+      "record_type": "instrument",
+      "title": "Choose one affine correction that hides a coordinate on every input",
+      "forms": [
+        "affine-coordinate-line-constancy",
+        "local-lemma-finite-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-134"
+      ],
+      "source_paper_ids": [
+        "P-000470"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+          "label": "lem:affine-line",
+          "line": 162,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L162",
+          "sha256": "93c57bb4c3507b098e2a3b9302cc46d1631d4c2026c2c284e71d62d04e290268"
+        },
+        {
+          "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+          "label": "rem:finite-affine-choice",
+          "line": 257,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L257",
+          "sha256": "93c57bb4c3507b098e2a3b9302cc46d1631d4c2026c2c284e71d62d04e290268"
+        }
+      ],
+      "batch_id": "B074",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000701.md",
+      "body": "# Choose one affine correction that hides a coordinate on every input\n\n[Family 134](../families/openai-math-134.md) · [Source manuscript](../papers/P-000470.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet a finite monoid M act linearly on a finite F2-vector space U. There exist l>=1 and beta:M^l->U such that for every v and every tuple d, some coordinate j makes a->v rho(d1...d_(j-1) a d_(j+1)...dl)+beta(d1,...,a,...,dl) constant on M. The same beta serves all v,d.\n\nPut m=|M| and q=|U|; trivial cases use beta=0. Choose beta independently uniformly at all tuples. Conditional on beta(d), constancy along a given coordinate line prescribes its other m-1 values, with probability q^(1-m). Noncentral points of different lines are disjoint, so the probability of no successful line is p_l=(1-q^(1-m))^l. A failure event reads only the radius-one Hamming neighborhood of d. Events at centers farther than two are jointly independent, giving dependency degree at most D_l=q(1+lm+l^2m^2).\n\nChoose l large enough that p_l<=1/(4D_l). The finite local lemma, or its proved bound u(1-u)^D with u=1/(2D_l), gives positive probability of avoiding every failure event. Thus beta can be fixed before v and d. Exhaustive finite search after choosing l is an effective existence procedure, but no useful runtime bound follows. The variable coordinate j is allowed to depend on the state and tuple; beta is not.\n\n## Role in the source argument\n\nAdds a deterministic correction so that one interval product can be omitted by suitable local tests.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:affine-line](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L162)\n- [rem:finite-affine-choice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L257)\n\n## Antecedents and comparison\n\n[Erdos and Lovasz, Problems and results on 3-chromatic hypergraphs and some related questions](https://www.renyi.hu/~p_erdos/1975-34.pdf), section 2, printed pages 616-617, proves the dependency-graph bound 1/(4d); those pages were visually read. The local lemma is classical. The source applies it to affine coordinate-line failures; exact priority of that application is not established.\n\n## Checks and limitations\n\nExact small-neighborhood enumeration checks the failure probability. A finite two-element monoid model constructs a correction and checks every tuple and state; the displayed local-lemma inequality and dependency count are checked separately.\n\nOne finite model does not certify arbitrary monoids or the subsequent generalized star-height construction.\n\n## Possible applications\n\nMaking a fixed preprocessing correction work for every query while allowing the omitted coordinate to adapt.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -38294,6 +38624,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000462.md",
       "body": "# Uniform computation of the squared-logarithmic k-server bound\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-computation-of-the-squared-logarithmic-k-server-bound-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000693: Extract causal rational flow tables and round them with a diameter budget](../instruments/MI-000693.md)\n\n[Family review and dependencies](../families/openai-math-110.md) · [Batch B073](../../batches/B073/README.md)"
+    },
+    {
+      "id": "P-000463",
+      "record_type": "paper",
+      "title": "Uniform Matrix Hitting Points in Every Positive Characteristic",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-116"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "00cd284297c5acbc271ea7f979c80a672853aa5d9f6c834d6e58c18f11c04c54",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000463.md",
+      "body": "# Uniform Matrix Hitting Points in Every Positive Characteristic\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/uniform-matrix-hitting-points-positive-characteristic.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000694: Preserve a nonzero matrix evaluation through a finite coefficient ring](../instruments/MI-000694.md)\n\n[Family review and dependencies](../families/openai-math-116.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000464",
+      "record_type": "paper",
+      "title": "One Rational Matrix Hitting Point for Noncommutative Formulas",
+      "source_collection": "openai/math",
+      "upstream_slug": "One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-116"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bbdadefee25251ea6e7971a2c5d23599fabe33bb8e68950f2018c03a4eb93b69",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000464.md",
+      "body": "# One Rational Matrix Hitting Point for Noncommutative Formulas\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000695: Convert formal integration coefficients into a nonzero first column](../instruments/MI-000695.md)\n\n[Family review and dependencies](../families/openai-math-116.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000465",
+      "record_type": "paper",
+      "title": "Uniform quasipolynomial-time trace reconstruction",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-122"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "91f9494a27616c482af9fe4a78b9beaffeed0648ec92112c4bbbc9b0663eb8c8",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000465.md",
+      "body": "# Uniform quasipolynomial-time trace reconstruction\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/uniform-trace-reconstruction.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000696: Keep a product uniformly inside the Cayley half-plane](../instruments/MI-000696.md)\n\n[Family review and dependencies](../families/openai-math-122.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000466",
+      "record_type": "paper",
+      "title": "Quantitative lower bounds for trace reconstruction",
+      "source_collection": "openai/math",
+      "upstream_slug": "quantitative-lower-bounds-for-trace-reconstruction-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-122"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d14a203c7dbacee2e181a9eea55b8433a7e25977343a03f4a42722f7a81ba852",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000466.md",
+      "body": "# Quantitative lower bounds for trace reconstruction\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000697: Amplify adjacent-power overlap by hiding labels in a fixed-count schedule](../instruments/MI-000697.md)\n\n[Family review and dependencies](../families/openai-math-122.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000467",
+      "record_type": "paper",
+      "title": "Parity lifts and bounded-treewidth witnesses for Weisfeiler–Leman equivalence",
+      "source_collection": "openai/math",
+      "upstream_slug": "Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-133"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ca7ec7c05e420db93411faabc618746a4676287f41f20ce92952c671e76c5b54",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000467.md",
+      "body": "# Parity lifts and bounded-treewidth witnesses for Weisfeiler–Leman equivalence\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000698: Compare parity lifts by binary solvability and expose a dual witness](../instruments/MI-000698.md)\n\n[Family review and dependencies](../families/openai-math-133.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000468",
+      "record_type": "paper",
+      "title": "The complexity of identifying a graph by Weisfeiler–Leman refinement",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-133"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "dec328bc4c70b656b9b11b2299512dcd1f1add1195dea19fabe86d754ea08699",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000468.md",
+      "body": "# The complexity of identifying a graph by Weisfeiler–Leman refinement\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000699: Recover vertex potentials from a vanishing cyclic sum](../instruments/MI-000699.md)\n\n[Family review and dependencies](../families/openai-math-133.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000469",
+      "record_type": "paper",
+      "title": "Finite Monoid Computations and a Uniform Generalized Star-Height Bound",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-134"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5d4059e81b63e0faeb1a5c29a15b42aaf8220f3a85adb5a84f497a3b0a00a613",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000469.md",
+      "body": "# Finite Monoid Computations and a Uniform Generalized Star-Height Bound\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000700: Compile deterministic episode updates from universally sound splits](../instruments/MI-000700.md)\n\n[Family review and dependencies](../families/openai-math-134.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000470",
+      "record_type": "paper",
+      "title": "Generalized Star Height at Most Four",
+      "source_collection": "openai/math",
+      "upstream_slug": "Generalized-Star-Height-at-Most-Four-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-134"
+      ],
+      "batch_id": "B074",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "11726c22d42127adf4fa6190feadb06f0006fb9c54756176cb789d936ffd1aa1",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000470.md",
+      "body": "# Generalized Star Height at Most Four\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/Generalized-Star-Height-at-Most-Four-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000701: Choose one affine correction that hides a coordinate on every input](../instruments/MI-000701.md)\n\n[Family review and dependencies](../families/openai-math-134.md) · [Batch B074](../../batches/B074/README.md)"
     }
   ],
   "families": [
@@ -41448,6 +41930,34 @@
       "body": "# Exact residual sampling and capacity-adapted forest coordinates\n\n## Source manuscripts and claim\n\n- [Exact Uniform Sampling of Contingency Tables with Arbitrary Margins](../papers/P-000271.md): selected passages extracted.\n- [An FPRAS for Cell-Bounded Contingency Tables](../papers/P-000272.md): selected passages extracted.\n\nThe sources claim exact uniform sampling for arbitrary contingency-table margins and an FPRAS with arbitrary individual cell bounds.\n\n## Extracted instruments\n\n- [MI-000492: Correct a dyadic approximate sampler by a rare exact residual](../instruments/MI-000492.md)\n- [MI-000493: Choose a maximum-capacity forest before normalizing free variables](../instruments/MI-000493.md)\n\n## Dependencies and antecedents\n\nFinite dyadic laws, exact integer sampling and expected-cost accounting; forest elimination, maximum-spanning-tree exchange and normalized piecewise-linear penalties.\n\nGobel-Liu-Manurangsi-Pappik arXiv:2410.00882v2 Section 3.1; Cryan-Dyer-Randall Section 2.\n\n## Review and formalization scope\n\nRead the full exact-sampling residual proof and the full forest-coordinate lemma, including its cut identity and Lipschitz estimate. The source approximate samplers, tabulation complexity and global counting schemes remain outside these checks.\n\nThe supplied target includes exact expected-polynomial sampling, bounded-time approximate sampling, and cell-bounded approximate counting, with binary encoded margins and freely varying dimensions. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nResidual probabilities require pointwise domination and exact distribution tabulation. Small-edge row and column incidences may disagree and must be retained separately in forest cut sums.\n\n[Batch record](../../batches/B049/README.md)"
     },
     {
+      "id": "openai-math-116",
+      "record_type": "family",
+      "title": "Finite coefficient descent and rational integration jets",
+      "source_family": "116",
+      "source_collection": "openai/math",
+      "batch_id": "B074",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000463",
+        "P-000464"
+      ],
+      "instrument_ids": [
+        "MI-000694",
+        "MI-000695"
+      ],
+      "headline": "The family claims uniform matrix hitting points and lists for noncommutative formulas across characteristics.",
+      "central_instrument": "A regular representation of a truncated coefficient ring preserves bounded-degree nonzero numerators; integration jets make an order bound into a nonzero matrix column.",
+      "novelty_assessment": "Established mechanisms and directly checked antecedents are identified below. No exhaustive novelty determination or source headline certification is claimed.",
+      "formalization_summary": "Read the scope and complete FormulaHitting Comparator. It explicitly defines the rational jet matrices and targets universal nonzero evaluation for bounded-size division-free formulas over characteristic-zero fields. It does not separately assert construction complexity, rational-inverse formulas or the newer positive-characteristic theorem. RationalHitting was not inspected. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Coefficient descent requires a regular common denominator and a strict numerator degree bound. Rational integration jets require characteristic zero and only detect series whose first nonzero coefficient survives truncation.",
+      "dependencies": "Local polynomial rings, regular representations, nilpotent truncation and formal integration.",
+      "antecedents": "Classical finite algebra representations and formal Taylor truncations.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-116.md",
+      "body": "# Finite coefficient descent and rational integration jets\n\n## Source manuscripts and claim\n\n- [Uniform Matrix Hitting Points in Every Positive Characteristic](../papers/P-000463.md): selected passages extracted.\n- [One Rational Matrix Hitting Point for Noncommutative Formulas](../papers/P-000464.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Polynomial Hitting Lists for Noncommutative Rational Formulas](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Hitting-Lists-for-Noncommutative-Rational-Formulas-September-24-2026)\n\nThe family claims uniform matrix hitting points and lists for noncommutative formulas across characteristics.\n\n## Extracted instruments\n\n- [MI-000694: Preserve a nonzero matrix evaluation through a finite coefficient ring](../instruments/MI-000694.md)\n- [MI-000695: Convert formal integration coefficients into a nonzero first column](../instruments/MI-000695.md)\n\n## Dependencies and antecedents\n\nLocal polynomial rings, regular representations, nilpotent truncation and formal integration.\n\nClassical finite algebra representations and formal Taylor truncations.\n\n## Review and formalization scope\n\nRead the full coefficient-descent proof, the common-denominator argument preceding it and the characteristic-zero jet construction and detection calculation. Two of three manuscripts receive extractions; the rational-formula hitting-list manuscript remains inventory-only. Word-series independence, multiplicity bounds and positive-characteristic shift-system bounds are not certified.\n\nRead the scope and complete FormulaHitting Comparator. It explicitly defines the rational jet matrices and targets universal nonzero evaluation for bounded-size division-free formulas over characteristic-zero fields. It does not separately assert construction complexity, rational-inverse formulas or the newer positive-characteristic theorem. RationalHitting was not inspected. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nCoefficient descent requires a regular common denominator and a strict numerator degree bound. Rational integration jets require characteristic zero and only detect series whose first nonzero coefficient survives truncation.\n\n[Batch record](../../batches/B074/README.md)"
+    },
+    {
       "id": "openai-math-117",
       "record_type": "family",
       "title": "Masked parity mixing and multiscale triangle repair",
@@ -41583,6 +42093,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-121.md",
       "body": "# Nonconservative tree curvature and entropy bounds with fixed block masses\n\n## Source manuscript and claim\n\n[An Almost-Linear Approximation Scheme for Edit Distance](../papers/P-000213.md), by OpenAI, September 24, 2026.\n\nThe source claims an almost-linear randomized (1+epsilon)-approximation scheme for unit-cost edit distance.\n\n## Extracted instruments\n\n- [MI-000388: Telescope weighted curvature when parent and child masses do not conserve](../instruments/MI-000388.md)\n- [MI-000389: Use fixed block masses to remove large predictable cost offsets from entropy regret](../instruments/MI-000389.md)\n\n## Dependencies and antecedents\n\nWeighted variance, signed mass telescopes, entropy/KL optimality, fixed block sums and monotone cost decrements.\n\nClassical energy telescoping; Rakhlin-Sridharan optimistic FTRL and exponential weighting. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the comparison-cost and complete curvature proof, and the full fixed-block entropy proof. The seed scheme, band computation, numerical optimizer and running-time argument were not audited.\n\nInspected the final EditApproximation.lean target: distortion success at least 2/3, zero on every execution for equal strings, almost-linear expected work for polynomially bounded integer alphabets, and every-execution polynomial space. It contains sorry; the long supporting construction was not audited or built.\n\nThe comparison tree is fixed before refinement randomness. Warmup masses may fail to add; those discrepancies must be charged. The entropy feasible set has fixed mass in each block and contains a positive vector.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/121.md) · [Batch record](../../batches/B035/README.md)"
+    },
+    {
+      "id": "openai-math-122",
+      "record_type": "family",
+      "title": "Damping products and hiding fixed-count labels",
+      "source_family": "122",
+      "source_collection": "openai/math",
+      "batch_id": "B074",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000465",
+        "P-000466"
+      ],
+      "instrument_ids": [
+        "MI-000696",
+        "MI-000697"
+      ],
+      "headline": "The family claims quantitative trace-reconstruction lower bounds and newer quasipolynomial upper bounds.",
+      "central_instrument": "Mixed linear/quadratic damping survives multiplication; a common component hides enough labels to smooth adjacent fixed-count schedules.",
+      "novelty_assessment": "Established mechanisms and directly checked antecedents are identified below. No exhaustive novelty determination or source headline certification is claimed.",
+      "formalization_summary": "Read the scope and complete TraceReconstruction Comparator. It targets superpolynomial worst-case sample lower bounds at every fixed positive success probability, one-trace indistinguishability, and a quantitative bound along varying deletion rates. It does not state the newer upper-bound decoder theorems. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The damping budget counts factors with multiplicity. The overlap amplification assumes a positive overlap input and sufficiently large parameters; no asymptotic source reconstruction guarantee is certified.",
+      "dependencies": "Cayley transforms, Cauchy-Schwarz, common sublaws, hypergeometric distributions and total variation.",
+      "antecedents": "Classical disk-to-half-plane estimates, common-part couplings and smoothing of fixed-count samples.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-122.md",
+      "body": "# Damping products and hiding fixed-count labels\n\n## Source manuscripts and claim\n\n- [Uniform quasipolynomial-time trace reconstruction](../papers/P-000465.md): selected passages extracted.\n- [Quantitative lower bounds for trace reconstruction](../papers/P-000466.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A latest-anchor induction with spectrally compact masks for worst-case trace reconstruction](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-latest-anchor-induction-with-spectrally-compact-masks-for-worst-case-trace-reconstruction-October-5-2026)\n\nThe family claims quantitative trace-reconstruction lower bounds and newer quasipolynomial upper bounds.\n\n## Extracted instruments\n\n- [MI-000696: Keep a product uniformly inside the Cayley half-plane](../instruments/MI-000696.md)\n- [MI-000697: Amplify adjacent-power overlap by hiding labels in a fixed-count schedule](../instruments/MI-000697.md)\n\n## Dependencies and antecedents\n\nCayley transforms, Cauchy-Schwarz, common sublaws, hypergeometric distributions and total variation.\n\nClassical disk-to-half-plane estimates, common-part couplings and smoothing of fixed-count samples.\n\n## Review and formalization scope\n\nRead the complete controlled-product lemma and its factor-count context, and the complete adjacent-power overlap proof and paired-hiding discussion. Two of three manuscripts receive extractions; the latest-anchor upper-bound manuscript remains inventory-only. Multiscale analytic continuation, score induction and decoder complexity are not certified.\n\nRead the scope and complete TraceReconstruction Comparator. It targets superpolynomial worst-case sample lower bounds at every fixed positive success probability, one-trace indistinguishability, and a quantitative bound along varying deletion rates. It does not state the newer upper-bound decoder theorems. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nThe damping budget counts factors with multiplicity. The overlap amplification assumes a positive overlap input and sufficiently large parameters; no asymptotic source reconstruction guarantee is certified.\n\n[Batch record](../../batches/B074/README.md)"
     },
     {
       "id": "openai-math-124",
@@ -41829,6 +42367,62 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-132.md",
       "body": "# Gated tournament predicates and joint sensitivity profiles\n\n## Source manuscript and claim\n\n[A superquadratic separation between sensitivity and block sensitivity](../papers/P-000117.md), by OpenAI, September 25, 2026.\n\nThe source claims total Boolean functions with block sensitivity divided by sensitivity squared arbitrarily large, and a stronger fixed superquadratic exponent separation.\n\n## Extracted instruments\n\n- [MI-000192: A forbidden label pattern bounds the clauses one bit away from acceptance](../instruments/MI-000192.md)\n- [MI-000193: Joint sensitivity profiles control recursive gates while block witnesses multiply](../instruments/MI-000193.md)\n\n## Dependencies and antecedents\n\nRegular tournaments; independently sampled edge labels; nested total predicates on disjoint child blocks; target and gate clauses; fixed candidate lists at rejecting inputs; one- and two-predicate sensitivity profiles.\n\nMeiburg supplies the gated-tournament architecture for spectral sensitivity. Classical sensitivity examples and the degree/sensitivity theory motivate the question; the source directly analyzes ordinary sensitivity rather than infer it from a spectral lower bound. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the labeled tournament, base predicates, disjoint block witnesses and complete recurrence proofs. The final parameter optimization and fixed-exponent sequence were not audited.\n\nSensitivitySeparation.lean contains the quantitative existence statement bs(f)/s(f)^2>=2^d/[4(d+2)^2] for every integer d>=1. The scope document additionally mentions a fixed exponent greater than two, but that is not a separate statement in this Comparator file. Scope documents and Comparator statements were compared. No Lean solution was built or kernel-checked, and the extracted auxiliary results are not separately certified Comparator targets.\n\nOrdinary sensitivity is a maximum vertex degree; spectral sensitivity is an adjacency operator norm and cannot be substituted. Nesting is in predicate index, not monotonicity in raw input bits. All profiles concern the same raw bit flip.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/132.md) · [Batch record](../../batches/B011/README.md)"
+    },
+    {
+      "id": "openai-math-133",
+      "record_type": "family",
+      "title": "Parity-lift duality and cycle potentials",
+      "source_family": "133",
+      "source_collection": "openai/math",
+      "batch_id": "B074",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000467",
+        "P-000468"
+      ],
+      "instrument_ids": [
+        "MI-000698",
+        "MI-000699"
+      ],
+      "headline": "The family claims construction and complexity results for Weisfeiler-Leman equivalence and identification.",
+      "central_instrument": "Binary affine systems compare lift counts without cancellation; rectangular differences turn globally vanishing edge sums into vertex potentials.",
+      "novelty_assessment": "Established mechanisms and directly checked antecedents are identified below. No exhaustive novelty determination or source headline certification is claimed.",
+      "formalization_summary": "Read the scope and both complete named Comparators. ParityLifts targets a choice-system equivalence under joint, separate and pure WL conventions with specified early-round detection. WLIdentification targets EXPTIME-completeness for identifying a graph against every comparison graph. The other two listed Comparators were not inspected. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Tag variables are indexed by source vertices, even when their projected images agree. Cycle lifting is over F2, with at least three coordinate factors and a full product domain.",
+      "dependencies": "Graph homomorphisms, binary linear algebra, connected type graphs and mixed differences.",
+      "antecedents": "Roberson parity graphs and the finite-field alternative for linear systems; elementary potential decomposition.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-133.md",
+      "body": "# Parity-lift duality and cycle potentials\n\n## Source manuscripts and claim\n\n- [Parity lifts and bounded-treewidth witnesses for Weisfeiler–Leman equivalence](../papers/P-000467.md): selected passages extracted.\n- [The complexity of identifying a graph by Weisfeiler–Leman refinement](../papers/P-000468.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Unconditional time lower bounds for Weisfeiler–Leman equivalence](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unconditional-time-lower-bounds-for-Weisfeiler-Leman-equivalence-September-25-2026)\n- [Variable-dimension Weisfeiler–Leman equivalence on general and subcubic graphs](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Variable-dimension-Weisfeiler-Leman-equivalence-on-general-and-subcubic-graphs-September-25-2026)\n\nThe family claims construction and complexity results for Weisfeiler-Leman equivalence and identification.\n\n## Extracted instruments\n\n- [MI-000698: Compare parity lifts by binary solvability and expose a dual witness](../instruments/MI-000698.md)\n- [MI-000699: Recover vertex potentials from a vanishing cyclic sum](../instruments/MI-000699.md)\n\n## Dependencies and antecedents\n\nGraph homomorphisms, binary linear algebra, connected type graphs and mixed differences.\n\nRoberson parity graphs and the finite-field alternative for linear systems; elementary potential decomposition.\n\n## Review and formalization scope\n\nRead the complete parity-lift definition, lift-count duality proof and connected type-mass argument, and the complete cycle-lifting proof with its row-sum definition. Two of four manuscripts receive extractions; unconditional-time and variable-dimension manuscripts remain inventory-only. Separator extraction, graph encodings and complexity reductions are not certified.\n\nRead the scope and both complete named Comparators. ParityLifts targets a choice-system equivalence under joint, separate and pure WL conventions with specified early-round detection. WLIdentification targets EXPTIME-completeness for identifying a graph against every comparison graph. The other two listed Comparators were not inspected. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nTag variables are indexed by source vertices, even when their projected images agree. Cycle lifting is over F2, with at least three coordinate factors and a full product domain.\n\n[Batch record](../../batches/B074/README.md)"
+    },
+    {
+      "id": "openai-math-134",
+      "record_type": "family",
+      "title": "Sound split expressions and affine corrections",
+      "source_family": "134",
+      "source_collection": "openai/math",
+      "batch_id": "B074",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000469",
+        "P-000470"
+      ],
+      "instrument_ids": [
+        "MI-000700",
+        "MI-000701"
+      ],
+      "headline": "The family claims uniform generalized star-height bounds, including bounds thirteen, four and three.",
+      "central_instrument": "Universally sound prefix/suffix tests compile deterministic updates; the local lemma chooses one correction with a constant coordinate line for every input state.",
+      "novelty_assessment": "Established mechanisms and directly checked antecedents are identified below. No exhaustive novelty determination or source headline certification is claimed.",
+      "formalization_summary": "Read the scope and complete GeneralizedStarHeight Comparator. It targets height at most three for every regular language over its original finite alphabet, with complement in the same free monoid. This common target is stronger than the bounds thirteen and four of the two selected manuscripts. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Every independently successful prefix/suffix pair must be sound on the actual word. The correction is fixed before the input state and tuple; only the successful coordinate may depend on them. Finite existence does not imply efficient computation.",
+      "dependencies": "Prefix codes, finite graph languages, affine maps, independent finite random variables and the Lovasz local lemma.",
+      "antecedents": "Classical regular-expression composition, affine recovery and the Erdos-Lovasz local lemma.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-134.md",
+      "body": "# Sound split expressions and affine corrections\n\n## Source manuscripts and claim\n\n- [Finite Monoid Computations and a Uniform Generalized Star-Height Bound](../papers/P-000469.md): selected passages extracted.\n- [Generalized Star Height at Most Four](../papers/P-000470.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Generalized Star Height at Most Three](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Three-September-25-2026)\n\nThe family claims uniform generalized star-height bounds, including bounds thirteen, four and three.\n\n## Extracted instruments\n\n- [MI-000700: Compile deterministic episode updates from universally sound splits](../instruments/MI-000700.md)\n- [MI-000701: Choose one affine correction that hides a coordinate on every input](../instruments/MI-000701.md)\n\n## Dependencies and antecedents\n\nPrefix codes, finite graph languages, affine maps, independent finite random variables and the Lovasz local lemma.\n\nClassical regular-expression composition, affine recovery and the Erdos-Lovasz local lemma.\n\n## Review and formalization scope\n\nRead the complete split identity, affine recovery and homogeneous-lift discussion in the finite-monoid manuscript, and the full affine-line constancy proof and finite-choice remark in the height-four manuscript. Two of three manuscripts receive extractions; the height-three manuscript remains inventory-only. Marker geometry, end guards and full language-height bounds are not certified.\n\nRead the scope and complete GeneralizedStarHeight Comparator. It targets height at most three for every regular language over its original finite alphabet, with complement in the same free monoid. This common target is stronger than the bounds thirteen and four of the two selected manuscripts. The inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nEvery independently successful prefix/suffix pair must be sound on the actual word. The correction is fixed before the input state and tuple; only the successful coordinate may depend on them. Finite existence does not imply efficient computation.\n\n[Batch record](../../batches/B074/README.md)"
     },
     {
       "id": "openai-math-135",

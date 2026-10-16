@@ -1,0 +1,315 @@
+{
+  "batch_id": "B074",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T19:38:35.791283+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/FormulaHitting.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FormulaHitting.lean",
+      "sha256": "23f279f5ed50b1a8a86df490c0157866e120a279b552489f1ae180e7dd3f01bd",
+      "bytes": 2068
+    },
+    {
+      "path": "lean/ComparatorChallenges/GeneralizedStarHeight.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GeneralizedStarHeight.lean",
+      "sha256": "795709e34771f1c786ecae7c123e8a586c426d8e93c8b5bc82f2904d5340556e",
+      "bytes": 1368
+    },
+    {
+      "path": "lean/ComparatorChallenges/ParityLifts.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ParityLifts.lean",
+      "sha256": "2989ada10696248af29b0300da5cae3272511c89e5b6956f161a9eb653d9f4ab",
+      "bytes": 8093
+    },
+    {
+      "path": "lean/ComparatorChallenges/TraceReconstruction.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TraceReconstruction.lean",
+      "sha256": "68df708f0b20b524cbc8fd02164731245982749eba0b2e8e0e1a520c85b0e70d",
+      "bytes": 3451
+    },
+    {
+      "path": "lean/ComparatorChallenges/WLIdentification.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/WLIdentification.lean",
+      "sha256": "cc619aecacac21039f401499acb37521312e262bd092d5e0d465950cb8276892",
+      "bytes": 5634
+    },
+    {
+      "path": "lean/docs/116.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/116.md",
+      "sha256": "c3b9d25576399946bc0bdb9f63cb8cb1a7f30161edb2319f120911fded2c8a63",
+      "bytes": 2049
+    },
+    {
+      "path": "lean/docs/122.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/122.md",
+      "sha256": "4bd3067e31390bc08d91e69ce143afd1460fed929fa8ce70d450add0a7b50ff3",
+      "bytes": 1222
+    },
+    {
+      "path": "lean/docs/133.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/133.md",
+      "sha256": "588164c3fc9150333108918c9644c521cb905d21f0bd641a0fd6cf4f1d83181e",
+      "bytes": 3780
+    },
+    {
+      "path": "lean/docs/134.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/134.md",
+      "sha256": "5b9fdccbafa415c70b8dc442e39e51472f80018c5aae90d054c74bb39ebabf3a",
+      "bytes": 2313
+    },
+    {
+      "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/README.md",
+      "sha256": "5d4059e81b63e0faeb1a5c29a15b42aaf8220f3a85adb5a84f497a3b0a00a613",
+      "bytes": 881
+    },
+    {
+      "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+      "sha256": "0196893828fbcf3dd77bcd0f2a3488a5468c35906a8b54c7c23c22d9ff729d08",
+      "bytes": 10134
+    },
+    {
+      "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/README.md",
+      "sha256": "11726c22d42127adf4fa6190feadb06f0006fb9c54756176cb789d936ffd1aa1",
+      "bytes": 643
+    },
+    {
+      "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+      "sha256": "93c57bb4c3507b098e2a3b9302cc46d1631d4c2026c2c284e71d62d04e290268",
+      "bytes": 12725
+    },
+    {
+      "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/README.md",
+      "sha256": "bbdadefee25251ea6e7971a2c5d23599fabe33bb8e68950f2018c03a4eb93b69",
+      "bytes": 813
+    },
+    {
+      "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+      "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1",
+      "bytes": 6461
+    },
+    {
+      "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/README.md",
+      "sha256": "ca7ec7c05e420db93411faabc618746a4676287f41f20ce92952c671e76c5b54",
+      "bytes": 748
+    },
+    {
+      "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+      "sha256": "96a483eebe04af02bcaa648509ddbbd9744e37ebc801a365416f9477063338c3",
+      "bytes": 7859
+    },
+    {
+      "path": "preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/README.md",
+      "sha256": "dec328bc4c70b656b9b11b2299512dcd1f1add1195dea19fabe86d754ea08699",
+      "bytes": 703
+    },
+    {
+      "path": "preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex",
+      "sha256": "09f7c5877dd50bb7a2db6e7f364d6643b4200d670a24110cbcf931a221966f25",
+      "bytes": 11576
+    },
+    {
+      "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/README.md",
+      "sha256": "00cd284297c5acbc271ea7f979c80a672853aa5d9f6c834d6e58c18f11c04c54",
+      "bytes": 754
+    },
+    {
+      "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+      "sha256": "eb9afb488fa56c559b14218bc19b0cb2135e8c04e2c7538ed2a8cc0cd4e98d81",
+      "bytes": 11098
+    },
+    {
+      "path": "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/README.md",
+      "sha256": "91f9494a27616c482af9fe4a78b9beaffeed0648ec92112c4bbbc9b0663eb8c8",
+      "bytes": 639
+    },
+    {
+      "path": "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex",
+      "sha256": "5634ae3938de7fed6737e19b4527f2df1c3ccd96f94b6c718a62e24f25e95326",
+      "bytes": 20355
+    },
+    {
+      "path": "preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/README.md",
+      "sha256": "d14a203c7dbacee2e181a9eea55b8433a7e25977343a03f4a42722f7a81ba852",
+      "bytes": 610
+    },
+    {
+      "path": "preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex",
+      "sha256": "be92f8fea551a9df6d4c1e8fa98dacf26b851708f59c0087deb0bf3ee21d2932",
+      "bytes": 9710
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000694",
+      "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+      "label": "lem:coefficient-descent",
+      "line": 100,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L100",
+      "sha256": "eb9afb488fa56c559b14218bc19b0cb2135e8c04e2c7538ed2a8cc0cd4e98d81"
+    },
+    {
+      "instrument_id": "MI-000694",
+      "path": "preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex",
+      "label": "eq:t-truncation-length",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026/build/sections/construction.tex#L64",
+      "sha256": "eb9afb488fa56c559b14218bc19b0cb2135e8c04e2c7538ed2a8cc0cd4e98d81"
+    },
+    {
+      "instrument_id": "MI-000695",
+      "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+      "label": "eq:explicit-matrices",
+      "line": 20,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L20",
+      "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+    },
+    {
+      "instrument_id": "MI-000695",
+      "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+      "label": "eq:jet-intertwining",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L37",
+      "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+    },
+    {
+      "instrument_id": "MI-000695",
+      "path": "preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex",
+      "label": "eq:first-column",
+      "line": 50,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026/build/construction.tex#L50",
+      "sha256": "fb9580c04daa9d63b839dc032a4909d4cb3756a997431ea553307ecb08c977b1"
+    },
+    {
+      "instrument_id": "MI-000696",
+      "path": "preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex",
+      "label": "lem:product-cayley",
+      "line": 188,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026/build/manuscript/separation.tex#L188",
+      "sha256": "5634ae3938de7fed6737e19b4527f2df1c3ccd96f94b6c718a62e24f25e95326"
+    },
+    {
+      "instrument_id": "MI-000697",
+      "path": "preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex",
+      "label": "lem:lift",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quantitative-lower-bounds-for-trace-reconstruction-September-24-2026/build/sections/tools.tex#L28",
+      "sha256": "be92f8fea551a9df6d4c1e8fa98dacf26b851708f59c0087deb0bf3ee21d2932"
+    },
+    {
+      "instrument_id": "MI-000698",
+      "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+      "label": "def:lifts",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L44",
+      "sha256": "96a483eebe04af02bcaa648509ddbbd9744e37ebc801a365416f9477063338c3"
+    },
+    {
+      "instrument_id": "MI-000698",
+      "path": "preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex",
+      "label": "lem:lift-duality",
+      "line": 82,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026/build/sections/03-parity-lifts.tex#L82",
+      "sha256": "96a483eebe04af02bcaa648509ddbbd9744e37ebc801a365416f9477063338c3"
+    },
+    {
+      "instrument_id": "MI-000699",
+      "path": "preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex",
+      "label": "lem:cycle-lifting",
+      "line": 139,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026/build/sections/04-offsets.tex#L139",
+      "sha256": "09f7c5877dd50bb7a2db6e7f364d6643b4200d670a24110cbcf931a221966f25"
+    },
+    {
+      "instrument_id": "MI-000700",
+      "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+      "label": "lem:split",
+      "line": 65,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L65",
+      "sha256": "0196893828fbcf3dd77bcd0f2a3488a5468c35906a8b54c7c23c22d9ff729d08"
+    },
+    {
+      "instrument_id": "MI-000700",
+      "path": "preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex",
+      "label": "lem:affine-recovery",
+      "line": 123,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026/build/sections/algebra.tex#L123",
+      "sha256": "0196893828fbcf3dd77bcd0f2a3488a5468c35906a8b54c7c23c22d9ff729d08"
+    },
+    {
+      "instrument_id": "MI-000701",
+      "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+      "label": "lem:affine-line",
+      "line": 162,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L162",
+      "sha256": "93c57bb4c3507b098e2a3b9302cc46d1631d4c2026c2c284e71d62d04e290268"
+    },
+    {
+      "instrument_id": "MI-000701",
+      "path": "preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex",
+      "label": "rem:finite-affine-choice",
+      "line": 257,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L257",
+      "sha256": "93c57bb4c3507b098e2a3b9302cc46d1631d4c2026c2c284e71d62d04e290268"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-116",
+      "extracted_slugs": [
+        "Uniform-Matrix-Hitting-Points-in-Every-Positive-Characteristic-October-4-2026",
+        "One-Rational-Matrix-Hitting-Point-for-Noncommutative-Formulas-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "Polynomial-Hitting-Lists-for-Noncommutative-Rational-Formulas-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-122",
+      "extracted_slugs": [
+        "Uniform-quasipolynomial-time-trace-reconstruction-October-5-2026",
+        "quantitative-lower-bounds-for-trace-reconstruction-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-latest-anchor-induction-with-spectrally-compact-masks-for-worst-case-trace-reconstruction-October-5-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-133",
+      "extracted_slugs": [
+        "Parity-lifts-and-bounded-treewidth-witnesses-for-Weisfeiler-Leman-equivalence-September-25-2026",
+        "The-complexity-of-identifying-a-graph-by-Weisfeiler-Leman-refinement-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "Unconditional-time-lower-bounds-for-Weisfeiler-Leman-equivalence-September-25-2026",
+        "Variable-dimension-Weisfeiler-Leman-equivalence-on-general-and-subcubic-graphs-September-25-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-134",
+      "extracted_slugs": [
+        "Finite-Monoid-Computations-and-a-Uniform-Generalized-Star-Height-Bound-September-25-2026",
+        "Generalized-Star-Height-at-Most-Four-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "Generalized-Star-Height-at-Most-Three-September-25-2026"
+      ]
+    }
+  ]
+}
