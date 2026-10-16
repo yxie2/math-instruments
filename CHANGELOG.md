@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B021: nine instruments from logic families 241, 242, 244 and 245, with primary antecedent comparisons and nine finite check groups. Complete-witness, nonuniformity, symmetry, choice and annotation hypotheses are retained explicitly.
+
 - Added B020: eight instruments from combinatorial families 160, 161, 179 and 187. A separate parser reconstructs the complete 21-move Snaky certificate, including all 1,620 composition nodes and 37,042 local reply classes. Other cards preserve explicit conditional inputs and include finite consistency checks.
 
 - Added B019: eight instruments from algebra families 194, 198, 201 and 204, with exact source bindings and eight check groups. The extraction retains noninjective length limits, base change, genuinely derived tensor powers, two-sided pole annihilation, free-word order and filtered centralizer constraints.

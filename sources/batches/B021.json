@@ -1,0 +1,294 @@
+{
+  "batch_id": "B021",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T09:46:41.977479+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/DegreeRigidity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DegreeRigidity.lean",
+      "sha256": "ae3fcff2aca95957449bafd932cb00464a4432b4c1652a36be1c69a5dd32d999",
+      "bytes": 1220
+    },
+    {
+      "path": "lean/ComparatorChallenges/PartitionConsistency.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PartitionConsistency.lean",
+      "sha256": "7b68f2154b044771ced4c3335f58a31e2070abe27ba600d947ebfd82958eb4ae",
+      "bytes": 14862
+    },
+    {
+      "path": "lean/ComparatorChallenges/PartitionPrinciple.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PartitionPrinciple.lean",
+      "sha256": "cc1cca2e6092c94b100b4408b2bff5bfe896b7537fb7a89f14353ea6a08f9b46",
+      "bytes": 10128
+    },
+    {
+      "path": "lean/ComparatorChallenges/SingleFold.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SingleFold.lean",
+      "sha256": "a32b461c1dadec053dce0a3ddc101273021af51e987e949cac44dc5cd4012a98",
+      "bytes": 1073
+    },
+    {
+      "path": "lean/ComparatorChallenges/TypeSystemNormalization.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TypeSystemNormalization.lean",
+      "sha256": "9e17d5b15e6437488e6337fff8556d9cba5c07108fb551b90d1423603e85ac5d",
+      "bytes": 4493
+    },
+    {
+      "path": "lean/docs/241.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/241.md",
+      "sha256": "d893e329edd81ca351f34d4e0af6213e84f3f3f4b3de73fab2b021824bff105c",
+      "bytes": 815
+    },
+    {
+      "path": "lean/docs/242.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/242.md",
+      "sha256": "c7759c6d6d1dc254a199367aa70e173e86b5c330fc9ac65e12a39bc047af8935",
+      "bytes": 1027
+    },
+    {
+      "path": "lean/docs/244.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/244.md",
+      "sha256": "89f64ddf86918d62ff704b44f8395932eb38c697c6a9a97675ed883fa9acfd5d",
+      "bytes": 1395
+    },
+    {
+      "path": "lean/docs/245.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/245.md",
+      "sha256": "d05302b4c350e522680f61473d849ae2eae567d20a73da624948f533fee813f6",
+      "bytes": 980
+    },
+    {
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/README.md",
+      "sha256": "56a977b9c6458dfa948a6fc7558c73269d1a90b5d8c1c64bb4a52050f875cc86",
+      "bytes": 510
+    },
+    {
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex",
+      "sha256": "b7b15cab0c2500dfbfbef8e59a5ed3e2b291bb6a0ae9e92b8b8013e461195509",
+      "bytes": 6237
+    },
+    {
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+      "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a",
+      "bytes": 7964
+    },
+    {
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/README.md",
+      "sha256": "f1da2b20f2f26d701746cedc10b7a6a370ef2cf61f44ed961d8a510e83541459",
+      "bytes": 556
+    },
+    {
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+      "sha256": "b1dc03d376f7b05806de4890c9e1a9462ad34f5641bc53d47780c683c548bc13",
+      "bytes": 16870
+    },
+    {
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+      "sha256": "1872e660edacb24a5362e59dc9c15207d13eefcdc2feb9d21e68366931834c85",
+      "bytes": 14782
+    },
+    {
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+      "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30",
+      "bytes": 13443
+    },
+    {
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/README.md",
+      "sha256": "1d20deda796f15ba2a4e2984aad78c3aa98a0c577ca82b1c10d47a2d280c22ee",
+      "bytes": 643
+    },
+    {
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+      "sha256": "c705fad117239fc6ec7e714a801402225f272aadfcb3e19cbd8d386d7144898a",
+      "bytes": 13494
+    },
+    {
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+      "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582",
+      "bytes": 35346
+    },
+    {
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/README.md",
+      "sha256": "affbb022768fd6664ca99a509a42f24f653cd9919ae144fea162315c84e0c863",
+      "bytes": 610
+    },
+    {
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex",
+      "sha256": "0874263e6b3d437fb79fcce6a41f73c34b59315cc6fa8cd9fa4510ffce2a485e",
+      "bytes": 24651
+    },
+    {
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+      "sha256": "61bc613ca8b48a02d16a4a1fd91cc269273133e21f5f8a0b0ce3c87dc54debcc",
+      "bytes": 42115
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000271",
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+      "label": "prop:recovery",
+      "line": 6,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L6",
+      "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+    },
+    {
+      "instrument_id": "MI-000271",
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+      "label": "eq:recurrence",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L113",
+      "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+    },
+    {
+      "instrument_id": "MI-000271",
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+      "label": "eq:error",
+      "line": 197,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L197",
+      "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+    },
+    {
+      "instrument_id": "MI-000272",
+      "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex",
+      "label": "lem:avoidance",
+      "line": 94,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex#L94",
+      "sha256": "b7b15cab0c2500dfbfbef8e59a5ed3e2b291bb6a0ae9e92b8b8013e461195509"
+    },
+    {
+      "instrument_id": "MI-000273",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+      "label": "lem:composition",
+      "line": 232,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L232",
+      "sha256": "1872e660edacb24a5362e59dc9c15207d13eefcdc2feb9d21e68366931834c85"
+    },
+    {
+      "instrument_id": "MI-000273",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+      "label": "eq:squares",
+      "line": 278,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L278",
+      "sha256": "1872e660edacb24a5362e59dc9c15207d13eefcdc2feb9d21e68366931834c85"
+    },
+    {
+      "instrument_id": "MI-000274",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+      "label": "eq:rational-code",
+      "line": 42,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L42",
+      "sha256": "b1dc03d376f7b05806de4890c9e1a9462ad34f5641bc53d47780c683c548bc13"
+    },
+    {
+      "instrument_id": "MI-000274",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+      "label": "lem:rational-codes",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L49",
+      "sha256": "b1dc03d376f7b05806de4890c9e1a9462ad34f5641bc53d47780c683c548bc13"
+    },
+    {
+      "instrument_id": "MI-000275",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+      "label": "prop:subset",
+      "line": 304,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L304",
+      "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+    },
+    {
+      "instrument_id": "MI-000275",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+      "label": "eq:subset-powers",
+      "line": 312,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L312",
+      "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+    },
+    {
+      "instrument_id": "MI-000275",
+      "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+      "label": "eq:subset-digit",
+      "line": 317,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L317",
+      "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+    },
+    {
+      "instrument_id": "MI-000276",
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+      "label": "lemma:pp-reduction",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L17",
+      "sha256": "c705fad117239fc6ec7e714a801402225f272aadfcb3e19cbd8d386d7144898a"
+    },
+    {
+      "instrument_id": "MI-000276",
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+      "label": "eq:final-candidate-injections",
+      "line": 70,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L70",
+      "sha256": "c705fad117239fc6ec7e714a801402225f272aadfcb3e19cbd8d386d7144898a"
+    },
+    {
+      "instrument_id": "MI-000277",
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+      "label": "lem:coset-selector",
+      "line": 519,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L519",
+      "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+    },
+    {
+      "instrument_id": "MI-000277",
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+      "label": "eq:pattern-covariance",
+      "line": 555,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L555",
+      "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+    },
+    {
+      "instrument_id": "MI-000277",
+      "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+      "label": "eq:coset-assignment",
+      "line": 567,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L567",
+      "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+    },
+    {
+      "instrument_id": "MI-000278",
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex",
+      "label": "pts:finite-restriction",
+      "line": 377,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex#L377",
+      "sha256": "0874263e6b3d437fb79fcce6a41f73c34b59315cc6fa8cd9fa4510ffce2a485e"
+    },
+    {
+      "instrument_id": "MI-000279",
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+      "label": "lem:candidate-lattice",
+      "line": 281,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L281",
+      "sha256": "61bc613ca8b48a02d16a4a1fd91cc269273133e21f5f8a0b0ce3c87dc54debcc"
+    },
+    {
+      "instrument_id": "MI-000279",
+      "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+      "label": "prop:signed-component",
+      "line": 639,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L639",
+      "sha256": "61bc613ca8b48a02d16a4a1fd91cc269273133e21f5f8a0b0ce3c87dc54debcc"
+    }
+  ]
+}

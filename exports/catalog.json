@@ -10911,6 +10911,400 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000270.md",
       "body": "# Reduced envelopes normalize exactly and commute with template composition\n\n[Family 187](../families/openai-math-187.md) · [Source manuscript](../papers/P-000154.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nA reduced template (P,E,h) requires Maker to own P and Breaker to avoid E. Neither P contained in E nor P disjoint from E is assumed. For disjoint Maker and Breaker positions, it has exactly the same admissible positions as the full template (P,P union E,h). Conversely (A,T,h) can be reduced to (A,T without A,h).\n\nFor nonempty children (P_j,E_j,h_j), put U=union P_j, V=union E_j, I=intersection E_j and H=U union I. At pivot x the reduced composition is\n\n$$P=H\\setminus\\{x\\},\\qquad E=(V\\setminus H)\\cup\\{x\\},\\qquad h=1+\\max_jh_j.$$\n\nThe identity\n\n$$U\\cup\\bigcap_j(P_j\\cup E_j)=U\\cup\\bigcap_jE_j$$\n\nproves that normalizing every child, then applying full composition, gives required set P and full envelope P union E. To see the identity, consider a cell outside U: it belongs to no P_j, so membership in every P_j union E_j is precisely membership in every E_j. Cells in U already belong to both sides.\n\nThus reduced certificates use the same soundness induction, including already-owned pivots and legal replacement moves. Removing owned cells from avoidance sets changes the representation, not the set of legal starting positions or the height bound.\n\n## Role in the source argument\n\nMakes the source reduced-envelope construction compatible with the full-envelope strategy proof and exposes a representation invariant.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [r25:normalization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L37)\n- [r25:composition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L55)\n- [r25:intersection-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L100)\n\n## Antecedents and comparison\n\n[Sieben (2008), Section 3](https://math.colgate.edu/~integers/ig7/ig7.pdf) uses disjoint core/neighborhood situations. The source allows overlap and supplies the explicit normalization and composition identity. This is an elementary equivalence, not a new game-theoretic principle.\n\n## Checks and limitations\n\nRead the full normalization and reduced-composition proof. Check exact equality with full composition at every node of the 21-move certificate and in random finite models allowing arbitrary overlap of P and E.\n\nThis verifies the representation conversion. It does not reconstruct the distinct 25-move table printed in the source appendix, nor does it reduce the number of moves automatically.\n\n## Possible applications\n\nConverting between compact certificate representations while preserving their strategic meaning.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000271",
+      "record_type": "instrument",
+      "title": "Four-value oracle recovery through a bounded binary feedback recurrence",
+      "forms": [
+        "bounded-feedback",
+        "finite-oracle-recovery"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-241"
+      ],
+      "source_paper_ids": [
+        "P-000155"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+          "label": "prop:recovery",
+          "line": 6,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L6",
+          "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+        },
+        {
+          "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+          "label": "eq:recurrence",
+          "line": 113,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L113",
+          "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+        },
+        {
+          "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex",
+          "label": "eq:error",
+          "line": 197,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L197",
+          "sha256": "0a13a2041ce0bf2d8162a08d5f3a93cedd05af034c908b9e8d7fe0730b52445a"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "source-specific-affine-recovery-construction-priority-not-certified",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000271.md",
+      "body": "# Four-value oracle recovery through a bounded binary feedback recurrence\n\n[Family 241](../families/openai-math-241.md) · [Source manuscript](../papers/P-000155.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nSuppose F:R->2^N is Borel, has countable fibers, and F(x+y)<=_T F(x) join F(y) for all x,y. For every irrational t in (0,1), a comeager set of pairs (u,v) admits a positive rational delta<1 such that the rational cut of t is computable from\n\n$$F(u)\\oplus F(u-v)\\oplus F(v-u+\\delta t)\\oplus F(v-u+\\delta(t-1)).$$\n\nChoose the least successful addition-program index at each pair. This is a Borel integer-valued function. Restrict it and F to comeager sets where they are relatively continuous, then require all translations by the countable group H=Q+Qt to remain in those sets. Affine homeomorphisms and coordinate projections preserve the required comeagerness. Near (u,v-u) and (v,u-v), two fixed programs p,q perform the two additions (u+s)+(v-u+a)=v+s+a and (v+s+a)+(u-v)=u+s+a.\n\nCountable fibers let one choose b_-<0<b_+ in a small interval with F(u+b_-) different from F(u+b_+). One bit j differs; relative continuity makes it constant and opposite near the two endpoints. Choose rational delta small enough for these endpoint neighborhoods and the program neighborhoods. Starting at s0=0, set r_n=1 when bit j of F(u+s_n) has the right-endpoint value, and otherwise set r_n=0. Update s_(n+1)=s_n+delta(t-r_n). Near the left endpoint the step is positive; near the right it is negative. This keeps every state between b_- and b_+, regardless of the bit's behavior in the interior.\n\nThe four fixed oracles compute each r_n and the next oracle F(u+s_(n+1)) by composing p and q. They need not compute the numerical state s_n. Each query has finite recursive nesting. Summing the recurrence gives s_N=delta(Nt-sum_(n<N)r_n), so, after arranging |s_N|<1, the computable frequency A_N satisfies |t-A_N|<1/(N delta). For any rational query a, search until a lies strictly outside this error interval. Irrationality makes the search terminate.\n\nThe finite constants p,q,j and the endpoint bit, and the rational delta, may depend on t,u,v. This is pointwise existence of a reduction, not a uniformly effective choice of those constants.\n\n## Role in the source argument\n\nRecovers the missing real information from a small tuple of affine samples before category avoidance removes auxiliary parameters.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:recovery](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L6)\n- [eq:recurrence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L113)\n- [eq:error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/recovery.tex#L197)\n\n## Antecedents and comparison\n\n[Lutz-Siskind, Theorem 4.3](https://arxiv.org/html/2305.19646v3) recovers a real from four elements of a perfect set together with an oracle computing a countable dense subset. The source instead assumes one Borel map with an addition reduction and prescribes affine sample points. The bounded-frequency identity is elementary; a full historical priority search was not performed.\n\n## Checks and limitations\n\nRead the full proof, including fixed-program neighborhoods and nonuniform constants. Exact rational models test 58 inward-pointing recurrences for 1,000 steps each with unrestricted random interior choices and check the confinement and discrepancy identity.\n\nFinite rational models test the numerical recurrence only. They do not test Borel uniformization, oracle totality, irrational-cut termination or the representation of an arbitrary degree automorphism.\n\n## Possible applications\n\nRecovering a hidden parameter from computable branch decisions when the evolving numerical state is inaccessible.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000272",
+      "record_type": "instrument",
+      "title": "Dense finite oracle transcripts remove auxiliary real parameters",
+      "forms": [
+        "category-avoidance",
+        "finite-transcript-search"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-241"
+      ],
+      "source_paper_ids": [
+        "P-000155"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex",
+          "label": "lem:avoidance",
+          "line": 94,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex#L94",
+          "sha256": "b7b15cab0c2500dfbfbef8e59a5ed3e2b291bb6a0ae9e92b8b8013e461195509"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "classical-relative-category-cone-avoidance",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000272.md",
+      "body": "# Dense finite oracle transcripts remove auxiliary real parameters\n\n[Family 241](../families/openai-math-241.md) · [Source manuscript](../papers/P-000155.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nIf Y is not Turing reducible to A, then {(u,v):Y<=_T A join C(u) join C(v)} is meager in R^2, where C(x) is the set of rational numbers below x. The reduction index is allowed to depend on (u,v).\n\nFix an index e and restrict to irrational coordinates. Suppose its success set were dense in some rational open rectangle R. On input n, search relative to A for a finite halting transcript whose answers about A are correct and whose proposed answers about the two cut oracles hold throughout some nonempty open subrectangle of R.\n\nFor each coordinate, a positive answer to q requires q<x and a negative answer requires x<=q. A finite table holds throughout an open interval precisely when its largest lower bound is less than its smallest upper bound, including the rectangle endpoints. This is decidable rational arithmetic; repeated queries must agree.\n\nA successful irrational pair provides an accepting transcript, because no queried rational equals its coordinate. Conversely any accepted transcript is correct: its open subrectangle meets the dense success set, and the same deterministic computation there returns Y(n). The search would compute Y from A, a contradiction.\n\nThus each fixed-index success set is nowhere dense. Take the countable union over indices and add the countable union of rational-coordinate lines. This proves the claim without selecting one index uniformly on the entire success set.\n\n## Role in the source argument\n\nTurns a generic degree bound involving two auxiliary reals into a bound without those parameters.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:avoidance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/sections/preliminaries.tex#L94)\n\n## Antecedents and comparison\n\nThis is the relative category cone-avoidance principle attributed to Sacks; see [Kumar-Shelah, Large Turing independent sets, Lemma 4.1](https://home.iitk.ac.in/~krashu/ltis.pdf). The source spells out the finite rational-cut transcript test.\n\n## Checks and limitations\n\nRead the full proof. Exhaustive finite two-coordinate cut tables check the strict interval-feasibility rule and reject inconsistent repeated queries.\n\nA finite transcript enumeration does not establish the Baire-category theorem or decide arbitrary Turing reducibility. Irrational coordinates are used to turn an actual finite computation into an open neighborhood.\n\n## Possible applications\n\nEliminating generic auxiliary oracles from a nonuniform family of computability bounds.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000273",
+      "record_type": "instrument",
+      "title": "Freeze inactive branches to preserve complete polynomial-witness uniqueness",
+      "forms": [
+        "single-fold-composition",
+        "guarded-case-normalization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-242"
+      ],
+      "source_paper_ids": [
+        "P-000156"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+          "label": "lem:composition",
+          "line": 232,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L232",
+          "sha256": "1872e660edacb24a5362e59dc9c15207d13eefcdc2feb9d21e68366931834c85"
+        },
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex",
+          "label": "eq:squares",
+          "line": 278,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L278",
+          "sha256": "1872e660edacb24a5362e59dc9c15207d13eefcdc2feb9d21e68366931834c85"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "established-single-fold-closure-with-explicit-nested-variable-freezing",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000273.md",
+      "body": "# Freeze inactive branches to preserve complete polynomial-witness uniqueness\n\n[Family 242](../families/openai-math-242.md) · [Source manuscript](../papers/P-000156.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nA single-fold system for R(a) has exactly one complete auxiliary tuple when R(a) is true and none otherwise. Conjunction preserves this property when calls use separate auxiliary tuples and their displayed arguments are fixed. Composition of single-fold function graphs determines every intermediate output and its auxiliaries successively.\n\nFor pairwise disjoint cases i=1,...,r, introduce natural selectors e_i satisfying e_i(e_i-1)=0 and sum e_i=1. Multiply every equation F=0 of case i, including its guard and all nested-call equations, by e_i. For every variable z local to that case impose (1-e_i)z=0. This freezes inactive outputs, slacks, normalization variables and nested selectors. Shared displayed arguments are not frozen. Disjointness makes the active selector unique, its system fixes its witness, and every inactive tuple is zero.\n\nFunction cases require guards partitioning the input domain and an active case determining the shared output. For max(a,b), use a>=b and a<b to assign ties once. Inequalities use unique nonnegative slacks; integer signs use z=z_plus-z_minus with z_plus z_minus=0. Finally replace equations F_i=0 by sum F_i^2=0 without changing variables or solutions.\n\nGating the equations alone is insufficient: an inactive branch then leaves its local variables free, destroying uniqueness even if the output is unique.\n\n## Role in the source argument\n\nProvides a ledger-preserving assembly rule for all later arithmetic and computation encodings.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:composition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L232)\n- [eq:squares](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/main.tex#L278)\n\n## Antecedents and comparison\n\n[Cantone-Cuzziol-Omodeo, Section 2, pp. 590-591](https://lematematiche.dmi.unict.it/index.php/lematematiche/article/download/2703/1218/7841) explicitly explains why naive disjunction loses uniqueness and fixes unused witnesses. The source applies this established requirement recursively to all local variables.\n\n## Checks and limitations\n\nRead the proof and the antecedent discussion. Exact enumeration of guarded maximum systems checks the unique full tuple on 36 inputs, including ties, and demonstrates extra witnesses when inactive variables are not frozen.\n\nThis is a closure rule for systems already known to be single-fold. It does not create single-fold exponentiation or a representation of every recursively enumerable set.\n\n## Possible applications\n\nBuilding arithmetic encodings whose outputs and every hidden auxiliary remain uniquely determined.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000274",
+      "record_type": "instrument",
+      "title": "A shifted inverse identity gives one natural-number code for each rational",
+      "forms": [
+        "canonical-rational-code",
+        "normalized-inverse"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-242"
+      ],
+      "source_paper_ids": [
+        "P-000156"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+          "label": "eq:rational-code",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L42",
+          "sha256": "b1dc03d376f7b05806de4890c9e1a9462ad34f5641bc53d47780c683c548bc13"
+        },
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex",
+          "label": "lem:rational-codes",
+          "line": 49,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L49",
+          "sha256": "b1dc03d376f7b05806de4890c9e1a9462ad34f5641bc53d47780c683c548bc13"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "normalized-coprimality-method-with-source-shifted-denominator-one-formula",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000274.md",
+      "body": "# A shifted inverse identity gives one natural-number code for each rational\n\n[Family 242](../families/openai-math-242.md) · [Source manuscript](../papers/P-000156.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nRepresent a rational by natural numbers (p,n,d,t,s,q) satisfying\n\n$$pn=0,\\qquad d=1+t+s,\\qquad(p+n)t+d=1+qd.$$\n\nIts value is (p-n)/d. The equations imply d>0, 0<=t<d and gcd(p+n,d)=1. Thus the signed numerator and positive denominator are reduced and uniquely determined by the rational. If d>1, t is the unique inverse of p+n modulo d in [0,d-1]; then s=d-1-t and q=((p+n)t+d-1)/d are uniquely determined nonnegative integers. If d=1, t=s=q=0. Zero consequently has code (0,0,1,0,0,0).\n\nA prescribed rational arithmetic operation on valid codes has a polynomial implementation by clearing positive denominators and imposing the same code conditions on its output. For example a1/d1+a2/d2=a3/d3 becomes a1 d2 d3+a2 d1 d3=a3 d1 d2. Nonzero divisor guards are required for division, and comparisons use positive denominator products and unique natural slacks. Once the rational output is specified, its entire code is unique.\n\n## Role in the source argument\n\nPrevents arbitrary Bezout witnesses or denominator choices from multiplying the solutions of elliptic-curve arithmetic encodings.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:rational-code](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L42)\n- [lem:rational-codes](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/elliptic.tex#L49)\n\n## Antecedents and comparison\n\nNormalized coprimality witnesses are established in [Cantone-Cuzziol-Omodeo, Section 2](https://lematematiche.dmi.unict.it/index.php/lematematiche/article/download/2703/1218/7841). The source shifted identity incorporates denominator one in the same formula; no general novelty claim is made for rational encoding.\n\n## Checks and limitations\n\nRead the full proof. Exhaustive bounded enumeration finds 511 distinct valid codes with no duplicate rational values, including all denominator-one and zero cases. Exact rational arithmetic checks additional output codes.\n\nBounded enumeration is not a uniqueness proof over all natural numbers; that conclusion follows from reduced fractions and the normalized inverse argument. Elliptic rank and growth inputs are separate.\n\n## Possible applications\n\nCanonical algebraic-number data structures when the number of auxiliary solutions matters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000275",
+      "record_type": "instrument",
+      "title": "Large-base binomial digits test binary containment with unique division witnesses",
+      "forms": [
+        "binary-mask",
+        "carry-free-digit-extraction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-242"
+      ],
+      "source_paper_ids": [
+        "P-000156"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+          "label": "prop:subset",
+          "line": 304,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L304",
+          "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+        },
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+          "label": "eq:subset-powers",
+          "line": 312,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L312",
+          "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+        },
+        {
+          "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex",
+          "label": "eq:subset-digit",
+          "line": 317,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L317",
+          "sha256": "3010403374557da96c7dfec6740f48d00192beb493569b8197053eff45413b30"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 3,
+      "subject": "Mathematical logic",
+      "novelty_status": "classical-Robinson-Jones-Matiyasevich-masking-with-complete-witness-ledger",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000275.md",
+      "body": "# Large-base binomial digits test binary containment with unique division witnesses\n\n[Family 242](../families/openai-math-242.md) · [Source manuscript](../papers/P-000156.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nAssume a complete single-fold polynomial graph for b^n on bases b>=2 is available. To test that every 1-bit of x is a 1-bit of y, first require 0<=x<=y and use three power calls to define B=2^(y+1), H=B^x and N=(B+1)^y. Impose\n\n$$N=sBH+dH+r,\\qquad d<B,\\quad r<H,\\quad d=2t+1.$$\n\nTwo Euclidean divisions uniquely determine s,d,r. Every binomial coefficient of (B+1)^y is at most 2^y<B, so no carries occur in base B; the digit d is exactly binom(y,x). Over F2, (1+Z)^y is the product of (1+Z^(2^i)) over the 1-bit positions of y. Distinct choices have distinct exponents, so binom(y,x) is odd precisely when x's 1-bits are contained in y's.\n\nFor a true instance, the three power outputs and all their auxiliaries are unique by the assumed power graph. The divisions, oddness witness t=(d-1)/2 and inequality slacks are unique as well. False instances have no witness. The boundary x=y=0 gives B=2,H=N=1,s=r=t=0,d=1.\n\nEvaluating powers numerically establishes the arithmetic masking identity. Replacing those calls by polynomial systems with unique complete witnesses is a separate and stronger input.\n\n## Role in the source argument\n\nRestricts binary positions in the source computation code without introducing multiple auxiliary witnesses.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:subset](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L304)\n- [eq:subset-powers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L312)\n- [eq:subset-digit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/build/power.tex#L317)\n\n## Antecedents and comparison\n\nThe source credits Julia Robinson for large-base extraction, Jones-Matiyasevich for binary masking, and Lucas for parity. The same established single-fold bookkeeping is discussed by [Cantone-Cuzziol-Omodeo](https://lematematiche.dmi.unict.it/index.php/lematematiche/article/view/2703). No novelty is claimed for the masking identity.\n\n## Checks and limitations\n\nRead the entire proof. Exact large-integer calculations check all 5,151 pairs 0<=x<=y<=100, including the zero boundary, the extracted binomial coefficient and binary containment.\n\nThe source power-graph proposition is not audited here. These computations therefore verify digit extraction and uniqueness of division data, not the claimed unconditional single-fold Diophantine representation.\n\n## Possible applications\n\nEncoding finite binary support constraints while retaining an exact count of complete witnesses.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000276",
+      "record_type": "instrument",
+      "title": "Ordinal slices assemble reverse injections from a classified seed",
+      "forms": [
+        "ordinal-slicing",
+        "choice-accounting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-244"
+      ],
+      "source_paper_ids": [
+        "P-000157"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+          "label": "lemma:pp-reduction",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L17",
+          "sha256": "c705fad117239fc6ec7e714a801402225f272aadfcb3e19cbd8d386d7144898a"
+        },
+        {
+          "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex",
+          "label": "eq:final-candidate-injections",
+          "line": 70,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L70",
+          "sha256": "c705fad117239fc6ec7e714a801402225f272aadfcb3e19cbd8d386d7144898a"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "Ryan-Smith-local-to-global-method-under-stronger-image-classification",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000276.md",
+      "body": "# Ordinal slices assemble reverse injections from a classified seed\n\n[Family 244](../families/openai-math-244.md) · [Source manuscript](../papers/P-000157.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nWork in ZF. Assume a nonempty seed A satisfies: every nonempty X is a surjective image of A times an ordinal; every ordinal-indexed family of nonempty sets has a choice function; and every nonwellorderable surjective image of A is bijective with A. Then every surjection f:X->Y admits an injection Y->X.\n\nFor Y nonempty choose s:A times eta->X onto. Put B_i=s[A times {i}], Y_i=f[B_i] without union_(k<i)f[B_k], and S_i=B_i intersect f^(-1)[Y_i]. The Y_i partition Y, the S_i are pairwise disjoint, and f restricted to S_i maps onto Y_i. The S_i need not cover X.\n\nDefine J_i as the set of injections from Y_i into S_i before making any choices. If Y_i is empty, the empty map belongs. If it is wellorderable, ordinal-indexed choice chooses one preimage in each fiber. If it is nonwellorderable, so is S_i. Every nonempty subset of an image of A is itself an image of A: for that one subset, send all points outside it to one fixed member. Consequently S_i and Y_i are both bijective with A, so an injection between them exists.\n\nThese are pointwise existence proofs, not a simultaneous choice of wellorderings, default elements or bijections. Only after all J_i are formed and shown nonempty, apply ordinal-indexed choice to select j_i in J_i. Their union is an injection because both the target slices and source slices are disjoint.\n\nIn the nonwellorderable case the injection need not respect f's fibers. The conclusion is the Partition Principle, not a right inverse for every surjection.\n\n## Role in the source argument\n\nPromotes the source classification of seed quotients to an assertion about all sets of every rank.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lemma:pp-reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L17)\n- [eq:final-candidate-injections](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/conclusion.tex#L70)\n\n## Antecedents and comparison\n\n[Ryan-Smith, Propositions 3.17 and 3.20](https://eprints.whiterose.ac.uk/id/eprint/224344/15/s10474-025-01533-3.pdf) uses ordinal slicing and choice from sets of candidate injections. The source assumes the stronger classification of nonwellorderable seed images. Neither mere quotient injections nor an unproved injective presentation may replace its stated hypotheses.\n\n## Checks and limitations\n\nRead the complete proof and prior local-to-global statement. Finite models check disjoint slice construction, union injectivity and examples where the chosen reverse injection is not a section.\n\nEvery finite set is wellorderable. The finite models cannot verify the nonwellorderable branch, ordinal-choice preservation or existence of the source symmetric model.\n\n## Possible applications\n\nAssembling local comparison maps while making the exact use of choice explicit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000277",
+      "record_type": "instrument",
+      "title": "Least separating patterns select a coset covariantly",
+      "forms": [
+        "equivariant-selection",
+        "transported-parameters"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-244"
+      ],
+      "source_paper_ids": [
+        "P-000157"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+          "label": "lem:coset-selector",
+          "line": 519,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L519",
+          "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+        },
+        {
+          "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+          "label": "eq:pattern-covariance",
+          "line": 555,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L555",
+          "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+        },
+        {
+          "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex",
+          "label": "eq:coset-assignment",
+          "line": 567,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L567",
+          "sha256": "cb686578cc574ff9d2d9055b34733aa1cb1b51a0631794af0d8e83baa16be582"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "elementary-selector-mechanism-with-source-specific-detector-inputs",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000277.md",
+      "body": "# Least separating patterns select a coset covariantly\n\n[Family 244](../families/openai-math-244.md) · [Source manuscript](../papers/P-000157.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nLet Gamma=G/K act on the relevant data F. Suppose patterns P_F^alpha(gamma) lie in a fixed wellordered set at each ordinal level alpha, some level separates all cosets, and transport satisfies\n\n$$P_{\\sigma F}^\\alpha(\\sigma\\gamma)=P_F^\\alpha(\\gamma).$$\n\nTake the least separating level, then the unique coset with least pattern there. Left translation permutes the cosets but leaves the actual pattern objects unchanged, so the separating level is unchanged and the selector satisfies c(sigma F)=sigma c(F).\n\nThe source constructs patterns from countably many detector sequences modulo eventual equality. Elements of K fix each detector sequence eventually, making the pattern independent of representatives. Distinct cosets eventually move detector indices apart; distinct Cohen rows then have distinguishing bits. Regularity of kappa bounds the countably many bit ordinals, and countability of Gamma gives one level separating every pair. A separate no-new-countable-sequences theorem puts all bounded patterns into a ground set with a fixed ground wellorder. These model-specific hypotheses are retained as inputs here.\n\nTo make a preliminary assignment f0 equivariant, its transported value at gamma=pi K must be evaluated using the moved data pi^(-1)F: schematically f^gamma(F)(j)=T_pi^(pi^(-1)F)(f0(pi^(-1)F)(pi^(-1)j)). Residual K-covariance makes this representative independent. Substituting gamma=c(F) then gives full covariance. Simply transporting the computation made at the original F does not satisfy the same identity.\n\n## Role in the source argument\n\nRemoves arbitrary componentwise choices while retaining symmetry of the eventual quotient bijection.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:coset-selector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L519)\n- [eq:pattern-covariance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L555)\n- [eq:coset-assignment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/build/sections/quotients.tex#L567)\n\n## Antecedents and comparison\n\nSelecting the least invariantly transported pattern is a standard group-action argument. The source-specific contribution is the detector system intended to make it available in the symmetric model; those forcing inputs are not certified by this card.\n\n## Checks and limitations\n\nRead the complete selector and transport calculation. Exact S3 models check selection and assignment covariance under every group element, and exhibit failures when the preliminary computation is made at the unmoved data.\n\nFinite regular group actions do not test eventual equality, regular uncountable bounds or the no-new-sequences premise. If patterns fail to separate cosets, choosing a unique least coset by this rule is not justified.\n\n## Possible applications\n\nTurning arbitrary local assignments into symmetry-compatible ones when a common pattern order is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000278",
+      "record_type": "instrument",
+      "title": "Finite derivations retain a system-wide normalization counterexample in a finite specification",
+      "forms": [
+        "finite-support-reduction",
+        "annotated-syntax"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-245"
+      ],
+      "source_paper_ids": [
+        "P-000158"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex",
+          "label": "pts:finite-restriction",
+          "line": 377,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex#L377",
+          "sha256": "0874263e6b3d437fb79fcce6a41f73c34b59315cc6fa8cd9fa4510ffce2a485e"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "standard-finite-derivation-support-with-conversion-chain-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000278.md",
+      "body": "# Finite derivations retain a system-wide normalization counterexample in a finite specification\n\n[Family 245](../families/openai-math-245.md) · [Source manuscript](../papers/P-000158.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nSuppose every legal expression of a pure type system P is weakly normalizing for full beta reduction, but some legal expression E is not strongly normalizing. Then a finite subspecification P0 has the same two properties.\n\nA non-strongly-normalizing E cannot be a literal sort. Correctness of types therefore supplies a finite typing derivation for E even if E originally occurred as an expected type. At each conversion rule choose a finite raw conversion chain witnessing its side condition. Collect all sorts in the derivation and these chains, and all axiom pairs and product-rule triples used. This gives finite S0,A0,R0 supporting the same derivation.\n\nA forward beta step introduces no new sort symbol: substitution only copies symbols already in the redex. This includes reductions inside domain annotations and dependent products. Hence the infinite raw reduction from E stays in syntax over S0. Conversely every P0 judgment is a P judgment. A legal P0 term has a finite normalizing reduction by the system-wide hypothesis, and the same symbol-preservation argument keeps it in P0. Normality is purely syntactic and is unchanged by the restriction.\n\nThe conversion witnesses must be included when choosing S0: a reverse beta step can insert an annotation containing a sort not present in its contractum. Also, this argument does not assert that weak normalization of one term implies strong normalization of that term.\n\n## Role in the source argument\n\nReduces arbitrary specifications to finite dependency data before the source component analysis.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [pts:finite-restriction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/metatheory.tex#L377)\n\n## Antecedents and comparison\n\nThis is the standard finite-support principle for finitary derivations, together with elementary beta-substitution syntax. The source makes conversion chains and reduction inside annotations explicit. No independent novelty claim is made.\n\n## Checks and limitations\n\nRead the full proof. A de Bruijn syntax model checks sort support for contextual beta steps, including annotations, and demonstrates an erasing weakly normalizing raw term with a looping argument. A reverse-expansion example shows why conversion-chain sorts must be retained.\n\nThe program checks raw syntax only, not the entire typing metatheory or existence of a legal normalization counterexample. System-wide weak normalization remains an essential assumption.\n\n## Possible applications\n\nReducing infinitary rule signatures to the finite data used by one obstruction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000279",
+      "record_type": "instrument",
+      "title": "Balanced signed dependencies turn mixed-variance equations into a Tarski operator",
+      "forms": [
+        "mixed-order-fixed-point",
+        "variance-graph"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-245"
+      ],
+      "source_paper_ids": [
+        "P-000158"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+          "label": "lem:candidate-lattice",
+          "line": 281,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L281",
+          "sha256": "61bc613ca8b48a02d16a4a1fd91cc269273133e21f5f8a0b0ce3c87dc54debcc"
+        },
+        {
+          "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex",
+          "label": "prop:signed-component",
+          "line": 639,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L639",
+          "sha256": "61bc613ca8b48a02d16a4a1fd91cc269273133e21f5f8a0b0ce3c87dc54debcc"
+        }
+      ],
+      "batch_id": "B021",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "classical-Tarski-and-signed-graph-method-in-a-candidate-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000279.md",
+      "body": "# Balanced signed dependencies turn mixed-variance equations into a Tarski operator\n\n[Family 245](../families/openai-math-245.md) · [Source manuscript](../papers/P-000158.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nConsider a strongly connected signed dependency component in which every closed walk has an even number of negative edges. Choose a root and give each vertex the parity of a path from the root. A return path shows this is well defined: two different parities would yield an odd closed walk. Positive edges preserve the sign and negative edges reverse it.\n\nFor a complete lattice C(T) at each coordinate, order positive coordinates normally and negative coordinates in reverse. The product remains complete. If an operator is covariant along positive dependencies and contravariant along negative dependencies, it is monotone in this mixed order.\n\nIn the source, C(T) consists of candidates between a generic-term set G_T and a strongly-normalizing test set top_T, closed under a specified head-expansion rule. Arbitrary intersections preserve those requirements, with top_T as the empty intersection, so these candidates form a complete lattice. Reduction closure is not assumed. For a product type, the operator tests h n against a codomain candidate for every n in the domain candidate. It is antitone in the domain and monotone in the instantiated codomain; previously processed coordinates are constant. The signed dependencies give exactly the mixed-order monotonicity.\n\nTarski then supplies a fixed point with no continuity assumption. Explicitly, let a be the supremum of all v with v<=F(v). Monotonicity gives a<=F(a), then F(a)<=F(F(a)), so F(a) is itself among those v and F(a)<=a. Thus F(a)=a. In the source, assigning candidates by actual normalized types makes the required substitution and conversion identities follow from equality of those normal forms.\n\nAn odd negative loop is a real obstruction to this method: complementation on the two-element lattice is antitone and has no fixed point. Other source constructions are needed for components not satisfying the parity condition.\n\n## Role in the source argument\n\nConstructs one class of normalization interfaces while accounting for the opposite variances of domains and codomains.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:candidate-lattice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L281)\n- [prop:signed-component](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L639)\n\n## Antecedents and comparison\n\nThe fixed-point step is exactly [Tarski (1955), Theorem 1](https://people.csail.mit.edu/carroll/probSem/Documents/Tarski.pdf). Sign reversal of lattice coordinates is the standard way to handle balanced mixed variance. The source-specific interface obligations are additional to fixed-point existence.\n\n## Checks and limitations\n\nRead the candidate lattice and signed-component proofs and Tarski statement. Exact Boolean-lattice models check mixed-order monotonicity, the supremum-of-postfixed-points construction and absence of odd signed closed walks, with a negative-loop control.\n\nFinite Boolean models do not verify the actual candidate sets, profile invariance or the general normalization theorem. The signed component must satisfy its closed-walk hypothesis; no algorithmic convergence rate follows for arbitrary complete lattices.\n\n## Possible applications\n\nSolving recursive semantic equations with both covariance and contravariance when their dependency signs are consistent.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -13839,6 +14233,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000154.md",
       "body": "# Snaky in 21 Maker moves\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source gives a strategy for planar Snaky within 21 actual Maker moves, with a 251-cell support inside a 17 by 17 board.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000269: Owned envelope intersections compose finite certificates against every reply](../instruments/MI-000269.md)\n- [MI-000270: Reduced envelopes normalize exactly and commute with template composition](../instruments/MI-000270.md)\n\n## Dependencies and review\n\nFinite set unions and intersections, square-grid isometries, recursive certificate parsing, induction on height and legal fresh-move bookkeeping.\n\nRead the complete composition, strategy, finite-board and reduced-normalization arguments, certificate grammar and short upstream verifier. Ran the upstream 21-move verifier and a separately written parser checking all nodes and local reply classes. The older 25- and 35-move tables were not reconstructed in this batch.\n\nRead the scope and the definitions and targets in all three linked Comparators, excluding inspection of each literal entry in the older 35-move table. SnakyTwentyOne targets a legal 21-move strategy; SnakyCertificate targets older 35-move reconstruction data. Although the scope table describes SnakyConditional as conditional templates, its actual selected statement is a global 35-move legal strategy. The 251-cell finite-board restriction is not in the 21-move target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-187.md) · [Batch B020](../../batches/B020/README.md)"
+    },
+    {
+      "id": "P-000155",
+      "record_type": "paper",
+      "title": "Rigidity of the Turing degrees",
+      "source_collection": "openai/math",
+      "upstream_slug": "Rigidity-of-the-Turing-degrees-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-241"
+      ],
+      "batch_id": "B021",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "56a977b9c6458dfa948a6fc7558c73269d1a90b5d8c1c64bb4a52050f875cc86",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000155.md",
+      "body": "# Rigidity of the Turing degrees\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-the-Turing-degrees-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every order automorphism of the full Turing degrees is the identity, with no definability assumption on the automorphism.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000271: Four-value oracle recovery through a bounded binary feedback recurrence](../instruments/MI-000271.md)\n- [MI-000272: Dense finite oracle transcripts remove auxiliary real parameters](../instruments/MI-000272.md)\n\n## Dependencies and review\n\nBaire-property continuity on a comeager restriction, countable affine shifts, finite oracle-program composition, bounded discrepancy and rational-cut transcripts.\n\nRead the complete recovery and category-avoidance proofs, the continuity lemma and representation passage. The external Slaman-Woodin all-input representation theorem and the full rigidity/biinterpretability deductions were not independently certified.\n\nRead DegreeRigidity.lean, including its oracle reducibility, antisymmetrized degree order and unrestricted rigidity target. Representation and biinterpretability corollaries are outside the selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-241.md) · [Batch B021](../../batches/B021/README.md)"
+    },
+    {
+      "id": "P-000156",
+      "record_type": "paper",
+      "title": "Single-fold Diophantine representations",
+      "source_collection": "openai/math",
+      "upstream_slug": "Single-fold-Diophantine-representations-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-242"
+      ],
+      "batch_id": "B021",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f1da2b20f2f26d701746cedc10b7a6a370ef2cf61f44ed961d8a510e83541459",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000156.md",
+      "body": "# Single-fold Diophantine representations\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-fold-Diophantine-representations-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a single-fold polynomial representation of every recursively enumerable subset of N^n, with uniqueness of the entire natural-number witness tuple, and derives undecidability under an at-most-one-solution promise.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000273: Freeze inactive branches to preserve complete polynomial-witness uniqueness](../instruments/MI-000273.md)\n- [MI-000274: A shifted inverse identity gives one natural-number code for each rational](../instruments/MI-000274.md)\n- [MI-000275: Large-base binomial digits test binary containment with unique division witnesses](../instruments/MI-000275.md)\n\n## Dependencies and review\n\nDisjoint guarded cases, natural slacks, reduced rational fractions, normalized modular inverses, Euclidean division, binomial expansion and Lucas parity.\n\nRead the closure lemma, rational-code proof and complete binary-containment proof. The elliptic growth, Pell power construction and machine compiler were not audited.\n\nRead SingleFold.lean evaluation, whole-witness uniqueness and main target for every positive input arity. The at-most-one-solution undecidability consequence is not a separate selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-242.md) · [Batch B021](../../batches/B021/README.md)"
+    },
+    {
+      "id": "P-000157",
+      "record_type": "paper",
+      "title": "The Partition Principle does not imply Choice",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Partition-Principle-does-not-imply-Choice-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-244"
+      ],
+      "batch_id": "B021",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1d20deda796f15ba2a4e2984aad78c3aa98a0c577ca82b1c10d47a2d280c22ee",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000157.md",
+      "body": "# The Partition Principle does not imply Choice\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/partition-principle-without-choice.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims Con(ZF) implies Con(ZF plus the Partition Principle plus choice for ordinal-indexed families plus failure of Choice), together with a separate transitive-model construction.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000276: Ordinal slices assemble reverse injections from a classified seed](../instruments/MI-000276.md)\n- [MI-000277: Least separating patterns select a coset covariantly](../instruments/MI-000277.md)\n\n## Dependencies and review\n\nZF separation and replacement, ordinal-indexed choice, quotient classification, countable detectors, eventual equality, regularity bounds and equivariant transport.\n\nRead the full all-set reduction and covariant coset-selector argument. The forcing construction, no-new-countable-sequences theorem, detector existence and consistency interpretation were not audited.\n\nRead the two selected targets and their relevant theory and ground-model definitions. PartitionConsistency uses syntactic consistency of full pure-set ZF and ordinal-indexed choice. PartitionPrinciple assumes an externally countable transitive ground satisfying its listed axioms and containing an internal strongly inaccessible cardinal; that is a separate construction target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-244.md) · [Batch B021](../../batches/B021/README.md)"
+    },
+    {
+      "id": "P-000158",
+      "record_type": "paper",
+      "title": "Weak and strong normalization in pure type systems",
+      "source_collection": "openai/math",
+      "upstream_slug": "Weak-and-strong-normalization-in-pure-type-systems-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-245"
+      ],
+      "batch_id": "B021",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "affbb022768fd6664ca99a509a42f24f653cd9919ae144fea162315c84e0c863",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000158.md",
+      "body": "# Weak and strong normalization in pure type systems\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that system-wide weak normalization implies system-wide strong normalization for every pure type system, allowing arbitrary sorts, nonfunctional axioms/rules and reduction inside annotations.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000278: Finite derivations retain a system-wide normalization counterexample in a finite specification](../instruments/MI-000278.md)\n- [MI-000279: Balanced signed dependencies turn mixed-variance equations into a Tarski operator](../instruments/MI-000279.md)\n\n## Dependencies and review\n\nFinite typing derivations, capture-avoiding substitution, correctness of types, raw beta syntax, complete candidate lattices, signed dependency graphs and Tarski monotonicity.\n\nRead the full finite-restriction proof, candidate lattice lemma and signed-component proof. The general observation interpretation, typed channels, relational diagonal construction and final exclusion theorem were not audited.\n\nRead TypeSystemNormalization.lean, including full annotated syntax, substitution, reduction, legality, weak and strong normalization and the unrestricted target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-245.md) · [Batch B021](../../batches/B021/README.md)"
     }
   ],
   "families": [
@@ -16018,6 +16488,115 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-236.md",
       "body": "# Compatible innovation couplings and a critical Osgood comparison\n\n## Source manuscript and claim\n\n[The sharp factor-of-IID threshold for the free Ising model on regular trees](../papers/P-000095.md), by OpenAI, September 26, 2026.\n\nThe source claims the sharp factor-of-IID threshold tanh(beta) <= 1/sqrt(d-1) for the free Ising law on a d-regular tree, including equality. This extraction separates its recovery mechanism from the conditional analytic estimate at criticality.\n\n## Extracted instruments\n\n- [MI-000146: Compatible conditional copies turn innovation uniqueness into measurable recovery](../instruments/MI-000146.md)\n- [MI-000147: Small-field gains and an adaptive path cutoff make a critical Osgood estimate integrable](../instruments/MI-000147.md)\n\n## Dependencies and antecedents\n\nPosterior innovations; compatible disintegration on Polish path spaces; transport of stochastic integrals; critical field tails and weighted path estimates; an absolutely continuous Osgood comparison.\n\nNam, Sly and Zhang previously built Ising IID factors beyond the uniqueness regime using Brownian observations. Kurtz supplies the general compatibility and strong-solution framework; Osgood comparison is classical. The correlation obstruction above the threshold is also an established input. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the compatible-copy construction and transport, recovery proof, critical moment and small-log-loss argument, cutoff sums and final Osgood comparison. The earlier posterior field equations, critical information estimate and weighted path estimates remain inputs rather than a fully audited proof chain.\n\nFreeIsing targets d>=3, beta>=0 and equivalence between the free-law IID factor property and the threshold, including equality. Its equivariance is almost sure for each fixed automorphism; the manuscript additionally supplies an everywhere-equivariant spin version. The Comparator was inspected, not built.\n\nThe law is the free zero-field Ising law. Nonreconstruction alone is not a factor construction. Recovery is measurable and has no finitary coding or algorithmic guarantee.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/236.md) · [Batch record](../../batches/B005/README.md)"
+    },
+    {
+      "id": "openai-math-241",
+      "record_type": "family",
+      "title": "Bounded feedback recovery and removal of generic oracle parameters",
+      "source_family": "241",
+      "source_collection": "openai/math",
+      "batch_id": "B021",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000155"
+      ],
+      "instrument_ids": [
+        "MI-000271",
+        "MI-000272"
+      ],
+      "headline": "The source claims that every order automorphism of the full Turing degrees is the identity, with no definability assumption on the automorphism.",
+      "central_instrument": "A bounded binary feedback recurrence recovers an irrational slope from four function values. A category argument removes auxiliary cut oracles even when the successful reduction index varies with the parameters.",
+      "novelty_assessment": "Category cone avoidance is classical. The prescribed-affine four-value recovery is a source-specific construction with different hypotheses from prior perfect-set coding. This targeted comparison is not an exhaustive novelty audit; the external all-input representation theorem was not independently audited.",
+      "formalization_summary": "Read DegreeRigidity.lean, including its oracle reducibility, antisymmetrized degree order and unrestricted rigidity target. Representation and biinterpretability corollaries are outside the selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "F is Borel with countable fibers and satisfies a pointwise addition reduction. The four-value reduction exists nonuniformly for each generic pair; only finitely many integers and a rational step are hard-coded, with no additional real oracle.",
+      "dependencies": "Baire-property continuity on a comeager restriction, countable affine shifts, finite oracle-program composition, bounded discrepancy and rational-cut transcripts.",
+      "antecedents": "Sacks category cone avoidance, as stated by Kumar-Shelah in Large Turing independent sets, Lemma 4.1; Groszek-Slaman and Lutz-Siskind perfect-set recovery; the source separately invokes Slaman-Woodin representation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-241.md",
+      "body": "# Bounded feedback recovery and removal of generic oracle parameters\n\n## Source manuscript and claim\n\n[Rigidity of the Turing degrees](../papers/P-000155.md), by OpenAI, September 24, 2026.\n\nThe source claims that every order automorphism of the full Turing degrees is the identity, with no definability assumption on the automorphism.\n\n## Extracted instruments\n\n- [MI-000271: Four-value oracle recovery through a bounded binary feedback recurrence](../instruments/MI-000271.md)\n- [MI-000272: Dense finite oracle transcripts remove auxiliary real parameters](../instruments/MI-000272.md)\n\n## Dependencies and antecedents\n\nBaire-property continuity on a comeager restriction, countable affine shifts, finite oracle-program composition, bounded discrepancy and rational-cut transcripts.\n\nSacks category cone avoidance, as stated by Kumar-Shelah in Large Turing independent sets, Lemma 4.1; Groszek-Slaman and Lutz-Siskind perfect-set recovery; the source separately invokes Slaman-Woodin representation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete recovery and category-avoidance proofs, the continuity lemma and representation passage. The external Slaman-Woodin all-input representation theorem and the full rigidity/biinterpretability deductions were not independently certified.\n\nRead DegreeRigidity.lean, including its oracle reducibility, antisymmetrized degree order and unrestricted rigidity target. Representation and biinterpretability corollaries are outside the selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nF is Borel with countable fibers and satisfies a pointwise addition reduction. The four-value reduction exists nonuniformly for each generic pair; only finitely many integers and a rational step are hard-coded, with no additional real oracle.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/241.md) · [Batch record](../../batches/B021/README.md)"
+    },
+    {
+      "id": "openai-math-242",
+      "record_type": "family",
+      "title": "Complete-witness uniqueness in arithmetic encodings",
+      "source_family": "242",
+      "source_collection": "openai/math",
+      "batch_id": "B021",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000156"
+      ],
+      "instrument_ids": [
+        "MI-000273",
+        "MI-000274",
+        "MI-000275"
+      ],
+      "headline": "The source claims a single-fold polynomial representation of every recursively enumerable subset of N^n, with uniqueness of the entire natural-number witness tuple, and derives undecidability under an at-most-one-solution promise.",
+      "central_instrument": "Disjoint cases freeze every inactive variable, rational codes normalize inverse witnesses, and large-base digit extraction converts binary containment into binomial parity while retaining all power-call witnesses.",
+      "novelty_assessment": "Single-fold closure, normalized coprimality witnesses and binomial digit masking have established antecedents. The particular shifted rational code is explicit source bookkeeping. The rank-one growth construction, single-fold power graph and machine compiler behind the headline were not audited.",
+      "formalization_summary": "Read SingleFold.lean evaluation, whole-witness uniqueness and main target for every positive input arity. The at-most-one-solution undecidability consequence is not a separate selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "All auxiliaries, including inactive branches, inequalities, normalization and nested calls, count in uniqueness. Binary masking is conditional here on a complete single-fold power graph; ordinary exponentiation evaluation is weaker.",
+      "dependencies": "Disjoint guarded cases, natural slacks, reduced rational fractions, normalized modular inverses, Euclidean division, binomial expansion and Lucas parity.",
+      "antecedents": "Matiyasevich single-fold constructions; Cantone-Cuzziol-Omodeo, On Diophantine Singlefold Specifications, Section 2; Julia Robinson large-base coefficient extraction; Jones-Matiyasevich binary masking and Lucas congruence.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-242.md",
+      "body": "# Complete-witness uniqueness in arithmetic encodings\n\n## Source manuscript and claim\n\n[Single-fold Diophantine representations](../papers/P-000156.md), by OpenAI, September 24, 2026.\n\nThe source claims a single-fold polynomial representation of every recursively enumerable subset of N^n, with uniqueness of the entire natural-number witness tuple, and derives undecidability under an at-most-one-solution promise.\n\n## Extracted instruments\n\n- [MI-000273: Freeze inactive branches to preserve complete polynomial-witness uniqueness](../instruments/MI-000273.md)\n- [MI-000274: A shifted inverse identity gives one natural-number code for each rational](../instruments/MI-000274.md)\n- [MI-000275: Large-base binomial digits test binary containment with unique division witnesses](../instruments/MI-000275.md)\n\n## Dependencies and antecedents\n\nDisjoint guarded cases, natural slacks, reduced rational fractions, normalized modular inverses, Euclidean division, binomial expansion and Lucas parity.\n\nMatiyasevich single-fold constructions; Cantone-Cuzziol-Omodeo, On Diophantine Singlefold Specifications, Section 2; Julia Robinson large-base coefficient extraction; Jones-Matiyasevich binary masking and Lucas congruence. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the closure lemma, rational-code proof and complete binary-containment proof. The elliptic growth, Pell power construction and machine compiler were not audited.\n\nRead SingleFold.lean evaluation, whole-witness uniqueness and main target for every positive input arity. The at-most-one-solution undecidability consequence is not a separate selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nAll auxiliaries, including inactive branches, inequalities, normalization and nested calls, count in uniqueness. Binary masking is conditional here on a complete single-fold power graph; ordinary exponentiation evaluation is weaker.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/242.md) · [Batch record](../../batches/B021/README.md)"
+    },
+    {
+      "id": "openai-math-244",
+      "record_type": "family",
+      "title": "Local-to-global injection assembly and covariant selectors",
+      "source_family": "244",
+      "source_collection": "openai/math",
+      "batch_id": "B021",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000157"
+      ],
+      "instrument_ids": [
+        "MI-000276",
+        "MI-000277"
+      ],
+      "headline": "The source claims Con(ZF) implies Con(ZF plus the Partition Principle plus choice for ordinal-indexed families plus failure of Choice), together with a separate transitive-model construction.",
+      "central_instrument": "Disjoint ordinal slices assemble local injections without choosing hidden presentations. A least distinguishing pattern chooses a group coset covariantly, provided all pattern objects live in one fixed wellordered ground set.",
+      "novelty_assessment": "The ordinal slicing method is explicitly related to Ryan-Smith local reflections of choice. Least-pattern selection is an elementary equivariance mechanism. The model-specific detector, monoid, forcing and preservation inputs remain unaudited.",
+      "formalization_summary": "Read the two selected targets and their relevant theory and ground-model definitions. PartitionConsistency uses syntactic consistency of full pure-set ZF and ordinal-indexed choice. PartitionPrinciple assumes an externally countable transitive ground satisfying its listed axioms and containing an internal strongly inaccessible cardinal; that is a separate construction target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "A reverse injection need not be a section of the given surjection. Surjective presentations are not silently replaced by injective presentations. A selector needs injective patterns and unchanged wellordered pattern objects under transport.",
+      "dependencies": "ZF separation and replacement, ordinal-indexed choice, quotient classification, countable detectors, eventual equality, regularity bounds and equivariant transport.",
+      "antecedents": "Ryan-Smith, Local reflections of choice, Propositions 3.17 and 3.20; standard group actions and canonical least-code selection.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-244.md",
+      "body": "# Local-to-global injection assembly and covariant selectors\n\n## Source manuscript and claim\n\n[The Partition Principle does not imply Choice](../papers/P-000157.md), by OpenAI, September 24, 2026.\n\nThe source claims Con(ZF) implies Con(ZF plus the Partition Principle plus choice for ordinal-indexed families plus failure of Choice), together with a separate transitive-model construction.\n\n## Extracted instruments\n\n- [MI-000276: Ordinal slices assemble reverse injections from a classified seed](../instruments/MI-000276.md)\n- [MI-000277: Least separating patterns select a coset covariantly](../instruments/MI-000277.md)\n\n## Dependencies and antecedents\n\nZF separation and replacement, ordinal-indexed choice, quotient classification, countable detectors, eventual equality, regularity bounds and equivariant transport.\n\nRyan-Smith, Local reflections of choice, Propositions 3.17 and 3.20; standard group actions and canonical least-code selection. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full all-set reduction and covariant coset-selector argument. The forcing construction, no-new-countable-sequences theorem, detector existence and consistency interpretation were not audited.\n\nRead the two selected targets and their relevant theory and ground-model definitions. PartitionConsistency uses syntactic consistency of full pure-set ZF and ordinal-indexed choice. PartitionPrinciple assumes an externally countable transitive ground satisfying its listed axioms and containing an internal strongly inaccessible cardinal; that is a separate construction target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nA reverse injection need not be a section of the given surjection. Surjective presentations are not silently replaced by injective presentations. A selector needs injective patterns and unchanged wellordered pattern objects under transport.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/244.md) · [Batch record](../../batches/B021/README.md)"
+    },
+    {
+      "id": "openai-math-245",
+      "record_type": "family",
+      "title": "Finite syntactic support and mixed-order fixed points in type systems",
+      "source_family": "245",
+      "source_collection": "openai/math",
+      "batch_id": "B021",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000158"
+      ],
+      "instrument_ids": [
+        "MI-000278",
+        "MI-000279"
+      ],
+      "headline": "The source claims that system-wide weak normalization implies system-wide strong normalization for every pure type system, allowing arbitrary sorts, nonfunctional axioms/rules and reduction inside annotations.",
+      "central_instrument": "A finite derivation and its conversion witnesses retain any hypothetical failure in a finite specification. Balanced signed dependencies turn contravariant and covariant candidate equations into one monotone operator on a mixed-order complete lattice.",
+      "novelty_assessment": "Finite-support reduction, reducibility candidates and Tarski fixed points are established methods. The source applies them with explicit annotation and variance bookkeeping. The observation-space and diagonal arguments handling the remaining components were not audited.",
+      "formalization_summary": "Read TypeSystemNormalization.lean, including full annotated syntax, substitution, reduction, legality, weak and strong normalization and the unrestricted target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Weak normalization is assumed for every legal expression, not for a single term. Conversion witness chains contribute to finite support. Parity counts negative dependency edges, and the signed fixed-point construction applies only when every closed walk in the component has even parity.",
+      "dependencies": "Finite typing derivations, capture-avoiding substitution, correctness of types, raw beta syntax, complete candidate lattices, signed dependency graphs and Tarski monotonicity.",
+      "antecedents": "Standard pure-type-system metatheory and reducibility candidates; Tarski, A lattice-theoretical fixpoint theorem and its applications (1955), Theorem 1.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-245.md",
+      "body": "# Finite syntactic support and mixed-order fixed points in type systems\n\n## Source manuscript and claim\n\n[Weak and strong normalization in pure type systems](../papers/P-000158.md), by OpenAI, September 25, 2026.\n\nThe source claims that system-wide weak normalization implies system-wide strong normalization for every pure type system, allowing arbitrary sorts, nonfunctional axioms/rules and reduction inside annotations.\n\n## Extracted instruments\n\n- [MI-000278: Finite derivations retain a system-wide normalization counterexample in a finite specification](../instruments/MI-000278.md)\n- [MI-000279: Balanced signed dependencies turn mixed-variance equations into a Tarski operator](../instruments/MI-000279.md)\n\n## Dependencies and antecedents\n\nFinite typing derivations, capture-avoiding substitution, correctness of types, raw beta syntax, complete candidate lattices, signed dependency graphs and Tarski monotonicity.\n\nStandard pure-type-system metatheory and reducibility candidates; Tarski, A lattice-theoretical fixpoint theorem and its applications (1955), Theorem 1. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full finite-restriction proof, candidate lattice lemma and signed-component proof. The general observation interpretation, typed channels, relational diagonal construction and final exclusion theorem were not audited.\n\nRead TypeSystemNormalization.lean, including full annotated syntax, substitution, reduction, legality, weak and strong normalization and the unrestricted target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nWeak normalization is assumed for every legal expression, not for a single term. Conversion witness chains contribute to finite support. Parity counts negative dependency edges, and the signed fixed-point construction applies only when every closed walk in the component has even parity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/245.md) · [Batch record](../../batches/B021/README.md)"
     },
     {
       "id": "openai-math-248",
