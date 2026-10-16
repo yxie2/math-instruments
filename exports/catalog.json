@@ -9408,6 +9408,371 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000237.md",
       "body": "# Complementary fractional comparisons support a bounded quantum tournament\n\n[Family 284](../families/openai-math-284.md) · [Source manuscript](../papers/P-000138.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nFor m>=2 let a_ij+a_ji=1 for i!=j and a_ii=0. A reversible coherent comparison of an unordered pair produces these win probabilities using at most c queries and retains all workspace. Put T=ceil(log2(1000m)), epsilon=1/(1000T). There is a quantum algorithm using O(c sqrt(m) T^2 log T) queries on every branch that returns at most T candidates. If one candidate i* has a_(i*,j)>=1-epsilon against every other j, its inclusion probability is at least 1-2m/2^T-T epsilon.\n\nThe ideal process starts with w_i=1, samples p with probability w_p/W, W=sum w_i, and sets w_i'=w_i a_ip. Complementarity gives\n\n$$\\mathbb E[W'\\mid w]=(W^2-\\sum_iw_i^2)/(2W)\\le W/2.$$\n\nUntil i* is chosen its weight is at least (1-epsilon)^T>1/2, so the ideal miss probability is at most 2m/2^T. A uniform superposition of i followed by fresh comparisons against the previous pivots has all-win weight w_i, total success W/m, and conditional index law exactly w_i/W.\n\nBounded amplification with success threshold gamma=1/(2m) and failure budget epsilon preserves the full conditional successful state. One implementation chooses zero Grover iterations half the time and a uniform length in {0,...,M-1} half the time, M=ceil(10/sqrt(gamma)); each trial succeeds with probability at least 9/40 when p>=gamma. A fixed number of repetitions gives failure at most epsilon. Thus each stage can be coupled to the ideal pivot, failing with probability at most epsilon before i* is selected. The query cap holds even when no dominant candidate exists. No transitivity, order or bias between the remaining candidates is required.\n\n## Role in the source argument\n\nSearches candidate certificates using possibly ambiguous local comparisons while keeping a fixed worst-case query budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:amplification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L25)\n- [prop:tournament](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L101)\n- [eq:drift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L141)\n- [eq:product-state](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L163)\n\n## Antecedents and comparison\n\n[Brassard et al., Section 2](https://arxiv.org/pdf/quant-ph/0005055v1) supplies the amplification mechanism. [Mande-Paraashar-Saurabh](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2023.30) studies tournament-query search. The selected interface allows fractional complementary comparisons and retains the exact conditional pivot law; targeted comparisons do not certify historical novelty.\n\n## Checks and limitations\n\nRead the drift, successful-state preservation and history-conditioned coupling proofs. Finite weighted tournaments check drift and miss probabilities; coherent comparison states check the conditional index law, and matrix simulations check successful-state preservation under varying amplification lengths.\n\nFresh workspaces are needed for the product of comparison probabilities. The routine returns a short list; identifying the dominant candidate from that list requires the application-specific verifier.\n\n## Possible applications\n\nQuantum search among candidates when comparison subroutines may be unpromised away from the correct candidate.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000238",
+      "record_type": "instrument",
+      "title": "Prime-exponent concentration gives a summable gcd tensor kernel",
+      "forms": [
+        "coordinate-concentration",
+        "tensorization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-022"
+      ],
+      "source_paper_ids": [
+        "P-000139"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+          "label": "ar:pivot",
+          "line": 167,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L167",
+          "sha256": "9da1650cd5a1cf31356a989e189202ec21987ee0f356170b66d55b740f2f2f48"
+        },
+        {
+          "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+          "label": "ar:tensor",
+          "line": 237,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L237",
+          "sha256": "9da1650cd5a1cf31356a989e189202ec21987ee0f356170b66d55b740f2f2f48"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "established-common-pivot-method-with-explicit-kernel-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000238.md",
+      "body": "# Prime-exponent concentration gives a summable gcd tensor kernel\n\n[Family 022](../families/openai-math-022.md) · [Source manuscript](../papers/P-000139.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nFor 1/2<u<1, A>=1 and probability vectors alpha,beta on nonnegative integers, define\n\n$$T_q=\\sum_{i,j}q^{|i-j|}A^{\\mathbf1_{i\\ne j}}(\\alpha_i\\beta_j)^u,\\qquad0<q<1/2.$$\n\nThen T_q<=1+O_(u,A)(q^(1/(1-u))). If a probability array m_ij is pointwise dominated by these summands, sufficiently small q forces a common index k with d=(1-alpha_k)+(1-beta_k)=O_(u,A)(q^(1/(1-u))). Its double-off mass is O(d^(2u)); mass with exactly one index k and the other at distance at least a is O(q^a d^u).\n\nThe off-diagonal convolution has l^1 norm O_A(q). If T_q>=1, the diagonal and l^(2u) norms first force both probability vectors to concentrate at the same index. Splitting into central, single-off and double-off terms gives T_q<=1-c_u d+O_(u,A)(d^(2u)+q d^u). Since 2u>1, absorption and optimization give the stated scale. Holder's inequality on the geometric tail is independent of support size.\n\nFor s>1-u and nonnegative sequences x_L,y_M,\n\n$$\\sum_{L,M\\ge1}\\frac{(x_Ly_M)^u}{(LM/\\gcd(L,M)^2)^s}\\ll_{u,s}(\\sum_Lx_L\\sum_My_M)^u.$$\n\nFor finite supports, normalize and successively slice by prime exponents. The local constants at large p are 1+O(p^(-s/(1-u))); their product converges. Finitely many small primes have bounded convolution constants. Monotone convergence removes finite support. The strict condition s>1-u is what makes this particular Euler-product proof summable.\n\n## Role in the source argument\n\nControls interactions between integer families and records the concentration information needed for later arithmetic extraction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [ar:pivot](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L167)\n- [ar:tensor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L237)\n\n## Antecedents and comparison\n\nThe source credits [Green-Walker, Lemma 2.1](https://arxiv.org/pdf/2012.02078v2) and [Hauke-Treuer-Vazquez-Walker, Lemma 3.2](https://arxiv.org/pdf/2404.15123v2). The common-pivot principle is established; this card preserves its off-diagonal inflation and tensor summability parameters.\n\n## Checks and limitations\n\nRead both proofs. Finite probability vectors check the central/single-off/double-off estimates, and finite prime-coordinate arrays check tensor slicing and dependence within the integer distributions. The numerical checks do not determine universal asymptotic constants.\n\nA factor A on the diagonal would change the near-one normalization and the concentration implication. The borderline s=1-u is outside this proof. No distributional independence between prime coordinates is assumed.\n\n## Possible applications\n\nBounding weighted gcd or lcm interactions while retaining a common valuation pivot.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000239",
+      "record_type": "instrument",
+      "title": "Dependent matched updates preserve caps and charge variance through finite orbits",
+      "forms": [
+        "dependent-rounding",
+        "quadratic-energy-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-022"
+      ],
+      "source_paper_ids": [
+        "P-000139"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+          "label": "tab:clip-child",
+          "line": 191,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L191",
+          "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+        },
+        {
+          "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+          "label": "tab:prime-update",
+          "line": 244,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L244",
+          "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+        },
+        {
+          "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+          "label": "tab:variance-budget",
+          "line": 479,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L479",
+          "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "candidate-translation-equivariant-cap-and-variance-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000239.md",
+      "body": "# Dependent matched updates preserve caps and charge variance through finite orbits\n\n[Family 022](../families/openai-math-022.md) · [Source manuscript](../papers/P-000139.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nIn a cell, let plus and minus raw loads P,M each be at most N0. Fractionally match mass min(P,M). A matched plus portion is retained when its indicator S succeeds, and its matched minus portion is retained otherwise. Unmatched plus mass is kept on success; unmatched minus mass is multiplied by 1-1/p. Assume every S has orbit mean 1/p under a finite translation group, with the old weights and matching rule transported equivariantly. Colors may be completely dependent.\n\nEach matched portion contributes its full raw mass between the two sides. Only the larger side has unmatched mass, which cannot increase, so the new load is at most max(P,M)<=N0. In the source, the before-mask probabilities are pi_I(a)=(1-1/p)pi_(I')(a) and pi_I(pa)=(1-1/p)^[nu>=2] pi_(I')(a)/p; the latter residual factor is absorbed in the plus load. These identities give preservation of each transported label's weighted first mass.\n\nFor old accounting classes A with fixed widths r_A, let m_A be old mass and Y_A(g) transported post-mass. Equivariance gives E_g Y_A(g)=m_A and makes group translation permute the complete class family. Thus the actual total quadratic increment is\n\n$$J=\\sum_A r_A(\\mathbb E_gY_A(g)^2-m_A^2)=\\sum_A r_A\\operatorname{Var}_gY_A(g)\\ge0.$$\n\nCoarsening equal-width classes adds nonnegative cross products. With class mass capped by N0, total weighted mass inserted at most W, and deletion retaining inherited equivalences, deleting mass d costs at most 2N0 d in square energy. The final energy is at most N0 W; telescoping bounds all variance and coarsening increments by O(N0 W) (3N0 W under this bookkeeping). Splitting a class after removing a connector would introduce an uncharged loss and is disallowed.\n\nAt a new cell, old-child contributions x_D<=N0 satisfy sum x_D^2<=N0 x0. If x0>N0, clipping loss x0-N0 is at most (x0^2-sum x_D^2)/N0. This count uses one mask-probability factor, not its square.\n\n## Role in the source argument\n\nControls broad-pair energy without pretending the arithmetic success indicators are independent.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [tab:clip-child](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L191)\n- [tab:prime-update](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L244)\n- [tab:variance-budget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L479)\n\n## Antecedents and comparison\n\nFractional coupling, variance identities and telescoping capped energy are classical. The source-specific content is their translation-equivariant combination with inherited classes and mask probabilities. No new general martingale theorem is claimed.\n\n## Checks and limitations\n\nRead the update and energy proof. Exact correlated color models check cap preservation and marginal masses; cyclic orbit models check the actual summed variance identity, clipping and the cost of deletion. A split-class control shows the missing loss if inherited equivalences are broken.\n\nMarginal mean preservation alone does not imply a nonnegative actual summed increment; the complete orbit transport is needed. The existence and geometry of the source partitions are separate inputs.\n\n## Possible applications\n\nAccounting for dependent arithmetic rounding when a conserved first mass and a capped second moment must be maintained together.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000240",
+      "record_type": "instrument",
+      "title": "Three equal factors are the sole obstruction to a middle-third grouping",
+      "forms": [
+        "factor-grouping",
+        "exceptional-configuration"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-023"
+      ],
+      "source_paper_ids": [
+        "P-000140"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+          "label": "lem:prime-grouping",
+          "line": 177,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L177",
+          "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "elementary-grouping-lemma-with-source-specific-uniformity-use",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000240.md",
+      "body": "# Three equal factors are the sole obstruction to a middle-third grouping\n\n[Family 023](../families/openai-math-023.md) · [Source manuscript](../papers/P-000140.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nA positive partition x_1+...+x_r=1 with every x_i<2/3 has a subset sum strictly between 1/3 and 2/3 unless the partition is exactly (1/3,1/3,1/3).\n\nIf any part is already in the open interval, it is the required subset. Otherwise all parts are at most 1/3. If some a<1/3, start with it and add parts until first exceeding 1/3. The sum is at most 2/3. Equality would mean that the previous sum and the last part were both 1/3; then a together with that last part lies strictly inside the interval. If no smaller part exists, the partition consists of three thirds.\n\nIf factor counts are bounded, parts have a fixed positive lower bound and a fixed upper bound below 2/3, compactness makes the interior gap uniform outside any fixed neighborhood of the exceptional vector. Grouping the selected prime factors and their complement gives a shorter product with logarithmic exponent in [1/3+delta,1/2]. Fixed dyadic support ratios can be absorbed by decreasing delta for large scale.\n\nIn the exceptional three-factor case, write AB approximately X and let B be the largest prime scale. If H=B^2/A is at most (log X)^C, then B is at most a constant times X^(1/3)(log X)^(C/3). Since all three factors are at most B, each is also at least X^(1/3) times a fixed negative power of log X. Only O((1+log log X)^3) triples of dyadic scales then occur. Prime-density bounds remain a separate analytic input.\n\n## Role in the source argument\n\nIdentifies the only small balanced-product transition that needs a special sparse-prime estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:prime-grouping](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L177)\n\n## Antecedents and comparison\n\nThe subset-sum proof and compactness argument are elementary and are not asserted to be historically new. Targeted searches for the exact grouping formulation did not establish a pre-release attribution; that absence is not evidence of novelty.\n\n## Checks and limitations\n\nRead the proof and its dyadic consequence. Exhaustive rational partitions check the exceptional case and all admissible subsets; boundary controls show why the strict upper bound on individual parts is needed.\n\nWithout a lower bound on parts or a bounded factor count, this compactness argument supplies no uniform gap. The grouping lemma alone proves no cancellation in bilinear sums.\n\n## Possible applications\n\nLocating exceptional balanced configurations before applying estimates that require a gap away from one-third exponents.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000241",
+      "record_type": "instrument",
+      "title": "Bin-symmetric stopping separates multiplicative coefficients exactly",
+      "forms": [
+        "exact-decomposition",
+        "coefficient-separation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-023"
+      ],
+      "source_paper_ids": [
+        "P-000140"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+          "label": "eq:surrogate-norm",
+          "line": 248,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L248",
+          "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+        },
+        {
+          "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+          "label": "lem:stopping-separation",
+          "line": 293,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L293",
+          "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+        },
+        {
+          "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+          "label": "eq:crossing-predicate",
+          "line": 306,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L306",
+          "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+        },
+        {
+          "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+          "label": "eq:stopping-scalar",
+          "line": 319,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L319",
+          "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "candidate-symmetric-stopping-bin-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000241.md",
+      "body": "# Bin-symmetric stopping separates multiplicative coefficients exactly\n\n[Family 023](../families/openai-math-023.md) · [Source manuscript](../papers/P-000140.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nSuppose a squarefree factor m is processed through descending size bins, replacing each prime norm in a bin by its common lower endpoint. Start the surrogate product at N(r) and stop when it first reaches threshold Z. Fix the final bin j of lower endpoint ell, k>=1 selected factors in that bin and l>=0 unselected factors. All earlier-bin factors are selected and all later-bin factors are unselected. The crossing predicate is\n\n$$N(r)S(m_+)/\\ell<Z\\le N(r)S(m_+).$$\n\nIt depends only on the selected side b=r m_+. Any earlier failed-stage predicate must likewise depend only on factors already selected. The remaining side is a=m_-u.\n\nFor a fixed original squarefree m there are binom(k+l,k) ways to select k of its last-bin factors, and either every such selection passes or none does. Give each weight binom(k+l,k)^(-1). Their sum restores the original coefficient exactly. Multiplicative weights split between m_+ and m_-, yielding independent coefficients beta_(j,k)(b) and alpha_(j,l)(a) and the identity\n\n$$\\sum_{j,k\\ge1,l\\ge0}\\binom{k+l}{k}^{-1}\\sum_{a,b}\\alpha_{j,l}(a)\\beta_{j,k}(b)K(ab)$$\n\nfor the stopped contribution. The product envelope stays in K, rather than being inserted as a coupled coefficient restriction. If K vanishes on nonsquarefree arguments, overlaps introduced by enlarging the independent factor sums vanish term by term. No omitted cross-side coprimality condition is needed.\n\nWhen there are O(log X) bins and factors, j,k,l contribute only O((log X)^3) outer indices. Other bin occupancies stay inside their respective coefficients. If each bin has ratio at most 1+delta and at most C log X factors occur, then S<=N<=X^(C log(1+delta))S, supplying a controllable surrogate error.\n\n## Role in the source argument\n\nPreserves the separate coefficient classes required by the source's exceptional-moment and bilinear estimates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:surrogate-norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L248)\n- [lem:stopping-separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L293)\n- [eq:crossing-predicate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L306)\n- [eq:stopping-scalar](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L319)\n\n## Antecedents and comparison\n\nClassical multiplicative decompositions and finite symmetry averaging are established. The analytic background includes [Dunn-Radziwill](https://arxiv.org/pdf/2109.07463v3). The selected candidate refinement is the exact last-bin normalization and one-sided predicates; targeted searches did not certify its priority.\n\n## Checks and limitations\n\nRead the full separation proof. Exact finite prime-bin models compare stopped sums with independently collected coefficients, including multiplicative weights, last-bin ties and annihilation of nonsquarefree overlaps. A control using unequal exact sizes shows why an arbitrary within-bin selection needs different weights.\n\nIf a stopping test depends on both sides, or if K does not kill added overlaps, the displayed separation is invalid. This finite identity does not prove the required analytic coefficient estimates.\n\n## Possible applications\n\nTurning a multiplicative stopping rule into bilinear sums with independent coefficient data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000242",
+      "record_type": "instrument",
+      "title": "Collision counts control exceptional fibers as well as exceptional values",
+      "forms": [
+        "finite-map-counting",
+        "collision-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-024"
+      ],
+      "source_paper_ids": [
+        "P-000141"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex",
+          "label": "lem:finite-map",
+          "line": 336,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex#L336",
+          "sha256": "177b2803225c098a3f40d9083d43df5675101396fdfadec9ef4af607377763ee"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "established-fiber-counting-with-explicit-exceptional-preimage-bound",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000242.md",
+      "body": "# Collision counts control exceptional fibers as well as exceptional values\n\n[Family 024](../families/openai-math-024.md) · [Source manuscript](../papers/P-000141.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nLet F:T -> W be a map of finite sets, T=G disjoint-union D. Assume every w outside E subset W is covered. Write r_w=|G intersection F^(-1)(w)| and K=sum_w r_w(r_w-1), counting ordered collisions among good representations. Then\n\n$$-|E|\\le |T|-|W|\\le |D|+K/2.$$\n\nDefine E*=E union F(D) union {w:r_w>=2}. One has\n\n$$|E^*|\\le |E|+|D|+K/2,\\qquad |F^{-1}(E^*)|\\le |E|+2|D|+K.$$\n\nOutside these exceptional fibers, F is a bijection onto W minus E*. Coverage gives the lower count. For r>=1, r-1<=r(r-1)/2 bounds the excess of good representations. For r>=0, r<=1+r(r-1)/2 bounds their total within E*; add the discarded set D. These calculations include uncovered exceptional values and fibers mixing good and discarded representations.\n\nThe preimage bound is essential when later arguments sum over representations. A single exceptional value may have an arbitrarily large fiber; its value count alone cannot bound the weight of its representations. Arbitrary weighted versions require further control on representation weights and are not implied by these cardinality formulas.\n\n## Role in the source argument\n\nTurns estimates on prime-prefix tuples into estimates on distinct totient values while controlling all discarded preimages.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex#L336)\n\n## Antecedents and comparison\n\nThis is elementary fiber counting via the second factorial moment. The explicit two-level exceptional bookkeeping is useful, but the card makes no claim of a new counting principle.\n\n## Checks and limitations\n\nRead the complete proof. Exhaustive small maps, good/discarded partitions and covering exception sets check every inequality and the resulting bijection; high-multiplicity controls distinguish value and preimage counts.\n\nThe required pair-collision estimate K and coverage outside E must be proved in the application. A bound on collisions in G does not control an unbounded discarded set D.\n\n## Possible applications\n\nPassing from parametrizations to distinct objects when both exceptional objects and their representations must remain negligible.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000243",
+      "record_type": "instrument",
+      "title": "A common comparison forces uniform phase limits without phase continuity",
+      "forms": [
+        "uniform-limit",
+        "phase-comparison"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-024"
+      ],
+      "source_paper_ids": [
+        "P-000141"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+          "label": "prop:tail-limit",
+          "line": 368,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L368",
+          "sha256": "e11b183b4f99ed85da42fa785f47a91889118be46a42f25f7f768c092e3625ee"
+        },
+        {
+          "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+          "label": "lem:coefficient-convergence",
+          "line": 444,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L444",
+          "sha256": "e11b183b4f99ed85da42fa785f47a91889118be46a42f25f7f768c092e3625ee"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "established-uniform-cauchy-principle-with-exact-phase-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000243.md",
+      "body": "# A common comparison forces uniform phase limits without phase continuity\n\n[Family 024](../families/openai-math-024.md) · [Source manuscript](../papers/P-000141.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nLet theta(x) take values in a phase set S, with every s attained along some sequence x_n -> infinity. Suppose A_H:S -> R and a single comparison C(x), independent of H, satisfy\n\n$$\\limsup_{x\\to\\infty}|C(x)-A_H(\\theta(x))|\\le\\zeta_H,\\qquad\\zeta_H\\to0.$$\n\nThen |A_H(s)-A_K(s)|<=zeta_H+zeta_K for every s, by comparing both approximants with C along the same exact-phase sequence. Hence A_H converges uniformly to A, with sup_s|A_H(s)-A(s)|<=zeta_H, and C(x)=A(theta(x))+o(1). Eventual lower and upper bounds on C pass to A at every phase. No continuity of any A_H or A is needed.\n\nIn the source, the comparison is first made to a normalized arithmetic count M_f(x;H)/G_m, with error eta_H, and the finite-coefficient approximation adds epsilon_H; thus zeta_H=eta_H+epsilon_H. The phase is the fractional part of (log B-log log B)/lambda, B=log log x, lambda>0. This expression is continuous, strictly increasing for B>e and unbounded. Solving it equal to n+s gives exact phase s at arbitrarily large x.\n\nThe common quantity C must not depend on H. Dense phase visits alone also do not replace exact visits for discontinuous coefficients: values at a never-visited phase may be changed arbitrarily without altering the comparison. The source proves regular variation by a separate fixed-scaling count, not by assuming its limit coefficient is continuous.\n\n## Role in the source argument\n\nEstablishes a well-defined arithmetic coefficient without defining that coefficient in terms of the unknown asymptotic count.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:tail-limit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L368)\n- [lem:coefficient-convergence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L444)\n\n## Antecedents and comparison\n\nThe proof is the standard uniform Cauchy criterion and a triangle inequality on exact subsequences. The source-specific feature is the discontinuous arithmetic phase parameter and the use of one comparison independent of the truncation depth.\n\n## Checks and limitations\n\nRead the complete argument. Explicit discontinuous phase functions check the common-comparison inequalities and uniform error bound. Controls with an H-dependent comparison or an unvisited exceptional phase fail the required implication.\n\nThe finite arithmetic approximation and its vanishing errors are separate analytic inputs. Finite examples illustrate the logic, not the asserted totient asymptotic.\n\n## Possible applications\n\nConstructing phase-dependent asymptotic coefficients when continuity is unavailable but each phase can be realized exactly.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000244",
+      "record_type": "instrument",
+      "title": "A greedy prefix protects an exact Egyptian-fraction denominator",
+      "forms": [
+        "protected-greedy-construction",
+        "exact-padding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-025"
+      ],
+      "source_paper_ids": [
+        "P-000142"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+          "label": "lem:marked-greedy-prefix",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L19",
+          "sha256": "7c6e0d5e836cde12b2f39de36069f842b7fc89bb328f20a6c459cdb4458fc064"
+        },
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+          "label": "lem:exact-marker-padding",
+          "line": 140,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L140",
+          "sha256": "7c6e0d5e836cde12b2f39de36069f842b7fc89bb328f20a6c459cdb4458fc064"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "candidate-marked-prefix-interface-with-established-padding",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000244.md",
+      "body": "# A greedy prefix protects an exact Egyptian-fraction denominator\n\n[Family 025](../families/openai-math-025.md) · [Source manuscript](../papers/P-000142.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nFor integers m>=4 and T>=2m^2, start with unreduced (R,q)=(m-1,m). While R>0 and q<T, put a=ceil(q/R), choose n=a unless a=m, in which case choose n=m+1, and update (R,q)=(nR-q,nq). This yields\n\n$$1=1/m+\\sum_{i=1}^j1/n_i+R/q,\\qquad q=m\\prod_i n_i,$$\n\nwith distinct increasing n_i>=2, none equal to m, 0<=R<2m, q<T^2, and j<3+log2(log2 T). If R>0 then q>=T and R/q<2m/T<=1/m and R/q<1/n_i for every prefix term. Therefore every positive unit fraction in any expansion of the remainder has a denominator different from the marker and all prefix denominators.\n\nAt ordinary steps R strictly decreases and the remainder is less than its square. The skipped-marker step can occur only once, increases R by less than a factor two and still leaves a remainder below the new reciprocal. After the first step the remainder is below 1/2, giving doubly exponential decay apart from that one exception. Not reducing q preserves the product structure. Continuing without the cutoff terminates because the integer R decreases except at that single step, proving existence for every m; for m=2,3 use {2,3,6}. A short tail still requires the separate uniform short-expansion theorem.\n\nThe established padding lemma increases the length of a distinct expansion of 1 by exactly one while retaining any chosen denominator m. Split the largest unmarked denominator b as 1/(b+1)+1/(b(b+1)). If the marked maximum blocks that split of the second largest s, a factorization s=ab gives 1/(s+a)+1/(b(s+a)); the exceptional prime case is excluded by reducing the total-sum identity modulo s. This padding need not be an injection on whole expansions.\n\n## Role in the source argument\n\nKeeps an exact marked denominator through tail completion and subsequent increases of the prescribed length.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:marked-greedy-prefix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L19)\n- [lem:exact-marker-padding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L140)\n\n## Antecedents and comparison\n\nThe padding statement is already [van Doorn-Tang, Lemma 2.1](https://arxiv.org/pdf/2512.22083v2), not a release novelty. Greedy subtraction is classical. The selected candidate interface is the explicit skipped-marker prefix with an unreduced denominator and a strict remainder gap.\n\n## Checks and limitations\n\nRead both proofs. Exact arithmetic tests the skipped step, prefix bounds and protected tail, and enumerated distinct expansions test padding for every possible marked denominator, including a marked maximum.\n\nPreserving a multiple of m would not suffice here. The prefix alone supplies no O(log log m) bound for an arbitrary tail. Padding preserves a marker, not necessarily all previous denominators.\n\n## Possible applications\n\nAdding exact denominator constraints without allowing a later cleanup or padding step to erase the prescribed term.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000245",
+      "record_type": "instrument",
+      "title": "Indexed predecessor moments control exceptional sets through residue descent",
+      "forms": [
+        "exceptional-set-propagation",
+        "moment-descent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-025"
+      ],
+      "source_paper_ids": [
+        "P-000142"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+          "label": "eq:rescaled-descent",
+          "line": 96,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L96",
+          "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+        },
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+          "label": "eq:bad-pair-count",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L141",
+          "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+        },
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+          "label": "eq:descent-holder",
+          "line": 203,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L203",
+          "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+        },
+        {
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+          "label": "eq:density-unrolled",
+          "line": 233,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L233",
+          "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+        }
+      ],
+      "batch_id": "B017",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "candidate-indexed-residue-descent-interface-to-holder-moments",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000245.md",
+      "body": "# Indexed predecessor moments control exceptional sets through residue descent\n\n[Family 025](../families/openai-math-025.md) · [Source manuscript](../papers/P-000142.md) · [Batch B017](../../batches/B017/README.md)\n\n## Mathematical content\n\nAt one level let Y=rho X, 0<rho<1, and let B be the next-level bad set, with |B|=delta Y. Except for epsilon X exceptional predecessors, each bad u in (Y,X] has at least rho|I|/2 indices i whose reduction lands in B. The inherited bad set below Y is contained in B. If D_i(h) bounds the number of predecessors landing at indexed target (h,i), then\n\n$$|H|\\le\\varepsilon X+|B|+\\frac{2}{\\rho|I|}\\sum_i\\sum_{h\\in B}D_i(h).$$\n\nIf sum_(1<=h<=Y) D_i(h)^r<=Y M^r uniformly in i, r>1, Holder gives |H|/X<=epsilon+rho delta+2M delta^(1-1/r). Repeated list values keep different indices on both sides of the count. The factor Y=rho X cancels the apparent loss 1/rho.\n\nIn the Egyptian-fraction application, t_i divides one common M0, z=ceil(C_j t_i/u), h=uz-C_j t_i, so u divides C_j t_i+h and D_i(h) can be bounded by the number d_X(C_j t_i+h) of divisors at most X. The identity\n\n$$\\frac{u}{M_0C_j}=\\frac1{(M_0/t_i)z}+\\frac1{zC_j/C_{j+1}}\\frac h{M_0C_{j+1}}$$\n\ntransfers an expansion from the next level whenever C_j/C_(j+1) is a positive integer. The shifted truncated-divisor moment is a separate analytic input.\n\nFor delta_j<=epsilon+A delta_(j+1)^alpha, 0<alpha<1, A>=1 and delta_d=0, subadditivity gives\n\n$$\\delta_0\\le\\sum_{i=0}^{d-1}A^{(1-\\alpha^i)/(1-\\alpha)}\\varepsilon^{\\alpha^i}.$$\n\nWith alpha=1-1/r, d<=K log S, fixed r>=8K, epsilon=exp(-c m), m>=S/(2 log S), and A=exp(2S^(1/4)), the bound is at most d exp(2r S^(1/4)-c m S^(-1/4)), tending to zero. The moment order is fixed before S grows.\n\n## Role in the source argument\n\nPrevents many reduction levels from accumulating an uncontrollable exceptional numerator set.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:rescaled-descent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L96)\n- [eq:bad-pair-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L141)\n- [eq:descent-holder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L203)\n- [eq:density-unrolled](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L233)\n\n## Antecedents and comparison\n\nDouble counting, Holder and power-recurrence unrolling are classical. The source credits [Erdos's 1952 divisor-sum method](https://www.renyi.hu/~p_erdos/1952-08.pdf) for the separately proved moment input. The indexed reduction, shift uniformity requirements and cancellation of rho are the extracted interface.\n\n## Checks and limitations\n\nRead the predecessor count and complete recurrence argument. Finite residue maps, including repeated divisor entries, check the indexed degree bounds and Holder step. Positive rational identities check changes of denominator scale; log-domain recurrence computations check the unrolled estimate.\n\nThe existence of many good reductions and the uniform divisor moment are hypotheses here. A moment estimate for each fixed shift with shift-dependent constants does not supply the needed uniform bound.\n\n## Possible applications\n\nPropagating constructive coverage through many reduction levels when a few targets may have many predecessors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -12032,6 +12397,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000138.md",
       "body": "# A Nearly Quartic Separation Between Randomized and Quantum Query Complexity\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/quartic-query-separation.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a nearly quartic separation between bounded-error randomized and quantum query complexity of total Boolean functions, approaching the known general quartic upper bound.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000236: Independent instances obey a direct product under adaptive individual query caps](../instruments/MI-000236.md)\n- [MI-000237: Complementary fractional comparisons support a bounded quantum tournament](../instruments/MI-000237.md)\n\n## Dependencies and review\n\nPosterior factorization, finite decision-tree value functions, product supermartingales, complementary pair sums and bounded amplitude amplification preserving the conditional successful state.\n\nRead the adaptive direct-product proof and the complete bounded-amplification and fractional-tournament proofs. The Forrelation input, pointer construction, certificate analysis and final separation exponents were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-284.md) · [Batch B016](../../batches/B016/README.md)"
+    },
+    {
+      "id": "P-000139",
+      "record_type": "paper",
+      "title": "The Weak Inhomogeneous Duffin–Schaeffer Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-022"
+      ],
+      "batch_id": "B017",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5a951ecf3da99c8cd5a86d998be9b09540460e3dd5af233f5caeae9294a30768",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000139.md",
+      "body": "# The Weak Inhomogeneous Duffin–Schaeffer Conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nFor every fixed real shift gamma, the source claims almost-everywhere infinitely many solutions of ||qx-gamma||<psi(q) whenever sum phi(q)psi(q)/q diverges. The numerator is unrestricted; this is the weak inhomogeneous Duffin-Schaeffer statement.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000238: Prime-exponent concentration gives a summable gcd tensor kernel](../instruments/MI-000238.md)\n- [MI-000239: Dependent matched updates preserve caps and charge variance through finite orbits](../instruments/MI-000239.md)\n\n## Dependencies and review\n\nConvolution estimates, Holder inequalities, prime-coordinate tensorization, fractional matching, finite-group orbit averaging and capped quadratic energy.\n\nRead the complete one-coordinate and tensor proofs, the sparse matching update, clipping calculation and variance-budget proof. The partition construction, arithmetic comparisons, first-join estimates and full-measure transfer were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\n[Family context](../families/openai-math-022.md) · [Batch B017](../../batches/B017/README.md)"
+    },
+    {
+      "id": "P-000140",
+      "record_type": "paper",
+      "title": "An unconditional first moment for cubic Gauss sums",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-023"
+      ],
+      "batch_id": "B017",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0b614119bb303c39cc8f606d12e74afa86dc8170511afee3efd4356a50ff0df0",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000140.md",
+      "body": "# An unconditional first moment for cubic Gauss sums\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an unconditional sharp first moment of normalized cubic Gauss sums over all primary Eisenstein primes, with main term (6/5)c_* X^(5/6)/log X and cancellation in every fixed nonzero angular mode.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000240: Three equal factors are the sole obstruction to a middle-third grouping](../instruments/MI-000240.md)\n- [MI-000241: Bin-symmetric stopping separates multiplicative coefficients exactly](../instruments/MI-000241.md)\n\n## Dependencies and review\n\nCompactness of bounded-length exponent partitions, multiplicative prime expansions, finite-bin stopping, binomial symmetrization and squarefree-supported kernels.\n\nRead the prime detector, factor-grouping proof and complete stopping-bin separation proof, plus the normalization discussion and Comparator targets. The Voronoi, exceptional-moment, corrected-dispersion and sharp-cutoff arguments were not audited.\n\nThe scope document and PattersonFirstMoment.lean were read. Its targets use all primary Eisenstein primes, the (6/5)c_* normalization, every fixed integer angular comparison and nonzero-mode cancellation. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\n[Family context](../families/openai-math-023.md) · [Batch B017](../../batches/B017/README.md)"
+    },
+    {
+      "id": "P-000141",
+      "record_type": "paper",
+      "title": "An asymptotic formula for the number of totients",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-asymptotic-formula-for-the-number-of-totients-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-024"
+      ],
+      "batch_id": "B017",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "62d22a9d31e21565b6e5256061128d1701d879c73a30b4bfcc83b31912cadb09",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000141.md",
+      "body": "# An asymptotic formula for the number of totients\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/An-asymptotic-formula-for-the-number-of-totients-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an explicit asymptotic equivalent for the number V(x) of distinct totients, constructed from finite arithmetic approximants, and regular variation V(cx)/V(x)->c for every c>0, together with least-preimage interval counts.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000242: Collision counts control exceptional fibers as well as exceptional values](../instruments/MI-000242.md)\n- [MI-000243: A common comparison forces uniform phase limits without phase continuity](../instruments/MI-000243.md)\n\n## Dependencies and review\n\nFinite fibers and pair collisions, a common normalized comparison, exact phase subsequences and uniform Cauchy convergence.\n\nRead the finite-map proof, the finite-coefficient approximation statement and its proof, and the common-comparison convergence proof. The prime-prefix coverage, collision estimates, witness-volume formula and least-preimage arithmetic were not audited.\n\nThe scope document and both TotientAsymptotic.lean and TotientCompanionZero.lean were read. Targets include uniform coefficient limits, the asymptotic formula, regular variation, positive companion cases and the exact zero alternative. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\n[Family context](../families/openai-math-024.md) · [Batch B017](../../batches/B017/README.md)"
+    },
+    {
+      "id": "P-000142",
+      "record_type": "paper",
+      "title": "Short Egyptian fractions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Short-Egyptian-fractions-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-025"
+      ],
+      "batch_id": "B017",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e313c9deda4e8e0afd98f804c2a8527b4dcf85345762776ff330354bbddc46ea",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000142.md",
+      "body": "# Short Egyptian fractions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that the worst minimum number of distinct unit fractions for numerator 1<=a<b has order log log b, and gives counting and prescribed-denominator consequences.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000244: A greedy prefix protects an exact Egyptian-fraction denominator](../instruments/MI-000244.md)\n- [MI-000245: Indexed predecessor moments control exceptional sets through residue descent](../instruments/MI-000245.md)\n\n## Dependencies and review\n\nGreedy rational subtraction, a protected remainder gap, known exact-marker padding, indexed bipartite counts, truncated divisor moments, Holder and a sublinear-power recurrence.\n\nRead the full marked-prefix and exact-padding proofs and the complete backward exceptional-set argument. The divisor-moment statement and dense-set reduction were inspected, but the divisor-moment proof, residue estimates and common auxiliary-denominator construction were not audited.\n\nThe scope document and EgyptianFractions.lean and ShortEgyptianFractions.lean were read. They state the double-logarithmic length order, finite counting and denominator bounds, exact-marker padding and occurrence, and quantitative prescribed-denominator consequences. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\n[Family context](../families/openai-math-025.md) · [Batch B017](../../batches/B017/README.md)"
     }
   ],
   "families": [
@@ -12335,6 +12776,114 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-021.md",
       "body": "# Probability weights and stable second moments for sieve paths\n\n## Source manuscript and claim\n\n[A quadratic bound for Jacobsthal's function](../papers/P-000102.md), by OpenAI, None.\n\nThe source claims h(k)<=C k^2/(log log(3k))^2 for Jacobsthal intervals and every k>=1, uniformly over positive moduli with at most k distinct prime factors and signed interval starts. This extraction selects two probabilistic auxiliary tools.\n\n## Extracted instruments\n\n- [MI-000160: Derivative weights turn harmonic sieve paths into a probability process](../instruments/MI-000160.md)\n- [MI-000161: Random forbidden classes have a second moment stable under measure changes](../instruments/MI-000161.md)\n\n## Dependencies and antecedents\n\nPositive derivative weights solving coupled future-integral equations; a telescoping change of path measure; independent random forbidden residue classes; a summable divisor expansion and first/second-moment comparisons under finite positive measures.\n\nIwaniec supplies the linear-sieve background. Gallagher supplies mean-one singular-series averaging, and Banks-Ford-Tao provide related random-sieve context. Regeneration and renewal theory used later in the source are established probabilistic tools. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the derivative-weight proof and exact path-density conversion, and the complete independent-class variance argument with its stable version. The regeneration estimates, inverse incidence theorem and stopped-tree comparison needed for the final Jacobsthal bound were not fully audited.\n\nJacobsthalImproved.lean states the iterated-logarithm saving with an absolute positive constant, all k>=1, arbitrary signed starts and moduli with at most k prime factors. Jacobsthal.lean retains the weaker quadratic statement. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\nThe claim is uniform over moduli, not only primorials, and does not determine the optimal growth of h(k). The source does not provide an explicit usable constant. Auxiliary bin widths and tree parameters are fixed before the main scale tends to infinity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/021.md) · [Batch record](../../batches/B007/README.md)"
+    },
+    {
+      "id": "openai-math-022",
+      "record_type": "family",
+      "title": "Prime-coordinate concentration and orbit-averaged mass accounting",
+      "source_family": "022",
+      "source_collection": "openai/math",
+      "batch_id": "B017",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000139"
+      ],
+      "instrument_ids": [
+        "MI-000238",
+        "MI-000239"
+      ],
+      "headline": "For every fixed real shift gamma, the source claims almost-everywhere infinitely many solutions of ||qx-gamma||<psi(q) whenever sum phi(q)psi(q)/q diverges. The numerator is unrestricted; this is the weak inhomogeneous Duffin-Schaeffer statement.",
+      "central_instrument": "A nearly diagonal prime-exponent kernel forces a common concentration index and tensorizes. Fractional matching preserves a cell cap and converts dependent translation updates into an exact variance budget.",
+      "novelty_assessment": "The common-pivot argument is explicitly adapted from Green-Walker and Hauke-Treuer-Vazquez-Walker. The extracted orbit and cap bookkeeping is a candidate reusable interface. The long inhomogeneous approximation construction was not audited.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.",
+      "statement_faithfulness": "Kernel inflation applies only off the diagonal. Translation colors need not be independent. The energy identity uses the entire transported class family; an arbitrary single class need not gain energy.",
+      "dependencies": "Convolution estimates, Holder inequalities, prime-coordinate tensorization, fractional matching, finite-group orbit averaging and capped quadratic energy.",
+      "antecedents": "Green-Walker, Extremal problems for GCDs, Lemma 2.1; Hauke-Treuer-Vazquez-Walker, Proving the Duffin-Schaeffer conjecture without GCD graphs, Lemma 3.2.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-022.md",
+      "body": "# Prime-coordinate concentration and orbit-averaged mass accounting\n\n## Source manuscript and claim\n\n[The Weak Inhomogeneous Duffin–Schaeffer Conjecture](../papers/P-000139.md), by OpenAI, September 25, 2026.\n\nFor every fixed real shift gamma, the source claims almost-everywhere infinitely many solutions of ||qx-gamma||<psi(q) whenever sum phi(q)psi(q)/q diverges. The numerator is unrestricted; this is the weak inhomogeneous Duffin-Schaeffer statement.\n\n## Extracted instruments\n\n- [MI-000238: Prime-exponent concentration gives a summable gcd tensor kernel](../instruments/MI-000238.md)\n- [MI-000239: Dependent matched updates preserve caps and charge variance through finite orbits](../instruments/MI-000239.md)\n\n## Dependencies and antecedents\n\nConvolution estimates, Holder inequalities, prime-coordinate tensorization, fractional matching, finite-group orbit averaging and capped quadratic energy.\n\nGreen-Walker, Extremal problems for GCDs, Lemma 2.1; Hauke-Treuer-Vazquez-Walker, Proving the Duffin-Schaeffer conjecture without GCD graphs, Lemma 3.2. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete one-coordinate and tensor proofs, the sparse matching update, clipping calculation and variance-budget proof. The partition construction, arithmetic comparisons, first-join estimates and full-measure transfer were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nKernel inflation applies only off the diagonal. Translation colors need not be independent. The energy identity uses the entire transported class family; an arbitrary single class need not gain energy.\n\n[Batch record](../../batches/B017/README.md)"
+    },
+    {
+      "id": "openai-math-023",
+      "record_type": "family",
+      "title": "Exceptional factor groupings and exact separation at a stopping bin",
+      "source_family": "023",
+      "source_collection": "openai/math",
+      "batch_id": "B017",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000140"
+      ],
+      "instrument_ids": [
+        "MI-000240",
+        "MI-000241"
+      ],
+      "headline": "The source claims an unconditional sharp first moment of normalized cubic Gauss sums over all primary Eisenstein primes, with main term (6/5)c_* X^(5/6)/log X and cancellation in every fixed nonzero angular mode.",
+      "central_instrument": "An elementary partition lemma isolates the three nearly equal factors where grouping loses its gap. Bin-symmetric stopping and reciprocal binomial weights keep the resulting coefficient variables separate.",
+      "novelty_assessment": "Subset grouping, multiplicative expansions and symmetry weights are elementary. The source-specific candidate interface is exact stopping-bin separation compatible with its restricted analytic coefficient classes. The global Gauss-sum estimates and historical normalization issue were not certified.",
+      "formalization_summary": "The scope document and PattersonFirstMoment.lean were read. Its targets use all primary Eisenstein primes, the (6/5)c_* normalization, every fixed integer angular comparison and nonzero-mode cancellation. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.",
+      "statement_faithfulness": "Squarefree support is needed to kill overlaps introduced by independent coefficient sums. The reciprocal binomial weight is exact only because all factors in the last bin have the same surrogate size. The rational-prime coefficient is half the all-primary coefficient under the source pairing convention.",
+      "dependencies": "Compactness of bounded-length exponent partitions, multiplicative prime expansions, finite-bin stopping, binomial symmetrization and squarefree-supported kernels.",
+      "antecedents": "The source compares with Dunn-Radziwill, Bias in cubic Gauss sums: Patterson's conjecture, and classical Type I/Type II decompositions. The selected finite identities do not establish the claimed unconditional analytic extension.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-023.md",
+      "body": "# Exceptional factor groupings and exact separation at a stopping bin\n\n## Source manuscript and claim\n\n[An unconditional first moment for cubic Gauss sums](../papers/P-000140.md), by OpenAI, September 25, 2026.\n\nThe source claims an unconditional sharp first moment of normalized cubic Gauss sums over all primary Eisenstein primes, with main term (6/5)c_* X^(5/6)/log X and cancellation in every fixed nonzero angular mode.\n\n## Extracted instruments\n\n- [MI-000240: Three equal factors are the sole obstruction to a middle-third grouping](../instruments/MI-000240.md)\n- [MI-000241: Bin-symmetric stopping separates multiplicative coefficients exactly](../instruments/MI-000241.md)\n\n## Dependencies and antecedents\n\nCompactness of bounded-length exponent partitions, multiplicative prime expansions, finite-bin stopping, binomial symmetrization and squarefree-supported kernels.\n\nThe source compares with Dunn-Radziwill, Bias in cubic Gauss sums: Patterson's conjecture, and classical Type I/Type II decompositions. The selected finite identities do not establish the claimed unconditional analytic extension. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the prime detector, factor-grouping proof and complete stopping-bin separation proof, plus the normalization discussion and Comparator targets. The Voronoi, exceptional-moment, corrected-dispersion and sharp-cutoff arguments were not audited.\n\nThe scope document and PattersonFirstMoment.lean were read. Its targets use all primary Eisenstein primes, the (6/5)c_* normalization, every fixed integer angular comparison and nonzero-mode cancellation. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\nSquarefree support is needed to kill overlaps introduced by independent coefficient sums. The reciprocal binomial weight is exact only because all factors in the last bin have the same surrogate size. The rational-prime coefficient is half the all-primary coefficient under the source pairing convention.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/023.md) · [Batch record](../../batches/B017/README.md)"
+    },
+    {
+      "id": "openai-math-024",
+      "record_type": "family",
+      "title": "Exceptional-fiber counts and uniform phase limits from a common comparison",
+      "source_family": "024",
+      "source_collection": "openai/math",
+      "batch_id": "B017",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000141"
+      ],
+      "instrument_ids": [
+        "MI-000242",
+        "MI-000243"
+      ],
+      "headline": "The source claims an explicit asymptotic equivalent for the number V(x) of distinct totients, constructed from finite arithmetic approximants, and regular variation V(cx)/V(x)->c for every c>0, together with least-preimage interval counts.",
+      "central_instrument": "A collision count controls exceptional values and their entire preimages. A comparison quantity independent of the truncation index forces uniform convergence of phase-dependent coefficients without continuity.",
+      "novelty_assessment": "Finite-map collision inequalities and uniform Cauchy arguments are elementary established principles. Their reusable value here is the simultaneous preimage accounting and exact-phase subsequence requirement. The totient asymptotic itself was not certified.",
+      "formalization_summary": "The scope document and both TotientAsymptotic.lean and TotientCompanionZero.lean were read. Targets include uniform coefficient limits, the asymptotic formula, regular variation, positive companion cases and the exact zero alternative. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.",
+      "statement_faithfulness": "Few exceptional values need not mean few exceptional representations. Exact phase recurrence replaces continuity; merely dense phase visits do not suffice. Regular variation is a separate source argument, not a consequence of arbitrary discontinuous phase coefficients.",
+      "dependencies": "Finite fibers and pair collisions, a common normalized comparison, exact phase subsequences and uniform Cauchy convergence.",
+      "antecedents": "The source uses Ford's totient structure estimates as separate inputs. The selected finite-map and convergence arguments are elementary; no novel general counting or convergence theorem is claimed.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-024.md",
+      "body": "# Exceptional-fiber counts and uniform phase limits from a common comparison\n\n## Source manuscript and claim\n\n[An asymptotic formula for the number of totients](../papers/P-000141.md), by OpenAI, September 25, 2026.\n\nThe source claims an explicit asymptotic equivalent for the number V(x) of distinct totients, constructed from finite arithmetic approximants, and regular variation V(cx)/V(x)->c for every c>0, together with least-preimage interval counts.\n\n## Extracted instruments\n\n- [MI-000242: Collision counts control exceptional fibers as well as exceptional values](../instruments/MI-000242.md)\n- [MI-000243: A common comparison forces uniform phase limits without phase continuity](../instruments/MI-000243.md)\n\n## Dependencies and antecedents\n\nFinite fibers and pair collisions, a common normalized comparison, exact phase subsequences and uniform Cauchy convergence.\n\nThe source uses Ford's totient structure estimates as separate inputs. The selected finite-map and convergence arguments are elementary; no novel general counting or convergence theorem is claimed. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite-map proof, the finite-coefficient approximation statement and its proof, and the common-comparison convergence proof. The prime-prefix coverage, collision estimates, witness-volume formula and least-preimage arithmetic were not audited.\n\nThe scope document and both TotientAsymptotic.lean and TotientCompanionZero.lean were read. Targets include uniform coefficient limits, the asymptotic formula, regular variation, positive companion cases and the exact zero alternative. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\nFew exceptional values need not mean few exceptional representations. Exact phase recurrence replaces continuity; merely dense phase visits do not suffice. Regular variation is a separate source argument, not a consequence of arbitrary discontinuous phase coefficients.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/024.md) · [Batch record](../../batches/B017/README.md)"
+    },
+    {
+      "id": "openai-math-025",
+      "record_type": "family",
+      "title": "Marked Egyptian-fraction prefixes and indexed exceptional-set descent",
+      "source_family": "025",
+      "source_collection": "openai/math",
+      "batch_id": "B017",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000142"
+      ],
+      "instrument_ids": [
+        "MI-000244",
+        "MI-000245"
+      ],
+      "headline": "The source claims that the worst minimum number of distinct unit fractions for numerator 1<=a<b has order log log b, and gives counting and prescribed-denominator consequences.",
+      "central_instrument": "A modified greedy prefix protects an exact prescribed denominator by making the remainder smaller than every reserved reciprocal. Indexed predecessor moments control exceptional sets through a logarithmic-depth residue descent.",
+      "novelty_assessment": "Greedy Egyptian fractions, Holder inequalities and nonlinear recurrence unrolling are established. The marked prefix and quantitative descent are candidate interfaces. Exact-marker padding is expressly credited to van Doorn-Tang; the uniform short-expansion theorem is not certified by this extraction.",
+      "formalization_summary": "The scope document and EgyptianFractions.lean and ShortEgyptianFractions.lean were read. They state the double-logarithmic length order, finite counting and denominator bounds, exact-marker padding and occurrence, and quantitative prescribed-denominator consequences. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.",
+      "statement_faithfulness": "The marked prefix keeps its numerator and denominator unreduced and skips the marker at most once. An odd divisibility marker is weaker than an exact denominator marker. Descent counts retain list indices even when divisor values repeat.",
+      "dependencies": "Greedy rational subtraction, a protected remainder gap, known exact-marker padding, indexed bipartite counts, truncated divisor moments, Holder and a sublinear-power recurrence.",
+      "antecedents": "Van Doorn-Tang, The smallest denominator not contained in a unit fraction decomposition of 1 with fixed length, Lemma 2.1, supplies padding. The source credits Erdos's prime-factor splitting method for its separate divisor-moment input.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-025.md",
+      "body": "# Marked Egyptian-fraction prefixes and indexed exceptional-set descent\n\n## Source manuscript and claim\n\n[Short Egyptian fractions](../papers/P-000142.md), by OpenAI, September 25, 2026.\n\nThe source claims that the worst minimum number of distinct unit fractions for numerator 1<=a<b has order log log b, and gives counting and prescribed-denominator consequences.\n\n## Extracted instruments\n\n- [MI-000244: A greedy prefix protects an exact Egyptian-fraction denominator](../instruments/MI-000244.md)\n- [MI-000245: Indexed predecessor moments control exceptional sets through residue descent](../instruments/MI-000245.md)\n\n## Dependencies and antecedents\n\nGreedy rational subtraction, a protected remainder gap, known exact-marker padding, indexed bipartite counts, truncated divisor moments, Holder and a sublinear-power recurrence.\n\nVan Doorn-Tang, The smallest denominator not contained in a unit fraction decomposition of 1 with fixed length, Lemma 2.1, supplies padding. The source credits Erdos's prime-factor splitting method for its separate divisor-moment input. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full marked-prefix and exact-padding proofs and the complete backward exceptional-set argument. The divisor-moment statement and dense-set reduction were inspected, but the divisor-moment proof, residue estimates and common auxiliary-denominator construction were not audited.\n\nThe scope document and EgyptianFractions.lean and ShortEgyptianFractions.lean were read. They state the double-logarithmic length order, finite counting and denominator bounds, exact-marker padding and occurrence, and quantitative prescribed-denominator consequences. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\nThe marked prefix keeps its numerator and denominator unreduced and skips the marker at most once. An odd divisibility marker is weaker than an exact denominator marker. Descent counts retain list indices even when divisor values repeat.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/025.md) · [Batch record](../../batches/B017/README.md)"
     },
     {
       "id": "openai-math-032",

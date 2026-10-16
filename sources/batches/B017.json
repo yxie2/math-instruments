@@ -1,0 +1,276 @@
+{
+  "batch_id": "B017",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T08:47:48.366572+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/EgyptianFractions.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EgyptianFractions.lean",
+      "sha256": "e96f5967735c7f7af64fc306601a5280d20f5752799e8c9a5fcc424cd421c0f6",
+      "bytes": 3863
+    },
+    {
+      "path": "lean/ComparatorChallenges/PattersonFirstMoment.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PattersonFirstMoment.lean",
+      "sha256": "abe982565c44422f72daa2fbd2a28ef8ec180c19f9645bbf7400dbb668fbeb85",
+      "bytes": 3246
+    },
+    {
+      "path": "lean/ComparatorChallenges/ShortEgyptianFractions.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ShortEgyptianFractions.lean",
+      "sha256": "9796ca70fdd0aa41186bed6f940a9e76c7081aa6bf89f9e7bfe6cd03e329541f",
+      "bytes": 871
+    },
+    {
+      "path": "lean/ComparatorChallenges/TotientAsymptotic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TotientAsymptotic.lean",
+      "sha256": "c0be7ff8588f6d0bbf4d0a0e4bb805c0d68e448008113eb4afa82b30580a735e",
+      "bytes": 5434
+    },
+    {
+      "path": "lean/ComparatorChallenges/TotientCompanionZero.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TotientCompanionZero.lean",
+      "sha256": "6e6e993b423efc7a30384d656956721918f9c484fca64036169715106799c878",
+      "bytes": 3544
+    },
+    {
+      "path": "lean/docs/023.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/023.md",
+      "sha256": "48a67baa24c21e0e5992470280925a9205c8776fd2d621732ba44aa9d34554be",
+      "bytes": 1020
+    },
+    {
+      "path": "lean/docs/024.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/024.md",
+      "sha256": "13056416c388c8fac013d201ead954e5bcd521f542220b989d569b64eadbdd40",
+      "bytes": 1415
+    },
+    {
+      "path": "lean/docs/025.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/025.md",
+      "sha256": "4c394b2fa0e7a176e2f68dfc2c9fccf0f16327f0959b2f4a7aa25117aca0e550",
+      "bytes": 1443
+    },
+    {
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/README.md",
+      "sha256": "62d22a9d31e21565b6e5256061128d1701d879c73a30b4bfcc83b31912cadb09",
+      "bytes": 722
+    },
+    {
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex",
+      "sha256": "177b2803225c098a3f40d9083d43df5675101396fdfadec9ef4af607377763ee",
+      "bytes": 17977
+    },
+    {
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+      "sha256": "e11b183b4f99ed85da42fa785f47a91889118be46a42f25f7f768c092e3625ee",
+      "bytes": 19676
+    },
+    {
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/README.md",
+      "sha256": "0b614119bb303c39cc8f606d12e74afa86dc8170511afee3efd4356a50ff0df0",
+      "bytes": 610
+    },
+    {
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e",
+      "bytes": 23964
+    },
+    {
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/README.md",
+      "sha256": "e313c9deda4e8e0afd98f804c2a8527b4dcf85345762776ff330354bbddc46ea",
+      "bytes": 554
+    },
+    {
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4",
+      "bytes": 10021
+    },
+    {
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+      "sha256": "7c6e0d5e836cde12b2f39de36069f842b7fc89bb328f20a6c459cdb4458fc064",
+      "bytes": 22782
+    },
+    {
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/README.md",
+      "sha256": "5a951ecf3da99c8cd5a86d998be9b09540460e3dd5af233f5caeae9294a30768",
+      "bytes": 613
+    },
+    {
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+      "sha256": "9da1650cd5a1cf31356a989e189202ec21987ee0f356170b66d55b740f2f2f48",
+      "bytes": 13122
+    },
+    {
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+      "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468",
+      "bytes": 48131
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000238",
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+      "label": "ar:pivot",
+      "line": 167,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L167",
+      "sha256": "9da1650cd5a1cf31356a989e189202ec21987ee0f356170b66d55b740f2f2f48"
+    },
+    {
+      "instrument_id": "MI-000238",
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex",
+      "label": "ar:tensor",
+      "line": 237,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/preliminaries.tex#L237",
+      "sha256": "9da1650cd5a1cf31356a989e189202ec21987ee0f356170b66d55b740f2f2f48"
+    },
+    {
+      "instrument_id": "MI-000239",
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+      "label": "tab:clip-child",
+      "line": 191,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L191",
+      "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+    },
+    {
+      "instrument_id": "MI-000239",
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+      "label": "tab:prime-update",
+      "line": 244,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L244",
+      "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+    },
+    {
+      "instrument_id": "MI-000239",
+      "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex",
+      "label": "tab:variance-budget",
+      "line": 479,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/build/sections/tables.tex#L479",
+      "sha256": "35fed37cec711b80e2d7b4c325fb74f6866e06c09860928ac4350b8b36c77468"
+    },
+    {
+      "instrument_id": "MI-000240",
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "label": "lem:prime-grouping",
+      "line": 177,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L177",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "instrument_id": "MI-000241",
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "label": "eq:surrogate-norm",
+      "line": 248,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L248",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "instrument_id": "MI-000241",
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "label": "lem:stopping-separation",
+      "line": 293,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L293",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "instrument_id": "MI-000241",
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "label": "eq:crossing-predicate",
+      "line": 306,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L306",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "instrument_id": "MI-000241",
+      "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex",
+      "label": "eq:stopping-scalar",
+      "line": 319,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/build/sections/decomposition.tex#L319",
+      "sha256": "e2a301a10f2864fb10300e2f2b380d2aa45d73a4bd6a89a87110c05acc5b322e"
+    },
+    {
+      "instrument_id": "MI-000242",
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex",
+      "label": "lem:finite-map",
+      "line": 336,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/collisions.tex#L336",
+      "sha256": "177b2803225c098a3f40d9083d43df5675101396fdfadec9ef4af607377763ee"
+    },
+    {
+      "instrument_id": "MI-000243",
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+      "label": "prop:tail-limit",
+      "line": 368,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L368",
+      "sha256": "e11b183b4f99ed85da42fa785f47a91889118be46a42f25f7f768c092e3625ee"
+    },
+    {
+      "instrument_id": "MI-000243",
+      "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex",
+      "label": "lem:coefficient-convergence",
+      "line": 444,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/build/source/limits.tex#L444",
+      "sha256": "e11b183b4f99ed85da42fa785f47a91889118be46a42f25f7f768c092e3625ee"
+    },
+    {
+      "instrument_id": "MI-000244",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+      "label": "lem:marked-greedy-prefix",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L19",
+      "sha256": "7c6e0d5e836cde12b2f39de36069f842b7fc89bb328f20a6c459cdb4458fc064"
+    },
+    {
+      "instrument_id": "MI-000244",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+      "label": "lem:exact-marker-padding",
+      "line": 140,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex#L140",
+      "sha256": "7c6e0d5e836cde12b2f39de36069f842b7fc89bb328f20a6c459cdb4458fc064"
+    },
+    {
+      "instrument_id": "MI-000245",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "label": "eq:rescaled-descent",
+      "line": 96,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L96",
+      "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+    },
+    {
+      "instrument_id": "MI-000245",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "label": "eq:bad-pair-count",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L141",
+      "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+    },
+    {
+      "instrument_id": "MI-000245",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "label": "eq:descent-holder",
+      "line": 203,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L203",
+      "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+    },
+    {
+      "instrument_id": "MI-000245",
+      "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex",
+      "label": "eq:density-unrolled",
+      "line": 233,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Short-Egyptian-fractions-September-25-2026/build/descent.tex#L233",
+      "sha256": "b35cc5396b8c16214cb4637f125e7f88c4c894db36db32629a798e49d0659be4"
+    }
+  ]
+}

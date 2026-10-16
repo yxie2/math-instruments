@@ -1,0 +1,28 @@
+id: B017
+title: Arithmetic kernels, exact decompositions and protected descent
+date: '2026-10-16'
+source_commit: 1581d4cbdd69a0faf34b2089614fe2a814316a6a
+family_ids:
+- openai-math-022
+- openai-math-023
+- openai-math-024
+- openai-math-025
+instrument_ids:
+- MI-000238
+- MI-000239
+- MI-000240
+- MI-000241
+- MI-000242
+- MI-000243
+- MI-000244
+- MI-000245
+paper_ids:
+- P-000139
+- P-000140
+- P-000141
+- P-000142
+notes: New source-based extractions with exact manuscript bindings, selected argument
+  checks and targeted antecedent comparisons. No Lean project built; no exhaustive
+  proof or priority certification.
+next_instrument_id: MI-000246
+next_paper_id: P-000143

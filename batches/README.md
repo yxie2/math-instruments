@@ -20,7 +20,9 @@
 
 | [B016](B016/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Mixed-state kinetic certificates, exact dyadic filters, feedback fields, sparse near-isometries, adaptive products and fractional quantum tournaments |
 
-Future rounds use `B017` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B017](B017/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Prime-coordinate kernels, orbit variance, exact stopping bins, collision fibers, phase limits and protected Egyptian-fraction descent |
+
+Future rounds use `B018` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
