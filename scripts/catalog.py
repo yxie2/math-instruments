@@ -171,6 +171,10 @@ def validate():
         for fid in r['family_ids']:assert r['id'] in by_id[fid]['instrument_ids'],r['id']
         for pid in r['source_paper_ids']:
             assert set(r['family_ids']) & set(by_id[pid]['family_ids']),(r['id'],pid)
+        if r.get('source_locations'):
+            prefixes=['preprints/'+by_id[pid]['upstream_slug']+'/' for pid in r['source_paper_ids']]
+            for location in r['source_locations']:
+                assert any(location['path'].startswith(prefix) for prefix in prefixes),('Source passage belongs to a different manuscript',r['id'],location['path'])
     for r in data['families']:
         for mid in r['instrument_ids']:assert r['id'] in by_id[mid]['family_ids'],r['id']
         for pid in r['source_paper_ids']:assert r['id'] in by_id[pid]['family_ids'],r['id']
@@ -186,6 +190,19 @@ def validate():
         if source_manifest.exists():
             source_data=json.loads(source_manifest.read_text(encoding='utf-8'))
             assert source_data['source_commit']==batch['source_commit']
+            if 'manuscript_coverage' in source_data:
+                inventory=json.loads((ROOT/'sources/release-inventory.json').read_text(encoding='utf-8'))
+                families={f['family']:f for f in inventory['families']}
+                coverage=source_data['manuscript_coverage']
+                assert sorted(c['family_id'] for c in coverage)==sorted(batch['family_ids']),('Incomplete manuscript coverage',batch['id'])
+                for c in coverage:
+                    family=by_id[c['family_id']]
+                    all_slugs={p['slug'] for p in families[family['source_family']]['papers']}
+                    extracted=set(c['extracted_slugs']);inventory_only=set(c['inventory_only_slugs'])
+                    assert extracted and not extracted & inventory_only
+                    assert extracted | inventory_only==all_slugs,('Companion inventory mismatch',c['family_id'])
+                    assert extracted=={by_id[pid]['upstream_slug'] for pid in family['source_paper_ids']}
+                    assert extracted=={by_id[pid]['upstream_slug'] for mid in family['instrument_ids'] for pid in by_id[mid]['source_paper_ids']}
             files={r['path']:r for r in source_data['files']}
             for locator in source_data['instrument_locators']:
                 assert locator['instrument_id'] in batch['instrument_ids']

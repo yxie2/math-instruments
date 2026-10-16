@@ -48,8 +48,9 @@
 | [B044](B044/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Unconditioned sampling, graph alphabets, exact convolution constraints and power gains |
 | [B045](B045/README.md) | Curation only; 3 new patterns; no extraction-count increase | Research guide, cross-family connections and aggregate reproducibility audit |
 | [B046](B046/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Divisorial cocycles, contact jets, periodic heights and bounded-weight tails |
+| [B047](B047/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Measurable splittings, weighted comparison, finite-cut modules and topological gap detection |
 
-Future rounds use `B047` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B048` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

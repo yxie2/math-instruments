@@ -1,0 +1,53 @@
+{
+  "scope": "Seven finite/local groups. No measurable-cocycle, topological, geometric headline theorem or Lean proof certified.",
+  "checks": {
+    "stationary_graphs": {
+      "periodic_models": 40,
+      "controls": "Equal exponents leave graph freedom; 2^(-n) on the infinite counting-measure shift contracts without vanishing."
+    },
+    "tempered_green_series": {
+      "scalar_or_triangular_models": 8,
+      "maximum_truncation_error": 9.049085183392697e-24,
+      "zero_exponent_control": "L=1, e=0 has all constant solutions."
+    },
+    "weighted_cancellation": {
+      "exact_smooth_weights": 2,
+      "discontinuous_weight_points": 5,
+      "maximum_coefficient_error": 1.1102230246251565e-16,
+      "asymmetric_coefficient_difference": 0.027557689774807326
+    },
+    "schur_complements": {
+      "square_models": 40,
+      "both_sign_determinant_models": 80,
+      "control": "Negative H prime reverses the sign of the square term."
+    },
+    "graded_modules": {
+      "models": 16,
+      "scope": "Nilpotent torsion and prescribed free degree shifts; no Gysin or localization computation."
+    },
+    "bounded_death": {
+      "barcode_models": 100,
+      "event_band_models": 4410,
+      "control": "A bar dying at 100 survives the tested short interval when the bounded-death hypothesis is omitted."
+    },
+    "spherical_constraints": {
+      "hemisphere_dimensions_m": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "two_antipodal_caps_on_S2_perimeter": "2*sqrt(3)*pi",
+      "scope": "Centroid and feasible cap formulas only; no constrained optimum or topological detection computation."
+    }
+  },
+  "status": "passed",
+  "groups": 7,
+  "versions": {
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  }
+}
