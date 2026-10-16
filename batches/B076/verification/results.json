@@ -1,0 +1,93 @@
+{
+  "batch": "B076",
+  "status": "pass",
+  "elapsed_seconds": 0.529,
+  "scope": "Selected finite mechanisms and hypothesis controls, not source headline or Lean certification.",
+  "checks": {
+    "reflection_phases": {
+      "status": "pass",
+      "details": {
+        "affine_phase_and_transform_cases": 150,
+        "rational_angle_control": true
+      }
+    },
+    "compact_obstruction": {
+      "status": "pass",
+      "details": {
+        "cyclic_kernel_models": 104,
+        "finite_model_is_obstruction_not_weak_mixing_example": true
+      }
+    },
+    "block_oscillation": {
+      "status": "pass",
+      "details": {
+        "selected_divergence_blocks": 512,
+        "finite_variation_controls": 100
+      }
+    },
+    "correlation_windows": {
+      "status": "pass",
+      "details": {
+        "complex_finite_windows": 96,
+        "includes_window_larger_than_sample": true
+      }
+    },
+    "polynomial_coordinates": {
+      "status": "pass",
+      "details": {
+        "exact_unit_normalizations": 24,
+        "prime_dependent_inheritance_identities": 96
+      }
+    },
+    "square_kernels": {
+      "status": "pass",
+      "details": {
+        "directed_graph_counts": 108,
+        "two_list_fourth_moments": 12,
+        "repeated_edge_negative_control": true
+      }
+    },
+    "attempt_clocks": {
+      "status": "pass",
+      "details": {
+        "multigraph_energy_and_semigroup_models": 70,
+        "loop_clock_negative_control": true,
+        "simulation_only": [
+          {
+            "n": 20,
+            "empirical_max_square": 0.07455125374592898,
+            "analytic_bound": 0.2
+          },
+          {
+            "n": 80,
+            "empirical_max_square": 0.021094514095171057,
+            "analytic_bound": 0.05
+          },
+          {
+            "n": 320,
+            "empirical_max_square": 0.005445848609756044,
+            "analytic_bound": 0.0125
+          }
+        ]
+      }
+    },
+    "bounded_centers": {
+      "status": "pass",
+      "details": {
+        "atomic_shift_and_scale_models": 100,
+        "vanishing_contamination_centers": [
+          0.175179576435098,
+          0.015866950815062293,
+          0.0015723689902999354,
+          0.00015709534250692942
+        ],
+        "diverging_ordinary_means": [
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ]
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B076: 8 selected instruments from 4 families and 5 manuscripts. Extract eight mechanisms from four families: conditional reflection obstructions, compact spectral arguments, oscillation and correlation criteria, compatible polynomial coordinates, square constraints and loop-aware random-map clocks.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B075: 8 selected instruments from 4 families and 8 manuscripts. Subset-sum support, prefix budgets, common-domain selection, replica correlation, stationary action, occupation and affine trapping. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B074: 8 selected instruments from 4 families and 8 manuscripts. Finite coefficient rings, integration jets, damping margins, overlap smoothing, parity duality, cycle potentials and sound language splits. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
