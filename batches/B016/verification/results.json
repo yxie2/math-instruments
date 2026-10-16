@@ -1,0 +1,54 @@
+{
+  "batch": "B016",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "checks": {
+    "angle_orbitals": {
+      "local_derivative_models": 500,
+      "paired_normalizations": 20,
+      "max_equation_residual": 1.7763568394002505e-15
+    },
+    "ensemble_certificate": {
+      "arbitrary_wedge_density_matrices": 80,
+      "wedge_dimension": 20,
+      "saturating_determinant": true,
+      "weighted_graph_transforms": 60
+    },
+    "dyadic_calibration": {
+      "completion_cases": 420,
+      "quarter_cases": 630,
+      "non_dyadic_reciprocals": 540,
+      "complex_reflection_models": 100
+    },
+    "deferred_filters": {
+      "adaptive_controllers": 24,
+      "enumerated_branches": 13844,
+      "dummy_padding_and_history_dependent_probabilities": true
+    },
+    "feedback_fields": {
+      "unitary_block_truncations": 96,
+      "exact_multiset_codes": 431,
+      "enumerated_internal_paths": 1654,
+      "max_observed_intertwining_error": 2.1071976773390775
+    },
+    "near_isometry_encoder": {
+      "rectangular_dilation_models": 150,
+      "max_error_over_epsilon": 0.984676878350272,
+      "scope": "Tests the block and singular-plane argument, not a compiled programmable-slot circuit."
+    },
+    "adaptive_products": {
+      "exact_optimal_interleaving_models": 90,
+      "total_budget_control_success": "3/4 > 9/16",
+      "correlated_input_control": true
+    },
+    "fractional_tournament": {
+      "exact_drift_models": 48,
+      "ideal_miss_checks": 168,
+      "coherent_product_states": 48,
+      "amplification_state_models": 80,
+      "success_grid_points": 1600,
+      "minimum_observed_trial_success": 0.2467111054794403
+    }
+  },
+  "scope": "Finite local identities and models; no global analytic, factoring, synthesis or query-separation proof certification."
+}

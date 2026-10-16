@@ -1,0 +1,314 @@
+{
+  "batch_id": "B016",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T08:36:06.156747+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ExactQuantumFactoring.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ExactQuantumFactoring.lean",
+      "sha256": "dd2a83b9d8b644d5e18337ffd450cce1b5032188270c3bde3dc7f49e3993bb63",
+      "bytes": 6035
+    },
+    {
+      "path": "lean/docs/279.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/279.md",
+      "sha256": "70edc97191b737cec8ade36d26bd53cd0c75f9c0e33c8afa53e7ce32ee67a88d",
+      "bytes": 981
+    },
+    {
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/README.md",
+      "sha256": "a201f0a060c02ef0c29b77c196fc06447bfc97fc0808bc540dda11b4a6797a46",
+      "bytes": 723
+    },
+    {
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+      "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2",
+      "bytes": 30290
+    },
+    {
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c",
+      "bytes": 12248
+    },
+    {
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/README.md",
+      "sha256": "f8340b77de38921a8462feae5aa852efb0490967c8d7dcff39eb24dc368e86de",
+      "bytes": 761
+    },
+    {
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd",
+      "bytes": 13553
+    },
+    {
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+      "sha256": "3eb3463fe7750ddadc5c8904146f41c1bbcbcb48138e0a091b8ab621d68b1fd2",
+      "bytes": 10857
+    },
+    {
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/README.md",
+      "sha256": "9d5b40bf951f21595e90e71a454736603d8fb2c3d1c628f4d23517b205b013f7",
+      "bytes": 617
+    },
+    {
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex",
+      "sha256": "4cb63e05a10dc55fcc8e9c978af9fc99d74d24bfb663414f73328b122b0e13ac",
+      "bytes": 5985
+    },
+    {
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex",
+      "sha256": "0e442c013c132d0b9916c34083b100dcce456486afdbb197e0ed947b652e5bc3",
+      "bytes": 14900
+    },
+    {
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a",
+      "bytes": 13254
+    },
+    {
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/README.md",
+      "sha256": "37c0b90466ccda4e34e7cb0e70892987eeb8a6fac30bb2e1b51505a1974f1d49",
+      "bytes": 623
+    },
+    {
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex",
+      "sha256": "9af13bfb62a14e4e865136822232bfc8742584f201d2a27ae05a6319670c4a23",
+      "bytes": 6228
+    },
+    {
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4",
+      "bytes": 9880
+    },
+    {
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+      "sha256": "dfa32a505a0423de0a1eb4d578fc259e489f0cf28d9e416848d937d580bf71eb",
+      "bytes": 8589
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000230",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+      "label": "eq:angle-euler",
+      "line": 51,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L51",
+      "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+    },
+    {
+      "instrument_id": "MI-000230",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+      "label": "prop:orbital-equations",
+      "line": 229,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L229",
+      "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+    },
+    {
+      "instrument_id": "MI-000230",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+      "label": "eq:angle-kinetic-identity",
+      "line": 258,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L258",
+      "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+    },
+    {
+      "instrument_id": "MI-000231",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "label": "prop:ensemble-certificate",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L74",
+      "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+    },
+    {
+      "instrument_id": "MI-000231",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "label": "eq:ensemble-V-integrability",
+      "line": 110,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L110",
+      "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+    },
+    {
+      "instrument_id": "MI-000231",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "label": "eq:ensemble-orbital-bound",
+      "line": 132,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L132",
+      "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+    },
+    {
+      "instrument_id": "MI-000231",
+      "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+      "label": "eq:ensemble-spinor-bound",
+      "line": 158,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L158",
+      "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+    },
+    {
+      "instrument_id": "MI-000232",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "label": "lem:completion",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L9",
+      "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+    },
+    {
+      "instrument_id": "MI-000232",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "label": "lem:quarter",
+      "line": 94,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L94",
+      "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+    },
+    {
+      "instrument_id": "MI-000232",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "label": "eq:one-reflection",
+      "line": 125,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L125",
+      "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+    },
+    {
+      "instrument_id": "MI-000233",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex",
+      "label": "lem:records",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex#L28",
+      "sha256": "4cb63e05a10dc55fcc8e9c978af9fc99d74d24bfb663414f73328b122b0e13ac"
+    },
+    {
+      "instrument_id": "MI-000233",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex",
+      "label": "prop:process",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex#L36",
+      "sha256": "0e442c013c132d0b9916c34083b100dcce456486afdbb197e0ed947b652e5bc3"
+    },
+    {
+      "instrument_id": "MI-000233",
+      "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+      "label": "prop:known-probability",
+      "line": 50,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L50",
+      "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+    },
+    {
+      "instrument_id": "MI-000234",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "label": "fields:unitary",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L38",
+      "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+    },
+    {
+      "instrument_id": "MI-000234",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "label": "fields:gram",
+      "line": 122,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L122",
+      "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+    },
+    {
+      "instrument_id": "MI-000234",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "label": "fields:telescope",
+      "line": 150,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L150",
+      "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+    },
+    {
+      "instrument_id": "MI-000234",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+      "label": "fields:sparsity",
+      "line": 190,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L190",
+      "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+    },
+    {
+      "instrument_id": "MI-000235",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex",
+      "label": "slot:definition",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex#L37",
+      "sha256": "9af13bfb62a14e4e865136822232bfc8742584f201d2a27ae05a6319670c4a23"
+    },
+    {
+      "instrument_id": "MI-000235",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+      "label": "encode:row-sparse",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L37",
+      "sha256": "dfa32a505a0423de0a1eb4d578fc259e489f0cf28d9e416848d937d580bf71eb"
+    },
+    {
+      "instrument_id": "MI-000235",
+      "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+      "label": "encode:plane",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L97",
+      "sha256": "dfa32a505a0423de0a1eb4d578fc259e489f0cf28d9e416848d937d580bf71eb"
+    },
+    {
+      "instrument_id": "MI-000236",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+      "label": "lem:adaptive-product",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L22",
+      "sha256": "3eb3463fe7750ddadc5c8904146f41c1bbcbcb48138e0a091b8ab621d68b1fd2"
+    },
+    {
+      "instrument_id": "MI-000236",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+      "label": "eq:bellman-query",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L54",
+      "sha256": "3eb3463fe7750ddadc5c8904146f41c1bbcbcb48138e0a091b8ab621d68b1fd2"
+    },
+    {
+      "instrument_id": "MI-000237",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "label": "lem:amplification",
+      "line": 25,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L25",
+      "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+    },
+    {
+      "instrument_id": "MI-000237",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "label": "prop:tournament",
+      "line": 101,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L101",
+      "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+    },
+    {
+      "instrument_id": "MI-000237",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "label": "eq:drift",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L141",
+      "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+    },
+    {
+      "instrument_id": "MI-000237",
+      "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+      "label": "eq:product-state",
+      "line": 163,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L163",
+      "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+    }
+  ]
+}

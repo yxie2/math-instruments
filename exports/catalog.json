@@ -8994,6 +8994,420 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000229.md",
       "body": "# Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation\n\n[Family 178](../families/openai-math-178.md) · [Source manuscript](../papers/P-000134.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nGive n vertices d stubs each. For l unresolved stubs S, let C_S be their incidence matrix, t=C_S 1, Xi=C_S(I-J_l/l), and D=Xi Xi^T=diag(t)-tt^T/l. If A is the adjacency matrix of resolved pairs, with a loop counted twice on the diagonal, set A_e=A+tt^T/l. For sigma=plus or minus one, z=h^(-1)+(d-1)h and m_h=h/(1-h^2), put M=zI-sigma A_e-hD and W=M^(-1)/m_h on the constant-orthogonal vertex space when M is positive.\n\nFor distinct u,v in S and l>2, put U=[xi_u,xi_v], G0=I-J2/l, B=G0^(-1)=I+J2/(l-2), and H0=-sigma h F B, where F swaps two coordinates. Resolving this pair gives\n\n$$D'=D-UBU^T,\\quad A_e'=A_e+UFBU^T,\\quad M'=M+U(hI-\\sigma F)BU^T.$$\n\nIf G=U^T WU, Dp=G-G0 and H=(H0^(-1)+Dp)^(-1), Woodbury gives W'=W-WUHU^TW whenever the inverses exist.\n\nLet C be full stub incidence and P exchange resolved partners and average unresolved stubs. Then P^3=P. With Q0=I and Qj=CP[(C^TC-I)P]^(j-1)C^T, write D_e=CP^2C^T=dI-D. One has Q1=A_e, Q2=A_e^2-D_e and Qj=A_e Q_(j-1)-(D_e-I)Q_(j-2) for j>=3. Thus W=sum_(j>=0)(sigma h)^j Qj as a formal series on the contrast space.\n\nFor scalar arrays a,c and an ordered distinct pair uniform in I subset S, |I|=l-k>=2,\n\n$$\\frac{\\mathbb E[a_p^TH_0c_p]}{-2\\sigma h}=\\frac{(1+1/(l-2))(\\sum_Ia)(\\sum_Ic)-k\\sum_Iac/(l-2)}{|I|(|I|-1)}.$$\n\nIt vanishes for centered arrays when I=S. Deleting possible endpoints introduces the displayed diagonal correction, so centering on the smaller set alone does not restore exact cancellation.\n\n## Role in the source argument\n\nConnects weighted path expansions with exact matrix exposure updates and identifies the finite-population correction in conditional means.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lemma:configuration-algebra](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L63)\n- [eq:original-2](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L184)\n\n## Antecedents and comparison\n\n[Foata-Zeilberger, Section 6](https://arxiv.org/pdf/math/9806037v1) provides the classical Ihara-Bass matrix-polynomial context. Woodbury inversion is established and is explicitly credited by the source. The unresolved averaging block and its precise update and cancellation formulas are the selected interface.\n\n## Checks and limitations\n\nRead the recurrence, direct matrix expansion, inverse update and pair average. Finite partial configurations check all three update matrices, recurrence coefficients, contrast-space inverses and restricted-pair expectations, including repeated vertex incidences.\n\nThe l=2 final pairing needs a separate formula. Positivity or existence of the updated inverse is a hypothesis of the inverse calculation; these identities alone do not maintain it through a full construction. The formal series is not asserted to converge for all tracked h.\n\n## Possible applications\n\nAnalyzing sequential regular-graph pairings through exact matrix changes rather than treating each exposure as an independent edge perturbation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000230",
+      "record_type": "instrument",
+      "title": "A density angle gives orthogonal orbitals with a common formal potential",
+      "forms": [
+        "variational-parametrization",
+        "differential-identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-278"
+      ],
+      "source_paper_ids": [
+        "P-000135"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+          "label": "eq:angle-euler",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L51",
+          "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+        },
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+          "label": "prop:orbital-equations",
+          "line": 229,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L229",
+          "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+        },
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex",
+          "label": "eq:angle-kinetic-identity",
+          "line": 258,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L258",
+          "sha256": "792dcf5591f2a89fdcaa907c86dcb2e3c322ba22d031d65598a8b96c6091c3c2"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "established-polar-calculus-in-a-density-constrained-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000230.md",
+      "body": "# A density angle gives orthogonal orbitals with a common formal potential\n\n[Family 278](../families/openai-math-278.md) · [Source manuscript](../papers/P-000135.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nLet n>0 be continuous, even under reflection in a plane, with integral 3, local H^2 regularity and sqrt(n) in H^1. Suppose an odd angle theta has integral n sin^2(theta)=1, finite integral n|grad theta|^2, and sufficient local regularity for the following equations. Assume cos(theta)>0 and\n\n$$n^{-1}\\operatorname{div}(n\\nabla\\theta)=-d\\sin(2\\theta),\\qquad d>0.$$\n\nSet g=sqrt(n) cos(theta) and h=sqrt(n) sin(theta). Then g is positive and even, h is odd, ||g||^2=2, ||h||^2=1, and <g,h>=0. Their squares sum to n. Under the source's local H^2 orbital regularity,\n\n$$V=\\frac{\\Delta g}{2g}=\\frac{\\Delta\\sqrt n}{2\\sqrt n}-\\frac{|\\nabla\\theta|^2}{2}+d\\sin^2\\theta$$\n\nis in L^2 locally and satisfies (-Delta/2+V)g=0 and (-Delta/2+V)h=dh in distributions. The lower bound for continuous g on each compact set justifies division by g. The gradient identity\n\n$$|\\nabla g|^2+|\\nabla h|^2=|\\nabla\\sqrt n|^2+n|\\nabla\\theta|^2$$\n\nprovides global H^1 control. The source obtains the angle from a constrained minimization and proves the required local regularity; this card extracts the subsequent calculation conditional on those inputs. It does not infer that V belongs to L^(3/2)+L^infinity or defines a global closed Schrödinger form.\n\n## Role in the source argument\n\nSupplies the trial determinant and a common formal potential used by the later ensemble certificate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:angle-euler](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L51)\n- [prop:orbital-equations](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L229)\n- [eq:angle-kinetic-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/03-angle-spectrum.tex#L258)\n\n## Antecedents and comparison\n\nThis is the Sobolev version of polar-coordinate differentiation, not a newly discovered chain rule. Its use in a constrained density construction is the selected source interface. The related positive-orbital identity is classical; see [Frank-Seiringer, Section 2.3](https://arxiv.org/pdf/0803.0503v2).\n\n## Checks and limitations\n\nRead the orbital proof. Local derivative data satisfying the angle equation check both orbital equations and the gradient identity; paired finite samples check the parity and normalization bookkeeping.\n\nExistence and regularity of an appropriate angle are separate analytic tasks. Numerical derivative identities do not prove them, nor the Coulomb density estimates.\n\n## Possible applications\n\nConstructing orbital certificates while keeping density normalization and formal potential assumptions explicit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000231",
+      "record_type": "instrument",
+      "title": "A weighted gap and Pauli occupation bound certify every mixed fermionic state",
+      "forms": [
+        "spectral-certificate",
+        "mixed-state-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-278"
+      ],
+      "source_paper_ids": [
+        "P-000135"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+          "label": "prop:ensemble-certificate",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L74",
+          "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+        },
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+          "label": "eq:ensemble-V-integrability",
+          "line": 110,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L110",
+          "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+        },
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+          "label": "eq:ensemble-orbital-bound",
+          "line": 132,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L132",
+          "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+        },
+        {
+          "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex",
+          "label": "eq:ensemble-spinor-bound",
+          "line": 158,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L158",
+          "sha256": "be8cc00b8c401ebce0d8497ed69b08dcd72e6c22faed6c445204b2a784de025c"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-domain-aware-ensemble-certificate-from-established-tools",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000231.md",
+      "body": "# A weighted gap and Pauli occupation bound certify every mixed fermionic state\n\n[Family 278](../families/openai-math-278.md) · [Source manuscript](../papers/P-000135.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nUse the preceding orbitals, assume Delta n is in L^1, and suppose the weighted gap holds on the admissible weighted Sobolev class:\n\n$$\\tfrac12\\int g^2|\\nabla\\xi|^2\\ge d\\left(\\int g^2|\\xi|^2-\\tfrac12|\\int g^2\\xi|^2\\right).$$\n\nThe formal potential has absolute density integrability, with\n\n$$\\int n|V|\\le\\tfrac14\\|\\Delta n\\|_1+\\tfrac12\\|\\nabla\\sqrt n\\|_2^2+\\tfrac12\\int n|\\nabla\\theta|^2+d.$$\n\nWriting ghat=g/sqrt(2), the ground-state transform gives q_V[f]>=d(||f||^2-|<ghat,f>|^2), first for smooth compactly supported complex f. Local L^2 integrability of V and H^1-to-L^4 approximation extend it to compact H^1 functions; radial cutoffs extend it to all f in H^1 with integral |V||f|^2 finite. No ordinary global Hamiltonian or closed form with potential V is assumed.\n\nFor any three-fermion ensemble Gamma with density n and finite kinetic expectation, its one-body matrix gamma satisfies 0<=gamma<=I and Tr gamma=3. Absolute integrability allows summing the orbital inequality over all occupied natural spinors. The low-energy projection Pg tensor I_spin has rank two, so\n\n$$T[\\Gamma]+\\int Vn\\ge d(3-\\operatorname{Tr}(\\gamma(P_g\\otimes I_2)))\\ge d.$$\n\nThe determinant ghat-up wedge ghat-down wedge h-up attains equality. Hence the exact ensemble constrained-search minimum is d-integral Vn. Arbitrary mixtures, complex orbitals and spin coherences are included. The finite-dimensional algebra generalizes immediately: H>=d(I-P), rank P=r, 0<=gamma<=I and Tr gamma=N imply Tr(gamma H)>=d(N-r). This last statement is an elementary consequence, not a new many-body theorem.\n\n## Role in the source argument\n\nPromotes a two-orbital construction to a rigorous lower bound against all ensemble competitors.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:ensemble-certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L74)\n- [eq:ensemble-V-integrability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L110)\n- [eq:ensemble-orbital-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L132)\n- [eq:ensemble-spinor-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/sections/04-ensemble.tex#L158)\n\n## Antecedents and comparison\n\n[Frank-Seiringer, equation (2.12) at p=2](https://arxiv.org/pdf/0803.0503v2) records the established ground-state representation. Pauli occupation bounds and finite-rank trace inequalities are classical. The selected feature is the cutoff and absolute-integrability argument avoiding an unjustified global Hamiltonian assumption.\n\n## Checks and limitations\n\nRead every step of the certificate proof, including the complex test functions and cutoffs. Finite arbitrary density matrices on a three-fermion wedge space test the one-body bound, trace certificate and a saturating determinant; a weighted graph model checks the ground-state transform.\n\nThe weighted gap is an input, not established by these finite tests. The certificate alone does not prove failure of ensemble potential representability.\n\n## Possible applications\n\nCertifying mixed-state constrained minima from a positive orbital and a spectral-gap estimate.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000232",
+      "record_type": "instrument",
+      "title": "Dyadic rounding plus a rare canonical guess calibrates success exactly",
+      "forms": [
+        "exact-probability-calibration",
+        "amplitude-amplification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-279"
+      ],
+      "source_paper_ids": [
+        "P-000136"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+          "label": "lem:completion",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L9",
+          "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+        },
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+          "label": "lem:quarter",
+          "line": 94,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L94",
+          "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+        },
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+          "label": "eq:one-reflection",
+          "line": 125,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L125",
+          "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-dyadic-completion-interface-with-classical-amplification",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000232.md",
+      "body": "# Dyadic rounding plus a rare canonical guess calibrates success exactly\n\n[Family 279](../families/openai-math-279.md) · [Source manuscript](../papers/P-000136.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nAn ordinary W-bit transition has good-output probability s>0, a dyadic rational, and one specified good encoding y0. Mix it with probability 1-delta with a uniform W-bit guess of probability delta=2^(-t), t>=1. For dyadic 0<z<=A=(1-delta)s, set\n\n$$E=W+t+2,\\quad C=2^{-E}\\lfloor2^Ez/A\\rfloor,\\quad R=z-CA.$$\n\nRetain ordinary good outputs with probability C. Retain a guessed output only when it equals y0, then with probability R 2^W/delta. Both retention probabilities are dyadic in [0,1], the latter at most 1/4, and the total retained-good probability is exactly z. The division z/A need not be dyadic: only its integer floor enters the implemented coin. Polynomial bit lengths of the inputs give polynomial arithmetic cost. Retention means adding a flag, not postselecting.\n\nA second calibration starts from a known dyadic success p>1/2 with a unique verifiable J-bit successful output. Use the ordinary preparation half the time and a uniform J-bit guess half the time. Put c=2^(-(J+2)) floor(2^(J+2)/(2p)) and e=1/4-pc/2. Retain ordinary success with c and the unique correct guess with 2^(J+1)e. Total success is exactly 1/4. For the resulting state psi and success projection Pi,\n\n$$ (2|\\psi\\rangle\\langle\\psi|-I)(I-2\\Pi)|\\psi\\rangle=2\\Pi|\\psi\\rangle.$$\n\nOne ordinary amplification step therefore makes success certain. Implementing the first reflection requires the entire preparation and its inverse, including all records and garbage.\n\n## Role in the source argument\n\nConverts computable dyadic masses to an exact quarter without adding input-dependent rotation gates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:completion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L9)\n- [lem:quarter](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L94)\n- [eq:one-reflection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L125)\n\n## Antecedents and comparison\n\nThe reflection step is standard [Brassard-Hoyer-Mosca-Tapp amplitude amplification, Section 2](https://arxiv.org/pdf/quant-ph/0005055v1). The selected interface is filling a downward-rounded probability with a canonical uniform-guess branch; no claim of new amplification theory is made.\n\n## Checks and limitations\n\nRead both calibration proofs. Exact rational arithmetic checks rounding, dyadic denominators, coin ranges and total masses, including non-dyadic ratios. Complex finite states check the quarter-success reflection identity.\n\nA good canonical output must be recognizable when its filter is evaluated. Calibration does not supply a verifier or an exact formula for the input success probability.\n\n## Possible applications\n\nExact success calibration in finite-gate algorithms whose useful transition probabilities can be reconstructed.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000233",
+      "record_type": "instrument",
+      "title": "Deferred filters yield a product success law on the same recorded adaptive run",
+      "forms": [
+        "deferred-verification",
+        "adaptive-probability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-279"
+      ],
+      "source_paper_ids": [
+        "P-000136"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex",
+          "label": "lem:records",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex#L28",
+          "sha256": "4cb63e05a10dc55fcc8e9c978af9fc99d74d24bfb663414f73328b122b0e13ac"
+        },
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex",
+          "label": "prop:process",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex#L36",
+          "sha256": "0e442c013c132d0b9916c34083b100dcce456486afdbb197e0ed947b652e5bc3"
+        },
+        {
+          "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex",
+          "label": "prop:known-probability",
+          "line": 50,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L50",
+          "sha256": "e80b0ef8bac48a380a2d906fa97baf5b55caec7e9dcaac05f9552dff1959a25a"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-same-history-deferred-filter-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000233.md",
+      "body": "# Deferred filters yield a product success law on the same recorded adaptive run\n\n[Family 279](../families/openai-math-279.md) · [Source manuscript](../papers/P-000136.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nConsider a bounded adaptive controller with L slots, padding early completion by dummy transitions. Its unique verifiable final data D determine, for each recorded transition input, a good-output predicate, one canonical good output and the exact dyadic ordinary good mass. Every all-good evolution completes with D, even when good outputs are supplied directly. Trials use fresh registers and leave previous workspace untouched. Independent retention coins can equalize the good mass to the same z at every good prefix.\n\nRun the controller with ordinary/guess transitions, retain the classical history coherently, and evaluate all filters only after final verification. The total accepted probability is exactly z^L. For the proof, define an analytical experiment using the true data D to evaluate the same filters immediately, on the same transitions and coins. Passing every immediate filter implies an all-good completed run, hence verification and the deferred filters pass. Conversely, a verified deferred success supplies the true D and passes every immediate filter. The events agree pathwise.\n\nConditioning only on a prefix that has passed the immediate filters, the next pass probability is z. Induction gives z^L. Conditioning instead on eventual completion would change transition distributions and would not justify this calculation. Orthogonal retained classical records make path probabilities add; recording internal labels before their intended quantum interference would change the algorithm.\n\nIn the source, n>=128, L=n^10, W=n(n^5+1), s>=1-2^(-2n), delta=2^(-2n), and z=1-2^(-n). Thus (1-delta)s>=z and p=z^L>=1-n^10 2^(-n)>1/2, with polynomial denominator bit length. These conclusions are conditional on the separately constructed process interface.\n\n## Role in the source argument\n\nMakes the success probability known exactly although the information needed to compute each filter appears only at the end.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:records](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/02-model.tex#L28)\n- [prop:process](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/05-factor-process.tex#L36)\n- [prop:known-probability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/sections/06-exactness.tex#L50)\n\n## Antecedents and comparison\n\nDeferred measurement and orthogonal classical-history bookkeeping are established. [Brassard et al.](https://arxiv.org/pdf/quant-ph/0005055v1) requires an invertible full preparation for amplification. The same-run event equivalence and retrospectively computable transition filters are the selected source-specific interface.\n\n## Checks and limitations\n\nRead the pathwise event equivalence and prefix induction. Exact finite adaptive controllers enumerate every ordinary/guess branch, including dummy padding and aborts, and compare immediate and deferred acceptance with z^L.\n\nUnique valid final data, all-good completion and fresh trial registers are essential. The test controllers do not validate the number-theoretic factoring subroutines.\n\n## Possible applications\n\nCalibrating bounded adaptive algorithms when final certificates determine exact probabilities of earlier useful transitions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000234",
+      "record_type": "instrument",
+      "title": "Feedback fields combine telescoping Gram bounds with power-sum Fourier sparsity",
+      "forms": [
+        "unitary-feedback",
+        "fourier-sparsification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-283"
+      ],
+      "source_paper_ids": [
+        "P-000137"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+          "label": "fields:unitary",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L38",
+          "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+        },
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+          "label": "fields:gram",
+          "line": 122,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L122",
+          "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+        },
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+          "label": "fields:telescope",
+          "line": 150,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L150",
+          "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+        },
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex",
+          "label": "fields:sparsity",
+          "line": 190,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L190",
+          "sha256": "76a56e3fd203899508e2c1d080c2960fade022c392437a478b62dc0db953c4b4"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-phase-coded-feedback-interface-to-classical-transfer-functions",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000234.md",
+      "body": "# Feedback fields combine telescoping Gram bounds with power-sum Fourier sparsity\n\n[Family 283](../families/openai-math-283.md) · [Source manuscript](../papers/P-000137.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nLet V=[A B; C D] be unitary on k port and s internal coordinates, d=k+s, with ||D||<=r<1. For diagonal unitary Z, set X=(I-DZ)^(-1)C, F=A+BZX, E=[I;ZX], O=[F;X], R=OF*. Then VE=O and conservation of norm makes F unitary. Also R=[I;Y] with Y=(I-Z*D*)^(-1)Z*B*, and FE*=R*V.\n\nTruncate the lower blocks at L terms to get E_L and R_L. Each tail has norm at most tau=r^L/(1-r). The maps x -> average-normalized sum_z |z> E_L(z)*x, and similarly R_L, have Gram matrices between (1-r^(2L))I and I whenever averaging includes a common root-of-unity phase of order greater than L. Indeed, writing Z=omega Z', different lengths become orthogonal, and\n\n$$\\sum_{\\ell=0}^{L-1}W^\\ell(I-WW^*)(W^*)^\\ell=I-W^L(W^*)^L.$$\n\nHere W=DZ' for E and W=Z'*D* for R. The pointwise relation gives an intertwining error at most 2 tau for the field maps.\n\nFor d<=2^n choose b=nL+ceil(log2(L+1)), G=(Z/2^b Z)^(L+1), v_i=(1,i,...,i^L), and Z_ii(z)=chi_(v_i)(z). A sum of at most L such vectors determines its multiset: no coordinate wraps modulo 2^b, the first records length, and Newton identities recover the monic root polynomial from the power sums. Every nonzero Fourier monomial of E_L* or R_L* contains the phase of its internal input index. A fixed frequency therefore permits only input indices in one multiset of size at most L. The zero-frequency row has only its matching port column. Thus every Fourier row has at most L nonzero entries.\n\n## Role in the source argument\n\nCreates nearly isometric embeddings into a field of smaller unitary problems while retaining short row support for coherent input erasure.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [fields:unitary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L38)\n- [fields:gram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L122)\n- [fields:telescope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L150)\n- [fields:sparsity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/04-fields.tex#L190)\n\n## Antecedents and comparison\n\nThe feedback construction is in the classical unitary-colligation framework; see [Fritzsche-Katsnelson-Kirstein, Section 3](https://arxiv.org/pdf/0805.4732v1). Newton identities and Fourier orthogonality are standard. The phase-code and field-encoding combination is the candidate interface extracted here.\n\n## Checks and limitations\n\nRead the feedback, Gram and support proofs. Finite unitary blocks check unitarity, tails, averaged Gram bounds and intertwining. Exact multiset enumeration checks absence of modular collisions and the allowed input indices at each frequency.\n\nThese tests do not establish a contraction block for every target unitary. The phase group can be enormous; efficient implementation depends on the separate oracle and slot model.\n\n## Possible applications\n\nTurning paths through an internal linear system into short Fourier support with quantitative norm control.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000235",
+      "record_type": "instrument",
+      "title": "Row-sparse near-isometries have a uniform programmable-slot encoder",
+      "forms": [
+        "block-encoding",
+        "singular-value-amplification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-283"
+      ],
+      "source_paper_ids": [
+        "P-000137"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex",
+          "label": "slot:definition",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex#L37",
+          "sha256": "9af13bfb62a14e4e865136822232bfc8742584f201d2a27ae05a6319670c4a23"
+        },
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+          "label": "encode:row-sparse",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L37",
+          "sha256": "dfa32a505a0423de0a1eb4d578fc259e489f0cf28d9e416848d937d580bf71eb"
+        },
+        {
+          "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex",
+          "label": "encode:plane",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L97",
+          "sha256": "dfa32a505a0423de0a1eb4d578fc259e489f0cf28d9e416848d937d580bf71eb"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-row-sparse-exact-slot-interface-with-established-amplification",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000235.md",
+      "body": "# Row-sparse near-isometries have a uniform programmable-slot encoder\n\n[Family 283](../families/openai-math-283.md) · [Source manuscript](../papers/P-000137.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nLet T:C^d -> C^U have at most L nonzero entries per row, d<=2^n, rows encoded by w qubits, and (1-epsilon)I<=T*T<=I with 0<=epsilon<1. A programmable slot is an arbitrary table-controlled one-qubit unitary; the whole table counts as one slot. In this model, a unitary U_T with w+h+2 fresh qubits, h=ceil(log2(L+1)), satisfies ||U_T iota-jmath T||<=5 epsilon using O(L(n+w+h)) slots. The structure depends only on dimensions and L and works coherently for label-indexed families.\n\nSet theta=pi/(4L+2), t0=sin(theta). Controlled on input i, prepare its column in a row register and success flag, with remaining norm in a failure flag. For each row u, pad its support to exactly L distinct extended input indices I_u. Inverting the preparation of the uniform state on I_u gives overlap 1/sqrt(L) on every supported input. A second flag of amplitude t0 sqrt(L) yields a unitary B with jmath*B iota=t0 T.\n\nAfter B apply L rounds of (2B P0 B*-I)(I-2Q), where P0=iota iota* and Q=jmath jmath*. On each right singular direction with singular value sigma, the state lies in a two-dimensional plane with angle beta=arcsin(t0 sigma); the final angle is (2L+1)beta. Its distance from sigma times the desired left singular vector is at most (pi+1)(1-sigma)<=5 epsilon. Different singular directions have orthogonal planes, so the same bound holds in operator norm, including coherent labels.\n\nArbitrary column-state tables and support lists are available in this input model. This is not an efficient algorithm given only entry queries or a classical dense matrix.\n\n## Role in the source argument\n\nImplements the near-isometric Fourier fields while controlling all input superpositions and retained workspace.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [slot:definition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/02-slots.tex#L37)\n- [encode:row-sparse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L37)\n- [encode:plane](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/build/sections/05-encoders.tex#L97)\n\n## Antecedents and comparison\n\nState-preparation block encodings and singular-value amplification are established; compare [Gilyen-Su-Low-Wiebe, Lemmas 47-48 and the amplification results](https://arxiv.org/pdf/1806.01838v1). The source uses a different arbitrary-table slot model and an explicit 5 epsilon estimate; the sparse-access oracle costs of that antecedent cannot be substituted directly.\n\n## Checks and limitations\n\nRead the preparation block and orthogonal-plane proof. Finite sparse rectangular contractions test a unitary dilation with the specified block, L amplification rounds and the full operator-norm error, including exact isometries.\n\nThe numerical dilation tests the singular-value argument, not the entire table-controlled circuit compilation. Slot count must not be presented as a standard finite-gate count.\n\n## Possible applications\n\nCoherent implementation of row-sparse near-isometries when arbitrary controlled state-preparation tables are supplied.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000236",
+      "record_type": "instrument",
+      "title": "Independent instances obey a direct product under adaptive individual query caps",
+      "forms": [
+        "adaptive-direct-product",
+        "supermartingale"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-284"
+      ],
+      "source_paper_ids": [
+        "P-000138"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+          "label": "lem:adaptive-product",
+          "line": 22,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L22",
+          "sha256": "3eb3463fe7750ddadc5c8904146f41c1bbcbcb48138e0a091b8ab621d68b1fd2"
+        },
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex",
+          "label": "eq:bellman-query",
+          "line": 54,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L54",
+          "sha256": "3eb3463fe7750ddadc5c8904146f41c1bbcbcb48138e0a091b8ab621d68b1fd2"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "established-drucker-style-adaptive-product-argument",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000236.md",
+      "body": "# Independent instances obey a direct product under adaptive individual query caps\n\n[Family 284](../families/openai-math-284.md) · [Source manuscript](../papers/P-000138.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nLet mu be a distribution on the promised inputs of a partial Boolean function P. Suppose every deterministic decision tree using at most L queries has mu-success at most beta. For r independent instances, any randomized algorithm that interleaves queries arbitrarily, uses at most L queries on each instance on every branch, and has only independent additional side information, succeeds on all instances with probability at most beta^r.\n\nFix its coins and independent side information. A complete query transcript restricts each input separately: the adaptive choice of the next queried coordinate is determined by the recorded answers. The conditional input law therefore remains a product of the individual posterior laws. For each instance take V_h to be the best conditional success with its remaining query allowance. Revealing one legal bit cannot increase its expected V_h, by the one-instance Bellman equation; the other factors stay fixed. The product of the V_h is a supermartingale, initially at most beta^r. At termination, the probability of all the chosen answers is bounded by the product of the posterior best-guess probabilities, hence by this product value.\n\nAn aggregate budget rL is insufficient. For two independent uniform two-bit AND instances, an individual cap L=1 gives beta=3/4 and product bound 9/16. With a total budget two, query the first bit of the first instance; if it is zero query one bit of the second, otherwise query the second bit of the first. The resulting all-correct probability is 3/4. Correlated instances likewise invalidate the independent-product conclusion.\n\n## Role in the source argument\n\nControls simultaneous recovery of many independent address values despite an adversarial adaptive query schedule.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:adaptive-product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L22)\n- [eq:bellman-query](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/04-classical.tex#L54)\n\n## Antecedents and comparison\n\nThe conditional factorization and product-value proof are already explicit in [Drucker, Lemmas 3.1-3.2 and the following product process](https://www.pure.ed.ac.uk/ws/files/19272888/Drucker_2012_Improved_direct_product_theorems_for_randomized_query_complexity.pdf). This card records an established reusable tool, not a novel direct-product theorem.\n\n## Checks and limitations\n\nRead the proof and the antecedent. Exact dynamic programming optimizes all adaptive interleavings on small independent instances and checks the product optimum; separate controls allow only a total budget or correlate the inputs.\n\nInput-dependent side information can destroy posterior factorization. A bound on expected queries or total queries does not supply the per-instance branch cap.\n\n## Possible applications\n\nProving lower bounds for adaptive algorithms that must recover many independently hidden local values.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000237",
+      "record_type": "instrument",
+      "title": "Complementary fractional comparisons support a bounded quantum tournament",
+      "forms": [
+        "quantum-sampling",
+        "fractional-tournament"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-284"
+      ],
+      "source_paper_ids": [
+        "P-000138"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+          "label": "lem:amplification",
+          "line": 25,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L25",
+          "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+        },
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+          "label": "prop:tournament",
+          "line": 101,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L101",
+          "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+        },
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+          "label": "eq:drift",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L141",
+          "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+        },
+        {
+          "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex",
+          "label": "eq:product-state",
+          "line": 163,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L163",
+          "sha256": "62a9becdd123095a81e165bfc28c9a6601468226b3e9f26b74bf1dc13aad46cd"
+        }
+      ],
+      "batch_id": "B016",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "candidate-fractional-comparison-interface-to-established-tournament-search",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000237.md",
+      "body": "# Complementary fractional comparisons support a bounded quantum tournament\n\n[Family 284](../families/openai-math-284.md) · [Source manuscript](../papers/P-000138.md) · [Batch B016](../../batches/B016/README.md)\n\n## Mathematical content\n\nFor m>=2 let a_ij+a_ji=1 for i!=j and a_ii=0. A reversible coherent comparison of an unordered pair produces these win probabilities using at most c queries and retains all workspace. Put T=ceil(log2(1000m)), epsilon=1/(1000T). There is a quantum algorithm using O(c sqrt(m) T^2 log T) queries on every branch that returns at most T candidates. If one candidate i* has a_(i*,j)>=1-epsilon against every other j, its inclusion probability is at least 1-2m/2^T-T epsilon.\n\nThe ideal process starts with w_i=1, samples p with probability w_p/W, W=sum w_i, and sets w_i'=w_i a_ip. Complementarity gives\n\n$$\\mathbb E[W'\\mid w]=(W^2-\\sum_iw_i^2)/(2W)\\le W/2.$$\n\nUntil i* is chosen its weight is at least (1-epsilon)^T>1/2, so the ideal miss probability is at most 2m/2^T. A uniform superposition of i followed by fresh comparisons against the previous pivots has all-win weight w_i, total success W/m, and conditional index law exactly w_i/W.\n\nBounded amplification with success threshold gamma=1/(2m) and failure budget epsilon preserves the full conditional successful state. One implementation chooses zero Grover iterations half the time and a uniform length in {0,...,M-1} half the time, M=ceil(10/sqrt(gamma)); each trial succeeds with probability at least 9/40 when p>=gamma. A fixed number of repetitions gives failure at most epsilon. Thus each stage can be coupled to the ideal pivot, failing with probability at most epsilon before i* is selected. The query cap holds even when no dominant candidate exists. No transitivity, order or bias between the remaining candidates is required.\n\n## Role in the source argument\n\nSearches candidate certificates using possibly ambiguous local comparisons while keeping a fixed worst-case query budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:amplification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L25)\n- [prop:tournament](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L101)\n- [eq:drift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L141)\n- [eq:product-state](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/build/sections/03-quantum.tex#L163)\n\n## Antecedents and comparison\n\n[Brassard et al., Section 2](https://arxiv.org/pdf/quant-ph/0005055v1) supplies the amplification mechanism. [Mande-Paraashar-Saurabh](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2023.30) studies tournament-query search. The selected interface allows fractional complementary comparisons and retains the exact conditional pivot law; targeted comparisons do not certify historical novelty.\n\n## Checks and limitations\n\nRead the drift, successful-state preservation and history-conditioned coupling proofs. Finite weighted tournaments check drift and miss probabilities; coherent comparison states check the conditional index law, and matrix simulations check successful-state preservation under varying amplification lengths.\n\nFresh workspaces are needed for the product of comparison probabilities. The routine returns a short list; identifying the dominant candidate from that list requires the application-specific verifier.\n\n## Possible applications\n\nQuantum search among candidates when comparison subroutines may be unpromised away from the correct candidate.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -11542,6 +11956,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000134.md",
       "body": "# Deterministic nonbipartite Ramanujan graphs in every fixed degree\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims deterministic polynomial-time construction of simple connected nonbipartite d-regular Ramanujan graphs for every fixed d>=3 and all sufficiently large even sizes.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000228: Account-specific expectation discounts let one deterministic choice control many statistics](../instruments/MI-000228.md)\n- [MI-000229: Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation](../instruments/MI-000229.md)\n\n## Dependencies and review\n\nFinite averaging, positive-part Taylor estimates, centered stub incidence, nonbacktracking recurrences, Woodbury inversion and finite-population averaging.\n\nRead the discounted-account and scalar-excess proofs and the full path/exposure lemma with its centered-pair identity. The multistage spectral estimates and final exact repair were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-178.md) · [Batch B015](../../batches/B015/README.md)"
+    },
+    {
+      "id": "P-000135",
+      "record_type": "paper",
+      "title": "A Coulomb ground-state density without Kohn-Sham ensemble representation",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-278"
+      ],
+      "batch_id": "B016",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a201f0a060c02ef0c29b77c196fc06447bfc97fc0808bc540dda11b4a6797a46",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000135.md",
+      "body": "# A Coulomb ground-state density without Kohn-Sham ensemble representation\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a three-electron, two-nucleus Coulomb ground-state density that no noninteracting ground-state ensemble reproduces with a real spin-independent potential in L^(3/2)(R^3)+L^infinity(R^3). The positive integer nuclear charge is specified by a finite nonnumerical formula.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000230: A density angle gives orthogonal orbitals with a common formal potential](../instruments/MI-000230.md)\n- [MI-000231: A weighted gap and Pauli occupation bound certify every mixed fermionic state](../instruments/MI-000231.md)\n\n## Dependencies and review\n\nSobolev chain rules, weighted Poincare inequality, positive ground-state representation, cutoff approximation and fermionic one-body occupation bounds.\n\nRead the orbital calculation and the complete ensemble-certificate proof. The channel analysis, proof of the weighted gap, finite charge selection and nodal-plane contradiction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-278.md) · [Batch B016](../../batches/B016/README.md)"
+    },
+    {
+      "id": "P-000136",
+      "record_type": "paper",
+      "title": "Exact quantum factoring over a fixed finite gate set",
+      "source_collection": "openai/math",
+      "upstream_slug": "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-279"
+      ],
+      "batch_id": "B016",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9d5b40bf951f21595e90e71a454736603d8fb2c3d1c628f4d23517b205b013f7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000136.md",
+      "body": "# Exact quantum factoring over a fixed finite gate set\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims uniformly polynomial-time exact integer factoring, with probability one and a fixed finite gate set, using verifiable auxiliary factorizations to reconstruct transition probabilities.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000232: Dyadic rounding plus a rare canonical guess calibrates success exactly](../instruments/MI-000232.md)\n- [MI-000233: Deferred filters yield a product success law on the same recorded adaptive run](../instruments/MI-000233.md)\n\n## Dependencies and review\n\nDyadic sampling by Hadamard bits and reversible arithmetic, exact probability reconstruction, orthogonal classical histories and ordinary two-reflection amplitude amplification.\n\nRead the model, transition interface and complete exactness section, plus the Comparator scope. The order transform, majorant construction, full process proof and primality appendix were not audited.\n\nThe scope document and ExactQuantumFactoring.lean Comparator statement were read. The statement specifies a length-uniform generator over a finite gate alphabet, bounded-arity wires and Born probability one for canonical prime-factor output. It is a target statement, not a kernel-checked solution; no Lean project was built.\n\n[Family context](../families/openai-math-279.md) · [Batch B016](../../batches/B016/README.md)"
+    },
+    {
+      "id": "P-000137",
+      "record_type": "paper",
+      "title": "Polynomial-Time Unitary Synthesis from a Boolean Oracle",
+      "source_collection": "openai/math",
+      "upstream_slug": "Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-283"
+      ],
+      "batch_id": "B016",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "37c0b90466ccda4e34e7cb0e70892987eeb8a6fac30bb2e1b51505a1974f1d49",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000137.md",
+      "body": "# Polynomial-Time Unitary Synthesis from a Boolean Oracle\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a uniform polynomial-size finite-gate circuit using a target-dependent Boolean oracle to approximate any n-qubit unitary in diamond norm by a constant error. The oracle is existential; efficient classical construction of its truth table is not asserted.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000234: Feedback fields combine telescoping Gram bounds with power-sum Fourier sparsity](../instruments/MI-000234.md)\n- [MI-000235: Row-sparse near-isometries have a uniform programmable-slot encoder](../instruments/MI-000235.md)\n\n## Dependencies and review\n\nUnitary block identities, finite Fourier orthogonality, geometric tails, Newton identities, table-controlled state preparation and orthogonal singular-vector planes.\n\nRead the complete feedback-field proofs, programmable-slot definition and state-preparation argument, and generic row-sparse encoder proof. The dimension-contraction construction, recursion and finite-gate oracle compilation were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-283.md) · [Batch B016](../../batches/B016/README.md)"
+    },
+    {
+      "id": "P-000138",
+      "record_type": "paper",
+      "title": "A Nearly Quartic Separation Between Randomized and Quantum Query Complexity",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-284"
+      ],
+      "batch_id": "B016",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f8340b77de38921a8462feae5aa852efb0490967c8d7dcff39eb24dc368e86de",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000138.md",
+      "body": "# A Nearly Quartic Separation Between Randomized and Quantum Query Complexity\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/quartic-query-separation.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a nearly quartic separation between bounded-error randomized and quantum query complexity of total Boolean functions, approaching the known general quartic upper bound.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000236: Independent instances obey a direct product under adaptive individual query caps](../instruments/MI-000236.md)\n- [MI-000237: Complementary fractional comparisons support a bounded quantum tournament](../instruments/MI-000237.md)\n\n## Dependencies and review\n\nPosterior factorization, finite decision-tree value functions, product supermartingales, complementary pair sums and bounded amplitude amplification preserving the conditional successful state.\n\nRead the adaptive direct-product proof and the complete bounded-amplification and fractional-tournament proofs. The Forrelation input, pointer construction, certificate analysis and final separation exponents were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-284.md) · [Batch B016](../../batches/B016/README.md)"
     }
   ],
   "families": [
@@ -13666,6 +14156,114 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-277.md",
       "body": "# Conditioning budgets and threshold repetition for entangled games\n\n## Source manuscript and claim\n\n[Threshold parallel repetition for finite-dimensional entangled games](../papers/P-000085.md), by OpenAI, September 25, 2026.\n\nThe source derives a universal fifth-power threshold exponent for finite entangled games from an external conditioning estimate, and a cubic exponent depending on the question distribution.\n\n## Extracted instruments\n\n- [MI-000123: A tested-set conditioning budget gives an explicit threshold exponent](../instruments/MI-000123.md)\n- [MI-000124: Reference-state rounding on question-support components](../instruments/MI-000124.md)\n\n## Dependencies and antecedents\n\nSong conditioning estimate for the universal application; operator-entropy exposure estimates for support rounding; classical sampling, tensor-copy amplification and Pinsker inequality.\n\nRao concentration; Yuen tested-coordinate sampling; anchored entangled repetition; connection-graph methods; earlier OpenAI resolvent purification. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nChecked the transfer proof, the all-length tensor-copy step, the root-path estimate and the displayed exponent arithmetic. The exposure lemma and the external Song estimate were not fully re-proved. Fresh comparisons distinguish threshold events from all-wins repetition.\n\nEntangledGames Comparator inspected: universal delta^13 rate only. The paper states delta^5 and a distribution-dependent cubic rate. No Lean build performed.\n\nThe selected formal statement is weaker than the paper main theorem and excludes its distribution-dependent cubic estimate.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/277.md) · [Batch record](../../batches/B002/README.md)"
+    },
+    {
+      "id": "openai-math-278",
+      "record_type": "family",
+      "title": "Angle orbitals and an unrestricted ensemble kinetic certificate",
+      "source_family": "278",
+      "source_collection": "openai/math",
+      "batch_id": "B016",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000135"
+      ],
+      "instrument_ids": [
+        "MI-000230",
+        "MI-000231"
+      ],
+      "headline": "The source claims a three-electron, two-nucleus Coulomb ground-state density that no noninteracting ground-state ensemble reproduces with a real spin-independent potential in L^(3/2)(R^3)+L^infinity(R^3). The positive integer nuclear charge is specified by a finite nonnumerical formula.",
+      "central_instrument": "An angle splits a density into orthogonal orbitals with one common formal potential; a weighted gap and the Pauli bound then certify a constrained-search minimum over every fermionic ensemble.",
+      "novelty_assessment": "Polar-coordinate calculus, ground-state transforms and the Pauli bound are established. The extracted contribution is their domain-aware use for a formal potential that need not define an ordinary global Hamiltonian. The full Coulomb nonrepresentability theorem was not audited.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.",
+      "statement_faithfulness": "The angle equation, regularity and weighted gap are hypotheses here. Local integrability of the formal potential is not membership in the ordinary potential class. No rank, reality or spin-diagonality restriction is imposed on the competing ensemble.",
+      "dependencies": "Sobolev chain rules, weighted Poincare inequality, positive ground-state representation, cutoff approximation and fermionic one-body occupation bounds.",
+      "antecedents": "The source credits Frank-Seiringer for the ground-state representation and Levy-Lieb for the constrained-search framework. The occupation bound is the usual Pauli principle.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-278.md",
+      "body": "# Angle orbitals and an unrestricted ensemble kinetic certificate\n\n## Source manuscript and claim\n\n[A Coulomb ground-state density without Kohn-Sham ensemble representation](../papers/P-000135.md), by OpenAI, September 25, 2026.\n\nThe source claims a three-electron, two-nucleus Coulomb ground-state density that no noninteracting ground-state ensemble reproduces with a real spin-independent potential in L^(3/2)(R^3)+L^infinity(R^3). The positive integer nuclear charge is specified by a finite nonnumerical formula.\n\n## Extracted instruments\n\n- [MI-000230: A density angle gives orthogonal orbitals with a common formal potential](../instruments/MI-000230.md)\n- [MI-000231: A weighted gap and Pauli occupation bound certify every mixed fermionic state](../instruments/MI-000231.md)\n\n## Dependencies and antecedents\n\nSobolev chain rules, weighted Poincare inequality, positive ground-state representation, cutoff approximation and fermionic one-body occupation bounds.\n\nThe source credits Frank-Seiringer for the ground-state representation and Levy-Lieb for the constrained-search framework. The occupation bound is the usual Pauli principle. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the orbital calculation and the complete ensemble-certificate proof. The channel analysis, proof of the weighted gap, finite charge selection and nodal-plane contradiction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\nThe angle equation, regularity and weighted gap are hypotheses here. Local integrability of the formal potential is not membership in the ordinary potential class. No rank, reality or spin-diagonality restriction is imposed on the competing ensemble.\n\n[Batch record](../../batches/B016/README.md)"
+    },
+    {
+      "id": "openai-math-279",
+      "record_type": "family",
+      "title": "Dyadic probability completion and filters evaluated after a verified run",
+      "source_family": "279",
+      "source_collection": "openai/math",
+      "batch_id": "B016",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000136"
+      ],
+      "instrument_ids": [
+        "MI-000232",
+        "MI-000233"
+      ],
+      "headline": "The source claims uniformly polynomial-time exact integer factoring, with probability one and a fixed finite gate set, using verifiable auxiliary factorizations to reconstruct transition probabilities.",
+      "central_instrument": "A rare uniform-guess branch fills the exact remainder left by downward dyadic rounding. Deferred filters give a known product success probability without conditioning on eventual completion.",
+      "novelty_assessment": "Amplitude amplification and coherent retention of classical records are established. The dyadic completion and same-run deferred-filter interface are candidate reusable refinements. Their extraction does not certify the order-trial or complete factoring construction.",
+      "formalization_summary": "The scope document and ExactQuantumFactoring.lean Comparator statement were read. The statement specifies a length-uniform generator over a finite gate alphabet, bounded-arity wires and Born probability one for canonical prime-factor output. It is a target statement, not a kernel-checked solution; no Lean project was built.",
+      "statement_faithfulness": "Retention appends a flag and never renormalizes the state. Every workspace register must remain available for inversion. The verified auxiliary data are generated within the process and must determine the true predicates uniquely.",
+      "dependencies": "Dyadic sampling by Hadamard bits and reversible arithmetic, exact probability reconstruction, orthogonal classical histories and ordinary two-reflection amplitude amplification.",
+      "antecedents": "Brassard-Hoyer-Mosca-Tapp provides the standard amplification framework; the source separately uses Miller-Shor factoring reductions and Pratt-style recursive auxiliary data.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-279.md",
+      "body": "# Dyadic probability completion and filters evaluated after a verified run\n\n## Source manuscript and claim\n\n[Exact quantum factoring over a fixed finite gate set](../papers/P-000136.md), by OpenAI, September 25, 2026.\n\nThe source claims uniformly polynomial-time exact integer factoring, with probability one and a fixed finite gate set, using verifiable auxiliary factorizations to reconstruct transition probabilities.\n\n## Extracted instruments\n\n- [MI-000232: Dyadic rounding plus a rare canonical guess calibrates success exactly](../instruments/MI-000232.md)\n- [MI-000233: Deferred filters yield a product success law on the same recorded adaptive run](../instruments/MI-000233.md)\n\n## Dependencies and antecedents\n\nDyadic sampling by Hadamard bits and reversible arithmetic, exact probability reconstruction, orthogonal classical histories and ordinary two-reflection amplitude amplification.\n\nBrassard-Hoyer-Mosca-Tapp provides the standard amplification framework; the source separately uses Miller-Shor factoring reductions and Pratt-style recursive auxiliary data. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the model, transition interface and complete exactness section, plus the Comparator scope. The order transform, majorant construction, full process proof and primality appendix were not audited.\n\nThe scope document and ExactQuantumFactoring.lean Comparator statement were read. The statement specifies a length-uniform generator over a finite gate alphabet, bounded-arity wires and Born probability one for canonical prime-factor output. It is a target statement, not a kernel-checked solution; no Lean project was built.\n\nRetention appends a flag and never renormalizes the state. Every workspace register must remain available for inversion. The verified auxiliary data are generated within the process and must determine the true predicates uniquely.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/279.md) · [Batch record](../../batches/B016/README.md)"
+    },
+    {
+      "id": "openai-math-283",
+      "record_type": "family",
+      "title": "Feedback fields and row-sparse near-isometry encoders",
+      "source_family": "283",
+      "source_collection": "openai/math",
+      "batch_id": "B016",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000137"
+      ],
+      "instrument_ids": [
+        "MI-000234",
+        "MI-000235"
+      ],
+      "headline": "The source claims a uniform polynomial-size finite-gate circuit using a target-dependent Boolean oracle to approximate any n-qubit unitary in diamond norm by a constant error. The oracle is existential; efficient classical construction of its truth table is not asserted.",
+      "central_instrument": "Unitary feedback gives field maps with telescoping Gram bounds; power-sum phases restrict Fourier row support. A programmable-slot encoder then amplifies a row-sparse near-isometry uniformly over all singular directions.",
+      "novelty_assessment": "Unitary transfer functions, Newton identities, multiplexed state preparation and singular-value amplification are established. The selected combination of phase coding, Gram bounds and the precise slot-model encoder is a candidate reusable interface, without a priority certification.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.",
+      "statement_faithfulness": "The contraction norm bound for the internal block is an input. A programmable slot may contain an arbitrary label-controlled table of two-by-two unitary matrices, so slot count is not an ordinary gate count or entry-oracle complexity.",
+      "dependencies": "Unitary block identities, finite Fourier orthogonality, geometric tails, Newton identities, table-controlled state preparation and orthogonal singular-vector planes.",
+      "antecedents": "Fritzsche-Katsnelson-Kirstein gives the unitary transfer-function framework; Gilyen-Su-Low-Wiebe gives state-preparation block encodings and singular-value transformation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-283.md",
+      "body": "# Feedback fields and row-sparse near-isometry encoders\n\n## Source manuscript and claim\n\n[Polynomial-Time Unitary Synthesis from a Boolean Oracle](../papers/P-000137.md), by OpenAI, October 5, 2026.\n\nThe source claims a uniform polynomial-size finite-gate circuit using a target-dependent Boolean oracle to approximate any n-qubit unitary in diamond norm by a constant error. The oracle is existential; efficient classical construction of its truth table is not asserted.\n\n## Extracted instruments\n\n- [MI-000234: Feedback fields combine telescoping Gram bounds with power-sum Fourier sparsity](../instruments/MI-000234.md)\n- [MI-000235: Row-sparse near-isometries have a uniform programmable-slot encoder](../instruments/MI-000235.md)\n\n## Dependencies and antecedents\n\nUnitary block identities, finite Fourier orthogonality, geometric tails, Newton identities, table-controlled state preparation and orthogonal singular-vector planes.\n\nFritzsche-Katsnelson-Kirstein gives the unitary transfer-function framework; Gilyen-Su-Low-Wiebe gives state-preparation block encodings and singular-value transformation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete feedback-field proofs, programmable-slot definition and state-preparation argument, and generic row-sparse encoder proof. The dimension-contraction construction, recursion and finite-gate oracle compilation were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\nThe contraction norm bound for the internal block is an input. A programmable slot may contain an arbitrary label-controlled table of two-by-two unitary matrices, so slot count is not an ordinary gate count or entry-oracle complexity.\n\n[Batch record](../../batches/B016/README.md)"
+    },
+    {
+      "id": "openai-math-284",
+      "record_type": "family",
+      "title": "Adaptive direct products and fractional quantum tournaments",
+      "source_family": "284",
+      "source_collection": "openai/math",
+      "batch_id": "B016",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000138"
+      ],
+      "instrument_ids": [
+        "MI-000236",
+        "MI-000237"
+      ],
+      "headline": "The source claims a nearly quartic separation between bounded-error randomized and quantum query complexity of total Boolean functions, approaching the known general quartic upper bound.",
+      "central_instrument": "A product of one-instance value functions survives adaptive interleaving under individual query caps. Complementary probabilistic comparisons yield a fractional-weight tournament with bounded quantum sampling cost.",
+      "novelty_assessment": "The adaptive-product proof is an established Drucker-style argument. Amplitude amplification and tournament search are established; the fractional comparison interface with exact conditional sampling is the selected refinement. The total-function separation was not certified.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.",
+      "statement_faithfulness": "The direct product requires independent inputs and a cap on each instance. The tournament requires complementary pair probabilities and reversible fresh workspaces, but no transitive order or uniform gap between other candidates.",
+      "dependencies": "Posterior factorization, finite decision-tree value functions, product supermartingales, complementary pair sums and bounded amplitude amplification preserving the conditional successful state.",
+      "antecedents": "Drucker, Improved direct product theorems for randomized query complexity; Brassard-Hoyer-Mosca-Tapp amplitude amplification; tournament-query algorithms including Mande-Paraashar-Saurabh.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-284.md",
+      "body": "# Adaptive direct products and fractional quantum tournaments\n\n## Source manuscript and claim\n\n[A Nearly Quartic Separation Between Randomized and Quantum Query Complexity](../papers/P-000138.md), by OpenAI, October 5, 2026.\n\nThe source claims a nearly quartic separation between bounded-error randomized and quantum query complexity of total Boolean functions, approaching the known general quartic upper bound.\n\n## Extracted instruments\n\n- [MI-000236: Independent instances obey a direct product under adaptive individual query caps](../instruments/MI-000236.md)\n- [MI-000237: Complementary fractional comparisons support a bounded quantum tournament](../instruments/MI-000237.md)\n\n## Dependencies and antecedents\n\nPosterior factorization, finite decision-tree value functions, product supermartingales, complementary pair sums and bounded amplitude amplification preserving the conditional successful state.\n\nDrucker, Improved direct product theorems for randomized query complexity; Brassard-Hoyer-Mosca-Tapp amplitude amplification; tournament-query algorithms including Mande-Paraashar-Saurabh. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the adaptive direct-product proof and the complete bounded-amplification and fractional-tournament proofs. The Forrelation input, pointer construction, certificate analysis and final separation exponents were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified for these extracted tools.\n\nThe direct product requires independent inputs and a cap on each instance. The tournament requires complementary pair probabilities and reversible fresh workspaces, but no transitive order or uniform gap between other candidates.\n\n[Batch record](../../batches/B016/README.md)"
     },
     {
       "id": "openai-math-285",
