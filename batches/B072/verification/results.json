@@ -1,0 +1,74 @@
+{
+  "batch": "B072",
+  "status": "pass",
+  "elapsed_seconds": 0.778,
+  "scope": "Selected finite models and identities; no source headline or Lean certification.",
+  "checks": {
+    "hessian_averaging": {
+      "status": "pass",
+      "details": {
+        "complex_mixtures": 72,
+        "sylvester_checks": 216,
+        "zero_extensions": 216
+      }
+    },
+    "child_energy": {
+      "status": "pass",
+      "details": {
+        "four_child_models": 54,
+        "conditional_gram_checks": 324,
+        "mixed_trace_checks": 54
+      }
+    },
+    "stable_keys": {
+      "status": "pass",
+      "details": {
+        "separated_windows": 2025,
+        "stable_window_scale_models": 1017,
+        "tree_parameter_models": 24,
+        "boundary_control": true
+      }
+    },
+    "open_repair": {
+      "status": "pass",
+      "details": {
+        "uniform_tail_entries": 90,
+        "neighborhood_measure": true,
+        "expectation_selection": true
+      }
+    },
+    "fourier_density": {
+      "status": "pass",
+      "details": {
+        "gaussian_pair_integrals": 9,
+        "clustered_point_cases": 3,
+        "max_absolute_error": 2.842170943040401e-14,
+        "cutoff_budget_models": 12
+      }
+    },
+    "poisson_derivatives": {
+      "status": "pass",
+      "details": {
+        "symbolic_derivative_identities": 3,
+        "first_shell_multiplicity": 6,
+        "gaussian_poisson_models": 5
+      }
+    },
+    "singular_epigraph": {
+      "status": "pass",
+      "details": {
+        "exact_determinant_models": 4,
+        "singular_feasible_boundaries": 2,
+        "range_omission_negative_control": true
+      }
+    },
+    "angular_gram": {
+      "status": "pass",
+      "details": {
+        "symbolic_gram_entries": 27,
+        "exact_size20_determinants": 4,
+        "singular_slice_models": 2
+      }
+    }
+  }
+}

@@ -73,8 +73,9 @@
 | [B069](B069/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Add eight scoped instruments for uniform interpolation, weighted infinitude, explicit polynomial stabilization and lifting, metric and bundle transport, and full numerical charges. |
 | [B070](B070/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Add eight scoped instruments for cycle-rank descent, branch rounding, finite-cover extension, differential ratios, Liouville covers, proper intrinsic distances, Hensel lifting and lattice residues. |
 | [B071](B071/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight instruments covering formal spectral calculus, positive tensor detection, valuative thresholds, neutral weights, maximal section fields, endpoint lattice counts and defect rounding. |
+| [B072](B072/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight instruments on supported matrix costs, dyadic energy increments, stable geometric grid keys, open repair, Fourier bounds, Poisson normalization and singular cone sections. |
 
-Future rounds use `B072` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B073` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

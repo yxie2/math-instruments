@@ -28840,6 +28840,357 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000677.md",
       "body": "# Round near-sign Fourier coefficients with a total-defect budget\n\n[Family 076](../families/openai-math-076.md) · [Source manuscript](../papers/P-000446.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nFor X in [-1,1]^N put mu=(1/2)sum(1-|X_k|). There exist real signs epsilon with sup_t |sum(epsilon_k-X_k)e(kt)| <= C[1+sqrt(mu log(80N/mu))]. At mu=0 the error is exactly zero.\n\nWrite X_k=sigma_k(1-2p_k), 0<=p_k<=1/2, sum p_k=mu. Form real and imaginary Fourier rows on a 20N-point grid. Round p down to a fine dyadic grid with total error at most one. At scale 2^-j, apply a real-matrix discrepancy bound to the s_j coordinates with odd numerator. Reverse all discrepancy signs if necessary to make their sum nonpositive. This preserves the discrepancy norm, keeps entries in [0,1], and prevents total mass growth. Thus s_j<=min(N,2^j mu).\n\nThe real-matrix bound C0 sqrt(s log(2R/s)) follows by iterating Lovett-Meka partial coloring and summing the geometrically decreasing errors. Summing the dyadic stage errors gives 1+C0 sqrt(mu log(80N/mu))/(sqrt(2)-1). The final p entries are 0 or 1 and define signs. Cauchy's derivative estimate for the error polynomial gives S<=G+(pi e/20)S, hence a finite-grid bound controls the whole circle. This last step is applied to the error polynomial, not to the original relaxed polynomial.\n\n## Role in the source argument\n\nTurns a small total coefficient defect into a uniform rounding error, suitable for preserving both upper and lower modulus estimates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:rounding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L12)\n- [lem:rounding-matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L36)\n\n## Antecedents and comparison\n\n[Lovett and Meka, arXiv:1203.5747v2](https://arxiv.org/abs/1203.5747v2), Theorem 4 on page 3, supplies the real-vector partial-coloring statement; the statement and surrounding reduction were read. The source derives defect-sensitive rounding from that established input. Exact priority of the defect formulation is not established.\n\n## Checks and limitations\n\nFinite exact dyadic states use exhaustive discrepancy sign selection, checking mass monotonicity, support budgets, final signs, zero defect and the Fourier error identity. Dense-circle evaluations check the stated grid-to-circle factor on the resulting errors.\n\nSmall exhaustive sign searches do not implement the Lovett-Meka algorithm or prove an effective construction of the source ultraflat polynomials.\n\n## Possible applications\n\nRounding relaxed trigonometric designs when only a small amount of coefficient mass remains undecided.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000678",
+      "record_type": "instrument",
+      "title": "Average a square-root Hessian cost on a fixed support",
+      "forms": [
+        "supported-hessian-joint-convexity",
+        "inverse-quadratic-variational-averaging"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-082"
+      ],
+      "source_paper_ids": [
+        "P-000447"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+          "label": "lem:joint-convexity",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L183",
+          "sha256": "914af3c5e87cd4af52b1c7a9e7f2a4ac03d82b9456b8be50b69ffbbbee59f9ad"
+        },
+        {
+          "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex",
+          "label": "lem:hessian",
+          "line": 54,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L54",
+          "sha256": "914af3c5e87cd4af52b1c7a9e7f2a4ac03d82b9456b8be50b69ffbbbee59f9ad"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000678.md",
+      "body": "# Average a square-root Hessian cost on a fixed support\n\n[Family 082](../families/openai-math-082.md) · [Source manuscript](../papers/P-000447.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nFor Phi(T)=tr(T^(3/2)) and supported Hermitian K, write b_T(K)=(3/2)<K,(L_sqrt(T)+R_sqrt(T))^-1 K>. The inverse acts on the support. In a positive eigenbasis, b_T(K)=(3/2)sum |K_ij|^2/(sqrt(t_i)+sqrt(t_j)), the Hessian of Phi.\n\nSuppose T_omega have the same support E almost everywhere, K_omega are supported Hermitian directions and their operator norms are integrable over a probability space. Their averages have the same support and b_(average T)(average K)<=average b_T(K), allowing an infinite right side.\n\nPut A=average sqrt(T_omega). Vector Cauchy-Schwarz gives A^2<=average T; square-root order then gives A<=sqrt(average T). For a positive definite operator M, <K,M^-1 K>=sup_X[2<K,X>-<X,MX>]. Apply this on Hermitian matrices to M=L_sqrt(T)+R_sqrt(T), use the preceding order, and move the supremum outside the average in the bounding direction. No uniform lower bound on the positive eigenvalues is required.\n\n## Role in the source argument\n\nAllows probability mixtures of Gaussian-window Grams without a condition-number penalty.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:joint-convexity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L183)\n- [lem:hessian](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/sections/matrix.tex#L54)\n\n## Antecedents and comparison\n\n[Hansen and Zhang, arXiv:1402.2118v3](https://arxiv.org/abs/1402.2118v3), Theorems 1.2 and 1.3 and the power examples in the introduction, place this positive-definite Hessian convexity in the established matrix entropy class. Those statements were read. The source gives a direct square-root proof and a fixed-support integrable-average formulation.\n\n## Checks and limitations\n\nRandom complex Hermitian examples compare the Sylvester and eigenbasis Hessians, finite mixtures, support-preserving zero extensions and large eigenvalue ratios.\n\nFinite matrices do not justify the source analytic heat estimates or certify the triangular transform theorem.\n\n## Possible applications\n\nPreserving curvature control while averaging positive matrices and their directions together.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000679",
+      "record_type": "instrument",
+      "title": "Pay a cyclic trace with the energy gained by four parity-compatible children",
+      "forms": [
+        "four-child-gram-energy",
+        "dyadic-cyclic-trace-payment"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-082"
+      ],
+      "source_paper_ids": [
+        "P-000448"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex",
+          "label": "prop:increase",
+          "line": 52,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex#L52",
+          "sha256": "ff3c213f86a15ec53ea00222779bd6adbfc1db17a2e7144b2c330da2635f7ad1"
+        },
+        {
+          "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex",
+          "label": "prop:trace",
+          "line": 22,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex#L22",
+          "sha256": "06b69df9362e0bde5175805332743e8cbc8fa1a1f7ce5b015d29e707dd8a5dd1"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000679.md",
+      "body": "# Pay a cyclic trace with the energy gained by four parity-compatible children\n\n[Family 082](../families/openai-math-082.md) · [Source manuscript](../papers/P-000448.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nLet real edge matrices W_v:H_(v+1)->H_v define row stars R_v=[W_v,W_(v-1)*], and set e=sum_v tr((R_v R_v*)^(3/2)). For diagonal Haar involutions D_v, choose the four signs with s0 s1 s2=1 and C_v=(I+s_v D_v)^(1/2). The child edges are C_v W_v C_(v+1), reflecting doubled atom weights.\n\nConditional on s_v, each neighboring sign is uniform. Their correlation causes no extra term because the child Gram contains a sum of the two incident contributions, not their product. Its conditional average is C_v R_v R_v* C_v. Convexity and equality of nonzero Gram eigenvalues reduce its average energy to [Phi(T_v+U_v)+Phi(T_v-U_v)]/2, where T_v=R_v*R_v and U_v=R_v*D_v R_v.\n\nSince -T_v<=U_v<=T_v, the supported Hessian comparison gives a midpoint gap at least b_(T_v)(U_v)/(2sqrt(2)). Thus delta=(1/4)sum_children e_child-e>=0. The real mixed trace inequality |tr(D0 W0 D1 W1 D2 W2)|<=(5/3)sum b_(T_v)(U_v) yields |tau|<=(10sqrt(2)/3)delta. Its proof embeds all edges in one symmetric zero-diagonal block matrix M; tr((DM)^3)=6tau, and a supported eigenbasis estimate bounds this cubic trace by the common quadratic cost.\n\n## Role in the source argument\n\nTurns a signed local triangular integral into a positive increment that can telescope.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:increase](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/04-dyadic.tex#L52)\n- [prop:trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/build/sections/03-trace.tex#L22)\n\n## Antecedents and comparison\n\nConvex Gram energies and martingale telescoping are classical. The source-specific interface is the four parity-compatible children and the mixed cyclic-trace payment. Exact priority of this finite-dimensional combination is not established.\n\n## Checks and limitations\n\nRandom real matrices, including rank-deficient cases and unequal even vertex dimensions, test conditional Gram averages, the mixed trace bound, midpoint costs and the final local energy increment.\n\nThe tests do not establish the global tree summation or the measurable-input limit.\n\n## Possible applications\n\nUsing pairwise independence when full independence is unavailable in a constrained subdivision.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000680",
+      "record_type": "instrument",
+      "title": "Separate current geometric tests while preserving earlier grid keys",
+      "forms": [
+        "geometric-sequence-dyadic-grid",
+        "preorder-window-stability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-084"
+      ],
+      "source_paper_ids": [
+        "P-000449"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+          "label": "lem:window-span",
+          "line": 76,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L76",
+          "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+        },
+        {
+          "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+          "label": "lem:stability",
+          "line": 112,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L112",
+          "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+        },
+        {
+          "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex",
+          "label": "lem:separation",
+          "line": 155,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L155",
+          "sha256": "8556c2b128c63df3f2cbc1c3b595838df5b9e93bbc386ed7aa2b11bea2e1aeb0"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000680.md",
+      "body": "# Separate current geometric tests while preserving earlier grid keys\n\n[Family 084](../families/openai-math-084.md) · [Source manuscript](../papers/P-000449.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nFix q in (0,1), c=4/(1-q), and N_b=2^ceil(log2(c q^-b)). These dyadic grid sizes are nested even when q is not dyadic; c q^-b<=N_b<2c q^-b. An ordered tree assigns integer windows to edges in preorder with g unused indices between windows. A height-h window has length r_h>=g+sigma_(h-1), so its window together with its child subtree spans at most 2r_h.\n\nA center x is stable if (x,x+2q^a] misses the grid of the preceding window whenever a is a new window's first index. The bad centers for one transition lie in intervals [gamma-2q^a,gamma), so their density is at most 4c q^(g+1). For K edges, the union has density at most 4Kc q^(g+1). At a stable center, every shift t q^n from the current window, t in [1,2], preserves every earlier grid key by nesting.\n\nChoose the starting index so 2q^n0<=1/4. Within a window ending at b, the center and shifted points have circular separation at least (1-q)q^b, while the current cell width is at most (1-q)q^b/4. They therefore have distinct current and finer keys. The half-open endpoint convention matters: a center may start at a boundary, but reaching the next boundary changes its key.\n\n## Role in the source argument\n\nReuses previously exposed random choices while ensuring fresh table entries for the current tests.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:window-span](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L76)\n- [lem:stability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L112)\n- [lem:separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/03-windows.tex#L155)\n\n## Antecedents and comparison\n\nNested grids, boundary-strip estimates and preorder blocks are established devices. The source combines dyadic grid nesting with a nondyadic geometric sequence and an explicit subtree-span budget; exact priority is not established.\n\n## Checks and limitations\n\nRational q values test exact grid nesting, stable keys, boundary endpoints and within-window separation. Small trees verify preorder span bounds and gap arithmetic.\n\nThese checks do not prove independence of the source random routing or the similarity conjecture.\n\n## Possible applications\n\nDesigning multiscale random tests with stable past information and separated current inputs.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000681",
+      "record_type": "instrument",
+      "title": "Repair exceptional centers by an open neighborhood and a vanishing tail",
+      "forms": [
+        "closed-exceptional-center-repair",
+        "compact-scale-open-completion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-084"
+      ],
+      "source_paper_ids": [
+        "P-000450"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+          "label": "subsec:repair",
+          "line": 2,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L2",
+          "sha256": "b520f91a72117bb1dcaeb45d1235bd55d00641f87d9776d1c1cc2b6239ca16b2"
+        },
+        {
+          "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex",
+          "label": "eq:exceptional-centers",
+          "line": 43,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L43",
+          "sha256": "b520f91a72117bb1dcaeb45d1235bd55d00641f87d9776d1c1cc2b6239ca16b2"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000681.md",
+      "body": "# Repair exceptional centers by an open neighborhood and a vanishing tail\n\n[Family 084](../families/openai-math-084.md) · [Source manuscript](../papers/P-000450.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nSuppose a finite random periodic grid set B has expected density at most p. Enlarge each realization to an open B+ at additional density at most p. Let R consist of centers x for which some t in [1,2] misses B+ at every tested index n in a finite set N. The miss conditions form a closed subset of the compact product T x [1,2]; its projection R is closed.\n\nAssume the all-scale failure probability is at most 2p at stable centers and the unstable centers have density at most p. Finite Fubini gives E rho(R)<=3p, while E rho(B+)<=2p. Some realization therefore has rho(B+)+rho(R)<=5p. Choose an open epsilon-neighborhood V of the closed set R with rho(V)<=rho(R)+p. Then H=B+ union V has density at most 6p.\n\nOutside R, the finite tested indices hit H at every normalized scale. For x in R, every sufficiently large n satisfies t2^-n<epsilon uniformly over t in [1,2], so the full dyadic tail hits V. This completes all centers; the new indices need not belong to the original finite test set. Compactness of the scale interval supplies closedness, and uniform decay supplies the tail repair.\n\n## Role in the source argument\n\nConverts a small exceptional set of centers into a deterministic open hitting set.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [subsec:repair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L2)\n- [eq:exceptional-centers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/build/sections/repair.tex#L43)\n\n## Antecedents and comparison\n\n[Kolountzakis, Infinite patterns that can be avoided by measure](https://eigen-space.org/ps/universal.pdf), section 2.2 and the completion discussion in section 3.2, use an open cover of exceptional translation parameters and the accumulation point zero. PDF pages 6 and 10-11 were visually read. This repair mechanism is an established antecedent; the source spells out its periodic and compact-scale implementation.\n\n## Checks and limitations\n\nFinite periodic interval models check compact exceptional sets, neighborhood measure growth, uniform tail entry and the expectation-based choice of a realization.\n\nThe tests and repair do not establish the assumed all-scale failure probability or its routing construction.\n\n## Possible applications\n\nRemoving a small set of bad base points when the tested patterns converge uniformly to their centers.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000682",
+      "record_type": "instrument",
+      "title": "Extract a Fourier energy lower bound from centered density alone",
+      "forms": [
+        "centered-density-low-frequency-mass",
+        "density-only-fourier-linear-programming"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-090"
+      ],
+      "source_paper_ids": [
+        "P-000451"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+          "label": "energy:low-frequency",
+          "line": 410,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L410",
+          "sha256": "bfa619a454d49596b65f310f0bfdce3ae3f5ed6545bd9058d0c6316843ded2a6"
+        },
+        {
+          "path": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+          "label": "energy:lp",
+          "line": 453,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L453",
+          "sha256": "bfa619a454d49596b65f310f0bfdce3ae3f5ed6545bd9058d0c6316843ded2a6"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000682.md",
+      "body": "# Extract a Fourier energy lower bound from centered density alone\n\n[Family 090](../families/openai-math-090.md) · [Source manuscript](../papers/P-000451.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nLet C be locally finite in R2 with N_R=#(C intersect B_R) and N_R/(pi R^2)->1. For M_R(xi)=sum_(x in C intersect B_R) exp(2 pi i x.xi), every fixed epsilon>0 satisfies liminf (1/N_R) integral_(|xi|<=epsilon)|M_R|^2>=1.\n\nChoose a smooth cutoff phi equal to one on B1 and supported in B_(1+d), with 0<=phi<=1. Fourier inversion pairs M_R with R^2 phihat(Rxi) to give N_R. The omitted tail is at most N_R delta_R, where delta_R is the Schwartz Fourier tail and tends to zero. Cauchy-Schwarz and Plancherel give integral_low |M_R|^2 >= N_R^2(1-delta_R)^2/(R^2||phi||_2^2). Density and ||phi||_2^2<=pi(1+d)^2 yield (1+d)^-2 after division by N_R; send d down to zero.\n\nFor real even Schwartz f with fhat>=0, the exact finite pair-sum identity is sum_(x,y) f(x-y)=integral fhat|M_R|^2. Continuity at zero and the preceding low-frequency mass imply liminf (1/N_R)sum_(x!=y) f(x-y)>=fhat(0)-f(0). Any pointwise majorant of f off zero inherits this bound. No separation or periodicity of C is used.\n\n## Role in the source argument\n\nExtends the Fourier comparison stage to arbitrary locally finite configurations of the specified centered density, once a suitable minorant is supplied.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [energy:low-frequency](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L410)\n- [energy:lp](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex#L453)\n\n## Antecedents and comparison\n\n[Cohn and Kumar, Universally optimal distribution of points on spheres](https://arxiv.org/abs/math/0607446), Lemma 9.2 and Proposition 9.3, give the low-frequency and LP mechanism for periodic configurations; the statements and proofs on PDF pages 38-40 were read. The source replaces that periodic input by a cutoff argument using only centered density. Exhaustive priority of this density formulation was not established.\n\n## Checks and limitations\n\nFinite Gaussian pair sums are compared to independently integrated Fourier intensities for both separated and tightly clustered points. The normalized cutoff lower-bound arithmetic is checked for several density and tail budgets.\n\nFinite examples do not prove an asymptotic density statement or construct sharp triangular-lattice minorants.\n\n## Possible applications\n\nUsing a near-zero Fourier mass estimate when periodic approximation or uniform separation is unavailable.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000683",
+      "record_type": "instrument",
+      "title": "Recover a Fourier certificate normalization from a first-shell slope",
+      "forms": [
+        "differentiated-poisson-normalization",
+        "shell-curvature-consistency"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-090"
+      ],
+      "source_paper_ids": [
+        "P-000452"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+          "label": "normalization:origin-lemma",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L59",
+          "sha256": "b7d75f5c8462ac154c38d11e19b1f32b323104fcb627b45b727e2cacd68c7435"
+        },
+        {
+          "path": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex",
+          "label": "normalization:second-poisson",
+          "line": 268,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L268",
+          "sha256": "b7d75f5c8462ac154c38d11e19b1f32b323104fcb627b45b727e2cacd68c7435"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000683.md",
+      "body": "# Recover a Fourier certificate normalization from a first-shell slope\n\n[Family 090](../families/openai-math-090.md) · [Source manuscript](../papers/P-000452.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nAssume a radial Schwartz Fourier pair F(x)=G1(b|x|^2), Fhat(x)=G2(b|x|^2) on a covolume-one triangular lattice whose dual is a rotation. With shell coordinate s_a, Poisson summation gives sum_a G1(t s_a)=t^-1 sum_a G2(s_a/t). Schwartz decay permits two derivatives termwise on compact positive t intervals.\n\nSuppose all nonzero shell values vanish, all G2 shell slopes vanish, and G1' is zero except on the first shell, where G1'(1)=-Q1 exp(-pi h). There are six first-shell vectors. At t=1, Poisson gives G1(0)=G2(0). Its derivative gives -6Q1 exp(-pi h)=-G2(0), hence a positive common normalization without a numerical origin estimate.\n\nThe second derivative gives sum_n r(n)n^2[G1''(n)-G2''(n)]=2G2(0), because d^2/dt^2[t^-1 G2(s/t)] at one equals 2G2(s)+4sG2'(s)+s^2G2''(s). If the supplied global signs make later G1 nodes maxima and G2 nodes minima, their curvature contributions are nonpositive. With G_i=exp(-pi h s)H_i, this conditionally yields H1''(1)-H2''(1)>=2(1-pi h)Q1. The normalization identity itself needs no global signs.\n\n## Role in the source argument\n\nFixes a remaining scale factor exactly and supplies an additional consistency test for interpolated curvatures.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [normalization:origin-lemma](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L59)\n- [normalization:second-poisson](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/sections/normalization.tex#L268)\n\n## Antecedents and comparison\n\nPoisson summation and differentiation under Schwartz bounds are classical. The source chooses exact shell jets so the first derivative isolates the origin value; exact priority of this normalization interface is not established.\n\n## Checks and limitations\n\nSymbolic differentiation checks both dilation derivatives and the H-to-G conversion. Exact shell enumeration checks multiplicity six; Gaussian Fourier pairs test the undropped Poisson identity and its first two derivatives numerically.\n\nThese tests do not verify existence of the claimed zero-jet Fourier pair, its signs or its sharp packing consequence.\n\n## Possible applications\n\nReplacing an unstable numerical normalization by an exact compatibility identity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000684",
+      "record_type": "instrument",
+      "title": "Project a determinant cone to an exact pseudoinverse epigraph",
+      "forms": [
+        "singular-schur-epigraph-section",
+        "pointwise-gram-hyperbolicity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-095"
+      ],
+      "source_paper_ids": [
+        "P-000453"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+          "label": "prop:hyperbolic",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L26",
+          "sha256": "931a3d0b43444f9cbe714a28d69ebe3f44801695d96ff98c2f7384d03de18d6c"
+        },
+        {
+          "path": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex",
+          "label": "prop:epigraph",
+          "line": 96,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L96",
+          "sha256": "931a3d0b43444f9cbe714a28d69ebe3f44801695d96ff98c2f7384d03de18d6c"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000684.md",
+      "body": "# Project a determinant cone to an exact pseudoinverse epigraph\n\n[Family 095](../families/openai-math-095.md) · [Source manuscript](../papers/P-000453.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nLet Q(y) be an r by r positive semidefinite homogeneous quadratic matrix, n=r+1, and Phi_y([[a,vT],[v,T]])=[[tr(QT),-vTQ],[-Qv,aQ]]. Set p_Q(X,Z,y)=det((det X)Z-Phi_y(adj X)). For fixed y choose n Gram vectors b_j for Q and skew matrices B_j=[[0,b_jT],[-b_j,0]]. Then Phi_y(W)=sum B_jT W B_j and p_Q(X,Z,eta y)=det([[I_n tensor X,eta B],[eta BT,Z]]), with B the stacked B_j.\n\nThe identity holds first for invertible X by Schur complement and then everywhere polynomially. Along te-(X,Z,y), e=(I,I,0), its roots are eigenvalues of this symmetric block matrix. Thus p_Q is hyperbolic and cone membership is its pointwise positive semidefiniteness. The chosen factorization need not vary linearly with y.\n\nOn X=diag(1,A), projection to (A,Z00,y) is exactly E_Q={A>=0, range Q(y) subset range A, t>=tr(A-dagger Q(y))}. For a singular Schur complement, positivity requires the off-diagonal range inclusion; after it holds, triangular congruence leaves the pseudoinverse residual. The residual here is diag(tr(A-dagger Q),Q). Conversely choose Z=diag(t,Q) to lift every point of E_Q, without taking a closure. A semidefinite lift of the full cone would therefore induce one for this affine image.\n\n## Role in the source argument\n\nMoves a potential lift obstruction from a high-degree determinant to a smaller exact affine epigraph.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:hyperbolic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L26)\n- [prop:epigraph](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/02-cone.tex#L96)\n\n## Antecedents and comparison\n\nThe block determinant identity, singular Schur criterion and preservation of lifts under affine sections/projections are classical. The source-specific construction packages a quadratic matrix into this cone and epigraph; the extracted step does not establish a no-lift result.\n\n## Checks and limitations\n\nExact small matrices test the determinant identity at invertible and singular X. Rank-deficient epigraph examples verify the range condition and show a negative eigenvalue if that condition is omitted despite a nonnegative pseudoinverse residual.\n\nThe checks do not certify the Hankel seed, finite inverse limits or the source local lift obstruction.\n\n## Possible applications\n\nRetaining singular boundary information when reducing semidefinite representability questions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000685",
+      "record_type": "instrument",
+      "title": "Linearize a quadratic matrix on angular planes by an explicit Gram factor",
+      "forms": [
+        "angular-gram-realification",
+        "fixed-plane-determinantal-pencil"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-095"
+      ],
+      "source_paper_ids": [
+        "P-000454"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex",
+          "label": "lem:gram",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex#L32",
+          "sha256": "74168b4a03392b554ed1a592c07f8d24fe3ad8d126585b3ddd097332688c041e"
+        },
+        {
+          "path": "preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex",
+          "label": "lem:slice",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex#L51",
+          "sha256": "e7783884f9ca091d58209b84e4774574ae2ed88d6db659c259c36825b51f41bc"
+        }
+      ],
+      "batch_id": "B072",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000685.md",
+      "body": "# Linearize a quadratic matrix on angular planes by an explicit Gram factor\n\n[Family 095](../families/openai-math-095.md) · [Source manuscript](../papers/P-000454.md) · [Batch B072](../../batches/B072/README.md)\n\n## Mathematical content\n\nFor the Choi-Lam matrix Q(y) with diagonal (y1^2+y2^2,y2^2+y3^2,y3^2+y1^2) and off-diagonal -yi yj, write y=(eta cos(theta),eta sin(theta),xi). Let c=cos(theta), s=sin(theta), w=exp(i theta), and\nU=2^-1/2[[-w^-1,-w],[s w^-2,s w^2],[c w^-2,-c w^2]],\nV=2^-1/2[[0,0],[i,i],[1,1]].\nThe realification of F=eta U+xi V has four real columns and satisfies F_real F_real^T=Q(y). Check the eta^2, xi^2 and eta xi coefficients separately; the last (2,3) entry uses s cos(2theta)-c sin(2theta)=-s.\n\nUsing the four columns as skew-block vectors gives a real symmetric size-20 pencil L_theta in X,Z,eta,xi, linear for fixed theta and with trigonometric coefficients of degree at most three. Its determinant equals p(X,Z,y) first for invertible X and then on the singular boundary by polynomial continuation. Since L_theta(I,I,0,0)=I20, cone membership on the slice is equivalent to L_theta>=0, including zero eigenvalues. Every y lies on such a plane. Producing a single finite global lift from these pencils is a further step, not a consequence asserted by this extraction.\n\n## Role in the source argument\n\nProvides exact local semidefinite descriptions of a matrix polynomial whose angular dependence is nonlinear globally.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:gram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/angular.tex#L32)\n- [lem:slice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/build/sections/slices.tex#L51)\n\n## Antecedents and comparison\n\nGram realification and determinant continuation are classical. The explicit angular factors are the source-specific object. The underlying Choi-Lam positivity is established prior work; no new positivity theorem or global lift is claimed here.\n\n## Checks and limitations\n\nSymbolic trigonometric identities verify every Gram coefficient. Rational points on the unit circle produce exact size-20 slice matrices, with determinant and singular-boundary checks.\n\nThe tests do not verify the subsequent degree-two matching identity or moment-based global lift.\n\n## Possible applications\n\nSeparating tractable planar slices from the additional compatibility required for a global semidefinite lift.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -37316,6 +37667,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000446.md",
       "body": "# Nearly minimal maxima and positive minima of Littlewood polynomials\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/littlewood-lower-envelope.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000677: Round near-sign Fourier coefficients with a total-defect budget](../instruments/MI-000677.md)\n\n[Family review and dependencies](../families/openai-math-076.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000447",
+      "record_type": "paper",
+      "title": "Annular variation of the triangular Hilbert transform at the symmetric point",
+      "source_collection": "openai/math",
+      "upstream_slug": "Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-082"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bfcf7488cac15bd5253c9f69f54a99f49f3b847f838f97152e033f6e507ec54c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000447.md",
+      "body": "# Annular variation of the triangular Hilbert transform at the symmetric point\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/annular-variation.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000678: Average a square-root Hessian cost on a fixed support](../instruments/MI-000678.md)\n\n[Family review and dependencies](../families/openai-math-082.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000448",
+      "record_type": "paper",
+      "title": "An L³ bound for the dyadic triangular Hilbert form",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-082"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e9ff7a854dd30c4d1a2e4fe08a0edd3bc7bfe8032c5856c477a92c036218c2d9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000448.md",
+      "body": "# An L³ bound for the dyadic triangular Hilbert form\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/dyadic-triangular-hilbert.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000679: Pay a cyclic trace with the energy gained by four parity-compatible children](../instruments/MI-000679.md)\n\n[Family review and dependencies](../families/openai-math-082.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000449",
+      "record_type": "paper",
+      "title": "The geometric case of the Erdős similarity conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-084"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ecc5efb7990223f9fa6ef43eec586a60b776c4e45254bde32d6366344faa0c2e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000449.md",
+      "body": "# The geometric case of the Erdős similarity conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/geometric-erdos-similarity.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000680: Separate current geometric tests while preserving earlier grid keys](../instruments/MI-000680.md)\n\n[Family review and dependencies](../families/openai-math-084.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000450",
+      "record_type": "paper",
+      "title": "The dyadic case of the Erdős similarity conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-084"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "67d9100a7aa6d79ea5d7dab2ca005029fec5b3127a6ea6043f8139576942fa7a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000450.md",
+      "body": "# The dyadic case of the Erdős similarity conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000681: Repair exceptional centers by an open neighborhood and a vanishing tail](../instruments/MI-000681.md)\n\n[Family review and dependencies](../families/openai-math-084.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000451",
+      "record_type": "paper",
+      "title": "An atomic certificate for triangular-lattice universal optimality",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-090"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bc8fde5bd747b0af2a9bc8a06a6a288bd95c01af1aef2d263a099b5196f02d3d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000451.md",
+      "body": "# An atomic certificate for triangular-lattice universal optimality\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000682: Extract a Fourier energy lower bound from centered density alone](../instruments/MI-000682.md)\n\n[Family review and dependencies](../families/openai-math-090.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000452",
+      "record_type": "paper",
+      "title": "A sharp Fourier certificate for planar circle packing",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-090"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3258617ad46d1faeaa67e8b98c0df7bea60a623bab0555193ffa5734c60cb9e3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000452.md",
+      "body": "# A sharp Fourier certificate for planar circle packing\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000683: Recover a Fourier certificate normalization from a first-shell slope](../instruments/MI-000683.md)\n\n[Family review and dependencies](../families/openai-math-090.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000453",
+      "record_type": "paper",
+      "title": "Hyperbolicity Cones Without Semidefinite Lifts",
+      "source_collection": "openai/math",
+      "upstream_slug": "Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-095"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "31c8b334c185b04495f6e68c3ddad9ec31b6c3261b8e7bd02921d6f30b9cfc48",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000453.md",
+      "body": "# Hyperbolicity Cones Without Semidefinite Lifts\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/nonliftable-hyperbolicity.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000684: Project a determinant cone to an exact pseudoinverse epigraph](../instruments/MI-000684.md)\n\n[Family review and dependencies](../families/openai-math-095.md) · [Batch B072](../../batches/B072/README.md)"
+    },
+    {
+      "id": "P-000454",
+      "record_type": "paper",
+      "title": "An Exact Semidefinite Lift of a Nonspectrahedral Hyperbolicity Cone",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-095"
+      ],
+      "batch_id": "B072",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c6fa0452642c71ed333d4167b26294604e6a1274e9693353811831a9883b24e5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000454.md",
+      "body": "# An Exact Semidefinite Lift of a Nonspectrahedral Hyperbolicity Cone\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000685: Linearize a quadratic matrix on angular planes by an explicit Gram factor](../instruments/MI-000685.md)\n\n[Family review and dependencies](../families/openai-math-095.md) · [Batch B072](../../batches/B072/README.md)"
     }
   ],
   "families": [
@@ -39506,6 +40009,34 @@
       "body": "# Moving-measure compactness and charging overlapping flat seeds\n\n## Source manuscript and claim\n\n[Riesz transforms and uniform rectifiability in higher codimension](../papers/P-000163.md), by OpenAI, September 24, 2026.\n\nFor d>=4 and 2<=n<=d-2, the source claims that n-Ahlfors-David regular measures with uniformly L2-bounded positive hard Riesz truncations have quantitative big pieces of Lipschitz images, uniformly at every admissible center and radius.\n\n## Extracted instruments\n\n- [MI-000288: Fractional cell variance preserves second moments on moving measures](../instruments/MI-000288.md)\n- [MI-000289: Charge overlapping descendant seeds through disjoint generation intervals](../instruments/MI-000289.md)\n\n## Dependencies and antecedents\n\nExact variance identity, finite partitions of continuity sets, support convergence from lower growth, diagonal subsequences, polarization and nested-partition counting.\n\nRellich compactness and strong convergence over varying Hilbert spaces, including Kuwae-Shioya; classical Carleson packing and stopping-time charging. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete moving-measure compactness proof and finite seed-charging lemma. The local Riesz energy bound, flat-limit rigidity and excess-propagation theorems supplying their hypotheses were not audited.\n\nRead all definitions and the quantitative target in RieszQuantitative.lean. The constants are uniform over measures with fixed dimensions, AD constant and hard-truncation bound, including unbounded support. Variation and principal-value consequences are not selected targets. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nCompactness requires positive full-plane limiting density, local L2 and fractional-energy bounds, common upper/lower growth and expanding admissible diameter. Weak first-moment convergence alone is insufficient. Seed charges are chosen for every eligible ordered pair before integrating over points.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/081.md) · [Batch record](../../batches/B023/README.md)"
     },
     {
+      "id": "openai-math-082",
+      "record_type": "family",
+      "title": "Supported matrix costs and dyadic energy increments",
+      "source_family": "082",
+      "source_collection": "openai/math",
+      "batch_id": "B072",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000447",
+        "P-000448"
+      ],
+      "instrument_ids": [
+        "MI-000678",
+        "MI-000679"
+      ],
+      "headline": "The family claims full annular variation, a dyadic absolute bound and a maximal bound for triangular Hilbert forms.",
+      "central_instrument": "A square-root Hessian cost is jointly convex under averaging; a parity-constrained four-child split pays for a cyclic trace.",
+      "novelty_assessment": "Selected mechanisms are compared with established antecedents where directly checked. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete TriangularHilbert Comparator. Its target is the maximal hard-truncation L3 x L3 to L(3/2) bound for arbitrary complex inputs, together with a common almost-everywhere domain and measurability. It does not state the newer full variation or dyadic absolute-summation theorem. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "Probability averaging keeps a common fixed support. The dyadic argument is for real atom-constant inputs and uses four pairwise-independent child signs, not three independent signs.",
+      "dependencies": "Divided differences, operator square-root order, inverse quadratic variational formulas, Gram matrices and cyclic trace bounds.",
+      "antecedents": "Classical matrix entropy convexity and Bellman/telescoping energy methods.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-082.md",
+      "body": "# Supported matrix costs and dyadic energy increments\n\n## Source manuscripts and claim\n\n- [Annular variation of the triangular Hilbert transform at the symmetric point](../papers/P-000447.md): selected passages extracted.\n- [An L³ bound for the dyadic triangular Hilbert form](../papers/P-000448.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [The maximal triangular Hilbert transform at the symmetric point](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-maximal-triangular-Hilbert-transform-at-the-symmetric-point-September-24-2026)\n\nThe family claims full annular variation, a dyadic absolute bound and a maximal bound for triangular Hilbert forms.\n\n## Extracted instruments\n\n- [MI-000678: Average a square-root Hessian cost on a fixed support](../instruments/MI-000678.md)\n- [MI-000679: Pay a cyclic trace with the energy gained by four parity-compatible children](../instruments/MI-000679.md)\n\n## Dependencies and antecedents\n\nDivided differences, operator square-root order, inverse quadratic variational formulas, Gram matrices and cyclic trace bounds.\n\nClassical matrix entropy convexity and Bellman/telescoping energy methods.\n\n## Review and formalization scope\n\nRead the supported Hessian, order, insertion and joint convexity proofs in the annular manuscript. Read the complete local split, midpoint gap and real mixed-trace proof in the dyadic manuscript. Two of three manuscripts receive extractions; the earlier maximal manuscript remains inventory-only. Heat dissipation and global Hilbert estimates are not certified.\n\nRead the scope and complete TriangularHilbert Comparator. Its target is the maximal hard-truncation L3 x L3 to L(3/2) bound for arbitrary complex inputs, together with a common almost-everywhere domain and measurability. It does not state the newer full variation or dyadic absolute-summation theorem. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.\n\nProbability averaging keeps a common fixed support. The dyadic argument is for real atom-constant inputs and uses four pairwise-independent child signs, not three independent signs.\n\n[Batch record](../../batches/B072/README.md)"
+    },
+    {
       "id": "openai-math-083",
       "record_type": "family",
       "title": "Compensated random thinning and probability changes that retain a small error",
@@ -39531,6 +40062,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-083.md",
       "body": "# Compensated random thinning and probability changes that retain a small error\n\n## Source manuscript and claim\n\n[A uniform Hilbert transform estimate for Lipschitz directions](../papers/P-000164.md), by OpenAI, September 25, 2026.\n\nThe source claims a universal L2 bound for each short hard-truncated Hilbert transform along a Lipschitz unit vector field in the plane, with both-coordinate dependence allowed, and a bounded principal-value extension.\n\n## Extracted instruments\n\n- [MI-000290: Exponential-clock thinning cancels its own inverse-probability cost](../instruments/MI-000290.md)\n- [MI-000291: A small lower deficit prevents a fixed loss when changing probabilities](../instruments/MI-000291.md)\n\n## Dependencies and antecedents\n\nIndependent exponential clocks, weighted local-minimum selection, inverse inclusion probabilities, Minkowski and concave Jensen, probability mixtures and logarithmic blending.\n\nCaro-Wei/Boppana local-minimum selection; classical inverse-probability weighting; elementary probability domination and concavity of log. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the clock-selection calculation, complete Fourier-supported averaging proof, logarithmic blending and change-of-probability argument. The finite Fourier estimate, snapshot-motion bounds and integrated path theorem were not audited.\n\nRead LipschitzHilbert.lean, including the fixed short-scale hard-truncation, Schwartz principal-value, weak-(2,2), bounded-extension and reciprocal-Lipschitz-scale targets. The latter permits R<=1/(1000000 K). These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe truncation supremum is outside the L2 norm, not a maximal-truncation estimate. A field direction is frozen at the output point. Retention indicators are dependent, and the finite Fourier estimate for each retained set is a separate input.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/083.md) · [Batch record](../../batches/B023/README.md)"
+    },
+    {
+      "id": "openai-math-084",
+      "record_type": "family",
+      "title": "Stable grid keys and open repair of exceptional centers",
+      "source_family": "084",
+      "source_collection": "openai/math",
+      "batch_id": "B072",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000449",
+        "P-000450"
+      ],
+      "instrument_ids": [
+        "MI-000680",
+        "MI-000681"
+      ],
+      "headline": "The family claims avoidance of affine copies of geometric sequences, extending an earlier dyadic construction.",
+      "central_instrument": "Nested dyadic grids work for a general geometric ratio; openness and compact projection turn almost-everywhere success into an all-center repair.",
+      "novelty_assessment": "Selected mechanisms are compared with established antecedents where directly checked. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete DyadicAvoidance Comparator. It targets a compact subset of [0,1] of measure greater than 1-eta avoiding every affine dyadic tail, for both signs of a nonzero dilation. It does not state avoidance for every geometric ratio q. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "The grid construction fixes q in (0,1) and normalized positive scales in [1,2]. The repair assumes the stated density and all-scale failure bounds; those probabilistic inputs are not established here.",
+      "dependencies": "Preorder trees, geometric gaps, periodic grid nesting, finite probability spaces, compact projection and measure continuity.",
+      "antecedents": "Kolountzakis open-cover completion and classical grid discretization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-084.md",
+      "body": "# Stable grid keys and open repair of exceptional centers\n\n## Source manuscripts and claim\n\n- [The geometric case of the Erdős similarity conjecture](../papers/P-000449.md): selected passages extracted.\n- [The dyadic case of the Erdős similarity conjecture](../papers/P-000450.md): selected passages extracted.\n\nThe family claims avoidance of affine copies of geometric sequences, extending an earlier dyadic construction.\n\n## Extracted instruments\n\n- [MI-000680: Separate current geometric tests while preserving earlier grid keys](../instruments/MI-000680.md)\n- [MI-000681: Repair exceptional centers by an open neighborhood and a vanishing tail](../instruments/MI-000681.md)\n\n## Dependencies and antecedents\n\nPreorder trees, geometric gaps, periodic grid nesting, finite probability spaces, compact projection and measure continuity.\n\nKolountzakis open-cover completion and classical grid discretization.\n\n## Review and formalization scope\n\nRead the complete preorder-span, stability and separation proofs and the full exceptional-center repair. Both manuscripts receive extractions. Random routing and the uniform all-scale probability estimates are not certified.\n\nRead the scope and complete DyadicAvoidance Comparator. It targets a compact subset of [0,1] of measure greater than 1-eta avoiding every affine dyadic tail, for both signs of a nonzero dilation. It does not state avoidance for every geometric ratio q. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.\n\nThe grid construction fixes q in (0,1) and normalized positive scales in [1,2]. The repair assumes the stated density and all-scale failure bounds; those probabilistic inputs are not established here.\n\n[Batch record](../../batches/B072/README.md)"
     },
     {
       "id": "openai-math-085",
@@ -39676,6 +40235,34 @@
       "body": "# Fresh-noise branch stability and Markov gluing of cuts\n\n## Source manuscripts and claim\n\n- [Planar Graph Metrics Embed into L1 with Constant Distortion](../papers/P-000261.md): selected passages extracted.\n- [L1 Embeddings of Graphs of Bounded Treewidth](../papers/P-000262.md): selected passages extracted.\n\nThe two source manuscripts claim uniform L1 embeddings for planar and bounded-treewidth graph metrics.\n\n## Extracted instruments\n\n- [MI-000482: Stabilize a selected branch by exposing one fresh noise per comparison](../instruments/MI-000482.md)\n- [MI-000483: Glue consistent bag laws into a global cut metric](../instruments/MI-000483.md)\n\n## Dependencies and antecedents\n\nIndependent uniform noises, deterministic finite candidate list, Lipschitz variation and connected paths; consistent finite bag measures and conditional sampling.\n\nElementary interval anti-concentration; Chlamtac-Krauthgamer-Raghavendra, Section 3.2, Lemmas 3.3 and 3.4.\n\n## Review and formalization scope\n\nRead the full fresh-noise lemma, branch-comparison corollary and conditional-scope remark in the planar manuscript, and the separator and full Markov-gluing proofs in the treewidth manuscript. The source geometry producing the bounded list and the global lower-distortion constructions were not audited.\n\nThe supplied targets assert a universal planar distortion constant and a constant depending only on the bag-size bound for treewidth. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.\n\nThe atom list and geometric inputs precede the tested noises. Bag laws must agree on overlaps and satisfy the tree running-intersection property; arbitrary pairwise consistency on a cyclic family is insufficient.\n\n[Batch record](../../batches/B048/README.md)"
     },
     {
+      "id": "openai-math-090",
+      "record_type": "family",
+      "title": "Density-only Fourier bounds and differentiated Poisson normalization",
+      "source_family": "090",
+      "source_collection": "openai/math",
+      "batch_id": "B072",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000451",
+        "P-000452"
+      ],
+      "instrument_ids": [
+        "MI-000682",
+        "MI-000683"
+      ],
+      "headline": "The family claims triangular-lattice universal optimality, sharp planar Fourier packing certificates and Coulomb/logarithmic-energy consequences.",
+      "central_instrument": "A smooth cutoff forces Fourier mass near zero using only centered density. Differentiating a lattice dilation identity fixes normalization from one shell slope.",
+      "novelty_assessment": "Selected mechanisms are compared with established antecedents where directly checked. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete AtomicGaussian and PlanarPacking Comparators. They target sharp radial Schwartz Gaussian minorants, including the explicit atomic construction for alpha>=1, and a normalized sharp planar packing Fourier certificate. The two other listed Comparators, TriangularEnergy and TriangularGaussian, were not inspected in this batch. No finite-certificate program from these manuscripts was run. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "The energy comparison assumes a nonnegative Fourier transform of a supplied Schwartz minorant. The normalization assumes an exact radial Fourier pair and exact node jets; the global certificates are not checked.",
+      "dependencies": "Fourier inversion, Plancherel, positive Fourier transforms, Poisson summation, Schwartz convergence and shell multiplicities.",
+      "antecedents": "Cohn-Kumar Euclidean linear-programming energy bounds and classical differentiated Poisson summation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-090.md",
+      "body": "# Density-only Fourier bounds and differentiated Poisson normalization\n\n## Source manuscripts and claim\n\n- [An atomic certificate for triangular-lattice universal optimality](../papers/P-000451.md): selected passages extracted.\n- [A sharp Fourier certificate for planar circle packing](../papers/P-000452.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Universal optimality of the triangular lattice](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universal-optimality-of-the-triangular-lattice-September-23-2026)\n- [Triangular minimality for planar Coulomb renormalized energy](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026)\n\nThe family claims triangular-lattice universal optimality, sharp planar Fourier packing certificates and Coulomb/logarithmic-energy consequences.\n\n## Extracted instruments\n\n- [MI-000682: Extract a Fourier energy lower bound from centered density alone](../instruments/MI-000682.md)\n- [MI-000683: Recover a Fourier certificate normalization from a first-shell slope](../instruments/MI-000683.md)\n\n## Dependencies and antecedents\n\nFourier inversion, Plancherel, positive Fourier transforms, Poisson summation, Schwartz convergence and shell multiplicities.\n\nCohn-Kumar Euclidean linear-programming energy bounds and classical differentiated Poisson summation.\n\n## Review and formalization scope\n\nRead the full low-frequency and density-only LP proofs in the atomic manuscript, and the full origin-normalization and second-dilation proofs in the packing manuscript. Two of four manuscripts receive extractions; the earlier universal-optimality and Coulomb manuscripts remain inventory-only. Atomic interpolation, signs and computational certificates are not certified.\n\nRead the scope and complete AtomicGaussian and PlanarPacking Comparators. They target sharp radial Schwartz Gaussian minorants, including the explicit atomic construction for alpha>=1, and a normalized sharp planar packing Fourier certificate. The two other listed Comparators, TriangularEnergy and TriangularGaussian, were not inspected in this batch. No finite-certificate program from these manuscripts was run. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.\n\nThe energy comparison assumes a nonnegative Fourier transform of a supplied Schwartz minorant. The normalization assumes an exact radial Fourier pair and exact node jets; the global certificates are not checked.\n\n[Batch record](../../batches/B072/README.md)"
+    },
+    {
       "id": "openai-math-091",
       "record_type": "family",
       "title": "Moment-coordinate estimates for logarithmic Brunn–Minkowski",
@@ -39785,6 +40372,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-094.md",
       "body": "# Relative moment criteria and coordinate obstructions for Lp dimension reduction\n\n## Source manuscript and claim\n\n[Subpolynomial dimension reduction in Lp](../papers/P-000087.md), by OpenAI, September 23, 2026.\n\nThe source claims subpolynomial coordinate dimension for fixed distortion D>1 and fixed 1<p<infinity, with p!=2, while exact embeddings require quadratic-order dimension in the number of points.\n\n## Extracted instruments\n\n- [MI-000127: Weighted relative moments can be separated into simultaneous embedding coordinates](../instruments/MI-000127.md)\n- [MI-000128: A fixed-point reweighting turns average electrical localization into uniform row control](../instruments/MI-000128.md)\n- [MI-000129: Antipodal row and column incidences force quadratic exact coordinate dimension](../instruments/MI-000129.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional convex separation, Carathéodory, bounded sampling, the electrical-flow localization theorem and Brouwer fixed points; the full upper bound additionally uses stable or signed-Poisson constructions.\n\nBall gives the exact-coordinate upper bound and quadratic sharpness below two; Lamperti supplies disjoint-support detection; Eskenazis uses empirical approximation of distance matrices; Gurel-Gurevich–Nachmias–Sachdeva supply the electrical localization estimate. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the weighted-moment, projection and exact-obstruction arguments in full. Checked weighted projection examples and exact row/column defect identities. The heavy-tail construction and all estimates giving the main subpolynomial upper bound were not independently audited.\n\nThe SubpolynomialLp Comparator records the universal coordinate-dimension bounds, attainment and logarithmic limits for p>1, p!=2, including D=1. It permits arbitrary real Lp inputs and unrestricted maps. No Lean solution was built.\n\nThe target is coordinate ell_p with the same exponent, the maps need not be linear, and the constants depend on fixed p and D. Exact, finite-distortion and fixed infinite-set questions are different.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/094.md) · [Batch record](../../batches/B003/README.md)"
+    },
+    {
+      "id": "openai-math-095",
+      "record_type": "family",
+      "title": "Singular epigraph sections and angular Gram factorizations",
+      "source_family": "095",
+      "source_collection": "openai/math",
+      "batch_id": "B072",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000453",
+        "P-000454"
+      ],
+      "instrument_ids": [
+        "MI-000684",
+        "MI-000685"
+      ],
+      "headline": "The family contains a general no-semidefinite-lift claim, an earlier nonspectrahedral-cone claim and a lift construction for that earlier cone.",
+      "central_instrument": "A determinant cone projects exactly to a pseudoinverse epigraph, including its range condition. An explicit angular Gram factor yields linear pencils on fixed slices.",
+      "novelty_assessment": "Selected mechanisms are compared with established antecedents where directly checked. No exhaustive novelty determination or certification of a source headline is claimed.",
+      "formalization_summary": "Read the scope and complete HyperbolicCones Comparator. It targets the explicit degree-20 polynomial in 23 variables and excludes a direct homogeneous symmetric linear pencil of every positive size. This does not exclude semidefinite lifts. It belongs to the earlier nonspectrahedral manuscript, which is inventory-only in this batch; the newer no-lift manuscript uses a different Q construction. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "A fixed-y Gram factor is not necessarily jointly linear in y. Fixed angular slices do not themselves give one global lift. The no-lift and explicit-lift manuscripts use different quadratic matrix constructions.",
+      "dependencies": "Positive semidefinite block matrices, adjugates, polynomial continuation, Moore-Penrose inverses and trigonometric realification.",
+      "antecedents": "Classical Schur complements and Gram factorizations; the angular example uses the Choi-Lam quadratic matrix.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-095.md",
+      "body": "# Singular epigraph sections and angular Gram factorizations\n\n## Source manuscripts and claim\n\n- [Hyperbolicity Cones Without Semidefinite Lifts](../papers/P-000453.md): selected passages extracted.\n- [An Exact Semidefinite Lift of a Nonspectrahedral Hyperbolicity Cone](../papers/P-000454.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A nonspectrahedral hyperbolicity cone](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Nonspectrahedral-Hyperbolicity-Cone-September-24-2026)\n\nThe family contains a general no-semidefinite-lift claim, an earlier nonspectrahedral-cone claim and a lift construction for that earlier cone.\n\n## Extracted instruments\n\n- [MI-000684: Project a determinant cone to an exact pseudoinverse epigraph](../instruments/MI-000684.md)\n- [MI-000685: Linearize a quadratic matrix on angular planes by an explicit Gram factor](../instruments/MI-000685.md)\n\n## Dependencies and antecedents\n\nPositive semidefinite block matrices, adjugates, polynomial continuation, Moore-Penrose inverses and trigonometric realification.\n\nClassical Schur complements and Gram factorizations; the angular example uses the Choi-Lam quadratic matrix.\n\n## Review and formalization scope\n\nRead the full general determinant/hyperbolicity and affine-section proofs and the complete explicit angular-factor and slice-pencil proofs. Two of three manuscripts receive extractions; the earlier nonspectrahedral manuscript remains inventory-only. Neither the no-lift obstruction nor the global lift construction is certified.\n\nRead the scope and complete HyperbolicCones Comparator. It targets the explicit degree-20 polynomial in 23 variables and excludes a direct homogeneous symmetric linear pencil of every positive size. This does not exclude semidefinite lifts. It belongs to the earlier nonspectrahedral manuscript, which is inventory-only in this batch; the newer no-lift manuscript uses a different Q construction. Each inspected Comparator has a sorry target body. No separate solution or Lean build was checked.\n\nA fixed-y Gram factor is not necessarily jointly linear in y. Fixed angular slices do not themselves give one global lift. The no-lift and explicit-lift manuscripts use different quadratic matrix constructions.\n\n[Batch record](../../batches/B072/README.md)"
     },
     {
       "id": "openai-math-096",
