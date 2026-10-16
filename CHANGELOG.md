@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B034: eight selected operator-algebra mechanisms from families 294, 295, 299 and 301, with exact mixed-input cochain tests and explicit classical trace-cone attribution.
+
 - Added B033: eight selected complex-geometric and algebraic mechanisms from families 042, 051, 063 and 067, with explicit limits on the global theorem and large-certificate coverage.
 
 - Added B032: eight selected positive-measure, entropy and transport mechanisms from families 073, 075, 078 and 079, including exact conformal wave identities and finite primal/dual checks.

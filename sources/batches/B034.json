@@ -1,0 +1,268 @@
+{
+  "batch_id": "B034",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T12:04:38.249475+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CharacterCriterion.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CharacterCriterion.lean",
+      "sha256": "296b0ff956fcb151637be273c44afed6439101290238ff11cec333d843e5ecf8",
+      "bytes": 135459
+    },
+    {
+      "path": "lean/ComparatorChallenges/KadisonRingrose.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KadisonRingrose.lean",
+      "sha256": "cf483338b48e3a6cf964d8e37926c171e9c483fa7d11285e6f2f15d7d6fac8fe",
+      "bytes": 1329
+    },
+    {
+      "path": "lean/ComparatorChallenges/KaplanskyQuasitrace.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KaplanskyQuasitrace.lean",
+      "sha256": "2036e2a1555f6d789950f47c471d081854b3871f4bac90459343dc3b8af2d3f8",
+      "bytes": 1837
+    },
+    {
+      "path": "lean/ComparatorChallenges/KaplanskyStableFiniteness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KaplanskyStableFiniteness.lean",
+      "sha256": "58a4437a30003caee59975020f91a97d7fdee6e8790b36bfec7170adb46d078e",
+      "bytes": 8455
+    },
+    {
+      "path": "lean/ComparatorChallenges/TraceIdealTransportSupport.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TraceIdealTransportSupport.lean",
+      "sha256": "d6c228b57bb7df92e03b09d12d23e0d3d9dda330a165e986fecfc2aabd4a2b05",
+      "bytes": 10021
+    },
+    {
+      "path": "lean/docs/294.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/294.md",
+      "sha256": "bb14fd4a298967693717407eb84048fe71a014aee80e87bea77f5b126822aa2c",
+      "bytes": 1443
+    },
+    {
+      "path": "lean/docs/295.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/295.md",
+      "sha256": "e9d070126e226f55f07cdbaee5ce5ced8c660c7cda31ca0c7868c722f874f629",
+      "bytes": 949
+    },
+    {
+      "path": "lean/docs/299.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/299.md",
+      "sha256": "8631bd9a497e17f128a6b8e2ffafbaf55037c70d73edb13672bc79a23cc6a33b",
+      "bytes": 968
+    },
+    {
+      "path": "lean/docs/301.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/301.md",
+      "sha256": "f12aba5f0d86abca7d747233686cb99db3f5beec7b70fd69c55ba4feeb456ed6",
+      "bytes": 1452
+    },
+    {
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/README.md",
+      "sha256": "973179e93dd953bb503210ec22ff8858f95047b9ab2ea3ea137cb438d709f7f8",
+      "bytes": 717
+    },
+    {
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f",
+      "bytes": 9550
+    },
+    {
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/README.md",
+      "sha256": "b9fbde01820ce301402643c0fa24993c448f91531fbaf2c088c42cda3f153b9d",
+      "bytes": 566
+    },
+    {
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7",
+      "bytes": 16324
+    },
+    {
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/README.md",
+      "sha256": "1c4b454989e08c4dfc8321ae93f24ca3f49c0e43caee87cc697448b4f0bdc792",
+      "bytes": 767
+    },
+    {
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+      "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4",
+      "bytes": 16467
+    },
+    {
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+      "sha256": "6c9a074cd1a9185933a42530c2b123e4c998dbc8a903370c41987fb5a7656e11",
+      "bytes": 36951
+    },
+    {
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/README.md",
+      "sha256": "d1305a1c1c16c51f6165e32c37c90911379ed1b4505b179a5ff77c7eb422e70f",
+      "bytes": 631
+    },
+    {
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+      "sha256": "7782c390e534a15d35d7aee470ff425fcb6823c4073b29886f3dbffbc8d31622",
+      "bytes": 14230
+    },
+    {
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+      "sha256": "c6c8e63bac0e543624ac63fd50a046878ba7082a531115111563455682e4d437",
+      "bytes": 19966
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000376",
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "label": "lem:incidence",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L10",
+      "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+    },
+    {
+      "instrument_id": "MI-000376",
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "label": "eq:incidence-dimension",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L18",
+      "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+    },
+    {
+      "instrument_id": "MI-000377",
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "label": "lem:scaling",
+      "line": 87,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L87",
+      "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+    },
+    {
+      "instrument_id": "MI-000377",
+      "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+      "label": "eq:scaling-determinant-bound",
+      "line": 148,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L148",
+      "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+    },
+    {
+      "instrument_id": "MI-000378",
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+      "label": "lem:central-homotopy",
+      "line": 320,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L320",
+      "sha256": "c6c8e63bac0e543624ac63fd50a046878ba7082a531115111563455682e4d437"
+    },
+    {
+      "instrument_id": "MI-000378",
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+      "label": "eq:central-cocycle-correction",
+      "line": 384,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L384",
+      "sha256": "c6c8e63bac0e543624ac63fd50a046878ba7082a531115111563455682e4d437"
+    },
+    {
+      "instrument_id": "MI-000379",
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+      "label": "lem:ultrapower",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L33",
+      "sha256": "7782c390e534a15d35d7aee470ff425fcb6823c4073b29886f3dbffbc8d31622"
+    },
+    {
+      "instrument_id": "MI-000379",
+      "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+      "label": "eq:ball-modulus",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L38",
+      "sha256": "7782c390e534a15d35d7aee470ff425fcb6823c4073b29886f3dbffbc8d31622"
+    },
+    {
+      "instrument_id": "MI-000380",
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "label": "lem:tensor-independence",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L15",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+    },
+    {
+      "instrument_id": "MI-000380",
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "label": "lem:tensor-grouped-factors",
+      "line": 71,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L71",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+    },
+    {
+      "instrument_id": "MI-000381",
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "label": "lem:tensor-detecting-space",
+      "line": 95,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L95",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+    },
+    {
+      "instrument_id": "MI-000381",
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "label": "lem:tensor-real-labels",
+      "line": 117,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L117",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+    },
+    {
+      "instrument_id": "MI-000381",
+      "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+      "label": "cor:tensor-represented-labels",
+      "line": 166,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L166",
+      "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+    },
+    {
+      "instrument_id": "MI-000382",
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+      "label": "st:ideals",
+      "line": 156,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L156",
+      "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+    },
+    {
+      "instrument_id": "MI-000382",
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+      "label": "st:scalar-limits",
+      "line": 197,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L197",
+      "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+    },
+    {
+      "instrument_id": "MI-000383",
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+      "label": "st:folding",
+      "line": 306,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L306",
+      "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+    },
+    {
+      "instrument_id": "MI-000383",
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+      "label": "tc:rank-average",
+      "line": 606,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L606",
+      "sha256": "6c9a074cd1a9185933a42530c2b123e4c998dbc8a903370c41987fb5a7656e11"
+    },
+    {
+      "instrument_id": "MI-000383",
+      "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+      "label": "tc:fixed-slack",
+      "line": 371,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L371",
+      "sha256": "6c9a074cd1a9185933a42530c2b123e4c998dbc8a903370c41987fb5a7656e11"
+    }
+  ]
+}
