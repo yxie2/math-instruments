@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B085: 8 selected instruments from 4 families and 4 manuscripts. Spherical balancing, critical compactness, integral Morse bounds, Bernstein certificates and logarithmic corrections. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B084: 8 selected instruments from 4 families and 4 manuscripts. Stable images, compatible filtrations, tree corrections, joint rounding and weighted graph identities. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B083: 8 selected instruments from 4 families and 4 manuscripts. Simplex slicing, boundary restoration, chain retractions, tensor kernels, maximal Roe controls and finite cofiber data. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

@@ -1,0 +1,72 @@
+{
+  "batch": "B085",
+  "status": "pass",
+  "elapsed_seconds": 0.351,
+  "scope": "Selected finite mechanisms and analytic models; no headline theorem or Lean certification.",
+  "checks": {
+    "centering": {
+      "status": "pass",
+      "details": {
+        "continuous_circle_balancings": 4,
+        "side_signs": 32,
+        "large_atom_obstruction": true
+      }
+    },
+    "critical_mass": {
+      "status": "pass",
+      "details": {
+        "squared_partition_identity": true,
+        "mass_exclusions": 18036,
+        "threshold_control": true
+      }
+    },
+    "integral_chains": {
+      "status": "pass",
+      "details": {
+        "two_term_integral_complexes": 7,
+        "coprime_torsion_generators": 1,
+        "geometric_stabilization_not_tested": true
+      }
+    },
+    "involution": {
+      "status": "pass",
+      "details": {
+        "block_perturbations": 90,
+        "resonance_control": true,
+        "compact_global_fixed_set_not_tested": true
+      }
+    },
+    "weighted_variance": {
+      "status": "pass",
+      "details": {
+        "graph_variance_cases": 210,
+        "excess_weight_controls": 7,
+        "curvature_contraction_not_tested": true
+      }
+    },
+    "bernstein": {
+      "status": "pass",
+      "details": {
+        "exact_interval_and_triangle_reconstructions": 5,
+        "matrix_points": 66,
+        "vertex_only_and_necessity_controls": 2
+      }
+    },
+    "potential_decomposition": {
+      "status": "pass",
+      "details": {
+        "normalized_atomic_profile": true,
+        "disk_average_cases": 6,
+        "atom_integrable": true
+      }
+    },
+    "affine_correction": {
+      "status": "pass",
+      "details": {
+        "finite_grid_kernel_cases": 20,
+        "far_field_scales": 3,
+        "source_large_subdivision_regime_not_tested": true
+      }
+    }
+  }
+}

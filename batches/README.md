@@ -86,8 +86,9 @@
 | [B082](B082/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Fermionic normal ordering, polynomial kernels, collision cutoffs, pinned mark lists, return constants and uniform covariance comparison |
 | [B083](B083/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Simplex slicing, boundary restoration, chain retractions, tensor kernels, maximal Roe controls and finite cofiber data |
 | [B084](B084/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Stable images, compatible filtrations, tree corrections, joint rounding and weighted graph identities |
+| [B085](B085/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Spherical balancing, critical compactness, integral Morse bounds, Bernstein certificates and logarithmic corrections |
 
-Future rounds use `B085` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B086` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
