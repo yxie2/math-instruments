@@ -1,0 +1,87 @@
+{
+  "batch": "B086",
+  "status": "pass",
+  "elapsed_seconds": 1.497,
+  "scope": "Selected finite mechanisms, symbolic identities and analytic models; no headline theorem or Lean certification.",
+  "checks": {
+    "warping_slope": {
+      "status": "pass",
+      "details": {
+        "symbolic_slope_and_composition": true,
+        "reaction_sign_cases": 200,
+        "missing_commutator_rejected": true
+      }
+    },
+    "heat_iteration": {
+      "status": "pass",
+      "details": {
+        "cutoff_identity": true,
+        "contractive_series": true,
+        "noncontractive_control": true,
+        "parabolic_regularity_not_tested": true
+      }
+    },
+    "collision_geometry": {
+      "status": "pass",
+      "details": {
+        "sphere_quadrature_points": 4096,
+        "mass_and_two_moments": true,
+        "plane_jacobians": 30
+      }
+    },
+    "uniform_pullback": {
+      "status": "pass",
+      "details": {
+        "perturbed_submersion_examples": 6,
+        "critical_null_set_examples": 6,
+        "rank_and_density_controls": 2
+      }
+    },
+    "pattern_centering": {
+      "status": "pass",
+      "details": {
+        "contact_graphs": 1099,
+        "exact_subset_inversion": true,
+        "geometry_omission_rejected": true
+      }
+    },
+    "slot_entropy": {
+      "status": "pass",
+      "details": {
+        "slot_allocations": 3375,
+        "zero_retention_included": true
+      }
+    },
+    "jet_spanning": {
+      "status": "pass",
+      "details": {
+        "complex_fiber_jet_frames": 60,
+        "geometric_harmonic_columns_not_constructed": true
+      }
+    },
+    "radius_interpolation": {
+      "status": "pass",
+      "details": {
+        "exact_exponent_sets": 10,
+        "polynomial_evaluation_bounds": 27,
+        "fractional_radius_examples": 3
+      }
+    },
+    "proper_degree": {
+      "status": "pass",
+      "details": {
+        "cube_points": 1000,
+        "positive_jacobian": true,
+        "value_only_control_rejected": true,
+        "degree_theorem_not_numerically_proved": true
+      }
+    },
+    "collapsed_composition": {
+      "status": "pass",
+      "details": {
+        "crease_collapse_scales": 6,
+        "missing_derivative_convergence_rejected": true
+      }
+    }
+  }
+}
