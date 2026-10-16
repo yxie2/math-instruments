@@ -1,0 +1,230 @@
+{
+  "batch_id": "B035",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T12:13:01.968302+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/EditApproximation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EditApproximation.lean",
+      "sha256": "1610096336cbaf94eebd8c6a9db75f209e42e441ca0eb14744b95b61d02aff2a",
+      "bytes": 1426542
+    },
+    {
+      "path": "lean/ComparatorChallenges/ThreeMachine.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ThreeMachine.lean",
+      "sha256": "8635be3f542436b7bca3ab9d813ec7de7e2cfa201b4885d9a78ad3962096b7a2",
+      "bytes": 3609
+    },
+    {
+      "path": "lean/docs/121.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/121.md",
+      "sha256": "af8f60425f3bdd6c86070e615061686b0f781047e425ed691a46b3b0aa98e593",
+      "bytes": 1116
+    },
+    {
+      "path": "lean/docs/124.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/124.md",
+      "sha256": "2d5e4213616aa59a02822ec073df5df1d057c1ee18d7a2ece021d3d660e26ff5",
+      "bytes": 977
+    },
+    {
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/README.md",
+      "sha256": "d786b50fd852c2301b3480c304007c0be54aa6bec42441455a6355d105014336",
+      "bytes": 690
+    },
+    {
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1",
+      "bytes": 16177
+    },
+    {
+      "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/README.md",
+      "sha256": "98814d9f99ee1c1e91d93e9c22fa58c74f5f45ab22f2220e5ab92ae316f48877",
+      "bytes": 703
+    },
+    {
+      "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+      "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0",
+      "bytes": 20098
+    },
+    {
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/README.md",
+      "sha256": "e1374280e73075b3309a1792fa0da45f808e379d4348e586fc30004a0418e445",
+      "bytes": 635
+    },
+    {
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+      "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265",
+      "bytes": 13080
+    },
+    {
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+      "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812",
+      "bytes": 15775
+    },
+    {
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/README.md",
+      "sha256": "8d1ceff898a4e0e681679f91c4def485820be9e99f04e4861f2ce601a364723e",
+      "bytes": 541
+    },
+    {
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+      "sha256": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906",
+      "bytes": 19884
+    },
+    {
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+      "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c",
+      "bytes": 33854
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000384",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+      "label": "lem:lower-lower",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L19",
+      "sha256": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906"
+    },
+    {
+      "instrument_id": "MI-000384",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+      "label": "lem:matrix-shear",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L49",
+      "sha256": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906"
+    },
+    {
+      "instrument_id": "MI-000385",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+      "label": "lem:synthetic-characters",
+      "line": 53,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L53",
+      "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+    },
+    {
+      "instrument_id": "MI-000385",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+      "label": "eq:stored-opposite",
+      "line": 127,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L127",
+      "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+    },
+    {
+      "instrument_id": "MI-000386",
+      "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+      "label": "uniform:network",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L27",
+      "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+    },
+    {
+      "instrument_id": "MI-000386",
+      "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+      "label": "uniform:cardinality",
+      "line": 58,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L58",
+      "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+    },
+    {
+      "instrument_id": "MI-000387",
+      "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+      "label": "uniform:degree",
+      "line": 105,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L105",
+      "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+    },
+    {
+      "instrument_id": "MI-000388",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+      "label": "lem:curvature-telescope",
+      "line": 159,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L159",
+      "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+    },
+    {
+      "instrument_id": "MI-000388",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+      "label": "eq:weighted-variance",
+      "line": 153,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L153",
+      "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+    },
+    {
+      "instrument_id": "MI-000388",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+      "label": "eq:local-energy-telescope",
+      "line": 215,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L215",
+      "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+    },
+    {
+      "instrument_id": "MI-000389",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+      "label": "lem:entropy",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L74",
+      "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+    },
+    {
+      "instrument_id": "MI-000389",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+      "label": "eq:entropy-penalty",
+      "line": 138,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L138",
+      "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+    },
+    {
+      "instrument_id": "MI-000389",
+      "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+      "label": "eq:entropy-regret",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L97",
+      "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+    },
+    {
+      "instrument_id": "MI-000390",
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "label": "lem:carry",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L13",
+      "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+    },
+    {
+      "instrument_id": "MI-000390",
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "label": "lem:prune",
+      "line": 35,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L35",
+      "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+    },
+    {
+      "instrument_id": "MI-000391",
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "label": "lem:list-length",
+      "line": 126,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L126",
+      "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+    },
+    {
+      "instrument_id": "MI-000391",
+      "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+      "label": "lem:update-labels",
+      "line": 85,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L85",
+      "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "batch": "B035",
+  "status": "passed",
+  "check_groups": {
+    "rational_shears": {
+      "exact_factorization_and_modular_shear_models": 60,
+      "rank_counted_swaps": 158,
+      "scope": "Algebraic factors and modular shears only; no tape execution time tested."
+    },
+    "synthetic_transforms": {
+      "exact_stored_order_transform_models": 48,
+      "scope": "Character cancellation and retained bit-reversal layout; no fast simultaneous-layer or integer multiplication complexity certified."
+    },
+    "cardinality_network": {
+      "exhaustive_small_graph_thresholds": 213,
+      "scope": "All simple graphs through four vertices, including isolates and zero-cardinality cases; no fast matching solver tested."
+    },
+    "degree_paths": {
+      "exhaustive_nonisolated_graphs": 814,
+      "scope": "All simple graphs through five vertices without isolates; isolates are a separate immediate infeasibility case."
+    },
+    "curvature_telescope": {
+      "exact_nonconservative_tree_models": 100,
+      "scope": "Abstract curvature/mass budget; source alignment and warmup hypotheses are not tested."
+    },
+    "block_entropy": {
+      "prefix_regret_checks": 1600,
+      "steps_exceeding_global_range_bound": 910,
+      "scope": "Product-of-block-simplex models, exact softmax maximizers; arbitrary constrained action hulls use the selected proof."
+    },
+    "priority_lists": {
+      "random_poset_list_models": 200,
+      "outside_child_negative_control": true,
+      "scope": "Carry and one-sided pruning order only; no global scheduling hierarchy constructed."
+    },
+    "boundary_capacity": {
+      "exact_boundary_witness_families": 2426,
+      "scope": "Three-slot capacity conditional on disjoint upsets and successor witnesses; source global boundary invariants are not certified."
+    }
+  },
+  "limitations": "Selected exact identities, reductions and finite models only; no claimed global algorithm or running time certified; no Lean build."
+}

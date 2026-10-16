@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B035: eight selected algorithmic mechanisms from families 109, 120, 121 and 124, including exhaustive small-graph reduction checks and fixed-block entropy tests.
+
 - Added B034: eight selected operator-algebra mechanisms from families 294, 295, 299 and 301, with exact mixed-input cochain tests and explicit classical trace-cone attribution.
 
 - Added B033: eight selected complex-geometric and algebraic mechanisms from families 042, 051, 063 and 067, with explicit limits on the global theorem and large-certificate coverage.
