@@ -33,4 +33,6 @@ The source manifests retain exact locations and hashes; each card separates math
 
 The next available identifiers are **B047**, **MI-000472** and **P-000255**. Candidate next families are 339, 344, 345 and 349, covering entropy rigidity, the metric Blaschke problem, closed geodesics and least-volume geometry. They remain pending, and this checkpoint makes no extraction or correctness claim about them.
 
+Of the 161 pending families, 14 list one manuscript and 147 list multiple manuscripts. The next broad pass therefore needs explicit comparison of principal and companion versions and instrument-level source assignment. A family-level description should not imply that every companion was read or that the strongest version was verified. The subject summary in the coverage table also shows the larger remaining gaps in probability and differential geometry.
+
 Use `scripts/check_batches.py` and `scripts/check_source_bindings.py` to repeat the respective checks; instructions are in [B045](../../../batches/B045/README.md). Later work should retain the pinned source version or explicitly record a new version and compare the affected passages.
