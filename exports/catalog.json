@@ -8593,6 +8593,407 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000220.md",
       "body": "# Singular concentration and common branch mass produce many nearby opposite prefixes\n\n[Family 153](../families/openai-math-153.md) · [Source manuscript](../papers/P-000130.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nFor the fair-bit Bernoulli law with 1/2<lambda<1, assume singularity and let xi<=mu_0,mu_1 have mass b>0. There exist a in (0,L/2) and c>0 such that for every Q>1 and all sufficiently large n, at least c 2^n words u of length n starting with zero have at least Q(2lambda)^n distinct words v starting with one satisfying\n\n$$|s_u(\\lambda)-s_v(\\lambda)|\\le(L-a)\\lambda^n.$$\n\nThe constants a,c do not depend on Q; the threshold for n may. Choose a so the tail belongs to [a,L-a] with probability greater than 1-b/8. Singular concentration gives a compact K with Lebesgue measure below epsilon and mass above 1-epsilon, where epsilon<b/8 and 2 epsilon Q/a<b/4. For large n, at most 2epsilon/(a lambda^n) bins of length a lambda^n meet K. The two branch measures, restricted to central tails, have total common bin mass at least 3b/4.\n\nLet U_i(J) contain the length-n words starting with i whose central tail interval s_u+lambda^n[a,L-a] meets bin J. The branch mass in J is at most 2^(-n)|U_i(J)|. Discard bins with |U_1(J)|<Q(2lambda)^n; the lost common mass is less than b/4. Each zero-starting word meets at most C_a=ceil((L-2a)/a)+2 bins, so the surviving union contains at least b 2^n/(2C_a) words. Every such word shares a bin with the required number of one-starting words, and interval geometry gives the distance bound.\n\nThe finite mass principle is general: if K bins carry masses alpha_iJ<=2^(-n)|U_i(J)|, their common mass totals beta, and each left word occurs in at most C bins, then discarding right degrees below D leaves at least 2^n(beta-K 2^(-n)D)/C distinct left words, each sharing a bin with at least D right words.\n\n## Role in the source argument\n\nAmplifies positive common branch mass into many close prefix pairs, a combinatorial input to later arithmetic approximation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cls:compact-concentration](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L128)\n- [cls:cross-pairs](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L277)\n- [cls:common-bin-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L327)\n\n## Antecedents and comparison\n\nCompact regularity and weighted high-degree pruning are elementary established tools. [Garsia (1963)](https://msp.org/pjm/1963/13-4/pjm-v13-n4-p09-p.pdf) provides entropy/singularity context, not an attribution of this exact neighbor statement. The source-specific combination and constants are retained without a novelty certificate.\n\n## Checks and limitations\n\nRead the restrictions, discarded-bin mass and bounded-incidence calculation. Exact finite interval models check the general mass principle, multiplicities and distance conclusion; they do not test singularity of a parameter.\n\nDistinct words may have equal prefix values. The threshold depends on Q and on compact approximation. This lemma alone does not give irreducible polynomial approximants or the claimed arithmetic classification.\n\n## Possible applications\n\nConverting concentrated overlapping measures into large bipartite families of close symbolic approximations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000221",
+      "record_type": "instrument",
+      "title": "Robust witness menus admit balanced mixtures and simultaneous feasible profiles",
+      "forms": [
+        "convex-duality",
+        "fixed-point"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-171"
+      ],
+      "source_paper_ids": [
+        "P-000131"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+          "label": "lem:balanced-profiles",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L51",
+          "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-separation-and-fixed-point-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000221.md",
+      "body": "# Robust witness menus admit balanced mixtures and simultaneous feasible profiles\n\n[Family 171](../families/openai-math-171.md) · [Source manuscript](../papers/P-000131.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nA finite menu of patches on two host sides is available with tolerance kappa if deleting at most kappa N labels on each side always leaves some patch with both supports retained. Each patch i carries probability laws mu_i,nu_i supported on its two sides. There is a probability mixture of the patches with coordinatewise E mu_i,E nu_i<=4/(kappa N).\n\nTo see this, assign nonnegative prices to all labels, of total P. Fewer than kappa N labels on either side have price above 2P/(kappa N). A surviving patch avoids these expensive labels, so its pair of laws has total price at most 4P/(kappa N). Convex separation from the coordinatewise upper box yields the desired mixture. This is a load bound for averages; it does not require every patch to be balanced.\n\nFor a second interface, finitely many players have finite action sets and choose independently from mixed profiles. Conditional on their actions, each output vector follows a fixed rule that does not depend on the profiles. Suppose for every choice of the other profiles player j has a mixture meeting its prescribed expected-vector upper bound b_j. Then some collection of profiles meets every bound simultaneously. Feasible response sets {q_j:E_(q_j,p_-j) X_j<=b_j} are nonempty compact convex sets with closed graph. Kakutani's theorem applied to their product gives a fixed point. The statement supplies existence, not convergence of best-response iteration.\n\n## Role in the source argument\n\nBalances patch loads and makes interacting local expected bounds simultaneously feasible before random sampling.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:balanced-profiles](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L51)\n\n## Antecedents and comparison\n\nConvex separation and [Kakutani's 1941 theorem](https://doi.org/10.1215/S0012-7094-41-00838-4) are established. The publisher full text was not retrievable in this batch; the specific finite response argument was checked in the release source. No new fixed-point theorem is claimed.\n\n## Checks and limitations\n\nRead the price threshold and closed-graph argument. Finite menus with certified deletion tolerance are solved as linear programs; a two-player system checks simultaneous feasibility and demonstrates cycling of best responses.\n\nAvailability must quantify over all permitted deletions. If output rules change discontinuously with the profiles, the fixed-point argument is not justified. Mixtures need not be deterministic patch choices.\n\n## Possible applications\n\nControlling label congestion when each local construction is feasible against any choices of the others.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000222",
+      "record_type": "instrument",
+      "title": "Separated product comparisons yield aggregate moments despite nearby dependencies",
+      "forms": [
+        "moment-bound",
+        "dependency-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-171"
+      ],
+      "source_paper_ids": [
+        "P-000131"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+          "label": "lem:scattered-moments",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L183",
+          "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "established-moment-expansion-specialized-near-set-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000222.md",
+      "body": "# Separated product comparisons yield aggregate moments despite nearby dependencies\n\n[Family 171](../families/openai-math-171.md) · [Source manuscript](../papers/P-000131.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nLet U be finite and let 0<=Z_v<=L on an event A. Each role v has a near set N(v) containing v, with |N(v)|<=f|U|. Fix an integer n>=1, K>=1 and deterministic d_v>=0. For every sequence v_1,...,v_r, r<=n, with each later role outside all earlier near sets, assume\n\n$$\\mathbb E[\\mathbf1_A\\prod_{j=1}^r Z_{v_j}]\\le K^n\\prod_{j=1}^r d_{v_j}.$$\n\nThen\n\n$$\\mathbb E\\left[\\mathbf1_A\\left(|U|^{-1}\\sum_v Z_v\\right)^n\\right]\\le K^n\\left(|U|^{-1}\\sum_v d_v+nfL\\right)^n.$$\n\nExpand the power using n independent uniform indices. Remove each position whose index lies in the near set of any earlier index, including earlier removed positions. Each removed factor costs L; the retained sequence satisfies the product hypothesis. For a fixed removal pattern, drop separation restrictions on the retained indices and sum indices in reverse order. A retained position contributes the average of d_v. A removed position has at most nf|U| available indices and contributes at most nfL. Summing the patterns gives the binomial bound. No symmetry of the near relation is required for this counting argument.\n\nMarkov's inequality then controls large averages on A. If nfL is small and the mean comparison is bounded, a sufficiently large fixed threshold gives exponentially small tails in n. The estimate does not bound the probability of A failing.\n\n## Role in the source argument\n\nConverts separated-role estimates into simultaneous column-load bounds without asserting independence of all roles.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:scattered-moments](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L183)\n\n## Antecedents and comparison\n\nThe proof is a standard high-moment expansion with a proximity count. The extracted value is the explicit nfL correction, directed near-set convention and retained success event; historical novelty is not asserted.\n\n## Checks and limitations\n\nRead the removal rule and reverse summation. Exact block-dependent finite models check the moment inequality for several orders, including an arbitrary success event. A common-random-bit control shows why the product hypothesis cannot be dropped.\n\nBounds on individual expectations alone do not imply the separated-product hypothesis. The success indicator must stay inside that hypothesis. The near sets and comparison means are fixed for the experiment being tested.\n\n## Possible applications\n\nBounding congestion or weighted loads when only well-separated choices admit joint estimates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000223",
+      "record_type": "instrument",
+      "title": "Posterior domination retains the mass of a required event",
+      "forms": [
+        "change-of-measure",
+        "posterior-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-171"
+      ],
+      "source_paper_ids": [
+        "P-000131"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+          "label": "lem:gated-posterior",
+          "line": 227,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L227",
+          "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 3,
+      "subject": "Combinatorics",
+      "novelty_status": "established-bayes-identity-with-explicit-event-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000223.md",
+      "body": "# Posterior domination retains the mass of a required event\n\n[Family 171](../families/openai-math-171.md) · [Source manuscript](../papers/P-000131.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nCondition on earlier information. Let pi be a prior on candidates z, and let F_z(t) be the joint likelihood density of data t and a required event, relative to one common data measure. Thus each F_z has total mass at most one. Put m(t)=integral F_z(t) d pi(z), and let Q be any reference probability density fixed by the earlier information.\n\nFor epsilon>0, the joint probability of the required event and {m(t)<epsilon Q(t)} or {m(t)=0} is at most epsilon. If also F_z(t)<=exp(s)Q(t), then outside this exception the posterior is dominated as a measure by exp(s)/epsilon times pi:\n\n$$\\frac{F_z(t)}{m(t)}\\,d\\pi(z)\\le e^s\\varepsilon^{-1}\\,d\\pi(z).$$\n\nThe small-denominator bound follows by integrating m on {m<epsilon Q}; zero-density data have zero joint mass. For any nonnegative test h, integrating the posterior against the unnormalized required-event data measure gives exactly\n\n$$\\int m(t)\\int h(z,t)\\frac{F_z(t)}{m(t)}d\\pi(z)dt=\\int\\!\\int h(z,t)F_z(t)dt\\,d\\pi(z).$$\n\nSet the integrand to zero where m=0. Recompute the required event and every candidate-dependent selection as z varies. The exceptional mass is not a bound conditional on the required event: that bound would be divided by its probability.\n\n## Role in the source argument\n\nControls posterior concentration while preserving the mass that must later cancel in a joint expectation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:gated-posterior](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L227)\n\n## Antecedents and comparison\n\nThis is Bayes' formula and a likelihood-ratio truncation. The planted-posterior viewpoint also appears in [Mossel, Niles-Weed, Sun and Zadik, Sections 2.1-2.2](https://arxiv.org/pdf/2209.11347v2); that paper is a comparison, not an attribution of this exact event interface.\n\n## Checks and limitations\n\nRead the likelihood and cancellation proof. Exact finite priors, subprobability likelihoods, zero-density cells and reference laws check the exception and domination inequalities; a rare-event example shows the difference from conditional failure probability.\n\nA posterior formed with a frozen event from another candidate need not satisfy the identity. The reference Q must be a probability law and must be fixed before the candidate-dependent data selection.\n\n## Possible applications\n\nKeeping rare-event tests valid through selection and posterior resampling.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000224",
+      "record_type": "instrument",
+      "title": "Planted posterior resampling gives recoverable fragments and outside-coordinate control",
+      "forms": [
+        "resampling",
+        "change-of-measure"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-176"
+      ],
+      "source_paper_ids": [
+        "P-000132"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+          "label": "eq:posterior",
+          "line": 29,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L29",
+          "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+          "label": "eq:two-inclusions",
+          "line": 48,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L48",
+          "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+          "label": "lem:local",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L59",
+          "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+          "label": "eq:distortion",
+          "line": 76,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L76",
+          "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-planted-resampling-with-source-specific-outside-test-bound",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000224.md",
+      "body": "# Planted posterior resampling gives recoverable fragments and outside-coordinate control\n\n[Family 176](../families/openai-math-176.md) · [Source manuscript](../papers/P-000132.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nLet a finite indexed family A_b subset X have positive weights nu_b summing to one, |A_b|<=m with m>=1, and Pr(J subset A_b)<=a^|J| for every nonempty J. Empty and repeated labels are allowed. Draw source c from nu and independent W from product Bernoulli(rho), 0<rho<1. Set Y=W union A_c and draw target b with probability\n\n$$\\frac{\\nu_b\\rho^{-|A_b|}\\mathbf1_{A_b\\subseteq Y}}{Z(Y)},\\qquad Z(Y)=\\sum_d\\nu_d\\rho^{-|A_d|}\\mathbf1_{A_d\\subseteq Y}.$$\n\nKeep T=A_b minus W. Then T subset A_c intersection A_b and A_b subset W union T. The law of Y has density Z relative to Bernoulli(rho), and the unconditional target has law nu. At a specified W only the source is guaranteed to retain that law.\n\nIf a/rho<=exp(-50), the event Z(Y)<exp(-10m) or |T|>m/2 has probability at most exp(-9m). For fixed b and nonnegative f depending only on W outside A_b,\n\n$$\\mathbb E[\\mathbf1_{\\{\\text{target}=b,\\ Z(Y)\\ge e^{-10m}\\}}f(W)]\\le e^{11m}\\nu_b\\mathbb E f(W).$$\n\nThe proof gives a useful general intermediate bound for any gamma>0: failure of Z>=gamma or |T|<=m/2 has probability at most gamma+gamma^(-1) sum_(r>m/2) binom(m,r)(a/rho)^r, and the outside-test factor is gamma^(-1)(1+a/rho)^m. These follow from Pr(|A_c intersection A_b|=r)<=binom(m,r)a^r and independence between outside coordinates and the forced inclusion A_b minus A_c subset W.\n\n## Role in the source argument\n\nShrinks a target to a fragment that remains spread by comparison with the source, while bounding reweighting of later tests outside the target.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:posterior](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L29)\n- [eq:two-inclusions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L48)\n- [lem:local](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L59)\n- [eq:distortion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L76)\n\n## Antecedents and comparison\n\nThe planting and posterior transition are already in [Mossel et al., Sections 2.1-2.3](https://arxiv.org/pdf/2209.11347v2), a preprint later published as A Bayesian proof of the spread lemma. The extracted outside-coordinate domination and capacity-dependent cutoff are the release source's stated refinements.\n\n## Checks and limitations\n\nRead the density calculation and intersection sum. Exact finite enumeration checks posterior marginals, both fragment inclusions, cutoff bounds and outside tests, including duplicate and empty labels and a very sparse law meeting the exp(-50) assumption.\n\nThe target is not generally prior-distributed conditional on W. The outside-test condition is essential to the displayed factorization. The local lemma alone does not prove an entire dependent tree can be covered.\n\n## Possible applications\n\nPosterior-driven fragment reductions that leave a recoverable target and quantified distortion of disjoint-coordinate events.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000225",
+      "record_type": "instrument",
+      "title": "Normalized containment maximizers give small cores with conditionally spread extensions",
+      "forms": [
+        "hierarchical-decomposition",
+        "conditional-spread"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-176"
+      ],
+      "source_paper_ids": [
+        "P-000132"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+          "label": "eq:copy-ratio",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L32",
+          "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+          "label": "lem:hierarchy",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L39",
+          "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+          "label": "eq:maximizer",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L53",
+          "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+        },
+        {
+          "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+          "label": "eq:conditional-ratio",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L98",
+          "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "established-ratio-maximizing-core-method-with-adjusted-constants",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000225.md",
+      "body": "# Normalized containment maximizers give small cores with conditionally spread extensions\n\n[Family 176](../families/openai-math-176.md) · [Source manuscript](../papers/P-000132.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nLet H have an edge and at most n vertices, and let q be its graphic expectation threshold defined by expected unlabelled copies of every subgraph being at least 1/2. Remove isolated vertices from edge subsets but retain this original q. For a graph F on its incident vertices let M(F)=(n)_(v(F))/|Aut(F)|, and let M(I,F) count copies inside I. A uniform copy Ibold on [n] contains any fixed copy F0 with probability M(I,F)/M(F).\n\nSet sigma=128q. For a nonempty I subset H choose S subset I, allowing the empty set, that maximizes sigma^(-|S|)Pr(S0 subset Ibold). If r=|S|>0 then the first-moment constraint gives the upper bound 2 binom(|I|,r)128^(-r). For r>=|I|/17 this is below one, whereas the empty set gives one. Hence every maximizer has |S|<|I|/17.\n\nConditional on a fixed copy S0 being contained in Ibold, the added edge set A=Ibold minus S0 is sigma-spread. For J disjoint from S0, its conditional inclusion probability is Pr(S0 union J subset Ibold)/Pr(S0 subset Ibold), and maximality bounds this by sigma^|J|. For J meeting S0 it is zero.\n\nIterate cores to the empty set and reverse the sequence H0,...,Hk. Uniform extensions of each reached copy form a probability tree, keeping distinct histories as distinct nodes. Path labels are disjoint, their union is a copy of H, and their sizes ell_i=|H_i|-|H_(i-1)| satisfy ell_(i+1)>16 ell_i and ell_k<=e(H).\n\n## Role in the source argument\n\nOrganizes graph containment into a logarithmic hierarchy of individually spread extensions with separated capacities.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:copy-ratio](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L32)\n- [lem:hierarchy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L39)\n- [eq:maximizer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L53)\n- [eq:conditional-ratio](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L98)\n\n## Antecedents and comparison\n\nThis core-maximization and conditional-extension method is explicitly credited to [Tran, Section 3 and Lemma 3.1](https://arxiv.org/pdf/2609.20546v2). The release changes constants and interfaces it with its tree-covering argument. It is not a new core-selection principle.\n\n## Checks and limitations\n\nRead copy normalization, core-size estimate and conditional ratio. Small graph copy enumerations check the symmetry identity. Arbitrary finite set laws check normalized-maximizer conditioning, including nonempty maximizers; elementary arithmetic checks the stated size threshold.\n\nCopy counts are not raw embedding counts; automorphisms matter. Removing isolates does not redefine q. The hierarchy alone does not establish the claimed product-sample covering bound.\n\n## Possible applications\n\nBuilding conditionally spread blocks from first-moment constraints before applying a separate covering or sampling theorem.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000226",
+      "record_type": "instrument",
+      "title": "A partially acyclic complex with odd-order stabilizers computes low-degree group homology",
+      "forms": [
+        "homological-reduction",
+        "partial-resolution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-177"
+      ],
+      "source_paper_ids": [
+        "P-000133"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex",
+          "label": "lem:projective-chains",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex#L18",
+          "sha256": "d327fc99d405841b29e0f62bc88dcbadf2196cfe30ee1d558f6af150b5f67ee4"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-projective-resolution-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000226.md",
+      "body": "# A partially acyclic complex with odd-order stabilizers computes low-degree group homology\n\n[Family 177](../families/openai-math-177.md) · [Source manuscript](../papers/P-000133.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nLet K act without inversions on a nonempty simplicial complex Z. Suppose every nonempty simplex stabilizer is finite of odd order and reduced H_j(Z;F2)=0 for 0<=j<=h. Then\n\n$$H_j(K;\\mathbb F_2)\\cong H_j(C_*(Z;\\mathbb F_2)_K)\\qquad(0\\le j\\le h).$$\n\nThe subscript denotes coinvariants. The right side is computed by simplex-orbit chains with boundary induced by deleting vertices. It need not be interpreted as the homology of an ordinary simplicial quotient unless that quotient identification is separately justified.\n\nEach chain module is a direct sum of permutation modules F2[K/H]. Averaging over an odd-order H splits its augmentation F2[H]->F2, so F2 is projective over F2[H]; induction makes F2[K/H] projective over F2[K]. The augmented chains are exact through degree h. Retain terms and differentials through h+1, then extend by projectives mapping onto the next kernel. This gives a full projective resolution with the same data needed to compute homology in degrees <=h. Taking coinvariants proves the comparison.\n\nFull contractibility is unnecessary; the degree range is governed by the supplied acyclicity. Odd stabilizer order is essential over F2. For example, a group of order two acting trivially on a point has orbit-chain H1=0 but group H1=F2.\n\n## Role in the source argument\n\nReplaces a full classifying-space model by an acyclic range and finite stabilizer information.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:projective-chains](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex#L18)\n\n## Antecedents and comparison\n\nThese are classical projective-resolution and averaging arguments. [Brown's lectures, Sections 1, 3 and 5](https://pi.math.cornell.edu/~kbrown/papers/cohomology_hangzhou.pdf) describe the relevant framework. The extraction makes the truncated degree range and orbit-chain convention explicit.\n\n## Checks and limitations\n\nRead the resolution extension. Exact F2 computations on joins of three finite sets compare orbit chains with cyclic-group homology in low degrees; odd-order averaging idempotents are checked separately. An even-order trivial action supplies a negative control for the stabilizer assumption.\n\nAcyclicity and the stabilizer order must both be established. Orbit boundary multiplicities are retained modulo two; they are not silently replaced by one boundary per distinct orbit face.\n\n## Possible applications\n\nComputing low-dimensional homology of quotients when only partial acyclicity is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000227",
+      "record_type": "instrument",
+      "title": "Chamber multiplicities control skeleton weights and the loss in expansion",
+      "forms": [
+        "normalization-transfer",
+        "incidence-counting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-177"
+      ],
+      "source_paper_ids": [
+        "P-000133"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex",
+          "label": "eq:weights",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex#L17",
+          "sha256": "0fa740d8be809a6ac57b1aff1cb4ab392b5e292c6937f56e214dd44dde128761"
+        },
+        {
+          "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+          "label": "eq:skeleton-weights",
+          "line": 107,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L107",
+          "sha256": "d59a2f72ace851ee3eb3aba33ecdf20ed1ffba4a9944150d5a22214ab95dac0a"
+        },
+        {
+          "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+          "label": "eq:norm-comparison",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L131",
+          "sha256": "d59a2f72ace851ee3eb3aba33ecdf20ed1ffba4a9944150d5a22214ab95dac0a"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "established-double-counting-and-weight-comparison",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000227.md",
+      "body": "# Chamber multiplicities control skeleton weights and the loss in expansion\n\n[Family 177](../families/openai-math-177.md) · [Source manuscript](../papers/P-000133.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nLet T be a finite pure n-complex, X its s-skeleton, and 0<a<=c(tau)<=b for the number of chambers containing each s-face tau. Let mu_i and nu_i be the intrinsic normalized weights induced by uniform top-face sampling in T and X, respectively. Put Lambda=binom(n+1,s+1)|T(n)|/|T(s)|. For 0<=i<=s,\n\n$$\\frac{\\Lambda}{b}\\mu_i(\\sigma)\\le\\nu_i(\\sigma)\\le\\frac{\\Lambda}{a}\\mu_i(\\sigma).$$\n\nAt degree s, nu_s(tau)=Lambda mu_s(tau)/c(tau). At lower degrees, both weights are obtained by summing over containing s-faces and dividing by binom(s+1,i+1); chamber-face double counting gives the identity for mu. Summing the coordinate bounds gives the same inequalities for weighted support norms and distances to any common cochain subspace.\n\nIf in degrees i,i+1 a common coboundary map satisfies ||delta f||_(mu,i+1)>=eta dist_(mu,i)(f,A), then\n\n$$\\|\\delta f\\|_{\\nu,i+1}\\ge\\eta\\frac ab\\operatorname{dist}_{\\nu,i}(f,A).$$\n\nThe common Lambda cancels across degrees. In particular, constant chamber multiplicity gives identical weights. In the source, panel multiplicity is constant, while the lower skeleton has multiplicities between one and M; this transfers a cosystolic inequality with a factor 1/M. Replacing A=Z^i by B^i requires a separate proof of vanishing cohomology.\n\n## Role in the source argument\n\nMoves an available expansion inequality to the normalization used by the final construction without losing an uncontrolled size factor.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex#L17)\n- [eq:skeleton-weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L107)\n- [eq:norm-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L131)\n\n## Antecedents and comparison\n\nThis is elementary incidence double counting followed by comparison of weighted norms. The source-specific utility is preserving one normalization factor across degrees. No historical novelty claim is made.\n\n## Checks and limitations\n\nRead the double count and distance comparison. Exact rational weights on small pure complexes check every face inequality; exhaustive F2 cochains check distances and expansion ratios. A cycle with nonzero H1 shows that a cocycle-distance bound cannot be renamed a coboundary-distance bound.\n\nPurity ensures all weights are positive. The same cochain spaces and map must be used in the compared degrees. Cohomology vanishing is an independent input.\n\n## Possible applications\n\nTransferring weighted expansion estimates between a complex and its skeleta or other uniformly comparable face distributions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000228",
+      "record_type": "instrument",
+      "title": "Account-specific expectation discounts let one deterministic choice control many statistics",
+      "forms": [
+        "derandomization",
+        "potential-function"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-178"
+      ],
+      "source_paper_ids": [
+        "P-000134"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+          "label": "lem:discounted-accounts",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L14",
+          "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+        },
+        {
+          "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+          "label": "lem:scalar-excess",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L63",
+          "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+        },
+        {
+          "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+          "label": "lem:positive-excess-account",
+          "line": 101,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L101",
+          "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-conditional-expectation-with-account-discounts",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000228.md",
+      "body": "# Account-specific expectation discounts let one deterministic choice control many statistics\n\n[Family 178](../families/openai-math-178.md) · [Source manuscript](../papers/P-000134.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nAt a state x take a finite nonempty probability distribution of candidate next states. For statistics Z_i(x)>=1, discounts D_i>0 and fixed weights a_i>=0, set r_i=max(1,E[Z_i(x')|x]/Z_i(x)) and D_i'=D_i/r_i. Some candidate satisfies\n\n$$\\sum_i a_iD_i'Z_i(x')\\le\\sum_i a_iD_iZ_i(x).$$\n\nChoose a minimizer: its value is no larger than the conditional average. If along the chosen history E[Z_i'|x]<=(1+c_(i,t))Z_i with c>=0 and D_(i,0)=1, then D_(i,t)^(-1)<=product_(j<t)(1+c_(i,j))<=exp(sum_(j<t)c_(i,j)). Apply this to 1+Y for nonnegative Y that can vanish. A label may instead die permanently with account zero. With fixed label weight 1/F, discounted total <=K and reciprocal discount <=B, each live account is <=FKB. A normalized pth-power statistic consequently costs only (FKB)^(1/p).\n\nFor a scalar X with threshold T, fixed b>0 and ordinary increments satisfying |Delta|<=b, E Delta<=mu and E Delta^2<=nu, mu,nu>=0, the account Z=1+((X-T)_+/b)^p, even p>=2, obeys E Z'<=[1+C_p(mu/b+nu/b^2)]Z. This follows from a positive-part Taylor bound with a quadratic remainder. Other transitions may adjust the threshold only if the account does not increase, or set it permanently to zero. Two signs give two-sided control.\n\n## Role in the source argument\n\nSelects one pairing that preserves heterogeneous trace, row and entry bounds while charging each statistic its own predictable growth.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:discounted-accounts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L14)\n- [lem:scalar-excess](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L63)\n- [lem:positive-excess-account](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L101)\n\n## Antecedents and comparison\n\nThe method of conditional expectations is classical; [Raghavan](https://www.sciencedirect.com/science/article/pii/0022000088900037) and [Wigderson-Xiao, Section 3](https://theoryofcomputing.org/articles/v004a003/v004a003.pdf) give antecedents. The latter explicitly composes estimators by addition. The discounts and dead-label convention are the extracted bookkeeping.\n\n## Checks and limitations\n\nRead the weighted-average proof and Taylor argument. Exact rational transition systems check monotonicity and discount products, including dead labels. Finite scalar-increment distributions check an explicit valid Taylor constant for several even orders.\n\nEfficient construction also requires efficiently computing candidate statistics and expectations; the averaging lemma alone supplies no polynomial running-time guarantee. Initial fixed weights cannot be renormalized over survivors without changing the argument.\n\n## Possible applications\n\nDerandomizing multiple local error controls whose expectation growth rates differ.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000229",
+      "record_type": "instrument",
+      "title": "Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation",
+      "forms": [
+        "matrix-identity",
+        "exposure-update"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-178"
+      ],
+      "source_paper_ids": [
+        "P-000134"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+          "label": "lemma:configuration-algebra",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L63",
+          "sha256": "cc9e9568f8eb68a65a02617510e1a22b84d2e9146738db38e9210c25a9d14a96"
+        },
+        {
+          "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+          "label": "eq:original-2",
+          "line": 184,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L184",
+          "sha256": "cc9e9568f8eb68a65a02617510e1a22b84d2e9146738db38e9210c25a9d14a96"
+        }
+      ],
+      "batch_id": "B015",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-partial-pairing-interface-to-classical-resolvent-identities",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000229.md",
+      "body": "# Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation\n\n[Family 178](../families/openai-math-178.md) · [Source manuscript](../papers/P-000134.md) · [Batch B015](../../batches/B015/README.md)\n\n## Mathematical content\n\nGive n vertices d stubs each. For l unresolved stubs S, let C_S be their incidence matrix, t=C_S 1, Xi=C_S(I-J_l/l), and D=Xi Xi^T=diag(t)-tt^T/l. If A is the adjacency matrix of resolved pairs, with a loop counted twice on the diagonal, set A_e=A+tt^T/l. For sigma=plus or minus one, z=h^(-1)+(d-1)h and m_h=h/(1-h^2), put M=zI-sigma A_e-hD and W=M^(-1)/m_h on the constant-orthogonal vertex space when M is positive.\n\nFor distinct u,v in S and l>2, put U=[xi_u,xi_v], G0=I-J2/l, B=G0^(-1)=I+J2/(l-2), and H0=-sigma h F B, where F swaps two coordinates. Resolving this pair gives\n\n$$D'=D-UBU^T,\\quad A_e'=A_e+UFBU^T,\\quad M'=M+U(hI-\\sigma F)BU^T.$$\n\nIf G=U^T WU, Dp=G-G0 and H=(H0^(-1)+Dp)^(-1), Woodbury gives W'=W-WUHU^TW whenever the inverses exist.\n\nLet C be full stub incidence and P exchange resolved partners and average unresolved stubs. Then P^3=P. With Q0=I and Qj=CP[(C^TC-I)P]^(j-1)C^T, write D_e=CP^2C^T=dI-D. One has Q1=A_e, Q2=A_e^2-D_e and Qj=A_e Q_(j-1)-(D_e-I)Q_(j-2) for j>=3. Thus W=sum_(j>=0)(sigma h)^j Qj as a formal series on the contrast space.\n\nFor scalar arrays a,c and an ordered distinct pair uniform in I subset S, |I|=l-k>=2,\n\n$$\\frac{\\mathbb E[a_p^TH_0c_p]}{-2\\sigma h}=\\frac{(1+1/(l-2))(\\sum_Ia)(\\sum_Ic)-k\\sum_Iac/(l-2)}{|I|(|I|-1)}.$$\n\nIt vanishes for centered arrays when I=S. Deleting possible endpoints introduces the displayed diagonal correction, so centering on the smaller set alone does not restore exact cancellation.\n\n## Role in the source argument\n\nConnects weighted path expansions with exact matrix exposure updates and identifies the finite-population correction in conditional means.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lemma:configuration-algebra](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L63)\n- [eq:original-2](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L184)\n\n## Antecedents and comparison\n\n[Foata-Zeilberger, Section 6](https://arxiv.org/pdf/math/9806037v1) provides the classical Ihara-Bass matrix-polynomial context. Woodbury inversion is established and is explicitly credited by the source. The unresolved averaging block and its precise update and cancellation formulas are the selected interface.\n\n## Checks and limitations\n\nRead the recurrence, direct matrix expansion, inverse update and pair average. Finite partial configurations check all three update matrices, recurrence coefficients, contrast-space inverses and restricted-pair expectations, including repeated vertex incidences.\n\nThe l=2 final pairing needs a separate formula. Positivity or existence of the updated inverse is a hypothesis of the inverse calculation; these identities alone do not maintain it through a full construction. The formal series is not asserted to converge for all tracked h.\n\n## Possible applications\n\nAnalyzing sequential regular-graph pairings through exact matrix changes rather than treating each exposure as an independent edge perturbation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -11065,6 +11466,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000130.md",
       "body": "# Arithmetic classification and non-Pisot singularity for Bernoulli convolutions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 3, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an arithmetic singularity classification for Bernoulli convolutions and singular examples beyond reciprocal Pisot parameters, including a quartic Salem family and an explicit higher-degree example.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000219: A decoding-capacity contradiction forces measure overlap between the two first-bit branches](../instruments/MI-000219.md)\n- [MI-000220: Singular concentration and common branch mass produce many nearby opposite prefixes](../instruments/MI-000220.md)\n\n## Dependencies and review\n\nCompact approximation of mutually singular measures, binary Fano inequality, entropy chain rule, compact concentration, common submeasure mass and bounded bin incidence.\n\nRead the first-bit overlap and cross-pair proofs and their compact-concentration input. The irreducible polynomial approximation, arithmetic classification, Salem arguments and explicit certificates were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory for this family. No Lean statement or proof was certified for these extracted lemmas.\n\n[Family context](../families/openai-math-153.md) · [Batch B014](../../batches/B014/README.md)"
+    },
+    {
+      "id": "P-000131",
+      "record_type": "paper",
+      "title": "The hypercube Ramsey number has linear order",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-hypercube-Ramsey-number-has-linear-order-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-171"
+      ],
+      "batch_id": "B015",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1f55b3d5eae40d0ae66eb9fd8462640f0caae1cf708df029903a4d2bd56f0fcf",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000131.md",
+      "body": "# The hypercube Ramsey number has linear order\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an absolute C with the diagonal hypercube Ramsey bound R(Q_n)<=C 2^n for every n>=0, using non-induced monochromatic copies.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000221: Robust witness menus admit balanced mixtures and simultaneous feasible profiles](../instruments/MI-000221.md)\n- [MI-000222: Separated product comparisons yield aggregate moments despite nearby dependencies](../instruments/MI-000222.md)\n- [MI-000223: Posterior domination retains the mass of a required event](../instruments/MI-000223.md)\n\n## Dependencies and review\n\nFinite convex separation, fixed-point correspondences, bounded local dependence, moment expansion, nonnegative likelihoods and Bayes formula.\n\nRead the complete balanced-profile, scattered-moment and gated-posterior proofs. The long regime analysis, near-product samplers, resampling application and final cube embedding were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-171.md) · [Batch B015](../../batches/B015/README.md)"
+    },
+    {
+      "id": "P-000132",
+      "record_type": "paper",
+      "title": "The second Kahn–Kalai conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-second-Kahn-Kalai-conjecture-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-176"
+      ],
+      "batch_id": "B015",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d66497460d0a4b908d5f170e693111ca90cdde9165b068d291e739610ba89368",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000132.md",
+      "body": "# The second Kahn–Kalai conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the second Kahn-Kalai graph-containment comparison, with a universal multiple of the actual expectation threshold times 1+log2 of the target edge count.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000224: Planted posterior resampling gives recoverable fragments and outside-coordinate control](../instruments/MI-000224.md)\n- [MI-000225: Normalized containment maximizers give small cores with conditionally spread extensions](../instruments/MI-000225.md)\n\n## Dependencies and review\n\nBayes resampling, small-denominator truncation, spread intersection bounds, symmetry of unlabelled copy counts and normalized containment maximization.\n\nRead the full local resampling and graph hierarchy proofs. The simultaneous tree reduction and iteration proving the global threshold bound were not audited.\n\nSecondKahnKalai.lean defines actual non-induced copy counts and Bernoulli containment and expectation thresholds, and states constants 2048 exp(50) and 6144 exp(50) in the edge-count and vertex-count bounds. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.\n\n[Family context](../families/openai-math-176.md) · [Batch B015](../../batches/B015/README.md)"
+    },
+    {
+      "id": "P-000133",
+      "record_type": "paper",
+      "title": "Bounded-degree coboundary expanders in every dimension",
+      "source_collection": "openai/math",
+      "upstream_slug": "Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-177"
+      ],
+      "batch_id": "B015",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2419a61d4aba6d6e1e61f3e4b2cb68301539467e12894a813d0d24e3a737abf9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000133.md",
+      "body": "# Bounded-degree coboundary expanders in every dimension\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source constructs, for every dimension d>=3, finite pure connected complexes of growing size with uniformly bounded top-dimensional vertex degree and positive F2 coboundary expansion in every degree below d.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000226: A partially acyclic complex with odd-order stabilizers computes low-degree group homology](../instruments/MI-000226.md)\n- [MI-000227: Chamber multiplicities control skeleton weights and the loss in expansion](../instruments/MI-000227.md)\n\n## Dependencies and review\n\nAveraging idempotents, induced projective modules, partial resolutions, coinvariants, incidence double counting and weighted support norms.\n\nRead the projective-chain lemma and skeleton-weight proof. Infinite-building acyclicity, stabilization, congruence homology and the quantitative cosystolic input were not audited.\n\nCoboundaryExpanders.lean states the d>=3 result with normalized chamber-incidence weights, actual coboundaries, a uniform top-face degree bound and vertex counts tending to infinity. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.\n\n[Family context](../families/openai-math-177.md) · [Batch B015](../../batches/B015/README.md)"
+    },
+    {
+      "id": "P-000134",
+      "record_type": "paper",
+      "title": "Deterministic nonbipartite Ramanujan graphs in every fixed degree",
+      "source_collection": "openai/math",
+      "upstream_slug": "Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-178"
+      ],
+      "batch_id": "B015",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "570b5e92dc80ff64de02b98693cc3b848e2a2d5c8dd8faf37813da831085e768",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000134.md",
+      "body": "# Deterministic nonbipartite Ramanujan graphs in every fixed degree\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims deterministic polynomial-time construction of simple connected nonbipartite d-regular Ramanujan graphs for every fixed d>=3 and all sufficiently large even sizes.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000228: Account-specific expectation discounts let one deterministic choice control many statistics](../instruments/MI-000228.md)\n- [MI-000229: Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation](../instruments/MI-000229.md)\n\n## Dependencies and review\n\nFinite averaging, positive-part Taylor estimates, centered stub incidence, nonbacktracking recurrences, Woodbury inversion and finite-population averaging.\n\nRead the discounted-account and scalar-excess proofs and the full path/exposure lemma with its centered-pair identity. The multistage spectral estimates and final exact repair were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\n[Family context](../families/openai-math-178.md) · [Batch B015](../../batches/B015/README.md)"
     }
   ],
   "families": [
@@ -12279,6 +12756,34 @@
       "body": "# Erdős’s reciprocal-sum conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000050](../papers/P-000050.md)\n\n## Family description\n\nSource status as recorded in the direction paper: original label: companion only; repository also links a headline development, unbuilt new architecture\n\nThe source claims $`r_k(N)\\le C_kN\\exp(-c_k(\\log N)^{\\varepsilon_k})`$ for each fixed $`k\\ge3`$, with $`c_k,\\varepsilon_k>0`$, and hence progressions of every finite length in any set with divergent reciprocal sum. The dyadic deduction is valid: for a $`k`$-progression-free set $`A`$,\n``` math\n\\sum_{n\\in A\\cap[2^j,2^{j+1})}\\frac1n\n \\le 2^{-j}r_k(2^{j+1})\n \\ll_k \\exp(-c'_k j^{\\varepsilon_k}),\n```\nand the last expression is summable in $`j`$. By contrast, $`\\sum_{m\\ge2}\\exp(-(\\log m)^c)`$ diverges for $`0<c\\le1`$ and converges for $`c>1`$. The original discussion of the weaker Leng–Sah–Sawhney log-log bound must be understood in the former range; divergence is not true for every positive $`c`$. The 198-page source uses the LSS inverse theorem as an external input.\n\n## Extracted instruments.\n\n- [MI-000037: Triangular polynomial cells with descending precision budgets](../instruments/MI-000037.md)\n\n- [MI-000038: Shift comparison and positive counting](../instruments/MI-000038.md)\n\n- [MI-000039: Relative lifting with additive rank and exact marked projection](../instruments/MI-000039.md)\n\n## Reused.\n\nLSS inverse theorem; Schoen–Sisask almost-periodicity; Kelley–Meka sifting; Green–Tao polynomial orbits; Leng’s equidistribution; Candela–Sisask densification; CRT prime boxes.\n\n## Caveats.\n\nThe quantitative upper bound was not verified here. The repository documentation links a development for the reciprocal-sum consequence, beyond the lower-bound companion noted in the initial extraction; that development was not built here. The paper claims an improvement from log log to log for every k at once. The trace’s Part I never closed (“circularity concern unresolved”) and Part II ends in “claimed/asserted”. The argument has a long chain of dependencies. An appendix extends LSS to product groups of dimension $`(2+p)^A`$ with a step-drop lemma uniform in parameter count, which the model itself flagged as delicate.\n\n## Recorded assessment\n\n- Novelty: new architecture\n- Formalization: original: lower-bound companion; headline also linked, unbuilt\n- Statement coverage: —\n- Dependencies: no load-bearing\n- Antecedents: —"
     },
     {
+      "id": "openai-math-171",
+      "record_type": "family",
+      "title": "Balanced mixtures, scattered moments and retained-event posteriors",
+      "source_family": "171",
+      "source_collection": "openai/math",
+      "batch_id": "B015",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000131"
+      ],
+      "instrument_ids": [
+        "MI-000221",
+        "MI-000222",
+        "MI-000223"
+      ],
+      "headline": "The source claims an absolute C with the diagonal hypercube Ramsey bound R(Q_n)<=C 2^n for every n>=0, using non-induced monochromatic copies.",
+      "central_instrument": "Robust survival under label deletion yields mixtures with small coordinate loads. Separated product tests control aggregate moments, and posterior comparisons retain the event mass instead of conditioning it away.",
+      "novelty_assessment": "Convex separation, Kakutani fixed points, moment expansion and Bayes cancellation are established. These extracted interfaces preserve the source's bookkeeping and are not a certification of the cube-embedding construction.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.",
+      "statement_faithfulness": "Output rules in the fixed-point argument must be independent of the mixed profiles. Moment bounds retain the success indicator. A gated posterior exception has small joint event mass, not necessarily small conditional probability given that event.",
+      "dependencies": "Finite convex separation, fixed-point correspondences, bounded local dependence, moment expansion, nonnegative likelihoods and Bayes formula.",
+      "antecedents": "The source explicitly uses Kakutani's fixed-point theorem and standard probabilistic comparisons. The general mixture and posterior principles are not claimed as new.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-171.md",
+      "body": "# Balanced mixtures, scattered moments and retained-event posteriors\n\n## Source manuscript and claim\n\n[The hypercube Ramsey number has linear order](../papers/P-000131.md), by OpenAI, September 23, 2026.\n\nThe source claims an absolute C with the diagonal hypercube Ramsey bound R(Q_n)<=C 2^n for every n>=0, using non-induced monochromatic copies.\n\n## Extracted instruments\n\n- [MI-000221: Robust witness menus admit balanced mixtures and simultaneous feasible profiles](../instruments/MI-000221.md)\n- [MI-000222: Separated product comparisons yield aggregate moments despite nearby dependencies](../instruments/MI-000222.md)\n- [MI-000223: Posterior domination retains the mass of a required event](../instruments/MI-000223.md)\n\n## Dependencies and antecedents\n\nFinite convex separation, fixed-point correspondences, bounded local dependence, moment expansion, nonnegative likelihoods and Bayes formula.\n\nThe source explicitly uses Kakutani's fixed-point theorem and standard probabilistic comparisons. The general mixture and posterior principles are not claimed as new. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete balanced-profile, scattered-moment and gated-posterior proofs. The long regime analysis, near-product samplers, resampling application and final cube embedding were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\nOutput rules in the fixed-point argument must be independent of the mixed profiles. Moment bounds retain the success indicator. A gated posterior exception has small joint event mass, not necessarily small conditional probability given that event.\n\n[Batch record](../../batches/B015/README.md)"
+    },
+    {
       "id": "openai-math-173",
       "record_type": "family",
       "title": "Rank-charged pruning and transitive blowup deficits",
@@ -12304,6 +12809,87 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-173.md",
       "body": "# Rank-charged pruning and transitive blowup deficits\n\n## Source manuscript and claim\n\n[A proof of Seymour’s second-neighborhood conjecture](../papers/P-000119.md), by OpenAI, September 23, 2026.\n\nThe source claims that every nonempty finite oriented graph has a vertex with at least as many strict second out-neighbors as first out-neighbors.\n\n## Extracted instruments\n\n- [MI-000196: An augmented matching cover charges rectangular conflict pruning to corner sets](../instruments/MI-000196.md)\n- [MI-000197: Transitive blowups amplify integer subset deficits with bounded block error](../instruments/MI-000197.md)\n\n## Dependencies and antecedents\n\nBipartite matching and covers; generic matrices with fixed zero patterns; a maximum-rank kernel observation; rank of a composition; transitive tournaments and integer subset deficits.\n\nEdmonds identifies matching size with generic matrix rank. Seacrest supplies an earlier minimal-counterexample subset reduction. These do not by themselves establish the selected pruning or blowup conclusions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full pruning proof and transitive-blowup argument. The preceding minimal-counterexample reduction and subsequent incompatibility argument were not completely audited.\n\nSeymourSecondNeighborhood.lean states the finite nonempty loopless asymmetric relation theorem with strict second neighbors excluding the initial vertex and its first neighbors. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nThe pruning lemma permits an arbitrary relation. The blowup uses raw image iteration F squared, which must not be confused with the strict second neighborhood in the headline statement.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/173.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-176",
+      "record_type": "family",
+      "title": "Planted resampling and ratio-maximizing graph cores",
+      "source_family": "176",
+      "source_collection": "openai/math",
+      "batch_id": "B015",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000132"
+      ],
+      "instrument_ids": [
+        "MI-000224",
+        "MI-000225"
+      ],
+      "headline": "The source claims the second Kahn-Kalai graph-containment comparison, with a universal multiple of the actual expectation threshold times 1+log2 of the target edge count.",
+      "central_instrument": "Planted-set posterior resampling creates a smaller recoverable fragment and controls outside-coordinate tests. Maximizing normalized containment probabilities produces rapidly growing conditionally spread edge blocks.",
+      "novelty_assessment": "The source explicitly credits Mossel, Niles-Weed, Sun and Zadik for planted posterior resampling and Tran for ratio-maximizing cores. The selected refinements are the outside-test bound, capacity constants and hierarchy interface, not invention of these methods.",
+      "formalization_summary": "SecondKahnKalai.lean defines actual non-induced copy counts and Bernoulli containment and expectation thresholds, and states constants 2048 exp(50) and 6144 exp(50) in the edge-count and vertex-count bounds. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.",
+      "statement_faithfulness": "Duplicate labels remain distinct indexed choices. At fixed product sample W the target law need not be the prior. The graph hierarchy has spread child laws, not an assumed spread law on an entire path.",
+      "dependencies": "Bayes resampling, small-denominator truncation, spread intersection bounds, symmetry of unlabelled copy counts and normalized containment maximization.",
+      "antecedents": "Mossel, Niles-Weed, Sun and Zadik, A Bayesian proof of the spread lemma, and its 2022 preprint; Tran, Fractional expectation thresholds and the second Kahn-Kalai conjecture, Section 3.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-176.md",
+      "body": "# Planted resampling and ratio-maximizing graph cores\n\n## Source manuscript and claim\n\n[The second Kahn–Kalai conjecture](../papers/P-000132.md), by OpenAI, September 24, 2026.\n\nThe source claims the second Kahn-Kalai graph-containment comparison, with a universal multiple of the actual expectation threshold times 1+log2 of the target edge count.\n\n## Extracted instruments\n\n- [MI-000224: Planted posterior resampling gives recoverable fragments and outside-coordinate control](../instruments/MI-000224.md)\n- [MI-000225: Normalized containment maximizers give small cores with conditionally spread extensions](../instruments/MI-000225.md)\n\n## Dependencies and antecedents\n\nBayes resampling, small-denominator truncation, spread intersection bounds, symmetry of unlabelled copy counts and normalized containment maximization.\n\nMossel, Niles-Weed, Sun and Zadik, A Bayesian proof of the spread lemma, and its 2022 preprint; Tran, Fractional expectation thresholds and the second Kahn-Kalai conjecture, Section 3. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full local resampling and graph hierarchy proofs. The simultaneous tree reduction and iteration proving the global threshold bound were not audited.\n\nSecondKahnKalai.lean defines actual non-induced copy counts and Bernoulli containment and expectation thresholds, and states constants 2048 exp(50) and 6144 exp(50) in the edge-count and vertex-count bounds. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.\n\nDuplicate labels remain distinct indexed choices. At fixed product sample W the target law need not be the prior. The graph hierarchy has spread child laws, not an assumed spread law on an entire path.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/176.md) · [Batch record](../../batches/B015/README.md)"
+    },
+    {
+      "id": "openai-math-177",
+      "record_type": "family",
+      "title": "Partial homology resolutions and skeleton weight transfer",
+      "source_family": "177",
+      "source_collection": "openai/math",
+      "batch_id": "B015",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000133"
+      ],
+      "instrument_ids": [
+        "MI-000226",
+        "MI-000227"
+      ],
+      "headline": "The source constructs, for every dimension d>=3, finite pure connected complexes of growing size with uniformly bounded top-dimensional vertex degree and positive F2 coboundary expansion in every degree below d.",
+      "central_instrument": "Acyclic chains with odd-order stabilizers compute low-degree group homology. Bounded chamber multiplicities compare the intrinsic weights of a complex and its skeleton, with a controlled loss in expansion.",
+      "novelty_assessment": "Projective resolutions, averaging over invertible-order stabilizers and incidence double counting are established. These are useful explicit interfaces, not new homological principles or certification of the congruence construction.",
+      "formalization_summary": "CoboundaryExpanders.lean states the d>=3 result with normalized chamber-incidence weights, actual coboundaries, a uniform top-face degree bound and vertex counts tending to infinity. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.",
+      "statement_faithfulness": "The homology comparison uses chains of simplex orbits, which need not be an ordinary simplicial quotient without additional checks. Expansion against cocycles becomes expansion against coboundaries only after cohomology vanishes.",
+      "dependencies": "Averaging idempotents, induced projective modules, partial resolutions, coinvariants, incidence double counting and weighted support norms.",
+      "antecedents": "Brown's Lectures on the cohomology of groups explains projective resolutions, coinvariants and stabilizer-based equivariant homology. Skeleton weight comparison follows directly from normalized chamber sampling.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-177.md",
+      "body": "# Partial homology resolutions and skeleton weight transfer\n\n## Source manuscript and claim\n\n[Bounded-degree coboundary expanders in every dimension](../papers/P-000133.md), by OpenAI, September 24, 2026.\n\nThe source constructs, for every dimension d>=3, finite pure connected complexes of growing size with uniformly bounded top-dimensional vertex degree and positive F2 coboundary expansion in every degree below d.\n\n## Extracted instruments\n\n- [MI-000226: A partially acyclic complex with odd-order stabilizers computes low-degree group homology](../instruments/MI-000226.md)\n- [MI-000227: Chamber multiplicities control skeleton weights and the loss in expansion](../instruments/MI-000227.md)\n\n## Dependencies and antecedents\n\nAveraging idempotents, induced projective modules, partial resolutions, coinvariants, incidence double counting and weighted support norms.\n\nBrown's Lectures on the cohomology of groups explains projective resolutions, coinvariants and stabilizer-based equivariant homology. Skeleton weight comparison follows directly from normalized chamber sampling. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the projective-chain lemma and skeleton-weight proof. Infinite-building acyclicity, stabilization, congruence homology and the quantitative cosystolic input were not audited.\n\nCoboundaryExpanders.lean states the d>=3 result with normalized chamber-incidence weights, actual coboundaries, a uniform top-face degree bound and vertex counts tending to infinity. The scope document and Comparator statement were read. No Lean solution was built or kernel-checked; the auxiliary tools are not separate certified targets.\n\nThe homology comparison uses chains of simplex orbits, which need not be an ordinary simplicial quotient without additional checks. Expansion against cocycles becomes expansion against coboundaries only after cohomology vanishes.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/177.md) · [Batch record](../../batches/B015/README.md)"
+    },
+    {
+      "id": "openai-math-178",
+      "record_type": "family",
+      "title": "Discounted conditional expectations and partial-pairing matrix identities",
+      "source_family": "178",
+      "source_collection": "openai/math",
+      "batch_id": "B015",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000134"
+      ],
+      "instrument_ids": [
+        "MI-000228",
+        "MI-000229"
+      ],
+      "headline": "The source claims deterministic polynomial-time construction of simple connected nonbipartite d-regular Ramanujan graphs for every fixed d>=3 and all sufficiently large even sizes.",
+      "central_instrument": "Separate expectation discounts allow one transition to control many nonnegative statistics. A partial stub pairing admits exact low-rank matrix updates, a weighted nonbacktracking recurrence and finite-population cancellation.",
+      "novelty_assessment": "Conditional expectations, pessimistic estimators, Ihara-Bass identities and Woodbury updates are established. The selected partial-pairing formulas and discount bookkeeping are reusable interfaces; the full exact spectral repair is not certified.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.",
+      "statement_faithfulness": "Statistics are controlled through a weighted discounted total, not by separately minimizing each one. Pair-update formulas require more than two unresolved stubs. Formal power-series identities are not automatically convergent near a spectral edge.",
+      "dependencies": "Finite averaging, positive-part Taylor estimates, centered stub incidence, nonbacktracking recurrences, Woodbury inversion and finite-population averaging.",
+      "antecedents": "Raghavan and Wigderson-Xiao for conditional expectations and composed estimators; Foata-Zeilberger for the Ihara-Bass matrix polynomial; the source credits Henderson-Searle for the inverse update.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-178.md",
+      "body": "# Discounted conditional expectations and partial-pairing matrix identities\n\n## Source manuscript and claim\n\n[Deterministic nonbipartite Ramanujan graphs in every fixed degree](../papers/P-000134.md), by OpenAI, September 23, 2026.\n\nThe source claims deterministic polynomial-time construction of simple connected nonbipartite d-regular Ramanujan graphs for every fixed d>=3 and all sufficiently large even sizes.\n\n## Extracted instruments\n\n- [MI-000228: Account-specific expectation discounts let one deterministic choice control many statistics](../instruments/MI-000228.md)\n- [MI-000229: Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation](../instruments/MI-000229.md)\n\n## Dependencies and antecedents\n\nFinite averaging, positive-part Taylor estimates, centered stub incidence, nonbacktracking recurrences, Woodbury inversion and finite-population averaging.\n\nRaghavan and Wigderson-Xiao for conditional expectations and composed estimators; Foata-Zeilberger for the Ihara-Bass matrix polynomial; the source credits Henderson-Searle for the inverse update. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the discounted-account and scalar-excess proofs and the full path/exposure lemma with its centered-pair identity. The multistage spectral estimates and final exact repair were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\nStatistics are controlled through a weighted discounted total, not by separately minimizing each one. Pair-update formulas require more than two unresolved stubs. Formal power-series identities are not automatically convergent near a spectral edge.\n\n[Batch record](../../batches/B015/README.md)"
     },
     {
       "id": "openai-math-180",

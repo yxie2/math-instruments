@@ -16,8 +16,9 @@
 | [B012](B012/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Rank-charged pruning, transitive blowups, planar states, overlap potentials, pair folding and conditional ordinal descent |
 | [B013](B013/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Paired greedy queries, path budgets, weighted forests, binary edit obstructions, determinant digits and singular residue orbits |
 | [B014](B014/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Finite phase tests, spectral whitening, dependent cancellation, operator squares, pair capacity and conditional entropy gains |
+| [B015](B015/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Balanced sampling, retained-event posteriors, spread cores, partial homology resolutions, skeleton weights and graph exposure identities |
 
-Future rounds use `B015` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B016` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

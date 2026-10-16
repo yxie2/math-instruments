@@ -1,0 +1,266 @@
+{
+  "batch_id": "B015",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T08:18:41.868321+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CoboundaryExpanders.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CoboundaryExpanders.lean",
+      "sha256": "f87bf19c4b03c311e54fdaca962da38475f088edd51a6c9d63164eb30dafef52",
+      "bytes": 3491
+    },
+    {
+      "path": "lean/ComparatorChallenges/SecondKahnKalai.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SecondKahnKalai.lean",
+      "sha256": "2a0d29f9fde90aa8a4b5173da67cab115be047e59f6001ccdc9b6095988beae5",
+      "bytes": 2737
+    },
+    {
+      "path": "lean/docs/176.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/176.md",
+      "sha256": "7c73c040ee42d495c129267a4c98f37a1304264b67a000e6b5643a36dff72a1d",
+      "bytes": 906
+    },
+    {
+      "path": "lean/docs/177.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/177.md",
+      "sha256": "f4aa26f5a32a1b6f9e62044b97ce22f29084d567c79f6f7606a2866c04dd618c",
+      "bytes": 1043
+    },
+    {
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/README.md",
+      "sha256": "2419a61d4aba6d6e1e61f3e4b2cb68301539467e12894a813d0d24e3a737abf9",
+      "bytes": 630
+    },
+    {
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+      "sha256": "d59a2f72ace851ee3eb3aba33ecdf20ed1ffba4a9944150d5a22214ab95dac0a",
+      "bytes": 7131
+    },
+    {
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex",
+      "sha256": "d327fc99d405841b29e0f62bc88dcbadf2196cfe30ee1d558f6af150b5f67ee4",
+      "bytes": 11760
+    },
+    {
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex",
+      "sha256": "0fa740d8be809a6ac57b1aff1cb4ab392b5e292c6937f56e214dd44dde128761",
+      "bytes": 9154
+    },
+    {
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/README.md",
+      "sha256": "570b5e92dc80ff64de02b98693cc3b848e2a2d5c8dd8faf37813da831085e768",
+      "bytes": 711
+    },
+    {
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+      "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432",
+      "bytes": 6973
+    },
+    {
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+      "sha256": "cc9e9568f8eb68a65a02617510e1a22b84d2e9146738db38e9210c25a9d14a96",
+      "bytes": 47425
+    },
+    {
+      "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/README.md",
+      "sha256": "1f55b3d5eae40d0ae66eb9fd8462640f0caae1cf708df029903a4d2bd56f0fcf",
+      "bytes": 580
+    },
+    {
+      "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+      "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315",
+      "bytes": 57092
+    },
+    {
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/README.md",
+      "sha256": "d66497460d0a4b908d5f170e693111ca90cdde9165b068d291e739610ba89368",
+      "bytes": 523
+    },
+    {
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f",
+      "bytes": 5073
+    },
+    {
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323",
+      "bytes": 5539
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000221",
+      "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+      "label": "lem:balanced-profiles",
+      "line": 51,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L51",
+      "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+    },
+    {
+      "instrument_id": "MI-000222",
+      "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+      "label": "lem:scattered-moments",
+      "line": 183,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L183",
+      "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+    },
+    {
+      "instrument_id": "MI-000223",
+      "path": "preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex",
+      "label": "lem:gated-posterior",
+      "line": 227,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-hypercube-Ramsey-number-has-linear-order-September-23-2026/build/sections/03-general-conventions-and-probabilistic-tools.tex#L227",
+      "sha256": "0f15751fb1729fac7bfe63e8f00012a147ea666d9eb3f06bb87cd91f43772315"
+    },
+    {
+      "instrument_id": "MI-000224",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "label": "eq:posterior",
+      "line": 29,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L29",
+      "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+    },
+    {
+      "instrument_id": "MI-000224",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "label": "eq:two-inclusions",
+      "line": 48,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L48",
+      "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+    },
+    {
+      "instrument_id": "MI-000224",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "label": "lem:local",
+      "line": 59,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L59",
+      "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+    },
+    {
+      "instrument_id": "MI-000224",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex",
+      "label": "eq:distortion",
+      "line": 76,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/resampling.tex#L76",
+      "sha256": "941735a9faaa26e08282d65570541aee0a2eb8c4b9549ed1a3ac0b27be945323"
+    },
+    {
+      "instrument_id": "MI-000225",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "label": "eq:copy-ratio",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L32",
+      "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+    },
+    {
+      "instrument_id": "MI-000225",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "label": "lem:hierarchy",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L39",
+      "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+    },
+    {
+      "instrument_id": "MI-000225",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "label": "eq:maximizer",
+      "line": 53,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L53",
+      "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+    },
+    {
+      "instrument_id": "MI-000225",
+      "path": "preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex",
+      "label": "eq:conditional-ratio",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-second-Kahn-Kalai-conjecture-September-24-2026/build/source/sections/graphs.tex#L98",
+      "sha256": "d5f9d6aa3a5a25aebdcc5608e663308124a855cd479ab19c8b444f3679e1e03f"
+    },
+    {
+      "instrument_id": "MI-000226",
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex",
+      "label": "lem:projective-chains",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/homology.tex#L18",
+      "sha256": "d327fc99d405841b29e0f62bc88dcbadf2196cfe30ee1d558f6af150b5f67ee4"
+    },
+    {
+      "instrument_id": "MI-000227",
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex",
+      "label": "eq:weights",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/introduction.tex#L17",
+      "sha256": "0fa740d8be809a6ac57b1aff1cb4ab392b5e292c6937f56e214dd44dde128761"
+    },
+    {
+      "instrument_id": "MI-000227",
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+      "label": "eq:skeleton-weights",
+      "line": 107,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L107",
+      "sha256": "d59a2f72ace851ee3eb3aba33ecdf20ed1ffba4a9944150d5a22214ab95dac0a"
+    },
+    {
+      "instrument_id": "MI-000227",
+      "path": "preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex",
+      "label": "eq:norm-comparison",
+      "line": 131,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-degree-coboundary-expanders-in-every-dimension-September-24-2026/build/source/sections/expansion.tex#L131",
+      "sha256": "d59a2f72ace851ee3eb3aba33ecdf20ed1ffba4a9944150d5a22214ab95dac0a"
+    },
+    {
+      "instrument_id": "MI-000228",
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+      "label": "lem:discounted-accounts",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L14",
+      "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+    },
+    {
+      "instrument_id": "MI-000228",
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+      "label": "lem:scalar-excess",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L63",
+      "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+    },
+    {
+      "instrument_id": "MI-000228",
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex",
+      "label": "lem:positive-excess-account",
+      "line": 101,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/accounts.tex#L101",
+      "sha256": "062e3788617a1a0e08a697132c43ce50044a0d5ce6d7543f17a8c2b41a179432"
+    },
+    {
+      "instrument_id": "MI-000229",
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+      "label": "lemma:configuration-algebra",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L63",
+      "sha256": "cc9e9568f8eb68a65a02617510e1a22b84d2e9146738db38e9210c25a9d14a96"
+    },
+    {
+      "instrument_id": "MI-000229",
+      "path": "preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex",
+      "label": "eq:original-2",
+      "line": 184,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-nonbipartite-Ramanujan-graphs-in-every-fixed-degree-September-23-2026/build/sections/foundations.tex#L184",
+      "sha256": "cc9e9568f8eb68a65a02617510e1a22b84d2e9146738db38e9210c25a9d14a96"
+    }
+  ]
+}

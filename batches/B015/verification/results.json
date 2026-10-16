@@ -1,0 +1,60 @@
+{
+  "batch": "B015",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "checks": {
+    "balanced_profiles": {
+      "lp_menus": 72,
+      "deletion_tolerance_certified_by_disjoint_blocks": true,
+      "simultaneous_profile": "p=q=1/2",
+      "best_response_cycle_length": 4
+    },
+    "scattered_moments": {
+      "exact_block_dependent_models": 90,
+      "success_indicator_retained": true,
+      "missing_product_hypothesis_control": true
+    },
+    "gated_posteriors": {
+      "exact_models": 100,
+      "zero_density_cells": true,
+      "rare_gate_joint_vs_conditional_control": true
+    },
+    "planted_resampling": {
+      "exact_models": 12,
+      "enumerated_transitions": 13096,
+      "conditional_target_changes": 12,
+      "models_meeting_exp_minus_50_condition": 6
+    },
+    "graph_cores": {
+      "copy_ratio_checks": 728,
+      "maximizer_conditional_checks": 660,
+      "nonempty_maximizers": 45,
+      "size_inequality_up_to_edges": 300
+    },
+    "partial_resolution": {
+      "free_join_models": 4,
+      "odd_stabilizer_averaging_models": 4,
+      "even_stabilizer_trivial_action_control": true,
+      "cyclic_group_homology_compared_via_periodic_resolution": true
+    },
+    "skeleton_weights": {
+      "complex_skeleton_models": 6,
+      "face_bounds": 98,
+      "exhaustive_cochain_distance_checks": 1760,
+      "annulus_nonzero_cohomology_control": true
+    },
+    "discounted_accounts": {
+      "exact_transitions": 600,
+      "scalar_excess_models": 432,
+      "dead_labels_keep_original_weights": true
+    },
+    "partial_pairing": {
+      "inverse_update_models": 288,
+      "path_recurrence_coefficients": 432,
+      "max_inverse_error": 6.661338147750939e-16,
+      "exact_restricted_pair_averages": 963,
+      "loops_and_repeated_vertex_incidences_allowed": true
+    }
+  },
+  "scope": "Finite mechanism checks, not global threshold, expansion or Ramanujan proof certification."
+}
