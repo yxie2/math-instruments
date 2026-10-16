@@ -1,0 +1,222 @@
+{
+  "batch_id": "B038",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T12:40:29.998261+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/TamingCompatibility.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TamingCompatibility.lean",
+      "sha256": "e93c5f3c91cdedebae708f54b7ae714836fe49f4d3119e0bbd2740e2f6bfa566",
+      "bytes": 2401
+    },
+    {
+      "path": "lean/docs/342.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/342.md",
+      "sha256": "d01841dd6f9fa058ffa6c57b5a9b60950e5c20a7f7c99f9fa46f0dffa14ca1dc",
+      "bytes": 872
+    },
+    {
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/README.md",
+      "sha256": "b5cde9423c5f65c7091977166e7c5869fcd31a31d635cdca3cf57d819a060f37",
+      "bytes": 695
+    },
+    {
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex",
+      "sha256": "142ab34afd8f0510a0d422dbdcdd4163422bccb63e23e65bd3776137746ac4cc",
+      "bytes": 48357
+    },
+    {
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex",
+      "sha256": "de83e4cb3d0402a68dbe3d486ff0cce113075790f09d557892af908d789e1824",
+      "bytes": 32199
+    },
+    {
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/README.md",
+      "sha256": "927c3c501e744c1c5d316ced35122509a11932879004143b06ce645eab0a6602",
+      "bytes": 997
+    },
+    {
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex",
+      "sha256": "8e47ffe8e4a4458501dec84df1b33daedf96568630e5fe2dc35fced04af1cd09",
+      "bytes": 9349
+    },
+    {
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex",
+      "sha256": "17b0331071df07e26bb690667ece68195a4407450edd6f1f5f422732448593a5",
+      "bytes": 23835
+    },
+    {
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/README.md",
+      "sha256": "45d1ab5ea22144beb58864d58bea5ad16a78b0b33929449c33ed9130213b069b",
+      "bytes": 880
+    },
+    {
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex",
+      "sha256": "17f02a4944c68ce917dd6e2acaae53f41ec6a25b13f15438a673e8caee10f8c3",
+      "bytes": 6409
+    },
+    {
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex",
+      "sha256": "5b106258d563f938a4ac315a3f3b908698771d2e2d2a196f8449f7406e0974d6",
+      "bytes": 16943
+    },
+    {
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/README.md",
+      "sha256": "14ac94058c7e4040783b4d29e3932138b9488440bdc9c6014aa5bb0ad5601133",
+      "bytes": 739
+    },
+    {
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex",
+      "sha256": "48c9c894cf8c3e39d07fe5126b57445319338ffb6cde5b2293cd1ddde5f63b6f",
+      "bytes": 30251
+    },
+    {
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex",
+      "sha256": "fcaa25f242de273c254b21a26ee6574a13d60bdcdb36e1955547c4f6112f3cb1",
+      "bytes": 22644
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000408",
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex",
+      "label": "ell:optimizer",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex#L27",
+      "sha256": "fcaa25f242de273c254b21a26ee6574a13d60bdcdb36e1955547c4f6112f3cb1"
+    },
+    {
+      "instrument_id": "MI-000408",
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex",
+      "label": "ell:optimizer-contacts",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/ellipsoids.tex#L36",
+      "sha256": "fcaa25f242de273c254b21a26ee6574a13d60bdcdb36e1955547c4f6112f3cb1"
+    },
+    {
+      "instrument_id": "MI-000409",
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex",
+      "label": "lem:volume-jets",
+      "line": 146,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex#L146",
+      "sha256": "48c9c894cf8c3e39d07fe5126b57445319338ffb6cde5b2293cd1ddde5f63b6f"
+    },
+    {
+      "instrument_id": "MI-000409",
+      "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex",
+      "label": "eq:dyn:shear-fields",
+      "line": 165,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/sections/dynamics.tex#L165",
+      "sha256": "48c9c894cf8c3e39d07fe5126b57445319338ffb6cde5b2293cd1ddde5f63b6f"
+    },
+    {
+      "instrument_id": "MI-000410",
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex",
+      "label": "lem:definite-pair",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex#L19",
+      "sha256": "8e47ffe8e4a4458501dec84df1b33daedf96568630e5fe2dc35fced04af1cd09"
+    },
+    {
+      "instrument_id": "MI-000410",
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex",
+      "label": "eq:pair-normalization",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/02-definite-pairs.tex#L33",
+      "sha256": "8e47ffe8e4a4458501dec84df1b33daedf96568630e5fe2dc35fced04af1cd09"
+    },
+    {
+      "instrument_id": "MI-000411",
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex",
+      "label": "lem:regular-mixed-cone",
+      "line": 184,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex#L184",
+      "sha256": "17b0331071df07e26bb690667ece68195a4407450edd6f1f5f422732448593a5"
+    },
+    {
+      "instrument_id": "MI-000411",
+      "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex",
+      "label": "eq:regular-mixed-square",
+      "line": 213,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/sections/09-regular-preparation.tex#L213",
+      "sha256": "17b0331071df07e26bb690667ece68195a4407450edd6f1f5f422732448593a5"
+    },
+    {
+      "instrument_id": "MI-000412",
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex",
+      "label": "lem:lift",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex#L44",
+      "sha256": "17f02a4944c68ce917dd6e2acaae53f41ec6a25b13f15438a673e8caee10f8c3"
+    },
+    {
+      "instrument_id": "MI-000412",
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex",
+      "label": "lem:invariant-cohomology",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex#L22",
+      "sha256": "5b106258d563f938a4ac315a3f3b908698771d2e2d2a196f8449f7406e0974d6"
+    },
+    {
+      "instrument_id": "MI-000413",
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex",
+      "label": "prop:separation",
+      "line": 88,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/02-currents.tex#L88",
+      "sha256": "17f02a4944c68ce917dd6e2acaae53f41ec6a25b13f15438a673e8caee10f8c3"
+    },
+    {
+      "instrument_id": "MI-000413",
+      "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex",
+      "label": "lem:class-separation",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/build/sections/08-cones.tex#L62",
+      "sha256": "5b106258d563f938a4ac315a3f3b908698771d2e2d2a196f8449f7406e0974d6"
+    },
+    {
+      "instrument_id": "MI-000414",
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex",
+      "label": "co:inverse-increments",
+      "line": 946,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex#L946",
+      "sha256": "142ab34afd8f0510a0d422dbdcdd4163422bccb63e23e65bd3776137746ac4cc"
+    },
+    {
+      "instrument_id": "MI-000414",
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex",
+      "label": "co:inverse-increment-order",
+      "line": 958,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/coordinates.tex#L958",
+      "sha256": "142ab34afd8f0510a0d422dbdcdd4163422bccb63e23e65bd3776137746ac4cc"
+    },
+    {
+      "instrument_id": "MI-000415",
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex",
+      "label": "re:inverse-majorant",
+      "line": 357,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex#L357",
+      "sha256": "de83e4cb3d0402a68dbe3d486ff0cce113075790f09d557892af908d789e1824"
+    },
+    {
+      "instrument_id": "MI-000415",
+      "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex",
+      "label": "re:inverse-recursion",
+      "line": 417,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/build/source/renormalization.tex#L417",
+      "sha256": "de83e4cb3d0402a68dbe3d486ff0cce113075790f09d557892af908d789e1824"
+    }
+  ]
+}
