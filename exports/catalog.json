@@ -18269,6 +18269,329 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000431.md",
       "body": "# Extract a cyclic norm solution from a supplied rank-one idempotent\n\n[Family 142](../families/openai-math-142.md) · [Source manuscript](../papers/P-000234.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nLet L/K be a cyclic field extension of degree q with generator rho, and let E=sum_(b=0)^(q-1) L V^b be the cyclic algebra with Va=rho(a)V and V^q=G in K*. Suppose E is split and a rank-one idempotent e is supplied.\n\nThe left ideal Ee has K-dimension q. The map L -> Ee, a -> ae, is injective because nonzero a is invertible, and is therefore an isomorphism by dimension. There is a unique h in L with Ve=he, found by solving a linear system in the explicit algebra basis. Iterating with the commutation relation yields\n\n$$G e=V^q e=\\left(\\prod_{j=0}^{q-1}\\rho^j(h)\\right)e.$$\n\nSince e is nonzero, the scalar coefficients agree: N_(L/K)(h)=G. This turns an explicit minimal left ideal into a norm witness without using a previously known splitting isomorphism.\n\n## Role in the source argument\n\nExplains exactly why the source construction of a rank-one idempotent would solve its promised norm equation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [norm:cyclic-algebra](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L62)\n- [norm:idempotent-to-norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L89)\n\n## Antecedents and comparison\n\nStandard cyclic-algebra and minimal-left-ideal linear algebra. No novelty claim or claim that the difficult idempotent can be found from this lemma alone.\n\n## Checks and limitations\n\nSixty exact models over F_7[y]/(y^3-2) use varied rank-one idempotents, solve Ve=he and check the three-conjugate norm identity.\n\nThe tests deliberately supply split representations and idempotents. Their construction over the source rational-function field and its complexity remain unaudited.\n\n## Possible applications\n\nConverting explicit splitting-algebra data into multiplicative norm certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000432",
+      "record_type": "instrument",
+      "title": "Transport a cut hereditary algebra while preserving every represented matrix norm",
+      "forms": [
+        "rectangular-cutoff-hereditary-transport",
+        "joint-representation-norm-preservation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-303"
+      ],
+      "source_paper_ids": [
+        "P-000235"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex",
+          "label": "lem:transport",
+          "line": 159,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex#L159",
+          "sha256": "d86812af562d1c1c3961f8712e4eb77f026c23802cec2db708afbadaad47a200"
+        },
+        {
+          "path": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/perturbation.tex",
+          "label": "lem:cut-implementation",
+          "line": 40,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/perturbation.tex#L40",
+          "sha256": "66727dcb938c9b1cbff12b33eeb29eea1b61251480e60e115d66e7635fccff60"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-cuntz-cutoff-transport-with-explicit-joint-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000432.md",
+      "body": "# Transport a cut hereditary algebra while preserving every represented matrix norm\n\n[Family 303](../families/openai-math-303.md) · [Source manuscript](../papers/P-000235.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nFor positive d in M_n(C), v in M_m(C) with d Cuntz-subequivalent to v, let h=(d-epsilon)_+, epsilon>0. There is a rectangular partial isometry w in M_(m,n)(C**) with w*w=e_h, ww*<=e_v, w Her(h) contained in M_(m,n)(C), and w Her(h) w* contained in Her(v).\n\nChoose s in the rectangular algebra with ||d-s*vs||<epsilon/2 and put z=v^(1/2)s h. Then (epsilon/2)h^2<=z*z<=(||d||+epsilon/2)h^2. Its polar part w has the required supports. For cutoff functions g_j of |z| vanishing near zero, w g_j(|z|)=z g_j(|z|)/|z| lies in the algebra. Approximation gives algebra membership for wk, k in Her(h).\n\nConjugation is an injective star homomorphism on Her(h), commutes with positive cutoffs and maps Her(l) onto Her(wlw*). In every representation, conjugating back by w* gives the reverse norm inequality, so ||pi(wkw*)||=||pi(k)||. The same applies entrywise at every matrix amplification. A continuous nonnegative f vanishing near zero consequently admits an algebra element R=w f(d)^(1/2) with R*R=f(d), RR* in Her(v) and ||R||^2=||f(d)||.\n\nThe single rectangular transport matters when several elements and their mixed products must move together.\n\n## Role in the source argument\n\nMoves finite tuples and their cutoff copies into one hereditary corner with common norm control.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:transport](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex#L159)\n- [lem:cut-implementation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/perturbation.tex#L40)\n\n## Antecedents and comparison\n\n[Antoine-Perera-Thiel, Paragraph 2.4 in Section 2.1](https://arxiv.org/pdf/1905.03208) explicitly recalls Rordam s lemma, including exact implementation of a cut with the other square in a target hereditary algebra. That statement was checked. The source adds rectangular and represented-norm bookkeeping.\n\n## Checks and limitations\n\nOne hundred rectangular finite-matrix models check support identities, cutoff covariance, exact square implementation and norm equality; maximum numerical error is below 4e-14.\n\nThese tests do not prove general bidual membership or a pure-infiniteness theorem. The selected argument supplies that membership using functional calculus.\n\n## Possible applications\n\nTransporting multiple comparison witnesses without losing matrix-level or quotient norm information.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000433",
+      "record_type": "instrument",
+      "title": "Turn ideal approximation into exact membership after a spectral cutoff",
+      "forms": [
+        "spectral-cut-finite-ideal-stage",
+        "primitive-quotient-ideal-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-303"
+      ],
+      "source_paper_ids": [
+        "P-000235"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex",
+          "label": "lem:ideals-cutoffs",
+          "line": 284,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex#L284",
+          "sha256": "d86812af562d1c1c3961f8712e4eb77f026c23802cec2db708afbadaad47a200"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-cstar-ideal-and-functional-calculus-rules",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000433.md",
+      "body": "# Turn ideal approximation into exact membership after a spectral cutoff\n\n[Family 303](../families/openai-math-303.md) · [Source manuscript](../papers/P-000235.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nIf J is the closure of a directed increasing union of closed ideals J_lambda and z is positive in J, then every cut (z-epsilon)_+, epsilon>0, belongs to some J_lambda. Choose b in that ideal with ||z-b||<epsilon. The positive quotient image of z has norm below epsilon, so its cutoff is zero. In particular, the ideals generated by (z-delta)_+ densely exhaust the ideal generated by z as delta decreases to zero.\n\nFor positive u,v, membership u in Id(v) is equivalent to every irreducible representation annihilating v also annihilating u: apply separation of points to C/Id(v). Finally, two nonnegative continuous functions of one positive element, vanishing at zero and having the same open positivity set on its spectrum, generate the same hereditary algebra and are Cuntz equivalent, because their support projections agree.\n\n## Role in the source argument\n\nRetains exact ideal membership and quotient signals after taking spectral cuts.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:ideals-cutoffs](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/foundations.tex#L284)\n\n## Antecedents and comparison\n\nStandard quotient functional calculus, primitive representation separation and support-projection rules. No first-priority claim.\n\n## Checks and limitations\n\nOne hundred finite commutative quotient models check cutoff membership and equality of positivity supports.\n\nThe finite models do not test an infinite directed limit. The epsilon cutoff is essential to the finite-stage conclusion.\n\n## Possible applications\n\nReplacing approximate ideal information by exact localization at a positive spectral scale.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000434",
+      "record_type": "instrument",
+      "title": "Identify finite-energy gradients with a closed cocycle space",
+      "forms": [
+        "finite-energy-gradient-closedness",
+        "reduced-l2-cohomology-gradient-quotient"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-315"
+      ],
+      "source_paper_ids": [
+        "P-000236"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/foundations.tex",
+          "label": "found:gradient",
+          "line": 362,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/foundations.tex#L362",
+          "sha256": "bec1df140edfea2fca9916a78795b0c161d6dda934cfdf880a1b9bd8d0906646"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-reduced-l2-cohomology-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000434.md",
+      "body": "# Identify finite-energy gradients with a closed cocycle space\n\n[Family 315](../families/openai-math-315.md) · [Source manuscript](../papers/P-000236.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nLet a connected simply connected cellular two-complex have bounded vertex degree, bounded two-cell boundary size and bounded edge-cell incidence. In l2 of oriented cellular edges, let D be the gradients df of arbitrary real vertex functions whose gradients are square summable, and D_0 the closure of gradients of finitely supported functions.\n\nThe cellular coboundary d_1 is bounded. Every cocycle integrates along paths to a potential: simple connectivity makes the integral path independent. Hence D=ker d_1 is closed. Boundedness of d_0:l2(vertices)->l2(edges) and density of finite supports give D_0=closure(im d_0), contained in D.\n\nThus D/D_0 is reduced first l2-cohomology in this model. If its von Neumann dimension is positive, D_0 is a proper subspace of D. The source connects that dimension to its geometric model by a separate chain-comparison result. No claim that im d_0 itself is closed is needed.\n\n## Role in the source argument\n\nProduces a nontrivial finite-energy quotient from a positive first l2-Betti-number input.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [found:gradient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/foundations.tex#L362)\n\n## Antecedents and comparison\n\nClassical path integration and reduced Hilbert cohomology. The statement distinguishes arbitrary finite-energy potentials from square-summable potentials.\n\n## Checks and limitations\n\nNine exact filled-fan complexes identify cocycle kernels with gradients. An unfilled three-cycle gives a control for missing simple connectivity.\n\nFinite complexes do not test infinite-range closedness or the source l2-Betti-number comparison. No Singer theorem is certified.\n\n## Possible applications\n\nBuilding analytic objects from nonzero reduced first cohomology while retaining the correct closure convention.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000435",
+      "record_type": "instrument",
+      "title": "Control translated cut lengths by coarea and vanishing l2 pairings",
+      "forms": [
+        "translated-discrete-coarea-decay",
+        "summable-subsequence-cut-collapse"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-315"
+      ],
+      "source_paper_ids": [
+        "P-000236"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex",
+          "label": "dyn:length",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex#L32",
+          "sha256": "be816eefeb1e34bba2ba859114dab7ecae3924fb109b0ebe9898dca2c0f9d2e9"
+        },
+        {
+          "path": "preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex",
+          "label": "dyn:walls",
+          "line": 77,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex#L77",
+          "sha256": "be816eefeb1e34bba2ba859114dab7ecae3924fb109b0ebe9898dca2c0f9d2e9"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-coarea-and-regular-matrix-coefficient-decay",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000435.md",
+      "body": "# Control translated cut lengths by coarea and vanishing l2 pairings\n\n[Family 315](../families/openai-math-315.md) · [Source manuscript](../papers/P-000236.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nLet F take vertex values in [0,1], with dF in l2 of edges. Let nonnegative metric edge lengths lambda be in l2. Suppose the near-edge relation has bounded incidence in both variables and group translations move every finite edge set eventually off every other finite set. For the edges S(F,t) straddling a level t,\n\n$$\\int_0^1\\sum_{e\\in S(F,t)}\\sum_{e'\\sim e}\\lambda(ge')\\,dt\n=\\sum_{e'}\\left(\\sum_{e\\sim e'}|dF(e)|\\right)\\lambda(ge').$$\n\nTonelli proves the equality. Bounded incidence makes the parenthesized sequence l2. The pairing is finite by Cauchy-Schwarz and tends to zero as g escapes: approximate both factors by finite supports, separate their translates, and bound the errors in l2.\n\nFor bounded-size cells, a dual edge path gives a diameter bound by a constant times the same nearby-length sum. If almost every level cut has finitely many dual components, choose a subsequence whose length integrals are summable. Almost every corresponding length sum then tends to zero. In a compactification where translates of each fixed vertex converge to one point, finitely many component anchors and the diameter bound make the whole cut converge uniformly to that point. These last geometric hypotheses must be established separately.\n\n## Role in the source argument\n\nConverts finite energy into decay of translated cuts used by the source proposed convergence action.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [dyn:length](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex#L32)\n- [dyn:walls](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/build/dynamics.tex#L77)\n\n## Antecedents and comparison\n\nDiscrete coarea, Cauchy-Schwarz and the classical finite-support proof of vanishing regular-representation matrix coefficients. No novel general decay theorem is claimed.\n\n## Checks and limitations\n\nOne hundred exact piecewise-constant coarea integrals and a finite-support translation model check the algebraic interface.\n\nThe compactification, finite-component cut property and global convergence action are not constructed by the tests.\n\n## Possible applications\n\nTurning square-summable gradients and lengths into almost-everywhere small translated separators.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000436",
+      "record_type": "instrument",
+      "title": "Prescribe one integral moment using balanced valuation nodes",
+      "forms": [
+        "integral-balanced-node-divided-differences",
+        "valuation-budgeted-moment-prescription"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-319"
+      ],
+      "source_paper_ids": [
+        "P-000237"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex",
+          "label": "op:divided-differences",
+          "line": 224,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L224",
+          "sha256": "dc2662326e5dc276241ec807b67583fc323224f3956439a3cae6e234fd9dbbbc"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex",
+          "label": "op:balanced",
+          "line": 214,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L214",
+          "sha256": "dc2662326e5dc276241ec807b67583fc323224f3956439a3cae6e234fd9dbbbc"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "amice-bhargava-interpolation-adaptation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000436.md",
+      "body": "# Prescribe one integral moment using balanced valuation nodes\n\n[Family 319](../families/openai-math-319.md) · [Source manuscript](../papers/P-000237.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nLet R=k[[x]] and let distinct nodes u_0,u_1,... lie in xR. Suppose their congruence distances come from nested finite quotients of sizes N_l, enumerated so indices i,j have the same residue at level l exactly when i=j modulo N_l. Put r_m=sum_(l>=1) floor(m/N_l), assumed finite. Then every denominator product_(j!=i,0<=j<=m)(u_i-u_j) has valuation at most r_m: among the other m indices at most floor(m/N_l) share each level-l class.\n\nThe weighted evaluation measure\n\n$$D_m=\\sum_{i=0}^m\\frac{x^{r_m}}{\\prod_{j\\ne i}(u_i-u_j)}\\delta_i$$\n\ntherefore has integral coefficients. Its nth moment is zero for n<m, x^(r_m) for n=m, and lies in x^(r_m+n-m)R for n>m. Lagrange interpolation gives the first two identities. The later divided difference is a homogeneous polynomial of degree n-m in the nodes, all in xR. If sum_l 1/N_l<=kappa, then r_m<=kappa m, controlling the integrality cost.\n\n## Role in the source argument\n\nSupplies the source operation measures with exact low-moment cancellation and a linear valuation cost.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [op:divided-differences](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L224)\n- [op:balanced](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L214)\n\n## Antecedents and comparison\n\nThe source cites Bhargava P-orderings and [Amice s Interpolation p-adique](https://numdam.org/articles/10.24033/bsmf.1606/). The Amice primary record was verified; its cited sections were not re-audited. The displayed identities were checked directly from the source proof.\n\n## Checks and limitations\n\n112 exact rational-function moment checks use base-p digit nodes over F_3 and F_5, including cancellations and higher-moment valuation bounds.\n\nThe model nodes are not the source formal-group orbit. Balanced enumeration and its displacement estimates remain inputs.\n\n## Possible applications\n\nConstructing integral interpolation functionals with controlled high-order leakage.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000437",
+      "record_type": "instrument",
+      "title": "Use digit-binomial bases to adjust one filtered matrix depth",
+      "forms": [
+        "lucas-digitwise-coefficient-control",
+        "convergent-triangular-measure-corrections"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-319"
+      ],
+      "source_paper_ids": [
+        "P-000237"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex",
+          "label": "op:coefficient-control",
+          "line": 310,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L310",
+          "sha256": "dc2662326e5dc276241ec807b67583fc323224f3956439a3cae6e234fd9dbbbc"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex",
+          "label": "op:coefficients",
+          "line": 302,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L302",
+          "sha256": "dc2662326e5dc276241ec807b67583fc323224f3956439a3cae6e234fd9dbbbc"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-binomial-digit-basis-in-a-filtered-operation-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000437.md",
+      "body": "# Use digit-binomial bases to adjust one filtered matrix depth\n\n[Family 319](../families/openai-math-319.md) · [Source manuscript](../papers/P-000237.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nIn the source operation setup, R=k[[x]] has characteristic p, q=p+1, h_g=1+u_g, and a coefficient at depth b is f_b(z)=[x^(qb)] integral nu(g) h_g^z. Assume the balanced moment budget r_m<=kappa m with kappa<=p/(p-1), and averaging by a group Lambda of order q preserves the relevant invariant coefficient.\n\nChoose odd M>=81 with p>16M^2 and 2 floor(M/8)>p^(1/3). For X=p^r<=qb<pX and b>=X/(2M), the measures x^(qb-r_m)D_m, 0<=m<(M+1)X, lie in x^(X+1)Delta because\n\n$$qb-r_m\\ge\\left(\\frac q{2M}-\\kappa(M+1)\\right)X>X.$$\n\nThey leave all lower depths unchanged and alter f_b by binomial(z,m) modulo p. Lucas factorization writes these as products of digit binomials: lower digits span every function of z modulo X, while the rth digit spans all polynomials of degree at most M. Hence that degree-M polynomial can be chosen independently at each lower label. Averaging under Lambda preserves the coefficient because q is invertible and x^(qb) is invariant.\n\nEach stage has finitely many depths and labels; stage-X corrections vanish modulo x^(X+1). They converge in the complete operation algebra, preserve reduction modulo x, and stabilize every previously processed matrix block.\n\n## Role in the source argument\n\nAllows construction of a lower-triangular operator with prescribed successive matrix constraints and one fixed reduction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [op:coefficient-control](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L310)\n- [op:coefficients](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/build/sections/operator.tex#L302)\n\n## Antecedents and comparison\n\nLagrange/Amice moment cancellation combined with classical Lucas digit factorization. The source operation-algebra realization is a separate input, not established by the binomial identity.\n\n## Checks and limitations\n\nSix exact finite-field Lucas basis/rank models check independent lower-label control. One explicit large prime/M choice checks the numerical valuation budget.\n\nSmall-prime basis tests are algebraic models only and do not satisfy all source large-prime hypotheses. No chromatic operator or counterexample is realized.\n\n## Possible applications\n\nSuccessive local coefficient corrections that converge without changing earlier layers.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000438",
+      "record_type": "instrument",
+      "title": "Choose a homology projection preserving a subspace that is not a subcomplex",
+      "forms": [
+        "subspace-preserving-chain-projection",
+        "kernel-compatible-homology-representatives"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-320"
+      ],
+      "source_paper_ids": [
+        "P-000238"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex",
+          "label": "ten:projection",
+          "line": 440,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L440",
+          "sha256": "f524b368c7871aa840d8b5ad8c2d14b4a3e6e6e4097cb666393ff67bd7f77502"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-complex-splitting-with-a-prescribed-subspace",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000438.md",
+      "body": "# Choose a homology projection preserving a subspace that is not a subcomplex\n\n[Family 320](../families/openai-math-320.md) · [Source manuscript](../papers/P-000238.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nLet (H,delta) be a finite-dimensional graded complex over a field and K a graded subspace, not necessarily stable under delta. There exists a chain projection P, homotopic to identity, whose image consists of cycle representatives mapping isomorphically onto homology, and with P(K) contained in K intersect ker(delta).\n\nWrite Z=ker(delta), B=im(delta). Choose A_0 complementing K intersect B in K intersect Z, then extend to a complement A of B in Z. Choose W_0 complementing K intersect Z in K, then extend it to a complement W of Z in H. All choices are degreewise. In H=B direct-sum A direct-sum W, projection onto A maps K into A_0 and is a chain map.\n\nThe inverse of delta:W -> B, extended by zero on A and W, gives s with identity-P=delta s+s delta. Tensoring such projections over a field preserves the homology class of a cycle; telescoping gives the tensor homotopy with the graded signs. This can turn a sum with designated kernel factors into cycle representatives retaining those factors.\n\n## Role in the source argument\n\nRetains kernel factors when passing through the source second homology, although those kernels need not form subcomplexes.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [ten:projection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L440)\n\n## Antecedents and comparison\n\nElementary splitting of finite complexes over a field, with complements chosen relative to one subspace. No first-priority claim.\n\n## Checks and limitations\n\nFifty exact graded complexes verify projection, chain-map, homotopy and preservation identities. Twenty-six chosen subspaces are not subcomplexes.\n\nNo canonical or simultaneous projection for an arbitrary collection of subspaces is asserted. The source tensor and manifold conclusions require additional inputs.\n\n## Possible applications\n\nSelecting homology representatives compatible with one algebraic kernel constraint.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000439",
+      "record_type": "instrument",
+      "title": "Lift a kernel cycle through a square-zero perturbation using a commutator",
+      "forms": [
+        "commutator-obstruction-square-zero-cycle-lift",
+        "kernel-cycle-first-order-deformation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-320"
+      ],
+      "source_paper_ids": [
+        "P-000238"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex",
+          "label": "ten:lift",
+          "line": 464,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L464",
+          "sha256": "f524b368c7871aa840d8b5ad8c2d14b4a3e6e6e4097cb666393ff67bd7f77502"
+        },
+        {
+          "path": "preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex",
+          "label": "ten:kernels",
+          "line": 427,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L427",
+          "sha256": "f524b368c7871aa840d8b5ad8c2d14b4a3e6e6e4097cb666393ff67bd7f77502"
+        }
+      ],
+      "batch_id": "B041",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-first-order-cycle-obstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000439.md",
+      "body": "# Lift a kernel cycle through a square-zero perturbation using a commutator\n\n[Family 320](../families/openai-math-320.md) · [Source manuscript](../papers/P-000238.md) · [Batch B041](../../batches/B041/README.md)\n\n## Mathematical content\n\nIn the source truncated differential forms, D=dF wedge (-) anticommutes with the exterior differential d. Thus d induces a differential delta on H(Omega,D). Multiplication by b commutes with D and induces B. The commutator delta B-B delta is induced by db wedge (-).\n\nLet x be homogeneous in ker B intersect ker delta and let a be a D-cycle representing x. Both terms of the induced commutator kill x, so db wedge a is a D-boundary. Choose a prime of the same exterior degree with D a prime=-db wedge a. Then\n\n$$(D+t\\,db\\wedge(-))(a+t a')=0\\quad\\text{mod }t^2.$$\n\nThe expansion has zero constant term, its linear term is the chosen boundary equation, and higher terms vanish because t^2=0. Lifts on independent tensor factors combine over separate square-zero parameters with the graded tensor convention, retaining mixed parameter products.\n\n## Role in the source argument\n\nProduces parameter-dependent cycle representatives used to contract source law identities without losing kernel information.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [ten:lift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L464)\n- [ten:kernels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/build/sections/tensors.tex#L427)\n\n## Antecedents and comparison\n\nStandard first-order obstruction theory: a perturbation of a cycle exists exactly when its first obstruction is a boundary. The commutator supplies that boundary condition for the selected kernel cycles.\n\n## Checks and limitations\n\nSixty exact finite chain models check the first-order boundary equation and cycle expansion.\n\nThe tests do not implement the source full graph-form construction. A first-order lift does not imply unobstructed lifts in powers of one parameter.\n\n## Possible applications\n\nCycle representatives compatible with infinitesimal parameter deformations and tensor contractions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -22717,6 +23040,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000234.md",
       "body": "# Deterministic Polynomial Factorization over Prime Fields\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims deterministic polynomial-time factorization over prime fields.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000430: Turn divergent field decisions into polynomial factors](../instruments/MI-000430.md)\n- [MI-000431: Extract a cyclic norm solution from a supplied rank-one idempotent](../instruments/MI-000431.md)\n\n## Dependencies and review\n\nGcds, extended Euclidean inversion, product algebras, cyclic algebras and finite-dimensional linear systems.\n\nRead the complete simultaneous-execution proof and complete idempotent-to-norm proof with its cyclic-algebra setup. Root extraction, idempotent construction, geometric separation and global complexity were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-142.md) · [Batch B040](../../batches/B040/README.md)"
+    },
+    {
+      "id": "P-000235",
+      "record_type": "paper",
+      "title": "Weak pure infiniteness and O-infinity absorption",
+      "source_collection": "openai/math",
+      "upstream_slug": "Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-303"
+      ],
+      "batch_id": "B041",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9bbd6a49e274054879f9453240b76d66e4448f91e85bf177531c804a566a50ea",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000235.md",
+      "body": "# Weak pure infiniteness and O-infinity absorption\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that individual proper infiniteness implies strong pure infiniteness, and removes fixed amplification under exactness.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000432: Transport a cut hereditary algebra while preserving every represented matrix norm](../instruments/MI-000432.md)\n- [MI-000433: Turn ideal approximation into exact membership after a spectral cutoff](../instruments/MI-000433.md)\n\n## Dependencies and review\n\nCuntz subequivalence, hereditary subalgebras, rectangular polar decomposition, functional calculus and quotient representations.\n\nRead the complete cutoff-transport, exact-cut implementation and ideals/cutoffs proofs. The separation, uniform-gap and pure-infiniteness arguments were not audited.\n\nRead the scope and selected target/definition sections of ExactInfiniteness.lean and IndividualStrongInfiniteness.lean. The displayed main targets contain sorry. The latter stabilization implementation was not audited. No Lean build.\n\n[Family context](../families/openai-math-303.md) · [Batch B041](../../batches/B041/README.md)"
+    },
+    {
+      "id": "P-000236",
+      "record_type": "paper",
+      "title": "The Singer conjecture in dimension four",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Singer-conjecture-in-dimension-four-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-315"
+      ],
+      "batch_id": "B041",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ea7afa438149f8e4e3e55bbf872a07545c4fc0705740fd5a696da17ce3707ec7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000236.md",
+      "body": "# The Singer conjecture in dimension four\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Singer-conjecture-in-dimension-four-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the four-dimensional Singer conjecture.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000434: Identify finite-energy gradients with a closed cocycle space](../instruments/MI-000434.md)\n- [MI-000435: Control translated cut lengths by coarea and vanishing l2 pairings](../instruments/MI-000435.md)\n\n## Dependencies and review\n\nBounded cellular coboundaries, simple connectivity, Hilbert closure, Tonelli and l2 approximation by finite supports.\n\nRead the full gradient lemma and translated cut-length/collapse proofs. The chain-comparison input and the construction of the compactification, regular cuts and convergence action were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-315.md) · [Batch B041](../../batches/B041/README.md)"
+    },
+    {
+      "id": "P-000237",
+      "record_type": "paper",
+      "title": "Counterexamples to the Hahn-Wilson conjecture at height two",
+      "source_collection": "openai/math",
+      "upstream_slug": "Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-319"
+      ],
+      "batch_id": "B041",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3fdea34e5ad91b57b9f7f0797a46c240b9b882e0937d421008df28a900f9848b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000237.md",
+      "body": "# Counterexamples to the Hahn-Wilson conjecture at height two\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-Hahn-Wilson-conjecture-at-height-two-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims counterexamples to finite generation at chromatic height two.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000436: Prescribe one integral moment using balanced valuation nodes](../instruments/MI-000436.md)\n- [MI-000437: Use digit-binomial bases to adjust one filtered matrix depth](../instruments/MI-000437.md)\n\n## Dependencies and review\n\nDiscrete valuations, divided differences, Lagrange interpolation, Lucas binomial identities and complete filtered algebras.\n\nRead the complete divided-difference and coefficient-control proofs and their definitions. The displacement proof, operation realization, persistent-defect construction and global ghost obstruction were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-319.md) · [Batch B041](../../batches/B041/README.md)"
+    },
+    {
+      "id": "P-000238",
+      "record_type": "paper",
+      "title": "Nonhomeomorphic closed aspherical four-manifolds with the same homotopy type",
+      "source_collection": "openai/math",
+      "upstream_slug": "Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-320"
+      ],
+      "batch_id": "B041",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "117a0943e3cb8d11d749f4ffca78708f2a5fd8ac5712ddb3f07375ea66be71ff",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000238.md",
+      "body": "# Nonhomeomorphic closed aspherical four-manifolds with the same homotopy type\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonhomeomorphic-closed-aspherical-four-manifolds-with-the-same-homotopy-type-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims nonhomeomorphic closed aspherical four-manifolds with the same homotopy type.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000438: Choose a homology projection preserving a subspace that is not a subcomplex](../instruments/MI-000438.md)\n- [MI-000439: Lift a kernel cycle through a square-zero perturbation using a commutator](../instruments/MI-000439.md)\n\n## Dependencies and review\n\nFinite-dimensional graded linear algebra, chain homotopies, induced commutators and square-zero deformation.\n\nRead the complete subspace-projection and kernel-cycle-lifting proofs and their differential definitions. The finite specialization argument was also read, but the global endpoint-assignment and manifold construction were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-320.md) · [Batch B041](../../batches/B041/README.md)"
     }
   ],
   "families": [
@@ -26997,6 +27396,33 @@
       "body": "# Trace-cone ideal recovery and rank signals preserved by block averaging\n\n## Source manuscript and claim\n\n[The trace cone classifies Razak–Jacelon stabilizations](../papers/P-000210.md), by OpenAI, September 25, 2026.\n\nThe source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.\n\n## Extracted instruments\n\n- [MI-000382: Recover the ideal lattice and trace finiteness ideals from the extended trace cone](../instruments/MI-000382.md)\n- [MI-000383: Preserve a lower spectral-rank signal under normalized block averaging](../instruments/MI-000383.md)\n\n## Dependencies and antecedents\n\nExtended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.\n\nElliott-Robert-Santiago, The cone of lower semicontinuous traces on a C*-algebra, Sections 3.1-3.2 and equation (3.4). The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the ideal-transport, folding and averaged-rank proofs and the fixed lower-data definitions. The approximation models, uniqueness and final classification arguments were not audited.\n\nInspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.\n\nUse extended lower-semicontinuous traces, including zero and infinite values. Internal matrix traces are unnormalized; only the separate candidate-averaging direction is normalized.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/301.md) · [Batch record](../../batches/B034/README.md)"
     },
     {
+      "id": "openai-math-303",
+      "record_type": "family",
+      "title": "Cutoff transport and finite-stage ideal membership",
+      "source_family": "303",
+      "source_collection": "openai/math",
+      "batch_id": "B041",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000235"
+      ],
+      "instrument_ids": [
+        "MI-000432",
+        "MI-000433"
+      ],
+      "headline": "The source claims that individual proper infiniteness implies strong pure infiniteness, and removes fixed amplification under exactness.",
+      "central_instrument": "A cutoff permits a common partial-isometry transport that preserves all represented matrix norms. Functional calculus turns approximation by an ideal into exact membership of a spectral cut.",
+      "novelty_assessment": "These selected Cuntz-comparison and ideal-cutoff mechanisms are classical. The source explicit rectangular and representation bookkeeping is useful without certifying its stronger headline.",
+      "formalization_summary": "Read the scope and selected target/definition sections of ExactInfiniteness.lean and IndividualStrongInfiniteness.lean. The displayed main targets contain sorry. The latter stabilization implementation was not audited. No Lean build.",
+      "statement_faithfulness": "The transporting partial isometry is only in the bidual; its products with the cut hereditary algebra lie in the algebra. Finite matrix tests do not model nonzero properly infinite elements.",
+      "dependencies": "Cuntz subequivalence, hereditary subalgebras, rectangular polar decomposition, functional calculus and quotient representations.",
+      "antecedents": "Rordam comparison lemma, as recalled by Antoine-Perera-Thiel; standard ideal/representation separation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-303.md",
+      "body": "# Cutoff transport and finite-stage ideal membership\n\n## Source manuscript and claim\n\n[Weak pure infiniteness and O-infinity absorption](../papers/P-000235.md), by OpenAI, None.\n\nThe source claims that individual proper infiniteness implies strong pure infiniteness, and removes fixed amplification under exactness.\n\n## Extracted instruments\n\n- [MI-000432: Transport a cut hereditary algebra while preserving every represented matrix norm](../instruments/MI-000432.md)\n- [MI-000433: Turn ideal approximation into exact membership after a spectral cutoff](../instruments/MI-000433.md)\n\n## Dependencies and antecedents\n\nCuntz subequivalence, hereditary subalgebras, rectangular polar decomposition, functional calculus and quotient representations.\n\nRordam comparison lemma, as recalled by Antoine-Perera-Thiel; standard ideal/representation separation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete cutoff-transport, exact-cut implementation and ideals/cutoffs proofs. The separation, uniform-gap and pure-infiniteness arguments were not audited.\n\nRead the scope and selected target/definition sections of ExactInfiniteness.lean and IndividualStrongInfiniteness.lean. The displayed main targets contain sorry. The latter stabilization implementation was not audited. No Lean build.\n\nThe transporting partial isometry is only in the bidual; its products with the cut hereditary algebra lie in the algebra. Finite matrix tests do not model nonzero properly infinite elements.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/303.md) · [Batch record](../../batches/B041/README.md)"
+    },
+    {
       "id": "openai-math-304",
       "record_type": "family",
       "title": "Hilbert–Smith conjecture in every dimension",
@@ -27221,6 +27647,33 @@
       "body": "# Automorphism-weighted integration and p-adic subgroup counts\n\n## Source manuscript and claim\n\n[Cyclic length and chromatic fixed-point loss](../papers/P-000173.md), by OpenAI, September 24, 2026.\n\nThe source claims that optimal chromatic fixed-point loss for every subgroup of a finite p-group equals the minimum length of a subnormal chain with cyclic quotients, at every finite target height including zero.\n\n## Extracted instruments\n\n- [MI-000308: Diagonal transfer forces inverse-automorphism integration weights](../instruments/MI-000308.md)\n- [MI-000309: Subgroup counts of Z_p^d stabilize to a nonzero p-adic unit](../instruments/MI-000309.md)\n\n## Dependencies and antecedents\n\nFinite groupoid cardinality, diagonal transfer, the projection formula, triangular lattice bases, geometric series and p-adic convergence.\n\nStrickland finite-groupoid Frobenius character formulas; Tamanoi Lemma 5-5 on subgroups of Z_p^d. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete integration-weight proposition and lattice-limit lemma. The pro-character splitting, integral scalar theorem, shrinking actions, kernel argument and chromatic gluing were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nCyclic quotients of arbitrary p-power order count as one step. Embedded subgroups, not just their abstract isomorphism type, matter. Homotopy fibers retain automorphisms in the kernel of a functor.\n\n[Batch record](../../batches/B025/README.md)"
     },
     {
+      "id": "openai-math-315",
+      "record_type": "family",
+      "title": "Closed finite-energy gradients and translated coarea decay",
+      "source_family": "315",
+      "source_collection": "openai/math",
+      "batch_id": "B041",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000236"
+      ],
+      "instrument_ids": [
+        "MI-000434",
+        "MI-000435"
+      ],
+      "headline": "The source claims the four-dimensional Singer conjecture.",
+      "central_instrument": "Simple connectivity identifies finite-energy gradients with a closed cocycle kernel. Coarea and vanishing translated l2 pairings control translated cuts.",
+      "novelty_assessment": "These are classical reduced l2-cohomology, coarea and regular-representation mechanisms. The source compactification and global contradiction are separate, unaudited steps.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "The potential need not be square summable. Closure of the gradient space does not imply the l2-gradient operator has closed range. The translation action must move finite edge sets off one another.",
+      "dependencies": "Bounded cellular coboundaries, simple connectivity, Hilbert closure, Tonelli and l2 approximation by finite supports.",
+      "antecedents": "Classical reduced l2-cohomology and vanishing at infinity of regular-representation matrix coefficients.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-315.md",
+      "body": "# Closed finite-energy gradients and translated coarea decay\n\n## Source manuscript and claim\n\n[The Singer conjecture in dimension four](../papers/P-000236.md), by OpenAI, September 25, 2026.\n\nThe source claims the four-dimensional Singer conjecture.\n\n## Extracted instruments\n\n- [MI-000434: Identify finite-energy gradients with a closed cocycle space](../instruments/MI-000434.md)\n- [MI-000435: Control translated cut lengths by coarea and vanishing l2 pairings](../instruments/MI-000435.md)\n\n## Dependencies and antecedents\n\nBounded cellular coboundaries, simple connectivity, Hilbert closure, Tonelli and l2 approximation by finite supports.\n\nClassical reduced l2-cohomology and vanishing at infinity of regular-representation matrix coefficients. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full gradient lemma and translated cut-length/collapse proofs. The chain-comparison input and the construction of the compactification, regular cuts and convergence action were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe potential need not be square summable. Closure of the gradient space does not imply the l2-gradient operator has closed range. The translation action must move finite edge sets off one another.\n\n[Batch record](../../batches/B041/README.md)"
+    },
+    {
       "id": "openai-math-316",
       "record_type": "family",
       "title": "Cartier halving with an exponent floor and primitive square roots",
@@ -27273,6 +27726,60 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-317.md",
       "body": "# Relative poset homotopies and nerve covers\n\n## Source manuscript and claim\n\n[Thomason Model Structures in Every Strict Higher Dimension](../papers/P-000222.md), by OpenAI, None.\n\nThe source claims proper combinatorial Thomason model structures in every positive finite strict dimension and in dimension omega.\n\n## Extracted instruments\n\n- [MI-000406: Build a relative monotone zigzag through a greatest new element](../instruments/MI-000406.md)\n- [MI-000407: Turn a full sieve cover into an exact Street-nerve union](../instruments/MI-000407.md)\n\n## Dependencies and antecedents\n\nSieve poset inclusions, right adjoint retractions, monotone natural transformations, oriental endpoint arrows and monomorphic simplicial gluing.\n\nClassical poset nerve homotopies and Thomason-style gluing; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the greatest-new-element proof and the complete two-piece nerve-cover lemma. The relative Gray-prism lemma used to transport the zigzag through arbitrary strict-category pushouts was not audited; neither was the model-transfer theorem.\n\nInspected FullMain, ExactModelEndpoint and final targets in ThomasonModelStructures.lean. They specify model structures, properness and Quillen equivalence in positive finite and omega dimensions; the targets contain sorry. The long support development was not audited and no Lean build was performed.\n\nThe greatest-new-element construction gives a zigzag id<=g>=k, not necessarily id comparable with k. The nerve union requires both pieces to be full sieves or both full cosieves, not arbitrary full subcategories.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/317.md) · [Batch record](../../batches/B037/README.md)"
+    },
+    {
+      "id": "openai-math-319",
+      "record_type": "family",
+      "title": "Integral divided differences and digitwise triangular control",
+      "source_family": "319",
+      "source_collection": "openai/math",
+      "batch_id": "B041",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000237"
+      ],
+      "instrument_ids": [
+        "MI-000436",
+        "MI-000437"
+      ],
+      "headline": "The source claims counterexamples to finite generation at chromatic height two.",
+      "central_instrument": "Balanced valuation nodes yield integral measures prescribing one moment. Lucas digit bases then control one matrix depth while earlier depths remain fixed.",
+      "novelty_assessment": "The source explicitly adapts Bhargava P-orderings and Amice interpolation. The selected finite algebra is recorded as a conditional interface, without certifying the topological realization or priority.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "The valuation-distance formula, balanced coset enumeration, displacement budget and operation-algebra realization are inputs. The finite tests check moments and digit bases, not those geometric inputs.",
+      "dependencies": "Discrete valuations, divided differences, Lagrange interpolation, Lucas binomial identities and complete filtered algebras.",
+      "antecedents": "Amice interpolation and Bhargava P-orderings; Lucas digit-binomial basis.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-319.md",
+      "body": "# Integral divided differences and digitwise triangular control\n\n## Source manuscript and claim\n\n[Counterexamples to the Hahn-Wilson conjecture at height two](../papers/P-000237.md), by OpenAI, September 26, 2026.\n\nThe source claims counterexamples to finite generation at chromatic height two.\n\n## Extracted instruments\n\n- [MI-000436: Prescribe one integral moment using balanced valuation nodes](../instruments/MI-000436.md)\n- [MI-000437: Use digit-binomial bases to adjust one filtered matrix depth](../instruments/MI-000437.md)\n\n## Dependencies and antecedents\n\nDiscrete valuations, divided differences, Lagrange interpolation, Lucas binomial identities and complete filtered algebras.\n\nAmice interpolation and Bhargava P-orderings; Lucas digit-binomial basis. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete divided-difference and coefficient-control proofs and their definitions. The displacement proof, operation realization, persistent-defect construction and global ghost obstruction were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe valuation-distance formula, balanced coset enumeration, displacement budget and operation-algebra realization are inputs. The finite tests check moments and digit bases, not those geometric inputs.\n\n[Batch record](../../batches/B041/README.md)"
+    },
+    {
+      "id": "openai-math-320",
+      "record_type": "family",
+      "title": "Subspace-preserving homology projections and first-order cycle lifting",
+      "source_family": "320",
+      "source_collection": "openai/math",
+      "batch_id": "B041",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000238"
+      ],
+      "instrument_ids": [
+        "MI-000438",
+        "MI-000439"
+      ],
+      "headline": "The source claims nonhomeomorphic closed aspherical four-manifolds with the same homotopy type.",
+      "central_instrument": "A homology projection can preserve a chosen graded subspace even when it is not a subcomplex. A vanishing commutator obstruction lifts selected cycles over square-zero parameters.",
+      "novelty_assessment": "Both are elementary splitting and first-order deformation arguments. Their role in the source tensor contraction is conditional; the manifold counterexample is not certified.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "The projection is noncanonical and is chosen for one specified subspace. The lift is first order with t squared zero; a higher-order extension requires new obstruction checks.",
+      "dependencies": "Finite-dimensional graded linear algebra, chain homotopies, induced commutators and square-zero deformation.",
+      "antecedents": "Classical splitting of complexes over a field and first-order obstruction theory.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-320.md",
+      "body": "# Subspace-preserving homology projections and first-order cycle lifting\n\n## Source manuscript and claim\n\n[Nonhomeomorphic closed aspherical four-manifolds with the same homotopy type](../papers/P-000238.md), by OpenAI, October 4, 2026.\n\nThe source claims nonhomeomorphic closed aspherical four-manifolds with the same homotopy type.\n\n## Extracted instruments\n\n- [MI-000438: Choose a homology projection preserving a subspace that is not a subcomplex](../instruments/MI-000438.md)\n- [MI-000439: Lift a kernel cycle through a square-zero perturbation using a commutator](../instruments/MI-000439.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional graded linear algebra, chain homotopies, induced commutators and square-zero deformation.\n\nClassical splitting of complexes over a field and first-order obstruction theory. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete subspace-projection and kernel-cycle-lifting proofs and their differential definitions. The finite specialization argument was also read, but the global endpoint-assignment and manifold construction were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe projection is noncanonical and is chosen for one specified subspace. The lift is first order with t squared zero; a higher-order extension requires new obstruction checks.\n\n[Batch record](../../batches/B041/README.md)"
     },
     {
       "id": "openai-math-321",

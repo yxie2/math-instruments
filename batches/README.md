@@ -68,7 +68,9 @@
 
 | [B040](B040/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Adaptive witnesses, juntas, signed permanent gadgets and cyclic norm extraction |
 
-Future rounds use `B041` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B041](B041/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Cutoff transport, finite-energy coarea, integral interpolation and homology representatives |
+
+Future rounds use `B042` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

@@ -1,0 +1,41 @@
+{
+  "batch": "B041",
+  "status": "pass",
+  "scope": "Finite selected interfaces; no global theorem or Lean build certified.",
+  "checks": {
+    "cut_transport": {
+      "rectangular_matrix_models": 100,
+      "max_error": 3.448595366172381e-14,
+      "general_bidual_membership_tested": false
+    },
+    "ideal_cutoff": {
+      "commutative_quotient_models": 100
+    },
+    "closed_gradients": {
+      "filled_fan_models": 9,
+      "missing_simple_connectivity_control": true,
+      "infinite_range_closedness_tested": false
+    },
+    "translated_coarea": {
+      "exact_integral_models": 100,
+      "finite_support_translation_control": true
+    },
+    "integral_divided_differences": {
+      "exact_moment_checks": 112,
+      "node_model": "base-p digits in x F_p[[x]]"
+    },
+    "digit_control": {
+      "exact_lucas_basis_models": 6,
+      "large_parameter_budget_checked": true,
+      "full_group_operation_algebra_tested": false
+    },
+    "subspace_projection": {
+      "exact_complex_models": 50,
+      "non_subcomplex_inputs": 26
+    },
+    "square_zero_lift": {
+      "exact_first_order_cycle_models": 60,
+      "full_graph_form_context_tested": false
+    }
+  }
+}

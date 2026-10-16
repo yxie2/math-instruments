@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B041: eight selected interfaces from families 303, 315, 319 and 320, with finite checks and explicit boundaries between algebraic tools and global source claims.
+
 - Added B040: eight selected interfaces from families 105, 106, 108 and 142, including complete finite gadget tests and explicit exposure/locality requirements.
 
 - Added B039: eight selected interfaces from families 043, 044, 053 and 064, with explicit antecedents, coefficient-preserving finite tests and geometric scope limits.
