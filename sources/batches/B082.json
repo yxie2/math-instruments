@@ -1,0 +1,304 @@
+{
+  "batch_id": "B082",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:47:11.934428+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Heisenberg.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Heisenberg.lean",
+      "sha256": "e943ce9c82349d3555fc658b69cb65bdd9968f293b1f0a4e137cf3fb05ab2bce",
+      "bytes": 9538
+    },
+    {
+      "path": "lean/ComparatorChallenges/LaughlinFock.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LaughlinFock.lean",
+      "sha256": "bf325bca1126710ec1fec832aad8135036848a3ddc1ebbcf5cdfea14107b84bf",
+      "bytes": 1995
+    },
+    {
+      "path": "lean/ComparatorChallenges/LaughlinGap.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LaughlinGap.lean",
+      "sha256": "00890c4dfe7de760b3ff1e390e39ea64b867fa91422f2dc77e7a52886d10772c",
+      "bytes": 2767
+    },
+    {
+      "path": "lean/ComparatorChallenges/UniformGamma.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/UniformGamma.lean",
+      "sha256": "1d0ec2d4a495ea93a8526aaf223ba12a0c1d0f4c0652d837954c206439d57020",
+      "bytes": 25412
+    },
+    {
+      "path": "lean/docs/269.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/269.md",
+      "sha256": "f229913f83b805504a4c437efbd58e108884132bcdad4d2fe2f0fc237eb58463",
+      "bytes": 2334
+    },
+    {
+      "path": "lean/docs/271.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/271.md",
+      "sha256": "a3f93c62adc355080af9fc64ced806c979f5abd41c7359749b1c55ef8dd5a883",
+      "bytes": 1098
+    },
+    {
+      "path": "lean/docs/291.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/291.md",
+      "sha256": "7484037eae43c23ac129b34e5b01e444fbf9a103d8522de8bbd87d2533552c06",
+      "bytes": 1285
+    },
+    {
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/README.md",
+      "sha256": "df7367570eacc40dc9745e1a5f681249ab2efb8286f35079dde02d666a1ff2cf",
+      "bytes": 756
+    },
+    {
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex",
+      "sha256": "0ddf21a0c3d7056844ac0874182ecd9ef67f58bb3a2fccd92169727efa0a331e",
+      "bytes": 3636
+    },
+    {
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/06-gap.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/06-gap.tex",
+      "sha256": "2cb86b7a8136afc22639dbe2be903d372d935b9e7a25b805704ebbab6a1b8b03",
+      "bytes": 7332
+    },
+    {
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/README.md",
+      "sha256": "17f6e8a36a45fc4b30801e4f28f6b5a34141eb4f4d34cc1b9553f741f2870310",
+      "bytes": 735
+    },
+    {
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex",
+      "sha256": "6f542f0d37b50ce16651e3d71fd056072b2ed76905d06ad90e536a3b5c3c6190",
+      "bytes": 33208
+    },
+    {
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex",
+      "sha256": "2fdc054ec16f47aba3baf9dfba9e984a18305084cfef883844a75f8a429fe826",
+      "bytes": 18731
+    },
+    {
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/README.md",
+      "sha256": "d3239596fb2054e759191486e4d2a58f08b83b2d9c22e7f0f506fae33a4e47dd",
+      "bytes": 771
+    },
+    {
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f",
+      "bytes": 16797
+    },
+    {
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/README.md",
+      "sha256": "5c105fd25b7a21bda7ee6057eb9130ccaa65c5786b6ff73d8656a40675a0e524",
+      "bytes": 647
+    },
+    {
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex",
+      "sha256": "52e1e1790b4283b5b40614e94814fe17fe2533d3a00d97449ee709156bafcb09",
+      "bytes": 18732
+    },
+    {
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex",
+      "sha256": "3096c6c7eba012b1597e5d85e5493734a68c2f388e7b838b029719a087d9c617",
+      "bytes": 26678
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000758",
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex",
+      "label": "eq:lift",
+      "line": 16,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex#L16",
+      "sha256": "0ddf21a0c3d7056844ac0874182ecd9ef67f58bb3a2fccd92169727efa0a331e"
+    },
+    {
+      "instrument_id": "MI-000758",
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex",
+      "label": "lem:square",
+      "line": 41,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/02-operators.tex#L41",
+      "sha256": "0ddf21a0c3d7056844ac0874182ecd9ef67f58bb3a2fccd92169727efa0a331e"
+    },
+    {
+      "instrument_id": "MI-000759",
+      "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/06-gap.tex",
+      "label": "lem:kernel",
+      "line": 68,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/sections/06-gap.tex#L68",
+      "sha256": "2cb86b7a8136afc22639dbe2be903d372d935b9e7a25b805704ebbab6a1b8b03"
+    },
+    {
+      "instrument_id": "MI-000760",
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex",
+      "label": "lem:domains",
+      "line": 291,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex#L291",
+      "sha256": "52e1e1790b4283b5b40614e94814fe17fe2533d3a00d97449ee709156bafcb09"
+    },
+    {
+      "instrument_id": "MI-000760",
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex",
+      "label": "alg:symbol",
+      "line": 313,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/02-algebra.tex#L313",
+      "sha256": "52e1e1790b4283b5b40614e94814fe17fe2533d3a00d97449ee709156bafcb09"
+    },
+    {
+      "instrument_id": "MI-000761",
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex",
+      "label": "lem:collision-removal",
+      "line": 330,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex#L330",
+      "sha256": "3096c6c7eba012b1597e5d85e5493734a68c2f388e7b838b029719a087d9c617"
+    },
+    {
+      "instrument_id": "MI-000761",
+      "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex",
+      "label": "prof:collision-capacity",
+      "line": 345,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/sections/06-profiles.tex#L345",
+      "sha256": "3096c6c7eba012b1597e5d85e5493734a68c2f388e7b838b029719a087d9c617"
+    },
+    {
+      "instrument_id": "MI-000762",
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex",
+      "label": "lem:factorial",
+      "line": 182,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex#L182",
+      "sha256": "6f542f0d37b50ce16651e3d71fd056072b2ed76905d06ad90e536a3b5c3c6190"
+    },
+    {
+      "instrument_id": "MI-000762",
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex",
+      "label": "lem:dense-boundary",
+      "line": 145,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/02-pins.tex#L145",
+      "sha256": "6f542f0d37b50ce16651e3d71fd056072b2ed76905d06ad90e536a3b5c3c6190"
+    },
+    {
+      "instrument_id": "MI-000763",
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex",
+      "label": "lem:ideal-kernel",
+      "line": 50,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex#L50",
+      "sha256": "2fdc054ec16f47aba3baf9dfba9e984a18305084cfef883844a75f8a429fe826"
+    },
+    {
+      "instrument_id": "MI-000763",
+      "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex",
+      "label": "eq:ideal-fourier",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/build/sections/06-ideal.tex#L44",
+      "sha256": "2fdc054ec16f47aba3baf9dfba9e984a18305084cfef883844a75f8a429fe826"
+    },
+    {
+      "instrument_id": "MI-000764",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "lem:square-root-trace",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L31",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000764",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "lem:gaussian-quadratic",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L61",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000764",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "eq:gaussian-rank-control",
+      "line": 242,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L242",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000764",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "eq:gaussian-covariance-polynomial",
+      "line": 297,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L297",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000765",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "lem:quadratic-moment-transfer",
+      "line": 143,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L143",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000765",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "eq:tracial-duhamel",
+      "line": 388,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L388",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    },
+    {
+      "instrument_id": "MI-000765",
+      "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex",
+      "label": "eq:extreme-uniform-estimates",
+      "line": 413,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L413",
+      "sha256": "8c8f272c8ed341d95dd365839c207435eee346a3c88a80dd3ee5b3cfce65783f"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-269",
+      "extracted_slugs": [
+        "A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "Uniform-Stability-of-the-Spherical-Laughlin-Gap-October-5-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-270",
+      "extracted_slugs": [
+        "The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "Positive-eigenvalues-of-the-relative-SU-2-BFSS-Hamiltonian-October-5-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-271",
+      "extracted_slugs": [
+        "Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "The-first-lattice-correction-to-Blochs-law-October-5-2026",
+        "The-spherical-magnetization-law-for-the-three-dimensional-quantum-Heisenberg-ferromagnet-October-5-2026",
+        "Spontaneous-magnetization-in-the-quantum-Heisenberg-ferromagnet-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-291",
+      "extracted_slugs": [
+        "Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "Cuntz-comparison-and-Jiang-Su-absorption-September-23-2026",
+        "Nuclear-dimension-and-Jiang-Su-stability-without-elementary-subquotients-September-23-2026",
+        "Tracial-projection-methods-and-uniform-property-Gamma-September-23-2026"
+      ]
+    }
+  ]
+}

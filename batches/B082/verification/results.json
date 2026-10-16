@@ -1,0 +1,101 @@
+{
+  "batch": "B082",
+  "status": "pass",
+  "elapsed_seconds": 0.305,
+  "scope": "Selected finite mechanisms and analytic toy examples; no source headline or Lean certification.",
+  "checks": {
+    "normal_ordering": {
+      "status": "pass",
+      "details": {
+        "complex_pair_subspaces": 3,
+        "max_fock_dimension": 64,
+        "ordered_pair_factor_control": true
+      }
+    },
+    "polynomial_kernel": {
+      "status": "pass",
+      "details": {
+        "laughlin_flux_cases": 2,
+        "one_particle_above_has_no_zero_mode": true,
+        "independent_symbolic_zero_vectors": true
+      }
+    },
+    "graph_domains": {
+      "status": "pass",
+      "details": {
+        "symbol_checks": 40,
+        "cutoff_graph_errors": [
+          0.6597273155222398,
+          0.0048421016894851935,
+          5.100857715218271e-06,
+          1.1024278670682038e-09
+        ],
+        "unbounded_potential": true
+      }
+    },
+    "collision_capacity": {
+      "status": "pass",
+      "details": {
+        "codimension_nine_energies": [
+          2.761585539972268,
+          0.021574887031033343,
+          0.000168553804929948,
+          1.3168266010152187e-06
+        ],
+        "product_cutoffs": 40,
+        "codimension_one_jump_control": true
+      }
+    },
+    "factorial_marks": {
+      "status": "pass",
+      "details": {
+        "cycle_pin_insertions": 2304,
+        "weighted_poisson_factorial_cases": 6,
+        "tail_mass_bound": 2.5315528148118815e-21
+      }
+    },
+    "ideal_returns": {
+      "status": "pass",
+      "details": {
+        "anisotropic_relative_errors": [
+          [
+            0.019431679115873957,
+            0.001881479872741565,
+            0.0001875644874529403
+          ],
+          [
+            0.031834011697443154,
+            0.0029251713408018354,
+            0.0002904090446484986
+          ]
+        ],
+        "direction_words": 30,
+        "fixed_inverse_seam_control": true,
+        "proper_sublattice_factor": 8
+      }
+    },
+    "covariance_normalization": {
+      "status": "pass",
+      "details": {
+        "noncommuting_trace_inequalities": 30,
+        "overlapping_frame_bound": true,
+        "covariance_word_identity": true,
+        "gaussian_characteristic_tests": 3,
+        "variance_for_identity_over_n": [
+          2.0,
+          0.5,
+          0.02
+        ]
+      }
+    },
+    "tracial_transfer": {
+      "status": "pass",
+      "details": {
+        "noncommuting_duhamel_cases": 30,
+        "growing_norm_spectral_laws": 4,
+        "convex_mixtures": 30,
+        "sequential_compactness_not_numerically_proved": true
+      }
+    }
+  }
+}
