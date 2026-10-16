@@ -15516,6 +15516,364 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000367.md",
       "body": "# Transfer labeled masses through cell capacities without exceeding available energy\n\n[Family 079](../families/openai-math-079.md) · [Source manuscript](../papers/P-000202.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nLet old cell capacities x_i and receiving energies y_j satisfy x_i<=A sum_{j in N(i)} y_j+epsilon_i, with A>=1 and epsilon_i>=0. Suppose each receiving cell j lies in at most D neighborhoods, D>=1. Let labeled assignments obey sum_lambda m_lambda,i<=x_i.\n\nWrite Y_i=sum_{j in N(i)}y_j. Proportionally trim each cell's assignments until their sum is at most A Y_i; the deleted mass is at most epsilon_i. If Y_i>0, transfer each retained assignment to j in N(i) with amount\n\n$$\\frac{m_{\\lambda i}y_j}{ADY_i}.$$\n\nFor each receiving cell, the total from one incident old cell is at most y_j/D, so the total over all labels and incidences is at most y_j. Summing over j gives exactly m_lambda,i/(AD). Aggregating contributions from different old cells to the same label incurs no further loss. If Y_i=0, all assignments in that cell are removed within epsilon_i.\n\n## Role in the source argument\n\nTransfers terminal fractional packet assignments after predecessor and overlap estimates have been supplied.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [rt:capacity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L828)\n\n## Antecedents and comparison\n\nThis is elementary proportional allocation. It exposes the exact AD factor, zero-capacity convention and additive error budget.\n\n## Checks and limitations\n\nOne hundred twenty exact rational allocation models verify every receiving capacity, the total deletion budget and each aggregated label mass, including zero-capacity cases.\n\nThe source predecessor energy and overlap bounds are hypotheses; no wave packet kernel is tested by this allocation calculation.\n\n## Possible applications\n\nTransporting several labeled resources under bounded overlap and additive approximation errors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000368",
+      "record_type": "instrument",
+      "title": "Match endpoint jets before choosing a thin complex parameter collar",
+      "forms": [
+        "endpoint-jet-matching",
+        "shrinking-parameter-complexification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-042"
+      ],
+      "source_paper_ids": [
+        "P-000203"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/globalization.tex",
+          "label": "glue:interval",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/globalization.tex#L39",
+          "sha256": "2ccf9a30f18d5e6edf581d942374718e7ffcb6c8581f5a7d79dc5c1385ae2123"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-approximation-and-splitting-with-explicit-order-of-choices",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000368.md",
+      "body": "# Match endpoint jets before choosing a thin complex parameter collar\n\n[Family 042](../families/openai-math-042.md) · [Source manuscript](../papers/P-000203.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nLet H_s(q) be a smooth family for s near a compact real interval, holomorphic in q on a common neighborhood of a compact convex set. Work in finitely many fixed graph-spray charts, and fix a desired real C^j approximation. First approximate the coordinate families by polynomials in s, matching endpoint jets through order M at adjacent chart boundaries. Fix those polynomials before choosing a thin complex collar of width delta.\n\nOn an overlap of width O(delta), the transition error and its fiber derivative are O(delta^{M+1}). A linear jump solver with norm at most K/delta turns this into corrections of size O(delta^M). The nonlinear correction map is a contraction once KA delta^M<1/2. Cauchy estimates give real derivatives through order j of size O(delta^{M-j}); choose M>j+2 and then delta small.\n\nThe result is a jointly holomorphic approximation on a neighborhood that can shrink with the approximant. Extra holomorphic parameters remain passive. This is not an assertion that the original smooth family extends holomorphically to a fixed neighborhood.\n\n## Role in the source argument\n\nComplexifies the real deformation parameter before applying the source gluing construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [glue:interval](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/globalization.tex#L39)\n\n## Antecedents and comparison\n\nThe local ingredients are established approximation and Cartan splitting tools. [Forstneric 2013, Section 3.3](https://users.fmf.uni-lj.si/forstneric/papers/2013AFST.pdf) gives the additive splitting by a fixed dbar operator. The specific thin-collar exponent accounting is extracted from the source.\n\n## Checks and limitations\n\nExact endpoint derivative identities and 21 complex overlap models verify the polynomial orders and the one-power loss.\n\nThese checks do not construct graph sprays or prove the manifold-valued approximation theorem. The source selected proof was read.\n\n## Possible applications\n\nReplacing smooth homotopies by holomorphic parameter families when the complex collar is allowed to depend on the approximation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000369",
+      "record_type": "instrument",
+      "title": "Pay for shrinking domains with a quadratic holomorphic splitting recurrence",
+      "forms": [
+        "quadratic-cartan-splitting",
+        "shrinking-domain-loss-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-042"
+      ],
+      "source_paper_ids": [
+        "P-000203"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex",
+          "label": "glue:open",
+          "line": 70,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex#L70",
+          "sha256": "69ee16134c5181c5ccac63697312da982d6130dfb0f8dbaa7055eec65e168147"
+        },
+        {
+          "path": "preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex",
+          "label": "eq:glue-quadratic",
+          "line": 109,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex#L109",
+          "sha256": "69ee16134c5181c5ccac63697312da982d6130dfb0f8dbaa7055eec65e168147"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-cartan-newton-method-with-explicit-margin-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000369.md",
+      "body": "# Pay for shrinking domains with a quadratic holomorphic splitting recurrence\n\n[Family 042](../families/openai-math-042.md) · [Source manuscript](../papers/P-000203.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nOn buffered overlaps, let gamma(v)=v+c(v) be a small transition on a fixed auxiliary fiber ball. A fixed linear dbar solution splits c=b-a, with size and fiber derivative bounds C h^{-p}e when e bounds c and h is the base-domain loss. The new transition is (id+b)^{-1} gamma (id+a)=id+d. Its equation is\n\n$$d=c(v+a)-c(v)-\\{b(v+d)-b(v)\\},$$\n\nso a fiber contraction gives size O(h^{-p}e^2), after adjusting the fixed exponent and constant. With h_i=h_0 2^{-i}, write A=C h_0^{-p}. The recurrence e_{i+1}<=A 2^{pi}e_i^2 becomes E_{i+1}<=E_i^2 under E_i=A 2^{p(i+1)}e_i. If E_0<1/2, this beats every fixed geometric derivative loss, so the corrections and derivatives are summable on the remaining domain.\n\nComposing the limiting corrections glues the sprays. Translating small fiber corrections into small target displacement requires a fixed spray on the controlled side or a separately uniform modulus of continuity.\n\n## Role in the source argument\n\nMakes the gluing iteration quantitative while retaining a positive domain margin.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [glue:open](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex#L70)\n- [eq:glue-quadratic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/build/sections/gluing.tex#L109)\n\n## Antecedents and comparison\n\n[Forstneric 2013, Lemma 3.8 and Section 3.3](https://users.fmf.uni-lj.si/forstneric/papers/2013AFST.pdf) supplies the classical additive and nonlinear splitting background. Newton loss budgets are standard; no new general splitting theorem is claimed here.\n\n## Checks and limitations\n\nExact second-order cancellation in a scalar nonlinear transition and 36 exact rescaled recurrence steps.\n\nNo dbar estimate, spray existence or uniform modulus for a changing spray is computationally certified.\n\n## Possible applications\n\nAnalytic gluing procedures in which polynomial losses accompany geometric domain shrinkage.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000370",
+      "record_type": "instrument",
+      "title": "Recover the central frame determinant from a Green-weighted Ricci integral",
+      "forms": [
+        "boundary-unitary-determinant-identity",
+        "disc-curvature-green-formula"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-051"
+      ],
+      "source_paper_ids": [
+        "P-000204"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex",
+          "label": "hes:determinant",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L26",
+          "sha256": "a1534d02cd0a1cae936b6aa47b51c352c8e348069de00b086590d6f8907f7fa0"
+        },
+        {
+          "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/preliminaries.tex",
+          "label": "pre:green",
+          "line": 52,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/preliminaries.tex#L52",
+          "sha256": "d76aa97eda326e6c3fa95eb81b07f13d01bb76469c70939a0e4ce30418b01585"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-determinant-curvature-and-green-identity",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000370.md",
+      "body": "# Recover the central frame determinant from a Green-weighted Ricci integral\n\n[Family 051](../families/openai-math-051.md) · [Source manuscript](../papers/P-000204.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nLet f be a finite-area holomorphic disc and B a holomorphic frame of f*TX, with N=B* h(f) B uniformly positive, continuous up to the circle, W^{1,p} for p>2, and N=I on the circle. In the source normalization R_h=-i partial barpartial log det h,\n\n$$\\partial_z\\partial_{\\bar z}\\log\\det N=-R_h(f',f').$$\n\nThe holomorphic nonvanishing determinant of B contributes no curvature. Green's identity and the zero boundary values of log det N give\n\n$$\\log\\det N(0)=\\frac2\\pi\\int_{\\mathbb D}\\log(1/|z|)R_h(f',f')\\,dS=P_{R_h}(f).$$\n\nThe limit uses the stated integrability and continuity, not a smooth extension across the boundary. The factor 2/pi corresponds to partial_z partial_barz=Delta/4.\n\n## Role in the source argument\n\nRelates the size of the central variation frame to a curvature functional of the entire disc.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [hes:determinant](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L26)\n- [pre:green](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/preliminaries.tex#L52)\n\n## Antecedents and comparison\n\nThis is the standard curvature formula for a determinant line combined with the planar Green identity. It is not a new curvature formula.\n\n## Checks and limitations\n\nTwenty-four exact radial polynomial log-determinants verify the curvature sign, Green weight and area normalization.\n\nThe tests assume a frame; they do not establish the source boundary-unitary frame construction or global canonical positivity.\n\n## Possible applications\n\nConverting boundary normalizations of holomorphic frames into central determinant bounds.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000371",
+      "record_type": "instrument",
+      "title": "Pass from trace to log-determinant derivatives through a Sobolev boundary sequence",
+      "forms": [
+        "sobolev-boundary-flux-comparison",
+        "disc-variation-trace-identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-051"
+      ],
+      "source_paper_ids": [
+        "P-000204"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex",
+          "label": "hes:trace",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L53",
+          "sha256": "a1534d02cd0a1cae936b6aa47b51c352c8e348069de00b086590d6f8907f7fa0"
+        },
+        {
+          "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex",
+          "label": "eq:trace-logdet-error",
+          "line": 127,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L127",
+          "sha256": "a1534d02cd0a1cae936b6aa47b51c352c8e348069de00b086590d6f8907f7fa0"
+        },
+        {
+          "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex",
+          "label": "eq:radial-trace-estimate",
+          "line": 138,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L138",
+          "sha256": "a1534d02cd0a1cae936b6aa47b51c352c8e348069de00b086590d6f8907f7fa0"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-sobolev-trace-estimate-in-disc-hessian-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000371.md",
+      "body": "# Pass from trace to log-determinant derivatives through a Sobolev boundary sequence\n\n[Family 051](../families/openai-math-051.md) · [Source manuscript](../papers/P-000204.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nFor N as in the determinant identity, put T=tr N. Pointwise inside the disc,\n\n$$T_r-(\\log\\det N)_r=\\operatorname{tr}((I-N^{-1})N_r).$$\n\nThe boundary trace N=I and radial W^{1,2} regularity imply ||N(r)-I||_2=o((1-r)^{1/2}). Integrability of ||N_r||_2^2 supplies radii r_n increasing to 1 with (1-r_n)||N_r(r_n)||_2^2 bounded. The circular mean of the displayed error therefore tends to zero along this sequence. No boundary value of N_r is assumed.\n\nFor the source centered variation F with parameter derivatives F_{t_j}=z b_j, closedness of h gives L h(F_z,F_z)=partial_z partial_barz(|z|^2 T), where L=sum_j partial_tj partial_bartj at zero. On radius r the normalized integral is r^2<T>_r+(r^3/2)<T_r>_r. The determinant curvature identity replaces the second term along the sequence, yielding\n\n$$L A_h(F_t)=n-A_{R_h}(f).$$\n\nThe integral on the left has a sequence-independent limit, so the final identity does not depend on the selected radii.\n\n## Role in the source argument\n\nJustifies a boundary flux step in the maximizing-disc Hessian calculation with the actual Sobolev regularity.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [hes:trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L53)\n- [eq:trace-logdet-error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L127)\n- [eq:radial-trace-estimate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/build/sections/hessian.tex#L138)\n\n## Antecedents and comparison\n\nCauchy-Schwarz on radial Sobolev lines and subsequence selection are classical. The extraction isolates the regularity needed to exchange trace and log-determinant fluxes.\n\n## Checks and limitations\n\nFour radial matrix models verify the area Hessian identity; sixteen nonsmooth boundary examples with exponent between 1/2 and 1 test decay despite divergent individual boundary derivatives.\n\nThese examples do not prove the general Sobolev trace theorem or construct the centered holomorphic variations.\n\n## Possible applications\n\nVariational identities where the metric has a fixed boundary trace but boundary normal derivatives are unavailable.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000372",
+      "record_type": "instrument",
+      "title": "Remove derivatives of a moving triangular basis by alternating the trace",
+      "forms": [
+        "conjugation-invariant-alternating-trace",
+        "commuting-matrix-differential-form"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-063"
+      ],
+      "source_paper_ids": [
+        "P-000205"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex",
+          "label": "lem:alternating-trace",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L16",
+          "sha256": "2119de3cbe3540ad724053549632d1cb13eb8f0f7ccf0ac6deed426a1a0486c1"
+        },
+        {
+          "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex",
+          "label": "eq:trace-telescoping",
+          "line": 76,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L76",
+          "sha256": "2119de3cbe3540ad724053549632d1cb13eb8f0f7ccf0ac6deed426a1a0486c1"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "hochschild-trace-antecedent-with-explicit-commutator-proof",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000372.md",
+      "body": "# Remove derivatives of a moving triangular basis by alternating the trace\n\n[Family 063](../families/openai-math-063.md) · [Source manuscript](../papers/P-000205.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nLet A_1,...,A_r be commuting matrices over a field extension L/C, and let A_0 commute with each of them. Use matrix multiplication together with exterior multiplication of Kahler differentials. Then\n\n$$\\Theta=\\sum_{\\pi\\in S_r}\\operatorname{sgn}(\\pi)\\operatorname{Tr}(A_0\\,dA_{\\pi(1)}\\cdots dA_{\\pi(r)})$$\n\nis unchanged when every A_j, including A_0, is replaced by GA_jG^{-1}, even when G depends on the field variables.\n\nSet B_j(t)=dA_j+t[K,A_j]. Differentiating commutativity gives [A_j,B_l]=[A_l,B_j]. In the derivative of Theta at each factor position, move the degree-zero A_j through the trace. The terms containing [A_j,B_l] cancel in pairs under exchange of the two labels. Thus Theta is independent of t. Taking K=G^{-1}dG proves the formula. The argument never differentiates A_0 and does not suppose [A_0,dA_j]=0.\n\n## Role in the source argument\n\nPermits a variable-dependent common triangular basis without discarding its derivative terms.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:alternating-trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L16)\n- [eq:trace-telescoping](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L76)\n\n## Antecedents and comparison\n\n[Khalkhali, Very Basic Noncommutative Geometry](https://www.math.uwo.ca/faculty/khalkhali/files/BasicNCG.pdf), Section 4.1 and Lemma 4.1, explains generalized trace and the trivial action of inner automorphisms on Hochschild homology. This is antecedent context; the exact displayed form identity is proved in the selected source passage.\n\n## Checks and limitations\n\nThree exact polynomial moving-basis models use nonsemisimple commuting matrices and a nonidempotent selector; the selector does not commute with all differentiated matrices.\n\nTwo-form symbolic models supplement the general telescoping proof. They do not establish source quantum eigenvalue independence.\n\n## Possible applications\n\nDifferential invariants of commuting matrix families when a simultaneous triangular basis varies with parameters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000373",
+      "record_type": "instrument",
+      "title": "Select a joint eigenvalue wedge and force independent graded operator directions",
+      "forms": [
+        "joint-spectrum-polynomial-selector",
+        "nonzero-wedge-grading-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-063"
+      ],
+      "source_paper_ids": [
+        "P-000205"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex",
+          "label": "lem:spectral-trace",
+          "line": 108,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L108",
+          "sha256": "2119de3cbe3540ad724053549632d1cb13eb8f0f7ccf0ac6deed426a1a0486c1"
+        },
+        {
+          "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex",
+          "label": "prop:independent-correspondences",
+          "line": 155,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L155",
+          "sha256": "2119de3cbe3540ad724053549632d1cb13eb8f0f7ccf0ac6deed426a1a0486c1"
+        },
+        {
+          "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/setup.tex",
+          "label": "eq:quantum-operators",
+          "line": 60,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/setup.tex#L60",
+          "sha256": "28bc493ba723761c48217481c580e076ac7c1f6dbc9395411eb2ea8bfe500b78"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-spectral-interpolation-combined-with-alternating-trace",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000373.md",
+      "body": "# Select a joint eigenvalue wedge and force independent graded operator directions\n\n[Family 063](../families/openai-math-063.md) · [Source manuscript](../papers/P-000205.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nOver an algebraically closed characteristic-zero field, choose an algebraically independent joint diagonal tuple lambda of a commuting matrix family. For each other tuple mu choose one coordinate j(mu) that separates it from lambda, and set\n\n$$p(T)=\\prod_{\\mu\\ne\\lambda}\\frac{T_{j(\\mu)}-\\mu_{j(\\mu)}}{\\lambda_{j(\\mu)}-\\mu_{j(\\mu)}};\\qquad A_0=p(A_1,\\ldots,A_r).$$\n\nOnly its diagonal values matter: it need not be an idempotent on generalized eigenspaces. In a common triangular basis, the invariant alternating trace is r! m_lambda d lambda_1 wedge ... wedge d lambda_r, which is nonzero.\n\nFor A_j=D_j+sum_gamma q^gamma gamma_j S_gamma, with D_j constant, dA_j=sum q^gamma gamma_j S_gamma omega_gamma and omega_gamma=sum_l gamma_l dq_l/q_l. Expanding a nonzero alternating trace forces at least one nonzero ordered product S_gamma1 ... S_gammar whose degree vectors are linearly independent. If S_gamma lowers a grading in [0,n] by d_gamma-1, that product forces sum_j(d_gammaj-1)<=n. In the source application, d_gamma>=iota gives r(iota-1)<=n, conditional on the independent joint tuple.\n\n## Role in the source argument\n\nConverts a spectral independence statement into independent curve degrees and a codimension budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:spectral-trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L108)\n- [prop:independent-correspondences](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/trace.tex#L155)\n- [eq:quantum-operators](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/build/sections/setup.tex#L60)\n\n## Antecedents and comparison\n\nFinite polynomial separation and the grading obstruction are standard linear algebra. The conjunction with the moving-basis trace is the reusable source mechanism; no novelty certification is asserted.\n\n## Checks and limitations\n\nThree exact selector/multiplicity models and 203 graded lowering-product checks.\n\nThe crucial source theorem producing the independent eigenvalue tuple is an input here, not a verified output; equality classification is outside scope.\n\n## Possible applications\n\nExtracting independent directions from commuting Laurent-polynomial operator families with bounded grading.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000374",
+      "record_type": "instrument",
+      "title": "Express P1 fiber integration as an involution and a divided-difference rule",
+      "forms": [
+        "rational-curve-cohomology-involution",
+        "fiber-integration-twisted-leibniz"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-067"
+      ],
+      "source_paper_ids": [
+        "P-000206"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex",
+          "label": "lem:p1-involution",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex#L9",
+          "sha256": "6ab56e8c89241c3d479a6cd781ed6dcf45313c6bc49d8dc55ae4b96e01506055"
+        },
+        {
+          "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex",
+          "label": "eq:p1-powers",
+          "line": 56,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex#L56",
+          "sha256": "6ab56e8c89241c3d479a6cd781ed6dcf45313c6bc49d8dc55ae4b96e01506055"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-leray-hirsch-grr-and-divided-difference-algebra",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000374.md",
+      "body": "# Express P1 fiber integration as an involution and a divided-difference rule\n\n[Family 067](../families/openai-math-067.md) · [Source manuscript](../papers/P-000206.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nFor a smooth projective P1-fibration p:B->D of smooth connected projective varieties, use rational cohomology and c=c_1(T_p). Leray-Hirsch gives alpha=a+cb uniquely with a,b pulled back from D. Relative GRR applied to O_B yields p_*c^2=0, so c^2 is pulled back. Hence bar(a+cb)=a-cb is a ring involution.\n\nWriting delta=p* p_*, on even cohomology\n\n$$\\delta(a+cb)=2b,\\qquad\\bar\\alpha=\\alpha-c\\delta\\alpha,\\qquad\\delta(\\alpha\\gamma)=(\\delta\\alpha)\\gamma+\\bar\\alpha\\,\\delta\\gamma.$$\n\nIf h has fiber degree one, ell=2h-c and alpha-h delta alpha are pulled back. The power identities are\n\n$$\\delta(h^a)=\\sum_{k=0}^{a-1}h^k(\\ell-h)^{a-1-k},\\qquad\\delta(c^a)=(1-(-1)^a)c^{a-1}.$$\n\nThese are polynomial identities, so no division by c or 2h-ell is required. On top cohomology the involution negates the integral. No global rank-two vector-bundle presentation of B is assumed.\n\n## Role in the source argument\n\nGenerates the source characteristic-number relations through fiber integration.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:p1-involution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex#L9)\n- [eq:p1-powers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/02-p1-cohomology.tex#L56)\n\n## Antecedents and comparison\n\nThe construction follows classical Leray-Hirsch and relative GRR; the product rule is the standard algebra of a rank-two extension with a reflection. It is not a new general cohomology theorem.\n\n## Checks and limitations\n\nExact quotient-ring product rule and thirty power identities, including identities valid when the formal divisor is not invertible.\n\nThe symbolic algebra assumes the geometric decomposition and GRR input established in the selected source proof.\n\n## Possible applications\n\nCharacteristic-class calculations for rational-curve fibrations without choosing a projective-bundle presentation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000375",
+      "record_type": "instrument",
+      "title": "Certify a lifted polynomial consequence with modular rank and rational witnesses",
+      "forms": [
+        "lifted-constraint-kernel-certificate",
+        "mixed-modular-rational-proof"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-067"
+      ],
+      "source_paper_ids": [
+        "P-000206"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex",
+          "label": "lem:finite-ratio",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L10",
+          "sha256": "2926fa84a4d08fbbf8c30cc43781fa7f0ba558946b0e33bd6879aa4d8311b048"
+        },
+        {
+          "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex",
+          "label": "eq:rational-dimension-upper",
+          "line": 138,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L138",
+          "sha256": "2926fa84a4d08fbbf8c30cc43781fa7f0ba558946b0e33bd6879aa4d8311b048"
+        },
+        {
+          "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/08-certificate.tex",
+          "label": "app:certificate",
+          "line": 2,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/08-certificate.tex#L2",
+          "sha256": "cad18e6f196c882f1abc10bb9dc2a60b453f9a8a46ef51d0f08bb07e4d9fccfb"
+        }
+      ],
+      "batch_id": "B033",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-exact-linear-algebra-certificate-architecture",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000375.md",
+      "body": "# Certify a lifted polynomial consequence with modular rank and rational witnesses\n\n[Family 067](../families/openai-math-067.md) · [Source manuscript](../papers/P-000206.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nSuppose a rational bilinear constraint N(xi_i eta_j)=0 is known. Multiply its equations by extra eta coordinates and identify symmetric products using sorted multisets. Every product vector v_{i,z}=xi_i product_{j in z}eta_j then belongs to a larger linear kernel K; arbitrary vectors of K need not have product form.\n\nLet M be the single rational matrix defining the final lifted kernel, with n columns and denominators prime to p. A modular rank at least n-d gives dim_Q ker M<=d. To turn this bound into a rational certificate, exhibit d rational vectors z_i satisfying Mz_i=0 exactly, and a nonzero d-by-d minor proving their independence. They then form the whole rational kernel. Any rational functional vanishing exactly on those vectors vanishes on every original product solution.\n\nThe source applies this architecture to a cubic lift and the functional 32 v_{0,(0,0,0)}-20 v_{0,(0,0,1)}+3 v_{0,(0,1,1)}. With xi_0=eta_0=1 it yields (eta_1-4)(3 eta_1-8)=0, conditional on the reported large-matrix certificate. A rank computed only modulo p cannot by itself prove a rational identity; nor may one assume intermediate rational kernel bases specialize to full modular bases.\n\n## Role in the source argument\n\nSeparates a manageable finite-field dimension calculation from the exact rational identities needed for the source numerical constraint.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-ratio](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L10)\n- [eq:rational-dimension-upper](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L138)\n- [app:certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/08-certificate.tex#L2)\n\n## Antecedents and comparison\n\nThis is standard exact/modular linear algebra and polynomial lifting. Its value is a transparent verification contract, not a new rank principle.\n\n## Checks and limitations\n\nTwenty-seven exact finite kernel certificates and a negative control where modular annihilation fails over Q.\n\nThe source 8280 by 6820 matrix, its claimed modular rank 6814, and its six rational witnesses have not been recomputed. This card certifies the general logical architecture and bounded models only.\n\n## Possible applications\n\nAuditable computational proofs of polynomial consequences when a direct rational elimination is expensive.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -19356,6 +19714,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000202.md",
       "body": "# Critical local smoothing for the three-dimensional wave equation\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims critical local smoothing for the three-dimensional wave equation and strict-range multiplier consequences.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000366: Flatten a quadratic null hypersurface with an explicit conformal wave chart](../instruments/MI-000366.md)\n- [MI-000367: Transfer labeled masses through cell capacities without exceeding available energy](../instruments/MI-000367.md)\n\n## Dependencies and review\n\nRational coordinate transformations, the Lorentz quadratic form, the wave operator, chain rule and proportional fractional allocation.\n\nRead the full flattening-chart proof, conformal-wave-transport proof and cell-capacity lemma. Symbolic checks cover the algebraic chart identities; the packet localization, spectral projection errors and global smoothing proof are not certified.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\n[Family context](../families/openai-math-079.md) · [Batch B032](../../batches/B032/README.md)"
+    },
+    {
+      "id": "P-000203",
+      "record_type": "paper",
+      "title": "Every complex K3 surface is Oka",
+      "source_collection": "openai/math",
+      "upstream_slug": "Every-complex-K3-surface-is-Oka-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-042"
+      ],
+      "batch_id": "B033",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c2049932e54cb4c0b94b82ca25323a271c9c887b520684a628136b7d0b6f222b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000203.md",
+      "body": "# Every complex K3 surface is Oka\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Every-complex-K3-surface-is-Oka-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every complex K3 surface is Oka.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000368: Match endpoint jets before choosing a thin complex parameter collar](../instruments/MI-000368.md)\n- [MI-000369: Pay for shrinking domains with a quadratic holomorphic splitting recurrence](../instruments/MI-000369.md)\n\n## Dependencies and review\n\nLocal graph sprays, Banach-valued polynomial approximation with endpoint jets, linear dbar solutions, Cauchy estimates and contraction mappings.\n\nRead the complete interval-complexification and quantitative open-gluing arguments. The K3 degeneration and global flexibility argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-042.md) · [Batch B033](../../batches/B033/README.md)"
+    },
+    {
+      "id": "P-000204",
+      "record_type": "paper",
+      "title": "Canonical ampleness of compact hyperbolic Kähler manifolds",
+      "source_collection": "openai/math",
+      "upstream_slug": "Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-051"
+      ],
+      "batch_id": "B033",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "319f0bda68ae90eb3dc03d3453ba42c61558786632d075284bd1c83073011d45",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000204.md",
+      "body": "# Canonical ampleness of compact hyperbolic Kähler manifolds\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/canonical-ampleness.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims canonical ampleness for compact hyperbolic Kahler manifolds.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000370: Recover the central frame determinant from a Green-weighted Ricci integral](../instruments/MI-000370.md)\n- [MI-000371: Pass from trace to log-determinant derivatives through a Sobolev boundary sequence](../instruments/MI-000371.md)\n\n## Dependencies and review\n\nHolomorphic frames, Green identities, local potentials of closed (1,1)-forms, radial Sobolev estimates and finite-area integrability.\n\nRead the conventions and full determinant/trace Hessian proofs, including the nonsmooth boundary passage. Frame existence, the maximizing-disc construction and ampleness arguments were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-051.md) · [Batch B033](../../batches/B033/README.md)"
+    },
+    {
+      "id": "P-000205",
+      "record_type": "paper",
+      "title": "The generalized Mukai conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Generalized-Mukai-Conjecture-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-063"
+      ],
+      "batch_id": "B033",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f2155a2be1508891ef2fc616e26987b4a5bcd7893f8da6d63b713a2dc6123797",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000205.md",
+      "body": "# The generalized Mukai conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Generalized-Mukai-Conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the generalized Mukai inequality and its equality classification.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000372: Remove derivatives of a moving triangular basis by alternating the trace](../instruments/MI-000372.md)\n- [MI-000373: Select a joint eigenvalue wedge and force independent graded operator directions](../instruments/MI-000373.md)\n\n## Dependencies and review\n\nKahler differentials, graded matrix products, simultaneous triangularization, polynomial interpolation on finitely many tuples and bounded gradings.\n\nRead the full alternating-trace, spectral-selector and independent-correspondence proofs and the quantum-operator setup. The argument producing an algebraically independent eigenvalue tuple and the descendant positivity argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-063.md) · [Batch B033](../../batches/B033/README.md)"
+    },
+    {
+      "id": "P-000206",
+      "record_type": "paper",
+      "title": "The Campana–Peternell conjecture in dimension six",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-067"
+      ],
+      "batch_id": "B033",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "00a70dd9bc552bf55b15fa6a40b3c6602207b2de6f61d6882e15a6ff87018bf9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000206.md",
+      "body": "# The Campana–Peternell conjecture in dimension six\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Campana-Peternell conjecture in dimension six.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000374: Express P1 fiber integration as an involution and a divided-difference rule](../instruments/MI-000374.md)\n- [MI-000375: Certify a lifted polynomial consequence with modular rank and rational witnesses](../instruments/MI-000375.md)\n\n## Dependencies and review\n\nLeray-Hirsch, relative Grothendieck-Riemann-Roch, rational cohomology, multiset coordinates, Gaussian elimination and modular reduction at invertible denominators.\n\nRead the full P1-involution proof, arithmetic-certificate argument and certificate appendix description. The source 8280 by 6820 matrix and reported ranks were not recomputed; geometric input equations and final recognition were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-067.md) · [Batch B033](../../batches/B033/README.md)"
     }
   ],
   "families": [
@@ -19970,6 +20404,33 @@
       "body": "# Bloch’s conjecture for surfaces with p_(g) = 0\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000027](../papers/P-000027.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized new strategy\n\nFor every smooth connected projective complex surface with $`p_g=q=0`$, degree is an isomorphism $`CH_0(S)\\to\\mathbb Z`$ with integral coefficients; hence the full Bloch conjecture for $`p_g=0`$ (general type forces $`q=0`$, $`\\kappa<2`$ is Bloch–Kas–Lieberman). For $`p_g=0`$, the stated motivic consequences concern the rational Chow motive $`h(S)_{\\mathbb Q}`$: Kimura-finiteness and vanishing of its transcendental degree-two summand. The pure-Tate conclusions for $`h(S)_{\\mathbb Q}`$, powers $`S^m`$ and Hilbert schemes $`S^{[n]}`$ additionally require $`q=0`$. The integral zero-cycle statement does not imply an integral Tate-motive decomposition. Two unrefereed competing preprints (Guletskii, Banerjee) are cited as “proposed proofs” with no logical dependence.\n\n## Extracted instruments.\n\n- [MI-000062: Marked Chow relation from Quot-scheme localization](../instruments/MI-000062.md)\n\n- [MI-000063: Chow universality with two output factors retained and the universal diagonal coefficient](../instruments/MI-000063.md)\n\n- [MI-000064: Auxiliary-surface comparison via the divisor cosection](../instruments/MI-000064.md)\n\n## Reused.\n\nBloch–Srinivas; Roitman torsion; Graber–Pandharipande; MOP/Oprea–Pandharipande Quot obstruction theories; EGL recursion; Carlsson–Okounkov; Toën–Vaquié and Schürg–Toën–Vezzosi derived moduli; Kiem–Li cosection; Serre’s classification of indefinite unimodular lattices for $`K^{2} \\le 8`$.\n\n## Caveats.\n\nThe diagonal coefficient is a formal choice in a non-unique decomposition; detection is legitimate only because the test class is orthogonal to every divisor appearing, which the paper checks. Derived-geometric foundations (fixed obstruction theory, Manolache compatibility) are asserted in a few pages each. No fresh literature search was completed for two of the instrument comparisons.\n\n## Recorded assessment\n\n- Novelty: new strategy\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no (two unrefereed competing preprints cited, not used)\n- Antecedents: —"
     },
     {
+      "id": "openai-math-042",
+      "record_type": "family",
+      "title": "Thin parameter collars and quantitative holomorphic gluing",
+      "source_family": "042",
+      "source_collection": "openai/math",
+      "batch_id": "B033",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000203"
+      ],
+      "instrument_ids": [
+        "MI-000368",
+        "MI-000369"
+      ],
+      "headline": "The source claims that every complex K3 surface is Oka.",
+      "central_instrument": "Endpoint jet matching makes a real-parameter family compatible across thin complex collars; a quadratic splitting recurrence pays for shrinking base domains.",
+      "novelty_assessment": "Polynomial approximation, Cartan splitting and Newton iteration are classical. The extraction records the order of choices and the explicit loss bookkeeping; no priority or K3 theorem certification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.",
+      "statement_faithfulness": "The complex neighborhood may depend on the approximant. Target approximation requires one fixed spray or a uniform fiber modulus; arbitrary moving sprays do not supply that estimate.",
+      "dependencies": "Local graph sprays, Banach-valued polynomial approximation with endpoint jets, linear dbar solutions, Cauchy estimates and contraction mappings.",
+      "antecedents": "Classical Cartan splitting and holomorphic spray gluing; Forstneric 2013, Section 3.3, gives a directly comparable additive splitting construction.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-042.md",
+      "body": "# Thin parameter collars and quantitative holomorphic gluing\n\n## Source manuscript and claim\n\n[Every complex K3 surface is Oka](../papers/P-000203.md), by OpenAI, September 23, 2026.\n\nThe source claims that every complex K3 surface is Oka.\n\n## Extracted instruments\n\n- [MI-000368: Match endpoint jets before choosing a thin complex parameter collar](../instruments/MI-000368.md)\n- [MI-000369: Pay for shrinking domains with a quadratic holomorphic splitting recurrence](../instruments/MI-000369.md)\n\n## Dependencies and antecedents\n\nLocal graph sprays, Banach-valued polynomial approximation with endpoint jets, linear dbar solutions, Cauchy estimates and contraction mappings.\n\nClassical Cartan splitting and holomorphic spray gluing; Forstneric 2013, Section 3.3, gives a directly comparable additive splitting construction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete interval-complexification and quantitative open-gluing arguments. The K3 degeneration and global flexibility argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\nThe complex neighborhood may depend on the approximant. Target approximation requires one fixed spray or a uniform fiber modulus; arbitrary moving sprays do not supply that estimate.\n\n[Batch record](../../batches/B033/README.md)"
+    },
+    {
       "id": "openai-math-047",
       "record_type": "family",
       "title": "Polynomial cylinder certificates and filtered derivation control",
@@ -20049,6 +20510,87 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-050.md",
       "body": "# From a degenerate squared seminorm to a dynamical measure obstruction\n\n## Source manuscript and claim\n\n[Ample rank-two bundles on the quadric surface without Griffiths-positive metrics](../papers/P-000178.md), by OpenAI, September 24, 2026.\n\nThe source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.\n\n## Extracted instruments\n\n- [MI-000318: Keep the zero-set atoms when turning a squared seminorm into curvature](../instruments/MI-000318.md)\n- [MI-000319: Two odd-order projective maps with a loxodromic product admit no finite invariant measure](../instruments/MI-000319.md)\n\n## Dependencies and antecedents\n\nLevi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.\n\nRaufi and Berndtsson-Paun singular Hermitian metric theory; classical Furstenberg-type concentration of projective invariant measures. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full ruling reduction, logarithmic-curvature proof, invariant-measure proof and explicit matrix lemma. The construction of the quadratic limit and the ampleness proof were not audited.\n\nRead the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nZeros of the seminorm may contribute curvature atoms and cannot be excised. The invariant-measure argument needs a finite positive measure. No numerical threshold for the source bundle family follows from this extraction.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/050.md) · [Batch record](../../batches/B026/README.md)"
+    },
+    {
+      "id": "openai-math-051",
+      "record_type": "family",
+      "title": "Boundary-unitary frames convert disc curvature into determinant and trace identities",
+      "source_family": "051",
+      "source_collection": "openai/math",
+      "batch_id": "B033",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000204"
+      ],
+      "instrument_ids": [
+        "MI-000370",
+        "MI-000371"
+      ],
+      "headline": "The source claims canonical ampleness for compact hyperbolic Kahler manifolds.",
+      "central_instrument": "The determinant of a boundary-unitary frame records a Green-weighted Ricci integral. A Sobolev radial estimate permits a trace boundary limit without assuming boundary derivatives.",
+      "novelty_assessment": "Green identities, determinant curvature and Sobolev trace estimates are classical. The selected boundary bookkeeping is reusable; the global ampleness conclusion is not certified.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.",
+      "statement_faithfulness": "Assume the source holomorphic frame and centered variation have been constructed, with uniform positivity and W1,p regularity for p>2. Curvature has sign R_h=-ddc log det h.",
+      "dependencies": "Holomorphic frames, Green identities, local potentials of closed (1,1)-forms, radial Sobolev estimates and finite-area integrability.",
+      "antecedents": "Classical determinant curvature, planar Green formulas and Sobolev trace arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-051.md",
+      "body": "# Boundary-unitary frames convert disc curvature into determinant and trace identities\n\n## Source manuscript and claim\n\n[Canonical ampleness of compact hyperbolic Kähler manifolds](../papers/P-000204.md), by OpenAI, September 23, 2026.\n\nThe source claims canonical ampleness for compact hyperbolic Kahler manifolds.\n\n## Extracted instruments\n\n- [MI-000370: Recover the central frame determinant from a Green-weighted Ricci integral](../instruments/MI-000370.md)\n- [MI-000371: Pass from trace to log-determinant derivatives through a Sobolev boundary sequence](../instruments/MI-000371.md)\n\n## Dependencies and antecedents\n\nHolomorphic frames, Green identities, local potentials of closed (1,1)-forms, radial Sobolev estimates and finite-area integrability.\n\nClassical determinant curvature, planar Green formulas and Sobolev trace arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the conventions and full determinant/trace Hessian proofs, including the nonsmooth boundary passage. Frame existence, the maximizing-disc construction and ampleness arguments were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\nAssume the source holomorphic frame and centered variation have been constructed, with uniform positivity and W1,p regularity for p>2. Curvature has sign R_h=-ddc log det h.\n\n[Batch record](../../batches/B033/README.md)"
+    },
+    {
+      "id": "openai-math-063",
+      "record_type": "family",
+      "title": "Alternating trace forms detect independent directions without semisimplicity",
+      "source_family": "063",
+      "source_collection": "openai/math",
+      "batch_id": "B033",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000205"
+      ],
+      "instrument_ids": [
+        "MI-000372",
+        "MI-000373"
+      ],
+      "headline": "The source claims the generalized Mukai inequality and its equality classification.",
+      "central_instrument": "An alternating matrix-valued differential trace survives a parameter-dependent conjugation. A polynomial selector isolates one joint eigenvalue tuple and turns a nonzero wedge into independent graded operator directions.",
+      "novelty_assessment": "The trace mechanism has Hochschild generalized-trace and inner-conjugation antecedents. No first-priority claim; the source spectral-production and geometric classification arguments remain unaudited.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.",
+      "statement_faithfulness": "All A_j commute, A_0 commutes with them, the field has characteristic zero, and the differential is taken over C. A_0 need not commute with dA_j or be an idempotent.",
+      "dependencies": "Kahler differentials, graded matrix products, simultaneous triangularization, polynomial interpolation on finitely many tuples and bounded gradings.",
+      "antecedents": "Khalkhali, Very Basic Noncommutative Geometry, generalized trace and Lemma 4.1 on inner automorphisms; the manuscript supplies an elementary differential-form proof.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-063.md",
+      "body": "# Alternating trace forms detect independent directions without semisimplicity\n\n## Source manuscript and claim\n\n[The generalized Mukai conjecture](../papers/P-000205.md), by OpenAI, September 24, 2026.\n\nThe source claims the generalized Mukai inequality and its equality classification.\n\n## Extracted instruments\n\n- [MI-000372: Remove derivatives of a moving triangular basis by alternating the trace](../instruments/MI-000372.md)\n- [MI-000373: Select a joint eigenvalue wedge and force independent graded operator directions](../instruments/MI-000373.md)\n\n## Dependencies and antecedents\n\nKahler differentials, graded matrix products, simultaneous triangularization, polynomial interpolation on finitely many tuples and bounded gradings.\n\nKhalkhali, Very Basic Noncommutative Geometry, generalized trace and Lemma 4.1 on inner automorphisms; the manuscript supplies an elementary differential-form proof. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full alternating-trace, spectral-selector and independent-correspondence proofs and the quantum-operator setup. The argument producing an algebraically independent eigenvalue tuple and the descendant positivity argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\nAll A_j commute, A_0 commutes with them, the field has characteristic zero, and the differential is taken over C. A_0 need not commute with dA_j or be an idempotent.\n\n[Batch record](../../batches/B033/README.md)"
+    },
+    {
+      "id": "openai-math-067",
+      "record_type": "family",
+      "title": "Rational-curve involutions and mixed exact/modular kernel certificates",
+      "source_family": "067",
+      "source_collection": "openai/math",
+      "batch_id": "B033",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000206"
+      ],
+      "instrument_ids": [
+        "MI-000374",
+        "MI-000375"
+      ],
+      "headline": "The source claims the Campana-Peternell conjecture in dimension six.",
+      "central_instrument": "Fiber integration for a smooth P1-fibration becomes an involution and twisted product rule. A lifted polynomial constraint is certified by combining a modular upper bound on kernel dimension with exact rational witnesses.",
+      "novelty_assessment": "Leray-Hirsch, GRR, divided differences and exact/modular linear algebra are established tools. This is extraction of useful certificate structure, not independent certification of the large source calculation or classification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.",
+      "statement_faithfulness": "Cohomology identities use rational coefficients. The P1-fibration need not be a projectivized vector bundle. Modular ranks only bound rational ranks below; exact witness identities remain essential.",
+      "dependencies": "Leray-Hirsch, relative Grothendieck-Riemann-Roch, rational cohomology, multiset coordinates, Gaussian elimination and modular reduction at invertible denominators.",
+      "antecedents": "Classical fiber integration and exact linear-algebra certificates. No first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-067.md",
+      "body": "# Rational-curve involutions and mixed exact/modular kernel certificates\n\n## Source manuscript and claim\n\n[The Campana–Peternell conjecture in dimension six](../papers/P-000206.md), by OpenAI, September 25, 2026.\n\nThe source claims the Campana-Peternell conjecture in dimension six.\n\n## Extracted instruments\n\n- [MI-000374: Express P1 fiber integration as an involution and a divided-difference rule](../instruments/MI-000374.md)\n- [MI-000375: Certify a lifted polynomial consequence with modular rank and rational witnesses](../instruments/MI-000375.md)\n\n## Dependencies and antecedents\n\nLeray-Hirsch, relative Grothendieck-Riemann-Roch, rational cohomology, multiset coordinates, Gaussian elimination and modular reduction at invertible denominators.\n\nClassical fiber integration and exact linear-algebra certificates. No first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full P1-involution proof, arithmetic-certificate argument and certificate appendix description. The source 8280 by 6820 matrix and reported ranks were not recomputed; geometric input equations and final recognition were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\nCohomology identities use rational coefficients. The P1-fibration need not be a projectivized vector bundle. Modular ranks only bound rational ranks below; exact witness identities remain essential.\n\n[Batch record](../../batches/B033/README.md)"
     },
     {
       "id": "openai-math-073",

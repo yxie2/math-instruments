@@ -1,0 +1,46 @@
+{
+  "batch": "B033",
+  "status": "passed",
+  "check_groups": {
+    "endpoint_jets": {
+      "jet_orders": 7,
+      "complex_overlap_models": 21,
+      "scope": "Polynomial endpoint jets and collar exponents only; no manifold-valued approximation theorem tested."
+    },
+    "quadratic_gluing": {
+      "exact_second_order_cancellation": true,
+      "exact_recurrence_steps": 36,
+      "scope": "Quadratic improvement and rescaling; no dbar solution or moving-spray bound certified."
+    },
+    "green_determinant": {
+      "exact_radial_logdet_green_models": 24,
+      "scope": "Curvature sign and normalization; existence of boundary-unitary holomorphic frames is not tested."
+    },
+    "weak_trace_boundary": {
+      "radial_area_and_sobolev_models": 20,
+      "max_quadrature_error": 4.440892098500626e-16,
+      "scope": "Smooth area identities and nonsmooth W1,2 boundary examples; no global canonical ampleness claim tested."
+    },
+    "moving_basis_trace": {
+      "exact_variable_basis_models": 3,
+      "nonsemisimple": true,
+      "nonidempotent_selector": true,
+      "scope": "Exact two-form identities; general proof is the source telescoping argument."
+    },
+    "spectral_selection": {
+      "spectral_and_grading_models": 206,
+      "scope": "Selector multiplicity and grading obstruction; algebraic independence of source quantum eigenvalues is not certified."
+    },
+    "rational_curve_involution": {
+      "exact_ring_product_rule": true,
+      "power_identities": 30,
+      "scope": "Rational cohomology algebra; geometric Leray-Hirsch and GRR inputs are read, not computationally proved."
+    },
+    "modular_certificate": {
+      "exact_kernel_certificates": 27,
+      "modular_only_negative_control": true,
+      "scope": "Certificate architecture only. The source 8280 by 6820 constraint matrix and its reported ranks have NOT been recomputed."
+    }
+  },
+  "limitations": "Selected identities and finite models only; no K3 Oka, canonical ampleness, generalized Mukai or dimension-six classification theorem certified; no Lean build."
+}

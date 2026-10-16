@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B033: eight selected complex-geometric and algebraic mechanisms from families 042, 051, 063 and 067, with explicit limits on the global theorem and large-certificate coverage.
+
 - Added B032: eight selected positive-measure, entropy and transport mechanisms from families 073, 075, 078 and 079, including exact conformal wave identities and finite primal/dual checks.
 
 - Added B031: eight selected averaging, coupling, graphing and chain mechanisms from families 255, 257, 259 and 321, with exact tripod and Fox-matrix checks and explicit classical antecedents.

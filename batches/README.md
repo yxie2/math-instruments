@@ -52,7 +52,9 @@
 
 | [B032](B032/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Fiber pruning, collisions, thermal forms, entropy duality, actual marginals, conformal waves and capacity allocation |
 
-Future rounds use `B033` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B033](B033/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Holomorphic gluing, disc curvature, moving-basis traces, rational-curve involutions and exact/modular certificates |
+
+Future rounds use `B034` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
