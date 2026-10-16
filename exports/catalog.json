@@ -7280,6 +7280,420 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000195.md",
       "body": "# Finite observation scores amplify a variance-to-degree advantage into Boolean correlation\n\n[Family 192](../families/openai-math-192.md) · [Source manuscript](../papers/P-000118.md) · [Batch B011](../../batches/B011/README.md)\n\n## Mathematical content\n\nFor a finite observation F of N independent signs, set H_N=sum X_i, T_F=E[H_N|F] and v(F)=E T_F^2. A positive cell degree bound D means every output indicator has real multilinear degree at most D. Every function of F has that bound, even when different labels yield the same numerical score. Functions of independent observation blocks have degree at most the sum of their cell bounds.\n\nFor M independent copies, Z_M=(sum T_i)/sqrt(Mv) has cell bound MD and conditional score exactly sqrt(Mv)Z_M. The central limit theorem gives Z_M converging to a standard normal, with fourth moment E T_F^4/(Mv^2)+3(M-1)/M. The bound is uniform over M for this fixed F, not over all later amplification stages.\n\nSuppose a fixed rule W on r inputs has output indicators decomposing, on every finite product alphabet, into terms depending on at most d<r inputs. Suppose also it retains variance at least d+eta, eta>0, for independent standardized laws sufficiently close to Gaussian in the stated weak-convergence and uniform-fourth-moment sense. Apply W to r independent M-copy averages. Its new cell bound is dMD and its retained variance is at least Mv(d+eta), increasing v/D by the fixed factor 1+eta/d. Each stage chooses its own sufficiently large finite M; start from one revealed sign and iterate finitely many times.\n\nThe transfer condition follows when a fixed predictor-error function has at most quadratic growth and Gaussian-null discontinuities: clipping gives weak-convergence transfer and fourth moments give uniform integrability. Finally set f=sign(sum T_i), assigning positive sign at zero. Then\n\n$$\\sum_j\\widehat f(\\{j\\})=\\mathbb E|\\sum_iT_i|=\\sqrt{Mv(F)}\\,\\mathbb E|Z_M|,\\qquad\\deg f\\le MD.$$\n\nSince E|Z_M| tends to sqrt(2/pi)>1/2, any v(F)>4C^2D eventually yields signed singleton sum greater than C sqrt(deg f). Positive correlation ensures the readout is nonconstant.\n\n## Role in the source argument\n\nTurns a fixed, possibly tiny local information gain into arbitrarily large violations of a proposed square-root degree bound.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:averaging](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L30)\n- [lem:transfer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L47)\n- [lem:readout](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L71)\n- [prop:amplification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L94)\n\n## Antecedents and comparison\n\nThe conditional score and probability limits are standard; see [Durrett’s fifth-edition author text](https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf). The source combines them with cell-degree bookkeeping and a specific reporting advantage. Related [parity decision-tree bounds](https://arxiv.org/pdf/1506.01055v1) use a different cost measure.\n\n## Checks and limitations\n\nRead the degree expansion, score collision, fourth-moment and stage-order arguments. Exact Fourier calculations for small observation partitions check cell degrees and Boolean readout identities; finite convolutions check averaging scores and the fourth-moment formula.\n\nA reporting rule with a uniform positive gain is a necessary input; arbitrary observations do not amplify. The proof gives no practical uniform copy-count bound. Weak convergence alone is insufficient without the moment control for predictor errors.\n\n## Possible applications\n\nAmplifying local gains in algebraically restricted information extraction and transferring finite-valued statistics into Boolean Fourier lower bounds.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000196",
+      "record_type": "instrument",
+      "title": "An augmented matching cover charges rectangular conflict pruning to corner sets",
+      "forms": [
+        "decomposition",
+        "rank-argument"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-173"
+      ],
+      "source_paper_ids": [
+        "P-000119"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+          "label": "lem:pruning",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L10",
+          "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+        },
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+          "label": "lem:kernel-support",
+          "line": 48,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L48",
+          "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+        },
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+          "label": "eq:pruning-commute",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L183",
+          "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+        },
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+          "label": "eq:pruning-rank-bound",
+          "line": 199,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L199",
+          "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-corner-pruning-rank-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000196.md",
+      "body": "# An augmented matching cover charges rectangular conflict pruning to corner sets\n\n[Family 173](../families/openai-math-173.md) · [Source manuscript](../papers/P-000119.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nLet X be finite with any binary relation. Let R and C be separate copies of subsets of X times X. Declare (p,j) in R and (i,s) in C conflicting when p points to i and s points to j. Let Z contain all intermediate corners (i,j) of conflicts, and H all opposite corners (p,s). A row member (p,j) covers (i,j) if p points to i; a column member (i,s) covers it if s points to j.\n\nThere exist conflict-free survivors R',C', retaining every originally conflict-free member, with\n\n$$|R\\setminus R'|+|C\\setminus C'|\\le |H|+|\\{z\\in Z:z\\text{ is uncovered by }R',C'\\}|.$$\n\nAdjoin copies Z_L,Z_R to the conflict bipartite graph and join original members to the opposite copy whenever they cover a corner. A vertex cover of size at most |Z|+|H| gives the inequality: for every covered corner at least one of its two copies must belong to the cover. Originally conflict-free members are isolated and can be retained.\n\nThe cover bound uses a maximum matching minimizing its number k of original-to-original edges. Its R-to-Z_R and Z_L-to-C parts have maximum sizes ell and t in those respective subgraphs. Introduce generic arrow coefficients a_pi,b_sj and maps L:R to Z, N:Z to C, B:R to H, A:H to C, with entries a_pi,b_sj,b_sj,a_pi along the corresponding corners. They satisfy NL=AB. A common real specialization realizes the needed matching minors and maximum ranks of every local matrix (b_sj).\n\nThe elementary kernel fact is that if D has maximum rank among matrices supported on a fixed pattern T, then x in ker D and y in ker D transpose satisfy x_j y_s=0 for every allowed position (s,j). Otherwise perturbing that one entry increases rank. Apply it to the local blocks: kernel vectors of L supported on an original matched member plus the ell matched row members have independent images under B, all lying in ker A. Thus\n\n$$|H|\\ge k+\\operatorname{rank}A\\ge k+\\operatorname{rank}(NL)\\ge k+\\ell+t-|Z|.$$\n\nThe matching has size k+ell+t; the bipartite matching-cover theorem finishes the charge. The use of maximum rank is local to a prescribed support, not a claim that an arbitrary numerical matrix has this kernel property.\n\n## Role in the source argument\n\nDeletes incompatible row and column witnesses while preserving enough coverage for the source contradiction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:pruning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L10)\n- [lem:kernel-support](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L48)\n- [eq:pruning-commute](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L183)\n- [eq:pruning-rank-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L199)\n\n## Antecedents and comparison\n\nThe generic-rank ingredient is [Edmonds, Theorem 1](https://nvlpubs.nist.gov/nistpubs/jres/71B/jresv71Bn4p241_A1b.pdf). Matching-cover duality is classical. The particular augmented graph and commuting-square charge are the selected candidate combination; targeted searches did not establish an earlier identical lemma.\n\n## Checks and limitations\n\nRead the matching refinement, simultaneous specialization, local kernel step and rank charge. Finite checks construct minimum covers of augmented graphs and check the survivor inequality, including relations with loops and opposite arrows.\n\nThe finite tests do not prove the all-size rank argument or the source headline theorem. Shared variable assignments must satisfy all required nonzero minors simultaneously.\n\n## Possible applications\n\nDeleting incompatible product-indexed witnesses when lost coverage can be balanced by an opposite-corner rank budget.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000197",
+      "record_type": "instrument",
+      "title": "Transitive blowups amplify integer subset deficits with bounded block error",
+      "forms": [
+        "construction",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-173"
+      ],
+      "source_paper_ids": [
+        "P-000119"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+          "label": "lem:blowup",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L151",
+          "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+        },
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+          "label": "eq:internal-block-bound",
+          "line": 168,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L168",
+          "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+        },
+        {
+          "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+          "label": "eq:blowup-sharp",
+          "line": 200,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L200",
+          "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-transitive-blowup-deficit-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000197.md",
+      "body": "# Transitive blowups amplify integer subset deficits with bounded block error\n\n[Family 173](../families/openai-math-173.md) · [Source manuscript](../papers/P-000119.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nFor a finite oriented graph D on n vertices let F(S) be the raw union of out-neighbors of S, and F squared its iteration. Replace every vertex by a transitive tournament of order m, with all external arcs prescribed by D. For a subset U of the blowup, let S be its nonempty-block support. Internal image f in a transitive block satisfies f squared(T) subset f(T), |T|-|f(T)|<=1 and |T|-2|f(T)|+|f squared(T)|<=1.\n\nThe resulting graph G satisfies the unconditional accounting bound\n\n$$|U|+|F_G^2(U)|-2|F_G(U)|\\le m\\bigl(|F_D^2(S)\\setminus F_D(S)|-|F_D(S)\\setminus S|\\bigr)+n.$$\n\nIndeed blocks in F_D(S) are entirely filled by the first image. For the second image, blocks in F_D(S) union F_D squared(S) may be upper-bounded by full blocks, while the remaining supported blocks contribute their internal second image. Their net residual is at most one per block.\n\nConsequently, if D has positive indegree at every vertex and every proper nonempty S has |F_D squared(S) minus F_D(S)|<|F_D(S) minus S|, then taking m>n gives |U|+|F_G squared(U)|<2|F_G(U)| for every proper nonempty U. Proper support gives an integer deficit at most minus one. Full support gives F_G(U)=F_G squared(U)=V(G), so strictness follows directly from |U|<nm. These are conditional hypotheses; this card does not supply a graph satisfying them.\n\n## Role in the source argument\n\nTurns a hypothetical minimal counterexample into a graph with a uniform strict raw-image inequality.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:blowup](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L151)\n- [eq:internal-block-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L168)\n- [eq:blowup-sharp](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L200)\n\n## Antecedents and comparison\n\nThe preceding subset-deficit reduction is related to [Seacrest, Lemma 4](https://arxiv.org/pdf/1808.06293v3), explicitly cited by the source. The selected mechanism is the transitive-block accounting and its bounded additive error, not that earlier reduction.\n\n## Checks and limitations\n\nRead the internal-block identities and support split. Exhaustive small blowups check the unconditional bound for arbitrary oriented base graphs, without assuming the hypothetical strict-deficit graph exists.\n\nRaw images can contain original vertices and first neighbors. Replacing them by strict second neighborhoods invalidates the displayed accounting. The strict conclusion also requires positive indegrees in the full-support case.\n\n## Possible applications\n\nAmplifying discrete set-expansion defects while keeping all internal-block errors uniformly bounded.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000198",
+      "record_type": "instrument",
+      "title": "Planar face imbalance certifies two disjoint incidence states",
+      "forms": [
+        "existence-certificate",
+        "matching"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-180"
+      ],
+      "source_paper_ids": [
+        "P-000120"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "prop:pairs",
+          "line": 245,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L245",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        },
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "eq:flow",
+          "line": 253,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L253",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        },
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "eq:density",
+          "line": 287,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L287",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        },
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "eq:face-defect",
+          "line": 314,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L314",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-planar-two-state-certificate",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000198.md",
+      "body": "# Planar face imbalance certifies two disjoint incidence states\n\n[Family 180](../families/openai-math-180.md) · [Source manuscript](../papers/P-000120.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nLet T be a finite simple sphere triangulation with at least four vertices, a proper black-white face coloring, and no separating triangles. Choose one black face t0 as the outer face and its three vertices as roots. Let A be the other black faces and X the nonroot vertices. Euler counting gives |A|=|X|. A state is a bijection r:A to X with r(t) incident to t.\n\nThere are two states r,s with r(t) different from s(t) for every t. The incidence network has capacity two at each vertex and face and capacity one on each incidence. Its cut condition is\n\n$$\\sum_{t\\in A}\\min(2,|t\\cap S|)\\ge 2|S|\\quad(S\\subseteq X).$$\n\nIntegral flow then gives a two-regular bipartite graph whose alternating cycles split into two disjoint perfect matchings. The capacity-one incidence constraint is essential.\n\nWriting U=V(T) minus S, the cut condition is equivalent to e(U)-b(U)<=2|U|-4, where b(U) counts actual black faces contained in U. In each induced component with at least four vertices, every triangular face is an actual original face because separating triangles are excluded. A nontriangular region with boundary length d, counting edge sides with multiplicity, satisfies |b'-w'|<=d-4: signed boundary counting gives 3(b'-w') as a sum of d signs, with parity giving the sharper cases d=4 and d=5. Combining these inequalities with Euler's formula yields e-b<=2v-4 for that component. The component containing the outer roots satisfies the same bound even if it is just the root triangle. Other components need only e-b<=2v. Summing proves the cut condition.\n\n## Role in the source argument\n\nSupplies a pair of pointwise distinct states used in the source weighted state sum.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:pairs](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L245)\n- [eq:flow](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L253)\n- [eq:density](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L287)\n- [eq:face-defect](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L314)\n\n## Antecedents and comparison\n\nThe state framework precedes this source; see [Hine and Kalman](https://arxiv.org/pdf/1808.06091v1). The flow principle is classical Ford-Fulkerson, cited in the source; its DOI page was not retrievable in this batch. The selected step is the planar density certificate for two disjoint states.\n\n## Checks and limitations\n\nChecked the flow/density equivalence and boundary parity cases. Enumerations on even bipyramids verify every subset cut and explicitly find two disjoint incidence states.\n\nThe result concerns this colored sphere setting and requires the separating-triangle exclusion. A pair of states alone does not prove Hamiltonicity.\n\n## Possible applications\n\nProducing disjoint incidence assignments from planar density bounds and face-color imbalance.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000199",
+      "record_type": "instrument",
+      "title": "A state bijection fixes directed-cycle boundary weight at three",
+      "forms": [
+        "identity",
+        "topological-counting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-180"
+      ],
+      "source_paper_ids": [
+        "P-000120"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "lem:disk",
+          "line": 362,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L362",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        },
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "eq:disk-counts",
+          "line": 379,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L379",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        },
+        {
+          "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+          "label": "eq:matching-disk",
+          "line": 384,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L384",
+          "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-matched-disk-boundary-identity",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000199.md",
+      "body": "# A state bijection fixes directed-cycle boundary weight at three\n\n[Family 180](../families/openai-math-180.md) · [Source manuscript](../papers/P-000120.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nIn the colored sphere triangulation with an outer black triangle and a state r as above, choose in every other black face t one edge directed from r(t) to another vertex of t. Give an oriented edge weight delta(v,w)=+1 if its black incident face lies to the left, and minus one otherwise.\n\nEvery simple directed cycle of selected edges avoids the roots. Its delta-sum is minus three when counterclockwise and plus three when clockwise. Its bounded disk contains no root. If h is the boundary length, I the number of interior vertices, B,W the interior face counts, and l the number of boundary edges with their black face inside, then\n\n$$B+W=2I+h-2,\\qquad 3(B-W)=2l-h,\\qquad B=I+l.$$\n\nThe first two equalities are Euler and signed side counting. The third uses the state: each interior vertex is matched to an interior black face; a boundary vertex is matched to the black face of its selected outgoing edge, inside exactly l times. Conversely each interior black face is matched to an interior or boundary vertex, without duplication. Eliminating I,B,W gives 2l-h=-3. Reversing orientation reverses the signed sum.\n\nThe proof of this identity uses the state bijection and the outer-root convention; it does not need the no-separating-triangle hypothesis used to guarantee two states.\n\n## Role in the source argument\n\nControls cycle weights in the cancellation argument and in the later forest construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:disk](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L362)\n- [eq:disk-counts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L379)\n- [eq:matching-disk](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L384)\n\n## Antecedents and comparison\n\nPlanar state matchings and local clock moves are established in [Hine and Kalman](https://arxiv.org/pdf/1808.06091v1). Euler and face-side counting are classical. The extracted addition is the state-forced equation B=I+l and its exact cycle-weight consequence; priority has not been certified.\n\n## Checks and limitations\n\nRead the bijection argument. Exhaustive states and edge selections on small even bipyramids check the signed cycle sum, and arbitrary cycles provide negative controls for dropping the state condition.\n\nAn arbitrary orientation of the triangulation is not a state selection. The sign depends on traversal orientation, and the bounded disk must be interpreted using the specified outer face.\n\n## Possible applications\n\nControlling weighted cycle cancellations and detecting forbidden cycles from an incidence matching.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000200",
+      "record_type": "instrument",
+      "title": "A reciprocal-logarithm potential pays for overlapping recursive pieces",
+      "forms": [
+        "potential-method",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-181"
+      ],
+      "source_paper_ids": [
+        "P-000121"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+          "label": "eq:split-child-orders",
+          "line": 224,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L224",
+          "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+        },
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+          "label": "eq:split-potential",
+          "line": 245,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L245",
+          "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+        },
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+          "label": "eq:split-potential-subadditivity",
+          "line": 266,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L266",
+          "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-overlap-potential-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000200.md",
+      "body": "# A reciprocal-logarithm potential pays for overlapping recursive pieces\n\n[Family 181](../families/openai-math-181.md) · [Source manuscript](../papers/P-000121.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nLet T>=4 and epsilon=1/32. A binary recursive split of a node of order u>T has positive child orders u1,u2 satisfying u1<=3u/4, u2<u and u1+u2<=u+epsilon*u1/log_2(u)^2. The total order can increase because the two pieces share vertices. Define\n\n$$f(x)=1+\\frac1{\\log_2(T/2)}-\\frac1{\\log_2(\\max\\{x,T/2\\})}.$$\n\nThen 1<=f<=2 and u1 f(u1)+u2 f(u2)<=u f(u). Indeed max(u1,T/2)<=3u/4, so\n\n$$f(u)-f(u_1)\\ge\\frac{\\log_2(4/3)}{\\log_2(u)^2}.$$\n\nMonotonicity bounds f(u2) by f(u); the excess mass costs at most epsilon*u1*f(u)/log_2(u)^2, which is absorbed since epsilon*f(u)<=1/16<log_2(4/3). Telescoping through the tree yields total leaf order at most n f(n)<=n(1+1/log_2(T/2)). This counts repeated vertices at each leaf separately.\n\nIn the source, a sparse vertex boundary B of U creates pieces U union B and V minus U; small |B| supplies the excess-mass hypothesis. The potential statement itself only needs the displayed size conditions and a finite terminating split tree.\n\n## Role in the source argument\n\nKeeps the total size of overlapping boxes close to the original graph order before the later decomposition stages.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:split-child-orders](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L224)\n- [eq:split-potential](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L245)\n- [eq:split-potential-subadditivity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L266)\n\n## Antecedents and comparison\n\nSparse-cut recursion and small-side charging already appear in [Conlon, Fox and Sudakov, Lemma 3.1](https://arxiv.org/pdf/1310.0632v1). This card isolates the source potential for repeated vertex multiplicity; it is not a novelty claim for sparse-cut decomposition itself.\n\n## Checks and limitations\n\nRead the reciprocal-log difference and telescoping argument. Sampled valid child sizes and complete finite recursive trees check subadditivity and the total leaf bound, including nonzero overlaps.\n\nThe precise decay of the allowed overlap and the fixed shrinkage of one child matter. Bounding only the number of levels would lose the sharp multiplicity estimate.\n\n## Possible applications\n\nRecursive decompositions whose pieces share a small boundary, with total volume measured with multiplicity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000201",
+      "record_type": "instrument",
+      "title": "Random pair folding makes a simple quotient with a linear collision budget",
+      "forms": [
+        "construction",
+        "probabilistic-method"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-181"
+      ],
+      "source_paper_ids": [
+        "P-000121"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+          "label": "lem:pair-folding",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L19",
+          "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+        },
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+          "label": "eq:fold-probabilities",
+          "line": 58,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L58",
+          "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+        },
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+          "label": "eq:fold-cross-errors",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L131",
+          "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+        },
+        {
+          "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+          "label": "eq:fold-order",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L38",
+          "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-neighbor-controlled-pair-folding",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000201.md",
+      "body": "# Random pair folding makes a simple quotient with a linear collision budget\n\n[Family 181](../families/openai-math-181.md) · [Source manuscript](../papers/P-000121.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nLet J be a finite simple graph and X_i disjoint vertex sets of sizes m_i>=max(8,a^2), with a>=1. Assume degree_J(x)<=a for every x in their union, and |N_J(v) intersect X_i|<=a for every vertex v and every i, including vertices outside the union. There are pairings within each X_i leaving exactly m_i mod 2 vertices unpaired and at most 2 sum_i m_i edges to delete so that identifying paired vertices gives a simple graph. Every quotient edge has one retained original representative, and its order is |V(J)|-sum_i floor(m_i/2), including isolated vertices.\n\nChoose uniform independent pairings, adding a dummy vertex to an odd set. The probability of one prescribed pair is 1/(m-1) for even m and 1/m for odd m; two disjoint prescribed pairs have probabilities 1/((m-1)(m-3)) and 1/(m(m-2)). Let Z count original edges becoming loops plus unordered edge pairs becoming the same nonloop edge.\n\nLoops and common-endpoint collisions contribute at most (4/7) sum_i a^2. Four-distinct-endpoint collisions inside a single X_i contribute at most (16/35) sum_i a^2. Collisions across two folding sets contribute at most (16/49) sum_i a^2, using e(X_i,X_j)<=a*m_j and sum_j e(X_i,X_j)<=a*m_i. Thus\n\n$$\\mathbb E Z\\le\\frac{332}{245}\\sum_i a^2\\le\\frac{332}{245}\\sum_i m_i<2\\sum_i m_i$$\n\nfor a nonempty family. Delete each loop and all but one edge of each parallel class; s-1<=binom(s,2) shows the deletion count is at most Z. For an empty family use the identity quotient. A degree bound only on paired vertices is insufficient: pairing the m-side of K_{m,a} forces am/2 deletions.\n\n## Role in the source argument\n\nReduces graph order before induction while retaining unique original representatives for later cycle lifting.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:pair-folding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L19)\n- [eq:fold-probabilities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L58)\n- [eq:fold-cross-errors](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L131)\n- [eq:fold-order](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L38)\n\n## Antecedents and comparison\n\nRandom pairing and first-moment cleanup are standard. The selected source package makes both degree and external-neighbor hypotheses explicit and accounts for all collision types. Targeted searches found release-related explanations, but no verified earlier identical lemma.\n\n## Checks and limitations\n\nRead all collision classes, both pairing parities and the cross-set sum. Exact small pairing enumerations check probabilities and expected errors; sampled valid graphs check cleanup and quotient order. Complete bipartite examples check the necessity of external-neighbor control.\n\nThe result alone does not lift quotient cycles to simple original cycles: disjoint reserved connecting paths are a separate requirement. The constant two is a convenient bound, not a sharpness claim.\n\n## Possible applications\n\nControlled graph compression where a simple quotient and a unique representative for each edge are needed.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000202",
+      "record_type": "instrument",
+      "title": "Self-duality converts a mixed packing-covering witness into a full independent cover",
+      "forms": [
+        "reduction",
+        "duality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-185"
+      ],
+      "source_paper_ids": [
+        "P-000122"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+          "label": "lem:selfdual-reduction",
+          "line": 85,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L85",
+          "sha256": "bae0a031c7b396d983b1400ceacca93ebc5710f4bce44327e6497c9022c330d7"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+          "label": "lem:closure-duality",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L45",
+          "sha256": "bae0a031c7b396d983b1400ceacca93ebc5710f4bce44327e6497c9022c330d7"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-duality-source-selected-reduction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000202.md",
+      "body": "# Self-duality converts a mixed packing-covering witness into a full independent cover\n\n[Family 185](../families/openai-math-185.md) · [Source manuscript](../papers/P-000122.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nLet N0,N1 be matroids on the same ground set F, each equal to its dual on these labels. Suppose F=P disjoint union C, there are disjoint S0,S1 contained in P spanning N0 restricted to P and N1 restricted to P, and I0,I1 contained in C cover C and are independent in the respective contractions onto C.\n\nContraction onto C is (Ni dual restricted to C) dual. Self-duality therefore implies Ti=C minus Ii spans Ni restricted to C. Since I0 union I1=C, T0,T1 are disjoint. Put Ai=Si union Ti. Restriction closure, cl_(Ni|X)(S)=cl_Ni(S) intersect X, shows Ai spans all of Ni; the Ai are disjoint. Complements F minus Ai are independent in Ni dual=Ni and cover F.\n\nThus a self-dual pair with no independent covering cannot have any packing/covering partition. Conversely an independent covering itself gives the partition P empty, C=F. The argument works for infinite matroids using the maximal-extension axiom and the usual spanning/dual-complement equivalence; no subtraction of infinite ranks is involved.\n\n## Role in the source argument\n\nReduces the source counterexample task to excluding one simpler global covering condition.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:selfdual-reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L85)\n- [lem:closure-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L45)\n\n## Antecedents and comparison\n\nThe mixed restriction/contraction formulation and its duality framework are established in [Bowler and Carmesin](https://www.math.uni-hamburg.de/spag/dm/papers/PackingCovering.pdf). This is a useful specialization to a self-dual pair, not a claim of a new general duality theorem.\n\n## Checks and limitations\n\nRead the complement and closure steps. Exact enumeration of small self-dual uniform and partition matroids checks the conversion for every tested mixed witness, including different matroids on the same labels.\n\nIsomorphism to a dual after relabeling is insufficient for these same-set complement identities without transporting the witnesses. Finite examples verify the reduction, not an infinite counterexample.\n\n## Possible applications\n\nSimplifying obstruction constructions when duality can make packing and covering interchangeable.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000203",
+      "record_type": "instrument",
+      "title": "A local ultrafilter rank interface excludes independent covers on a double ray",
+      "forms": [
+        "assembly",
+        "well-founded-descent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-185"
+      ],
+      "source_paper_ids": [
+        "P-000122"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+          "label": "eq:outward-rank",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L9",
+          "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+          "label": "eq:ordinal-descent",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L141",
+          "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+          "label": "sec:counterexample",
+          "line": 1,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L1",
+          "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+        }
+      ],
+      "batch_id": "B012",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-conditional-double-ray-rank-assembly",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000203.md",
+      "body": "# A local ultrafilter rank interface excludes independent covers on a double ray\n\n[Family 185](../families/openai-math-185.md) · [Source manuscript](../papers/P-000122.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nAssume a matroid Q on L disjoint union R, both labeled by the same set D, an ultrafilter U on D, and an ordinal-valued rank rho on U antitone under inclusion. Require every basis B of Q to satisfy: if B_L belongs to U, then D minus B_R belongs to U and rho(B_L)>rho(D minus B_R). These are substantive input assumptions.\n\nPlace bundles e_n, each a copy of D, on edges of the double ray with vertices indexed by integers. At vertex n put a copy Q_n on e_(n-1) union e_n, oriented outward from the central bundle e_(-1): for n<=-1 its L side is e_n, while for n>=0 its L side is e_(n-1). The even vertices' supports partition the ground set, as do the odd vertices' supports. Form their two direct-sum matroids M0,M1.\n\nSuppose independent sets of M0,M1 cover the ground set. Shrink one to make a partition. Exactly one endpoint's allocation of the central bundle lies in U. Follow that side outward. If x_k in U is the allocation received at the next vertex and z_k its outward allocation, then x_(k+1)=D minus z_k. Extend this vertex's independent allocation to a basis B. With u=B_L and y=D minus B_R, one has x_k subset u and y subset x_(k+1). Upward closure of U and the basis interface yield\n\n$$\\rho(x_k)\\ge\\rho(u)>\\rho(y)\\ge\\rho(x_{k+1}).$$\n\nThis is an infinite strictly descending sequence of ordinals, a contradiction. Hence the direct sums have no independent cover. If Q is also self-dual, so are the sums, and the preceding reduction rules out a mixed packing/covering partition. The local rank interface suffices for the covering obstruction; self-duality is used for the mixed-partition consequence.\n\n## Role in the source argument\n\nTurns a local basis constraint into a global counterexample after the source constructs the required Q, ultrafilter and rank.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:outward-rank](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L9)\n- [eq:ordinal-descent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L141)\n- [sec:counterexample](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L1)\n\n## Antecedents and comparison\n\nDirect sums, duality and well-founded ordinal descent are standard. [Bowler and Geschke](https://www.math.uni-hamburg.de/home/geschke/papers/UniformMatroid7.pdf) provide earlier self-dual infinite-matroid background with additional hypotheses. The source-specific item isolated here is the outward orientation and inclusion-compatible strict rank propagation, conditional on the local interface.\n\n## Checks and limitations\n\nRead the full assembly argument and the endpoint orientation. Finite bookkeeping checks verify bundle incidence and the inclusion/antitonicity chain in finite rank models. They do not construct the required infinite local matroid or ultrafilter.\n\nThe preceding construction of Q and its ordinal rank is not verified by this card or its script. Weak rank decrease would not contradict an infinite path. No finite-length experiment proves the infinite obstruction.\n\n## Possible applications\n\nAssembling local feasibility rules into global impossibility when every feasible step must decrease a well-founded resource.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -9524,6 +9938,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000118.md",
       "body": "# Unbounded Violations of the Square-Root Degree Bound\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims Boolean functions whose signed singleton Fourier sum exceeds any prescribed constant times the square root of real multilinear degree.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000194: A cancellation report saves degree while retaining more than the revealed-coordinate variance](../instruments/MI-000194.md)\n- [MI-000195: Finite observation scores amplify a variance-to-degree advantage into Boolean correlation](../instruments/MI-000195.md)\n\n## Dependencies and review\n\nFinite observation partitions; conditional scores; output-indicator degree bounds; a cancellation identity; independent variance-one inputs; Gaussian interval estimates; finite-stage normal approximation and a sign readout.\n\nRead the finite-observation calculus, amplification criterion, reporting rule, Gaussian interval construction and finite-input transfer. Later mean-cost, weighted-mixture and small-width variants were not audited.\n\nSquareRootDegree.lean states both unbounded signed violations and unbounded absolute singleton-sum-to-square-root-degree ratios for positive-degree Boolean functions on finite sign cubes. Scope documents and Comparator statements were compared. No Lean solution was built or kernel-checked, and the extracted auxiliary results are not separately certified Comparator targets.\n\n[Family context](../families/openai-math-192.md) · [Batch B011](../../batches/B011/README.md)"
+    },
+    {
+      "id": "P-000119",
+      "record_type": "paper",
+      "title": "A proof of Seymour’s second-neighborhood conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-173"
+      ],
+      "batch_id": "B012",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "05cccecfcdc490b68c443508f7669fbfee1f519874842a8087111c0188599ea9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000119.md",
+      "body": "# A proof of Seymour’s second-neighborhood conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every nonempty finite oriented graph has a vertex with at least as many strict second out-neighbors as first out-neighbors.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000196: An augmented matching cover charges rectangular conflict pruning to corner sets](../instruments/MI-000196.md)\n- [MI-000197: Transitive blowups amplify integer subset deficits with bounded block error](../instruments/MI-000197.md)\n\n## Dependencies and review\n\nBipartite matching and covers; generic matrices with fixed zero patterns; a maximum-rank kernel observation; rank of a composition; transitive tournaments and integer subset deficits.\n\nRead the full pruning proof and transitive-blowup argument. The preceding minimal-counterexample reduction and subsequent incompatibility argument were not completely audited.\n\nSeymourSecondNeighborhood.lean states the finite nonempty loopless asymmetric relation theorem with strict second neighbors excluding the initial vertex and its first neighbors. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\n[Family context](../families/openai-math-173.md) · [Batch B012](../../batches/B012/README.md)"
+    },
+    {
+      "id": "P-000120",
+      "record_type": "paper",
+      "title": "Paired states and Hamiltonian cycles in cubic bipartite planar graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-180"
+      ],
+      "batch_id": "B012",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e66066e34e3c80d5bcb7974d25474842e175d56eb30d9f7754a73637c20a73ab",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000120.md",
+      "body": "# Paired states and Hamiltonian cycles in cubic bipartite planar graphs\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every finite cubic, bipartite, planar, three-vertex-connected graph is Hamiltonian.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000198: Planar face imbalance certifies two disjoint incidence states](../instruments/MI-000198.md)\n- [MI-000199: A state bijection fixes directed-cycle boundary weight at three](../instruments/MI-000199.md)\n\n## Dependencies and review\n\nProper face coloring of a sphere triangulation; capacitated integral flow; boundary edge-side counts; Euler formula; state bijections.\n\nRead the complete paired-state and disk-identity proofs. The weighted cancellation, nonvanishing and final spanning-forest construction were not audited.\n\nBarnetteHamiltonian.lean states existence of a Hamiltonian cycle for finite simple cubic bipartite planar graphs satisfying its three-vertex-connectivity predicate; this is a single spanning cycle, not merely a two-factor. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\n[Family context](../families/openai-math-180.md) · [Batch B012](../../batches/B012/README.md)"
+    },
+    {
+      "id": "P-000121",
+      "record_type": "paper",
+      "title": "A linear cycle-and-edge decomposition of every graph",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-181"
+      ],
+      "batch_id": "B012",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f208ef943ff70a9de34472b796600ef85f62d5ddae4768d555a35ec916b3ef97",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000121.md",
+      "body": "# A linear cycle-and-edge decomposition of every graph\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an absolute constant C such that every finite simple graph on n vertices has an edge partition into at most Cn simple cycles and single edges.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000200: A reciprocal-logarithm potential pays for overlapping recursive pieces](../instruments/MI-000200.md)\n- [MI-000201: Random pair folding makes a simple quotient with a linear collision budget](../instruments/MI-000201.md)\n\n## Dependencies and review\n\nRecursive potential accounting; sparse vertex separators; uniform perfect pairings with a dummy vertex in odd size; loop and parallel-edge collision counts.\n\nRead the overlap-potential argument and complete pair-folding proof. The full routing, batch-resolution and induction arguments were not audited.\n\nCycleDecomposition.lean states existence of an absolute positive linear constant for an exact edge partition into simple cycles and single edges, including edgeless graphs. It does not optimize the constant. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\n[Family context](../families/openai-math-181.md) · [Batch B012](../../batches/B012/README.md)"
+    },
+    {
+      "id": "P-000122",
+      "record_type": "paper",
+      "title": "A Counterexample to the Infinite Matroid Packing/Covering Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-185"
+      ],
+      "batch_id": "B012",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "353c3e4301661a9531b9962d161b04258329b897384c610bec9415060e9bac5d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000122.md",
+      "body": "# A Counterexample to the Infinite Matroid Packing/Covering Conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and review\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\n[Family context](../families/openai-math-185.md) · [Batch B012](../../batches/B012/README.md)"
     }
   ],
   "families": [
@@ -10628,6 +11118,114 @@
       "map_formalization_summary": "original: companion only; see card",
       "path": "catalog/families/openai-math-159.md",
       "body": "# Erdős’s reciprocal-sum conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000050](../papers/P-000050.md)\n\n## Family description\n\nSource status as recorded in the direction paper: original label: companion only; repository also links a headline development, unbuilt new architecture\n\nThe source claims $`r_k(N)\\le C_kN\\exp(-c_k(\\log N)^{\\varepsilon_k})`$ for each fixed $`k\\ge3`$, with $`c_k,\\varepsilon_k>0`$, and hence progressions of every finite length in any set with divergent reciprocal sum. The dyadic deduction is valid: for a $`k`$-progression-free set $`A`$,\n``` math\n\\sum_{n\\in A\\cap[2^j,2^{j+1})}\\frac1n\n \\le 2^{-j}r_k(2^{j+1})\n \\ll_k \\exp(-c'_k j^{\\varepsilon_k}),\n```\nand the last expression is summable in $`j`$. By contrast, $`\\sum_{m\\ge2}\\exp(-(\\log m)^c)`$ diverges for $`0<c\\le1`$ and converges for $`c>1`$. The original discussion of the weaker Leng–Sah–Sawhney log-log bound must be understood in the former range; divergence is not true for every positive $`c`$. The 198-page source uses the LSS inverse theorem as an external input.\n\n## Extracted instruments.\n\n- [MI-000037: Triangular polynomial cells with descending precision budgets](../instruments/MI-000037.md)\n\n- [MI-000038: Shift comparison and positive counting](../instruments/MI-000038.md)\n\n- [MI-000039: Relative lifting with additive rank and exact marked projection](../instruments/MI-000039.md)\n\n## Reused.\n\nLSS inverse theorem; Schoen–Sisask almost-periodicity; Kelley–Meka sifting; Green–Tao polynomial orbits; Leng’s equidistribution; Candela–Sisask densification; CRT prime boxes.\n\n## Caveats.\n\nThe quantitative upper bound was not verified here. The repository documentation links a development for the reciprocal-sum consequence, beyond the lower-bound companion noted in the initial extraction; that development was not built here. The paper claims an improvement from log log to log for every k at once. The trace’s Part I never closed (“circularity concern unresolved”) and Part II ends in “claimed/asserted”. The argument has a long chain of dependencies. An appendix extends LSS to product groups of dimension $`(2+p)^A`$ with a step-drop lemma uniform in parameter count, which the model itself flagged as delicate.\n\n## Recorded assessment\n\n- Novelty: new architecture\n- Formalization: original: lower-bound companion; headline also linked, unbuilt\n- Statement coverage: —\n- Dependencies: no load-bearing\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-173",
+      "record_type": "family",
+      "title": "Rank-charged pruning and transitive blowup deficits",
+      "source_family": "173",
+      "source_collection": "openai/math",
+      "batch_id": "B012",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000119"
+      ],
+      "instrument_ids": [
+        "MI-000196",
+        "MI-000197"
+      ],
+      "headline": "The source claims that every nonempty finite oriented graph has a vertex with at least as many strict second out-neighbors as first out-neighbors.",
+      "central_instrument": "An augmented bipartite cover charges conflict deletion to a second corner set through a commuting matrix square. Transitive blocks amplify a strict subset deficit while costing at most one unit per original vertex.",
+      "novelty_assessment": "Matching-cover duality and generic rank are classical. The candidate packages are the corner-specific pruning charge and the exact blowup accounting; the complete second-neighborhood theorem is not certified here.",
+      "formalization_summary": "SeymourSecondNeighborhood.lean states the finite nonempty loopless asymmetric relation theorem with strict second neighbors excluding the initial vertex and its first neighbors. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.",
+      "statement_faithfulness": "The pruning lemma permits an arbitrary relation. The blowup uses raw image iteration F squared, which must not be confused with the strict second neighborhood in the headline statement.",
+      "dependencies": "Bipartite matching and covers; generic matrices with fixed zero patterns; a maximum-rank kernel observation; rank of a composition; transitive tournaments and integer subset deficits.",
+      "antecedents": "Edmonds identifies matching size with generic matrix rank. Seacrest supplies an earlier minimal-counterexample subset reduction. These do not by themselves establish the selected pruning or blowup conclusions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-173.md",
+      "body": "# Rank-charged pruning and transitive blowup deficits\n\n## Source manuscript and claim\n\n[A proof of Seymour’s second-neighborhood conjecture](../papers/P-000119.md), by OpenAI, September 23, 2026.\n\nThe source claims that every nonempty finite oriented graph has a vertex with at least as many strict second out-neighbors as first out-neighbors.\n\n## Extracted instruments\n\n- [MI-000196: An augmented matching cover charges rectangular conflict pruning to corner sets](../instruments/MI-000196.md)\n- [MI-000197: Transitive blowups amplify integer subset deficits with bounded block error](../instruments/MI-000197.md)\n\n## Dependencies and antecedents\n\nBipartite matching and covers; generic matrices with fixed zero patterns; a maximum-rank kernel observation; rank of a composition; transitive tournaments and integer subset deficits.\n\nEdmonds identifies matching size with generic matrix rank. Seacrest supplies an earlier minimal-counterexample subset reduction. These do not by themselves establish the selected pruning or blowup conclusions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full pruning proof and transitive-blowup argument. The preceding minimal-counterexample reduction and subsequent incompatibility argument were not completely audited.\n\nSeymourSecondNeighborhood.lean states the finite nonempty loopless asymmetric relation theorem with strict second neighbors excluding the initial vertex and its first neighbors. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nThe pruning lemma permits an arbitrary relation. The blowup uses raw image iteration F squared, which must not be confused with the strict second neighborhood in the headline statement.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/173.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-180",
+      "record_type": "family",
+      "title": "Disjoint planar states and a matched disk identity",
+      "source_family": "180",
+      "source_collection": "openai/math",
+      "batch_id": "B012",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000120"
+      ],
+      "instrument_ids": [
+        "MI-000198",
+        "MI-000199"
+      ],
+      "headline": "The source claims that every finite cubic, bipartite, planar, three-vertex-connected graph is Hamiltonian.",
+      "central_instrument": "A capacitated incidence matching is certified by planar face imbalance. A bijection between black triangles and nonroot vertices fixes the signed boundary sum of every selected directed cycle.",
+      "novelty_assessment": "Planar states, matching flows and Euler counting are established. The selected candidate packages are the two-disjoint-state certificate and the exact disk identity. The later cancellation and Hamiltonian construction were not audited.",
+      "formalization_summary": "BarnetteHamiltonian.lean states existence of a Hamiltonian cycle for finite simple cubic bipartite planar graphs satisfying its three-vertex-connectivity predicate; this is a single spanning cycle, not merely a two-factor. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.",
+      "statement_faithfulness": "The paired-state existence result excludes separating triangles. The disk identity requires edges chosen from a state bijection; arbitrary oriented cycles need not satisfy it.",
+      "dependencies": "Proper face coloring of a sphere triangulation; capacitated integral flow; boundary edge-side counts; Euler formula; state bijections.",
+      "antecedents": "Hine and Kalman develop triangulation states and clock moves. Integral max flow and planar face counting provide classical ingredients.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-180.md",
+      "body": "# Disjoint planar states and a matched disk identity\n\n## Source manuscript and claim\n\n[Paired states and Hamiltonian cycles in cubic bipartite planar graphs](../papers/P-000120.md), by OpenAI, September 24, 2026.\n\nThe source claims that every finite cubic, bipartite, planar, three-vertex-connected graph is Hamiltonian.\n\n## Extracted instruments\n\n- [MI-000198: Planar face imbalance certifies two disjoint incidence states](../instruments/MI-000198.md)\n- [MI-000199: A state bijection fixes directed-cycle boundary weight at three](../instruments/MI-000199.md)\n\n## Dependencies and antecedents\n\nProper face coloring of a sphere triangulation; capacitated integral flow; boundary edge-side counts; Euler formula; state bijections.\n\nHine and Kalman develop triangulation states and clock moves. Integral max flow and planar face counting provide classical ingredients. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete paired-state and disk-identity proofs. The weighted cancellation, nonvanishing and final spanning-forest construction were not audited.\n\nBarnetteHamiltonian.lean states existence of a Hamiltonian cycle for finite simple cubic bipartite planar graphs satisfying its three-vertex-connectivity predicate; this is a single spanning cycle, not merely a two-factor. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nThe paired-state existence result excludes separating triangles. The disk identity requires edges chosen from a state bijection; arbitrary oriented cycles need not satisfy it.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/180.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-181",
+      "record_type": "family",
+      "title": "Overlap potentials and low-error vertex folding",
+      "source_family": "181",
+      "source_collection": "openai/math",
+      "batch_id": "B012",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000121"
+      ],
+      "instrument_ids": [
+        "MI-000200",
+        "MI-000201"
+      ],
+      "headline": "The source claims an absolute constant C such that every finite simple graph on n vertices has an edge partition into at most Cn simple cycles and single edges.",
+      "central_instrument": "A logarithmic potential pays for vertex duplication across recursive splits. Random pairings compress graph order while an explicit collision budget preserves a simple quotient.",
+      "novelty_assessment": "Sparse-cut recursion and first-moment collision counting are established. The selected candidate refinements are the overlap-sensitive potential and the folding hypotheses that control external common neighbors.",
+      "formalization_summary": "CycleDecomposition.lean states existence of an absolute positive linear constant for an exact edge partition into simple cycles and single edges, including edgeless graphs. It does not optimize the constant. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.",
+      "statement_faithfulness": "Logarithms in the source are base two. Split pieces may overlap in vertices, counted with multiplicity. Folding preserves isolated quotient vertices and requires neighbor bounds at vertices outside the folding sets too.",
+      "dependencies": "Recursive potential accounting; sparse vertex separators; uniform perfect pairings with a dummy vertex in odd size; loop and parallel-edge collision counts.",
+      "antecedents": "Conlon, Fox and Sudakov use sparse-cut charging in cycle decomposition. The probabilistic method and quotient cleanup are classical; the selected bookkeeping is specific to the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-181.md",
+      "body": "# Overlap potentials and low-error vertex folding\n\n## Source manuscript and claim\n\n[A linear cycle-and-edge decomposition of every graph](../papers/P-000121.md), by OpenAI, September 24, 2026.\n\nThe source claims an absolute constant C such that every finite simple graph on n vertices has an edge partition into at most Cn simple cycles and single edges.\n\n## Extracted instruments\n\n- [MI-000200: A reciprocal-logarithm potential pays for overlapping recursive pieces](../instruments/MI-000200.md)\n- [MI-000201: Random pair folding makes a simple quotient with a linear collision budget](../instruments/MI-000201.md)\n\n## Dependencies and antecedents\n\nRecursive potential accounting; sparse vertex separators; uniform perfect pairings with a dummy vertex in odd size; loop and parallel-edge collision counts.\n\nConlon, Fox and Sudakov use sparse-cut charging in cycle decomposition. The probabilistic method and quotient cleanup are classical; the selected bookkeeping is specific to the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the overlap-potential argument and complete pair-folding proof. The full routing, batch-resolution and induction arguments were not audited.\n\nCycleDecomposition.lean states existence of an absolute positive linear constant for an exact edge partition into simple cycles and single edges, including edgeless graphs. It does not optimize the constant. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nLogarithms in the source are base two. Split pieces may overlap in vertices, counted with multiplicity. Folding preserves isolated quotient vertices and requires neighbor bounds at vertices outside the folding sets too.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/181.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-185",
+      "record_type": "family",
+      "title": "Self-dual covering reductions and ordinal descent along a double ray",
+      "source_family": "185",
+      "source_collection": "openai/math",
+      "batch_id": "B012",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000122"
+      ],
+      "instrument_ids": [
+        "MI-000202",
+        "MI-000203"
+      ],
+      "headline": "The source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.",
+      "central_instrument": "Self-duality turns a mixed packing/covering witness into an independent covering. A local basis interface propagates ultrafilter membership and strict ordinal decrease along one side of a double ray.",
+      "novelty_assessment": "Restriction-contraction duality, direct sums and well-founded descent are established. The source-specific candidate is their local-to-global assembly. This batch treats the ultrafilter-ranked local matroid as an explicit input, not a verified construction.",
+      "formalization_summary": "InfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.",
+      "statement_faithfulness": "Self-duality is equality with the dual on the same labeled ground set. The ordinal descent needs strict decrease on every selected step; finite windows cannot certify an infinite counterexample.",
+      "dependencies": "Infinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.",
+      "antecedents": "Bowler and Carmesin establish packing/covering and intersection equivalences. Bowler and Geschke construct self-dual uniform infinite matroids with additional set-theoretic hypotheses; that is background, not verification of the source local construction in ZFC.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-185.md",
+      "body": "# Self-dual covering reductions and ordinal descent along a double ray\n\n## Source manuscript and claim\n\n[A Counterexample to the Infinite Matroid Packing/Covering Conjecture](../papers/P-000122.md), by OpenAI, September 24, 2026.\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and antecedents\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nBowler and Carmesin establish packing/covering and intersection equivalences. Bowler and Geschke construct self-dual uniform infinite matroids with additional set-theoretic hypotheses; that is background, not verification of the source local construction in ZFC. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nSelf-duality is equality with the dual on the same labeled ground set. The ordinal descent needs strict decrease on every selected step; finite windows cannot certify an infinite counterexample.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/185.md) · [Batch record](../../batches/B012/README.md)"
     },
     {
       "id": "openai-math-192",

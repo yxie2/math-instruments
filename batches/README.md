@@ -13,8 +13,9 @@
 | [B009](B009/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Adaptive return, weighted witnesses, partition compression, signed tests, metric wedges and transport sensitivity |
 | [B010](B010/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Sample gluing, marked pivots, rank budgets, competing trees, scalar encodings, periodic counts, slice projections and exact sampling |
 | [B011](B011/README.md) | 4 new families; 8 instruments; 4 source manuscripts | PSD splitting, matching-cell averaging, weighted cube grading, joint sensitivity and low-degree information reports |
+| [B012](B012/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Rank-charged pruning, transitive blowups, planar states, overlap potentials, pair folding and conditional ordinal descent |
 
-Future rounds use `B012` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B013` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

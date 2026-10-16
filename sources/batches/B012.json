@@ -1,0 +1,338 @@
+{
+  "batch_id": "B012",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T07:33:39.989410+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BarnetteHamiltonian.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BarnetteHamiltonian.lean",
+      "sha256": "e5052fe2044dc8882827a4bc096b08fc997de3142d71f32e11414ae0e44c20e3",
+      "bytes": 1951
+    },
+    {
+      "path": "lean/ComparatorChallenges/CycleDecomposition.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CycleDecomposition.lean",
+      "sha256": "8c40255789147b218565654daa7d4f9ef39824b009d06ec9fb6beb7b45cae0f9",
+      "bytes": 850
+    },
+    {
+      "path": "lean/ComparatorChallenges/InfiniteMatroid.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/InfiniteMatroid.lean",
+      "sha256": "802e9bf69b2c5d9be56f2899ef69f5470910cf059b419d3e8f770f1523cae3a7",
+      "bytes": 1067
+    },
+    {
+      "path": "lean/ComparatorChallenges/InfiniteMatroidCorollaries.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/InfiniteMatroidCorollaries.lean",
+      "sha256": "f58dc50f5ba15e039e1b859c3b217083f9b04a57b7f0ad9ec7160f2a83b92d39",
+      "bytes": 5511
+    },
+    {
+      "path": "lean/ComparatorChallenges/SeymourSecondNeighborhood.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SeymourSecondNeighborhood.lean",
+      "sha256": "fa4a37831405b3fe7f6a88a2dce8918982195ee1757e05e4623055822d36ca98",
+      "bytes": 913
+    },
+    {
+      "path": "lean/docs/173.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/173.md",
+      "sha256": "c377bf61fe64db99f7edf87402ff402bed8c57ffed0a1663ee610e62a276e5a3",
+      "bytes": 920
+    },
+    {
+      "path": "lean/docs/180.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/180.md",
+      "sha256": "e28de79463c5f9ded3cf6e0199749a7377f1d6b88317f7e7f55e66d2c602b4c8",
+      "bytes": 828
+    },
+    {
+      "path": "lean/docs/181.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/181.md",
+      "sha256": "2e322b0000ff85fbb7c09603243df922d38e51b22799f44cddb40ec8f5165285",
+      "bytes": 940
+    },
+    {
+      "path": "lean/docs/185.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/185.md",
+      "sha256": "00d22dbd780928870fe1c9a9a63c31c202ef513df975d1f07bde4ffb2261a64d",
+      "bytes": 1403
+    },
+    {
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/README.md",
+      "sha256": "353c3e4301661a9531b9962d161b04258329b897384c610bec9415060e9bac5d",
+      "bytes": 726
+    },
+    {
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+      "sha256": "bae0a031c7b396d983b1400ceacca93ebc5710f4bce44327e6497c9022c330d7",
+      "bytes": 4654
+    },
+    {
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+      "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f",
+      "bytes": 6507
+    },
+    {
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/README.md",
+      "sha256": "f208ef943ff70a9de34472b796600ef85f62d5ddae4768d555a35ec916b3ef97",
+      "bytes": 644
+    },
+    {
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f",
+      "bytes": 21551
+    },
+    {
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+      "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250",
+      "bytes": 15624
+    },
+    {
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/README.md",
+      "sha256": "05cccecfcdc490b68c443508f7669fbfee1f519874842a8087111c0188599ea9",
+      "bytes": 614
+    },
+    {
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+      "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26",
+      "bytes": 10191
+    },
+    {
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0",
+      "bytes": 16261
+    },
+    {
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/README.md",
+      "sha256": "e66066e34e3c80d5bcb7974d25474842e175d56eb30d9f7754a73637c20a73ab",
+      "bytes": 705
+    },
+    {
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56",
+      "bytes": 36297
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000196",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "label": "lem:pruning",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L10",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+    },
+    {
+      "instrument_id": "MI-000196",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "label": "lem:kernel-support",
+      "line": 48,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L48",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+    },
+    {
+      "instrument_id": "MI-000196",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "label": "eq:pruning-commute",
+      "line": 183,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L183",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+    },
+    {
+      "instrument_id": "MI-000196",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "label": "eq:pruning-rank-bound",
+      "line": 199,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex#L199",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0"
+    },
+    {
+      "instrument_id": "MI-000197",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+      "label": "lem:blowup",
+      "line": 151,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L151",
+      "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+    },
+    {
+      "instrument_id": "MI-000197",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+      "label": "eq:internal-block-bound",
+      "line": 168,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L168",
+      "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+    },
+    {
+      "instrument_id": "MI-000197",
+      "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex",
+      "label": "eq:blowup-sharp",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/01-reduction.tex#L200",
+      "sha256": "755f12523b16a19dd90cd5e26ca37989cd00e58e3eef47c2e7f39d76c9683d26"
+    },
+    {
+      "instrument_id": "MI-000198",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "prop:pairs",
+      "line": 245,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L245",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000198",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "eq:flow",
+      "line": 253,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L253",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000198",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "eq:density",
+      "line": 287,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L287",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000198",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "eq:face-defect",
+      "line": 314,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L314",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000199",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "lem:disk",
+      "line": 362,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L362",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000199",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "eq:disk-counts",
+      "line": 379,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L379",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000199",
+      "path": "preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex",
+      "label": "eq:matching-disk",
+      "line": 384,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/build/paper.tex#L384",
+      "sha256": "03f59643501a21f2b20c138ff10769fde41523008845b2528bf646b4a769dd56"
+    },
+    {
+      "instrument_id": "MI-000200",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+      "label": "eq:split-child-orders",
+      "line": 224,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L224",
+      "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+    },
+    {
+      "instrument_id": "MI-000200",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+      "label": "eq:split-potential",
+      "line": 245,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L245",
+      "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+    },
+    {
+      "instrument_id": "MI-000200",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex",
+      "label": "eq:split-potential-subadditivity",
+      "line": 266,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/splitting.tex#L266",
+      "sha256": "b30ce3a520e2a8ce165c76e6f389313163339271b8a60e4e7315fa29de15b250"
+    },
+    {
+      "instrument_id": "MI-000201",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "label": "lem:pair-folding",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L19",
+      "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+    },
+    {
+      "instrument_id": "MI-000201",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "label": "eq:fold-probabilities",
+      "line": 58,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L58",
+      "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+    },
+    {
+      "instrument_id": "MI-000201",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "label": "eq:fold-cross-errors",
+      "line": 131,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L131",
+      "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+    },
+    {
+      "instrument_id": "MI-000201",
+      "path": "preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex",
+      "label": "eq:fold-order",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/build/sections/folding.tex#L38",
+      "sha256": "5a6040518312eee24e94e0c00a1485fbfdcc632d922c7ad1d12ffc338858e23f"
+    },
+    {
+      "instrument_id": "MI-000202",
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+      "label": "lem:selfdual-reduction",
+      "line": 85,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L85",
+      "sha256": "bae0a031c7b396d983b1400ceacca93ebc5710f4bce44327e6497c9022c330d7"
+    },
+    {
+      "instrument_id": "MI-000202",
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex",
+      "label": "lem:closure-duality",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/02-matroids.tex#L45",
+      "sha256": "bae0a031c7b396d983b1400ceacca93ebc5710f4bce44327e6497c9022c330d7"
+    },
+    {
+      "instrument_id": "MI-000203",
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+      "label": "eq:outward-rank",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L9",
+      "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+    },
+    {
+      "instrument_id": "MI-000203",
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+      "label": "eq:ordinal-descent",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L141",
+      "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+    },
+    {
+      "instrument_id": "MI-000203",
+      "path": "preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex",
+      "label": "sec:counterexample",
+      "line": 1,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L1",
+      "sha256": "af35ed0d1dfef3a22274eb826d3f716cad9eea89b29ac33155231979cf70059f"
+    }
+  ]
+}
