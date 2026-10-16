@@ -17932,6 +17932,343 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000423.md",
       "body": "# Remove cyclic base change by a continuous seam correction\n\n[Family 064](../families/openai-math-064.md) · [Source manuscript](../papers/P-000230.md) · [Batch B039](../../batches/B039/README.md)\n\n## Mathematical content\n\nSuppose f_t admits, after t=u^e, a jointly continuous tube trivialization H_u:T_0 -> T_(u^e), with continuous inverse, H_0=id, fixed central section and f_(u^e) H_u=f_0. The tubes for u and zeta u coincide, where zeta=exp(2 pi i/e). Set J_s=H_(zeta s)^(-1) H_s; this is an automorphism preserving f_0 and J_0=id.\n\nFor t=r^e exp(i theta), 0<=theta<=2 pi, define\n\n$$\\Phi_t=H_{r\\exp(i\\theta/e)}\\circ J_{r\\theta/(2\\pi)}.$$\n\nAt theta=0 this is H_r, and at theta=2 pi it is H_(zeta r) J_r=H_r. Thus the angular seam closes, as does the inverse seam. Joint continuity at u=0 makes both factors tend to identity uniformly in the angle on compact sets, so the central circle collapses continuously. This descends the given trivialization without requiring a deck-equivariant resolution. A finite disk base change can first be normalized to u^e by absorbing its nonvanishing unit.\n\n## Role in the source argument\n\nRemoves a ramified base change after the difficult geometric lifting and tube trivialization have already been obtained.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:remove-base-change](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Topological-triviality-of-mu-constant-families-of-surface-singularities-September-24-2026/build/sections/13-lifting.tex#L166)\n\n## Antecedents and comparison\n\nExplicit continuous gluing using a path of fiber automorphisms. No independent priority claim or assertion that arbitrary discontinuous transports descend.\n\n## Checks and limitations\n\nThree hundred twelve linear transport models with moving fiber functions verify right equivalence, inverses and the seam for e=1,...,6; maximum seam error is about 1.6e-16.\n\nThe tests use full linear spaces, not closed-ball Milnor tubes. They do not construct the required geometric trivialization or certify the source headline theorem.\n\n## Possible applications\n\nDescent of already constructed local trivializations through finite disk covers.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000424",
+      "record_type": "instrument",
+      "title": "Bound an adaptively selected witness set by posterior likelihood ratios",
+      "forms": [
+        "adaptive-posterior-witness-union-bound",
+        "bilinear-two-block-witness"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-105"
+      ],
+      "source_paper_ids": [
+        "P-000231"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+          "label": "lem:posterior",
+          "line": 363,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L363",
+          "sha256": "d65db4486a37ed723fb63b075d2f15d3e60bd7d82fb1136fa26a10ef3fd9d86d"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-posterior-bound-with-explicit-exposure-contract",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000424.md",
+      "body": "# Bound an adaptively selected witness set by posterior likelihood ratios\n\n[Family 105](../families/openai-math-105.md) · [Source manuscript](../papers/P-000231.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nCondition on an exterior record under which child blocks are independent. Child C is marked with probability beta; its raw block has base law P when unmarked and a law of density q_C<=L relative to P when marked. Expose raw blocks and independent extra randomness, but neither marks nor metadata revealing them. Bayes gives\n\n$$\\Pr(C\\text{ marked}\\mid X)=\\frac{\\beta q_C(X_C)}{1-\\beta+\\beta q_C(X_C)}\\le\\frac{\\beta L}{1-\\beta}=:q.$$\n\nA measurable choice of at most m children therefore meets a marked child with probability at most mq. Condition on the exposed data first, sum the conditional probabilities of selected children, then average. The total number of available children does not enter. Coarsening information preserves the bound by the tower property.\n\nIf the ambient space is spanned by child subspaces and two data-dependent bilinear forms differ, choose the first pair of child-supported vectors witnessing their difference. At most two children are involved. If unmarked child spaces survive restriction, disappearance of that difference costs at most 2q.\n\nThese are unconditional bad-event bounds under the stated exterior conditioning. They may be subtracted from a success probability; they need not remain true after conditioning on success.\n\n## Role in the source argument\n\nControls adaptive decoding witnesses without paying for every available child.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:posterior](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L363)\n\n## Antecedents and comparison\n\nElementary Bayes and conditional union bounds. The source contribution being extracted is an explicit information boundary, not a new probability inequality.\n\n## Checks and limitations\n\nSixty-two exact binary data tuples across one to five children check adaptive selection. Revealing a marked event gives a negative control for impermissible conditioning.\n\nThe source sampler must separately establish the conditional independence and density hypotheses.\n\n## Possible applications\n\nAdaptive witnesses selected from observations that only weakly reveal hidden modifications.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000425",
+      "record_type": "instrument",
+      "title": "Amplify bilinear anti-concentration without a dimension loss",
+      "forms": [
+        "quarter-balanced-bilinear-bias",
+        "fresh-hidden-bucket-character-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-105"
+      ],
+      "source_paper_ids": [
+        "P-000231"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+          "label": "lem:bias",
+          "line": 449,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L449",
+          "sha256": "d65db4486a37ed723fb63b075d2f15d3e60bd7d82fb1136fa26a10ef3fd9d86d"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-small-bias-amplification-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000425.md",
+      "body": "# Amplify bilinear anti-concentration without a dimension loss\n\n[Family 105](../families/openai-math-105.md) · [Source manuscript](../papers/P-000231.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nA law on a binary vector space is quarter-balanced if every nonzero linear functional assigns probability at least 1/4 to each bit. If g,h are independent quarter-balanced draws and B is a nonzero bilinear form, then Pr(B(g,h)=b)>=1/16 for both bits. Indeed g lies outside the proper kernel of g -> B(g,.) with probability at least 1/4; conditional on such g, quarter balance of h supplies the second factor. Thus |E(-1)^B(g,h)|<=7/8.\n\nFor R independent products, the parity bias is at most (7/8)^R. Taking R so this is at most 1/2 restores quarter balance for recursive use. More generally, in a hidden sum X=sum_(v in W minus 0) v tensor h_v with independent fresh buckets, every nonzero tensor character sees a nonzero functional in at least one bucket. Its bias is bounded by that bucket's bias, since all other factors have magnitude at most one.\n\nThe dimension does not enter. Revealed information must leave the hidden bucket tapes independent; success or slice conditioning is not automatically permissible.\n\n## Role in the source argument\n\nSeparates the scalar bias budget from the dimension and branching used elsewhere in the sampler.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:bias](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L449)\n\n## Antecedents and comparison\n\n[Naor and Naor](https://doi.org/10.1137/0222053) establish the classical character-wise small-bias framework. The publisher abstract and metadata were checked; no exact priority claim for this elementary bilinear estimate.\n\n## Checks and limitations\n\nTwo hundred forty exact bilinear/distribution models in dimension two check the 7/8 bound and its powers for R=1,3,6.\n\nFinite bias examples do not establish the source recursive sampler or its exposure independence.\n\n## Possible applications\n\nSmall-bias constructions built from balanced factors and independent tensor buckets.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000426",
+      "record_type": "instrument",
+      "title": "Extract a large influence and bound all moderately large influences from juntas",
+      "forms": [
+        "junta-to-influence-extraction",
+        "dimension-independent-influence-list"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-106"
+      ],
+      "source_paper_ids": [
+        "P-000232"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+          "label": "thm:junta",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L61",
+          "sha256": "ed07c534acc0ae4de408696863eb7b57da3e25b8afcb5da5f586cb48809b8999"
+        },
+        {
+          "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+          "label": "lem:influences",
+          "line": 91,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L91",
+          "sha256": "ed07c534acc0ae4de408696863eb7b57da3e25b8afcb5da5f586cb48809b8999"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-orthogonal-projection-consequence-of-austin-juntas",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000426.md",
+      "body": "# Extract a large influence and bound all moderately large influences from juntas\n\n[Family 106](../families/openai-math-106.md) · [Source manuscript](../papers/P-000232.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nFor an L-Lipschitz H:T^s -> [-1,1] in the sup metric, let E_i average coordinate i and D_i(H)=||(I-E_i)H||_2. Austin's theorem provides a coordinate conditional expectation on at most J(L,tau) coordinates with error below tau, independently of s.\n\nFix epsilon>0 and J=J(L,sqrt(epsilon)/2). If H has mean zero and ||H||_2^2>epsilon, choose such a junta G on S. Orthogonality gives ||G||_2^2>3 epsilon/4, while the product-space decomposition gives ||G||_2^2<=sum_(i in S) D_i(H)^2. Hence some D_i(H)>=beta=sqrt(epsilon/(4J)).\n\nApply the junta theorem again with error beta/2. Outside its at most K=J(L,beta/2) coordinates, D_i(H)<=||H-G'||_2<beta/2, since I-E_i is an orthogonal contraction. Thus at most K coordinates have influence at least beta/2. Both beta and K are dimension independent.\n\n## Role in the source argument\n\nProduces bounded influential-coordinate choices before the number of test blocks is fixed.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [thm:junta](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L61)\n- [lem:influences](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L91)\n\n## Antecedents and comparison\n\n[Austin, Theorem 1.1, version 4](https://arxiv.org/pdf/1309.3315v4) was checked directly. Its L1 approximation becomes L2 here because bounded functions satisfy ||f-g||_2^2<=2||f-g||_1. The selected influence argument uses standard product projections.\n\n## Checks and limitations\n\nSeventy-five finite product-space models check the orthogonal variance and outside-junta contraction inequalities.\n\nFinite Boolean-product tests do not prove Austin s continuous theorem or the source graph reduction.\n\n## Possible applications\n\nTurning qualitative dimension-free approximation into a bounded coordinate search in a soundness argument.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000427",
+      "record_type": "instrument",
+      "title": "Make subchain coordinate lists local before using a game soundness bound",
+      "forms": [
+        "simultaneous-subchain-junta-lists",
+        "local-list-collision-soundness-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-106"
+      ],
+      "source_paper_ids": [
+        "P-000232"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+          "label": "lem:subchain-lists",
+          "line": 102,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L102",
+          "sha256": "3450971b49651b851bd1648d5fd6596ec1cab8b1aca0407f7f4f92db76c6d16c"
+        },
+        {
+          "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+          "label": "lem:separated-lists",
+          "line": 149,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L149",
+          "sha256": "3450971b49651b851bd1648d5fd6596ec1cab8b1aca0407f7f4f92db76c6d16c"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-junta-union-and-local-strategy-decoding",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000427.md",
+      "body": "# Make subchain coordinate lists local before using a game soundness bound\n\n[Family 106](../families/openai-math-106.md) · [Source manuscript](../papers/P-000232.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nFor a subchain I of at most s layers, the source phase pullbacks h_(I,t) have Lipschitz constant at most sL independently of alphabet sizes and projection fibers. There are at most (m+1)^s allowed coefficient choices. Apply the junta theorem to each with error gamma and take the union of chosen scalar coordinates. The resulting block lists have total size at most d=max(1,J(sL,gamma)(m+1)^s) and approximate every coefficient choice simultaneously.\n\nChoose the first valid coordinate subset in a fixed ordering, so identical subchain data give identical lists. This is an existence choice used in the proof, not a runtime claim.\n\nFor two separated subchains, leave one separating game occurrence unconditioned. Their lists depend only on the respective own question and fixed background. Pad both to d positions. Each pair of positions defines a deterministic game strategy, of success probability at most sigma. An intersection of projected terminal lists implies success for one such pair, so its probability is at most d^2 sigma. Average over the fixed background. Dependence on the opposite question would invalidate this argument.\n\n## Role in the source argument\n\nConverts analytic approximations into locally decodable bounded lists before coefficient sampling and alignment.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:subchain-lists](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L102)\n- [lem:separated-lists](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L149)\n\n## Antecedents and comparison\n\nDirect combination of Austin junta approximation, deterministic tie-breaking and a standard list-to-strategy union bound. No independent novelty claim.\n\n## Checks and limitations\n\nTwo hundred exact finite projection-game/list models compare the collision event with d^2 times the brute-force optimal game value.\n\nThe source tuple construction must supply the stated locality and projection implications. The full graph hardness proof was not checked.\n\n## Possible applications\n\nSoundness proofs where approximating coordinate sets must remain local to each verifier side.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000428",
+      "record_type": "instrument",
+      "title": "Enforce equality of two matching-edge choices by signed cancellation",
+      "forms": [
+        "signed-permanent-equality-gadget",
+        "boundary-state-completion-factorization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-108"
+      ],
+      "source_paper_ids": [
+        "P-000233"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+          "label": "eq:selector-gadget",
+          "line": 121,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L121",
+          "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+        },
+        {
+          "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+          "label": "eq:selector-boundary-table",
+          "line": 147,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L147",
+          "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "signed-equality-gadget-with-classical-permanent-antecedents",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000428.md",
+      "body": "# Enforce equality of two matching-edge choices by signed cancellation\n\n[Family 108](../families/openai-math-108.md) · [Source manuscript](../papers/P-000233.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nReplace two outer edges of weights w and 1, with distinct endpoints, by three internal rows and columns carrying H=[[-1,-1,1],[-1,-1,1],[1,1,1]]. Attach each outer row to the corresponding first or second internal column and each internal row to its outer column. All boundary weights are 1 except the first incoming weight -2w.\n\nFor used incoming set I and outgoing set O, unequal cardinalities admit no completion. Otherwise the completion sum is (-2w)^(1 in I) times the permanent of H with rows O and columns I deleted. The only nonzero states are I=O=empty, of weight -2, and I=O={1,2}, of weight -2w. All four balanced singleton states cancel.\n\nThus the two original edge choices agree, up to a common factor -2. When many gadgets share outer endpoints, first fix the complete external matching choices. Internal completion sums then factor because their internal vertices are disjoint. Shared outer endpoints are handled by the external matching constraint.\n\n## Role in the source argument\n\nSynchronizes main-graph choices with gate choices in the coefficient selector.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:selector-gadget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L121)\n- [eq:selector-boundary-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L147)\n\n## Antecedents and comparison\n\n[Dell et al., Section 3 and Figure 2](https://arxiv.org/pdf/1206.1775) explicitly use a signed equality gadget with nonzero both/none states and cancellation of the others. Its displayed weights differ from this source normalization. Those selected passages were checked; equality gadgets are not new in principle.\n\n## Checks and limitations\n\nSixty-four exact boundary-state computations cover four weights including zero and negative values.\n\nSigned cancellation is essential. This is not an unweighted matching gadget or a lower-bound proof.\n\n## Possible applications\n\nComposing weighted matching gadgets while retaining exact normalization and interface behavior.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000429",
+      "record_type": "instrument",
+      "title": "Select two prescribed diagonal-shift exponents with linear permanent overhead",
+      "forms": [
+        "linear-size-permanent-coefficient-selector",
+        "two-color-cardinality-gate-projection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-108"
+      ],
+      "source_paper_ids": [
+        "P-000233"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+          "label": "prop:selector",
+          "line": 55,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L55",
+          "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+        },
+        {
+          "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+          "label": "eq:selector-subsets",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L28",
+          "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+        },
+        {
+          "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+          "label": "cor:selector-border",
+          "line": 247,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L247",
+          "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "explicit-permanent-projection-assembly-with-classical-gadgets",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000429.md",
+      "body": "# Select two prescribed diagonal-shift exponents with linear permanent overhead\n\n[Family 108](../families/openai-math-108.md) · [Source manuscript](../papers/P-000233.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nFor k>=1, 0<=q<=floor(k/2), r=k-2q and D=diag(theta_i), put G_D(X)=[s^q t^q] per_k(X+sI+tD). Its subset formula sums (product_(i in T) theta_i) per(X_(C,C)) over disjoint q-sets S,T, where C is their complement. No extra factorial appears in this expansion.\n\nA count gate with k original and h=k-q additional vertices on each side forces exactly q distinguished diagonal edges. Each prescribed q-set has (h!)^2 completions. Use two such gates, one for each color, and 2k signed equality gadgets to synchronize their distinguished edges with the main diagonal choices. The total matrix order is k+2(2k-q)+6k=11k-2q, and\n\n$$\\operatorname{per}(A(X))=(-2)^{2k}((k-q)!)^4 G_D(X).$$\n\nIdentity padding reaches any larger order m. Homogenizing every constant entry gives per B(X,z)=a_0 z^(m-r)G_D(X). Over C, a_0 is nonzero, and any fixed affine substitution Lambda gives bdc(G_D composed with Lambda)<=bdc(per_m): substitute in an approximating determinant sequence and rescale one row. No bound on approximating matrix entries is required.\n\nThe integral coefficient formula specializes to any field, but the projection scalar can vanish in positive characteristic, in particular characteristic two.\n\n## Role in the source argument\n\nTransfers an obstruction for a selected coefficient polynomial to a permanent of linearly larger order.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:selector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L55)\n- [eq:selector-subsets](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L28)\n- [cor:selector-border](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L247)\n\n## Antecedents and comparison\n\nClassical permanent-projection methodology, with an explicit source assembly and normalization. The targeted comparison with [Dell et al.](https://arxiv.org/abs/1206.1775) establishes a gadget antecedent, not novelty of this exact overhead.\n\n## Checks and limitations\n\nTwelve full weighted-matching computations for k=1,2, through order 22, independently compare the constructed matrix permanent with the subset formula, including zero and repeated diagonal parameters.\n\nNo smooth-slice, conductor or cubic complexity lower bound follows from these finite selector checks alone.\n\n## Possible applications\n\nEmbedding fixed coefficient extractions in a larger permanent without an interpolation sum.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000430",
+      "record_type": "instrument",
+      "title": "Turn divergent field decisions into polynomial factors",
+      "forms": [
+        "dynamic-evaluation-zero-test-splitting",
+        "simultaneous-product-field-execution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-142"
+      ],
+      "source_paper_ids": [
+        "P-000234"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+          "label": "ff:simultaneous",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L36",
+          "sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2"
+        },
+        {
+          "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+          "label": "ff:product",
+          "line": 31,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L31",
+          "sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-d5-dynamic-evaluation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000430.md",
+      "body": "# Turn divergent field decisions into polynomial factors\n\n[Family 142](../families/openai-math-142.md) · [Source manuscript](../papers/P-000234.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nLet F in F_p[T] be monic, square-free and split, with unknown roots x_i in F_p, and let k/F_p be explicitly represented. Then A=k[T]/F is a product of copies of k. A deterministic scalar procedure using arithmetic, zero tests and integer control can run simultaneously on all components until it either completes with common decisions or produces a proper factor of F.\n\nFor a zero test of a in A, compute d=gcd(F,a) over k. If d=1, every component is nonzero and extended Euclidean inversion is valid; if d=F, every component is zero. Otherwise d separates the components. Its monic coefficients lie in F_p because its roots are a subset of the original prime-field roots. Degree and pivot choices reduce to coefficient zero tests. Each simulated instruction has polynomial overhead in deg F, [k:F_p] and log p.\n\nThis is a per-instruction overhead statement. It does not by itself bound how many instructions the scalar procedure needs.\n\n## Role in the source argument\n\nLets source algorithms work with unknown roots without assuming a completed factorization; a failed common branch is already useful output.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [ff:simultaneous](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L36)\n- [ff:product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L31)\n\n## Antecedents and comparison\n\nThe source attributes this to D5 dynamic evaluation. [Duval s own research bibliography](https://membres-ljk.imag.fr/Dominique.Duval/Research/evdyn.html) identifies its 1985 introduction by Della Dora, Dicrescenzo and Duval. This is a classical method, not a new extraction discovery.\n\n## Checks and limitations\n\nOne hundred exact polynomial gcd models across four prime fields check component zero sets and unit inversion; 48 yield proper splits.\n\nThe tests use prime-field components only. No deterministic full-factorization runtime is established.\n\n## Possible applications\n\nExecuting algebraic algorithms over unknown components and using divergent pivots as splitting certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000431",
+      "record_type": "instrument",
+      "title": "Extract a cyclic norm solution from a supplied rank-one idempotent",
+      "forms": [
+        "rank-one-idempotent-to-cyclic-norm",
+        "minimal-left-ideal-linear-extraction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-142"
+      ],
+      "source_paper_ids": [
+        "P-000234"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+          "label": "norm:cyclic-algebra",
+          "line": 62,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L62",
+          "sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f"
+        },
+        {
+          "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+          "label": "norm:idempotent-to-norm",
+          "line": 89,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L89",
+          "sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f"
+        }
+      ],
+      "batch_id": "B040",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-cyclic-algebra-linear-extraction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000431.md",
+      "body": "# Extract a cyclic norm solution from a supplied rank-one idempotent\n\n[Family 142](../families/openai-math-142.md) · [Source manuscript](../papers/P-000234.md) · [Batch B040](../../batches/B040/README.md)\n\n## Mathematical content\n\nLet L/K be a cyclic field extension of degree q with generator rho, and let E=sum_(b=0)^(q-1) L V^b be the cyclic algebra with Va=rho(a)V and V^q=G in K*. Suppose E is split and a rank-one idempotent e is supplied.\n\nThe left ideal Ee has K-dimension q. The map L -> Ee, a -> ae, is injective because nonzero a is invertible, and is therefore an isomorphism by dimension. There is a unique h in L with Ve=he, found by solving a linear system in the explicit algebra basis. Iterating with the commutation relation yields\n\n$$G e=V^q e=\\left(\\prod_{j=0}^{q-1}\\rho^j(h)\\right)e.$$\n\nSince e is nonzero, the scalar coefficients agree: N_(L/K)(h)=G. This turns an explicit minimal left ideal into a norm witness without using a previously known splitting isomorphism.\n\n## Role in the source argument\n\nExplains exactly why the source construction of a rank-one idempotent would solve its promised norm equation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [norm:cyclic-algebra](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L62)\n- [norm:idempotent-to-norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L89)\n\n## Antecedents and comparison\n\nStandard cyclic-algebra and minimal-left-ideal linear algebra. No novelty claim or claim that the difficult idempotent can be found from this lemma alone.\n\n## Checks and limitations\n\nSixty exact models over F_7[y]/(y^3-2) use varied rank-one idempotents, solve Ve=he and check the three-conjugate norm identity.\n\nThe tests deliberately supply split representations and idempotents. Their construction over the source rational-function field and its complexity remain unaudited.\n\n## Possible applications\n\nConverting explicit splitting-algebra data into multiplicative norm certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -22304,6 +22641,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000230.md",
       "body": "# Topological triviality of mu-constant families of surface singularities\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Topological-triviality-of-mu-constant-families-of-surface-singularities-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Topological-triviality-of-mu-constant-families-of-surface-singularities-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Topological-triviality-of-mu-constant-families-of-surface-singularities-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims topological triviality of mu-constant families of surface singularities.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000422: Detect an exact Jacobian-algebra length by one finite rank condition](../instruments/MI-000422.md)\n- [MI-000423: Remove cyclic base change by a continuous seam correction](../instruments/MI-000423.md)\n\n## Dependencies and review\n\nNoetherian local algebra, rank strata and continuous families of fiber automorphisms.\n\nRead the complete finite-jet length argument and complete base-change removal proof. The preceding geometric construction of a tube trivialization was not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-064.md) · [Batch B039](../../batches/B039/README.md)"
+    },
+    {
+      "id": "P-000231",
+      "record_type": "paper",
+      "title": "Perfect completeness for 2-to-1 games",
+      "source_collection": "openai/math",
+      "upstream_slug": "Perfect-completeness-for-2-to-1-games-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-105"
+      ],
+      "batch_id": "B040",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2989112f66d1587c516cb6c76b7560a8695180e61f5e79b79deb99e118cf4eaa",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000231.md",
+      "body": "# Perfect completeness for 2-to-1 games\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims perfect-completeness hardness for 2-to-1 games.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000424: Bound an adaptively selected witness set by posterior likelihood ratios](../instruments/MI-000424.md)\n- [MI-000425: Amplify bilinear anti-concentration without a dimension loss](../instruments/MI-000425.md)\n\n## Dependencies and review\n\nProduct likelihood ratios, conditional expectation, bilinearity and independent character multiplication.\n\nRead both selected proofs completely. The sampler construction ensuring their conditional product laws and the complete hardness reduction were not audited.\n\nRead PerfectCompleteness.lean and its binary reduction definitions. The target exists_reduction contains sorry. No Lean build or reduction implementation audit.\n\n[Family context](../families/openai-math-105.md) · [Batch B040](../../batches/B040/README.md)"
+    },
+    {
+      "id": "P-000232",
+      "record_type": "paper",
+      "title": "Hardness of finding large independent sets in three-colorable graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-106"
+      ],
+      "batch_id": "B040",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9e7d330782412a763d0af3aeab378f5aefaa6f374b3bf1ec3810dc72da5872ab",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000232.md",
+      "body": "# Hardness of finding large independent sets in three-colorable graphs\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims hardness of finding large independent sets in three-colorable graphs.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000426: Extract a large influence and bound all moderately large influences from juntas](../instruments/MI-000426.md)\n- [MI-000427: Make subchain coordinate lists local before using a game soundness bound](../instruments/MI-000427.md)\n\n## Dependencies and review\n\nAustin junta approximation, conditional expectation, orthogonal product decompositions and projection-game soundness.\n\nRead the complete influence, bounded-subchain-list and separated-list proofs, and the grid-extension setup. Global alignment and graph soundness were not audited.\n\nRead IndependentSets.lean including binary input/output encodings and the real-threshold reduction target. mainTheoremReal contains sorry. No Lean build.\n\n[Family context](../families/openai-math-106.md) · [Batch B040](../../batches/B040/README.md)"
+    },
+    {
+      "id": "P-000233",
+      "record_type": "paper",
+      "title": "A cubic lower bound for border determinantal complexity of the permanent",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-108"
+      ],
+      "batch_id": "B040",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "02009d06290aacfca1e9a0d12575908ea71964cfc8306f2496ad53a2235207d9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000233.md",
+      "body": "# A cubic lower bound for border determinantal complexity of the permanent\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a cubic lower bound for border determinantal complexity of the permanent.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000428: Enforce equality of two matching-edge choices by signed cancellation](../instruments/MI-000428.md)\n- [MI-000429: Select two prescribed diagonal-shift exponents with linear permanent overhead](../instruments/MI-000429.md)\n\n## Dependencies and review\n\nWeighted perfect matchings, signed boundary tables, count gates and fixed affine substitution.\n\nRead the complete selector proof, including every boundary state and shared-vertex factorization, and the border-model/affine-substitution proofs. The gradient/conductor lower-bound argument was not audited.\n\nRead PermanentCubic.lean and SmoothInitialForm.lean in full. Both main target proofs contain sorry. No Lean build; neither the cubic nor smooth-initial-form lower bound is certified here.\n\n[Family context](../families/openai-math-108.md) · [Batch B040](../../batches/B040/README.md)"
+    },
+    {
+      "id": "P-000234",
+      "record_type": "paper",
+      "title": "Deterministic Polynomial Factorization over Prime Fields",
+      "source_collection": "openai/math",
+      "upstream_slug": "Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-142"
+      ],
+      "batch_id": "B040",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "925be7c0279cf5a4a67441c6e930b8c8a5d742c2042d335fd871799da16f73e3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000234.md",
+      "body": "# Deterministic Polynomial Factorization over Prime Fields\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/Deterministic-Polynomial-Factorization-over-Prime-Fields.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims deterministic polynomial-time factorization over prime fields.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000430: Turn divergent field decisions into polynomial factors](../instruments/MI-000430.md)\n- [MI-000431: Extract a cyclic norm solution from a supplied rank-one idempotent](../instruments/MI-000431.md)\n\n## Dependencies and review\n\nGcds, extended Euclidean inversion, product algebras, cyclic algebras and finite-dimensional linear systems.\n\nRead the complete simultaneous-execution proof and complete idempotent-to-norm proof with its cyclic-algebra setup. Root extraction, idempotent construction, geometric separation and global complexity were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-142.md) · [Batch B040](../../batches/B040/README.md)"
     }
   ],
   "families": [
@@ -23754,6 +24167,60 @@
       "body": "# L = RL = BPL\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000034](../papers/P-000034.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, multi-tape Turing-machine statement new\n\nDeterministic logspace equals randomized logspace, one- and two-sided error. The comparator states exactly $`\\mathrm{L}=\\mathrm{RL}\\wedge\\mathrm{RL}=\\mathrm{BPL}`$ for a multi-tape model with fresh coins per step and polynomial halting on every coin tape. The record stood at Hoza’s $`\\log^{3/2}n/\\sqrt{\\log\\log n}`$. The formalization has a narrower scope than the full construction: the effective compiler and numerical bounds are not formalized, and Lean identifiers are obfuscated, which limits the textual inspection reported here to the statement.\n\n## Extracted instruments.\n\n- [MI-000080: Exact correction and copy hierarchy](../instruments/MI-000080.md)\n\n- [MI-000081: Rank channels and conditional averaging in a shared environment](../instruments/MI-000081.md)\n\n- [MI-000082: Allowance/clock controller with catalytic key equality](../instruments/MI-000082.md)\n\n## Reused.\n\nNilpotent inverse of the configuration graph; k-wise independent hashing; relative property (T) expanders (Shalom, Kassabov); Riesz–Thorin; Carter–Wegman fingerprints; Cook–McKenzie traversal; Lange–McKenzie–Tapp reversibility; catalytic computation (BCKLS).\n\n## Caveats.\n\nThe source contains about 400 KB of text and an eight-step chain of sufficiently large constants. It avoids storing a seed hierarchy, the source of the $`\\log^{3/2}`$ space bound in the comparison made by the initial extraction.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: files; identifiers obfuscated\n- Statement coverage: yes, multi-tape TM, L = RL ∧ RL = BPL\n- Dependencies: no\n- Antecedents: —"
     },
     {
+      "id": "openai-math-105",
+      "record_type": "family",
+      "title": "Adaptive posterior bounds and dimension-free bilinear bias",
+      "source_family": "105",
+      "source_collection": "openai/math",
+      "batch_id": "B040",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000231"
+      ],
+      "instrument_ids": [
+        "MI-000424",
+        "MI-000425"
+      ],
+      "headline": "The source claims perfect-completeness hardness for 2-to-1 games.",
+      "central_instrument": "A likelihood-ratio bound controls a small adaptively chosen witness set. Quarter balance of independent factors produces a dimension-free bilinear bias estimate.",
+      "novelty_assessment": "Bayes, conditional union bounds and character-wise bias amplification are standard. Their precise exposure interface is the useful extraction; no independent priority claim.",
+      "formalization_summary": "Read PerfectCompleteness.lean and its binary reduction definitions. The target exists_reduction contains sorry. No Lean build or reduction implementation audit.",
+      "statement_faithfulness": "Posterior control excludes marks and success-conditioning information. Bias amplification requires independent factor draws and fresh hidden buckets; it is not asserted after arbitrary slice conditioning.",
+      "dependencies": "Product likelihood ratios, conditional expectation, bilinearity and independent character multiplication.",
+      "antecedents": "Classical Bayes and union bounds; Naor-Naor small-bias framework.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-105.md",
+      "body": "# Adaptive posterior bounds and dimension-free bilinear bias\n\n## Source manuscript and claim\n\n[Perfect completeness for 2-to-1 games](../papers/P-000231.md), by OpenAI, September 23, 2026.\n\nThe source claims perfect-completeness hardness for 2-to-1 games.\n\n## Extracted instruments\n\n- [MI-000424: Bound an adaptively selected witness set by posterior likelihood ratios](../instruments/MI-000424.md)\n- [MI-000425: Amplify bilinear anti-concentration without a dimension loss](../instruments/MI-000425.md)\n\n## Dependencies and antecedents\n\nProduct likelihood ratios, conditional expectation, bilinearity and independent character multiplication.\n\nClassical Bayes and union bounds; Naor-Naor small-bias framework. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead both selected proofs completely. The sampler construction ensuring their conditional product laws and the complete hardness reduction were not audited.\n\nRead PerfectCompleteness.lean and its binary reduction definitions. The target exists_reduction contains sorry. No Lean build or reduction implementation audit.\n\nPosterior control excludes marks and success-conditioning information. Bias amplification requires independent factor draws and fresh hidden buckets; it is not asserted after arbitrary slice conditioning.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/105.md) · [Batch record](../../batches/B040/README.md)"
+    },
+    {
+      "id": "openai-math-106",
+      "record_type": "family",
+      "title": "Junta influence extraction and local list decoding",
+      "source_family": "106",
+      "source_collection": "openai/math",
+      "batch_id": "B040",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000232"
+      ],
+      "instrument_ids": [
+        "MI-000426",
+        "MI-000427"
+      ],
+      "headline": "The source claims hardness of finding large independent sets in three-colorable graphs.",
+      "central_instrument": "Dimension-free junta approximation locates and bounds influential coordinates. Deterministically chosen local lists convert collisions into ordinary game strategies.",
+      "novelty_assessment": "Austin supplies the key continuous junta theorem. Influence extraction and the d-squared list bound are standard projection and union-bound consequences.",
+      "formalization_summary": "Read IndependentSets.lean including binary input/output encodings and the real-threshold reduction target. mainTheoremReal contains sorry. No Lean build.",
+      "statement_faithfulness": "The junta lists are soundness-analysis choices, not an efficiently computed part of the reduction. A list must depend only on its own question and fixed background for the strategy bound to apply.",
+      "dependencies": "Austin junta approximation, conditional expectation, orthogonal product decompositions and projection-game soundness.",
+      "antecedents": "Austin Theorem 1.1, extending Friedgut-type junta approximation; classical list decoding.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-106.md",
+      "body": "# Junta influence extraction and local list decoding\n\n## Source manuscript and claim\n\n[Hardness of finding large independent sets in three-colorable graphs](../papers/P-000232.md), by OpenAI, September 24, 2026.\n\nThe source claims hardness of finding large independent sets in three-colorable graphs.\n\n## Extracted instruments\n\n- [MI-000426: Extract a large influence and bound all moderately large influences from juntas](../instruments/MI-000426.md)\n- [MI-000427: Make subchain coordinate lists local before using a game soundness bound](../instruments/MI-000427.md)\n\n## Dependencies and antecedents\n\nAustin junta approximation, conditional expectation, orthogonal product decompositions and projection-game soundness.\n\nAustin Theorem 1.1, extending Friedgut-type junta approximation; classical list decoding. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete influence, bounded-subchain-list and separated-list proofs, and the grid-extension setup. Global alignment and graph soundness were not audited.\n\nRead IndependentSets.lean including binary input/output encodings and the real-threshold reduction target. mainTheoremReal contains sorry. No Lean build.\n\nThe junta lists are soundness-analysis choices, not an efficiently computed part of the reduction. A list must depend only on its own question and fixed background for the strategy bound to apply.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/106.md) · [Batch record](../../batches/B040/README.md)"
+    },
+    {
       "id": "openai-math-107",
       "record_type": "family",
       "title": "Matrix multiplication exponent ω ≤ 9/4",
@@ -23785,6 +24252,33 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-107.md",
       "body": "# Matrix multiplication exponent ω ≤ 9/4\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000028](../papers/P-000028.md)\n- [P-000045](../papers/P-000045.md)\n- [P-000052](../papers/P-000052.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, straight-line definition of $`\\omega`$ over $`\\mathbb{C}`$ new as a proof of an $`\\omega`$ bound\n\n$`\\omega(\\mathbb C)\\le9/4`$, compared with the previous bound 2.371177 cited by the initial extraction. The 13-page argument is non-constructive: it bounds every point of Strassen’s asymptotic spectrum and gives “no competitive finite matrix size”.\n\n## Extracted instruments.\n\n- [MI-000028: Finite separation of a shared leg and the shared-leg entropy inequality](../instruments/MI-000028.md)\n\n- [MI-000029: Spectral growth on polynomial multiplication](../instruments/MI-000029.md)\n\n- [MI-000030: Detecting characters](../instruments/MI-000030.md)\n\n## Reused.\n\nBini interpolation; Strassen’s asymptotic spectrum; combinatorial degeneration; method of types; Clebsch–Gordan exact sequence.\n\n## Caveats.\n\nThe stated theorem concerns $`\\mathbb C`$. The argument bounds spectral profiles through a specified collection of inequalities; a better exponent would require a further argument. No Lean build was performed for this survey.\n\n## Recorded assessment\n\n- Novelty: new as a proof of an ω bound\n- Formalization: supplied; unbuilt here\n- Statement coverage: yes, straight-line programs over ℂ\n- Dependencies: no\n- Antecedents: Alman–Li 2026"
+    },
+    {
+      "id": "openai-math-108",
+      "record_type": "family",
+      "title": "Signed equality gadgets and linear-size coefficient selection",
+      "source_family": "108",
+      "source_collection": "openai/math",
+      "batch_id": "B040",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000233"
+      ],
+      "instrument_ids": [
+        "MI-000428",
+        "MI-000429"
+      ],
+      "headline": "The source claims a cubic lower bound for border determinantal complexity of the permanent.",
+      "central_instrument": "A signed three-by-three gadget enforces equality of edge choices by cancellation. Two cardinality gates select a diagonal-shift coefficient with linear permanent-size overhead.",
+      "novelty_assessment": "Signed permanent gadgets have explicit Valiant and Dell-Husfeldt-Marx-Taslaman-Wahlen antecedents. The source specific count/scalar interface is extracted without a priority certification.",
+      "formalization_summary": "Read PermanentCubic.lean and SmoothInitialForm.lean in full. Both main target proofs contain sorry. No Lean build; neither the cubic nor smooth-initial-form lower bound is certified here.",
+      "statement_faithfulness": "Cancellation concerns sums of completions, not absence of individual matchings. The scalar must be nonzero; the complex projection does not transfer unchanged to characteristic two.",
+      "dependencies": "Weighted perfect matchings, signed boundary tables, count gates and fixed affine substitution.",
+      "antecedents": "Valiant permanent projections; Dell-Husfeldt-Marx-Taslaman-Wahlen Section 3 and Figure 2.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-108.md",
+      "body": "# Signed equality gadgets and linear-size coefficient selection\n\n## Source manuscript and claim\n\n[A cubic lower bound for border determinantal complexity of the permanent](../papers/P-000233.md), by OpenAI, September 24, 2026.\n\nThe source claims a cubic lower bound for border determinantal complexity of the permanent.\n\n## Extracted instruments\n\n- [MI-000428: Enforce equality of two matching-edge choices by signed cancellation](../instruments/MI-000428.md)\n- [MI-000429: Select two prescribed diagonal-shift exponents with linear permanent overhead](../instruments/MI-000429.md)\n\n## Dependencies and antecedents\n\nWeighted perfect matchings, signed boundary tables, count gates and fixed affine substitution.\n\nValiant permanent projections; Dell-Husfeldt-Marx-Taslaman-Wahlen Section 3 and Figure 2. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete selector proof, including every boundary state and shared-vertex factorization, and the border-model/affine-substitution proofs. The gradient/conductor lower-bound argument was not audited.\n\nRead PermanentCubic.lean and SmoothInitialForm.lean in full. Both main target proofs contain sorry. No Lean build; neither the cubic nor smooth-initial-form lower bound is certified here.\n\nCancellation concerns sums of completions, not absence of individual matchings. The scalar must be nonzero; the complex projection does not transfer unchanged to characteristic two.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/108.md) · [Batch record](../../batches/B040/README.md)"
     },
     {
       "id": "openai-math-109",
@@ -24222,6 +24716,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-141.md",
       "body": "# Coefficient extraction and sign recovery using only modular data\n\n## Source manuscript and claim\n\n[Existential–universal real sentences in the counting hierarchy](../papers/P-000170.md), by OpenAI, October 4, 2026.\n\nThe source claims that true existential-universal real sentences with explicit arithmetic circuits belong to a fixed level of the counting hierarchy, independent of input dimension, degree and coefficient height.\n\n## Extracted instruments\n\n- [MI-000302: Extract a multivariate coefficient by averaging over nonzero field elements](../instruments/MI-000302.md)\n- [MI-000303: Recover an integer sign from the first escape of a rounded CRT phase](../instruments/MI-000303.md)\n\n## Dependencies and antecedents\n\nFinite-field character sums, Chinese remaindering, fixed-point rounding and a first-threshold argument. Counting-hierarchy closure and algebraic witness/deformation machinery are separate inputs.\n\nClassical finite multiplicative Fourier inversion; Allender-Buergisser-Kjeldgaard-Pedersen-Miltersen approximate CRT analysis of PosSLP. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete field-coefficient lemma and CRT sign proof. The algebraic witnesses, root labels, deformation argument and hierarchy closure proofs supporting the main theorem were not audited.\n\nNo family-specific Lean scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nCircuits use addition, subtraction and multiplication with signed binary constants, not division or exponentiation gates. Coefficient extraction needs p-1 larger than the degree. Sign recovery requires a modulus-product bound relative to the unknown integer.\n\n[Batch record](../../batches/B024/README.md)"
+    },
+    {
+      "id": "openai-math-142",
+      "record_type": "family",
+      "title": "Dynamic evaluation and extraction of norms from idempotents",
+      "source_family": "142",
+      "source_collection": "openai/math",
+      "batch_id": "B040",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000234"
+      ],
+      "instrument_ids": [
+        "MI-000430",
+        "MI-000431"
+      ],
+      "headline": "The source claims deterministic polynomial-time factorization over prime fields.",
+      "central_instrument": "A divergent field branch becomes a factor in a product algebra. A supplied rank-one idempotent in a split cyclic algebra yields a norm solution by linear algebra.",
+      "novelty_assessment": "Dynamic evaluation is explicitly classical. The idempotent-to-norm step is standard cyclic-algebra linear algebra; obtaining the idempotent is the separate difficult input.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "The simultaneous-execution input polynomial is square-free and split over the prime field. The norm extraction assumes a cyclic field extension and a supplied rank-one idempotent in the split algebra.",
+      "dependencies": "Gcds, extended Euclidean inversion, product algebras, cyclic algebras and finite-dimensional linear systems.",
+      "antecedents": "Della Dora-Dicrescenzo-Duval dynamic evaluation; classical cyclic-algebra norm criterion.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-142.md",
+      "body": "# Dynamic evaluation and extraction of norms from idempotents\n\n## Source manuscript and claim\n\n[Deterministic Polynomial Factorization over Prime Fields](../papers/P-000234.md), by OpenAI, October 4, 2026.\n\nThe source claims deterministic polynomial-time factorization over prime fields.\n\n## Extracted instruments\n\n- [MI-000430: Turn divergent field decisions into polynomial factors](../instruments/MI-000430.md)\n- [MI-000431: Extract a cyclic norm solution from a supplied rank-one idempotent](../instruments/MI-000431.md)\n\n## Dependencies and antecedents\n\nGcds, extended Euclidean inversion, product algebras, cyclic algebras and finite-dimensional linear systems.\n\nDella Dora-Dicrescenzo-Duval dynamic evaluation; classical cyclic-algebra norm criterion. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete simultaneous-execution proof and complete idempotent-to-norm proof with its cyclic-algebra setup. Root extraction, idempotent construction, geometric separation and global complexity were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe simultaneous-execution input polynomial is square-free and split over the prime field. The norm extraction assumes a cyclic field extension and a supplied rank-one idempotent in the split algebra.\n\n[Batch record](../../batches/B040/README.md)"
     },
     {
       "id": "openai-math-143",
