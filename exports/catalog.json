@@ -20937,6 +20937,371 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000495.md",
       "body": "# Compress a Boolean function and choose a bias-controlled small coordinate\n\n[Family 119](../families/openai-math-119.md) · [Source manuscript](../papers/P-000274.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet T_rho be the uniform-cube noise operator, 0<=rho<=1, and H any concave profile on [-1,1]. Sorting the two sections of a Boolean function into their pointwise minimum and maximum preserves its mean and weakly decreases E H(T_rho f). Indeed, noise in the other coordinates leaves the pair center a unchanged and increases its half-spread from |c| to T|f_+-f_-|/2>=|c|. The sum H(a+u)+H(a-u) is even and concave, hence decreases for u>=0. One sorting pass per coordinate yields an increasing function because minimum and maximum preserve monotonicity in already sorted coordinates.\n\nFor an increasing Boolean function of mean m with at least four active coordinates, there is an active coordinate with 0<x=E[f(X)X_i]<=b(m), where b(m)=min{3/8,9/16-|m|/2,1-|m|}. Its two section means are m-x and m+x.\n\nChoose the least active coefficient x. It is at most E[fZ] for Z the average of any four active signs. The values 1,1/2,0,-1/2,-1 have probabilities 1,4,6,4,1 divided by 16. At fixed mean, rearranging positive mass onto the highest values of Z maximizes the correlation. With q=(1-|m|)/2, twice the integral over the top fraction q equals 2q for q<=1/16, q+1/16 up to 5/16, and 3/8 thereafter. These are precisely the three pieces of b(m). Allowing fractional mass at a threshold is a relaxation, so the bound also holds when the function depends on additional coordinates.\n\n## Role in the source argument\n\nRestricts the scalar induction domain in the companion Hellinger argument while retaining output bias.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ind:lem:compression](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L32)\n- [ind:lem:coordinate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L72)\n- [ind:eq:b](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L67)\n\n## Antecedents and comparison\n\n[Anantharam-Bogdanov-Chakrabarti-Jayram-Nair, Proposition 2](https://chandra.ie.cuhk.edu.hk/pub/papers/HC/hel-conj.pdf) proves the one-coordinate compression principle for convex entropy profiles; its proof was read. The source states the concave direction and the explicit four-coordinate bias envelope. No exhaustive novelty claim for that envelope.\n\n## Checks and limitations\n\nAll Boolean functions on four coordinates are tested for the coordinate-correlation relaxation. Increasing functions with four active coordinates are checked for the chosen coefficient and section means. Numerical noise tests compare each compression step under the Hellinger and quadratic concave profiles.\n\nThis verifies the reductions only; the source scalar certificates, dimension induction and continuation proof of Hellinger contraction are not certified.\n\n## Possible applications\n\nReducing a Boolean noise extremal problem to increasing functions and an explicit two-section domain depending on mean.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000496",
+      "record_type": "instrument",
+      "title": "Mix four parity positions by deleting only two mask permutations",
+      "forms": [
+        "finite-field-masked-pair-mixing",
+        "rank-one-walk-character-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-117"
+      ],
+      "source_paper_ids": [
+        "P-000275"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+          "label": "lem:matrix-walk",
+          "line": 81,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L81",
+          "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+        },
+        {
+          "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+          "label": "lem:masked-pair-mixing",
+          "line": 136,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L136",
+          "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+        },
+        {
+          "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+          "label": "eq:four-masked-positions",
+          "line": 126,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L126",
+          "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-spectral-and-interpolation-core-with-source-mask-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000496.md",
+      "body": "# Mix four parity positions by deleting only two mask permutations\n\n[Family 117](../families/openai-math-117.md) · [Source manuscript](../papers/P-000275.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nWork over F_q of characteristic two, q>=4. Let u_j be an evaluation list such that every quadratic form not identically zero on the list vanishes at no more than a lambda_0 fraction of its indices. On the span of block matrices generated by u_j u_j^T, use the random increment h=(c tensor u_j)(e tensor u_j)^T, with c,e independent uniform vectors and j uniform. Its law is invariant under nonzero scalar multiplication.\n\nFor an additive character associated with a linear functional L, write L(h)=c^T M_j e. Averaging first over c gives character expectation q^(-rank M_j). A nontrivial L has a nonzero quadratic entry on the list, so its walk eigenvalue is at most lambda_1=lambda_0+1/q. Centered indicators consequently give the internal-edge estimate <1_D,T1_D>/mu(D)<=mu(D)+lambda_1.\n\nChoose four distinct ordered times t_i, uniform A in the matrix space, and uniform sigma in F_q*. Put alpha_i=1/product_(j!=i)(t_i-t_j) and s_i=(A+t_i h,sigma alpha_i). Quadratic restrictions satisfy sum alpha_i P(A+t_i h)=0, so applying any nonzero F_2-linear functional gives a parity test. Each s_i is uniform.\n\nConditioning on the first complete position preserves the time and direction laws. The second position changes space by (b-a)h and mask by alpha_b/alpha_a. Scalar invariance separates these changes. At fixed distinct a,b,c, with k=(b-c)/(a-c), the ratio alpha_a/alpha_b=k(b-d)/(a-d) runs uniformly through F_q* minus {k,k^2}. The omitted values are distinct in characteristic two. On centered mask functions the sum of all multiplicative permutations is zero; deleting two gives operator norm at most 2/(q-3). Thus every pair operator has centered norm at most max{lambda_1,2/(q-3)}. For q=4 the bound is valid but need not be useful.\n\n## Role in the source argument\n\nProduces pairwise mixing binary parity queries for the hardness source from its quadratic evaluation pencil.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:matrix-walk](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L81)\n- [lem:masked-pair-mixing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L136)\n- [eq:four-masked-positions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L126)\n\n## Antecedents and comparison\n\n[Alon-Chung, Lemma 2.3](https://www.cs.tau.ac.il/~nogaa/PDFS/Publications/Explicit%20construction%20of%20linear%20sized%20tolerant%20networks.pdf) supplies the centered-indicator spectral calculation; the retrieved author PDF is the 2006 reprint and its proof was read. Finite-field character orthogonality and Lagrange interpolation are classical. The source mask-ratio calculation was read directly.\n\n## Checks and limitations\n\nExact finite-field enumeration verifies bilinear character averages, four-point quadratic cancellation and every excluded-value set over F_8. Numerical singular values check the finite mask operators.\n\nThese checks do not construct the required large evaluation pencil or validate the complete constant-factor hardness reduction.\n\n## Possible applications\n\nTurning low-degree field queries into binary parity tests while retaining pairwise spectral mixing.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000497",
+      "record_type": "instrument",
+      "title": "Repair squared-distance triangles by integrating local Gaussian kernels",
+      "forms": [
+        "multiscale-gaussian-triangle-repair",
+        "local-logarithmic-hilbert-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-117"
+      ],
+      "source_paper_ids": [
+        "P-000276"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+          "label": "lem:repair",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L18",
+          "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+        },
+        {
+          "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+          "label": "rep:eq:gram",
+          "line": 47,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L47",
+          "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+        },
+        {
+          "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+          "label": "rep:eq:local",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L38",
+          "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "schoenberg-kernel-core-with-source-repair-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000497.md",
+      "body": "# Repair squared-distance triangles by integrating local Gaussian kernels\n\n[Family 117](../families/openai-math-117.md) · [Source manuscript](../papers/P-000276.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nPartition a finite set into charts. Within each chart let delta be a nonnegative multiple of an L1 distance, and put delta=infinity between charts. Suppose Hilbert vectors P_v satisfy <P_v-P_z,P_y-P_z>>=-min{r,delta(v,z),delta(y,z)} for r>0.\n\nDefine a Gram matrix <q_v,q_w>=4 integral_0^r exp(-delta(v,w)/l) dl, interpreting exp(-infinity)=0. An L1 distance is a squared Hilbert distance, and Gaussian kernels on Hilbert points are positive semidefinite. Block sums across charts and integration preserve this property, so q_v exist.\n\nFor a=delta(v,z), b=delta(y,z), the triangle inequality implies 1-exp(-a/l)-exp(-b/l)+exp(-delta(v,y)/l)>=(1-exp(-a/l))(1-exp(-b/l)). On 0<l<min{r,a,b}, the right side is at least (1-e^(-1))^2. Thus <q_v-q_z,q_y-q_z>>=4(1-e^(-1))^2 min{r,a,b}>=min{r,a,b}. Appending q_v eliminates every negative angle. Consequently d(v,w)=||P_v-P_w||^2+||q_v-q_w||^2 satisfies all triangle inequalities and is of negative type.\n\nThe correction distance equals 8 integral_0^r [1-exp(-delta(v,w)/l)] dl. It is at most 8r globally and at most 8t[1+log(r/t)] when t=delta(v,w) lies in (0,r]. At t=0 it vanishes. This follows by bounding the integrand by min{1,t/l}. The local defect hypothesis is what permits this vanishing short-distance correction.\n\n## Role in the source argument\n\nRepairs the companion gap construction without overwhelming its small within-chart distances.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:repair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L18)\n- [rep:eq:gram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L47)\n- [rep:eq:local](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L38)\n\n## Antecedents and comparison\n\n[Schoenberg, Metric Spaces and Positive Definite Functions](https://pages.stat.wisc.edu/~wahba/stat860/pdf1/schoenberg.1938.pdf), printed pages 524-525 and equation (4), proves Gaussian positive definiteness; those scanned pages were visually inspected. The scale integral and defect compensation are the selected source argument. No exhaustive novelty claim for this combination.\n\n## Checks and limitations\n\nFinite chart models numerically check the Gram spectrum, angle compensation, triangle inequalities and the logarithmic local bound. An initial squared-distance example violates a triangle before correction.\n\nNumerical quadrature is not a general positivity certificate. The source proof supplies the analytic argument; the rest of the integrality-gap construction is not certified.\n\n## Possible applications\n\nRepairing nearly metric squared-Hilbert distances when defects decay with a known chart metric.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000498",
+      "record_type": "instrument",
+      "title": "Pay for rare radius guesses with disjoint client populations",
+      "forms": [
+        "population-radius-amortization",
+        "persistent-leaf-guess-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-125"
+      ],
+      "source_paper_ids": [
+        "P-000277"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+          "label": "sam:computable-radius",
+          "line": 66,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L66",
+          "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+        },
+        {
+          "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+          "label": "sam:radius-budget",
+          "line": 235,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L235",
+          "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+        },
+        {
+          "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+          "label": "sam:third-menu-budget",
+          "line": 248,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L248",
+          "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "cglss-sampling-antecedent-with-source-population-budget",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000498.md",
+      "body": "# Pay for rare radius guesses with disjoint client populations\n\n[Family 125](../families/openai-math-125.md) · [Source manuscript](../papers/P-000277.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nLet P=sum_(p in D) d(p,O)>0 be the cost of a comparison facility set, and let m>=1. For a sampled client w define q(w)=min{q>=0:q |D intersect B(w,q)|>=P/m}. If d_1<=...<=d_n are its distances to clients, including itself, then q(w)=min_j max{d_j,P/(mj)}. Closed balls make this minimum attained.\n\nFor r=d(w,O), a correct guessed radius lies in [r,(1+kappa)r+kappa q(w)], with 0<kappa<=1. Attach a persistent leaf at w with that edge length. The source uses three finite menus. The expensive menu applies only when r>10q(w) and the distance to every earlier leaf exceeds 10r; it chooses j=ceil(r/(kappa q(w))) with probability proportional to 2^(-j).\n\nThe closed client balls of all expensive additions are disjoint. Otherwise two centers satisfy d(w_a,w_b)<=q_a+q_b<(r_a+r_b)/10. Lipschitzness of distance to O gives 9/11<r_a/r_b<11/9, and the earlier correct leaf would be within 3r_b of the later center, contradicting the menu condition. Every client in one such ball contributes more than 0.9r to P. The population inequality therefore yields sum r/q<=10m/9, and at most m additions give sum j<=(10/(9kappa)+1)m.\n\nIf every other menu choice costs at most a fixed factor c_kappa and each expensive entry has probability at least c_kappa 2^(-j), the product of prescribed menu probabilities is at least c_kappa^m 2^(-(10/(9kappa)+1)m). This holds for adaptive leader order. It bounds radius-guess losses only; a separate argument must supply useful leaders and certify a successful terminal prefix. Removing earlier leaves invalidates the disjointness argument.\n\n## Role in the source argument\n\nRemoves an aspect-ratio or m log m loss from the source radius-guessing probability.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [sam:computable-radius](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L66)\n- [sam:radius-budget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L235)\n- [sam:third-menu-budget](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L248)\n\n## Antecedents and comparison\n\n[Cohen-Addad et al., arXiv:2503.10972v2](https://arxiv.org/pdf/2503.10972v2), Section 4 overview and Section 4.3.1, supply the sampled leaders and dummy-center construction; those passages were read. The source adds the population radius and amortized geometric menu. This targeted comparison does not establish first priority for that refinement.\n\n## Checks and limitations\n\nExact finite line metrics verify the radius formula, nontrivial expensive-menu sequences, disjointness and the total index budget. A repeated leader after deleting its earlier leaf demonstrates the need for persistence.\n\nThe tests do not validate the source guide-progress, submodular completion or approximation factor.\n\n## Possible applications\n\nSampling a sequence of unknown geometric scales when disjoint populations can charge the total logarithm of the guessing probability.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000499",
+      "record_type": "instrument",
+      "title": "Compress a finite distribution while preserving chosen rational features",
+      "forms": [
+        "exact-affine-support-reduction",
+        "rational-moment-preserving-derandomization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-125"
+      ],
+      "source_paper_ids": [
+        "P-000278"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+          "label": "lem:affine-support",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L26",
+          "sha256": "c7dd611ea248e3ec1350ac07deba42ab89245b0dd5c3716b6785d2957bd88ebf"
+        },
+        {
+          "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+          "label": "eq:compression-denominator",
+          "line": 67,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L67",
+          "sha256": "c7dd611ea248e3ec1350ac07deba42ab89245b0dd5c3716b6785d2957bd88ebf"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "constructive-caratheodory-and-moment-matching",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000499.md",
+      "body": "# Compress a finite distribution while preserving chosen rational features\n\n[Family 125](../families/openai-math-125.md) · [Source manuscript](../papers/P-000278.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nFor finite states s_i with rational probability weights lambda_i and rational feature vectors v_i in Q^d, replace the distribution by one supported on at most d+1 of the same states, preserving total mass and E v exactly.\n\nWhile more than d+1 positive weights remain, find an integral affine dependence z with sum z_i=0 and sum z_i v_i=0. Such a nonzero dependence has both signs. Set t=min_(z_i>0) lambda_i/z_i and lambda'_i=lambda_i-t z_i. The new weights are nonnegative, preserve the features, and eliminate a positive-support state.\n\nA dependence can be chosen on at most d+2 columns of the augmented feature matrix. Clearing denominators and using minors bounds its bit length polynomially in the original feature encoding. If lambda_i=b_i/D and j attains the minimum, the updated common denominator can be D z_j, with numerators b_i z_j-b_j z_i. Each step adds only a polynomial number of denominator bits, and there are at most M steps. This gives exact polynomial bit complexity for a given finite input list.\n\nEvery property true of every retained state survives. Only the chosen feature expectations are preserved: products, correlations and future adaptive transitions need not be. A sequential derandomization must include the statistics needed at each stage rather than assuming the whole law survives compression.\n\n## Role in the source argument\n\nKeeps the companion derandomization distribution lists polynomially supported while retaining the moments used by its estimates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:affine-support](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L26)\n- [eq:compression-denominator](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L67)\n\n## Antecedents and comparison\n\n[Bayer-Teichmann, The proof of Tchakaloff's Theorem](https://arxiv.org/pdf/math/0502473), Corollary 2 and Remark 2, give finite moment matching with mass included as an extra feature; these passages were read. The elimination is the classical constructive Caratheodory proof. The source records an explicit rational denominator bound.\n\n## Checks and limitations\n\nExact rational models verify support reduction, all chosen expectations and denominator updates. A distribution with preserved first moment but changed second moment is a control against preserving unlisted statistics.\n\nThis does not validate whether the companion full algorithm retains every feature needed for its adaptive analysis.\n\n## Possible applications\n\nFinite derandomization, sparse quadrature and scenario reduction with an explicit finite set of required statistics.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000500",
+      "record_type": "instrument",
+      "title": "Pass to a minimal idempotent corner without losing unit lifts",
+      "forms": [
+        "minimal-idempotent-unit-lifting",
+        "relation-corner-restriction-isomorphism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-129"
+      ],
+      "source_paper_ids": [
+        "P-000279"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+          "label": "amp:minimal-corner",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L28",
+          "sha256": "25e009e4373861790ddb7443a768bda3297a7840490c56fba365f9e5133aa6c4"
+        },
+        {
+          "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+          "label": "amp:relation-corner",
+          "line": 65,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L65",
+          "sha256": "25e009e4373861790ddb7443a768bda3297a7840490c56fba365f9e5133aa6c4"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "elementary-finite-semigroup-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000500.md",
+      "body": "# Pass to a minimal idempotent corner without losing unit lifts\n\n[Family 129](../families/openai-math-129.md) · [Source manuscript](../papers/P-000279.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nLet theta:A->M be a surjective multiplicative map from a finite semigroup to a monoid, and let q in M be idempotent. An idempotent preimage exists because every element of a finite semigroup has an idempotent positive power. Choose a minimal such d under e<=d meaning ed=de=e. Restriction gives a unital surjection dAd->qMq.\n\nEvery w in dAd whose image is a unit is itself a unit. An idempotent power w^k has image a unit idempotent, hence q; it lies below d, so minimality forces w^k=d. Then w^(k-1) is an inverse, with k=1 giving w=d. Thus units lift within this selected corner. An arbitrary idempotent preimage does not have this property.\n\nFor the full relation monoid R_H, let P^2=P and i=I_F for F subset H, with iPi=i. Set Q=PiP. Then Q^2=Q, PQ=QP=Q, and restriction Z->iZi is a unital isomorphism Q R_H Q -> R_F, inverse A->PAP. For Z=QZQ, the identity Z=PiZiP proves injectivity; for A supported on F, i(PAP)i=A. Moreover (PAP)(PBP)=PABP, using P^2=P and iPi=i. This isolates the smaller relation monoid while preserving multiplication and the local identity.\n\n## Role in the source argument\n\nAllows the nondeterministic source amplification to restrict to smaller relation images and still lift their permutations.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [amp:minimal-corner](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L28)\n- [amp:relation-corner](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L65)\n\n## Antecedents and comparison\n\nThe proof uses elementary idempotent-power and corner arguments from finite-semigroup theory. The complete selected source proofs were read. A targeted search did not determine the earliest reference for this exact combined formulation; it is not labeled a new semigroup theorem.\n\n## Checks and limitations\n\nFinite transformation-semigroup products test minimal idempotents and all their unit preimages. Exact enumeration of small binary relations checks corner restriction, multiplication and both inverse identities. A nonminimal corner is a control.\n\nThe check does not establish the source path-diagram transport, nested-chain bound or exponential state loss.\n\n## Possible applications\n\nInductive semigroup arguments requiring a smaller image monoid and reliable lifting of its symmetries.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000501",
+      "record_type": "instrument",
+      "title": "Turn deterministic sink reachability into one tree contour tour",
+      "forms": [
+        "functional-graph-sink-tree",
+        "cyclic-incidence-reversible-tour"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-129"
+      ],
+      "source_paper_ids": [
+        "P-000280"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+          "label": "lem:sink-tree",
+          "line": 57,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L57",
+          "sha256": "1bd484da75a974633246a35d5681bbafead91bb0697bba625894185329a960bf"
+        },
+        {
+          "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+          "label": "lem:tree-tour",
+          "line": 128,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L128",
+          "sha256": "1bd484da75a974633246a35d5681bbafead91bb0697bba625894185329a960bf"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-configuration-tree-traversal",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000501.md",
+      "body": "# Turn deterministic sink reachability into one tree contour tour\n\n[Family 129](../families/openai-math-129.md) · [Source manuscript](../papers/P-000280.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nLet sigma be a partial function on a finite set and let t have no successor. Make an undirected multigraph with one edge for each defined successor, retaining loops and parallel edges. A vertex is in the component of t exactly when its successor orbit reaches t. Indeed, membership in the basin of t is constant across every successor edge. Every vertex of that component except t has exactly one successor, so a component of v vertices has v-1 edges and is a tree.\n\nGive the edge incidences at each tree vertex any cyclic order. After arriving along an incidence, leave along the next one. This is a permutation on directed edge traversals, and for a nontrivial tree it is one cycle. Removing a leaf gives induction: restoring it replaces one transition (u,v)->(v,w) by (u,v)->(v,z)->(z,v)->(v,w), inserting two traversals in the same cycle. Opening the joins at two distinct leaves cuts this cycle into two paths, each joining the two leaves.\n\nFor a deterministic machine, a fresh state can send every accepting configuration toward one terminal sink at the right endmarker. The original input accepts exactly when its initial configuration lies in that sink tree. Nonaccepting cycles in other components are harmless. The graph fact uses determinism; an undirected path in a general nondeterministic transition graph does not certify directed reachability.\n\n## Role in the source argument\n\nSupplies a reversible tour for the companion local matching representation of deterministic machines.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:sink-tree](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L57)\n- [lem:tree-tour](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L128)\n\n## Antecedents and comparison\n\nThe source explicitly relates configuration-tree traversal to Sipser's halting method and [Lange-McKenzie-Tapp, Reversible Space Equals Deterministic Space](https://doi.org/10.1006/jcss.1999.1672). Full-text retrieval of that antecedent failed in this audit; its exact correspondence remains source-attributed. The elementary sink and contour proofs were checked directly in the source.\n\n## Checks and limitations\n\nAll small partial successor maps with a prescribed sink are checked for basin/component equality and the tree edge count. Tree tours under varied cyclic orders visit every directed edge once. A nondeterministic fork supplies a counterexample to undirected reachability.\n\nThe cell-local diagram construction and the claimed automata lower bounds are outside this extraction.\n\n## Possible applications\n\nReducing deterministic reachability to a reversible traversal without first eliminating cycles elsewhere in the configuration graph.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000502",
+      "record_type": "instrument",
+      "title": "Replay a linear DAG twice to restore arbitrary borrowed memory",
+      "forms": [
+        "arbitrary-workspace-linear-replay",
+        "source-suppressed-cancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-130"
+      ],
+      "source_paper_ids": [
+        "P-000281"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+          "label": "loc:replay",
+          "line": 152,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex#L152",
+          "sha256": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "transparent-computation-with-explicit-linear-replay",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000502.md",
+      "body": "# Replay a linear DAG twice to restore arbitrary borrowed memory\n\n[Family 130](../families/openai-math-130.md) · [Source manuscript](../papers/P-000281.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nSuppose M:C^e->C^a is computed by a linear DAG with g gates, depth H, fan-in at most two, and fan-out at most delta counting output uses. Each output reads one source, one gate or zero. On disjoint registers x,y,z of sizes e,a,g, implement (x,y,z)->(x,y+Mx,z) even when z initially contains arbitrary values correlated with x or y.\n\nAssociate one z register with each gate and add its prescribed predecessor combination in topological order. The resulting sweep is z->Uz+Tx, with U unit lower triangular. If the readout is Fz+Dx, then FT+D=M. Compute, add the readout to y, and reverse the sweep: z is restored, but y has gained Mx+FUz. Repeat the sweep omitting direct-source edges, subtract the readout FUz, and reverse again. The net effect is exactly the desired shear, with all borrowed registers restored.\n\nFour sweeps use at most 8g elementary shears and two readouts use at most 2a. Within each depth level, the shear-edge multigraph has degree at most max{2,delta}; greedy edge coloring partitions it into at most twice that degree minus one disjoint-pair layers. Destinations are not predecessors at the same level, so this reordering is valid. Overall layer count is O((delta+1)(H+1)). Outputs are never used as predecessors in either sweep.\n\n## Role in the source argument\n\nLets the uniform Fourier source use existing coordinates as convolution workspace without assuming they are zero.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [loc:replay](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex#L152)\n\n## Antecedents and comparison\n\n[Buhrman et al., Computing with a Full Memory: Catalytic Space](https://ir.cwi.nl/pub/22659/22659B.pdf), Section 3, defines transparent computation and a compute/read/reverse cleanup restoring arbitrary initial register contents. These passages were read. The source supplies the displayed source-suppressed linear replay and the pair-layer accounting.\n\n## Checks and limitations\n\nExact rational DAGs are evaluated on symbolic independent input, target and workspace registers. The composed map is compared with direct DAG evaluation, and one-pass controls exhibit the uncancelled initial-memory term.\n\nThis does not certify that all source convolution instances fit the available coordinate budget, or establish its Fourier running-time bound.\n\n## Possible applications\n\nLinear updates using borrowed registers that carry unrelated data and must be restored exactly.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000503",
+      "record_type": "instrument",
+      "title": "Amplify a finite tensor saving by weighting sectors by dimension",
+      "forms": [
+        "dimension-weighted-tensor-sector-recursion",
+        "conditional-finite-win-amplification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-130"
+      ],
+      "source_paper_ids": [
+        "P-000282"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+          "label": "def:finite-win",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L16",
+          "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+        },
+        {
+          "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+          "label": "lem:amplification",
+          "line": 216,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L216",
+          "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+        },
+        {
+          "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+          "label": "gen:eq:weighted-cost",
+          "line": 258,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L258",
+          "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+        }
+      ],
+      "batch_id": "B050",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "source-conditional-recurrence-with-classical-tensor-core",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000503.md",
+      "body": "# Amplify a finite tensor saving by weighting sectors by dimension\n\n[Family 130](../families/openai-math-130.md) · [Source manuscript](../papers/P-000282.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nFix an invertible nonmonomial q by q matrix A and b>=2. Assume a specified word on exactly Q=q^b coordinates implements A tensor-power b using g<b q^(b-1) calls to A plus finitely many monomial factors. A call acts as A direct-sum I_(Q-q), up to permutation. This finite winning word is a hypothesis.\n\nFor j tensor groups, a call slot splits exactly as the direct sum of A tensor-power r with multiplicity binomial(j,r)(Q-q)^(j-r), for r=0,...,j. Weight sectors by their dimensions q^r, not by the number of sectors. If L_A(k) is scalar circuit cost and f(k)=L_A(k)/q^k, a call slot costs E f(K) per coordinate, with K binomial(j,q/Q). Each monomial slot costs at most one scalar multiplication per coordinate and is charged.\n\nSynchronizing the fixed word across j=floor(k/b) groups, then handling fewer than b remaining axes, gives f(k)<=C_0+g E f(K). Put rho=q/(Qb); the finite saving says g rho<1. Choose alpha in (0,1) with g rho^alpha<1. Concavity gives E(K+1)^alpha<=(rho k+1)^alpha. A strong induction, absorbing C_0 and finitely many small k, proves f(k)=O((k+1)^alpha), hence L_A(k)=O(q^k(k+1)^alpha).\n\nThe expectation is bookkeeping for an exact finite direct sum, not random approximation. This implication does not construct the winning word, prove that one exists, transfer the result to every Fourier length, or control coefficient magnitudes and numerical conditioning.\n\n## Role in the source argument\n\nPropagates the companion source proposed finite call saving to arbitrarily large Kronecker powers.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [def:finite-win](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L16)\n- [lem:amplification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L216)\n- [gen:eq:weighted-cost](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L258)\n\n## Antecedents and comparison\n\n[Alman-Li, Kronecker Powers, Orthogonal Vectors, and the Asymptotic Spectrum](https://arxiv.org/abs/2509.14489), studies rebalancing and duality for depth-two linear circuits; the abstract was read as context only. That is a different size model from sequential invertible calls. The precise conditional binomial recurrence here was read in the source; no exhaustive novelty claim for it.\n\n## Checks and limitations\n\nExact small tensor matrices verify sector multiplicities and coordinate dimensions. Finite recurrences with explicitly hypothetical saving parameters test the concavity induction; a no-saving parameter choice fails its contraction condition.\n\nNo winning word is furnished by these recurrence tests, and no headline sub-n-log-n Fourier theorem is certified.\n\n## Possible applications\n\nConverting a proven fixed-size saving into an asymptotic improvement when exact block decomposition produces a contracting dimension-weighted recurrence.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -26145,6 +26510,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000274.md",
       "body": "# Hellinger contraction with arbitrary Boolean output bias\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000495: Compress a Boolean function and choose a bias-controlled small coordinate](../instruments/MI-000495.md)\n\n[Family review and dependencies](../families/openai-math-119.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000275",
+      "record_type": "paper",
+      "title": "Constant-factor hardness of uniform sparsest cut",
+      "source_collection": "openai/math",
+      "upstream_slug": "Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-117"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2f4022278cc419c66e2c07e3f2e4d1104643d0133fb6c05d42a045c7cb142c89",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000275.md",
+      "body": "# Constant-factor hardness of uniform sparsest cut\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000496: Mix four parity positions by deleting only two mask permutations](../instruments/MI-000496.md)\n\n[Family review and dependencies](../families/openai-math-117.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000276",
+      "record_type": "paper",
+      "title": "Near-square-root logarithmic integrality gaps for uniform sparsest cut",
+      "source_collection": "openai/math",
+      "upstream_slug": "Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-117"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "324a7099091b60559369e671d230687fd1e4a306237309d7dcfbe3e8ca18acd6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000276.md",
+      "body": "# Near-square-root logarithmic integrality gaps for uniform sparsest cut\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000497: Repair squared-distance triangles by integrating local Gaussian kernels](../instruments/MI-000497.md)\n\n[Family review and dependencies](../families/openai-math-117.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000277",
+      "record_type": "paper",
+      "title": "Single-exponential recovery and bounded-price strictness for metric k-median",
+      "source_collection": "openai/math",
+      "upstream_slug": "Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-125"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4f3417210dd1740f1d13a47462c6e152f7c5cde6c76ab633a18bb12b7127cf8e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000277.md",
+      "body": "# Single-exponential recovery and bounded-price strictness for metric k-median\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000498: Pay for rare radius guesses with disjoint client populations](../instruments/MI-000498.md)\n\n[Family review and dependencies](../families/openai-math-125.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000278",
+      "record_type": "paper",
+      "title": "The approximation threshold for metric k-median",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Approximation-Threshold-for-Metric-k-Median-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-125"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e5f516135b3fcae14335e937973d810f6fb3c956ba7ddbb50c66894b1bc99173",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000278.md",
+      "body": "# The approximation threshold for metric k-median\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000499: Compress a finite distribution while preserving chosen rational features](../instruments/MI-000499.md)\n\n[Family review and dependencies](../families/openai-math-125.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000279",
+      "record_type": "paper",
+      "title": "An exponential state lower bound for two-way nondeterministic complementation",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-129"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e5cc223464607cc58002a4f02831fa807a874ce4ac437b45e93db7c13990768b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000279.md",
+      "body": "# An exponential state lower bound for two-way nondeterministic complementation\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000500: Pass to a minimal idempotent corner without losing unit lifts](../instruments/MI-000500.md)\n\n[Family review and dependencies](../families/openai-math-129.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000280",
+      "record_type": "paper",
+      "title": "An exponential two-way deterministic state lower bound for one-way liveness",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-129"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f5bb2dcd69ddbfdced1a4b6a24187b6e327c32874a78c6aecc0a87d4f73ad8bb",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000280.md",
+      "body": "# An exponential two-way deterministic state lower bound for one-way liveness\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000501: Turn deterministic sink reachability into one tree contour tour](../instruments/MI-000501.md)\n\n[Family review and dependencies](../families/openai-math-129.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000281",
+      "record_type": "paper",
+      "title": "An explicit power saving for the exact discrete Fourier transform",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-130"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "dd9405ab717a224bdec887aba3b4296a771eb78dec7a08f84e987e3e4081d464",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000281.md",
+      "body": "# An explicit power saving for the exact discrete Fourier transform\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000502: Replay a linear DAG twice to restore arbitrary borrowed memory](../instruments/MI-000502.md)\n\n[Family review and dependencies](../families/openai-math-130.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000282",
+      "record_type": "paper",
+      "title": "Finite tensor savings and exact Fourier circuits",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-130"
+      ],
+      "batch_id": "B050",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "87f2088fb02c24eb9a304786fad9e6a6da5033f6dab009b671453ed96deff2d2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000282.md",
+      "body": "# Finite tensor savings and exact Fourier circuits\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000503: Amplify a finite tensor saving by weighting sectors by dimension](../instruments/MI-000503.md)\n\n[Family review and dependencies](../families/openai-math-130.md) · [Batch B050](../../batches/B050/README.md)"
     }
   ],
   "families": [
@@ -28179,6 +28696,34 @@
       "body": "# Exact residual sampling and capacity-adapted forest coordinates\n\n## Source manuscripts and claim\n\n- [Exact Uniform Sampling of Contingency Tables with Arbitrary Margins](../papers/P-000271.md): selected passages extracted.\n- [An FPRAS for Cell-Bounded Contingency Tables](../papers/P-000272.md): selected passages extracted.\n\nThe sources claim exact uniform sampling for arbitrary contingency-table margins and an FPRAS with arbitrary individual cell bounds.\n\n## Extracted instruments\n\n- [MI-000492: Correct a dyadic approximate sampler by a rare exact residual](../instruments/MI-000492.md)\n- [MI-000493: Choose a maximum-capacity forest before normalizing free variables](../instruments/MI-000493.md)\n\n## Dependencies and antecedents\n\nFinite dyadic laws, exact integer sampling and expected-cost accounting; forest elimination, maximum-spanning-tree exchange and normalized piecewise-linear penalties.\n\nGobel-Liu-Manurangsi-Pappik arXiv:2410.00882v2 Section 3.1; Cryan-Dyer-Randall Section 2.\n\n## Review and formalization scope\n\nRead the full exact-sampling residual proof and the full forest-coordinate lemma, including its cut identity and Lipschitz estimate. The source approximate samplers, tabulation complexity and global counting schemes remain outside these checks.\n\nThe supplied target includes exact expected-polynomial sampling, bounded-time approximate sampling, and cell-bounded approximate counting, with binary encoded margins and freely varying dimensions. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nResidual probabilities require pointwise domination and exact distribution tabulation. Small-edge row and column incidences may disagree and must be retained separately in forest cut sums.\n\n[Batch record](../../batches/B049/README.md)"
     },
     {
+      "id": "openai-math-117",
+      "record_type": "family",
+      "title": "Masked parity mixing and multiscale triangle repair",
+      "source_family": "117",
+      "source_collection": "openai/math",
+      "batch_id": "B050",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000275",
+        "P-000276"
+      ],
+      "instrument_ids": [
+        "MI-000496",
+        "MI-000497"
+      ],
+      "headline": "The sources claim constant-factor hardness and near-square-root-logarithmic integrality gaps for uniform sparsest cut.",
+      "central_instrument": "Four interpolation masks combine a rank-one walk with a missing-two-permutations bound. A scale integral of Gaussian kernels repairs negative angles while preserving short chart distances.",
+      "novelty_assessment": "Classical character diagonalization, interpolation and Schoenberg kernels are explicit cores. The precise combined interfaces are source arguments; no exhaustive historical priority claim.",
+      "formalization_summary": "The supplied scope is an existential sequence of uniform sparsest-cut integrality gaps of order sqrt(log n)/(log log n)^3. It does not include the companion computational-hardness claim. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The mask argument uses characteristic two and four distinct times. Triangle repair requires a local defect bound and chartwise L1 distances; a global defect bound alone gives no short-distance guarantee.",
+      "dependencies": "A quadratic-evaluation zero bound supplied by a pencil, finite-field characters and scalar-invariant directions; positive-definite Gaussian kernels and the triangle inequality for extended chart distances.",
+      "antecedents": "Alon-Chung centered-indicator spectral estimates; Schoenberg Gaussian positive definiteness.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-117.md",
+      "body": "# Masked parity mixing and multiscale triangle repair\n\n## Source manuscripts and claim\n\n- [Constant-factor hardness of uniform sparsest cut](../papers/P-000275.md): selected passages extracted.\n- [Near-square-root logarithmic integrality gaps for uniform sparsest cut](../papers/P-000276.md): selected passages extracted.\n\nThe sources claim constant-factor hardness and near-square-root-logarithmic integrality gaps for uniform sparsest cut.\n\n## Extracted instruments\n\n- [MI-000496: Mix four parity positions by deleting only two mask permutations](../instruments/MI-000496.md)\n- [MI-000497: Repair squared-distance triangles by integrating local Gaussian kernels](../instruments/MI-000497.md)\n\n## Dependencies and antecedents\n\nA quadratic-evaluation zero bound supplied by a pencil, finite-field characters and scalar-invariant directions; positive-definite Gaussian kernels and the triangle inequality for extended chart distances.\n\nAlon-Chung centered-indicator spectral estimates; Schoenberg Gaussian positive definiteness.\n\n## Review and formalization scope\n\nRead the full matrix-walk and masked-pair lemmas, and the full companion triangle-repair proof. The evaluation-pencil construction, complete hardness reduction and gap construction remain unverified here.\n\nThe supplied scope is an existential sequence of uniform sparsest-cut integrality gaps of order sqrt(log n)/(log log n)^3. It does not include the companion computational-hardness claim. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.\n\nThe mask argument uses characteristic two and four distinct times. Triangle repair requires a local defect bound and chartwise L1 distances; a global defect bound alone gives no short-distance guarantee.\n\n[Batch record](../../batches/B050/README.md)"
+    },
+    {
       "id": "openai-math-118",
       "record_type": "family",
       "title": "Competing tree quotas and conservative scalar packing encodings",
@@ -28315,6 +28860,34 @@
       "body": "# Priority-list compression under local pruning and boundary capacity\n\n## Source manuscript and claim\n\n[A Polynomial-Time Algorithm for Three-Machine Unit-Job Scheduling](../papers/P-000214.md), by OpenAI, None.\n\nThe source claims a deterministic polynomial-time optimal algorithm for three-machine unit-job scheduling with arbitrary acyclic precedence constraints.\n\n## Extracted instruments\n\n- [MI-000390: Preserve a global priority suffix while pruning only locally relevant list entries](../instruments/MI-000390.md)\n- [MI-000391: Bound surviving upward-closed injections by a shared boundary slot](../instruments/MI-000391.md)\n\n## Dependencies and antecedents\n\nFinite posets, upward-closed sets, lexicographic keys, disjointness and successor witnesses in a three-job boundary.\n\nElementary order and finite-capacity arguments; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead suffix-carry, pruning, update-label and list-length proofs, with schedule/poset definitions. Global boundary invariants, history flattening and the structural hierarchy were not audited.\n\nRead ThreeMachine.lean: one finite deterministic machine returns an optimal schedule or exact deadline answer on explicitly encoded acyclic instances, with polynomial bound exponent 150020. The target contains sorry; no Lean build was performed.\n\nPriority keys use the largest membership index and a rank from a linear extension. Pruning comparison requires the first job to belong to the retained child set. The five-entry count holds after pruning; a temporary update can have six entries.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/124.md) · [Batch record](../../batches/B035/README.md)"
     },
     {
+      "id": "openai-math-125",
+      "record_type": "family",
+      "title": "Population radii and exact feature-preserving compression",
+      "source_family": "125",
+      "source_collection": "openai/math",
+      "batch_id": "B050",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000277",
+        "P-000278"
+      ],
+      "instrument_ids": [
+        "MI-000498",
+        "MI-000499"
+      ],
+      "headline": "The sources claim single-exponential recovery for metric k-median and a deterministic approximation threshold of 1+2/e.",
+      "central_instrument": "Population-normalized radii amortize expensive guesses across disjoint client balls. Affine elimination compresses state distributions while preserving specified statistics exactly.",
+      "novelty_assessment": "Sampling and dummy centers have a CGLSS antecedent; feature compression is constructive Caratheodory. The source population-budget interface is recorded without an exhaustive novelty claim.",
+      "formalization_summary": "The targets include proxy-assisted exact-budget recovery on bounded integral metrics, randomized approximation below two, and deterministic 1+2/e+epsilon approximation with an infimum threshold conditional on P not equal NP. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The radius budget uses persistent previously added leaves and the total comparison cost P. Feature compression preserves listed expectations and statewise properties, not arbitrary subsequent adaptive behavior.",
+      "dependencies": "Metric triangle inequality, distance-to-set Lipschitzness, closed-ball populations, geometric menu probabilities; rational nullspaces and affine dependencies.",
+      "antecedents": "Cohen-Addad-Grandoni-Lee-Schwiegelshohn-Svensson recovery and dummy centers; Bayer-Teichmann moment matching and Caratheodory.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-125.md",
+      "body": "# Population radii and exact feature-preserving compression\n\n## Source manuscripts and claim\n\n- [Single-exponential recovery and bounded-price strictness for metric k-median](../papers/P-000277.md): selected passages extracted.\n- [The approximation threshold for metric k-median](../papers/P-000278.md): selected passages extracted.\n\nThe sources claim single-exponential recovery for metric k-median and a deterministic approximation threshold of 1+2/e.\n\n## Extracted instruments\n\n- [MI-000498: Pay for rare radius guesses with disjoint client populations](../instruments/MI-000498.md)\n- [MI-000499: Compress a finite distribution while preserving chosen rational features](../instruments/MI-000499.md)\n\n## Dependencies and antecedents\n\nMetric triangle inequality, distance-to-set Lipschitzness, closed-ball populations, geometric menu probabilities; rational nullspaces and affine dependencies.\n\nCohen-Addad-Grandoni-Lee-Schwiegelshohn-Svensson recovery and dummy centers; Bayer-Teichmann moment matching and Caratheodory.\n\n## Review and formalization scope\n\nRead the full computable-radius, dummy-metric, radius-budget and guided-trajectory arguments, and the companion affine-support-reduction proof. The global recovery and approximation algorithms remain outside these checks.\n\nThe targets include proxy-assisted exact-budget recovery on bounded integral metrics, randomized approximation below two, and deterministic 1+2/e+epsilon approximation with an infimum threshold conditional on P not equal NP. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.\n\nThe radius budget uses persistent previously added leaves and the total comparison cost P. Feature compression preserves listed expectations and statewise properties, not arbitrary subsequent adaptive behavior.\n\n[Batch record](../../batches/B050/README.md)"
+    },
+    {
       "id": "openai-math-126",
       "record_type": "family",
       "title": "Orthogonal PSD splitting and symmetry-amplified local averaging",
@@ -28394,6 +28967,62 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-128.md",
       "body": "# Period-aware occurrence bounds and ordered layers in superstring graphs\n\n## Source manuscript and claim\n\n[A Polynomial-Time 2-Approximation for Shortest Common Superstring](../papers/P-000113.md), by OpenAI, September 24, 2026.\n\nThe source claims a deterministic polynomial-time factor-two approximation for shortest common superstring over explicitly encoded finite alphabets.\n\n## Extracted instruments\n\n- [MI-000184: Nearest-mismatch brackets make periodic occurrence lower bounds sound](../instruments/MI-000184.md)\n- [MI-000185: Sorting periodic windows preserves a closed-walk edge multiset](../instruments/MI-000185.md)\n\n## Dependencies and antecedents\n\nSubstring-closed vertex sets; nearest mismatch brackets; descending integer recursion; nonleast periods as well as primitive ones; balanced up/down multigraphs; cyclic window representations; monotone order statistics.\n\nGolovnev-Kulikov-Mihajlin introduced a hierarchical graph for bounded-length instances; Golovnev and coauthors developed the all-substrings collapsing framework. Periodic matching and sorting monotone coordinates are classical ingredients. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead all forced-count and ordered-layer arguments, including the two cases needed to justify periodic forcing. The later connection, processing, cycle-budget and algorithmic bit-complexity proofs were not audited.\n\nSuperstring.lean states existence of an explicitly bit-polynomial deterministic finite-stack-machine implementation, contiguous coverage of every input word and output symbol length at most twice unrestricted optimum. The scope documents and Comparator statements were compared; no Lean solution was built or kernel-checked. The auxiliary instruments are not separate certified Comparator results.\n\nThe approximation factor concerns symbol length, while computation time is measured in the explicit bit encoding. The result is not stated as a factor-two guarantee for the usual greedy overlap algorithm. The base graph may be disconnected.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/128.md) · [Batch record](../../batches/B010/README.md)"
+    },
+    {
+      "id": "openai-math-129",
+      "record_type": "family",
+      "title": "Finite-semigroup corners and deterministic configuration tours",
+      "source_family": "129",
+      "source_collection": "openai/math",
+      "batch_id": "B050",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000279",
+        "P-000280"
+      ],
+      "instrument_ids": [
+        "MI-000500",
+        "MI-000501"
+      ],
+      "headline": "The sources claim exponential state lower bounds for two-way complementation and for deterministic recognition of one-way liveness languages.",
+      "central_instrument": "Minimal idempotent preimages lift units, and a relation corner restricts exactly to a smaller full relation monoid. Deterministic reachability to a sink is encoded by one contour tour of its tree component.",
+      "novelty_assessment": "Elementary finite-semigroup facts and classical configuration-tree traversal. Their uses in the source lower-bound architecture are recorded; the lower bounds are not certified.",
+      "formalization_summary": "The targets specify growing-alphabet complementation and determinization bounds with denominator 127, and a separate one-way liveness bound with denominator 31 and convention-dependent quadratic state factor. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Minimality is in the idempotent nesting order and finiteness supplies idempotent powers. The sink graph has one successor per vertex; nondeterministic transition graphs need not have tree components.",
+      "dependencies": "Finite semigroup powers, idempotent corners and relation composition; partial functions, edge counting and cyclic orders at tree vertices.",
+      "antecedents": "Classical finite semigroup structure; Sipser halting traversal and Lange-McKenzie-Tapp reversible simulation, as cited by the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-129.md",
+      "body": "# Finite-semigroup corners and deterministic configuration tours\n\n## Source manuscripts and claim\n\n- [An exponential state lower bound for two-way nondeterministic complementation](../papers/P-000279.md): selected passages extracted.\n- [An exponential two-way deterministic state lower bound for one-way liveness](../papers/P-000280.md): selected passages extracted.\n\nThe sources claim exponential state lower bounds for two-way complementation and for deterministic recognition of one-way liveness languages.\n\n## Extracted instruments\n\n- [MI-000500: Pass to a minimal idempotent corner without losing unit lifts](../instruments/MI-000500.md)\n- [MI-000501: Turn deterministic sink reachability into one tree contour tour](../instruments/MI-000501.md)\n\n## Dependencies and antecedents\n\nFinite semigroup powers, idempotent corners and relation composition; partial functions, edge counting and cyclic orders at tree vertices.\n\nClassical finite semigroup structure; Sipser halting traversal and Lange-McKenzie-Tapp reversible simulation, as cited by the source.\n\n## Review and formalization scope\n\nRead the complete minimal-corner and relation-restriction proofs and the companion sink-tree and tree-tour proofs, with their acceptance-reachability application. The diagram representation, loss amplification and state lower bounds were not certified.\n\nThe targets specify growing-alphabet complementation and determinization bounds with denominator 127, and a separate one-way liveness bound with denominator 31 and convention-dependent quadratic state factor. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.\n\nMinimality is in the idempotent nesting order and finiteness supplies idempotent powers. The sink graph has one successor per vertex; nondeterministic transition graphs need not have tree components.\n\n[Batch record](../../batches/B050/README.md)"
+    },
+    {
+      "id": "openai-math-130",
+      "record_type": "family",
+      "title": "Borrowed-coordinate replay and finite tensor amplification",
+      "source_family": "130",
+      "source_collection": "openai/math",
+      "batch_id": "B050",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000281",
+        "P-000282"
+      ],
+      "instrument_ids": [
+        "MI-000502",
+        "MI-000503"
+      ],
+      "headline": "The sources claim unrestricted exact Fourier circuits and a uniform all-length power saving over n log n.",
+      "central_instrument": "Two reversible sweeps cancel arbitrary auxiliary contents. Dimension-weighted tensor sectors turn a strict finite call saving into a binomial recurrence with sublinear tensor-order exponent.",
+      "novelty_assessment": "Transparent computation and Kronecker-power amplification have explicit antecedents. The selected linear replay and conditional recurrence are checked; no source finite-win existence or Fourier breakthrough is certified.",
+      "formalization_summary": "The targets distinguish subsequential unrestricted complex scalar circuits from uniform all-length exact arithmetic programs including scalar preparation. They do not claim bounded coefficients, numerical conditioning or bit complexity; the synthesis appendix is excluded. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Workspace can start arbitrarily but must be disjoint from inputs and targets. Tensor amplification is conditional on an actual fixed finite winning word; numerical recurrence parameters do not supply one.",
+      "dependencies": "Linear DAGs with bounded fan-in and fan-out, reversible shears and edge coloring; exact tensor/direct-sum identities, scalar gate accounting and concavity.",
+      "antecedents": "Bennett uncomputation and Buhrman-Cleve-Koucky-Loff-Speelman transparent computation; related Kronecker-power circuit work by Alman-Li in a different circuit model.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-130.md",
+      "body": "# Borrowed-coordinate replay and finite tensor amplification\n\n## Source manuscripts and claim\n\n- [An explicit power saving for the exact discrete Fourier transform](../papers/P-000281.md): selected passages extracted.\n- [Finite tensor savings and exact Fourier circuits](../papers/P-000282.md): selected passages extracted.\n\nThe sources claim unrestricted exact Fourier circuits and a uniform all-length power saving over n log n.\n\n## Extracted instruments\n\n- [MI-000502: Replay a linear DAG twice to restore arbitrary borrowed memory](../instruments/MI-000502.md)\n- [MI-000503: Amplify a finite tensor saving by weighting sectors by dimension](../instruments/MI-000503.md)\n\n## Dependencies and antecedents\n\nLinear DAGs with bounded fan-in and fan-out, reversible shears and edge coloring; exact tensor/direct-sum identities, scalar gate accounting and concavity.\n\nBennett uncomputation and Buhrman-Cleve-Koucky-Loff-Speelman transparent computation; related Kronecker-power circuit work by Alman-Li in a different circuit model.\n\n## Review and formalization scope\n\nRead the complete replay proof, finite-win definition and tensor-amplification proof. Also read the Newton factorization for context. The finite-win existence, exact-width compiler and global Fourier algorithms remain unverified.\n\nThe targets distinguish subsequential unrestricted complex scalar circuits from uniform all-length exact arithmetic programs including scalar preparation. They do not claim bounded coefficients, numerical conditioning or bit complexity; the synthesis appendix is excluded. The scope document and all linked Comparator definitions and targets were read. Their main target proofs contain sorry; no solution or Lean project was built.\n\nWorkspace can start arbitrarily but must be disjoint from inputs and targets. Tensor amplification is conditional on an actual fixed finite winning word; numerical recurrence parameters do not supply one.\n\n[Batch record](../../batches/B050/README.md)"
     },
     {
       "id": "openai-math-131",

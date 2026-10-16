@@ -1,0 +1,52 @@
+{
+  "batch": "B050",
+  "status": "passed",
+  "scope": "Finite mechanism checks; numerical quadrature and spectral checks are not proof certificates. Tensor recurrence parameters are hypothetical and do not furnish a finite winning word. No source headline theorem is certified.",
+  "checks": {
+    "masks": {
+      "ordered_quadruples": 1680,
+      "excluded_sets": 336,
+      "bilinear_matrices": 18,
+      "max_mask_norm": 0.36038754716096777
+    },
+    "repair": {
+      "numerical_chart_models": 25,
+      "unrepaired_triangle_failure": true,
+      "analytic_proof_required": true
+    },
+    "populations": {
+      "exact_radius_instances": 416,
+      "expensive_menu_sequences": 2,
+      "expensive_balls_per_sequence": 4,
+      "persistence_control": true
+    },
+    "compression": {
+      "rational_models": 32,
+      "exact_elimination_steps": 160,
+      "unlisted_second_moment_control": true
+    },
+    "corners": {
+      "minimal_transform_corners": 3,
+      "exact_relation_corners": 443,
+      "nonminimal_corner_control": true
+    },
+    "tours": {
+      "exact_partial_maps": 1441,
+      "cyclic_order_tours": 1480,
+      "nondeterministic_fork_control": true
+    },
+    "replay": {
+      "symbolic_rational_DAGs": 50,
+      "one_pass_memory_contamination_controls": 46,
+      "all_initial_registers_independent": true
+    },
+    "tensors": {
+      "exact_tensor_sectors": 39,
+      "hypothetical_recurrence_terms": 120,
+      "exponent": 0.9,
+      "induction_threshold": 26,
+      "no_finite_winning_word_supplied": true
+    }
+  },
+  "elapsed_seconds": 4.548
+}
