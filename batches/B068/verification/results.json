@@ -1,0 +1,144 @@
+{
+  "batch": "B068",
+  "status": "pass",
+  "elapsed_seconds": 2.165,
+  "scope": "Selected finite models only; no certification of source headline theorems or formal solutions.",
+  "checks": {
+    "mass": {
+      "status": "pass",
+      "details": {
+        "positive_models": 100,
+        "singular_test_class_negative_control": true
+      }
+    },
+    "picard_descent_model": {
+      "status": "pass",
+      "details": {
+        "torsion_classes": 119,
+        "evaluation_fiber_model": true,
+        "scope": "Abstract Picard quotient model, not verification of a geometric Picard isomorphism."
+      }
+    },
+    "gauss_volume": {
+      "status": "pass",
+      "details": {
+        "exact_colength_convolutions": 36,
+        "asymptotic_ratios": [
+          1.0033333333333334,
+          1.0066666666666666,
+          1.0133333333333334,
+          1.0150555555555556,
+          1.0200888888888888,
+          1.0302222222222222,
+          1.0251666666666666,
+          1.0302,
+          1.0404,
+          1.0405133333333334,
+          1.0473813333333333,
+          1.0611857777777778
+        ],
+        "optimized_dimensions": 6
+      }
+    },
+    "hilbert": {
+      "status": "pass",
+      "details": {
+        "exact_signed_coefficients": 266,
+        "canonical_duality_dimensions": 5,
+        "weighted_polar_density": "y/(2 lambda^2)+3/(4 lambda)",
+        "frequency_exclusion": true
+      }
+    },
+    "profiles": {
+      "status": "pass",
+      "details": {
+        "cyclic_profiles": 1089,
+        "rank_drop_example": true,
+        "product_multiplicities": [
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    "weighted_jets": {
+      "status": "pass",
+      "details": {
+        "jet_rows": 6,
+        "jet_columns": 8,
+        "nonzero_minor_at_zero": "-2",
+        "small_scales": 3,
+        "least_term_products": 16
+      }
+    },
+    "prolongation": {
+      "status": "pass",
+      "details": [
+        {
+          "U": 1,
+          "W": 1,
+          "nullity": 1
+        },
+        {
+          "U": 2,
+          "W": 1,
+          "nullity": 6
+        },
+        {
+          "U": 3,
+          "W": 1,
+          "nullity": 18
+        },
+        {
+          "U": 1,
+          "W": 2,
+          "nullity": 0
+        },
+        {
+          "U": 2,
+          "W": 2,
+          "nullity": 0
+        },
+        {
+          "U": 3,
+          "W": 2,
+          "nullity": 0
+        },
+        {
+          "U": 2,
+          "W": 3,
+          "nullity": 0
+        }
+      ]
+    },
+    "rotation": {
+      "status": "pass",
+      "details": {
+        "quaternionic_planes": [
+          [
+            "1",
+            "0",
+            true
+          ],
+          [
+            "3/5",
+            "4/5",
+            false
+          ],
+          [
+            "0",
+            "1",
+            false
+          ],
+          [
+            "-1",
+            "0",
+            true
+          ]
+        ],
+        "opposite_angle_negative_control": true,
+        "scope": "Linear calibration algebra; compact existence and Albanese geometry are not tested."
+      }
+    }
+  }
+}
