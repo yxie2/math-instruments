@@ -15874,6 +15874,364 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000375.md",
       "body": "# Certify a lifted polynomial consequence with modular rank and rational witnesses\n\n[Family 067](../families/openai-math-067.md) · [Source manuscript](../papers/P-000206.md) · [Batch B033](../../batches/B033/README.md)\n\n## Mathematical content\n\nSuppose a rational bilinear constraint N(xi_i eta_j)=0 is known. Multiply its equations by extra eta coordinates and identify symmetric products using sorted multisets. Every product vector v_{i,z}=xi_i product_{j in z}eta_j then belongs to a larger linear kernel K; arbitrary vectors of K need not have product form.\n\nLet M be the single rational matrix defining the final lifted kernel, with n columns and denominators prime to p. A modular rank at least n-d gives dim_Q ker M<=d. To turn this bound into a rational certificate, exhibit d rational vectors z_i satisfying Mz_i=0 exactly, and a nonzero d-by-d minor proving their independence. They then form the whole rational kernel. Any rational functional vanishing exactly on those vectors vanishes on every original product solution.\n\nThe source applies this architecture to a cubic lift and the functional 32 v_{0,(0,0,0)}-20 v_{0,(0,0,1)}+3 v_{0,(0,1,1)}. With xi_0=eta_0=1 it yields (eta_1-4)(3 eta_1-8)=0, conditional on the reported large-matrix certificate. A rank computed only modulo p cannot by itself prove a rational identity; nor may one assume intermediate rational kernel bases specialize to full modular bases.\n\n## Role in the source argument\n\nSeparates a manageable finite-field dimension calculation from the exact rational identities needed for the source numerical constraint.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-ratio](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L10)\n- [eq:rational-dimension-upper](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/05-arithmetic.tex#L138)\n- [app:certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/sections/08-certificate.tex#L2)\n\n## Antecedents and comparison\n\nThis is standard exact/modular linear algebra and polynomial lifting. Its value is a transparent verification contract, not a new rank principle.\n\n## Checks and limitations\n\nTwenty-seven exact finite kernel certificates and a negative control where modular annihilation fails over Q.\n\nThe source 8280 by 6820 matrix, its claimed modular rank 6814, and its six rational witnesses have not been recomputed. This card certifies the general logical architecture and bounded models only.\n\n## Possible applications\n\nAuditable computational proofs of polynomial consequences when a direct rational elimination is expensive.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000376",
+      "record_type": "instrument",
+      "title": "Avoid small collective images by a Grassmann incidence dimension bound",
+      "forms": [
+        "bundle-map-incidence-avoidance",
+        "uniform-subspace-expansion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-294"
+      ],
+      "source_paper_ids": [
+        "P-000207"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+          "label": "lem:incidence",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L10",
+          "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+        },
+        {
+          "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+          "label": "eq:incidence-dimension",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L18",
+          "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-incidence-dimension-and-sard-method",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000376.md",
+      "body": "# Avoid small collective images by a Grassmann incidence dimension bound\n\n[Family 294](../families/openai-math-294.md) · [Source manuscript](../papers/P-000207.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nLet E,F be smooth Hermitian complex bundles of ranks d,r over a compact smooth manifold of real dimension 2h. For a finite collection of pairs (s,t), with 1<=s<=d and 0<=t<=r, assume\n\n$$(qs-t)(r-t)-s(d-s)>h.$$\n\nThen q smooth bundle maps T_i:E->F can be chosen so that dim sum_i T_i(y)S>t for every base point y and every s-plane S in E_y, simultaneously for the selected pairs.\n\nChoose finitely many smooth sections whose evaluations span each Hom(E_y,F_y), using local frames and a partition of unity. If their q-tuples form a complex parameter space of dimension M, the incidence of (y,S,U,T) with T_i S contained in a t-plane U has real dimension\n\n$$2M+2h+2s(d-s)+2t(r-t)-2qs(r-t)<2M.$$\n\nRestriction followed by quotient is surjective, so this incidence is a smooth kernel bundle. Its projection to the parameter space is null by the lower-dimensional Sard argument. A finite union of such bad sets cannot exhaust the parameter space.\n\n## Role in the source argument\n\nConstructs simultaneous expansion properties for the source bounded-degree bundle tests.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:incidence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L10)\n- [eq:incidence-dimension](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L18)\n\n## Antecedents and comparison\n\nThis is classical incidence avoidance and Sard transversality. The explicit inequality is the useful extracted budget.\n\n## Checks and limitations\n\nSix hundred exact dimension and coordinate-constraint models verify the count and equivalent inequality.\n\nFinite models do not verify uniform transversality over all subspaces or over a nontrivial bundle; the general selected proof was read.\n\n## Possible applications\n\nConstructing several bundle maps that avoid simultaneous low-rank images without choosing pointwise generic maps inconsistently.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000377",
+      "record_type": "instrument",
+      "title": "Normalize expanding bundle maps through a unique determinant minimizer",
+      "forms": [
+        "continuous-operator-scaling",
+        "strict-geodesic-determinant-potential"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-294"
+      ],
+      "source_paper_ids": [
+        "P-000207"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+          "label": "lem:scaling",
+          "line": 87,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L87",
+          "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+        },
+        {
+          "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex",
+          "label": "eq:scaling-determinant-bound",
+          "line": 148,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L148",
+          "sha256": "191328b159019b3e3fcf62d08c63c4de60e6b6745bc54880f9467105d0cd039f"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "operator-scaling-antecedent-with-bundlewise-uniqueness-and-margin",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000377.md",
+      "body": "# Normalize expanding bundle maps through a unique determinant minimizer\n\n[Family 294](../families/openai-math-294.md) · [Source manuscript](../papers/P-000207.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nSuppose continuous bundle maps T_i:E->F over a compact base satisfy dim sum_i T_i(y)S>=2 dim S for every source subspace. Put D_y(P)=sum_i T_i P T_i* and minimize\n\n$$g_y(P)=\\log\\det(I+D_y(P))-\\tfrac32\\log\\det P,\\qquad P>0.$$\n\nCompactness of Grassmann bundles gives epsilon>0 with the 2s-th eigenvalue of D_y(p_s) at least epsilon for every rank-s projection. Thus log det(I+D_y(P))>=2 sum_s log(1+epsilon lambda_s(P)). The scalar function 2 log(1+epsilon t)-(3/2)log t diverges at both endpoints, giving common compact sublevels.\n\nAlong P(u)=P_0^{1/2} exp(uH) P_0^{1/2}, the first determinant is a positive exponential sum. Its logarithmic second derivative is the variance of the exponents; the empty and singleton terms make it strictly positive for H nonzero. The second log-determinant term is affine. Hence the minimizer is unique, continuous in y, and invariant under changes of unitary frame, so it glues globally.\n\nWith Q=I+D(P), stationarity gives sum_i T_i*Q^{-1}T_i=(3/2)P^{-1}. Therefore X_i=sqrt(2/3) Q^{-1/2}T_i P^{1/2} satisfies sum X_i*X_i=I and sum X_iX_i*=(2/3)(I-Q^{-1})<=(2/3)I.\n\n## Role in the source argument\n\nProvides compatible continuous normalization of the source expanding bundle maps.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:scaling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L87)\n- [eq:scaling-determinant-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/build/03-scaling.tex#L148)\n\n## Antecedents and comparison\n\n[Gurvits 2003](https://arxiv.org/abs/quant-ph/0303055) is the operator-scaling antecedent cited by the source. [Sra and Hosseini, Corollary 2.11](https://optml.mit.edu/papers/sra_hosseini_gopt.pdf) establishes related geodesic convexity of affine log-determinants. The source adds the explicit strictness, compact-sublevel and bundle-gluing argument needed here.\n\n## Checks and limitations\n\nTwenty-four matrix models with guaranteed twofold expansion solve the stationary equations; maximum normalization error below 3.7e-13, and every target bound passes.\n\nNumerical stationarity does not prove global minimality or continuity over a bundle; those assertions rely on the selected proof.\n\n## Possible applications\n\nContinuous balancing of matrix families when a strict subspace-expansion margin is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000378",
+      "record_type": "instrument",
+      "title": "Correct mixed central inputs by an explicit bounded Hochschild homotopy",
+      "forms": [
+        "central-cut-cochain-homotopy",
+        "mixed-input-cocycle-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-295"
+      ],
+      "source_paper_ids": [
+        "P-000208"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+          "label": "lem:central-homotopy",
+          "line": 320,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L320",
+          "sha256": "c6c8e63bac0e543624ac63fd50a046878ba7082a531115111563455682e4d437"
+        },
+        {
+          "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex",
+          "label": "eq:central-cocycle-correction",
+          "line": 384,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L384",
+          "sha256": "c6c8e63bac0e543624ac63fd50a046878ba7082a531115111563455682e4d437"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-bar-complex-contraction-with-explicit-central-formula",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000378.md",
+      "body": "# Correct mixed central inputs by an explicit bounded Hochschild homotopy\n\n[Family 295](../families/openai-math-295.md) · [Source manuscript](../papers/P-000208.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nLet z be a central projection in a unital algebra M, put q=1-z, and let psi be an n-cochain with values in the bimodule zM. Define cut_z psi(a_1,...,a_n)=psi(za_1,...,za_n). For n>=2 set\n\n$$(J_z\\psi)(a_1,\\ldots,a_{n-1})=\\sum_{i=1}^{n-1}(-1)^i\\psi(za_1,\\ldots,za_{i-1},q,qa_i,a_{i+1},\\ldots,a_{n-1}),$$\n\nand put J_z=0 in degrees zero and one. Then dJ_z+J_zd=id-cut_z, in every degree. For bounded cochains on a C*-algebra, ||J_z psi||<=(n-1)||psi||.\n\nExpand inputs into zM and qM. For a tuple with first qM input at position r, exactly the term inserting q before that input survives in J. In the differential, merging that q with the input gives psi; all other terms cancel or vanish because zMqM=0 and q annihilates the output module. All-zM tuples give zero on both sides. Thus for a cocycle d(J_z psi)=psi-cut_z psi, correcting the part a primitive restricted to zM misses.\n\n## Role in the source argument\n\nAllows separately constructed primitives on central summands to be assembled without losing control of mixed inputs.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:central-homotopy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L320)\n- [eq:central-cocycle-correction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/05-cohomology.tex#L384)\n\n## Antecedents and comparison\n\nThis is a bar-complex contraction specialized to a central decomposition. The explicit norm bound is independent of the algebra and the projection.\n\n## Checks and limitations\n\nTwo hundred forty exact tests in the noncommutative algebra M2 plus C, degrees one through four, use arbitrary multilinear cochains with values in M2.\n\nThe tests do not construct primitives on the individual summands or prove the source cohomology-vanishing theorem.\n\n## Possible applications\n\nPatching cohomological solutions across central decompositions while controlling arbitrary mixed arguments.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000379",
+      "record_type": "instrument",
+      "title": "Transfer a bounded-ball L2 modulus through repeated tracial ultrapowers",
+      "forms": [
+        "uniform-bounded-ball-modulus",
+        "iterated-tracial-ultrapower-descent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-295"
+      ],
+      "source_paper_ids": [
+        "P-000208"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+          "label": "lem:ultrapower",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L33",
+          "sha256": "7782c390e534a15d35d7aee470ff425fcb6823c4073b29886f3dbffbc8d31622"
+        },
+        {
+          "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex",
+          "label": "eq:ball-modulus",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L38",
+          "sha256": "7782c390e534a15d35d7aee470ff425fcb6823c4073b29886f3dbffbc8d31622"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-uniform-continuity-and-quotient-descent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000379.md",
+      "body": "# Transfer a bounded-ball L2 modulus through repeated tracial ultrapowers\n\n[Family 295](../families/openai-math-295.md) · [Source manuscript](../papers/P-000208.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nLet (N,rho) be a finite von Neumann algebra with faithful normal tracial state, and R:N->N a bounded linear map. Assume every operator-norm-bounded sequence x_j with ||x_j||_2->0 also has ||R(x_j)||_2->0. This is equivalent to a uniform modulus on each operator-norm ball: for every r and epsilon, some delta satisfies ||x||<=r and ||x||_2<delta implies ||Rx||_2<epsilon. Failure would produce a contradicting sequence with ||x_j||_2<1/j.\n\nThe coordinate map therefore preserves the L2-null ideal and induces R^omega on the tracial ultrapower, with norm at most ||R||. To transfer continuity on the radius-r quotient ball, use a representative bounded by r+1, choose the original modulus at radius r+1 and output tolerance epsilon/2, and require quotient L2 norm less than delta/2. An ultrafilter-large set then satisfies the original delta bound.\n\nThe argument repeats for a second ultrapower and uses no separability. It does not require a global L2-Lipschitz constant, but it does require the bounded-ball modulus.\n\n## Role in the source argument\n\nMakes the same linear map well-defined and continuous after both ultrapower passages in the source rigidity argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:ultrapower](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L33)\n- [eq:ball-modulus](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/sections/03-liouville.tex#L38)\n\n## Antecedents and comparison\n\nThis is standard uniform continuity and ideal-preserving quotient descent. The radius and tolerance slack makes the repeated use explicit.\n\n## Checks and limitations\n\nTwo hundred forty finite matrix-sequence examples verify uniform L2 bounds for two-sided multiplication maps.\n\nNo finite test simulates a free ultrafilter or proves the general descent statement; the general selected proof was read.\n\n## Possible applications\n\nTransferring norm-bounded linear maps through tracial asymptotic constructions without assuming separability.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000380",
+      "record_type": "instrument",
+      "title": "Prove algebraic tensor independence using a central support projection",
+      "forms": [
+        "commuting-factor-tensor-independence",
+        "relation-module-support-projection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-299"
+      ],
+      "source_paper_ids": [
+        "P-000209"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+          "label": "lem:tensor-independence",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L15",
+          "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+        },
+        {
+          "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+          "label": "lem:tensor-grouped-factors",
+          "line": 71,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L71",
+          "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-factor-independence-via-support-ideals",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000380.md",
+      "body": "# Prove algebraic tensor independence using a central support projection\n\n[Family 299](../families/openai-math-299.md) · [Source manuscript](../papers/P-000209.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nIf M is a von Neumann factor on H with unit I and B is a unital subalgebra of M', multiplication M algebraic-tensor B -> B(H) is injective. For independent b_1,...,b_l in B, let S be the weakly closed space of rows (a_i) with sum a_i b_i=0. Matrices whose rows lie in S form a weakly closed left ideal J in M_l(M), so J=M_l(M)p for its right support projection p.\n\nRight multiplication by diagonal unitaries from M preserves J. Hence p commutes with all such unitaries, and its entries are central in M, therefore scalar. Its rows are scalar relations among the independent b_i; consequently p=0 and J=0.\n\nInduction gives injectivity for any finite family of commuting factors. In an irreducible representation of a maximal tensor product of unital C*-algebras, the weak closures of the represented legs, or of any grouping into blocks, are factors: a central element of one block commutes with the whole image and is scalar. Neither faithfulness on each original algebra nor spatial decomposition is required.\n\n## Role in the source argument\n\nPrevents representation-dependent cancellation when independently constructed tensor labels are multiplied.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:tensor-independence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L15)\n- [lem:tensor-grouped-factors](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L71)\n\n## Antecedents and comparison\n\nThis is the classical relation-module/support-projection proof of algebraic independence for commuting factors. It does not identify a completed tensor-product norm.\n\n## Checks and limitations\n\nNine finite spatial-factor basis calculations and a nonfactor negative control where multiplication kills a nonzero algebraic tensor.\n\nFinite spatial examples do not cover nonspatial representations; the support-projection argument supplies that generality.\n\n## Possible applications\n\nTesting nonvanishing in irreducible representations without assuming a tensor decomposition of the Hilbert space.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000381",
+      "record_type": "instrument",
+      "title": "Choose tensor labels that remain independent under every rank-two quotient",
+      "forms": [
+        "universal-tensor-labels",
+        "rank-two-quotient-incidence-avoidance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-299"
+      ],
+      "source_paper_ids": [
+        "P-000209"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+          "label": "lem:tensor-detecting-space",
+          "line": 95,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L95",
+          "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+        },
+        {
+          "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+          "label": "lem:tensor-real-labels",
+          "line": 117,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L117",
+          "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+        },
+        {
+          "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex",
+          "label": "cor:tensor-represented-labels",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L166",
+          "sha256": "65db4fdb470b80439eb7d477df19a571edadc9067ec2adfe2f472564bb0dc7e7"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-sard-incidence-method-for-uniform-tensor-labels",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000381.md",
+      "body": "# Choose tensor labels that remain independent under every rank-two quotient\n\n[Family 299](../families/openai-math-299.md) · [Source manuscript](../papers/P-000209.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nFor a real m-dimensional space V, m>=2, and r>=1, choose n with 2^n>2mn+r-1. There exist x_1,...,x_r in V^{tensor n} whose images are independent under P_1 tensor ... tensor P_n for every tuple of real maps of rank at least two.\n\nReduce to surjections P_j:V->R^2. For a unit coefficient vector u in S^{r-1}, the equation (tensor P_j)(sum u_i x_i)=0 imposes 2^n independent conditions on x, because differentiation in the x variables is surjective. The bad incidence dimension is 2mn+r-1+r m^n-2^n<r m^n, so its projection is null. The noncompact parameter space is handled by a countable atlas.\n\nFor a unital C*-algebra D without characters, finitely many commutators generate its unit ideal. Their selfadjoint entries span a finite real V that contains a noncommuting pair in every unital representation, hence has represented rank at least two. The labels above are selfadjoint; real independence therefore survives complexification. Factor tensor independence then makes the labels independent in every irreducible representation of D^{tensor n} maximal-tensor B, for arbitrary nonzero unital B.\n\n## Role in the source argument\n\nCreates enough labels that survive all represented tensor legs, including nonspatial maximal-product representations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:tensor-detecting-space](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L95)\n- [lem:tensor-real-labels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L117)\n- [cor:tensor-represented-labels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/sections/tensor.tex#L166)\n\n## Antecedents and comparison\n\nThe construction is a finite-dimensional Sard dimension argument combined with the standard commutator-ideal characterization of absence of characters. No novelty claim beyond the source-specific organization is made.\n\n## Checks and limitations\n\nSeventy-five sampled tuples of rank-two quotient maps verify label independence in three dimension regimes satisfying the source inequality.\n\nRandom sampling cannot establish the universal quantifier over all quotient maps; that conclusion uses the read incidence proof.\n\n## Possible applications\n\nRepresentation-uniform noncancellation in tensor constructions when every represented factor retains at least two real directions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000382",
+      "record_type": "instrument",
+      "title": "Recover the ideal lattice and trace finiteness ideals from the extended trace cone",
+      "forms": [
+        "trace-cone-additive-idempotents",
+        "scalar-limit-ideal-recovery"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-301"
+      ],
+      "source_paper_ids": [
+        "P-000210"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+          "label": "st:ideals",
+          "line": 156,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L156",
+          "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+        },
+        {
+          "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+          "label": "st:scalar-limits",
+          "line": 197,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L197",
+          "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "explicit-classical-elliott-robert-santiago-construction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000382.md",
+      "body": "# Recover the ideal lattice and trace finiteness ideals from the extended trace cone\n\n[Family 301](../families/openai-math-301.md) · [Source manuscript](../papers/P-000210.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nFor each closed two-sided ideal I of a C*-algebra, define tau_I(a)=0 for positive a in I and infinity otherwise. These are exactly the additive idempotents of the extended lower-semicontinuous trace cone. Moreover\n\n$$I\\subseteq J\\quad\\Longleftrightarrow\\quad\\tau_I+\\tau_J=\\tau_I.$$\n\nThus an additive cone bijection determines an ideal-lattice order isomorphism. For a trace tau let Fin(tau) be the closed ideal generated by finite-trace positives and Ker(tau) its zero ideal. In the canonical trace-cone topology,\n\n$$\\lim_{r\\downarrow0}r\\tau=\\tau_{\\operatorname{Fin}(\\tau)},\\qquad\\lim_{r\\uparrow\\infty}r\\tau=\\tau_{\\operatorname{Ker}(\\tau)}.$$\n\nConsequently a continuous positively homogeneous additive cone equivalence preserves both ideals. The first limit must be interpreted in the cut-based cone topology; it need not be the naive pointwise limit on uncut positive elements. For separable algebras the ideal-lattice isomorphism also identifies primitive ideal spaces with their hull-kernel topology.\n\n## Role in the source argument\n\nRecovers the ideal labels needed before constructing the source stabilization models.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [st:ideals](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L156)\n- [st:scalar-limits](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L197)\n\n## Antecedents and comparison\n\nThis construction is already explicit in [Elliott, Robert and Santiago](https://arxiv.org/pdf/0805.3122), the paragraph on ideal traces in Section 3.1 and equation (3.4) in Section 3.2. It is established machinery, not a new source discovery.\n\n## Checks and limitations\n\nAn exhaustive 1,364 pairs of ideals in finite commutative direct sums verify the additive-idempotent inclusion rule.\n\nFinite models do not test non-pointwise cone convergence or the source global classification theorem.\n\n## Possible applications\n\nRecovering ideal and support data from a trace invariant without adding a separate ideal-lattice invariant.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000383",
+      "record_type": "instrument",
+      "title": "Preserve a lower spectral-rank signal under normalized block averaging",
+      "forms": [
+        "normalized-block-rank-averaging",
+        "spectral-signal-lower-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-301"
+      ],
+      "source_paper_ids": [
+        "P-000210"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex",
+          "label": "st:folding",
+          "line": 306,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L306",
+          "sha256": "cb43288416e8e2c3ef77fd3395a8f156c6a64f60a022061bff35a8e6398442f4"
+        },
+        {
+          "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+          "label": "tc:rank-average",
+          "line": 606,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L606",
+          "sha256": "6c9a074cd1a9185933a42530c2b123e4c998dbc8a903370c41987fb5a7656e11"
+        },
+        {
+          "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex",
+          "label": "tc:fixed-slack",
+          "line": 371,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L371",
+          "sha256": "6c9a074cd1a9185933a42530c2b123e4c998dbc8a903370c41987fb5a7656e11"
+        }
+      ],
+      "batch_id": "B034",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-block-functional-calculus-and-spectral-compression",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000383.md",
+      "body": "# Preserve a lower spectral-rank signal under normalized block averaging\n\n[Family 301](../families/openai-math-301.md) · [Source manuscript](../papers/P-000210.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nLet lambda_alpha be positive rational weights summing to one. Form the diagonal block average H_av of completely positive contractive candidates H_alpha in a separate normalized matrix/UHF direction; retain unnormalized traces on internal matrix directions. Orthogonality gives, for positive s, exact weighted averages of tau(H_alpha(s)), tau(H_alpha(s)^2), and d_tau((H_alpha(s)-eta)_+). An ordinary arithmetic average need not have these square or rank identities.\n\nSuppose y>=0, the v_alpha are contractions, 0<=g(t)<=1_{(eta,infinity)}(t), and\n\n$$\\left\\|T-y^2\\right\\|<\\epsilon^2/2,\\qquad T=\\sum_\\alpha\\lambda_\\alpha yv_\\alpha^*g(H_\\alpha(s))v_\\alpha y.$$\n\nCompress by p=1_{(epsilon,infinity)}(y). Then pTp>=(epsilon^2/2)p. Positivity and traciality yield\n\n$$d_\\tau((y-\\epsilon)_+)\\le\\frac{2\\|y\\|^2}{\\epsilon^2}\\,d_\\tau((H_{av}(s)-\\eta)_+).$$\n\nThe constant and eta are independent of candidate count, rational multiplicities and internal matrix size. For extended weights, an infinite right side is immediate; otherwise finite row comparison puts the relevant cuts in the normal trace's finite part, where compression and monotone convergence apply. Stable folding preserves these trace conventions.\n\n## Role in the source argument\n\nRetains a nonzero lower rank witness while simultaneously averaging approximation errors.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [st:folding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L306)\n- [tc:rank-average](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L606)\n- [tc:fixed-slack](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L371)\n\n## Antecedents and comparison\n\nOrthogonal block functional calculus and spectral projection compression are classical. The extraction records the normalization convention and candidate-independent constant.\n\n## Checks and limitations\n\nSixty rank-deficient block models, with 180 noncommuting matrix pairs, verify trace, square, rank and lower-bound formulas. A scalar negative control shows ordinary arithmetic averaging does not preserve the square formula.\n\nFinite tests do not construct the stable folding or cover all extended weights; the selected proofs supply those steps.\n\n## Possible applications\n\nConvex approximation of operator maps with a spectral witness that must survive the averaging step.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -19790,6 +20148,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000206.md",
       "body": "# The Campana–Peternell conjecture in dimension six\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Campana-Peternell conjecture in dimension six.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000374: Express P1 fiber integration as an involution and a divided-difference rule](../instruments/MI-000374.md)\n- [MI-000375: Certify a lifted polynomial consequence with modular rank and rational witnesses](../instruments/MI-000375.md)\n\n## Dependencies and review\n\nLeray-Hirsch, relative Grothendieck-Riemann-Roch, rational cohomology, multiset coordinates, Gaussian elimination and modular reduction at invertible denominators.\n\nRead the full P1-involution proof, arithmetic-certificate argument and certificate appendix description. The source 8280 by 6820 matrix and reported ranks were not recomputed; geometric input equations and final recognition were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-067.md) · [Batch B033](../../batches/B033/README.md)"
+    },
+    {
+      "id": "P-000207",
+      "record_type": "paper",
+      "title": "A counterexample to Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-294"
+      ],
+      "batch_id": "B034",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "973179e93dd953bb503210ec22ff8858f95047b9ab2ea3ea137cb438d709f7f8",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000207.md",
+      "body": "# A counterexample to Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a counterexample to Kaplansky quasitrace additivity and failures of tensor-product stable finiteness.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000376: Avoid small collective images by a Grassmann incidence dimension bound](../instruments/MI-000376.md)\n- [MI-000377: Normalize expanding bundle maps through a unique determinant minimizer](../instruments/MI-000377.md)\n\n## Dependencies and review\n\nGrassmann bundles, surjective evaluation of finitely many smooth sections, Sard, eigenvalue monotonicity, determinant expansions and continuous functional calculus.\n\nRead both bundle-map lemmas completely. The Chern obstruction, universal algebra construction and quasitrace-defect proof were not audited.\n\nInspected the quasitrace target and the stable-finiteness consequence target and definitions. They include a uniform 1/144 additivity defect and the tensor-product consequences; target proofs contain sorry. No Lean build was performed.\n\n[Family context](../families/openai-math-294.md) · [Batch B034](../../batches/B034/README.md)"
+    },
+    {
+      "id": "P-000208",
+      "record_type": "paper",
+      "title": "Vanishing of higher bounded Hochschild cohomology",
+      "source_collection": "openai/math",
+      "upstream_slug": "Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-295"
+      ],
+      "batch_id": "B034",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d1305a1c1c16c51f6165e32c37c90911379ed1b4505b179a5ff77c7eb422e70f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000208.md",
+      "body": "# Vanishing of higher bounded Hochschild cohomology\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims vanishing of bounded Hochschild cohomology in every degree at least two for arbitrary complex von Neumann algebras.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000378: Correct mixed central inputs by an explicit bounded Hochschild homotopy](../instruments/MI-000378.md)\n- [MI-000379: Transfer a bounded-ball L2 modulus through repeated tracial ultrapowers](../instruments/MI-000379.md)\n\n## Dependencies and review\n\nHochschild differential, central projections, multilinearity, uniform continuity on bounded balls and tracial ultrapower ideals.\n\nRead the full central-cut homotopy and iterated-ultrapower continuity proofs. The random-walk construction, Liouville rigidity and primitive construction were not audited.\n\nRead KadisonRingrose.lean and its ordinary bounded Hochschild differential. Its degree-at-least-two target has no separability or type restriction and contains sorry. No Lean build was performed.\n\n[Family context](../families/openai-math-295.md) · [Batch B034](../../batches/B034/README.md)"
+    },
+    {
+      "id": "P-000209",
+      "record_type": "paper",
+      "title": "The Kirchberg–Rørdam character criterion",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Kirchberg-Rordam-character-criterion-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-299"
+      ],
+      "batch_id": "B034",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b9fbde01820ce301402643c0fa24993c448f91531fbaf2c088c42cda3f153b9d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000209.md",
+      "body": "# The Kirchberg–Rørdam character criterion\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Kirchberg-Rordam character criterion and Jiang-Su absorption for infinite tensor powers of characterless algebras.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000380: Prove algebraic tensor independence using a central support projection](../instruments/MI-000380.md)\n- [MI-000381: Choose tensor labels that remain independent under every rank-two quotient](../instruments/MI-000381.md)\n\n## Dependencies and review\n\nWeakly closed left ideals, support projections, factor centers, commutator ideals, Sard and complexification of real selfadjoint spaces.\n\nRead the complete factor-independence, grouped-factor, detecting-space, real-label and represented-label arguments. The full square-zero element and dimension-drop constructions were not audited.\n\nInspected the central-algebra definition and final CharacterCriterion.lean target: no nonzero characters is equivalent to Jiang-Su absorption for a nonzero unital separable C*-algebra and a free ultrafilter. The target contains sorry. The long supporting construction was not audited or built.\n\n[Family context](../families/openai-math-299.md) · [Batch B034](../../batches/B034/README.md)"
+    },
+    {
+      "id": "P-000210",
+      "record_type": "paper",
+      "title": "The trace cone classifies Razak–Jacelon stabilizations",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-301"
+      ],
+      "batch_id": "B034",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1c4b454989e08c4dfc8321ae93f24ca3f49c0e43caee87cc697448b4f0bdc792",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000210.md",
+      "body": "# The trace cone classifies Razak–Jacelon stabilizations\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000382: Recover the ideal lattice and trace finiteness ideals from the extended trace cone](../instruments/MI-000382.md)\n- [MI-000383: Preserve a lower spectral-rank signal under normalized block averaging](../instruments/MI-000383.md)\n\n## Dependencies and review\n\nExtended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.\n\nRead the ideal-transport, folding and averaged-rank proofs and the fixed lower-data definitions. The approximation models, uniqueness and final classification arguments were not audited.\n\nInspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.\n\n[Family context](../families/openai-math-301.md) · [Batch B034](../../batches/B034/README.md)"
     }
   ],
   "families": [
@@ -23445,6 +23879,60 @@
       "body": "# Hyperinvariant subspaces and transitive algebras\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000025](../papers/P-000025.md)\n- [P-000044](../papers/P-000044.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 1,108-module import closure new\n\nOn every infinite-dimensional separable complex Hilbert space there is a nonzero bounded quasinilpotent operator S ($`\\|S^n\\|\\le\\exp(-10\\lfloor(n+1)^2/4\\rfloor)`$) with no nontrivial closed hyperinvariant subspace; its commutant is a proper strongly closed transitive algebra, refuting Kadison’s transitive-algebra problem as well, which the catalogue summary omits. Companion: for every irrational rotation, an operator in the hyperfinite $`\\mathrm{II}_{1}`$ factor with no nontrivial invariant projection in the factor, answering Zhu–Fang–Shi and the point-mass Brown-measure case left open by Haagerup–Schultz. Nothing is said about the ordinary invariant subspace problem.\n\n## Extracted instruments.\n\n- [MI-000098: Backward intertwiner over an ergodic base](../instruments/MI-000098.md)\n\n- [MI-000099: Endpoint-conditioned convolution obstruction](../instruments/MI-000099.md)\n\n- [MI-000100: Affiliated transport](../instruments/MI-000100.md)\n\n## Reused.\n\nDomar’s convex-envelope theorems (reproved); Douglas–Pearcy equivalence of the hyperinvariant and transitive-commutant problems; Dykema 2005 on projections of hyperinvariant subspaces; Anantharaman–Popa crossed products; Borel–Cantelli; Fejér kernels.\n\n## Caveats.\n\nThe repository provides two formalization routes; neither was compiled or kernel-checked for this survey. The companion’s estimates ($`m^{(7/10)m}`$, $`m^{1000}`$) were not independently verified. Remark 1.5 asserts a published 2017 corollary is false. The companion estimates and comparisons with earlier equivalence claims require further checking.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: ,108-module closure, two formal routes\n- Statement coverage: yes\n- Dependencies: mutual elementary lemmas with companion\n- Antecedents: —"
     },
     {
+      "id": "openai-math-294",
+      "record_type": "family",
+      "title": "Uniform bundle expansion and continuous determinant normalization",
+      "source_family": "294",
+      "source_collection": "openai/math",
+      "batch_id": "B034",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000207"
+      ],
+      "instrument_ids": [
+        "MI-000376",
+        "MI-000377"
+      ],
+      "headline": "The source claims a counterexample to Kaplansky quasitrace additivity and failures of tensor-product stable finiteness.",
+      "central_instrument": "An incidence dimension inequality produces bundle maps with no small collective image. A strictly geodesically convex determinant potential normalizes expanding maps continuously over the base.",
+      "novelty_assessment": "Incidence avoidance, Sard and operator scaling are established techniques. The source records a bundlewise continuous normalization with a strict expansion margin; no novelty certification of the global counterexample.",
+      "formalization_summary": "Inspected the quasitrace target and the stable-finiteness consequence target and definitions. They include a uniform 1/144 additivity defect and the tensor-product consequences; target proofs contain sorry. No Lean build was performed.",
+      "statement_faithfulness": "The incidence base has real dimension 2h; the maps are smooth complex bundle maps. The normalization assumes expansion by a factor of at least two on every source subspace, uniformly over a compact base.",
+      "dependencies": "Grassmann bundles, surjective evaluation of finitely many smooth sections, Sard, eigenvalue monotonicity, determinant expansions and continuous functional calculus.",
+      "antecedents": "Gurvits operator scaling and Sra-Hosseini geodesic log-determinant convexity; classical transversality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-294.md",
+      "body": "# Uniform bundle expansion and continuous determinant normalization\n\n## Source manuscript and claim\n\n[A counterexample to Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness](../papers/P-000207.md), by OpenAI, September 23, 2026.\n\nThe source claims a counterexample to Kaplansky quasitrace additivity and failures of tensor-product stable finiteness.\n\n## Extracted instruments\n\n- [MI-000376: Avoid small collective images by a Grassmann incidence dimension bound](../instruments/MI-000376.md)\n- [MI-000377: Normalize expanding bundle maps through a unique determinant minimizer](../instruments/MI-000377.md)\n\n## Dependencies and antecedents\n\nGrassmann bundles, surjective evaluation of finitely many smooth sections, Sard, eigenvalue monotonicity, determinant expansions and continuous functional calculus.\n\nGurvits operator scaling and Sra-Hosseini geodesic log-determinant convexity; classical transversality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead both bundle-map lemmas completely. The Chern obstruction, universal algebra construction and quasitrace-defect proof were not audited.\n\nInspected the quasitrace target and the stable-finiteness consequence target and definitions. They include a uniform 1/144 additivity defect and the tensor-product consequences; target proofs contain sorry. No Lean build was performed.\n\nThe incidence base has real dimension 2h; the maps are smooth complex bundle maps. The normalization assumes expansion by a factor of at least two on every source subspace, uniformly over a compact base.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/294.md) · [Batch record](../../batches/B034/README.md)"
+    },
+    {
+      "id": "openai-math-295",
+      "record_type": "family",
+      "title": "Central cochain correction and continuity through iterated tracial ultrapowers",
+      "source_family": "295",
+      "source_collection": "openai/math",
+      "batch_id": "B034",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000208"
+      ],
+      "instrument_ids": [
+        "MI-000378",
+        "MI-000379"
+      ],
+      "headline": "The source claims vanishing of bounded Hochschild cohomology in every degree at least two for arbitrary complex von Neumann algebras.",
+      "central_instrument": "An explicit central-cut homotopy corrects mixed inputs with a degree-only norm bound. A uniform bounded-ball modulus lets linear maps descend through repeated tracial ultrapowers.",
+      "novelty_assessment": "Bar-complex contraction and uniform quotient continuity are classical mechanisms. The extraction records explicit formulas and hypotheses, without certifying the global cohomology vanishing argument.",
+      "formalization_summary": "Read KadisonRingrose.lean and its ordinary bounded Hochschild differential. Its degree-at-least-two target has no separability or type restriction and contains sorry. No Lean build was performed.",
+      "statement_faithfulness": "The cochain output lies in zM for a central projection z; its complementary projection annihilates that module. Ultrapower descent needs L2 continuity on each fixed operator-norm ball, not merely operator-norm boundedness.",
+      "dependencies": "Hochschild differential, central projections, multilinearity, uniform continuity on bounded balls and tracial ultrapower ideals.",
+      "antecedents": "Classical chain homotopy and quotient continuity; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-295.md",
+      "body": "# Central cochain correction and continuity through iterated tracial ultrapowers\n\n## Source manuscript and claim\n\n[Vanishing of higher bounded Hochschild cohomology](../papers/P-000208.md), by OpenAI, September 23, 2026.\n\nThe source claims vanishing of bounded Hochschild cohomology in every degree at least two for arbitrary complex von Neumann algebras.\n\n## Extracted instruments\n\n- [MI-000378: Correct mixed central inputs by an explicit bounded Hochschild homotopy](../instruments/MI-000378.md)\n- [MI-000379: Transfer a bounded-ball L2 modulus through repeated tracial ultrapowers](../instruments/MI-000379.md)\n\n## Dependencies and antecedents\n\nHochschild differential, central projections, multilinearity, uniform continuity on bounded balls and tracial ultrapower ideals.\n\nClassical chain homotopy and quotient continuity; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full central-cut homotopy and iterated-ultrapower continuity proofs. The random-walk construction, Liouville rigidity and primitive construction were not audited.\n\nRead KadisonRingrose.lean and its ordinary bounded Hochschild differential. Its degree-at-least-two target has no separability or type restriction and contains sorry. No Lean build was performed.\n\nThe cochain output lies in zM for a central projection z; its complementary projection annihilates that module. Ultrapower descent needs L2 continuity on each fixed operator-norm ball, not merely operator-norm boundedness.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/295.md) · [Batch record](../../batches/B034/README.md)"
+    },
+    {
       "id": "openai-math-296",
       "record_type": "family",
       "title": "Baire generation criteria and explicit matrix encoding",
@@ -23528,6 +24016,60 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-298.md",
       "body": "# Retained matrix ensembles and rare structural events in entropy comparisons\n\n## Source manuscript and claim\n\n[A finite-entropy separation of microstates and nonmicrostates free entropy](../papers/P-000146.md), by OpenAI, September 25, 2026.\n\nThe source claims a bounded self-adjoint finite tuple in a faithful normal tracial von Neumann algebra with both free entropies finite and microstates entropy at least one-half below nonmicrostates entropy.\n\n## Extracted instruments\n\n- [MI-000253: Retaining one ensemble transfers matrix entropy production to free Fisher information](../instruments/MI-000253.md)\n- [MI-000254: A persistent block event yields a Gaussian-relative entropy deficit](../instruments/MI-000254.md)\n\n## Dependencies and antecedents\n\nGaussian smoothing, normalized de Bruijn identity, noncommutative polynomial derivatives, Fatou, unitary nets, chi-square tails and binary relative entropy.\n\nJekel-Pi, An elementary proof of the inequality chi<=chi* for conditional free entropy, Proposition 6.1 and Theorem 6.4; Biane-Capitaine-Guionnet entropy comparison; classical binary data processing and Gaussian concentration. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the variational Fisher formula, retained-ensemble flow proof, matrix block transfer and complete rare-event entropy argument. The free cumulant estimates, construction of the limiting tuple and full finite-entropy separation were not audited.\n\nThe scope document and FiniteEntropySeparation.lean target were inspected, including cutoff/limsup microstates entropy and semicircular-noise nonmicrostates entropy. Comparator statements were inspected, not proof builds: no Lean solution was built or kernel-checked. The auxiliary cards are not all separate formalization targets.\n\nThe dimension subsequence and initial laws are fixed independently of time and polynomial tests. The block event is a deterministic event on terminal tuples; the initial spectral partition is only a probability witness. Moment convergence, conjugate variables and block structure are explicit inputs.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/298.md) · [Batch record](../../batches/B018/README.md)"
+    },
+    {
+      "id": "openai-math-299",
+      "record_type": "family",
+      "title": "Algebraic tensor independence and representation-resistant labels",
+      "source_family": "299",
+      "source_collection": "openai/math",
+      "batch_id": "B034",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000209"
+      ],
+      "instrument_ids": [
+        "MI-000380",
+        "MI-000381"
+      ],
+      "headline": "The source claims the Kirchberg-Rordam character criterion and Jiang-Su absorption for infinite tensor powers of characterless algebras.",
+      "central_instrument": "A support-projection argument proves algebraic tensor independence of commuting factors. A real incidence construction builds tensor labels independent under all rank-two quotient maps.",
+      "novelty_assessment": "Factor independence and incidence avoidance are classical mechanisms. The selected conjunction is useful for representation-uniform constructions; no priority or global absorption certification.",
+      "formalization_summary": "Inspected the central-algebra definition and final CharacterCriterion.lean target: no nonzero characters is equivalent to Jiang-Su absorption for a nonzero unital separable C*-algebra and a free ultrafilter. The target contains sorry. The long supporting construction was not audited or built.",
+      "statement_faithfulness": "The multiplication conclusion is for the algebraic tensor product, not an assertion that every representation is spatial. Real tensor labels use selfadjoint inputs to preserve independence after complexification.",
+      "dependencies": "Weakly closed left ideals, support projections, factor centers, commutator ideals, Sard and complexification of real selfadjoint spaces.",
+      "antecedents": "Classical factor and incidence methods; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-299.md",
+      "body": "# Algebraic tensor independence and representation-resistant labels\n\n## Source manuscript and claim\n\n[The Kirchberg–Rørdam character criterion](../papers/P-000209.md), by OpenAI, September 25, 2026.\n\nThe source claims the Kirchberg-Rordam character criterion and Jiang-Su absorption for infinite tensor powers of characterless algebras.\n\n## Extracted instruments\n\n- [MI-000380: Prove algebraic tensor independence using a central support projection](../instruments/MI-000380.md)\n- [MI-000381: Choose tensor labels that remain independent under every rank-two quotient](../instruments/MI-000381.md)\n\n## Dependencies and antecedents\n\nWeakly closed left ideals, support projections, factor centers, commutator ideals, Sard and complexification of real selfadjoint spaces.\n\nClassical factor and incidence methods; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete factor-independence, grouped-factor, detecting-space, real-label and represented-label arguments. The full square-zero element and dimension-drop constructions were not audited.\n\nInspected the central-algebra definition and final CharacterCriterion.lean target: no nonzero characters is equivalent to Jiang-Su absorption for a nonzero unital separable C*-algebra and a free ultrafilter. The target contains sorry. The long supporting construction was not audited or built.\n\nThe multiplication conclusion is for the algebraic tensor product, not an assertion that every representation is spatial. Real tensor labels use selfadjoint inputs to preserve independence after complexification.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/299.md) · [Batch record](../../batches/B034/README.md)"
+    },
+    {
+      "id": "openai-math-301",
+      "record_type": "family",
+      "title": "Trace-cone ideal recovery and rank signals preserved by block averaging",
+      "source_family": "301",
+      "source_collection": "openai/math",
+      "batch_id": "B034",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000210"
+      ],
+      "instrument_ids": [
+        "MI-000382",
+        "MI-000383"
+      ],
+      "headline": "The source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.",
+      "central_instrument": "Additive idempotents of the extended trace cone recover ideals, and scalar limits recover finite and zero ideals. Normalized block averaging retains a spectral lower-rank signal with a constant independent of the number of candidates.",
+      "novelty_assessment": "Ideal recovery and scalar limits are explicit in Elliott-Robert-Santiago. Orthogonal block averaging and spectral compression are classical. No new ideal theorem or global classification certificate is claimed.",
+      "formalization_summary": "Inspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.",
+      "statement_faithfulness": "Use extended lower-semicontinuous traces, including zero and infinite values. Internal matrix traces are unnormalized; only the separate candidate-averaging direction is normalized.",
+      "dependencies": "Extended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.",
+      "antecedents": "Elliott-Robert-Santiago, The cone of lower semicontinuous traces on a C*-algebra, Sections 3.1-3.2 and equation (3.4).",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-301.md",
+      "body": "# Trace-cone ideal recovery and rank signals preserved by block averaging\n\n## Source manuscript and claim\n\n[The trace cone classifies Razak–Jacelon stabilizations](../papers/P-000210.md), by OpenAI, September 25, 2026.\n\nThe source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.\n\n## Extracted instruments\n\n- [MI-000382: Recover the ideal lattice and trace finiteness ideals from the extended trace cone](../instruments/MI-000382.md)\n- [MI-000383: Preserve a lower spectral-rank signal under normalized block averaging](../instruments/MI-000383.md)\n\n## Dependencies and antecedents\n\nExtended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.\n\nElliott-Robert-Santiago, The cone of lower semicontinuous traces on a C*-algebra, Sections 3.1-3.2 and equation (3.4). The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the ideal-transport, folding and averaged-rank proofs and the fixed lower-data definitions. The approximation models, uniqueness and final classification arguments were not audited.\n\nInspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.\n\nUse extended lower-semicontinuous traces, including zero and infinite values. Internal matrix traces are unnormalized; only the separate candidate-averaging direction is normalized.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/301.md) · [Batch record](../../batches/B034/README.md)"
     },
     {
       "id": "openai-math-304",

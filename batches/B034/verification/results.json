@@ -1,0 +1,66 @@
+{
+  "batch": "B034",
+  "status": "passed",
+  "check_groups": {
+    "incidence_dimensions": {
+      "exact_incidence_dimension_models": 600,
+      "scope": "Constraint ranks and dimension arithmetic only; no uniform bundle transversality certified by finite sampling."
+    },
+    "continuous_scaling": {
+      "expanding_matrix_models": 24,
+      "max_normalization_error": 3.6426417437951386e-13,
+      "scope": "Expansion is guaranteed by two invertible disjoint target blocks. Numerical stationary equations do not certify bundlewise continuity."
+    },
+    "central_homotopy": {
+      "exact_noncommutative_mixed_input_models": 240,
+      "degrees": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scope": "M2 plus C with values in its M2 central summand; arbitrary cochains, not only cocycles."
+    },
+    "bounded_ball_modulus": {
+      "matrix_sequence_bounds": 240,
+      "scope": "Uniform L2-modulus examples only. Ultrafilter quotient and iterated-ultrapower claims are established by the read source proof, not simulated."
+    },
+    "commuting_tensor_independence": {
+      "spatial_factor_models": 9,
+      "nonfactor_negative_control": true,
+      "scope": "Finite matrix factors only; nonspatial von Neumann representations require the support-projection proof."
+    },
+    "tensor_labels": {
+      "sampled_rank_two_tensor_maps": 75,
+      "dimensions": [
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          3,
+          4,
+          6
+        ]
+      ],
+      "scope": "Random finite samples illustrate the dimension threshold; they do not establish independence for every tuple of quotient maps."
+    },
+    "ideal_weights": {
+      "exact_commutative_ideal_pairs": 1364,
+      "scope": "Finite direct sums; extended-trace topology and arbitrary C-star ideals use the source and classical proofs."
+    },
+    "averaged_rank_signal": {
+      "normalized_block_average_models": 60,
+      "noncommuting_pairs": 180,
+      "ordinary_average_negative_control": true,
+      "scope": "Finite rank-deficient examples test block normalization and spectral bound; arbitrary extended weights and stable folding are not simulated."
+    }
+  },
+  "limitations": "Selected finite mechanisms only; no quasitrace counterexample, Hochschild vanishing, character criterion or stabilization classification certified; no Lean build."
+}
