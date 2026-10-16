@@ -1,0 +1,51 @@
+{
+  "batch": "B043",
+  "status": "passed",
+  "scope": "Eight finite model groups. No source headline theorem, infinite-dimensional limit or Lean proof certified.",
+  "checks": {
+    "annulus_factorization": {
+      "models": 10,
+      "maximum_error": 1.3423141400915437e-15,
+      "scope": "finite factorization and preimage identity only"
+    },
+    "positive_moments": {
+      "atom_tests": 44,
+      "negative_and_complex_controls": true,
+      "scope": "finite support; no polynomial-density test"
+    },
+    "commuting_taylor": {
+      "models": 120,
+      "scope": "diagonal common-spectral models; global envelope assumed"
+    },
+    "spectral_tail_powers": {
+      "models": 100,
+      "powers_per_model": 10,
+      "nonreducing_ranges": 100,
+      "ordinary_order_counterexample": true
+    },
+    "evaluation_surjection": {
+      "finite_models": 14,
+      "scope": "coordinate normers and residual-halving surjection; not the infinite-dimensional criterion"
+    },
+    "small_restriction": {
+      "tail_models": 3,
+      "simultaneous_operators": 2,
+      "scope": "compact diagonal examples, not a finite test for strict singularity"
+    },
+    "laguerre_flux": {
+      "exact_recurrence_models": 80,
+      "disk_models": 80,
+      "scope": "quadratic identity and disk algebra, not rapid tail decay"
+    },
+    "neutral_stable_graph": {
+      "finite_horizon": 90,
+      "models": 3,
+      "iterations": [
+        15,
+        15,
+        16
+      ],
+      "scope": "finite backward boundary model, no PDE or infinite-horizon proof"
+    }
+  }
+}

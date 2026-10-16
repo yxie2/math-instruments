@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B043: eight selected interfaces from families 280, 282, 323 and 371, with explicit spectral, infinite-dimensional and tail hypotheses.
+
 - Added B042: eight selected interfaces from families 001, 005, 008 and 030, with fixed-field avoidance, matched damping and integral residual-comparison hypotheses.
 
 - Added B041: eight selected interfaces from families 303, 315, 319 and 320, with finite checks and explicit boundaries between algebraic tools and global source claims.
