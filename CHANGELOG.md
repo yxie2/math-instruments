@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B023: eight analytic bookkeeping instruments from families 081, 083, 085 and 086. Eight finite check groups retain overlapping descendants, dependent selection, birth times, noncommutation and terminal remainders; global analytic inputs are explicit.
+
 - Added B022: eight instruments from families 026, 027, 028 and 031, with eight finite check groups. The prime-gap scope-note/target mismatch and the conditional status of sieve, seam and Galois inputs are documented.
 
 - Added B021: nine instruments from logic families 241, 242, 244 and 245, with primary antecedent comparisons and nine finite check groups. Complete-witness, nonuniformity, symmetry, choice and annotation hypotheses are retained explicitly.

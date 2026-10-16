@@ -1,0 +1,284 @@
+{
+  "batch_id": "B023",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T10:12:25.060189+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/DiskMaximal.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DiskMaximal.lean",
+      "sha256": "b86a9fd647b4b8dcff4e4fb95e7d4bba78d0b758c8b0beeb385d8e9f895c8017",
+      "bytes": 2431
+    },
+    {
+      "path": "lean/ComparatorChallenges/LipschitzHilbert.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LipschitzHilbert.lean",
+      "sha256": "0f52347474ceb515213f6a8a05f46dc0d34001c8c7edea5af371b41752834c39",
+      "bytes": 3544
+    },
+    {
+      "path": "lean/ComparatorChallenges/RieszQuantitative.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/RieszQuantitative.lean",
+      "sha256": "6e1b35500d0313a4774dafe0ae42200202735e598191209f06e930f114f99bd0",
+      "bytes": 2302
+    },
+    {
+      "path": "lean/ComparatorChallenges/SignedFiniteBand.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SignedFiniteBand.lean",
+      "sha256": "b3bca8a51f58611e232ed51e4b15829a43d5a7974244a2d73a74ed7468d29488",
+      "bytes": 1753
+    },
+    {
+      "path": "lean/docs/081.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/081.md",
+      "sha256": "eb66954084a4a5c7c9852494681ec82cc737a170de36d00d15b18ef78700b1a2",
+      "bytes": 1129
+    },
+    {
+      "path": "lean/docs/083.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/083.md",
+      "sha256": "5c8ba9579be3191c476d4b394597f52295b691b42a5d795ea3296d0a18d7151e",
+      "bytes": 1135
+    },
+    {
+      "path": "lean/docs/085.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/085.md",
+      "sha256": "bfd5b491fe28ddae031bcb810987322bd0bc331c0e9ed8fed5b9c55db80bb275",
+      "bytes": 1296
+    },
+    {
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/README.md",
+      "sha256": "a5d8c5503865e4bddc4e627501d4a2ef6bb9bacb5c4999ea40f4eaf42d53b151",
+      "bytes": 663
+    },
+    {
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex",
+      "sha256": "ffb963bb365dbcca561686b74cca132223eab2b16820678e05e910a3b5483479",
+      "bytes": 50316
+    },
+    {
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400",
+      "bytes": 24094
+    },
+    {
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/README.md",
+      "sha256": "b9c23b3ba6b777e2a1d4420749ebb6082cdf7ff863554fa100c2e7a3b199fc53",
+      "bytes": 689
+    },
+    {
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex",
+      "sha256": "0b1335d38a15453729e09e5d8c2e41713fea11769e3cc6e4226c1c185ca58cc4",
+      "bytes": 27488
+    },
+    {
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex",
+      "sha256": "2ce7435c8fcd269920f403de50edaebfb283804956cc7aa5e14f4cf2c47da552",
+      "bytes": 21878
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/README.md",
+      "sha256": "598f228649318dfea158b4ad73bb7bb1e0718ea56e76fdb13b5a4528f457e6b9",
+      "bytes": 589
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex",
+      "sha256": "159d90f5a9ef7ae2257e41a47f17bd45d9cc094a16e03e0b7065defaa6178d86",
+      "bytes": 41942
+    },
+    {
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/compression.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/compression.tex",
+      "sha256": "a7e8f9ad4d84d7a600eabfaef0142afdd8f757c2d74096ae2abfb08034b7dcbd",
+      "bytes": 28136
+    },
+    {
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/README.md",
+      "sha256": "98a15ceeb01b2a2daf6f6c712fe7d773f0b6beadee0d1338d66b90fe2e323ecd",
+      "bytes": 685
+    },
+    {
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex",
+      "sha256": "cf41d197d79ab0a671cd39b3ca4b7499fcdc7534cadf804b5d7d2b7bd2a41acd",
+      "bytes": 21696
+    },
+    {
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/07-packing-endpoint.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/07-packing-endpoint.tex",
+      "sha256": "e61c43fc79215027e3535dfc0cb41c6ef5b2d855a21d9c5d5bd5e0e63d560d04",
+      "bytes": 14896
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000288",
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex",
+      "label": "lem:moving-compactness",
+      "line": 287,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex#L287",
+      "sha256": "cf41d197d79ab0a671cd39b3ca4b7499fcdc7534cadf804b5d7d2b7bd2a41acd"
+    },
+    {
+      "instrument_id": "MI-000288",
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex",
+      "label": "eq:height-cell-variance",
+      "line": 400,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex#L400",
+      "sha256": "cf41d197d79ab0a671cd39b3ca4b7499fcdc7534cadf804b5d7d2b7bd2a41acd"
+    },
+    {
+      "instrument_id": "MI-000288",
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex",
+      "label": "eq:height-three-measures",
+      "line": 512,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/04-height-compactness.tex#L512",
+      "sha256": "cf41d197d79ab0a671cd39b3ca4b7499fcdc7534cadf804b5d7d2b7bd2a41acd"
+    },
+    {
+      "instrument_id": "MI-000289",
+      "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/07-packing-endpoint.tex",
+      "label": "lem:seed-charging",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/build/sections/07-packing-endpoint.tex#L28",
+      "sha256": "e61c43fc79215027e3535dfc0cb41c6ef5b2d855a21d9c5d5bd5e0e63d560d04"
+    },
+    {
+      "instrument_id": "MI-000290",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex",
+      "label": "pred:retention-probability",
+      "line": 249,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex#L249",
+      "sha256": "ffb963bb365dbcca561686b74cca132223eab2b16820678e05e910a3b5483479"
+    },
+    {
+      "instrument_id": "MI-000290",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex",
+      "label": "hier:selection-cancellation",
+      "line": 273,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/08-hierarchy.tex#L273",
+      "sha256": "ffb963bb365dbcca561686b74cca132223eab2b16820678e05e910a3b5483479"
+    },
+    {
+      "instrument_id": "MI-000290",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "label": "pred:fourier-average",
+      "line": 179,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex#L179",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400"
+    },
+    {
+      "instrument_id": "MI-000291",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "label": "pred:measure-decomposition",
+      "line": 479,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex#L479",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400"
+    },
+    {
+      "instrument_id": "MI-000291",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "label": "pred:negative-deviation",
+      "line": 501,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex#L501",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400"
+    },
+    {
+      "instrument_id": "MI-000291",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "label": "pred:uniform-average",
+      "line": 522,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex#L522",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400"
+    },
+    {
+      "instrument_id": "MI-000291",
+      "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex",
+      "label": "pred:blend",
+      "line": 418,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/build/sections/09-phase-prediction.tex#L418",
+      "sha256": "0d69aa6f41700848afd8ece3889a0cbc8a6870629e7a2e5bd03ad985b84c3400"
+    },
+    {
+      "instrument_id": "MI-000292",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex",
+      "label": "lem:prices-remove",
+      "line": 178,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex#L178",
+      "sha256": "2ce7435c8fcd269920f403de50edaebfb283804956cc7aa5e14f4cf2c47da552"
+    },
+    {
+      "instrument_id": "MI-000292",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex",
+      "label": "lem:prices-scalar-pairing",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex#L200",
+      "sha256": "2ce7435c8fcd269920f403de50edaebfb283804956cc7aa5e14f4cf2c47da552"
+    },
+    {
+      "instrument_id": "MI-000292",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex",
+      "label": "eq:prices-scalar-defect-budget",
+      "line": 331,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/prices.tex#L331",
+      "sha256": "2ce7435c8fcd269920f403de50edaebfb283804956cc7aa5e14f4cf2c47da552"
+    },
+    {
+      "instrument_id": "MI-000293",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex",
+      "label": "lem:labels-particles",
+      "line": 332,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex#L332",
+      "sha256": "0b1335d38a15453729e09e5d8c2e41713fea11769e3cc6e4226c1c185ca58cc4"
+    },
+    {
+      "instrument_id": "MI-000293",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex",
+      "label": "eq:labels-child-capacity",
+      "line": 313,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex#L313",
+      "sha256": "0b1335d38a15453729e09e5d8c2e41713fea11769e3cc6e4226c1c185ca58cc4"
+    },
+    {
+      "instrument_id": "MI-000293",
+      "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex",
+      "label": "eq:labels-node-occupancy",
+      "line": 338,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/build/sections/labels.tex#L338",
+      "sha256": "0b1335d38a15453729e09e5d8c2e41713fea11769e3cc6e4226c1c185ca58cc4"
+    },
+    {
+      "instrument_id": "MI-000294",
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/compression.tex",
+      "label": "lem:projection-prefixes",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/compression.tex#L200",
+      "sha256": "a7e8f9ad4d84d7a600eabfaef0142afdd8f757c2d74096ae2abfb08034b7dcbd"
+    },
+    {
+      "instrument_id": "MI-000295",
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex",
+      "label": "lem:two-accuracy-expansion",
+      "line": 454,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex#L454",
+      "sha256": "159d90f5a9ef7ae2257e41a47f17bd45d9cc094a16e03e0b7065defaa6178d86"
+    },
+    {
+      "instrument_id": "MI-000295",
+      "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex",
+      "label": "eq:src-8",
+      "line": 461,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/sections/base.tex#L461",
+      "sha256": "159d90f5a9ef7ae2257e41a47f17bd45d9cc094a16e03e0b7065defaa6178d86"
+    }
+  ]
+}

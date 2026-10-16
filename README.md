@@ -18,13 +18,13 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 
 | Browse | Contents |
 | --- | --- |
-| [Mathematical instruments](tables/instruments.md) | 287 extracted entries, each with a stable identifier |
-| [Source papers](tables/papers.md) | 162 manuscript records across the selected families |
-| [Problem families](tables/families.md) | 119 family accounts with claims, antecedents and caveats |
+| [Mathematical instruments](tables/instruments.md) | 295 extracted entries, each with a stable identifier |
+| [Source papers](tables/papers.md) | 166 manuscript records across the selected families |
+| [Problem families](tables/families.md) | 123 family accounts with claims, antecedents and caveats |
 | [Recurring patterns](catalog/patterns/README.md) | 11 approaches connecting the source arguments |
 | [Tables and review status](tables/README.md) | Family maps, formalization, dependencies and antecedents |
 | [Extraction batches](batches/README.md) | Extraction rounds and source versions |
-| [Release coverage](tables/coverage.md) | 119 of 372 families catalogued; 253 pending |
+| [Release coverage](tables/coverage.md) | 123 of 372 families catalogued; 249 pending |
 | [Use case studies](case-studies/README.md) | Subsequent investigations using extracted instruments |
 | [Catalogue exports](exports/README.md) | JSON and CSV for search and further analysis |
 
