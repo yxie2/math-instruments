@@ -1,0 +1,144 @@
+{
+  "batch": "B009",
+  "status": "passed",
+  "seed": 328329330374,
+  "scope": "Nine groups of finite checks; no global, infinite-dimensional, Lean or priority certification.",
+  "checks": {
+    "adaptive_return": {
+      "affine_resolvent_cases": 96,
+      "orthogonal_tail_models": [
+        {
+          "selected_points": 2,
+          "squared_return_error": "1/2"
+        },
+        {
+          "selected_points": 4,
+          "squared_return_error": "1/4"
+        },
+        {
+          "selected_points": 16,
+          "squared_return_error": "1/16"
+        },
+        {
+          "selected_points": 64,
+          "squared_return_error": "1/64"
+        },
+        {
+          "selected_points": 256,
+          "squared_return_error": "1/256"
+        }
+      ],
+      "scope": "Finite resolvent and Gram identities, not compact-semigroup existence or a stopping-rate theorem."
+    },
+    "weighted_tree": {
+      "exact_weighted_trees": 6,
+      "smallest_leaf_weight": "1/1061520150601",
+      "nonlinear_leaf_switches": 16
+    },
+    "partition_compression": {
+      "profile_distance_checks": 1099,
+      "coefficient_examples": 36,
+      "maximum_uniform_error": 0.5077516223695502,
+      "scope": "Explicit greedy encodings, not enumeration of the entire universal list or finite-field row separation."
+    },
+    "polar_conversion": {
+      "support_and_cluster_checks": 150,
+      "thickening_kernel_control": 0.2
+    },
+    "signed_tests": {
+      "continuation_checks": 305,
+      "signed_extension_cases": 200,
+      "degree_average_models": 9,
+      "zero_signed_mass_positive_variation_control": 4
+    },
+    "metric_wedge": {
+      "metric_points": 10,
+      "scalar_dual_optimization_cases": 36,
+      "scope": "Finite retractions and coefficient bounds; finite-dimensional spaces themselves have MAP."
+    },
+    "moment_derivatives": {
+      "rational_interval_derivatives": 140,
+      "polygon_derivatives": 60,
+      "maximum_moment_to_mass_ratio_after_R_squared": 0.20036614298623082,
+      "box_couplings": 90
+    },
+    "range_energy": {
+      "models": [
+        {
+          "weak_edge": 1.0,
+          "preimage_norm": 1.1185705163287654,
+          "r_norm": 1.562049935181331
+        },
+        {
+          "weak_edge": 0.01,
+          "preimage_norm": 68.36124048026093,
+          "r_norm": 1.562049935181331
+        },
+        {
+          "weak_edge": 0.0001,
+          "preimage_norm": 6800.360012471961,
+          "r_norm": 1.562049935181331
+        },
+        {
+          "weak_edge": 1e-06,
+          "preimage_norm": 680000.3600494942,
+          "r_norm": 1.562049935181331
+        },
+        {
+          "weak_edge": 1e-08,
+          "preimage_norm": 68000001.03559895,
+          "r_norm": 1.562049935181331
+        }
+      ],
+      "scope": "Abstract energy principle; the geometric moment estimate is tested separately."
+    },
+    "three_atom_transport": {
+      "exact_formula_and_LP_examples": [
+        {
+          "a": "1/3",
+          "W2_squared": "1/108",
+          "W1": "1/18",
+          "map_L2_squared": "5/54",
+          "potential_L2_squared": "5/1728"
+        },
+        {
+          "a": "1/5",
+          "W2_squared": "1/500",
+          "W1": "1/50",
+          "map_L2_squared": "13/250",
+          "potential_L2_squared": "1/1600"
+        },
+        {
+          "a": "1/10",
+          "W2_squared": "1/4000",
+          "W1": "1/200",
+          "map_L2_squared": "101/4000",
+          "potential_L2_squared": "1/12800"
+        },
+        {
+          "a": "1/30",
+          "W2_squared": "1/108000",
+          "W1": "1/1800",
+          "map_L2_squared": "901/108000",
+          "potential_L2_squared": "1/345600"
+        },
+        {
+          "a": "1/100",
+          "W2_squared": "1/4000000",
+          "W1": "1/20000",
+          "map_L2_squared": "10001/4000000",
+          "potential_L2_squared": "1/12800000"
+        },
+        {
+          "a": "1/1000",
+          "W2_squared": "1/4000000000",
+          "W1": "1/2000000",
+          "map_L2_squared": "1000001/4000000000",
+          "potential_L2_squared": "1/12800000000"
+        }
+      ],
+      "transport_optimizations": 12,
+      "scope": "Analytic formulas and numerical LP cross-checks; no regression-based claim of an exponent."
+    }
+  }
+}

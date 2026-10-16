@@ -5924,6 +5924,484 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000169.md",
       "body": "# Expected medians of stopped-walk endpoints control two smoothing costs\n\n[Family 332](../families/openai-math-332.md) · [Source manuscript](../papers/P-000106.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nLet A be a finite stochastic matrix with stationary probability pi, t>=1 an integer, and x_i real ell1 data. Put p=1/(t+1), q=1-p and $G=p(I-qA)^{-1}$. For each i take three independent indices with law G_i and define\n\n$$y_i=\\mathbb E\\operatorname{med}(x_{J_1},x_{J_2},x_{J_3}),$$\n\nwhere the median is coordinatewise. The source derives\n\n$$\\sum_i\\pi_i\\|x_i-y_i\\|_1^2+t\\sum_{i,j}\\pi_i a_{ij}\\|y_i-y_j\\|_1^2\\le\\frac{3024}{t}\\sum_{s=1}^t\\sum_{i,j}\\pi_i(A^s)_{ij}\\|x_i-x_j\\|_1^2.$$\n\nIn cut coordinates, h=Gz solves h=pz+qAh, and y=T(Phi(h)). The majority of three independent Bernoulli(h) variables has mean 3h^2-2h^3, so the threshold decomposition proves the median identity exactly.\n\nConstruct an alive/dead chain: from alive i, die at i with probability p or move alive to j with probability q a_ij; dead states hold. Attach h_i while alive and z_i after death. This is a cube-valued martingale. With initial binary center e=z_(X0), its terminal quartic Hilbert potential is $\\|x_{X_S}-x_{X_0}\\|_1^2$, where S is independent geometric on nonnegative integers with mean t. If B is the stationary cut-space approximation cost and E_A the stationary one-step cut-space cost after Phi, the total expected squared martingale jump cost is exactly B+(q/p)E_A=B+t E_A. The death jump is necessary to count B.\n\nThe flat-cubic estimate gives B+t E_A<=108 times the geometric endpoint cost. For any stationary chain and metric data, Minkowski gives subadditivity of the square root of the endpoint cost D(s). It implies D(t)<=4W for W=t^-1 sum_(s=1)^t D(s), and decomposing S=t floor(S/t)+(S mod t) gives E D(S)<=28W. Combining yields 3024. Detailed balance is not used; zero pi_i are allowed.\n\nThis is a nonlinear modification of data, not a procedure for extending a Lipschitz map to every point of a source space. The source’s extension consequence invokes a separate theorem for dual Banach targets.\n\n## Role in the source argument\n\nSupplies explicit new points realizing the two terms in metric Markov cotype and explains their median interpretation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:resolvent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L458)\n- [eq:jump-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L523)\n- [eq:median](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L577)\n- [lem:comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L385)\n- [rem:stationary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L557)\n\n## Antecedents and comparison\n\n[Mendel and Naor](https://arxiv.org/html/1301.3963v2) ask the ell1 metric Markov-cotype question, provide a resolvent comparison, and state the dual-target extension theorem. The source adds the stopped-median construction and quartic energy estimate. The earlier [cubic cut smoothing](https://arxiv.org/abs/2609.08749v2) concerns metric cotype, a different invariant.\n\n## Checks and limitations\n\nRead the full stopped-chain, geometric comparison and median proofs. Finite stationary examples compare explicit triple-median enumeration with cut reconstruction, solve the resolvent, verify the exact jump accounting and test the displayed inequality. Examples include nonreversible cycles and zero stationary coordinates.\n\nStationarity is required for the jump-cost identity and endpoint comparison. New points can leave a subspace containing the data, so the construction does not prove the same result for every subspace of ell1. Numerical examples do not certify the general theorem or establish novelty.\n\n## Possible applications\n\nNonlinear regularization of ell1-valued data on a stationary finite chain, with simultaneous control of movement from the data and one-step oscillation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000170",
+      "record_type": "instrument",
+      "title": "A compact semigroup anchor permits convex return after adaptive tail choices",
+      "forms": [
+        "construction",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-328"
+      ],
+      "source_paper_ids": [
+        "P-000107"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+          "label": "lem:finite-tuples",
+          "line": 120,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L120",
+          "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+        },
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+          "label": "prop:anchor",
+          "line": 193,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L193",
+          "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+        },
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex",
+          "label": "lem:adaptive-selection",
+          "line": 295,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L295",
+          "sha256": "b9f923ede8a5062c758d6936c42f79d1530188d07daa2f0e773c4c01b3cfcc55"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-adaptive-tail-selection-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000170.md",
+      "body": "# A compact semigroup anchor permits convex return after adaptive tail choices\n\n[Family 328](../families/openai-math-328.md) · [Source manuscript](../papers/P-000107.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nLet K be a nonempty weakly compact convex subset of a real Banach space with diameter one, and let T:K->K be nonexpansive. Its resolvents satisfy $R_n(a)=a/n+(1-1/n)TR_n(a)$, are nonexpansive, and obey $\\|TR_n(a)-R_n(a)\\|\\le1/n$ and $\\|R_n(a)-a\\|\\le(n-1)\\|Ta-a\\|$.\n\nLet G be generated by these resolvents and the identity under composition and pointwise finite convex combinations. Put $H_m=\\{R_n\\circ G:n\\ge m,\\ G\\in\\mathcal G\\}$ and $A_m=\\overline{\\operatorname{conv}H_m}^{\\rm pointwise\\ weak}$. Each A_m is a compact semigroup. The key closure step does not assume weak continuity of a nonlinear map: on any finite tuple, a pointwise weak limit of a convex family can be approximated simultaneously in norm, by separation in a finite Banach product. Approximating h at k(a_i), and k at a_i, then uses nonexpansiveness to approximate h composed with k with error at most twice the tuple error.\n\nThe intersection A contains an idempotent P by Ellis's lemma, since right translations h->h composed with k are continuous. For x=P(a), define $D_x=\\bigcap_m\\overline{\\{h(x):h\\in H_m\\}}^{\\rm weak}$. Nested compactness and separation give $x\\in\\overline{\\operatorname{conv}D_x}^{\\|\\cdot\\|}$.\n\nIf the weak topology on K is metrizable, this yields an adaptive selection rule. For any tau>0, before step i prescribe an arbitrary finite threshold m_i using the full earlier history. One can select G_i in H_(m_i) until a finite prefix has a convex combination of G_i(x) within tau of x. To see this, choose finitely many targets in D_x whose convex combination is within tau/2 of x, cycle through them with weak error tending to zero, and stop when the selected convex hull meets the tau-ball. Nontermination would put every target in the norm-closed convex hull of the selected points, a contradiction. Coefficients are assigned after selection; no uniform stopping bound is supplied.\n\n## Role in the source argument\n\nAllows later accuracy requirements to depend on earlier maps and detectors while retaining a norm return to one anchor.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-tuples](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L120)\n- [prop:anchor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L193)\n- [lem:adaptive-selection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/02-anchor.tex#L295)\n\n## Antecedents and comparison\n\nThe source credits Bruck’s [compact convex semigroup theorem](https://doi.org/10.1090/S0002-9939-1975-0383164-3) and the classical [Ellis idempotent argument](https://msp.org/pjm/1958/8-3/pjm-v8-n3-p02-p.pdf). The selected adaptation uses finite simultaneous norm approximation to justify composition and cycles through tail-limit targets. It is not an asserted convergence-rate theorem for Halpern iteration.\n\n## Checks and limitations\n\nRead both approximation arguments and the order of adaptive choices. Finite nonexpansive resolvents and a weak-tail model with orthogonal errors check the displacement and convex-return calculations. These examples do not verify compactness or arbitrary weak closure computationally.\n\nConvexity of the map family is essential to the simultaneous norm approximation. The chosen anchor need not be a fixed point of T; convex combinations of approximate fixed points need not themselves have small defect for nonlinear T. Sequential selection uses weak metrizability.\n\n## Possible applications\n\nAdaptive constructions requiring increasingly accurate approximate solutions while keeping a finite convex combination close to a designated point.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000171",
+      "record_type": "instrument",
+      "title": "Weighted telescoping finds a common witness without minimum branch weights",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-328"
+      ],
+      "source_paper_ids": [
+        "P-000107"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+          "label": "eq:block-detection",
+          "line": 186,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L186",
+          "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+        },
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+          "label": "eq:weighted-deficit",
+          "line": 210,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L210",
+          "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+        },
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+          "label": "eq:total-deficit",
+          "line": 220,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L220",
+          "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+        },
+        {
+          "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex",
+          "label": "eq:common-branch-vector",
+          "line": 259,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L259",
+          "sha256": "2e5a5cb33b8a63bf47c84fde0115fc62c5f82a01b399c75796d0fd2450b422dd"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "elementary-weighted-witness-extraction-in-a-nonlinear-tree",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000171.md",
+      "body": "# Weighted telescoping finds a common witness without minimum branch weights\n\n[Family 328](../families/openai-math-328.md) · [Source manuscript](../papers/P-000107.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nConsider a finite ordered rooted tree whose positive child weights sum to one. Let W_v be the product of weights along the root-to-v path, with root weight one. Switch leaves one at a time in their order, and let Delta_s be the resulting consecutive differences of the root outputs. Suppose $\\|\\Delta_s\\|\\le W_s$. Set d_s=Delta_s/W_s, so each d_s belongs to the unit ball.\n\nFor every non-root node v let f_v have dual norm at most one, and suppose its whole descendant block satisfies\n\n$$f_v\\!\\left(\\sum_{s\\succeq v}\\Delta_s\\right)\\ge W_v-\\eta_v,\\qquad\\eta_v\\ge0.$$\n\nBecause the leaves below v form a consecutive block, their actual root differences telescope even when all internal maps are nonlinear. The deficits are nonnegative, and\n\n$$\\sum_sW_s\\sum_{v\\preceq s,\\ v\\ne r}(1-f_v(d_s))\\le\\sum_{v\\ne r}\\eta_v=E.$$\n\nFor any 0<delta<1, leaves having some ancestor with f_v(d_s)<=1-delta have total weight at most E/delta. If E<delta, at least one leaf has a single vector d_s detected above 1-delta by every ancestor functional. No division of an error bound by the smallest W_s is needed.\n\nIn the source, nonexpansive tree sensitivity gives the leaf bound and a separate prediction argument gives eta_v=5e_v with sum e_v<=1/128. Taking delta=1/2 leaves bad weight at most 5/64. For one consistent infinite finitely branching tree, finite witnesses at every depth give an infinite feasible branch. If the ambient unit ball is weakly compact, nested weakly closed constraints along that branch have a common vector. Pointwise convergence of its functionals to zero would then be impossible. All of these additional hypotheses must be established before that final contradiction.\n\n## Role in the source argument\n\nConverts many block estimates into one common vector along a path while allowing arbitrarily small branch probabilities.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:block-detection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L186)\n- [eq:weighted-deficit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L210)\n- [eq:total-deficit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L220)\n- [eq:common-branch-vector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/sections/04-switching.tex#L259)\n\n## Antecedents and comparison\n\nTelescoping, weighted Markov bounds, finite branching and weak compactness are established tools. The source’s specific work lies in producing block detection for nonlinear outputs. The preceding [semigroup background](https://doi.org/10.1090/S0002-9939-1975-0383164-3) does not by itself provide these tree estimates.\n\n## Checks and limitations\n\nExact rational tree weights, including very small ones, check telescoping and the weighted bad-leaf bound. A nonlinear scalar tree checks that root-output differences telescope without treating its internal maps as affine.\n\nThe same fixed tree must work at every depth before passing to an infinite branch. Norm bounds on both vectors and functionals ensure nonnegative deficits. Weak compactness of the original domain is not a substitute for weak compactness of the normalized-difference ball.\n\n## Possible applications\n\nExtracting simultaneous witnesses from hierarchical nonlinear constructions with summable absolute error budgets.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000172",
+      "record_type": "instrument",
+      "title": "Partition labels compress logarithmic distance profiles independently of center count",
+      "forms": [
+        "construction",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-329"
+      ],
+      "source_paper_ids": [
+        "P-000108"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+          "label": "lem:log-profile",
+          "line": 56,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L56",
+          "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+          "label": "prop:compression",
+          "line": 102,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L102",
+          "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+          "label": "eq:grouped-approximation",
+          "line": 229,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L229",
+          "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex",
+          "label": "cor:signed-compression",
+          "line": 285,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L285",
+          "sha256": "678c9251efcc619e1391c96f513150db349ec81215a454731a6fbad9448bd6de"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-partition-label-compression",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000172.md",
+      "body": "# Partition labels compress logarithmic distance profiles independently of center count\n\n[Family 329](../families/openai-math-329.md) · [Source manuscript](../papers/P-000108.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nLet a nonempty finite X carry u partitions, each with at most q realized labels. A fixed nonempty family Tcal of index sets T omits at most theta*u indices per set, where 0<theta<1. In the graph for T, distinct points are adjacent if they share a label in any partition in T. Use distance infinity across components. Choose an integer h>=1 with log(3)/log(h+1)<=theta, and put s=ceil(1/theta). For y=(v,T), use the column $g_y(x)=(1-\\log(1+d_T(x,v))/\\log(1+h))_+$, zero at infinity.\n\nEvery nonnegative column combination f of total mass at most one has a list approximant A satisfying f-3theta<=A<=f+theta, where a single fixed list works for all coefficients and\n\n$$\\log Q\\le hs\\log q+\\log u+hs2^u\\log(1+s2^u/\\theta).$$\n\nAverage the omitted coefficient mass to find a common index i0 whose omission costs at most theta. At each radius j<h, greedily pick at most s pivot balls until every other ball has residual coefficient mass at most theta. Assign each retained column to its first pivot. Replace that pivot by the fixed representative of its i0-label. For an assigned center v, the pivot replacement is within j+1 of v, so a radius-j membership implies radius-(2j+1) membership about the replacement; the latter implies radius-(3j+2) membership about v.\n\nThe profile is the sum of radius-j indicators with weights $\\gamma_j=\\log((j+2)/(j+1))/\\log(h+1)$. They sum to one, and dilating j to 3j+2 increases the profile by at most log(3)/log(h+1). Group coefficients by radius, pivot slot and T, then round down at mesh theta/(s*2^u). The total additional error is at most theta. Only i0, hs labels and h*s*2^u rounded weights need encoding; the graphs and representatives are shared data.\n\nSplitting signed coefficients of ell1 norm at most one into positive and negative parts gives a list of size at most Q^2 and uniform error 6theta. A cluster assigned to one such approximant has column-function diameter at most 12theta.\n\n## Role in the source argument\n\nMakes the column-hull covering count depend on the partition label count, without an additional encoding factor for the much larger set of centers.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:log-profile](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L56)\n- [prop:compression](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L102)\n- [eq:grouped-approximation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L229)\n- [cor:signed-compression](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/03-compression.tex#L285)\n\n## Antecedents and comparison\n\nConvex-hull approximation is established. This package specifically uses a common partition and radius-tolerant profiles to replace centers by labels. It is used in a problem whose established [ellipsoid case](https://arxiv.org/abs/math/0407236) and [convexified-packing version](https://arxiv.org/abs/math/0407238) have different scopes. The search does not certify priority of the package.\n\n## Checks and limitations\n\nRead all rounding and counting steps. Finite partition systems test shortest-path profiles, greedy residual mass, label replacement, grouped rounding and signed approximation. Separate distance tests cover radii beyond h and disconnected pairs.\n\nThe graphs and partitions must be fixed before the coefficient vector. The chosen common index may depend on that vector and is counted. The bound is exponential in u and h, and h may be very large; no efficient compression algorithm is claimed.\n\n## Possible applications\n\nUniform approximation of structured convex hulls when many centers have a short description through shared equivalence classes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000173",
+      "record_type": "instrument",
+      "title": "A row support function converts column compression into a polar cover",
+      "forms": [
+        "reduction",
+        "identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-329"
+      ],
+      "source_paper_ids": [
+        "P-000108"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+          "label": "lem:matrix-to-bodies",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L12",
+          "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+          "label": "eq:row-support-function",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L63",
+          "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+        },
+        {
+          "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex",
+          "label": "eq:matrix-body-bounds",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L39",
+          "sha256": "0e89c07556903888d1fe9e0ad020c31aa19469bc5aed66c622891d147a0162fa"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "elementary-matrix-to-convex-body-conversion",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000173.md",
+      "body": "# A row support function converts column compression into a polar cover\n\n[Family 329](../families/openai-math-329.md) · [Source manuscript](../papers/P-000108.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nLet a real matrix have nonempty finite row set X and column set Y, row vectors R_x, and column combinations f_lambda. Assume distinct rows have sup distance at least one, and the set of f_lambda with ||lambda||_1<=1 has an epsilon-approximation list of size M in the sup norm on X. List centers may be arbitrary functions.\n\nFor t>0 put $K=3\\operatorname{absconv}\\{R_x:x\\in X\\}+tB_\\infty^Y$ and $L=B_\\infty^Y$. These are full-dimensional symmetric convex bodies and\n\n$$N(K,L)\\ge|X|,\\qquad N(L^\\circ,(6\\varepsilon+2t)K^\\circ)\\le M.$$\n\nThe primal lower bound follows because 3R_x are separated by at least three while any translated unit cube has diameter two. For the dual estimate, the exact support function is $h_K(\\delta)=3\\|f_\\delta\\|_\\infty+t\\|\\delta\\|_1$, and L-polar is the coefficient ell1 ball. Assign each coefficient vector to its first epsilon-approximant, and choose one actual coefficient representative from each nonempty cluster. Two vectors in a cluster have column-function distance at most 2epsilon and coefficient distance at most two. Their difference therefore has h_K at most 6epsilon+2t, giving the cover.\n\nThe small cube ensures interior in the full column space even when the row span is deficient. Choosing representatives inside the coefficient ball controls the thickening term; arbitrary list functions cannot simply be treated as coefficient vectors.\n\n## Role in the source argument\n\nSeparates the finite combinatorial construction from the geometric entropy comparison it is intended to violate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:matrix-to-bodies](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L12)\n- [eq:row-support-function](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L63)\n- [eq:matrix-body-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/build/sections/02-matrix-contract.tex#L39)\n\n## Antecedents and comparison\n\nThis is an elementary support-function and packing argument within the classical [metric-entropy duality formulation](https://arxiv.org/abs/math/0407236). The source records constants and the extra step needed when approximating centers lie outside the column hull; no new polarity principle is claimed.\n\n## Checks and limitations\n\nRead the exact support function and coefficient-cluster construction. Integer matrices and sampled coefficient vectors check the support identity, separation, cluster radii and the necessity of retaining the coefficient term after thickening.\n\nA useful entropy separation still requires a matrix with simultaneously many separated rows and a small column approximation list. The lemma alone does not produce the global counterexample. The cube thickening parameter must be positive.\n\n## Possible applications\n\nTurning asymmetric row and column complexity estimates into covering inequalities for a body and its polar.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000174",
+      "record_type": "instrument",
+      "title": "Continuation records permit signed opposing tests with degree-averaged loss",
+      "forms": [
+        "construction",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-330"
+      ],
+      "source_paper_ids": [
+        "P-000109"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+          "label": "lem:exceptional-directions",
+          "line": 164,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L164",
+          "sha256": "43a3ba589cf8db4a055a816328c3c2aa3798cb05ca79452673c9129325c969f6"
+        },
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex",
+          "label": "eq:record-inequalities",
+          "line": 186,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L186",
+          "sha256": "43a3ba589cf8db4a055a816328c3c2aa3798cb05ca79452673c9129325c969f6"
+        },
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+          "label": "lem:edge-test",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L11",
+          "sha256": "f8ad0a57fc8d4fe91679269ea6c92052f4022846c839d6261681663e9afdbf0a"
+        },
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex",
+          "label": "eq:average-error",
+          "line": 115,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L115",
+          "sha256": "f8ad0a57fc8d4fe91679269ea6c92052f4022846c839d6261681663e9afdbf0a"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-support-state-continuation-and-signed-test-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000174.md",
+      "body": "# Continuation records permit signed opposing tests with degree-averaged loss\n\n[Family 330](../families/openai-math-330.md) · [Source manuscript](../papers/P-000109.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nThe selected averaging mechanism has a useful conditional form. Let a finite Delta-regular marked multigraph have reversal-paired incidences, including two incidences per loop. At each vertex x let mu_x be a signed measure on one finite metric state set S, with total variation at most V, and let 0<=b_x<=L satisfy integral b_x dmu_x>=aL. Suppose all but a fraction beta of vertices are good and, at a good vertex, each state belongs to at most one exceptional incidence set E_e.\n\nIf for every e:x->y there is a 1-Lipschitz f_e valued in [-L,L], equal to b_x off E_e and to -b_y off E_reverse, then\n\n$$\\mathbb E_e\\int f_e\\,d(\\mu_x-\\mu_y)\\ge 2aL-4LV(\\Delta^{-1}+\\beta).$$\n\nIndeed, each prescription loses at most 2L times the variation on its exceptional set. Uniform incidence sampling and reversal give the same average loss at both endpoints. At a good x, disjointness per state bounds the average exceptional variation by V/Delta, regardless of |S|; bad x cost at most V.\n\nThe source obtains the exceptional sets from finite continuation records. At a good pair (x,j), no sufficiently long matched nonbacktracking walk exists. Record the maximum length through each outgoing incidence and declare only a strict largest record exceptional. If compatible nearby states j,j' match an edge, prepending it to a continuation in another direction gives r_x(e,j)>=1+A_y and r_y(reverse,j')>=1+A_x. If neither direction were exceptional these force A_x>=2+A_x. Thus one prescription must be removed. The source’s label bumps then ensure that close cross pairs remaining in both prescription sets have both values zero; distant pairs have distance at least 2L. McShane extension and clipping supply f_e.\n\nFor the operator application, finite-support perturbation gives mass-one signed measures through $\\int g\\,d\\mu_x=(T\\delta_x)(g-g(o))+g(o)$. This makes edge pairings insensitive to constants and bounds them by ||T|| times the source-edge length. The continuation and averaging lower bound can contradict that upper bound without assuming coefficient positivity.\n\n## Role in the source argument\n\nTurns local incompatibility of long matches into a lower bound against arbitrary signed finite-rank operators, with error independent of their finite support size.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:exceptional-directions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L164)\n- [eq:record-inequalities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/walks.tex#L186)\n- [lem:edge-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L11)\n- [eq:average-error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/tests.tex#L115)\n\n## Antecedents and comparison\n\nScalar extension is classical. [Naor’s almost-extension work](https://arxiv.org/html/2009.11373v2) supplies related signed-representation context. The source explicitly compares its continuation records to [Ben-David and coauthors](https://arxiv.org/abs/2006.12760); their graph algorithm is not claimed as new here. The adaptation tracks a support state as well as a direction.\n\n## Checks and limitations\n\nRead the zero-record case, strict-max rule, reversal convention and signed variation estimate. Finite continuation models check the incompatible-record inequalities; scalar signed examples check extension, clipping and the pairing loss. Incidence averages check the degree factor and a negative control for counting signed mass instead of variation.\n\nThe metric and label conditions producing the two prescriptions are substantive hypotheses. Regularity or an appropriate reversible weighting is needed for the endpoint average. In the source the graph sequence is fixed first, the operator support next, and the walk length and graph index last; reversing that order would invalidate the quantifiers.\n\n## Possible applications\n\nLower bounds for signed interpolation or approximation operators when each state can be charged to only a few local directions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000175",
+      "record_type": "instrument",
+      "title": "Pointed wedges preserve AP while accumulating unbounded approximation constants",
+      "forms": [
+        "construction",
+        "reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-330"
+      ],
+      "source_paper_ids": [
+        "P-000109"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+          "label": "prop:coefficients",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L18",
+          "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+        },
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+          "label": "eq:wedge-metric",
+          "line": 105,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L105",
+          "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+        },
+        {
+          "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex",
+          "label": "eq:finite-block-projection",
+          "line": 200,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L200",
+          "sha256": "42d76ae66460a4c9d21619682e382450310ebc071a5e205d69e9cc85f0165a35"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "established-wedge-retraction-transfer-with-quantitative-obstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000175.md",
+      "body": "# Pointed wedges preserve AP while accumulating unbounded approximation constants\n\n[Family 330](../families/openai-math-330.md) · [Source manuscript](../papers/P-000109.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nFor countable pointed metric spaces (M_p,o), identify only the basepoints and set the distance between different blocks to d_p(x,o)+d_q(y,o). Each block inclusion and the map collapsing all other blocks to o are pointed 1-Lipschitz maps. Their free-space linearizations I_p,P_p have norm at most one and P_p I_p=Id.\n\nAssume each free space F(M_p) has AP. The maps $R_N=\\sum_{p\\le N}I_pP_p$ are contractive projections fixing every finitely supported evaluation combination eventually. Density gives strong convergence to the identity, uniformly on compact sets. For a compact C and tolerance epsilon, choose N so that R_N has error below epsilon/2 on C, then choose finite-rank T_p on each retained block with error below epsilon/(2N) on P_p(C). The finite-rank sum $\\sum_{p\\le N}I_pT_pP_p$ approximates C. Its norm is finite but may grow with C and epsilon, which is allowed for AP.\n\nIf for every integer p>=1 a fixed finite subset of F(M_p) obstructs every rank-finite operator of norm at most p at some positive accuracy, the wedge cannot have any finite BAP constant lambda: compress a purported approximant to a block with p>=lambda. The contractive compression preserves its norm and approximation accuracy.\n\nFor the source’s 1-separated bounded blocks of diameter B_p, the coefficient map $Jc=\\sum_{x\\ne o}c_x\\delta_x$ obeys $\\frac12\\|c\\|_1\\le\\|Jc\\|\\le B_p\\|c\\|_1$. Testing with half the coefficient signs proves the lower bound; coordinate truncations yield 2B_p-BAP. Thus the wedge construction separates ordinary approximation from a uniform bound on approximants once the quantitative block obstructions have been supplied. A uniformly bounded diameter across all blocks would prevent those obstructions from diverging.\n\n## Role in the source argument\n\nAssembles individual finite-anchor obstructions into one uniformly discrete space while giving a direct proof of ordinary AP.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:coefficients](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L18)\n- [eq:wedge-metric](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L105)\n- [eq:finite-block-projection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/build/sections/reduction.tex#L200)\n\n## Antecedents and comparison\n\n[Kalton](https://kaltonmemorial.missouri.edu/assets/docs/collect2004.pdf) already proves AP for uniformly discrete free spaces. The bounded-block coefficient identification is part of the established [Lipschitz-free-space theory](https://arxiv.org/abs/1811.01265v2). This card isolates the retraction and order-of-approximation argument; the new obstruction would have to come from the blocks.\n\n## Checks and limitations\n\nRead the wedge triangle inequality, linearization and compact-net argument. Finite metric wedges and numerical scalar-test linear programs check the coefficient bounds, block retractions and operator compressions. Finite examples do not establish failure of BAP in an infinite space.\n\nBAP of each block alone does not imply BAP of the wedge with a uniform constant. AP approximants are chosen only after truncating the compact set to finitely many blocks. The source’s final metric is unbounded and nonproper; no proper-space counterexample is inferred.\n\n## Possible applications\n\nBuilding a single space with local approximation but no globally bounded approximation constant from a sequence of complemented obstructions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000176",
+      "record_type": "instrument",
+      "title": "A midpoint coupling controls first-moment derivatives by cell-mass derivatives",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-374"
+      ],
+      "source_paper_ids": [
+        "P-000110"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+          "label": "moments:midpoint",
+          "line": 23,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L23",
+          "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+          "label": "moments:derivative",
+          "line": 8,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L8",
+          "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "candidate-uniform-cell-moment-estimate",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000176.md",
+      "body": "# A midpoint coupling controls first-moment derivatives by cell-mass derivatives\n\n[Family 374](../families/openai-math-374.md) · [Source manuscript](../papers/P-000110.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nLet rho be uniform on a compact convex body K contained in the radius-R ball. Fix distinct slopes y_i and intercepts c_i such that every cell $P_i=\\{x\\in K:x\\cdot y_i+c_i=\\max_j(x\\cdot y_j+c_j)\\}$ has positive mass M_i. Write B_i=integral_(P_i) x d rho. For any intercept direction q, holding the slopes fixed, the source proves\n\n$$\\sum_i\\frac{|DB_i[q,0]|^2}{M_i}\\le162R^2\\sum_i\\frac{|DM_i[q,0]|^2}{M_i}.$$\n\nThe comparison couples uniform points X_i,Z_i in the cells at c-sq,c+sq. A classical triangular-quantile construction gives a midpoint law with Lebesgue density at most the reciprocal geometric mean of those cell volumes. Its midpoint belongs to the unperturbed cell: the opposite intercept errors cancel in every defining affine inequality. With perturbed masses alpha_i,beta_i and gamma_i=sqrt(alpha_i beta_i), gamma_i times that law is dominated by rho restricted to P_i.\n\nTest this domination by R^2-|x|^2, using its midpoint excess |X_i-Z_i|^2/4. Since the two perturbed cell families each partition K, summing their endpoint integrals cancels the background. If $A=\\sum_i\\gamma_i\\mathbb E|X_i-Z_i|^2$ and $B=\\sum_i(\\alpha_i-\\beta_i)^2/\\gamma_i$, the remaining estimates give $A/4\\le R^2B/8+(R/2)\\sqrt{AB}$, hence A<=5R^2B.\n\nThe moment difference is bounded by $R|\\alpha_i-\\beta_i|+\\alpha_i\\sqrt{\\mathbb E|X_i-Z_i|^2}$. For each fixed configuration, choose s sufficiently small that alpha_i,beta_i,gamma_i lie between M_i/2 and 2M_i. Squaring and summing gives the constant 162; division by (2s)^2 and passage to the derivative gives the displayed estimate. The permitted s can depend on the smallest mass. The derivative constant does not.\n\n## Role in the source argument\n\nSupplies a uniform estimate that survives small masses and small faces, avoiding a quantitative lower bound on the cell-Laplacian spectral gap.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [moments:midpoint](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L23)\n- [moments:derivative](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex#L8)\n\n## Antecedents and comparison\n\nThe midpoint density estimate follows from established [McCann displacement concavity](https://www.math.toronto.edu/mccann/papers/advances.pdf); the source also gives a Knothe proof. The selected addition is its application to opposite intercept perturbations and partition cancellation to control first moments by masses. The constant is sufficient, not claimed optimal.\n\n## Checks and limitations\n\nRead the triangular substitution, midpoint inclusion, cancellation and derivative limit. Exact interval-cell examples and two-dimensional polygon clipping check normalized masses, moments and their finite-difference derivatives. Box couplings check the midpoint density bound. These are finite examples, not general geometric proof certification.\n\nThe source is uniform and the cells convex. Positive masses are required at the differentiated configuration; no common finite perturbation radius is asserted as masses vanish. Moving-site derivatives alone are not covered by the displayed inequality.\n\n## Possible applications\n\nUniform sensitivity estimates for partitions defined by competing affine functions when direct spectral-gap estimates deteriorate.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000177",
+      "record_type": "instrument",
+      "title": "Test a mass Laplacian in its range to avoid an inverse-norm loss",
+      "forms": [
+        "proof-mechanism",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-374"
+      ],
+      "source_paper_ids": [
+        "P-000110"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex",
+          "label": "cells:laplacian",
+          "line": 60,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex#L60",
+          "sha256": "07eafd506c35c3e2e2708ad204b25e5b43e9659c1f66305eedb29cd46fb24f4e"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+          "label": "eq:finite-duality",
+          "line": 82,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L82",
+          "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+          "label": "eq:finite-intercept-speed",
+          "line": 113,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L113",
+          "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+          "label": "eq:finite-potential-bound",
+          "line": 21,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L21",
+          "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "candidate-mass-moment-duality-for-uniform-potential-stability",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000177.md",
+      "body": "# Test a mass Laplacian in its range to avoid an inverse-norm loss\n\n[Family 374](../families/openai-math-374.md) · [Source manuscript](../papers/P-000110.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nThe source uses the following finite-dimensional energy principle. Let m_i>0 sum to one, let G be a symmetric matrix with kernel the constants and range the zero-sum vectors, and let Bq be a vector-valued tuple satisfying\n\n$$\\sum_i |(Bq)_i|^2/m_i\\le C^2\\sum_i|(Gq)_i|^2/m_i.$$\n\nSuppose r has weighted mean zero and, for every q, $\\sum_i r_i(Gq)_i=-\\sum_i v_i\\cdot(Bq)_i$. Choose q with (Gq)_i=m_i r_i; existence follows from the range statement. No estimate of q is needed. Weighted Cauchy-Schwarz gives\n\n$$\\|r\\|_{\\ell_2(m)}^2\\le C\\|v\\|_{\\ell_2(m)}\\|r\\|_{\\ell_2(m)},\\qquad\\|r\\|_{\\ell_2(m)}\\le C\\|v\\|_{\\ell_2(m)}.$$\n\nFor Laguerre cells, G is the fixed-site mass Laplacian, B is the first-moment derivative, and C=sqrt(162)R by the preceding instrument. Move sites along the pairs of an optimal finite coupling with fixed masses m_i; normalize intercepts by sum m_i c_i=0. Differentiating the mass constraints gives exactly the displayed dual identity with r_i=c_i' and v_i=y_i'. Thus intercept speed is bounded by sqrt(162)R times target speed, without a smallest-eigenvalue factor.\n\nOptimal-coupling monotonicity ensures distinct sites at every interior time, even when endpoint sites repeat. Integrating the potential derivative x dot v_i+r_i gives suitably normalized endpoint potentials with $\\|u_0-u_1\\|_{L^2(\\rho)}\\le(1+\\sqrt{162})R W_2(\\mu,\\nu)$. The earlier convex-gradient interpolation bound then converts a linear potential estimate to a one-third map estimate. That interpolation is credited as an established ingredient, not the new step.\n\n## Role in the source argument\n\nRemoves a degenerating inverse-Laplacian constant from the fixed-mass transport path estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cells:laplacian](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex#L60)\n- [eq:finite-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L82)\n- [eq:finite-intercept-speed](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L113)\n- [eq:finite-potential-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex#L21)\n\n## Antecedents and comparison\n\nThe [semi-discrete mass Laplacian](https://arxiv.org/html/1603.05579v2) and [convex-gradient interpolation](https://arxiv.org/abs/2103.05934v2) are established. The selected source mechanism tests the dual constraint against a range preimage and controls only its image. The abstract principle stated here is a direct extraction from that calculation.\n\n## Checks and limitations\n\nRead the range, symmetry and fixed-mass identities. Finite weighted graph Laplacians with a tunably small positive eigenvalue check the energy bound and illustrate how the chosen q can grow while the bound on r remains uniform. Convex cell examples test the actual moment input separately.\n\nExistence of a range preimage and the uniform B-versus-G estimate are both required. A generic ill-conditioned linear system has no such bound. Potential normalization matters; arbitrary additive constants cannot obey the stated potential estimate.\n\n## Possible applications\n\nConstraint sensitivity problems where a derivative factors through a poorly conditioned operator but has a uniform bound in the norm of its image.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000178",
+      "record_type": "instrument",
+      "title": "A thin tilted cell separates transport-map movement from target movement",
+      "forms": [
+        "construction",
+        "counterexample"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-374"
+      ],
+      "source_paper_ids": [
+        "P-000110"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+          "label": "cells:optimality",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L11",
+          "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+          "label": "sharpness:potentials",
+          "line": 65,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L65",
+          "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+          "label": "sharpness:target-distance",
+          "line": 143,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L143",
+          "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+        },
+        {
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+          "label": "sharpness:map-distance",
+          "line": 168,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L168",
+          "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+        }
+      ],
+      "batch_id": "B009",
+      "source_item": 3,
+      "subject": "Partial differential equations",
+      "novelty_status": "candidate-fixed-cube-three-atom-sharpness-example",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000178.md",
+      "body": "# A thin tilted cell separates transport-map movement from target movement\n\n[Family 374](../families/openai-math-374.md) · [Source manuscript](../papers/P-000110.md) · [Batch B009](../../batches/B009/README.md)\n\n## Mathematical content\n\nOn the fixed cube [-1,1]^d with its uniform probability rho, d>=2, choose 0<a<1/2 and b=a/2. The convex potentials $u=\\max\\{-x_1,x_1,a\\}$ and $\\widetilde u=\\max\\{-x_1,x_1,a+bx_2\\}$ have three slopes each. Their gradients are the unique quadratic optimal maps to\n\n$$\\mu_a=\\tfrac{1-a}{2}(\\delta_{-e_1}+\\delta_{e_1})+a\\delta_0,\\quad\\nu_a=\\tfrac{1-a}{2}(\\delta_{-e_1}+\\delta_{e_1})+a\\delta_{be_2}.$$\n\nThe central source cells are A={|x_1|<a} and B={|x_1|<a+bx_2}. They have equal mass a, but their symmetric difference has mass b/2. Thus\n\n$$W_2(\\mu_a,\\nu_a)^2=ab^2,\\quad W_1(\\mu_a,\\nu_a)=ab,\\quad\\|T_{\\mu_a}-T_{\\nu_a}\\|_{L^2(\\rho)}^2=b/2+ab^2.$$\n\nMatching like atoms proves the Wasserstein upper bounds; projection to the second coordinate proves the same lower bounds for every coupling. The first component of the map difference has squared size one exactly on A symmetric-difference B; the second contributes b^2 on B. This proves the map identity by orthogonality.\n\nConsequently W2=a^(3/2)/2 while the map distance is sqrt(a)*sqrt(1+a^2)/2. Every exponent greater than one third fails uniformly, although the source, target container and number of atoms stay fixed. W1 scales as a^2/2, so the same example gives a quarter-power obstruction in W1, not an inconsistency between the two metrics. The small central mass tends to zero; the example does not contradict estimates whose constants depend on a positive lower mass bound.\n\nOptimality itself follows from the supporting inequality x dot y+c(y)<=u(x): the gradient plan attains its integrated upper bound, and the maximizing slope is unique off a finite union of hyperplanes. No transport solver is needed to identify the maps.\n\n## Role in the source argument\n\nShows exactly how small target displacement can reassign a much larger portion of source mass between distant slopes.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cells:optimality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L11)\n- [sharpness:potentials](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L65)\n- [sharpness:target-distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L143)\n- [sharpness:map-distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex#L168)\n\n## Antecedents and comparison\n\n[Letrouit’s paper](https://comptes-rendus.academie-sciences.fr/mathematique/item/10.5802/crmath.834.pdf) states the convex-source square-root conjecture and gives instability for other source geometries. This example keeps a uniform convex source and uses a vanishing third atom. The search located this construction in the release and its subsequent expositions; that is not exhaustive priority certification.\n\n## Checks and limitations\n\nChecked every cell mass and distance formula symbolically by slices. Exact rational integrations and finite three-by-three transport linear programs verify the identities for a range of a values, including degenerating masses. The exponent conclusion follows analytically from the formulas, not from a fitted numerical slope.\n\nThe construction needs two source coordinates and a vanishing positive atom mass. It is not a failure of continuity: both distances tend to zero. It supplies a sharpness obstruction, while the matching uniform upper theorem requires the separate cell and interpolation arguments.\n\n## Possible applications\n\nStress-testing target-uniform optimal transport estimates and constructing benchmark examples with explicit map instability.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -7940,6 +8418,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000106.md",
       "body": "# Metric Markov Cotype Two of <i>ℓ</i><sub>1</sub> \n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims metric Markov cotype two for real ell1 with constant 12 sqrt(21), and consequently a universal Lipschitz extension bound from Hilbert space to ell1. Its construction and cost estimate in fact require only stationarity of the chain.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000167: Finite ell1 cuts retain a contractive affine reconstruction](../instruments/MI-000167.md)\n- [MI-000168: A flat cubic converts quartic potential into martingale jump energy](../instruments/MI-000168.md)\n- [MI-000169: Expected medians of stopped-walk endpoints control two smoothing costs](../instruments/MI-000169.md)\n\n## Dependencies and review\n\nFinite weighted upper cuts with ambient reconstruction; the cubic 3r^2-2r^3; a quartic convexity remainder; a geometrically killed stationary walk; a resolvent identity; a geometric-to-Cesaro endpoint comparison; a separate dual-target Lipschitz extension theorem.\n\nRead the complete elementary proof of the source’s cotype bound, its expected-median interpretation and its extension deduction. Retrieved Mendel-Naor’s question, extension statement and resolvent lemma, and Cheng-Wang-Xiang’s cut-smoothing construction. Finite tests audit identities and examples, not universal proof certification.\n\nNo family-specific formalization scope document is listed for family 332 in the pinned inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-332.md) · [Batch B008](../../batches/B008/README.md)"
+    },
+    {
+      "id": "P-000107",
+      "record_type": "paper",
+      "title": "Fixed Points of Nonexpansive Maps in Reflexive Banach Spaces",
+      "source_collection": "openai/math",
+      "upstream_slug": "Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-328"
+      ],
+      "batch_id": "B009",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "aaf8d11dafa84f05df7dc1adf76a1dea0fcdb55ad28f8469a6995e7a135fe639",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000107.md",
+      "body": "# Fixed Points of Nonexpansive Maps in Reflexive Banach Spaces\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the fixed point property for every real reflexive Banach space in its given norm, without normal structure or weak continuity of the map.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000170: A compact semigroup anchor permits convex return after adaptive tail choices](../instruments/MI-000170.md)\n- [MI-000171: Weighted telescoping finds a common witness without minimum branch weights](../instruments/MI-000171.md)\n\n## Dependencies and review\n\nNonexpansive resolvents; pointwise weak compactness; separation on finite products; Ellis idempotents; adaptive weak approximation; consecutive leaf blocks; nonnegative weighted deficits; finite branching and weak compactness for the infinite limit.\n\nRead the resolvent, semigroup, anchor and adaptive-selection proofs and the entire finite switching argument. The construction of compact predicted-output families and the full infinite tree were not audited; their hypotheses are kept explicit.\n\nReflexiveFixedPoints.lean states the original-norm fixed point assertion for a complete real normed space whose canonical bidual map is onto. Zero and nonseparable spaces are included. The commuting-family consequence is not separately asserted there. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\n[Family context](../families/openai-math-328.md) · [Batch B009](../../batches/B009/README.md)"
+    },
+    {
+      "id": "P-000108",
+      "record_type": "paper",
+      "title": "Counterexamples to the duality conjecture for metric entropy",
+      "source_collection": "openai/math",
+      "upstream_slug": "Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-329"
+      ],
+      "batch_id": "B009",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "639dc2f756936a4e70eb1834fda846aaeb1d8ce5b89fff3f51b63225502c74fd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000108.md",
+      "body": "# Counterexamples to the duality conjecture for metric entropy\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims counterexamples to every dimension-free pair of constants in metric-entropy duality, with one body a cube and the other full dimensional.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000172: Partition labels compress logarithmic distance profiles independently of center count](../instruments/MI-000172.md)\n- [MI-000173: A row support function converts column compression into a polar cover](../instruments/MI-000173.md)\n\n## Dependencies and review\n\nPartition graph distances, including disconnected components; common-index averaging; bounded greedy pivot lists; logarithmic radius dilation; grouped weight rounding; positive/negative coefficient splitting; full-dimensional cube thickening.\n\nRead the entire partition compression and matrix-to-body proofs. The symmetric finite-field form construction, its simultaneous nonvanishing argument and the final parameter hierarchy were not fully audited.\n\nMetricEntropyDuality.lean asserts, for every real a,b>=1, a positive finite dimension and symmetric convex body K violating the proposed upper entropy bound, with explicit finite-cover existence and ambient translation centers. The additional limiting-ratio statement mentioned in the scope is not a separate Comparator declaration. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\n[Family context](../families/openai-math-329.md) · [Batch B009](../../batches/B009/README.md)"
+    },
+    {
+      "id": "P-000109",
+      "record_type": "paper",
+      "title": "A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces",
+      "source_collection": "openai/math",
+      "upstream_slug": "Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-330"
+      ],
+      "batch_id": "B009",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "453fbb75431a3db18eb28f6d44832f80078aa233d735afe21eae4681ef0e2864",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000109.md",
+      "body": "# A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a countable uniformly discrete, unbounded and nonproper metric space whose real Lipschitz-free space has AP but no BAP. Its bounded blocks also yield equivalent norms on real ell1 with prescribed failures of bounded approximation.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000174: Continuation records permit signed opposing tests with degree-averaged loss](../instruments/MI-000174.md)\n- [MI-000175: Pointed wedges preserve AP while accumulating unbounded approximation constants](../instruments/MI-000175.md)\n\n## Dependencies and review\n\nFinite-rank support perturbation; affine mass-one signed measures; bounded total variation; rare nonbacktracking matches after fixing the support; strict continuation maxima; clipped scalar extension; reversal-invariant incidence averaging; contractive pointed retractions.\n\nRead the finite-support and signed-measure reductions, rare-walk quantifier order, continuation lemma, scalar tests and wedge reduction. The complete deterministic colored-graph sequence and all block geometry estimates were not audited.\n\nDiscreteLipschitzFree.lean states the bounded-block anchor obstruction and the AP-without-BAP endpoint. RealL1Renorming.lean states equivalent complete real ell1 norms with 2B_p-BAP but not p-BAP, B_p=300p^2+150p+5, preserving the original vector-space operations. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\n[Family context](../families/openai-math-330.md) · [Batch B009](../../batches/B009/README.md)"
+    },
+    {
+      "id": "P-000110",
+      "record_type": "paper",
+      "title": "Sharp One-Third Stability of Brenier Maps",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-374"
+      ],
+      "batch_id": "B009",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6a9edf8accb9bc366d580abee0a219b08345832199b9be3e8e9722e93d9e30fd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000110.md",
+      "body": "# Sharp One-Third Stability of Brenier Maps\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a uniform W2-to-L2 exponent one third for Brenier maps from the uniform measure on any fixed compact convex body with interior in dimension at least two, and sharpness on a fixed cube with three target atoms.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000176: A midpoint coupling controls first-moment derivatives by cell-mass derivatives](../instruments/MI-000176.md)\n- [MI-000177: Test a mass Laplacian in its range to avoid an inverse-norm loss](../instruments/MI-000177.md)\n- [MI-000178: A thin tilted cell separates transport-map movement from target movement](../instruments/MI-000178.md)\n\n## Dependencies and review\n\nFinite affine maximum potentials; positive-mass cell calculus and connected face Laplacian; triangular midpoint coupling; a quadratic concave test; weighted derivative norms; optimal-coupling monotonicity; convex-gradient interpolation and a separate finite-to-Borel limiting argument.\n\nRead the full three-atom example, midpoint and moment proofs, cell differential and positive-mass arguments, fixed-mass path estimate and finite-target gradient interpolation. The final extension from finite to arbitrary Borel targets was not audited.\n\nBrenier.lean states both target-uniform one-third stability, including existence and unique optimal plans, and failure of every larger exponent for exactly three positive atoms in a fixed cube, for each dimension at least two. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\n[Family context](../families/openai-math-374.md) · [Batch B009](../../batches/B009/README.md)"
     }
   ],
   "families": [
@@ -9716,6 +10270,87 @@
       "body": "# Reversible lifts for edge labels and ordered charts\n\n## Source manuscript and claim\n\n[Nontrivial Markov Type Forces Superreflexivity](../papers/P-000105.md), by OpenAI, September 23, 2026.\n\nThe source claims that a real Banach space has nontrivial Markov type exactly when it admits an equivalent uniformly convex norm. The extracted tools convert edge increments and ordered partial motions into finite reversible chains.\n\n## Extracted instruments\n\n- [MI-000165: A finite reflecting lattice lift transfers Markov type to odd edge sums](../instruments/MI-000165.md)\n- [MI-000166: Ramsey averaging and transposed couplings build reversible chart transport](../instruments/MI-000166.md)\n\n## Dependencies and antecedents\n\nEdgewise detailed balance; odd vector labels; finite lattice boxes with rejected boundary moves; finite representability; finite Ramsey and separation; equal-marginal couplings paired by transpose.\n\nBall introduced Markov type; Naor-Peres-Schramm-Sheffield established smooth-space implications. Brunel-Sucheston supplied the ordered-spreading background. The James-Enflo structural reduction and the source’s linear-displacement walk are additional inputs beyond the two extracted constructions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the odd-edge-label proof, finite order averaging and reversible chart transport. The reduced-word action, linear-displacement construction and complete spreading-norm argument were not fully audited.\n\nMarkovType.lean states equivalence between a uniform Markov-type inequality for some exponent p>1 and existence of an equivalent uniformly convex norm, including the zero space. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\nOrdinary Markov type is distinct from Markov convexity and Rademacher type. Chains are finite, stationary and reversible; their size can depend on the tested time, while the Markov-type constant is uniform. Marked self-transitions may carry nonzero labels if their reverse mark is different.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/327.md) · [Batch record](../../batches/B008/README.md)"
     },
     {
+      "id": "openai-math-328",
+      "record_type": "family",
+      "title": "Adaptive convex return and weighted witnesses in nonlinear trees",
+      "source_family": "328",
+      "source_collection": "openai/math",
+      "batch_id": "B009",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000107"
+      ],
+      "instrument_ids": [
+        "MI-000170",
+        "MI-000171"
+      ],
+      "headline": "The source claims the fixed point property for every real reflexive Banach space in its given norm, without normal structure or weak continuity of the map.",
+      "central_instrument": "A compact semigroup supplies an anchor permitting successive choices with history-dependent accuracy. Weighted telescoping then extracts one vector detected along a whole path, without a lower bound on branch weights.",
+      "novelty_assessment": "Resolvents, weak-to-norm convex approximation, compact-semigroup idempotents and weighted averaging are classical. The source-specific packages are the adaptive return construction and its use in a nonlinear switching tree. The full fixed-point claim and priority are not independently certified.",
+      "formalization_summary": "ReflexiveFixedPoints.lean states the original-norm fixed point assertion for a complete real normed space whose canonical bidual map is onto. Zero and nonseparable spaces are included. The commuting-family consequence is not separately asserted there. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.",
+      "statement_faithfulness": "The selected anchor construction uses a weakly compact convex domain; metrizability is needed for the sequential selection proof. The final tree contradiction additionally needs weak compactness of the whole unit ball of the closed span of K-K. Weak compactness of K alone does not supply that.",
+      "dependencies": "Nonexpansive resolvents; pointwise weak compactness; separation on finite products; Ellis idempotents; adaptive weak approximation; consecutive leaf blocks; nonnegative weighted deficits; finite branching and weak compactness for the infinite limit.",
+      "antecedents": "Goebel-Karlovitz provide the diametral reduction, Bruck studied convex semigroups of nonexpansive maps, and Ellis supplies the idempotent lemma. The weighted witness extraction is an elementary averaging argument once the difficult tree data exist.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-328.md",
+      "body": "# Adaptive convex return and weighted witnesses in nonlinear trees\n\n## Source manuscript and claim\n\n[Fixed Points of Nonexpansive Maps in Reflexive Banach Spaces](../papers/P-000107.md), by OpenAI, September 24, 2026.\n\nThe source claims the fixed point property for every real reflexive Banach space in its given norm, without normal structure or weak continuity of the map.\n\n## Extracted instruments\n\n- [MI-000170: A compact semigroup anchor permits convex return after adaptive tail choices](../instruments/MI-000170.md)\n- [MI-000171: Weighted telescoping finds a common witness without minimum branch weights](../instruments/MI-000171.md)\n\n## Dependencies and antecedents\n\nNonexpansive resolvents; pointwise weak compactness; separation on finite products; Ellis idempotents; adaptive weak approximation; consecutive leaf blocks; nonnegative weighted deficits; finite branching and weak compactness for the infinite limit.\n\nGoebel-Karlovitz provide the diametral reduction, Bruck studied convex semigroups of nonexpansive maps, and Ellis supplies the idempotent lemma. The weighted witness extraction is an elementary averaging argument once the difficult tree data exist. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the resolvent, semigroup, anchor and adaptive-selection proofs and the entire finite switching argument. The construction of compact predicted-output families and the full infinite tree were not audited; their hypotheses are kept explicit.\n\nReflexiveFixedPoints.lean states the original-norm fixed point assertion for a complete real normed space whose canonical bidual map is onto. Zero and nonseparable spaces are included. The commuting-family consequence is not separately asserted there. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\nThe selected anchor construction uses a weakly compact convex domain; metrizability is needed for the sequential selection proof. The final tree contradiction additionally needs weak compactness of the whole unit ball of the closed span of K-K. Weak compactness of K alone does not supply that.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/328.md) · [Batch record](../../batches/B009/README.md)"
+    },
+    {
+      "id": "openai-math-329",
+      "record_type": "family",
+      "title": "Partition-label compression and polar covering conversion",
+      "source_family": "329",
+      "source_collection": "openai/math",
+      "batch_id": "B009",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000108"
+      ],
+      "instrument_ids": [
+        "MI-000172",
+        "MI-000173"
+      ],
+      "headline": "The source claims counterexamples to every dimension-free pair of constants in metric-entropy duality, with one body a cube and the other full dimensional.",
+      "central_instrument": "Logarithmic distance profiles tolerate a fixed enlargement of graph balls. Greedy pivots can then be encoded by partition labels rather than original centers; a support-function identity transfers this compression to a polar cover.",
+      "novelty_assessment": "Polarity, covering-packing comparisons and convex-hull approximation are classical. The partition-label encoding is the selected candidate source-specific mechanism. The finite-field separation construction and global counterexample are not independently certified.",
+      "formalization_summary": "MetricEntropyDuality.lean asserts, for every real a,b>=1, a positive finite dimension and symmetric convex body K violating the proposed upper entropy bound, with explicit finite-cover existence and ambient translation centers. The additional limiting-ratio statement mentioned in the scope is not a separate Comparator declaration. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.",
+      "statement_faithfulness": "Ordinary covering numbers are distinct from convexified packing. Dimension is allowed to grow with the proposed constants. Approximation-list functions need not lie in the column hull, so selecting actual coefficient representatives incurs a factor two.",
+      "dependencies": "Partition graph distances, including disconnected components; common-index averaging; bounded greedy pivot lists; logarithmic radius dilation; grouped weight rounding; positive/negative coefficient splitting; full-dimensional cube thickening.",
+      "antecedents": "Artstein-Milman-Szarek prove entropy duality for an ellipsoid, and Artstein-Milman-Szarek-Tomczak-Jaegermann prove convexified-packing duality. These results do not assert the unrestricted ordinary-covering comparison addressed by the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-329.md",
+      "body": "# Partition-label compression and polar covering conversion\n\n## Source manuscript and claim\n\n[Counterexamples to the duality conjecture for metric entropy](../papers/P-000108.md), by OpenAI, September 24, 2026.\n\nThe source claims counterexamples to every dimension-free pair of constants in metric-entropy duality, with one body a cube and the other full dimensional.\n\n## Extracted instruments\n\n- [MI-000172: Partition labels compress logarithmic distance profiles independently of center count](../instruments/MI-000172.md)\n- [MI-000173: A row support function converts column compression into a polar cover](../instruments/MI-000173.md)\n\n## Dependencies and antecedents\n\nPartition graph distances, including disconnected components; common-index averaging; bounded greedy pivot lists; logarithmic radius dilation; grouped weight rounding; positive/negative coefficient splitting; full-dimensional cube thickening.\n\nArtstein-Milman-Szarek prove entropy duality for an ellipsoid, and Artstein-Milman-Szarek-Tomczak-Jaegermann prove convexified-packing duality. These results do not assert the unrestricted ordinary-covering comparison addressed by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the entire partition compression and matrix-to-body proofs. The symmetric finite-field form construction, its simultaneous nonvanishing argument and the final parameter hierarchy were not fully audited.\n\nMetricEntropyDuality.lean asserts, for every real a,b>=1, a positive finite dimension and symmetric convex body K violating the proposed upper entropy bound, with explicit finite-cover existence and ambient translation centers. The additional limiting-ratio statement mentioned in the scope is not a separate Comparator declaration. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\nOrdinary covering numbers are distinct from convexified packing. Dimension is allowed to grow with the proposed constants. Approximation-list functions need not lie in the column hull, so selecting actual coefficient representatives incurs a factor two.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/329.md) · [Batch record](../../batches/B009/README.md)"
+    },
+    {
+      "id": "openai-math-330",
+      "record_type": "family",
+      "title": "Signed tests and metric wedges for approximation obstructions",
+      "source_family": "330",
+      "source_collection": "openai/math",
+      "batch_id": "B009",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000109"
+      ],
+      "instrument_ids": [
+        "MI-000174",
+        "MI-000175"
+      ],
+      "headline": "The source claims a countable uniformly discrete, unbounded and nonproper metric space whose real Lipschitz-free space has AP but no BAP. Its bounded blocks also yield equivalent norms on real ell1 with prescribed failures of bounded approximation.",
+      "central_instrument": "Continuation records discard at most one direction per support state, allowing opposite scalar tests whose signed-measure errors average by degree. Pointed metric wedges transfer arbitrarily large block obstructions while preserving ordinary approximation.",
+      "novelty_assessment": "Free-space linearization, McShane extension, signed dual representations and direct-sum approximation are classical. The support-state continuation and anchor construction are candidate source-specific ingredients. The complete block construction and global result are not certified here.",
+      "formalization_summary": "DiscreteLipschitzFree.lean states the bounded-block anchor obstruction and the AP-without-BAP endpoint. RealL1Renorming.lean states equivalent complete real ell1 norms with 2B_p-BAP but not p-BAP, B_p=300p^2+150p+5, preserving the original vector-space operations. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.",
+      "statement_faithfulness": "A bounded uniformly discrete free space is isomorphic to ell1 and has a diameter-dependent BAP. The final example must be unbounded; it is not proper. A finite-rank range need not have finite evaluation support until it is perturbed. Signed measures, not necessarily probabilities, are required.",
+      "dependencies": "Finite-rank support perturbation; affine mass-one signed measures; bounded total variation; rare nonbacktracking matches after fixing the support; strict continuation maxima; clipped scalar extension; reversal-invariant incidence averaging; contractive pointed retractions.",
+      "antecedents": "Kalton gives AP for uniformly discrete free spaces and posed the BAP issue. Godefroy-Kalton develop linearization; the coefficient ell1 equivalence is established. Naor uses signed representations in almost extension. Ben-David and coauthors use a related continuation-length consistency argument in graph algorithms.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-330.md",
+      "body": "# Signed tests and metric wedges for approximation obstructions\n\n## Source manuscript and claim\n\n[A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces](../papers/P-000109.md), by OpenAI, September 26, 2026.\n\nThe source claims a countable uniformly discrete, unbounded and nonproper metric space whose real Lipschitz-free space has AP but no BAP. Its bounded blocks also yield equivalent norms on real ell1 with prescribed failures of bounded approximation.\n\n## Extracted instruments\n\n- [MI-000174: Continuation records permit signed opposing tests with degree-averaged loss](../instruments/MI-000174.md)\n- [MI-000175: Pointed wedges preserve AP while accumulating unbounded approximation constants](../instruments/MI-000175.md)\n\n## Dependencies and antecedents\n\nFinite-rank support perturbation; affine mass-one signed measures; bounded total variation; rare nonbacktracking matches after fixing the support; strict continuation maxima; clipped scalar extension; reversal-invariant incidence averaging; contractive pointed retractions.\n\nKalton gives AP for uniformly discrete free spaces and posed the BAP issue. Godefroy-Kalton develop linearization; the coefficient ell1 equivalence is established. Naor uses signed representations in almost extension. Ben-David and coauthors use a related continuation-length consistency argument in graph algorithms. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite-support and signed-measure reductions, rare-walk quantifier order, continuation lemma, scalar tests and wedge reduction. The complete deterministic colored-graph sequence and all block geometry estimates were not audited.\n\nDiscreteLipschitzFree.lean states the bounded-block anchor obstruction and the AP-without-BAP endpoint. RealL1Renorming.lean states equivalent complete real ell1 norms with 2B_p-BAP but not p-BAP, B_p=300p^2+150p+5, preserving the original vector-space operations. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\nA bounded uniformly discrete free space is isomorphic to ell1 and has a diameter-dependent BAP. The final example must be unbounded; it is not proper. A finite-rank range need not have finite evaluation support until it is perturbed. Signed measures, not necessarily probabilities, are required.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/330.md) · [Batch record](../../batches/B009/README.md)"
+    },
+    {
       "id": "openai-math-332",
       "record_type": "family",
       "title": "Nonlinear median smoothing through cuts and stopped martingales",
@@ -9804,6 +10439,34 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-362.md",
       "body": "# Relativistic Vlasov–Maxwell, 3D, large data\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000041](../papers/P-000041.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 207 files, continuation step included combination\n\nFor the one-species system with no background charge, the source assumes\n``` math\n\\begin{gathered}\n f_0\\in C_c^\\infty(\\mathbb R_x^3\\times\\mathbb R_v^3),\\qquad f_0\\ge0,\\\\\n E_0,B_0\\in C_b^\\infty(\\mathbb R^3;\\mathbb R^3)\\cap L^2(\\mathbb R^3;\\mathbb R^3),\\\\\n \\nabla\\cdot E_0=\\rho_{f_0},\\qquad \\nabla\\cdot B_0=0,\\qquad\n \\rho_{f_0}(x)=\\int_{\\mathbb R^3}f_0(x,v)\\,dv.\n\\end{gathered}\n```\nHere every spatial derivative of the fields is bounded, the fields have finite energy, and the nonnegative phase-space datum is smooth and compactly supported. Under these hypotheses the paper claims a unique global classical solution, smooth on each finite time interval and with compact phase-space support there, without a size restriction. The repository supplies a formalization covering a continuation statement; it was not compiled or kernel-checked for this survey.\n\n## Extracted instruments.\n\n- [MI-000019: Signed momentum increment bootstrap](../instruments/MI-000019.md)\n\n- [MI-000020: Signed force identity along source labels](../instruments/MI-000020.md)\n\n- [MI-000021: Occupation of retarded bins, direction-change counting, selection](../instruments/MI-000021.md)\n\n## Reused.\n\nGlassey–Strauss representation; Luk–Strain cone flux; Lazarovici label change; Pallard’s cone Jacobians; Pfaffelmoser; Kirchhoff; Gagliardo–Nirenberg; Picard.\n\n## Caveats.\n\nThe reasoning summary states that the cited continuation theorem alone does not establish the required estimates, whereas the paper presents them as proved. Cheverry–Ibrahim is cited six times in the summary and omitted from the paper. The exponent comparison has a small margin. A repository formalization is supplied, but no machine check was run for this survey. Uniqueness is asserted only among global classical solutions.\n\n## Recorded assessment\n\n- Novelty: combination; direction-change counting new\n- Formalization: files, continuation statement included\n- Statement coverage: yes; uniqueness among global classical solutions\n- Dependencies: no\n- Antecedents: Cheverry–Ibrahim 2025"
+    },
+    {
+      "id": "openai-math-374",
+      "record_type": "family",
+      "title": "Cell moments, inverse-free energy testing and sharp transport instability",
+      "source_family": "374",
+      "source_collection": "openai/math",
+      "batch_id": "B009",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000110"
+      ],
+      "instrument_ids": [
+        "MI-000176",
+        "MI-000177",
+        "MI-000178"
+      ],
+      "headline": "The source claims a uniform W2-to-L2 exponent one third for Brenier maps from the uniform measure on any fixed compact convex body with interior in dimension at least two, and sharpness on a fixed cube with three target atoms.",
+      "central_instrument": "A midpoint coupling controls cell moment derivatives by mass derivatives. Testing the mass Laplacian in a specially chosen direction bounds intercept velocities without estimating its inverse. A thin tilted cell gives an explicit matching obstruction.",
+      "novelty_assessment": "Brenier optimality, triangular rearrangement, displacement concavity, Laguerre-cell calculus and convex-gradient interpolation are established. The uniform cell-moment estimate, its dual energy use and the fixed-cube three-atom example are selected candidate source-specific contributions. Priority and the full Borel-target theorem are not independently certified.",
+      "formalization_summary": "Brenier.lean states both target-uniform one-third stability, including existence and unique optimal plans, and failure of every larger exponent for exactly three positive atoms in a fixed cube, for each dimension at least two. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.",
+      "statement_faithfulness": "The source density is uniform on a convex body; the compact target container need not be convex. Constants may depend on that body and container but not atom count, masses or site separation. The finite cell estimates require positive masses and distinct interior-time sites. This is W2 stability, distinct from W1 estimates.",
+      "dependencies": "Finite affine maximum potentials; positive-mass cell calculus and connected face Laplacian; triangular midpoint coupling; a quadratic concave test; weighted derivative norms; optimal-coupling monotonicity; convex-gradient interpolation and a separate finite-to-Borel limiting argument.",
+      "antecedents": "Knothe and McCann supply the midpoint-coupling background, Kitagawa-Merigot-Thibert the cell Laplacian, and Delalande-Merigot convex-gradient interpolation. Letrouit gives instability examples on other source sets and formulates the convex-source square-root conjecture; its scope is compared directly.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-374.md",
+      "body": "# Cell moments, inverse-free energy testing and sharp transport instability\n\n## Source manuscript and claim\n\n[Sharp One-Third Stability of Brenier Maps](../papers/P-000110.md), by OpenAI, None.\n\nThe source claims a uniform W2-to-L2 exponent one third for Brenier maps from the uniform measure on any fixed compact convex body with interior in dimension at least two, and sharpness on a fixed cube with three target atoms.\n\n## Extracted instruments\n\n- [MI-000176: A midpoint coupling controls first-moment derivatives by cell-mass derivatives](../instruments/MI-000176.md)\n- [MI-000177: Test a mass Laplacian in its range to avoid an inverse-norm loss](../instruments/MI-000177.md)\n- [MI-000178: A thin tilted cell separates transport-map movement from target movement](../instruments/MI-000178.md)\n\n## Dependencies and antecedents\n\nFinite affine maximum potentials; positive-mass cell calculus and connected face Laplacian; triangular midpoint coupling; a quadratic concave test; weighted derivative norms; optimal-coupling monotonicity; convex-gradient interpolation and a separate finite-to-Borel limiting argument.\n\nKnothe and McCann supply the midpoint-coupling background, Kitagawa-Merigot-Thibert the cell Laplacian, and Delalande-Merigot convex-gradient interpolation. Letrouit gives instability examples on other source sets and formulates the convex-source square-root conjecture; its scope is compared directly. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full three-atom example, midpoint and moment proofs, cell differential and positive-mass arguments, fixed-mass path estimate and finite-target gradient interpolation. The final extension from finite to arbitrary Borel targets was not audited.\n\nBrenier.lean states both target-uniform one-third stability, including existence and unique optimal plans, and failure of every larger exponent for exactly three positive atoms in a fixed cube, for each dimension at least two. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\nThe source density is uniform on a convex body; the compact target container need not be convex. Constants may depend on that body and container but not atom count, masses or site separation. The finite cell estimates require positive masses and distinct interior-time sites. This is W2 stability, distinct from W1 estimates.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/374.md) · [Batch record](../../batches/B009/README.md)"
     },
     {
       "id": "openai-math-376",

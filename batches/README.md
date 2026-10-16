@@ -10,7 +10,10 @@
 | [B006](B006/README.md) | 3 new families; 6 instruments; 3 source manuscripts | Energy bootstraps, finite-energy tests, damped exterior insertions, nesting positivity and conditional Gaussian kernels |
 | [B007](B007/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Adaptive cut sampling, affine mixing, overlap counts, prime deletion, weighted Hilbert functions and probabilistic sieve identities |
 | [B008](B008/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Support propagation, compact moment lifts, reversible edge and chart transport, and stopped-median smoothing |
+| [B009](B009/README.md) | 4 new families; 9 instruments; 4 source manuscripts | Adaptive return, weighted witnesses, partition compression, signed tests, metric wedges and transport sensitivity |
 
-Future rounds use `B009` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B010` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
+
+Numerical verification scripts use the packages in [verification-requirements.txt](verification-requirements.txt). Install them with `python -m pip install -r batches/verification-requirements.txt`; each batch describes its checks and their limits.
