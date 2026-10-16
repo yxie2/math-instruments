@@ -1,0 +1,45 @@
+{
+  "batch": "B049",
+  "status": "passed",
+  "scope": "Eight selected finite/local mechanisms; no source headline theorem or Lean solution certified.",
+  "checks": {
+    "scaling": {
+      "exact_arrays": 56,
+      "infeasible_initialization_control": true
+    },
+    "covariance": {
+      "exact_covariances": 6,
+      "noncommuting_examples": 4
+    },
+    "spanners": {
+      "exact_polytopes": 16,
+      "determinant_exchanges": 72
+    },
+    "time_averages": {
+      "exact_path_moment_bounds": 144,
+      "restricted_constant": 2,
+      "largest_full_relaxation_time": 256
+    },
+    "residuals": {
+      "exact_dyadic_laws": 843,
+      "rejection_ranges": 99,
+      "insufficient_branch_mass_control": true
+    },
+    "forest": {
+      "exact_graphs": 16,
+      "internal_mismatched_small_incidence_checks": 42,
+      "arbitrary_tree_control": true
+    },
+    "curvature": {
+      "high_precision_points": 26,
+      "max_identity_error": "4.911322608872912111937992439247327449429523886442014915497552167979207012058559649421422220759553554e-79",
+      "numerical_not_interval_certificate": true
+    },
+    "boolean_reduction": {
+      "exact_truth_tables": 65536,
+      "monotone_functions": 168,
+      "four_active_monotone": 114,
+      "numerical_compression_comparisons": 3072
+    }
+  }
+}
