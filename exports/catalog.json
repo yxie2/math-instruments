@@ -11305,6 +11305,322 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000279.md",
       "body": "# Balanced signed dependencies turn mixed-variance equations into a Tarski operator\n\n[Family 245](../families/openai-math-245.md) · [Source manuscript](../papers/P-000158.md) · [Batch B021](../../batches/B021/README.md)\n\n## Mathematical content\n\nConsider a strongly connected signed dependency component in which every closed walk has an even number of negative edges. Choose a root and give each vertex the parity of a path from the root. A return path shows this is well defined: two different parities would yield an odd closed walk. Positive edges preserve the sign and negative edges reverse it.\n\nFor a complete lattice C(T) at each coordinate, order positive coordinates normally and negative coordinates in reverse. The product remains complete. If an operator is covariant along positive dependencies and contravariant along negative dependencies, it is monotone in this mixed order.\n\nIn the source, C(T) consists of candidates between a generic-term set G_T and a strongly-normalizing test set top_T, closed under a specified head-expansion rule. Arbitrary intersections preserve those requirements, with top_T as the empty intersection, so these candidates form a complete lattice. Reduction closure is not assumed. For a product type, the operator tests h n against a codomain candidate for every n in the domain candidate. It is antitone in the domain and monotone in the instantiated codomain; previously processed coordinates are constant. The signed dependencies give exactly the mixed-order monotonicity.\n\nTarski then supplies a fixed point with no continuity assumption. Explicitly, let a be the supremum of all v with v<=F(v). Monotonicity gives a<=F(a), then F(a)<=F(F(a)), so F(a) is itself among those v and F(a)<=a. Thus F(a)=a. In the source, assigning candidates by actual normalized types makes the required substitution and conversion identities follow from equality of those normal forms.\n\nAn odd negative loop is a real obstruction to this method: complementation on the two-element lattice is antitone and has no fixed point. Other source constructions are needed for components not satisfying the parity condition.\n\n## Role in the source argument\n\nConstructs one class of normalization interfaces while accounting for the opposite variances of domains and codomains.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:candidate-lattice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L281)\n- [prop:signed-component](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/build/sections/profiles.tex#L639)\n\n## Antecedents and comparison\n\nThe fixed-point step is exactly [Tarski (1955), Theorem 1](https://people.csail.mit.edu/carroll/probSem/Documents/Tarski.pdf). Sign reversal of lattice coordinates is the standard way to handle balanced mixed variance. The source-specific interface obligations are additional to fixed-point existence.\n\n## Checks and limitations\n\nRead the candidate lattice and signed-component proofs and Tarski statement. Exact Boolean-lattice models check mixed-order monotonicity, the supremum-of-postfixed-points construction and absence of odd signed closed walks, with a negative-loop control.\n\nFinite Boolean models do not verify the actual candidate sets, profile invariance or the general normalization theorem. The signed component must satisfy its closed-walk hypothesis; no algorithmic convergence rate follows for arbitrary complete lattices.\n\n## Possible applications\n\nSolving recursive semantic equations with both covariance and contravariance when their dependency signs are consistent.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000280",
+      "record_type": "instrument",
+      "title": "Weighted adjacent-block success becomes ordinary gap density",
+      "forms": [
+        "weighted-to-unweighted-density",
+        "bounded-multiplicity-charging"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-026"
+      ],
+      "source_paper_ids": [
+        "P-000159"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+          "label": "prop:weights",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L18",
+          "sha256": "1ad98fd00888ded797e0c3ad05e1f4d6938e43ee703482a405d2e4af6ccc2b0d"
+        },
+        {
+          "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+          "label": "lem:adjacent-gaps",
+          "line": 44,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L44",
+          "sha256": "1ad98fd00888ded797e0c3ad05e1f4d6938e43ee703482a405d2e4af6ccc2b0d"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-moment-method-with-source-specific-adjacent-block-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000280.md",
+      "body": "# Weighted adjacent-block success becomes ordinary gap density\n\n[Family 026](../families/openai-math-026.md) · [Source manuscript](../papers/P-000159.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nFor nonnegative random variables W,X,Y, assume Y is either zero or at least one. Write a=E(WX), b=E(WX^2)>0, e=E(WY), and M=E(W^2)<infinity. If Delta=a^2/b-e>0, then\n\n$$\\mathbb P(X>0,\\ Y=0)\\ge \\Delta^2/M.$$\n\nIndeed E(W 1_{X>0})>=a^2/b by weighted Cauchy-Schwarz, while E(W 1_{Y>0})<=e. Subtract to obtain weighted good mass at least Delta, then use ordinary Cauchy-Schwarz to remove W. A bound on E(W) alone cannot replace the second weight moment: weights can concentrate all their mass on an arbitrarily small set.\n\nIn the source, average over integers m in (X0,2X0], let h=floor(lambda log X0), and let the two variables count log-weighted primes in (m,m+h] and (m+h,m+2h], divided by log X0. A positive variable is at least one. The first weighted moment tends to lambda, the second weighted prime moment is bounded by K_lambda independently of epsilon, and the right-block weighted moment has limsup at most epsilon. Choose epsilon=lambda^2/(2K_lambda) first. A finite bound M_lambda,epsilon for E(W^2) then gives a fixed positive ordinary fraction of successful starts for all large X0.\n\nAssign a successful start to its last left-block prime p. The next prime exceeds m+2h, so the gap after p exceeds h. A fixed p can receive at most h starts, since p-h<=m<p. Thus delta X0 starts yield at least delta X0/h distinct long gaps. Taking lambda>C and X0=floor(p_N/3), the prime number theorem puts all counted left endpoints among the first N primes and converts this into a positive multiple of N. The source's moment estimates, not the elementary transfer alone, supply the needed success events.\n\n## Role in the source argument\n\nConverts the output of the sieve weights into the ordinary lower-density statement in the headline.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L18)\n- [lem:adjacent-gaps](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L44)\n\n## Antecedents and comparison\n\nWeighted positivity and second-moment arguments are standard in sieve methods; [Maynard, Small gaps between primes](https://annals.math.princeton.edu/wp-content/uploads/annals-v181-n1-p07-p.pdf) is a primary antecedent for the source weight framework. The adjacent-block charging and parameter order are the selected reusable formulation, not a certified novelty claim.\n\n## Checks and limitations\n\nRead the complete reduction. Checks cover 500 random finite weighted models and 3,072 exact point-set/block configurations, plus weights concentrated on one point as a control.\n\nThe finite models do not establish any prime-distribution estimate. In particular the uniform K_lambda bound and existence of the source weights remain unverified inputs.\n\n## Possible applications\n\nRemoving a nonuniform sampling weight while retaining a positive ordinary density and controlling overcounting.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000281",
+      "record_type": "instrument",
+      "title": "A smooth profile with fixed L1 and L2 norms and arbitrarily small first moment",
+      "forms": [
+        "profile-dilation",
+        "moment-separation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-026"
+      ],
+      "source_paper_ids": [
+        "P-000159"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex",
+          "label": "lem:small-first-moment",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex#L11",
+          "sha256": "81f9db254f8e5915c455c4eb053e3ace510f0fc488602e85aabe58e8bdd83635"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "elementary-logarithmic-profile-in-the-Maynard-product-weight-framework",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000281.md",
+      "body": "# A smooth profile with fixed L1 and L2 norms and arbitrarily small first moment\n\n[Family 026](../families/openai-math-026.md) · [Source manuscript](../papers/P-000159.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nFor any lambda,beta>0 there is a nonnegative g in C_c^infinity((0,infinity)) such that integral g^2=1, integral g=sqrt(lambda), and integral u g(u)^2 du<beta.\n\nChoose a smooth phi_R equal to 1/u on [1,R], supported inside [1/2,2R], and bounded between zero and 1/u. Put A=integral phi_R, B=integral u phi_R^2, and N^2=integral phi_R^2. Then A>=log R, B<=log(4R), and for R>=2 the quantity N^2 is bounded above by 2 and below by 1/2. Normalize g0=phi_R/N. With c=lambda/(integral g0)^2, set g(u)=c^(-1/2)g0(u/c). Dilation preserves the squared norm, fixes the L1 norm at sqrt(lambda), and gives\n\n$$\\int u g(u)^2\\,du=\\lambda B/A^2\\le\\lambda\\log(4R)/(\\log R)^2.$$\n\nThe last bound tends to zero. For each fixed choice the support and all moments are finite; they are not asserted to remain uniformly bounded as beta decreases. In the source application, first fix the profile, then the product dimension, and only afterward let the arithmetic scale tend to infinity.\n\n## Role in the source argument\n\nAllows the product weight to suppress the right-block first moment without shrinking the prescribed left-block mean.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:small-first-moment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex#L11)\n\n## Antecedents and comparison\n\n[Maynard, Section 7, equations (7.15)-(7.18)](https://annals.math.princeton.edu/wp-content/uploads/annals-v181-n1-p07-p.pdf) uses reciprocal affine profiles and analyzes their first and second integrals. The displayed normalized logarithmic-tail construction is an elementary related profile choice; the exact source formulation has not undergone an exhaustive priority search.\n\n## Checks and limitations\n\nRead the full proof. Numerical quadrature checks 12 explicitly smoothed compact profiles across four support scales and three values of lambda, including the dilation identities and first-moment bound.\n\nQuadrature is not proof of smoothness or an asymptotic sieve estimate. The symbolic smooth cutoff and dilation argument gives the stated existence result.\n\n## Possible applications\n\nSeparating a weighted location moment from fixed mass and energy constraints in product trial functions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000282",
+      "record_type": "instrument",
+      "title": "One finite field supplies unit-separated spectra and all unit determinant roots",
+      "forms": [
+        "uniform-arithmetic-extension",
+        "integral-spectral-separation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-027"
+      ],
+      "source_paper_ids": [
+        "P-000160"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+          "label": "lem:unit-spectrum",
+          "line": 67,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L67",
+          "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+        },
+        {
+          "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+          "label": "lem:uniform-field",
+          "line": 92,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L92",
+          "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+        },
+        {
+          "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+          "label": "lem:free-splittings",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L45",
+          "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-cyclotomic-and-unit-group-tools-with-uniform-source-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000282.md",
+      "body": "# One finite field supplies unit-separated spectra and all unit determinant roots\n\n[Family 027](../families/openai-math-027.md) · [Source manuscript](../papers/P-000160.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nFix a number field K and rank r. Choose distinct primes p,q>r and let F=K(sqrt(2),zeta_pq), with ring of integers R. The values alpha_i=zeta_pq^(i-1), 1<=i<=n<=r, are distinct units with unit pairwise differences. For i!=j the exponent i-j is prime to pq, and the cyclotomic norm of 1-zeta_pq^(i-j) is Phi_pq(1)=1. It is therefore a unit already in the cyclotomic ring and remains one in R.\n\nIf an R-linear matrix M is annihilated by the product of (T-alpha_i), the usual Lagrange polynomials\n\n$$e_i=\\prod_{j\\ne i}\\frac{M-\\alpha_j I}{\\alpha_i-\\alpha_j}$$\n\nhave coefficients in R and split the module into spectral summands. Those summands are projective; freeness is not automatic over a ring of integers. The source retains free graded modules and uses split exact sequences with free quotients to choose the needed integral frames.\n\nDirichlet's theorem gives finitely many generators u0,...,us of R^times, including a generator of its finite torsion subgroup. Adjoin zeta_r and one rth root vi of each ui. The resulting extension L/F is finite and contains an rth root of every unit, since a product of generator powers has the corresponding product of vi powers as a root. Every vi and its inverse are integral, hence units of O_L. Thus a GL_r(R) matrix can be scaled to determinant one over this same L, independently of its determinant. This is a matrix-level arithmetic provision; preserving all surface relations and boundary prescriptions still requires the source's geometric construction.\n\n## Role in the source argument\n\nPrevents the arithmetic field from growing with every chosen spectrum, determinant or representation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:unit-spectrum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L67)\n- [lem:uniform-field](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L92)\n- [lem:free-splittings](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L45)\n\n## Antecedents and comparison\n\nThe finite-generation input is [Milne, Algebraic Number Theory, Theorem 5.1](https://www.jmilne.org/math/CourseNotes/ANTc.pdf). The cyclotomic norm and integral interpolation arguments are classical. The source combines them into a field chosen uniformly before its geometric construction; no independent priority claim is made.\n\n## Checks and limitations\n\nRead all three arguments. Exact rational-polynomial Euclidean arithmetic checks integral inverses of ten differences in three cyclotomic rings, together with Phi_pq(1)=1.\n\nThe program does not compute a unit basis for arbitrary number fields, verify a character variety, or turn a projective summand into a free one. Uniformity follows from the finite-generation proof, not the finite examples.\n\n## Possible applications\n\nIntegral diagonalization and determinant normalization when a single coefficient field must serve an entire parameter family.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000283",
+      "record_type": "instrument",
+      "title": "Two flags reconstruct through a once-crossing gallery with compatible graded maps",
+      "forms": [
+        "two-flag-reconstruction",
+        "compatible-block-extension"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-027"
+      ],
+      "source_paper_ids": [
+        "P-000160"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex",
+          "label": "lem:two-flags",
+          "line": 148,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex#L148",
+          "sha256": "d56eddbfdfcc4dca27ad05e0e653ab30183f6c0f5dcfea10603774f5909aac4d"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-flag-splitting-with-explicit-integral-quotient-compatibility",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000283.md",
+      "body": "# Two flags reconstruct through a once-crossing gallery with compatible graded maps\n\n[Family 027](../families/openai-math-027.md) · [Source manuscript](../papers/P-000160.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nFor two flags F,H in V, let m_ij be the successive double differences of dim(F_i intersect H_j). A common splitting V=direct sum V_ij realizes the two flags as row and column prefixes. Refine in row-first order, sort to column-first order by adjacent interchanges, and merge. Every inverted pair crosses once.\n\nConversely a gallery of such split/interchange/merge operations with each pair crossing at most once admits one common splitting respecting the specified quotient identifications. At a crossing, express the new second block as a graph into the first and adjust its lift. Before that crossing the first block always precedes the second; the adjustment therefore preserves all earlier prefixes and graded identifications. Induction handles the whole gallery. Over a ring, the same construction requires the indicated graded quotients to be free, so the short exact sequences split.\n\nSuppose maps on the F-graded pieces and H-graded pieces preserve their induced refinements and agree on the double-graded modules. In common splittings, a simultaneous extension has matrix blocks V_ij -> V'_i'j' only when i'<=i and j'<=j. Equal-row blocks are prescribed by the F maps; equal-column blocks by the H maps; the prescriptions agree on their overlap. Blocks strictly lowering both coordinates are arbitrary. Invertible diagonal blocks make the whole extension invertible.\n\nEvery sorting order is a linear extension of this coordinatewise order, so the same matrix respects every intermediate flag. The free lower-both blocks parameterize an affine space of extensions. In constant-rank families this description is local, after splitting the subbundles; no global canonical splitting is asserted.\n\n## Role in the source argument\n\nRetains the identified quotient maps needed when cutting and sewing the source surface diagrams.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:two-flags](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex#L148)\n\n## Antecedents and comparison\n\nSimultaneous two-flag splittings and triangular extension matrices are standard linear algebra. The source explicitly relates its flag operations to Mellit and Su stratifications and isolates reconstruction with free integral graded modules. Those broader geometric antecedents were not independently compared theorem by theorem here.\n\n## Checks and limitations\n\nRead the entire gallery and block-extension proof. Exact integer matrices check 100 split six-block models against every coordinate-order extension; varying the lower-both blocks leaves both families of graded maps unchanged.\n\nThe check uses already split rank-one blocks. It does not certify arbitrary family splittings, the seam equations or the full density argument. Agreement on double-graded overlaps and the once-crossing condition are essential hypotheses.\n\n## Possible applications\n\nGluing filtered objects while preserving two sets of quotient data over an integral parameter ring.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000284",
+      "record_type": "instrument",
+      "title": "Pay a shared conditioning entropy once before averaging sampled coordinates",
+      "forms": [
+        "shared-conditioning",
+        "averaged-entropy-deficit"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-028"
+      ],
+      "source_paper_ids": [
+        "P-000161"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+          "label": "lem:conditioning",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L34",
+          "sha256": "f9d4a4f80a29135ffd817fa022b404250e3e79f146d1cda334cd06f2552f3c05"
+        },
+        {
+          "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+          "label": "eq:deficit-upper",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L42",
+          "sha256": "f9d4a4f80a29135ffd817fa022b404250e3e79f146d1cda334cd06f2552f3c05"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-entropy-inequalities-with-explicit-shared-cost-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000284.md",
+      "body": "# Pay a shared conditioning entropy once before averaging sampled coordinates\n\n[Family 028](../families/openai-math-028.md) · [Source manuscript](../papers/P-000161.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nThere are k pairs of finite coordinates, with pair j taking values in groups of size p_j. Let S choose s distinct pairs uniformly and choose one sign in each pair by independent fair bits. Require S to be independent of the joint data (Y,H). Put Lbar=(1/k)sum_j log p_j, and let F_S(Y) be the sampled coordinate tuple. Then\n\n$$\\frac1{2k}\\sum_{j,\\pm}\\bigl(\\log p_j-H(\\phi_j^\\pm(Y)\\mid H)\\bigr)\n\\le \\overline L-\\frac{\\mathbb E_S H(F_S(Y))}{s}+\\frac{H(H)}s.$$\n\nFor each fixed S, joint conditional entropy is at least H(F_S(Y))-H(H) and at most the sum of its coordinate conditional entropies. Average this inequality. Each coordinate appears with probability s/(2k), giving the displayed bound after division by s. Independence ensures the distributions being averaged are the same fixed distributions of Y and H, not distributions biased by how S was selected.\n\nThus if the average sampled entropy is at least (1-epsilon)s Lbar and H(H)<=kappa s Lbar, the mean coordinate deficit is at most (epsilon+kappa)Lbar. No independence among Y's coordinates or between Y and H is required. Conditioning each coordinate separately and charging H(H) each time would lose the useful factor 1/s.\n\n## Role in the source argument\n\nKeeps the continuation-data entropy budget small enough for the later coverage estimates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:conditioning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L34)\n- [eq:deficit-upper](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L42)\n\n## Antecedents and comparison\n\nThis is a direct combination of the Shannon chain rule and conditional subadditivity, with the uniform inclusion probability made explicit. The source packages it for shared continuation data; no novelty is claimed for the underlying entropy inequalities.\n\n## Checks and limitations\n\nRead the complete proof. Thirty correlated finite joint distributions are checked for each of three sample sizes, with exact enumeration of the uniformly sampled index/sign sets and numerical entropy evaluation.\n\nThe tests do not establish the source lower bound on sampled entropy, the size of its conditioning data, or the coverage-transfer theorem. Adaptive sampling requires a new analysis.\n\n## Possible applications\n\nAvoiding repeated information costs when many coordinate conclusions use one shared description.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000285",
+      "record_type": "instrument",
+      "title": "A periodic graph without an infinite path has a finite-cell component bound",
+      "forms": [
+        "periodic-component-bound",
+        "finite-exception-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-028"
+      ],
+      "source_paper_ids": [
+        "P-000161"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex",
+          "label": "prop:periodic",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex#L9",
+          "sha256": "1c3929027ce8db0174143c29134a8b38c812b9e27eed0d6d7af11d42acd408aa"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "Vardi-periodicity-principle-with-explicit-exceptional-vertex-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000285.md",
+      "body": "# A periodic graph without an infinite path has a finite-cell component bound\n\n[Family 028](../families/openai-math-028.md) · [Source manuscript](../papers/P-000161.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nLet a locally finite graph on a subset A of Z^2 have edges determined by a fixed bounded set of steps, and be invariant under translations by Q Z^2. Assume it has no infinite injective path. Every component is finite: an infinite component would give a finitely branching tree of finite simple paths of arbitrarily large length, and hence an infinite branch.\n\nIf two distinct points x,y in one component satisfy y-x in Q Z^2, translation by y-x takes that component to another containing y, hence to itself. A nonempty finite subset of Z^2 cannot be invariant under a nonzero translation. Every component therefore injects into (Z/QZ)^2 and has at most Q^2 vertices.\n\nIn the source, A avoids finitely many chosen Gaussian prime factors above rational primes p=1 mod 4, and Q is their product. Every Gaussian prime outside this avoiding set is an associate of a selected factor; put those finitely many exceptions in E. If K_D counts the lattice vectors of length at most D, including zero, then each exceptional vertex has at most K_D-1 neighbors. A component meeting E attaches to at most (K_D-1)|E| old components. The Gaussian-prime component bound is consequently\n\n$$\\max\\{Q^2,\\ |E|+(K_D-1)|E|Q^2\\}.$$\n\nThe arithmetic task is to produce a finite avoiding set with no infinite bounded-step path. That task is retained as a separate premise. Without periodicity, a disjoint union of finite paths of increasing lengths has no infinite path but has no uniform component-size bound.\n\n## Role in the source argument\n\nConverts the finite sieve obstruction into a uniform statement for all starting Gaussian primes, including the removed exceptions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:periodic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex#L9)\n\n## Antecedents and comparison\n\nThe source explicitly credits [Vardi, Prime percolation, Section 6, Proposition 6.2](https://doi.org/10.1080/10586458.1998.10504373) for the periodicity principle. The publisher record was retrieved, but the exact antecedent proposition was not independently read in this batch. The explicit exception budget is checked directly from the displayed source proof.\n\n## Checks and limitations\n\nRead the full proof. Exhaustive period-two and period-three nearest-neighbor lattice patterns are classified by exact lifted-cycle detection; finite components and components formed by adjoining exceptional vertices satisfy the bounds.\n\nThese are generic periodic graph examples, not Gaussian-prime obstruction certificates. The main finite sieve theorem remains unaudited. Local finiteness and actual lattice translation invariance are required.\n\n## Possible applications\n\nUpgrading pointwise finiteness to a uniform bound in periodic discrete models, with controlled finite defects.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000286",
+      "record_type": "instrument",
+      "title": "Extend to a kernel normalizer using unique conjugation implementers",
+      "forms": [
+        "kernel-normalizer-extension",
+        "unique-implementation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-031"
+      ],
+      "source_paper_ids": [
+        "P-000162"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex",
+          "label": "lem:normalizer-extension",
+          "line": 24,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex#L24",
+          "sha256": "43455b8ed4a6c68ce50d355c9bd491b35395fc00072dfc7387f1417bb8dea4fd"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "standard-normalizer-mechanism-conditional-on-Uchida-reconstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000286.md",
+      "body": "# Extend to a kernel normalizer using unique conjugation implementers\n\n[Family 031](../families/openai-math-031.md) · [Source manuscript](../papers/P-000162.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nLet U be an open normal subgroup of a profinite ambient group G, let alpha:U->P be a continuous open homomorphism with open image A, and let N=ker alpha. Put T=N_G(N). Conjugation by t in T induces an automorphism of U/N=A. Suppose every such automorphism has a unique implementer beta(t) in P, meaning beta(t)alpha(u)beta(t)^(-1)=alpha(tut^(-1)).\n\nUniqueness implies beta(t1t2)=beta(t1)beta(t2), and beta(u)=alpha(u) on U. It also gives uniqueness of any extension inducing these conjugation maps. Since beta is continuous on the open subgroup U, its homomorphism property makes it continuous everywhere. Its image contains the open subgroup A; the compact-to-Hausdorff quotient theorem and openness of its image then make beta an open map.\n\nIn the source, P is the Galois group of the maximal solvable extension of Q. Uchida's reconstruction supplies the implementers; its uniqueness gives trivial centralizers of open subgroups. These are substantive inputs, not consequences of abstract centerlessness alone.\n\nThere are finitely many conjugates N_i of N because U normalizes N. If a distinct conjugate N_i were contained in N, iterating its conjugating element until a power lies in U would create a finite cycle of inclusions, forcing equality. Thus beta(N_i) is nontrivial for every distinct conjugate; it is normal in A because N_i is normal in U. This is the useful bridge from a kernel stabilizer to a family of nontrivial normal images.\n\n## Role in the source argument\n\nBuilds the maximal ambient domain on which the local Galois homomorphism can be extended before the source generation argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:normalizer-extension](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex#L24)\n\n## Antecedents and comparison\n\nThe source invokes [Uchida (1979)](https://www.jstage.jst.go.jp/article/tmj1949/31/3/31_3_359/_article/-char/en) for unique field realization. The publisher record was verified; its full reconstruction proof was not independently audited. The abstract normalizer and uniqueness argument is standard group theory.\n\n## Checks and limitations\n\nRead the complete extension and conjugate-kernel argument. An exact order-72 finite wreath-product model has a proper order-36 normalizer, unique implementers, two kernel conjugates and nontrivial other-kernel image. An abelian control exhibits nonunique extensions when the centralizer condition is absent.\n\nA finite group model cannot establish Uchida reconstruction, profinite continuity or the full open-homomorphism theorem. Both existence and uniqueness of implementers must be supplied.\n\n## Possible applications\n\nExtending local symmetry data to its maximal kernel-stabilizing domain when automorphisms have rigid realizations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000287",
+      "record_type": "instrument",
+      "title": "Distinct Kummer exponents separate overlapping prime lists simultaneously",
+      "forms": [
+        "simultaneous-residue-separation",
+        "coprime-Kummer-extensions"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-031"
+      ],
+      "source_paper_ids": [
+        "P-000162"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex",
+          "label": "lem:power-separation",
+          "line": 132,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex#L132",
+          "sha256": "b82edf65e0f85ac5ed5310ec653d85f4b239a1d355088b00bb2581fb3dbbff5d"
+        }
+      ],
+      "batch_id": "B022",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-Kummer-Chebotarev-construction-with-overlap-compatible-exponents",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000287.md",
+      "body": "# Distinct Kummer exponents separate overlapping prime lists simultaneously\n\n[Family 031](../families/openai-math-031.md) · [Source manuscript](../papers/P-000162.md) · [Batch B022](../../batches/B022/README.md)\n\n## Mathematical content\n\nFix m,d>=1, distinct rational primes q_j, and finite sets P_j of primes with q_j not in P_j. The P_j may overlap and may contain q_i for i!=j. There are infinitely many odd primes ell=1 mod m, avoiding any prescribed finite set, such that p^f mod ell is not in the cyclic subgroup generated by q_j mod ell for every p in P_j and 1<=f<=d.\n\nChoose pairwise distinct auxiliary primes s_j larger than m,d and all listed primes, and let C=Q(zeta_(m product s_j)). For a listed prime, its ramification index in C divides the degree of Q(zeta_m), so it is prime to every s_j. Valuations at the distinct listed primes therefore prove independence of their classes in C^times/(C^times)^(s_j).\n\nKummer theory gives an elementary abelian s_j-extension adjoining s_jth roots of q_j and all p in P_j. Choose an automorphism fixing q_j's root but acting nontrivially on every listed p root. The different extensions have relatively prime degrees over C, so are linearly disjoint and these choices combine. The compositum is Galois over Q. Conjugation preserves whether each root-of-unity multiplier is trivial, since it raises the multiplier to a power prime to s_j.\n\nChebotarev supplies infinitely many primes with this conjugacy class. They split completely in C, so meet the required congruences. Modulo such a prime, q_j is an s_jth power and p is not. The quotient of the multiplicative residue group by s_jth powers has prime order s_j; a nonzero class remains nonzero under exponents 1 through d<s_j. It therefore cannot enter the subgroup generated by q_j. Overlaps among lists cause no conflict because their restrictions use different Kummer exponents.\n\n## Role in the source argument\n\nChooses one auxiliary prime excluding all possible partners of several target primes in the source matching argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:power-separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex#L132)\n\n## Antecedents and comparison\n\nThis uses classical Kummer independence and the conjugacy-class form of Chebotarev; see [Milne, Algebraic Number Theory, Theorem 8.31](https://www.jmilne.org/math/CourseNotes/ANTc.pdf) for the latter. The source explicitly coordinates overlapping lists with different prime exponents. No exhaustive novelty search for this exact lemma was performed.\n\n## Checks and limitations\n\nRead the full proof, including valuations, conjugacy invariance and overlapping lists. Exact modular arithmetic finds five witness primes for two overlapping lists and checks all powers through d=2 directly against the relevant generated subgroups.\n\nFinding five primes does not prove infinitude, Kummer independence or Chebotarev. The chosen auxiliary exponents must exceed d; otherwise a nonzero quotient class can vanish under a tested power.\n\n## Possible applications\n\nConstructing one residue field that simultaneously distinguishes several multiplicative sources from bounded powers of competing primes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -14309,6 +14625,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000158.md",
       "body": "# Weak and strong normalization in pure type systems\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that system-wide weak normalization implies system-wide strong normalization for every pure type system, allowing arbitrary sorts, nonfunctional axioms/rules and reduction inside annotations.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000278: Finite derivations retain a system-wide normalization counterexample in a finite specification](../instruments/MI-000278.md)\n- [MI-000279: Balanced signed dependencies turn mixed-variance equations into a Tarski operator](../instruments/MI-000279.md)\n\n## Dependencies and review\n\nFinite typing derivations, capture-avoiding substitution, correctness of types, raw beta syntax, complete candidate lattices, signed dependency graphs and Tarski monotonicity.\n\nRead the full finite-restriction proof, candidate lattice lemma and signed-component proof. The general observation interpretation, typed channels, relational diagonal construction and final exclusion theorem were not audited.\n\nRead TypeSystemNormalization.lean, including full annotated syntax, substitution, reduction, legality, weak and strong normalization and the unrestricted target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-245.md) · [Batch B021](../../batches/B021/README.md)"
+    },
+    {
+      "id": "P-000159",
+      "record_type": "paper",
+      "title": "Positive lower density of large prime gaps",
+      "source_collection": "openai/math",
+      "upstream_slug": "Positive-lower-density-of-large-prime-gaps-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-026"
+      ],
+      "batch_id": "B022",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "17c0c6327ca0ff5ca79bb01cfa16a84931b7a9da354be1cbd172e4bd9805fcaa",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000159.md",
+      "body": "# Positive lower density of large prime gaps\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that for each C>0 a positive lower proportion of consecutive prime gaps exceed C log p_n, with a bound holding for every sufficiently large N. It also deduces a positive lower density of increases of p_n/n.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000280: Weighted adjacent-block success becomes ordinary gap density](../instruments/MI-000280.md)\n- [MI-000281: A smooth profile with fixed L1 and L2 norms and arbitrarily small first moment](../instruments/MI-000281.md)\n\n## Dependencies and review\n\nNonnegative weights, two Cauchy-Schwarz inequalities, a bounded-multiplicity assignment to consecutive gaps, the prime number theorem, smooth truncation and dilation.\n\nRead the complete counting reduction and small-first-moment profile proof. The substantial sieve estimates establishing the required weight moments were not audited.\n\nRead PrimeGaps.lean. Its actual large_gaps_and_ratio_density target conjoins the full arbitrary-C large-gap assertion with ratio-increase density. The accompanying scope note describes only the ratio assertion, so it understates the target actually displayed. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-026.md) · [Batch B022](../../batches/B022/README.md)"
+    },
+    {
+      "id": "P-000160",
+      "record_type": "paper",
+      "title": "Integral points on character varieties of curves",
+      "source_collection": "openai/math",
+      "upstream_slug": "Integral-points-on-character-varieties-of-curves-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-027"
+      ],
+      "batch_id": "B022",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "71ec23e4f15791ec381a26742f54cf0823f2c30bbd9f3ecb35854ebf96c83559",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000160.md",
+      "body": "# Integral points on character varieties of curves\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims Zariski density of integral points on every relevant component of rank-r SL_r character varieties of curves with prescribed quasi-unipotent boundary classes, over one finite extension independent of the point and component.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000282: One finite field supplies unit-separated spectra and all unit determinant roots](../instruments/MI-000282.md)\n- [MI-000283: Two flags reconstruct through a once-crossing gallery with compatible graded maps](../instruments/MI-000283.md)\n\n## Dependencies and review\n\nCyclotomic norm identities, finite generation of number-field units, integral roots of units, split exact sequences with free quotients, two-flag block decomposition and compatible triangular matrices.\n\nRead the complete arithmetic-parameter section and two-flag reconstruction proof. The seam induction and full density deduction were not audited.\n\nRead CharacterVarietiesAllSeamsSupport.lean. It asks for ProducedMarkedSeamEquations under its properness, maximality, positive-genus, puncture and existing-solution hypotheses. It does not state the full integral-point density theorem; the imported equation definitions were not audited in full. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-027.md) · [Batch B022](../../batches/B022/README.md)"
+    },
+    {
+      "id": "P-000161",
+      "record_type": "paper",
+      "title": "Bounded-Step Walks on Gaussian Primes",
+      "source_collection": "openai/math",
+      "upstream_slug": "Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-028"
+      ],
+      "batch_id": "B022",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3be46a59d35ad414f1f8a18220d92b497b6f5b0f0b93dce31e7a97d13a23adbd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000161.md",
+      "body": "# Bounded-Step Walks on Gaussian Primes\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that for each fixed step bound every connected component of the Gaussian-prime graph has uniformly bounded cardinality, and consequently no infinite injective walk with bounded steps exists.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000284: Pay a shared conditioning entropy once before averaging sampled coordinates](../instruments/MI-000284.md)\n- [MI-000285: A periodic graph without an infinite path has a finite-cell component bound](../instruments/MI-000285.md)\n\n## Dependencies and review\n\nShannon entropy chain rule and subadditivity, uniform coordinate inclusion probabilities, locally finite path trees, lattice translations and a finite attachment-degree count.\n\nRead the complete shared-conditioning lemma and periodic-component proposition. The finite sieve theorem, coverage-transfer schedule and geometric obstruction construction were not audited.\n\nRead GaussianMoat.lean, including Gaussian-prime vertices, the real step bound, the uniform finite component-cardinality target and its no-infinite-injective-walk consequence. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-028.md) · [Batch B022](../../batches/B022/README.md)"
+    },
+    {
+      "id": "P-000162",
+      "record_type": "paper",
+      "title": "Open Homomorphisms of Global Solvably Closed Galois Groups",
+      "source_collection": "openai/math",
+      "upstream_slug": "Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-031"
+      ],
+      "batch_id": "B022",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a19c4c655b526a06ef6665d128b44dadb7d8740d9d6b04ca730f7aaeddd3e10d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000162.md",
+      "body": "# Open Homomorphisms of Global Solvably Closed Galois Groups\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/open-homomorphisms-solvably-closed-galois-groups.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every continuous open homomorphism between Galois groups of solvably closed Galois extensions of number fields comes from a unique contravariant field embedding, with no restriction on its kernel.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000286: Extend to a kernel normalizer using unique conjugation implementers](../instruments/MI-000286.md)\n- [MI-000287: Distinct Kummer exponents separate overlapping prime lists simultaneously](../instruments/MI-000287.md)\n\n## Dependencies and review\n\nNormalizer of a kernel, uniqueness of conjugation implementers, open subgroups of profinite groups, valuations in cyclotomic fields, Kummer independence and Chebotarev conjugacy classes.\n\nRead the entire normalizer-extension proof and simultaneous power-separation proof, together with the source statements of reconstruction and trivial centralizers. The larger matching and generation arguments were not audited.\n\nNo family-specific Lean scope document is listed in the pinned release inventory for family 031. No formal proof project was built.\n\n[Family context](../families/openai-math-031.md) · [Batch B022](../../batches/B022/README.md)"
     }
   ],
   "families": [
@@ -14720,6 +15112,114 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-025.md",
       "body": "# Marked Egyptian-fraction prefixes and indexed exceptional-set descent\n\n## Source manuscript and claim\n\n[Short Egyptian fractions](../papers/P-000142.md), by OpenAI, September 25, 2026.\n\nThe source claims that the worst minimum number of distinct unit fractions for numerator 1<=a<b has order log log b, and gives counting and prescribed-denominator consequences.\n\n## Extracted instruments\n\n- [MI-000244: A greedy prefix protects an exact Egyptian-fraction denominator](../instruments/MI-000244.md)\n- [MI-000245: Indexed predecessor moments control exceptional sets through residue descent](../instruments/MI-000245.md)\n\n## Dependencies and antecedents\n\nGreedy rational subtraction, a protected remainder gap, known exact-marker padding, indexed bipartite counts, truncated divisor moments, Holder and a sublinear-power recurrence.\n\nVan Doorn-Tang, The smallest denominator not contained in a unit fraction decomposition of 1 with fixed length, Lemma 2.1, supplies padding. The source credits Erdos's prime-factor splitting method for its separate divisor-moment input. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full marked-prefix and exact-padding proofs and the complete backward exceptional-set argument. The divisor-moment statement and dense-set reduction were inspected, but the divisor-moment proof, residue estimates and common auxiliary-denominator construction were not audited.\n\nThe scope document and EgyptianFractions.lean and ShortEgyptianFractions.lean were read. They state the double-logarithmic length order, finite counting and denominator bounds, exact-marker padding and occurrence, and quantitative prescribed-denominator consequences. These are Comparator targets, not certified proof builds. No Lean solution was built or kernel-checked, and the auxiliary cards are not all separate formalization targets.\n\nThe marked prefix keeps its numerator and denominator unreduced and skips the marker at most once. An odd divisibility marker is weaker than an exact denominator marker. Descent counts retain list indices even when divisor values repeat.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/025.md) · [Batch record](../../batches/B017/README.md)"
+    },
+    {
+      "id": "openai-math-026",
+      "record_type": "family",
+      "title": "From weighted adjacent blocks to ordinary prime-gap density",
+      "source_family": "026",
+      "source_collection": "openai/math",
+      "batch_id": "B022",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000159"
+      ],
+      "instrument_ids": [
+        "MI-000280",
+        "MI-000281"
+      ],
+      "headline": "The source claims that for each C>0 a positive lower proportion of consecutive prime gaps exceed C log p_n, with a bound holding for every sufficiently large N. It also deduces a positive lower density of increases of p_n/n.",
+      "central_instrument": "Two weighted Cauchy-Schwarz inequalities transfer positive weighted mass to ordinary density, after adjacent-block charging controls multiplicity. A smooth profile keeps its L1 and L2 norms fixed while making its first squared moment arbitrarily small.",
+      "novelty_assessment": "Moment inequalities and product-profile constructions have classical antecedents, including Maynard sieve weights. The selected cards isolate source-specific parameter bookkeeping; they do not certify the weight construction or a new prime-gap theorem.",
+      "formalization_summary": "Read PrimeGaps.lean. Its actual large_gaps_and_ratio_density target conjoins the full arbitrary-C large-gap assertion with ratio-increase density. The accompanying scope note describes only the ratio assertion, so it understates the target actually displayed. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "The second weighted prime moment must be uniform in the small error parameter. The ordinary second moment of the weights may depend on that parameter, which is fixed before X tends to infinity. The conclusion is ordinary lower density, not only a weighted count or a subsequence.",
+      "dependencies": "Nonnegative weights, two Cauchy-Schwarz inequalities, a bounded-multiplicity assignment to consecutive gaps, the prime number theorem, smooth truncation and dilation.",
+      "antecedents": "Maynard, Small gaps between primes, Section 7; classical weighted second-moment and counting arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-026.md",
+      "body": "# From weighted adjacent blocks to ordinary prime-gap density\n\n## Source manuscript and claim\n\n[Positive lower density of large prime gaps](../papers/P-000159.md), by OpenAI, September 25, 2026.\n\nThe source claims that for each C>0 a positive lower proportion of consecutive prime gaps exceed C log p_n, with a bound holding for every sufficiently large N. It also deduces a positive lower density of increases of p_n/n.\n\n## Extracted instruments\n\n- [MI-000280: Weighted adjacent-block success becomes ordinary gap density](../instruments/MI-000280.md)\n- [MI-000281: A smooth profile with fixed L1 and L2 norms and arbitrarily small first moment](../instruments/MI-000281.md)\n\n## Dependencies and antecedents\n\nNonnegative weights, two Cauchy-Schwarz inequalities, a bounded-multiplicity assignment to consecutive gaps, the prime number theorem, smooth truncation and dilation.\n\nMaynard, Small gaps between primes, Section 7; classical weighted second-moment and counting arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete counting reduction and small-first-moment profile proof. The substantial sieve estimates establishing the required weight moments were not audited.\n\nRead PrimeGaps.lean. Its actual large_gaps_and_ratio_density target conjoins the full arbitrary-C large-gap assertion with ratio-increase density. The accompanying scope note describes only the ratio assertion, so it understates the target actually displayed. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe second weighted prime moment must be uniform in the small error parameter. The ordinary second moment of the weights may depend on that parameter, which is fixed before X tends to infinity. The conclusion is ordinary lower density, not only a weighted count or a subsequence.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/026.md) · [Batch record](../../batches/B022/README.md)"
+    },
+    {
+      "id": "openai-math-027",
+      "record_type": "family",
+      "title": "Uniform integral parameters and compatible two-flag reconstruction",
+      "source_family": "027",
+      "source_collection": "openai/math",
+      "batch_id": "B022",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000160"
+      ],
+      "instrument_ids": [
+        "MI-000282",
+        "MI-000283"
+      ],
+      "headline": "The source claims Zariski density of integral points on every relevant component of rank-r SL_r character varieties of curves with prescribed quasi-unipotent boundary classes, over one finite extension independent of the point and component.",
+      "central_instrument": "Cyclotomic eigenvalues have unit pairwise differences, and finite generation of the unit group puts all determinant-normalizing roots into one fixed number field. Two flags and their identified quotients are reconstructed by compatible lower-block matrices.",
+      "novelty_assessment": "Cyclotomic units, Dirichlet finite generation and simultaneous flag splittings are established ingredients. Their uniform arithmetic and quotient-compatibility bookkeeping is isolated here; the complete character-variety density theorem is not independently certified.",
+      "formalization_summary": "Read CharacterVarietiesAllSeamsSupport.lean. It asks for ProducedMarkedSeamEquations under its properness, maximality, positive-genus, puncture and existing-solution hypotheses. It does not state the full integral-point density theorem; the imported equation definitions were not audited in full. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "The field extension is fixed before varying points. Integrality is in the ambient character scheme, with exact complex boundary classes; it does not require preservation of the same Jordan class at every finite prime. Integral spectral projectors give projective summands, not automatically free ones; the source separately supplies free graded pieces. All sewn quotient identifications remain required.",
+      "dependencies": "Cyclotomic norm identities, finite generation of number-field units, integral roots of units, split exact sequences with free quotients, two-flag block decomposition and compatible triangular matrices.",
+      "antecedents": "Dirichlet unit theorem; classical cyclotomic units and simultaneous splittings of two flags; the source relates its flag operations to Mellit and Su stratifications.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-027.md",
+      "body": "# Uniform integral parameters and compatible two-flag reconstruction\n\n## Source manuscript and claim\n\n[Integral points on character varieties of curves](../papers/P-000160.md), by OpenAI, September 25, 2026.\n\nThe source claims Zariski density of integral points on every relevant component of rank-r SL_r character varieties of curves with prescribed quasi-unipotent boundary classes, over one finite extension independent of the point and component.\n\n## Extracted instruments\n\n- [MI-000282: One finite field supplies unit-separated spectra and all unit determinant roots](../instruments/MI-000282.md)\n- [MI-000283: Two flags reconstruct through a once-crossing gallery with compatible graded maps](../instruments/MI-000283.md)\n\n## Dependencies and antecedents\n\nCyclotomic norm identities, finite generation of number-field units, integral roots of units, split exact sequences with free quotients, two-flag block decomposition and compatible triangular matrices.\n\nDirichlet unit theorem; classical cyclotomic units and simultaneous splittings of two flags; the source relates its flag operations to Mellit and Su stratifications. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete arithmetic-parameter section and two-flag reconstruction proof. The seam induction and full density deduction were not audited.\n\nRead CharacterVarietiesAllSeamsSupport.lean. It asks for ProducedMarkedSeamEquations under its properness, maximality, positive-genus, puncture and existing-solution hypotheses. It does not state the full integral-point density theorem; the imported equation definitions were not audited in full. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe field extension is fixed before varying points. Integrality is in the ambient character scheme, with exact complex boundary classes; it does not require preservation of the same Jordan class at every finite prime. Integral spectral projectors give projective summands, not automatically free ones; the source separately supplies free graded pieces. All sewn quotient identifications remain required.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/027.md) · [Batch record](../../batches/B022/README.md)"
+    },
+    {
+      "id": "openai-math-028",
+      "record_type": "family",
+      "title": "Shared entropy costs and uniform bounds from periodic obstructions",
+      "source_family": "028",
+      "source_collection": "openai/math",
+      "batch_id": "B022",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000161"
+      ],
+      "instrument_ids": [
+        "MI-000284",
+        "MI-000285"
+      ],
+      "headline": "The source claims that for each fixed step bound every connected component of the Gaussian-prime graph has uniformly bounded cardinality, and consequently no infinite injective walk with bounded steps exists.",
+      "central_instrument": "A single shared conditioning variable costs its entropy once before averaging sampled coordinates. A periodic avoiding graph with no infinite path has components injecting into one finite residue cell, and finitely many exceptional vertices incur an explicit degree budget.",
+      "novelty_assessment": "The entropy calculation uses classical chain rules and subadditivity. The source credits Vardi for the periodicity principle. The finite-obstruction construction linking these mechanisms to the Gaussian moat problem was not audited.",
+      "formalization_summary": "Read GaussianMoat.lean, including Gaussian-prime vertices, the real step bound, the uniform finite component-cardinality target and its no-infinite-injective-walk consequence. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "The sampled coordinate set is independent of all other random data; Y and the shared conditioning variable may depend on each other. The component bound is conditional on the existence of a periodic obstruction with no infinite path, and explicitly restores the finitely many removed Gaussian primes.",
+      "dependencies": "Shannon entropy chain rule and subadditivity, uniform coordinate inclusion probabilities, locally finite path trees, lattice translations and a finite attachment-degree count.",
+      "antecedents": "Classical Shannon entropy inequalities; Vardi, Prime percolation, Section 6, Proposition 6.2, as explicitly credited by the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-028.md",
+      "body": "# Shared entropy costs and uniform bounds from periodic obstructions\n\n## Source manuscript and claim\n\n[Bounded-Step Walks on Gaussian Primes](../papers/P-000161.md), by OpenAI, September 26, 2026.\n\nThe source claims that for each fixed step bound every connected component of the Gaussian-prime graph has uniformly bounded cardinality, and consequently no infinite injective walk with bounded steps exists.\n\n## Extracted instruments\n\n- [MI-000284: Pay a shared conditioning entropy once before averaging sampled coordinates](../instruments/MI-000284.md)\n- [MI-000285: A periodic graph without an infinite path has a finite-cell component bound](../instruments/MI-000285.md)\n\n## Dependencies and antecedents\n\nShannon entropy chain rule and subadditivity, uniform coordinate inclusion probabilities, locally finite path trees, lattice translations and a finite attachment-degree count.\n\nClassical Shannon entropy inequalities; Vardi, Prime percolation, Section 6, Proposition 6.2, as explicitly credited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete shared-conditioning lemma and periodic-component proposition. The finite sieve theorem, coverage-transfer schedule and geometric obstruction construction were not audited.\n\nRead GaussianMoat.lean, including Gaussian-prime vertices, the real step bound, the uniform finite component-cardinality target and its no-infinite-injective-walk consequence. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe sampled coordinate set is independent of all other random data; Y and the shared conditioning variable may depend on each other. The component bound is conditional on the existence of a periodic obstruction with no infinite path, and explicitly restores the finitely many removed Gaussian primes.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/028.md) · [Batch record](../../batches/B022/README.md)"
+    },
+    {
+      "id": "openai-math-031",
+      "record_type": "family",
+      "title": "Normalizer extension and simultaneous power-residue separation",
+      "source_family": "031",
+      "source_collection": "openai/math",
+      "batch_id": "B022",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000162"
+      ],
+      "instrument_ids": [
+        "MI-000286",
+        "MI-000287"
+      ],
+      "headline": "The source claims that every continuous open homomorphism between Galois groups of solvably closed Galois extensions of number fields comes from a unique contravariant field embedding, with no restriction on its kernel.",
+      "central_instrument": "Unique implementation of induced automorphisms extends a local homomorphism to the normalizer of its kernel. Distinct auxiliary Kummer exponents impose simultaneous, potentially overlapping, residue-separation requirements without conflict.",
+      "novelty_assessment": "The normalizer argument depends on classical Uchida reconstruction, and the separation lemma combines classical Kummer theory with Chebotarev. The selected formulations and bookkeeping are useful independently; no exhaustive priority or full anabelian proof certification is claimed.",
+      "formalization_summary": "No family-specific Lean scope document is listed in the pinned release inventory for family 031. No formal proof project was built.",
+      "statement_faithfulness": "Unique realization of each relevant automorphism is an explicit input to the normalizer argument; trivial center alone does not guarantee realization. Power-separation sets may overlap and contain other distinguished primes, but each excludes its own distinguished prime.",
+      "dependencies": "Normalizer of a kernel, uniqueness of conjugation implementers, open subgroups of profinite groups, valuations in cyclotomic fields, Kummer independence and Chebotarev conjugacy classes.",
+      "antecedents": "Uchida, Isomorphisms of Galois groups of solvably closed Galois extensions (1979); classical Kummer theory and Chebotarev density.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-031.md",
+      "body": "# Normalizer extension and simultaneous power-residue separation\n\n## Source manuscript and claim\n\n[Open Homomorphisms of Global Solvably Closed Galois Groups](../papers/P-000162.md), by OpenAI, October 5, 2026.\n\nThe source claims that every continuous open homomorphism between Galois groups of solvably closed Galois extensions of number fields comes from a unique contravariant field embedding, with no restriction on its kernel.\n\n## Extracted instruments\n\n- [MI-000286: Extend to a kernel normalizer using unique conjugation implementers](../instruments/MI-000286.md)\n- [MI-000287: Distinct Kummer exponents separate overlapping prime lists simultaneously](../instruments/MI-000287.md)\n\n## Dependencies and antecedents\n\nNormalizer of a kernel, uniqueness of conjugation implementers, open subgroups of profinite groups, valuations in cyclotomic fields, Kummer independence and Chebotarev conjugacy classes.\n\nUchida, Isomorphisms of Galois groups of solvably closed Galois extensions (1979); classical Kummer theory and Chebotarev density. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the entire normalizer-extension proof and simultaneous power-separation proof, together with the source statements of reconstruction and trivial centralizers. The larger matching and generation arguments were not audited.\n\nNo family-specific Lean scope document is listed in the pinned release inventory for family 031. No formal proof project was built.\n\nUnique realization of each relevant automorphism is an explicit input to the normalizer argument; trivial center alone does not guarantee realization. Power-separation sets may overlap and contain other distinguished primes, but each excludes its own distinguished prime.\n\n[Batch record](../../batches/B022/README.md)"
     },
     {
       "id": "openai-math-032",

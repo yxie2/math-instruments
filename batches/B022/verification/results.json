@@ -1,0 +1,138 @@
+{
+  "batch": "B022",
+  "status": "passed",
+  "check_groups": {
+    "weighted_density": {
+      "weighted_models": 500,
+      "positive_bounds": 500,
+      "point_set_block_models": 3072,
+      "good_starts": 9232,
+      "scope": "Moment inequalities and finite charging, not prime-weight construction or asymptotics."
+    },
+    "smooth_profiles": {
+      "models": [
+        {
+          "log_R": 4.0,
+          "lambda": 0.1,
+          "first_moment": 0.02071417166838416
+        },
+        {
+          "log_R": 4.0,
+          "lambda": 1.0,
+          "first_moment": 0.20714171668384138
+        },
+        {
+          "log_R": 4.0,
+          "lambda": 3.0,
+          "first_moment": 0.621425150051524
+        },
+        {
+          "log_R": 10.0,
+          "lambda": 0.1,
+          "first_moment": 0.009237461205412746
+        },
+        {
+          "log_R": 10.0,
+          "lambda": 1.0,
+          "first_moment": 0.09237461205412748
+        },
+        {
+          "log_R": 10.0,
+          "lambda": 3.0,
+          "first_moment": 0.27712383616238234
+        },
+        {
+          "log_R": 30.0,
+          "lambda": 0.1,
+          "first_moment": 0.003244180383355255
+        },
+        {
+          "log_R": 30.0,
+          "lambda": 1.0,
+          "first_moment": 0.03244180383355256
+        },
+        {
+          "log_R": 30.0,
+          "lambda": 3.0,
+          "first_moment": 0.09732541150065767
+        },
+        {
+          "log_R": 100.0,
+          "lambda": 0.1,
+          "first_moment": 0.000991826975006202
+        },
+        {
+          "log_R": 100.0,
+          "lambda": 1.0,
+          "first_moment": 0.009918269749896744
+        },
+        {
+          "log_R": 100.0,
+          "lambda": 3.0,
+          "first_moment": 0.02975480924969023
+        }
+      ],
+      "scope": "Numerical quadrature of explicit smooth compact profiles; no sieve estimates."
+    },
+    "cyclotomic_units": {
+      "exact_integral_inverse_checks": 10,
+      "scope": "Unit differences in three cyclotomic rings. Finite generation of all number-field units and the uniform root field are proved symbolically, not computed here."
+    },
+    "two_flags": {
+      "integer_matrix_models": 100,
+      "coordinate_order_extensions": 5,
+      "gallery_order_checks": 500,
+      "scope": "Split rank-one blocks with compatible graded maps; not reconstruction of arbitrary flag families or seam equations."
+    },
+    "shared_conditioning": {
+      "joint_distributions": 30,
+      "subset_size_models": 90,
+      "maximum_saved_nats_vs_repeating_conditioning": 0.7324081514615997,
+      "scope": "Independent uniformly sampled coordinate sets; finite entropies do not verify the source coverage schedule."
+    },
+    "periodic_components": {
+      "finite_periodic_patterns": 266,
+      "exceptional_components": 266,
+      "largest_component_before_exceptions": 5,
+      "scope": "All period-2 and period-3 nearest-neighbor patterns, with exact lift-cycle detection. Does not construct Gaussian-prime obstructions."
+    },
+    "normalizer_extension": {
+      "ambient_group_order": 72,
+      "normalizer_order": 36,
+      "homomorphism_pairs": 1296,
+      "kernel_conjugates": 2,
+      "scope": "Finite wreath-product model verifies unique implementation and nontrivial other-kernel image; no profinite reconstruction theorem checked."
+    },
+    "simultaneous_power_separation": {
+      "m": 2,
+      "d": 2,
+      "q": [
+        2,
+        3
+      ],
+      "P": [
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "auxiliary_primes": [
+        7,
+        11
+      ],
+      "witness_primes": [
+        32803,
+        87473,
+        132749,
+        195427,
+        336491
+      ],
+      "scope": "Five exact residue-field examples with overlapping prime sets; not infinitude, Kummer independence or Chebotarev."
+    }
+  },
+  "limitations": "Finite identities and models support selected mechanisms only. No full headline theorem or Lean proof build is certified."
+}
