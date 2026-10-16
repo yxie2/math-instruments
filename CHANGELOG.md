@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B071: 8 selected instruments from 4 families and 8 manuscripts. Eight instruments covering formal spectral calculus, positive tensor detection, valuative thresholds, neutral weights, maximal section fields, endpoint lattice counts and defect rounding.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B070: 8 selected instruments from 4 families and 8 manuscripts. Add eight scoped instruments for cycle-rank descent, branch rounding, finite-cover extension, differential ratios, Liouville covers, proper intrinsic distances, Hensel lifting and lattice residues.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B069: 8 selected instruments from 4 families and 8 manuscripts. Add eight scoped instruments for uniform interpolation, weighted infinitude, explicit polynomial stabilization and lifting, metric and bundle transport, and full numerical charges.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

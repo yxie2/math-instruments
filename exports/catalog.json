@@ -28503,6 +28503,343 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000669.md",
       "body": "# Recover an integral lattice from projection-transfer residues\n\n[Family 059](../families/openai-math-059.md) · [Source manuscript](../papers/P-000438.md) · [Batch B070](../../batches/B070/README.md)\n\n## Mathematical content\n\nRetain free abelian groups D,H,E, maps p:D->H and t:H->D with pt=k id, K=ker p, and tau:E->Z/k. Write pr(l)=l-k^-1 t p(l). In the source k=4. The supplied page exact sequence has kernel K and exterior coordinate z in H tensor E, with obstruction in H/p(D); its exterior subgroup identifies with H tensor ker(tau). For an integral page class x set u=kx-x_ext(kz) in K. The supplied signed cap/Bockstein calculation says u is congruent to -t(b) modulo kD, where b=(1 tensor tau)z in H/kH.\n\nUnder these inputs the page lattice in K_Q direct sum (H tensor E)_Q is exactly\n\nLambda={(pr(l),z): l in D, z in H tensor E, p(l) mod kH=(1 tensor tau)z}.\n\nChoose b_H lifting b. The congruence makes l=(u+t b_H)/k integral, p(l)=b_H and pr(l)=u/k. Conversely an allowed pair has a page lift with the same z by the exact sequence. Its numerator differs from kl-tp(l) by an element of K intersect kD, which equals kK because H is torsion free. Adjust by that integral element of K to obtain the desired rational coordinate. Replacing b_H by b_H+kh changes l by th but leaves pr(l) unchanged. Thus the residue relation, not merely the rational decomposition, retains the integral gluing data.\n\n## Role in the source argument\n\nMakes explicit which rationally split classes are actually integral and where the sign of the interface cap enters.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:lattice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026/build/sections/07-lattice.tex#L263)\n\n## Antecedents and comparison\n\nThe mechanism is classical integral gluing by congruences and the saturated-kernel identity K intersect kD=kK. The source-specific projection, transfer and signed Bockstein data are essential inputs; their geometric validity is not established by the algebraic extraction.\n\n## Checks and limitations\n\nExact transfer matrices with k=4 compare both lattice descriptions, lift independence and saturated-kernel intersections, including examples with fractional inner coordinates and a sign-sensitive residue control.\n\nThe checks do not verify the topological tube, the preceding signed Bockstein calculation, the filling forms or the ambient-homeomorphism claim.\n\n## Possible applications\n\nPreventing rational orthogonal decompositions from losing integral extension information.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000670",
+      "record_type": "instrument",
+      "title": "Transport a differential commutator through formal spectral calculus",
+      "forms": [
+        "formal-resolvent-commutator",
+        "gauge-covariant-spectral-projectors"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-065"
+      ],
+      "source_paper_ids": [
+        "P-000439"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+          "label": "spec:calculus",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L69",
+          "sha256": "2d5d2432587c52cff755ec49cecdfdd5eb5b1eec2fa166fd9d432fb743bc3d17"
+        },
+        {
+          "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+          "label": "spec:gauge",
+          "line": 155,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L155",
+          "sha256": "2d5d2432587c52cff755ec49cecdfdd5eb5b1eec2fa166fd9d432fb743bc3d17"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000670.md",
+      "body": "# Transport a differential commutator through formal spectral calculus\n\n[Family 065](../families/openai-math-065.md) · [Source manuscript](../papers/P-000439.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nLet T=T0+K lie in a completed matrix differential-operator algebra, with T0 an order-zero holomorphic matrix and K filtration-positive. Each coefficient has finite differential order, without requiring a common order bound. On a fixed local contour avoiding the spectrum of T0, set R0=(xi-T0)^(-1) and R_T=sum_(j>=0)(R0 K)^j R0. The filtration makes each coefficient a finite sum. Define f(T) by integrating f(xi)R_T(xi)/(2 pi i).\n\nThe resolvent identity gives unital multiplicativity, composition and orthogonal idempotents for separated spectral groups. If [T,lambda]=zT, then\n[f(T),lambda]=z (xi f'(xi))(T).\nIndeed [R_T,lambda]=z(xi R_T^2-R_T)=-z partial_xi(xi R_T); integrate by parts. Any continuous algebra element commuting with T also commutes with f(T).\n\nFor a xi-independent invertible gauge M in a common allowed Laurent algebra, R_(MTM^-1)=M R_T M^-1 and f(MTM^-1)=M f(T) M^-1, provided both calculi and their products are defined there. Laurent lower bounds are coefficientwise. These statements do not assert analytic convergence of a z-series.\n\n## Role in the source argument\n\nPreserves the quantum differential commutator while splitting spectral groups and changing frames.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [spec:calculus](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L69)\n- [spec:gauge](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L155)\n\n## Antecedents and comparison\n\nThe inverse-commutator and contour identities are classical functional calculus. The source packages them in a completed differential-operator algebra with coefficientwise order and Laurent bounds. No new general functional-calculus theorem is asserted.\n\n## Checks and limitations\n\nExact truncated translation operators, polynomial functions of them, lambda-dependent matrix gauges and spectral projectors test commutators, covariance, idempotence and commutation.\n\nThe finite models do not verify a geometric quantum connection or the full projective-bundle construction.\n\n## Possible applications\n\nBuilding spectral decompositions without losing a differential relation under frame changes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000671",
+      "record_type": "instrument",
+      "title": "Detect a primitive coefficient tensor by its positive sewn norm",
+      "forms": [
+        "primitive-positive-norm-detection",
+        "conjugate-replica-scalar-test"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-065"
+      ],
+      "source_paper_ids": [
+        "P-000440"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+          "label": "det:norm",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L39",
+          "sha256": "c81cc6a5cdd919b23211dac69e766224b356aeb34e38995060971fe592a3c55c"
+        },
+        {
+          "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+          "label": "det:detection",
+          "line": 70,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L70",
+          "sha256": "c81cc6a5cdd919b23211dac69e766224b356aeb34e38995060971fe592a3c55c"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000671.md",
+      "body": "# Detect a primitive coefficient tensor by its positive sewn norm\n\n[Family 065](../families/openai-math-065.md) · [Source manuscript](../papers/P-000440.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nLet B0 be the source detection subspace and J its primitive middle-degree orthogonal complement. For an error tensor E in (J_C*) tensor r with other inputs fixed in B0, parity forces E=0 if nr is odd. Otherwise E is even. Hodge-Riemann gives the positive Hermitian form h(v,w)=(-1)^(n(n-1)/2) Q(Cv,conjugate(w)). Its dual tensor norm is the ordinary sum of squared absolute coefficients in an h-orthonormal basis.\n\nThe source realizes its inverse bilinear kernel as K=(-1)^(n(n-1)/2)(C tensor id)Delta_J using the primitive coevaluation convention. Sew E to E# through K in each slot. Moving from block order to paired order contributes (-1)^(r(r-1)/2) for odd J; this fixed sign must be included. The resulting scalar is the positive norm, not a supertrace.\n\nReality of ordinary Gromov-Witten classes realizes E# by a second ordinary replica with conjugated coefficients and exchanged first and second Hodge degrees. On J, q=n-p, so the required grading factors are admissible. Only the first replica carries the positive constraint; the second is a fixed scalar test. Curve and genus coefficients are extracted independently. If all admissible tests vanish, the norm vanishes and E=0. Multilinearity then detects the full coefficient rule for all numbers of primitive slots.\n\n## Role in the source argument\n\nConverts vanishing after scalar transport into vanishing of every primitive tensor component.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [det:norm](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L39)\n- [det:detection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L70)\n\n## Antecedents and comparison\n\nPositive Hermitian tensor duality, Hodge-Riemann polarization and reality of cycle operations are established ingredients. The source-specific point is realizing the conjugate tensor with the permitted tests, including parity and coefficient extraction. Its priority is not established.\n\n## Checks and limitations\n\nEven and odd polarized two-dimensional models check the coevaluation convention, inverse kernel, tensor norm and interleaving sign; omission of the odd sign is a negative control.\n\nThese checks do not establish the geometric sewing theorem or admissibility on a new target. Positivity is needed on the final target, not on every intermediate target.\n\n## Possible applications\n\nRecovering a tensor identity from a sufficiently rich family of scalar identities.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000672",
+      "record_type": "instrument",
+      "title": "Push discrepancy data by an attained threshold minimum",
+      "forms": [
+        "valuative-discrepancy-pushforward",
+        "attained-threshold-composition"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-066"
+      ],
+      "source_paper_ids": [
+        "P-000441"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+          "label": "b:valuative-push",
+          "line": 43,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L43",
+          "sha256": "5393b11930ba5e001c633a63f9c67b56fbadc1f917ec2b443ec2d7af85885982"
+        },
+        {
+          "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+          "label": "b:push-threshold",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L61",
+          "sha256": "5393b11930ba5e001c633a63f9c67b56fbadc1f917ec2b443ec2d7af85885982"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000672.md",
+      "body": "# Push discrepancy data by an attained threshold minimum\n\n[Family 066](../families/openai-math-066.md) · [Source manuscript](../papers/P-000441.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nFor a projective contraction pi:Y->V with the source generalized discrepancy data a and generic sub-lc assumptions, define (pi# a)(P)=min a(F)/m over divisorial F restricting to mP, m>0. Resolve over the generic point of P so that the relevant boundary, nef part and pullback of P have simple normal crossings. The sub-lc threshold after subtracting t pi*P is the minimum of a_i/m_i over components with m_i>0. Components with m_i=0 already satisfy the needed horizontal nonnegativity. Higher monomial valuations cannot lower the minimum. Thus the value is finite and attained, and it may be negative at a base divisor.\n\nNontrivial restriction of a divisorial valuation to the intermediate function field is a positive multiple of a divisorial valuation in this setting. Attainment and multiplication of the ramification factors give (rho pi)# a = rho#(pi# a). Adding a pulled-back divisor changes every ratio by the same base order, so divisor translation commutes with pushforward. The source applies this to rational discrepancy presentations, retaining their canonical-form data.\n\n## Role in the source argument\n\nMakes repeated contraction compatible with threshold and divisor arithmetic.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [b:valuative-push](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L43)\n- [b:push-threshold](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L61)\n\n## Antecedents and comparison\n\n[Filipazzi, arXiv:1807.04847v3](https://arxiv.org/abs/1807.04847v3), pages 5 and 8, defines the usual and generalized discriminant via these generic thresholds; those definitions were read. The extracted minimum and composition are the valuative implementation of that established construction, not a new discriminant theory.\n\n## Checks and limitations\n\nExact SNC monomial valuations test attainment, horizontal zero multiplicities, negative thresholds, divisor translations and two-stage multiplicity composition.\n\nFinite valuation models do not construct log resolutions, establish the needed canonical bundle formula or prove bounded complements.\n\n## Possible applications\n\nKeeping threshold normalization consistent across several fibrations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000673",
+      "record_type": "instrument",
+      "title": "Use finite neutral generators to control non-cancellation in all degrees",
+      "forms": [
+        "neutral-weight-kernel-control",
+        "conditional-all-degree-noncancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-066"
+      ],
+      "source_paper_ids": [
+        "P-000442"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex",
+          "label": "lem:G-noncancellation",
+          "line": 301,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex#L301",
+          "sha256": "0d1d5024bedd1b975f8fb7cb672117fd77366fc67f5d58e3a392c4579b13d452"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000673.md",
+      "body": "# Use finite neutral generators to control non-cancellation in all degrees\n\n[Family 066](../families/openai-math-066.md) · [Source manuscript](../papers/P-000442.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nIn the source pre-pinning setup write A_j=in_w(Y_j+) and B_j=in_w(Y_j-). Assume pair products A_j B_j lie in a field K*, old weights lie on a rational line with bounded denominators, and new weights are independent modulo that line. Once the finite old neutral ratios A_j^(d_j) A_0^(-t_j) enter K*, a power of every weight-kernel monomial is a product of those generators and pair products. Every weight-zero monomial is therefore algebraic over K*, simultaneously in all degrees; no later index depending on polynomial degree is needed for this algebraic statement.\n\nFor a finite polynomial whose least-w group has nonzero initial sum, multiply by opposite factors for one term in that group. The new least initial has weight zero and is algebraic over K*. A valuation trivial on K* is trivial on every nonzero algebraic element: a polynomial equation with nonzero constant term would otherwise have a unique term of least value.\n\nThe remaining transfer is conditional on the source bridge: it supplies value at most zero for this complemented sum. If the original terms are tied and pair values opposite, each complemented term has value zero; the valuation inequality supplies value at least zero. Equality prevents cancellation. The bridge can then transfer exactness onward. The bridge's unrestricted-cost conclusion is an input here, not proved by the finite-generator observation.\n\n## Role in the source argument\n\nSeparates a uniform algebraic reason for all-degree control from the geometric transfer needed to use it.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:G-noncancellation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex#L301)\n\n## Antecedents and comparison\n\nRational weight kernels, algebraic-extension triviality and the unique-minimum valuation argument are classical. The pinning/bridge interface is source-specific and its global validity and priority are not certified.\n\n## Checks and limitations\n\nInteger weight kernels check bounded-denominator neutral powers; Laurent polynomial examples over Q(sqrt(2)) check nonzero least initials and explicit cancellation controls. Polynomial equations check why a nonzero valuation of an algebraic element would force a unique minimum.\n\nThe tests do not prove the bridge, the eventual entry of neutral generators into K*, or simultaneous validity of all source cone tests.\n\n## Possible applications\n\nAvoiding an invalid exchange between an eventual index and unbounded polynomial degree.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000674",
+      "record_type": "instrument",
+      "title": "Use a maximal section field to remove horizontal poles and force rank one",
+      "forms": [
+        "maximal-section-field",
+        "horizontal-interpolation-rank-one"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-068"
+      ],
+      "source_paper_ids": [
+        "P-000443"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+          "label": "lem:maximal-base",
+          "line": 90,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L90",
+          "sha256": "d96f53a42625d0607f4204d01685d5c42878292358245ee92b62c13bb93a2ade"
+        },
+        {
+          "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+          "label": "eq:horizontal-interpolation",
+          "line": 169,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L169",
+          "sha256": "d96f53a42625d0607f4204d01685d5c42878292358245ee92b62c13bb93a2ade"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000674.md",
+      "body": "# Use a maximal section field to remove horizontal poles and force rank one\n\n[Family 068](../families/openai-math-068.md) · [Source manuscript](../papers/P-000443.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nLet Z be smooth projective of positive dimension, L,M line bundles, D effective integral, and alpha a nonzero movable class with L.alpha=D.alpha=0 and M.alpha<=0. Suppose M+m_i L has nonzero sections s_i for strictly increasing m_i tending to infinity. Among nonempty systems uL+vM+wD with nonnegative integer coefficients, choose B0 of maximal image dimension. Every such system has dimension below dim Z: a generically finite system is big and would pair positively with alpha.\n\nLet K be the relative algebraic closure of the section field of B0 in C(Z), and choose a smooth projective model S. Every ratio within any allowed system belongs to K, since a transcendental ratio would increase the joint image dimension after multiplying sections by those of B0.\n\nSet k=m2-m1 and rho=s2/s1. The ratio s_i^k s1^(m_i-m2)/s2^(m_i-m1) lies in K. At a horizontal prime Q it yields k(ord_Q s_i-ord_Q s1)=(m_i-m1)ord_Q rho. Regularity of all s_i and unbounded m_i force ord_Q rho>=0. On the prepared model, the Jacobian section times s_D rho^j gives a nonzero generic adjoint section for every j>=0. Any two generic sections can have their vertical poles cleared by a common base twist: the moving base line of B0 is big, and its fixed divisor restores an allowed system downstairs. Their ratio belongs to K, forcing generic rank exactly one, including j=0. If S is a point, rho itself descends to a nonzero section of kL.\n\n## Role in the source argument\n\nProduces a lower-dimensional base and rank-one adjoint family from infinitely many twisted sections.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:maximal-base](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L90)\n- [eq:horizontal-interpolation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L169)\n\n## Antecedents and comparison\n\nThe section-field maximality and pole-clearing tools are classical. The source combines them with an explicit interpolation identity and retains the zeroth adjoint degree. Exact priority of this package is not established.\n\n## Checks and limitations\n\nExact line-bundle exponent identities and horizontal order sequences test the interpolation. Negative slopes reach a finite contradiction with regularity; nonnegative slopes and base-ratio toy models check the rank-one mechanism.\n\nThe tests do not establish analytic transfer, semipositivity descent or anticanonical nonvanishing.\n\n## Possible applications\n\nReducing infinitely many section spaces to one controlling field and one rational section.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000675",
+      "record_type": "instrument",
+      "title": "Cancel an endpoint lattice contribution by retracting onto deleted faces",
+      "forms": [
+        "weighted-ehrhart-zero-value",
+        "visible-face-endpoint-cancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-068"
+      ],
+      "source_paper_ids": [
+        "P-000444"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+          "label": "lem:ehrhart",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L38",
+          "sha256": "3968aa37c63a86e3641a2991fe8387e57dfae6f0ef0e5aad9a041620b271696e"
+        },
+        {
+          "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+          "label": "lem:faces",
+          "line": 109,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L109",
+          "sha256": "3968aa37c63a86e3641a2991fe8387e57dfae6f0ef0e5aad9a041620b271696e"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000675.md",
+      "body": "# Cancel an endpoint lattice contribution by retracting onto deleted faces\n\n[Family 068](../families/openai-math-068.md) · [Source manuscript](../papers/P-000444.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nFor a nonempty closed rational polytope D and polynomial weight W(x,m), the sum over mD intersect Z^s is polynomial at all sufficiently divisible nonnegative exponents, with value W(0,0) at zero. Clear denominators, triangulate, and use the half-open parallelepiped of a lattice simplex. A lattice point of height h satisfies 0<=h<=d. Expanding in products of binomial(l_i,u_i) gives binomial(m-h+d,d+sum u_i), also zero for 0<=m<h. At zero only the origin and zero binomial indices survive. Inclusion-exclusion multiplies W(0,0) by chi(D)=1.\n\nFor vectors alpha_i positive under one functional, let u_i=-1 on a nonempty set I and +1 otherwise, and D={x>=0:sum alpha_i x_i=sum alpha_i u_i}. If D is nonempty, set t(x)=max_(i in I) 1/(1+x_i) and r(x)=u+t(x)(x-u). This lies on the union A of faces x_i=0 for i in I, fixes A and preserves the affine equations. The straight homotopy is a deformation retraction, so chi(A)=1. Subtracting those faces therefore cancels the closed count's constant. This explains an endpoint cancellation only under the specified affine sign pattern.\n\n## Role in the source argument\n\nPrevents an eventual counting formula from silently dropping the exponent-zero contribution.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:ehrhart](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L38)\n- [lem:faces](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L109)\n\n## Antecedents and comparison\n\n[Stanley, Combinatorial Reciprocity Theorems](https://math.mit.edu/~rstan/pubs/pubfiles/22.pdf), visible-boundary argument in the proof of Proposition 8.3, printed pages 220-221, uses the same external-point ray geometry; those pages were read. Weighted Ehrhart polynomiality is classical. The source supplies an explicit retraction and applies endpoint cancellation to its invariant-index setup; no new general reciprocity principle is claimed.\n\n## Checks and limitations\n\nExact weighted counts include a translated rational interval and a simplex; independent interpolation is checked at unused dilations. Random feasible points and boundary points test the retraction, fixed faces and homotopy.\n\nThe checks do not verify the fixed-point localization formula or the anticanonical character input in the geometric application.\n\n## Possible applications\n\nTracking low powers and constant terms when weak inequalities are changed to strict ones.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000676",
+      "record_type": "instrument",
+      "title": "Make the quadratic stationary-phase error uniform in the frequency",
+      "forms": [
+        "uniform-quadratic-fourier-formula",
+        "gaussian-regularized-stationary-phase"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-076"
+      ],
+      "source_paper_ids": [
+        "P-000445"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+          "label": "lem:quadratic",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L15",
+          "sha256": "db43d13df7a0d16d4156865b8bf1c806130083bc6fec686f9bfab0b5682ca3f4"
+        },
+        {
+          "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+          "label": "lem:stationary-phase",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L45",
+          "sha256": "db43d13df7a0d16d4156865b8bf1c806130083bc6fec686f9bfab0b5682ca3f4"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000676.md",
+      "body": "# Make the quadratic stationary-phase error uniform in the frequency\n\n[Family 076](../families/openai-math-076.md) · [Source manuscript](../papers/P-000445.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nWith e(t)=exp(2 pi i t), g smooth compactly supported and beta nonzero real, completing the square gives\nintegral g(y)e(T beta y^2/2-u y)dy = e(sign(beta)/8-u^2/(2T beta))/sqrt(T|beta|) times [g(u/(T beta))+O(T^-1)], uniformly in all real u.\n\nThe bracket is exactly integral ghat(xi)e(xi u/(T beta))e(-xi^2/(2T beta))d xi. Insert a positive Gaussian damping factor before exchanging integrals; its explicit Fourier transform is bounded by (T|beta|)^(-1/2), permitting dominated convergence. Removing the last exponential costs at most pi/(T|beta|) times integral xi^2|ghat(xi)|, independent of u.\n\nFor a smooth phase with second derivative nowhere zero on a compact interval, a uniform Morse coordinate reduces each interior stationary point to this quadratic formula. Compact support away from endpoints supplies uniform amplitude bounds. Outside the derivative range, integration by parts gives the nonstationary bound. The uniformity covers frequencies whose stationary point reaches the interval endpoints.\n\n## Role in the source argument\n\nControls a whole Fourier coefficient family without choosing frequency-dependent error constants.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:quadratic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L15)\n- [lem:stationary-phase](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L45)\n\n## Antecedents and comparison\n\nThis is classical quadratic stationary phase derived directly from Fourier inversion and Gaussian regularization. The source uses explicit uniformity in its wave construction; no new stationary-phase principle is claimed.\n\n## Checks and limitations\n\nComplex Gaussian integrals provide exact closed-form checks of phase and sign for both beta signs and moving frequencies, including far outside the amplitude core. These Schwartz-amplitude checks test the identity and error mechanism, not compact support.\n\nThe checks do not construct the packed waves or prove real ultraflatness.\n\n## Possible applications\n\nSeparating a uniform Fourier error estimate from later combinatorial wave placement.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000677",
+      "record_type": "instrument",
+      "title": "Round near-sign Fourier coefficients with a total-defect budget",
+      "forms": [
+        "defect-mass-dyadic-rounding",
+        "fourier-grid-sign-rounding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-076"
+      ],
+      "source_paper_ids": [
+        "P-000446"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+          "label": "lem:rounding",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L12",
+          "sha256": "83f1608f860f1b46899107ce061b6bf32832e82ace3b4952f1605241d7b46e7a"
+        },
+        {
+          "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+          "label": "lem:rounding-matrix",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L36",
+          "sha256": "83f1608f860f1b46899107ce061b6bf32832e82ace3b4952f1605241d7b46e7a"
+        }
+      ],
+      "batch_id": "B071",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000677.md",
+      "body": "# Round near-sign Fourier coefficients with a total-defect budget\n\n[Family 076](../families/openai-math-076.md) · [Source manuscript](../papers/P-000446.md) · [Batch B071](../../batches/B071/README.md)\n\n## Mathematical content\n\nFor X in [-1,1]^N put mu=(1/2)sum(1-|X_k|). There exist real signs epsilon with sup_t |sum(epsilon_k-X_k)e(kt)| <= C[1+sqrt(mu log(80N/mu))]. At mu=0 the error is exactly zero.\n\nWrite X_k=sigma_k(1-2p_k), 0<=p_k<=1/2, sum p_k=mu. Form real and imaginary Fourier rows on a 20N-point grid. Round p down to a fine dyadic grid with total error at most one. At scale 2^-j, apply a real-matrix discrepancy bound to the s_j coordinates with odd numerator. Reverse all discrepancy signs if necessary to make their sum nonpositive. This preserves the discrepancy norm, keeps entries in [0,1], and prevents total mass growth. Thus s_j<=min(N,2^j mu).\n\nThe real-matrix bound C0 sqrt(s log(2R/s)) follows by iterating Lovett-Meka partial coloring and summing the geometrically decreasing errors. Summing the dyadic stage errors gives 1+C0 sqrt(mu log(80N/mu))/(sqrt(2)-1). The final p entries are 0 or 1 and define signs. Cauchy's derivative estimate for the error polynomial gives S<=G+(pi e/20)S, hence a finite-grid bound controls the whole circle. This last step is applied to the error polynomial, not to the original relaxed polynomial.\n\n## Role in the source argument\n\nTurns a small total coefficient defect into a uniform rounding error, suitable for preserving both upper and lower modulus estimates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:rounding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L12)\n- [lem:rounding-matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L36)\n\n## Antecedents and comparison\n\n[Lovett and Meka, arXiv:1203.5747v2](https://arxiv.org/abs/1203.5747v2), Theorem 4 on page 3, supplies the real-vector partial-coloring statement; the statement and surrounding reduction were read. The source derives defect-sensitive rounding from that established input. Exact priority of the defect formulation is not established.\n\n## Checks and limitations\n\nFinite exact dyadic states use exhaustive discrepancy sign selection, checking mass monotonicity, support budgets, final signs, zero defect and the Fourier error identity. Dense-circle evaluations check the stated grid-to-circle factor on the resulting errors.\n\nSmall exhaustive sign searches do not implement the Lovett-Meka algorithm or prove an effective construction of the source ultraflat polynomials.\n\n## Possible applications\n\nRounding relaxed trigonometric designs when only a small amount of coefficient mass remains undecided.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -36827,6 +37164,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000438.md",
       "body": "# Ambiently homeomorphic isolated hypersurface germs in ℂ⁴ with multiplicities four and five\n\n## Source\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000669: Recover an integral lattice from projection-transfer residues](../instruments/MI-000669.md)\n\n[Family review and dependencies](../families/openai-math-059.md) · [Batch B070](../../batches/B070/README.md)"
+    },
+    {
+      "id": "P-000439",
+      "record_type": "paper",
+      "title": "Virasoro Constraints under Projectivization",
+      "source_collection": "openai/math",
+      "upstream_slug": "Virasoro-Constraints-under-Projectivization-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-065"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "be6afed57229af9beb59d1e977188777edc357b0b5a8dcfe2c91fd425c747b9e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000439.md",
+      "body": "# Virasoro Constraints under Projectivization\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/virasoro-constraints-under-projectivization.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000670: Transport a differential commutator through formal spectral calculus](../instruments/MI-000670.md)\n\n[Family review and dependencies](../families/openai-math-065.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000440",
+      "record_type": "paper",
+      "title": "Virasoro Constraints for Projective Complete Intersections",
+      "source_collection": "openai/math",
+      "upstream_slug": "Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-065"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ce04aace18c026c9acfc0396106e078e30ee717e3c2a4c36227bd7e9a81b0195",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000440.md",
+      "body": "# Virasoro Constraints for Projective Complete Intersections\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000671: Detect a primitive coefficient tensor by its positive sewn norm](../instruments/MI-000671.md)\n\n[Family review and dependencies](../families/openai-math-065.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000441",
+      "record_type": "paper",
+      "title": "Bounded klt complements for Fano contractions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Bounded-klt-complements-for-Fano-contractions-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-066"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "17a0c23cb4160092f47469dbf9b6f4b1990660cb32a943d263af836c0fbb3135",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000441.md",
+      "body": "# Bounded klt complements for Fano contractions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/Bounded-klt-complements-for-Fano-contractions-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000672: Push discrepancy data by an attained threshold minimum](../instruments/MI-000672.md)\n\n[Family review and dependencies](../families/openai-math-066.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000442",
+      "record_type": "paper",
+      "title": "Uniform Cartier sections for Fano type contractions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-066"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f863f107650fbb59658ad9c9ca4bed9215bc11b403c73d0d69722be68ff6947b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000442.md",
+      "body": "# Uniform Cartier sections for Fano type contractions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000673: Use finite neutral generators to control non-cancellation in all degrees](../instruments/MI-000673.md)\n\n[Family review and dependencies](../families/openai-math-066.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000443",
+      "record_type": "paper",
+      "title": "Anticanonical nonvanishing from smooth semipositivity",
+      "source_collection": "openai/math",
+      "upstream_slug": "Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-068"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c03b9e9129b1c0793981de98a6888c6eef0462f8bf8f3923db9bb25c2f5c2824",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000443.md",
+      "body": "# Anticanonical nonvanishing from smooth semipositivity\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000674: Use a maximal section field to remove horizontal poles and force rank one](../instruments/MI-000674.md)\n\n[Family review and dependencies](../families/openai-math-068.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000444",
+      "record_type": "paper",
+      "title": "Invariant anticanonical indices and conversion of twisted differentials",
+      "source_collection": "openai/math",
+      "upstream_slug": "Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-068"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f9d26d49b4b2fcbc4358c7ed2af0da351311d338fd9ace47cdbf6a0d1b227d39",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000444.md",
+      "body": "# Invariant anticanonical indices and conversion of twisted differentials\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000675: Cancel an endpoint lattice contribution by retracting onto deleted faces](../instruments/MI-000675.md)\n\n[Family review and dependencies](../families/openai-math-068.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000445",
+      "record_type": "paper",
+      "title": "Ultraflat real Littlewood polynomials",
+      "source_collection": "openai/math",
+      "upstream_slug": "Ultraflat-real-Littlewood-polynomials-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-076"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d7bfef8ec0673fe769d032e7c8dcc79a5e50f754cd630037c4892a2741cca542",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000445.md",
+      "body": "# Ultraflat real Littlewood polynomials\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/ultraflat-real-littlewood-polynomials.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000676: Make the quadratic stationary-phase error uniform in the frequency](../instruments/MI-000676.md)\n\n[Family review and dependencies](../families/openai-math-076.md) · [Batch B071](../../batches/B071/README.md)"
+    },
+    {
+      "id": "P-000446",
+      "record_type": "paper",
+      "title": "Nearly minimal maxima and positive minima of Littlewood polynomials",
+      "source_collection": "openai/math",
+      "upstream_slug": "Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-076"
+      ],
+      "batch_id": "B071",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "472cca4949bcb7dddd97c19fa98428274fa239735cf0ec21cb3728794b572b83",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000446.md",
+      "body": "# Nearly minimal maxima and positive minima of Littlewood polynomials\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/littlewood-lower-envelope.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000677: Round near-sign Fourier coefficients with a total-defect budget](../instruments/MI-000677.md)\n\n[Family review and dependencies](../families/openai-math-076.md) · [Batch B071](../../batches/B071/README.md)"
     }
   ],
   "families": [
@@ -38572,6 +39061,62 @@
       "body": "# Finite Milnor-number tests and explicit removal of cyclic base change\n\n## Source manuscript and claim\n\n[Topological triviality of mu-constant families of surface singularities](../papers/P-000230.md), by OpenAI, September 24, 2026.\n\nThe source claims topological triviality of mu-constant families of surface singularities.\n\n## Extracted instruments\n\n- [MI-000422: Detect an exact Jacobian-algebra length by one finite rank condition](../instruments/MI-000422.md)\n- [MI-000423: Remove cyclic base change by a continuous seam correction](../instruments/MI-000423.md)\n\n## Dependencies and antecedents\n\nNoetherian local algebra, rank strata and continuous families of fiber automorphisms.\n\nClassical finite-length Nakayama and cyclic covering-space gluing. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite-jet length argument and complete base-change removal proof. The preceding geometric construction of a tube trivialization was not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\nThe rank test uses truncation by m^(mu+1). Descent requires an existing jointly continuous trivialization with continuous inverses on compatible tubes; it does not construct that input.\n\n[Batch record](../../batches/B039/README.md)"
     },
     {
+      "id": "openai-math-065",
+      "record_type": "family",
+      "title": "Formal spectral calculus and positive tensor detection",
+      "source_family": "065",
+      "source_collection": "openai/math",
+      "batch_id": "B071",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000439",
+        "P-000440"
+      ],
+      "instrument_ids": [
+        "MI-000670",
+        "MI-000671"
+      ],
+      "headline": "The family claims Virasoro constraints under projectivization and for projective complete intersections.",
+      "central_instrument": "Coefficientwise resolvents preserve a differential commutator. A polarized primitive tensor is detected by sewing it to its conjugate and taking an ordinary positive norm.",
+      "novelty_assessment": "Established mechanisms are distinguished from source-specific combinations. Targeted primary comparisons are recorded; exhaustive priority is not established and no source headline is certified.",
+      "formalization_summary": "No Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The calculus is formal in Novikov and z filtrations with finite differential order per coefficient. Detection assumes an admissible subspace and realization of the conjugate coefficient rule.",
+      "dependencies": "Resolvent identities, formal filtrations, contour calculus, Hodge-Riemann positivity, real Gromov-Witten classes and fixed Koszul conventions.",
+      "antecedents": "Classical holomorphic functional calculus and positive-definite tensor duality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-065.md",
+      "body": "# Formal spectral calculus and positive tensor detection\n\n## Source manuscripts and claim\n\n- [Virasoro Constraints under Projectivization](../papers/P-000439.md): selected passages extracted.\n- [Virasoro Constraints for Projective Complete Intersections](../papers/P-000440.md): selected passages extracted.\n\nThe family claims Virasoro constraints under projectivization and for projective complete intersections.\n\n## Extracted instruments\n\n- [MI-000670: Transport a differential commutator through formal spectral calculus](../instruments/MI-000670.md)\n- [MI-000671: Detect a primitive coefficient tensor by its positive sewn norm](../instruments/MI-000671.md)\n\n## Dependencies and antecedents\n\nResolvent identities, formal filtrations, contour calculus, Hodge-Riemann positivity, real Gromov-Witten classes and fixed Koszul conventions.\n\nClassical holomorphic functional calculus and positive-definite tensor duality.\n\n## Review and formalization scope\n\nRead the full formal calculus and gauge proofs and the full admissible-operation, positive-test and detection proofs. Both manuscripts receive extractions. Sewing, transport and global Virasoro claims are not certified.\n\nNo Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe calculus is formal in Novikov and z filtrations with finite differential order per coefficient. Detection assumes an admissible subspace and realization of the conjugate coefficient rule.\n\n[Batch record](../../batches/B071/README.md)"
+    },
+    {
+      "id": "openai-math-066",
+      "record_type": "family",
+      "title": "Valuative thresholds and simultaneous non-cancellation",
+      "source_family": "066",
+      "source_collection": "openai/math",
+      "batch_id": "B071",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000441",
+        "P-000442"
+      ],
+      "instrument_ids": [
+        "MI-000672",
+        "MI-000673"
+      ],
+      "headline": "The family claims bounded klt complements and uniform Cartier sections for Fano-type contractions.",
+      "central_instrument": "Thresholds are attained minima of discrepancy-to-multiplicity ratios. Finite neutral generators control all degrees in a conditional non-cancellation step.",
+      "novelty_assessment": "Established mechanisms are distinguished from source-specific combinations. Targeted primary comparisons are recorded; exhaustive priority is not established and no source headline is certified.",
+      "formalization_summary": "Read the scope and the complete Comparator. The target is compactness, in pointwise field topology, of chart-field retractions with positive normalized weights. Its local algebra assumptions include an algebraically closed field, a Noetherian local domain essentially of finite type and formally unramified over the polynomial-origin localization, and formally etale over the polynomial ring. It does not assert uniform Cartier sections or bounded complements. The Comparator target has a sorry body; no separate solution or build was checked.",
+      "statement_faithfulness": "Pushforward requires the source generalized discrepancy presentation and generic sub-lc assumptions. The pinning extraction retains the bridge upper bound as an unverified input.",
+      "dependencies": "Log resolutions, generalized discrepancies, restriction of divisorial valuations, rational weight kernels and triviality on algebraic extensions.",
+      "antecedents": "Canonical bundle formula discriminants, Abhyankar valuation theory and elementary graded-field algebra.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-066.md",
+      "body": "# Valuative thresholds and simultaneous non-cancellation\n\n## Source manuscripts and claim\n\n- [Bounded klt complements for Fano contractions](../papers/P-000441.md): selected passages extracted.\n- [Uniform Cartier sections for Fano type contractions](../papers/P-000442.md): selected passages extracted.\n\nThe family claims bounded klt complements and uniform Cartier sections for Fano-type contractions.\n\n## Extracted instruments\n\n- [MI-000672: Push discrepancy data by an attained threshold minimum](../instruments/MI-000672.md)\n- [MI-000673: Use finite neutral generators to control non-cancellation in all degrees](../instruments/MI-000673.md)\n\n## Dependencies and antecedents\n\nLog resolutions, generalized discrepancies, restriction of divisorial valuations, rational weight kernels and triviality on algebraic extensions.\n\nCanonical bundle formula discriminants, Abhyankar valuation theory and elementary graded-field algebra.\n\n## Review and formalization scope\n\nRead the full valuative pushforward argument and the full non-cancellation lemma with its immediate pre-pinning context. Both manuscripts receive extractions. The global bridge, uniform section bounds and complement theorem are not certified.\n\nRead the scope and the complete Comparator. The target is compactness, in pointwise field topology, of chart-field retractions with positive normalized weights. Its local algebra assumptions include an algebraically closed field, a Noetherian local domain essentially of finite type and formally unramified over the polynomial-origin localization, and formally etale over the polynomial ring. It does not assert uniform Cartier sections or bounded complements. The Comparator target has a sorry body; no separate solution or build was checked.\n\nPushforward requires the source generalized discrepancy presentation and generic sub-lc assumptions. The pinning extraction retains the bridge upper bound as an unverified input.\n\n[Batch record](../../batches/B071/README.md)"
+    },
+    {
       "id": "openai-math-067",
       "record_type": "family",
       "title": "Rational-curve involutions and mixed exact/modular kernel certificates",
@@ -38597,6 +39142,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-067.md",
       "body": "# Rational-curve involutions and mixed exact/modular kernel certificates\n\n## Source manuscript and claim\n\n[The Campana–Peternell conjecture in dimension six](../papers/P-000206.md), by OpenAI, September 25, 2026.\n\nThe source claims the Campana-Peternell conjecture in dimension six.\n\n## Extracted instruments\n\n- [MI-000374: Express P1 fiber integration as an involution and a divided-difference rule](../instruments/MI-000374.md)\n- [MI-000375: Certify a lifted polynomial consequence with modular rank and rational witnesses](../instruments/MI-000375.md)\n\n## Dependencies and antecedents\n\nLeray-Hirsch, relative Grothendieck-Riemann-Roch, rational cohomology, multiset coordinates, Gaussian elimination and modular reduction at invertible denominators.\n\nClassical fiber integration and exact linear-algebra certificates. No first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full P1-involution proof, arithmetic-certificate argument and certificate appendix description. The source 8280 by 6820 matrix and reported ranks were not recomputed; geometric input equations and final recognition were not audited.\n\nNo formalization scope document is listed for this family in the pinned release inventory. No Lean build was performed.\n\nCohomology identities use rational coefficients. The P1-fibration need not be a projectivized vector bundle. Modular ranks only bound rational ranks below; exact witness identities remain essential.\n\n[Batch record](../../batches/B033/README.md)"
+    },
+    {
+      "id": "openai-math-068",
+      "record_type": "family",
+      "title": "Maximal section systems and endpoint lattice counts",
+      "source_family": "068",
+      "source_collection": "openai/math",
+      "batch_id": "B071",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000443",
+        "P-000444"
+      ],
+      "instrument_ids": [
+        "MI-000674",
+        "MI-000675"
+      ],
+      "headline": "The family claims anticanonical nonvanishing, invariant indices and conversion of twisted differentials.",
+      "central_instrument": "A maximal section field controls every ratio and removes horizontal poles. A visible-face retraction cancels a weighted lattice count at exponent zero.",
+      "novelty_assessment": "Established mechanisms are distinguished from source-specific combinations. Targeted primary comparisons are recorded; exhaustive priority is not established and no source headline is certified.",
+      "formalization_summary": "No Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The maximal-base lemma uses a nonzero movable class and infinitely many twists. Endpoint counts require nonempty rational polytopes and sufficiently divisible exponents.",
+      "dependencies": "Section maps, relative algebraic closure, birational models, clearing vertical poles, Ehrhart counting and convex retractions.",
+      "antecedents": "Iitaka-type section-field arguments, classical weighted Ehrhart theory and Stanley visible-boundary reciprocity.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-068.md",
+      "body": "# Maximal section systems and endpoint lattice counts\n\n## Source manuscripts and claim\n\n- [Anticanonical nonvanishing from smooth semipositivity](../papers/P-000443.md): selected passages extracted.\n- [Invariant anticanonical indices and conversion of twisted differentials](../papers/P-000444.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Bounded anticanonical metrics on klt pairs and torus quotients](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-anticanonical-metrics-on-klt-pairs-and-torus-quotients-September-26-2026)\n- [Cohomological transfer and equivariant anticanonical sections](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cohomological-transfer-and-equivariant-anticanonical-sections-September-26-2026)\n- [Metric descent and rank-preserving contractions](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-descent-and-rank-preserving-contractions-September-26-2026)\n- [Integrable metrics and effectivity with controlled boundary](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integrable-metrics-and-effectivity-with-controlled-boundary-September-26-2026)\n- [Exact orders and invariant anticanonical linear systems](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-orders-and-invariant-anticanonical-linear-systems-September-26-2026)\n\nThe family claims anticanonical nonvanishing, invariant indices and conversion of twisted differentials.\n\n## Extracted instruments\n\n- [MI-000674: Use a maximal section field to remove horizontal poles and force rank one](../instruments/MI-000674.md)\n- [MI-000675: Cancel an endpoint lattice contribution by retracting onto deleted faces](../instruments/MI-000675.md)\n\n## Dependencies and antecedents\n\nSection maps, relative algebraic closure, birational models, clearing vertical poles, Ehrhart counting and convex retractions.\n\nIitaka-type section-field arguments, classical weighted Ehrhart theory and Stanley visible-boundary reciprocity.\n\n## Review and formalization scope\n\nRead the full maximal-base and rank proof, weighted-count proof and deleted-face proof. Two of seven manuscripts receive extractions; five companions remain inventory-only. Analytic transfer, localization and the full nonvanishing claims are not certified.\n\nNo Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe maximal-base lemma uses a nonzero movable class and infinitely many twists. Endpoint counts require nonempty rational polytopes and sufficiently divisible exponents.\n\n[Batch record](../../batches/B071/README.md)"
     },
     {
       "id": "openai-math-069",
@@ -38766,6 +39339,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-075.md",
       "body": "# Positive thermal Fourier coefficients and marginal-constrained entropy minimization\n\n## Source manuscript and claim\n\n[Almost-everywhere Fourier convergence in L log L](../papers/P-000200.md), by OpenAI, September 23, 2026.\n\nThe source claims almost-everywhere convergence of all symmetric Fourier partial sums for every complex-valued L log L function on the circle.\n\n## Extracted instruments\n\n- [MI-000362: Order thermal forms using positive Fourier coefficients and a covariance square](../instruments/MI-000362.md)\n- [MI-000363: Construct correlated letters with fixed marginals and a controlled noisy-sum cost](../instruments/MI-000363.md)\n\n## Dependencies and antecedents\n\nAbsolutely convergent Fourier series, torus Haar invariance, positive covariance, finite convex duality, conditional entropy and permutation symmetrization.\n\nGriffiths-Ginibre correlation method, discussed in Benassi-Lees-Ueltschi 2016; classical Gibbs variational principle and entropy minimization. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete thermal positivity proof, prescribed-marginal variational proof and block-gluing proof. The global entropy-compression search, spectral update, live budgets and delayed-transform convergence argument were not audited.\n\nRead FourierLLogL.lean: full symmetric partial sums converge to f outside one measurable null set under integrability of |f|log(2+|f|). Its target contains sorry; no Lean build was performed.\n\nThermal coefficients are nonnegative and only nonnegative form increments are ordered. The variational hypothesis holds for every single-letter probability law on S; the constructed letters may be correlated and are not claimed independent.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/075.md) · [Batch record](../../batches/B032/README.md)"
+    },
+    {
+      "id": "openai-math-076",
+      "record_type": "family",
+      "title": "Uniform quadratic waves and defect-controlled sign rounding",
+      "source_family": "076",
+      "source_collection": "openai/math",
+      "batch_id": "B071",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000445",
+        "P-000446"
+      ],
+      "instrument_ids": [
+        "MI-000676",
+        "MI-000677"
+      ],
+      "headline": "The family claims ultraflat real Littlewood polynomials, nearly minimal maxima with positive minima, and an earlier all-length maximal-modulus result.",
+      "central_instrument": "A Fourier-side Gaussian identity controls stationary-phase errors uniformly in the frequency. Mass-preserving dyadic rounding converts near-sign coefficients to real signs.",
+      "novelty_assessment": "Established mechanisms are distinguished from source-specific combinations. Targeted primary comparisons are recorded; exhaustive priority is not established and no source headline is certified.",
+      "formalization_summary": "Read the scope and both complete Comparators. One target asserts all sufficiently large lengths admit real signs with maximum at most (1+eta)sqrt(N). The other chooses one all-length signing family with normalized modulus converging to one in every fixed finite positive Lp exponent. These are existential targets, not effective algorithms or the later uniform lower-modulus conclusion. Both target bodies contain sorry. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "Oscillatory amplitudes are smooth and compactly supported. Rounding is existential with an absolute constant and depends on total defect, including the zero-defect endpoint.",
+      "dependencies": "Fourier inversion, Gaussian regularization, partial coloring, dyadic grids and Cauchy derivative estimates.",
+      "antecedents": "Classical stationary phase and Spencer/Lovett-Meka discrepancy theory.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-076.md",
+      "body": "# Uniform quadratic waves and defect-controlled sign rounding\n\n## Source manuscripts and claim\n\n- [Ultraflat real Littlewood polynomials](../papers/P-000445.md): selected passages extracted.\n- [Nearly minimal maxima and positive minima of Littlewood polynomials](../papers/P-000446.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Asymptotically minimal maxima of real Littlewood polynomials](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026)\n\nThe family claims ultraflat real Littlewood polynomials, nearly minimal maxima with positive minima, and an earlier all-length maximal-modulus result.\n\n## Extracted instruments\n\n- [MI-000676: Make the quadratic stationary-phase error uniform in the frequency](../instruments/MI-000676.md)\n- [MI-000677: Round near-sign Fourier coefficients with a total-defect budget](../instruments/MI-000677.md)\n\n## Dependencies and antecedents\n\nFourier inversion, Gaussian regularization, partial coloring, dyadic grids and Cauchy derivative estimates.\n\nClassical stationary phase and Spencer/Lovett-Meka discrepancy theory.\n\n## Review and formalization scope\n\nRead all oscillation estimates in the first manuscript and the full matrix-discrepancy and defect-rounding proofs in the second. Two of three manuscripts receive extractions; the earlier manuscript remains inventory-only. No ultraflatness or global polynomial construction is certified.\n\nRead the scope and both complete Comparators. One target asserts all sufficiently large lengths admit real signs with maximum at most (1+eta)sqrt(N). The other chooses one all-length signing family with normalized modulus converging to one in every fixed finite positive Lp exponent. These are existential targets, not effective algorithms or the later uniform lower-modulus conclusion. Both target bodies contain sorry. No separate solution or Lean build was checked.\n\nOscillatory amplitudes are smooth and compactly supported. Rounding is existential with an absolute constant and depends on total defect, including the zero-defect endpoint.\n\n[Batch record](../../batches/B071/README.md)"
     },
     {
       "id": "openai-math-077",

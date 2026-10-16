@@ -1,0 +1,298 @@
+{
+  "batch_id": "B071",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T19:09:48.093066+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean",
+      "sha256": "045e02714ed642444b9257f20f1ce65d68f00e63e914cc3aa7335f6ed5648a71",
+      "bytes": 625
+    },
+    {
+      "path": "lean/ComparatorChallenges/CartierChartCompactnessSupport.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CartierChartCompactnessSupport.lean",
+      "sha256": "05de6915fb577137d01be2fcaab5ebcc252d80f628ffb913bea4bef87b54ea64",
+      "bytes": 1365
+    },
+    {
+      "path": "lean/ComparatorChallenges/LittlewoodFiniteFlatness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LittlewoodFiniteFlatness.lean",
+      "sha256": "06fc3e018ac481a8c7bcb5369bb67774ce717b318f20e2b82702f358a0f5f934",
+      "bytes": 1150
+    },
+    {
+      "path": "lean/docs/066.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/066.md",
+      "sha256": "257a68ba222d05d4833e32730d8543250ac8a11f26348fad82632a9fa73cbc5d",
+      "bytes": 1380
+    },
+    {
+      "path": "lean/docs/076.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/076.md",
+      "sha256": "7312cc588687637adba1db0343c62f03eece427bb61ddf90e1f100e3ed490cf5",
+      "bytes": 1316
+    },
+    {
+      "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/README.md",
+      "sha256": "c03b9e9129b1c0793981de98a6888c6eef0462f8bf8f3923db9bb25c2f5c2824",
+      "bytes": 602
+    },
+    {
+      "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+      "sha256": "d96f53a42625d0607f4204d01685d5c42878292358245ee92b62c13bb93a2ade",
+      "bytes": 13315
+    },
+    {
+      "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/README.md",
+      "sha256": "17a0c23cb4160092f47469dbf9b6f4b1990660cb32a943d263af836c0fbb3135",
+      "bytes": 701
+    },
+    {
+      "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+      "sha256": "5393b11930ba5e001c633a63f9c67b56fbadc1f917ec2b443ec2d7af85885982",
+      "bytes": 27678
+    },
+    {
+      "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/README.md",
+      "sha256": "f9d26d49b4b2fcbc4358c7ed2af0da351311d338fd9ace47cdbf6a0d1b227d39",
+      "bytes": 692
+    },
+    {
+      "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+      "sha256": "3968aa37c63a86e3641a2991fe8387e57dfae6f0ef0e5aad9a041620b271696e",
+      "bytes": 16896
+    },
+    {
+      "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/README.md",
+      "sha256": "472cca4949bcb7dddd97c19fa98428274fa239735cf0ec21cb3728794b572b83",
+      "bytes": 723
+    },
+    {
+      "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+      "sha256": "83f1608f860f1b46899107ce061b6bf32832e82ace3b4952f1605241d7b46e7a",
+      "bytes": 9000
+    },
+    {
+      "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/README.md",
+      "sha256": "d7bfef8ec0673fe769d032e7c8dcc79a5e50f754cd630037c4892a2741cca542",
+      "bytes": 597
+    },
+    {
+      "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+      "sha256": "db43d13df7a0d16d4156865b8bf1c806130083bc6fec686f9bfab0b5682ca3f4",
+      "bytes": 4809
+    },
+    {
+      "path": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/README.md",
+      "sha256": "f863f107650fbb59658ad9c9ca4bed9215bc11b403c73d0d69722be68ff6947b",
+      "bytes": 743
+    },
+    {
+      "path": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex",
+      "sha256": "0d1d5024bedd1b975f8fb7cb672117fd77366fc67f5d58e3a392c4579b13d452",
+      "bytes": 52700
+    },
+    {
+      "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/README.md",
+      "sha256": "ce04aace18c026c9acfc0396106e078e30ee717e3c2a4c36227bd7e9a81b0195",
+      "bytes": 659
+    },
+    {
+      "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+      "sha256": "c81cc6a5cdd919b23211dac69e766224b356aeb34e38995060971fe592a3c55c",
+      "bytes": 8076
+    },
+    {
+      "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/README.md",
+      "sha256": "be6afed57229af9beb59d1e977188777edc357b0b5a8dcfe2c91fd425c747b9e",
+      "bytes": 639
+    },
+    {
+      "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+      "sha256": "2d5d2432587c52cff755ec49cecdfdd5eb5b1eec2fa166fd9d432fb743bc3d17",
+      "bytes": 21283
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000670",
+      "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+      "label": "spec:calculus",
+      "line": 69,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L69",
+      "sha256": "2d5d2432587c52cff755ec49cecdfdd5eb5b1eec2fa166fd9d432fb743bc3d17"
+    },
+    {
+      "instrument_id": "MI-000670",
+      "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex",
+      "label": "spec:gauge",
+      "line": 155,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/build/sections/06-spectral.tex#L155",
+      "sha256": "2d5d2432587c52cff755ec49cecdfdd5eb5b1eec2fa166fd9d432fb743bc3d17"
+    },
+    {
+      "instrument_id": "MI-000671",
+      "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+      "label": "det:norm",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L39",
+      "sha256": "c81cc6a5cdd919b23211dac69e766224b356aeb34e38995060971fe592a3c55c"
+    },
+    {
+      "instrument_id": "MI-000671",
+      "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex",
+      "label": "det:detection",
+      "line": 70,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/build/sections/detection.tex#L70",
+      "sha256": "c81cc6a5cdd919b23211dac69e766224b356aeb34e38995060971fe592a3c55c"
+    },
+    {
+      "instrument_id": "MI-000672",
+      "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+      "label": "b:valuative-push",
+      "line": 43,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L43",
+      "sha256": "5393b11930ba5e001c633a63f9c67b56fbadc1f917ec2b443ec2d7af85885982"
+    },
+    {
+      "instrument_id": "MI-000672",
+      "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex",
+      "label": "b:push-threshold",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/build/sections/discrepancy-push.tex#L61",
+      "sha256": "5393b11930ba5e001c633a63f9c67b56fbadc1f917ec2b443ec2d7af85885982"
+    },
+    {
+      "instrument_id": "MI-000673",
+      "path": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex",
+      "label": "lem:G-noncancellation",
+      "line": 301,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/sections/G-pinning.tex#L301",
+      "sha256": "0d1d5024bedd1b975f8fb7cb672117fd77366fc67f5d58e3a392c4579b13d452"
+    },
+    {
+      "instrument_id": "MI-000674",
+      "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+      "label": "lem:maximal-base",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L90",
+      "sha256": "d96f53a42625d0607f4204d01685d5c42878292358245ee92b62c13bb93a2ade"
+    },
+    {
+      "instrument_id": "MI-000674",
+      "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex",
+      "label": "eq:horizontal-interpolation",
+      "line": 169,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/build/source/sections/induction.tex#L169",
+      "sha256": "d96f53a42625d0607f4204d01685d5c42878292358245ee92b62c13bb93a2ade"
+    },
+    {
+      "instrument_id": "MI-000675",
+      "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+      "label": "lem:ehrhart",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L38",
+      "sha256": "3968aa37c63a86e3641a2991fe8387e57dfae6f0ef0e5aad9a041620b271696e"
+    },
+    {
+      "instrument_id": "MI-000675",
+      "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex",
+      "label": "lem:faces",
+      "line": 109,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/build/source/sections/index.tex#L109",
+      "sha256": "3968aa37c63a86e3641a2991fe8387e57dfae6f0ef0e5aad9a041620b271696e"
+    },
+    {
+      "instrument_id": "MI-000676",
+      "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+      "label": "lem:quadratic",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L15",
+      "sha256": "db43d13df7a0d16d4156865b8bf1c806130083bc6fec686f9bfab0b5682ca3f4"
+    },
+    {
+      "instrument_id": "MI-000676",
+      "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex",
+      "label": "lem:stationary-phase",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/build/sections/oscillation.tex#L45",
+      "sha256": "db43d13df7a0d16d4156865b8bf1c806130083bc6fec686f9bfab0b5682ca3f4"
+    },
+    {
+      "instrument_id": "MI-000677",
+      "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+      "label": "lem:rounding",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L12",
+      "sha256": "83f1608f860f1b46899107ce061b6bf32832e82ace3b4952f1605241d7b46e7a"
+    },
+    {
+      "instrument_id": "MI-000677",
+      "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex",
+      "label": "lem:rounding-matrix",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/build/sections/rounding.tex#L36",
+      "sha256": "83f1608f860f1b46899107ce061b6bf32832e82ace3b4952f1605241d7b46e7a"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-065",
+      "extracted_slugs": [
+        "Virasoro-Constraints-under-Projectivization-October-5-2026",
+        "Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-066",
+      "extracted_slugs": [
+        "Bounded-klt-complements-for-Fano-contractions-September-25-2026",
+        "Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-068",
+      "extracted_slugs": [
+        "Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026",
+        "Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026"
+      ],
+      "inventory_only_slugs": [
+        "Bounded-anticanonical-metrics-on-klt-pairs-and-torus-quotients-September-26-2026",
+        "Cohomological-transfer-and-equivariant-anticanonical-sections-September-26-2026",
+        "Metric-descent-and-rank-preserving-contractions-September-26-2026",
+        "Integrable-metrics-and-effectivity-with-controlled-boundary-September-26-2026",
+        "Exact-orders-and-invariant-anticanonical-linear-systems-September-26-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-076",
+      "extracted_slugs": [
+        "Ultraflat-real-Littlewood-polynomials-October-5-2026",
+        "Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026"
+      ]
+    }
+  ]
+}
