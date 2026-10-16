@@ -20586,6 +20586,357 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000487.md",
       "body": "# Build an absorption bijection from an exactly lifted correction\n\n[Family 324](../families/openai-math-324.md) · [Source manuscript](../papers/P-000266.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet D=E direct-sum_infinity U for real Banach spaces, Q:Z->U bounded linear, g:D->U a bi-Lipschitz bijection, and K:D->Z Lipschitz. Assume the exact identity QK(t,u)=g(t,u)-u. Then F:Z direct-sum_infinity E->Z, F(b,t)=b+K(t,Qb), is a bi-Lipschitz bijection.\n\nFor d in Z, set (t_d,u_d)=g^(-1)(Qd) and G(d)=(d-K(t_d,u_d),t_d). The identities QF(b,t)=g(t,Qb) and Q(d-K(t_d,u_d))=u_d prove GF=id and FG=id. In particular, no surjectivity or right-inverse assumption on Q is used: the formula itself produces the required b with Qb=u_d.\n\nIf q=||Q||, L_K=Lip K and c_g>0 is a lower Lipschitz constant of g, then Lip F<=1+L_K max{1,q}, and Lip G<=max{1+L_K q/c_g,q/c_g}. The exact identity is essential; an approximate lift needs its own stability argument.\n\nThis criterion says what an infinite-dimensional absorption construction must supply. It does not, by itself, produce g or K, nor does it exclude a linear copy of E in Z.\n\n## Role in the source argument\n\nTurns the companion source coordinate construction into an absorption map with a concrete inverse.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:absorption](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L12)\n- [eq:absorb-inverse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L45)\n- [eq:absorb-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L36)\n\n## Antecedents and comparison\n\nTriangular correction maps have classical antecedents, including [Godefroy-Kalton Theorem 2.12](https://kaltonmemorial.missouri.edu/assets/docs/sm2003c.pdf). The selected source proves its stated lift identity and inverse implication directly. Its geometric construction and no-linear-c0 assertion are separate claims.\n\n## Checks and limitations\n\nFinite-support sequence shifts test the two inverse identities in the c0 model where a coordinate is inserted. A separate nonsurjective Q example tests that no quotient section is needed. An inexact correction breaks the displayed inverse.\n\nThe sequence-shift example already contains a linear c0 copy and therefore does not test the source counterexample. It checks only the algebraic criterion.\n\n## Possible applications\n\nNonlinear absorption or stabilization problems where a correction can be lifted exactly through a bounded linear observation map.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000488",
+      "record_type": "instrument",
+      "title": "Make every row tight by one decreasing multiplicative sweep",
+      "forms": [
+        "one-pass-multiplicative-feasibility",
+        "persistent-tight-edge-witness"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-113"
+      ],
+      "source_paper_ids": [
+        "P-000267"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex",
+          "label": "lem:one-pass-scaling",
+          "line": 2667,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L2667",
+          "sha256": "dcf28553d442dfc53a9f90f7c52bd48c9e2e7e5e27b197aa7ca4be1c8daed703"
+        },
+        {
+          "path": "preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex",
+          "label": "eq:scale-update",
+          "line": 2671,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L2671",
+          "sha256": "dcf28553d442dfc53a9f90f7c52bd48c9e2e7e5e27b197aa7ca4be1c8daed703"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "elementary-monotone-coordinate-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000488.md",
+      "body": "# Make every row tight by one decreasing multiplicative sweep\n\n[Family 113](../families/openai-math-113.md) · [Source manuscript](../papers/P-000267.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet n>=2 and G be symmetric off the diagonal, with 0<alpha<=G_ij<=R^2. Initialize v_i=R, then visit each coordinate exactly once in any fixed order, replacing v_i by max_(j!=i) G_ij/v_j.\n\nThroughout the sweep, v_i v_j>=G_ij and alpha/R<=v_i<=R. Indeed, feasibility makes each update nonincreasing, and all other coordinates remain at most R. The updated coordinate has a tight incident edge. That equality survives: if the other endpoint is visited later, its update cannot decrease it without violating the existing equality. Thus every row of G_ij/(v_i v_j) has maximum exactly one after a single sweep.\n\nThe source takes R=2 and G_ij<=3. This formulation exposes the same proof for any feasible common initialization. The output can depend on the visitation order and is not asserted to minimize a global scaling objective. Zero lower bounds remove the stated positive lower bound and may make division ill-defined.\n\n## Role in the source argument\n\nNormalizes estimated pair ratios in the source matching algorithm.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:one-pass-scaling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L2667)\n- [eq:scale-update](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/build/main.tex#L2671)\n\n## Antecedents and comparison\n\nA direct feasibility-preserving coordinate argument. No independent novelty claim is made for the sweep; the source supplies its use with estimated matching ratios.\n\n## Checks and limitations\n\nExact rational tests use positive symmetric arrays and multiple visitation orders, checking every intermediate product, monotonicity, lower bounds and persistent row witnesses. An infeasible initialization defeats monotonicity.\n\nThis does not validate the ratio estimator or the source polynomial-time approximation scheme.\n\n## Possible applications\n\nQuickly producing a maximal feasible reciprocal scaling when rowwise tightness is needed but a global optimum is unnecessary.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000489",
+      "record_type": "instrument",
+      "title": "Use covariance rank to obstruct an interior entropy maximum",
+      "forms": [
+        "exponential-tilt-second-variation",
+        "minimal-face-covariance-trace"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-113"
+      ],
+      "source_paper_ids": [
+        "P-000268"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex",
+          "label": "ent:exponential",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex#L63",
+          "sha256": "aa18dcaff7bf375812469f2e4a059a85b13851fbc445e16618de9dc27a410899"
+        },
+        {
+          "path": "preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex",
+          "label": "ent:trace",
+          "line": 118,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex#L118",
+          "sha256": "aa18dcaff7bf375812469f2e4a059a85b13851fbc445e16618de9dc27a410899"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-exponential-family-with-source-trace-reduction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000489.md",
+      "body": "# Use covariance rank to obstruct an interior entropy maximum\n\n[Family 113](../families/openai-math-113.md) · [Source manuscript](../papers/P-000268.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet a finite family of Boolean vectors in {0,1}^s all have coordinate sum m. On a face of their convex hull of dimension d, take x in the relative interior with 0<x_e<1 for every retained coordinate. Let H(x) be maximum entropy among laws with mean x, F(x)=-sum x_e log x_e, B(x)=-sum(1-x_e)log(1-x_e), and J_c=F-cB.\n\nThe entropy maximizer is positive on the face atoms and has exponential form p_theta(a)=exp(theta.a)/Z(theta). Positivity follows by mixing with a positive feasible face law: opening a zero mass gains order u log(1/u), outweighing the linear loss. The covariance K has image equal to the face tangent space and rank d; K_ee=x_e(1-x_e).\n\nAlong an exponential tilt theta+t v, x'=Kv and x'' remains tangent. With g=grad J_c and D=diag(-1/x_e+c/(1-x_e)), the second derivative of J_c-H is (Kv)^T D(Kv)+v^T Kv+(g+theta).x''. At a relative interior local maximum, stationarity kills the last term. Hence KDK+K is negative semidefinite. Sum its quadratic forms over covariance eigenvectors, dividing each by its positive eigenvalue: d+tr(KD)<=0. No commutation between D and K is required.\n\nUsing the Boolean diagonal and sum x_e=m gives tr(KD)=-s+(c+1)m. Therefore an interior local maximum requires d-s+(c+1)m<=0. A separate lower bound for the face dimension can rule out such maxima. The matching source supplies such geometry and a boundary induction; neither follows from this local trace calculation.\n\n## Role in the source argument\n\nConverts the companion entropy inequality into a dimension question for minimal faces.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ent:exponential](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex#L63)\n- [ent:trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/build/sections/03-entropy.tex#L118)\n\n## Antecedents and comparison\n\n[Wainwright-Jordan, Section 3.5.1](https://people.eecs.berkeley.edu/~jordan/sail/readings/wainwright-jordan-fnt.pdf), equations (3.41a-b), identifies the gradient and Hessian of log Z with mean and covariance; the retrieved manuscript labels this Proposition 2, not Proposition 3.1. Those pages were read. The source adds the second-variation trace use. No exhaustive priority search for that combination is claimed.\n\n## Checks and limitations\n\nExact covariance matrices from enumerated perfect matchings check rank, Boolean diagonals, the trace formula and the pseudoinverse-weighted second variation, including noncommuting K and D. Symmetric examples show a positive trace excluding a local maximum.\n\nFinite examples and the local argument do not prove the global face-dimension estimate or all boundary entropy inequalities.\n\n## Possible applications\n\nEntropy comparisons on constant-weight Boolean polytopes where face dimensions are easier to control than individual covariance eigenvalues.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000490",
+      "record_type": "instrument",
+      "title": "Build one center that controls every affine slack",
+      "forms": [
+        "affine-barycentric-spanner-center",
+        "determinant-exchange-slack-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-114"
+      ],
+      "source_paper_ids": [
+        "P-000269"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex",
+          "label": "lem:center",
+          "line": 358,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex#L358",
+          "sha256": "029c5355b8513a2c6cb6a3e670c93bda27e21f93b9ec141ec22a140dd9cb370b"
+        },
+        {
+          "path": "preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex",
+          "label": "eq:center-slack",
+          "line": 363,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex#L363",
+          "sha256": "029c5355b8513a2c6cb6a3e670c93bda27e21f93b9ec141ec22a140dd9cb370b"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "awerbuch-kleinberg-spanner-adaptation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000490.md",
+      "body": "# Build one center that controls every affine slack\n\n[Family 114](../families/openai-math-114.md) · [Source manuscript](../papers/P-000269.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet Q be a nonempty bounded rational polytope of affine dimension d. Choose affinely independent vertices v_0,...,v_d and barycentric affine coordinates lambda_j on aff Q. If some vertex x has |lambda_j(x)|>2, replace v_j by x. In fixed affine coordinates the absolute simplex determinant increases by |lambda_j(x)|>2. Linear optimization of both signs of each lambda_j finds a violating vertex if one exists.\n\nAt termination, |lambda_j(x)|<=2 for all x in Q. With c=(v_0+...+v_d)/(d+1), every affine function L nonnegative on Q satisfies L(x)=sum lambda_j(x)L(v_j)<=2 sum L(v_j)=2(d+1)L(c). Thus one center controls all nonnegative slacks, including slacks not enumerated in the construction. Dimension zero is immediate.\n\nWith a polynomial vertex-encoding bound and a polynomial vertex optimization oracle, all nonzero determinants lie between 2^(-B) and 2^B for a polynomial B. There are at most 2B+1 exchanges. An affine basis can be found by optimizing both signs of directions orthogonal to the current affine span. This gives a polynomial oracle construction under the stated encoding assumptions. The source states the weaker ambient-dimension constant 4(n+1); the factor 2(d+1) displayed here follows directly from its termination criterion.\n\n## Role in the source argument\n\nProduces simultaneous slack in the polymatroid source without enumerating every defining inequality.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:center](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex#L358)\n- [eq:center-slack](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/sections/polyhedra.tex#L363)\n\n## Antecedents and comparison\n\n[Awerbuch-Kleinberg, Section 2.3, Proposition 2.4](https://www.cs.jhu.edu/~baruch/RESEARCH/Research_areas/Collaboration%2BLearning/STOC%202004/p20-awerbuch.pdf) gives determinant exchanges for approximate barycentric spanners. The statement, algorithm and proof were read. The source uses affine coordinates and averages the selected vertices to control nonnegative slacks.\n\n## Checks and limitations\n\nExact rational finite vertex sets test determinant growth, termination and simultaneous slack bounds, including lower-dimensional affine embeddings.\n\nThe tests are finite vertex models and do not implement the source separation-to-optimization machinery or prove its complexity bounds.\n\n## Possible applications\n\nFinding a rational interior point with uniform slack relative to all valid affine inequalities.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000491",
+      "record_type": "instrument",
+      "title": "Bound empirical error using only the observed subspace",
+      "forms": [
+        "restricted-poincare-resolvent-bound",
+        "warm-start-observable-time-average"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-114"
+      ],
+      "source_paper_ids": [
+        "P-000270"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/build/main.tex",
+          "label": "lem:timeaverages",
+          "line": 976,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/build/main.tex#L976",
+          "sha256": "dbe14950d1ad4a065878f1bdb1e9c346d3fd7f6f564024580a8dfdc287b7fab9"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "explicit-chen-vigoda-yang-antecedent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000491.md",
+      "body": "# Bound empirical error using only the observed subspace\n\n[Family 114](../families/openai-math-114.md) · [Source manuscript](../papers/P-000270.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet P be a finite irreducible reversible lazy Markov chain with stationary law pi. Let Q be an orthogonal projection in L2(pi) fixing constants. Assume Var_pi(Qh)<=K_obs <h,(I-P)h>_pi for every h. For G=QG and an initial law nu<=U pi, the mean squared error of the average of G over N successive states is at most 2 U K_obs Var_pi(G)/N.\n\nTo prove it, center g=G-E_pi G and set h=(I-P)^(-1)g on the mean-zero subspace. Orthogonality gives <g,h>=<g,Qh>. Cauchy-Schwarz and the restricted inequality imply <g,h>^2<=Var_pi(G) K_obs <g,h>, hence <g,(I-P)^(-1)g><=K_obs Var_pi(G). Laziness makes all nonconstant eigenvalues lie in [0,1), so integrated covariances equal this resolvent expression and are nonnegative. The stationary empirical variance is therefore at most 2 K_obs Var_pi(G)/N.\n\nThe path law from nu is dominated by U times the stationary path law, which transfers the squared-error bound even though the nonstationary estimator can be biased. A restricted inequality only for h=Qh is insufficient for the resolvent step: the resolvent need not stay in range Q. A block projection chain need not describe the full observed trajectory.\n\n## Role in the source argument\n\nEstimates class probabilities in the common-matroid-bases algorithm using the observable relaxation constant.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:timeaverages](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/build/main.tex#L976)\n\n## Antecedents and comparison\n\n[Chen-Vigoda-Yang, Theorem 5(ii) and Section 3.6](https://arxiv.org/html/2608.26599v1) already give the restricted resolvent and stationary empirical-variance proof. That argument was read directly. The source includes warm-start domination in the displayed time-average estimate.\n\n## Checks and limitations\n\nExact four-state slow/fast chains test the restricted quadratic-form inequality and empirical second moments under stationary and warm starts. The observable bound remains fixed as the unobserved relaxation time diverges.\n\nThe source coupled-flow construction establishing its restricted constant is not certified. This is an error bound for selected averages, not a total-variation mixing theorem.\n\n## Possible applications\n\nMonte Carlo estimation when nuisance variables mix slowly but the quantities being estimated satisfy a stronger restricted variance inequality.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000492",
+      "record_type": "instrument",
+      "title": "Correct a dyadic approximate sampler by a rare exact residual",
+      "forms": [
+        "rare-residual-exact-sampling",
+        "integer-mass-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-115"
+      ],
+      "source_paper_ids": [
+        "P-000271"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex",
+          "label": "thm:exact-sampling",
+          "line": 371,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex#L371",
+          "sha256": "ed5a846b4d6de2ff2ea2bed21aaa441107115e0a2745328cd3413e5a963c8a46"
+        },
+        {
+          "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex",
+          "label": "eq:residual-integers",
+          "line": 398,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex#L398",
+          "sha256": "ed5a846b4d6de2ff2ea2bed21aaa441107115e0a2745328cd3413e5a963c8a46"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "explicit-glmp-perfect-sampling-reduction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000492.md",
+      "body": "# Correct a dyadic approximate sampler by a rare exact residual\n\n[Family 115](../families/openai-math-115.md) · [Source manuscript](../papers/P-000271.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet Omega have M>=1 elements and let an approximate sampler have exactly tabulable dyadic law p_z=a_z/2^R. Choose delta=2^(-D), D>=1, with (1-delta)p_z<=1/M for every z. Then r_z=[1/M-(1-delta)p_z]/delta is a probability law, and (1-delta)p+delta r is exactly uniform.\n\nThe residual has integer numerators n_z=2^(R+D)-M(2^D-1)a_z>=0, whose sum is M 2^R. Thus it can be sampled by drawing an integer uniformly in [0,M 2^R) and using cumulative n_z. To draw uniformly from [0,V), use ceil(log2 V) fair bits and reject numbers at least V; acceptance exceeds one half, with V=1 requiring no bits. The delta branch is selected by D fair bits all being zero, followed by fresh sampling bits.\n\nA total-variation error at most delta^2 is sufficient if M delta<=1: each p_z<=1/M+delta^2 and (1-delta)(1/M+delta^2)<=1/M. The expected cost is the branch overhead plus (1-delta)T_approx+delta T_residual. Polynomial expected time therefore requires quantitative control of both costs; exact correction alone does not provide it. The source chooses delta small enough to suppress an explicitly bounded exponential tabulation cost.\n\n## Role in the source argument\n\nConverts the source bounded-time approximate table sampler into exact sampling with an expected-time bound.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [thm:exact-sampling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex#L371)\n- [eq:residual-integers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex#L398)\n\n## Antecedents and comparison\n\n[Gobel-Liu-Manurangsi-Pappik, arXiv:2410.00882v2](https://arxiv.org/pdf/2410.00882v2), Section 3.1, Algorithm 1 and Theorem 6, already give this residual-mixture mechanism and its expected-cost accounting. Those passages were read. Version 1 uses a different rejection formulation; the reference here intentionally pins version 2.\n\n## Checks and limitations\n\nExact enumeration of small dyadic laws verifies nonnegative residual integers, their total, and uniform output. Insufficient branch mass gives a negative residual. Integer-rejection acceptance is checked exactly.\n\nNo claim that the source approximate sampler or its exponential tabulation bound has been validated. The generic correction needs those as separate inputs.\n\n## Possible applications\n\nPerfect sampling when a very accurate cheap sampler and an expensive exact probability table are both available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000493",
+      "record_type": "instrument",
+      "title": "Choose a maximum-capacity forest before normalizing free variables",
+      "forms": [
+        "capacity-weighted-forest-elimination",
+        "incidence-aware-cut-lipschitz-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-115"
+      ],
+      "source_paper_ids": [
+        "P-000272"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex",
+          "label": "lem:forest",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L131",
+          "sha256": "062476901a2c6074f1258fcfffc9f29d245b937d940e1b0f52c26b9cde43a7f4"
+        },
+        {
+          "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex",
+          "label": "eq:forest-cut",
+          "line": 193,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L193",
+          "sha256": "062476901a2c6074f1258fcfffc9f29d245b937d940e1b0f52c26b9cde43a7f4"
+        },
+        {
+          "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex",
+          "label": "eq:forest-lipschitz",
+          "line": 152,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L152",
+          "sha256": "062476901a2c6074f1258fcfffc9f29d245b937d940e1b0f52c26b9cde43a7f4"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "cryan-dyer-randall-forest-core-with-source-penalty-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000493.md",
+      "body": "# Choose a maximum-capacity forest before normalizing free variables\n\n[Family 115](../families/openai-math-115.md) · [Source manuscript](../papers/P-000272.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nIn a feasible bipartite margin problem with at most d edges, split capacities into small b_s<W and large b_e>=W, with W>=1. Choose a maximum-total-capacity spanning forest of the large-edge graph, with one root per component. Its non-tree edges are free. The exchange property gives b_e<=b_t for every tree edge t on the fundamental path of a free edge e.\n\nFix each small-edge incidence separately in [0,b_s]; the row and column values of one small edge are allowed to differ. For free values z_e in [0,b_e+1], solve all nonroot margins by leaf elimination. The tree values are unique affine functions of the free values, integral for integral input data. Root discrepancies are independent of free variables.\n\nCompare with a feasible table X*. Sum signed margin equations over the component below a tree edge, using row sign +1 and column sign -1. Internal large edges cancel. Crossing free edges contribute their signed changes, and every small incidence inside the component contributes its own signed change. Internal small incidences cannot be cancelled unless their two values agree. This cut identity, the path capacity comparison, and at most d edges yield |z_t-X*_t|<=4d b_t and root discrepancy at most 2dW.\n\nNormalize u_e=z_e/(b_e+1). Each derivative of z_t/b_t in a free coordinate is zero or has magnitude (b_e+1)/b_t<=2. Consequently the convex penalty A[sum_roots |discrepancy|+sum_tree dist(z_t,[0,b_t])/b_t] has Lipschitz constant at most 2 A d^2 in the infinity norm of u. The maximum-capacity choice is what makes the normalized derivative independent of capacity ratios.\n\n## Role in the source argument\n\nProvides dimension-controlled geometry for the cell-bounded source while retaining mismatched small-edge profiles.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:forest](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L131)\n- [eq:forest-cut](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L193)\n- [eq:forest-lipschitz](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex#L152)\n\n## Antecedents and comparison\n\n[Cryan-Dyer-Randall, Section 2, Definition 3 and Theorem 1](https://homepages.inf.ed.ac.uk/mcryan/cdr.pdf) explicitly use maximum-capacity spanning trees and the fundamental-path capacity comparison. Those arguments were read. The source adapts the coordinates to separated small incidences and a convex penalty.\n\n## Checks and limitations\n\nExact bipartite models compare matrix elimination with signed cut sums, test root independence and normalized coefficients, and include mismatched small incidences internal to a cut. An arbitrary low-capacity spanning tree loses capacity-independent control.\n\nThe tests do not establish the source partition-function or counting complexity estimates. Tightening the original cell ranges is a separate preprocessing step.\n\n## Possible applications\n\nParametrizing constrained flows with coefficients controlled after capacity normalization, including relaxed endpoint profiles.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000494",
+      "record_type": "instrument",
+      "title": "Control binary entropy-production curvature through two moments",
+      "forms": [
+        "scaled-entropy-curvature",
+        "monotone-reweighting-two-moment-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-119"
+      ],
+      "source_paper_ids": [
+        "P-000273"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex",
+          "label": "scalar:profile-convexity",
+          "line": 75,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex#L75",
+          "sha256": "03b64ba1af8ce45b6d4670c0cf919abc119838e9624e06c5c0e2c720032007cb"
+        },
+        {
+          "path": "preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex",
+          "label": "scalar:scaled-curvature",
+          "line": 134,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex#L134",
+          "sha256": "03b64ba1af8ce45b6d4670c0cf919abc119838e9624e06c5c0e2c720032007cb"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "source-scalar-interface-no-priority-claim",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000494.md",
+      "body": "# Control binary entropy-production curvature through two moments\n\n[Family 119](../families/openai-math-119.md) · [Source manuscript](../papers/P-000273.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nPut L=log 2, psi(r)=[(1+r)log(1+r)+(1-r)log(1-r)]/2, and F(psi(r))=r atanh(r), for 0<=r<1. If h=L-psi(r) is binary entropy in nats, then 1/2<=h^2 F''(L-h)<=4L^2/3 for 0<h<=L.\n\nFor v=atanh r, differentiation gives F''(psi(r))=cosh(v)^2 A(v), where A(v)=2 integral_0^1 (1-s^2)cosh(2vs) ds. This positive representation gives F''(0)=4/3 and increasing curvature. To control its divergence, put t=r^2 and x=atanh(r)/r, continuously x=1 at zero. Define a probability measure on [0,1] with density 1/[x(1-tu^2)], and set b=E[1/(1+u)], n=E[u^2]. Direct integral identities yield h^2 F''(L-h)=b^2(1+n).\n\nJensen and Cauchy-Schwarz give b>=1/(1+sqrt(n)), hence the lower bound 1/2. For the upper bound, covariance differentiation shows b decreases from L toward 1/2 and n increases. Reweight the measure by 1-u^2. Then beta=(b-1/2)/(1-n) equals half the new expectation of (1+u)^(-2), so beta decreases and is at most beta_0=3(L-1/2)/2. Consequently b^2(1+n)<=b^2[2-(b-1/2)/beta_0]. The latter polynomial is increasing for b in [1/2,L], since 3L>2, and its value at L is 4L^2/3.\n\nThe two endpoint constants are attained at h=L and as h tends to zero, respectively. F itself has no finite value at information L. These formulas concern binary entropy, not the companion square-root Hellinger profile.\n\n## Role in the source argument\n\nControls rescaled scalar derivatives in the principal source mean-dependent entropy-production argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [scalar:profile-convexity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex#L75)\n- [scalar:scaled-curvature](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex#L134)\n\n## Antecedents and comparison\n\nThe function is the binary entropy-production profile obtained from a noisy coordinate; elementary hyperbolic identities underlie it. The full selected source proof was read and its identities checked. The targeted companion comparison identifies an older compression mechanism but does not establish novelty of this curvature estimate.\n\n## Checks and limitations\n\nHigh-precision evaluations test the derivative, positive-integral and two-moment identities, both bounds and the monotone reweighting ratio, including points very close to both endpoints.\n\nThese numerical checks are not an interval certificate and do not prove the global cube inequality. The general scalar justification is the displayed analytic argument.\n\n## Possible applications\n\nBounding singular entropy-production curvature uniformly after scaling by the square of remaining binary entropy.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000495",
+      "record_type": "instrument",
+      "title": "Compress a Boolean function and choose a bias-controlled small coordinate",
+      "forms": [
+        "concave-profile-boolean-compression",
+        "four-coordinate-bias-envelope"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-119"
+      ],
+      "source_paper_ids": [
+        "P-000274"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex",
+          "label": "ind:lem:compression",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L32",
+          "sha256": "1a8ce2bbd7dd38bec9c688cbc9b626abcd21218065ff0caf06dc91842ee3d9cf"
+        },
+        {
+          "path": "preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex",
+          "label": "ind:lem:coordinate",
+          "line": 72,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L72",
+          "sha256": "1a8ce2bbd7dd38bec9c688cbc9b626abcd21218065ff0caf06dc91842ee3d9cf"
+        },
+        {
+          "path": "preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex",
+          "label": "ind:eq:b",
+          "line": 67,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L67",
+          "sha256": "1a8ce2bbd7dd38bec9c688cbc9b626abcd21218065ff0caf06dc91842ee3d9cf"
+        }
+      ],
+      "batch_id": "B049",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-compression-with-source-coordinate-envelope",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000495.md",
+      "body": "# Compress a Boolean function and choose a bias-controlled small coordinate\n\n[Family 119](../families/openai-math-119.md) · [Source manuscript](../papers/P-000274.md) · [Batch B049](../../batches/B049/README.md)\n\n## Mathematical content\n\nLet T_rho be the uniform-cube noise operator, 0<=rho<=1, and H any concave profile on [-1,1]. Sorting the two sections of a Boolean function into their pointwise minimum and maximum preserves its mean and weakly decreases E H(T_rho f). Indeed, noise in the other coordinates leaves the pair center a unchanged and increases its half-spread from |c| to T|f_+-f_-|/2>=|c|. The sum H(a+u)+H(a-u) is even and concave, hence decreases for u>=0. One sorting pass per coordinate yields an increasing function because minimum and maximum preserve monotonicity in already sorted coordinates.\n\nFor an increasing Boolean function of mean m with at least four active coordinates, there is an active coordinate with 0<x=E[f(X)X_i]<=b(m), where b(m)=min{3/8,9/16-|m|/2,1-|m|}. Its two section means are m-x and m+x.\n\nChoose the least active coefficient x. It is at most E[fZ] for Z the average of any four active signs. The values 1,1/2,0,-1/2,-1 have probabilities 1,4,6,4,1 divided by 16. At fixed mean, rearranging positive mass onto the highest values of Z maximizes the correlation. With q=(1-|m|)/2, twice the integral over the top fraction q equals 2q for q<=1/16, q+1/16 up to 5/16, and 3/8 thereafter. These are precisely the three pieces of b(m). Allowing fractional mass at a threshold is a relaxation, so the bound also holds when the function depends on additional coordinates.\n\n## Role in the source argument\n\nRestricts the scalar induction domain in the companion Hellinger argument while retaining output bias.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ind:lem:compression](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L32)\n- [ind:lem:coordinate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L72)\n- [ind:eq:b](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex#L67)\n\n## Antecedents and comparison\n\n[Anantharam-Bogdanov-Chakrabarti-Jayram-Nair, Proposition 2](https://chandra.ie.cuhk.edu.hk/pub/papers/HC/hel-conj.pdf) proves the one-coordinate compression principle for convex entropy profiles; its proof was read. The source states the concave direction and the explicit four-coordinate bias envelope. No exhaustive novelty claim for that envelope.\n\n## Checks and limitations\n\nAll Boolean functions on four coordinates are tested for the coordinate-correlation relaxation. Increasing functions with four active coordinates are checked for the chosen coefficient and section means. Numerical noise tests compare each compression step under the Hellinger and quadratic concave profiles.\n\nThis verifies the reductions only; the source scalar certificates, dimension induction and continuation proof of Hellinger contraction are not certified.\n\n## Possible applications\n\nReducing a Boolean noise extremal problem to increasing functions and an explicit two-section domain depending on mean.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -25642,6 +25993,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000266.md",
       "body": "# Bi-Lipschitz Absorption of c0 Without a Linear Copy of c0\n\n## Source\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000487: Build an absorption bijection from an exactly lifted correction](../instruments/MI-000487.md)\n\n[Family review and dependencies](../families/openai-math-324.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000267",
+      "record_type": "paper",
+      "title": "A Fully Polynomial Randomized Approximation Scheme for Perfect Matchings in General Graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-113"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1163a09eb4c9ba6538606c07e9497c7489c9bd223ed461ae140bb8c1deeb1ee3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000267.md",
+      "body": "# A Fully Polynomial Randomized Approximation Scheme for Perfect Matchings in General Graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Fully-Polynomial-Randomized-Approximation-Scheme-for-Perfect-Matchings-in-General-Graphs-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000488: Make every row tight by one decreasing multiplicative sweep](../instruments/MI-000488.md)\n\n[Family review and dependencies](../families/openai-math-113.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000268",
+      "record_type": "paper",
+      "title": "Entropy and Face Dimension of the Perfect-Matching Polytope",
+      "source_collection": "openai/math",
+      "upstream_slug": "Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-113"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "346722207fce95fe1298ea995a50bc0d137f63cc6ad8ca94f3c9343dde5550f8",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000268.md",
+      "body": "# Entropy and Face Dimension of the Perfect-Matching Polytope\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000489: Use covariance rank to obstruct an interior entropy maximum](../instruments/MI-000489.md)\n\n[Family review and dependencies](../families/openai-math-113.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000269",
+      "record_type": "paper",
+      "title": "An FPRAS for Common Integer Polymatroid Bases with Binary Capacities",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-114"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ea94cc16224161182796c929e2039a2fb2bc1347b1324cd0812785fafdf23eb3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000269.md",
+      "body": "# An FPRAS for Common Integer Polymatroid Bases with Binary Capacities\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/polymatroid-fpras.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000490: Build one center that controls every affine slack](../instruments/MI-000490.md)\n\n[Family review and dependencies](../families/openai-math-114.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000270",
+      "record_type": "paper",
+      "title": "Approximate counting of common bases of two matroids",
+      "source_collection": "openai/math",
+      "upstream_slug": "Approximate-counting-of-common-bases-of-two-matroids-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-114"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e8037788287980e538e8b57b28eb127f30881435f3222da34a6279cc78f28c2a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000270.md",
+      "body": "# Approximate counting of common bases of two matroids\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Approximate-counting-of-common-bases-of-two-matroids-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000491: Bound empirical error using only the observed subspace](../instruments/MI-000491.md)\n\n[Family review and dependencies](../families/openai-math-114.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000271",
+      "record_type": "paper",
+      "title": "Exact Uniform Sampling of Contingency Tables with Arbitrary Margins",
+      "source_collection": "openai/math",
+      "upstream_slug": "Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-115"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9daa75b7b040bf2711186b3ea39cf8775970d78467a456c142928b273aa534e3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000271.md",
+      "body": "# Exact Uniform Sampling of Contingency Tables with Arbitrary Margins\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000492: Correct a dyadic approximate sampler by a rare exact residual](../instruments/MI-000492.md)\n\n[Family review and dependencies](../families/openai-math-115.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000272",
+      "record_type": "paper",
+      "title": "An FPRAS for Cell-Bounded Contingency Tables",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-115"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "970cf453815ce28c9934d97567c885e18b15ee405b6369ee4b99790de91da114",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000272.md",
+      "body": "# An FPRAS for Cell-Bounded Contingency Tables\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000493: Choose a maximum-capacity forest before normalizing free variables](../instruments/MI-000493.md)\n\n[Family review and dependencies](../families/openai-math-115.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000273",
+      "record_type": "paper",
+      "title": "Sharp binary-information contraction on the discrete cube",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-119"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0e82e66c549753a9362cacf618d7a60883c03ffba06ec88a8e0d47be075b8527",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000273.md",
+      "body": "# Sharp binary-information contraction on the discrete cube\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000494: Control binary entropy-production curvature through two moments](../instruments/MI-000494.md)\n\n[Family review and dependencies](../families/openai-math-119.md) · [Batch B049](../../batches/B049/README.md)"
+    },
+    {
+      "id": "P-000274",
+      "record_type": "paper",
+      "title": "Hellinger contraction with arbitrary Boolean output bias",
+      "source_collection": "openai/math",
+      "upstream_slug": "Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-119"
+      ],
+      "batch_id": "B049",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5430c1bcd0d10602c467bb0ae53dddbd54fd822c98cdd7af5ef2f00df3af34cd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000274.md",
+      "body": "# Hellinger contraction with arbitrary Boolean output bias\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000495: Compress a Boolean function and choose a bias-controlled small coordinate](../instruments/MI-000495.md)\n\n[Family review and dependencies](../families/openai-math-119.md) · [Batch B049](../../batches/B049/README.md)"
     }
   ],
   "families": [
@@ -27592,6 +28095,90 @@
       "body": "# Depth-three circuits beyond the square root\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000026](../papers/P-000026.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 179 files new\n\nThe source gives a fixed language in P such that for every real constant $`A>0`$, $`\\Sigma_{3}`$ circuits (unbounded fan-in, no bottom fan-in restriction, size = gate count) computing its n-bit slice need more than $`2^{A\\sqrt n}`$ gates for large n: the explicit $`2^{\\omega(\\sqrt n)}`$ problem of Håstad–Jukna–Pudlák 1995 and Gurumukhani et al. 2024, record $`2^{1.282\\sqrt n}`$ (Paturi–Pudlák–Saks–Zane 2005). The growth rate is an inverse tower in log n; this is weaker than $`2^{n^{1/2+\\varepsilon}}`$, as the paper says.\n\n## Extracted instruments.\n\n- [MI-000083: Restriction bound independent of clause count](../instruments/MI-000083.md)\n\n- [MI-000084: Sparse partition](../instruments/MI-000084.md)\n\n- [MI-000085: Slice language](../instruments/MI-000085.md)\n\n## Reused.\n\nHåstad-style restrictions and wide-clause truncation; Razborov’s reverse encoding; sunflower lemma; universal hashing; t-th moment bounds.\n\n## Caveats.\n\nThe argument does not depend on other OpenAI manuscripts. The mathematical review checked selected identities in Lemma 3.1 and the arithmetic in §6. A separate literature comparison for the marker-mixture device remains incomplete.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: files\n- Statement coverage: yes, Σ₃ gate count, exact computation\n- Dependencies: no\n- Antecedents: —"
     },
     {
+      "id": "openai-math-113",
+      "record_type": "family",
+      "title": "Tight multiplicative scaling and a covariance trace obstruction",
+      "source_family": "113",
+      "source_collection": "openai/math",
+      "batch_id": "B049",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000267",
+        "P-000268"
+      ],
+      "instrument_ids": [
+        "MI-000488",
+        "MI-000489"
+      ],
+      "headline": "The sources claim an FPRAS for general perfect matchings and refined maximum-entropy bounds throughout the matching polytope.",
+      "central_instrument": "A single decreasing coordinate sweep makes every multiplicative constraint row tight. Exponential tilts turn a local entropy comparison into a trace inequality on the minimal face.",
+      "novelty_assessment": "Coordinate feasibility and exponential-family covariance are classical. The selected trace reduction is recorded as a source argument, without a priority claim or certification of the global matching results.",
+      "formalization_summary": "The supplied scope includes the general-graph FPRAS, pointwise entropy bounds, earlier deterministic approximations and a triangle-expansion face correspondence. Its selected face target excludes the sharp global face-dimension bound. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Positive symmetric off-diagonal data and feasible initialization are essential for the sweep. The trace conclusion is necessary at a relative interior local maximum, with all retained marginals strictly between zero and one.",
+      "dependencies": "Monotone coordinate updates; finite-support maximum entropy, exponential families, covariance rank and a second-variation argument on the face tangent space.",
+      "antecedents": "Elementary feasibility-preserving scaling; Wainwright-Jordan Section 3.5.1 for exponential-family derivatives and covariance rank.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-113.md",
+      "body": "# Tight multiplicative scaling and a covariance trace obstruction\n\n## Source manuscripts and claim\n\n- [A Fully Polynomial Randomized Approximation Scheme for Perfect Matchings in General Graphs](../papers/P-000267.md): selected passages extracted.\n- [Entropy and Face Dimension of the Perfect-Matching Polytope](../papers/P-000268.md): selected passages extracted.\n\nThe sources claim an FPRAS for general perfect matchings and refined maximum-entropy bounds throughout the matching polytope.\n\n## Extracted instruments\n\n- [MI-000488: Make every row tight by one decreasing multiplicative sweep](../instruments/MI-000488.md)\n- [MI-000489: Use covariance rank to obstruct an interior entropy maximum](../instruments/MI-000489.md)\n\n## Dependencies and antecedents\n\nMonotone coordinate updates; finite-support maximum entropy, exponential families, covariance rank and a second-variation argument on the face tangent space.\n\nElementary feasibility-preserving scaling; Wainwright-Jordan Section 3.5.1 for exponential-family derivatives and covariance rank.\n\n## Review and formalization scope\n\nRead the full one-pass-scaling proof and the companion continuity, exponential representation and covariance-trace proofs. The FPRAS, face-dimension lower bound and global induction are not certified by this extraction.\n\nThe supplied scope includes the general-graph FPRAS, pointwise entropy bounds, earlier deterministic approximations and a triangle-expansion face correspondence. Its selected face target excludes the sharp global face-dimension bound. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nPositive symmetric off-diagonal data and feasible initialization are essential for the sweep. The trace conclusion is necessary at a relative interior local maximum, with all retained marginals strictly between zero and one.\n\n[Batch record](../../batches/B049/README.md)"
+    },
+    {
+      "id": "openai-math-114",
+      "record_type": "family",
+      "title": "Barycentric slack centers and observable-specific variance bounds",
+      "source_family": "114",
+      "source_collection": "openai/math",
+      "batch_id": "B049",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000269",
+        "P-000270"
+      ],
+      "instrument_ids": [
+        "MI-000490",
+        "MI-000491"
+      ],
+      "headline": "The sources claim approximate counting of common integer polymatroid bases and common bases of two matroids.",
+      "central_instrument": "Determinant exchanges create a center controlling every nonnegative affine slack. A restricted Poincare inequality controls the time average of selected observables without a full-chain relaxation bound.",
+      "novelty_assessment": "Both cores have explicit antecedents: Awerbuch-Kleinberg barycentric spanners and Chen-Vigoda-Yang restricted empirical-variance bounds.",
+      "formalization_summary": "The supplied scope and Comparator concern common bases of two equal-rank matroids with independence oracles; they do not state the binary-capacity polymatroid companion extension. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The slack center requires a bounded rational polytope and a suitable vertex optimization oracle for the complexity claim. The variance estimate requires the restricted inequality for every test function, not merely for functions already in the observed subspace.",
+      "dependencies": "Affine coordinates, determinant exchanges, vertex encoding bounds; reversibility, laziness, an orthogonal projection fixing constants and warm-start domination.",
+      "antecedents": "Awerbuch-Kleinberg Proposition 2.4; Chen-Vigoda-Yang Theorem 5(ii) and Section 3.6.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-114.md",
+      "body": "# Barycentric slack centers and observable-specific variance bounds\n\n## Source manuscripts and claim\n\n- [An FPRAS for Common Integer Polymatroid Bases with Binary Capacities](../papers/P-000269.md): selected passages extracted.\n- [Approximate counting of common bases of two matroids](../papers/P-000270.md): selected passages extracted.\n\nThe sources claim approximate counting of common integer polymatroid bases and common bases of two matroids.\n\n## Extracted instruments\n\n- [MI-000490: Build one center that controls every affine slack](../instruments/MI-000490.md)\n- [MI-000491: Bound empirical error using only the observed subspace](../instruments/MI-000491.md)\n\n## Dependencies and antecedents\n\nAffine coordinates, determinant exchanges, vertex encoding bounds; reversibility, laziness, an orthogonal projection fixing constants and warm-start domination.\n\nAwerbuch-Kleinberg Proposition 2.4; Chen-Vigoda-Yang Theorem 5(ii) and Section 3.6.\n\n## Review and formalization scope\n\nRead the full center lemma and the full empirical-time-average lemma. The counting algorithms and their geometric or restricted-Poincare inputs were not certified.\n\nThe supplied scope and Comparator concern common bases of two equal-rank matroids with independence oracles; they do not state the binary-capacity polymatroid companion extension. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nThe slack center requires a bounded rational polytope and a suitable vertex optimization oracle for the complexity claim. The variance estimate requires the restricted inequality for every test function, not merely for functions already in the observed subspace.\n\n[Batch record](../../batches/B049/README.md)"
+    },
+    {
+      "id": "openai-math-115",
+      "record_type": "family",
+      "title": "Exact residual sampling and capacity-adapted forest coordinates",
+      "source_family": "115",
+      "source_collection": "openai/math",
+      "batch_id": "B049",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000271",
+        "P-000272"
+      ],
+      "instrument_ids": [
+        "MI-000492",
+        "MI-000493"
+      ],
+      "headline": "The sources claim exact uniform sampling for arbitrary contingency-table margins and an FPRAS with arbitrary individual cell bounds.",
+      "central_instrument": "A rare residual branch removes an approximate sampler error exactly. A maximum-capacity forest prevents free-coordinate perturbations from being amplified relative to tree capacities.",
+      "novelty_assessment": "Explicit antecedents are Gobel-Liu-Manurangsi-Pappik for exact correction and Cryan-Dyer-Randall for capacity-weighted spanning trees.",
+      "formalization_summary": "The supplied target includes exact expected-polynomial sampling, bounded-time approximate sampling, and cell-bounded approximate counting, with binary encoded margins and freely varying dimensions. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Residual probabilities require pointwise domination and exact distribution tabulation. Small-edge row and column incidences may disagree and must be retained separately in forest cut sums.",
+      "dependencies": "Finite dyadic laws, exact integer sampling and expected-cost accounting; forest elimination, maximum-spanning-tree exchange and normalized piecewise-linear penalties.",
+      "antecedents": "Gobel-Liu-Manurangsi-Pappik arXiv:2410.00882v2 Section 3.1; Cryan-Dyer-Randall Section 2.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-115.md",
+      "body": "# Exact residual sampling and capacity-adapted forest coordinates\n\n## Source manuscripts and claim\n\n- [Exact Uniform Sampling of Contingency Tables with Arbitrary Margins](../papers/P-000271.md): selected passages extracted.\n- [An FPRAS for Cell-Bounded Contingency Tables](../papers/P-000272.md): selected passages extracted.\n\nThe sources claim exact uniform sampling for arbitrary contingency-table margins and an FPRAS with arbitrary individual cell bounds.\n\n## Extracted instruments\n\n- [MI-000492: Correct a dyadic approximate sampler by a rare exact residual](../instruments/MI-000492.md)\n- [MI-000493: Choose a maximum-capacity forest before normalizing free variables](../instruments/MI-000493.md)\n\n## Dependencies and antecedents\n\nFinite dyadic laws, exact integer sampling and expected-cost accounting; forest elimination, maximum-spanning-tree exchange and normalized piecewise-linear penalties.\n\nGobel-Liu-Manurangsi-Pappik arXiv:2410.00882v2 Section 3.1; Cryan-Dyer-Randall Section 2.\n\n## Review and formalization scope\n\nRead the full exact-sampling residual proof and the full forest-coordinate lemma, including its cut identity and Lipschitz estimate. The source approximate samplers, tabulation complexity and global counting schemes remain outside these checks.\n\nThe supplied target includes exact expected-polynomial sampling, bounded-time approximate sampling, and cell-bounded approximate counting, with binary encoded margins and freely varying dimensions. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nResidual probabilities require pointwise domination and exact distribution tabulation. Small-edge row and column incidences may disagree and must be retained separately in forest cut sums.\n\n[Batch record](../../batches/B049/README.md)"
+    },
+    {
       "id": "openai-math-118",
       "record_type": "family",
       "title": "Competing tree quotas and conservative scalar packing encodings",
@@ -27617,6 +28204,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-118.md",
       "body": "# Competing tree quotas and conservative scalar packing encodings\n\n## Source manuscript and claim\n\n[Additive hardness and unbounded configuration gaps in bin packing](../papers/P-000112.md), by OpenAI, September 24, 2026.\n\nThe source claims unbounded additive gaps for both individual-copy and numerical-type configuration LPs, and NP-hardness of every fixed additive approximation gap in one-dimensional bin packing.\n\n## Extracted instruments\n\n- [MI-000182: Two trees separate individual multiple hits from shared one-hit quotas](../instruments/MI-000182.md)\n- [MI-000183: Scalar packing encodings retain a bounded defect budget through conservation](../instruments/MI-000183.md)\n\n## Dependencies and antecedents\n\nFinite rooted trees with uncontracted depth levels; exponentially growing within-phase quotas; two-color pruning; ten bounded integer count equations; separated rational scales; equal label inventories and prefix conservation.\n\nChalermsook-Chuzhoy use disjoint-branch constructions for fire containment. Large-base aggregation is classical, with a recent bin-packing use by Jansen-Pirotton-Tutas. The selected cards retain these attributions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the competing-tree construction, scalar encoding proof, primary-defect count and label-prefix argument. The geometric coordinate construction, full soundness reduction, LP witness and complexity reductions were not audited.\n\nBinPackingGap.lean states the equal-LP unbounded gap, NP-hard gap reductions for every fixed nonnegative integer c, and existence of a fixed-additive polynomial algorithm iff P=NP, using explicit binary encodings and finite-alphabet machines. The scope documents and Comparator statements were compared; no Lean solution was built or kernel-checked. The auxiliary instruments are not separate certified Comparator results.\n\nThe LP statements distinguish physical copies from unrestricted numerical-type configurations. A feasible bin need not have an intended pattern; nonpositive primary scores and inventory conservation control the exceptions.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/118.md) · [Batch record](../../batches/B010/README.md)"
+    },
+    {
+      "id": "openai-math-119",
+      "record_type": "family",
+      "title": "Scaled binary curvature and bias-sensitive coordinate reduction",
+      "source_family": "119",
+      "source_collection": "openai/math",
+      "batch_id": "B049",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000273",
+        "P-000274"
+      ],
+      "instrument_ids": [
+        "MI-000494",
+        "MI-000495"
+      ],
+      "headline": "The sources claim sharp binary-information contraction and Hellinger contraction for arbitrary Boolean output bias.",
+      "central_instrument": "A two-moment integral representation controls the scaled curvature of binary entropy production. Compression and a four-coordinate rearrangement bound reduce Boolean induction to a restricted scalar domain.",
+      "novelty_assessment": "Compression has an explicit ABCJN antecedent. The scalar estimates and coordinate envelope are source mechanisms, with no independent claim of historical priority or certification of either global contraction theorem.",
+      "formalization_summary": "The supplied scope and targets address Courtade-Kumar, sharp soft-channel contraction and selected entropy production. They do not supply a separate Hellinger companion target. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Binary entropy L-psi and the Hellinger square-root profile are different functions. The curvature variable is remaining entropy h; the coordinate envelope requires an increasing Boolean function with at least four active coordinates.",
+      "dependencies": "One-variable differentiation, positive integral representations, covariance monotonicity, Jensen; positive cube noise, concavity and the distribution of four independent signs.",
+      "antecedents": "Classical binary entropy production; Anantharam-Bogdanov-Chakrabarti-Jayram-Nair Proposition 2 for monotone compression.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-119.md",
+      "body": "# Scaled binary curvature and bias-sensitive coordinate reduction\n\n## Source manuscripts and claim\n\n- [Sharp binary-information contraction on the discrete cube](../papers/P-000273.md): selected passages extracted.\n- [Hellinger contraction with arbitrary Boolean output bias](../papers/P-000274.md): selected passages extracted.\n\nThe sources claim sharp binary-information contraction and Hellinger contraction for arbitrary Boolean output bias.\n\n## Extracted instruments\n\n- [MI-000494: Control binary entropy-production curvature through two moments](../instruments/MI-000494.md)\n- [MI-000495: Compress a Boolean function and choose a bias-controlled small coordinate](../instruments/MI-000495.md)\n\n## Dependencies and antecedents\n\nOne-variable differentiation, positive integral representations, covariance monotonicity, Jensen; positive cube noise, concavity and the distribution of four independent signs.\n\nClassical binary entropy production; Anantharam-Bogdanov-Chakrabarti-Jayram-Nair Proposition 2 for monotone compression.\n\n## Review and formalization scope\n\nRead the full scalar convexity and scaled-curvature proofs, and the full compression and small-coordinate proofs in the companion. The dimension inductions, finite scalar certificates and continuation arguments establishing global claims were not certified.\n\nThe supplied scope and targets address Courtade-Kumar, sharp soft-channel contraction and selected entropy production. They do not supply a separate Hellinger companion target. The scope document and all linked Comparator definitions and target statements were read. The selected targets contain sorry; no solution or Lean project was built.\n\nBinary entropy L-psi and the Hellinger square-root profile are different functions. The curvature variable is remaining entropy h; the coordinate envelope requires an increasing Boolean function with at least four active coordinates.\n\n[Batch record](../../batches/B049/README.md)"
     },
     {
       "id": "openai-math-120",
