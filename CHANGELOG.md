@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B069: 8 selected instruments from 4 families and 8 manuscripts. Add eight scoped instruments for uniform interpolation, weighted infinitude, explicit polynomial stabilization and lifting, metric and bundle transport, and full numerical charges.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B068: 8 selected instruments from 4 families and 8 manuscripts. Add eight scoped instruments on nef mass, Picard descent, Gauss volumes, Hilbert frequencies, universal interpolation, jet degeneration, prolongations and hyperkahler rotation.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B067: 8 selected instruments from 4 families and 8 manuscripts. Height pseudoinverses, elliptic torsion graphs, section norms, semiampleness descent, Hodge deficits, constants and p-curvature. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

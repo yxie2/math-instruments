@@ -70,8 +70,9 @@
 | [B066](B066/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Ramification support, Euler exponents, totient fibers, size bias, weighted jets, compact conjugators, entropy and local Fourier duality |
 | [B067](B067/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Height pseudoinverses, elliptic torsion graphs, section norms, semiampleness descent, Hodge deficits, constants and p-curvature |
 | [B068](B068/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Add eight scoped instruments on nef mass, Picard descent, Gauss volumes, Hilbert frequencies, universal interpolation, jet degeneration, prolongations and hyperkahler rotation. |
+| [B069](B069/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Add eight scoped instruments for uniform interpolation, weighted infinitude, explicit polynomial stabilization and lifting, metric and bundle transport, and full numerical charges. |
 
-Future rounds use `B069` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B070` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
