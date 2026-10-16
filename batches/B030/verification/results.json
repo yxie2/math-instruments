@@ -1,0 +1,52 @@
+{
+  "batch": "B030",
+  "status": "passed",
+  "check_groups": {
+    "crossing_duality": {
+      "primal_and_convex_hull_models": 36,
+      "maximum_residual": 1.3322676295501878e-15,
+      "scope": "Finite crossing families and column blockers, not the planar limiting construction."
+    },
+    "tree_energy": {
+      "finite_tree_levels": 360,
+      "scope": "Conservation and Jensen bound; does not construct the source infinite probability flow."
+    },
+    "localized_degree_algebra": {
+      "torus_fiber_counts": 45,
+      "complex_normal_determinants": 60,
+      "scope": "Checks algebraic inputs only; equivariant perturbations and local mapping degree are not computed."
+    },
+    "quadratic_relators": {
+      "quaternion_count_cancellation_models": 240,
+      "maximum_error_over_bound": 0.14023325444514614,
+      "scope": "Exact signed multiplicities imposed as inputs; no cellular boundary basis or finite quotient constructed."
+    },
+    "rank_certificates": {
+      "integer_matrix_models": 74,
+      "observed_rank_drops": 6,
+      "regular_block_models": 6,
+      "scope": "Block tests deliberately use characteristic q=D dividing the finite group order."
+    },
+    "line_certificates": {
+      "exact_finite_field_tensor_models": 60,
+      "omit_all_marked_points_control": "fails as expected",
+      "scope": "Interpolation certificate only; no triangle-complex presentation verified."
+    },
+    "density_speed": {
+      "product_quadrature_models": 48,
+      "maximum_identity_error": 2.7000623958883807e-13,
+      "moments": {
+        "A": "39/10",
+        "B": "13/20",
+        "C": "1/15"
+      },
+      "scope": "Polynomial compact density has C2 square root, adequate for these integrals but not the source C-infinity assumption. Does not establish the partition coupling."
+    },
+    "reiter_folner": {
+      "non_normal_subgroup_pushforward_models": 60,
+      "exact_layer_cake_models": 30,
+      "scope": "Finite equivariance and layer-cake identities, not an independent amenability proof."
+    }
+  },
+  "limitations": "Selected finite mechanisms only. No Cannon, Eilenberg-Ganea, non-residual-finiteness or simple amenability claim certified; no Lean build."
+}

@@ -46,7 +46,9 @@
 
 | [B029](B029/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Positive loop means, transverse jets, prescribed curvature, smooth accumulation, rearrangements, relative Moser fields and interval certificates |
 
-Future rounds use `B030` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B030](B030/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Crossing duality, local word degree, quaternion cancellation, modular rank, line certificates, density speed and Folner extraction |
+
+Future rounds use `B031` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

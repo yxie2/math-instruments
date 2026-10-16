@@ -14386,6 +14386,385 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000343.md",
       "body": "# Certify positivity between rational knots using an upper curvature bound\n\n[Family 354](../families/openai-math-354.md) · [Source manuscript](../papers/P-000190.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nIf f has upper second derivative bound K on [a,b], then f-Kh^2/2 is concave and\n\n$$f(h)\\ge\\frac{b-h}{b-a}f(a)+\\frac{h-a}{b-a}f(b)-\\frac K2(h-a)(b-h)\\ge\\min(f(a),f(b))-\\frac{K(b-a)^2}{8}.$$\n\nThus endpoint lower bounds alone are insufficient; a quantified curvature loss certifies the whole interval. The source has 24 rational knots from 0.64 to 2.25. With b_h,s_h its tabulated integer lower bounds, chi=1 for intervals contained in [1.02,1.62] and zero otherwise, it uses\n\n$$M_{a,b}=\\min_{h=a,b}\\left\\{\\frac{b_h+\\chi s_h}{10^5}-E(h)\\right\\}-\\frac{K(b-a)^2}{8},$$\n\nwhere K=2.4 inside and 2/a^2 outside, E(h)=.008 max(D_+/h-b_-,0)^4, D_+=.989743318611, b_-=1-1/pi_-, and pi_-=3.14159265358979. Exact rational arithmetic verifies all 23 displayed interval margins. The smallest is 9/100000, on [1.42,1.46] and [1.46,1.50].\n\nThe arithmetic prescription uses fixed denominator 10^40, outward-rounded products and reciprocals, and integer square-root comparisons. An alternating arctangent series with Machin's formula proves the input pi enclosure. These operations remain valid for dependent inputs, although enclosures may widen.\n\nThis extraction checks the interpolation table conditional on the source knot lower bounds and upper second-derivative estimates. It does not independently reproduce the transcendental knot evaluations or prove those analytic curvature estimates.\n\n## Role in the source argument\n\nExtends a finite scalar certificate to the entire parameter range required by the source geometric exclusion.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [num:pi-interval](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L357)\n- [num:knot-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L437)\n- [num:chord](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L483)\n- [num:gap-formula](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L505)\n- [num:gap-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L522)\n\n## Antecedents and comparison\n\nThe chord-error estimate and outward arithmetic are classical rigorous-numerics tools. The reusable contribution here is a transparent, exactly reproducible conditional certificate using the source data.\n\n## Checks and limitations\n\nAll 23 rational interval claims pass, with exact minimum margin 9/100000. The Machin pi enclosure and 101 outward square-root models are checked with integer and rational arithmetic.\n\nThe endpoint and curvature bounds are inputs, not outputs of this script. Consequently the verified table is not a certification of the complete isoperimetric theorem.\n\n## Possible applications\n\nReplacing sampled numerical positivity by a proof covering every parameter value, once endpoint and derivative bounds have been established.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000344",
+      "record_type": "instrument",
+      "title": "Turn a minimum-norm mixture of crossings into dual weights",
+      "forms": [
+        "minimum-overlap-modulus-duality",
+        "crossing-blocker-weights"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-246"
+      ],
+      "source_paper_ids": [
+        "P-000191"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+          "label": "lem:planar-blocker",
+          "line": 62,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L62",
+          "sha256": "78892678a3d24824d94893f13d61a6dd16479c103ccee4c0b396967de276c1f1"
+        },
+        {
+          "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+          "label": "lem:dual-weights",
+          "line": 114,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L114",
+          "sha256": "78892678a3d24824d94893f13d61a6dd16479c103ccee4c0b396967de276c1f1"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "explicit-established-modulus-antecedent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000344.md",
+      "body": "# Turn a minimum-norm mixture of crossings into dual weights\n\n[Family 246](../families/openai-math-246.md) · [Source manuscript](../papers/P-000191.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet V be a finite family of nonzero nonnegative crossing-incidence vectors, and let P minimize squared Euclidean norm over conv(V). Then P is nonzero and the projection inequality gives <P,v> >= ||P||^2 for every v in V. Consequently rho=P/||P||^2 is admissible for the modulus problem min ||rho||^2 subject to <rho,v>>=1.\n\nConversely, an admissible omega has <omega,P>>=1, so Cauchy-Schwarz gives ||omega||^2>=1/||P||^2. Thus the modulus is exactly 1/||P||^2.\n\nIf every opposite crossing u intersects every v, so <u,v>>=1, then <u,P>>=1. The same P is therefore admissible for the opposite family, with energy equal to the reciprocal of the first modulus. This proves an upper bound on the opposite modulus; equality requires an additional duality statement. In the source, the planar blocker lemma supplies the intersection property after localization to a rectangle.\n\n## Role in the source argument\n\nConverts large crossing modulus into small separating weights for the scalar construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:planar-blocker](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L62)\n- [lem:dual-weights](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L114)\n\n## Antecedents and comparison\n\nThe minimum-overlap formula and optimizer relation are [Albin and Poggi-Corradini, Theorem 5.1](https://arxiv.org/pdf/1605.08462). The extracted proof is a concise convex-projection version with a crossing-intersection application.\n\n## Checks and limitations\n\nThirty-six grid-family models solve the density problem and independently find a convex decomposition of its normalized optimizer. The maximum residual is below 1.4e-15.\n\nThe finite models do not verify the planar limiting or scalar-limit constructions.\n\n## Possible applications\n\nDiscrete extremal length, crossing-energy certificates and convex mixtures of combinatorial objects.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000345",
+      "record_type": "instrument",
+      "title": "Use a tree energy budget to bound the frequency of unfavorable ancestors",
+      "forms": [
+        "tree-energy-jensen",
+        "good-level-frequency"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-246"
+      ],
+      "source_paper_ids": [
+        "P-000191"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+          "label": "eq:level-energy",
+          "line": 406,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L406",
+          "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+        },
+        {
+          "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+          "label": "eq:flow",
+          "line": 418,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L418",
+          "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+        },
+        {
+          "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+          "label": "lem:good-levels",
+          "line": 428,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L428",
+          "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-jensen-argument-with-probability-flow-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000345.md",
+      "body": "# Use a tree energy budget to bound the frequency of unfavorable ancestors\n\n[Family 246](../families/openai-math-246.md) · [Source manuscript](../papers/P-000191.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet P_i be the masses of a probability flow at level n of a rooted tree. Let m_i count bad ancestors among levels 0 through n-1. Suppose a>1, D>0, b>0, tau>0, and positive sizes Delta_i satisfy\n\n$$\\sum_{|i|=n}\\Delta_i^2\\le E_0,\\qquad \\Delta_i^2\\ge\\Delta_0^2P_i a^{D((b+\\tau)m_i-\\tau n)}.$$\n\nJensen inequality for the exponential yields\n\n$$\\frac1n\\sum_{|i|=n}P_i m_i\\le\\frac{\\tau}{b+\\tau}+\\frac{\\log_a(E_0/\\Delta_0^2)}{D(b+\\tau)n}.$$\n\nConservation of probability identifies the sum on the left with the average bad mass of the first n levels. Thus the bad mass cannot stay above any theta>tau/(b+tau) at all sufficiently large levels. For the source choice b=10 tau, infinitely many levels have good mass at least one half. This does not say that every late level is good; rare unfavorable levels are compatible with an average bound.\n\n## Role in the source argument\n\nFinds infinitely many levels on which the geometric good-node comparison can be applied to substantial probability mass.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:level-energy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L406)\n- [eq:flow](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L418)\n- [lem:good-levels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L428)\n\n## Antecedents and comparison\n\nThis is a standard exponential-moment/Jensen estimate. The extracted contribution is the precise tree conservation bookkeeping and the distinction between average frequency and pointwise levels.\n\n## Checks and limitations\n\nThree hundred sixty finite binary-tree levels verify the ancestor-count identity and the Jensen bound.\n\nThe transition probabilities, geometric energy bounds and infinite tree are hypotheses, not outputs of these tests.\n\n## Possible applications\n\nStopping-time arguments and multiscale constructions with a bounded energy budget.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000346",
+      "record_type": "instrument",
+      "title": "Localize SU(2) word-map degree by cyclic conjugation",
+      "forms": [
+        "localized-word-map-degree",
+        "prime-orbit-degree-count"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-249"
+      ],
+      "source_paper_ids": [
+        "P-000192"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex",
+          "label": "lem:localized-degree",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex#L17",
+          "sha256": "281d2236acb9ee4e62915ae635813324a438a0a77d97dc23fe867fa991be5963"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "specific-localization-of-classical-word-map-degree-priority-unresolved",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000346.md",
+      "body": "# Localize SU(2) word-map degree by cyclic conjugation\n\n[Family 249](../families/openai-math-249.md) · [Source manuscript](../papers/P-000192.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet f:SU(2)^m -> SU(2)^m be a coefficient-free word map with nonsingular integer exponent-sum matrix B. Let O be open, invariant under simultaneous conjugation, contain the identity and have boundary disjoint from f^{-1}(1). If b is the number of roots of the maximal-torus restriction in O, then\n\n$$\\deg(f,O,1)=b\\,\\operatorname{sign}(\\det B)\\ne0.$$\n\nThe torus map has |det B| roots, each with tangent sign sign(det B), and b>=1. For an odd prime p>b, conjugation by exp(2 pi i/p) acts freely away from the torus. At a fixed root its tangent representation is R^m plus C^m; equivariance makes the normal derivative complex linear. A small invariant normal perturbation N+sI makes it invertible without changing the torus map. Its real determinant is positive, so the full local sign remains sign(det B).\n\nProtect these fixed-root neighborhoods. Ordinary parameterized bump perturbations on the remaining free-action charts, propagated to their p translates, make every remaining zero regular while preserving the isolating boundary. Nonfixed zeros occur in p-point orbits of equal sign. Therefore the selected degree is congruent to b sign(det B) modulo p. Repeating for arbitrarily large odd primes gives the stated integer equality. The no-variable case is the identity of a point, of degree one.\n\n## Role in the source argument\n\nKeeps a solution inside a specified component region of word equations as coefficients are subsequently varied without a boundary crossing.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:localized-degree](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex#L17)\n\n## Antecedents and comparison\n\n[Frøyshov 2013, Proposition 2.1](https://arxiv.org/pdf/1304.0936) states the Gerstenhaber-Rothaus global degree formula. That statement alone does not locate a solution in an arbitrary invariant isolating region. No exhaustive priority search for this localization was completed.\n\n## Checks and limitations\n\nForty-five exact torus-fiber counts and sixty exact complex-to-real determinant identities check algebraic ingredients.\n\nThe tests do not compute local degree or certify the equivariant perturbation argument, and do not establish the source Eilenberg-Ganea conclusion.\n\n## Possible applications\n\nLocalized continuation for equivariant word systems with nonsingular exponent sums.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000347",
+      "record_type": "instrument",
+      "title": "Convert exact translated relator counts into a uniform quadratic error",
+      "forms": [
+        "translated-relator-cancellation",
+        "quadratic-noncommutative-error"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-249"
+      ],
+      "source_paper_ids": [
+        "P-000192"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+          "label": "lem:exact-counts",
+          "line": 191,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L191",
+          "sha256": "9929a7cc140224b9a88ce20eb4b84471d97e4c704955b2a4f6503d2a3f1af570"
+        },
+        {
+          "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+          "label": "lem:quadratic-estimate",
+          "line": 225,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L225",
+          "sha256": "9929a7cc140224b9a88ce20eb4b84471d97e4c704955b2a4f6503d2a3f1af570"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "exact-chain-bookkeeping-with-classical-small-commutator-estimates",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000347.md",
+      "body": "# Convert exact translated relator counts into a uniform quadratic error\n\n[Family 249](../families/openai-math-249.md) · [Source manuscript](../papers/P-000192.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nIn an aligned cellular presentation, an expression z=product_j u_j r_j^{sigma_j} u_j^{-1} has the exact translated chain identity sum_j sigma_j bar(u_j)e_{r_j}=e_{rho_z}. The boundary-basis isomorphism is what upgrades equality of boundary chains to equality of these coefficients.\n\nEvaluate relators as unit quaternions. Suppose every defect has distance at most h from one, each conjugating word has distance at most K(epsilon+h) from one, ordinary relators evaluate exactly to one, and the exact translated signed multiplicities leave one distinguished defect. Removing conjugations costs at most 2nK(epsilon+h)h. Reordering at most n(n-1)/2 pairs costs at most n(n-1)h^2, since |ab-ba|<=2|a-1||b-1|. Equal factors with opposite exponents now cancel exactly. Hence\n\n$$|L(z,v)-L(\\rho_z,v)|\\le2nK(\\epsilon+h)h+n(n-1)h^2.$$\n\nThe original short word in epsilon-small generators also satisfies |L(z,v)-1|<=length(z) epsilon by telescoping. Constants depend on finitely many fixed words, not on the size of the finite quotient. Collisions of translated vertices in a quotient add their coefficients and preserve the exact identity.\n\n## Role in the source argument\n\nControls the distinguished relator defects uniformly over finite quotients in the presentation comparison.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:exact-counts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L191)\n- [lem:quadratic-estimate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L225)\n\n## Antecedents and comparison\n\nThe quaternion commutator estimate is elementary. The useful source interface is the exact translated cellular count, without which an uncancelled first-order term can remain.\n\n## Checks and limitations\n\nTwo hundred forty noncommuting quaternion models satisfy the stated bound; an uncancelled-factor control has first-order size.\n\nThe verification imposes the signed-count identity as an input and does not construct an aligned presentation or its boundary-basis isomorphism.\n\n## Possible applications\n\nUniform perturbative estimates for products of conjugates and finite-quotient word equations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000348",
+      "record_type": "instrument",
+      "title": "Retain matrix rank modulo a prime using row norms and determinant divisibility",
+      "forms": [
+        "rank-under-prime-reduction",
+        "regular-block-stable-rank"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-252"
+      ],
+      "source_paper_ids": [
+        "P-000193"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "lem:rank-reduction",
+          "line": 185,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L185",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:trace-first",
+          "line": 212,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L212",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:trace-second",
+          "line": 213,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L213",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:rank-lower",
+          "line": 228,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L228",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-determinant-and-trace-tools-with-quotient-uniform-constants",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000348.md",
+      "body": "# Retain matrix rank modulo a prime using row norms and determinant divisibility\n\n[Family 252](../families/openai-math-252.md) · [Source manuscript](../papers/P-000193.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet M be an integer matrix with every row of Euclidean norm at most sqrt(r), where r>=1. For a prime q>r, put d=rank_R(M). A nonzero d-by-d minor B has |det B|<=r^{d/2}. If its rank modulo q is e, row elimination modulo q lifts to integer row operations making d-e rows divisible by q. Hence q^{d-e} divides det B, and\n\n$$\\operatorname{rank}_{\\mathbb F_q}M\\ge d\\left(1-\\frac{\\log r}{2\\log q}\\right)\\ge d/2.$$\n\nFor an r-by-r block matrix Y of D-dimensional regular permutation matrices, assume all nondegenerate rectangle words are nonidentity. A regular permutation has trace zero unless it is the identity, giving tr(YY^T)=r^2D and tr((YY^T)^2)=(2r^3-r^2)D. Cauchy-Schwarz on the nonzero eigenvalues yields rank_R(Y)>=r^2D/(2r-1)>=rD/2. Each row has squared norm r, so rank_Fq(Y)>=rD/4. No assumption q does not divide D is used.\n\n## Role in the source argument\n\nSupplies a lower rank bound uniform over finite quotient sizes, including characteristic dividing that size.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:rank-reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L185)\n- [eq:trace-first](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L212)\n- [eq:trace-second](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L213)\n- [eq:rank-lower](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L228)\n\n## Antecedents and comparison\n\nThe proof combines standard minor divisibility, Hadamard inequality and the trace form of stable rank. Its quotient-uniform characteristic choice is the useful application detail.\n\n## Checks and limitations\n\nSeventy-four integer-matrix models include six actual rank drops. Six regular-block models verify both trace identities and use q=D, explicitly allowing characteristic to divide the group order.\n\nThe rectangle-word nonidentity condition is an input. The tests do not establish it in the source infinite group.\n\n## Possible applications\n\nRank estimates in modular representations without semisimplicity assumptions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000349",
+      "record_type": "instrument",
+      "title": "Assemble a block diagonal rank certificate from low-degree punctured-line weights",
+      "forms": [
+        "punctured-line-interpolation",
+        "tensor-rank-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-252"
+      ],
+      "source_paper_ids": [
+        "P-000193"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:matrix-factorization",
+          "line": 244,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L244",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:rank-upper",
+          "line": 250,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L250",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:line-certificate",
+          "line": 273,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L273",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        },
+        {
+          "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+          "label": "eq:tensor-certificate",
+          "line": 279,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L279",
+          "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-interpolation-and-power-sums-with-explicit-incidence-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000349.md",
+      "body": "# Assemble a block diagonal rank certificate from low-degree punctured-line weights\n\n[Family 252](../families/openai-math-252.md) · [Source manuscript](../papers/P-000193.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nChoose distinct marks a_i in S^h over F_q and product Lagrange polynomials f_i of total degree at most h(|S|-1), with f_i(a_j)=delta_ij. Put H(z)=f(z)f(z)^T, so rank H<=1 and H(a_i)=E_ii. Assume 2h(|S|-1)<q-1.\n\nOn each affine line every entry of H has degree less than q-1 and sums to zero over the field. If line i is punctured only at a_i, then sum_{z on punctured line i}H(z)=-E_ii. For arbitrary equally sized matrices Y_i and Z(z)=sum_{i incident at z}Y_i, exchanging finite sums gives\n\n$$\\sum_z H(z)\\otimes Z(z)=-\\bigoplus_iY_i.$$\n\nTherefore sum_i rank(Y_i)<=sum_z rank(Z(z)). If there are N blocks with rank at least rD/4, at most m points, and local ranks at most 2D except on E where the ambient bound rD is used, then NrD/4<=2mD+r|E|D. Dividing by D leaves a certificate independent of the quotient size.\n\nOther marked points on a line must remain in its incidence sum. Removing all marks changes the line sum and generally destroys the block diagonal identity.\n\n## Role in the source argument\n\nTurns local factorizations into a global contradiction when the independent combinatorial parameters beat the rank budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:matrix-factorization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L244)\n- [eq:rank-upper](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L250)\n- [eq:line-certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L273)\n- [eq:tensor-certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L279)\n\n## Antecedents and comparison\n\nThis is a concrete assembly of Lagrange interpolation, finite-field power sums and subadditivity of rank. The extraction makes the puncture convention and exceptional-point terms explicit.\n\n## Checks and limitations\n\nSixty exact finite-field tensor models verify the identity and rank inequality. Deleting every marked point instead of only the own mark fails a control case.\n\nThe small local ranks and source incidence budget are conditional inputs; the source triangle-complex construction is not certified.\n\n## Possible applications\n\nLocal-to-global rank obstructions and finite-field incidence certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000350",
+      "record_type": "instrument",
+      "title": "Bound affine product-density perturbations independently of dimension",
+      "forms": [
+        "square-root-density-speed",
+        "whole-field-total-variation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-253"
+      ],
+      "source_paper_ids": [
+        "P-000194"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+          "label": "lem:am-density-speed",
+          "line": 402,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L402",
+          "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+        },
+        {
+          "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+          "label": "prop:am-field-covariance",
+          "line": 446,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L446",
+          "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+        },
+        {
+          "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+          "label": "eq:am-resolvent",
+          "line": 474,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L474",
+          "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-product-score-orthogonality-with-explicit-affine-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000350.md",
+      "body": "# Bound affine product-density perturbations independently of dimension\n\n[Family 253](../families/openai-math-253.md) · [Source manuscript](../papers/P-000194.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet independent coordinates xi_i have density f^2, where f is nonnegative, even, smooth, supported on [-1,1], positive inside and normalized in L2. For differentiable positive-determinant invertible T_t and means mu_t, let p_t be the density of mu_t+T_t xi. Set L=T_t^{-1}dot(T_t), v=T_t^{-1}dot(mu_t). Pullback gives the derivative norm of (Lx+v) dot grad F+(tr L)F/2, where F=product_i f(x_i).\n\nWrite A=int(f')^2, C=int x^2f^2 and B=int(xf'+f/2)^2. Integration by parts and parity give the exact squared norm\n\n$$A\\|v\\|^2+B\\sum_iL_{ii}^2+AC\\sum_{i\\ne j}L_{ij}^2+\\tfrac12\\sum_{i<j}L_{ij}L_{ji}.$$\n\nIndeed centered single-coordinate terms are orthogonal, and off-diagonal terms interact only for the same unordered coordinate pair. Thus it is bounded by K(||L||_HS^2+||v||^2), where K=max(A,B,AC+1/4), independent of dimension.\n\nFor T_t interpolating between identity-plus-positive-semidefinite matrices, let Delta=T_1-T_0 and h=mu_1-mu_0. The inverse norm is at most one and T_t^{-1}h=(I-tT_t^{-1}Delta)T_0^{-1}h. Integration gives square-root density distance at most sqrt(K)(||Delta||_HS+(1+||Delta||_op)||T_0^{-1}h||). Total variation is at most this distance. If all changed coordinates lie in one finite block and the outside independent factor is exactly common, this is a bound on the whole field. Thresholding contracts total variation.\n\n## Role in the source argument\n\nAllows the number of sites to grow without a dimension factor in the law comparison used for random partitions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:am-density-speed](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L402)\n- [prop:am-field-covariance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L446)\n- [eq:am-resolvent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L474)\n\n## Antecedents and comparison\n\nThis is a product-score/Hellinger calculation. The exact expanded moment formula is an extraction of the source orthogonality argument, not a claim of a new general statistical metric.\n\n## Checks and limitations\n\nForty-eight product Gauss-quadrature models in dimensions one through four verify the expanded moment identity and bound, with maximum error below 2.8e-13.\n\nThe check density uses a C2 compact polynomial square root, sufficient for its finite integrals but weaker than the source smooth hypothesis. The averaging matrices and partition coupling remain inputs.\n\n## Possible applications\n\nDimension-independent perturbation bounds for affine product noise and common-background random fields.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000351",
+      "record_type": "instrument",
+      "title": "Push approximate invariance to a subgroup and extract a finite Folner set",
+      "forms": [
+        "equivariant-coset-projection",
+        "reiter-layer-cake-folner"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-253"
+      ],
+      "source_paper_ids": [
+        "P-000194"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+          "label": "eq:am-reiter",
+          "line": 780,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L780",
+          "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+        },
+        {
+          "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+          "label": "lem:am-reiter-folner",
+          "line": 791,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L791",
+          "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+        }
+      ],
+      "batch_id": "B030",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-reiter-folner-construction-with-subgroup-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000351.md",
+      "body": "# Push approximate invariance to a subgroup and extract a finite Folner set\n\n[Family 253](../families/openai-math-253.md) · [Source manuscript](../papers/P-000194.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet H be a subgroup of a countable group J. Choose right-coset representatives t for Ht and write x=ht uniquely. Then pi(x)=h satisfies pi(kx)=k pi(x) for k in H. Pushing a probability nu forward to p=pi_*nu contracts every translation error: ||kp-p||_1<=||k nu-nu||_1.\n\nChoose finite E with p(E) close to one and normalize q=p 1_E/p(E). The exact truncation error is ||q-p||_1=2(1-p(E)), so the sum of errors for a finite set K grows by at most 4|K|(1-p(E)). Starting from sufficiently small errors makes sum_k||kq-q||_1<epsilon.\n\nFor the finite superlevel sets A_t={q>t}, layer cake gives int |A_t| dt=1 and int sum_k |kA_t symmetric-difference A_t| dt=sum_k||kq-q||_1. Consequently some nonempty finite A_t has summed boundary less than epsilon |A_t|. For empty K any singleton works. The source obtains the input probability from uniform shape-preserving matchings under a separately proved partition coupling.\n\n## Role in the source argument\n\nConverts the source approximate random matching invariance into finite Folner sets, including inheritance by subgroups.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:am-reiter](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L780)\n- [lem:am-reiter-folner](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L791)\n\n## Antecedents and comparison\n\nThis is the classical Reiter-to-Folner layer-cake argument, with an explicit right-coset projection and truncation budget. It is not a new amenability criterion.\n\n## Checks and limitations\n\nSixty rational probability models use a nonnormal subgroup of S3 and verify equivariance and contraction. Thirty exact finite distributions on the integers verify both layer-cake identities.\n\nThe tests do not produce the source almost-invariant partition laws, nor verify finite presentation or simplicity.\n\n## Possible applications\n\nConstructive extraction of finite approximate invariants from countably supported measures.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -17998,6 +18377,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000190.md",
       "body": "# The Isoperimetric Conjecture for the Cubic Flat Three-Torus\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the full isoperimetric profile and all minimizers of the unit cubic flat three-torus, including both equality classes at the ball-tube and tube-slab transitions.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000342: Use a convex flux defect instead of substituting a mean pointwise](../instruments/MI-000342.md)\n- [MI-000343: Certify positivity between rational knots using an upper curvature bound](../instruments/MI-000343.md)\n\n## Dependencies and review\n\nJensen convexity, a nonincreasing minorant, coarea, scalar concavity after subtracting a quadratic and rational outward arithmetic.\n\nRead the complete integrated-flux proof and the outward-arithmetic/interpolation section. The geometric reduction, endpoint transcendental evaluations, analytic second-derivative bounds and final equality classification were not audited.\n\nRead CubicTorus.lean and its scope. It uses the unit flat quotient torus, De Giorgi perimeter for arbitrary finite-perimeter regions, null-set equivalence, attainment, and all equality cases at 4pi/81 and 1/pi, including complements. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\n[Family context](../families/openai-math-354.md) · [Batch B029](../../batches/B029/README.md)"
+    },
+    {
+      "id": "P-000191",
+      "record_type": "paper",
+      "title": "A Modulus Proof of Cannon’s Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-246"
+      ],
+      "batch_id": "B030",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8bd273b1a4da04baa0c8be80d28bb59d69ffa24b5d5feb3f7ec9751fcfb9fa42",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000191.md",
+      "body": "# A Modulus Proof of Cannon’s Conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that a word-hyperbolic group with two-sphere boundary admits a proper cocompact isometric action on hyperbolic three-space with finite kernel.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000344: Turn a minimum-norm mixture of crossings into dual weights](../instruments/MI-000344.md)\n- [MI-000345: Use a tree energy budget to bound the frequency of unfavorable ancestors](../instruments/MI-000345.md)\n\n## Dependencies and review\n\nFinite-dimensional convex optimization, a planar crossing/blocker input, conservation of tree probability and Jensen inequality.\n\nRead the complete crossing/blocker and dual-weight proofs and the tree good-level proof. The scalar limit, magnification comparisons, capacity construction and global uniformization argument were not audited.\n\nRead CannonGeometricAction.lean. It defines thin Cayley triangles, a ray-quotient boundary and a proper cocompact action on the upper-half-space model, with finite kernel. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\n[Family context](../families/openai-math-246.md) · [Batch B030](../../batches/B030/README.md)"
+    },
+    {
+      "id": "P-000192",
+      "record_type": "paper",
+      "title": "A finitely generated counterexample to the Eilenberg–Ganea conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-249"
+      ],
+      "batch_id": "B030",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d713cfde5aa0c9c1fd01cf86798146efc83150bed279831aff27a3fb0d6d71a5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000192.md",
+      "body": "# A finitely generated counterexample to the Eilenberg–Ganea conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a finitely generated residually finite group of integral cohomological dimension two and geometric dimension three.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000346: Localize SU(2) word-map degree by cyclic conjugation](../instruments/MI-000346.md)\n- [MI-000347: Convert exact translated relator counts into a uniform quadratic error](../instruments/MI-000347.md)\n\n## Dependencies and review\n\nMapping degree, finite cyclic conjugation, ordinary finite-dimensional Sard perturbations, an aligned cellular boundary basis and unit-quaternion product estimates.\n\nRead the complete localized degree proof, exact translated-count proof and uniform quadratic estimate. The geometric seed, acyclic level model, arbitrary-presentation comparison and transport obstruction were not audited.\n\nRead EilenbergGanea.lean. Its explicit height-kernel group is required to be finitely generated and residually finite, have integral cohomological dimension two, admit a three-dimensional classifying CW space and admit no two-dimensional one. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\n[Family context](../families/openai-math-249.md) · [Batch B030](../../batches/B030/README.md)"
+    },
+    {
+      "id": "P-000193",
+      "record_type": "paper",
+      "title": "A torsion-free hyperbolic group that is not residually finite",
+      "source_collection": "openai/math",
+      "upstream_slug": "a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-252"
+      ],
+      "batch_id": "B030",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4fa8a48ef020a341393427aa5b08c4f87ab4b91aeff247b7b6357b8932171da3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000193.md",
+      "body": "# A torsion-free hyperbolic group that is not residually finite\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a torsion-free word-hyperbolic group that is not residually finite.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000348: Retain matrix rank modulo a prime using row norms and determinant divisibility](../instruments/MI-000348.md)\n- [MI-000349: Assemble a block diagonal rank certificate from low-degree punctured-line weights](../instruments/MI-000349.md)\n\n## Dependencies and review\n\nInteger minors, Hadamard inequality, finite-field elimination, regular permutation traces, Lagrange interpolation and rank subadditivity.\n\nRead the full rank-under-reduction proof and trace calculation, local factorization interface and global tensor certificate. The random incidence construction, link conditions and geometric hyperbolicity/torsion arguments were not audited.\n\nRead TorsionFreeHyperbolic.lean. The target requires absence of nontrivial finite-order elements, uniformly thin geodesic Cayley triangles and failure of residual finiteness. The manuscript nonlinearity corollary is not part of that target. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\n[Family context](../families/openai-math-252.md) · [Batch B030](../../batches/B030/README.md)"
+    },
+    {
+      "id": "P-000194",
+      "record_type": "paper",
+      "title": "An infinite finitely presented simple amenable group",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-253"
+      ],
+      "batch_id": "B030",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1b4be2fe9b0a580b94dcd907a3101f649032013925a09c53b87bcd4c24cb1e31",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000194.md",
+      "body": "# An infinite finitely presented simple amenable group\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an infinite finitely presented simple amenable group.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000350: Bound affine product-density perturbations independently of dimension](../instruments/MI-000350.md)\n- [MI-000351: Push approximate invariance to a subgroup and extract a finite Folner set](../instruments/MI-000351.md)\n\n## Dependencies and review\n\nDifferentiation of densities, integration by parts, independence and parity, resolvent identity, total variation contraction, finite truncation and layer cake.\n\nRead the full density-speed lemma, entire-field covariance proof, shape-matching conclusion and Reiter-to-Folner proof. The averaging-matrix estimates, partition coupling, finite presentation and simplicity constructions were not audited.\n\nRead SimpleAmenable.lean. Its target asks for one infinite finitely presented simple group with finite nonempty Folner sets for every finite set of translations and positive error. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\n[Family context](../families/openai-math-253.md) · [Batch B030](../../batches/B030/README.md)"
     }
   ],
   "families": [
@@ -20720,6 +21175,33 @@
       "body": "# Finite syntactic support and mixed-order fixed points in type systems\n\n## Source manuscript and claim\n\n[Weak and strong normalization in pure type systems](../papers/P-000158.md), by OpenAI, September 25, 2026.\n\nThe source claims that system-wide weak normalization implies system-wide strong normalization for every pure type system, allowing arbitrary sorts, nonfunctional axioms/rules and reduction inside annotations.\n\n## Extracted instruments\n\n- [MI-000278: Finite derivations retain a system-wide normalization counterexample in a finite specification](../instruments/MI-000278.md)\n- [MI-000279: Balanced signed dependencies turn mixed-variance equations into a Tarski operator](../instruments/MI-000279.md)\n\n## Dependencies and antecedents\n\nFinite typing derivations, capture-avoiding substitution, correctness of types, raw beta syntax, complete candidate lattices, signed dependency graphs and Tarski monotonicity.\n\nStandard pure-type-system metatheory and reducibility candidates; Tarski, A lattice-theoretical fixpoint theorem and its applications (1955), Theorem 1. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full finite-restriction proof, candidate lattice lemma and signed-component proof. The general observation interpretation, typed channels, relational diagonal construction and final exclusion theorem were not audited.\n\nRead TypeSystemNormalization.lean, including full annotated syntax, substitution, reduction, legality, weak and strong normalization and the unrestricted target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nWeak normalization is assumed for every legal expression, not for a single term. Conversion witness chains contribute to finite support. Parity counts negative dependency edges, and the signed fixed-point construction applies only when every closed walk in the component has even parity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/245.md) · [Batch record](../../batches/B021/README.md)"
     },
     {
+      "id": "openai-math-246",
+      "record_type": "family",
+      "title": "Crossing duality and energy-controlled probability flows",
+      "source_family": "246",
+      "source_collection": "openai/math",
+      "batch_id": "B030",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000191"
+      ],
+      "instrument_ids": [
+        "MI-000344",
+        "MI-000345"
+      ],
+      "headline": "The source claims that a word-hyperbolic group with two-sphere boundary admits a proper cocompact isometric action on hyperbolic three-space with finite kernel.",
+      "central_instrument": "A minimum-norm convex combination of crossing vectors supplies dual weights. A tree energy budget then bounds the average number of unfavorable ancestors by Jensen inequality.",
+      "novelty_assessment": "The convex-hull modulus formula is explicitly established in Albin and Poggi-Corradini, Theorem 5.1. The flow lemma is a reusable application of Jensen inequality; neither is a certification of the source Cannon claim.",
+      "formalization_summary": "Read CannonGeometricAction.lean. It defines thin Cayley triangles, a ray-quotient boundary and a proper cocompact action on the upper-half-space model, with finite kernel. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.",
+      "statement_faithfulness": "Crossing intersection yields an upper bound for the dual energy, not an automatic equality of two arbitrary crossing moduli. The flow conclusion provides infinitely many good levels rather than a uniform bound at every level.",
+      "dependencies": "Finite-dimensional convex optimization, a planar crossing/blocker input, conservation of tree probability and Jensen inequality.",
+      "antecedents": "Albin and Poggi-Corradini, Minimal subfamilies and the probabilistic interpretation for modulus on graphs, Theorem 5.1; classical blocking duality and Jensen inequality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-246.md",
+      "body": "# Crossing duality and energy-controlled probability flows\n\n## Source manuscript and claim\n\n[A Modulus Proof of Cannon’s Conjecture](../papers/P-000191.md), by OpenAI, September 23, 2026.\n\nThe source claims that a word-hyperbolic group with two-sphere boundary admits a proper cocompact isometric action on hyperbolic three-space with finite kernel.\n\n## Extracted instruments\n\n- [MI-000344: Turn a minimum-norm mixture of crossings into dual weights](../instruments/MI-000344.md)\n- [MI-000345: Use a tree energy budget to bound the frequency of unfavorable ancestors](../instruments/MI-000345.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional convex optimization, a planar crossing/blocker input, conservation of tree probability and Jensen inequality.\n\nAlbin and Poggi-Corradini, Minimal subfamilies and the probabilistic interpretation for modulus on graphs, Theorem 5.1; classical blocking duality and Jensen inequality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete crossing/blocker and dual-weight proofs and the tree good-level proof. The scalar limit, magnification comparisons, capacity construction and global uniformization argument were not audited.\n\nRead CannonGeometricAction.lean. It defines thin Cayley triangles, a ray-quotient boundary and a proper cocompact action on the upper-half-space model, with finite kernel. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nCrossing intersection yields an upper bound for the dual energy, not an automatic equality of two arbitrary crossing moduli. The flow conclusion provides infinitely many good levels rather than a uniform bound at every level.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/246.md) · [Batch record](../../batches/B030/README.md)"
+    },
+    {
       "id": "openai-math-248",
       "record_type": "family",
       "title": "Thompson’s group F is not amenable",
@@ -20749,6 +21231,87 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-248.md",
       "body": "# Thompson’s group F is not amenable\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000073](../papers/P-000073.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, conceptual, F defined from scratch new use, leaning new\n\nF admits no positive normalized left-invariant mean, settling Geoghegan’s 1979 question in five pages. The formal statement defines F as dyadic piecewise-linear homeomorphisms and the invariant mean on $`\\ell^\\infty(F)`$; it gives no finite certificate, and the constants are existential.\n\n## Extracted instruments.\n\n- [MI-000047: Recursive Hilbert-ball-valued coloring of dyadic partitions](../instruments/MI-000047.md)\n\n- [MI-000048: Benyamini–Sternfeld displacement map as an amenability obstruction](../instruments/MI-000048.md)\n\n- [MI-000049: Correlation comparison via pair transport](../instruments/MI-000049.md)\n\n## Reused.\n\nFølner’s criterion (formalized forward direction); Cannon–Floyd–Parry partition model; Benyamini–Sternfeld; convexity of the square norm.\n\n## Caveats.\n\nThe five-page argument addresses Geoghegan’s amenability question. The pointwise and averaged estimates above were compared with the source; this check does not certify the full proof. A direct invariant-mean argument can fail because a fixed partition level may have measure zero. The source instead chooses a finite averaging set A first and selects the level afterwards. Other OpenAI preprints are used only for corollaries.\n\n## Recorded assessment\n\n- Novelty: new use; leaning new\n- Formalization: yes, F from scratch\n- Statement coverage: yes\n- Dependencies: corollaries only\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-249",
+      "record_type": "family",
+      "title": "Local degree and quadratic cancellation for word equations",
+      "source_family": "249",
+      "source_collection": "openai/math",
+      "batch_id": "B030",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000192"
+      ],
+      "instrument_ids": [
+        "MI-000346",
+        "MI-000347"
+      ],
+      "headline": "The source claims a finitely generated residually finite group of integral cohomological dimension two and geometric dimension three.",
+      "central_instrument": "Cyclic conjugation localizes word-map degree to an invariant isolating set. Exact translated relator counts suppress first-order errors in products of conjugated small quaternion defects.",
+      "novelty_assessment": "Global word-map degree is classical Gerstenhaber-Rothaus theory. The selected invariant-fiber localization is more specific than that global formula; a targeted comparison does not establish first priority. The cancellation mechanism combines exact chain counts with elementary quaternion estimates.",
+      "formalization_summary": "Read EilenbergGanea.lean. Its explicit height-kernel group is required to be finitely generated and residually finite, have integral cohomological dimension two, admit a three-dimensional classifying CW space and admit no two-dimensional one. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.",
+      "statement_faithfulness": "The localized degree lemma requires coefficient-free words, a nonsingular exponent-sum matrix, simultaneous-conjugation invariance, identity containment and an isolating boundary. The quadratic bound requires exact translated multiplicities, not merely approximate abelian cancellation.",
+      "dependencies": "Mapping degree, finite cyclic conjugation, ordinary finite-dimensional Sard perturbations, an aligned cellular boundary basis and unit-quaternion product estimates.",
+      "antecedents": "Gerstenhaber-Rothaus degree formula as stated in Frøyshov 2013, Proposition 2.1; standard degree theory and commutator estimates.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-249.md",
+      "body": "# Local degree and quadratic cancellation for word equations\n\n## Source manuscript and claim\n\n[A finitely generated counterexample to the Eilenberg–Ganea conjecture](../papers/P-000192.md), by OpenAI, September 23, 2026.\n\nThe source claims a finitely generated residually finite group of integral cohomological dimension two and geometric dimension three.\n\n## Extracted instruments\n\n- [MI-000346: Localize SU(2) word-map degree by cyclic conjugation](../instruments/MI-000346.md)\n- [MI-000347: Convert exact translated relator counts into a uniform quadratic error](../instruments/MI-000347.md)\n\n## Dependencies and antecedents\n\nMapping degree, finite cyclic conjugation, ordinary finite-dimensional Sard perturbations, an aligned cellular boundary basis and unit-quaternion product estimates.\n\nGerstenhaber-Rothaus degree formula as stated in Frøyshov 2013, Proposition 2.1; standard degree theory and commutator estimates. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete localized degree proof, exact translated-count proof and uniform quadratic estimate. The geometric seed, acyclic level model, arbitrary-presentation comparison and transport obstruction were not audited.\n\nRead EilenbergGanea.lean. Its explicit height-kernel group is required to be finitely generated and residually finite, have integral cohomological dimension two, admit a three-dimensional classifying CW space and admit no two-dimensional one. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nThe localized degree lemma requires coefficient-free words, a nonsingular exponent-sum matrix, simultaneous-conjugation invariance, identity containment and an isolating boundary. The quadratic bound requires exact translated multiplicities, not merely approximate abelian cancellation.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/249.md) · [Batch record](../../batches/B030/README.md)"
+    },
+    {
+      "id": "openai-math-252",
+      "record_type": "family",
+      "title": "Finite-field rank lower bounds and punctured-line tensor certificates",
+      "source_family": "252",
+      "source_collection": "openai/math",
+      "batch_id": "B030",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000193"
+      ],
+      "instrument_ids": [
+        "MI-000348",
+        "MI-000349"
+      ],
+      "headline": "The source claims a torsion-free word-hyperbolic group that is not residually finite.",
+      "central_instrument": "Hadamard bounds and divisibility retain rank under reduction modulo a fixed prime. Low-degree interpolation on punctured lines assembles a block diagonal matrix from low-rank local matrices.",
+      "novelty_assessment": "Hadamard determinant bounds, trace-based stable rank and finite-field power sums are classical. Their selected combination gives an explicit certificate conditional on the source incidence and group-presentation inputs; global non-residual-finiteness is not certified.",
+      "formalization_summary": "Read TorsionFreeHyperbolic.lean. The target requires absence of nontrivial finite-order elements, uniformly thin geodesic Cayley triangles and failure of residual finiteness. The manuscript nonlinearity corollary is not part of that target. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.",
+      "statement_faithfulness": "The prime is larger than the squared row-norm bound; it need not be coprime to the finite group order. Every punctured line omits only its own mark, retaining other marks and exceptional-point incidences.",
+      "dependencies": "Integer minors, Hadamard inequality, finite-field elimination, regular permutation traces, Lagrange interpolation and rank subadditivity.",
+      "antecedents": "Classical determinant, stable-rank and finite-field polynomial identities; no claim of first priority for their assembly.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-252.md",
+      "body": "# Finite-field rank lower bounds and punctured-line tensor certificates\n\n## Source manuscript and claim\n\n[A torsion-free hyperbolic group that is not residually finite](../papers/P-000193.md), by OpenAI, September 23, 2026.\n\nThe source claims a torsion-free word-hyperbolic group that is not residually finite.\n\n## Extracted instruments\n\n- [MI-000348: Retain matrix rank modulo a prime using row norms and determinant divisibility](../instruments/MI-000348.md)\n- [MI-000349: Assemble a block diagonal rank certificate from low-degree punctured-line weights](../instruments/MI-000349.md)\n\n## Dependencies and antecedents\n\nInteger minors, Hadamard inequality, finite-field elimination, regular permutation traces, Lagrange interpolation and rank subadditivity.\n\nClassical determinant, stable-rank and finite-field polynomial identities; no claim of first priority for their assembly. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full rank-under-reduction proof and trace calculation, local factorization interface and global tensor certificate. The random incidence construction, link conditions and geometric hyperbolicity/torsion arguments were not audited.\n\nRead TorsionFreeHyperbolic.lean. The target requires absence of nontrivial finite-order elements, uniformly thin geodesic Cayley triangles and failure of residual finiteness. The manuscript nonlinearity corollary is not part of that target. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nThe prime is larger than the squared row-norm bound; it need not be coprime to the finite group order. Every punctured line omits only its own mark, retaining other marks and exceptional-point incidences.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/252.md) · [Batch record](../../batches/B030/README.md)"
+    },
+    {
+      "id": "openai-math-253",
+      "record_type": "family",
+      "title": "Dimension-free density perturbations and finite Folner extraction",
+      "source_family": "253",
+      "source_collection": "openai/math",
+      "batch_id": "B030",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000194"
+      ],
+      "instrument_ids": [
+        "MI-000350",
+        "MI-000351"
+      ],
+      "headline": "The source claims an infinite finitely presented simple amenable group.",
+      "central_instrument": "Orthogonality of centered product-density scores makes square-root density speed independent of dimension. Equivariant coset projection and layer cake turn almost-invariant probabilities into finite Folner sets.",
+      "novelty_assessment": "Square-root density geometry, product orthogonality, Reiter conditions and layer-cake Folner extraction are established methods. The selected formulas expose the constants and whole-field versus marginal distinction; the source simple amenable group claim remains unaudited.",
+      "formalization_summary": "Read SimpleAmenable.lean. Its target asks for one infinite finitely presented simple group with finite nonempty Folner sets for every finite set of translations and positive error. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.",
+      "statement_faithfulness": "The density has a nonnegative even smooth compactly supported square root. Whole-field total variation follows from an exactly common independent outside factor, not from convergence of finitely many marginals. Subgroup projection uses right cosets for a left group action.",
+      "dependencies": "Differentiation of densities, integration by parts, independence and parity, resolvent identity, total variation contraction, finite truncation and layer cake.",
+      "antecedents": "Classical Hellinger/Fisher-information calculations and Reiter-to-Folner arguments; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-253.md",
+      "body": "# Dimension-free density perturbations and finite Folner extraction\n\n## Source manuscript and claim\n\n[An infinite finitely presented simple amenable group](../papers/P-000194.md), by OpenAI, September 23, 2026.\n\nThe source claims an infinite finitely presented simple amenable group.\n\n## Extracted instruments\n\n- [MI-000350: Bound affine product-density perturbations independently of dimension](../instruments/MI-000350.md)\n- [MI-000351: Push approximate invariance to a subgroup and extract a finite Folner set](../instruments/MI-000351.md)\n\n## Dependencies and antecedents\n\nDifferentiation of densities, integration by parts, independence and parity, resolvent identity, total variation contraction, finite truncation and layer cake.\n\nClassical Hellinger/Fisher-information calculations and Reiter-to-Folner arguments; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full density-speed lemma, entire-field covariance proof, shape-matching conclusion and Reiter-to-Folner proof. The averaging-matrix estimates, partition coupling, finite presentation and simplicity constructions were not audited.\n\nRead SimpleAmenable.lean. Its target asks for one infinite finitely presented simple group with finite nonempty Folner sets for every finite set of translations and positive error. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nThe density has a nonnegative even smooth compactly supported square root. Whole-field total variation follows from an exactly common independent outside factor, not from convergence of finitely many marginals. Subgroup projection uses right cosets for a left group action.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/253.md) · [Batch record](../../batches/B030/README.md)"
     },
     {
       "id": "openai-math-263",
