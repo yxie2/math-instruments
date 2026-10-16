@@ -13144,6 +13144,420 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000319.md",
       "body": "# Two odd-order projective maps with a loxodromic product admit no finite invariant measure\n\n[Family 050](../families/openai-math-050.md) · [Source manuscript](../papers/P-000178.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nLet A and B be projective transformations of P1 of odd finite order, with no common fixed point, and suppose AB has two eigenvalues of distinct moduli. Then they preserve no nonzero finite positive Borel measure.\n\nA common invariant measure is invariant under T=AB. In a projective coordinate, T acts by z->lambda z with R=|lambda|>1. The half-open annuli R^n<=|z|<R^(n+1), n in Z, are pairwise disjoint, cover C*, and are shifted by T. All have equal mass; finiteness and positivity force that mass to be zero. Thus the measure is supported on the two fixed points of T.\n\nIts nonempty support is preserved by A and B. An odd-order permutation of at most two points is the identity, so every support point would be fixed by both maps, contradicting the hypothesis. Half-open annuli retain boundary circles and allow atomic measures and nonreal lambda.\n\nThe source uses determinant-one lifts\n\n$$a=e^{i\\pi/3},\\quad s=\\frac12-\\frac{i(1+2\\sqrt2)}{2\\sqrt3},\\quad A=\\begin{pmatrix}a&0\\\\0&a^{-1}\\end{pmatrix},\\quad B=\\begin{pmatrix}s&1\\\\\\sqrt2/3&1-s\\end{pmatrix}.$$\n\nThey satisfy A^3=B^3=-I, trace(A^(-1)B)=-sqrt(2), and trace(AB)=1+sqrt(2)>2. The relative lift has order eight; AB has distinct positive reciprocal eigenvalues. The nonzero off-diagonal entries of B exclude either eigenline of A being common. These finite identities supply the dynamical hypotheses independently of the source vector-bundle limit argument.\n\n## Role in the source argument\n\nContradicts the invariant positive curvature measure obtained from the source hypothetical squared seminorm.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:no-invariant-measure](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L259)\n- [lem:matrix-data](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L27)\n- [eq:matrices](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L19)\n\n## Antecedents and comparison\n\nConcentration of projective invariant measures under expanding elements is a classical Furstenberg-type mechanism. The extracted proof is an elementary rank-two annulus argument with explicit matrices, rather than a claimed new general measure theorem.\n\n## Checks and limitations\n\nExact algebraic-number arithmetic verifies determinants, matrix powers, relative order and product trace. Both possible support sizes are checked for odd-order permutations, with 75 half-open annulus instances including boundary radii.\n\nFinite matrix checks do not replace the written countable-additivity argument. They also do not establish the source bundle construction, ampleness or quadratic-limit compactness.\n\n## Possible applications\n\nRuling out invariant metrics or norms by converting them to finite positive measures and combining incompatible projective dynamics.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000320",
+      "record_type": "instrument",
+      "title": "Project a compact jump field to a decaying divergence-free field",
+      "forms": [
+        "compact-jump-projection",
+        "exterior-harmonic-normalization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-366"
+      ],
+      "source_paper_ids": [
+        "P-000179"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "lem:compact-projection",
+          "line": 91,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L91",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        },
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "eq:compact-field-equations",
+          "line": 113,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L113",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        },
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "eq:compact-field-decay",
+          "line": 119,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L119",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "classical-projection-packaged-for-compact-singular-sets",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000320.md",
+      "body": "# Project a compact jump field to a decaying divergence-free field\n\n[Family 366](../families/openai-math-366.md) · [Source manuscript](../papers/P-000179.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nLet A be compact of planar area zero and h be compactly supported in W^{1,2}(R^2\\A). Extend its ordinary gradient density by zero on A, obtaining e in L2. Let Z be the L2 closure of gradients of smooth compactly supported functions and Q the orthogonal projection onto Z.\n\nLocal Poincare inequalities identify Qe with grad(phi), with phi in W^{1,2}_loc. Orthogonality gives Delta phi=div(e). Outside a disk containing the support, phi is harmonic with finite Dirichlet energy. Its exterior Fourier expansion contains neither a logarithm nor growing modes. Subtract its constant mode to obtain the unique normalization phi->0 at infinity, with phi=O(|x|^{-1}) and k-th derivatives O(|x|^{-1-k}).\n\nSet F=h-phi off A and p=e-grad(phi). Then div(p)=0 on the whole plane, grad(F)=p off A, curl(p) is supported on A, and Delta p=grad-perp(curl p). Also F=O(|x|^{-1}) and p=O(|x|^{-2}) outside a large disk.\n\nThe projection removes the distributional divergence without erasing the allowed jump. Treating e as the whole-plane distributional gradient of h would incorrectly discard the jump contribution.\n\n## Role in the source argument\n\nProvides a canonical field for moving a compact crack while controlling the error at infinity.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:compact-projection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L91)\n- [eq:compact-field-equations](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L113)\n- [eq:compact-field-decay](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L119)\n\n## Antecedents and comparison\n\nThe Hilbert-space projection and exclusion of growing or logarithmic exterior modes are classical. The reusable packaging is adapted to a gradient defined only away from a compact jump set.\n\n## Checks and limitations\n\nAn exact unit-circle jump model verifies harmonicity, matching normal flux, energy splitting and orthogonality. Thirty-six exterior multipole energy identities pass.\n\nThese are explicit models. General Sobolev projection, distributional support and existence arguments are supplied by the inspected written proof, not by finite tests.\n\n## Possible applications\n\nLocalizing singular variational fields while keeping a canonical far-field normalization.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000321",
+      "record_type": "instrument",
+      "title": "Use harmonic translation and amplitude variation to force an interaction to vanish",
+      "forms": [
+        "harmonic-translation-rigidity",
+        "amplitude-polynomial-cancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-366"
+      ],
+      "source_paper_ids": [
+        "P-000179"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "lem:translated-comparison",
+          "line": 164,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L164",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        },
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "eq:translated-energy",
+          "line": 196,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L196",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        },
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "lem:harmonic-interaction",
+          "line": 255,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L255",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        },
+        {
+          "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+          "label": "eq:constant-interactions",
+          "line": 264,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L264",
+          "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "source-variational-combination-of-classical-harmonic-principles",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000321.md",
+      "body": "# Use harmonic translation and amplitude variation to force an interaction to vanish\n\n[Family 366](../families/openai-math-366.md) · [Source manuscript](../papers/P-000179.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nIn the source's whole-plane absolute-minimizer setting, write the closed crack as A union B with compact A separated from B. Decompose v=f+F using the preceding compact field p=grad(F), and let G=grad(f). Retain the growth bound integral over B_R of |grad(v)|^2 <= C(1+R). For another allowed compact jump variation let q=grad(P). Write p_t(x)=p(x-t) and I_p(t)=integral G.p_t, with the analogous definition for q.\n\nA compact cutoff of f+F_t+sigma P_t gives, for all sufficiently small translations and every real sigma,\n\n$$0\\le2(I_p(t)-I_p(0))+2\\sigma(I_q(t)+\\langle p,q\\rangle)+\\sigma^2\\|q\\|_2^2.$$\n\nThe annular gradient error has L2 norm O((1+|sigma|)/R); its cross term with the background is O(R^{-1/2}). Thus no subtraction of two infinite total energies is used.\n\nBecause f is harmonic off B and curl(p_t) is supported on A+t, separation makes I_p harmonic in t. The inequality at sigma=0 gives a local minimum at zero, so I_p is constant on the connected translation neighborhood. The remaining quadratic is nonnegative for every sigma and has zero constant term. Its linear coefficient must vanish:\n\n$$I_q(t)=-\\langle p,q\\rangle.$$\n\nHarmonicity alone is insufficient; minimality is the step that removes the translation dependence.\n\n## Role in the source argument\n\nTurns geometric translations and arbitrary jump amplitudes into exact interaction identities.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:translated-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L164)\n- [eq:translated-energy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L196)\n- [lem:harmonic-interaction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L255)\n- [eq:constant-interactions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L264)\n\n## Antecedents and comparison\n\nThe strong minimum principle and a quadratic-polynomial minimum are classical. The source contribution under review is the admissible cutoff comparison and its decay estimates in the crack setting.\n\n## Checks and limitations\n\nAn exact interaction of two separated unit-disk projected fields is harmonic but nonconstant, showing why minimality is needed. Four hundred twenty amplitude-polynomial cases pass.\n\nNo absolute minimizer is constructed or classified by the script. Later deductions removing compact components are outside this extraction.\n\n## Possible applications\n\nRigidity arguments in which a variationally minimized interaction depends harmonically on translation parameters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000322",
+      "record_type": "instrument",
+      "title": "Regularize a logarithmic Green singularity through a positive-semidefinite defect",
+      "forms": [
+        "reciprocal-kernel-regularization",
+        "logarithmic-mean-defect"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-369"
+      ],
+      "source_paper_ids": [
+        "P-000180"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "lem:regularization",
+          "line": 47,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L47",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        },
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "eq:lorentz",
+          "line": 57,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L57",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        },
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "eq:f-mixture",
+          "line": 81,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L81",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        },
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "eq:C-epsilon",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L98",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "source-regularization-built-on-classical-mean-and-reciprocal-kernel-theory",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000322.md",
+      "body": "# Regularize a logarithmic Green singularity through a positive-semidefinite defect\n\n[Family 369](../families/openai-math-369.md) · [Source manuscript](../papers/P-000180.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nFor disk points put h(x,y)=|x-y|^2/((1-|x|^2)(1-|y|^2)), so G=(4 pi)^{-1}log(1+1/h). Set L(h)=1/log(1+1/h), L(0)=0, and f(h)=h+1/2-L(h).\n\nThe kernel h+1/2 is congruent to (1/2)(1+|x|^2)(1+|y|^2)-2 x.y, hence has at most one positive eigenvalue on any finite set. Meanwhile f(h(x,y)) is positive semidefinite. To see the latter, express L as the average of h^{1-alpha}(h+1)^alpha, 0<alpha<1. A Stieltjes representation with r=1/(1+v), where v has density sin(pi alpha) v^{alpha-1}/(pi(1+v)), gives\n\n$$f(h)=\\int_0^1\\mathbb E_\\alpha\\frac{r(1-r)}{h+r}\\,d\\alpha.$$\n\nHere E(1-r)=alpha. The kernel k=1/(1+h) is positive semidefinite, and 1/(h+r)=sum_{j>=0}(1-r)^j k^{j+1} is a nonnegative Schur-power series. Thus 0<=f(h)<=1/2 and its finite kernel matrices are positive semidefinite.\n\nFor 0<epsilon<=1 define\n\n$$\\frac1{C_\\epsilon}=4\\pi[L+\\epsilon f]=4\\pi[h+1/2-(1-\\epsilon)f].$$\n\nSubtracting a positive-semidefinite kernel preserves at most one positive direction. C_epsilon is continuous, strictly positive, bounded by 1/(2 pi epsilon), and increases to G as epsilon decreases to zero, including its infinite diagonal.\n\n## Role in the source argument\n\nPermits bounded-kernel quadrature before taking a singular Green-kernel limit.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:regularization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L47)\n- [eq:lorentz](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L57)\n- [eq:f-mixture](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L81)\n- [eq:C-epsilon](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L98)\n\n## Antecedents and comparison\n\n[Agler-McCarthy, Corollary 1.12](https://www.math.wustl.edu/~mccarthy/public_papers/completenevpick.pdf) gives the established reciprocal inertia criterion for irreducible positive-definite kernels. [Qi-Zhang-Li, Theorem 4.1 and Corollary 4.1](https://arxiv.org/pdf/1303.3122) give earlier logarithmic-mean integral representations. Those references do not by themselves certify this PDE application.\n\n## Checks and limitations\n\nSix scalar logarithmic-mean integrals and 220 finite disk regularizations pass, including defect positivity, reciprocal inertia, monotonicity and diagonal normalization.\n\nFloating-point matrices do not establish all configurations, the integral representation or continuum limits. Positive entries and a reciprocal inertia property must not be confused with an independently assumed positive-definite kernel.\n\n## Possible applications\n\nApproximation of singular kernels while preserving a finite-matrix signature constraint.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000323",
+      "record_type": "instrument",
+      "title": "Preserve reciprocal inertia under current-column updates",
+      "forms": [
+        "column-resolvent-inertia",
+        "bordered-negative-type"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-369"
+      ],
+      "source_paper_ids": [
+        "P-000180"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "lem:update",
+          "line": 112,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L112",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        },
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "eq:update-series",
+          "line": 139,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L139",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        },
+        {
+          "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+          "label": "eq:elimination",
+          "line": 189,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L189",
+          "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "source-update-formula-with-classical-schur-complement-antecedent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000323.md",
+      "body": "# Preserve reciprocal inertia under current-column updates\n\n[Family 369](../families/openai-math-369.md) · [Source manuscript](../papers/P-000180.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nLet M be symmetric with strictly positive entries and suppose its entrywise reciprocal has at most one positive eigenvalue. Fix an index z and c>=0. Then\n\n$$\\widetilde M_{ij}=M_{ij}+cM_{iz}M_{zj}$$\n\nhas the same reciprocal inertia property. Normalize H_ij=M_iz M_zj/M_ij and a=M_zz. Its z-row is constant a. Schur-complement congruence gives U=a 11^T-H positive semidefinite, with U_ii<a and |U_ij|<a. The normalized updated reciprocal is H/(1+cH), entrywise, and\n\n$$\\frac{a}{1+ca}-\\frac{H}{1+cH}=\\sum_{j\\ge0}\\frac{c^j U^{\\circ(j+1)}}{(1+ca)^{j+2}}\\succeq0.$$\n\nThis is rank one minus a positive-semidefinite matrix. Negative off-diagonal entries of U cause no difficulty because Schur powers preserve positive semidefiniteness. The direction must be a current column; the statement does not authorize an arbitrary rank-one update.\n\nIn a nonnegative chain expansion, admitting a node of weight w sums repeated visits and gives c=w/(1-wM_zz), provided wM_zz<1. Thus the formula propagates reciprocal inertia through finite resolvent elimination.\n\nA related linear-algebra step is useful after a boundary limit: if [[B,ell],[ell^T,0]] has at most one positive eigenvalue, B is nonpositive on ell-perp. For ell_i=1/K_i and B_ij=D_ij/(K_i K_j), D is conditionally negative on sum-zero vectors. When D has zero diagonal, the anchored Gram matrix (D_i0+D_j0-D_ij)/2 is positive semidefinite and represents D as squared Hilbert distances.\n\n## Role in the source argument\n\nCarries a finite reciprocal signature through resolvent updates and identifies the eventual distance geometry.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:update](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L112)\n- [eq:update-series](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L139)\n- [eq:elimination](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L189)\n\n## Antecedents and comparison\n\nThe normalizing Schur complement is the same classical inertia mechanism used in [Agler-McCarthy, Corollary 1.12](https://www.math.wustl.edu/~mccarthy/public_papers/completenevpick.pdf). The explicit update series and chain interpretation are the source-specific packaging reviewed here.\n\n## Checks and limitations\n\n150 sequential column updates and 50 bordered squared-distance models pass. The 45-term Schur series has maximum entry error below 9e-15 in these models.\n\nThe finite tests do not prove the boundary kernel has the required bordered inertia. That analytic input remains conditional in the distance-geometric consequence.\n\n## Possible applications\n\nStructure-preserving elimination and conversion of reciprocal kernel inequalities to distance geometry.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000324",
+      "record_type": "instrument",
+      "title": "Pair two potential gradients before estimating a localized virial term",
+      "forms": [
+        "weighted-localized-virial",
+        "paired-potential-interaction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-370"
+      ],
+      "source_paper_ids": [
+        "P-000181"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+          "label": "eq:interaction",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L11",
+          "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+        },
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+          "label": "eq:cutoff",
+          "line": 35,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L35",
+          "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+        },
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+          "label": "eq:virial",
+          "line": 73,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L73",
+          "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+        },
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex",
+          "label": "eq:parameters",
+          "line": 200,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex#L200",
+          "sha256": "9a510ee55bd758d481b57cd3e2160a4bdff7f7059d6a9bd4ed32d4584f69767b"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "source-weighted-potential-form-of-established-pohozaev-method",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000324.md",
+      "body": "# Pair two potential gradients before estimating a localized virial term\n\n[Family 370](../families/openai-math-370.md) · [Source manuscript](../papers/P-000181.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nAssume n>=3, A,B>-2 and positive locally bounded functions with exact Newtonian representations u=K*g, v=K*f, where f=|x|^B u^q, g=|x|^A v^p and K(z)=|z|^{2-n}/((n-2)|S^{n-1}|). The exact potential identities are inputs here. Define d pi(x,y)=f(x)g(y)K(x-y) dx dy. Its marginals are fu dx and gv dy; its total mass need not be finite.\n\nFor a compact radial cutoff eta, write X=x eta, w=-x.grad(eta), a=1/(q+1), b=1/(p+1), E_f=int eta fu and W_f=int wfu, with analogous g terms. Then\n\n$$a(n+B)E_f+b(n+A)E_g-aW_f-bW_g=(n-2)\\int\\frac{(X(x)-X(y))\\cdot(x-y)}{|x-y|^2}\\,d\\pi.$$\n\nFirst justify the separate gradient integrals: near x=0, the region |x-y|<=|x|/2 contributes O(|x|^{2+A}) after multiplication by |X(x)|; on its complement |X(x)|<=2|x-y| reduces the bound to u(x). Swap the two sources for the other term. Weighted integration by parts outside B_rho has an inner boundary contribution O(rho^{n+B}) or O(rho^{n+A}), which vanishes. Substituting grad K and interchanging the second pair of variables then produces X(x)-X(y).\n\nThe source chooses eta=[(1-(|x|-1)_+^3)_+]^N with a sufficiently large integer N. This matches two derivatives at both cutoff interfaces and retains quantitative powers of distance to the outer boundary.\n\n## Role in the source argument\n\nProvides a compact interaction identity for the subsequent pressure estimate while preserving the weights at the origin.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:interaction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L11)\n- [eq:cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L35)\n- [eq:virial](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L73)\n- [eq:parameters](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex#L200)\n\n## Antecedents and comparison\n\nThis is a potential-kernel formulation of the established Rellich-Pohozaev method. The retained weights, convergent separate integrals and cutoff vanishing order are the extracted details; a literature-wide novelty claim was not established.\n\n## Checks and limitations\n\nThe weighted divergence identity is checked symbolically and 140 finite paired-kernel sums verify the sign and factor n-2.\n\nThe finite sums avoid the kernel singularity. They do not verify the potential representation, analytic integrability for every solution, pressure estimate or nonexistence conclusion.\n\n## Possible applications\n\nLocalization of weighted nonlocal interaction identities without assuming finite total interaction energy.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000325",
+      "record_type": "instrument",
+      "title": "Control interval endpoint defects using the sign of midpoint displacement",
+      "forms": [
+        "weighted-interval-comparison",
+        "midpoint-overlap-sign"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-370"
+      ],
+      "source_paper_ids": [
+        "P-000181"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+          "label": "lem:interval-pair",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L69",
+          "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+        },
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+          "label": "eq:interval-pair",
+          "line": 73,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L73",
+          "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+        },
+        {
+          "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+          "label": "eq:midpoint-identity",
+          "line": 106,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L106",
+          "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "elementary-source-interval-lemma-with-explicit-displaced-midpoints",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000325.md",
+      "body": "# Control interval endpoint defects using the sign of midpoint displacement\n\n[Family 370](../families/openai-math-370.md) · [Source manuscript](../papers/P-000181.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nFor n>=3 and transverse separation lambda>0, let K(s,s') be a positive constant times (lambda^2+(s-s')^2)^{(2-n)/2} and D=(s-s')^2/(lambda^2+(s-s')^2). For bounded intervals I,J let bar(K)_I average the two I-endpoint values, and similarly for J. For nonnegative c_I,c_J,\n\n$$\\int(c_I+c_J)K\\le\\int\\left[c_I\\bar K_I+c_J\\bar K_J+((n-2)\\min(c_I,c_J)D+|c_I-c_J|)K\\right].$$\n\nAll integrals are over I times J. Put h=s-s' and d_0=m_I-m_J. Two integrations by parts give the exact identity\n\n$$\\int(2K-\\bar K_I-\\bar K_J)=(n-2)\\int\\frac{h^2-d_0h}{\\lambda^2+h^2}K.$$\n\nThe pushforward density of h is rho(h)=F(|h-d_0|), where F(r)=max(0,min(|I|,|J|,(|I|+|J|)/2-r)). Since F decreases, pairing h and -h proves d_0 int hK/(lambda^2+h^2)>=0. Multiply the resulting equal-coefficient estimate by min(c_I,c_J); bound each remaining endpoint defect by int K to obtain the formula.\n\nThe same nonnegative inequality permits an unbounded interval only when its own coefficient is zero. That endpoint term is defined as zero without evaluating endpoints. If at most one coefficient is positive, the |c_I-c_J| term already proves the inequality pointwise. This avoids an invalid infinity-minus-infinity manipulation, particularly in dimension three.\n\n## Role in the source argument\n\nSupplies a geometric comparison independent of the PDE for the source pressure estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:interval-pair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L69)\n- [eq:interval-pair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L73)\n- [eq:midpoint-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L106)\n\n## Antecedents and comparison\n\nThe proof uses classical integration by parts and symmetry of interval convolution. Its explicit midpoint term prevents the erroneous shortcut of assuming the intervals are centered together.\n\n## Checks and limitations\n\n175 bounded interval pairs in dimensions three through nine satisfy the identity and weighted inequality by quadrature; maximum identity error is below 6e-15.\n\nQuadrature is not a universal proof. Unbounded cases are handled only by the written nonnegative argument and the zero-coefficient convention.\n\n## Possible applications\n\nComparing linewise potential interactions when interval lengths, centers and weights differ.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000326",
+      "record_type": "instrument",
+      "title": "Rule out deterministic branches by testing selected subsets",
+      "forms": [
+        "measure-splitting-obstruction",
+        "branch-selection-capacity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-373"
+      ],
+      "source_paper_ids": [
+        "P-000182"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+          "label": "lem:splitting",
+          "line": 7,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L7",
+          "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+        },
+        {
+          "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+          "label": "eq:split-measure",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L13",
+          "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+        },
+        {
+          "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+          "label": "eq:selection",
+          "line": 18,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L18",
+          "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "elementary-mass-obstruction-separated-from-source-cost-certificate",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000326.md",
+      "body": "# Rule out deterministic branches by testing selected subsets\n\n[Family 373](../families/openai-math-373.md) · [Source manuscript](../papers/P-000182.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nLet nu be a probability measure on an open set B and let H_1,...,H_4 be homeomorphisms onto open images, all five sets B,H_1(B),...,H_4(B) pairwise disjoint. Set\n\n$$\\mu=\\tfrac13\\nu+\\tfrac16\\sum_{j=1}^4(H_j)_\\#\\nu.$$\n\nThere is no Borel map T preserving mu and satisfying T(x) in {H_1(x),...,H_4(x)} for nu-almost every x in B. Indeed S_j={x in B:T(x)=H_j(x)} is Borel and H_j(S_j) is Borel. Preservation and S_j subset T^{-1}(H_j(S_j)) imply\n\n$$\\tfrac13\\nu(S_j)=\\mu(S_j)\\le\\mu(H_j(S_j))=\\tfrac16\\nu(S_j).$$\n\nThus every S_j has zero measure, contradicting their almost-everywhere cover of B. Additional preimages can only strengthen the contradiction. Nonatomicity is unnecessary for this obstruction.\n\nThe same proof works whenever the source coefficient exceeds every branch coefficient and all copies remain disjoint. Matching the total mass of a target component does not suffice: the selected image subset has its own stricter capacity. To apply this to an optimal-transport problem, one must separately prove that every optimizer is forced to use the specified branches.\n\n## Role in the source argument\n\nTurns a previously established optimal-support description into an obstruction to deterministic transport.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:splitting](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L7)\n- [eq:split-measure](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L13)\n- [eq:selection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L18)\n\n## Antecedents and comparison\n\nThis is an elementary pushforward-capacity argument. It is not a proof of a Coulomb counterexample without the source dual support certificate, which was not audited in this batch.\n\n## Checks and limitations\n\nAll 5,460 branch assignments on weighted finite source sets of sizes one through six violate a selected-subset capacity. A control matches a whole component total while still violating its selected-subset capacity.\n\nFinite copies illustrate the mass argument. They neither construct the smooth density nor force the Coulomb-optimal support.\n\n## Possible applications\n\nDetecting unavoidable randomization or mass splitting in prescribed-branch transport problems.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000327",
+      "record_type": "instrument",
+      "title": "Approximate separated couplings by graph plans with exact cell masses",
+      "forms": [
+        "exact-cell-mass-monge-approximation",
+        "separated-singular-cost-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-373"
+      ],
+      "source_paper_ids": [
+        "P-000182"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+          "label": "prop:equal-infima",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L11",
+          "sha256": "ad35731824c00d3a6c45879241676764f1f76fec6b5599ca916a4cb7bdeab472"
+        },
+        {
+          "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+          "label": "lem:borel-transport",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L33",
+          "sha256": "ad35731824c00d3a6c45879241676764f1f76fec6b5599ca916a4cb7bdeab472"
+        }
+      ],
+      "batch_id": "B027",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "concrete-source-construction-of-established-equal-infima-mechanism",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000327.md",
+      "body": "# Approximate separated couplings by graph plans with exact cell masses\n\n[Family 373](../families/openai-math-373.md) · [Source manuscript](../papers/P-000182.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nLet mu be an absolutely continuous compactly supported probability measure on finitely many components separated by eta>0. Suppose a three-fold coupling pi is supported on triples from distinct components. Partition each component into cells A_i of diameter at most delta, with masses m_i, and put q_ijk=pi(A_i times A_j times A_k).\n\nSplit each source cell A_i into B_ijk of mass q_ijk. From every positive-mass piece, choose two Borel maps sending its normalized density to the normalized restrictions of mu on A_j and A_k. Gluing them gives T_2,T_3 preserving mu, since all three marginals of the array q equal m. The graph plan has exactly the same product-cell masses as pi.\n\nAll occupied blocks retain pairwise separation eta. The three-body Coulomb cost varies by at most 6 delta/eta^2 within any block, so\n\n$$\\left|\\int c\\,d(\\mathrm{id},T_2,T_3)_\\#\\mu-\\int c\\,d\\pi\\right|\\le6\\delta/\\eta^2.$$\n\nThe source constructs the required Borel transports using conditional distribution functions and conditional quantiles. Exceptional zero-density prefixes are assigned fixed distribution functions; generalized inverses are Borel through rational sublevel tests. Flat intervals have zero conditional probability. This supplies actual measurable maps without assuming densities are everywhere positive.\n\nApplying the construction to a separated optimal coupling proves equality of infima and finite epsilon approximants. It gives no deterministic optimizer and imposes no cyclic relation between T_2 and T_3.\n\n## Role in the source argument\n\nShows that the source nonattainment claim, if its support certificate holds, is compatible with arbitrarily accurate deterministic approximations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:equal-infima](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L11)\n- [lem:borel-transport](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L33)\n\n## Antecedents and comparison\n\n[Colombo-Di Marino](https://cvgmt.sns.it/media/doc/paper/2127/MultiColDim.pdf) already prove equality for Coulomb cost, including cyclic maps; their Lemma 2.3 is the cell-cost oscillation estimate. The present extraction records the source finite separated-cell construction and explicit Borel transport details, not a new equality-of-infima theorem.\n\n## Checks and limitations\n\nForty exact rational cell arrays verify source splitting and both pushed marginals; 2,400 separated Coulomb samples verify the stated oscillation bound.\n\nThe numerical models use intervals to check block algebra. They do not construct the source three-dimensional density, certify the Rosenblatt argument mechanically or establish the claimed optimal support.\n\n## Possible applications\n\nConstructing deterministic approximate transports while preserving marginals and controlling a cost singularity through support separation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -16528,6 +16942,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000178.md",
       "body": "# Ample rank-two bundles on the quadric surface without Griffiths-positive metrics\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000318: Keep the zero-set atoms when turning a squared seminorm into curvature](../instruments/MI-000318.md)\n- [MI-000319: Two odd-order projective maps with a loxodromic product admit no finite invariant measure](../instruments/MI-000319.md)\n\n## Dependencies and review\n\nLevi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.\n\nRead the full ruling reduction, logarithmic-curvature proof, invariant-measure proof and explicit matrix lemma. The construction of the quadratic limit and the ampleness proof were not audited.\n\nRead the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-050.md) · [Batch B026](../../batches/B026/README.md)"
+    },
+    {
+      "id": "P-000179",
+      "record_type": "paper",
+      "title": "Interior regularity of planar Mumford–Shah minimizers",
+      "source_collection": "openai/math",
+      "upstream_slug": "Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-366"
+      ],
+      "batch_id": "B027",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "14e96e8b1987ec24a7b7ccc0745c9e043da593b4000ad60e7944d436e76609da",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000179.md",
+      "body": "# Interior regularity of planar Mumford–Shah minimizers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the full interior arc, crack-tip and triple-junction description of reduced planar Mumford-Shah absolute minimizers, with locally finitely many global crack components.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000320: Project a compact jump field to a decaying divergence-free field](../instruments/MI-000320.md)\n- [MI-000321: Use harmonic translation and amplitude variation to force an interaction to vanish](../instruments/MI-000321.md)\n\n## Dependencies and review\n\nL2 orthogonal projection, local Poincare inequalities, exterior Fourier expansion, compact variational comparisons and the strong minimum principle.\n\nRead the compact-projection, translated-comparison and harmonic-interaction proofs completely, plus the main theorem and endpoint gradient corollary. Subsequent component-removal and full geometric classification arguments were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-366.md) · [Batch B027](../../batches/B027/README.md)"
+    },
+    {
+      "id": "P-000180",
+      "record_type": "paper",
+      "title": "Strict hot spots and absence of interior critical points on smooth simply connected planar domains",
+      "source_collection": "openai/math",
+      "upstream_slug": "Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-369"
+      ],
+      "batch_id": "B027",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f14dc2f210e823d82d1d25ae46443394d1c45d8c3ec4de95633454c6c3a266f6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000180.md",
+      "body": "# Strict hot spots and absence of interior critical points on smooth simply connected planar domains\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every nonzero first positive Neumann eigenfunction on every smooth bounded simply connected planar domain has no interior critical point and satisfies strict boundary extrema.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000322: Regularize a logarithmic Green singularity through a positive-semidefinite defect](../instruments/MI-000322.md)\n- [MI-000323: Preserve reciprocal inertia under current-column updates](../instruments/MI-000323.md)\n\n## Dependencies and review\n\nSchur product theorem, logarithmic-mean integral representations, congruence and inertia, and geometric series.\n\nRead the complete regularization and update proofs, the quadrature-resolvent propagation, and the final conditional-negative-type argument. Only the statement and initial radial-limit part of the bordered boundary lemma were read; its entire boundary-limit proof and the global spectral reduction were not audited.\n\nRead HotSpots.lean and its scope document. It defines smooth domains, weak H1 gradients, a Rayleigh-infimum first value and every nonzero member of its eigenspace, including multiplicities. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\n[Family context](../families/openai-math-369.md) · [Batch B027](../../batches/B027/README.md)"
+    },
+    {
+      "id": "P-000181",
+      "record_type": "paper",
+      "title": "The Subcritical Hénon–Lane–Emden Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-370"
+      ],
+      "batch_id": "B027",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "82b6bd9b3f71a2178a7f525b1969eda265e3ede67cc1f8add1100ed3a0825b1c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000181.md",
+      "body": "# The Subcritical Hénon–Lane–Emden Conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims nonexistence of positive entire subcritical Henon-Lane-Emden pairs in every dimension n>=2, with arbitrary real weights and positive exponents under its stated regularity.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000324: Pair two potential gradients before estimating a localized virial term](../instruments/MI-000324.md)\n- [MI-000325: Control interval endpoint defects using the sign of midpoint displacement](../instruments/MI-000325.md)\n\n## Dependencies and review\n\nTonelli and Fubini under established convergence, weighted integration by parts, Newton-kernel homogeneity, interval overlap and odd-function pairing.\n\nRead the complete localized virial and interval-pair proofs and the parameter definitions. Initial reductions, exact potential representation, pressure estimates and final uniform energy bound were not audited.\n\nRead HenonEmden.lean and its scope. Solutions are continuous globally and C2 off the origin; equations are required away from zero, p and q are individually positive, and the strict weighted subcritical inequality excludes equality. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\n[Family context](../families/openai-math-370.md) · [Batch B027](../../batches/B027/README.md)"
+    },
+    {
+      "id": "P-000182",
+      "record_type": "paper",
+      "title": "A counterexample to the Monge ansatz for the three-marginal Coulomb cost",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-373"
+      ],
+      "batch_id": "B027",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ebf71a71ddd95c4989801c217412a8746ba9d7c413376714684e696d3f7b1f20",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000182.md",
+      "body": "# A counterexample to the Monge ansatz for the three-marginal Coulomb cost\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a smooth compactly supported probability density on R3, with smooth compactly supported square root, whose three-marginal Coulomb optimum is attained by a coupling but by no deterministic pair of maps, while the two infima agree.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000326: Rule out deterministic branches by testing selected subsets](../instruments/MI-000326.md)\n- [MI-000327: Approximate separated couplings by graph plans with exact cell masses](../instruments/MI-000327.md)\n\n## Dependencies and review\n\nBorel images under homeomorphisms, pushforward measure inequalities, nonatomic splitting, Borel transport between densities and a separated-cost oscillation estimate.\n\nRead the complete splitting and equal-infima sections, including the Borel conditional-quantile transport proof, plus the introduction. The dual Coulomb certificate, local minimizing branches and forcing of optimal support were not audited.\n\nRead CoulombCounterexample.lean and its scope. Its target includes smoothness of rho and sqrt(rho), compact support, finite attained Kantorovich value, strict failure of every deterministic optimizer, equal infima and finite epsilon-approximating graph plans. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\n[Family context](../families/openai-math-373.md) · [Batch B027](../../batches/B027/README.md)"
     }
   ],
   "families": [
@@ -20314,6 +20804,114 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-362.md",
       "body": "# Relativistic Vlasov–Maxwell, 3D, large data\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000041](../papers/P-000041.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 207 files, continuation step included combination\n\nFor the one-species system with no background charge, the source assumes\n``` math\n\\begin{gathered}\n f_0\\in C_c^\\infty(\\mathbb R_x^3\\times\\mathbb R_v^3),\\qquad f_0\\ge0,\\\\\n E_0,B_0\\in C_b^\\infty(\\mathbb R^3;\\mathbb R^3)\\cap L^2(\\mathbb R^3;\\mathbb R^3),\\\\\n \\nabla\\cdot E_0=\\rho_{f_0},\\qquad \\nabla\\cdot B_0=0,\\qquad\n \\rho_{f_0}(x)=\\int_{\\mathbb R^3}f_0(x,v)\\,dv.\n\\end{gathered}\n```\nHere every spatial derivative of the fields is bounded, the fields have finite energy, and the nonnegative phase-space datum is smooth and compactly supported. Under these hypotheses the paper claims a unique global classical solution, smooth on each finite time interval and with compact phase-space support there, without a size restriction. The repository supplies a formalization covering a continuation statement; it was not compiled or kernel-checked for this survey.\n\n## Extracted instruments.\n\n- [MI-000019: Signed momentum increment bootstrap](../instruments/MI-000019.md)\n\n- [MI-000020: Signed force identity along source labels](../instruments/MI-000020.md)\n\n- [MI-000021: Occupation of retarded bins, direction-change counting, selection](../instruments/MI-000021.md)\n\n## Reused.\n\nGlassey–Strauss representation; Luk–Strain cone flux; Lazarovici label change; Pallard’s cone Jacobians; Pfaffelmoser; Kirchhoff; Gagliardo–Nirenberg; Picard.\n\n## Caveats.\n\nThe reasoning summary states that the cited continuation theorem alone does not establish the required estimates, whereas the paper presents them as proved. Cheverry–Ibrahim is cited six times in the summary and omitted from the paper. The exponent comparison has a small margin. A repository formalization is supplied, but no machine check was run for this survey. Uniqueness is asserted only among global classical solutions.\n\n## Recorded assessment\n\n- Novelty: combination; direction-change counting new\n- Formalization: files, continuation statement included\n- Statement coverage: yes; uniqueness among global classical solutions\n- Dependencies: no\n- Antecedents: Cheverry–Ibrahim 2025"
+    },
+    {
+      "id": "openai-math-366",
+      "record_type": "family",
+      "title": "Project compact jumps before comparing translated singular sets",
+      "source_family": "366",
+      "source_collection": "openai/math",
+      "batch_id": "B027",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000179"
+      ],
+      "instrument_ids": [
+        "MI-000320",
+        "MI-000321"
+      ],
+      "headline": "The source claims the full interior arc, crack-tip and triple-junction description of reduced planar Mumford-Shah absolute minimizers, with locally finitely many global crack components.",
+      "central_instrument": "An L2 gradient projection isolates a divergence-free field supported in curl on a compact crack. Translation makes its interaction harmonic; minimality and arbitrary amplitude variations then force exact cancellation.",
+      "novelty_assessment": "Hilbert-space Hodge projection, exterior harmonic expansion and the minimum principle are classical. The source combines them in a compact translation argument; no global regularity or historical novelty certification is claimed.",
+      "formalization_summary": "No family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.",
+      "statement_faithfulness": "The compact jump field is a gradient density off a zero-area set, not necessarily a distributional gradient on the whole plane. Linear energy growth is retained when passing from compact comparisons to infinite-plane interactions.",
+      "dependencies": "L2 orthogonal projection, local Poincare inequalities, exterior Fourier expansion, compact variational comparisons and the strong minimum principle.",
+      "antecedents": "Classical Helmholtz-Hodge decomposition, finite-energy harmonic functions and harmonic minimum principles.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-366.md",
+      "body": "# Project compact jumps before comparing translated singular sets\n\n## Source manuscript and claim\n\n[Interior regularity of planar Mumford–Shah minimizers](../papers/P-000179.md), by OpenAI, None.\n\nThe source claims the full interior arc, crack-tip and triple-junction description of reduced planar Mumford-Shah absolute minimizers, with locally finitely many global crack components.\n\n## Extracted instruments\n\n- [MI-000320: Project a compact jump field to a decaying divergence-free field](../instruments/MI-000320.md)\n- [MI-000321: Use harmonic translation and amplitude variation to force an interaction to vanish](../instruments/MI-000321.md)\n\n## Dependencies and antecedents\n\nL2 orthogonal projection, local Poincare inequalities, exterior Fourier expansion, compact variational comparisons and the strong minimum principle.\n\nClassical Helmholtz-Hodge decomposition, finite-energy harmonic functions and harmonic minimum principles. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the compact-projection, translated-comparison and harmonic-interaction proofs completely, plus the main theorem and endpoint gradient corollary. Subsequent component-removal and full geometric classification arguments were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\nThe compact jump field is a gradient density off a zero-area set, not necessarily a distributional gradient on the whole plane. Linear energy growth is retained when passing from compact comparisons to infinite-plane interactions.\n\n[Batch record](../../batches/B027/README.md)"
+    },
+    {
+      "id": "openai-math-369",
+      "record_type": "family",
+      "title": "Regularize reciprocal Green kernels while preserving one positive direction",
+      "source_family": "369",
+      "source_collection": "openai/math",
+      "batch_id": "B027",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000180"
+      ],
+      "instrument_ids": [
+        "MI-000322",
+        "MI-000323"
+      ],
+      "headline": "The source claims that every nonzero first positive Neumann eigenfunction on every smooth bounded simply connected planar domain has no interior critical point and satisfies strict boundary extrema.",
+      "central_instrument": "A positive-semidefinite defect of a logarithmic mean regularizes the singular Green kernel. Column-based resolvent updates preserve the one-positive-eigenvalue property of entrywise reciprocals.",
+      "novelty_assessment": "Reciprocal one-positive-eigenvalue criteria have a direct antecedent in McCullough-Quiggin theory as presented by Agler-McCarthy. Bernstein representations of logarithmic means also predate this source. The concrete Green regularization and update packaging are extracted without certifying the hot-spots claim.",
+      "formalization_summary": "Read HotSpots.lean and its scope document. It defines smooth domains, weak H1 gradients, a Rayleigh-infimum first value and every nonzero member of its eigenspace, including multiplicities. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.",
+      "statement_faithfulness": "Reciprocal always means entrywise reciprocal, not a matrix inverse. A column update uses a column of the current kernel. The regularized kernel is pointwise positive; a separate positive quadratic-form claim is not needed for the stated operator domination.",
+      "dependencies": "Schur product theorem, logarithmic-mean integral representations, congruence and inertia, and geometric series.",
+      "antecedents": "Agler-McCarthy, Complete Nevanlinna-Pick Kernels, Corollary 1.12; Qi-Zhang-Li, arXiv:1303.3122, Theorem 4.1 and Corollary 4.1; classical Schoenberg distance construction.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-369.md",
+      "body": "# Regularize reciprocal Green kernels while preserving one positive direction\n\n## Source manuscript and claim\n\n[Strict hot spots and absence of interior critical points on smooth simply connected planar domains](../papers/P-000180.md), by OpenAI, September 24, 2026.\n\nThe source claims that every nonzero first positive Neumann eigenfunction on every smooth bounded simply connected planar domain has no interior critical point and satisfies strict boundary extrema.\n\n## Extracted instruments\n\n- [MI-000322: Regularize a logarithmic Green singularity through a positive-semidefinite defect](../instruments/MI-000322.md)\n- [MI-000323: Preserve reciprocal inertia under current-column updates](../instruments/MI-000323.md)\n\n## Dependencies and antecedents\n\nSchur product theorem, logarithmic-mean integral representations, congruence and inertia, and geometric series.\n\nAgler-McCarthy, Complete Nevanlinna-Pick Kernels, Corollary 1.12; Qi-Zhang-Li, arXiv:1303.3122, Theorem 4.1 and Corollary 4.1; classical Schoenberg distance construction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete regularization and update proofs, the quadrature-resolvent propagation, and the final conditional-negative-type argument. Only the statement and initial radial-limit part of the bordered boundary lemma were read; its entire boundary-limit proof and the global spectral reduction were not audited.\n\nRead HotSpots.lean and its scope document. It defines smooth domains, weak H1 gradients, a Rayleigh-infimum first value and every nonzero member of its eigenspace, including multiplicities. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\nReciprocal always means entrywise reciprocal, not a matrix inverse. A column update uses a column of the current kernel. The regularized kernel is pointwise positive; a separate positive quadratic-form claim is not needed for the stated operator domination.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/369.md) · [Batch record](../../batches/B027/README.md)"
+    },
+    {
+      "id": "openai-math-370",
+      "record_type": "family",
+      "title": "Keep weights and midpoint displacement in localized potential estimates",
+      "source_family": "370",
+      "source_collection": "openai/math",
+      "batch_id": "B027",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000181"
+      ],
+      "instrument_ids": [
+        "MI-000324",
+        "MI-000325"
+      ],
+      "headline": "The source claims nonexistence of positive entire subcritical Henon-Lane-Emden pairs in every dimension n>=2, with arbitrary real weights and positive exponents under its stated regularity.",
+      "central_instrument": "A paired potential identity retains spatial weights under a compact cutoff. An interval-overlap comparison controls endpoint defects even when interval midpoints do not coincide.",
+      "novelty_assessment": "Rellich-Pohozaev identities and one-dimensional integration by parts are established methods. These selected weighted formulations are inspected without certifying the source global nonexistence theorem or claiming a first discovery.",
+      "formalization_summary": "Read HenonEmden.lean and its scope. Solutions are continuous globally and C2 off the origin; equations are required away from zero, p and q are individually positive, and the strict weighted subcritical inequality excludes equality. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.",
+      "statement_faithfulness": "The extracted virial identity uses n>=3, weights A,B>-2 and exact Newtonian potentials after the source reductions. The interval comparison retains midpoint displacement and defines zero-weight unbounded endpoint terms without subtracting infinities.",
+      "dependencies": "Tonelli and Fubini under established convergence, weighted integration by parts, Newton-kernel homogeneity, interval overlap and odd-function pairing.",
+      "antecedents": "Classical Rellich-Pohozaev identities; source references weighted identities of Phan and system identities of Mitidieri and Souplet. Their full primary proofs were not separately audited in this batch.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-370.md",
+      "body": "# Keep weights and midpoint displacement in localized potential estimates\n\n## Source manuscript and claim\n\n[The Subcritical Hénon–Lane–Emden Conjecture](../papers/P-000181.md), by OpenAI, September 24, 2026.\n\nThe source claims nonexistence of positive entire subcritical Henon-Lane-Emden pairs in every dimension n>=2, with arbitrary real weights and positive exponents under its stated regularity.\n\n## Extracted instruments\n\n- [MI-000324: Pair two potential gradients before estimating a localized virial term](../instruments/MI-000324.md)\n- [MI-000325: Control interval endpoint defects using the sign of midpoint displacement](../instruments/MI-000325.md)\n\n## Dependencies and antecedents\n\nTonelli and Fubini under established convergence, weighted integration by parts, Newton-kernel homogeneity, interval overlap and odd-function pairing.\n\nClassical Rellich-Pohozaev identities; source references weighted identities of Phan and system identities of Mitidieri and Souplet. Their full primary proofs were not separately audited in this batch. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete localized virial and interval-pair proofs and the parameter definitions. Initial reductions, exact potential representation, pressure estimates and final uniform energy bound were not audited.\n\nRead HenonEmden.lean and its scope. Solutions are continuous globally and C2 off the origin; equations are required away from zero, p and q are individually positive, and the strict weighted subcritical inequality excludes equality. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\nThe extracted virial identity uses n>=3, weights A,B>-2 and exact Newtonian potentials after the source reductions. The interval comparison retains midpoint displacement and defines zero-weight unbounded endpoint terms without subtracting infinities.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/370.md) · [Batch record](../../batches/B027/README.md)"
+    },
+    {
+      "id": "openai-math-373",
+      "record_type": "family",
+      "title": "Separate a deterministic selection obstruction from equality of optimal values",
+      "source_family": "373",
+      "source_collection": "openai/math",
+      "batch_id": "B027",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000182"
+      ],
+      "instrument_ids": [
+        "MI-000326",
+        "MI-000327"
+      ],
+      "headline": "The source claims a smooth compactly supported probability density on R3, with smooth compactly supported square root, whose three-marginal Coulomb optimum is attained by a coupling but by no deterministic pair of maps, while the two infima agree.",
+      "central_instrument": "A source component carrying twice each copied target density cannot select any branch deterministically. A separate cell-mass construction approximates a separated coupling by graph plans with exact marginals and controlled cost.",
+      "novelty_assessment": "Equality of Monge and Kantorovich infima for Coulomb cost predates this source: Colombo-Di Marino prove a stronger cyclic formulation. The elementary selection obstruction is distinguished from the unreviewed Coulomb support certificate needed for the claimed nonattainment example.",
+      "formalization_summary": "Read CoulombCounterexample.lean and its scope. Its target includes smoothness of rho and sqrt(rho), compact support, finite attained Kantorovich value, strict failure of every deterministic optimizer, equal infima and finite epsilon-approximating graph plans. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.",
+      "statement_faithfulness": "A missing deterministic optimizer is compatible with equal infima. The obstruction concerns every measurable branch subset, not merely total component masses. The approximation preserves marginals exactly and uses uniform component separation to avoid the Coulomb singularity.",
+      "dependencies": "Borel images under homeomorphisms, pushforward measure inequalities, nonatomic splitting, Borel transport between densities and a separated-cost oscillation estimate.",
+      "antecedents": "Colombo-Di Marino, Equality between Monge and Kantorovich multimarginal problems with Coulomb cost; Rosenblatt conditional distribution transforms.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-373.md",
+      "body": "# Separate a deterministic selection obstruction from equality of optimal values\n\n## Source manuscript and claim\n\n[A counterexample to the Monge ansatz for the three-marginal Coulomb cost](../papers/P-000182.md), by OpenAI, September 25, 2026.\n\nThe source claims a smooth compactly supported probability density on R3, with smooth compactly supported square root, whose three-marginal Coulomb optimum is attained by a coupling but by no deterministic pair of maps, while the two infima agree.\n\n## Extracted instruments\n\n- [MI-000326: Rule out deterministic branches by testing selected subsets](../instruments/MI-000326.md)\n- [MI-000327: Approximate separated couplings by graph plans with exact cell masses](../instruments/MI-000327.md)\n\n## Dependencies and antecedents\n\nBorel images under homeomorphisms, pushforward measure inequalities, nonatomic splitting, Borel transport between densities and a separated-cost oscillation estimate.\n\nColombo-Di Marino, Equality between Monge and Kantorovich multimarginal problems with Coulomb cost; Rosenblatt conditional distribution transforms. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete splitting and equal-infima sections, including the Borel conditional-quantile transport proof, plus the introduction. The dual Coulomb certificate, local minimizing branches and forcing of optimal support were not audited.\n\nRead CoulombCounterexample.lean and its scope. Its target includes smoothness of rho and sqrt(rho), compact support, finite attained Kantorovich value, strict failure of every deterministic optimizer, equal infima and finite epsilon-approximating graph plans. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\nA missing deterministic optimizer is compatible with equal infima. The obstruction concerns every measurable branch subset, not merely total component masses. The approximation preserves marginals exactly and uses uniform component separation to avoid the Coulomb singularity.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/373.md) · [Batch record](../../batches/B027/README.md)"
     },
     {
       "id": "openai-math-374",

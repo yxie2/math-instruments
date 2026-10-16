@@ -1,0 +1,320 @@
+{
+  "batch_id": "B027",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T11:00:58.501027+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CoulombCounterexample.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CoulombCounterexample.lean",
+      "sha256": "51186e3acf840a4f7fdfa47b1f0e097222e04c4e8ecf688761636afc44405311",
+      "bytes": 3159
+    },
+    {
+      "path": "lean/ComparatorChallenges/HenonEmden.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HenonEmden.lean",
+      "sha256": "f42125331b02564e56f0ccb7009c294b4233cb12fd4467b5aa96dd2a3524b3da",
+      "bytes": 1009
+    },
+    {
+      "path": "lean/ComparatorChallenges/HotSpots.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HotSpots.lean",
+      "sha256": "ef8a14d3717c0acf63c01656f93cc51a7e669aa58aa0a3ad3fd54465e49b1bde",
+      "bytes": 2094
+    },
+    {
+      "path": "lean/docs/369.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/369.md",
+      "sha256": "3a79656f6ff91a6f687969cc79e40171531596880e16b2c6f4ac0b889e5ed3aa",
+      "bytes": 1133
+    },
+    {
+      "path": "lean/docs/370.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/370.md",
+      "sha256": "46f3228957de33d7c417826c135802ac463c584d876b3a00d9a9b6de87a8da08",
+      "bytes": 961
+    },
+    {
+      "path": "lean/docs/373.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/373.md",
+      "sha256": "3a6252809a039b974f04e769fbc9c6c018cd2fd86fb861c0106f47571611cc8e",
+      "bytes": 1205
+    },
+    {
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/README.md",
+      "sha256": "ebf71a71ddd95c4989801c217412a8746ba9d7c413376714684e696d3f7b1f20",
+      "bytes": 720
+    },
+    {
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+      "sha256": "ad35731824c00d3a6c45879241676764f1f76fec6b5599ca916a4cb7bdeab472",
+      "bytes": 9275
+    },
+    {
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+      "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43",
+      "bytes": 1611
+    },
+    {
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/README.md",
+      "sha256": "14e96e8b1987ec24a7b7ccc0745c9e043da593b4000ad60e7944d436e76609da",
+      "bytes": 740
+    },
+    {
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1",
+      "bytes": 19554
+    },
+    {
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/README.md",
+      "sha256": "f14dc2f210e823d82d1d25ae46443394d1c45d8c3ec4de95633454c6c3a266f6",
+      "bytes": 848
+    },
+    {
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716",
+      "bytes": 16766
+    },
+    {
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/README.md",
+      "sha256": "82b6bd9b3f71a2178a7f525b1969eda265e3ede67cc1f8add1100ed3a0825b1c",
+      "bytes": 586
+    },
+    {
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex",
+      "sha256": "9a510ee55bd758d481b57cd3e2160a4bdff7f7059d6a9bd4ed32d4584f69767b",
+      "bytes": 13100
+    },
+    {
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+      "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0",
+      "bytes": 8204
+    },
+    {
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+      "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2",
+      "bytes": 5731
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000320",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "lem:compact-projection",
+      "line": 91,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L91",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000320",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "eq:compact-field-equations",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L113",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000320",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "eq:compact-field-decay",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L119",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000321",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "lem:translated-comparison",
+      "line": 164,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L164",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000321",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "eq:translated-energy",
+      "line": 196,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L196",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000321",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "lem:harmonic-interaction",
+      "line": 255,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L255",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000321",
+      "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex",
+      "label": "eq:constant-interactions",
+      "line": 264,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/build/sections/interaction.tex#L264",
+      "sha256": "b7bdec27b2a1ff156d479ad40651a26d7798006c83fef26d2c92f3cd346860a1"
+    },
+    {
+      "instrument_id": "MI-000322",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "lem:regularization",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L47",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000322",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "eq:lorentz",
+      "line": 57,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L57",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000322",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "eq:f-mixture",
+      "line": 81,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L81",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000322",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "eq:C-epsilon",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L98",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000323",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "lem:update",
+      "line": 112,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L112",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000323",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "eq:update-series",
+      "line": 139,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L139",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000323",
+      "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex",
+      "label": "eq:elimination",
+      "line": 189,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/sections/05-reciprocal-kernels.tex#L189",
+      "sha256": "3bd38fa245f3a112d2107d9de5475045ed6834ee209f0bbf58fb30ebe9fde716"
+    },
+    {
+      "instrument_id": "MI-000324",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+      "label": "eq:interaction",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L11",
+      "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+    },
+    {
+      "instrument_id": "MI-000324",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+      "label": "eq:cutoff",
+      "line": 35,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L35",
+      "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+    },
+    {
+      "instrument_id": "MI-000324",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex",
+      "label": "eq:virial",
+      "line": 73,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/03-localization.tex#L73",
+      "sha256": "a27394bbcb068cf24301f75840ec4eadb5b02ec87bf3c1edea79cb88902c41b0"
+    },
+    {
+      "instrument_id": "MI-000324",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex",
+      "label": "eq:parameters",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/02-preliminaries.tex#L200",
+      "sha256": "9a510ee55bd758d481b57cd3e2160a4bdff7f7059d6a9bd4ed32d4584f69767b"
+    },
+    {
+      "instrument_id": "MI-000325",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+      "label": "lem:interval-pair",
+      "line": 69,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L69",
+      "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+    },
+    {
+      "instrument_id": "MI-000325",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+      "label": "eq:interval-pair",
+      "line": 73,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L73",
+      "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+    },
+    {
+      "instrument_id": "MI-000325",
+      "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex",
+      "label": "eq:midpoint-identity",
+      "line": 106,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/build/sections/04-intervals.tex#L106",
+      "sha256": "dc02167e2d6e2388d1c69e0c37817f8eb9468047a6c9ca02df145d8b2e012ef2"
+    },
+    {
+      "instrument_id": "MI-000326",
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+      "label": "lem:splitting",
+      "line": 7,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L7",
+      "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+    },
+    {
+      "instrument_id": "MI-000326",
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+      "label": "eq:split-measure",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L13",
+      "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+    },
+    {
+      "instrument_id": "MI-000326",
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex",
+      "label": "eq:selection",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/splitting.tex#L18",
+      "sha256": "a184672d5dd8e6759ebfb2544e3715aae0ae527cf1933156cd34d8565227cc43"
+    },
+    {
+      "instrument_id": "MI-000327",
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+      "label": "prop:equal-infima",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L11",
+      "sha256": "ad35731824c00d3a6c45879241676764f1f76fec6b5599ca916a4cb7bdeab472"
+    },
+    {
+      "instrument_id": "MI-000327",
+      "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex",
+      "label": "lem:borel-transport",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L33",
+      "sha256": "ad35731824c00d3a6c45879241676764f1f76fec6b5599ca916a4cb7bdeab472"
+    }
+  ]
+}
