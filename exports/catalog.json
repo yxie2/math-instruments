@@ -20186,6 +20186,406 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000479.md",
       "body": "# Force a strict geometric gap by an odd constraint map and compactness\n\n[Family 349](../families/openai-math-349.md) · [Source manuscript](../papers/P-000258.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nOn S^(m+1), let A_m consist of finite-perimeter sets with half the sphere volume and zero vector centroid. This class is nonempty, for example by two antipodal caps of suitable radius. Let gamma_m be the infimum of perimeter on A_m. BV compactness, continuity of volume and centroid under L1 convergence, and perimeter lower semicontinuity produce a minimizer.\n\nSpherical isoperimetry bounds perimeter below by sigma_m, the equatorial m-sphere area; equality at half volume requires a hemisphere. A hemisphere with pole a has centroid sigma_m a/(m+1), which is nonzero. Thus the constrained minimizer cannot be an equality case, and gamma_m>sigma_m. This argument gives a strict gap, without an explicit numerical gap or a characterization of the constrained minimizer.\n\nFor a cycle family Phi on a finite CW complex X, pull back the filling double cover. On that cover the map (x,E) -> (Vol(E)-sigma_(m+1)/2, integral_E y) takes values in R^(m+3) and changes sign under complementation. If it had no zero, normalization would give an equivariant map to S^(p-1), p=m+3, and a quotient map X -> RP^(p-1). The filling-cover class would be pulled back from RP^(p-1), forcing its pth cup power to vanish. Therefore any detecting family with (Phi*lambda)^p!=0 has a zero of this constraint map, and its maximal mass is at least gamma_m.\n\nThe general method separates two tasks: topology forces the constraints, and compactness plus an incompatible equality classification turns those constraints into a strict energy gap.\n\n## Role in the source argument\n\nRaises the source detecting-family mass threshold strictly above the equator level before min-max arguments.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:detection-gap](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L201)\n- [eq:minmax-odd-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L243)\n\n## Antecedents and comparison\n\nThe cup-power step uses [Hatcher Theorem 3.19](https://pi.math.cornell.edu/~hatcher/AT/ATch3.pdf). The spherical isoperimetric inequality and its equality case were checked in [Boglein-Duzaar-Fusco](https://cvgmt.sns.it/media/doc/paper/2146/BDF-sphere-2013-05-09.pdf), Section 2.3, equation (2.2), p. 5. The gap argument is the standard direct method with exclusion of all equality cases; no new isoperimetric theorem is claimed.\n\n## Checks and limitations\n\nThe complete selected proof was read. Symbolic spherical-coordinate integrals check the hemisphere centroid in dimensions m=1,...,7. On S2, two antipodal caps of angular radius pi/3 have half volume, zero centroid and perimeter 2 pi sqrt(3), giving a feasible upper bound on gamma_1, not its optimum.\n\nFinite examples do not prove BV compactness or cup-product detection. No explicit optimal gamma_m, classification of constrained minimizers or source least-volume theorem is certified.\n\n## Possible applications\n\nVariational problems where a cohomological obstruction forces an odd collection of constraints incompatible with every unconstrained minimizer.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000480",
+      "record_type": "instrument",
+      "title": "Find an interior balancing zero by projecting a strictly inward field",
+      "forms": [
+        "projected-fixed-point-balancing",
+        "gaussian-kernel-moment-inwardness"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-088"
+      ],
+      "source_paper_ids": [
+        "P-000259"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+          "label": "lem:fixed-point",
+          "line": 298,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L298",
+          "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+        },
+        {
+          "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+          "label": "prop:position",
+          "line": 326,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L326",
+          "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+        },
+        {
+          "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+          "label": "eq:kernel-field",
+          "line": 356,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L356",
+          "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-fixed-point-and-gaussian-moment-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000480.md",
+      "body": "# Find an interior balancing zero by projecting a strictly inward field\n\n[Family 088](../families/openai-math-088.md) · [Source manuscript](../papers/P-000259.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet A range over positive semidefinite symmetric matrices of trace one. Assume a continuous assignment of nonzero seminorms g_A, where g_A(x) depends only on the projection of x to range(A). Fix k>0 and define the continuous traceless symmetric field F(A)=E[g_A(u)^k uu^T]/E[g_A(u)^k]-I/n on the unit sphere.\n\nFor singular A and a unit e in ker A, Gaussian independence gives E[g_A(u)^k(u.e)^2]/E[g_A(u)^k]=1/(n+k): the Gaussian numerator factors, while radial moments have ratio 1/(n+k). Reflection kills the mixed range-kernel block. Thus F(A) restricted to ker A equals -k I/[n(n+k)], so A-epsilon F(A) is positive definite for sufficiently small epsilon>0 and still has trace one.\n\nApply Brouwer to A -> projection_D(A-F(A)), where D is the compact convex trace-one positive cone. At a fixed point, the nearest-point inequality reads inner(F(A),B-A)>=0 for every B in D. The admissible choice B=A-epsilon F(A) forces F(A)=0. The kernel formula excludes a singular zero. Consequently the weighted second moment is I/n and the degree-two spherical harmonic component of g_A^k vanishes.\n\nThe source uses k=1 or 2 and supplies g_A through a variational construction. The argument above isolates what that construction must provide. A further scaling rule g_(aA)=a g_A permits determinant-one normalization without changing the balancing condition.\n\n## Role in the source argument\n\nSelects an affine position for one variational measure before the principal source bilinear inequality.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:fixed-point](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L298)\n- [prop:position](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L326)\n- [eq:kernel-field](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L356)\n\n## Antecedents and comparison\n\nClassical Brouwer and the nearest-point variational inequality, with elementary Gaussian radial moments. The extracted interface is the explicit boundary-kernel calculation; no new fixed-point theorem is claimed.\n\n## Checks and limitations\n\nExact Gaussian moment formulas test the kernel field for quadratic seminorms and every rank in dimensions 2 through 8. Numerical nearest-point projections verify the variational inequality. A zero-k control removes the strictly inward conclusion.\n\nThe continuity and existence of the source minimizer assignment are hypotheses here. These checks do not establish Petty projection-volume rigidity.\n\n## Possible applications\n\nProducing isotropic positions when a continuous normalization is available on the closed positive cone and its boundary kernel moments can be computed.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000481",
+      "record_type": "instrument",
+      "title": "Multiply normalized projection-body volumes using Cartesian products",
+      "forms": [
+        "projection-body-cartesian-product",
+        "exact-simplex-product-comparison"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-088"
+      ],
+      "source_paper_ids": [
+        "P-000260"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+          "label": "lem:facets",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L153",
+          "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+        },
+        {
+          "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+          "label": "prop:product",
+          "line": 193,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L193",
+          "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+        },
+        {
+          "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+          "label": "prop:simplex",
+          "line": 311,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L311",
+          "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-projection-formula-with-source-product-witness",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000481.md",
+      "body": "# Multiply normalized projection-body volumes using Cartesian products\n\n[Family 088](../families/openai-math-088.md) · [Source manuscript](../papers/P-000260.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nFor a full-dimensional polytope P, let v_F=area(F) times its outward unit normal. Cauchy's projection formula gives Pi P=sum_F[-v_F/2,v_F/2]. For full-dimensional A in R^r and B in R^s, r,s>=2, the product facets have vectors (|B|v_F,0) and (0,|A|v_G). Hence Pi(A times B)=(|B|Pi A) times (|A|Pi B).\n\nDefine R_d(P)=|Pi P|/|P|^(d-1). The volume exponents cancel exactly, giving R_(r+s)(A times B)=R_r(A)R_s(B). Affine covariance Pi(LP)=|det L| L^(-T)Pi P makes R_d invariant under invertible affine changes.\n\nFor the standard simplex T_d, its projection body is a translate of ([0,1]^d+[0,(1,...,1)])/(d-1)!. Extrusion along the diagonal adds volume d to the unit cube, so |Pi T_d|=(d+1)/((d-1)!)^d and R_d(T_d)=c_d=(d+1)d^d/d!. The product comparison is therefore\n\nc_r c_s/c_(r+s)=[(r+1)(s+1)/(r+s+1)] binomial(r+s,r) r^r s^s/(r+s)^(r+s).\n\nAt r=s=10 it is 22355476/22020096>1, with exact positive numerator difference 335380. This reproduces the source finite-dimensional product witness. Smaller products need not exceed the simplex value; multiplicativity alone does not imply an excess in every dimension.\n\n## Role in the source argument\n\nTurns the companion counterexample into a facet identity followed by an exact rational comparison.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:facets](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L153)\n- [prop:product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L193)\n- [prop:simplex](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L311)\n\n## Antecedents and comparison\n\n[Saroglou, On the shape of a convex body with respect to its second projection body](https://arxiv.org/pdf/1409.4347v2), Section 1, states Cauchy projection and affine invariance; these pages were read. The product and simplex calculations were read in the source and checked algebraically. A targeted antecedent comparison is not an exhaustive search for earlier product witnesses.\n\n## Checks and limitations\n\nDeterminant enumeration independently computes low-dimensional simplex projection-zonotope volumes and products. Exact rational arithmetic reproduces the dimension-20 ratio and detects subcritical smaller equal-dimensional products.\n\nNo formal proof build or independent human review was performed. The separate principal Petty theorem and the companion asymptotic exponential-excess argument are outside this extraction.\n\n## Possible applications\n\nTesting proposed affine-invariant extremizers against products whose factors have explicit facet descriptions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000482",
+      "record_type": "instrument",
+      "title": "Stabilize a selected branch by exposing one fresh noise per comparison",
+      "forms": [
+        "conditional-fresh-noise-anticoncentration",
+        "finite-branch-name-stability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-089"
+      ],
+      "source_paper_ids": [
+        "P-000261"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+          "label": "int:near-tie",
+          "line": 331,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L331",
+          "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+        },
+        {
+          "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+          "label": "int:comparisons",
+          "line": 378,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L378",
+          "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+        },
+        {
+          "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+          "label": "int:conditional-scope",
+          "line": 442,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L442",
+          "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-anticoncentration-with-deterministic-candidate-list",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000482.md",
+      "body": "# Stabilize a selected branch by exposing one fresh noise per comparison\n\n[Family 089](../families/openai-math-089.md) · [Source manuscript](../papers/P-000261.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nSuppose a deterministic finite list of named functions is fixed before sampling noises. At a fixed point x, each pair difference can, after conditioning on all other noises, be written c+epsilon alpha with epsilon in {-1,1} and alpha uniform on an interval of length q. Then P(|A(x)-A'(x)|<=t)<=2t/q. For an equally spaced endpoint grid of spacing eta'<=eta the bound becomes (2t+eta)/q.\n\nIn an ancestor chain of atoms whose intercepts depend only on earlier noises, use the later atom's own noise. At one node distinct atoms have distinct own noises and intercepts independent of both. This allows a union bound over the predetermined candidate list without conditioning on which atom was ultimately selected.\n\nIf at most S named branches are L_*-Lipschitz along paths of length at most rho from x, all have the required pairwise fresh-noise comparison with widths at least q_*, and at most one branch has no noise, the probability of any pair being within 4 L_* rho at x is at most S^2(8 L_* rho+eta)/q_*. Off that event no names cross anywhere on the paths. A continuous min/max selection from the finite list has locally constant selected name, and connected paths sharing x force a single name throughout.\n\nGeometry, portals, inputs and candidate names must be fixed by prior data. A comparison branch built from current noises cannot be called fixed. Repeated occurrences of the same input with the same sign and shift are one name; arbitrary distinct fixed branches have no anti-concentration guarantee.\n\n## Role in the source argument\n\nMakes interpolation formulas persist on a small ball or a connected family of paths in the planar construction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [int:near-tie](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L331)\n- [int:comparisons](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L378)\n- [int:conditional-scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L442)\n\n## Antecedents and comparison\n\nThe interval bound and the continuous-selection argument are elementary. The source contribution to this interface is the deterministic bounded candidate list and the precise conditioning requirements; its construction was not certified here.\n\n## Checks and limitations\n\nExact enumeration of grid noises tests dependent earlier intercepts and the conditional interval bound. A branch reusing the tested noise gives a probability-one tie, exposing invalid conditioning.\n\nFinite-noise checks do not establish the source bounded-depth atom list, planar geometry or universal embedding constant.\n\n## Possible applications\n\nControlling active branches in randomized min/max formulas with adaptive earlier intercepts but a genuinely fresh final noise.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000483",
+      "record_type": "instrument",
+      "title": "Glue consistent bag laws into a global cut metric",
+      "forms": [
+        "tree-consistent-finite-measure-gluing",
+        "root-independent-cut-metric"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-089"
+      ],
+      "source_paper_ids": [
+        "P-000262"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+          "label": "lem:gluing",
+          "line": 118,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L118",
+          "sha256": "3aa42408ff84bfe6711dc44a1a6c958ed56a514bd81fa292cebe041fe7562cb2"
+        },
+        {
+          "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+          "label": "eq:gluing-product",
+          "line": 147,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L147",
+          "sha256": "3aa42408ff84bfe6711dc44a1a6c958ed56a514bd81fa292cebe041fe7562cb2"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "explicit-ckr-markov-gluing-antecedent",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000483.md",
+      "body": "# Glue consistent bag laws into a global cut metric\n\n[Family 089](../families/openai-math-089.md) · [Source manuscript](../papers/P-000262.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet bags B_t cover a finite set V along a tree, and require the bags containing each vertex to form a connected subtree. Give each binary assignment space {0,1}^{B_t} a nonnegative measure mu_t of the same mass m>0. Suppose adjacent bags have identical marginals on their intersection.\n\nChoose a root, sample its assignment from mu_root/m, and then sample every child conditionally on the parent-child overlap. Previously assigned vertices in that child are exactly the overlap by the running-intersection property. Induction gives each bag marginal mu_t/m. Multiply the global probability law by m to obtain rho.\n\nWhere all separator factors are positive, rho(omega)=product_t mu_t(omega|B_t) / product_(ts) mu_(B_t intersect B_s)(omega|overlap). A full assignment with a zero separator mass has zero mass; one does not divide by zero. The product formula shows root independence. Complement symmetry of all bag laws gives complement symmetry of rho, and separator labels along any bag path form a Markov chain.\n\nThe functions v -> [omega -> omega(v)] embed the cut pseudometric D(u,v)=rho{omega(u)!=omega(v)} into finite-dimensional real L1. If each graph edge is in a bag and its bag separation mass is at most U times its length, the triangle inequality extends this to D(u,v)<=U d(u,v). No lower distortion bound follows merely from gluing.\n\n## Role in the source argument\n\nAssembles local cut measures in the bounded-treewidth source without changing their bag marginals.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:gluing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L118)\n- [eq:gluing-product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L147)\n\n## Antecedents and comparison\n\n[Chlamtac-Krauthgamer-Raghavendra](https://arxiv.org/pdf/1006.3970v2), Section 3.2, Lemmas 3.3-3.4, give the conditional sampling and root/traversal invariance. Their statements and proofs were read directly. The source records the finite-mass product formula and cut-metric interpretation.\n\n## Checks and limitations\n\nExact rational enumeration of small bag trees compares conditional sampling from every root with the product law, verifies all marginals, and includes zero-mass separators. Pairwise-consistent anti-correlated laws on three cyclic bags supply an obstruction when the tree hypothesis is dropped.\n\nThe check does not prove the source transport-of-uncertainty or its lower-distortion bound. Global assignments may have many different laws with the same bag marginals; canonical here refers to this Markov gluing.\n\n## Possible applications\n\nConsistent local probability models, cut metrics and dynamic programs on tree decompositions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000484",
+      "record_type": "instrument",
+      "title": "Upgrade a small bad fraction to a uniform subset-sum lower bound",
+      "forms": [
+        "boolean-subset-sum-potential-square",
+        "uniform-all-base-points-sampling"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-092"
+      ],
+      "source_paper_ids": [
+        "P-000263"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+          "label": "lem:sampler",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L14",
+          "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+        },
+        {
+          "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+          "label": "eq:sampler-second-moment",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L59",
+          "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+        },
+        {
+          "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+          "label": "eq:sampler-potential-square",
+          "line": 114,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L114",
+          "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+        },
+        {
+          "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+          "label": "eq:sampler-uniform-good-fraction",
+          "line": 146,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L146",
+          "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 1,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "li-liu-potential-core-with-weighted-random-shift-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000484.md",
+      "body": "# Upgrade a small bad fraction to a uniform subset-sum lower bound\n\n[Family 092](../families/openai-math-092.md) · [Source manuscript](../papers/P-000263.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet H be a finite abelian group. Average a nonnegative g over k independent uniform subset-sum shifts: A(x)=2^(-k) sum_epsilon g(x-sum epsilon_i w_i). Averaging also over a uniform x, distinct bit labels give independent uniform arguments, since their difference contains some shift with coefficient +1 or -1. Thus E_(w,x)(A(x)-gbar)^2=2^(-k)(E g^2-gbar^2), for every finite abelian group.\n\nSuppose the first-stage good set G={A>=(1-delta)gbar} has complement fraction beta<=exp(-2 theta). Add j fresh shifts and let N_j(x) count the good bit labels, with multiplicity. Then N_(j+1)(x)=N_j(x)+N_j(x-w). For Phi_j=E_x exp(-theta N_j(x)), conditional on the past,\n\nE_w Phi_(j+1)=Phi_j^2,\n\nby the bijection (x,w)->(x,x-w). Conditional Markov bounds the chance that log Phi_(j+1)>2 log Phi_j+theta delta by exp(-theta delta). Outside j such failures, log Phi_j<=2^j(-theta+1)+(2^j-1)theta delta. Since each x contributes at least |H|^(-1)exp(-theta N_j(x)), this gives simultaneously\n\nN_j(x)/2^j>=1-delta-1/theta-log|H|/(theta 2^j).\n\nCombining this with the first-stage lower bound and nonnegativity gives a uniform weighted average. The source chooses log|H|<=b^4, g<=exp(b^.65), gbar in [1/2,2], b^.69<=s<=b, delta=b^(-.1), k=floor(s/2) and theta=(log 2)s/16. For sufficiently large absolute b it obtains a (1-3delta)gbar lower bound at every x, with failure at most exp(-(log 2)b^.69/8)+b exp(-(log 2)b^.59/16).\n\nOnce the all-x event holds, an offset may be selected using other information. The bit labels are not independent samples; the potential identity does not require that false assumption.\n\n## Role in the source argument\n\nLets later lattice blocks use earlier random blocks at base points that depend on other choices.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:sampler](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L14)\n- [eq:sampler-second-moment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L59)\n- [eq:sampler-potential-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L114)\n- [eq:sampler-uniform-good-fraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L146)\n\n## Antecedents and comparison\n\n[Li-Liu, Theorem 4.1](https://github.com/xliu2022/xliu2022.github.io/blob/4b360838cb034784293bb6ba2128483fcec6e3ce/Unpolished_Manuscripts/Two-Stage%20Binary%20Correction%20for%20Nearly%20Linear%20Lattice%20Coverings.pdf) uses exactly the potential-square identity and greedy shifts for a dense set; that full proof was read. The source gives a weighted, high-probability version using random shifts and a preliminary second moment. No exhaustive novelty claim for this refinement.\n\n## Checks and limitations\n\nExact enumeration on small cyclic groups verifies the second-moment formula and potential square, including even-order groups and colliding subset sums. Exponential values are represented by a rational base to avoid floating-point ambiguity.\n\nFinite checks do not validate the source asymptotic threshold b0 or the lattice-covering construction. Uniformity requires fresh independent shifts and counts labels with multiplicity.\n\n## Possible applications\n\nReplacing average-case coverage by simultaneous coverage of every base point without a direct union bound over the group.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000485",
+      "record_type": "instrument",
+      "title": "Periodize a buffered covering window without losing boundary coverage",
+      "forms": [
+        "buffered-window-periodization",
+        "covering-density-infimum-invariance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-092"
+      ],
+      "source_paper_ids": [
+        "P-000264"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+          "label": "prop:periodization",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L19",
+          "sha256": "8a85111d87269adad3553836c4fb495708e3692f231c524bd8e2453f4063036e"
+        },
+        {
+          "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+          "label": "eq:density-window",
+          "line": 44,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L44",
+          "sha256": "8a85111d87269adad3553836c4fb495708e3692f231c524bd8e2453f4063036e"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 2,
+      "subject": "Convex and metric geometry",
+      "novelty_status": "classical-rogers-prosanov-periodization",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000485.md",
+      "body": "# Periodize a buffered covering window without losing boundary coverage\n\n[Family 092](../families/openai-math-092.md) · [Source manuscript](../papers/P-000264.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet a bounded convex body K in R^n have volume V and lie in Q_r=[-r,r]^n. Let X be a locally finite set of centers with K+X=R^n. The finite set S=X intersect (a+Q_(L+r)) covers a+Q_L, including its boundary. Repeating S by 2L Z^n covers all space. Distinct residue classes modulo that lattice give a periodic density at most V |S|/(2L)^n.\n\nConsequently, if theta_per is the infimum over finite unions of lattice cosets, every center set and every cube obey V #(X intersect (a+Q_R))/(2R)^n>=theta_per(1-r/R)^n. This bounds both upper and lower cube densities below by theta_per.\n\nFor balls, integrate the buffered-window inequality over a in z+B_(R-beta), beta=sqrt(n)(L+r). Each center is counted on a set of a of volume at most (2(L+r))^n. Tonelli yields the lower bound theta_per [L/(L+r)]^n(1-beta/R)^n for the normalized center count in z+B_R. First send R to infinity at fixed L, then L to infinity.\n\nConversely, a bounded fundamental cell shows that every periodic center set has all these intensities equal to the number of distinct cosets divided by lattice covolume. Thus the infima over coverings agree for periodic, cube upper/lower and ball upper/lower density conventions. These are equalities of infima; the individual statistics of one irregular covering need not coincide. Density counts overlapping translates separately, not just the volume of their union.\n\n## Role in the source argument\n\nTransfers the companion lower bound against all finite-coset coverings to unrestricted locally finite coverings.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:periodization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L19)\n- [eq:density-window](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L44)\n\n## Antecedents and comparison\n\n[Prosanov, On a Relation Between Packing and Covering Densities of Convex Bodies](https://doi.org/10.1007/s00454-019-00121-x), Theorem 2.1, states the classical periodic reduction and attributes it to Rogers. The statement was retrieved and read; the source supplies the explicit finite-window and density-convention argument.\n\n## Checks and limitations\n\nExact rational one-dimensional interval models verify coverage of a repeated buffered window, including seams. An unbuffered window can leave a gap when a needed center lies just outside it.\n\nThe check does not establish the high-dimensional random covering lower bound. It illustrates the buffer mechanism; the general proof is the selected geometric argument.\n\n## Possible applications\n\nReducing universal covering-density lower bounds to finite periodic patterns with explicit boundary control.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000486",
+      "record_type": "instrument",
+      "title": "Transport a weighted graph norm through an intertwining bijection",
+      "forms": [
+        "coordinatewise-weighted-graph-transport",
+        "nonlinear-intertwining-norm-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-324"
+      ],
+      "source_paper_ids": [
+        "P-000265"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+          "label": "prop:criterion",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L20",
+          "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+        },
+        {
+          "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+          "label": "eq:diagram",
+          "line": 66,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L66",
+          "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+        },
+        {
+          "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+          "label": "eq:inverse-diagram",
+          "line": 86,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L86",
+          "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+        },
+        {
+          "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+          "label": "rem:no-section",
+          "line": 172,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L172",
+          "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "classical-triangular-transport-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000486.md",
+      "body": "# Transport a weighted graph norm through an intertwining bijection\n\n[Family 324](../families/openai-math-324.md) · [Source manuscript](../papers/P-000265.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nFor a bounded linear Q:A->H, define Z_Q as sequences (s_i) with sum_i 2^(-i)||s_i||<infinity and Qs_i->0, with norm max{sum_i 2^(-i)||s_i||, sup_i||Qs_i||}. Let B:A_1->A_2 and h:H_1->H_2 be zero-preserving bi-Lipschitz bijections satisfying Q_2 B=h Q_1. Applying B coordinatewise maps Z_(Q_1) bijectively to Z_(Q_2): its Lipschitz bound controls the weighted sum, and h controls the norm-null output. The inverse identity Q_1 B^(-1)=h^(-1)Q_2 proves the reverse inclusion. The global Lipschitz constants are at most max{Lip B,Lip h} and max{Lip B^(-1),Lip h^(-1)}.\n\nThe source realizes this with E=F(U direct-sum_2 V), q the linearization of h-pi_U, Q_1(e,v)=(qe,v), and B(e,v)=e+delta(qe,v). The identity q delta(u,v)=h(u,v)-u gives qB=hQ_1. For z in E, put x=h^(-1)(qz); then B^(-1)(z)=(z-delta(x),pi_V x). This uses only h^(-1), not surjectivity of q.\n\nIf a||x-x'||<=||h(x)-h(x')||<=b||x-x'||, L_q=||q|| and K_q=max{L_q,1}, the source obtains Lip B<=1+K_q and Lip B^(-1)<=1+2L_q/a using the sum norm on E direct-sum V. The coordinatewise graph bounds are therefore max{1+K_q,b} and max{1+2L_q/a,1/a}. These are estimates for all pairs, not only distances from zero.\n\n## Role in the source argument\n\nSeparates the elementary nonlinear graph-space equivalence from the source difficult construction of h and its linear obstruction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:criterion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L20)\n- [eq:diagram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L66)\n- [eq:inverse-diagram](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L86)\n- [rem:no-section](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L172)\n\n## Antecedents and comparison\n\n[Godefroy-Kalton, Lipschitz-free Banach spaces](https://kaltonmemorial.missouri.edu/assets/docs/sm2003c.pdf), Theorem 2.12, exhibits a related triangular splitting; the statement and inverse-type formula were read. Their Corollary 3.2 requires an actual Lipschitz right inverse of a quotient map. The displayed nonlinear diagrams do not provide one.\n\n## Checks and limitations\n\nFinite sequences under a nonlinear piecewise-linear intertwining map test both weighted-sum and supremum norms and the global pairwise constants. A non-null output sequence is a control: a finite weighted sum alone does not put it in Z_Q.\n\nThe program does not construct the source Hilbert-space h, prove complete continuity of q, or exclude linear copies of c0(V). The general transport formulation isolates the step present in the selected proof.\n\n## Possible applications\n\nMoving nonlinear equivalences to sequence spaces whose norm couples a summable input with a uniformly controlled, vanishing output.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000487",
+      "record_type": "instrument",
+      "title": "Build an absorption bijection from an exactly lifted correction",
+      "forms": [
+        "lifted-correction-absorption-inverse",
+        "triangular-bijection-without-quotient-section"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-324"
+      ],
+      "source_paper_ids": [
+        "P-000266"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+          "label": "lem:absorption",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L12",
+          "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+        },
+        {
+          "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+          "label": "eq:absorb-inverse",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L45",
+          "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+        },
+        {
+          "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+          "label": "eq:absorb-bounds",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L36",
+          "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+        }
+      ],
+      "batch_id": "B048",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "classical-triangular-lift-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000487.md",
+      "body": "# Build an absorption bijection from an exactly lifted correction\n\n[Family 324](../families/openai-math-324.md) · [Source manuscript](../papers/P-000266.md) · [Batch B048](../../batches/B048/README.md)\n\n## Mathematical content\n\nLet D=E direct-sum_infinity U for real Banach spaces, Q:Z->U bounded linear, g:D->U a bi-Lipschitz bijection, and K:D->Z Lipschitz. Assume the exact identity QK(t,u)=g(t,u)-u. Then F:Z direct-sum_infinity E->Z, F(b,t)=b+K(t,Qb), is a bi-Lipschitz bijection.\n\nFor d in Z, set (t_d,u_d)=g^(-1)(Qd) and G(d)=(d-K(t_d,u_d),t_d). The identities QF(b,t)=g(t,Qb) and Q(d-K(t_d,u_d))=u_d prove GF=id and FG=id. In particular, no surjectivity or right-inverse assumption on Q is used: the formula itself produces the required b with Qb=u_d.\n\nIf q=||Q||, L_K=Lip K and c_g>0 is a lower Lipschitz constant of g, then Lip F<=1+L_K max{1,q}, and Lip G<=max{1+L_K q/c_g,q/c_g}. The exact identity is essential; an approximate lift needs its own stability argument.\n\nThis criterion says what an infinite-dimensional absorption construction must supply. It does not, by itself, produce g or K, nor does it exclude a linear copy of E in Z.\n\n## Role in the source argument\n\nTurns the companion source coordinate construction into an absorption map with a concrete inverse.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:absorption](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L12)\n- [eq:absorb-inverse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L45)\n- [eq:absorb-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L36)\n\n## Antecedents and comparison\n\nTriangular correction maps have classical antecedents, including [Godefroy-Kalton Theorem 2.12](https://kaltonmemorial.missouri.edu/assets/docs/sm2003c.pdf). The selected source proves its stated lift identity and inverse implication directly. Its geometric construction and no-linear-c0 assertion are separate claims.\n\n## Checks and limitations\n\nFinite-support sequence shifts test the two inverse identities in the c0 model where a coordinate is inserted. A separate nonsurjective Q example tests that no quotient section is needed. An inexact correction breaks the displayed inverse.\n\nThe sequence-shift example already contains a linear c0 copy and therefore does not test the source counterexample. It checks only the algebraic criterion.\n\n## Possible applications\n\nNonlinear absorption or stabilization problems where a correction can be lifted exactly through a bounded linear observation map.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -25090,6 +25490,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000258.md",
       "body": "# The Solomon–Yau least-volume theorem\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000478: Detect a projective cup power using complementary boundary fillings](../instruments/MI-000478.md)\n- [MI-000479: Force a strict geometric gap by an odd constraint map and compactness](../instruments/MI-000479.md)\n\n[Family review and dependencies](../families/openai-math-349.md) · [Batch B047](../../batches/B047/README.md)"
+    },
+    {
+      "id": "P-000259",
+      "record_type": "paper",
+      "title": "Petty’s projection-volume conjecture in dimensions at least four",
+      "source_collection": "openai/math",
+      "upstream_slug": "Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-088"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ef683f83154fc07147a4650600986d03e5609473d2904e476b5b4c003ef92124",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000259.md",
+      "body": "# Petty’s projection-volume conjecture in dimensions at least four\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000480: Find an interior balancing zero by projecting a strictly inward field](../instruments/MI-000480.md)\n\n[Family review and dependencies](../families/openai-math-088.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000260",
+      "record_type": "paper",
+      "title": "A product counterexample to the simplex maximum for projection-body volume",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-088"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "69a26a5bb67576b643ff699055a4802c5039af6ac8e5f19fe0cda946aa5a1011",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000260.md",
+      "body": "# A product counterexample to the simplex maximum for projection-body volume\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000481: Multiply normalized projection-body volumes using Cartesian products](../instruments/MI-000481.md)\n\n[Family review and dependencies](../families/openai-math-088.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000261",
+      "record_type": "paper",
+      "title": "Planar Graph Metrics Embed into L1 with Constant Distortion",
+      "source_collection": "openai/math",
+      "upstream_slug": "Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-089"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "95df70cb2e9596fb5ce683a4b72e8e69bbde1ca654fd4005226d45c074720e45",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000261.md",
+      "body": "# Planar Graph Metrics Embed into L1 with Constant Distortion\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000482: Stabilize a selected branch by exposing one fresh noise per comparison](../instruments/MI-000482.md)\n\n[Family review and dependencies](../families/openai-math-089.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000262",
+      "record_type": "paper",
+      "title": "L1 Embeddings of Graphs of Bounded Treewidth",
+      "source_collection": "openai/math",
+      "upstream_slug": "L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-089"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9ee6e846bf36d8b93bec67cb58d02ba8b3521d81e8296569c38ed7a66c54e84a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000262.md",
+      "body": "# L1 Embeddings of Graphs of Bounded Treewidth\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000483: Glue consistent bag laws into a global cut metric](../instruments/MI-000483.md)\n\n[Family review and dependencies](../families/openai-math-089.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000263",
+      "record_type": "paper",
+      "title": "A single-lattice covering bound of order n log n",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-092"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0bb2c4f30652f0fc927a0da2f7635736ac885bbafc244f599d3831cf122ffe5e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000263.md",
+      "body": "# A single-lattice covering bound of order n log n\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000484: Upgrade a small bad fraction to a uniform subset-sum lower bound](../instruments/MI-000484.md)\n\n[Family review and dependencies](../families/openai-math-092.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000264",
+      "record_type": "paper",
+      "title": "Translative covering densities of order n log n",
+      "source_collection": "openai/math",
+      "upstream_slug": "Translative-covering-densities-of-order-n-log-n-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-092"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c1ed5865eff143e5ab4de0ecd2d924febf9b0e21998e72207dcfc81d1d77c17c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000264.md",
+      "body": "# Translative covering densities of order n log n\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000485: Periodize a buffered covering window without losing boundary coverage](../instruments/MI-000485.md)\n\n[Family review and dependencies](../families/openai-math-092.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000265",
+      "record_type": "paper",
+      "title": "Lipschitz Equivalent Separable Banach Spaces Need Not Be Linearly Isomorphic",
+      "source_collection": "openai/math",
+      "upstream_slug": "Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-324"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6d10e926671006a38909f8e0634e1addcc126a866bdf6cf8cc6310df46dbbe38",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000265.md",
+      "body": "# Lipschitz Equivalent Separable Banach Spaces Need Not Be Linearly Isomorphic\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000486: Transport a weighted graph norm through an intertwining bijection](../instruments/MI-000486.md)\n\n[Family review and dependencies](../families/openai-math-324.md) · [Batch B048](../../batches/B048/README.md)"
+    },
+    {
+      "id": "P-000266",
+      "record_type": "paper",
+      "title": "Bi-Lipschitz Absorption of c0 Without a Linear Copy of c0",
+      "source_collection": "openai/math",
+      "upstream_slug": "Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-324"
+      ],
+      "batch_id": "B048",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "371236f806469ae576817264409a006e6d4393306b57db5c0e3923e6ec87c1eb",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000266.md",
+      "body": "# Bi-Lipschitz Absorption of c0 Without a Linear Copy of c0\n\n## Source\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000487: Build an absorption bijection from an exactly lifted correction](../instruments/MI-000487.md)\n\n[Family review and dependencies](../families/openai-math-324.md) · [Batch B048](../../batches/B048/README.md)"
     }
   ],
   "families": [
@@ -26498,6 +27050,62 @@
       "body": "# The Mahler conjectures\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000053](../papers/P-000053.md)\n- [P-000060](../papers/P-000060.md)\n- [P-000071](../papers/P-000071.md)\n\n## Family description\n\nSource status as recorded in the direction paper: original inspection: symmetric Lean coverage only; broader solution modules supplied, unbuilt new identity\n\nFor origin-symmetric convex bodies $`K\\subset\\mathbb R^n`$, the source claims $`|K||K^\\circ|\\ge4^n/n!`$, with equality for linear images of Hanner polytopes. For general convex bodies, use the Santaló point $`s(K)\\in\\operatorname{int}K`$ and define\n``` math\nP(K)=|K|\\,|(K-s(K))^\\circ|.\n```\nThe general claim is $`P(K)\\ge(n+1)^{n+1}/(n!)^2`$, with equality exactly for simplices; for a simplex its Santaló point is its centroid. Thus the equality statement for the polar is made after the indicated centering. In the symmetric case $`s(K)=0`$. The third source claims $`c_G(\\operatorname{int}K\\times\\operatorname{int}K^\\circ)=4`$ for origin-symmetric $`K\\subset\\mathbb R^n`$ and $`n\\ge2`$, with embeddings at every capacity strictly below 4. The initial extraction inspected symmetric formalization coverage only. The snapshot also supplies general-Mahler and symmetric-polar solution modules; a `sorry` in a comparator challenge is a statement placeholder, not evidence that the separate solution module is a stub. None was built here.\n\n## Extracted instruments.\n\n- [MI-000016: The conformal lens](../instruments/MI-000016.md)\n\n- [MI-000017: Holomorphic mass pushed to the boundary](../instruments/MI-000017.md)\n\n- [MI-000018: Feasible-simplex identity](../instruments/MI-000018.md)\n\n## Reused.\n\nGross 2019; Demailly; Cauchy–Binet; Hanner’s formulas; Lima and Hansen–Lima (the Lean reproves the median-to-Hanner step itself); Fradelizi–Meyer; Klartag 2018 for the general case.\n\n## Caveats.\n\nThe general-body argument uses about twenty selected decimal constants and SymPy certificates. Its reasoning summary leaves the conclusion dependent on uniform scalar inequalities. The symmetric paper presents a self-contained argument without that qualification.\n\n## Recorded assessment\n\n- Novelty: new feasible-simplex identity; rest combination\n- Formalization: original: symmetric; general/polar modules supplied, unbuilt\n- Statement coverage: symmetric statement only in initial extraction\n- Dependencies: no\n- Antecedents: —"
     },
     {
+      "id": "openai-math-088",
+      "record_type": "family",
+      "title": "Affine balancing and multiplicative projection-body tests",
+      "source_family": "088",
+      "source_collection": "openai/math",
+      "batch_id": "B048",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000259",
+        "P-000260"
+      ],
+      "instrument_ids": [
+        "MI-000480",
+        "MI-000481"
+      ],
+      "headline": "The principal source claims Petty projection-volume rigidity in dimensions at least four; its companion gives a product-of-simplices counterexample to a proposed maximum.",
+      "central_instrument": "A strictly inward covariance field has an interior zero by projected fixed points. Projection-body ratios multiply under Cartesian products, converting comparison into exact arithmetic.",
+      "novelty_assessment": "Brouwer projection, Gaussian moments and Cauchy projection formulas are classical. The source product witness is reproduced algebraically; no independent historical-priority claim.",
+      "formalization_summary": "The supplied scope describes the n>=4 lower bound with ellipsoid equality and the dimension-20 product counterexample. It excludes the companion all-large-dimension exponential excess. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Affine balancing assumes a continuous nonzero seminorm assignment with the specified kernel dependence. The product formula uses the factor 1/2 in Cauchy projection and the normalization |Pi K|/|K|^(d-1).",
+      "dependencies": "Continuity of the source variational minimizers, Gaussian radial moments, nearest-point projection, Cauchy projection formula, product facets and simplex volumes.",
+      "antecedents": "Classical Brouwer fixed points and Cauchy projection; Saroglou supplies a checked primary statement of the projection formula and affine invariance.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-088.md",
+      "body": "# Affine balancing and multiplicative projection-body tests\n\n## Source manuscripts and claim\n\n- [Petty’s projection-volume conjecture in dimensions at least four](../papers/P-000259.md): selected passages extracted.\n- [A product counterexample to the simplex maximum for projection-body volume](../papers/P-000260.md): selected passages extracted.\n\nThe principal source claims Petty projection-volume rigidity in dimensions at least four; its companion gives a product-of-simplices counterexample to a proposed maximum.\n\n## Extracted instruments\n\n- [MI-000480: Find an interior balancing zero by projecting a strictly inward field](../instruments/MI-000480.md)\n- [MI-000481: Multiply normalized projection-body volumes using Cartesian products](../instruments/MI-000481.md)\n\n## Dependencies and antecedents\n\nContinuity of the source variational minimizers, Gaussian radial moments, nearest-point projection, Cauchy projection formula, product facets and simplex volumes.\n\nClassical Brouwer fixed points and Cauchy projection; Saroglou supplies a checked primary statement of the projection formula and affine invariance.\n\n## Review and formalization scope\n\nRead the selected fixed-point and affine-position proofs, and the companion facet, product, affine covariance, simplex and dimension-20 comparison proofs. Continuity and existence of the principal variational minimizers were left as inputs. Both manuscripts have extracted passages.\n\nThe supplied scope describes the n>=4 lower bound with ellipsoid equality and the dimension-20 product counterexample. It excludes the companion all-large-dimension exponential excess. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.\n\nAffine balancing assumes a continuous nonzero seminorm assignment with the specified kernel dependence. The product formula uses the factor 1/2 in Cauchy projection and the normalization |Pi K|/|K|^(d-1).\n\n[Batch record](../../batches/B048/README.md)"
+    },
+    {
+      "id": "openai-math-089",
+      "record_type": "family",
+      "title": "Fresh-noise branch stability and Markov gluing of cuts",
+      "source_family": "089",
+      "source_collection": "openai/math",
+      "batch_id": "B048",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000261",
+        "P-000262"
+      ],
+      "instrument_ids": [
+        "MI-000482",
+        "MI-000483"
+      ],
+      "headline": "The two source manuscripts claim uniform L1 embeddings for planar and bounded-treewidth graph metrics.",
+      "central_instrument": "Condition on all but a fresh atom noise to control ties in a predetermined list. Consistent bag laws glue along a tree to a root-independent global cut measure.",
+      "novelty_assessment": "Classical conditional anti-concentration and junction-tree sampling. The Markov gluing antecedent is explicit in Chlamtac-Krauthgamer-Raghavendra.",
+      "formalization_summary": "The supplied targets assert a universal planar distortion constant and a constant depending only on the bag-size bound for treewidth. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The atom list and geometric inputs precede the tested noises. Bag laws must agree on overlaps and satisfy the tree running-intersection property; arbitrary pairwise consistency on a cyclic family is insufficient.",
+      "dependencies": "Independent uniform noises, deterministic finite candidate list, Lipschitz variation and connected paths; consistent finite bag measures and conditional sampling.",
+      "antecedents": "Elementary interval anti-concentration; Chlamtac-Krauthgamer-Raghavendra, Section 3.2, Lemmas 3.3 and 3.4.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-089.md",
+      "body": "# Fresh-noise branch stability and Markov gluing of cuts\n\n## Source manuscripts and claim\n\n- [Planar Graph Metrics Embed into L1 with Constant Distortion](../papers/P-000261.md): selected passages extracted.\n- [L1 Embeddings of Graphs of Bounded Treewidth](../papers/P-000262.md): selected passages extracted.\n\nThe two source manuscripts claim uniform L1 embeddings for planar and bounded-treewidth graph metrics.\n\n## Extracted instruments\n\n- [MI-000482: Stabilize a selected branch by exposing one fresh noise per comparison](../instruments/MI-000482.md)\n- [MI-000483: Glue consistent bag laws into a global cut metric](../instruments/MI-000483.md)\n\n## Dependencies and antecedents\n\nIndependent uniform noises, deterministic finite candidate list, Lipschitz variation and connected paths; consistent finite bag measures and conditional sampling.\n\nElementary interval anti-concentration; Chlamtac-Krauthgamer-Raghavendra, Section 3.2, Lemmas 3.3 and 3.4.\n\n## Review and formalization scope\n\nRead the full fresh-noise lemma, branch-comparison corollary and conditional-scope remark in the planar manuscript, and the separator and full Markov-gluing proofs in the treewidth manuscript. The source geometry producing the bounded list and the global lower-distortion constructions were not audited.\n\nThe supplied targets assert a universal planar distortion constant and a constant depending only on the bag-size bound for treewidth. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.\n\nThe atom list and geometric inputs precede the tested noises. Bag laws must agree on overlaps and satisfy the tree running-intersection property; arbitrary pairwise consistency on a cyclic family is insufficient.\n\n[Batch record](../../batches/B048/README.md)"
+    },
+    {
       "id": "openai-math-091",
       "record_type": "family",
       "title": "Moment-coordinate estimates for logarithmic Brunn–Minkowski",
@@ -26523,6 +27131,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-091.md",
       "body": "# Moment-coordinate estimates for logarithmic Brunn–Minkowski\n\n## Source manuscript and claim\n\n[The logarithmic Brunn–Minkowski conjecture](../papers/P-000086.md), by OpenAI, None.\n\nThe source claims the logarithmic Brunn–Minkowski inequality for all origin-symmetric convex bodies, with the symmetric Lp and scalar B-property consequences. The extracted mechanisms concern the analytic variance argument.\n\n## Extracted instruments\n\n- [MI-000125: A moment-coordinate tensor square decomposition gives summandwise variance control](../instruments/MI-000125.md)\n- [MI-000126: Removing affine obstructions from double-divergence tests without a global lower bound](../instruments/MI-000126.md)\n\n## Dependencies and antecedents\n\nMoment-measure existence and regularity; moment-map Stein kernels; weighted integration by parts; local elliptic regularity; cutoff approximation and soft-slab limits.\n\nKlartag supplies the moment-Hessian diffusion; Fathi identifies the Stein kernel; Kolesnikov–Livshyts–Rotem develop the related transport-Hessian and strengthened Brascamp–Lieb framework. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the reduction, adjoint identities, density proof, tensor proof and variance closure. Checked the tensor symmetrization algebra with exact finite arithmetic and the Gaussian model of the test operator. The moment-map construction and its regularity inputs were not independently reconstructed.\n\nThe supplied scope document and LogBrunnMinkowski Comparator quantify over all dimensions n>=1 and full-dimensional origin-symmetric bodies. They target the volume inequality, not separate certified statements of these extracted analytic lemmas. No Lean solution was built.\n\nThe Wulff intersection is essential: the geometric mean of support functions need not be a support function. The analytic density lemma requires an integration formula and a Hessian identity, as well as an upper bound on the matrix field.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/091.md) · [Batch record](../../batches/B003/README.md)"
+    },
+    {
+      "id": "openai-math-092",
+      "record_type": "family",
+      "title": "Uniform subset-sum sampling and exact covering periodization",
+      "source_family": "092",
+      "source_collection": "openai/math",
+      "batch_id": "B048",
+      "subject": "Convex and metric geometry",
+      "source_paper_ids": [
+        "P-000263",
+        "P-000264"
+      ],
+      "instrument_ids": [
+        "MI-000484",
+        "MI-000485"
+      ],
+      "headline": "The principal source claims an order n log n single-lattice covering bound; the companion claims the matching order for extremal covering densities.",
+      "central_instrument": "A squared exponential potential upgrades a small bad fraction to control at every group point. A buffered finite window transfers arbitrary coverings to periodic ones with vanishing density loss.",
+      "novelty_assessment": "The potential-square core is explicit in Li-Liu Theorem 4.1; periodization is classical Rogers theory, as stated by Prosanov. No new covering-order theorem is certified.",
+      "formalization_summary": "The supplied targets concern an exact single-lattice cover in all n>=2 and matching asymptotic upper/lower orders of translative and lattice density suprema. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Subset-sum bit labels retain multiplicity. Conditioning precedes each fresh uniform shift. Periodization equates infima over coverings, not different density statistics for one covering.",
+      "dependencies": "Finite abelian translation bijections, a second moment, conditional Markov inequality, nonnegative weights, bounded convex bodies, local finiteness and boundary buffers.",
+      "antecedents": "Li-Liu, Two-stage binary correction for nearly linear lattice coverings, Theorem 4.1; Prosanov Theorem 2.1, attributed to Rogers.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-092.md",
+      "body": "# Uniform subset-sum sampling and exact covering periodization\n\n## Source manuscripts and claim\n\n- [A single-lattice covering bound of order n log n](../papers/P-000263.md): selected passages extracted.\n- [Translative covering densities of order n log n](../papers/P-000264.md): selected passages extracted.\n\nThe principal source claims an order n log n single-lattice covering bound; the companion claims the matching order for extremal covering densities.\n\n## Extracted instruments\n\n- [MI-000484: Upgrade a small bad fraction to a uniform subset-sum lower bound](../instruments/MI-000484.md)\n- [MI-000485: Periodize a buffered covering window without losing boundary coverage](../instruments/MI-000485.md)\n\n## Dependencies and antecedents\n\nFinite abelian translation bijections, a second moment, conditional Markov inequality, nonnegative weights, bounded convex bodies, local finiteness and boundary buffers.\n\nLi-Liu, Two-stage binary correction for nearly linear lattice coverings, Theorem 4.1; Prosanov Theorem 2.1, attributed to Rogers.\n\n## Review and formalization scope\n\nRead both complete selected source proofs. Read the cited Li-Liu robust binary translation proof and Prosanov periodization statement directly. Lattice geometry, random body construction and the global upper/lower covering bounds were not audited.\n\nThe supplied targets concern an exact single-lattice cover in all n>=2 and matching asymptotic upper/lower orders of translative and lattice density suprema. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.\n\nSubset-sum bit labels retain multiplicity. Conditioning precedes each fresh uniform shift. Periodization equates infima over coverings, not different density statistics for one covering.\n\n[Batch record](../../batches/B048/README.md)"
     },
     {
       "id": "openai-math-093",
@@ -30212,6 +30848,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-323.md",
       "body": "# Evaluation criteria for quotients and small restrictions\n\n## Source manuscript and claim\n\n[Relative independence of the separable quotient problem](../papers/P-000245.md), by OpenAI, September 23, 2026.\n\nThe source claims relative independence of the separable quotient problem.\n\n## Extracted instruments\n\n- [MI-000452: Recognize separable quotients from a norm-separable evaluation image](../instruments/MI-000452.md)\n- [MI-000453: Upgrade strict singularity to a uniformly small restriction](../instruments/MI-000453.md)\n\n## Dependencies and antecedents\n\nFinite half-norming sets, annihilator induction, bounded coordinate functionals, Hahn-Banach separation and residual-halving surjectivity.\n\nClassical Banach-space quotient duality and strictly singular operator basic-sequence arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete evaluation section, including the prefix lemma, criterion and small-restriction proof. Neither the CH construction nor positive consistency proof was audited.\n\nRead SeparableQuotientNegative.lean in full and the scope document. The negative_main target has sorry and covers the CH negative assertion over R and C. Positive consistency is outside that target. No Lean build.\n\nThe evaluation image must be norm separable, not merely weak-star separable. Small restrictions require a controlled basic sequence, not just individually small vectors.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/323.md) · [Batch record](../../batches/B043/README.md)"
+    },
+    {
+      "id": "openai-math-324",
+      "record_type": "family",
+      "title": "Transporting graph norms and absorbing a lifted correction",
+      "source_family": "324",
+      "source_collection": "openai/math",
+      "batch_id": "B048",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000265",
+        "P-000266"
+      ],
+      "instrument_ids": [
+        "MI-000486",
+        "MI-000487"
+      ],
+      "headline": "The sources claim separable Banach counterexamples to linear classification under bi-Lipschitz equivalence, including nonlinear c0 absorption without a linear c0 copy.",
+      "central_instrument": "An intertwining identity transports both parts of a weighted graph norm. An exact lifted correction gives an explicit absorption inverse without assuming its linear projection is onto.",
+      "novelty_assessment": "Classical triangular change-of-variable mechanisms, related to Aharoni-Lindenstrauss and Godefroy-Kalton. The difficult infinite-dimensional constructions and linear obstructions remain unverified here.",
+      "formalization_summary": "The supplied targets assert nonisomorphic bi-Lipschitz equivalent separable spaces, with specified constants, and a separable space absorbing c0 while containing no linear c0 copy. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The maps intertwine nonlinearly; this does not supply a Lipschitz right inverse of the linear operator. Norm-null image sequences and the exact correction identity are essential.",
+      "dependencies": "Bi-Lipschitz bijections, bounded linear maps, zero-preserving intertwining maps, weighted sequence sums and explicit inverse formulas.",
+      "antecedents": "Godefroy-Kalton Theorem 2.12 gives a triangular free-space splitting; Corollary 3.2 concerns actual Lipschitz right inverses and requires separate hypotheses.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-324.md",
+      "body": "# Transporting graph norms and absorbing a lifted correction\n\n## Source manuscripts and claim\n\n- [Lipschitz Equivalent Separable Banach Spaces Need Not Be Linearly Isomorphic](../papers/P-000265.md): selected passages extracted.\n- [Bi-Lipschitz Absorption of c0 Without a Linear Copy of c0](../papers/P-000266.md): selected passages extracted.\n\nThe sources claim separable Banach counterexamples to linear classification under bi-Lipschitz equivalence, including nonlinear c0 absorption without a linear c0 copy.\n\n## Extracted instruments\n\n- [MI-000486: Transport a weighted graph norm through an intertwining bijection](../instruments/MI-000486.md)\n- [MI-000487: Build an absorption bijection from an exactly lifted correction](../instruments/MI-000487.md)\n\n## Dependencies and antecedents\n\nBi-Lipschitz bijections, bounded linear maps, zero-preserving intertwining maps, weighted sequence sums and explicit inverse formulas.\n\nGodefroy-Kalton Theorem 2.12 gives a triangular free-space splitting; Corollary 3.2 concerns actual Lipschitz right inverses and requires separate hypotheses.\n\n## Review and formalization scope\n\nRead the full weighted graph criterion and lifted-correction absorption proof, plus the graph-space completeness argument. Only the transport and inverse interfaces are extracted; neither the special nonlinear maps nor their linear-obstruction properties were certified. Both manuscripts have selected extractions.\n\nThe supplied targets assert nonisomorphic bi-Lipschitz equivalent separable spaces, with specified constants, and a separable space absorbing c0 while containing no linear c0 copy. The scope document and linked Comparator definitions and target statements were read. The inspected targets contain sorry; no solution or Lean project was built.\n\nThe maps intertwine nonlinearly; this does not supply a Lipschitz right inverse of the linear operator. Norm-null image sequences and the exact correction identity are essential.\n\n[Batch record](../../batches/B048/README.md)"
     },
     {
       "id": "openai-math-325",

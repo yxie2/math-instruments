@@ -1,0 +1,410 @@
+{
+  "batch_id": "B048",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T14:27:47.317398+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BoundedTreewidthL1.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BoundedTreewidthL1.lean",
+      "sha256": "630b947fa99b012e1575ad23cf658b0d6e8660d31a95600f5b5894bb0fe5d48f",
+      "bytes": 1651
+    },
+    {
+      "path": "lean/ComparatorChallenges/C0Absorption.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/C0Absorption.lean",
+      "sha256": "a5d7375b335f7dd950c879f1d99d60cda553d2a4d7e68b0170a35c5657becdbe",
+      "bytes": 1057
+    },
+    {
+      "path": "lean/ComparatorChallenges/CoveringDensity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CoveringDensity.lean",
+      "sha256": "a3d37e4eb8900941eec1ba3614628168885500591221430fb39a5095b56f8abe",
+      "bytes": 4370
+    },
+    {
+      "path": "lean/ComparatorChallenges/LipschitzEquivalence.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LipschitzEquivalence.lean",
+      "sha256": "6cd6d20439f9433567e6b11781ec06fb4f5ef5c16b84808062b09af146232625",
+      "bytes": 1329
+    },
+    {
+      "path": "lean/ComparatorChallenges/PettyProjectionVolume.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PettyProjectionVolume.lean",
+      "sha256": "29270000c1c8332fef7657ed9f81f89a472d902e2a8a6eb4c4a28934c9f528f3",
+      "bytes": 1769
+    },
+    {
+      "path": "lean/ComparatorChallenges/PlanarL1.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PlanarL1.lean",
+      "sha256": "e902947b3b86e48e2eb3052f5832ee4a3ac5fb4e4ffd3ad0b8ad16f66344c3c3",
+      "bytes": 2176
+    },
+    {
+      "path": "lean/ComparatorChallenges/ProjectionCounterexample.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ProjectionCounterexample.lean",
+      "sha256": "6f695ad46f2cb035fb085c3e852fbf33fc956235cf7e69da6a662dd106f6ea30",
+      "bytes": 1324
+    },
+    {
+      "path": "lean/ComparatorChallenges/ProjectionVolume.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ProjectionVolume.lean",
+      "sha256": "877aba27508a77a7654082a4f12a5ba15159b0ddfd69d3c9e8cfdd58d3bf5e40",
+      "bytes": 2112
+    },
+    {
+      "path": "lean/ComparatorChallenges/SingleLatticeCovering.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SingleLatticeCovering.lean",
+      "sha256": "f2f6684141cab6c648c934f75685a3d85f12f37f3c2b0c83224155157a60dbcd",
+      "bytes": 874
+    },
+    {
+      "path": "lean/docs/088.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/088.md",
+      "sha256": "ec69f1229043f34d0953ccce32c0adb9f51feba75a5dcfa94575d4023d5583cd",
+      "bytes": 1964
+    },
+    {
+      "path": "lean/docs/089.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/089.md",
+      "sha256": "d912e138ed89a21cbc0b38663001c5f0e540400b03878e12e601cfad97c49b09",
+      "bytes": 1761
+    },
+    {
+      "path": "lean/docs/092.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/092.md",
+      "sha256": "eb50ced10c26791524303fd75823a8f311259a4b6338f472a196009ab0c07008",
+      "bytes": 1469
+    },
+    {
+      "path": "lean/docs/324.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/324.md",
+      "sha256": "7efd66a6a6964d0f0a7367256faaabb654abce2e80635ea8198b5228fc7c43b8",
+      "bytes": 1636
+    },
+    {
+      "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/README.md",
+      "sha256": "69a26a5bb67576b643ff699055a4802c5039af6ac8e5f19fe0cda946aa5a1011",
+      "bytes": 730
+    },
+    {
+      "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+      "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0",
+      "bytes": 18985
+    },
+    {
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/README.md",
+      "sha256": "0bb2c4f30652f0fc927a0da2f7635736ac885bbafc244f599d3831cf122ffe5e",
+      "bytes": 601
+    },
+    {
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634",
+      "bytes": 6830
+    },
+    {
+      "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/README.md",
+      "sha256": "371236f806469ae576817264409a006e6d4393306b57db5c0e3923e6ec87c1eb",
+      "bytes": 657
+    },
+    {
+      "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+      "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257",
+      "bytes": 2898
+    },
+    {
+      "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/README.md",
+      "sha256": "9ee6e846bf36d8b93bec67cb58d02ba8b3521d81e8296569c38ed7a66c54e84a",
+      "bytes": 612
+    },
+    {
+      "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+      "sha256": "3aa42408ff84bfe6711dc44a1a6c958ed56a514bd81fa292cebe041fe7562cb2",
+      "bytes": 19598
+    },
+    {
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/README.md",
+      "sha256": "6d10e926671006a38909f8e0634e1addcc126a866bdf6cf8cc6310df46dbbe38",
+      "bytes": 740
+    },
+    {
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97",
+      "bytes": 6354
+    },
+    {
+      "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/README.md",
+      "sha256": "ef683f83154fc07147a4650600986d03e5609473d2904e476b5b4c003ef92124",
+      "bytes": 679
+    },
+    {
+      "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+      "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640",
+      "bytes": 16637
+    },
+    {
+      "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/README.md",
+      "sha256": "95df70cb2e9596fb5ce683a4b72e8e69bbde1ca654fd4005226d45c074720e45",
+      "bytes": 687
+    },
+    {
+      "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+      "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99",
+      "bytes": 21229
+    },
+    {
+      "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/README.md",
+      "sha256": "c1ed5865eff143e5ab4de0ecd2d924febf9b0e21998e72207dcfc81d1d77c17c",
+      "bytes": 597
+    },
+    {
+      "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+      "sha256": "8a85111d87269adad3553836c4fb495708e3692f231c524bd8e2453f4063036e",
+      "bytes": 5374
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000480",
+      "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+      "label": "lem:fixed-point",
+      "line": 298,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L298",
+      "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+    },
+    {
+      "instrument_id": "MI-000480",
+      "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+      "label": "prop:position",
+      "line": 326,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L326",
+      "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+    },
+    {
+      "instrument_id": "MI-000480",
+      "path": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex",
+      "label": "eq:kernel-field",
+      "line": 356,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/sections/05_position.tex#L356",
+      "sha256": "c4ecc5b118f00c14212495f1f7a5bc65373cc94cb1b258b327edc51ca7fa2640"
+    },
+    {
+      "instrument_id": "MI-000481",
+      "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+      "label": "lem:facets",
+      "line": 153,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L153",
+      "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+    },
+    {
+      "instrument_id": "MI-000481",
+      "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+      "label": "prop:product",
+      "line": 193,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L193",
+      "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+    },
+    {
+      "instrument_id": "MI-000481",
+      "path": "preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex",
+      "label": "prop:simplex",
+      "line": 311,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/build/main.tex#L311",
+      "sha256": "5302b6298402cf1665e5747766b53055ecad84a5027b1657811731389879f0e0"
+    },
+    {
+      "instrument_id": "MI-000482",
+      "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+      "label": "int:near-tie",
+      "line": 331,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L331",
+      "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+    },
+    {
+      "instrument_id": "MI-000482",
+      "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+      "label": "int:comparisons",
+      "line": 378,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L378",
+      "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+    },
+    {
+      "instrument_id": "MI-000482",
+      "path": "preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex",
+      "label": "int:conditional-scope",
+      "line": 442,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026/build/sections/interpolation.tex#L442",
+      "sha256": "bcbc90decf9d890e6a1d6016295574974740234309fb06791771e677df4d2c99"
+    },
+    {
+      "instrument_id": "MI-000483",
+      "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+      "label": "lem:gluing",
+      "line": 118,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L118",
+      "sha256": "3aa42408ff84bfe6711dc44a1a6c958ed56a514bd81fa292cebe041fe7562cb2"
+    },
+    {
+      "instrument_id": "MI-000483",
+      "path": "preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex",
+      "label": "eq:gluing-product",
+      "line": 147,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026/build/02-cut-laws.tex#L147",
+      "sha256": "3aa42408ff84bfe6711dc44a1a6c958ed56a514bd81fa292cebe041fe7562cb2"
+    },
+    {
+      "instrument_id": "MI-000484",
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "label": "lem:sampler",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L14",
+      "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+    },
+    {
+      "instrument_id": "MI-000484",
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "label": "eq:sampler-second-moment",
+      "line": 59,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L59",
+      "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+    },
+    {
+      "instrument_id": "MI-000484",
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "label": "eq:sampler-potential-square",
+      "line": 114,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L114",
+      "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+    },
+    {
+      "instrument_id": "MI-000484",
+      "path": "preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex",
+      "label": "eq:sampler-uniform-good-fraction",
+      "line": 146,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026/build/sampler.tex#L146",
+      "sha256": "c232b218a741c2b406279589c8e445a1ddf2c892bdcd3f7089b577e02ff02634"
+    },
+    {
+      "instrument_id": "MI-000485",
+      "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+      "label": "prop:periodization",
+      "line": 19,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L19",
+      "sha256": "8a85111d87269adad3553836c4fb495708e3692f231c524bd8e2453f4063036e"
+    },
+    {
+      "instrument_id": "MI-000485",
+      "path": "preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex",
+      "label": "eq:density-window",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Translative-covering-densities-of-order-n-log-n-September-23-2026/build/sections/10-periodization.tex#L44",
+      "sha256": "8a85111d87269adad3553836c4fb495708e3692f231c524bd8e2453f4063036e"
+    },
+    {
+      "instrument_id": "MI-000486",
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "label": "prop:criterion",
+      "line": 20,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L20",
+      "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+    },
+    {
+      "instrument_id": "MI-000486",
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "label": "eq:diagram",
+      "line": 66,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L66",
+      "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+    },
+    {
+      "instrument_id": "MI-000486",
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "label": "eq:inverse-diagram",
+      "line": 86,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L86",
+      "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+    },
+    {
+      "instrument_id": "MI-000486",
+      "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex",
+      "label": "rem:no-section",
+      "line": 172,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/build/sections/03-triangular.tex#L172",
+      "sha256": "433105133e3dedf3c9fc17e407ab193c23f840b86a6cc4337e6b2b3a05772f97"
+    },
+    {
+      "instrument_id": "MI-000487",
+      "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+      "label": "lem:absorption",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L12",
+      "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+    },
+    {
+      "instrument_id": "MI-000487",
+      "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+      "label": "eq:absorb-inverse",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L45",
+      "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+    },
+    {
+      "instrument_id": "MI-000487",
+      "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex",
+      "label": "eq:absorb-bounds",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/build/sections/02-absorption.tex#L36",
+      "sha256": "97f2712d67a64805d425dfe3d93721124876bc90ee15eeb577d37fbbce93a257"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-088",
+      "extracted_slugs": [
+        "Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026",
+        "A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-089",
+      "extracted_slugs": [
+        "Planar-Graph-Metrics-Embed-into-L1-with-Constant-Distortion-September-23-2026",
+        "L1-Embeddings-of-Graphs-of-Bounded-Treewidth-September-23-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-092",
+      "extracted_slugs": [
+        "A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026",
+        "Translative-covering-densities-of-order-n-log-n-September-23-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-324",
+      "extracted_slugs": [
+        "Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026",
+        "Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}
