@@ -18,13 +18,13 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 
 | Browse | Contents |
 | --- | --- |
-| [Mathematical instruments](tables/instruments.md) | 134 extracted entries, each with a stable identifier |
-| [Source papers](tables/papers.md) | 89 manuscript records across the selected families |
-| [Problem families](tables/families.md) | 46 family accounts with claims, antecedents and caveats |
+| [Mathematical instruments](tables/instruments.md) | 141 extracted entries, each with a stable identifier |
+| [Source papers](tables/papers.md) | 92 manuscript records across the selected families |
+| [Problem families](tables/families.md) | 49 family accounts with claims, antecedents and caveats |
 | [Recurring patterns](catalog/patterns/README.md) | 11 approaches connecting the source arguments |
 | [Tables and review status](tables/README.md) | Family maps, formalization, dependencies and antecedents |
 | [Extraction batches](batches/README.md) | Extraction rounds and source versions |
-| [Release coverage](tables/coverage.md) | 46 of 372 families catalogued; 326 pending |
+| [Release coverage](tables/coverage.md) | 49 of 372 families catalogued; 323 pending |
 | [Use case studies](case-studies/README.md) | Subsequent investigations using extracted instruments |
 | [Catalogue exports](exports/README.md) | JSON and CSV for search and further analysis |
 
@@ -38,7 +38,7 @@ Read Ying Xie's preprint, [From Extracted Instruments to Mathematical Insight: A
 
 ## Extraction releases
 
-The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md). B002 adds nine instruments from four quantum-information families; B003 adds ten from four geometric-inequality and dimension-reduction families. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) tracks the remaining October-release families.
+The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) tracks the remaining October-release families.
 
 Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
 
