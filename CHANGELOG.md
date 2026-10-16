@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B018: nine instruments from operator-algebra families 288, 292, 296 and 298, with exact source bindings and nine finite check groups. The records preserve cyclic-domain lifting, arbitrary tensor-factor unitaries, varying representation dimensions, backward cycle propagation and retention of the same entropy-comparison ensemble.
+
 - Added B017: eight instruments from number-theory families 022, 023, 024 and 025, with exact source bindings and eight finite check groups. The records preserve dependent orbit accounting, squarefree coefficient separation, exceptional preimages, exact phase visits and indexed descent; established concentration and padding methods are credited.
 
 - Added B016: eight instruments from families 278, 279, 283 and 284, with exact manuscript bindings and eight finite check groups. The cards preserve formal-potential domains, deferred-filter hypotheses, programmable-slot input costs and per-instance query caps, and credit established spectral and quantum ingredients.
