@@ -1,0 +1,323 @@
+{
+  "batch_id": "B079",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:21:54.823104+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ContinuumTransition.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ContinuumTransition.lean",
+      "sha256": "703b04bfb80732ba60d9c55cc108ea94e9d5740174695cae4ca97f99aedf5512",
+      "bytes": 2385
+    },
+    {
+      "path": "lean/ComparatorChallenges/SKHighTemperature.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SKHighTemperature.lean",
+      "sha256": "9645fa7fe2545c287b000cb0583288a0ab9b2382207215006935f8e9278de436",
+      "bytes": 2823
+    },
+    {
+      "path": "lean/ComparatorChallenges/SLELowerPositivity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SLELowerPositivity.lean",
+      "sha256": "f550800b9a60db513d4c9a2a85f710d0036a6a9b8f717ee0e64c38edd35f606a",
+      "bytes": 3398
+    },
+    {
+      "path": "lean/docs/227.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/227.md",
+      "sha256": "ecacd9dd0af0bf4f53804288815f2b6d286dcfd2abae45f11b0de7a99ab3f863",
+      "bytes": 4377
+    },
+    {
+      "path": "lean/docs/228.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/228.md",
+      "sha256": "26930fec584054fcda2cc217462cfdbba9aef28ab56dcecd4f13759fb4114501",
+      "bytes": 2034
+    },
+    {
+      "path": "lean/docs/230.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/230.md",
+      "sha256": "49930254a299e52e97bd89d72c7b7fa4b4b498ebc2bac782d48b93b40ca773e4",
+      "bytes": 1159
+    },
+    {
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/README.md",
+      "sha256": "297ae9c02ff30b93a1e383a7571fc584047bda285f1f32010ce97930e29758d4",
+      "bytes": 654
+    },
+    {
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+      "sha256": "922a26bd600e40c99824ff2caf0e9b0fca646bac60b5ca53dedfbba49ccac763",
+      "bytes": 8429
+    },
+    {
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+      "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9",
+      "bytes": 33803
+    },
+    {
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/README.md",
+      "sha256": "6df96941335fde8cc7c52f27ef211331b76fd8e5073bbe487e12ece27f78c83c",
+      "bytes": 687
+    },
+    {
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+      "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc",
+      "bytes": 7355
+    },
+    {
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+      "sha256": "fe6bcfbaf38e29f78bdfd730398edb7c0bede38e02b1375ec4b9930951ad366a",
+      "bytes": 18136
+    },
+    {
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/README.md",
+      "sha256": "a0154ff20c764a445329cc2bd0b5fb576e18dccd80de39e59fc32b1b203c75a4",
+      "bytes": 911
+    },
+    {
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+      "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a",
+      "bytes": 23249
+    },
+    {
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+      "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a",
+      "bytes": 12011
+    },
+    {
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/README.md",
+      "sha256": "a4c14568d623077c0cd615ca909ce5e22e7f92ccfabc35210e13194ea6087ef6",
+      "bytes": 774
+    },
+    {
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+      "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35",
+      "bytes": 68042
+    },
+    {
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+      "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e",
+      "bytes": 39927
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000734",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+      "label": "eq:history-weight",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L39",
+      "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+    },
+    {
+      "instrument_id": "MI-000734",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+      "label": "eq:exact-history-law",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L47",
+      "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+    },
+    {
+      "instrument_id": "MI-000734",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+      "label": "eq:site-expansion",
+      "line": 125,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L125",
+      "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+    },
+    {
+      "instrument_id": "MI-000735",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+      "label": "lem:common-calibration",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L31",
+      "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+    },
+    {
+      "instrument_id": "MI-000735",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+      "label": "eq:coefficient-one",
+      "line": 80,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L80",
+      "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+    },
+    {
+      "instrument_id": "MI-000735",
+      "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+      "label": "eq:calibration-cutoff",
+      "line": 99,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L99",
+      "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+    },
+    {
+      "instrument_id": "MI-000736",
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+      "label": "score:hellinger",
+      "line": 80,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L80",
+      "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e"
+    },
+    {
+      "instrument_id": "MI-000736",
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+      "label": "score:hellinger-inequality",
+      "line": 86,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L86",
+      "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e"
+    },
+    {
+      "instrument_id": "MI-000737",
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+      "label": "warm:product",
+      "line": 576,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L576",
+      "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35"
+    },
+    {
+      "instrument_id": "MI-000737",
+      "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+      "label": "warm:product-bounds",
+      "line": 587,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L587",
+      "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35"
+    },
+    {
+      "instrument_id": "MI-000738",
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+      "label": "lem:elementary-convex-convergence",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L10",
+      "sha256": "922a26bd600e40c99824ff2caf0e9b0fca646bac60b5ca53dedfbba49ccac763"
+    },
+    {
+      "instrument_id": "MI-000738",
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+      "label": "lem:reachable-local",
+      "line": 106,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L106",
+      "sha256": "922a26bd600e40c99824ff2caf0e9b0fca646bac60b5ca53dedfbba49ccac763"
+    },
+    {
+      "instrument_id": "MI-000739",
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+      "label": "lem:joint-support",
+      "line": 561,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L561",
+      "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+    },
+    {
+      "instrument_id": "MI-000739",
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+      "label": "lem:transform-support",
+      "line": 601,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L601",
+      "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+    },
+    {
+      "instrument_id": "MI-000739",
+      "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+      "label": "eq:transform-support-transfer",
+      "line": 613,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L613",
+      "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+    },
+    {
+      "instrument_id": "MI-000740",
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+      "label": "gauge:batch",
+      "line": 29,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L29",
+      "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+    },
+    {
+      "instrument_id": "MI-000740",
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+      "label": "gauge:admissible",
+      "line": 77,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L77",
+      "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+    },
+    {
+      "instrument_id": "MI-000740",
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+      "label": "gauge:multiplicity",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L141",
+      "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+    },
+    {
+      "instrument_id": "MI-000741",
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+      "label": "mp:kernel-integral",
+      "line": 327,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L327",
+      "sha256": "fe6bcfbaf38e29f78bdfd730398edb7c0bede38e02b1375ec4b9930951ad366a"
+    },
+    {
+      "instrument_id": "MI-000741",
+      "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+      "label": "mp:fixed-center-integral",
+      "line": 343,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L343",
+      "sha256": "fe6bcfbaf38e29f78bdfd730398edb7c0bede38e02b1375ec4b9930951ad366a"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-224",
+      "extracted_slugs": [
+        "From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-Pivotal-Amplitude-for-Voronoi-Percolation-from-Cardys-Formula-October-5-2026",
+        "Cardys-formula-for-critical-Poisson-Voronoi-percolation-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-227",
+      "extracted_slugs": [
+        "Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "Functional-universality-of-critical-SK-autocorrelations-October-5-2026",
+        "A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026",
+        "Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026",
+        "Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026",
+        "Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026",
+        "A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026",
+        "Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-228",
+      "extracted_slugs": [
+        "A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-radial-continuum-phase-transition-with-algebraic-decay-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-230",
+      "extracted_slugs": [
+        "An-exact-Hausdorff-gauge-for-SLE-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "An-explicit-exact-Hausdorff-gauge-for-SLE-September-26-2026"
+      ]
+    }
+  ]
+}

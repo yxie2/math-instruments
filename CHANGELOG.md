@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B079: 8 selected instruments from 4 families and 4 manuscripts. Signed time histories, shared-response calibration, posterior entropy contraction, convex supports and moment gauges. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B078: 8 selected instruments from 4 families and 4 manuscripts. Environmentwise coupling, departure-row independence, Gaussian replica calculus and finite planar random-cluster identities. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B077: 8 selected instruments from 4 families and 6 manuscripts. Extract eight mechanisms from four families: Busemann calibration, convex boundary regularity, cluster-column cones and relay inequalities, conditional spin reduction, positive massive kernels and tree-interface stability.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

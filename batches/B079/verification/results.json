@@ -1,0 +1,77 @@
+{
+  "batch": "B079",
+  "status": "pass",
+  "elapsed_seconds": 0.136,
+  "scope": "Selected finite mechanisms; no source headline or Lean certification.",
+  "checks": {
+    "histories": {
+      "status": "pass",
+      "details": {
+        "multitime_laws": 4,
+        "lipschitz_comparisons": 16,
+        "exact_replica_expansion": "297/625",
+        "omitted_double_selection": "47/100"
+      }
+    },
+    "calibration": {
+      "status": "pass",
+      "details": {
+        "feasible_interval_bounds": 207,
+        "different_observable_control": true,
+        "unbounded_amplitude_control": true
+      }
+    },
+    "likelihood": {
+      "status": "pass",
+      "details": {
+        "poisson_event_bounds": 120,
+        "max_affinity_identity_error": 1.3322676295501878e-15,
+        "initial_density_affinity": 0.7544730796630945,
+        "max_omitted_poisson_tail": 1.3265065584838518e-153
+      }
+    },
+    "posterior_entropy": {
+      "status": "pass",
+      "details": {
+        "arbitrary_channels": 60,
+        "product_posterior_mixtures": 60,
+        "max_contraction_ratio": 0.9406429905427254
+      }
+    },
+    "convex_limits": {
+      "status": "pass",
+      "details": {
+        "smooth_convex_value_and_support_cases": 120,
+        "nonunique_support_control": true,
+        "nonconvex_spike_control": true
+      }
+    },
+    "quadratic_supports": {
+      "status": "pass",
+      "details": {
+        "full_support_transfers": 99,
+        "boundary_maximizers_included": true
+      }
+    },
+    "moment_gauges": {
+      "status": "pass",
+      "details": {
+        "moment_batches": 14,
+        "interleaved_envelope_points": 400,
+        "finite_exclusion_checks": 400
+      }
+    },
+    "collision_kernels": {
+      "status": "pass",
+      "details": {
+        "outdegree_one_graphs": 3413,
+        "kernel_majorizations": 60,
+        "endpoint_logarithmic_divergence": [
+          14.46756882483093,
+          28.93513764966186,
+          43.40270647449279
+        ]
+      }
+    }
+  }
+}

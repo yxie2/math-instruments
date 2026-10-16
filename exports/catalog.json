@@ -31185,6 +31185,378 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000733.md",
       "body": "# Recover loop positivity and planar dual odds directly from Euler identities\n\n[Family 223](../families/openai-math-223.md) · [Source manuscript](../papers/P-000493.md) · [Batch B078](../../batches/B078/README.md)\n\n## Mathematical content\n\nFor a planar ribbon neighborhood of the open subgraph, the boundary-loop count satisfies ell=2k+|A|-|V|, up to the fixed boundary-cap convention. At d=sqrt(q) and edge odds v=d, d^ell is a fixed factor times q^k d^|A|. All weights are positive for every q>0, including q<1. A bounded number of local re-pairings changes loop count by a bounded integer, giving bounded weight ratios. On a torus the formula includes -2g, with genus g in {0,1}, so the extra factor remains bounded for fixed q.\n\nFor a connected plane graph and the dual complement A*=E minus A, Euler gives k*(A*)=|A|-|V|+k(A)+1. Choosing v*_e=q/v_e yields\nw*(A*)/w(A)=q^(|E|-|V|+1)/product_e v_e,\nindependent of A. Hence duality transforms odds by q/v and fixes sqrt(q), corresponding to p=sqrt(q)/(1+sqrt(q)). This exact self-dual identity is not a proof that the model is critical. Boundary caps must be noncrossing and their incidence conventions must be retained.\n\n## Role in the source argument\n\nEstablishes positive local comparison weights and exact duality without importing an unavailable monotonicity principle.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:loop-law](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L86)\n- [lem:finite-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L119)\n\n## Antecedents and comparison\n\n[Grimmett, arXiv:math/0205237](https://arxiv.org/abs/math/0205237), Section 6.1 on PDF pages 27-28, was read through the Euler-count derivation of planar duality. These are classical finite identities. No critical-point or scaling conclusion from that older survey is used.\n\n## Checks and limitations\n\nIndependent component counting and ribbon-boundary permutations verify the loop identity on small embedded graphs. Exact complementary dual configurations verify a constant weight ratio for heterogeneous odds and q below and above one.\n\nThe checks concern finite planar graphs. They do not establish torus topology in general, positive association, criticality or SLE convergence.\n\n## Possible applications\n\nSeparating finite algebraic positivity from probabilistic monotonicity and conformal-limit claims.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000734",
+      "record_type": "instrument",
+      "title": "Expand coupled time histories as a zero-mass signed perturbation",
+      "forms": [
+        "exact-multitime-history-perturbation",
+        "site-grouped-replica-expansion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-224"
+      ],
+      "source_paper_ids": [
+        "P-000494"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+          "label": "eq:history-weight",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L39",
+          "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+        },
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+          "label": "eq:exact-history-law",
+          "line": 47,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L47",
+          "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+        },
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex",
+          "label": "eq:site-expansion",
+          "line": 125,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L125",
+          "sha256": "56503db6b1263f277888508b655da519ad40fc76428ae72d4e1937f3a812454a"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000734.md",
+      "body": "# Expand coupled time histories as a zero-mass signed perturbation\n\n[Family 224](../families/openai-math-224.md) · [Source manuscript](../papers/P-000494.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nFor labeled times t_1,...,t_n and T>=max|t_i|, define w_t as the integral over s in [-T,T] of the point mass at (1_(s<=t_i))_i, minus T times each constant history. This is independent of T, has total mass zero and variation norm at most 4T. If all 1/2+q t_i lie in [0,1], the history from one shared uniform mark has exactly law P_0+q w_t, where P_0 gives mass one half to each constant history. Moreover ||w_t-w_t'||_TV<=2 sum_i |t_i-t_i'|, using total variation norm of a signed measure.\n\nMultiplying over sites and independent color replicas gives an exact finite subset expansion. Group selected site-replica coordinates by distinct sites, assign a nonempty set I_i of replicas at each selected site, and use degree sum_i |I_i|. A shared site can be selected in both replicas and contributes q^2, not just q. For Poisson sites, the factorial moment formula replaces the existing-site sum by inserted nuclei, with ordered-tuple factor intensity^k/k!. The signed operation changes colors; the insertion is a representation of a sum, not a claim of geometric pivotality.\n\nThe geometry cutoff multiplies the observable; it is not conditioning on the cutoff event. Exponential moments of the finite site count justify the fixed-mesh expansion. Uniform mesh limits require separate coefficient bounds.\n\n## Role in the source argument\n\nOrganizing signed perturbations without losing common-time or shared-site dependencies.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [eq:history-weight](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L39)\n- [eq:exact-history-law](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L47)\n- [eq:site-expansion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/05-expansion.tex#L125)\n\n## Antecedents and comparison\n\nProduct expansion and Poisson factorial moment identities are classical. No novelty of those identities is claimed. The source organizes time labels and shared-geometry replicas explicitly.\n\n## Checks and limitations\n\nExact rational time histories, including ties and negative times, are compared to interval lengths of the uniform mark. A two-site, two-replica test checks the full signed expansion and a control omitting double selections.\n\nFinite algebra does not prove mesh-uniform summability or percolation scaling limits.\n\n## Possible applications\n\nOrganizing signed perturbations without losing common-time or shared-site dependencies.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000735",
+      "record_type": "instrument",
+      "title": "Fix a microscopic amplitude by one normalized macroscopic coefficient",
+      "forms": [
+        "common-response-amplitude-calibration",
+        "ordered-cutoff-subsequence-uniqueness"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-224"
+      ],
+      "source_paper_ids": [
+        "P-000494"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+          "label": "lem:common-calibration",
+          "line": 31,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L31",
+          "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+        },
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+          "label": "eq:coefficient-one",
+          "line": 80,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L80",
+          "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+        },
+        {
+          "path": "preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex",
+          "label": "eq:calibration-cutoff",
+          "line": 99,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L99",
+          "sha256": "69fffeb330c3b0760a4f21ae1f49f08e727bdcf4831edf416f6a0d2fbaaa455a"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000735.md",
+      "body": "# Fix a microscopic amplitude by one normalized macroscopic coefficient\n\n[Family 224](../families/openai-math-224.md) · [Source manuscript](../papers/P-000494.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nSuppose bounded nonnegative amplitudes c_e from two models multiply the same limiting fixed-scale test J_chi(h). A first response is normalized exactly to one. Uniform integrability permits a nonnegative cutoff chi losing at most z+o(1), while local replacement and fixed-scale convergence imply, for every subsequential limit c_* in either model,\n|1-c_* J_chi(h)|<=z+o_h(1), with 0<=J_chi(h)<=C_chi.\n\nTaking z<1/4 and small h excludes c_*=0. If all amplitudes are bounded by C, the same inequality gives J_chi(h)>=(1-z-o_h(1))/C. For two subsequential limits,\n|c_+-c_-|<=2C(z+o_h(1))/(1-z-o_h(1)).\nFirst send h to zero, then z to zero. Every limit agrees, including limits from different models, so both amplitude sequences converge to a common positive value.\n\nFor a fixed higher coefficient, repeat local replacement at separated insertion locations, giving c_e^k times a common square-kernel integral. Fixed-scale limits, ordered replacement errors and uniform integrability then identify the whole coefficient. These are hypotheses, not consequences of the scalar calibration argument. The method compares a common response rather than equating the models' numerical mesh sizes.\n\n## Role in the source argument\n\nRemoving an unknown relative scale through a shared measurable response.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:common-calibration](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L31)\n- [eq:coefficient-one](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L80)\n- [eq:calibration-cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/build/sections/07-identification.tex#L99)\n\n## Antecedents and comparison\n\nThe proof is a classical subsequence uniqueness argument with a normalization constraint. Exact priority of its source-specific percolation implementation is not established.\n\n## Checks and limitations\n\nFinite feasible intervals for c_* check the explicit diameter and positive lower bounds over varying cutoffs. Controls remove the common observable or allow unbounded amplitudes and show why those assumptions matter.\n\nNo source arm bound, replacement estimate, or uniform-integrability theorem is certified.\n\n## Possible applications\n\nRemoving an unknown relative scale through a shared measurable response.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000736",
+      "record_type": "instrument",
+      "title": "Control integrated intensity distortion by the square-root likelihood",
+      "forms": [
+        "hellinger-action-likelihood-tail",
+        "initial-density-aware-point-process-change"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-227"
+      ],
+      "source_paper_ids": [
+        "P-000495"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+          "label": "score:hellinger",
+          "line": 80,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L80",
+          "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e"
+        },
+        {
+          "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+          "label": "score:hellinger-inequality",
+          "line": 86,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L86",
+          "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000736.md",
+      "body": "# Control integrated intensity distortion by the square-root likelihood\n\n[Family 227](../families/openai-math-227.md) · [Source manuscript](../papers/P-000495.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nFor a nonexplosive marked process with reference predictable intensities r, let Q be absolutely continuous with respect to P up to a finite stopping time tau. Write Z=dQ/dP and rb for its changed intensities in the same filtration. Set J=integral sum r(sqrt(b)-1)^2 dt. Then\nQ{J>A, log Z<=B} <= exp((B-A)/2).\n\nWith initial density z_0, the likelihood identity gives sqrt(Z) exp(J/2)=sqrt(z_0) times the stochastic likelihood exponential with intensity ratios sqrt(b). Conditional expectation of that nonnegative exponential is at most one, while E_P sqrt(z_0)<=1. Localize integrated reference, changed and square-root rates, then use Fatou to obtain E_P[sqrt(Z) exp(J/2)]<=1. On the event in question, sqrt(Z) exp(-J/2)<=exp((B-A)/2); multiplying and integrating proves the tail bound. Zero ratios are permitted, with the expression set to zero where Z=0.\n\nThis generic inequality does not by itself supply polynomial bounds on log Z for tested bridges. Those source-specific inputs are separate, and bounds averaged over a boundary law are not uniform bounds for every fixed endpoint pair.\n\n## Role in the source argument\n\nConverting likelihood bounds into pathwise control of accumulated rate distortion.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [score:hellinger](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L80)\n- [score:hellinger-inequality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex#L86)\n\n## Antecedents and comparison\n\nThe source cites Jacod, Multivariate point processes (1975), DOI [10.1007/BF00536010](https://doi.org/10.1007/BF00536010), for the likelihood formula and nonnegative exponential. Publisher metadata was verified; the primary article proof and its numbering were not independently read. The square-root calculation is explicit in the extracted source proof.\n\n## Checks and limitations\n\nExact Poisson likelihood calculations and truncated sums with controlled tails check the square-root identity and event bound, including zero changed rates and an initial density change.\n\nConstant-rate Poisson tests do not verify a general predictable intensity construction or the SK bridge estimates.\n\n## Possible applications\n\nConverting likelihood bounds into pathwise control of accumulated rate distortion.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000737",
+      "record_type": "instrument",
+      "title": "Average posterior entropy production through a concave two-point conductance",
+      "forms": [
+        "observation-contraction-of-modified-form",
+        "product-posterior-field-free-entropy-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-227"
+      ],
+      "source_paper_ids": [
+        "P-000495"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+          "label": "warm:product",
+          "line": 576,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L576",
+          "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35"
+        },
+        {
+          "path": "preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+          "label": "warm:product-bounds",
+          "line": 587,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L587",
+          "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000737.md",
+      "body": "# Average posterior entropy production through a concave two-point conductance\n\n[Family 227](../families/openai-math-227.md) · [Source manuscript](../papers/P-000495.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nLet mu be a probability on binary configurations and mu_Y its posterior under any observation channel. For a positive fixed function z, define I_mu(z) as the sum over sites and fibers of ab/(a+b) times (z_+-z_-)(log z_+-log z_-), where a,b are the joint masses of the two fiber points. Then E I_muY(z)<=I_mu(z).\n\nThe conductance c(a,b)=ab/(a+b), extended by zero on the axes, is concave: its Hessian is -2(b,-a)(b,-a)^T/(a+b)^3. The posterior masses average to the original masses, and each test factor is nonnegative and independent of Y, so Jensen applies fiber by fiber.\n\nIf every posterior mu_Y is product, entropy tensorization and Ent_pi(z)<=Cov_pi(z,log z) give E Ent_muY(z)<=E I_muY(z)<=I_mu(z). Thus for z=f^2 and N=mu(f^2), the normalized remaining posterior entropy is at most I_mu(f^2)/N. Approximation z+epsilon includes zeros with the usual extended values. This bound requires no posterior field-tail estimate. The other, square-root-energy bound in the source lemma does require such an estimate and is not extracted here.\n\n## Role in the source argument\n\nTransferring a functional inequality backward through an observation channel without controlling extreme posterior fields.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [warm:product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L576)\n- [warm:product-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex#L587)\n\n## Antecedents and comparison\n\nEntropy tensorization, Jensen and concavity of parallel conductance are established tools. Exhaustive priority of this posterior formulation is not established.\n\n## Checks and limitations\n\nFinite observation channels compare averaged posterior forms against the initial form. Mixtures of product posteriors test the normalized entropy inequality, including biased coordinates and observation events of very small probability.\n\nA test chosen after observing Y is outside this statement. The checks give no SK mixing-time estimate.\n\n## Possible applications\n\nTransferring a functional inequality backward through an observation channel without controlling extreme posterior fields.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000738",
+      "record_type": "instrument",
+      "title": "Pass finite convex limits together with their supporting vectors",
+      "forms": [
+        "local-convex-uniform-convergence",
+        "closed-subgradient-limit"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-228"
+      ],
+      "source_paper_ids": [
+        "P-000496"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+          "label": "lem:elementary-convex-convergence",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L10",
+          "sha256": "922a26bd600e40c99824ff2caf0e9b0fca646bac60b5ca53dedfbba49ccac763"
+        },
+        {
+          "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex",
+          "label": "lem:reachable-local",
+          "line": 106,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L106",
+          "sha256": "922a26bd600e40c99824ff2caf0e9b0fca646bac60b5ca53dedfbba49ccac763"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000738.md",
+      "body": "# Pass finite convex limits together with their supporting vectors\n\n[Family 228](../families/openai-math-228.md) · [Source manuscript](../papers/P-000496.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nFinite convex functions converging pointwise to a finite function on an open convex domain converge locally uniformly. Values at the vertices and center of a surrounding cube bound the local oscillation. Extending chords inside that cube bounds all nearby secant slopes uniformly. A finite net then upgrades pointwise convergence to uniform convergence on compact subsets.\n\nConsequently, if x_n->x in the domain and v_n belongs to the subdifferential of F_n at x_n, the v_n are bounded and every limit belongs to the subdifferential of F at x. This follows by passing the supporting inequalities to the limit. It is an outer-closedness assertion, not convergence of every selected gradient to a unique vector.\n\nFor a planar finite convex F, the subdifferential equals the convex hull of reachable gradients. Differentiability points have full measure; local boundedness gives compactness of their limiting gradients. Points approaching x along a direction show that reachable gradients and the subdifferential have the same support function. The directional blowups [F(x+ae)-F(x)]/a converge locally uniformly in e to that support function.\n\n## Role in the source argument\n\nPreventing loss of slope information when passing convex free energies to a limit.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:elementary-convex-convergence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L10)\n- [lem:reachable-local](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/convex-facts.tex#L106)\n\n## Antecedents and comparison\n\nThe source explicitly identifies these as special cases of Rockafellar and Wets. [Variational Analysis, author PDF](https://sites.math.washington.edu/~rtr/papers/rtr169-VarAnalysis-RockWets.pdf), Theorem 7.17 on printed pages 252-253 (PDF pages 260-261), was read through its statement and the uniform-convergence part of the proof. The reachable-gradient theorem in that reference was not independently read. No new convex analysis is claimed.\n\n## Checks and limitations\n\nPolyhedral convex functions and smooth log-sum-exp approximations check uniform value bounds, supporting inequalities, nonunique limiting supports, and directional blowups. A nonconvex narrow-spike sequence controls the missing convexity hypothesis.\n\nFinite examples do not prove a thermodynamic pressure limit or persistence of a phase transition.\n\n## Possible applications\n\nPreventing loss of slope information when passing convex free energies to a limit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000739",
+      "record_type": "instrument",
+      "title": "Transfer both coordinates of a support through a quadratic density transform",
+      "forms": [
+        "joint-fenchel-support-identity",
+        "quadratic-density-full-gradient-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-228"
+      ],
+      "source_paper_ids": [
+        "P-000496"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+          "label": "lem:joint-support",
+          "line": 561,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L561",
+          "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+        },
+        {
+          "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+          "label": "lem:transform-support",
+          "line": 601,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L601",
+          "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+        },
+        {
+          "path": "preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex",
+          "label": "eq:transform-support-transfer",
+          "line": 613,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L613",
+          "sha256": "7fd326955d32faf792aaa0ad2d5694e14157d65b2b76463969e267ed3ade90a9"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000739.md",
+      "body": "# Transfer both coordinates of a support through a quadratic density transform\n\n[Family 228](../families/openai-math-228.md) · [Source manuscript](../papers/P-000496.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nLet Q(beta,h) be finite convex and H(beta,d)=sup_h(hd-Q(beta,h)). Fix a density d for which H(.,d) is finite concave. If Fenchel equality holds at (beta,z,d), then\n{e:(e,d) in partial Q(beta,z)}=-partial_beta^+ H(beta,d).\nThe forward inclusion follows by taking the supremum in h in the joint supporting inequality. The reverse follows from Q(beta',h')>=h'd-H(beta',d) and the supergradient inequality.\n\nFor a>0 set F(beta,h)=sup_(d>=0)[hd-H(beta,d)+beta a d^2/2]. Suppose d attains this supremum and the stated conjugacy and convexity hypotheses hold. Set z=h+beta a d. Comparing with any d'>=0 gives\nH(beta,d')>=H(beta,d)+z(d'-d)+beta a(d'-d)^2/2.\nThus z supports H in density. For every e in -partial_beta^+ H(beta,d),\n(e,d) in partial Q(beta,z), and (e+a d^2/2,d) in partial F(beta,h).\nThe latter vector supports the fixed-density branch, which touches F at the maximizer. At a differentiability point it is the full gradient. Density convergence alone would not determine its first coordinate.\n\n## Role in the source argument\n\nTracking energy and density together under mean-field-type pressure transforms.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:joint-support](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L561)\n- [lem:transform-support](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L601)\n- [eq:transform-support-transfer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/build/kac.tex#L613)\n\n## Antecedents and comparison\n\nThis is a direct application of Fenchel equality and supporting branches. Exact priority of the source formulation is not established; no new general conjugacy theorem is claimed.\n\n## Checks and limitations\n\nQuadratic density costs with affine temperature dependence permit exact optimization. Checks compare full gradients, the shifted field, and the strengthened density inequality over a grid, including a boundary maximizer at zero.\n\nThe checks do not prove the physical hypotheses on H, existence of the continuum pressure, or a common transition temperature.\n\n## Possible applications\n\nTracking energy and density together under mean-field-type pressure transforms.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000740",
+      "record_type": "instrument",
+      "title": "Build a positive quadratic gauge from repeated moment thresholds",
+      "forms": [
+        "moment-batch-success-and-tail-balance",
+        "quadratic-envelope-finite-exclusion-restoration"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-230"
+      ],
+      "source_paper_ids": [
+        "P-000497"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+          "label": "gauge:batch",
+          "line": 29,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L29",
+          "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+        },
+        {
+          "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+          "label": "gauge:admissible",
+          "line": 77,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L77",
+          "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+        },
+        {
+          "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex",
+          "label": "gauge:multiplicity",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L141",
+          "sha256": "c898a43682c901d5f02c96a2018e0fc58f5c2eccddaea89c96ec3665f36ec4bc"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000740.md",
+      "body": "# Build a positive quadratic gauge from repeated moment thresholds\n\n[Family 230](../families/openai-math-230.md) · [Source manuscript](../papers/P-000497.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nLet L_j increase to a nonnegative L with m_n=E L^n in (0,infinity) for every n. Choose ell_n with E L_ell_n^n>3m_n/4 and put T_n=4m_(n+1)/m_n. At A_k=2^k<=T_n use multiplicity N_nk=floor(4^n A_k^n/m_n), and append a cleanup threshold n. Each batch is finite, and all its entries b_ni have a common positive lower bound min(1,m_1/4).\n\nGeometric sums give sum_k N_nk P(L>=16A_k)<=4^n16^(-n)/(1-2^(-n)). For n>=3, truncating L_ell_n at T_n preserves at least m_n/2 of its nth moment; a dyadic level between Y/2 and Y and the floor bound yield sum_k N_nk P(Y>=A_k)>=2^(n-2)-1/[2(1-2^(-n))]>=2^n/8. Cleanup tails are summable because sum_n P(L>=16n)<=E L/16.\n\nFor 0<d<2, assign r_ni=exp(-n^2-2a(i-1)(ell_n+n)), a>0, and define h(r)=inf_ni b_ni r_ni^d max(1,(r/r_ni)^2). Only finitely many radii exceed any positive epsilon; for fixed r, smaller radii give terms at least c_0 r^2 r_ni^(d-2), tending to infinity. Hence h(r)>0. The envelope is nondecreasing, continuous, and h(Cr)<=C^2h(r); cleanup entries force h(r)->0 at zero.\n\nIf a bounded nonnegative F is bounded by C times every envelope term after finitely many batches, restore the excluded finite terms by increasing C using their positive minima. Interleaving radii do not affect this argument.\n\n## Role in the source argument\n\nConverting moment information into thresholds with many opportunities for success and summably rare large excesses.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [gauge:batch](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L29)\n- [gauge:admissible](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L77)\n- [gauge:multiplicity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/gauge.tex#L141)\n\n## Antecedents and comparison\n\n[Peres and Solomyak, arXiv:math/0406375v1](https://arxiv.org/abs/math/0406375v1), Lemma 1.2 on PDF page 2 and its full proof in Section 5 on page 10, were read. They give the classical quadratic regularization. Positivity here is proved from the particular batch data; it is not inferred for an arbitrary positive input profile. Exact priority of the batch construction is not established.\n\n## Checks and limitations\n\nFinite positive mass laws check moment-based multiplicities, lower success and upper tail bounds. Envelope evaluations in logarithmic coordinates check monotonicity, doubling and finite-exclusion restoration with interleaving batches.\n\nThe tests do not construct SLE mass or prove an exact Hausdorff measure statement. The resulting envelope is not asserted to equal an explicit log-log formula.\n\n## Possible applications\n\nConverting moment information into thresholds with many opportunities for success and summably rare large excesses.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000741",
+      "record_type": "instrument",
+      "title": "Integrate nearest-neighbor collision products using directed graph elimination",
+      "forms": [
+        "capped-nearest-neighbor-kernel-integrability",
+        "fixed-center-translation-averaging"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-230"
+      ],
+      "source_paper_ids": [
+        "P-000497"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+          "label": "mp:kernel-integral",
+          "line": 327,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L327",
+          "sha256": "fe6bcfbaf38e29f78bdfd730398edb7c0bede38e02b1375ec4b9930951ad366a"
+        },
+        {
+          "path": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex",
+          "label": "mp:fixed-center-integral",
+          "line": 343,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L343",
+          "sha256": "fe6bcfbaf38e29f78bdfd730398edb7c0bede38e02b1375ec4b9930951ad366a"
+        }
+      ],
+      "batch_id": "B079",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000741.md",
+      "body": "# Integrate nearest-neighbor collision products using directed graph elimination\n\n[Family 230](../families/openai-math-230.md) · [Source manuscript](../papers/P-000497.md) · [Batch B079](../../batches/B079/README.md)\n\n## Mathematical content\n\nFor 0<alpha<1, b>0 and bounded planar K, set b_i=min(b,min_(j!=i)|x_i-x_j|) and F_b=product_i b_i^(-alpha). Then F_b is integrable on K^m. Its integral with one point fixed is uniformly bounded as that point ranges over any bounded set.\n\nBound each factor by b^(-alpha)+sum_(j!=i)|x_i-x_j|^(-alpha) and expand. Every term is a directed graph with outdegree at most one and no self-edge. Remove vertices with no incoming edge: a single alpha singularity has a uniformly bounded planar integral. Remaining components are cycles. A cycle vertex has two incident factors; Cauchy-Schwarz bounds its integral using exponent 2alpha<2. Removing it leaves a chain. A two-cycle has the same 2alpha singularity directly.\n\nFor the fixed center x_0, translate all variable points into a common ball around zero. Average a simultaneous translation by v in the unit disk. Translation invariance of the deterministic distance kernel bounds the fixed-center integral by an all-variable integral over a slightly larger ball, divided by the unit-disk area. This does not assume translation invariance of any SLE law. At alpha=1 the two-point diagonal already has logarithmically divergent area integral.\n\n## Role in the source argument\n\nSeparating collision integration from stochastic hitting estimates and handling a fixed marked point without an invariance assumption on the process.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [mp:kernel-integral](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L327)\n- [mp:fixed-center-integral](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/sections/multipoint.tex#L343)\n\n## Antecedents and comparison\n\nThe proof uses classical planar power-kernel integrability, functional directed graphs and translation averaging. No new general integrability theorem is claimed.\n\n## Checks and limitations\n\nEnumerated outdegree-one graphs verify the leaf/cycle decomposition. Radial integrals check the alpha<1 threshold and its divergent endpoint. Finite configurations verify the product expansion and its nearest-neighbor majorization.\n\nThese deterministic estimates do not prove the multipoint SLE hitting bound needed to turn them into random mass moments.\n\n## Possible applications\n\nSeparating collision integration from stochastic hitting estimates and handling a fixed marked point without an invariance assumption on the process.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -40554,6 +40926,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000493.md",
       "body": "# Self-dual random-cluster interfaces below one\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000732: Condition random-cluster edges while retaining physical connectivity conventions](../instruments/MI-000732.md)\n- [MI-000733: Recover loop positivity and planar dual odds directly from Euler identities](../instruments/MI-000733.md)\n\n[Family review and dependencies](../families/openai-math-223.md) · [Batch B078](../../batches/B078/README.md)"
+    },
+    {
+      "id": "P-000494",
+      "record_type": "paper",
+      "title": "From critical crossings to quenched near-critical universality in Voronoi percolation",
+      "source_collection": "openai/math",
+      "upstream_slug": "From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-224"
+      ],
+      "batch_id": "B079",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a0154ff20c764a445329cc2bd0b5fb576e18dccd80de39e59fc32b1b203c75a4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000494.md",
+      "body": "# From critical crossings to quenched near-critical universality in Voronoi percolation\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/critical-crossings-quenched-near-critical-universality-voronoi-percolation.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/From-critical-crossings-to-quenched-near-critical-universality-in-Voronoi-percolation-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000734: Expand coupled time histories as a zero-mass signed perturbation](../instruments/MI-000734.md)\n- [MI-000735: Fix a microscopic amplitude by one normalized macroscopic coefficient](../instruments/MI-000735.md)\n\n[Family review and dependencies](../families/openai-math-224.md) · [Batch B079](../../batches/B079/README.md)"
+    },
+    {
+      "id": "P-000495",
+      "record_type": "paper",
+      "title": "Universality of critical quench autocorrelations in the Sherrington–Kirkpatrick model",
+      "source_collection": "openai/math",
+      "upstream_slug": "Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-227"
+      ],
+      "batch_id": "B079",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a4c14568d623077c0cd615ca909ce5e22e7f92ccfabc35210e13194ea6087ef6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000495.md",
+      "body": "# Universality of critical quench autocorrelations in the Sherrington–Kirkpatrick model\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000736: Control integrated intensity distortion by the square-root likelihood](../instruments/MI-000736.md)\n- [MI-000737: Average posterior entropy production through a concave two-point conductance](../instruments/MI-000737.md)\n\n[Family review and dependencies](../families/openai-math-227.md) · [Batch B079](../../batches/B079/README.md)"
+    },
+    {
+      "id": "P-000496",
+      "record_type": "paper",
+      "title": "A continuum temperature singularity for a radial pair potential",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-228"
+      ],
+      "batch_id": "B079",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "297ae9c02ff30b93a1e383a7571fc584047bda285f1f32010ce97930e29758d4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000496.md",
+      "body": "# A continuum temperature singularity for a radial pair potential\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-continuum-temperature-singularity-for-a-radial-pair-potential-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000738: Pass finite convex limits together with their supporting vectors](../instruments/MI-000738.md)\n- [MI-000739: Transfer both coordinates of a support through a quadratic density transform](../instruments/MI-000739.md)\n\n[Family review and dependencies](../families/openai-math-228.md) · [Batch B079](../../batches/B079/README.md)"
+    },
+    {
+      "id": "P-000497",
+      "record_type": "paper",
+      "title": "An exact Hausdorff gauge for SLE",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-exact-Hausdorff-gauge-for-SLE-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-230"
+      ],
+      "batch_id": "B079",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6df96941335fde8cc7c52f27ef211331b76fd8e5073bbe487e12ece27f78c83c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000497.md",
+      "body": "# An exact Hausdorff gauge for SLE\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/An-exact-Hausdorff-gauge-for-SLE-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000740: Build a positive quadratic gauge from repeated moment thresholds](../instruments/MI-000740.md)\n- [MI-000741: Integrate nearest-neighbor collision products using directed graph elimination](../instruments/MI-000741.md)\n\n[Family review and dependencies](../families/openai-math-230.md) · [Batch B079](../../batches/B079/README.md)"
     }
   ],
   "families": [
@@ -46651,6 +47099,33 @@
       "body": "# Finite random-cluster conditioning and positive planar loop identities\n\n## Source manuscripts and claim\n\n- [Self-dual random-cluster interfaces below one](../papers/P-000493.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Square-lattice FK interfaces and nested loops for 1 <= q < 4](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Square-lattice-FK-interfaces-and-nested-loops-for-1-leq-q-lt-4-September-23-2026)\n- [Quenched SLE Universality for Weakly Disordered FK–Ising Interfaces](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE-Universality-for-Weakly-Disordered-FK-Ising-Interfaces-October-5-2026)\n- [Thermal FK–Ising interfaces and massive SLE](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thermal-FK-Ising-interfaces-and-massive-SLE-October-5-2026)\n- [Natural Occupation Measures for Critical Square-Lattice FK Interfaces](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Natural-Occupation-Measures-for-Critical-Square-Lattice-FK-Interfaces-October-5-2026)\n- [Conformal Limits of Critical Square-Lattice Random-Cluster Interfaces](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Conformal-Limits-of-Critical-Square-Lattice-Random-Cluster-Interfaces-October-5-2026)\n\nThe family claims critical and thermal interface limits, nested loops and occupation measures for square-lattice random-cluster models.\n\n## Extracted instruments\n\n- [MI-000732: Condition random-cluster edges while retaining physical connectivity conventions](../instruments/MI-000732.md)\n- [MI-000733: Recover loop positivity and planar dual odds directly from Euler identities](../instruments/MI-000733.md)\n\n## Dependencies and antecedents\n\nFinite configuration sums, connected-component counts, planar ribbon neighborhoods and complement duality.\n\nThe classical random-cluster deletion/contraction rule, loop representation and planar duality.\n\n## Review and formalization scope\n\nRead the complete selected finite conditioning, loop-law and duality proofs. Five companions are inventory-only. No interface limit or q<1 crossing theory is certified.\n\nNo family scope or linked Comparator is supplied in the inventory. No Lean verification is claimed.\n\nThe identities hold for q>0 with positive edge odds and permit loops and parallel edges. Boundary identifications are quotient data, not physical paths. Self-dual odds alone do not prove criticality.\n\n[Batch record](../../batches/B078/README.md)"
     },
     {
+      "id": "openai-math-224",
+      "record_type": "family",
+      "title": "Signed histories and calibration through a common observable",
+      "source_family": "224",
+      "source_collection": "openai/math",
+      "batch_id": "B079",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000494"
+      ],
+      "instrument_ids": [
+        "MI-000734",
+        "MI-000735"
+      ],
+      "headline": "The family claims Cardy limits, pivotal amplitudes and quenched near-critical universality for Voronoi percolation.",
+      "central_instrument": "Expand exact finite color histories, then determine a comparison amplitude through a shared normalized first coefficient.",
+      "novelty_assessment": "Known finite mechanisms are credited separately from source headline claims. Exhaustive novelty is not established.",
+      "formalization_summary": "No scope document is supplied in the inventory. No Lean verification is claimed.",
+      "statement_faithfulness": "Time labels and tied times are retained. Calibration assumes local replacement, fixed-scale convergence and uniform integrability; it does not supply those inputs.",
+      "dependencies": "Product expansion, Poisson factorial moments, signed-kernel estimates, cutoff control and compactness.",
+      "antecedents": "Classical product-measure perturbation and normalization by a response observable.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-224.md",
+      "body": "# Signed histories and calibration through a common observable\n\n## Source manuscripts and claim\n\n- [From critical crossings to quenched near-critical universality in Voronoi percolation](../papers/P-000494.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A Pivotal Amplitude for Voronoi Percolation from Cardy's Formula](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Pivotal-Amplitude-for-Voronoi-Percolation-from-Cardys-Formula-October-5-2026)\n- [Cardy’s formula for critical Poisson–Voronoi percolation](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cardys-formula-for-critical-Poisson-Voronoi-percolation-September-23-2026)\n\nThe family claims Cardy limits, pivotal amplitudes and quenched near-critical universality for Voronoi percolation.\n\n## Extracted instruments\n\n- [MI-000734: Expand coupled time histories as a zero-mass signed perturbation](../instruments/MI-000734.md)\n- [MI-000735: Fix a microscopic amplitude by one normalized macroscopic coefficient](../instruments/MI-000735.md)\n\n## Dependencies and antecedents\n\nProduct expansion, Poisson factorial moments, signed-kernel estimates, cutoff control and compactness.\n\nClassical product-measure perturbation and normalization by a response observable.\n\n## Review and formalization scope\n\nRead the full exact-history construction and common-calibration proof. Two companions are inventory-only; the crossing, replacement and uniform-integrability inputs are not certified.\n\nNo scope document is supplied in the inventory. No Lean verification is claimed.\n\nTime labels and tied times are retained. Calibration assumes local replacement, fixed-scale convergence and uniform integrability; it does not supply those inputs.\n\n[Batch record](../../batches/B079/README.md)"
+    },
+    {
       "id": "openai-math-225",
       "record_type": "family",
       "title": "Energy bootstraps and finite-energy tests for six-vertex height limits",
@@ -46705,6 +47180,60 @@
       "body": "# Damped exterior insertions and positivity for double-dimer curves\n\n## Source manuscript and claim\n\n[The curve scaling limit of half-plane double dimers](../papers/P-000097.md), by OpenAI, None.\n\nThe source claims convergence of all nested half-plane Temperleyan double-dimer loops as curves to nested CLE4, strengthening established puncture and nesting-field information. This extraction selects the short-segment operator and positivity mechanisms.\n\n## Extracted instruments\n\n- [MI-000150: Delocalized exterior minors and spectral damping give a quadratic short-interval bound](../instruments/MI-000150.md)\n- [MI-000151: Geometric nesting weights make a two-chain signed observable quantitatively positive](../instruments/MI-000151.md)\n\n## Dependencies and antecedents\n\nLieb transfer matrices and open-boundary singular modes; exterior-algebra insertion signs; summable damped occupation weights; planar nesting and alternating intersection signs; marked-cap normalization.\n\nLieb and Rasmussen-Ruelle supply transfer and spectral precedents. Kenyon, Dubedat, Basok-Chelkak, Bai-Wan and Basok-Izyurov supply topological and nesting-field convergence. Those results are not themselves the new geometric estimates selected here. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the spectral state-sum proof, sandwiched insertion proof, color contraction calculation and cap-weight positivity argument. The localization via Wilson sampling and the full no-backtracking identification were not audited in detail.\n\nNo family-specific formalization scope document is listed in the pinned release inventory. No Comparator comparison or Lean proof build is claimed.\n\nThe source concerns the standard half-plane Temperleyan law and matching of loops as unrooted curves with multiplicities, not merely convergence of loop traces or finite puncture data. Its limits take the mesh to zero before the short interval and cap cutoff limits.\n\n[Batch record](../../batches/B006/README.md)"
     },
     {
+      "id": "openai-math-227",
+      "record_type": "family",
+      "title": "Likelihood action and posterior entropy contraction",
+      "source_family": "227",
+      "source_collection": "openai/math",
+      "batch_id": "B079",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000495"
+      ],
+      "instrument_ids": [
+        "MI-000736",
+        "MI-000737"
+      ],
+      "headline": "The family claims high-temperature mixing, critical autocorrelation universality and low-temperature barriers for SK dynamics.",
+      "central_instrument": "Use a square-root likelihood to control accumulated intensity changes; use concavity of two-point conductance to average posterior entropy production.",
+      "novelty_assessment": "Known finite mechanisms are credited separately from source headline claims. Exhaustive novelty is not established.",
+      "formalization_summary": "SKHighTemperature targets a high-probability Poincare bound for Gaussian zero-field SK at each beta in (0,1), with the corresponding 1/n discrete gap. The scope lists further restricted dynamics results; this inspected target does not state critical quench universality. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The point-process reference filtration includes initial information but no newly revealed future. Posterior contraction uses a test fixed before the observation.",
+      "dependencies": "Likelihood supermartingales, localization, entropy tensorization and concavity of ab/(a+b).",
+      "antecedents": "Classical point-process change of measure and product-measure entropy tensorization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-227.md",
+      "body": "# Likelihood action and posterior entropy contraction\n\n## Source manuscripts and claim\n\n- [Universality of critical quench autocorrelations in the Sherrington–Kirkpatrick model](../papers/P-000495.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Functional universality of critical SK autocorrelations](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026)\n- [A spectral gap throughout the high-temperature Sherrington–Kirkpatrick phase](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026)\n- [Cutoff throughout the high-temperature Sherrington–Kirkpatrick phase](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026)\n- [Critical slowing down in the Sherrington–Kirkpatrick model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026)\n- [Stretched-exponential barriers for typical SK initial states](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026)\n- [A typical-start upper bound for low-temperature SK Glauber dynamics](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026)\n- [Critical mixing in the Sherrington–Kirkpatrick model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026)\n\nThe family claims high-temperature mixing, critical autocorrelation universality and low-temperature barriers for SK dynamics.\n\n## Extracted instruments\n\n- [MI-000736: Control integrated intensity distortion by the square-root likelihood](../instruments/MI-000736.md)\n- [MI-000737: Average posterior entropy production through a concave two-point conductance](../instruments/MI-000737.md)\n\n## Dependencies and antecedents\n\nLikelihood supermartingales, localization, entropy tensorization and concavity of ab/(a+b).\n\nClassical point-process change of measure and product-measure entropy tensorization.\n\n## Review and formalization scope\n\nRead the full likelihood/intensity proof and product-posterior entropy proof. Seven companions are inventory-only. Only the generic likelihood inequality and field-free posterior bound are extracted.\n\nSKHighTemperature targets a high-probability Poincare bound for Gaussian zero-field SK at each beta in (0,1), with the corresponding 1/n discrete gap. The scope lists further restricted dynamics results; this inspected target does not state critical quench universality. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.\n\nThe point-process reference filtration includes initial information but no newly revealed future. Posterior contraction uses a test fixed before the observation.\n\n[Batch record](../../batches/B079/README.md)"
+    },
+    {
+      "id": "openai-math-228",
+      "record_type": "family",
+      "title": "Convex limits and full support transfer under density transforms",
+      "source_family": "228",
+      "source_collection": "openai/math",
+      "batch_id": "B079",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000496"
+      ],
+      "instrument_ids": [
+        "MI-000738",
+        "MI-000739"
+      ],
+      "headline": "The family claims continuum temperature singularities for stable radial pair potentials.",
+      "central_instrument": "Retain complete supporting vectors through pressure limits and a quadratic density transform.",
+      "novelty_assessment": "Known finite mechanisms are credited separately from source headline claims. Exhaustive novelty is not established.",
+      "formalization_summary": "ContinuumTransition targets one stable radial potential with a divergent core, an integrable o(r^-3) tail, and a temperature derivative jump over a density interval. It is distinct from the bounded-potential targets linked in the scope. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Local convex convergence is on an open convex domain with a finite limit. Joint support transfer assumes the density conjugate is finite and concave in inverse temperature.",
+      "dependencies": "Finite-dimensional separation, local Lipschitz bounds, Fenchel equality and attainment of the transformed density supremum.",
+      "antecedents": "Classical convex convergence, conjugacy and reachable-gradient theory.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-228.md",
+      "body": "# Convex limits and full support transfer under density transforms\n\n## Source manuscripts and claim\n\n- [A continuum temperature singularity for a radial pair potential](../papers/P-000496.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A radial continuum phase transition with algebraic decay](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-radial-continuum-phase-transition-with-algebraic-decay-September-24-2026)\n\nThe family claims continuum temperature singularities for stable radial pair potentials.\n\n## Extracted instruments\n\n- [MI-000738: Pass finite convex limits together with their supporting vectors](../instruments/MI-000738.md)\n- [MI-000739: Transfer both coordinates of a support through a quadratic density transform](../instruments/MI-000739.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional separation, local Lipschitz bounds, Fenchel equality and attainment of the transformed density supremum.\n\nClassical convex convergence, conjugacy and reachable-gradient theory.\n\n## Review and formalization scope\n\nRead the complete convex-facts appendix and joint/quadratic support proofs. The companion is inventory-only. Potential construction and thermodynamic limits are not certified.\n\nContinuumTransition targets one stable radial potential with a divergent core, an integrable o(r^-3) tail, and a temperature derivative jump over a density interval. It is distinct from the bounded-potential targets linked in the scope. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.\n\nLocal convex convergence is on an open convex domain with a finite limit. Joint support transfer assumes the density conjugate is finite and concave in inverse temperature.\n\n[Batch record](../../batches/B079/README.md)"
+    },
+    {
       "id": "openai-math-229",
       "record_type": "family",
       "title": "Posterior product laws, nonlinear flow conversion and informative rounding",
@@ -46733,6 +47262,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-229.md",
       "body": "# Posterior product laws, nonlinear flow conversion and informative rounding\n\n## Source manuscripts and claim\n\n- [The Reconstruction Threshold for the Ferromagnetic Four-State Potts Model](../papers/P-000301.md): selected passages extracted.\n- [A Capacity Criterion for Four-State Potts Reconstruction on Trees](../papers/P-000302.md): selected passages extracted.\n- [The exact reconstruction threshold for the three-state symmetric channel](../papers/P-000303.md): selected passages extracted.\n\nThe three sources claim sharp Potts reconstruction thresholds and a four-state capacity criterion on bounded-degree trees.\n\n## Extracted instruments\n\n- [MI-000532: Combine posterior experiments with their exact Bayes reweighting](../instruments/MI-000532.md)\n- [MI-000533: Convert cubic information savings into a flow of bounded nonlinear potential](../instruments/MI-000533.md)\n- [MI-000534: Round posterior laws by a barycentric refinement with an explicit reverse garbling](../instruments/MI-000534.md)\n\n## Dependencies and antecedents\n\nBayes formula, posterior barycenters, conditional products, cubic inequalities, conserved flows and Blackwell garbling.\n\nMezard-Montanari posterior distribution recursion; Pemantle-Peres nonlinear capacity; Bhatnagar-Maneva surveys and convex domination.\n\n## Review and formalization scope\n\nRead the selected posterior identities, the full cubic renormalization and flow proofs, and the barycentric refinement and pure-completion proofs. The polynomial certificates and claimed threshold or capacity equivalences are not certified.\n\nBoth linked Comparators state only three-state supercritical Kesten-Stigum reconstruction: b lambda^2>1 on regular trees and d lambda^2>1 on Poisson trees, with lambda in [-1/2,1]. They use a positive limiting expected total-variation advantage, with unordered observations and the offspring tree observed; the Poisson statement averages over trees and spins. Their target proofs contain sorry. They do not state four-state thresholds, nonreconstruction, equality cases, the capacity criterion or stochastic-block-model conclusions. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nExperiments are conditionally independent given the root, not independent under the actual marginal law. Capacity conversion requires 0<r<1, bounded branching and a cubic saving. Posterior grid refinement preserves labeled observations.\n\n[Batch record](../../batches/B054/README.md)"
+    },
+    {
+      "id": "openai-math-230",
+      "record_type": "family",
+      "title": "Moment-built gauges and integrable collision kernels",
+      "source_family": "230",
+      "source_collection": "openai/math",
+      "batch_id": "B079",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000497"
+      ],
+      "instrument_ids": [
+        "MI-000740",
+        "MI-000741"
+      ],
+      "headline": "The family claims exact Hausdorff gauges for SLE, through moment batches and an explicit asymptotic formula.",
+      "central_instrument": "Build a nondegenerate gauge from finite moment batches and control nearest-neighbor singularities by directed graph elimination.",
+      "novelty_assessment": "Known finite mechanisms are credited separately from source headline claims. Exhaustive novelty is not established.",
+      "formalization_summary": "SLELowerPositivity targets only positivity of the explicit small-radius gauge on every nontrivial compact positive-time SLE segment. It does not state a finite upper measure or identify the moment-batch envelope with that formula. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The gauge construction assumes positive finite moments of a nonnegative mass and monotone approximating masses. The kernel estimate requires exponent alpha<1 in the plane.",
+      "dependencies": "Dyadic geometric sums, moment tail truncation, quadratic envelope regularization, Tonelli and Cauchy-Schwarz.",
+      "antecedents": "Peres-Solomyak quadratic gauge regularization and elementary integrability of planar power kernels.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-230.md",
+      "body": "# Moment-built gauges and integrable collision kernels\n\n## Source manuscripts and claim\n\n- [An exact Hausdorff gauge for SLE](../papers/P-000497.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [An explicit exact Hausdorff gauge for SLE](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-exact-Hausdorff-gauge-for-SLE-September-26-2026)\n\nThe family claims exact Hausdorff gauges for SLE, through moment batches and an explicit asymptotic formula.\n\n## Extracted instruments\n\n- [MI-000740: Build a positive quadratic gauge from repeated moment thresholds](../instruments/MI-000740.md)\n- [MI-000741: Integrate nearest-neighbor collision products using directed graph elimination](../instruments/MI-000741.md)\n\n## Dependencies and antecedents\n\nDyadic geometric sums, moment tail truncation, quadratic envelope regularization, Tonelli and Cauchy-Schwarz.\n\nPeres-Solomyak quadratic gauge regularization and elementary integrability of planar power kernels.\n\n## Review and formalization scope\n\nRead the complete moment-batch, gauge-admissibility, finite-exclusion and collision-kernel proofs. The explicit-gauge companion is inventory-only. SLE mass construction and covering arguments are not certified.\n\nSLELowerPositivity targets only positivity of the explicit small-radius gauge on every nontrivial compact positive-time SLE segment. It does not state a finite upper measure or identify the moment-batch envelope with that formula. Full scope and named Comparator read; other linked Comparators were not inspected. The target contains sorry; no separate solution or Lean build was checked.\n\nThe gauge construction assumes positive finite moments of a nonnegative mass and monotone approximating masses. The kernel estimate requires exponent alpha<1 in the plane.\n\n[Batch record](../../batches/B079/README.md)"
     },
     {
       "id": "openai-math-231",

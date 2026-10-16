@@ -80,8 +80,9 @@
 | [B076](B076/README.md) | 4 new families; 8 instruments; 5 source manuscripts | Extract eight mechanisms from four families: conditional reflection obstructions, compact spectral arguments, oscillation and correlation criteria, compatible polynomial coordinates, square constraints and loop-aware random-map clocks. |
 | [B077](B077/README.md) | 4 new families; 8 instruments; 6 source manuscripts | Extract eight mechanisms from four families: Busemann calibration, convex boundary regularity, cluster-column cones and relay inequalities, conditional spin reduction, positive massive kernels and tree-interface stability. |
 | [B078](B078/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Environmentwise coupling, departure-row independence, Gaussian replica calculus and finite planar random-cluster identities |
+| [B079](B079/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Signed time histories, shared-response calibration, posterior entropy contraction, convex supports and moment gauges |
 
-Future rounds use `B079` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B080` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
