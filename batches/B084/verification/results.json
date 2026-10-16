@@ -1,0 +1,72 @@
+{
+  "batch": "B084",
+  "status": "pass",
+  "elapsed_seconds": 3.654,
+  "scope": "Selected finite mechanisms and symbolic identities; no headline theorem or Lean certification.",
+  "checks": {
+    "stable_images": {
+      "status": "pass",
+      "details": {
+        "conjugated_comparisons": 8,
+        "missing_hypothesis_controls": 2
+      }
+    },
+    "compatible_filtration": {
+      "status": "pass",
+      "details": {
+        "graded_filtrations": 7,
+        "colliding_degrees": 64,
+        "nonsplit_integral_controls": 3
+      }
+    },
+    "gate_correction": {
+      "status": "pass",
+      "details": {
+        "primal_corrected_pairs": 192,
+        "dual_norm_not_optimized": true
+      }
+    },
+    "lens_diamonds": {
+      "status": "pass",
+      "details": {
+        "hilbert_lenses": 9,
+        "diamond_generations": 4,
+        "telescopes": 19,
+        "infinite_compactness_not_tested": true
+      }
+    },
+    "weighted_graph": {
+      "status": "pass",
+      "details": {
+        "symbolic_weighted_identity": true,
+        "volume_preserved": true,
+        "omitted_derivative_rejected": true
+      }
+    },
+    "joint_rounding": {
+      "status": "pass",
+      "details": {
+        "exact_outcomes": 4,
+        "unbiased": true,
+        "shared_constraints_preserved": true,
+        "independent_rounding_rejected": true
+      }
+    },
+    "ground_state_transform": {
+      "status": "pass",
+      "details": {
+        "log_identity": true,
+        "interval_ground_states": 4,
+        "existence_not_tested": true
+      }
+    },
+    "angle_pressure": {
+      "status": "pass",
+      "details": {
+        "manufactured_angle_identity": true,
+        "missing_pressure_angle_drift_rejected": true,
+        "global_solution_not_tested": true
+      }
+    }
+  }
+}
