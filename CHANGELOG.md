@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B020: eight instruments from combinatorial families 160, 161, 179 and 187. A separate parser reconstructs the complete 21-move Snaky certificate, including all 1,620 composition nodes and 37,042 local reply classes. Other cards preserve explicit conditional inputs and include finite consistency checks.
+
 - Added B019: eight instruments from algebra families 194, 198, 201 and 204, with exact source bindings and eight check groups. The extraction retains noninjective length limits, base change, genuinely derived tensor powers, two-sided pole annihilation, free-word order and filtered centralizer constraints.
 
 - Added B018: nine instruments from operator-algebra families 288, 292, 296 and 298, with exact source bindings and nine finite check groups. The records preserve cyclic-domain lifting, arbitrary tensor-factor unitaries, varying representation dimensions, backward cycle propagation and retention of the same entropy-comparison ensemble.
