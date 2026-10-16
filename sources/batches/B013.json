@@ -1,0 +1,406 @@
+{
+  "batch_id": "B013",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T07:46:37.113210+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CycleCliqueRamsey.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CycleCliqueRamsey.lean",
+      "sha256": "8d02ae7cb616ad7160ca20eea880ef879857e398e8316299a07a5c985001dabd",
+      "bytes": 571
+    },
+    {
+      "path": "lean/ComparatorChallenges/HeilbronnTriangle.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HeilbronnTriangle.lean",
+      "sha256": "9e12bbd748dff7adf89cabd85e9e1c5321415d6827ce125755d13b4e17dcafa3",
+      "bytes": 1999
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatrixRemoval.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MatrixRemoval.lean",
+      "sha256": "1db0fac5a4ddc57a90e9950cfd4e7e4e1681b4c8ce755e6ba5c169f3656b77e9",
+      "bytes": 2104
+    },
+    {
+      "path": "lean/ComparatorChallenges/TriangleRemoval.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TriangleRemoval.lean",
+      "sha256": "efdc9b6b4fa7a40590e1f3dd0952d18d9337e70a703c074d8f87f396ca63d22a",
+      "bytes": 1881
+    },
+    {
+      "path": "lean/docs/188.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/188.md",
+      "sha256": "358522408d1f04e0df83dad8d575a7d5a013f44716aec109a6744302fd02892d",
+      "bytes": 1035
+    },
+    {
+      "path": "lean/docs/189.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/189.md",
+      "sha256": "89e8630c852f0408b0e0ad7be597e284d9a8936b1f4d3b398082fcfc3d9d219d",
+      "bytes": 833
+    },
+    {
+      "path": "lean/docs/190.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/190.md",
+      "sha256": "49953f7f760a262f20bf5b8876d42e0ce43f0d361505a05d51aa3d805a67595b",
+      "bytes": 1029
+    },
+    {
+      "path": "lean/docs/191.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/191.md",
+      "sha256": "e2250c3010963320569247febbc795f9412f06a90d1fc6a408abb2ba93dcf721",
+      "bytes": 1063
+    },
+    {
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/README.md",
+      "sha256": "944f7aacd6968764c092793770242cb227ca192e95240e2ab01a2f6ed7e3f3f2",
+      "bytes": 622
+    },
+    {
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6",
+      "bytes": 9579
+    },
+    {
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544",
+      "bytes": 9147
+    },
+    {
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/README.md",
+      "sha256": "b467d75f5097fa5536071abc0305932cf78d5002216927b23040790ffd55535c",
+      "bytes": 1157
+    },
+    {
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011",
+      "bytes": 9252
+    },
+    {
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+      "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134",
+      "bytes": 10760
+    },
+    {
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/README.md",
+      "sha256": "042572470214dc8d05cb38c043bebdad24fff72f0ea164987baeb4a591db85da",
+      "bytes": 646
+    },
+    {
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+      "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec",
+      "bytes": 8195
+    },
+    {
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+      "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467",
+      "bytes": 8738
+    },
+    {
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+      "sha256": "11c3c67a6c042ef1d03387ac2c3e76a89703d508efbb24480f7d1ada0f6f47be",
+      "bytes": 3807
+    },
+    {
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+      "sha256": "4f7e9ca6e5f9a88d3a091758acf76dade80096f06a978089b3b232d355125acb",
+      "bytes": 5606
+    },
+    {
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/README.md",
+      "sha256": "dea215e665d302e1d1c9e2b33816ff7cb171d1495e654aa3e692fd5d31ee4c6d",
+      "bytes": 743
+    },
+    {
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex",
+      "sha256": "dfad4804b7f89cb059ae629362b3eec1493ceec636566901ebaf9ef62839a117",
+      "bytes": 11818
+    },
+    {
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc",
+      "bytes": 12863
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000204",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "label": "lem:priority",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L26",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+    },
+    {
+      "instrument_id": "MI-000204",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "label": "lem:finite-test",
+      "line": 81,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L81",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+    },
+    {
+      "instrument_id": "MI-000205",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "label": "lem:unfolding-finite",
+      "line": 153,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L153",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+    },
+    {
+      "instrument_id": "MI-000205",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "label": "prop:products",
+      "line": 206,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L206",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+    },
+    {
+      "instrument_id": "MI-000205",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+      "label": "eq:products",
+      "line": 213,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L213",
+      "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+    },
+    {
+      "instrument_id": "MI-000205",
+      "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex",
+      "label": "lem:coupling",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex#L31",
+      "sha256": "dfad4804b7f89cb059ae629362b3eec1493ceec636566901ebaf9ef62839a117"
+    },
+    {
+      "instrument_id": "MI-000206",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "label": "path:interval",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L36",
+      "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+    },
+    {
+      "instrument_id": "MI-000206",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "label": "path:optimality",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L98",
+      "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+    },
+    {
+      "instrument_id": "MI-000206",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "label": "path:separation",
+      "line": 144,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L144",
+      "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+    },
+    {
+      "instrument_id": "MI-000206",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+      "label": "path:singleton",
+      "line": 177,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L177",
+      "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+    },
+    {
+      "instrument_id": "MI-000207",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+      "label": "finite:coverage",
+      "line": 68,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L68",
+      "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+    },
+    {
+      "instrument_id": "MI-000207",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+      "label": "finite:chain-count",
+      "line": 129,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L129",
+      "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+    },
+    {
+      "instrument_id": "MI-000207",
+      "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+      "label": "finite:count-series",
+      "line": 148,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L148",
+      "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+    },
+    {
+      "instrument_id": "MI-000208",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+      "label": "eq:pattern-definition",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L36",
+      "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+    },
+    {
+      "instrument_id": "MI-000208",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+      "label": "lem:nonanchor-traces",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L74",
+      "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+    },
+    {
+      "instrument_id": "MI-000208",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+      "label": "lem:anchor-rigidity",
+      "line": 107,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L107",
+      "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+    },
+    {
+      "instrument_id": "MI-000208",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+      "label": "cor:body-roles",
+      "line": 167,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L167",
+      "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+      "label": "eq:tree-orders",
+      "line": 91,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L91",
+      "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+      "label": "eq:body-modes",
+      "line": 129,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L129",
+      "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+      "label": "prop:copy-count",
+      "line": 8,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L8",
+      "sha256": "11c3c67a6c042ef1d03387ac2c3e76a89703d508efbb24480f7d1ada0f6f47be"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+      "label": "rem:hitting-not-repair",
+      "line": 72,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L72",
+      "sha256": "11c3c67a6c042ef1d03387ac2c3e76a89703d508efbb24480f7d1ada0f6f47be"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+      "label": "prop:distance",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L12",
+      "sha256": "4f7e9ca6e5f9a88d3a091758acf76dade80096f06a978089b3b232d355125acb"
+    },
+    {
+      "instrument_id": "MI-000209",
+      "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+      "label": "eq:cellwise-bound",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L63",
+      "sha256": "4f7e9ca6e5f9a88d3a091758acf76dade80096f06a978089b3b232d355125acb"
+    },
+    {
+      "instrument_id": "MI-000210",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "label": "norm:decomposition",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L61",
+      "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+    },
+    {
+      "instrument_id": "MI-000210",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "label": "norm:matching",
+      "line": 140,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L140",
+      "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+    },
+    {
+      "instrument_id": "MI-000210",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "label": "norm:obstruction",
+      "line": 169,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L169",
+      "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+    },
+    {
+      "instrument_id": "MI-000210",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+      "label": "norm:lower-carry",
+      "line": 214,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L214",
+      "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+    },
+    {
+      "instrument_id": "MI-000211",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:diagonal",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L22",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    },
+    {
+      "instrument_id": "MI-000211",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:orbit",
+      "line": 82,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L82",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    },
+    {
+      "instrument_id": "MI-000211",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:det-image",
+      "line": 121,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L121",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    },
+    {
+      "instrument_id": "MI-000212",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:conditional",
+      "line": 151,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L151",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    },
+    {
+      "instrument_id": "MI-000212",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:tail",
+      "line": 171,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L171",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    },
+    {
+      "instrument_id": "MI-000212",
+      "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+      "label": "orb:collision-moment",
+      "line": 225,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L225",
+      "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+    }
+  ]
+}
