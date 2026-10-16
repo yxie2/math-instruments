@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B073: 8 selected instruments from 4 families and 8 manuscripts. Alphabet compression, partition histograms, sheared square coverings, simplex chords, pathwise game bounds and finite online policies. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B072: 8 selected instruments from 4 families and 8 manuscripts. Eight instruments on supported matrix costs, dyadic energy increments, stable geometric grid keys, open repair, Fourier bounds, Poisson normalization and singular cone sections.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B071: 8 selected instruments from 4 families and 8 manuscripts. Eight instruments covering formal spectral calculus, positive tensor detection, valuative thresholds, neutral weights, maximal section fields, endpoint lattice counts and defect rounding.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

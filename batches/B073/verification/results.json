@@ -1,0 +1,76 @@
+{
+  "batch": "B073",
+  "status": "pass",
+  "elapsed_seconds": 0.795,
+  "scope": "Selected finite models and identities; no source headline, LP optimum or Lean certification.",
+  "checks": {
+    "hash_average": {
+      "status": "pass",
+      "details": {
+        "exact_hash_pair_checks": 20480,
+        "direct_sum_pairs": 10,
+        "empty_strings": true
+      }
+    },
+    "partition_histograms": {
+      "status": "pass",
+      "details": {
+        "list_pairs": 512,
+        "partition_models": 16,
+        "collision_equalities": 32,
+        "repetitions": true
+      }
+    },
+    "square_cover": {
+      "status": "pass",
+      "details": {
+        "rational_targets": 567,
+        "integer_iterations": 2913,
+        "opposite_sign_hole": true
+      }
+    },
+    "simplex_projection": {
+      "status": "pass",
+      "details": {
+        "projected_hull_and_chord_lp_pairs": 120,
+        "max_absolute_error": 3.3306690738754696e-15
+      }
+    },
+    "finite_martingales": {
+      "status": "pass",
+      "details": {
+        "markov_paths_at_horizon8": 17,
+        "horizons": 8,
+        "exact_coin_variances": 10
+      }
+    },
+    "restart_budgets": {
+      "status": "pass",
+      "details": {
+        "potential_paths": 729,
+        "interrupted_prefixes": 3320,
+        "constant_round_negative_control": true
+      }
+    },
+    "compact_policy_models": {
+      "status": "pass",
+      "details": {
+        "input_words": 121,
+        "seed_intervals": 341,
+        "exact_expected_costs": true
+      }
+    },
+    "rational_flow_rounding": {
+      "status": "pass",
+      "details": {
+        "causal_flow_edges": 120,
+        "words": 121,
+        "bits_per_request": 5,
+        "max_exact_cost_increase": "45921/512000",
+        "reached_zero_mass_rows": 0,
+        "legal_default_rows": 18,
+        "lp_optimality_tested": false
+      }
+    }
+  }
+}
