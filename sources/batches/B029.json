@@ -1,0 +1,316 @@
+{
+  "batch_id": "B029",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T11:18:07.468551+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BallPacking.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BallPacking.lean",
+      "sha256": "d41c4adfa2551c169f61eccb913cfa48a4dacfbc4dbd43c3ba1ee2de96940f71",
+      "bytes": 1556
+    },
+    {
+      "path": "lean/ComparatorChallenges/BallPackingNecessity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BallPackingNecessity.lean",
+      "sha256": "c314a3954d5a6f13baec9fe907ac2d560435275766f959d78acbe14e472bb412",
+      "bytes": 1568
+    },
+    {
+      "path": "lean/ComparatorChallenges/CubicTorus.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CubicTorus.lean",
+      "sha256": "afa546a51aa6cd5b5016b3728a6a09128db21f60fff3e4d8f141c57ffbde0b2c",
+      "bytes": 4136
+    },
+    {
+      "path": "lean/ComparatorChallenges/IsometricImmersion.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/IsometricImmersion.lean",
+      "sha256": "d4763aecca7bbf58b8e16e3e1ca919bff2ad6bc9f610a03641c8361c9319cfa9",
+      "bytes": 1945
+    },
+    {
+      "path": "lean/ComparatorChallenges/SurfaceImmersion.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SurfaceImmersion.lean",
+      "sha256": "668f6d90af60e4b3d0a61b37d0d6ecd0709e22ddb17bb185677c26fe19c92d37",
+      "bytes": 1355
+    },
+    {
+      "path": "lean/docs/333.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/333.md",
+      "sha256": "411de27774e13e69432f2f0f4a3ada67bc2f06c34975f7aa178b7c7ba88368ef",
+      "bytes": 904
+    },
+    {
+      "path": "lean/docs/334.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/334.md",
+      "sha256": "9ff03fdfa2f5d950f16ac10516619e25c129a434f913a048be61f8e39d183ef9",
+      "bytes": 967
+    },
+    {
+      "path": "lean/docs/343.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/343.md",
+      "sha256": "4991f75c4b7983e95b11c206269f94c30d4efd60a8f4d3742f3a4e928b946f64",
+      "bytes": 1200
+    },
+    {
+      "path": "lean/docs/354.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/354.md",
+      "sha256": "b7913858f28af7bde03cbbb2e7276e26512aa4e9805cd3ee8ad78c94fef0a784",
+      "bytes": 1052
+    },
+    {
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/README.md",
+      "sha256": "3e0d5b06afa2c85be3b5384fa6842569865595d30f50db99898d3eafe0c83fb1",
+      "bytes": 669
+    },
+    {
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1",
+      "bytes": 11429
+    },
+    {
+      "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/README.md",
+      "sha256": "2000df195030ad2efe9428cf442c262cc398a05cbac9af32b5e84f4b47b335c7",
+      "bytes": 726
+    },
+    {
+      "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+      "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5",
+      "bytes": 16823
+    },
+    {
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/README.md",
+      "sha256": "60ee7e41701331edbbd6041b08b0116df9a0458dec26e6e5ba0bc7c311bb6774",
+      "bytes": 565
+    },
+    {
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+      "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62",
+      "bytes": 20131
+    },
+    {
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+      "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd",
+      "bytes": 21538
+    },
+    {
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/README.md",
+      "sha256": "8ba8f530abb4b9187907d53cf79e8536cf4f6a10b75911aec1bc74993007db29",
+      "bytes": 658
+    },
+    {
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4",
+      "bytes": 20258
+    },
+    {
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594",
+      "bytes": 20258
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000336",
+      "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+      "label": "lem:loop-density",
+      "line": 140,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L140",
+      "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+    },
+    {
+      "instrument_id": "MI-000336",
+      "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+      "label": "eq:velocity-mean",
+      "line": 184,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L184",
+      "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+    },
+    {
+      "instrument_id": "MI-000337",
+      "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+      "label": "lem:small-value-derivative",
+      "line": 217,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L217",
+      "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+    },
+    {
+      "instrument_id": "MI-000338",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "lem:prescribe",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L11",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000338",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "eq:prescribe-ode",
+      "line": 24,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L24",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000338",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "cor:flat-jet",
+      "line": 250,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000339",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "eq:tensor-sum",
+      "line": 137,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L137",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000339",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "eq:final-metric",
+      "line": 144,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L144",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000339",
+      "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+      "label": "cor:flat-jet",
+      "line": 250,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250",
+      "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+    },
+    {
+      "instrument_id": "MI-000340",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+      "label": "cmp:interval-formula",
+      "line": 55,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L55",
+      "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+    },
+    {
+      "instrument_id": "MI-000340",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+      "label": "cmp:rearrangement-properties",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L74",
+      "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+    },
+    {
+      "instrument_id": "MI-000340",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+      "label": "cmp:polytope",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L9",
+      "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+    },
+    {
+      "instrument_id": "MI-000341",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+      "label": "surf:primitive",
+      "line": 43,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L43",
+      "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+    },
+    {
+      "instrument_id": "MI-000341",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+      "label": "surf:moser",
+      "line": 83,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L83",
+      "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+    },
+    {
+      "instrument_id": "MI-000341",
+      "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+      "label": "surf:toric-volume",
+      "line": 30,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L30",
+      "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+    },
+    {
+      "instrument_id": "MI-000342",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "label": "nest:integrated-flux",
+      "line": 59,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L59",
+      "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+    },
+    {
+      "instrument_id": "MI-000342",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "label": "nest:weight",
+      "line": 42,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L42",
+      "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+    },
+    {
+      "instrument_id": "MI-000342",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "label": "nest:weight-derivative",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L49",
+      "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+    },
+    {
+      "instrument_id": "MI-000342",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+      "label": "nest:jensen",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L61",
+      "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+    },
+    {
+      "instrument_id": "MI-000343",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "label": "num:pi-interval",
+      "line": 357,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L357",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+    },
+    {
+      "instrument_id": "MI-000343",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "label": "num:knot-table",
+      "line": 437,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L437",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+    },
+    {
+      "instrument_id": "MI-000343",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "label": "num:chord",
+      "line": 483,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L483",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+    },
+    {
+      "instrument_id": "MI-000343",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "label": "num:gap-formula",
+      "line": 505,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L505",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+    },
+    {
+      "instrument_id": "MI-000343",
+      "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+      "label": "num:gap-table",
+      "line": 522,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L522",
+      "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+    }
+  ]
+}

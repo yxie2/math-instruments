@@ -1,0 +1,54 @@
+{
+  "batch": "B029",
+  "status": "passed",
+  "check_groups": {
+    "positive_densities": {
+      "positive_density_and_patch_models": 96,
+      "maximum_mean_error": 1.554312234475219e-14,
+      "scope": "Full-circle Poisson-kernel examples and convex patching; not every parameterized circle-valued path."
+    },
+    "small_value_derivative": {
+      "local_prescribed_derivative": "exact",
+      "small_support_bounds": 96,
+      "vertical_arc_control": "obstructed",
+      "scope": "Local transverse formula and amplitude bounds; finite intersections and tangencies use the written patching proof."
+    },
+    "prescribed_curvature": {
+      "arbitrary_parameter_metric_curvature": "exact",
+      "flat_jet_ode_models": 9,
+      "uniform_positive_lower_bound": "998/999",
+      "scope": "Curvature formula and formal jets; no nonimmersion obstruction verified."
+    },
+    "smooth_assembly": {
+      "exact_diagonal_seminorm_bounds": 3320,
+      "tail_bounds": 192,
+      "tensor_scaling": "exact",
+      "scope": "Finite bounds realizing the infinite-series criterion; chosen source local obstructions remain conditional inputs."
+    },
+    "rearrangement": {
+      "integral_preservation_models": 40,
+      "convexity_and_monotonicity_models": 400,
+      "maximum_integral_error": 1.1102230246251565e-16,
+      "scope": "Quadratic functions on a downwards simplex; no Hamiltonian realization of rearrangements."
+    },
+    "relative_primitives": {
+      "local_primitive_identity": "exact",
+      "horizontal_moser_models": 75,
+      "scope": "Differential algebra and finite nondegenerate forms; not a global packing construction or flow existence proof."
+    },
+    "flux_jensen": {
+      "weighted_slice_models": 400,
+      "convexity_derivative": "exact",
+      "pointwise_mean_substitution_control": "fails as expected",
+      "scope": "Scalar Jensen mechanism; source geometric flux and coarea hypotheses not verified."
+    },
+    "knot_certificate": {
+      "Machin_pi_enclosure": "exact",
+      "source_interpolation_intervals": 23,
+      "minimum_conditional_margin": "9/100000",
+      "outward_square_root_models": 101,
+      "scope": "The source knot lower bounds and curvature bounds are INPUTS. Their transcendental evaluations and analytic derivative estimates were not independently reproduced. All 23 rational interpolation claims are checked exactly."
+    }
+  },
+  "limitations": "Selected constructions and conditional finite certificates only; no global immersion, nonimmersion, packing or isoperimetric classification certified; no Lean build."
+}

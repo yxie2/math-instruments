@@ -13986,6 +13986,406 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000335.md",
       "body": "# Enforce a barycenter while optimizing a variance-penalized envelope\n\n[Family 377](../families/openai-math-377.md) · [Source manuscript](../papers/P-000186.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nFor a continuous subquadratically growing slice f, let C_s f(x) be the supremum of sum_i theta_i f(y_i)-sum_i theta_i|y_i-x|^2/(2s) over finite probability configurations with mean x. Put g(y)=f(y)-|y|^2/(2s). Then\n\n$$C_s f(x)-\\frac{|x|^2}{2s}=\\min_A\\max_y\\{g(y)-A\\cdot(y-x)\\}.$$\n\nBoth extrema are attained. The dual objective grows at least |A|-C by testing y=x-A/|A|, so minimizing slopes stay bounded. The negative quadratic confines their maximizing positions. At a minimizing slope A_0, x belongs to the convex hull of the maximizing set: otherwise a separating direction would lower the maximum. A finite convex combination of maximizers then attains the primal value; at most m+1 points suffice in R^m.\n\nThe resulting affine majorant of g bounds the integral against every probability measure with mean x and finite second moment, so allowing such measures does not improve the value. It also identifies C_s f-|x|^2/(2s) as the least concave majorant of g. Common subquadratic control yields continuity and stability under local uniform limits.\n\nIf every finite configuration satisfies sum theta_i f(y_i)-f(x)<=kappa r, where r^2=sum theta_i|y_i-x|^2, then\n\n$$0\\le C_s f(x)-f(x)\\le\\kappa^2s/2.$$\n\nThis follows by completing the square in kappa r-r^2/(2s); equality requires r=kappa s. For f(x)=kappa|x| in one dimension, symmetric points at plus/minus kappa s attain equality at x=0.\n\n## Role in the source argument\n\nProduces finite contact configurations from a global horizontal Jensen defect.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:barycentric-envelope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L58)\n- [eq:barycentric-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L62)\n- [eq:barycentric-sandwich](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L45)\n\n## Antecedents and comparison\n\nThis is classical concave-majorant duality and finite-dimensional convex separation expressed through a variance penalty. Its use in a nonlinear PDE contact argument is distinct from the duality statement itself.\n\n## Checks and limitations\n\nSixty finite-support linear programs agree with their affine-majorant duals and use at most m+1 active points. Forty-five exact absolute-value examples verify the continuum envelope formula.\n\nFinite LPs do not prove universal attainment or the source common-time subsolution rule. The latter is a separate unaudited analytic step.\n\n## Possible applications\n\nReplacing arbitrary probability mixtures by finite optimizing configurations with explicit supporting affine certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000336",
+      "record_type": "instrument",
+      "title": "Prescribe the mean of a loop by a smoothly varying positive density",
+      "forms": [
+        "positive-loop-density",
+        "parameterwise-barycentric-patching"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-333"
+      ],
+      "source_paper_ids": [
+        "P-000187"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+          "label": "lem:loop-density",
+          "line": 140,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L140",
+          "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+        },
+        {
+          "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+          "label": "eq:velocity-mean",
+          "line": 184,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L184",
+          "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-convex-averaging-with-relative-smooth-parameters",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000336.md",
+      "body": "# Prescribe the mean of a loop by a smoothly varying positive density\n\n[Family 333](../families/openai-math-333.md) · [Source manuscript](../papers/P-000187.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nLet p_b(t) be a smooth finite-dimensional family of circle-valued periodic paths in R2 and let c_b lie in the interior of the convex hull of each path, uniformly over a compact parameter set. There are smooth strictly positive densities rho_b with average rho_b=1 and average rho_b p_b=c_b. They can be patched to prescribed positive solutions on an overlapping parameter neighborhood.\n\nAt one parameter, select finitely many path points whose convex hull contains c in its interior. Replace a positive barycentric combination by narrow smooth bumps and add a small positive constant density. The mass and two moment constraints have rank three. A fixed linear right inverse adjusts their coefficients under small parameter changes; sufficiently small changes preserve positivity. A finite cover and partition of unity patch the local densities because all three constraints are linear.\n\nThe change of periodic coordinate theta=int_0^t rho_b(s) ds is an orientation-preserving circle diffeomorphism. Reparametrizing the path by its inverse turns the prescribed weighted mean into the ordinary theta-mean. Strict positivity is needed for this smooth invertible change of parameter.\n\n## Role in the source argument\n\nMakes the leading velocity loop have the desired mean while preserving previously arranged collar data.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:loop-density](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L140)\n- [eq:velocity-mean](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L184)\n\n## Antecedents and comparison\n\nThis is classical convex averaging and partition-of-unity patching with an explicit finite-rank constraint system. It is not a new general moment theorem.\n\n## Checks and limitations\n\nNinety-six positive full-circle density and convex-patching models preserve mass and both first moments; the maximum checked mean error is below 1.6e-14.\n\nThe full-circle Poisson-kernel models do not verify every varying path or the source global geometry.\n\n## Possible applications\n\nSmooth parameter-dependent reparametrization under prescribed first moments and relative boundary data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000337",
+      "record_type": "instrument",
+      "title": "Prescribe a transverse derivative on curves while keeping the function uniformly small",
+      "forms": [
+        "small-amplitude-jet-extension",
+        "transverse-support-localization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-333"
+      ],
+      "source_paper_ids": [
+        "P-000187"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex",
+          "label": "lem:small-value-derivative",
+          "line": 217,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L217",
+          "sha256": "52229ce7027f8c435ae2461a3030c6b27fd933e413544b7729394d9cf89c4cf5"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "localized-smooth-extension-with-finite-tangency-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000337.md",
+      "body": "# Prescribe a transverse derivative on curves while keeping the function uniformly small\n\n[Family 333](../families/openai-math-333.md) · [Source manuscript](../papers/P-000187.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nLet K be a compact subset of finitely many smooth embedded curves in a coordinate disk. Assume finitely many intersections and tangencies to partial_y near K, with no shared arcs. Given B>0 and epsilon>0, one can choose h smooth and compactly supported in any prescribed precompact neighborhood of K so that |h|<epsilon and h_y=B on K.\n\nFirst cover the exceptional intersections and tangencies by disjoint small disks and put h_pre=sum_p chi_p B(y-y(p)), with each chi_p one on a smaller disk. Its size is small when the disks are small; its y-derivative is B on the smaller cores.\n\nAway from those cores, use single-curve patches with defining functions f_j satisfying (f_j)_y nonzero. A partition of unity chi_j covers the remaining derivative defect. Add\n\n$$h_j=\\chi_j f_j\\frac{B-(h_{pre})_y}{(f_j)_y}\\,\\eta_j(f_j/\\delta_j),$$\n\nwhere eta_j is a compact cutoff equal to one near zero. On f_j=0, every differentiated coefficient or cutoff carries a factor f_j, so (h_j)_y=chi_j(B-(h_pre)_y) exactly. Shrinking delta_j reduces the values without changing these derivatives. Higher derivatives need not remain small.\n\nThe tangency qualification matters: on a whole vertical segment, h_y=B would force a fixed change B times its length, preventing an arbitrarily small sup norm.\n\n## Role in the source argument\n\nSeparates the small angle displacement from the large transverse turn derivative required by the source velocity construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:small-value-derivative](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/build/velocity-loop.tex#L217)\n\n## Antecedents and comparison\n\nThis is a localized jet-extension argument. The finite exceptional-point treatment makes its geometric hypotheses explicit.\n\n## Checks and limitations\n\nThe transverse derivative formula is symbolic; 96 rational support-width choices meet the amplitude budget. A vertical-segment control demonstrates why unrestricted tangencies cannot be allowed.\n\nThe checks cover the local formula, not the full curve atlas or the later metric-correction scheme.\n\n## Possible applications\n\nPrescribing first derivatives on thin sets while reserving a small C0 perturbation budget.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000338",
+      "record_type": "instrument",
+      "title": "Realize a small arbitrary curvature function through a scalar ODE",
+      "forms": [
+        "prescribed-curvature-ode",
+        "semigeodesic-metric-construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-334"
+      ],
+      "source_paper_ids": [
+        "P-000188"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "lem:prescribe",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L11",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        },
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "eq:prescribe-ode",
+          "line": 24,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L24",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        },
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "cor:flat-jet",
+          "line": 250,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "explicit-established-antecedent-khuri-2009",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000338.md",
+      "body": "# Realize a small arbitrary curvature function through a scalar ODE\n\n[Family 334](../families/openai-math-334.md) · [Source manuscript](../papers/P-000188.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nGiven smooth K_0(X,Y) on (-1,1)^2 with sup norm at most 10^{-3}, solve f_XX=-K_0 f, f(0,Y)=1 and f_X(0,Y)=0. Smooth dependence on Y gives a smooth function. The integral equation gives F<=1+10^{-3}F on each segment from 0 to X, hence F<=1000/999 and f>=998/999>0.\n\nFor the metric g=dX^2+f(X,Y)^2 dY^2, direct curvature computation gives K_g=-f_XX/f=K_0. The formula allows arbitrary Y-dependence; no separation of variables is assumed. Its metric eigenvalues stay uniformly positive and bounded.\n\nIf every derivative of K_0 vanishes at the origin, then every derivative of f-1 does too. The initial data settle X-orders zero and one. Every higher X-order follows by differentiating f_XX=-K_0 f: each Leibniz term contains a derivative of K_0 at the origin. Thus the resulting metric has the Euclidean Taylor jet there.\n\n## Role in the source argument\n\nBuilds a smooth positive background metric carrying the source prescribed sign-changing curvature arrangement.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:prescribe](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L11)\n- [eq:prescribe-ode](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L24)\n- [cor:flat-jet](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250)\n\n## Antecedents and comparison\n\nThe construction f_XX+Kf=0 with these initial data and metric dX^2+f^2dY^2 appears in [Khuri 2009, page 453](https://www.math.stonybrook.edu/~khuri/Khuri_AIMS_Darboux.pdf). The source adds a convenient uniform smallness bound and uses flat jets in its assembly.\n\n## Checks and limitations\n\nSymbolic Christoffel and curvature calculations retain arbitrary Y-dependence. Nine formal ODE models verify the flat-jet recurrence; the positivity bound is exact rational arithmetic.\n\nThis constructs metrics with prescribed curvature, not metrics without local immersions. The latter requires the separate unaudited local obstruction.\n\n## Possible applications\n\nEncoding curvature patterns in a positive metric while controlling normalization and Taylor data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000339",
+      "record_type": "instrument",
+      "title": "Pay coordinate-scaling costs before summing accumulating local perturbations",
+      "forms": [
+        "diagonal-smooth-assembly",
+        "flat-jet-preserving-localization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-334"
+      ],
+      "source_paper_ids": [
+        "P-000188"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "eq:tensor-sum",
+          "line": 137,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L137",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        },
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "eq:final-metric",
+          "line": 144,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L144",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        },
+        {
+          "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex",
+          "label": "cor:flat-jet",
+          "line": 250,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250",
+          "sha256": "635bb9ed8776c0791598f9d91044a99dcab86d63ca4e1bfc47a5d312f72d49b1"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-diagonal-series-method-with-explicit-tensor-scaling",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000339.md",
+      "body": "# Pay coordinate-scaling costs before summing accumulating local perturbations\n\n[Family 334](../families/openai-math-334.md) · [Source manuscript](../papers/P-000188.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nFor a local chart Phi_n(x)=c_n+lambda_n R_n x, a covariant two-tensor eta_n pushes forward as\n\n$$\\widehat\\eta_n=\\lambda_n^{-2}R_n(\\eta_n\\circ\\Phi_n^{-1})R_n^T.$$\n\nIts m-th derivatives therefore cost at most C_m lambda_n^{-m-2}. Choose each local perturbation only after these fixed chart costs are known, imposing\n\n$$\\|\\widehat\\eta_n\\|_{C^m}\\le\\epsilon2^{-n}\\qquad(0\\le m\\le n).$$\n\nThere are finitely many conditions at each stage. For each fixed derivative order m, the tail from n>=m converges uniformly. Thus the tensor series is smooth across its accumulation sets. Choosing epsilon below half the background metric's uniform lower eigenvalue keeps the sum positive.\n\nDisjoint supports preserve each local modification exactly. If every summand vanishes near a point, uniform derivative convergence makes the full sum flat there even when the neighborhoods shrink with n. The same construction applies to the curvature bumps. Combining it with the curvature ODE preserves the entire Euclidean Taylor jet at the origin.\n\nThe source uses two accumulation levels: local patches approach boundaries of negative-curvature disks, and the disks approach the origin. This assembly only transfers local properties already established for the patches; it cannot supply the local obstruction itself.\n\n## Role in the source argument\n\nCombines arbitrarily small local obstructions into one smooth positive metric germ while retaining disk and origin jets.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:tensor-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L137)\n- [eq:final-metric](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L144)\n- [cor:flat-jet](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/sections/assembly.tex#L250)\n\n## Antecedents and comparison\n\nThis is the standard diagonal seminorm method for smooth summation. Explicitly accounting for covariant tensor scaling prevents treating the patch size as harmless.\n\n## Checks and limitations\n\n3,320 exact derivative-budget inequalities, 192 geometric tail bounds and a symbolic tensor pushforward/pullback identity pass.\n\nThe verification assumes the local perturbations can be made arbitrarily small in each requested finite set of seminorms. That source obstruction theorem remains unaudited.\n\n## Possible applications\n\nBuilding smooth global or germ-level examples from countably many shrinking local constructions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000340",
+      "record_type": "instrument",
+      "title": "Rearrange convex functions increasingly without losing convexity on a downward polytope",
+      "forms": [
+        "convex-coordinate-rearrangement",
+        "monotonicity-preserving-rearrangement"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-343"
+      ],
+      "source_paper_ids": [
+        "P-000189"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+          "label": "cmp:interval-formula",
+          "line": 55,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L55",
+          "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+        },
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+          "label": "cmp:rearrangement-properties",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L74",
+          "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+        },
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex",
+          "label": "cmp:polytope",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L9",
+          "sha256": "88a7ecd86806c44ef20de880e57ef748e658e83a957f9974d57662d1e4c49e62"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "source-polytope-formulation-of-classical-increasing-rearrangement",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000340.md",
+      "body": "# Rearrange convex functions increasingly without losing convexity on a downward polytope\n\n[Family 343](../families/openai-math-343.md) · [Source manuscript](../papers/P-000189.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nFor a continuous convex function f on [0,L], its increasing rearrangement at h in [0,L] is\n\n$$g(h)=\\min_{0\\le a\\le L-h}\\max\\{f(a),f(a+h)\\}.$$\n\nConvex sublevel sets are intervals, so the formula is the quantile by sublevel length, including flat sublevels and both endpoints.\n\nNow let Delta={p>=0:b_nu.p<=c_nu} be compact and full dimensional, with every b_nu coordinate nonnegative. Rearrange a continuous convex F along the j-th coordinate interval [0,L(y)], where L(y)=min_nu(c_nu-sum_{i!=j}b_nu,i y_i)/b_nu,j over positive denominators.\n\nThe resulting R_jF is continuous and convex: convex combinations of two minimizing intervals are admissible intervals on the intermediate slice, and convexity bounds their endpoint values. Slice distributions and therefore the full integral are preserved. The minimum formula preserves order and constants; these imply ||R_jF-R_jG||_infinity<=||F-G||_infinity.\n\nIt is nondecreasing in coordinate j and preserves monotonicity in any other coordinate. Lowering another coordinate enlarges the allowed interval set because the face normals are nonnegative. Consequently R_m...R_1F is coordinatewise nondecreasing. No rationality or simplicity of the polytope is required.\n\n## Role in the source argument\n\nProvides the convex rearrangement operator used before the source Hamiltonian comparison construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cmp:interval-formula](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L55)\n- [cmp:rearrangement-properties](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L74)\n- [cmp:polytope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/comparison.tex#L9)\n\n## Antecedents and comparison\n\nIncreasing rearrangement is classical. The source packages convexity, contraction and preservation of earlier coordinate monotonicity on a downward polytope. The [Siegel-Yao primary preprint](https://arxiv.org/pdf/2312.13224) supplies the broader packing conjecture context, not a proof of the present global source claim.\n\n## Checks and limitations\n\nForty quadratic slice models preserve their integrals; 400 simplex models verify convexity and coordinate monotonicity. Maximum integral error is below 1.2e-16.\n\nThese models do not certify the general rearrangement proof or the separate Hamiltonian realization of a rearrangement.\n\n## Possible applications\n\nConverting convex data into monotone data while retaining its integral and controlling uniform approximation error.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000341",
+      "record_type": "instrument",
+      "title": "Construct relative area primitives and preserve moment faces in a Moser deformation",
+      "forms": [
+        "relative-area-primitive",
+        "horizontal-moser-face-preservation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-343"
+      ],
+      "source_paper_ids": [
+        "P-000189"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+          "label": "surf:primitive",
+          "line": 43,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L43",
+          "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+        },
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+          "label": "surf:moser",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L83",
+          "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+        },
+        {
+          "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex",
+          "label": "surf:toric-volume",
+          "line": 30,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L30",
+          "sha256": "1ec161d15995a1a1c86c6ef99121f8bc94963a9b8581a361b491bff34dcb35cd"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-relative-cohomology-and-moser-method-with-explicit-faces",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000341.md",
+      "body": "# Construct relative area primitives and preserve moment faces in a Moser deformation\n\n[Family 343](../families/openai-math-343.md) · [Source manuscript](../papers/P-000189.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nOn a compact connected oriented surface with boundary, a smooth parameter family of two-forms supported in a fixed interior compact set and of integral zero has compactly supported primitives chosen by one fixed linear operator.\n\nLocally write eta=h dx wedge dy, let h_0(y)=int h(x,y) dx, and choose a fixed compactly supported rho of integral one. Put A(x,y)=int_{-infinity}^x[h(v,y)-rho(v)h_0(y)]dv and B(y)=int_{-infinity}^y h_0(v)dv. Then alpha=A dy-rho B dx is compactly supported and d alpha=eta. A partition of unity and chains of overlapping disks move all residual bump masses to one common bump; their total coefficient is zero. This preserves smooth parameter dependence.\n\nFor toric horizontal Gamma on a surface times a toric fiber V of complex dimension m,\n\n$$ (\\omega_V+d\\Gamma)^{m+1}=(m+1)\\omega_V^m\\wedge d_C\\Gamma.$$\n\nExtra mixed terms vanish because they contain too many moment differentials. Thus positive d_C Gamma gives nondegeneracy.\n\nFor a path Omega_lambda with derivative d alpha_lambda, solve i_Y Omega=-alpha. If alpha is horizontal, vanishes near the base boundary, and i_{X_mu}Omega=-d mu near each outer moment face, then d mu(Y)=0 there. The flow fixes the base boundary collar and preserves every outer inequality simultaneously, including nonsimple corners. This is the relative Moser deformation needed by the source.\n\n## Role in the source argument\n\nChanges base-area distributions without disturbing the fiber truncation faces needed later in the packing construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [surf:primitive](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L43)\n- [surf:moser](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L83)\n- [surf:toric-volume](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/sections/surface.tex#L30)\n\n## Antecedents and comparison\n\nThe zero-integral condition is the classical compact-support cohomology obstruction in degree two, and the flow equation is Moser theory. The explicit primitive and horizontal face condition make the support and boundary bookkeeping reusable.\n\n## Checks and limitations\n\nThe local primitive formula is symbolic. Seventy-five finite two-form models verify the determinant/area relation and zero moment components of the horizontal Moser field.\n\nNo global packing or flow is constructed by the script. The written proof supplies compactness and support arguments; the source Hamiltonian comparison remains separate.\n\n## Possible applications\n\nRelative symplectic deformations with fixed base collars and simultaneous preservation of several moment inequalities.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000342",
+      "record_type": "instrument",
+      "title": "Use a convex flux defect instead of substituting a mean pointwise",
+      "forms": [
+        "mean-flux-jensen-bound",
+        "monotone-minorant-substitution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-354"
+      ],
+      "source_paper_ids": [
+        "P-000190"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+          "label": "nest:integrated-flux",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L59",
+          "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+          "label": "nest:weight",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L42",
+          "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+          "label": "nest:weight-derivative",
+          "line": 49,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L49",
+          "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex",
+          "label": "nest:jensen",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L61",
+          "sha256": "56162a6f0af399a56599bef12f5007b24975cbb74ce620140f27383ff449afd4"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "source-scalar-choice-using-classical-jensen-convexity",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000342.md",
+      "body": "# Use a convex flux defect instead of substituting a mean pointwise\n\n[Family 354](../families/openai-math-354.md) · [Source manuscript](../papers/P-000190.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nLet 0<alpha<=1 vary along a slice curve of perimeter p, with arclength mean m=hv/p. Fix lambda=49/50 and g(X)=(1-lambda X^2)/sqrt(1-X^2). Its minimum is 7/25 at D=sqrt(48)/7. Define G(X)=g(min(X,D)) for all X>=0. This is nonincreasing, takes values in [7/25,1], and is a minorant of g on [0,1).\n\nFor J in [0,1] set f_J(X)=1/X-lambda X-J sqrt(1-X^2)/X. Then\n\n$$X^3 f_J''(X)=2-J\\frac{2-3X^2}{(1-X^2)^{3/2}}\\ge0.$$\n\nTake J=G(m). The definition gives f_J(m)>=0, including m=1. Jensen with normalized arclength yields\n\n$$\\int\\frac{d\\ell}{\\alpha}-\\lambda hv\\ge G(hv/p)\\int\\frac{\\sqrt{1-\\alpha^2}}{\\alpha}\\,d\\ell.$$\n\nA perimeter lower bound p_0<=p can now be substituted safely: hv/p_0>=hv/p and G is nonincreasing, so it only weakens the lower bound. G remains defined even if the substituted argument exceeds one. Under the source nested-slice coarea hypotheses, the inequality integrates in slice area to A>=lambda h V+int_0^s gamma(v)dv whenever gamma(v)<=G(hv/p).\n\nDirectly substituting the mean into a pointwise ratio is unjustified; the convex defect is the reason the averaged inequality holds.\n\n## Role in the source argument\n\nCombines flux information and perimeter lower bounds in the source cylinder-slab transition estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [nest:integrated-flux](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L59)\n- [nest:weight](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L42)\n- [nest:weight-derivative](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L49)\n- [nest:jensen](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/nesting.tex#L61)\n\n## Antecedents and comparison\n\nThis is an explicit application of Jensen with a carefully chosen monotone minorant. Its numerical parameters belong to the source estimate; the averaging principle is classical.\n\n## Checks and limitations\n\nFour hundred weighted slice models pass, and the relevant scalar derivative is symbolic. A two-value control shows that pointwise substitution of the mean can fail even though the integrated inequality holds.\n\nThe source geometric flux, nesting and coarea hypotheses are not verified by the scalar tests.\n\n## Possible applications\n\nConverting moment constraints into integral estimates when pointwise substitution and monotone comparison would otherwise be invalid.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000343",
+      "record_type": "instrument",
+      "title": "Certify positivity between rational knots using an upper curvature bound",
+      "forms": [
+        "rigorous-knot-interpolation",
+        "conditional-rational-margin-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-354"
+      ],
+      "source_paper_ids": [
+        "P-000190"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+          "label": "num:pi-interval",
+          "line": 357,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L357",
+          "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+          "label": "num:knot-table",
+          "line": 437,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L437",
+          "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+          "label": "num:chord",
+          "line": 483,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L483",
+          "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+          "label": "num:gap-formula",
+          "line": 505,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L505",
+          "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+        },
+        {
+          "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex",
+          "label": "num:gap-table",
+          "line": 522,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L522",
+          "sha256": "2560ee9a179d718d4c6b5d3899c403ec88eb83e8ebe9704995de11c119df7594"
+        }
+      ],
+      "batch_id": "B029",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-interpolation-certificate-with-source-exact-data",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000343.md",
+      "body": "# Certify positivity between rational knots using an upper curvature bound\n\n[Family 354](../families/openai-math-354.md) · [Source manuscript](../papers/P-000190.md) · [Batch B029](../../batches/B029/README.md)\n\n## Mathematical content\n\nIf f has upper second derivative bound K on [a,b], then f-Kh^2/2 is concave and\n\n$$f(h)\\ge\\frac{b-h}{b-a}f(a)+\\frac{h-a}{b-a}f(b)-\\frac K2(h-a)(b-h)\\ge\\min(f(a),f(b))-\\frac{K(b-a)^2}{8}.$$\n\nThus endpoint lower bounds alone are insufficient; a quantified curvature loss certifies the whole interval. The source has 24 rational knots from 0.64 to 2.25. With b_h,s_h its tabulated integer lower bounds, chi=1 for intervals contained in [1.02,1.62] and zero otherwise, it uses\n\n$$M_{a,b}=\\min_{h=a,b}\\left\\{\\frac{b_h+\\chi s_h}{10^5}-E(h)\\right\\}-\\frac{K(b-a)^2}{8},$$\n\nwhere K=2.4 inside and 2/a^2 outside, E(h)=.008 max(D_+/h-b_-,0)^4, D_+=.989743318611, b_-=1-1/pi_-, and pi_-=3.14159265358979. Exact rational arithmetic verifies all 23 displayed interval margins. The smallest is 9/100000, on [1.42,1.46] and [1.46,1.50].\n\nThe arithmetic prescription uses fixed denominator 10^40, outward-rounded products and reciprocals, and integer square-root comparisons. An alternating arctangent series with Machin's formula proves the input pi enclosure. These operations remain valid for dependent inputs, although enclosures may widen.\n\nThis extraction checks the interpolation table conditional on the source knot lower bounds and upper second-derivative estimates. It does not independently reproduce the transcendental knot evaluations or prove those analytic curvature estimates.\n\n## Role in the source argument\n\nExtends a finite scalar certificate to the entire parameter range required by the source geometric exclusion.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [num:pi-interval](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L357)\n- [num:knot-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L437)\n- [num:chord](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L483)\n- [num:gap-formula](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L505)\n- [num:gap-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/build/sections/numerics.tex#L522)\n\n## Antecedents and comparison\n\nThe chord-error estimate and outward arithmetic are classical rigorous-numerics tools. The reusable contribution here is a transparent, exactly reproducible conditional certificate using the source data.\n\n## Checks and limitations\n\nAll 23 rational interval claims pass, with exact minimum margin 9/100000. The Machin pi enclosure and 101 outward square-root models are checked with integer and rational arithmetic.\n\nThe endpoint and curvature bounds are inputs, not outputs of this script. Consequently the verified table is not a certification of the complete isoperimetric theorem.\n\n## Possible applications\n\nReplacing sampled numerical positivity by a proof covering every parameter value, once endpoint and derivative bounds have been established.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -17522,6 +17922,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000186.md",
       "body": "# Uniform Interior $`C^{1,\\alpha}`$ Estimates for Infinity-Harmonic Functions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/interior-c1-infinity-harmonic.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims dimension-dependent uniform interior C1,alpha estimates for bounded infinity-harmonic functions in every dimension at least three, with a nonexplicit exponent at most one third.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000334: Add an explicit correction when moving a quadratic-envelope center](../instruments/MI-000334.md)\n- [MI-000335: Enforce a barycenter while optimizing a variance-penalized envelope](../instruments/MI-000335.md)\n\n## Dependencies and review\n\nCoercive quadratic optimization, viscosity upper tests, completion of squares, convex separation and finite-dimensional convex hulls.\n\nRead the complete quadratic-envelope and barycentric-envelope proofs, the limiting PDE definition and the main theorem. Common-time subsolution rules, contact propagation, final Liouville rigidity and the full compactness reduction were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-377.md) · [Batch B028](../../batches/B028/README.md)"
+    },
+    {
+      "id": "P-000187",
+      "record_type": "paper",
+      "title": "Smooth isometric immersions of closed surfaces into Euclidean four-space",
+      "source_collection": "openai/math",
+      "upstream_slug": "Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-333"
+      ],
+      "batch_id": "B029",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2000df195030ad2efe9428cf442c262cc398a05cbac9af32b5e84f4b47b335c7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000187.md",
+      "body": "# Smooth isometric immersions of closed surfaces into Euclidean four-space\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a smooth isometric immersion of every closed smooth Riemannian surface into Euclidean four-space, without an orientability assumption.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000336: Prescribe the mean of a loop by a smoothly varying positive density](../instruments/MI-000336.md)\n- [MI-000337: Prescribe a transverse derivative on curves while keeping the function uniformly small](../instruments/MI-000337.md)\n\n## Dependencies and review\n\nFinite convex combinations, a right inverse for three linear constraints, smooth partitions of unity and transverse defining functions.\n\nRead the complete loop-density and small-value/prescribed-derivative proofs and their application to reparametrization. Primitive metric realization, preservation at crossings and exact smooth correction were not audited.\n\nRead SurfaceImmersion.lean and its scope. The target requires a compact smooth surface and a smooth map whose differential preserves the metric at every tangent space; it asks for an immersion, not an embedding. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\n[Family context](../families/openai-math-333.md) · [Batch B029](../../batches/B029/README.md)"
+    },
+    {
+      "id": "P-000188",
+      "record_type": "paper",
+      "title": "A Smooth Metric with No Local Isometric Immersion into Three-Space",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-334"
+      ],
+      "batch_id": "B029",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3e0d5b06afa2c85be3b5384fa6842569865595d30f50db99898d3eafe0c83fb1",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000188.md",
+      "body": "# A Smooth Metric with No Local Isometric Immersion into Three-Space\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a smooth positive surface metric on (-1,1)^2 for which no neighborhood of the origin admits a smooth isometric immersion into R3; its metric can have the Euclidean Taylor jet at the origin.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000338: Realize a small arbitrary curvature function through a scalar ODE](../instruments/MI-000338.md)\n- [MI-000339: Pay coordinate-scaling costs before summing accumulating local perturbations](../instruments/MI-000339.md)\n\n## Dependencies and review\n\nSmooth parameter-dependent ODEs, the semigeodesic curvature formula, tensor coordinate transformations and uniform convergence of every derivative series.\n\nRead the prescribed-curvature proof, the full placement and smooth-summation construction, and the Euclidean-jet corollary. The cap regularity, pulse obstruction and negative-disk obstruction were not audited.\n\nRead IsometricImmersion.lean and its scope. The target constructs a smooth positive-definite metric and excludes every smooth isometric candidate on every open neighborhood of the origin contained in the coordinate square. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\n[Family context](../families/openai-math-334.md) · [Batch B029](../../batches/B029/README.md)"
+    },
+    {
+      "id": "P-000189",
+      "record_type": "paper",
+      "title": "Symplectic Ball Packings in Higher Dimensions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-343"
+      ],
+      "batch_id": "B029",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "60ee7e41701331edbbd6041b08b0116df9a0458dec26e6e5ba0bc7c311bb6774",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000189.md",
+      "body": "# Symplectic Ball Packings in Higher Dimensions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that closed symplectic balls in dimension 2n, n>=3, pack into the interior of a ball exactly under strict volume and pairwise capacity inequalities.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000340: Rearrange convex functions increasingly without losing convexity on a downward polytope](../instruments/MI-000340.md)\n- [MI-000341: Construct relative area primitives and preserve moment faces in a Moser deformation](../instruments/MI-000341.md)\n\n## Dependencies and review\n\nConvex sublevel intervals, Fubini, relative primitives for zero-integral two-forms, exterior algebra and the Moser equation.\n\nRead the complete coordinate-rearrangement proof, relative-area primitive proof and Moser-with-outer-faces proof. Hamiltonian realization, fixed-point comparison, normal-cone transfer and higher-dimensional packing assembly were not audited.\n\nRead both BallPacking.lean and BallPackingNecessity.lean, plus the scope. They use capacity pi times squared radius, positive capacities, embeddings on neighborhoods of closed balls, disjoint closed images in the open target, and strict volume and pairwise inequalities. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\n[Family context](../families/openai-math-343.md) · [Batch B029](../../batches/B029/README.md)"
+    },
+    {
+      "id": "P-000190",
+      "record_type": "paper",
+      "title": "The Isoperimetric Conjecture for the Cubic Flat Three-Torus",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-354"
+      ],
+      "batch_id": "B029",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8ba8f530abb4b9187907d53cf79e8536cf4f6a10b75911aec1bc74993007db29",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000190.md",
+      "body": "# The Isoperimetric Conjecture for the Cubic Flat Three-Torus\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the full isoperimetric profile and all minimizers of the unit cubic flat three-torus, including both equality classes at the ball-tube and tube-slab transitions.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000342: Use a convex flux defect instead of substituting a mean pointwise](../instruments/MI-000342.md)\n- [MI-000343: Certify positivity between rational knots using an upper curvature bound](../instruments/MI-000343.md)\n\n## Dependencies and review\n\nJensen convexity, a nonincreasing minorant, coarea, scalar concavity after subtracting a quadratic and rational outward arithmetic.\n\nRead the complete integrated-flux proof and the outward-arithmetic/interpolation section. The geometric reduction, endpoint transcendental evaluations, analytic second-derivative bounds and final equality classification were not audited.\n\nRead CubicTorus.lean and its scope. It uses the unit flat quotient torus, De Giorgi perimeter for arbitrary finite-perimeter regions, null-set equivalence, attainment, and all equality cases at 4pi/81 and 1/pi, including complements. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\n[Family context](../families/openai-math-354.md) · [Batch B029](../../batches/B029/README.md)"
     }
   ],
   "families": [
@@ -21248,6 +21724,60 @@
       "body": "# Nonlinear median smoothing through cuts and stopped martingales\n\n## Source manuscript and claim\n\n[Metric Markov Cotype Two of <i>ℓ</i><sub>1</sub> ](../papers/P-000106.md), by OpenAI, October 5, 2026.\n\nThe source claims metric Markov cotype two for real ell1 with constant 12 sqrt(21), and consequently a universal Lipschitz extension bound from Hilbert space to ell1. Its construction and cost estimate in fact require only stationarity of the chain.\n\n## Extracted instruments\n\n- [MI-000167: Finite ell1 cuts retain a contractive affine reconstruction](../instruments/MI-000167.md)\n- [MI-000168: A flat cubic converts quartic potential into martingale jump energy](../instruments/MI-000168.md)\n- [MI-000169: Expected medians of stopped-walk endpoints control two smoothing costs](../instruments/MI-000169.md)\n\n## Dependencies and antecedents\n\nFinite weighted upper cuts with ambient reconstruction; the cubic 3r^2-2r^3; a quartic convexity remainder; a geometrically killed stationary walk; a resolvent identity; a geometric-to-Cesaro endpoint comparison; a separate dual-target Lipschitz extension theorem.\n\nMendel-Naor formulate metric Markov cotype and its ell1 question and supply the extension framework and resolvent comparison. Deza-Laurent give the classical cut representation. Cheng-Wang-Xiang use the same cubic in metric cotype smoothing, a distinct invariant; this prevents attributing the cubic itself as new here. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete elementary proof of the source’s cotype bound, its expected-median interpretation and its extension deduction. Retrieved Mendel-Naor’s question, extension statement and resolvent lemma, and Cheng-Wang-Xiang’s cut-smoothing construction. Finite tests audit identities and examples, not universal proof certification.\n\nNo family-specific formalization scope document is listed for family 332 in the pinned inventory. No Comparator comparison or Lean proof build is claimed.\n\nMetric Markov cotype allows nonlinear choices of new points in the full ambient space. It is different from Ball’s linear-average condition and from metric cotype. New points need not stay in the subspace spanned by the data. Zero stationary masses are permitted, and reversibility can be weakened to stationarity for the displayed construction.\n\n[Batch record](../../batches/B008/README.md)"
     },
     {
+      "id": "openai-math-333",
+      "record_type": "family",
+      "title": "Prescribe loop averages and transverse derivatives independently of amplitude",
+      "source_family": "333",
+      "source_collection": "openai/math",
+      "batch_id": "B029",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000187"
+      ],
+      "instrument_ids": [
+        "MI-000336",
+        "MI-000337"
+      ],
+      "headline": "The source claims a smooth isometric immersion of every closed smooth Riemannian surface into Euclidean four-space, without an orientability assumption.",
+      "central_instrument": "Positive densities prescribe the average of a loop while allowing smooth parameter patching. Thin transverse supports prescribe a large derivative along finitely intersecting curves while keeping the function small.",
+      "novelty_assessment": "Convex barycentric weights, partitions of unity and localized jet extension are classical. The extracted lemmas package their parameter and support constraints for the source velocity-loop construction; no global immersion theorem is certified.",
+      "formalization_summary": "Read SurfaceImmersion.lean and its scope. The target requires a compact smooth surface and a smooth map whose differential preserves the metric at every tangent space; it asks for an immersion, not an embedding. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.",
+      "statement_faithfulness": "A target average must be in the two-dimensional interior of the path convex hull. The derivative lemma excludes shared curve arcs and requires only finitely many vertical tangencies and intersections near the compact set.",
+      "dependencies": "Finite convex combinations, a right inverse for three linear constraints, smooth partitions of unity and transverse defining functions.",
+      "antecedents": "Classical convex-hull and smooth extension constructions; no exhaustive priority claim established.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-333.md",
+      "body": "# Prescribe loop averages and transverse derivatives independently of amplitude\n\n## Source manuscript and claim\n\n[Smooth isometric immersions of closed surfaces into Euclidean four-space](../papers/P-000187.md), by OpenAI, None.\n\nThe source claims a smooth isometric immersion of every closed smooth Riemannian surface into Euclidean four-space, without an orientability assumption.\n\n## Extracted instruments\n\n- [MI-000336: Prescribe the mean of a loop by a smoothly varying positive density](../instruments/MI-000336.md)\n- [MI-000337: Prescribe a transverse derivative on curves while keeping the function uniformly small](../instruments/MI-000337.md)\n\n## Dependencies and antecedents\n\nFinite convex combinations, a right inverse for three linear constraints, smooth partitions of unity and transverse defining functions.\n\nClassical convex-hull and smooth extension constructions; no exhaustive priority claim established. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete loop-density and small-value/prescribed-derivative proofs and their application to reparametrization. Primitive metric realization, preservation at crossings and exact smooth correction were not audited.\n\nRead SurfaceImmersion.lean and its scope. The target requires a compact smooth surface and a smooth map whose differential preserves the metric at every tangent space; it asks for an immersion, not an embedding. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nA target average must be in the two-dimensional interior of the path convex hull. The derivative lemma excludes shared curve arcs and requires only finitely many vertical tangencies and intersections near the compact set.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/333.md) · [Batch record](../../batches/B029/README.md)"
+    },
+    {
+      "id": "openai-math-334",
+      "record_type": "family",
+      "title": "Prescribed curvature and smooth accumulation with a flat Taylor jet",
+      "source_family": "334",
+      "source_collection": "openai/math",
+      "batch_id": "B029",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000188"
+      ],
+      "instrument_ids": [
+        "MI-000338",
+        "MI-000339"
+      ],
+      "headline": "The source claims a smooth positive surface metric on (-1,1)^2 for which no neighborhood of the origin admits a smooth isometric immersion into R3; its metric can have the Euclidean Taylor jet at the origin.",
+      "central_instrument": "A scalar ODE realizes a small curvature function in semigeodesic coordinates. Diagonal seminorm budgets let infinitely many local tensor modifications accumulate while preserving smoothness, positivity and all prescribed jets.",
+      "novelty_assessment": "The prescribed-curvature ODE is explicit in Khuri 2009, page 453, which was checked. Diagonal smooth summation is classical. The local obstruction needed for the source nonimmersion conclusion is not certified here.",
+      "formalization_summary": "Read IsometricImmersion.lean and its scope. The target constructs a smooth positive-definite metric and excludes every smooth isometric candidate on every open neighborhood of the origin contained in the coordinate square. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.",
+      "statement_faithfulness": "Curvature is invariant under actual pullback; the lambda^2 factor in the pulled-back metric must be retained. Pushing a covariant two-tensor back to ambient coordinates costs lambda^{-2} before taking derivatives. A Euclidean Taylor jet alone is not the nonimmersion obstruction.",
+      "dependencies": "Smooth parameter-dependent ODEs, the semigeodesic curvature formula, tensor coordinate transformations and uniform convergence of every derivative series.",
+      "antecedents": "Marcus Khuri, On the local solvability of Darboux equation, 2009, page 453; classical diagonal smooth-series constructions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-334.md",
+      "body": "# Prescribed curvature and smooth accumulation with a flat Taylor jet\n\n## Source manuscript and claim\n\n[A Smooth Metric with No Local Isometric Immersion into Three-Space](../papers/P-000188.md), by OpenAI, None.\n\nThe source claims a smooth positive surface metric on (-1,1)^2 for which no neighborhood of the origin admits a smooth isometric immersion into R3; its metric can have the Euclidean Taylor jet at the origin.\n\n## Extracted instruments\n\n- [MI-000338: Realize a small arbitrary curvature function through a scalar ODE](../instruments/MI-000338.md)\n- [MI-000339: Pay coordinate-scaling costs before summing accumulating local perturbations](../instruments/MI-000339.md)\n\n## Dependencies and antecedents\n\nSmooth parameter-dependent ODEs, the semigeodesic curvature formula, tensor coordinate transformations and uniform convergence of every derivative series.\n\nMarcus Khuri, On the local solvability of Darboux equation, 2009, page 453; classical diagonal smooth-series constructions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the prescribed-curvature proof, the full placement and smooth-summation construction, and the Euclidean-jet corollary. The cap regularity, pulse obstruction and negative-disk obstruction were not audited.\n\nRead IsometricImmersion.lean and its scope. The target constructs a smooth positive-definite metric and excludes every smooth isometric candidate on every open neighborhood of the origin contained in the coordinate square. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nCurvature is invariant under actual pullback; the lambda^2 factor in the pulled-back metric must be retained. Pushing a covariant two-tensor back to ambient coordinates costs lambda^{-2} before taking derivatives. A Euclidean Taylor jet alone is not the nonimmersion obstruction.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/334.md) · [Batch record](../../batches/B029/README.md)"
+    },
+    {
       "id": "openai-math-340",
       "record_type": "family",
       "title": "Counterexample to the nearby Lagrangian conjecture",
@@ -21277,6 +21807,60 @@
       "map_formalization_summary": "no",
       "path": "catalog/families/openai-math-340.md",
       "body": "# Counterexample to the nearby Lagrangian conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000015](../papers/P-000015.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination\n\nFor some large even N, $`Q=S^9\\times S^{N-1}`$ admits a closed exact embedded Lagrangian $`L\\subset T^*Q`$, diffeomorphic to Q, not Hamiltonian isotopic to the zero section. The paper does not address smooth isotopy or whether the projection is homotopic to a diffeomorphism. N is not explicit and L depends on a non-constructively chosen homotopy class. The comparison with Álvarez-Gavela–Igusa–Sullivan’s construction concerns the passage from Legendrian to embedded Lagrangian families [source](../../direction/references.md#src:ais).\n\n## Extracted instruments.\n\n- [MI-000110: Momentum-separation embedding of a tube family](../instruments/MI-000110.md)\n\n- [MI-000111: One-critical-point rigidity](../instruments/MI-000111.md)\n\n- [MI-000112: Torsion-invisible kernel class](../instruments/MI-000112.md)\n\n## Reused.\n\nWaldhausen’s tube theorem; Waldhausen–Jahren–Rognes stable parametrized h-cobordism theorem; Rognes 2002; Adams; Igusa; Sikorav–Chaperon generating-function transport; Bott periodicity.\n\n## Caveats.\n\nThe argument depends on 2025–26 preprints by AIS, Abouzaid–Álvarez-Gavela–Courte–Kragh and Courte–Porcelli, including an informal comparison between models. Corner and stabilization conventions require detailed checking; the detection argument depends on them.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no; external: AIS, AACK, Courte–Porcelli 2025–26 preprints\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-343",
+      "record_type": "family",
+      "title": "Convex coordinate rearrangement and boundary-preserving area deformation",
+      "source_family": "343",
+      "source_collection": "openai/math",
+      "batch_id": "B029",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000189"
+      ],
+      "instrument_ids": [
+        "MI-000340",
+        "MI-000341"
+      ],
+      "headline": "The source claims that closed symplectic balls in dimension 2n, n>=3, pack into the interior of a ball exactly under strict volume and pairwise capacity inequalities.",
+      "central_instrument": "Coordinatewise increasing rearrangement preserves convexity on a downward polytope. Compactly supported area primitives and horizontal Moser fields preserve outer moment faces during deformation.",
+      "novelty_assessment": "The global packing criterion was a conjecture in Siegel-Yao, distinct from their stabilized packing results. The extracted mechanisms use established rearrangement, compactly supported cohomology and Moser methods; their concrete boundary constraints are recorded without certifying the claimed packing theorem.",
+      "formalization_summary": "Read both BallPacking.lean and BallPackingNecessity.lean, plus the scope. They use capacity pi times squared radius, positive capacities, embeddings on neighborhoods of closed balls, disjoint closed images in the open target, and strict volume and pairwise inequalities. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.",
+      "statement_faithfulness": "The rearrangement domain has nonnegative face normals; that downward property is used to preserve previous coordinate monotonicity. The arithmetic rearrangement is separate from a Hamiltonian realization. Horizontal primitives are required for the moment-face preservation argument.",
+      "dependencies": "Convex sublevel intervals, Fubini, relative primitives for zero-integral two-forms, exterior algebra and the Moser equation.",
+      "antecedents": "Siegel-Yao, On Symplectic Packing Problems in Higher Dimensions, arXiv:2312.13224, for the conjectural context; classical rearrangement and Moser deformation methods.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-343.md",
+      "body": "# Convex coordinate rearrangement and boundary-preserving area deformation\n\n## Source manuscript and claim\n\n[Symplectic Ball Packings in Higher Dimensions](../papers/P-000189.md), by OpenAI, None.\n\nThe source claims that closed symplectic balls in dimension 2n, n>=3, pack into the interior of a ball exactly under strict volume and pairwise capacity inequalities.\n\n## Extracted instruments\n\n- [MI-000340: Rearrange convex functions increasingly without losing convexity on a downward polytope](../instruments/MI-000340.md)\n- [MI-000341: Construct relative area primitives and preserve moment faces in a Moser deformation](../instruments/MI-000341.md)\n\n## Dependencies and antecedents\n\nConvex sublevel intervals, Fubini, relative primitives for zero-integral two-forms, exterior algebra and the Moser equation.\n\nSiegel-Yao, On Symplectic Packing Problems in Higher Dimensions, arXiv:2312.13224, for the conjectural context; classical rearrangement and Moser deformation methods. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete coordinate-rearrangement proof, relative-area primitive proof and Moser-with-outer-faces proof. Hamiltonian realization, fixed-point comparison, normal-cone transfer and higher-dimensional packing assembly were not audited.\n\nRead both BallPacking.lean and BallPackingNecessity.lean, plus the scope. They use capacity pi times squared radius, positive capacities, embeddings on neighborhoods of closed balls, disjoint closed images in the open target, and strict volume and pairwise inequalities. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nThe rearrangement domain has nonnegative face normals; that downward property is used to preserve previous coordinate monotonicity. The arithmetic rearrangement is separate from a Hamiltonian realization. Horizontal primitives are required for the moment-face preservation argument.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/343.md) · [Batch record](../../batches/B029/README.md)"
+    },
+    {
+      "id": "openai-math-354",
+      "record_type": "family",
+      "title": "Turn slice averages and finite parameter tables into uniform bounds",
+      "source_family": "354",
+      "source_collection": "openai/math",
+      "batch_id": "B029",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000190"
+      ],
+      "instrument_ids": [
+        "MI-000342",
+        "MI-000343"
+      ],
+      "headline": "The source claims the full isoperimetric profile and all minimizers of the unit cubic flat three-torus, including both equality classes at the ball-tube and tube-slab transitions.",
+      "central_instrument": "A convex scalar function turns an arclength-mean flux identity into a slice inequality. An upper second-derivative bound turns certified knot values into uniform positivity between knots.",
+      "novelty_assessment": "Jensen, monotone minorants, outward interval arithmetic and chord-error bounds are established tools. The source chooses concrete functions and a rational certificate; the selected arithmetic is checked conditionally on its endpoint and analytic derivative bounds.",
+      "formalization_summary": "Read CubicTorus.lean and its scope. It uses the unit flat quotient torus, De Giorgi perimeter for arbitrary finite-perimeter regions, null-set equivalence, attainment, and all equality cases at 4pi/81 and 1/pi, including complements. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.",
+      "statement_faithfulness": "Flux fixes an arclength average, not pointwise inclination. The interpolation certificate uses an upper bound on the second derivative to prove a lower bound between endpoints. The endpoint table and analytic curvature bounds remain separate inputs.",
+      "dependencies": "Jensen convexity, a nonincreasing minorant, coarea, scalar concavity after subtracting a quadratic and rational outward arithmetic.",
+      "antecedents": "Classical Jensen and coarea methods; elementary rigorous interpolation and interval arithmetic. No first-priority claim established for the source scalar choices.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-354.md",
+      "body": "# Turn slice averages and finite parameter tables into uniform bounds\n\n## Source manuscript and claim\n\n[The Isoperimetric Conjecture for the Cubic Flat Three-Torus](../papers/P-000190.md), by OpenAI, September 24, 2026.\n\nThe source claims the full isoperimetric profile and all minimizers of the unit cubic flat three-torus, including both equality classes at the ball-tube and tube-slab transitions.\n\n## Extracted instruments\n\n- [MI-000342: Use a convex flux defect instead of substituting a mean pointwise](../instruments/MI-000342.md)\n- [MI-000343: Certify positivity between rational knots using an upper curvature bound](../instruments/MI-000343.md)\n\n## Dependencies and antecedents\n\nJensen convexity, a nonincreasing minorant, coarea, scalar concavity after subtracting a quadratic and rational outward arithmetic.\n\nClassical Jensen and coarea methods; elementary rigorous interpolation and interval arithmetic. No first-priority claim established for the source scalar choices. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete integrated-flux proof and the outward-arithmetic/interpolation section. The geometric reduction, endpoint transcendental evaluations, analytic second-derivative bounds and final equality classification were not audited.\n\nRead CubicTorus.lean and its scope. It uses the unit flat quotient torus, De Giorgi perimeter for arbitrary finite-perimeter regions, null-set equivalence, attainment, and all equality cases at 4pi/81 and 1/pi, including complements. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nFlux fixes an arclength average, not pointwise inclination. The interpolation certificate uses an upper bound on the second derivative to prove a lower bound between endpoints. The endpoint table and analytic curvature bounds remain separate inputs.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/354.md) · [Batch record](../../batches/B029/README.md)"
     },
     {
       "id": "openai-math-362",

@@ -44,7 +44,9 @@
 
 | [B028](B028/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Tensor projections, null-conic bundles, finite-type uniqueness, profile defects, overlap variance and quadratic envelopes |
 
-Future rounds use `B029` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B029](B029/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Positive loop means, transverse jets, prescribed curvature, smooth accumulation, rearrangements, relative Moser fields and interval certificates |
+
+Future rounds use `B030` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
