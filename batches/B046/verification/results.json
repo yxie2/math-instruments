@@ -1,0 +1,44 @@
+{
+  "batch": "B046",
+  "status": "passed",
+  "scope": "Eight finite/local groups. No irrationality, spherical-shell, contact classification or quantum Langlands theorem certified.",
+  "checks": {
+    "divisor_cocycle": {
+      "weighted_set_models": 150,
+      "scope": "finite-support valuation-set algebra only"
+    },
+    "ordered_path_contraction": {
+      "exact_models": 60,
+      "noncommuting_examples": 60
+    },
+    "no_generalized_invariants": {
+      "models": 10,
+      "powers_per_model": 7,
+      "jordan_counterexample": true
+    },
+    "periodic_height_correction": {
+      "exact_models": 10,
+      "scope": "one-dimensional drift-Laplacian analogue, not a complex surface"
+    },
+    "contact_hamiltonian": {
+      "exact_darboux_polynomials": 30,
+      "scope": "local equations and contact preservation"
+    },
+    "symmetric_contact_jet": {
+      "projective_chart_points": 40,
+      "first_jet_rank": 4,
+      "fixed_second_derivative_identity": true,
+      "scope": "standard symplectic projective model; not existence on arbitrary contact manifolds"
+    },
+    "kummer_euler": {
+      "monomial_models": 204,
+      "integral_exponent_kernel_control": true,
+      "scope": "Laurent polynomial de Rham differential, not stack descent"
+    },
+    "bounded_weight_tail_killing": {
+      "weight_models": 234,
+      "unbounded_weight_controls": 30,
+      "scope": "finite graded models; mixed Hodge strictness and completed finite generation are inputs"
+    }
+  }
+}
