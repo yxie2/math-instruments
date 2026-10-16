@@ -1,0 +1,56 @@
+{
+  "batch": "B017",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "checks": {
+    "coordinate_kernel": {
+      "explicit_three_part_bounds": 108,
+      "dependent_tensor_models": 180,
+      "max_observed_scaled_excess": 3.721570220973301,
+      "scope": "Explicit finite bounds and slicing; not a determination of the asymptotic universal constant."
+    },
+    "orbit_accounting": {
+      "correlated_matching_models": 120,
+      "cyclic_variance_models": 120,
+      "clipping_models": 120,
+      "uncharged_class_split_control": true
+    },
+    "factor_grouping": {
+      "exhaustive_rational_partitions": 42551,
+      "exceptional_three_thirds": 10,
+      "two_thirds_boundary_control": true
+    },
+    "stopping_bin": {
+      "exact_independent_coefficient_models": 10,
+      "collected_terms_including_overlaps": 1542,
+      "unequal_exact_size_control": true
+    },
+    "finite_maps": {
+      "exhaustive_map_partition_exception_models": 9835,
+      "single_exceptional_value_control_fiber_size": 100
+    },
+    "common_phase_comparison": {
+      "discontinuous_exact_inequality_models": 16928,
+      "exact_phase_samples": 96,
+      "dependent_comparison_and_unvisited_phase_controls": true
+    },
+    "marked_prefix": {
+      "bounded_prefix_models": 1491,
+      "skipped_marker_events": 9,
+      "complete_unbounded_runs": 42,
+      "enumerated_expansions_by_length": {
+        "3": 1,
+        "4": 6,
+        "5": 72
+      },
+      "all_marker_padding_models": 387
+    },
+    "indexed_descent": {
+      "residue_predecessor_models": 100,
+      "exact_scale_transfer_identities": 2546,
+      "log_domain_recurrence_models": 144,
+      "duplicate_list_indices_retained": true
+    }
+  },
+  "scope": "Selected finite mechanisms and explicit numerical bounds; not global number-theory or Lean proof certification."
+}
