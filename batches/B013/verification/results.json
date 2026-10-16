@@ -1,0 +1,79 @@
+{
+  "batch": "B013",
+  "status": "passed",
+  "python": "3.13.12",
+  "seed": 2026101613,
+  "scope": "Exact finite identities and seeded coupling executions; no full theorem, priority or Lean certification.",
+  "checks": [
+    {
+      "check": "chronological singleton and parent-pair queries",
+      "priority_models": 243,
+      "answers": 12484,
+      "exact": true
+    },
+    {
+      "check": "independent product polynomials and exposure coupling",
+      "exact_two_triangle_polynomials": true,
+      "coupled_trials": 2000,
+      "exposure_collisions": 1587,
+      "answer_disagreements": 772,
+      "clean_executions": 433,
+      "scope": "pathwise coupling check, not a collision-rate theorem"
+    },
+    {
+      "check": "weighted forest canonical recursion and independent generating function",
+      "parameter_pairs": 42,
+      "patterns": 3099,
+      "exact": true
+    },
+    {
+      "check": "explicit clique closure cycles",
+      "constructed_cycles": 249,
+      "exact": true
+    },
+    {
+      "check": "outside-path and ball compatibility",
+      "implications": 13632,
+      "exact": true
+    },
+    {
+      "check": "binary anchor properties and bounded nonanchor traces",
+      "five_column_selections": 34112,
+      "exact": true,
+      "scope": "structural ingredients; not exhaustive search for every anchor copy"
+    },
+    {
+      "check": "tree modes, leaf-copy location and protected propagation",
+      "mode_bodies": 440,
+      "original_bodies": 14,
+      "new_bodies_after_leaf_flips": 14,
+      "core_assignments": 2184,
+      "exact": true,
+      "scope": "selected body constraints, not exhaustive full-matrix edit distance"
+    },
+    {
+      "check": "isolated digit positions and norm-coded residue gaps",
+      "position_triples": 1296,
+      "degree_one_gap_models": 276,
+      "exact": true,
+      "scope": "reduced degree-one models, not the d=41 construction"
+    },
+    {
+      "check": "singular GL and SL orbit accounting",
+      "smith_models": 12,
+      "rings": [
+        2,
+        3,
+        4
+      ],
+      "exact": true
+    },
+    {
+      "check": "fixed-label digit tails and divisor moments",
+      "label_models": 4,
+      "matrices": 263680,
+      "repeated_labels_included": true,
+      "exact": true
+    }
+  ]
+}

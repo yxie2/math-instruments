@@ -7694,6 +7694,498 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000203.md",
       "body": "# A local ultrafilter rank interface excludes independent covers on a double ray\n\n[Family 185](../families/openai-math-185.md) · [Source manuscript](../papers/P-000122.md) · [Batch B012](../../batches/B012/README.md)\n\n## Mathematical content\n\nAssume a matroid Q on L disjoint union R, both labeled by the same set D, an ultrafilter U on D, and an ordinal-valued rank rho on U antitone under inclusion. Require every basis B of Q to satisfy: if B_L belongs to U, then D minus B_R belongs to U and rho(B_L)>rho(D minus B_R). These are substantive input assumptions.\n\nPlace bundles e_n, each a copy of D, on edges of the double ray with vertices indexed by integers. At vertex n put a copy Q_n on e_(n-1) union e_n, oriented outward from the central bundle e_(-1): for n<=-1 its L side is e_n, while for n>=0 its L side is e_(n-1). The even vertices' supports partition the ground set, as do the odd vertices' supports. Form their two direct-sum matroids M0,M1.\n\nSuppose independent sets of M0,M1 cover the ground set. Shrink one to make a partition. Exactly one endpoint's allocation of the central bundle lies in U. Follow that side outward. If x_k in U is the allocation received at the next vertex and z_k its outward allocation, then x_(k+1)=D minus z_k. Extend this vertex's independent allocation to a basis B. With u=B_L and y=D minus B_R, one has x_k subset u and y subset x_(k+1). Upward closure of U and the basis interface yield\n\n$$\\rho(x_k)\\ge\\rho(u)>\\rho(y)\\ge\\rho(x_{k+1}).$$\n\nThis is an infinite strictly descending sequence of ordinals, a contradiction. Hence the direct sums have no independent cover. If Q is also self-dual, so are the sums, and the preceding reduction rules out a mixed packing/covering partition. The local rank interface suffices for the covering obstruction; self-duality is used for the mixed-partition consequence.\n\n## Role in the source argument\n\nTurns a local basis constraint into a global counterexample after the source constructs the required Q, ultrafilter and rank.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:outward-rank](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L9)\n- [eq:ordinal-descent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L141)\n- [sec:counterexample](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/build/sections/06-counterexample.tex#L1)\n\n## Antecedents and comparison\n\nDirect sums, duality and well-founded ordinal descent are standard. [Bowler and Geschke](https://www.math.uni-hamburg.de/home/geschke/papers/UniformMatroid7.pdf) provide earlier self-dual infinite-matroid background with additional hypotheses. The source-specific item isolated here is the outward orientation and inclusion-compatible strict rank propagation, conditional on the local interface.\n\n## Checks and limitations\n\nRead the full assembly argument and the endpoint orientation. Finite bookkeeping checks verify bundle incidence and the inclusion/antitonicity chain in finite rank models. They do not construct the required infinite local matroid or ultrafilter.\n\nThe preceding construction of Q and its ordinal rank is not verified by this card or its script. Weak rank decrease would not contradict an infinite path. No finite-length experiment proves the infinite obstruction.\n\n## Possible applications\n\nAssembling local feasibility rules into global impossibility when every feasible step must decrease a well-founded resource.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000204",
+      "record_type": "instrument",
+      "title": "A chronological paired query exactly represents survival in greedy triangle removal",
+      "forms": [
+        "algorithm",
+        "exact-representation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-188"
+      ],
+      "source_paper_ids": [
+        "P-000123"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+          "label": "lem:priority",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L26",
+          "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+        },
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+          "label": "lem:finite-test",
+          "line": 81,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L81",
+          "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-paired-survival-query-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000204.md",
+      "body": "# A chronological paired query exactly represents survival in greedy triangle removal\n\n[Family 188](../families/openai-math-188.md) · [Source manuscript](../papers/P-000123.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nAssign distinct priorities to the triangles of a finite simple graph and scan them increasingly, accepting a triangle if all three edges are still present and deleting them. Independent uniform priorities give the same accepted-triangle sequence law as uniform sequential removal: the next present triangle is the first among a uniformly ordered unscanned set.\n\nA singleton query (e,t) asks whether e survives strictly before t. Its candidates are all triangles containing e. A child query has focus {f,g} contained in a parent triangle T and threshold U_T; its candidates are all triangles meeting either focus edge, except T. Each candidate S meets the focus in exactly one edge e(S), because distinct triangles cannot share two graph edges.\n\nExpose the full candidate list, sort by priority, and inspect candidates with U_S<t in that joint order. Query the pair S minus {e(S)} at threshold U_S. At the first child returning true, return false; if none succeeds, return true. All occurrences use the same priority U_S for a triangle type. Every recursive threshold strictly decreases, so every branch has at most the total number of triangles and the finite evaluation terminates.\n\nThe answer is exactly joint survival of the focus. Induct on the number of priorities below t. If a focus edge was removed, its accepting triangle is a successful candidate. Conversely, if a successful candidate exists while the whole focus supposedly survives to t, all three candidate edges were present at its priority, a contradiction. Parent omission applies only to the current list at its own threshold; it does not remove that triangle globally from descendant lists.\n\n## Role in the source argument\n\nGives an exact finite observable whose recursive structure can later be compared with an independent model.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:priority](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L26)\n- [lem:finite-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L81)\n\n## Antecedents and comparison\n\nThe random-priority representation and backward packing exploration are classical; see [Spencer, Sections 1 and 4](https://cs.nyu.edu/~spencer/papers/asympacking.pdf). The selected item preserves the joint two-edge query, strict thresholds and local parent omission.\n\n## Checks and limitations\n\nRead the finite induction and stopping rule. Exhaustive priority permutations on small graphs compare every tested singleton and parent-pair query with direct chronological deletion, including thresholds equal to triangle priorities.\n\nThe two focus-edge survival events need not be independent. The query tree can be much larger than the graph and is an exact representation, not a polynomial-time claim.\n\n## Possible applications\n\nBackward determination of greedy packing decisions when a rejected object depends jointly on several resources.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000205",
+      "record_type": "instrument",
+      "title": "Fresh occurrence randomness yields product equations with an explicit collision coupling",
+      "forms": [
+        "coupling",
+        "integral-equation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-188"
+      ],
+      "source_paper_ids": [
+        "P-000123"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+          "label": "lem:unfolding-finite",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L153",
+          "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+        },
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+          "label": "prop:products",
+          "line": 206,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L206",
+          "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+        },
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex",
+          "label": "eq:products",
+          "line": 213,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L213",
+          "sha256": "09439cf6d6dc783ae709a4b0c087a3d99307e587e94e9ead5f6ff9b830f8c6fc"
+        },
+        {
+          "path": "preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex",
+          "label": "lem:coupling",
+          "line": 31,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex#L31",
+          "sha256": "dfad4804b7f89cb059ae629362b3eec1493ceec636566901ebaf9ef62839a117"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-occurrence-unfolding-and-exposure-coupling",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000205.md",
+      "body": "# Fresh occurrence randomness yields product equations with an explicit collision coupling\n\n[Family 188](../families/openai-math-188.md) · [Source manuscript](../papers/P-000123.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nUnfold the paired-query rule into a deterministic tree of all possible calls and give every candidate occurrence a fresh independent uniform priority. Different root trees are independent. If each list has at most M entries, a specified descending path of length j has probability 1/j!, so the probability that one exists is at most M^j/j!. Finite branching implies an almost surely finite dependency tree, simultaneously for all thresholds by using threshold one and taking a countable intersection over possible nodes. Finite-depth outputs stabilize measurably.\n\nLet q_e(t) be singleton survival in this auxiliary model and q_(e,T)(t) survival when T is omitted only at that root. For T={e,f,g}, put I_(e,T)(t)=integral_0^t q_(f,T)(v)q_(g,T)(v) dv. Candidate sets at f and g become disjoint after T is omitted, and their descendant occurrence variables are independent. Therefore\n\n$$q_e(t)=\\prod_{T\\ni e}(1-I_{e,T}(t)),\\qquad\nq_{e,T}(t)=\\prod_{S\\ni e,\\ S\\ne T}(1-I_{e,S}(t)).$$\n\nPair-root survival is q_(f,T)q_(g,T). Bounded measurable probabilities first make I Lipschitz; the finite products then make q continuous and finally C1. No unproved fixed-point selection is needed because the occurrence process constructs the solution.\n\nFor the source's one or two independently sampled roots, let C be the event that some triangle type repeats among all exposed candidate lists of visited calls. All candidates are exposed before sorting, including those above threshold or skipped by early stopping. Couple first exposure of each type to its finite-process priority and later exposures to fresh variables. Deferred decisions give the independent law, and the two executions agree until a repeated type is exposed. Thus total variation of their answer vectors is at most Pr_ind(C). The same proof works for any fixed finite root list chosen independently of priorities.\n\n## Role in the source argument\n\nSeparates exact auxiliary factorization from the separate task of bounding collisions in the actual finite process.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:unfolding-finite](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L153)\n- [prop:products](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L206)\n- [eq:products](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/queries.tex#L213)\n- [lem:coupling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/build/coupling.tex#L31)\n\n## Antecedents and comparison\n\nIndependent backward branching appears in [Spencer](https://cs.nyu.edu/~spencer/papers/asympacking.pdf), and decreasing-time finiteness in [Penrose and Sudbury, Proposition 1](https://arxiv.org/pdf/math/0503519v1). The selected package specifies which exposures the collision event must include; these classical principles are not new claims.\n\n## Checks and limitations\n\nRead the product and deferred-decision proofs. Exact recursion on a two-triangle graph checks the auxiliary formulas, and seeded coupled executions check pathwise agreement whenever all exposed types are distinct. Larger collision probabilities and terminal asymptotics are not estimated.\n\nThe products are not finite-graph survival identities. A collision estimate counting only traversed candidates would omit information used to sort the lists. Almost-sure finite evaluation is not a uniform deterministic depth bound.\n\n## Possible applications\n\nComparing dependent finite explorations with independent recursive models while explicitly accounting for adaptive exposure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000206",
+      "record_type": "instrument",
+      "title": "Clique-ended path systems turn a forbidden cycle length into an amount interval",
+      "forms": [
+        "reduction",
+        "combinatorial-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-189"
+      ],
+      "source_paper_ids": [
+        "P-000124"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+          "label": "path:interval",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L36",
+          "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+        },
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+          "label": "path:optimality",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L98",
+          "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+        },
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+          "label": "path:separation",
+          "line": 144,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L144",
+          "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+        },
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex",
+          "label": "path:singleton",
+          "line": 177,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L177",
+          "sha256": "0140c6be4378c2630a4efe7c6746ef9f2c001e59186e35c528ba39993403a011"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "source-specific-path-budget-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000206.md",
+      "body": "# Clique-ended path systems turn a forbidden cycle length into an amount interval\n\n[Family 189](../families/openai-math-189.md) · [Source manuscript](../papers/P-000124.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nLet Q be a clique of size 3<=t<=k. A path system consists of paths with distinct endpoints in Q and nonempty, pairwise disjoint interiors outside Q; their distinct endpoint pairs form a linear forest on Q. Let q be the number of internal vertices in total and v the number of incident clique vertices. Every integer length ell with q+v<=ell<=q+t is realized by a simple cycle when the system is nonempty: expand each forest chain, choose ell-q-v unused clique vertices as singletons, and concatenate through clique edges. A single expanded chain closes using its endpoint clique edge.\n\nHence in a graph without a (k+1)-cycle no such system has k+1-t<=q<=k+1-v. Choose maximum amount L<k+1-t, then the fewest paths e at that amount. A competing system with amount A, e' paths and v' incident vertices cannot satisfy\n\n$$L+\\mathbf1_{\\{e'\\ge e\\}}\\le A\\le k+1-v'.$$\n\nAbove the threshold it closes a forbidden cycle; below it it improves the chosen amount or the tie-break.\n\nOutside-path exclusions also give independent-set packing. For X containing distinct x,y define B0(x)=N(x) minus X and B_(r+1)(x)=N_(G-X)[B_r(x)]. If no simple outside x-y path has between one and r+s+2 internal vertices, B_r(x) and B_s(y) are disjoint and anticomplete. Intersections or connecting edges would concatenate to such a path. A singleton {x} may be assigned radius minus one, with the same bound when the other option is a ball; two singletons require xy to be a nonedge separately.\n\n## Role in the source argument\n\nConverts improved path systems into forbidden lengths and converts forbidden short paths into separated independent-set contributions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [path:interval](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L36)\n- [path:optimality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L98)\n- [path:separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L144)\n- [path:singleton](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/06-paths.tex#L177)\n\n## Antecedents and comparison\n\nClique completion and path concatenation are elementary. [Keevash, Long and Skokan](https://arxiv.org/pdf/1807.06376v1) provide earlier cycle-complete Ramsey context, not an attribution of this exact budget. No claim that the closure principle itself is historically new is made.\n\n## Checks and limitations\n\nRead the endpoint, singleton and length cases. Constructed weighted forests check the explicit cycles for every permitted length. Exhaustive small graphs check the outside-ball separation implication.\n\nShared interior vertices, repeated endpoint edges or a represented cycle can invalidate the construction. The amount convention and singleton exception must be preserved.\n\n## Possible applications\n\nReducing exact-cycle problems to small path budgets and packing mutually anticomplete regions from excluded path lengths.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000207",
+      "record_type": "instrument",
+      "title": "Reversal-normalized compositions enumerate weighted linear forests without duplicates",
+      "forms": [
+        "enumeration",
+        "canonical-form"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-189"
+      ],
+      "source_paper_ids": [
+        "P-000124"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+          "label": "finite:coverage",
+          "line": 68,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L68",
+          "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+        },
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+          "label": "finite:chain-count",
+          "line": 129,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L129",
+          "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+        },
+        {
+          "path": "preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex",
+          "label": "finite:count-series",
+          "line": 148,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L148",
+          "sha256": "72a8ce1cb0e509f4184c170b3f2411941230583696d1638f7c3b3b5dbdb01134"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "established-counting-source-specific-enumeration-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000207.md",
+      "body": "# Reversal-normalized compositions enumerate weighted linear forests without duplicates\n\n[Family 189](../families/openai-math-189.md) · [Source manuscript](../papers/P-000124.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nA linear forest on t vertices with positive integer edge weights of total at most B is represented uniquely up to weighted graph isomorphism by a sorted multiset of tuples. For each path component list its edge weights, replace that tuple by the lexicographically smaller of it and its reversal, then sort the component tuples with repetitions retained. A singleton is the empty tuple. The constraints are sum_p(len(p)+1)=t and sum_p sum(p)<=B.\n\nEnumerate recursively by selecting a reversal-normalized first tuple no smaller than the preceding one, subtracting its vertices and weight, and continuing. At zero remaining vertices emit the empty list for every nonnegative remaining budget. While generating candidate tuples, extend rejected prefixes too: a longer tuple can meet normalization and lower-bound tests even when its prefix does not.\n\nAn independent count uses reversal orbits. For r>=1 edges and weight m>=r, the number of chain types is a(r,m)=(binom(m-1,r-1)+b(r,m))/2. Palindromic compositions number b(2s,m)=binom(m/2-1,s-1) for even m and zero otherwise, while b(2s+1,m)=binom(floor((m-1)/2),s). The forest count is\n\n$$\\sum_{L=0}^B[x^t y^L]\\frac1{1-x}\\prod_{r\\ge1}\\prod_{m\\ge r}(1-x^{r+1}y^m)^{-a(r,m)}.$$\n\nOnly finitely many factors contribute. The source's 42 pairs 5<=k<=17 and max(3,floor(k/2))<=t<=min(8,k), with B=k-t, contain 3,099 pattern instances. This is enumeration of weighted forests, not of ambient Ramsey graphs or successful exclusion certificates.\n\n## Role in the source argument\n\nMakes the finite search space complete and independently countable before any deduction rules are applied.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [finite:coverage](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L68)\n- [finite:chain-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L129)\n- [finite:count-series](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/build/sections/09-finite-patterns.tex#L148)\n\n## Antecedents and comparison\n\nThis is the standard reversal-orbit count for compositions followed by an ordinary multiset generating function. Its value here is a fully specified enumeration interface and a separate count, not a new counting theorem. Earlier cycle-Ramsey context is [Keevash, Long and Skokan](https://arxiv.org/pdf/1807.06376v1).\n\n## Checks and limitations\n\nRead the uniqueness proof and palindrome formulas. Separate recursive tuple generation and generating-function arithmetic reproduce all 42 counts and their total, with duplicate detection on the generated patterns.\n\nMatching the pattern count does not verify the rules that exclude those patterns. Pruning tuple generation at a failed prefix would be incomplete. Unused weight budget and repeated singleton components must remain allowed.\n\n## Possible applications\n\nAuditable finite reductions involving weighted paths, with a count independent of the exclusion procedure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000208",
+      "record_type": "instrument",
+      "title": "A shattering corner and dense prefix force an ordered binary anchor into one mode",
+      "forms": [
+        "rigidity-gadget",
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-190"
+      ],
+      "source_paper_ids": [
+        "P-000125"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+          "label": "eq:pattern-definition",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L36",
+          "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+          "label": "lem:nonanchor-traces",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L74",
+          "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+          "label": "lem:anchor-rigidity",
+          "line": 107,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L107",
+          "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex",
+          "label": "cor:body-roles",
+          "line": 167,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L167",
+          "sha256": "bda96d50abbf389ef99fdc0a8888b3068c6d25d79c213f15edf7d66907c89467"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-binary-anchor-pinning-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000208.md",
+      "body": "# A shattering corner and dense prefix force an ordered binary anchor into one mode\n\n[Family 190](../families/openai-math-190.md) · [Source manuscript](../papers/P-000125.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nStart with the 64-by-64 complement of the identity. Replace rows 33 through 64 and columns 60 through 64 by all five-bit words in lexicographic order, obtaining S. Its rows and columns are distinct; each column has at least 31 ones in the first 32 rows and each row at least 31 ones in the first 32 columns. Every row has at least 58 ones and every column at least 48.\n\nIn the source matrix, all anchor groups precede all nonanchor positions. Each mode carries a blowup of S, different modes have zero anchor-to-anchor entries, and nonanchor positions have unit-vector or zero signatures against each mode. Variable positions participate in at most four modes; dummy positions are identical within their group. Nonanchor traces on any five nonanchor columns have at most 27 values: variable rows are unions of at most three suffixes, and there are at most five available nonempty suffixes across the selected column classes, giving sum_(j=0)^3 binom(5,j)=26; dummy rows add at most one.\n\nEvery ordered copy of S therefore lies entirely in the 64 anchor groups of one mode, selecting one representative per group. Otherwise if at most 32 positions on each axis were anchors, the last 32 rows and last five columns would shatter five nonanchor columns. If more than 32 selected rows are anchors, their density excludes variable columns, leaving at least 63 anchor columns. Common ones force these columns into a single mode, density forces the selected anchor rows there too, and unit-vector signatures exclude the remaining dummy or variable positions. The transpose argument handles the other axis. Distinct rows and columns prohibit taking two representatives from one group.\n\nAppend two body rows and columns to form H with upper-right columns e1,e2, lower-left rows e1 transpose,e2 transpose, and body P=((1,0),(1,1)). In every H-copy these signatures force the body positions into the designated row and column roles of that same mode.\n\n## Role in the source argument\n\nAllows the source to count every ordered copy by analyzing only the prescribed small body roles.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:pattern-definition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L36)\n- [lem:nonanchor-traces](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L74)\n- [lem:anchor-rigidity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L107)\n- [cor:body-roles](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03-pinning.tex#L167)\n\n## Antecedents and comparison\n\nThe ordered binary-matrix problem and earlier polynomial bounds are described in [Alon and Ben-Eliezer, Problem 1.4 and Theorem 1.5](https://arxiv.org/pdf/1609.04235v3). The fixed anchor and trace-versus-density pinning are the selected candidate mechanism; this is not an exhaustive priority result.\n\n## Checks and limitations\n\nRead the complete pinning argument. Exact construction checks distinctness, prefix density and all 32 corner words; small tree models check nonanchor trace bounds and mode incidences.\n\nThe ordering of anchors before all other positions is necessary to locate the shattering corner. A generic dense block without distinct rows and columns or sparse external signatures would not satisfy the proof.\n\n## Possible applications\n\nEncoding designated roles inside an uncolored ordered binary structure while excluding unintended copies.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000209",
+      "record_type": "instrument",
+      "title": "Protected-cell sampling and opposite bit propagation separate copy hitting from repair",
+      "forms": [
+        "distance-lower-bound",
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-190"
+      ],
+      "source_paper_ids": [
+        "P-000125"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+          "label": "eq:tree-orders",
+          "line": 91,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L91",
+          "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex",
+          "label": "eq:body-modes",
+          "line": 129,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L129",
+          "sha256": "19dbe8eea7abc5165a27f450bb4fab0d9c2f59caf40eaec47c6ace73819916ec"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+          "label": "prop:copy-count",
+          "line": 8,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L8",
+          "sha256": "11c3c67a6c042ef1d03387ac2c3e76a89703d508efbb24480f7d1ada0f6f47be"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex",
+          "label": "rem:hitting-not-repair",
+          "line": 72,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L72",
+          "sha256": "11c3c67a6c042ef1d03387ac2c3e76a89703d508efbb24480f7d1ada0f6f47be"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+          "label": "prop:distance",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L12",
+          "sha256": "4f7e9ca6e5f9a88d3a091758acf76dade80096f06a978089b3b232d355125acb"
+        },
+        {
+          "path": "preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex",
+          "label": "eq:cellwise-bound",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L63",
+          "sha256": "4f7e9ca6e5f9a88d3a091758acf76dade80096f06a978089b3b232d355125acb"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-shared-leaf-binary-repair-obstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000209.md",
+      "body": "# Protected-cell sampling and opposite bit propagation separate copy hitting from repair\n\n[Family 190](../families/openai-math-190.md) · [Source manuscript](../papers/P-000125.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nUse a height-h binary tree with m=2^h. At depth i<h each node has separate plus and minus row and column blocks of size m/2^i; at depth h the two signs share one leaf position. Rows occur in minus-subtrees-plus order; columns use plus-subtrees-minus order. Dummy blocks supply ones. Six modes per level, pinned by the preceding anchor, compare consecutive row levels or consecutive column levels, with child parity specified for the latter.\n\nAvoiding P=((1,0),(1,1)) enforces b<=a in ((1,a),(1,b)) and a<=b in ((a,b),(1,1)). The source sets the two root diagonal values to one and zero. Its order and role choices propagate these opposite values to the same leaf cell if all selected mode bodies avoid P.\n\nFor robustness, partition each axis into size-m classes: each anchor group, dummy group, each signed nonleaf level and the single shared leaf level. Choose a uniform leaf z on both axes and independently choose positions within its ancestor blocks, with one choice for the shared leaf. Each variable choice is marginally uniform on its class. Anchor and dummy choices are independent of choices on the opposite axis; root choices are also independent. Thus every cell touching an anchor or dummy, and every root-root cell, is selected with probability exactly 1/m^2.\n\nFor any fewer than m^2 arbitrary edits, a union bound gives a selection with all these protected cells unchanged. Other variable cells may be edited freely. The unchanged anchors enforce the body rules, unchanged dummy incidences enforce both propagation inequalities, and unchanged opposite root bits then contradict the shared leaf. Hence the matrix is at least m^2 edits from H-free. Its order is n=(386h+2)m, giving normalized distance at least (386h+2)^(-2).\n\nIn the original matrix every copy has its fixed body top-left entry on one of m diagonal leaf cells; therefore its normalized copy count is at most 2^(-h)/(386h+2)^2. Flipping those m ones destroys every original copy but creates a plus-mode body P using an unchanged parent-child one and the new leaf zero. Original-copy hitting is therefore not an H-free repair. The protected-cell argument handles both directions of editing without assuming independence of all sampled variable cells.\n\n## Role in the source argument\n\nProduces polynomially large edit distance together with exponentially few copies as the tree height grows.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:tree-orders](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L91)\n- [eq:body-modes](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/02-construction.tex#L129)\n- [prop:copy-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L8)\n- [rem:hitting-not-repair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/03b-count.tex#L72)\n- [prop:distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L12)\n- [eq:cellwise-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/build/sections/04-distance.tex#L63)\n\n## Antecedents and comparison\n\n[Alon and Ben-Eliezer](https://arxiv.org/pdf/1609.04235v3) formulate the ordered binary problem and discuss ternary obstructions. The selected binary mechanism combines protected-cell sampling, mode pinning and conflicting values at identified leaves; prior ternary constructions are not treated as proving it.\n\n## Checks and limitations\n\nRead all four mode checks, the leaf copy count and arbitrary-edit argument. Finite models verify the tree orders, every small mode body, creation of new copies after leaf flips, and impossibility of satisfying all protected propagation constraints.\n\nThe full matrix distance lower bound follows from the proof, not exhaustive edit search. Correlations between variable selections matter: the 1/m^2 probability is asserted only for the listed protected cells.\n\n## Possible applications\n\nConstructing induced-property testing obstructions where edits that hit old witnesses can create new witnesses.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000210",
+      "record_type": "instrument",
+      "title": "A field-norm coefficient isolated in base digits excludes small determinant residues",
+      "forms": [
+        "algebraic-construction",
+        "arithmetic-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-191"
+      ],
+      "source_paper_ids": [
+        "P-000126"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+          "label": "norm:decomposition",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L61",
+          "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+          "label": "norm:matching",
+          "line": 140,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L140",
+          "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+          "label": "norm:obstruction",
+          "line": 169,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L169",
+          "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex",
+          "label": "norm:lower-carry",
+          "line": 214,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L214",
+          "sha256": "be965ff6c9155a7ae76d067746c6f82d8daf5bbf84f7f71567daf498f26867a6"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-norm-coded-determinant-gap",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000210.md",
+      "body": "# A field-norm coefficient isolated in base digits excludes small determinant residues\n\n[Family 191](../families/openai-math-191.md) · [Source manuscript](../papers/P-000126.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nFix an odd prime r and odd extension degree d (the source takes d=41). For three groups X^(j) of 3d field coordinates, form three columns Z(X^(j)) in F_(r^d)^3. Apply every coefficient Frobenius conjugation to their determinant and multiply. The resulting polynomial N has coefficients in F_r, degree d in each group, and is alternating. With M=binom(4d-1,d) degree-d monomials, it is a sum of T=binom(M,3) determinants det(f_ia(X^(j))), where each f_ia is a scalar multiple of one monomial. Grouping the six permutations proves this without dividing by 3!, so r=3 is allowed.\n\nFor label xi in F_(r^d), choose X(xi) representing (1,xi,xi^2). Then N on three distinct labels is the nonzero norm of their Vandermonde product. Set k=T^2+1 and place the three rows' a-th designated digits at i_a=a, j_a=Ta, ell_a=T^2-(T+1)a. Their sum is k-1 exactly when all three labels a of the determinant summands agree.\n\nChoose L divisible by r, a prime B>100k^2 L^3, and h=B^k. For each column choose positive digits in {1,...,L}, with residue f_ia(X(xi)) at the designated positions and zero modulo r elsewhere. Each residue has L/r digit choices. For the determinant polynomial F(Y)=sum gamma_u Y^u one has |gamma_u|<=6k^2L^3, and gamma_(k-1) modulo r is precisely N. Thus for three distinct column labels gamma_(k-1) is a nonzero integer.\n\nThe truncated integer S=sum_(u<k) gamma_u B^u represents the determinant modulo h. It satisfies |S|<(h/2), while the lower digits have absolute value at most (3/50)(B^(k-1)-1). Consequently |S|>(47B^(k-1)+3)/50, so the determinant has no representative in [-floor(B^(k-1)/2),floor(B^(k-1)/2)]. Multiplication by any determinant-one residue matrix preserves this obstruction. Small lifted determinants therefore require a label collision.\n\n## Role in the source argument\n\nMakes a small determinant event rare before the independent cap and lattice-counting stages.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [norm:decomposition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L61)\n- [norm:matching](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L140)\n- [norm:obstruction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L169)\n- [norm:lower-carry](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/03-norm-digits.tex#L214)\n\n## Antecedents and comparison\n\nFinite-field norms and the alternating monomial basis are classical; the source cites [Lidl and Niederreiter](https://doi.org/10.1017/CBO9781139172769), whose publisher page was not retrievable here. The selected candidate is the isolated-position code plus a quantitative carry gap, not the field norm itself.\n\n## Checks and limitations\n\nRead the monomial grouping, position uniqueness and carry estimates. Exact small-degree models check determinant coefficient placement and residue gaps; these use reduced parameters and do not instantiate the enormous d=41 construction.\n\nOdd degree and odd characteristic ensure alternation as used here. Distinct field labels, bounded digits and the base-size condition are all needed. The obstruction alone does not produce the final geometric point set.\n\n## Possible applications\n\nTransferring a nonvanishing algebraic invariant into a quantitative gap for small integer representatives of a modular determinant.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000211",
+      "record_type": "instrument",
+      "title": "The determinant image of a stabilizer controls singular special-linear orbits",
+      "forms": [
+        "orbit-bound",
+        "lattice-accounting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-191"
+      ],
+      "source_paper_ids": [
+        "P-000126"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:diagonal",
+          "line": 22,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L22",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:orbit",
+          "line": 82,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L82",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:det-image",
+          "line": 121,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L121",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-singular-SL-orbit-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000211.md",
+      "body": "# The determinant image of a stabilizer controls singular special-linear orbits\n\n[Family 191](../families/openai-math-191.md) · [Source manuscript](../papers/P-000126.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nLet R=Z/(B^k) for prime B, h=B^k, and let C be a 3-by-3 matrix with at least one unit entry. Smith reduction gives C=P diag(1,D,E) Q with D=B^b, E=B^e and 0<=b<=e<=k. The value h represents a zero diagonal residue but remains a positive integer in counting formulas. The inverse-image row lattice Lambda_C in Z^3 has index DE and contains E Z^3. Also b>=j exactly when all two-by-two minors vanish modulo B^j.\n\nFor the left special-linear orbit O_C one has\n\n$$|O_C|\\ge\\frac{21}{64}\\frac{h^8}{D^3E^2}.$$\n\nLet H be the GL3 stabilizer. In diagonal coordinates its first column is fixed, its second has three adjustments annihilated by D and its third three annihilated by E. Hence |H|<=D^3E^3. Its determinant image contains all units congruent to one modulo h/E: at least (1-1/B)E of them, including the singular case E=h. Therefore\n\n$$\\frac{|\\operatorname{SL}_3(R)C|}{|\\operatorname{GL}_3(R)C|}\n=\\frac{|\\det H|}{|R^\\times|}\\ge E/h.$$\n\nUse |GL3(R)|=h^9(1-1/B)(1-1/B^2)(1-1/B^3)>=(21/64)h^9 to finish. Uniform G in SL3 makes GC uniform on its orbit, with unchanged row span and determinant. The determinant-image factor is necessary to avoid losing another power of E in the estimate.\n\n## Role in the source argument\n\nBounds the chance of a prescribed residue matrix after random determinant-preserving coordinates, including matrices of rank less than three.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [orb:diagonal](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L22)\n- [orb:orbit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L82)\n- [orb:det-image](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L121)\n\n## Antecedents and comparison\n\nSmith normal form and orbit-stabilizer counting are established. The source credits [Smith, 1861](https://doi.org/10.1098/rstl.1861.0016); its publisher page was not retrievable in this batch. The selected item is the explicit singular SL-orbit budget and determinant-image factor.\n\n## Checks and limitations\n\nRead the diagonal reduction and all singular stabilizer cases. Exact enumeration over small prime-power rings checks group orders, orbit sizes, determinant-image ratios and row-span cardinalities.\n\nA unit entry is required for the first Smith factor to be one. The constant is a uniform lower bound, not an exact orbit formula. General composite moduli require additional decomposition.\n\n## Possible applications\n\nUniform sampling and lattice counts under determinant-preserving transformations over finite local rings.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000212",
+      "record_type": "instrument",
+      "title": "Four independent digit constraints bound a singular divisor after fixing labels",
+      "forms": [
+        "conditional-tail-bound",
+        "moment-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-191"
+      ],
+      "source_paper_ids": [
+        "P-000126"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:conditional",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L151",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:tail",
+          "line": 171,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L171",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        },
+        {
+          "path": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex",
+          "label": "orb:collision-moment",
+          "line": 225,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L225",
+          "sha256": "c6aebd1e090611c9665f0797ee7860a9c67f13d17ed7c272b3b9792bd4918544"
+        }
+      ],
+      "batch_id": "B013",
+      "source_item": 3,
+      "subject": "Combinatorics",
+      "novelty_status": "candidate-label-uniform-digit-divisor-bound",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000212.md",
+      "body": "# Four independent digit constraints bound a singular divisor after fixing labels\n\n[Family 191](../families/openai-math-191.md) · [Source manuscript](../papers/P-000126.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nLet B be prime, h=B^k, and 2<=r divide L<B. For any fixed three labels, independently choose every digit d_iju uniformly from the L/r numbers in {1,...,L} with a prescribed residue modulo r. Residues may depend arbitrarily on the label, row and digit position; repeated labels still use fresh independent draws. Put C_ij=sum_(u<k) d_iju B^u modulo h. Every entry is a unit because its lowest digit is positive and below B.\n\nWrite the second Smith divisor as D=B^b. Conditional on the labels,\n\n$$\\Pr(b\\ge j)\\le(r/L)^{4j}\\quad(1\\le j\\le k).$$\n\nFurther condition on the first column and the first entries of columns two and three. Vanishing of all two-by-two minors modulo B^j requires C_iv=C_i1 C_11^(-1) C_1v modulo B^j for i,v in {2,3}. Each fixed target determines j base-B digits of one of four independent entries. Its probability is zero or (r/L)^j. Averaging preserves the bound uniformly over labels.\n\nWith theta=B(r/L)^4<1, the tail-sum identity gives E[D|labels]<=1+sum_(j=1)^k theta^j<=1/(1-theta). In particular, for the source parameters L=r^10, B<=200k^2L^3 and sufficiently large r, this conditional expectation is at most two. If labels are independent uniform on a set of size r^d and E is their collision event, E[D 1_E]<=2Pr(E)<=6r^(-d). Conditioning avoids incorrectly multiplying two dependent unconditional quantities.\n\n## Role in the source argument\n\nRetains a label-collision saving while controlling the singular divisor that appears in orbit and lattice estimates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [orb:conditional](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L151)\n- [orb:tail](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L171)\n- [orb:collision-moment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L225)\n\n## Antecedents and comparison\n\nThis is an elementary independent-coordinate small-ball argument and a tail-sum moment calculation. Its source-specific use is uniformity after fixing arbitrary labels, combined with the norm obstruction. No separate historical novelty claim is made for the conditioning principle.\n\n## Checks and limitations\n\nRead the conditioning and tail-sum proof. Exact small digit distributions, including repeated labels, check vanishing-minor probabilities, divisor moments and the conditional bound; arbitrary label signatures are included.\n\nIndependence of the four remaining entries after conditioning is essential. Label equality does not permit reusing digits. The bounded moment needs theta<1, even though the tail estimate itself does not.\n\n## Possible applications\n\nCombining rare algebraic-label events with singularity weights without assuming independence between those events and the weights.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -10014,6 +10506,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000122.md",
       "body": "# A Counterexample to the Infinite Matroid Packing/Covering Conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and review\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\n[Family context](../families/openai-math-185.md) · [Batch B012](../../batches/B012/README.md)"
+    },
+    {
+      "id": "P-000123",
+      "record_type": "paper",
+      "title": "The sharp terminal leave in random triangle removal",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-188"
+      ],
+      "batch_id": "B013",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "dea215e665d302e1d1c9e2b33816ff7cb171d1495e654aa3e692fd5d31ee4c6d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000123.md",
+      "body": "# The sharp terminal leave in random triangle removal\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Sharp-Terminal-Leave-in-Random-Triangle-Removal-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that uniform triangle removal from the complete graph leaves an edge count whose normalization by n^(3/2) converges in L2 to 1/(2 sqrt(2)), with corresponding probability and expectation convergence.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000204: A chronological paired query exactly represents survival in greedy triangle removal](../instruments/MI-000204.md)\n- [MI-000205: Fresh occurrence randomness yields product equations with an explicit collision coupling](../instruments/MI-000205.md)\n\n## Dependencies and review\n\nUniform random permutations; decreasing recursive thresholds; finite branching and factorial tails; independent occurrence trees; deferred decisions and coupling.\n\nRead the full exact-query and independent-unfolding section and the exposure coupling lemma. Prefix concentration, spectral stability, collision-witness summation and the terminal moment conclusion were not audited.\n\nTriangleRemoval.lean states the L2, probability and expectation conclusions for the complete-graph process, using its absorbing continuation to define the terminal law. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\n[Family context](../families/openai-math-188.md) · [Batch B013](../../batches/B013/README.md)"
+    },
+    {
+      "id": "P-000124",
+      "record_type": "paper",
+      "title": "Cycle--clique Ramsey numbers",
+      "source_collection": "openai/math",
+      "upstream_slug": "Cycle-clique-Ramsey-numbers-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-189"
+      ],
+      "batch_id": "B013",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b467d75f5097fa5536071abc0305932cf78d5002216927b23040790ffd55535c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000124.md",
+      "body": "# Cycle--clique Ramsey numbers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/Cycle-clique-Ramsey-numbers-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Cycle-clique-Ramsey-numbers-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims R(C_m,K_n)=(m-1)(n-1)+1 for m>=n>=3 except (3,3), where the value is six.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000206: Clique-ended path systems turn a forbidden cycle length into an amount interval](../instruments/MI-000206.md)\n- [MI-000207: Reversal-normalized compositions enumerate weighted linear forests without duplicates](../instruments/MI-000207.md)\n\n## Dependencies and review\n\nSimple paths with disjoint interiors; clique completion; lexicographic optimality; reversal classes of compositions; multiset generating functions.\n\nRead the path-system closure, optimality and separation arguments, plus complete pattern coverage and count formulas. The large-clique argument, full finite deduction rules and supplied certificate implementations were not audited or rerun.\n\nCycleCliqueRamsey.lean states the exact full parameter range and the separate value R(C3,K3)=6. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\n[Family context](../families/openai-math-189.md) · [Batch B013](../../batches/B013/README.md)"
+    },
+    {
+      "id": "P-000125",
+      "record_type": "paper",
+      "title": "Polynomial removal fails for ordered binary matrices",
+      "source_collection": "openai/math",
+      "upstream_slug": "Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-190"
+      ],
+      "batch_id": "B013",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "042572470214dc8d05cb38c043bebdad24fff72f0ea164987baeb4a591db85da",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000125.md",
+      "body": "# Polynomial removal fails for ordered binary matrices\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims failure of every polynomial induced ordered-matrix removal bound for one explicit 66-by-66 binary pattern, allowing arbitrary binary edits.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000208: A shattering corner and dense prefix force an ordered binary anchor into one mode](../instruments/MI-000208.md)\n- [MI-000209: Protected-cell sampling and opposite bit propagation separate copy hitting from repair](../instruments/MI-000209.md)\n\n## Dependencies and review\n\nDense and distinct anchor rows and columns; bounded unions of suffix traces; binary tree position orders; uniform marginals with shared path indices; a cellwise union bound and bit propagation.\n\nRead the full construction, anchor pinning, copy count and arbitrary-edit distance proofs. Finite checks exercise the anchor and body mechanisms; they do not enumerate all 66-by-66 submatrices or all edits of a large constructed matrix.\n\nMatrixRemoval.lean defines the explicit 66-by-66 pattern, increasing row and column maps, exact zero-and-one matching, arbitrary Hamming edits and failure of every positive polynomial lower bound on normalized copies. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\n[Family context](../families/openai-math-190.md) · [Batch B013](../../batches/B013/README.md)"
+    },
+    {
+      "id": "P-000126",
+      "record_type": "paper",
+      "title": "A power improvement in the Heilbronn triangle lower bound",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-191"
+      ],
+      "batch_id": "B013",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "944f7aacd6968764c092793770242cb227ca192e95240e2ab01a2f6ed7e3f3f2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000126.md",
+      "body": "# A power improvement in the Heilbronn triangle lower bound\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims point sets in the unit square with every triangle of area at least c n^(-2+eta), for fixed positive constants and every sufficiently large n.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000210: A field-norm coefficient isolated in base digits excludes small determinant residues](../instruments/MI-000210.md)\n- [MI-000211: The determinant image of a stabilizer controls singular special-linear orbits](../instruments/MI-000211.md)\n- [MI-000212: Four independent digit constraints bound a singular divisor after fixing labels](../instruments/MI-000212.md)\n\n## Dependencies and review\n\nFinite-field coefficient conjugation; alternating monomial expansion without division by six; isolated digit sums and carry bounds; prime-power Smith form; stabilizer determinant image; independent digit conditioning.\n\nRead the full norm/digit and residue-orbit sections, including singular cases and fixed-label tails. The lattice enumeration, auxiliary cap, zero-determinant counts and geometric alteration were not audited.\n\nHeilbronnTriangle.lean states a fixed explicit positive exponent on an unbounded sequence of point-set sizes, and a consequence refuting the almost-n-minus-two upper bound. The paper claims a bound for every sufficiently large size, which is broader. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\n[Family context](../families/openai-math-191.md) · [Batch B013](../../batches/B013/README.md)"
     }
   ],
   "families": [
@@ -11226,6 +11794,115 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-185.md",
       "body": "# Self-dual covering reductions and ordinal descent along a double ray\n\n## Source manuscript and claim\n\n[A Counterexample to the Infinite Matroid Packing/Covering Conjecture](../papers/P-000122.md), by OpenAI, September 24, 2026.\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and antecedents\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nBowler and Carmesin establish packing/covering and intersection equivalences. Bowler and Geschke construct self-dual uniform infinite matroids with additional set-theoretic hypotheses; that is background, not verification of the source local construction in ZFC. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nSelf-duality is equality with the dual on the same labeled ground set. The ordinal descent needs strict decrease on every selected step; finite windows cannot certify an infinite counterexample.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/185.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-188",
+      "record_type": "family",
+      "title": "Paired survival queries and occurrence-level independent unfolding",
+      "source_family": "188",
+      "source_collection": "openai/math",
+      "batch_id": "B013",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000123"
+      ],
+      "instrument_ids": [
+        "MI-000204",
+        "MI-000205"
+      ],
+      "headline": "The source claims that uniform triangle removal from the complete graph leaves an edge count whose normalization by n^(3/2) converges in L2 to 1/(2 sqrt(2)), with corresponding probability and expectation convergence.",
+      "central_instrument": "A chronological two-edge recursive query exactly represents finite survival. Fresh randomness per occurrence gives exact product equations, and an exposure-based coupling separates these auxiliary products from correlated finite survival.",
+      "novelty_assessment": "Random-priority greedy packing, backward branching and decreasing-priority termination are established. The selected candidate refinement is the paired query and complete-list exposure bookkeeping. The sharp terminal constant is not certified by this extraction.",
+      "formalization_summary": "TriangleRemoval.lean states the L2, probability and expectation conclusions for the complete-graph process, using its absorbing continuation to define the terminal law. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.",
+      "statement_faithfulness": "A triangle type has one priority in the finite process but fresh priorities at different occurrences in the unfolding. Pair survival is factored only in the latter. Collision events count every exposed candidate, including candidates never visited.",
+      "dependencies": "Uniform random permutations; decreasing recursive thresholds; finite branching and factorial tails; independent occurrence trees; deferred decisions and coupling.",
+      "antecedents": "Spencer studies random-priority packing and backward branching. Penrose and Sudbury construct graph adsorption processes using decreasing-time dependency paths.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-188.md",
+      "body": "# Paired survival queries and occurrence-level independent unfolding\n\n## Source manuscript and claim\n\n[The sharp terminal leave in random triangle removal](../papers/P-000123.md), by OpenAI, September 25, 2026.\n\nThe source claims that uniform triangle removal from the complete graph leaves an edge count whose normalization by n^(3/2) converges in L2 to 1/(2 sqrt(2)), with corresponding probability and expectation convergence.\n\n## Extracted instruments\n\n- [MI-000204: A chronological paired query exactly represents survival in greedy triangle removal](../instruments/MI-000204.md)\n- [MI-000205: Fresh occurrence randomness yields product equations with an explicit collision coupling](../instruments/MI-000205.md)\n\n## Dependencies and antecedents\n\nUniform random permutations; decreasing recursive thresholds; finite branching and factorial tails; independent occurrence trees; deferred decisions and coupling.\n\nSpencer studies random-priority packing and backward branching. Penrose and Sudbury construct graph adsorption processes using decreasing-time dependency paths. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full exact-query and independent-unfolding section and the exposure coupling lemma. Prefix concentration, spectral stability, collision-witness summation and the terminal moment conclusion were not audited.\n\nTriangleRemoval.lean states the L2, probability and expectation conclusions for the complete-graph process, using its absorbing continuation to define the terminal law. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\nA triangle type has one priority in the finite process but fresh priorities at different occurrences in the unfolding. Pair survival is factored only in the latter. Collision events count every exposed candidate, including candidates never visited.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/188.md) · [Batch record](../../batches/B013/README.md)"
+    },
+    {
+      "id": "openai-math-189",
+      "record_type": "family",
+      "title": "Clique path budgets and complete weighted-forest enumeration",
+      "source_family": "189",
+      "source_collection": "openai/math",
+      "batch_id": "B013",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000124"
+      ],
+      "instrument_ids": [
+        "MI-000206",
+        "MI-000207"
+      ],
+      "headline": "The source claims R(C_m,K_n)=(m-1)(n-1)+1 for m>=n>=3 except (3,3), where the value is six.",
+      "central_instrument": "Paths with clique endpoints turn cycle avoidance into a forbidden amount interval. Weighted path components have a canonical tuple encoding with a separate generating-function count.",
+      "novelty_assessment": "Joining paths through a clique, lexicographic optimization and reversal-orbit counting are elementary established ideas. Their precise budget and enumeration interface is useful for reuse; the complete Ramsey proof is not certified.",
+      "formalization_summary": "CycleCliqueRamsey.lean states the exact full parameter range and the separate value R(C3,K3)=6. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.",
+      "statement_faithfulness": "Amounts count internal vertices, not edges. The represented endpoint graph must be a linear forest with distinct edges. Empty component tuples encode singleton vertices; an empty outer list encodes no vertices.",
+      "dependencies": "Simple paths with disjoint interiors; clique completion; lexicographic optimality; reversal classes of compositions; multiset generating functions.",
+      "antecedents": "Keevash, Long and Skokan provide earlier cycle-complete Ramsey results. The extracted finite normalization and counting use standard graph isomorphism and composition principles.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-189.md",
+      "body": "# Clique path budgets and complete weighted-forest enumeration\n\n## Source manuscript and claim\n\n[Cycle--clique Ramsey numbers](../papers/P-000124.md), by OpenAI, September 25, 2026.\n\nThe source claims R(C_m,K_n)=(m-1)(n-1)+1 for m>=n>=3 except (3,3), where the value is six.\n\n## Extracted instruments\n\n- [MI-000206: Clique-ended path systems turn a forbidden cycle length into an amount interval](../instruments/MI-000206.md)\n- [MI-000207: Reversal-normalized compositions enumerate weighted linear forests without duplicates](../instruments/MI-000207.md)\n\n## Dependencies and antecedents\n\nSimple paths with disjoint interiors; clique completion; lexicographic optimality; reversal classes of compositions; multiset generating functions.\n\nKeevash, Long and Skokan provide earlier cycle-complete Ramsey results. The extracted finite normalization and counting use standard graph isomorphism and composition principles. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the path-system closure, optimality and separation arguments, plus complete pattern coverage and count formulas. The large-clique argument, full finite deduction rules and supplied certificate implementations were not audited or rerun.\n\nCycleCliqueRamsey.lean states the exact full parameter range and the separate value R(C3,K3)=6. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\nAmounts count internal vertices, not edges. The represented endpoint graph must be a linear forest with distinct edges. Empty component tuples encode singleton vertices; an empty outer list encodes no vertices.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/189.md) · [Batch record](../../batches/B013/README.md)"
+    },
+    {
+      "id": "openai-math-190",
+      "record_type": "family",
+      "title": "Rigid binary anchors and repair obstructions from shared leaves",
+      "source_family": "190",
+      "source_collection": "openai/math",
+      "batch_id": "B013",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000125"
+      ],
+      "instrument_ids": [
+        "MI-000208",
+        "MI-000209"
+      ],
+      "headline": "The source claims failure of every polynomial induced ordered-matrix removal bound for one explicit 66-by-66 binary pattern, allowing arbitrary binary edits.",
+      "central_instrument": "A dense anchor with a shattering corner forces every copy into one designated mode. Correlated tree-path sampling avoids protected edits while opposite bit constraints propagate to one shared leaf.",
+      "novelty_assessment": "Anchoring, bounded trace complexity and edit-distance lower bounds are established themes. The candidate combination is a fixed binary anchor with opposite tree orders and a shared-leaf contradiction; hitting old copies is explicitly separated from repairing the matrix.",
+      "formalization_summary": "MatrixRemoval.lean defines the explicit 66-by-66 pattern, increasing row and column maps, exact zero-and-one matching, arbitrary Hamming edits and failure of every positive polynomial lower bound on normalized copies. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.",
+      "statement_faithfulness": "Rows and columns are independently ordered. Every pattern entry, including zero, must match. The edit lower bound permits changing either bit value and does not assume original-copy hitting is a repair.",
+      "dependencies": "Dense and distinct anchor rows and columns; bounded unions of suffix traces; binary tree position orders; uniform marginals with shared path indices; a cellwise union bound and bit propagation.",
+      "antecedents": "Alon and Ben-Eliezer state the ordered binary-matrix polynomial-removal question and distinguish ordered from permutation-invariant settings. Earlier ternary lower bounds do not settle this binary construction.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-190.md",
+      "body": "# Rigid binary anchors and repair obstructions from shared leaves\n\n## Source manuscript and claim\n\n[Polynomial removal fails for ordered binary matrices](../papers/P-000125.md), by OpenAI, September 25, 2026.\n\nThe source claims failure of every polynomial induced ordered-matrix removal bound for one explicit 66-by-66 binary pattern, allowing arbitrary binary edits.\n\n## Extracted instruments\n\n- [MI-000208: A shattering corner and dense prefix force an ordered binary anchor into one mode](../instruments/MI-000208.md)\n- [MI-000209: Protected-cell sampling and opposite bit propagation separate copy hitting from repair](../instruments/MI-000209.md)\n\n## Dependencies and antecedents\n\nDense and distinct anchor rows and columns; bounded unions of suffix traces; binary tree position orders; uniform marginals with shared path indices; a cellwise union bound and bit propagation.\n\nAlon and Ben-Eliezer state the ordered binary-matrix polynomial-removal question and distinguish ordered from permutation-invariant settings. Earlier ternary lower bounds do not settle this binary construction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full construction, anchor pinning, copy count and arbitrary-edit distance proofs. Finite checks exercise the anchor and body mechanisms; they do not enumerate all 66-by-66 submatrices or all edits of a large constructed matrix.\n\nMatrixRemoval.lean defines the explicit 66-by-66 pattern, increasing row and column maps, exact zero-and-one matching, arbitrary Hamming edits and failure of every positive polynomial lower bound on normalized copies. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\nRows and columns are independently ordered. Every pattern entry, including zero, must match. The edit lower bound permits changing either bit value and does not assume original-copy hitting is a repair.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/190.md) · [Batch record](../../batches/B013/README.md)"
+    },
+    {
+      "id": "openai-math-191",
+      "record_type": "family",
+      "title": "Norm-coded determinant gaps and singular residue-orbit accounting",
+      "source_family": "191",
+      "source_collection": "openai/math",
+      "batch_id": "B013",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000126"
+      ],
+      "instrument_ids": [
+        "MI-000210",
+        "MI-000211",
+        "MI-000212"
+      ],
+      "headline": "The source claims point sets in the unit square with every triangle of area at least c n^(-2+eta), for fixed positive constants and every sufficiently large n.",
+      "central_instrument": "An alternating field norm is placed in one determinant digit without cancellation by carries. Singular residue orbits and a label-conditional divisor estimate control sampling costs even when labels collide.",
+      "novelty_assessment": "Finite-field norms, alternating tensors, Smith reduction and orbit-stabilizer counting are classical. The selected candidate packages are the digit placement and the quantitative singular-orbit and conditional-digit accounting. The final geometric improvement is not certified.",
+      "formalization_summary": "HeilbronnTriangle.lean states a fixed explicit positive exponent on an unbounded sequence of point-set sizes, and a consequence refuting the almost-n-minus-two upper bound. The paper claims a bound for every sufficiently large size, which is broader. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.",
+      "statement_faithfulness": "The source fixes odd extension degree 41 and extremely large but fixed digit length. Labels may repeat in the conditional moment estimate. The orbit bound includes zero determinants and uses positive integer B^k to count a zero diagonal residue.",
+      "dependencies": "Finite-field coefficient conjugation; alternating monomial expansion without division by six; isolated digit sums and carry bounds; prime-power Smith form; stabilizer determinant image; independent digit conditioning.",
+      "antecedents": "The source credits Lidl and Niederreiter for finite-field background and Smith for diagonal reduction and determinantal divisors. These classical ingredients are distinct from the selected quantitative combination.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-191.md",
+      "body": "# Norm-coded determinant gaps and singular residue-orbit accounting\n\n## Source manuscript and claim\n\n[A power improvement in the Heilbronn triangle lower bound](../papers/P-000126.md), by OpenAI, None.\n\nThe source claims point sets in the unit square with every triangle of area at least c n^(-2+eta), for fixed positive constants and every sufficiently large n.\n\n## Extracted instruments\n\n- [MI-000210: A field-norm coefficient isolated in base digits excludes small determinant residues](../instruments/MI-000210.md)\n- [MI-000211: The determinant image of a stabilizer controls singular special-linear orbits](../instruments/MI-000211.md)\n- [MI-000212: Four independent digit constraints bound a singular divisor after fixing labels](../instruments/MI-000212.md)\n\n## Dependencies and antecedents\n\nFinite-field coefficient conjugation; alternating monomial expansion without division by six; isolated digit sums and carry bounds; prime-power Smith form; stabilizer determinant image; independent digit conditioning.\n\nThe source credits Lidl and Niederreiter for finite-field background and Smith for diagonal reduction and determinantal divisors. These classical ingredients are distinct from the selected quantitative combination. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full norm/digit and residue-orbit sections, including singular cases and fixed-label tails. The lattice enumeration, auxiliary cap, zero-determinant counts and geometric alteration were not audited.\n\nHeilbronnTriangle.lean states a fixed explicit positive exponent on an unbounded sequence of point-set sizes, and a consequence refuting the almost-n-minus-two upper bound. The paper claims a bound for every sufficiently large size, which is broader. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\nThe source fixes odd extension degree 41 and extremely large but fixed digit length. Labels may repeat in the conditional moment estimate. The orbit bound includes zero determinants and uses positive integer B^k to count a zero diagonal residue.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/191.md) · [Batch record](../../batches/B013/README.md)"
     },
     {
       "id": "openai-math-192",

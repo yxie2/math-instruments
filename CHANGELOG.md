@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B013: nine instruments from families 188, 189, 190 and 191, with exact source bindings and ten finite check groups. The batch reproduces the 3,099 weighted-forest enumeration, separates copy hitting from binary repair, and retains singular and repeated-label cases in determinant sampling.
 - Added B012: eight instruments from families 173, 180, 181 and 185, with exact source passages and eight finite check groups. The records preserve raw-image conventions, incidence and external-neighbor conditions, and the unverified local input to the infinite-matroid assembly.
 - Added B011: eight instruments from families 126, 127, 132 and 192, with exact source locators and eight finite check groups. The batch records scope differences in the matching and sensitivity Comparator statements, and separates low-degree reporting gains from decision-tree depth claims.
 - Added B010: nine instruments from algorithmic families 111, 118, 128 and 131, with exact source locators and nine finite check groups. The records retain adversary quantifiers, shared rank budgets, packing defects, bracket multiplicities and expected-time qualifications, and credit the established perfect-sampling reduction.
