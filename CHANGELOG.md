@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B062: 9 selected instruments from 4 families and 9 manuscripts. Twisted absorption, germ rigidity, polar intertwiners, clock-and-shift obstructions, fourth-moment recovery and nontracial state controls. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B061: 10 selected instruments from 4 families and 10 manuscripts. Ten instruments from ten manuscripts: noninjective mapping tori, action monoids, additive idempotent diagrams, positive Cartan data, centralizer characters, finite witnesses, spectral cycles, unitary incidence, free-word caps and stable kernels.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B060: 9 selected instruments from 4 families and 9 manuscripts. Nine instruments from nine manuscripts: isotropic tree representations, MST separation, smoothed and sampled covers, maximal cutoffs, bounded-participation concentration, joint coupling and Fourier restriction.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
