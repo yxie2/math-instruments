@@ -16935,6 +16935,343 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000399.md",
       "body": "# Reduce a restriction kernel modulo a regular transverse label\n\n[Family 168](../families/openai-math-168.md) · [Source manuscript](../papers/P-000218.md) · [Batch B036](../../batches/B036/README.md)\n\n## Mathematical content\n\nLet A be a polynomial ring, alpha and beta_i pairwise transverse in the sense that alpha is not proportional to any nonzero linear form beta_i. Let E be free and L the kernel of maps E -> direct-sum_i T_i, where T_i is free over A/(beta_i). Multiplication by alpha is injective on every T_i. Therefore alpha v in L implies v in L, and\n\n$$L\\cap\\alpha E=\\alpha L,\\qquad J:=\\operatorname{image}(L\\to E/\\alpha E)\\simeq L/\\alpha L.$$\n\nIf L is free over A, J is free over C=A/(alpha). Moreover p=product_i beta_i annihilates all restrictions, so pE is contained in L. After reduction, nonzero bar p gives bar p(E/alpha E) contained in J, proving that J has full generic rank. Empty products equal one.\n\nThis is the opening algebraic step of the cited edge-image proposition. It does not prove the subsequent containment by a homogeneous factor of a prescribed degree. If alpha=beta, saturation can fail: L=alpha A has zero image in A/alpha A although L/alpha L is nonzero.\n\n## Role in the source argument\n\nSupplies a free full-rank target lattice over an edge quotient, before any local edge-image comparison.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [bg:bmp](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026/build/02-background.tex#L225)\n- [edge:bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026/build/05-comparison.tex#L47)\n\n## Antecedents and comparison\n\nElementary nonzerodivisor and kernel arguments. The extraction deliberately stops before the source dihedral comparison and associated degree formula.\n\n## Checks and limitations\n\nOne hundred twenty exact polynomial kernel models check saturation; product-annihilator and generic-rank identities are exact. A proportional-label example fails saturation.\n\nNo general partial-kernel freeness, edge-image degree bound or combinatorial-invariance theorem is certified.\n\n## Possible applications\n\nPreserving a kernel under hypersurface reduction when all output modules see the cutting parameter as a nonzerodivisor.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000400",
+      "record_type": "instrument",
+      "title": "Separate formal coefficients by deep Frobenius roots",
+      "forms": [
+        "frobenius-finite-span-separation",
+        "discontinuous-functional-descent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-311"
+      ],
+      "source_paper_ids": [
+        "P-000219"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex",
+          "label": "formal:separation",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L61",
+          "sha256": "0d756423e5c94a67ce8b4bcedfef9fc9433b7c1ecdd5a83bbe194e4b13e8ed48"
+        },
+        {
+          "path": "preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex",
+          "label": "formal:separation-quantifiers",
+          "line": 136,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L136",
+          "sha256": "0d756423e5c94a67ce8b4bcedfef9fc9433b7c1ecdd5a83bbe194e4b13e8ed48"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "chai-rigidity-antecedent-with-explicit-finite-span-quantifiers",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000400.md",
+      "body": "# Separate formal coefficients by deep Frobenius roots\n\n[Family 311](../families/openai-math-311.md) · [Source manuscript](../papers/P-000219.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nLet C be a complete algebraically closed valued field of characteristic p with coefficient field k=algebraic-closure(F_p), whose nonzero elements have norm one. Fix q=p^h, h>=1, a tuple s in the open unit polydisc, and arbitrary coefficients b_l in C. Suppose for every m,\n\n$$\\limsup_{N\\to\\infty}\\left|\\sum_{|l|\\le m}b_l^{1/q^N}s^l\\right|\\le\\|s\\|^{m+1}.$$\n\nThen every k-linear functional lambda:C->k satisfies sum_l lambda(b_l)s^l=0. No continuity or boundedness of lambda is required.\n\nFor fixed m choose a k-basis beta_j of the finite coefficient span. A Frobenius subsequence fixes its finitely many coordinate coefficients. Write the truncated expression as sum_j beta_j^{1/q^N}v_j. Divide v_j by one of maximum norm V, and pass to a further subsequence fixing their residues rho_j. Linear independence makes sum beta_j rho_j nonzero, whose deep-root norm tends to one; the residue error has norm bounded strictly below one. Thus the expression has norm tending to V. It follows that V<=||s||^{m+1}, and applying lambda to the finite coefficient expansion gives the same bound. The resulting k-coefficient series converges and vanishes as m tends to infinity.\n\nIf the hypothesis holds on a whole set, one fixed lambda detecting a nonzero coefficient yields a common nonzero k-valued formal equation, despite point-dependent subsequences.\n\n## Role in the source argument\n\nDescends a formal equation from a large valued coefficient field to its residue coefficient field.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [formal:separation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L61)\n- [formal:separation-quantifiers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L136)\n\n## Antecedents and comparison\n\nThe source points to Proposition 3.1 of [Chai 2008](https://doi.org/10.4310/AJM.2008.v12.n2.a3) for related high-Frobenius separation. The author-hosted record was located, but its PDF could not be retrieved in this pass; no exact-equivalence or priority conclusion is asserted.\n\n## Checks and limitations\n\nOne hundred twenty finite Puiseux-monomial models at four depths check the norm-separation limit step.\n\nFinite models do not implement arbitrary discontinuous functionals or certify formal orbit-density consequences.\n\n## Possible applications\n\nExtracting residue-field equations from asymptotic Frobenius constraints without interchanging a discontinuous functional and an infinite sum.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000401",
+      "record_type": "instrument",
+      "title": "Use invariant differentials and p-bases to prove formal smoothness",
+      "forms": [
+        "reduced-formal-subgroup-smoothness",
+        "invariant-differential-dimension-test"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-311"
+      ],
+      "source_paper_ids": [
+        "P-000219"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex",
+          "label": "formal:reduced-smooth",
+          "line": 157,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L157",
+          "sha256": "0d756423e5c94a67ce8b4bcedfef9fc9433b7c1ecdd5a83bbe194e4b13e8ed48"
+        },
+        {
+          "path": "preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex",
+          "label": "formal:invariant-differentials",
+          "line": 208,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L208",
+          "sha256": "0d756423e5c94a67ce8b4bcedfef9fc9433b7c1ecdd5a83bbe194e4b13e8ed48"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-formal-group-smoothness-over-perfect-fields",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000401.md",
+      "body": "# Use invariant differentials and p-bases to prove formal smoothness\n\n[Family 311](../families/openai-math-311.md) · [Source manuscript](../papers/P-000219.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nLet a reduced closed formal subgroup H of a smooth formal group over a perfect field k of characteristic p have coordinate ring B=k[[T_1,...,T_r]]/I and embedding dimension e. Then B is isomorphic to k[[X_1,...,X_e]].\n\nEvery power series has a finite Frobenius expansion sum_{0<=a_i<p} T^a f_a(T)^p. Consequently ordinary derivations are determined by the T_i, so the ordinary differential module has the usual finite quotient presentation. The group-difference automorphism (x,y)->(x,y-_H x) identifies the diagonal conormal module with B tensor_k (m_B/m_B^2), proving Omega^1_{B/k}=B^e.\n\nAt a minimal prime, reducedness identifies the localization with a field K. For its complete local component D of dimension d, a finite parameter map k[[x_1,...,x_d]] -> D gives a finite extension K/L. Frobenius identifies the degrees [K:L] and [K^p:L^p], even for inseparable extensions; hence [K:K^p]=p^d and dim_K Omega^1_{K/k}=d. Localization also gives dimension e, so every component has dimension e. Dimension equals embedding dimension, and completeness yields the asserted power-series presentation.\n\nReducedness cannot be omitted: alpha_p has coordinate ring k[[x]]/(x^p), one-dimensional invariant differentials and dimension zero.\n\n## Role in the source argument\n\nTurns the reduced subgroup defined by vanishing equations into a smooth formal object before applying formal-group classification.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [formal:reduced-smooth](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L157)\n- [formal:invariant-differentials](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/build/sections/02-formal-closure.tex#L208)\n\n## Antecedents and comparison\n\nThis is classical formal-group smoothness and p-basis algebra, with an explicit argument for ordinary rather than only continuous differentials. No new-priority claim.\n\n## Checks and limitations\n\nTwelve additive graphs y=x^(p^h) check the subgroup and differential identities in four characteristics. Nonreduced alpha_p models exhibit the missing-hypothesis obstruction.\n\nThese examples do not construct the source formal closure or its annihilating homomorphism.\n\n## Possible applications\n\nDimension detection for reduced formal groups using a finite ordinary differential module.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000402",
+      "record_type": "instrument",
+      "title": "Reflect to unique high-dimensional fillers without changing low cells",
+      "forms": [
+        "coskeletal-cutoff-reflector",
+        "higher-attachment-low-cell-invariance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-312"
+      ],
+      "source_paper_ids": [
+        "P-000220"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/01-preliminaries.tex",
+          "label": "def:coherator",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/01-preliminaries.tex#L34",
+          "sha256": "3ab1b42e6363e9b38736273c088c3820cdaba887bb0f1adcfa9f865b301219c9"
+        },
+        {
+          "path": "preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex",
+          "label": "lem:cutoff",
+          "line": 29,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L29",
+          "sha256": "9196d9a2ae3c19ffa1a1254a1bf377b6466291c07fd03140755179e540ca9a74"
+        },
+        {
+          "path": "preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex",
+          "label": "lem:high-cells",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L98",
+          "sha256": "9196d9a2ae3c19ffa1a1254a1bf377b6466291c07fd03140755179e540ca9a74"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-coskeletal-reflection-with-fixed-generator-order",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000402.md",
+      "body": "# Reflect to unique high-dimensional fillers without changing low cells\n\n[Family 312](../families/openai-math-312.md) · [Source manuscript](../papers/P-000220.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nIn the source free coherator convention, each generating operation of output dimension j has arity of height at most j. The q-coskeletal reflector R_q keeps all cells through dimension q and, successively above q, inserts exactly one filler for each parallel boundary.\n\nInterpret operations in their original free cellular order. For output j<=q the arity bound ensures every input tuple already comes from X, so retain its old operation. For j>q the previously interpreted faces specify a boundary and its unique filler defines the operation. This establishes a model and the universal factorization into any q-coskeletal model. It does not reorder operations by dimension or bound the arities of composite operations. For k<q, R_k R_q is naturally R_k.\n\nReflection sends every boundary attachment in dimension j>k to an isomorphism. Since it preserves pushouts and transfinite colimits and its unit preserves cells through k, such higher attachments preserve all cells through k before reflection too. A source-face expansion in dimension j factors into boundary attachments in dimensions j and j+1, giving the corresponding statement. For a homotopy test in dimension k, choose a cutoff at least k+1 to retain the joining cells as well.\n\n## Role in the source argument\n\nJustifies reducing a finite-dimensional homotopy question without assuming the elementary-expansion result being proved later.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [def:coherator](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/01-preliminaries.tex#L34)\n- [lem:cutoff](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L29)\n- [lem:high-cells](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L98)\n\n## Antecedents and comparison\n\n[Henry and Lanari, Section 2](https://arxiv.org/pdf/1905.05625) defines coskeletal models and describes their unique-fillers construction. The extraction records the source presentation-order argument and its lower-cell consequence.\n\n## Checks and limitations\n\nForty finite underlying-globular-set models verify 180 unique extensions through dimension two, retaining the specified lower cells.\n\nThe computation does not interpret all coherator operations or certify the source partial cylinders and global expansion induction.\n\n## Possible applications\n\nDimension-sensitive reflection arguments in freely generated algebraic higher structures.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000403",
+      "record_type": "instrument",
+      "title": "Replace a globular pasting shape by a finite spine of controlled height",
+      "forms": [
+        "recursive-globular-spine",
+        "dimension-controlled-source-attachments"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-312"
+      ],
+      "source_paper_ids": [
+        "P-000220"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex",
+          "label": "lem:spine",
+          "line": 146,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L146",
+          "sha256": "9196d9a2ae3c19ffa1a1254a1bf377b6466291c07fd03140755179e540ca9a74"
+        },
+        {
+          "path": "preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex",
+          "label": "prop:shape-contractible",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L183",
+          "sha256": "9196d9a2ae3c19ffa1a1254a1bf377b6466291c07fd03140755179e540ca9a74"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-globular-shape-contraction-with-explicit-spine-recursion",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000403.md",
+      "body": "# Replace a globular pasting shape by a finite spine of controlled height\n\n[Family 312](../families/openai-math-312.md) · [Source manuscript](../papers/P-000220.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nWrite a finite nonempty globular-sum shape recursively as a vertex or [S_1,...,S_p], a string whose slots are suspensions of smaller shapes. Define T_0(S)=[v(S_1),...,v(S_p)] using the first vertex in each slot, and T_m(S)=[T_{m-1}(S_1),...,T_{m-1}(S_p)] for m>=1; vertices remain fixed.\n\nThen T_m(S) has height at most m+1 and contains every cell through dimension m. The inclusion into S is built from finitely many source inclusions d_j -> d_{j+1} with j>m: building a child from its first vertex and suspending raises every attachment index by one.\n\nTogether with low-cell invariance under high attachments, a parallel pair of m-cells in the free model F(S) lifts uniquely to F(T_m(S)). Its arity now has height at most m+1, so the coherator's admissible-filler axiom joins the pair. This proves free-shape contractibility without using weak equivalence of elementary expansions. In R_q F(S), low-dimensional pairs lift to F(S), while higher pairs have their unique filler by definition.\n\n## Role in the source argument\n\nProvides a bounded-height arity on which the exact filler axiom applies.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:spine](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L146)\n- [prop:shape-contractible](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/build/sections/02-cutoffs-trees.tex#L183)\n\n## Antecedents and comparison\n\nThe source cites Lanari 2020 for free-shape contractibility. The finite-spine argument is an explicit implementation of classical globular pasting and suspension.\n\n## Checks and limitations\n\nOne hundred recursive shapes at five cutoff levels preserve the low-dimensional cell counts, satisfy the height bound and reconstruct all cell counts from attachments strictly above the cutoff.\n\nCounting checks do not certify all face maps or arbitrary coherator semantics.\n\n## Possible applications\n\nReplacing a large pasting diagram by the part needed to solve a specified-dimensional lifting problem.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000404",
+      "record_type": "instrument",
+      "title": "Kill lim-one by uniformly small corrections in a dense Banach tower",
+      "forms": [
+        "dense-countable-banach-limit",
+        "compact-parameter-uniform-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-313"
+      ],
+      "source_paper_ids": [
+        "P-000221"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/05-kummer-supports.tex",
+          "label": "lem:kum-banach-limits",
+          "line": 63,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/05-kummer-supports.tex#L63",
+          "sha256": "dd1e4a66b04b5cba7e3a0c7997eb069c54685f87b19e3954ba7b0fc7895f3d76"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-topological-mittag-leffler-criterion",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000404.md",
+      "body": "# Kill lim-one by uniformly small corrections in a dense Banach tower\n\n[Family 313](../families/openai-math-313.md) · [Source manuscript](../papers/P-000221.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nFor a countable inverse system of complete nonarchimedean normed vector spaces E_j with continuous linear maps f_j:E_{j+1}->E_j of dense image, R^1 lim E_j=0. The same holds after replacing E_j by C(D,E_j) with the supremum norm for a compact profinite parameter space D.\n\nThe derived-limit differential is (v_j)->(v_j-f_j(v_{j+1})) on the product. To solve for arbitrary right-hand sides a_j, construct finite solution strings. At stage h, density chooses a new terminal value such that e_h=a_h+f_h(v_{h+1})-v_h is small. Redefining earlier entries backward changes entry j by f_j...f_{h-1}(e_h). Continuity of finitely many maps lets all these changes be at most 2^{-h}. Each fixed entry converges by completeness, giving a full solution.\n\nFor compact parameters, finite clopen step functions uniformly approximate continuous functions; approximate their finitely many values using dense images. Thus the induced maps remain dense. Applied degreewise to complexes, surjectivity of the product differential identifies the derived limit with the termwise kernel complex. Closed images and surjective transition maps are unnecessary.\n\n## Role in the source argument\n\nControls inverse limits while retaining compact parameter families and complex degrees.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:kum-banach-limits](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/05-kummer-supports.tex#L63)\n\n## Antecedents and comparison\n\n[Le Bras, Proposition 3.5](https://arxiv.org/pdf/1801.00422v1) explicitly includes complete metric groups with eventual dense transition images. This source lemma is a concrete special case with a parameter-uniform proof.\n\n## Checks and limitations\n\nFour hundred eighty exact rational extension steps verify the backward equations and p-adic error bounds even when earlier maps amplify errors.\n\nFinite scalar models have surjective maps and test the correction protocol only; they do not simulate a complete infinite-dimensional dense nonsurjective tower.\n\n## Possible applications\n\nPassing to countable analytic limits when approximation is available but exact lifting at one stage is not.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000405",
+      "record_type": "instrument",
+      "title": "Derive finite generation from finite mod-p homotopy and derived completeness",
+      "forms": [
+        "derived-complete-finite-generation",
+        "compact-pro-p-nakayama"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-313"
+      ],
+      "source_paper_ids": [
+        "P-000221"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex",
+          "label": "lem:sphere-completion",
+          "line": 92,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex#L92",
+          "sha256": "7325d49157b12364d0aef8b341c1468b8d1f87b75ef91228da1bd7941d8238a3"
+        },
+        {
+          "path": "preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex",
+          "label": "eq:sphere-cofiber-short",
+          "line": 101,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex#L101",
+          "sha256": "7325d49157b12364d0aef8b341c1468b8d1f87b75ef91228da1bd7941d8238a3"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-milnor-and-topological-nakayama-argument",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000405.md",
+      "body": "# Derive finite generation from finite mod-p homotopy and derived completeness\n\n[Family 313](../families/openai-math-313.md) · [Source manuscript](../papers/P-000221.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nFor a derived p-complete spectrum X, all groups pi_j X are finitely generated over Z_p if and only if all pi_j(X/p) are finite, with no connectivity assumption.\n\nThe cofiber sequence gives 0 -> pi_j X/p -> pi_j(X/p) -> (pi_{j-1}X)[p] -> 0. Both ends are killed by p, but the middle need not be. Exact triangles relating X/p^a, X/p^{a+1} and X/p show that every pi_j(X/p^a) is a finite p-group. Decreasing images in a finite target stabilize; the Milnor sequence and derived completeness then identify pi_j X with their inverse limit.\n\nThis makes M=pi_j X a compact pro-p Z_p-module, with pM closed and M/pM finite. Lift a basis of M/pM to a_i. Successively write z_l=sum_i b_{i,l}a_i+p z_{l+1}, with digits 0<=b_{i,l}<p. The digit sums converge in Z_p. The residual p^L z_L tends uniformly to zero in every fixed finite target because that target has bounded p-exponent. Hence the resulting Z_p-linear map Z_p^d -> M is surjective, not merely dense.\n\nConversely, finite generation makes both ends of the displayed cofiber sequence finite. This lemma supplies only the completion step; finiteness of the mod-p chromatic input remains a separate theorem.\n\n## Role in the source argument\n\nConverts a finite mod-p calculation into abstract finite generation without assuming homotopy-group completeness in advance.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:sphere-completion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex#L92)\n- [eq:sphere-cofiber-short](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/build/sections/12-sphere.tex#L101)\n\n## Antecedents and comparison\n\nClassical Milnor exact sequences, compactness and topological Nakayama. No new-priority claim.\n\n## Checks and limitations\n\nOne hundred twenty finite p-power digit-lifting models check exact reconstruction from generators modulo p, through eight precision levels.\n\nNo spectrum or chromatic mod-p finiteness input is constructed by the tests.\n\n## Possible applications\n\nCompletion arguments in stable homotopy where finiteness is first accessible after a mod-p cofiber.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000406",
+      "record_type": "instrument",
+      "title": "Build a relative monotone zigzag through a greatest new element",
+      "forms": [
+        "greatest-new-element-poset-zigzag",
+        "stationary-common-upper-homotopy"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-317"
+      ],
+      "source_paper_ids": [
+        "P-000222"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex",
+          "label": "lem:greatest-new",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex#L27",
+          "sha256": "5fa75d15ee7b2493911a0e67c1dff006f08c73cd781a0c6ca724600a3ca0d493"
+        },
+        {
+          "path": "preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex",
+          "label": "eq:local-zigzag",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex#L51",
+          "sha256": "5fa75d15ee7b2493911a0e67c1dff006f08c73cd781a0c6ca724600a3ca0d493"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-poset-homotopy-with-explicit-relative-zigzag",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000406.md",
+      "body": "# Build a relative monotone zigzag through a greatest new element\n\n[Family 317](../families/openai-math-317.md) · [Source manuscript](../papers/P-000222.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nLet A be a sieve in a poset E and suppose inclusion has a right adjoint retraction r:E->A. If E minus A has a greatest element x, put t=r(x). Define k to be the identity on A and constant t outside A; define g to be the identity on A and constant x outside A.\n\nThese maps are monotone. The only mixed case is b in A below a new y: then b<=y<=x implies b<=r(x)=t. The reverse mixed case is excluded by the sieve property. Pointwise, id_E<=g and k<=g, and both comparisons are stationary on A. Also k factors through a retraction E->A. On ordinary nerves this gives a relative homotopy zigzag between identity and the retracted map.\n\nDirect comparability id_E versus k can fail. In the diamond with old chain a<b, new y<x, a<y<x and b<x, the values y and k(y)=b are incomparable; the common upper value x resolves this.\n\nThe source uses an additional relative Gray-prism/gluing lemma to transport this zigzag through arbitrary higher-category pushouts. That transport is an external input to this extraction, not established by the elementary poset calculation.\n\n## Role in the source argument\n\nProvides the explicit relative combinatorial homotopy used in the source local couniversality step.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:greatest-new](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex#L27)\n- [eq:local-zigzag](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/05-couniversality.tex#L51)\n\n## Antecedents and comparison\n\nClassical monotone-map homotopy on nerves. The reusable feature is the common-upper zigzag and the exact stationarity required for gluing.\n\n## Checks and limitations\n\nExhaustive naturally labelled posets through five elements produce 603 valid sieve/right-adjoint/greatest-new configurations; every monotonicity and pointwise comparison holds.\n\nThe test covers posets and does not build Gray cylinders or arbitrary strict higher-category pushouts.\n\n## Possible applications\n\nConstructing a relative deformation when the obvious retraction is not directly comparable to the identity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000407",
+      "record_type": "instrument",
+      "title": "Turn a full sieve cover into an exact Street-nerve union",
+      "forms": [
+        "two-sieve-nerve-cover",
+        "endpoint-controlled-simplex-localization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-317"
+      ],
+      "source_paper_ids": [
+        "P-000222"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/04-labelled-pieces.tex",
+          "label": "lem:nerve-cover",
+          "line": 289,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/04-labelled-pieces.tex#L289",
+          "sha256": "879d685b1878e453642f394cf9cbe646fec809e64f4539bfec7e4df9a1a3dfaa"
+        }
+      ],
+      "batch_id": "B037",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-nerve-cover-and-monomorphic-gluing",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000407.md",
+      "body": "# Turn a full sieve cover into an exact Street-nerve union\n\n[Family 317](../families/openai-math-317.md) · [Source manuscript](../papers/P-000222.md) · [Batch B037](../../batches/B037/README.md)\n\n## Mathematical content\n\nLet C_1 and C_2 be full sieves of a strict higher category C covering its objects, or let both be full cosieves. Then their Street nerves cover the nerve of C, and their intersection is the nerve of C_1 intersect C_2. Thus the resulting square is an ordinary pushout of simplicial sets along monomorphisms, hence a homotopy pushout.\n\nFor a simplex z:O_m->C in the sieve case, choose a piece containing its final vertex z(m). The oriental has an arrow j->m for each j, so the sieve condition places every image vertex in that piece. Fullness then places the entire simplex there. For cosieves, choose the piece containing z(0) and use arrows 0->j. This proves the union in every simplicial degree, including degree zero; the intersection follows from full inclusions.\n\nThe endpoint condition is essential. Arbitrary full subcategories covering objects can miss simplices that cross between their object sets.\n\n## Role in the source argument\n\nMakes certain strict-category attachment covers accessible to ordinary simplicial gluing.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:nerve-cover](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/build/sections/04-labelled-pieces.tex#L289)\n\n## Antecedents and comparison\n\nThis is a classical nerve-cover argument and monomorphic homotopy gluing. No new-priority claim or general cover theorem is asserted.\n\n## Checks and limitations\n\nAll 17,131 ideal-cover pairs in tested naturally labelled posets through five elements contain each of their 154,679 nondegenerate chains in a single piece.\n\nFinite-poset chains test ordinary nerves; general higher orientals and the full model-transfer proof are outside the computation.\n\n## Possible applications\n\nReducing a homotopy comparison to two pieces when directed closure forces each simplex into one piece.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -21079,6 +21416,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000218.md",
       "body": "# Combinatorial invariance of Kazhdan–Lusztig polynomials\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Combinatorial-Invariance-of-Kazhdan-Lusztig-Polynomials-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims combinatorial invariance of equal-parameter Kazhdan-Lusztig polynomials for arbitrary Coxeter systems.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000398: Recover a free full-rank lattice from height-one localizations](../instruments/MI-000398.md)\n- [MI-000399: Reduce a restriction kernel modulo a regular transverse label](../instruments/MI-000399.md)\n\n## Dependencies and review\n\nUnique factorization, rational basis coordinates, nonzerodivisors on quotient modules, kernel saturation and product annihilators.\n\nRead the complete lattice lemma, moment-graph module assumptions and the saturation/generic-rank paragraph of the edge-image proof. The rest of the edge-image bound and global invariance argument were not audited.\n\nRead KLInvariance.lean: strong Bruhat order, normalized R/P families and the interval-order-isomorphism target. The final target contains sorry; no Lean build.\n\n[Family context](../families/openai-math-168.md) · [Batch B036](../../batches/B036/README.md)"
+    },
+    {
+      "id": "P-000219",
+      "record_type": "paper",
+      "title": "Stabilizer orbits and thick tensor ideals of dualizable K(n)-local spectra",
+      "source_collection": "openai/math",
+      "upstream_slug": "Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-311"
+      ],
+      "batch_id": "B037",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "92ce492c7e95a414a221a20d7347f5bfc484e7b11b084ce4382f746c86f4fa40",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000219.md",
+      "body": "# Stabilizer orbits and thick tensor ideals of dualizable K(n)-local spectra\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stabilizer-Orbits-and-Thick-Tensor-Ideals-of-Dualizable-Kn-Local-Spectra-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims stabilizer-invariant radical-ideal classification and the Hovey-Strickland thick tensor ideal conjecture.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000400: Separate formal coefficients by deep Frobenius roots](../instruments/MI-000400.md)\n- [MI-000401: Use invariant differentials and p-bases to prove formal smoothness](../instruments/MI-000401.md)\n\n## Dependencies and review\n\nFinite-field Frobenius, ultrametric dominance, invariant conormal modules, regular local rings and p-bases.\n\nRead Frobenius separation and the complete reduced-formal-subgroup smoothness proof. Formal closure, bundle nondegeneracy, orbit density and thick-ideal classification were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-311.md) · [Batch B037](../../batches/B037/README.md)"
+    },
+    {
+      "id": "P-000220",
+      "record_type": "paper",
+      "title": "The Grothendieck homotopy hypothesis via elementary expansions",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-312"
+      ],
+      "batch_id": "B037",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "bd547d8ddaf76494295f67b890ba9f328e77f57833a3b5e794f19592a84cef38",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000220.md",
+      "body": "# The Grothendieck homotopy hypothesis via elementary expansions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Grothendieck homotopy hypothesis through elementary expansions of cellular coherator models.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000402: Reflect to unique high-dimensional fillers without changing low cells](../instruments/MI-000402.md)\n- [MI-000403: Replace a globular pasting shape by a finite spine of controlled height](../instruments/MI-000403.md)\n\n## Dependencies and review\n\nGlobular boundaries, free cellular theories, reflectors, colimit preservation and recursive suspension of globular shapes.\n\nRead the coherator convention, cutoff reflector, higher-attachment invariance, finite-spine and free-shape contractibility proofs. Partial cylinders and the descending elementary-expansion induction were not audited.\n\nInspected the elementary-expansion target and selected coherator/weak-equivalence definitions in GrothendieckElementaryExpansion.lean. Its target contains sorry. The scope excludes the later semi-model structure and full comparison. No full support audit or Lean build.\n\n[Family context](../families/openai-math-312.md) · [Batch B037](../../batches/B037/README.md)"
+    },
+    {
+      "id": "P-000221",
+      "record_type": "paper",
+      "title": "Finite generation for the K(n)-local sphere",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-generation-for-the-Kn-local-sphere-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-313"
+      ],
+      "batch_id": "B037",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4bc19067ebcaefd2c571900c808c6c0ded47d1f8ef4330a243e14074e92a1c85",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000221.md",
+      "body": "# Finite generation for the K(n)-local sphere\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/Finite-generation-for-the-Kn-local-sphere-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-generation-for-the-Kn-local-sphere-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims finite generation over Z_p of every homotopy group of the K(n)-local sphere for all positive heights and primes.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000404: Kill lim-one by uniformly small corrections in a dense Banach tower](../instruments/MI-000404.md)\n- [MI-000405: Derive finite generation from finite mod-p homotopy and derived completeness](../instruments/MI-000405.md)\n\n## Dependencies and review\n\nComplete nonarchimedean spaces, finite clopen approximations, the countable product model of derived inverse limit, finite p-groups and compact Nakayama.\n\nRead the complete countable Banach inverse-limit lemma and the derived-completion finite-generation lemma. The marking towers, transfer stabilization and mod-p chromatic finiteness theorem were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-313.md) · [Batch B037](../../batches/B037/README.md)"
+    },
+    {
+      "id": "P-000222",
+      "record_type": "paper",
+      "title": "Thomason Model Structures in Every Strict Higher Dimension",
+      "source_collection": "openai/math",
+      "upstream_slug": "Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-317"
+      ],
+      "batch_id": "B037",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d27df9c0dca25bae3aa78a21befe10e25d99f43e6dee54487412080dab6e02f6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000222.md",
+      "body": "# Thomason Model Structures in Every Strict Higher Dimension\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Thomason-Model-Structures-in-Every-Strict-Higher-Dimension-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims proper combinatorial Thomason model structures in every positive finite strict dimension and in dimension omega.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000406: Build a relative monotone zigzag through a greatest new element](../instruments/MI-000406.md)\n- [MI-000407: Turn a full sieve cover into an exact Street-nerve union](../instruments/MI-000407.md)\n\n## Dependencies and review\n\nSieve poset inclusions, right adjoint retractions, monotone natural transformations, oriental endpoint arrows and monomorphic simplicial gluing.\n\nRead the greatest-new-element proof and the complete two-piece nerve-cover lemma. The relative Gray-prism lemma used to transport the zigzag through arbitrary strict-category pushouts was not audited; neither was the model-transfer theorem.\n\nInspected FullMain, ExactModelEndpoint and final targets in ThomasonModelStructures.lean. They specify model structures, properness and Quillen equivalence in positive finite and omega dimensions; the targets contain sorry. The long support development was not audited and no Lean build was performed.\n\n[Family context](../families/openai-math-317.md) · [Batch B037](../../batches/B037/README.md)"
     }
   ],
   "families": [
@@ -25259,6 +25672,87 @@
       "body": "# Saturated residues and augmented product shuffles\n\n## Source manuscript and claim\n\n[Rational homology and Quillen's conjecture](../papers/P-000172.md), by OpenAI, September 24, 2026.\n\nThe source claims that for every finite group G and prime p, a trivial normal p-core forces nonzero augmented reduced rational homology of the poset of nonidentity elementary abelian p-subgroups.\n\n## Extracted instruments\n\n- [MI-000306: A saturated initial flag defines a signed chain residue](../instruments/MI-000306.md)\n- [MI-000307: Shuffle augmented flags into a product without losing the join sign](../instruments/MI-000307.md)\n\n## Dependencies and antecedents\n\nAugmented simplicial boundaries, saturated rank flags, commuting subgroup products and staircase triangulation of products of cones.\n\nClassical simplicial chain residues, join boundaries and signed Eilenberg-Zilber-type shuffles. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete saturated-residue and product-shuffle proofs, including empty flags and the join realization. The faithful-component propagation, frame coefficient estimates and classification-dependent reductions were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nThe empty poset has reduced homology Q in degree -1. Residues require ranks 1 through r with no gaps, and product coordinates require commuting factors with trivial intersection.\n\n[Batch record](../../batches/B025/README.md)"
     },
     {
+      "id": "openai-math-311",
+      "record_type": "family",
+      "title": "Frobenius coefficient separation and smooth formal subgroups",
+      "source_family": "311",
+      "source_collection": "openai/math",
+      "batch_id": "B037",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000219"
+      ],
+      "instrument_ids": [
+        "MI-000400",
+        "MI-000401"
+      ],
+      "headline": "The source claims stabilizer-invariant radical-ideal classification and the Hovey-Strickland thick tensor ideal conjecture.",
+      "central_instrument": "Deep Frobenius roots separate finite coefficient spans without continuity of a coefficient functional. Invariant differentials and p-bases turn reduced formal subgroups into smooth ones.",
+      "novelty_assessment": "Formal-group rigidity, invariant differentials and p-basis dimension arguments have classical antecedents. The source explicitly cites Chai for related Frobenius separation. No global classification or first-priority claim is certified.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.",
+      "statement_faithfulness": "The coefficient family need not be bounded, and linear functionals need not be continuous. Subsequence choices can depend on the evaluation point and truncation. Reducedness and perfection are essential in the smoothness argument.",
+      "dependencies": "Finite-field Frobenius, ultrametric dominance, invariant conormal modules, regular local rings and p-bases.",
+      "antecedents": "Chai, A rigidity result for p-divisible formal groups, 2008; classical invariant differentials and formal-group smoothness over perfect fields.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-311.md",
+      "body": "# Frobenius coefficient separation and smooth formal subgroups\n\n## Source manuscript and claim\n\n[Stabilizer orbits and thick tensor ideals of dualizable K(n)-local spectra](../papers/P-000219.md), by OpenAI, September 24, 2026.\n\nThe source claims stabilizer-invariant radical-ideal classification and the Hovey-Strickland thick tensor ideal conjecture.\n\n## Extracted instruments\n\n- [MI-000400: Separate formal coefficients by deep Frobenius roots](../instruments/MI-000400.md)\n- [MI-000401: Use invariant differentials and p-bases to prove formal smoothness](../instruments/MI-000401.md)\n\n## Dependencies and antecedents\n\nFinite-field Frobenius, ultrametric dominance, invariant conormal modules, regular local rings and p-bases.\n\nChai, A rigidity result for p-divisible formal groups, 2008; classical invariant differentials and formal-group smoothness over perfect fields. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead Frobenius separation and the complete reduced-formal-subgroup smoothness proof. Formal closure, bundle nondegeneracy, orbit density and thick-ideal classification were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nThe coefficient family need not be bounded, and linear functionals need not be continuous. Subsequence choices can depend on the evaluation point and truncation. Reducedness and perfection are essential in the smoothness argument.\n\n[Batch record](../../batches/B037/README.md)"
+    },
+    {
+      "id": "openai-math-312",
+      "record_type": "family",
+      "title": "Coskeletal reflection and finite globular spines",
+      "source_family": "312",
+      "source_collection": "openai/math",
+      "batch_id": "B037",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000220"
+      ],
+      "instrument_ids": [
+        "MI-000402",
+        "MI-000403"
+      ],
+      "headline": "The source claims the Grothendieck homotopy hypothesis through elementary expansions of cellular coherator models.",
+      "central_instrument": "A cutoff adds unique fillers above a fixed dimension while retaining lower cells; recursive spines isolate the dimensions needed for a particular homotopy test.",
+      "novelty_assessment": "Coskeletal models and free-shape contractibility have explicit Henry-Lanari and Lanari antecedents. The extraction emphasizes the fixed presentation order and the separation from the unaudited elementary-expansion theorem.",
+      "formalization_summary": "Inspected the elementary-expansion target and selected coherator/weak-equivalence definitions in GrothendieckElementaryExpansion.lean. Its target contains sorry. The scope excludes the later semi-model structure and full comparison. No full support audit or Lean build.",
+      "statement_faithfulness": "Generating arities have height at most the output dimension, but composite operations can have greater arity height. The original free cellular order is retained. Distinct parallel q-cells survive R_q.",
+      "dependencies": "Globular boundaries, free cellular theories, reflectors, colimit preservation and recursive suspension of globular shapes.",
+      "antecedents": "Henry-Lanari, On the homotopy hypothesis for 3-groupoids, Section 2; Lanari free-shape contractibility cited by the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-312.md",
+      "body": "# Coskeletal reflection and finite globular spines\n\n## Source manuscript and claim\n\n[The Grothendieck homotopy hypothesis via elementary expansions](../papers/P-000220.md), by OpenAI, None.\n\nThe source claims the Grothendieck homotopy hypothesis through elementary expansions of cellular coherator models.\n\n## Extracted instruments\n\n- [MI-000402: Reflect to unique high-dimensional fillers without changing low cells](../instruments/MI-000402.md)\n- [MI-000403: Replace a globular pasting shape by a finite spine of controlled height](../instruments/MI-000403.md)\n\n## Dependencies and antecedents\n\nGlobular boundaries, free cellular theories, reflectors, colimit preservation and recursive suspension of globular shapes.\n\nHenry-Lanari, On the homotopy hypothesis for 3-groupoids, Section 2; Lanari free-shape contractibility cited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the coherator convention, cutoff reflector, higher-attachment invariance, finite-spine and free-shape contractibility proofs. Partial cylinders and the descending elementary-expansion induction were not audited.\n\nInspected the elementary-expansion target and selected coherator/weak-equivalence definitions in GrothendieckElementaryExpansion.lean. Its target contains sorry. The scope excludes the later semi-model structure and full comparison. No full support audit or Lean build.\n\nGenerating arities have height at most the output dimension, but composite operations can have greater arity height. The original free cellular order is retained. Distinct parallel q-cells survive R_q.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/312.md) · [Batch record](../../batches/B037/README.md)"
+    },
+    {
+      "id": "openai-math-313",
+      "record_type": "family",
+      "title": "Dense inverse limits and compact derived Nakayama",
+      "source_family": "313",
+      "source_collection": "openai/math",
+      "batch_id": "B037",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000221"
+      ],
+      "instrument_ids": [
+        "MI-000404",
+        "MI-000405"
+      ],
+      "headline": "The source claims finite generation over Z_p of every homotopy group of the K(n)-local sphere for all positive heights and primes.",
+      "central_instrument": "A small-correction construction kills lim-one for dense countable Banach towers. Derived completeness and finite mod-p homotopy produce compact modules to which a digit-by-digit Nakayama argument applies.",
+      "novelty_assessment": "These are established inverse-limit and completion mechanisms. The source cites Le Bras for the dense-tower criterion. The difficult chromatic finiteness inputs are outside this extraction.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.",
+      "statement_faithfulness": "Dense maps need not be onto. Derived completeness is a spectrum-level assumption; ordinary completeness of individual homotopy groups is derived, not assumed. Finite mod-p cofiber groups need not themselves be killed by p.",
+      "dependencies": "Complete nonarchimedean spaces, finite clopen approximations, the countable product model of derived inverse limit, finite p-groups and compact Nakayama.",
+      "antecedents": "Le Bras 2018, Proposition 3.5; classical Milnor exact sequences and topological Nakayama arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-313.md",
+      "body": "# Dense inverse limits and compact derived Nakayama\n\n## Source manuscript and claim\n\n[Finite generation for the K(n)-local sphere](../papers/P-000221.md), by OpenAI, September 24, 2026.\n\nThe source claims finite generation over Z_p of every homotopy group of the K(n)-local sphere for all positive heights and primes.\n\n## Extracted instruments\n\n- [MI-000404: Kill lim-one by uniformly small corrections in a dense Banach tower](../instruments/MI-000404.md)\n- [MI-000405: Derive finite generation from finite mod-p homotopy and derived completeness](../instruments/MI-000405.md)\n\n## Dependencies and antecedents\n\nComplete nonarchimedean spaces, finite clopen approximations, the countable product model of derived inverse limit, finite p-groups and compact Nakayama.\n\nLe Bras 2018, Proposition 3.5; classical Milnor exact sequences and topological Nakayama arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete countable Banach inverse-limit lemma and the derived-completion finite-generation lemma. The marking towers, transfer stabilization and mod-p chromatic finiteness theorem were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nDense maps need not be onto. Derived completeness is a spectrum-level assumption; ordinary completeness of individual homotopy groups is derived, not assumed. Finite mod-p cofiber groups need not themselves be killed by p.\n\n[Batch record](../../batches/B037/README.md)"
+    },
+    {
       "id": "openai-math-314",
       "record_type": "family",
       "title": "Automorphism-weighted integration and p-adic subgroup counts",
@@ -25311,6 +25805,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-316.md",
       "body": "# Cartier halving with an exponent floor and primitive square roots\n\n## Source manuscript and claim\n\n[The Stable Hurewicz Image of the Sphere at Two](../papers/P-000174.md), by OpenAI, September 25, 2026.\n\nThe source claims that the positive stable mod-two Hurewicz image of the sphere is spanned by Hopf-invariant-one and existing Kervaire-invariant-one images, with the corresponding sphere case of Eccles conjecture.\n\n## Extracted instruments\n\n- [MI-000310: Cartier halving carries an explicit Dickson exponent floor](../instruments/MI-000310.md)\n- [MI-000311: A decomposable primitive in a polynomial Hopf algebra has a primitive root](../instruments/MI-000311.md)\n\n## Dependencies and antecedents\n\nBinomial parity, Cartan formula, Dickson Jacobian, Milnor coinvariants, triangular polynomial derivations and Frobenius injectivity.\n\nCartier and Kameko squaring; Hung and Giambalvo-Peterson on polynomial and Dickson algebra transformations; elementary structure of polynomial Hopf algebras. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the Milnor quotient and coinvariant calculations, complete Cartier proof, suspension-kernel discussion and complete primitive-root proof. The Tor injection, full tensor obstruction, fourth-power exclusion and spherical-class classification were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nThe headline does not assert existence of Kervaire classes in new degrees. Above-floor monomials satisfy a strict exponent inequality and parity constraints. Primitive-root uniqueness uses injective Frobenius in both the algebra and its tensor square.\n\n[Batch record](../../batches/B025/README.md)"
+    },
+    {
+      "id": "openai-math-317",
+      "record_type": "family",
+      "title": "Relative poset homotopies and nerve covers",
+      "source_family": "317",
+      "source_collection": "openai/math",
+      "batch_id": "B037",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000222"
+      ],
+      "instrument_ids": [
+        "MI-000406",
+        "MI-000407"
+      ],
+      "headline": "The source claims proper combinatorial Thomason model structures in every positive finite strict dimension and in dimension omega.",
+      "central_instrument": "A common upper monotone map produces a relative homotopy zigzag when direct pointwise comparison fails. Sieve or cosieve covers become exact nerve unions.",
+      "novelty_assessment": "Poset adjunctions, nerve homotopies and simplicial gluing are classical. The source higher-dimensional prism and model-transfer construction is not certified by these selected interfaces.",
+      "formalization_summary": "Inspected FullMain, ExactModelEndpoint and final targets in ThomasonModelStructures.lean. They specify model structures, properness and Quillen equivalence in positive finite and omega dimensions; the targets contain sorry. The long support development was not audited and no Lean build was performed.",
+      "statement_faithfulness": "The greatest-new-element construction gives a zigzag id<=g>=k, not necessarily id comparable with k. The nerve union requires both pieces to be full sieves or both full cosieves, not arbitrary full subcategories.",
+      "dependencies": "Sieve poset inclusions, right adjoint retractions, monotone natural transformations, oriental endpoint arrows and monomorphic simplicial gluing.",
+      "antecedents": "Classical poset nerve homotopies and Thomason-style gluing; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-317.md",
+      "body": "# Relative poset homotopies and nerve covers\n\n## Source manuscript and claim\n\n[Thomason Model Structures in Every Strict Higher Dimension](../papers/P-000222.md), by OpenAI, None.\n\nThe source claims proper combinatorial Thomason model structures in every positive finite strict dimension and in dimension omega.\n\n## Extracted instruments\n\n- [MI-000406: Build a relative monotone zigzag through a greatest new element](../instruments/MI-000406.md)\n- [MI-000407: Turn a full sieve cover into an exact Street-nerve union](../instruments/MI-000407.md)\n\n## Dependencies and antecedents\n\nSieve poset inclusions, right adjoint retractions, monotone natural transformations, oriental endpoint arrows and monomorphic simplicial gluing.\n\nClassical poset nerve homotopies and Thomason-style gluing; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the greatest-new-element proof and the complete two-piece nerve-cover lemma. The relative Gray-prism lemma used to transport the zigzag through arbitrary strict-category pushouts was not audited; neither was the model-transfer theorem.\n\nInspected FullMain, ExactModelEndpoint and final targets in ThomasonModelStructures.lean. They specify model structures, properness and Quillen equivalence in positive finite and omega dimensions; the targets contain sorry. The long support development was not audited and no Lean build was performed.\n\nThe greatest-new-element construction gives a zigzag id<=g>=k, not necessarily id comparable with k. The nerve union requires both pieces to be full sieves or both full cosieves, not arbitrary full subcategories.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/317.md) · [Batch record](../../batches/B037/README.md)"
     },
     {
       "id": "openai-math-321",

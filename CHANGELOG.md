@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B037: eight selected formal-group and topology interfaces from families 311, 312, 313 and 317, with explicit finite-model limits and classical antecedents.
+
 - Added B036: eight selected combinatorial and algebraic interfaces from families 155, 164, 166 and 168, with exact-cover decoding and singular-interpolation checks.
 
 - Added B035: eight selected algorithmic mechanisms from families 109, 120, 121 and 124, including exhaustive small-graph reduction checks and fixed-block entropy tests.

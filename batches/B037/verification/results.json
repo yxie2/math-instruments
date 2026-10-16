@@ -1,0 +1,42 @@
+{
+  "batch": "B037",
+  "status": "pass",
+  "scope": "Selected finite algebraic and combinatorial models only; no global theorem or Lean build certified.",
+  "checks": {
+    "frobenius_separation": {
+      "finite_puiseux_models": 120,
+      "depths_per_model": 4
+    },
+    "formal_smoothness": {
+      "additive_graph_models": 12,
+      "nonreduced_alpha_p_negative_controls": 4
+    },
+    "finite_spines": {
+      "shapes": 100,
+      "cutoff_levels_each": 5,
+      "attachment_dimension_checked": true
+    },
+    "globular_cutoffs": {
+      "underlying_globular_models": 40,
+      "unique_extensions": 180,
+      "coherator_operations_tested": false
+    },
+    "dense_tower_protocol": {
+      "finite_extension_steps": 480,
+      "complete_infinite_spaces_simulated": false
+    },
+    "compact_nakayama": {
+      "finite_precision_digit_lifts": 120,
+      "spectrum_constructed": false
+    },
+    "relative_poset_zigzags": {
+      "exhaustive_naturally_labelled_models_up_to": 5,
+      "valid_sieve_retractions": 603
+    },
+    "nerve_covers": {
+      "ideal_cover_pairs": 17131,
+      "nondegenerate_chains": 154679,
+      "strict_higher_orientals_tested": false
+    }
+  }
+}
