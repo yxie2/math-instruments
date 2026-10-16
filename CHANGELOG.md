@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B022: eight instruments from families 026, 027, 028 and 031, with eight finite check groups. The prime-gap scope-note/target mismatch and the conditional status of sieve, seam and Galois inputs are documented.
+
 - Added B021: nine instruments from logic families 241, 242, 244 and 245, with primary antecedent comparisons and nine finite check groups. Complete-witness, nonuniformity, symmetry, choice and annotation hypotheses are retained explicitly.
 
 - Added B020: eight instruments from combinatorial families 160, 161, 179 and 187. A separate parser reconstructs the complete 21-move Snaky certificate, including all 1,620 composition nodes and 37,042 local reply classes. Other cards preserve explicit conditional inputs and include finite consistency checks.

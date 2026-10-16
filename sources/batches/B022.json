@@ -1,0 +1,214 @@
+{
+  "batch_id": "B022",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T10:01:54.299619+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.lean",
+      "sha256": "ebc3129bfb5ef4a47e0de1d89f0f406ef6603df32355bdfbb9ce278627c1a1f1",
+      "bytes": 900
+    },
+    {
+      "path": "lean/ComparatorChallenges/GaussianMoat.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GaussianMoat.lean",
+      "sha256": "f1d2bdcb38ababb65d98dba286dfe13286c1709aea704d9dac58e2004ca80e84",
+      "bytes": 1166
+    },
+    {
+      "path": "lean/ComparatorChallenges/PrimeGaps.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PrimeGaps.lean",
+      "sha256": "a8822683e840bc0f92cb3573b85a6b1d847314b869e7262c4a863b5c33858aa5",
+      "bytes": 1201
+    },
+    {
+      "path": "lean/docs/026.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/026.md",
+      "sha256": "f75ae21800250eb70265e6e2e77a59f6d54513b9494b9ad7488de2d3574b3959",
+      "bytes": 834
+    },
+    {
+      "path": "lean/docs/027.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/027.md",
+      "sha256": "51053f215beface5225aa3620a77199e7a7051d36b139f53fd4859f938e6940e",
+      "bytes": 1319
+    },
+    {
+      "path": "lean/docs/028.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/028.md",
+      "sha256": "8c84833b7ad47c59ee7e5392858ee2a3d410f3e082af31d064654202b5105521",
+      "bytes": 955
+    },
+    {
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/README.md",
+      "sha256": "3be46a59d35ad414f1f8a18220d92b497b6f5b0f0b93dce31e7a97d13a23adbd",
+      "bytes": 546
+    },
+    {
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+      "sha256": "f9d4a4f80a29135ffd817fa022b404250e3e79f146d1cda334cd06f2552f3c05",
+      "bytes": 10968
+    },
+    {
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex",
+      "sha256": "1c3929027ce8db0174143c29134a8b38c812b9e27eed0d6d7af11d42acd408aa",
+      "bytes": 2735
+    },
+    {
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/README.md",
+      "sha256": "71ec23e4f15791ec381a26742f54cf0823f2c30bbd9f3ecb35854ebf96c83559",
+      "bytes": 601
+    },
+    {
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+      "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72",
+      "bytes": 5009
+    },
+    {
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex",
+      "sha256": "d56eddbfdfcc4dca27ad05e0e653ab30183f6c0f5dcfea10603774f5909aac4d",
+      "bytes": 14657
+    },
+    {
+      "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/README.md",
+      "sha256": "a19c4c655b526a06ef6665d128b44dadb7d8740d9d6b04ca730f7aaeddd3e10d",
+      "bytes": 724
+    },
+    {
+      "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex",
+      "sha256": "43455b8ed4a6c68ce50d355c9bd491b35395fc00072dfc7387f1417bb8dea4fd",
+      "bytes": 18048
+    },
+    {
+      "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex",
+      "sha256": "b82edf65e0f85ac5ed5310ec653d85f4b239a1d355088b00bb2581fb3dbbff5d",
+      "bytes": 14891
+    },
+    {
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/README.md",
+      "sha256": "17c0c6327ca0ff5ca79bb01cfa16a84931b7a9da354be1cbd172e4bd9805fcaa",
+      "bytes": 568
+    },
+    {
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+      "sha256": "1ad98fd00888ded797e0c3ad05e1f4d6938e43ee703482a405d2e4af6ccc2b0d",
+      "bytes": 5722
+    },
+    {
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex",
+      "sha256": "81f9db254f8e5915c455c4eb053e3ace510f0fc488602e85aabe58e8bdd83635",
+      "bytes": 7121
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000280",
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+      "label": "prop:weights",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L18",
+      "sha256": "1ad98fd00888ded797e0c3ad05e1f4d6938e43ee703482a405d2e4af6ccc2b0d"
+    },
+    {
+      "instrument_id": "MI-000280",
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex",
+      "label": "lem:adjacent-gaps",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/02-counting.tex#L44",
+      "sha256": "1ad98fd00888ded797e0c3ad05e1f4d6938e43ee703482a405d2e4af6ccc2b0d"
+    },
+    {
+      "instrument_id": "MI-000281",
+      "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex",
+      "label": "lem:small-first-moment",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/build/sections/05-cancellation.tex#L11",
+      "sha256": "81f9db254f8e5915c455c4eb053e3ace510f0fc488602e85aabe58e8bdd83635"
+    },
+    {
+      "instrument_id": "MI-000282",
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+      "label": "lem:unit-spectrum",
+      "line": 67,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L67",
+      "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+    },
+    {
+      "instrument_id": "MI-000282",
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+      "label": "lem:uniform-field",
+      "line": 92,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L92",
+      "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+    },
+    {
+      "instrument_id": "MI-000282",
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex",
+      "label": "lem:free-splittings",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/arithmetic.tex#L45",
+      "sha256": "ef2013b7fe598cf7fc7ea470eb92e1cae82db1fb2c3a7c1ea7c1eb7e3424fc72"
+    },
+    {
+      "instrument_id": "MI-000283",
+      "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex",
+      "label": "lem:two-flags",
+      "line": 148,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/sections/diagrams.tex#L148",
+      "sha256": "d56eddbfdfcc4dca27ad05e0e653ab30183f6c0f5dcfea10603774f5909aac4d"
+    },
+    {
+      "instrument_id": "MI-000284",
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+      "label": "lem:conditioning",
+      "line": 34,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L34",
+      "sha256": "f9d4a4f80a29135ffd817fa022b404250e3e79f146d1cda334cd06f2552f3c05"
+    },
+    {
+      "instrument_id": "MI-000284",
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex",
+      "label": "eq:deficit-upper",
+      "line": 42,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/coverage-transfer.tex#L42",
+      "sha256": "f9d4a4f80a29135ffd817fa022b404250e3e79f146d1cda334cd06f2552f3c05"
+    },
+    {
+      "instrument_id": "MI-000285",
+      "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex",
+      "label": "prop:periodic",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/build/periodicity.tex#L9",
+      "sha256": "1c3929027ce8db0174143c29134a8b38c812b9e27eed0d6d7af11d42acd408aa"
+    },
+    {
+      "instrument_id": "MI-000286",
+      "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex",
+      "label": "lem:normalizer-extension",
+      "line": 24,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/generation.tex#L24",
+      "sha256": "43455b8ed4a6c68ce50d355c9bd491b35395fc00072dfc7387f1417bb8dea4fd"
+    },
+    {
+      "instrument_id": "MI-000287",
+      "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex",
+      "label": "lem:power-separation",
+      "line": 132,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/build/sections/matching.tex#L132",
+      "sha256": "b82edf65e0f85ac5ed5310ec653d85f4b239a1d355088b00bb2581fb3dbbff5d"
+    }
+  ]
+}
