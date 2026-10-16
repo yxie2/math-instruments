@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B053: 8 selected instruments from 4 families and 6 manuscripts. Adds particular-error correction, exponent-gap interpolation, delayed-radius summation, Gevrey telescoping, covering globalization, determinant gains and angular spectral controls.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B052: 8 selected instruments from 4 families and 4 manuscripts. Adds slope balancing and divisor-layer variances, Brauer projections and Higman traces, norm projectivity and Moore selection, and torus and boundary-energy obstructions.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B051: 8 selected instruments from 4 families and 4 manuscripts. Eight selected instruments covering matrix growth geometry, positive dilation balances, entropy localization, ordered radial itineraries, stationary chord estimates, weighted scale selection, unimodular traces and percolation sprinkling.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

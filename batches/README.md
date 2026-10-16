@@ -54,8 +54,9 @@
 | [B050](B050/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight selected instruments covering masked finite-field mixing, multiscale metric repair, population-radius budgets, rational support reduction, semigroup corners, configuration-tree tours, borrowed-memory replay and conditional tensor amplification. |
 | [B051](B051/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Eight selected instruments covering matrix growth geometry, positive dilation balances, entropy localization, ordered radial itineraries, stationary chord estimates, weighted scale selection, unimodular traces and percolation sprinkling. |
 | [B052](B052/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Adds slope balancing and divisor-layer variances, Brauer projections and Higman traces, norm projectivity and Moore selection, and torus and boundary-energy obstructions. |
+| [B053](B053/README.md) | 4 new families; 8 instruments; 6 source manuscripts | Adds particular-error correction, exponent-gap interpolation, delayed-radius summation, Gevrey telescoping, covering globalization, determinant gains and angular spectral controls. |
 
-Future rounds use `B053` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B054` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
