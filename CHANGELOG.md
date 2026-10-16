@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B063: 8 selected instruments from 4 families and 8 manuscripts. Frequency continuation, projection counts, affine-maximal reductions, bounded drift, Hartogs obstructions and holomorphic Fourier filters. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B062: 9 selected instruments from 4 families and 9 manuscripts. Twisted absorption, germ rigidity, polar intertwiners, clock-and-shift obstructions, fourth-moment recovery and nontracial state controls. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B061: 10 selected instruments from 4 families and 10 manuscripts. Ten instruments from ten manuscripts: noninjective mapping tori, action monoids, additive idempotent diagrams, positive Cartan data, centralizer characters, finite witnesses, spectral cycles, unitary incidence, free-word caps and stable kernels.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
