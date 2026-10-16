@@ -12744,6 +12744,406 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000311.md",
       "body": "# A decomposable primitive in a polynomial Hopf algebra has a primitive root\n\n[Family 316](../families/openai-math-316.md) · [Source manuscript](../papers/P-000174.md) · [Batch B025](../../batches/B025/README.md)\n\n## Mathematical content\n\nLet H be a connected graded commutative Hopf algebra over F_2, polynomial on positive-degree generators. Every decomposable primitive f is a square z^2 with a unique primitive root z. If H has a homology Steenrod action satisfying Cartan, an annihilated square has an annihilated root.\n\nLet pi:H->QH=H^+/(H^+)^2 send 1 to zero. The map partial=(1 tensor pi)Delta is a derivation because pi(ab)=epsilon(a)pi(b)+epsilon(b)pi(a). For a homogeneous polynomial generator y_i,\n\n$$\\partial y_i=1\\otimes[y_i]+\\text{terms of smaller positive degree in the second factor}.$$\n\nIf partial f=0, inspect generators of largest degree occurring in f, then descend. The triangular formula forces every ordinary polynomial derivative of f to vanish. In characteristic two all its monomial exponents are therefore even, giving a unique square root. A decomposable primitive satisfies partial f=1 tensor pi(f)=0.\n\nThe reduced coproduct of z has square zero because z^2 is primitive. But H tensor H is polynomial, so Frobenius is injective and that reduced coproduct vanishes. Finally Cartan gives Sq_*^(2a)(z^2)=(Sq_*^a z)^2 and odd squares act by zero. Injective Frobenius transfers annihilation to the root.\n\nThe generators themselves need not be primitive. Polynomiality, connected grading and the absence of nilpotents supply the needed triangularity and injectivity.\n\n## Role in the source argument\n\nAllows the source to descend from decomposable spherical candidates to primitive square roots while retaining Steenrod annihilation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:primitive-roots](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Stable-Hurewicz-Image-of-the-Sphere-at-Two-September-25-2026/build/weights.tex#L651)\n\n## Antecedents and comparison\n\nThe argument uses classical polynomial derivations and Frobenius. It is extracted for its explicit treatment of nonprimitive polynomial generators and its separate uses of reducedness; no historical novelty claim is made.\n\n## Checks and limitations\n\nThe coproduct Delta(y)=y tensor 1+1 tensor y+x tensor x gives a non-primitively generated polynomial Hopf example. Exact kernels on 166 decomposable monomials through degree 24 give four primitive basis vectors, all with primitive roots. A truncated algebra control shows why a nonprimitive root of the zero primitive can appear when Frobenius is not injective.\n\nThe finite coproduct test does not build the source infinite-loop-space homology or verify its spherical classification. The Steenrod conclusion is checked by its formal Cartan argument, not a full Steenrod-module computation here.\n\n## Possible applications\n\nDescent through powers in connected polynomial Hopf algebras without choosing primitive algebra generators.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000312",
+      "record_type": "instrument",
+      "title": "Bound restriction images uniformly using only a fixed part of the generic fiber",
+      "forms": [
+        "uniform-restriction-growth",
+        "generic-fiber-interpolation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-038"
+      ],
+      "source_paper_ids": [
+        "P-000175"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex",
+          "label": "lem:uniform-restrictions",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex#L36",
+          "sha256": "48b3cf5bbc3e70e5b451a1f54272613990717efd483e3b47b47927d276dbd23f"
+        },
+        {
+          "path": "preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex",
+          "label": "eq:restriction-binomial",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex#L88",
+          "sha256": "48b3cf5bbc3e70e5b451a1f54272613990717efd483e3b47b47927d276dbd23f"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "source-uniform-estimate-built-from-classical-projection-and-interpolation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000312.md",
+      "body": "# Bound restriction images uniformly using only a fixed part of the generic fiber\n\n[Family 038](../families/openai-math-038.md) · [Source manuscript](../papers/P-000175.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nFix k such that kL embeds X. For an integral d-dimensional subvariety W, let I_W(h) be the dimension of the image of H^0(X,hL) in H^0(W,hL). Its degree in the embedding is D=k^d(L^d.W)>=D_0=k^d.\n\nA general linear projection W->P^d is finite and generically separable. Select only D_0 distinct points of its geometric generic fiber, regardless of how large D is. Products of at most D_0-1 affine linear separators interpolate arbitrary values on those selected points. After homogenization, ambient forms of degree D_0 have rank at least D_0 over the base function field. Choose D_0 independent forms from a fixed complex monomial spanning set.\n\nMultiplying each by all base monomials of degree q-D_0 gives independent restricted sections: a relation would be a function-field relation between the chosen forms. Thus\n\n$$I_W(qk)\\ge k^d\\binom{q-k^d+d}{d},\\qquad (d!I_W(qk))^{1/d}\\ge qk-k^{d+1}.$$\n\nFor each residue r modulo k, fix h_r congruent to r with h_rL globally generated. Some section is nonzero on any given W; multiplication by it is injective on restriction images because W is integral. For all sufficiently large h,\n\n$$(d!I_W(h))^{1/d}\\ge h-C_d,\\qquad C_d=\\max_r h_r+k^{d+1}.$$\n\nThe same constant can serve as a threshold. It depends on X,L,k,d, not on W or its degree. No surjectivity of restriction is needed.\n\n## Role in the source argument\n\nSupplies uniform restricted-section growth while the source minimizing center varies.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:uniform-restrictions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex#L36)\n- [eq:restriction-binomial](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/centers.tex#L88)\n\n## Antecedents and comparison\n\nThe proof combines classical generic finite projection, point interpolation and Hilbert-function counting. The extracted feature is choosing a fixed minimum fiber sample to make the constants independent of W; historical novelty of this estimate was not established.\n\n## Checks and limitations\n\n432 exact Hilbert-function comparisons for monic projective hypersurfaces and 240 residue-class bounds pass.\n\nThese models test the counting bound, not the generic projection and separability argument for every subvariety or the source minimization theorem.\n\n## Possible applications\n\nUniform estimates over families of subvarieties without controlling their individual degrees or assuming restriction surjectivity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000313",
+      "record_type": "instrument",
+      "title": "Rationalize a supporting profile without changing which polytopes contain it",
+      "forms": [
+        "incidence-preserving-rationalization",
+        "supporting-face-approximation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-038"
+      ],
+      "source_paper_ids": [
+        "P-000175"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex",
+          "label": "lem:rational-support",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex#L88",
+          "sha256": "7aa27c4e372bffe9f979b5031745bfefe49f1bb05a3b217dd99cd76ab4c258d0"
+        },
+        {
+          "path": "preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex",
+          "label": "eq:rational-support-properties",
+          "line": 142,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex#L142",
+          "sha256": "7aa27c4e372bffe9f979b5031745bfefe49f1bb05a3b217dd99cd76ab4c258d0"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "elementary-rational-polyhedral-lemma-with-exact-incidence-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000313.md",
+      "body": "# Rationalize a supporting profile without changing which polytopes contain it\n\n[Family 038](../families/openai-math-038.md) · [Source manuscript](../papers/P-000175.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nLet C be a finite indexed family of rational polytopes, possibly with repetitions. Suppose q lies in their union and a strictly positive vector b satisfies b.q=1 and b.z<=1 on every polytope containing q. Then q and b can be approximated by rational q^0,b^0, with b^0 still strictly positive, so that\n\n$$q^0\\in C\\Longleftrightarrow q\\in C,\\qquad b^0\\cdot q^0=1,\\qquad b^0\\cdot z\\le1\\quad(z\\in C\\ni q^0).$$\n\nFor each polytope containing q, take its smallest face F_C containing q. The functional b is identically one on F_C. Their intersection F is rational and contains q in its relative interior. Choose q^0 rational in F sufficiently close to q to avoid every excluded polytope; finiteness and closedness provide the necessary positive separation.\n\nWith q^0 fixed, admissible functionals form the rational polyhedron cut out by c.q^0=1 and inequalities at all vertices of the included polytopes. It contains b. Approximate b by rational points in its smallest face, preserving positivity and any specified open neighborhood.\n\nAn additional strict linear budget, such as m sum b_i<n+1, survives by choosing that neighborhood small enough. The two stages matter: unconstrained coordinate rounding does not preserve a supporting equality, even when its numerical error is small.\n\n## Role in the source argument\n\nReplaces real minimizing valuation data by rational data without introducing a forbidden positive-dimensional center or exhausting the strict divisor budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:rational-support](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex#L88)\n- [eq:rational-support-properties](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/build/sections/isolation.tex#L142)\n\n## Antecedents and comparison\n\nRational points are dense in faces of rational polyhedra. The source packages that fact in two stages to preserve the exact indexed incidence pattern as well as the supporting functional.\n\n## Checks and limitations\n\n100 exact rational approximants to an irrational shared-edge profile preserve the included faces, excluded face, equality and an open coefficient budget. Independent rounding fails the equality control.\n\nThe examples are not a general polyhedral algorithm. The source existence and geometric properties of the minimizing profile are separate unaudited inputs.\n\n## Possible applications\n\nConverting real optimal data into rational certificates while retaining active constraints and strict slack.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000314",
+      "record_type": "instrument",
+      "title": "A polynomial certificate removes the denominator from a cylinder coordinate",
+      "forms": [
+        "explicit-stabilization-certificate",
+        "denominator-removal"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-047"
+      ],
+      "source_paper_ids": [
+        "P-000176"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex",
+          "label": "prop:stabilization",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L97",
+          "sha256": "fd10c0e2eb35a5572f43263ba88ea893551415c1807f6f6c8ad6158e64caa882"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex",
+          "label": "con:h-expansion",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L166",
+          "sha256": "fd10c0e2eb35a5572f43263ba88ea893551415c1807f6f6c8ad6158e64caa882"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex",
+          "label": "con:e-certificate",
+          "line": 205,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L205",
+          "sha256": "fd10c0e2eb35a5572f43263ba88ea893551415c1807f6f6c8ad6158e64caa882"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex",
+          "label": "con:polynomial-cylinder",
+          "line": 242,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L242",
+          "sha256": "fd10c0e2eb35a5572f43263ba88ea893551415c1807f6f6c8ad6158e64caa882"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "source-explicit-formulas-with-established-residual-coordinate-antecedents",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000314.md",
+      "body": "# A polynomial certificate removes the denominator from a cylinder coordinate\n\n[Family 047](../families/openai-math-047.md) · [Source manuscript](../papers/P-000176.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nThe source starts with P=k[p,s,u,F,J], x=s^2+u^3+p^2F and H=x^2F-(1+2sx)J-p^2J^2-pu. In characteristic zero a locally nilpotent derivation, obtained as -p^2 partial_u in localized coordinates, preserves P and satisfies Delta H=p^3. Thus exp(w Delta) replaces H by H+p^3w through a polynomial automorphism.\n\nPut x_0=s^2+u^3. The determinant-one change\n\n$$L=x_0^2F-(1+2sx_0)J,\\qquad M=(1-2sx_0)F+4s^2J$$\n\nhas inverse F=4s^2L+(1+2sx_0)M and J=-(1-2sx_0)L+x_0^2M. Over B=k[p,s,u,M], write Q(L)=2x_0F(L)^2-2sF(L)J(L)-J(L)^2. Then\n\n$$H(L)=L-pu+p^2Q(L)+p^4F(L)^3.$$\n\nSet C=Q(0), Q_1=(Q-C)/L and L_*=pu-p^2C; direct substitution gives H(L_*) divisible by p^3. Define h=u-pQ(L)-p^3F(L)^3-p^2w and e_0=-w-pF(L)^3-Q_1(L)h. The decisive certificate is\n\n$$p^3e_0-(L-L_*)=(p^2Q_1(L)-1)(H(L)+p^3w).$$\n\nHence e is already in T=B[L,w]/(H+p^3w), although localization suggests only (L-L_*)/p^3. One has L=L_*+p^3e and W(e)=-H(L_*+p^3e)/p^3 is polynomial. Since T is a domain with p nonzero, its defining relation gives w=W(e). Localization shows e is algebraically independent over B, so T=B[e]. Transporting these coordinates back by the inverse exponential gives the polynomial cylinder.\n\nThe identity at the special fiber, not just a localized inverse, is the reusable certificate.\n\n## Role in the source argument\n\nProvides explicit coordinates for the source cylinder, the positive half of its cancellation claim.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:stabilization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L97)\n- [con:h-expansion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L166)\n- [con:e-certificate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L205)\n- [con:polynomial-cylinder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/02-construction.tex#L242)\n\n## Antecedents and comparison\n\n[Dutta-Lahiri, Lemma 3.3 and Theorem 3.4](https://arxiv.org/pdf/1908.03549) gives earlier exponential and residual-coordinate stabilization methods. The source supplies explicit equation-changing and denominator-removal formulas for its example. This does not establish novelty or correctness of the separate non-polynomiality assertion.\n\n## Checks and limitations\n\nExact symbolic arithmetic verifies the source relation, derivation, generator nilpotence orders 1,4,2,7,4, linear inverse, root divisibility, ideal certificate and polynomial inverse. The inverse W has 381 terms.\n\nThe rigidity proof that A is not polynomial was not audited. The certificate therefore verifies the extracted stabilization mechanism, not a failure of cancellation.\n\n## Possible applications\n\nTurning a coordinate visible after localization into a globally polynomial coordinate by exhibiting an explicit ideal-membership identity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000315",
+      "record_type": "instrument",
+      "title": "Use an adapted filtration to preserve locally nilpotent derivations and their invariants",
+      "forms": [
+        "filtered-LND-transfer",
+        "factorially-closed-invariants"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-047"
+      ],
+      "source_paper_ids": [
+        "P-000176"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex",
+          "label": "lem:induced-lnd",
+          "line": 280,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex#L280",
+          "sha256": "01c8fba41829052c46ae2e1c34ace91283808c3bcd5a6adcfa58cdca1ad7424c"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex",
+          "label": "deg:iterate",
+          "line": 316,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex#L316",
+          "sha256": "01c8fba41829052c46ae2e1c34ace91283808c3bcd5a6adcfa58cdca1ad7424c"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/05-reduction.tex",
+          "label": "lem:lnd-order",
+          "line": 36,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/05-reduction.tex#L36",
+          "sha256": "8c6e5470bfc09d98f6cca44b461d3894034cc7b90f2bd379e47990753192f6b2"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-homogenization-and-LND-order-with-explicit-adaptedness",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000315.md",
+      "body": "# Use an adapted filtration to preserve locally nilpotent derivations and their invariants\n\n[Family 047](../families/openai-math-047.md) · [Source manuscript](../papers/P-000176.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nLet a domain A have an integer-indexed degree filtration and finite generators h_i. Assume every element has a polynomial representative in those generators whose maximum monomial weight equals its actual degree. For a nonzero locally nilpotent derivation D, set j=max_(Dh_i!=0)(deg Dh_i-deg h_i).\n\nThe adapted-representative hypothesis and Leibniz imply deg Dh<=deg h+j for every h. Consequently\n\n$$D_0([h]_d)=[Dh]_{d+j},\\qquad D_0^m([h]_d)=[D^mh]_{d+mj}$$\n\ndefine a homogeneous nonzero locally nilpotent derivation on gr A. A generator attaining the maximum proves nonzeroness. If an intermediate leading class vanishes, the degree drop persists under later iterates. Thus the conclusion holds for negative j as well as positive j, and initial forms of D-invariants remain D_0-invariant.\n\nFor any LND delta on a characteristic-zero domain, its order nu(f)=max{n:delta^n f!=0} satisfies nu(fg)=nu(f)+nu(g). At the top Leibniz order exactly one term remains, with a nonzero binomial coefficient. Therefore the kernel is factorially closed. Also delta(h)!=0 implies delta(h) is not divisible by h, since differentiation lowers order by one while multiplication cannot lower it.\n\nAdaptedness cannot be omitted: in k[x,y] with ordinary total degree and generators x,x^2+y, D=partial_y has generator shift -2, but D(y)=1 drops degree only by one. The cancellation needed to represent y is exactly the missing hypothesis.\n\n## Role in the source argument\n\nTransfers additive actions to the source degeneration, then uses divisibility of invariant elements to force invariant factors.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:induced-lnd](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex#L280)\n- [deg:iterate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/03-degeneration.tex#L316)\n- [lem:lnd-order](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/05-reduction.tex#L36)\n\n## Antecedents and comparison\n\nThe source explicitly invokes the established filtered-derivation method of Kaliman-Makar-Limanov and the classical LND order argument. The extraction retains their essential representative and characteristic assumptions rather than treating generator estimates as sufficient by themselves.\n\n## Checks and limitations\n\n1,152 graded-iterate identities and 192 LND order-product identities pass in weighted polynomial models, including negative weights and shifts. The nonadapted-generator example fails the proposed bound, and characteristic two defeats factorial closure for partial_x.\n\nThe source associated-graded presentation is an input not verified here. These models do not establish its rigidity or non-polynomiality theorem.\n\n## Possible applications\n\nReplacing nonlinear additive actions by homogeneous ones while keeping enough invariants to derive a contradiction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000316",
+      "record_type": "instrument",
+      "title": "Normalize the ramified trace before taking an orthogonal quotient",
+      "forms": [
+        "relative-trace-normalization",
+        "orthogonal-quotient-evaluation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-048"
+      ],
+      "source_paper_ids": [
+        "P-000177"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex",
+          "label": "trace:pairing",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L32",
+          "sha256": "94401ad0a8100206bc0540bf524277b6daf9d4beb151e2e425f3b1ba09fae132"
+        },
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex",
+          "label": "trace:form",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L34",
+          "sha256": "94401ad0a8100206bc0540bf524277b6daf9d4beb151e2e425f3b1ba09fae132"
+        },
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex",
+          "label": "trace:dual-evaluation",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L59",
+          "sha256": "94401ad0a8100206bc0540bf524277b6daf9d4beb151e2e425f3b1ba09fae132"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-finite-duality-with-explicit-source-normalization",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000316.md",
+      "body": "# Normalize the ramified trace before taking an orthogonal quotient\n\n[Family 048](../families/openai-math-048.md) · [Source manuscript](../papers/P-000177.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nFor a local ramified map x=w^e in characteristic zero, normalize the trace pairing by the relative differential:\n\n$$\\langle b,c\\rangle=\\operatorname{Tr}\\left(\\frac{a(w)bc}{e w^{e-1}}\\right),$$\n\nwhere a is a unit. With a=1, its matrix on 1,w,...,w^(e-1) is the antidiagonal identity: the trace of w^(i+j-e+1)/e is one exactly when i+j=e-1 and zero otherwise. Multiplication by a preserves perfection. This removes the apparent ramification singularity while retaining the correct trace normalization.\n\nIn the source rank-four bundle E, self-duality and the two counts h^0(E(-1))=3 and h^0(E(-2))=2 force splitting degrees (3,0,0,-3). The positive line P=O(3) is isotropic and orthogonal to the zero-degree summands. Its orthogonal quotient P-perp/P is a trivial rank-two bundle with a constant nondegenerate form. Global sections modulo H^0(P) identify with every fiber of that quotient.\n\nAt an unramified marked point, suppose a local frame tau satisfies tau^2=s(z) dz f^2 while the reference differential is E(z) dz f^2. The trace coefficient of that one-dimensional fiber factor is s(q)/E(q). Coefficient evaluation therefore has squared dual norm E(q)/s(q). If it annihilates P, its metric dual lies in P-perp, and passing to the orthogonal quotient preserves that norm. The reciprocal is essential; it is a dual-form calculation.\n\n## Role in the source argument\n\nTransfers prescribed quadratic data to normalized residue-evaluation functionals used in the first gluing obstruction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [trace:pairing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L32)\n- [trace:form](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L34)\n- [trace:dual-evaluation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/03-trace.tex#L59)\n\n## Antecedents and comparison\n\nThis is a concrete local computation of finite-morphism duality, followed by classical isotropic reduction and the splitting theorem on P1. The source curve and section counts supply the geometric hypotheses; no new duality theorem is claimed.\n\n## Checks and limitations\n\n64 ramified residue Gram matrices have the expected nonzero determinant, 50 orthogonal quotient models preserve dual norms, and the section-count constraints select splitting (-3,0,0,3).\n\nThe computations do not establish existence of the source curve or its section counts, marked-point properties or full principal-parts identification.\n\n## Possible applications\n\nMaintaining scalar and sign normalization when moving between ramified traces, evaluation functionals and smaller quadratic spaces.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000317",
+      "record_type": "instrument",
+      "title": "A weighted divergence formula separates correctable jet orders from resonance",
+      "forms": [
+        "volume-preserving-jet-correction",
+        "resonant-order-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-048"
+      ],
+      "source_paper_ids": [
+        "P-000177"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex",
+          "label": "jets:bracket",
+          "line": 103,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L103",
+          "sha256": "857d254b95c735c59d2f0d4956bbf4cc6a38b63c8baecacf8ee0413e41cb6439"
+        },
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex",
+          "label": "jets:general-bracket",
+          "line": 109,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L109",
+          "sha256": "857d254b95c735c59d2f0d4956bbf4cc6a38b63c8baecacf8ee0413e41cb6439"
+        },
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex",
+          "label": "jets:divergence",
+          "line": 112,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L112",
+          "sha256": "857d254b95c735c59d2f0d4956bbf4cc6a38b63c8baecacf8ee0413e41cb6439"
+        },
+        {
+          "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex",
+          "label": "jets:leading-action",
+          "line": 118,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L118",
+          "sha256": "857d254b95c735c59d2f0d4956bbf4cc6a38b63c8baecacf8ee0413e41cb6439"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-Lie-calculus-with-explicit-weight-four-resonance",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000317.md",
+      "body": "# A weighted divergence formula separates correctable jet orders from resonance\n\n[Family 048](../families/openai-math-048.md) · [Source manuscript](../papers/P-000177.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nUse E_t=t partial_t and the meromorphic two-form sigma=t^(-5)dt wedge dz. For D=t^k(bE_t+h partial_z), k>0, and V=t^(ell+1)(AE_t+B partial_z), direct differentiation gives\n\n$$[D,V]=t^{k+\\ell+1}\\left(\\big((\\ell+1-k)bA+hA'-Bb'\\big)E_t+\\big((\\ell+1)bB+hB'-khA-Bh'\\big)\\partial_z\\right).$$\n\nThe weighted divergence is\n\n$$\\mathcal L_D\\sigma=t^k((k-4)b+h')\\sigma.$$\n\nFor k!=4, choosing b=h'/(4-k) makes the flow preserve sigma exactly. At k=4, b disappears from the equation: a nonconstant h cannot be compensated by a vertical coefficient. This is a genuine resonant order, not a removable denominator in the formula.\n\nFor a leading field t r E_t, the first order-k correction is Delta A_k=(1-k)br+hr' and Delta B_k=-khr. Higher commutators occur at higher order because k>0. The source uses the time-one flow of -D with the stated pushforward convention, producing exp(ad D) on vector fields.\n\nSplit coordinate changes ztilde=psi(z), ttilde=g(z)t with g^4=psi' preserve sigma. Thus the local calculation is compatible with the source fourth-root canonical-bundle convention. Local finite jets and local flows still require separate global compatibility and realization arguments.\n\n## Role in the source argument\n\nSelects transition corrections that change prescribed horizontal jets while controlling the determinant volume.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [jets:bracket](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L103)\n- [jets:general-bracket](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L109)\n- [jets:divergence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L112)\n- [jets:leading-action](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/build/04-jets.tex#L118)\n\n## Antecedents and comparison\n\nThe Lie bracket and density-weighted divergence are classical. The useful source information is the exact coefficient k-4, its resonance, and the leading-action signs.\n\n## Checks and limitations\n\n48 polynomial vector-field brackets and 40 nonresonant volume corrections pass by exact symbolic differentiation. At k=4, h=z supplies an explicit obstruction to cancelling divergence with b.\n\nThe checks do not solve the source cohomological obstructions, prove convergence or establish a Hausdorff neighborhood and contraction.\n\n## Possible applications\n\nFormal and analytic gluing where a preserved volume form imposes order-dependent solvability conditions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000318",
+      "record_type": "instrument",
+      "title": "Keep the zero-set atoms when turning a squared seminorm into curvature",
+      "forms": [
+        "singular-seminorm-curvature",
+        "degree-controlled-measure"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-050"
+      ],
+      "source_paper_ids": [
+        "P-000178"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex",
+          "label": "lem:seminorm-curvature",
+          "line": 81,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L81",
+          "sha256": "c9573ad34715877aed7c0ce02d58ddf77205f4a8a7b7dbd367bcc2d0a6dd1bc8"
+        },
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex",
+          "label": "eq:seminorm-curvature-mass",
+          "line": 99,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L99",
+          "sha256": "c9573ad34715877aed7c0ce02d58ddf77205f4a8a7b7dbd367bcc2d0a6dd1bc8"
+        },
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex",
+          "label": "eq:log-negative-part",
+          "line": 161,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L161",
+          "sha256": "c9573ad34715877aed7c0ce02d58ddf77205f4a8a7b7dbd367bcc2d0a6dd1bc8"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "established-singular-metric-principle-with-explicit-zero-set-accounting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000318.md",
+      "body": "# Keep the zero-set atoms when turning a squared seminorm into curvature\n\n[Family 050](../families/openai-math-050.md) · [Source manuscript](../papers/P-000178.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nLet a finite nonnegative plurisubharmonic function on a holomorphic line bundle be a Hermitian quadratic on each fiber and not identically zero. In a holomorphic frame write it as u(z)|w|^2. Then log u, allowing minus infinity, is subharmonic and locally integrable.\n\nRegularize by u_delta=u*rho_delta+delta using a fixed nonnegative radial approximate identity. The Levi matrix of u_delta(z)|w|^2 at w=1 is positive semidefinite, so u_delta(u_delta)_(z zbar)-|(u_delta)_z|^2>=0 and log u_delta is subharmonic. Radial means give decreasing convergence to log u.\n\nTo rule out a nonintegrable limit, begin at a point z_0 with u(z_0)>0. A common upper bound C_0 and the submean inequality give\n\n$$\\int_{B(z_0,R)}(\\log u_\\delta)^-\\,dA\\le\\pi R^2(C_0-\\log u(z_0)).$$\n\nMonotone convergence gives local integrability and L1 convergence. Overlapping disks propagate this property across the connected base. Frame changes add log|g|^2 with g nowhere zero, so the measures dd^c log u glue. A bundle isometry covering T makes this measure T-invariant.\n\nOn O(-b) over P1, compare with the reference weight (1+|z|^2)^b. Their logarithmic difference is a globally integrable function, whose distributional dd^c has total mass zero. With dd^c=i partial partialbar, the resulting positive measure has mass 2 pi b. Zeros and their atoms remain included. For u=|z|^(2r)(1+|z|^2)^(b-r), the diffuse mass is 2 pi(b-r) and the atom at zero has mass 2 pi r.\n\n## Role in the source argument\n\nConverts the source hypothetical quadratic limit into a nonzero finite measure with a prescribed total mass.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:seminorm-curvature](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L81)\n- [eq:seminorm-curvature-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L99)\n- [eq:log-negative-part](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L161)\n\n## Antecedents and comparison\n\n[Raufi, Definition 2 and Proposition 1.1 in the preprint](https://arxiv.org/pdf/1211.2948) records the established squared-norm/logarithmic-norm relation, decreasing regularization and local integrability of log determinants. The source gives a rank-one proof with explicit negative-part and total-mass accounting.\n\n## Checks and limitations\n\n44 radial singular-metric models verify the polynomial Levi identity and diffuse-plus-atomic mass, including a purely atomic curvature example. Omitting the zero-set atom loses the prescribed mass.\n\nThese models do not prove the source nonsmooth compactness theorem or existence of a nonzero quadratic limit on its bundle.\n\n## Possible applications\n\nProducing invariant measures from degenerate metrics without losing curvature concentrated at their zeros.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000319",
+      "record_type": "instrument",
+      "title": "Two odd-order projective maps with a loxodromic product admit no finite invariant measure",
+      "forms": [
+        "projective-measure-obstruction",
+        "finite-support-dynamics"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-050"
+      ],
+      "source_paper_ids": [
+        "P-000178"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex",
+          "label": "lem:no-invariant-measure",
+          "line": 259,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L259",
+          "sha256": "c9573ad34715877aed7c0ce02d58ddf77205f4a8a7b7dbd367bcc2d0a6dd1bc8"
+        },
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex",
+          "label": "lem:matrix-data",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L27",
+          "sha256": "ff7b31f96fb5c88aba05a6124cfd57a4941b44fdd09d6796c9a303cdbfeebafd"
+        },
+        {
+          "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex",
+          "label": "eq:matrices",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L19",
+          "sha256": "ff7b31f96fb5c88aba05a6124cfd57a4941b44fdd09d6796c9a303cdbfeebafd"
+        }
+      ],
+      "batch_id": "B026",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-invariant-measure-concentration-with-explicit-matrices",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000319.md",
+      "body": "# Two odd-order projective maps with a loxodromic product admit no finite invariant measure\n\n[Family 050](../families/openai-math-050.md) · [Source manuscript](../papers/P-000178.md) · [Batch B026](../../batches/B026/README.md)\n\n## Mathematical content\n\nLet A and B be projective transformations of P1 of odd finite order, with no common fixed point, and suppose AB has two eigenvalues of distinct moduli. Then they preserve no nonzero finite positive Borel measure.\n\nA common invariant measure is invariant under T=AB. In a projective coordinate, T acts by z->lambda z with R=|lambda|>1. The half-open annuli R^n<=|z|<R^(n+1), n in Z, are pairwise disjoint, cover C*, and are shifted by T. All have equal mass; finiteness and positivity force that mass to be zero. Thus the measure is supported on the two fixed points of T.\n\nIts nonempty support is preserved by A and B. An odd-order permutation of at most two points is the identity, so every support point would be fixed by both maps, contradicting the hypothesis. Half-open annuli retain boundary circles and allow atomic measures and nonreal lambda.\n\nThe source uses determinant-one lifts\n\n$$a=e^{i\\pi/3},\\quad s=\\frac12-\\frac{i(1+2\\sqrt2)}{2\\sqrt3},\\quad A=\\begin{pmatrix}a&0\\\\0&a^{-1}\\end{pmatrix},\\quad B=\\begin{pmatrix}s&1\\\\\\sqrt2/3&1-s\\end{pmatrix}.$$\n\nThey satisfy A^3=B^3=-I, trace(A^(-1)B)=-sqrt(2), and trace(AB)=1+sqrt(2)>2. The relative lift has order eight; AB has distinct positive reciprocal eigenvalues. The nonzero off-diagonal entries of B exclude either eigenline of A being common. These finite identities supply the dynamical hypotheses independently of the source vector-bundle limit argument.\n\n## Role in the source argument\n\nContradicts the invariant positive curvature measure obtained from the source hypothetical squared seminorm.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:no-invariant-measure](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/05-obstruction.tex#L259)\n- [lem:matrix-data](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L27)\n- [eq:matrices](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/build/sections/02-construction.tex#L19)\n\n## Antecedents and comparison\n\nConcentration of projective invariant measures under expanding elements is a classical Furstenberg-type mechanism. The extracted proof is an elementary rank-two annulus argument with explicit matrices, rather than a claimed new general measure theorem.\n\n## Checks and limitations\n\nExact algebraic-number arithmetic verifies determinants, matrix powers, relative order and product trace. Both possible support sizes are checked for odd-order permutations, with 75 half-open annulus instances including boundary radii.\n\nFinite matrix checks do not replace the written countable-additivity argument. They also do not establish the source bundle construction, ampleness or quadratic-limit compactness.\n\n## Possible applications\n\nRuling out invariant metrics or norms by converting them to finite positive measures and combining incompatible projective dynamics.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -16052,6 +16452,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000174.md",
       "body": "# The Stable Hurewicz Image of the Sphere at Two\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Stable-Hurewicz-Image-of-the-Sphere-at-Two-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Stable-Hurewicz-Image-of-the-Sphere-at-Two-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Stable-Hurewicz-Image-of-the-Sphere-at-Two-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that the positive stable mod-two Hurewicz image of the sphere is spanned by Hopf-invariant-one and existing Kervaire-invariant-one images, with the corresponding sphere case of Eccles conjecture.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000310: Cartier halving carries an explicit Dickson exponent floor](../instruments/MI-000310.md)\n- [MI-000311: A decomposable primitive in a polynomial Hopf algebra has a primitive root](../instruments/MI-000311.md)\n\n## Dependencies and review\n\nBinomial parity, Cartan formula, Dickson Jacobian, Milnor coinvariants, triangular polynomial derivations and Frobenius injectivity.\n\nRead the Milnor quotient and coinvariant calculations, complete Cartier proof, suspension-kernel discussion and complete primitive-root proof. The Tor injection, full tensor obstruction, fourth-power exclusion and spherical-class classification were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-316.md) · [Batch B025](../../batches/B025/README.md)"
+    },
+    {
+      "id": "P-000175",
+      "record_type": "paper",
+      "title": "Fujita's freeness conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "Fujitas-freeness-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-038"
+      ],
+      "batch_id": "B026",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "953a1235c78099eac40c524e4626b140015b63cafd7ee003eca5be5e12451049",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000175.md",
+      "body": "# Fujita's freeness conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/Fujitas-freeness-conjecture-September-23-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fujitas-freeness-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that K_X+(n+1)L is globally generated for every ample line bundle L on a smooth projective complex n-fold, with n>=1.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000312: Bound restriction images uniformly using only a fixed part of the generic fiber](../instruments/MI-000312.md)\n- [MI-000313: Rationalize a supporting profile without changing which polytopes contain it](../instruments/MI-000313.md)\n\n## Dependencies and review\n\nA very ample multiple, finite separable projection, point interpolation, multiplication in an integral coordinate ring, rational polytope faces and density of rational points.\n\nRead the complete uniform-restriction and rational-support proofs and their surrounding definitions. The exponential minimizer, elimination of positive-dimensional centers and final adjoint lifting were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-038.md) · [Batch B026](../../batches/B026/README.md)"
+    },
+    {
+      "id": "P-000176",
+      "record_type": "paper",
+      "title": "An explicit failure of complex affine-space cancellation",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-047"
+      ],
+      "batch_id": "B026",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7cc096e7caae6f62280fa2e89b73421c1497c6eb295bba25d9bb4f18bce1d373",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000176.md",
+      "body": "# An explicit failure of complex affine-space cancellation\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an explicit complex four-dimensional affine domain A with A[w] polynomial in five variables while A itself is not polynomial in four variables.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000314: A polynomial certificate removes the denominator from a cylinder coordinate](../instruments/MI-000314.md)\n- [MI-000315: Use an adapted filtration to preserve locally nilpotent derivations and their invariants](../instruments/MI-000315.md)\n\n## Dependencies and review\n\nLocally nilpotent exponential maps, unimodular linear substitutions, polynomial ideal certificates, cancellation by a nonzero divisor, adapted filtrations and iterated Leibniz.\n\nRead the complete construction and stabilization section, the induced-LND proof and the LND-order lemma. The exact associated-graded presentation, lifted additive actions and rigidity obstruction were not audited.\n\nRead ComplexCancellation.lean and the family scope. The target gives the explicit quotient polynomial, finite type, domain, Krull dimension four, a polynomial cylinder and non-isomorphism to a four-variable polynomial algebra. Stable-coordinate and general line-bundle lifting consequences are excluded. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-047.md) · [Batch B026](../../batches/B026/README.md)"
+    },
+    {
+      "id": "P-000177",
+      "record_type": "paper",
+      "title": "A singular normal affine surface with free tangent sheaf",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-048"
+      ],
+      "batch_id": "B026",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2d802e14208e5b3f100571c52dab0190e94de44d241cba465ed7c5a0221f428d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000177.md",
+      "body": "# A singular normal affine surface with free tangent sheaf\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a singular normal affine complex surface whose algebraic tangent module is free of rank two, with a single marked singular point.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000316: Normalize the ramified trace before taking an orthogonal quotient](../instruments/MI-000316.md)\n- [MI-000317: A weighted divergence formula separates correctable jet orders from resonance](../instruments/MI-000317.md)\n\n## Dependencies and review\n\nRelative dualizing trace, splitting of bundles on P1, isotropic orthogonal quotients, coordinate transformation and Lie bracket/divergence formulas.\n\nRead the complete trace-pairing proof, its quotient and evaluation normalization, and the complete jet bracket proof with coordinate and volume conventions. The prescribed curve, full principal parts, obstruction vanishing, analytic realization and algebraization were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-048.md) · [Batch B026](../../batches/B026/README.md)"
+    },
+    {
+      "id": "P-000178",
+      "record_type": "paper",
+      "title": "Ample rank-two bundles on the quadric surface without Griffiths-positive metrics",
+      "source_collection": "openai/math",
+      "upstream_slug": "ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-050"
+      ],
+      "batch_id": "B026",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6943ddb0185cc44367c4bdc18648785ae357afa89cfc6767e7383dd45e16dd68",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000178.md",
+      "body": "# Ample rank-two bundles on the quadric surface without Griffiths-positive metrics\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000318: Keep the zero-set atoms when turning a squared seminorm into curvature](../instruments/MI-000318.md)\n- [MI-000319: Two odd-order projective maps with a loxodromic product admit no finite invariant measure](../instruments/MI-000319.md)\n\n## Dependencies and review\n\nLevi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.\n\nRead the full ruling reduction, logarithmic-curvature proof, invariant-measure proof and explicit matrix lemma. The construction of the quadratic limit and the ampleness proof were not audited.\n\nRead the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-050.md) · [Batch B026](../../batches/B026/README.md)"
     }
   ],
   "families": [
@@ -16608,6 +17084,33 @@
       "body": "# Rational Hodge conjecture for CM abelian varieties\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000001](../papers/P-000001.md)\n- [P-000021](../papers/P-000021.md)\n- [P-000022](../papers/P-000022.md)\n- [P-000070](../papers/P-000070.md)\n- [P-000079](../papers/P-000079.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination\n\nFor every complex CM abelian variety the cycle map onto rational Hodge classes is surjective in every codimension; with Milne’s results this gives the Tate conjecture for abelian varieties over finite fields and the Hodge standard conjecture for abelian varieties in all characteristics. The repository describes this as one of two results produced outside its fixed computation procedure. The withdrawn eightfolds paper is not cited. The other papers in this family use this result as an input, without supplying inputs to its proof.\n\n## Extracted instruments.\n\n- [MI-000010: Four-factor switch](../instruments/MI-000010.md)\n\n- [MI-000011: Surface criterion with fixed-input variation of a rank-two theta tensor](../instruments/MI-000011.md)\n\n- [MI-000012: Degree-one CM extraction](../instruments/MI-000012.md)\n\n## Reused.\n\nLefschetz (1,1), Galois trace descent, Hodge–Riemann, Borel–Harish-Chandra, Mumford GIT, Néron models, crystalline comparison, Milne’s Hodge-to-Tate theorems, Hazama and Abdulali for the generalized conjecture.\n\n## Caveats.\n\nThe source contains about 3,900 lines of unformalized TeX. The Satake normalization, covariance of the constant line and slope formula require consistent sign conventions. The continuity assertion is a central analytic step to check.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no load-bearing (family 001 in a remark only); withdrawn papers never cited\n- Antecedents: —"
     },
     {
+      "id": "openai-math-038",
+      "record_type": "family",
+      "title": "Uniform restriction growth and rational supporting profiles",
+      "source_family": "038",
+      "source_collection": "openai/math",
+      "batch_id": "B026",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000175"
+      ],
+      "instrument_ids": [
+        "MI-000312",
+        "MI-000313"
+      ],
+      "headline": "The source claims that K_X+(n+1)L is globally generated for every ample line bundle L on a smooth projective complex n-fold, with n>=1.",
+      "central_instrument": "A fixed number of independent generic-fiber values gives a lower bound uniform over all integral subvarieties. Rational approximation inside minimal faces preserves both polytope incidences and supporting inequalities.",
+      "novelty_assessment": "Finite projection, interpolation and rational-face approximation are classical. The source supplies a uniform restriction-image estimate and an incidence-preserving support lemma. No exhaustive novelty or global Fujita proof certification is claimed.",
+      "formalization_summary": "No family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.",
+      "statement_faithfulness": "Global generation is not very ampleness. Restriction images are bounded below without assuming restriction surjectivity. Rationalizing a profile and its support functional independently can destroy their equality and incidence constraints.",
+      "dependencies": "A very ample multiple, finite separable projection, point interpolation, multiplication in an integral coordinate ring, rational polytope faces and density of rational points.",
+      "antecedents": "Classical projective projection and Hilbert-function methods; rational polyhedral geometry.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-038.md",
+      "body": "# Uniform restriction growth and rational supporting profiles\n\n## Source manuscript and claim\n\n[Fujita's freeness conjecture](../papers/P-000175.md), by OpenAI, September 23, 2026.\n\nThe source claims that K_X+(n+1)L is globally generated for every ample line bundle L on a smooth projective complex n-fold, with n>=1.\n\n## Extracted instruments\n\n- [MI-000312: Bound restriction images uniformly using only a fixed part of the generic fiber](../instruments/MI-000312.md)\n- [MI-000313: Rationalize a supporting profile without changing which polytopes contain it](../instruments/MI-000313.md)\n\n## Dependencies and antecedents\n\nA very ample multiple, finite separable projection, point interpolation, multiplication in an integral coordinate ring, rational polytope faces and density of rational points.\n\nClassical projective projection and Hilbert-function methods; rational polyhedral geometry. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete uniform-restriction and rational-support proofs and their surrounding definitions. The exponential minimizer, elimination of positive-dimensional centers and final adjoint lifting were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nGlobal generation is not very ampleness. Restriction images are bounded below without assuming restriction surjectivity. Rationalizing a profile and its support functional independently can destroy their equality and incidence constraints.\n\n[Batch record](../../batches/B026/README.md)"
+    },
+    {
       "id": "openai-math-040",
       "record_type": "family",
       "title": "Bloch’s conjecture for surfaces with p_(g) = 0",
@@ -16637,6 +17140,87 @@
       "map_formalization_summary": "no",
       "path": "catalog/families/openai-math-040.md",
       "body": "# Bloch’s conjecture for surfaces with p_(g) = 0\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000027](../papers/P-000027.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized new strategy\n\nFor every smooth connected projective complex surface with $`p_g=q=0`$, degree is an isomorphism $`CH_0(S)\\to\\mathbb Z`$ with integral coefficients; hence the full Bloch conjecture for $`p_g=0`$ (general type forces $`q=0`$, $`\\kappa<2`$ is Bloch–Kas–Lieberman). For $`p_g=0`$, the stated motivic consequences concern the rational Chow motive $`h(S)_{\\mathbb Q}`$: Kimura-finiteness and vanishing of its transcendental degree-two summand. The pure-Tate conclusions for $`h(S)_{\\mathbb Q}`$, powers $`S^m`$ and Hilbert schemes $`S^{[n]}`$ additionally require $`q=0`$. The integral zero-cycle statement does not imply an integral Tate-motive decomposition. Two unrefereed competing preprints (Guletskii, Banerjee) are cited as “proposed proofs” with no logical dependence.\n\n## Extracted instruments.\n\n- [MI-000062: Marked Chow relation from Quot-scheme localization](../instruments/MI-000062.md)\n\n- [MI-000063: Chow universality with two output factors retained and the universal diagonal coefficient](../instruments/MI-000063.md)\n\n- [MI-000064: Auxiliary-surface comparison via the divisor cosection](../instruments/MI-000064.md)\n\n## Reused.\n\nBloch–Srinivas; Roitman torsion; Graber–Pandharipande; MOP/Oprea–Pandharipande Quot obstruction theories; EGL recursion; Carlsson–Okounkov; Toën–Vaquié and Schürg–Toën–Vezzosi derived moduli; Kiem–Li cosection; Serre’s classification of indefinite unimodular lattices for $`K^{2} \\le 8`$.\n\n## Caveats.\n\nThe diagonal coefficient is a formal choice in a non-unique decomposition; detection is legitimate only because the test class is orthogonal to every divisor appearing, which the paper checks. Derived-geometric foundations (fixed obstruction theory, Manolache compatibility) are asserted in a few pages each. No fresh literature search was completed for two of the instrument comparisons.\n\n## Recorded assessment\n\n- Novelty: new strategy\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no (two unrefereed competing preprints cited, not used)\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-047",
+      "record_type": "family",
+      "title": "Polynomial cylinder certificates and filtered derivation control",
+      "source_family": "047",
+      "source_collection": "openai/math",
+      "batch_id": "B026",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000176"
+      ],
+      "instrument_ids": [
+        "MI-000314",
+        "MI-000315"
+      ],
+      "headline": "The source claims an explicit complex four-dimensional affine domain A with A[w] polynomial in five variables while A itself is not polynomial in four variables.",
+      "central_instrument": "A finite exponential changes the equation, after which an explicit ideal-membership certificate removes a localized coordinate denominator. Degree-exact representatives let a locally nilpotent derivation pass to the associated graded algebra.",
+      "novelty_assessment": "Residual-coordinate stabilization and homogenization of locally nilpotent derivations have established antecedents. The explicit cylinder arithmetic is checked here; the claimed obstruction to A being polynomial is not certified.",
+      "formalization_summary": "Read ComplexCancellation.lean and the family scope. The target gives the explicit quotient polynomial, finite type, domain, Krull dimension four, a polynomial cylinder and non-isomorphism to a four-variable polynomial algebra. Stable-coordinate and general line-bundle lifting consequences are excluded. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Localization alone does not provide a coordinate at p=0. The certificate is polynomial before localization. The filtered derivation argument requires exact weighted representatives, and LND order additivity requires a characteristic-zero domain.",
+      "dependencies": "Locally nilpotent exponential maps, unimodular linear substitutions, polynomial ideal certificates, cancellation by a nonzero divisor, adapted filtrations and iterated Leibniz.",
+      "antecedents": "El Kahoui-Ouali and Dutta-Lahiri on residual and stable coordinates; Kaliman-Makar-Limanov filtered derivations; classical factorial closure of LND kernels.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-047.md",
+      "body": "# Polynomial cylinder certificates and filtered derivation control\n\n## Source manuscript and claim\n\n[An explicit failure of complex affine-space cancellation](../papers/P-000176.md), by OpenAI, September 23, 2026.\n\nThe source claims an explicit complex four-dimensional affine domain A with A[w] polynomial in five variables while A itself is not polynomial in four variables.\n\n## Extracted instruments\n\n- [MI-000314: A polynomial certificate removes the denominator from a cylinder coordinate](../instruments/MI-000314.md)\n- [MI-000315: Use an adapted filtration to preserve locally nilpotent derivations and their invariants](../instruments/MI-000315.md)\n\n## Dependencies and antecedents\n\nLocally nilpotent exponential maps, unimodular linear substitutions, polynomial ideal certificates, cancellation by a nonzero divisor, adapted filtrations and iterated Leibniz.\n\nEl Kahoui-Ouali and Dutta-Lahiri on residual and stable coordinates; Kaliman-Makar-Limanov filtered derivations; classical factorial closure of LND kernels. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete construction and stabilization section, the induced-LND proof and the LND-order lemma. The exact associated-graded presentation, lifted additive actions and rigidity obstruction were not audited.\n\nRead ComplexCancellation.lean and the family scope. The target gives the explicit quotient polynomial, finite type, domain, Krull dimension four, a polynomial cylinder and non-isomorphism to a four-variable polynomial algebra. Stable-coordinate and general line-bundle lifting consequences are excluded. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nLocalization alone does not provide a coordinate at p=0. The certificate is polynomial before localization. The filtered derivation argument requires exact weighted representatives, and LND order additivity requires a characteristic-zero domain.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/047.md) · [Batch record](../../batches/B026/README.md)"
+    },
+    {
+      "id": "openai-math-048",
+      "record_type": "family",
+      "title": "Normalized trace pairings and volume-preserving jet corrections",
+      "source_family": "048",
+      "source_collection": "openai/math",
+      "batch_id": "B026",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000177"
+      ],
+      "instrument_ids": [
+        "MI-000316",
+        "MI-000317"
+      ],
+      "headline": "The source claims a singular normal affine complex surface whose algebraic tangent module is free of rank two, with a single marked singular point.",
+      "central_instrument": "Normalize a ramified trace pairing by the relative differential, then pass to an orthogonal quotient. Compute homogeneous jet corrections relative to a meromorphic volume form and isolate the resonant order.",
+      "novelty_assessment": "Finite-morphism duality, orthogonal reduction and Lie derivative calculations are established. The source-specific normalizations and resonant coefficient are extracted; the claimed Lipman-Zariski counterexample is not certified.",
+      "formalization_summary": "No family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.",
+      "statement_faithfulness": "The trace is not divided by the covering degree. Evaluation norms belong to the dual quadratic form. Volume-preserving correction by b=hprime/(4-k) excludes k=4 and does not itself solve a global gluing problem.",
+      "dependencies": "Relative dualizing trace, splitting of bundles on P1, isotropic orthogonal quotients, coordinate transformation and Lie bracket/divergence formulas.",
+      "antecedents": "Grothendieck finite-morphism duality and P1 bundle splitting; classical local vector-field calculus.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-048.md",
+      "body": "# Normalized trace pairings and volume-preserving jet corrections\n\n## Source manuscript and claim\n\n[A singular normal affine surface with free tangent sheaf](../papers/P-000177.md), by OpenAI, September 23, 2026.\n\nThe source claims a singular normal affine complex surface whose algebraic tangent module is free of rank two, with a single marked singular point.\n\n## Extracted instruments\n\n- [MI-000316: Normalize the ramified trace before taking an orthogonal quotient](../instruments/MI-000316.md)\n- [MI-000317: A weighted divergence formula separates correctable jet orders from resonance](../instruments/MI-000317.md)\n\n## Dependencies and antecedents\n\nRelative dualizing trace, splitting of bundles on P1, isotropic orthogonal quotients, coordinate transformation and Lie bracket/divergence formulas.\n\nGrothendieck finite-morphism duality and P1 bundle splitting; classical local vector-field calculus. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete trace-pairing proof, its quotient and evaluation normalization, and the complete jet bracket proof with coordinate and volume conventions. The prescribed curve, full principal parts, obstruction vanishing, analytic realization and algebraization were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nThe trace is not divided by the covering degree. Evaluation norms belong to the dual quadratic form. Volume-preserving correction by b=hprime/(4-k) excludes k=4 and does not itself solve a global gluing problem.\n\n[Batch record](../../batches/B026/README.md)"
+    },
+    {
+      "id": "openai-math-050",
+      "record_type": "family",
+      "title": "From a degenerate squared seminorm to a dynamical measure obstruction",
+      "source_family": "050",
+      "source_collection": "openai/math",
+      "batch_id": "B026",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000178"
+      ],
+      "instrument_ids": [
+        "MI-000318",
+        "MI-000319"
+      ],
+      "headline": "The source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.",
+      "central_instrument": "A nonzero plurisubharmonic squared seminorm on a negative line bundle produces a positive curvature measure retaining zero-set atoms. Two finite-order projective maps with a loxodromic product exclude any invariant finite positive measure.",
+      "novelty_assessment": "Singular metric curvature and projective invariant-measure obstructions are established. The source combines them with explicit matrices and a proposed quadratic-limit construction. That compactness construction and the global Griffiths counterexample are not certified.",
+      "formalization_summary": "Read the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Zeros of the seminorm may contribute curvature atoms and cannot be excised. The invariant-measure argument needs a finite positive measure. No numerical threshold for the source bundle family follows from this extraction.",
+      "dependencies": "Levi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.",
+      "antecedents": "Raufi and Berndtsson-Paun singular Hermitian metric theory; classical Furstenberg-type concentration of projective invariant measures.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-050.md",
+      "body": "# From a degenerate squared seminorm to a dynamical measure obstruction\n\n## Source manuscript and claim\n\n[Ample rank-two bundles on the quadric surface without Griffiths-positive metrics](../papers/P-000178.md), by OpenAI, September 24, 2026.\n\nThe source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.\n\n## Extracted instruments\n\n- [MI-000318: Keep the zero-set atoms when turning a squared seminorm into curvature](../instruments/MI-000318.md)\n- [MI-000319: Two odd-order projective maps with a loxodromic product admit no finite invariant measure](../instruments/MI-000319.md)\n\n## Dependencies and antecedents\n\nLevi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.\n\nRaufi and Berndtsson-Paun singular Hermitian metric theory; classical Furstenberg-type concentration of projective invariant measures. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full ruling reduction, logarithmic-curvature proof, invariant-measure proof and explicit matrix lemma. The construction of the quadratic limit and the ampleness proof were not audited.\n\nRead the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nZeros of the seminorm may contribute curvature atoms and cannot be excised. The invariant-measure argument needs a finite positive measure. No numerical threshold for the source bundle family follows from this extraction.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/050.md) · [Batch record](../../batches/B026/README.md)"
     },
     {
       "id": "openai-math-074",

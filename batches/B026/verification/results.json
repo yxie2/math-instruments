@@ -1,0 +1,62 @@
+{
+  "batch": "B026",
+  "status": "passed",
+  "check_groups": {
+    "restriction_counts": {
+      "hypersurface_Hilbert_comparisons": 432,
+      "residue_class_bounds": 240,
+      "scope": "Exact Hilbert functions and bound arithmetic; not uniform generic projection for every subvariety."
+    },
+    "rational_faces": {
+      "exact_rational_approximants": 100,
+      "scope": "Shared-face incidence and strict-budget examples; not an algorithm for every rational polytope family."
+    },
+    "cylinder_certificate": {
+      "symbolic_certificate": "passed",
+      "generator_nilpotence_orders": [
+        1,
+        4,
+        2,
+        7,
+        4
+      ],
+      "inverse_polynomial_terms": 381,
+      "scope": "Exact source cylinder identities and inverse; no non-polynomiality or rigidity verification."
+    },
+    "filtered_derivations": {
+      "graded_iterate_identities": 1152,
+      "LND_order_products": 192,
+      "scope": "Weighted polynomial models with positive and negative degrees; no source associated-graded presentation."
+    },
+    "trace_pairing": {
+      "ramified_residue_Gram_models": 64,
+      "orthogonal_quotient_norms": 50,
+      "splitting_solutions": [
+        [
+          -3,
+          0,
+          0,
+          3
+        ]
+      ],
+      "scope": "Local perfect-pairing algebra; no source curve or principal-parts construction."
+    },
+    "jet_brackets": {
+      "polynomial_brackets": 48,
+      "nonresonant_volume_corrections": 40,
+      "scope": "Exact local vector-field algebra; no convergence or global obstruction vanishing."
+    },
+    "logarithmic_curvature": {
+      "radial_singular_metrics": 44,
+      "maximum_mass_error": 0.0,
+      "scope": "Polynomial Levi identities and diffuse-plus-atomic mass models; no nonsmooth compactness theorem."
+    },
+    "invariant_measure_obstruction": {
+      "exact_matrix_data": "passed",
+      "small_support_permutations": 2,
+      "half_open_annulus_checks": 75,
+      "scope": "Exact matrix and finite partition data; infinite-measure exclusion is the written countable-additivity argument."
+    }
+  },
+  "limitations": "Checks concern selected finite mechanisms, not Fujita freeness, cancellation failure, Lipman-Zariski or Griffiths counterexamples."
+}
