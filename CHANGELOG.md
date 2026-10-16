@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B046: eight selected interfaces from families 054, 060, 062 and 069, with explicit antecedents and separation of local algebra from global geometry.
+
 - Added B045 curation: three cross-family patterns, a practical research guide, reproducible batch runners and an aggregate B002-B044 source/verification audit. Clarified coverage and evidence scopes.
 
 - Added B044: eight selected interfaces from families 136, 169, 172 and 183, with exact constraint preservation and explicit uniformity requirements.
