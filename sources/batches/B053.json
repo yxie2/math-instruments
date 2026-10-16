@@ -1,0 +1,332 @@
+{
+  "batch_id": "B053",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T15:41:02.467295+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BiholderTransport.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BiholderTransport.lean",
+      "sha256": "0a01595c5b2289901b195b6a358e5c463146d6e1f3a106250139672bed2ff20e",
+      "bytes": 5413
+    },
+    {
+      "path": "lean/ComparatorChallenges/HarmonicGrowth.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HarmonicGrowth.lean",
+      "sha256": "02c9e5d8654bbbd6cc4de899fcaaf1fa550252cb0b3f3418921ffb8711f263fb",
+      "bytes": 4511
+    },
+    {
+      "path": "lean/ComparatorChallenges/WeakMTWGlobalSupport.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/WeakMTWGlobalSupport.lean",
+      "sha256": "7cb7b3cb07bfd7a6ba8f2e289dcf95e7dc7b722a6b2f679a47ecec0da7e34f35",
+      "bytes": 2699
+    },
+    {
+      "path": "lean/docs/360.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/360.md",
+      "sha256": "36af7a15e7d017d426bf0b9b6468f43d18dc417ffa0715d39bd515472d8423c5",
+      "bytes": 1927
+    },
+    {
+      "path": "lean/docs/361.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/361.md",
+      "sha256": "7a50bdfdb110e6ac9e68339e488130eeb67abd141aeb76f2889eee3669579c91",
+      "bytes": 1125
+    },
+    {
+      "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/README.md",
+      "sha256": "9c9b67915893258ffd667a8b33129fd88c4ad033356449da0a8b8f9473aa6a2e",
+      "bytes": 770
+    },
+    {
+      "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+      "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa",
+      "bytes": 41087
+    },
+    {
+      "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/README.md",
+      "sha256": "114f14872c8ce81b69e5540ef84ac7d73870373955e68b1a1b43528c055c2fa3",
+      "bytes": 1134
+    },
+    {
+      "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+      "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9",
+      "bytes": 14237
+    },
+    {
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/README.md",
+      "sha256": "6a3ec59063b4c6c0bdce423dc640d142dd78eac036ca0296e82cc1c78dad7e9d",
+      "bytes": 1719
+    },
+    {
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+      "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f",
+      "bytes": 28427
+    },
+    {
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+      "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c",
+      "bytes": 23791
+    },
+    {
+      "path": "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/README.md",
+      "sha256": "40d2d0dd11252f25c3a2ae7865ea4f0bb8fb24dc57768f4a7069c633b1091cc5",
+      "bytes": 686
+    },
+    {
+      "path": "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex",
+      "sha256": "7429b52ce2e47a8ec7a82116f7ce4520081484e0c808faeb967aea42e6d7d392",
+      "bytes": 28982
+    },
+    {
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/README.md",
+      "sha256": "4c96eeba4c13db8a8f8af1ef7b6f2716868b9431ff4a10c353b7f1cc18af0dd0",
+      "bytes": 596
+    },
+    {
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+      "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8",
+      "bytes": 56608
+    },
+    {
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+      "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57",
+      "bytes": 41511
+    },
+    {
+      "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/README.md",
+      "sha256": "be5b5729e1cf814ccc6c0898ca43ff5356c2aaa80c00da72b213cf66cef733cb",
+      "bytes": 596
+    },
+    {
+      "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+      "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1",
+      "bytes": 46270
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000520",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+      "label": "glue:inverse",
+      "line": 416,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L416",
+      "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+    },
+    {
+      "instrument_id": "MI-000520",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+      "label": "glue:special-error",
+      "line": 454,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L454",
+      "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+    },
+    {
+      "instrument_id": "MI-000520",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+      "label": "glue:special-neumann-identity",
+      "line": 511,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L511",
+      "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+    },
+    {
+      "instrument_id": "MI-000521",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+      "label": "ana:interpolation",
+      "line": 467,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L467",
+      "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+    },
+    {
+      "instrument_id": "MI-000521",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+      "label": "ana:fourth-small",
+      "line": 477,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L477",
+      "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+    },
+    {
+      "instrument_id": "MI-000521",
+      "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+      "label": "ana:no-time-smallness",
+      "line": 521,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L521",
+      "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+    },
+    {
+      "instrument_id": "MI-000522",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+      "label": "flow:radii",
+      "line": 460,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L460",
+      "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+    },
+    {
+      "instrument_id": "MI-000522",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+      "label": "flow:finite-length",
+      "line": 566,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L566",
+      "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+    },
+    {
+      "instrument_id": "MI-000522",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+      "label": "flow:bad-convolution",
+      "line": 616,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L616",
+      "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+    },
+    {
+      "instrument_id": "MI-000523",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+      "label": "arr:gevrey",
+      "line": 508,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L508",
+      "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+    },
+    {
+      "instrument_id": "MI-000523",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+      "label": "arr:moment-sum",
+      "line": 564,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L564",
+      "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+    },
+    {
+      "instrument_id": "MI-000523",
+      "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+      "label": "arr:telescoping-remainder",
+      "line": 579,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L579",
+      "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+    },
+    {
+      "instrument_id": "MI-000524",
+      "path": "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex",
+      "label": "lem:covering-homeomorphism",
+      "line": 472,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex#L472",
+      "sha256": "7429b52ce2e47a8ec7a82116f7ce4520081484e0c808faeb967aea42e6d7d392"
+    },
+    {
+      "instrument_id": "MI-000525",
+      "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+      "label": "jet:matrix",
+      "line": 1087,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1087",
+      "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+    },
+    {
+      "instrument_id": "MI-000525",
+      "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+      "label": "jet:projected-matrix",
+      "line": 1107,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1107",
+      "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+    },
+    {
+      "instrument_id": "MI-000525",
+      "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+      "label": "jet:limiting-center",
+      "line": 722,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L722",
+      "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+    },
+    {
+      "instrument_id": "MI-000526",
+      "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+      "label": "lem:hopf-distribution",
+      "line": 21,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L21",
+      "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+    },
+    {
+      "instrument_id": "MI-000526",
+      "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+      "label": "eq:hopf-multiplicity",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L27",
+      "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+    },
+    {
+      "instrument_id": "MI-000526",
+      "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+      "label": "eq:harmonic-multiplicity-asymptotic",
+      "line": 58,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L58",
+      "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+    },
+    {
+      "instrument_id": "MI-000527",
+      "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+      "label": "n:lem-two-directions",
+      "line": 154,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L154",
+      "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+    },
+    {
+      "instrument_id": "MI-000527",
+      "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+      "label": "n:eq-conformal-variation",
+      "line": 180,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L180",
+      "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+    },
+    {
+      "instrument_id": "MI-000527",
+      "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+      "label": "n:eq-product-pair",
+      "line": 189,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L189",
+      "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-352",
+      "extracted_slugs": [
+        "A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-355",
+      "extracted_slugs": [
+        "Tangent-flow-uniqueness-2026-09-24"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-360",
+      "extracted_slugs": [
+        "Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026",
+        "Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-361",
+      "extracted_slugs": [
+        "A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026",
+        "A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}

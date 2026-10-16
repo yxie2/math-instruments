@@ -1,0 +1,62 @@
+{
+  "batch": "B053",
+  "status": "passed",
+  "checks": {
+    "particular_error": {
+      "status": "passed",
+      "rectangular_models": 12,
+      "neumann_remainder_bounds": 36,
+      "control": "Right inverse has norm at least one and a nontrivial operator kernel."
+    },
+    "holder_interpolation": {
+      "status": "passed",
+      "parabolic_grid_models": 40,
+      "fourier_mode_scalings": 12,
+      "symbolic_pde_identity": true,
+      "equal_exponent_control": "nonvanishing seminorm"
+    },
+    "delayed_radii": {
+      "status": "passed",
+      "energy_sequences": 20,
+      "prefixes": 375,
+      "good_indices": 182,
+      "bad_indices": 193,
+      "rho_upper_bound": 0.0641036782020762,
+      "scope": "C is computed for each finite model; no geometric gradient inequality is certified."
+    },
+    "gevrey_telescope": {
+      "status": "passed",
+      "moment_bounds": 153,
+      "stopped_remainders": 105,
+      "precision_digits": 75,
+      "scope": "Finite analytic telescopes, including orders beyond the stopping scale."
+    },
+    "covering_indices": {
+      "status": "passed",
+      "finite_cyclic_homomorphisms": 820,
+      "multiple_sheet_circle_controls": 18,
+      "scope": "Illustrates the index mechanism; the manifold theorem is checked analytically."
+    },
+    "determinant_gain": {
+      "status": "passed",
+      "exact_positive_definite_models": 60,
+      "missing_direction_control": "zero determinant"
+    },
+    "hopf_weights": {
+      "status": "passed",
+      "multiplicity_laws": 126,
+      "surjective_contraction_matrices": 18,
+      "beta_binomial_and_coupling_checks": "exact"
+    },
+    "conformal_splitting": {
+      "status": "passed",
+      "sphere_gram_matrix": "Matrix([[12/5, 0], [0, 12/5]])",
+      "independent_splitting_directions": 2,
+      "even_directions": true,
+      "commutator_models": 60,
+      "scope": "Degree-one sphere pair and finite eigenspace compression; unique continuation is an analytic input."
+    }
+  },
+  "elapsed_seconds": 1.425,
+  "scope": "Finite identities and models only; no source headline theorem or Lean solution certified."
+}

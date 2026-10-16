@@ -22046,6 +22046,392 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000519.md",
       "body": "# Optimize a boundary penalty in the dual energy norm\n\n[Family 358](../families/openai-math-358.md) · [Source manuscript](../papers/P-000290.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nSuppose endpoint data X and nonnegative energy E satisfy |q^T X|^2<=S(q,q)E for every covector q, with S positive definite. For mu>0, a distinguished covector e and any real alpha, split p^T X=(p-alpha e)^T X+alpha e^T X. Cauchy-Schwarz gives\n\n|p^T X|^2 <= [S(p-alpha e,p-alpha e)+alpha^2/mu] [E+mu(e^T X)^2].\n\nMinimizing the first factor at alpha=S(p,e)/(S(e,e)+mu^(-1)) gives S(p,p)-S(p,e)^2/[S(e,e)+mu^(-1)]. This is the dual-energy improvement supplied by one measured boundary component. It is also the rank-one inverse identity p^T(S^(-1)+mu ee^T)^(-1)p when S is represented by a matrix.\n\nIn the source, E is the sum of a weighted L2 energy for xi and the Dirichlet energy integral[w_dot^2-F''w^2/2] with w vanishing at both ends and F''<=0. The endpoint functional has Gram form S(q,r)=integral q^T P r + <Phi_q,Phi_r>_(D*). Riesz representation supplies the initial dual bound. Its index form is bounded below by E+mu(e^T X)^2-(p^T X)^2/L, so proving that the optimized factor is at most L suffices for nonnegativity. That last uniform estimate is additional geometric work, not part of the algebraic identity.\n\n## Role in the source argument\n\nAllows a rank-one boundary contribution to compensate a potentially negative tangential term in the source returning-geodesic index form.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:turning-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L146)\n- [eq:turning-minimum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L158)\n\n## Antecedents and comparison\n\nThe optimization is a classical completion of squares, equivalently the Sherman-Morrison rank-one inverse identity. The complete source duality proof was read; no novelty claim is made for the identity. Its use with this geometric energy is the source interface.\n\n## Checks and limitations\n\nExact rational Hilbert-space models verify the optimized inequality, the rank-one inverse formula and equality at a maximizing vector. They also show that no improvement occurs when S(p,e)=0.\n\nThe check does not establish the source uniform bound on S, turning-time margins or absence of conjugate points.\n\n## Possible applications\n\nImproving an energy estimate when a boundary condition controls only one linear component of the endpoint data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000520",
+      "record_type": "instrument",
+      "title": "Preserve smallness of a particular error through a Neumann correction",
+      "forms": [
+        "particular-error-right-inverse",
+        "parametrix-defect-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-352"
+      ],
+      "source_paper_ids": [
+        "P-000291"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+          "label": "glue:inverse",
+          "line": 416,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L416",
+          "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+        },
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+          "label": "glue:special-error",
+          "line": 454,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L454",
+          "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+        },
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex",
+          "label": "glue:special-neumann-identity",
+          "line": 511,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L511",
+          "sha256": "cc3e85abfbb32438d6e35ab1c63e7f8d084d33cbda6ae3a673b363455827936f"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-neumann-series-with-source-error-splitting",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000520.md",
+      "body": "# Preserve smallness of a particular error through a Neumann correction\n\n[Family 352](../families/openai-math-352.md) · [Source manuscript](../papers/P-000291.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nLet P:X->Y and D_app:Y->X be bounded operators between Banach spaces with P D_app=I+R and ||R||<=r<1. Then D=D_app(I+R)^(-1) is a right inverse and ||D||<=||D_app||/(1-r). Neither injectivity of P nor smallness of ||D|| is required.\n\nSuppose X embeds continuously into a weaker space X' and a distinguished error splits as E=f_c+f_e. The exact identity D f_e=D_app f_e-D R f_e gives\n\n||D E||_(X') <= ||D||_(Y->X') ||f_c||_Y + ||D_app f_e||_(X') + ||D||_(Y->X') ||R f_e||_Y.\n\nThus the corrected output can be small even if the original error is not small in Y and the inverse norm remains bounded away from zero. It is enough to control the approximate output and the defect on this particular exterior source.\n\nThe source uses the inner output cutoff to split its compact error. The exterior part misses the inner input support exactly, so only the outer zero-data solution and outer commutator remain. Higher regularity makes its approximate output small in X', and short-time lower-derivative estimates make its defect small. This produces the three small terms beta^(2-2delta), eta^((alpha'-alpha)/4) and eta^((1-alpha)/4), conditional on the earlier geometric and parabolic estimates.\n\n## Role in the source argument\n\nSupplies the small corrected residual needed for the source nonlinear contraction despite the absence of a small full inverse norm.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [glue:inverse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L416)\n- [glue:special-error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L454)\n- [glue:special-neumann-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/compact.tex#L511)\n\n## Antecedents and comparison\n\nThis is the classical Neumann-series correction of a parametrix, with the exact rearrangement D(I+R)=D_app applied to one source. A targeted literature search did not establish priority for the source cutoff split; the algebraic identity itself is not presented as new.\n\n## Checks and limitations\n\nExact rational rectangular operators verify the right-inverse identity, the particular-error bound and finite Neumann remainder bounds. The models have a nontrivial kernel and an inverse norm that need not tend to zero.\n\nNo finite model verifies the source support geometry, fourth-order Schauder estimates or singularity construction.\n\n## Possible applications\n\nGluing arguments where the residual is large in the forcing norm but its correction is small in the norm used for the nonlinear step.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000521",
+      "record_type": "instrument",
+      "title": "Gain short-time spatial smallness by lowering the Holder exponent",
+      "forms": [
+        "zero-trace-holder-exponent-gap",
+        "short-time-spatial-norm-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-352"
+      ],
+      "source_paper_ids": [
+        "P-000291"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+          "label": "ana:interpolation",
+          "line": 467,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L467",
+          "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+        },
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+          "label": "ana:fourth-small",
+          "line": 477,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L477",
+          "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+        },
+        {
+          "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex",
+          "label": "ana:no-time-smallness",
+          "line": 521,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L521",
+          "sha256": "1e70642e51a95d603a5b29cdb6f35ae316f107cac61601f78e80059b88f8102c"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-holder-interpolation-with-sharp-scaling-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000521.md",
+      "body": "# Gain short-time spatial smallness by lowering the Holder exponent\n\n[Family 352](../families/openai-math-352.md) · [Source manuscript](../papers/P-000291.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nUse the fourth-order parabolic metric d_p((x,t),(y,s))=|x-y|+|t-s|^(1/4). Suppose 0<alpha<alpha'<1 and a function g has zero initial trace, elapsed scaled time at most eta<=1, and [g]_(alpha')<=M. Then ||g||_infinity<=M eta^(alpha'/4). Splitting distances at the crossover between 2||g||_infinity and M d_p^(alpha') gives\n\n[g]_alpha <= (2||g||_infinity)^(1-alpha/alpha') M^(alpha/alpha') <= C M eta^((alpha'-alpha)/4).\n\nApply this to every spatial derivative through order four of a zero-data solution whose full higher-exponent parabolic norm is bounded uniformly. The weaker norm retaining these spatial derivatives, including their temporal Holder quotients, is small by eta^((alpha'-alpha)/4). The first time derivative is excluded: at the initial face the equation can give u_t=f.\n\nThe source supplies the exact circle solution u_N(z,t)=N^(-4-a)(1-exp(-N^4 t)) cos(Nz), f_N=N^(-a)cos(Nz), T_N=N^(-4). At t=T_N the fourth spatial derivative has spatial alpha seminorm of order N^(alpha-a). Thus equal exponents a=alpha give no uniform smallness, whereas a=alpha' gives the stated scale. This is a genuine exponent-gap requirement, not merely a choice of notation.\n\n## Role in the source argument\n\nMakes the source exterior correction small in its spatial norm while retaining the temporal Holder control needed for gluing.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ana:interpolation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L467)\n- [ana:fourth-small](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L477)\n- [ana:no-time-smallness](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/build/sections/parabolic.tex#L521)\n\n## Antecedents and comparison\n\nThe two-bound crossover proof is the standard interpolation inequality between a supremum norm and a stronger Holder seminorm. The complete source proof and its explicit fourth-order Fourier-mode control were read. No new interpolation theorem is claimed.\n\n## Checks and limitations\n\nFinite parabolic grids check the crossover inequality and zero-trace bound. Exact Fourier-mode formulas check the equation, the exponent-gap scaling and the non-small initial time derivative.\n\nThe tests assume the higher-regularity bound; they do not establish a uniform Schauder theorem or the source Calabi-flow solution.\n\n## Possible applications\n\nShort-time perturbation arguments that need fourth spatial derivatives small while allowing the forcing to be nonzero at the initial time.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000522",
+      "record_type": "instrument",
+      "title": "Absorb delayed Gaussian errors on every finite energy prefix",
+      "forms": [
+        "delayed-radius-error-convolution",
+        "finite-prefix-gradient-length"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-355"
+      ],
+      "source_paper_ids": [
+        "P-000292"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+          "label": "flow:radii",
+          "line": 460,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L460",
+          "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+        },
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+          "label": "flow:finite-length",
+          "line": 566,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L566",
+          "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+        },
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex",
+          "label": "flow:bad-convolution",
+          "line": 616,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L616",
+          "sha256": "1e74ed831f0da389d5efb0a2f1fd67a474c369f2d2489a3b51b665b7ba2c6a57"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "discrete-gradient-antecedent-with-source-delayed-error-absorption",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000522.md",
+      "body": "# Absorb delayed Gaussian errors on every finite energy prefix\n\n[Family 355](../families/openai-math-355.md) · [Source manuscript](../papers/P-000292.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nLet E_j be nonnegative and nonincreasing, with a_j=sqrt(E_j-E_(j+1)) and E_0<1. Choose Q>1, set r_j=sqrt(8 log(1/a_j)) with r_j=infinity at zero, and define R_j=min{Q^j R_in, min_(i<=j)Q^(j-i)r_i}. Then R_(j+1)=min{Q R_j,r_(j+1)}. This remembers every previous restriction while respecting a one-step radius-growth constraint.\n\nAssume E_(j+1)^(1-theta)<=C[a_j+exp(-(1-eta)R_j^2/8)], with 0<eta<c<theta and p=(theta-c)/(1-c) in (0,1/2). Set kappa=(1-eta)/(1-c)>1, q=Q^2 and h=kappa/8. Call j good when its exponential term is at most a_j^(1-c). On good indices the gradient bound and concavity give a_j<=C'(E_j^p-E_(j+1)^p), treating E_(j+1)>=E_j/2 and its complement separately.\n\nAt a bad index, a_j<exp(-hR_j^2)=max{exp(-h q^j R_in^2), max_(i<=j)a_i^(kappa q^(j-i))}. Its own positive term a_j^kappa is smaller than a_j, so\n\na_j<=exp(-h q^j R_in^2)+sum_(i<j)a_i^(kappa q^(j-i)).\n\nIf delta=sqrt(E_0), the convolution costs at most rho(delta) sum a_j on each finite prefix, where rho(delta)<=delta^(kappa q-1)/(1-delta^(kappa(q-1))) tends to zero. The initial-radius tail is at most B(R)=exp(-hR^2)/(1-exp(-h(q-1)R^2)). Choosing rho<=1/2 gives sum_(j=0)^n a_j<=2[C'E_0^p+B(R_in)], uniformly in n. This finite-prefix argument avoids assuming summability before closing a bootstrap.\n\n## Role in the source argument\n\nControls cumulative motion and cutoff errors while the source graphical radius is constrained by propagation from earlier slices.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [flow:radii](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L460)\n- [flow:finite-length](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L566)\n- [flow:bad-convolution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/flow.tex#L616)\n\n## Antecedents and comparison\n\n[Colding-Minicozzi, Uniqueness of blowups and Lojasiewicz inequalities](https://arxiv.org/pdf/1312.4046), Lemma 6.22 and its complete proof on pages 42-43, derive summability of square-root energy drops from a discrete gradient inequality. Those passages were read. The selected source adds its delayed-radius convolution; no earliest-priority claim for that addition is made.\n\n## Checks and limitations\n\nFinite nonincreasing energy sequences test the radius recursion, the good/bad split, exclusion of the current index, the convolution bound and the final prefix estimate. A control records why kappa>1 is necessary for exclusion.\n\nThe finite sequence checks do not prove that the source mean curvature flow satisfies the required localized inequality or propagation estimates.\n\n## Possible applications\n\nBootstrap arguments in which a local gradient inequality carries a rapidly decaying error and admissible localization scales depend on their past.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000523",
+      "record_type": "instrument",
+      "title": "Convert exponentially close stopped approximants into all-orders Gevrey bounds",
+      "forms": [
+        "shrinking-disk-geometric-telescope",
+        "all-orders-gevrey-remainder"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-355"
+      ],
+      "source_paper_ids": [
+        "P-000292"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+          "label": "arr:gevrey",
+          "line": 508,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L508",
+          "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+        },
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+          "label": "arr:moment-sum",
+          "line": 564,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L564",
+          "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+        },
+        {
+          "path": "preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex",
+          "label": "arr:telescoping-remainder",
+          "line": 579,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L579",
+          "sha256": "6e8e844a01d513f12f643aa691ce5fb8ca9cef1331557fc69986ba6263036fe8"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-exponential-gevrey-mechanism-in-stopped-disk-form",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000523.md",
+      "body": "# Convert exponentially close stopped approximants into all-orders Gevrey bounds\n\n[Family 355](../families/openai-math-355.md) · [Source manuscript](../papers/P-000292.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nLet k,R_0,d,c>0, R_j=R_0 Lambda^j with Lambda>1, r_j=d R_j^(-2/k), and let F_j be holomorphic on the complete disk |s|<=r_j. Assume ||F_j-F_(j-1)||<=C exp(-cR_j^2) on that disk for j>=1, with a fixed analytic bound for F_0. Put D_0=F_0 and D_j=F_j-F_(j-1). Cauchy's estimate and\n\nsum_j exp(-cR_j^2) R_j^(2n/k)<=C_1 A^n Gamma(1+n/k)\n\nshow that f_n=sum_j [s^n]D_j converges and has Gevrey order 1/k. The moment bound follows by reserving half the exponential for a summable geometric-scale series and maximizing t^(n/k) exp(-ct/2).\n\nFor 0<vartheta<1, stop at the largest J with |s|<=vartheta r_J. The exact remainder identity is\n\nF_J-sum_(n<N)f_n s^n = sum_(j<=J)(D_j-T_(N-1)D_j)-sum_(j>J)T_(N-1)D_j.\n\nThe first sum uses Cauchy remainders inside the disks. For the second, x_j=|s|/r_j>vartheta gives sum_(n<N)x_j^n<=N vartheta^(-N)x_j^N. The same moment bound yields C_2 A_2^N Gamma(1+N/k)|s|^N for every N, including orders beyond optimal truncation. Any additional difference bounded by C exp(-b/|s|^k) obeys the same all-orders estimate. Identifying these coefficients with a particular formal stationary action requires a separate comparison; formal notation alone does not supply it.\n\n## Role in the source argument\n\nProvides the source quantitative asymptotic bounds for its stopped actions and, conditionally on exponential comparison, its lateral sector arrays.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [arr:gevrey](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L508)\n- [arr:moment-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L564)\n- [arr:telescoping-remainder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/build/sections/arrays.tex#L579)\n\n## Antecedents and comparison\n\n[Lastra-Malek, Gevrey versus q-Gevrey asymptotic expansions for some linear q-difference-differential Cauchy problem](https://arxiv.org/pdf/2312.11064), Annex II, Theorem 7, recalls the classical Ramis-Sibuya theorem deriving common Gevrey asymptotics from exponentially flat sector differences; the full statement was read. The selected argument instead uses complete shrinking disks and Cauchy telescoping. No novelty is claimed for the general exponential-to-Gevrey principle.\n\n## Checks and limitations\n\nHigh-precision analytic models test the exponential moment bound, coefficient growth and the exact stopped-remainder identity for orders before and after the optimal scale. These are finite approximant models with explicit poles outside their allowed disks.\n\nThe checks do not construct the source contour arrays, justify its endpoint estimates or prove its formal critical-arc exclusion.\n\n## Possible applications\n\nObtaining quantitative asymptotic expansions from a sequence of finite-domain analytic problems whose overlap errors decay exponentially.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000524",
+      "record_type": "instrument",
+      "title": "Globalize a locally injective map through its homotopy class",
+      "forms": [
+        "local-injectivity-covering-globalization",
+        "fundamental-group-surjectivity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-360"
+      ],
+      "source_paper_ids": [
+        "P-000293"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex",
+          "label": "lem:covering-homeomorphism",
+          "line": 472,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex#L472",
+          "sha256": "7429b52ce2e47a8ec7a82116f7ce4520081484e0c808faeb967aea42e6d7d392"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-covering-space-argument",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000524.md",
+      "body": "# Globalize a locally injective map through its homotopy class\n\n[Family 360](../families/openai-math-360.md) · [Source manuscript](../papers/P-000293.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nLet X and N be nonempty connected compact topological n-manifolds without boundary. If a continuous locally injective map f:X->N is homotopic to a homeomorphism, then f is a homeomorphism.\n\nInvariance of domain makes f a local homeomorphism. Its image is open and compact, hence closed, and connectedness makes it surjective. Every fiber is compact and discrete, hence finite. For a fiber {q_1,...,q_k}, choose disjoint local inverse neighborhoods U_i with images V_i. Removing the image of the compact complement from the intersection of the V_i gives an evenly covered neighborhood. Thus f is a finite covering.\n\nThe homotopy identifies f_* with the isomorphism induced by the homeomorphism, up to base-point change, so f_* is surjective. A connected covering has sheet number equal to the index of its image subgroup, hence has one sheet. Equivalently, lifting an image loop and using the surjectivity of f_* rules out two points in one fiber. No orientability assumption or signed degree calculation is needed. Local injectivity alone would allow a multiple-sheet covering.\n\n## Role in the source argument\n\nFinishes the source continuation argument once local injectivity of its subgradient-graph projection and the required homotopy have been supplied.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:covering-homeomorphism](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/build/sections/geometry.tex#L472)\n\n## Antecedents and comparison\n\n[Hatcher, Algebraic Topology, Chapter 1](https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf), Propositions 1.31 and 1.32 on printed page 61, prove the lifting and sheet-index statements; both proofs were read. The selected source supplies the compact local-homeomorphism-to-covering step. This is classical topology.\n\n## Checks and limitations\n\nThe general argument was checked analytically. Finite cyclic-cover models illustrate the sheet-index mechanism and show that local injectivity without the homotopy condition permits multiple sheets.\n\nFinite covers do not verify the source geometric local-injectivity assertion for arbitrary potentials or its weak-MTW convexity theorem.\n\n## Possible applications\n\nReplacing a delicate global injectivity calculation by local injectivity and control of a map homotopy class.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000525",
+      "record_type": "instrument",
+      "title": "Recover the missing determinant direction after an oblique projection",
+      "forms": [
+        "oblique-projection-determinant-gain",
+        "rank-one-transverse-restoration"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-360"
+      ],
+      "source_paper_ids": [
+        "P-000294"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+          "label": "jet:matrix",
+          "line": 1087,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1087",
+          "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+        },
+        {
+          "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+          "label": "jet:projected-matrix",
+          "line": 1107,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1107",
+          "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+        },
+        {
+          "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex",
+          "label": "jet:limiting-center",
+          "line": 722,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L722",
+          "sha256": "318a97418a9605c370ff1b1e601e92c56232a1a86f1fc4b30b50c4f46a2fe3e1"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-schur-complement-with-source-configuration",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000525.md",
+      "body": "# Recover the missing determinant direction after an oblique projection\n\n[Family 360](../families/openai-math-360.md) · [Source manuscript](../papers/P-000294.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nLet V>0, |e|=1, q=p.e>0, p_i=p+d e with d>0, and m,beta,gamma>0. Suppose V(e,e)<=beta q^2 and a positive-definite V_i dominates m P^T V P+gamma p_i p_i^T, where P=I-e p^T/q projects onto p-perp along e. Then\n\ndet(V_i)/det(V) >= m^(n-1) gamma(p_i.e)^2/S >= m^(n-1)(gamma/beta)[(p_i.e)/q]^2 >= m^(n-1) gamma/beta.\n\nHere S is the Schur complement of V in the basis [Q,e], with Q an orthonormal basis of p-perp. Indeed the transformed V has blocks [[A,z],[z^T,h]], where S=h-z^T A^(-1)z>0 and S<=h=V(e,e). The projected matrix loses exactly its last direction; the rank-one addition contributes determinant m^(n-1) det(A) gamma(p_i.e)^2. The nonorthogonal change-of-basis determinant cancels in the ratio.\n\nIn the source, L>=0, Le=0, H<=L and H>=V-beta pp^T imply L>=P^T V P and V(e,e)<=beta q^2; dropping an additional positive center term only weakens these inequalities. Its outer bound gives the assumed domination, and gamma/beta is proportional to a chosen large parameter K. The matrix result is conditional on obtaining that configuration from the geometric jets.\n\n## Role in the source argument\n\nProduces the source determinant gain proportional to K that is compared with the independent Jacobian bounds in its transport-regularity contradiction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [jet:matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1087)\n- [jet:projected-matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L1107)\n- [jet:limiting-center](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/build/sections/jets.tex#L722)\n\n## Antecedents and comparison\n\nThe proof uses classical Schur-complement factorization and monotonicity of determinant for positive-definite matrices. The full selected source calculation and its hypotheses were read; no novelty claim for this linear algebra identity is made.\n\n## Checks and limitations\n\nExact rational positive-definite matrices verify the determinant ratio, its lower bound, and nonorthogonal change-of-basis cancellation. A missing rank-one direction leaves determinant zero.\n\nThe checks do not validate the limiting jet configuration, exponential-Jacobian comparison or uniform bi-Holder theorem.\n\n## Possible applications\n\nComparing determinants when transverse positivity is known and a separate rank-one term controls the remaining direction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000526",
+      "record_type": "instrument",
+      "title": "Identify Hopf-weight multiplicities with a beta-binomial distribution",
+      "forms": [
+        "hopf-weight-beta-binomial-law",
+        "bihomogeneous-harmonic-count"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-361"
+      ],
+      "source_paper_ids": [
+        "P-000295"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+          "label": "lem:hopf-distribution",
+          "line": 21,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L21",
+          "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+        },
+        {
+          "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+          "label": "eq:hopf-multiplicity",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L27",
+          "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+        },
+        {
+          "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex",
+          "label": "eq:harmonic-multiplicity-asymptotic",
+          "line": 58,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L58",
+          "sha256": "f567f723c45fb15b1925e86a7e28e056df8721eb79c61c17c2fdfe6c02d810d9"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-hopf-decomposition-with-explicit-counting-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000526.md",
+      "body": "# Identify Hopf-weight multiplicities with a beta-binomial distribution\n\n[Family 361](../families/openai-math-361.md) · [Source manuscript](../papers/P-000295.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nFor the real degree-l spherical harmonics on S^(2s-1), s>=2, complexify and decompose by bidegrees (b,l-b) in z and conjugate z. The Hopf derivative has eigenvalue i(2b-l). Contraction sum_j d_(z_j)d_(conjugate z_j) maps onto bidegree (b-1,l-b-1): for the monomial norm alpha! beta!, its adjoint is multiplication by sum z_j conjugate z_j, which is injective.\n\nThus the contribution of b to the multiplicity of -(Hopf derivative)^2 is\n\nh_(l,b)=binom(s+b-1,s-1)binom(s+l-b-1,s-1)-binom(s+b-2,s-1)binom(s+l-b-2,s-1)\n\n=((l+s-1)/(s-1)) binom(b+s-2,s-2)binom(l-b+s-2,s-2).\n\nMissing bidegrees contribute zero. The total N_l=((l+s-1)/(s-1))binom(l+2s-3,2s-3) equals the usual spherical-harmonic dimension. Charges b and l-b give the same squared eigenvalue and are added; complexification does not introduce another factor of two.\n\nThe probabilities h_(l,b)/N_l are exactly beta-binomial: take X~Beta(s-1,s-1), then K_l|X~Binomial(l,X). Since E[(K_l/l-X)^2]=E[X(1-X)]/l<=1/(4l), K_l/l converges to X in probability in this coupling. Therefore (2K_l-l)^2/l^2 converges in distribution to Beta(1/2,s-1). The finite multiplicities and limiting law are separate from the later spectral-surplus and geometric realization claims.\n\n## Role in the source argument\n\nProvides the source distribution of angular weights used in its quantitative surplus calculation.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:hopf-distribution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L21)\n- [eq:hopf-multiplicity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L27)\n- [eq:harmonic-multiplicity-asymptotic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/build/sections/counting.tex#L58)\n\n## Antecedents and comparison\n\n[Tanno, The first eigenvalue of the Laplacian on spheres](https://www.jstage.jst.go.jp/article/tmj1949/31/2/31_2_179/_pdf/-char/en), Section 3 and Lemma 3.1 on printed pages 181-182, give the classical Hopf-charge decomposition; the complete lemma and proof were read. The exact bidegree counting and beta-binomial argument were checked in the selected source. No priority claim for the distribution formula is made.\n\n## Checks and limitations\n\nExact polynomial contraction matrices verify small bidegree ranks. Exact combinatorial and beta-integral formulas verify multiplicities, total dimensions, signed-charge aggregation and the mean-square coupling error.\n\nThese tests do not establish a spectral surplus at the claimed large cutoff or construct any complete nonnegative-Ricci manifold.\n\n## Possible applications\n\nReplacing high-degree angular multiplicity counts by an exact probability law with a controlled large-degree limit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000527",
+      "record_type": "instrument",
+      "title": "Obtain two conformal splitting directions while preserving parity and gauge",
+      "forms": [
+        "two-direction-conformal-spectral-splitting",
+        "gauge-invariant-eigenspace-compression"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-361"
+      ],
+      "source_paper_ids": [
+        "P-000296"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+          "label": "n:lem-two-directions",
+          "line": 154,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L154",
+          "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+        },
+        {
+          "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+          "label": "n:eq-conformal-variation",
+          "line": 180,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L180",
+          "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+        },
+        {
+          "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex",
+          "label": "n:eq-product-pair",
+          "line": 189,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L189",
+          "sha256": "7bcba9a43a2005b343f10a07dc71ffe08d70f9084e89c722763fc947c6a537fa"
+        }
+      ],
+      "batch_id": "B053",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-conformal-spectral-transversality",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000527.md",
+      "body": "# Obtain two conformal splitting directions while preserving parity and gauge\n\n[Family 361](../families/openai-math-361.md) · [Source manuscript](../papers/P-000296.md) · [Batch B053](../../batches/B053/README.md)\n\n## Mathematical content\n\nOn a smooth two-sphere with normalized conformal area density rho_w=exp(2w)/integral exp(2w), the Dirichlet form is conformally unchanged. For a repeated positive Laplace eigenvalue lambda and a real orthonormal pair u,v, the first-variation cluster matrix in direction dot(w) is\n\ndot(M)_ij=-2lambda integral u_i u_j [dot(w)-integral dot(w)] dmu_w.\n\nThe subtracted mean contributes only a scalar matrix. Its two traceless entries are represented by U_1=u^2-v^2 and U_2=2uv, both of mean zero. These functions are linearly independent. Otherwise a nonzero traceless real quadratic form would vanish on (u,v) everywhere. Its zero set is two lines. Near a point where (u,v) is nonzero, continuity forces it into one fixed line, so a nonzero linear combination of u and v vanishes on an open set. Unique continuation contradicts orthonormality.\n\nThe Gram matrix of U_1,U_2 is therefore positive definite, and these two smooth conformal directions span the traceless two-by-two perturbations. If the metric is antipodally even and u,v have the same parity, both directions are even and remain admissible. Finally a parameter-dependent fixed-area coordinate change adds a commutator to the operator variation. Its compression to a scalar lambda eigenspace vanishes, so the splitting matrix is gauge independent. This gives local two-direction control; it does not prescribe an entire global crossing program.\n\n## Role in the source argument\n\nSupplies a local perturbation mechanism for the source three-dimensional companion to separate or retain selected eigenvalue coincidences.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [n:lem-two-directions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L154)\n- [n:eq-conformal-variation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L180)\n- [n:eq-product-pair](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/build/sections/crossings.tex#L189)\n\n## Antecedents and comparison\n\n[Greilhuber-Kepplinger, On Arnold's Transversality Conjecture for the Laplace-Beltrami Operator](https://arxiv.org/pdf/2312.16939), Theorem 1.1 and Proposition 2.3 with its proof, identify conformal transversality failure through quadratic relations among eigenfunctions and attribute the criterion to Besson. These passages were read. The selected two-function argument is a concrete instance, with an explicit same-parity and coordinate-gauge observation.\n\n## Checks and limitations\n\nExact sphere polynomial integrals compute the two-direction Gram and splitting matrices for a degree-one eigenfunction pair. Rational finite matrices verify that commutator compression vanishes on a repeated eigenvalue block.\n\nThese examples do not prove unique continuation, isolate every required crossing or establish the companion harmonic-dimension counterexample.\n\n## Possible applications\n\nControlling a two-dimensional spectral cluster under conformal perturbations while maintaining a symmetry class and a fixed volume coordinate system.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -27558,6 +27944,120 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000290.md",
       "body": "# A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000518: Obstruct nonpositive curvature by incompatible torus orthogonality](../instruments/MI-000518.md)\n- [MI-000519: Optimize a boundary penalty in the dual energy norm](../instruments/MI-000519.md)\n\n[Family review and dependencies](../families/openai-math-358.md) · [Batch B052](../../batches/B052/README.md)"
+    },
+    {
+      "id": "P-000291",
+      "record_type": "paper",
+      "title": "A finite-time singularity of Calabi flow on projective space",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-352"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6a3ec59063b4c6c0bdce423dc640d142dd78eac036ca0296e82cc1c78dad7e9d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000291.md",
+      "body": "# A finite-time singularity of Calabi flow on projective space\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000520: Preserve smallness of a particular error through a Neumann correction](../instruments/MI-000520.md)\n- [MI-000521: Gain short-time spatial smallness by lowering the Holder exponent](../instruments/MI-000521.md)\n\n[Family review and dependencies](../families/openai-math-352.md) · [Batch B053](../../batches/B053/README.md)"
+    },
+    {
+      "id": "P-000292",
+      "record_type": "paper",
+      "title": "Uniqueness of tangent flows at the first singular time of embedded surface mean-curvature flow",
+      "source_collection": "openai/math",
+      "upstream_slug": "Tangent-flow-uniqueness-2026-09-24",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-355"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4c96eeba4c13db8a8f8af1ef7b6f2716868b9431ff4a10c353b7f1cc18af0dd0",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000292.md",
+      "body": "# Uniqueness of tangent flows at the first singular time of embedded surface mean-curvature flow\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tangent-flow-uniqueness-2026-09-24/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000522: Absorb delayed Gaussian errors on every finite energy prefix](../instruments/MI-000522.md)\n- [MI-000523: Convert exponentially close stopped approximants into all-orders Gevrey bounds](../instruments/MI-000523.md)\n\n[Family review and dependencies](../families/openai-math-355.md) · [Batch B053](../../batches/B053/README.md)"
+    },
+    {
+      "id": "P-000293",
+      "record_type": "paper",
+      "title": "Global Support and Convex Injectivity Domains under Weak MTW",
+      "source_collection": "openai/math",
+      "upstream_slug": "Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-360"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "40d2d0dd11252f25c3a2ae7865ea4f0bb8fb24dc57768f4a7069c633b1091cc5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000293.md",
+      "body": "# Global Support and Convex Injectivity Domains under Weak MTW\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000524: Globalize a locally injective map through its homotopy class](../instruments/MI-000524.md)\n\n[Family review and dependencies](../families/openai-math-360.md) · [Batch B053](../../batches/B053/README.md)"
+    },
+    {
+      "id": "P-000294",
+      "record_type": "paper",
+      "title": "Uniform Bi-Holder Transport from Weak MTW",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-360"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "be5b5729e1cf814ccc6c0898ca43ff5356c2aaa80c00da72b213cf66cef733cb",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000294.md",
+      "body": "# Uniform Bi-Holder Transport from Weak MTW\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000525: Recover the missing determinant direction after an oblique projection](../instruments/MI-000525.md)\n\n[Family review and dependencies](../families/openai-math-360.md) · [Batch B053](../../batches/B053/README.md)"
+    },
+    {
+      "id": "P-000295",
+      "record_type": "paper",
+      "title": "A counterexample to integer-degree harmonic dimension comparison",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-361"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "114f14872c8ce81b69e5540ef84ac7d73870373955e68b1a1b43528c055c2fa3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000295.md",
+      "body": "# A counterexample to integer-degree harmonic dimension comparison\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000526: Identify Hopf-weight multiplicities with a beta-binomial distribution](../instruments/MI-000526.md)\n\n[Family review and dependencies](../families/openai-math-361.md) · [Batch B053](../../batches/B053/README.md)"
+    },
+    {
+      "id": "P-000296",
+      "record_type": "paper",
+      "title": "A Three-Dimensional Counterexample to Integer-Degree Harmonic Dimension Comparison",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-361"
+      ],
+      "batch_id": "B053",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9c9b67915893258ffd667a8b33129fd88c4ad033356449da0a8b8f9473aa6a2e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000296.md",
+      "body": "# A Three-Dimensional Counterexample to Integer-Degree Harmonic Dimension Comparison\n\n## Source\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000527: Obtain two conformal splitting directions while preserving parity and gauge](../instruments/MI-000527.md)\n\n[Family review and dependencies](../families/openai-math-361.md) · [Batch B053](../../batches/B053/README.md)"
     }
   ],
   "families": [
@@ -33703,6 +34203,33 @@
       "body": "# Complementary fillings, projective detection and a strict perimeter gap\n\n## Source manuscripts and claim\n\n- [The Solomon–Yau least-volume theorem](../papers/P-000258.md): selected passages extracted.\n\nThe source claims the Solomon-Yau least-volume theorem.\n\n## Extracted instruments\n\n- [MI-000478: Detect a projective cup power using complementary boundary fillings](../instruments/MI-000478.md)\n- [MI-000479: Force a strict geometric gap by an odd constraint map and compactness](../instruments/MI-000479.md)\n\n## Dependencies and antecedents\n\nSmall fillings and the filling double cover, projective cohomology, BV compactness and lower semicontinuity, and the hemisphere equality case of spherical isoperimetry.\n\nHatcher Theorem 3.19; Boglein-Duzaar-Fusco, Section 2.3 equation (2.2); standard odd-map obstruction and the direct method.\n\n## Review and formalization scope\n\nRead the filling-cover proof, projective criterion and complete detection-gap proof. Read the cited projective cohomology statement and spherical isoperimetry/equality statement directly. The source geometric sweepout construction, min-max implementation and headline least-volume argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nUse the filling double cover and mod-two cycles. Detection requires a nonzero pth cup power; an arbitrary family of cycles need not meet the constrained class.\n\n[Batch record](../../batches/B047/README.md)"
     },
     {
+      "id": "openai-math-352",
+      "record_type": "family",
+      "title": "Small particular errors and short-time spatial regularity",
+      "source_family": "352",
+      "source_collection": "openai/math",
+      "batch_id": "B053",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000291"
+      ],
+      "instrument_ids": [
+        "MI-000520",
+        "MI-000521"
+      ],
+      "headline": "The source claims a finite-time Calabi-flow singularity on complex projective ten-space, with scalar curvature growing at inverse-square-root rate.",
+      "central_instrument": "A uniformly bounded right inverse can be small on a distinguished error. An exponent gap makes zero-trace spatial derivatives small in a weaker parabolic Holder norm.",
+      "novelty_assessment": "Neumann correction and Holder interpolation are classical. The source-specific interface separates particular-error smallness from operator norm smallness and from the time derivative.",
+      "formalization_summary": "No family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.",
+      "statement_faithfulness": "The right-inverse statement is conditional on a parametrix with small defect; it does not require injectivity. Short-time spatial smallness requires zero initial traces and a strictly higher Holder exponent.",
+      "dependencies": "Banach-space Neumann series, support separation, a continuous embedding into a weaker space, parabolic Holder interpolation and a uniform higher-regularity estimate.",
+      "antecedents": "Classical parametrix correction and interpolation inequalities; no priority claim for their combination in this source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-352.md",
+      "body": "# Small particular errors and short-time spatial regularity\n\n## Source manuscripts and claim\n\n- [A finite-time singularity of Calabi flow on projective space](../papers/P-000291.md): selected passages extracted.\n\nThe source claims a finite-time Calabi-flow singularity on complex projective ten-space, with scalar curvature growing at inverse-square-root rate.\n\n## Extracted instruments\n\n- [MI-000520: Preserve smallness of a particular error through a Neumann correction](../instruments/MI-000520.md)\n- [MI-000521: Gain short-time spatial smallness by lowering the Holder exponent](../instruments/MI-000521.md)\n\n## Dependencies and antecedents\n\nBanach-space Neumann series, support separation, a continuous embedding into a weaker space, parabolic Holder interpolation and a uniform higher-regularity estimate.\n\nClassical parametrix correction and interpolation inequalities; no priority claim for their combination in this source.\n\n## Review and formalization scope\n\nRead the complete right-inverse correction and special-error proofs, the short-time forward estimate, the spatial interpolation proof and the Fourier-mode limitation. The shooting certificate, shrinking profile and global nonlinear construction were not audited.\n\nNo family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.\n\nThe right-inverse statement is conditional on a parametrix with small defect; it does not require injectivity. Short-time spatial smallness requires zero initial traces and a strictly higher Holder exponent.\n\n[Batch record](../../batches/B053/README.md)"
+    },
+    {
       "id": "openai-math-354",
       "record_type": "family",
       "title": "Turn slice averages and finite parameter tables into uniform bounds",
@@ -33728,6 +34255,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-354.md",
       "body": "# Turn slice averages and finite parameter tables into uniform bounds\n\n## Source manuscript and claim\n\n[The Isoperimetric Conjecture for the Cubic Flat Three-Torus](../papers/P-000190.md), by OpenAI, September 24, 2026.\n\nThe source claims the full isoperimetric profile and all minimizers of the unit cubic flat three-torus, including both equality classes at the ball-tube and tube-slab transitions.\n\n## Extracted instruments\n\n- [MI-000342: Use a convex flux defect instead of substituting a mean pointwise](../instruments/MI-000342.md)\n- [MI-000343: Certify positivity between rational knots using an upper curvature bound](../instruments/MI-000343.md)\n\n## Dependencies and antecedents\n\nJensen convexity, a nonincreasing minorant, coarea, scalar concavity after subtracting a quadratic and rational outward arithmetic.\n\nClassical Jensen and coarea methods; elementary rigorous interpolation and interval arithmetic. No first-priority claim established for the source scalar choices. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete integrated-flux proof and the outward-arithmetic/interpolation section. The geometric reduction, endpoint transcendental evaluations, analytic second-derivative bounds and final equality classification were not audited.\n\nRead CubicTorus.lean and its scope. It uses the unit flat quotient torus, De Giorgi perimeter for arbitrary finite-perimeter regions, null-set equivalence, attainment, and all equality cases at 4pi/81 and 1/pi, including complements. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nFlux fixes an arclength average, not pointwise inclination. The interpolation certificate uses an upper bound on the second derivative to prove a lower bound between endpoints. The endpoint table and analytic curvature bounds remain separate inputs.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/354.md) · [Batch record](../../batches/B029/README.md)"
+    },
+    {
+      "id": "openai-math-355",
+      "record_type": "family",
+      "title": "Delayed error summation and Gevrey bounds from stopped approximants",
+      "source_family": "355",
+      "source_collection": "openai/math",
+      "batch_id": "B053",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000292"
+      ],
+      "instrument_ids": [
+        "MI-000522",
+        "MI-000523"
+      ],
+      "headline": "The source claims uniqueness, in the fixed ambient frame, of every tangent flow at the first singular time of a closed embedded surface in three-space.",
+      "central_instrument": "Delayed radii turn cutoff tails into a summable convolution that can be absorbed. Exponentially close holomorphic approximants on shrinking disks yield all-orders Gevrey remainders.",
+      "novelty_assessment": "Discrete gradient-length summation has a Colding-Minicozzi antecedent; exponentially flat differences and Gevrey asymptotics are classical. The precise delayed-radius and stopped-disk interfaces are source arguments without exhaustive priority certification.",
+      "formalization_summary": "No family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.",
+      "statement_faithfulness": "Finite-length control assumes the discrete gradient inequality and a sufficiently small initial energy. Gevrey control assumes holomorphy on complete shrinking disks and exponential differences; it does not follow from a merely formal series.",
+      "dependencies": "Energy monotonicity, concavity, good/bad index splitting, finite nonnegative convolution sums; Cauchy estimates, exponential moments and stopped Taylor expansions.",
+      "antecedents": "Colding-Minicozzi discrete Lojasiewicz length estimates; the classical Ramis-Sibuya mechanism for Gevrey asymptotics.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-355.md",
+      "body": "# Delayed error summation and Gevrey bounds from stopped approximants\n\n## Source manuscripts and claim\n\n- [Uniqueness of tangent flows at the first singular time of embedded surface mean-curvature flow](../papers/P-000292.md): selected passages extracted.\n\nThe source claims uniqueness, in the fixed ambient frame, of every tangent flow at the first singular time of a closed embedded surface in three-space.\n\n## Extracted instruments\n\n- [MI-000522: Absorb delayed Gaussian errors on every finite energy prefix](../instruments/MI-000522.md)\n- [MI-000523: Convert exponentially close stopped approximants into all-orders Gevrey bounds](../instruments/MI-000523.md)\n\n## Dependencies and antecedents\n\nEnergy monotonicity, concavity, good/bad index splitting, finite nonnegative convolution sums; Cauchy estimates, exponential moments and stopped Taylor expansions.\n\nColding-Minicozzi discrete Lojasiewicz length estimates; the classical Ramis-Sibuya mechanism for Gevrey asymptotics.\n\n## Review and formalization scope\n\nRead the full delayed-radius setup and finite-prefix summation proof, and the complete geometric-telescoping proof including coefficient identification and transfer to sector arrays. The geometric propagation, normalized contour inverses and no-critical-arc argument remain unverified.\n\nNo family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.\n\nFinite-length control assumes the discrete gradient inequality and a sufficiently small initial energy. Gevrey control assumes holomorphy on complete shrinking disks and exponential differences; it does not follow from a merely formal series.\n\n[Batch record](../../batches/B053/README.md)"
     },
     {
       "id": "openai-math-357",
@@ -33782,6 +34336,62 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-358.md",
       "body": "# Torus shear obstructions and boundary-penalty duality\n\n## Source manuscripts and claim\n\n- [A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric](../papers/P-000290.md): selected passages extracted.\n\nThe source claims a closed smooth three-manifold with no conjugate points but no metric of nonpositive sectional curvature.\n\n## Extracted instruments\n\n- [MI-000518: Obstruct nonpositive curvature by incompatible torus orthogonality](../instruments/MI-000518.md)\n- [MI-000519: Optimize a boundary penalty in the dual energy norm](../instruments/MI-000519.md)\n\n## Dependencies and antecedents\n\nAmalgamated product injections, flat torus/minset structure and centralizer characters; Hilbert-space duality, Cauchy-Schwarz and quadratic minimization.\n\nLeeb two-piece graph-manifold incompatibility; classical minset splitting and rank-one inverse formulas.\n\n## Review and formalization scope\n\nRead the full topology obstruction and its two corollaries, and the full turning-duality proof with its energy setup. The neck construction, returning-geodesic uniform bounds and global no-conjugate-points argument were not certified.\n\nThe target asserts a closed connected orientable smooth three-manifold with a smooth metric having no conjugate points for all geodesics and Jacobi fields, but no smooth nonpositive-sectional-curvature metric. The additional no-focal-points and CAT(0) consequences are outside the target. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.\n\nThe CAT(0) obstruction requires a proper cocompact action on a proper space and an embedded Z2 torus subgroup. The dual penalty uses mu>0 and an actual bound of the endpoint functional by the bulk energy.\n\n[Batch record](../../batches/B052/README.md)"
+    },
+    {
+      "id": "openai-math-360",
+      "record_type": "family",
+      "title": "Globalizing local injectivity and restoring a missing determinant direction",
+      "source_family": "360",
+      "source_collection": "openai/math",
+      "batch_id": "B053",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000293",
+        "P-000294"
+      ],
+      "instrument_ids": [
+        "MI-000524",
+        "MI-000525"
+      ],
+      "headline": "The sources claim convex injectivity domains and uniform bi-Holder optimal transport under weak MTW curvature.",
+      "central_instrument": "Local injectivity plus a homotopy to a homeomorphism gives a global homeomorphism on closed connected manifolds. An oblique projection exposes the precise rank-one determinant gain.",
+      "novelty_assessment": "The globalization is classical covering-space theory. The determinant estimate is elementary Schur-complement algebra applied to the source limiting configuration.",
+      "formalization_summary": "The linked global-support Comparator states convexity of open tangent injectivity domains under weak MTW; the scope document reports additional support and finite-target results that are not separate theorems in that inspected Comparator. The transport target has one exponent and constant for bounded positive densities on each fixed manifold, with almost-everywhere uniqueness. Both target proofs contain sorry. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "The topology step needs compact boundaryless manifolds of the same dimension and an induced surjection on fundamental groups. The matrix step assumes positive definiteness and all stated transverse domination hypotheses.",
+      "dependencies": "Invariance of domain, compactness and covering-space lifting; Loewner order, oblique projection and Schur complements.",
+      "antecedents": "Hatcher covering-space index and lifting results; classical determinant identities.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-360.md",
+      "body": "# Globalizing local injectivity and restoring a missing determinant direction\n\n## Source manuscripts and claim\n\n- [Global Support and Convex Injectivity Domains under Weak MTW](../papers/P-000293.md): selected passages extracted.\n- [Uniform Bi-Holder Transport from Weak MTW](../papers/P-000294.md): selected passages extracted.\n\nThe sources claim convex injectivity domains and uniform bi-Holder optimal transport under weak MTW curvature.\n\n## Extracted instruments\n\n- [MI-000524: Globalize a locally injective map through its homotopy class](../instruments/MI-000524.md)\n- [MI-000525: Recover the missing determinant direction after an oblique projection](../instruments/MI-000525.md)\n\n## Dependencies and antecedents\n\nInvariance of domain, compactness and covering-space lifting; Loewner order, oblique projection and Schur complements.\n\nHatcher covering-space index and lifting results; classical determinant identities.\n\n## Review and formalization scope\n\nRead the complete covering-homeomorphism proof and the complete oblique-projection determinant proof, with the latter configuration assumptions. The preceding local-injectivity proof and limiting matrix construction were not certified.\n\nThe linked global-support Comparator states convexity of open tangent injectivity domains under weak MTW; the scope document reports additional support and finite-target results that are not separate theorems in that inspected Comparator. The transport target has one exponent and constant for bounded positive densities on each fixed manifold, with almost-everywhere uniqueness. Both target proofs contain sorry. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nThe topology step needs compact boundaryless manifolds of the same dimension and an induced surjection on fundamental groups. The matrix step assumes positive definiteness and all stated transverse domination hypotheses.\n\n[Batch record](../../batches/B053/README.md)"
+    },
+    {
+      "id": "openai-math-361",
+      "record_type": "family",
+      "title": "Hopf-weight counting and two-direction eigenvalue splitting",
+      "source_family": "361",
+      "source_collection": "openai/math",
+      "batch_id": "B053",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000295",
+        "P-000296"
+      ],
+      "instrument_ids": [
+        "MI-000526",
+        "MI-000527"
+      ],
+      "headline": "The sources claim counterexamples to Euclidean integer-degree harmonic-dimension comparison, first in even dimension and then in dimension three.",
+      "central_instrument": "Bihomogeneous polynomial contraction gives exact Hopf-weight multiplicities and a beta-binomial law. Unique continuation ensures two independent conformal splitting directions for a real eigenfunction pair.",
+      "novelty_assessment": "Hopf-charge decomposition and conformal spectral transversality are classical. The source packages exact counting and parity-compatible splitting for its proposed moving-link constructions.",
+      "formalization_summary": "The scope describes a dimension-16, degree-50000 example and excludes tangent-cone conclusions. The inspected Comparator instead states existential even dimension n>=8 and degree k>=2, with complete nonnegative-Ricci geometry and excess independent harmonic functions. It declares MainClaim through the axiom mainStatement and derives main from that axiom. This is not an inspected proof, and the three-dimensional companion is outside this target. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "The multiplicity formula uses s>=2 and adds both charge signs without another factor of two. The splitting statement concerns a positive repeated eigenvalue and a real orthonormal pair; parity-restricted variations require the pair to have the same parity.",
+      "dependencies": "Bihomogeneous polynomial dimensions, adjoint contraction, binomial convolution and beta-binomial mixing; conformal Dirichlet forms, unique continuation and compressed commutators.",
+      "antecedents": "Tanno Hopf-charge decomposition; conformal spectral-transversality criteria discussed and proved by Greilhuber-Kepplinger with attribution to Besson and earlier work.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-361.md",
+      "body": "# Hopf-weight counting and two-direction eigenvalue splitting\n\n## Source manuscripts and claim\n\n- [A counterexample to integer-degree harmonic dimension comparison](../papers/P-000295.md): selected passages extracted.\n- [A Three-Dimensional Counterexample to Integer-Degree Harmonic Dimension Comparison](../papers/P-000296.md): selected passages extracted.\n\nThe sources claim counterexamples to Euclidean integer-degree harmonic-dimension comparison, first in even dimension and then in dimension three.\n\n## Extracted instruments\n\n- [MI-000526: Identify Hopf-weight multiplicities with a beta-binomial distribution](../instruments/MI-000526.md)\n- [MI-000527: Obtain two conformal splitting directions while preserving parity and gauge](../instruments/MI-000527.md)\n\n## Dependencies and antecedents\n\nBihomogeneous polynomial dimensions, adjoint contraction, binomial convolution and beta-binomial mixing; conformal Dirichlet forms, unique continuation and compressed commutators.\n\nTanno Hopf-charge decomposition; conformal spectral-transversality criteria discussed and proved by Greilhuber-Kepplinger with attribution to Besson and earlier work.\n\n## Review and formalization scope\n\nRead the full Hopf-weight distribution proof and the complete two-direction splitting proof, including the fixed-area gauge setup. Spectral surplus, transmission matching, radial realization and the claimed global counterexamples remain unverified.\n\nThe scope describes a dimension-16, degree-50000 example and excludes tangent-cone conclusions. The inspected Comparator instead states existential even dimension n>=8 and degree k>=2, with complete nonnegative-Ricci geometry and excess independent harmonic functions. It declares MainClaim through the axiom mainStatement and derives main from that axiom. This is not an inspected proof, and the three-dimensional companion is outside this target. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nThe multiplicity formula uses s>=2 and adds both charge signs without another factor of two. The splitting statement concerns a positive repeated eigenvalue and a real orthonormal pair; parity-restricted variations require the pair to have the same parity.\n\n[Batch record](../../batches/B053/README.md)"
     },
     {
       "id": "openai-math-362",
