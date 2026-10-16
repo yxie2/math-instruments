@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B082: 8 selected instruments from 4 families and 4 manuscripts. Fermionic normal ordering, polynomial kernels, collision cutoffs, pinned mark lists, return constants and uniform covariance comparison. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B081: 8 selected instruments from 4 families and 4 manuscripts. Conformal flux constraints, area envelopes, retained randomness, spectral averaging, Lorentz frames, box selection, thermal coherences and real trace powers. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B080: 8 selected instruments from 4 families and 4 manuscripts. Rounded height midpoints, scalar transfer spectra, SAT omission hazards, joint renewal laws and shuffle energy memory. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
