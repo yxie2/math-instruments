@@ -74,7 +74,9 @@
 
 | [B043](B043/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Dense domains, spectral comparison, separable quotients and stable evolution |
 
-Future rounds use `B044` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B044](B044/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Unconditioned sampling, graph alphabets, exact convolution constraints and power gains |
+
+Future rounds use `B045` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
