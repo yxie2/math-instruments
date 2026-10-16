@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B039: eight selected interfaces from families 043, 044, 053 and 064, with explicit antecedents, coefficient-preserving finite tests and geometric scope limits.
+
 - Added B038: eight selected geometric algebra interfaces from families 338, 341, 342 and 357, with explicit antecedents, finite checks and a scope/manuscript version caveat.
 
 - Added B037: eight selected formal-group and topology interfaces from families 311, 312, 313 and 317, with explicit finite-model limits and classical antecedents.

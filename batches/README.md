@@ -64,7 +64,9 @@
 
 | [B038](B038/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Hermitian contacts, polynomial shears, definite pairs, current corrections and inverse-matrix budgets |
 
-Future rounds use `B039` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B039](B039/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Lefschetz comparison, cut ideals, coefficient-preserving polarization and cyclic descent |
+
+Future rounds use `B040` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
