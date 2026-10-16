@@ -1,0 +1,127 @@
+{
+  "batch": "B054",
+  "status": "passed",
+  "elapsed_seconds": 1.913,
+  "checks": {
+    "moments": {
+      "copy_moments": 6,
+      "coefficient_count": 21,
+      "taylor_error": 3.823963368181253e-11,
+      "fixed_parameter_telescopes": 48,
+      "replication_variances": 24,
+      "expected_replication_cost": "infinite by geometric terms 128^h/2"
+    },
+    "augmentation": {
+      "tilted_density_comparisons": 18,
+      "max_density_error": 3.3306690738754696e-16,
+      "log_concavity_grid_size": 240,
+      "gaussian_models": 3,
+      "centered_mgf_comparisons": 9
+    },
+    "ward": {
+      "resolvents": 18,
+      "max_ward_residual": 7.195977572835447e-15,
+      "fixed_position_distributions": 42,
+      "dependent_root_controls": 8
+    },
+    "tensor_gap": {
+      "models": [
+        {
+          "d": 3,
+          "p": 0.0,
+          "order": 3,
+          "colors": 1,
+          "constraint_dimension": 4,
+          "smallest_gap": 0.39999999999999986
+        },
+        {
+          "d": 3,
+          "p": 0.5,
+          "order": 3,
+          "colors": 1,
+          "constraint_dimension": 4,
+          "smallest_gap": 0.28440366972477077
+        },
+        {
+          "d": 3,
+          "p": 0.85,
+          "order": 3,
+          "colors": 1,
+          "constraint_dimension": 4,
+          "smallest_gap": 0.08399698270395133
+        },
+        {
+          "d": 4,
+          "p": 0.2,
+          "order": 3,
+          "colors": 1,
+          "constraint_dimension": 12,
+          "smallest_gap": 0.2534722222222213
+        },
+        {
+          "d": 4,
+          "p": 0.75,
+          "order": 3,
+          "colors": 1,
+          "constraint_dimension": 12,
+          "smallest_gap": 0.0705882352941166
+        },
+        {
+          "d": 3,
+          "p": 0.4,
+          "order": 4,
+          "colors": 1,
+          "constraint_dimension": 9,
+          "smallest_gap": 0.18447213932735954
+        },
+        {
+          "d": 3,
+          "p": 0.3,
+          "order": 3,
+          "colors": 2,
+          "constraint_dimension": 26,
+          "smallest_gap": 0.35333267110360556
+        }
+      ],
+      "order_two_zero_gap_controls": 7
+    },
+    "posterior_product": {
+      "observation_pairs": 81,
+      "edge_scalings": 324,
+      "impossible_pure_pairs": 12
+    },
+    "flow": {
+      "rational_renormalizations": 360,
+      "one_child_cases": 72,
+      "finite_trees": 12,
+      "conserved_path_checks": 223,
+      "infinite_tree_scope": "analytic telescoping, not a finite simulation conclusion"
+    },
+    "refinement": {
+      "labeled_old_observations": 6,
+      "grid_points": 6,
+      "reverse_garblings": 18,
+      "old_quadratic_information": "1/18",
+      "refined_quadratic_information": "1/2",
+      "pure_completion_information": "19/45",
+      "orbit_label_control": true
+    },
+    "lattice_minimum": {
+      "exhaustive_two_dimensional_cases": 20,
+      "minimizing_rank_counts": {
+        "0": 8,
+        "1": 4,
+        "2": 8
+      }
+    },
+    "gaussian_fourier": {
+      "poisson_ratio_comparisons": 8,
+      "max_ratio_error": "2.62743462060903200798199296866859274615049114e-46",
+      "dual_tail_bound_less_than": "1e-190",
+      "bernoulli_phase_comparisons": 6,
+      "separated_patterns": 8,
+      "numerical_scope": "one-dimensional finite truncations with generous Gaussian tail margins"
+    }
+  },
+  "scope": "Selected finite algebraic and numerical models, not certification of the source headline theorems or Lean solutions."
+}

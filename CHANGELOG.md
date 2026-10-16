@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B054: 9 selected instruments from 4 families and 9 manuscripts. Nine instruments from four probability and lattice families: Abel moment extraction, symmetric exponential augmentation, Ward sampling, strict tensor gaps, posterior products, capacity flows, informative rounding, stable quotients and Gaussian Fourier bounds.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B053: 8 selected instruments from 4 families and 6 manuscripts. Adds particular-error correction, exponent-gap interpolation, delayed-radius summation, Gevrey telescoping, covering globalization, determinant gains and angular spectral controls.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B052: 8 selected instruments from 4 families and 4 manuscripts. Adds slope balancing and divisor-layer variances, Brauer projections and Higman traces, norm projectivity and Moore selection, and torus and boundary-energy obstructions.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
