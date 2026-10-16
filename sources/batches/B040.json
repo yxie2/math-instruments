@@ -1,0 +1,232 @@
+{
+  "batch_id": "B040",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T12:58:07.967877+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/IndependentSets.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/IndependentSets.lean",
+      "sha256": "60887f5c9f2971774d7c87005df03b86853bcfb1689e2f7f0ac521035555a033",
+      "bytes": 2957
+    },
+    {
+      "path": "lean/ComparatorChallenges/PerfectCompleteness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PerfectCompleteness.lean",
+      "sha256": "7270211455879e01db9b7a745f543418e709b7eb17279b7fa42408429e0f7ef8",
+      "bytes": 5810
+    },
+    {
+      "path": "lean/ComparatorChallenges/PermanentCubic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PermanentCubic.lean",
+      "sha256": "46d144b321bc51ffb632e95146a5a3003b59fde6713089757f0d8d2b14bc1c14",
+      "bytes": 1547
+    },
+    {
+      "path": "lean/ComparatorChallenges/SmoothInitialForm.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SmoothInitialForm.lean",
+      "sha256": "ec85d9b94a005a6cf17f3c045a59727e36a11eb1d92bd2a1f7f92603cdd87338",
+      "bytes": 2248
+    },
+    {
+      "path": "lean/docs/105.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/105.md",
+      "sha256": "94005d746a9a00d35cad0752dfa149bf4197b9003ec448f24dcc9f3f84cbf031",
+      "bytes": 969
+    },
+    {
+      "path": "lean/docs/106.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/106.md",
+      "sha256": "8fc9cabff385da43a195a707419f716d3602402f3893e1af1c422eed4b5ef1bd",
+      "bytes": 1123
+    },
+    {
+      "path": "lean/docs/108.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/108.md",
+      "sha256": "d30f6acbecf04da67f905cdd9b90533aa3ec38c404f4810edd36f51f802166db",
+      "bytes": 1386
+    },
+    {
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/README.md",
+      "sha256": "02009d06290aacfca1e9a0d12575908ea71964cfc8306f2496ad53a2235207d9",
+      "bytes": 889
+    },
+    {
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f",
+      "bytes": 12725
+    },
+    {
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/README.md",
+      "sha256": "925be7c0279cf5a4a67441c6e930b8c8a5d742c2042d335fd871799da16f73e3",
+      "bytes": 730
+    },
+    {
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+      "sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2",
+      "bytes": 13407
+    },
+    {
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+      "sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f",
+      "bytes": 28336
+    },
+    {
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/README.md",
+      "sha256": "9e7d330782412a763d0af3aeab378f5aefaa6f374b3bf1ec3810dc72da5872ab",
+      "bytes": 862
+    },
+    {
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+      "sha256": "3450971b49651b851bd1648d5fd6596ec1cab8b1aca0407f7f4f92db76c6d16c",
+      "bytes": 9855
+    },
+    {
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+      "sha256": "ed07c534acc0ae4de408696863eb7b57da3e25b8afcb5da5f586cb48809b8999",
+      "bytes": 5913
+    },
+    {
+      "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/README.md",
+      "sha256": "2989112f66d1587c516cb6c76b7560a8695180e61f5e79b79deb99e118cf4eaa",
+      "bytes": 545
+    },
+    {
+      "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+      "sha256": "d65db4486a37ed723fb63b075d2f15d3e60bd7d82fb1136fa26a10ef3fd9d86d",
+      "bytes": 29291
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000424",
+      "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+      "label": "lem:posterior",
+      "line": 363,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L363",
+      "sha256": "d65db4486a37ed723fb63b075d2f15d3e60bd7d82fb1136fa26a10ef3fd9d86d"
+    },
+    {
+      "instrument_id": "MI-000425",
+      "path": "preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex",
+      "label": "lem:bias",
+      "line": 449,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Perfect-completeness-for-2-to-1-games-September-23-2026/build/03-sampling.tex#L449",
+      "sha256": "d65db4486a37ed723fb63b075d2f15d3e60bd7d82fb1136fa26a10ef3fd9d86d"
+    },
+    {
+      "instrument_id": "MI-000426",
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+      "label": "thm:junta",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L61",
+      "sha256": "ed07c534acc0ae4de408696863eb7b57da3e25b8afcb5da5f586cb48809b8999"
+    },
+    {
+      "instrument_id": "MI-000426",
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex",
+      "label": "lem:influences",
+      "line": 91,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/preliminaries.tex#L91",
+      "sha256": "ed07c534acc0ae4de408696863eb7b57da3e25b8afcb5da5f586cb48809b8999"
+    },
+    {
+      "instrument_id": "MI-000427",
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+      "label": "lem:subchain-lists",
+      "line": 102,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L102",
+      "sha256": "3450971b49651b851bd1648d5fd6596ec1cab8b1aca0407f7f4f92db76c6d16c"
+    },
+    {
+      "instrument_id": "MI-000427",
+      "path": "preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex",
+      "label": "lem:separated-lists",
+      "line": 149,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hardness-of-finding-large-independent-sets-in-three-colorable-graphs-September-24-2026/build/source/sections/lists.tex#L149",
+      "sha256": "3450971b49651b851bd1648d5fd6596ec1cab8b1aca0407f7f4f92db76c6d16c"
+    },
+    {
+      "instrument_id": "MI-000428",
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "label": "eq:selector-gadget",
+      "line": 121,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L121",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+    },
+    {
+      "instrument_id": "MI-000428",
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "label": "eq:selector-boundary-table",
+      "line": 147,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L147",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+    },
+    {
+      "instrument_id": "MI-000429",
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "label": "prop:selector",
+      "line": 55,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L55",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+    },
+    {
+      "instrument_id": "MI-000429",
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "label": "eq:selector-subsets",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L28",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+    },
+    {
+      "instrument_id": "MI-000429",
+      "path": "preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex",
+      "label": "cor:selector-border",
+      "line": 247,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-cubic-lower-bound-for-border-determinantal-complexity-of-the-permanent-September-24-2026/build/source/sections/selector.tex#L247",
+      "sha256": "861e9287a7bd5e9f865ca49f4f8f9a385a33c3cf48ec72f8824c4d56db89103f"
+    },
+    {
+      "instrument_id": "MI-000430",
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+      "label": "ff:simultaneous",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L36",
+      "sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2"
+    },
+    {
+      "instrument_id": "MI-000430",
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex",
+      "label": "ff:product",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/02-finite-fields.tex#L31",
+      "sha256": "a55ede868711f34fcca8c3adb788611e0c1bed4653bef1e568f67467fbe5dde2"
+    },
+    {
+      "instrument_id": "MI-000431",
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+      "label": "norm:cyclic-algebra",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L62",
+      "sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f"
+    },
+    {
+      "instrument_id": "MI-000431",
+      "path": "preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex",
+      "label": "norm:idempotent-to-norm",
+      "line": 89,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deterministic-Polynomial-Factorization-over-Prime-Fields-October-4-2026/build/sections/03-norms.tex#L89",
+      "sha256": "25c456356962e8ccc68e22e2b7c81feb4f0dc854fba9e0f3bdcb8cfb0f762d2f"
+    }
+  ]
+}
