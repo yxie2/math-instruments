@@ -1,0 +1,57 @@
+{
+  "scope": "Eight finite/local mechanisms; no global source theorem or Lean solution certified.",
+  "checks": {
+    "balancing": {
+      "exact_kernel_cases": 28,
+      "projection_models": 100,
+      "minimum_projection_gap": 0.1633067966125875,
+      "control": "At k=0 the normalized spherical covariance is I/n even for singular A, so the inward kernel term is zero."
+    },
+    "projection_products": {
+      "simplex_determinant_enumerations": 6,
+      "product_enumerations": 9,
+      "dimension_20_ratio": "5588869/5505024",
+      "exact_integer_excess": 335380,
+      "smaller_product_control": "Two triangles have smaller ratio than the four-simplex."
+    },
+    "fresh_noise": {
+      "conditional_grid_cases": 60,
+      "control": "Reusing the current noise in both branches makes the zero-tolerance tie probability one, above the claimed independent-grid bound."
+    },
+    "markov_gluing": {
+      "bag_law_models": 12,
+      "roots_per_model": 4,
+      "zero_separator_models": 2,
+      "control": "Three pairwise anti-correlated binary laws have consistent single-vertex marginals but no global joint law on a triangle."
+    },
+    "boolean_sampler": {
+      "exact_second_moment_groups": 5,
+      "exact_potential_square_models": 50,
+      "collision_control": "Three zero shifts yield eight bit labels but only one distinct group element."
+    },
+    "periodization": {
+      "exact_interval_models": 12,
+      "control": "Removing the radius buffer creates a periodic seam gap for L=1.1 and centers 0.75+2Z."
+    },
+    "weighted_graph_transport": {
+      "finite_sequence_pairs": 100,
+      "constants": {
+        "forward": 3,
+        "inverse": 1
+      },
+      "control": "The constant output sequence 1 has finite weighted input sum but is not norm-null."
+    },
+    "lifted_absorption": {
+      "finite_support_shift_models": 100,
+      "nonsurjective_Q_models": 4,
+      "inexact_lift_control": "The proposed inverse fails after replacing the exact correction by 3/4 of it.",
+      "scope": "The shift model contains linear c0 and does not model the source no-linear-copy obstruction."
+    }
+  },
+  "status": "passed",
+  "groups": 8,
+  "versions": {
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  }
+}

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B048: 8 selected instruments from 4 families and 8 manuscripts. Affine balancing, exact projection products, fresh-noise comparisons, uniform sampling and nonlinear graph transport. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B047: eight instruments from families 339, 344, 345 and 349, with seven finite/local check groups and explicit source-theorem limits. Strengthened manuscript-to-passage validation and added companion coverage manifests. Corrected the parenthesis-truncated CAT(0) companion path for family 337 against the pinned source tree.
 
 - Added automatically generated subject-level coverage counts so later extraction rounds can identify gaps without counting individual family rows.
