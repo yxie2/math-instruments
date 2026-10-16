@@ -50,6 +50,22 @@ def views(data):
     families = sorted(data['families'], key=lambda r:r['id'])
     instruments = data['instruments']; papers = data['papers']; patterns = data['patterns']
     outputs = {}
+    inventory_path = ROOT/'sources/release-inventory.json'
+    if inventory_path.exists():
+        inventory = json.loads(inventory_path.read_text(encoding='utf-8'))
+        indexed = {r['source_family']: r for r in families}
+        covered = sum(f['family'] in indexed for f in inventory['families'])
+        pending = len(inventory['families'])-covered
+        coverage_rows = []
+        for f in inventory['families']:
+            r = indexed.get(f['family'])
+            status = r['batch_id'] if r else 'Pending'
+            target = f"../{r['path']}" if r else f"https://github.com/openai/math/blob/{inventory['source_commit']}/CONTENTS.md"
+            coverage_rows.append([f"[{f['family']}: {f['title']}]({target})", f['subject'], len(f['papers']), status])
+        outputs['tables/coverage.md'] = generated('Release coverage',
+            f"The pinned release contains {inventory['family_count']} families and {inventory['unique_manuscript_count']} distinct manuscripts. The catalogue contains selected extractions for **{covered} families**; **{pending} families remain pending**.\n\n"+
+            'Coverage means that selected instruments have been described. It does not mean every argument or companion manuscript has been independently reviewed. B001 imports the direction paper; later batches record their own source passages and review scope. The source-paper index and batch manifests give the manuscript-level detail.\n\n'+
+            table(['Family', 'Subject', 'Source manuscripts', 'Extraction batch'], coverage_rows))
     outputs['tables/instruments.md'] = generated('Mathematical instruments',
         'Form labels describe the presentation of an instrument. Novelty and mathematical review are recorded separately.\n\n'+
         table(['Instrument', 'Form', 'Subject', 'Family', 'Reuse'],
@@ -104,6 +120,7 @@ def views(data):
                 ['[Recurring patterns](catalog/patterns/README.md)',f'{len(patterns)} approaches connecting the source arguments'],
                 ['[Tables and review status](tables/README.md)','Family maps, formalization, dependencies and antecedents'],
                 ['[Extraction batches](batches/README.md)','Extraction rounds and source versions'],
+                *([['[Release coverage](tables/coverage.md)', f'{covered} of {inventory["family_count"]} families catalogued; {pending} pending']] if inventory_path.exists() else []),
                 ['[Use case studies](case-studies/README.md)','Subsequent investigations using extracted instruments'],
                 ['[Catalogue exports](exports/README.md)','JSON and CSV for search and further analysis'],
             ])
@@ -153,6 +170,25 @@ def validate():
         batch=yaml.safe_load(p.read_text(encoding='utf-8'))
         for field in ['family_ids','instrument_ids','paper_ids']:
             for rid in batch[field]:assert rid in by_id,(p,rid)
+        for kind, field in [('families','family_ids'),('instruments','instrument_ids'),('papers','paper_ids')]:
+            for r in data[kind]:
+                if r['batch_id']==batch['id']:
+                    assert r['id'] in batch[field],('Record missing from its batch',r['id'])
+        source_manifest=ROOT/'sources/batches'/f"{batch['id']}.json"
+        if source_manifest.exists():
+            source_data=json.loads(source_manifest.read_text(encoding='utf-8'))
+            assert source_data['source_commit']==batch['source_commit']
+            files={r['path']:r for r in source_data['files']}
+            for locator in source_data['instrument_locators']:
+                assert locator['instrument_id'] in batch['instrument_ids']
+                assert locator['sha256']==files[locator['path']]['sha256']
+                assert locator['line']>=1 and f"/{batch['source_commit']}/" in locator['url']
+            for mid in batch['instrument_ids']:
+                r=by_id[mid]
+                if r['batch_id']==batch['id']:
+                    assert r.get('source_locations'),('Missing exact source locations',mid)
+                    actual=[{k:v for k,v in loc.items() if k!='instrument_id'} for loc in source_data['instrument_locators'] if loc['instrument_id']==mid]
+                    assert r['source_locations']==actual,('Source locator mismatch',mid)
     case_ids=set()
     for p in (ROOT/'case-studies').glob('*/metadata.yaml'):
         case=yaml.safe_load(p.read_text(encoding='utf-8'))

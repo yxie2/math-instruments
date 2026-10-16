@@ -1,0 +1,376 @@
+{
+  "batch_id": "B002",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T05:08:06.097600+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/AmplitudeDamping.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/AmplitudeDamping.lean",
+      "sha256": "fa10657ef13d9a869fb057e0a166b21fe24a538d02211b8b62c29bc7a03588bd",
+      "bytes": 4866
+    },
+    {
+      "path": "lean/ComparatorChallenges/DimensionTenChannel.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DimensionTenChannel.lean",
+      "sha256": "5e2dadf13ad8a56778c07f0ac79d1c59b533814e94657e5dbe5ce290becda3ff",
+      "bytes": 1597
+    },
+    {
+      "path": "lean/ComparatorChallenges/DimensionTenPair.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DimensionTenPair.lean",
+      "sha256": "0b18f44a8ed5a3f80b005b35c36257f415a3741d8027616a026c1125c3daf269",
+      "bytes": 4706
+    },
+    {
+      "path": "lean/ComparatorChallenges/EntangledGames.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EntangledGames.lean",
+      "sha256": "b3957e18f10af74244e7a2fc1b6cf12b14c9dc4b036f7ffe2ef2b2810e6697c0",
+      "bytes": 3180
+    },
+    {
+      "path": "lean/ComparatorChallenges/EntropyPhotonNumber.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EntropyPhotonNumber.lean",
+      "sha256": "852aaa9ae3c137dcbe311da89c8467f09bb25b592c2ebb79a3d9cd079b2dd016",
+      "bytes": 4818
+    },
+    {
+      "path": "lean/docs/272.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/272.md",
+      "sha256": "9408c19dfdf984220c4a16f0ec7c7088bbaf77ff5f7c03d858159091c5d64c06",
+      "bytes": 1290
+    },
+    {
+      "path": "lean/docs/273.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/273.md",
+      "sha256": "78e1bacfac6f4ffe223e3607912563c718c0840d2775304db9ad192ad9ff1259",
+      "bytes": 1117
+    },
+    {
+      "path": "lean/docs/276.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/276.md",
+      "sha256": "34d51d11d25cf4d1108b3914cfcb7d13a9df63a0cb3dd82071406f07c0640a99",
+      "bytes": 1108
+    },
+    {
+      "path": "lean/docs/277.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/277.md",
+      "sha256": "156093cee5a104b49058f04f19aeebd9b328f93b7cd24957bbeb77f7434da4a1",
+      "bytes": 1133
+    },
+    {
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/README.md",
+      "sha256": "b65f0dd2472ad946f2a83e63d211c1ce5a010edaef50f4e24ee4d5546d233597",
+      "bytes": 745
+    },
+    {
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+      "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542",
+      "bytes": 8938
+    },
+    {
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex",
+      "sha256": "32360b66c1d91858469873fc16e89112ea428c9386114f57ff6f654bde72102f",
+      "bytes": 6381
+    },
+    {
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14",
+      "bytes": 5203
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/README.md",
+      "sha256": "4f2ef49f1a1e797b4b4ab0f59e0474b14a2de188f851bd7ceec395d7b160763a",
+      "bytes": 2021
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+      "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4",
+      "bytes": 6658
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex",
+      "sha256": "d56f756422a0526ac63b50b0ffac1e93a8ffff95d2aff82cc10dbab47fdd89a6",
+      "bytes": 7961
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex",
+      "sha256": "37739b9ff820dd1ed8552073b44f518904c9ee00f8c27f1e83e439034444901c",
+      "bytes": 9971
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+      "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db",
+      "bytes": 9620
+    },
+    {
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex",
+      "sha256": "54bc7899533396704dc24d06a3208398b488f0648367380164f0ec58374329a4",
+      "bytes": 17082
+    },
+    {
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/README.md",
+      "sha256": "eda66bdd56073660e5b73e2fe2b67b6d12b02ee4b924f056809f872341ec13f7",
+      "bytes": 540
+    },
+    {
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee",
+      "bytes": 17881
+    },
+    {
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+      "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b",
+      "bytes": 18021
+    },
+    {
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/README.md",
+      "sha256": "7cad74db9e5da70322993c16e2e7bba36330480a5b8486cf0d2c826651202961",
+      "bytes": 700
+    },
+    {
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+      "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689",
+      "bytes": 8920
+    },
+    {
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+      "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5",
+      "bytes": 10277
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000116",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex",
+      "label": "def:represented-class",
+      "line": 140,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex#L140",
+      "sha256": "37739b9ff820dd1ed8552073b44f518904c9ee00f8c27f1e83e439034444901c"
+    },
+    {
+      "instrument_id": "MI-000116",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex",
+      "label": "lem:coherence",
+      "line": 57,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex#L57",
+      "sha256": "d56f756422a0526ac63b50b0ffac1e93a8ffff95d2aff82cc10dbab47fdd89a6"
+    },
+    {
+      "instrument_id": "MI-000116",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex",
+      "label": "thm:zero-key",
+      "line": 121,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex#L121",
+      "sha256": "54bc7899533396704dc24d06a3208398b488f0648367380164f0ec58374329a4"
+    },
+    {
+      "instrument_id": "MI-000117",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+      "label": "prop:tensor-criterion",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L13",
+      "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+    },
+    {
+      "instrument_id": "MI-000117",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+      "label": "eq:SR",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L90",
+      "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+    },
+    {
+      "instrument_id": "MI-000117",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+      "label": "eq:kernel-vectors",
+      "line": 191,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L191",
+      "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+    },
+    {
+      "instrument_id": "MI-000118",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+      "label": "prop:channel-completion",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L39",
+      "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+    },
+    {
+      "instrument_id": "MI-000118",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+      "label": "eq:channel",
+      "line": 78,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L78",
+      "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+    },
+    {
+      "instrument_id": "MI-000118",
+      "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+      "label": "eq:square-corner",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L119",
+      "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+    },
+    {
+      "instrument_id": "MI-000119",
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "label": "thm:interpolation",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L32",
+      "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+    },
+    {
+      "instrument_id": "MI-000119",
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "label": "int:stieltjes",
+      "line": 149,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L149",
+      "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+    },
+    {
+      "instrument_id": "MI-000119",
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "label": "int:minimizer",
+      "line": 385,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L385",
+      "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+    },
+    {
+      "instrument_id": "MI-000120",
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+      "label": "lem:gibbs-regularity",
+      "line": 109,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L109",
+      "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b"
+    },
+    {
+      "instrument_id": "MI-000120",
+      "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+      "label": "eq:functional",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L44",
+      "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b"
+    },
+    {
+      "instrument_id": "MI-000121",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "label": "thm:thermal",
+      "line": 25,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L25",
+      "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+    },
+    {
+      "instrument_id": "MI-000121",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "label": "eq:thermal-table",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L64",
+      "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+    },
+    {
+      "instrument_id": "MI-000121",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "label": "eq:thermal-factors",
+      "line": 84,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L84",
+      "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+    },
+    {
+      "instrument_id": "MI-000122",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+      "label": "lem:partner-branch",
+      "line": 84,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L84",
+      "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+    },
+    {
+      "instrument_id": "MI-000122",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+      "label": "eq:partner-grams",
+      "line": 120,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L120",
+      "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+    },
+    {
+      "instrument_id": "MI-000122",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+      "label": "cor:mixed-bound",
+      "line": 219,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L219",
+      "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+    },
+    {
+      "instrument_id": "MI-000122",
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex",
+      "label": "eq:partner-marginal",
+      "line": 34,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex#L34",
+      "sha256": "32360b66c1d91858469873fc16e89112ea428c9386114f57ff6f654bde72102f"
+    },
+    {
+      "instrument_id": "MI-000123",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+      "label": "lem:tail-sampling",
+      "line": 42,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L42",
+      "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+    },
+    {
+      "instrument_id": "MI-000123",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+      "label": "prop:conditioning-to-tail",
+      "line": 83,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L83",
+      "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+    },
+    {
+      "instrument_id": "MI-000123",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+      "label": "prop:song-conditioning",
+      "line": 195,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L195",
+      "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+    },
+    {
+      "instrument_id": "MI-000124",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+      "label": "prop:root-conditioning",
+      "line": 35,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L35",
+      "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+    },
+    {
+      "instrument_id": "MI-000124",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+      "label": "eq:root-path-error",
+      "line": 126,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L126",
+      "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+    },
+    {
+      "instrument_id": "MI-000124",
+      "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+      "label": "cor:support-threshold",
+      "line": 223,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L223",
+      "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+    }
+  ]
+}

@@ -3130,6 +3130,455 @@
       "updated": "2026-10-12",
       "path": "catalog/instruments/MI-000115.md",
       "body": "# Scale-nested memories under rapidly vanishing forcing\n\n[Family context](../families/openai-math-376.md) · [Instrument index](../../tables/instruments.md) · [Batch B001](../../batches/B001/README.md)\n\n## Extracted mathematical content\n\n**Scale-nested memories under rapidly vanishing forcing**: unit-length physical steps but the n-th configuration written at digit scale $`2^{-s_n}`$ with displacement much smaller, so derivatives vanish faster than any power while computation continues; old records retained at coarser scales; coordinates alternate roles. The initial extraction identifies this elementary construction as the family’s clearest candidate new instrument.\n\n## Source and interpretation\n\nThe description above is imported from the direction paper. Its hypotheses, parameter restrictions and qualifications are part of the record. The family page supplies the surrounding claim, established ingredients, review caveats and source papers. For families with several manuscripts, the paper links identify the family context; they do not assert that every manuscript proves this instrument.\n\n## Source manuscripts\n\n- [P-000006](../papers/P-000006.md)\n- [P-000029](../papers/P-000029.md)\n- [P-000036](../papers/P-000036.md)\n- [P-000040](../papers/P-000040.md)\n- [P-000043](../papers/P-000043.md)\n- [P-000049](../papers/P-000049.md)\n- [P-000051](../papers/P-000051.md)\n- [P-000076](../papers/P-000076.md)\n- [P-000078](../papers/P-000078.md)\n\n## Applications\n\nNo subsequent application is recorded in this catalogue yet."
+    },
+    {
+      "id": "MI-000116",
+      "record_type": "instrument",
+      "title": "Four-effect coherence control for two-sided PPT images",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-272"
+      ],
+      "source_paper_ids": [
+        "P-000082"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex",
+          "label": "def:represented-class",
+          "line": 140,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex#L140",
+          "sha256": "37739b9ff820dd1ed8552073b44f518904c9ee00f8c27f1e83e439034444901c"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex",
+          "label": "lem:coherence",
+          "line": 57,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex#L57",
+          "sha256": "d56f756422a0526ac63b50b0ffac1e93a8ffff95d2aff82cc10dbab47fdd89a6"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex",
+          "label": "thm:zero-key",
+          "line": 121,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex#L121",
+          "sha256": "54bc7899533396704dc24d06a3208398b488f0648367380164f0ec58374329a4"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "new-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000116.md",
+      "body": "# Four-effect coherence control for two-sided PPT images\n\n[Family 272](../families/openai-math-272.md) · [Source manuscript](../papers/P-000082.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nLet $\\omega$ be a density matrix on $\\mathbb C^p\\otimes\\mathbb C^q$ of the form\n\n$$\\omega=(\\mathcal L\\otimes\\mathcal M)(\\chi\\chi^*),$$\n\nwhere $\\chi\\in\\mathbb C^r\\otimes\\mathbb C^s$, and $\\mathcal L$, $\\mathcal L\\circ T_r$, $\\mathcal M$, and $\\mathcal M\\circ T_s$ are completely positive. Neither $\\chi$ nor the maps must be normalized; $T_r,T_s$ denote matrix transposition in fixed bases. For arbitrary positive local matrices $X_0,X_1,Y_0,Y_1$, set $D_{ij}=X_i\\otimes Y_j$ and $p_{ij}=\\operatorname{Tr}(D_{ij}\\omega)$. The extracted inequality is\n\n$$\\|\\sqrt{D_{00}}\\,\\omega\\sqrt{D_{11}}\\|_1\n\\le\\sqrt{p_{00}p_{01}}+\\sqrt{p_{10}p_{11}}+2\\sqrt{p_{01}p_{10}}.$$\n\nThe local matrices need not sum to the identity. To obtain the estimate, pull them back through the adjoint maps, normalize the two Alice-side effects on the support of their sum, and split the input at the spectral comparison of the resulting commuting effects. Complete positivity gives a direct block estimate; complete positivity after transposition of **both** input factors gives a reversed estimate. Applying the two estimates to the four terms of the split vector proves the displayed bound.\n\n## Role in the source argument\n\nAt each complete public transcript, the coherence norm becomes the root fidelity between two conditional states held by Eve. The absence of pointwise POVM normalization is essential for integrating transcript densities. Tensor closure permits joint local processing of arbitrarily many input copies.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [def:represented-class](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/foundations.tex#L140)\n- [lem:coherence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/coherence.tex#L57)\n- [thm:zero-key](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/secret-key.tex#L121)\n\n## Antecedents and comparison\n\nPrivate-state methods already connect off-diagonal trace norms with conditional-state fidelity: see [Horodecki et al., Secure key from bound entanglement](https://arxiv.org/abs/quant-ph/0309110v2). The [2018 study of key-undistillable states](https://arxiv.org/abs/1612.08938v4) is a close problem-level antecedent. The specific four-effect estimate is the candidate extracted device; the broader relation between entanglement and secrecy is established background. This is a targeted comparison, not an exhaustive novelty determination.\n\n## Checks and limitations\n\nChecked the support normalization, the need for a global input transpose in the reversed bound, and the four-term triangle inequality against the source proof.\n\nThe represented class is a hypothesis and must not be replaced by all PPT states. The operational 1/5 unhalved trace-norm gap additionally uses the source protocol and transcript theorems; it is not a consequence of positivity alone. The corresponding conventional trace distance is 1/10.\n\n## Possible applications\n\nPotential use: an obstruction to coherent equal-label branches in a two-sided channel construction. Any extension to a different protocol model requires a compatible transcript representation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000117",
+      "record_type": "instrument",
+      "title": "Symmetric and exterior squares turn rank loss into a product-free Choi range",
+      "forms": [
+        "construction",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-272"
+      ],
+      "source_paper_ids": [
+        "P-000082"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+          "label": "prop:tensor-criterion",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L13",
+          "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+          "label": "eq:SR",
+          "line": 90,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L90",
+          "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex",
+          "label": "eq:kernel-vectors",
+          "line": 191,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L191",
+          "sha256": "cdc6f0039f436f5948ef76d3748f72b226ecc0bd4d2651a5836a4322491597db"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "new-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000117.md",
+      "body": "# Symmetric and exterior squares turn rank loss into a product-free Choi range\n\n[Family 272](../families/openai-math-272.md) · [Source manuscript](../papers/P-000082.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nLet $L:M_4(\\mathbb C)\\to M_4(\\mathbb C)$ be completely positive and PPT, meaning that its output transpose is also completely positive. Suppose twenty distinct projective directions $[x]$ satisfy $\\operatorname{rank}L(xx^*)<4$, every nonzero homogeneous quadratic vanishes on at most nine of them, and $L(yy^*)$ is positive definite for some $y$.\n\nLet $U:\\mathbb C^{10}\\to\\operatorname{Sym}^2\\mathbb C^4$ and $V:\\mathbb C^6\\to\\bigwedge^2\\mathbb C^4$ be the standard isometric embeddings into $\\mathbb C^4\\otimes\\mathbb C^4$. Write $\\widehat x=U^*(x\\otimes x)$ and let $K$ be the signed complementary-pair map on exterior two-vectors. Define\n\n$$S(A)=V^*(L\\otimes L)(UAU^*)V,\\qquad R(A)=KS(A)^T K^*.$$\n\nFor the real coordinate inclusion $E:\\mathbb C^6\\to\\mathbb C^{10}$, set $\\Phi_1(A)=ES(A^T)E^*$ and $\\Phi_2(B)=R^*(E^*BE)$, where $R^*$ denotes the Hilbert--Schmidt adjoint. These are PPT maps. Their composite has a nonzero positive Choi matrix $Z$ whose range contains no nonzero product vector.\n\nThe mechanism is explicit: rank loss puts $\\widehat x\\otimes\\widehat x$ in $\\ker Z$ because $\\bigwedge^4\\operatorname{ran}L(xx^*)=0$. A product vector in $\\operatorname{ran}Z$ would force two nonzero quadratics to have zero sets covering all twenty directions, contrary to $9+9<20$. The positive definite output guarantees $Z\\ne0$.\n\n## Role in the source argument\n\nConverts a rank-loss certificate for a small PPT map into nonseparability of a composition on a larger matrix algebra. The source then supplies a separate integer-pencil certificate for the twenty directions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:tensor-criterion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L13)\n- [eq:SR](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L90)\n- [eq:kernel-vectors](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/geometry.tex#L191)\n\n## Antecedents and comparison\n\nThe product-exclusion argument builds on [Bennett et al., Unextendible Product Bases and Bound Entanglement](https://arxiv.org/abs/quant-ph/9808030v2), [Pittenger](https://arxiv.org/abs/quant-ph/0208028v1), and [Parthasarathy](https://arxiv.org/abs/quant-ph/0405077v1). Exterior complementary-pair duality is also established. The candidate contribution is their assembly with a PPT rank-loss map, not the product-exclusion principle by itself. Targeted searches for the PPT/Veronese/twenty-direction combination did not identify an independent earlier instance.\n\n## Checks and limitations\n\nChecked the 10- and 6-dimensional tensor spaces, the Choi input-transpose cancellation, the conjugation required for exterior orthogonality over complex subspaces, and the zero-set counting step.\n\nThis is a conditional construction until the hypotheses on L are supplied. The arithmetic certificate was not rerun in this batch. Product-free range is asserted for the dimension-ten composite Choi matrix; it does not persist for every larger flagged completion.\n\n## Possible applications\n\nPotential use: search for other PPT maps with controlled projective rank-loss sets, or replace quadratic evaluation by another explicitly verified interpolation condition.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000118",
+      "record_type": "instrument",
+      "title": "A two-block switch with an absorbing flag preserves an entangled Choi corner",
+      "forms": [
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-272"
+      ],
+      "source_paper_ids": [
+        "P-000082"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+          "label": "prop:channel-completion",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L39",
+          "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+          "label": "eq:channel",
+          "line": 78,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L78",
+          "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+        },
+        {
+          "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex",
+          "label": "eq:square-corner",
+          "line": 119,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L119",
+          "sha256": "8ba7427a5bfc4bc3e82d446bb322cfbaa6ce2c51b2984acfdae95d77ed2750c4"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 3,
+      "subject": "Mathematical physics",
+      "novelty_status": "combination-of-established-constructions",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000118.md",
+      "body": "# A two-block switch with an absorbing flag preserves an entangled Choi corner\n\n[Family 272](../families/openai-math-272.md) · [Source manuscript](../papers/P-000082.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nFor any two PPT maps $\\Psi_1,\\Psi_2:M_m\\to M_m$, define $A_i=\\Psi_i^*(I)$, $c_i=(1+\\operatorname{Tr}A_i)^{-1}$ and $F_i=I-c_iA_i$. On $\\mathbb C^m_0\\oplus\\mathbb C^m_1\\oplus\\mathbb C e_\\star$, let $W_0,W_1$ be the real coordinate inclusions and $P_\\star=e_\\star e_\\star^*$. For diagonal input blocks $X_{00},X_{11},x_\\star$, define\n\n$$\\Theta(X)=c_2W_0\\Psi_2(X_{11})W_0^*\n+c_1W_1\\Psi_1(X_{00})W_1^*\n+[\\operatorname{Tr}(F_1X_{00})+\\operatorname{Tr}(F_2X_{11})+x_\\star]P_\\star.$$\n\nOff-diagonal input blocks are discarded. Since $F_i\\ge c_iI>0$, this is a trace-preserving PPT channel on dimension $2m+1$. Its flag is absorbing, and\n\n$$(W_0^*\\otimes W_0^*)J(\\Theta^2)(W_0\\otimes W_0)\n=c_1c_2J(\\Psi_2\\circ\\Psi_1).$$\n\nThus a nonseparable composite Choi matrix gives a channel whose square is not entanglement breaking. The original maps need not preserve trace.\n\n## Role in the source argument\n\nTransfers the source dimension-ten PPT-pair construction to a genuine trace-preserving channel in dimension 21.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:channel-completion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L39)\n- [eq:channel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L78)\n- [eq:square-corner](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/build/source/sections/applications.tex#L119)\n\n## Antecedents and comparison\n\nThe source explicitly credits the two-block switch to [Christandl, Müller-Hermes and Wolf, Section IV.A](https://arxiv.org/abs/1807.01266v2), and the trace-preserving flag extension to [Filippov, Proposition 3](https://arxiv.org/abs/2101.05686v3). This card records a reusable combination with an exact corner identity; it does not claim invention of either component.\n\n## Checks and limitations\n\nChecked positivity of the missing-trace effects, trace preservation, the absorbing flag, and the two-step compression identity.\n\nThe full Choi matrix has a product summand from the flag. The conclusion is nonseparability of the full matrix, witnessed by a local corner, not a product-free range for the full matrix. The displayed Choi compression uses real coordinate inclusions.\n\n## Possible applications\n\nPotential use: turn non-trace-preserving map-composition examples into physical channels while retaining a specified entangled submatrix.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000119",
+      "record_type": "instrument",
+      "title": "Four diagonal-form comparisons interpolate to a thermal hyperbolic weight",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-273"
+      ],
+      "source_paper_ids": [
+        "P-000083"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+          "label": "thm:interpolation",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L32",
+          "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+        },
+        {
+          "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+          "label": "int:stieltjes",
+          "line": 149,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L149",
+          "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+        },
+        {
+          "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+          "label": "int:minimizer",
+          "line": 385,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L385",
+          "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "new-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000119.md",
+      "body": "# Four diagonal-form comparisons interpolate to a thermal hyperbolic weight\n\n[Family 273](../families/openai-math-273.md) · [Source manuscript](../papers/P-000083.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nOn coordinate Hilbert spaces $\\mathcal H_j$, $0\\le j\\le k$, define $Q_{X,j}(Z)=\\sum_\\alpha X_j(\\alpha)|Z_\\alpha|^2$. Let $\\mathcal T\\subset\\mathcal H_0$ be linear, $L_i:\\mathcal T\\to\\mathcal H_i$ linear, and $w_i>0$. A weight family satisfies comparison when\n\n$$Q_{X,0}(Z)\\ge\\sum_{i=1}^k w_iQ_{X,i}(L_iZ)\\quad(Z\\in\\mathcal T).$$\n\nAt each coordinate let $m>0$ and $x,y\\in\\mathbb R$, and put $f(x)=x/\\sinh x$, with $f(0)=1$. Assume every source test has finitely many parameter values $(m,x,y)$ in its support, and $\\mathcal T$ is invariant under scalar functions of that tuple. If comparison holds for all four weights $mf(x)e^{\\pm x}$ and $mf(y)e^{\\pm y}$, it holds for\n\n$$F=m\\frac{f(x)f(y)}{f(x+y)}.$$\n\nNo commutation between $L_i$ and the multipliers is assumed. Finite parameter support allows infinitely many nonzero coordinates with the same parameters.\n\nThe additional scalar function is defined by $B(f(x)^2)=x\\coth x$ for $x\\ge0$. The source proves that $-B'$ has a positive Stieltjes representation. For $s=f(x)^2,t=f(y)^2$, this constructs the comparison-preserving weight $E=m(t-s)/(2(B(s)-B(t)))$, with $E=-m/(2B'(s))$ at $s=t$. A quadratic minimization in an auxiliary coordinate then gives exactly $F$.\n\n## Role in the source argument\n\nCombines the variance and entropy-Hessian comparisons at regularized minimizers into the metric used for a thermal-balance defect. It is a standalone comparison theorem, distinct from the full bosonic entropy inequality.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [thm:interpolation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L32)\n- [int:stieltjes](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L149)\n- [int:minimizer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex#L385)\n\n## Antecedents and comparison\n\nParallel sums and positive operator means are classical: [Anderson--Duffin](https://doi.org/10.1016/0022-247X(69)90200-5) and [Kubo--Ando](https://doi.org/10.1007/BF01371042). [Guha--Erkmen--Shapiro](https://arxiv.org/abs/0710.5666v2) supplies the EPnI problem, not this interpolation formula. Targeted searches for the four-weight and Stieltjes/EPnI formulations found no independent earlier match; this limited search does not establish priority. The source-specific Stieltjes function and exact target weight are the candidate new combination.\n\n## Checks and limitations\n\nRead the parallel-sum variational argument and scalar minimization, including x=y, x=-y and x=y=0. The numerical checks bundled with this batch compare the independent minimization and target formulas on a finite grid.\n\nThe finite-parameter and multiplier-invariance hypotheses are essential to the stated proof. Numerical agreement does not prove the Stieltjes representation or its unbounded-form extension. The source Hessian bound is asserted at its minimizers, not for every quantum channel and state.\n\n## Possible applications\n\nPotential use: transfer several elementary diagonal metric inequalities to a sharper thermal metric when the source test space satisfies the stated invariance conditions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000120",
+      "record_type": "instrument",
+      "title": "Fourth-moment Gibbs regularization supplies seventh-moment control",
+      "forms": [
+        "lemma",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-273"
+      ],
+      "source_paper_ids": [
+        "P-000083"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+          "label": "lem:gibbs-regularity",
+          "line": 109,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L109",
+          "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b"
+        },
+        {
+          "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+          "label": "eq:functional",
+          "line": 44,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L44",
+          "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "specialized-auxiliary-lemma-priority-unresolved",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000120.md",
+      "body": "# Fourth-moment Gibbs regularization supplies seventh-moment control\n\n[Family 273](../families/openai-math-273.md) · [Source manuscript](../papers/P-000083.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nLet $N$ be the total number operator on a finite positive number of bosonic modes and $W=I+N$. For $k>0$ and bounded $B\\ge0$, the form\n\n$$K=kW^4+W^{1/2}BW^{1/2},\\qquad\\mathcal D(K^{1/2})=\\mathcal D(W^2),$$\n\ndefines a positive self-adjoint operator with compact inverse. Its normalized Gibbs state $\\omega=e^{-K}/\\operatorname{Tr}e^{-K}$ is faithful, satisfies $\\operatorname{Tr}\\omega W^7<\\infty$, and uniquely minimizes $\\operatorname{Tr}\\sigma K-S(\\sigma)$ over states with finite fourth moment.\n\nThe proof writes $K^{-1}=W^{-2}(kI+W^{-3/2}BW^{-3/2})^{-1}W^{-2}$. For an eigenvector $\\psi_j$ with eigenvalue $u_j$ of $K$, the weak eigenvalue equation yields\n\n$$kW^{7/2}\\psi_j=u_jW^{-1/2}\\psi_j-BW^{1/2}\\psi_j.$$\n\nThe right side is square summable. Polynomial eigenvalue counting for a finite-mode number operator, followed by the factor $e^{-u_j}$, gives the seventh moment.\n\n## Role in the source argument\n\nJustifies logarithmic and unbounded-generator pairings after a fourth-moment penalty is added to the entropy optimization. The source also adds a thermal port, output thermal replacement and relative-entropy penalty; only the fourth-moment coefficient is sent to zero in the final compactness step.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:gibbs-regularity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L109)\n- [eq:functional](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex#L44)\n\n## Antecedents and comparison\n\nClosed positive forms, compact resolvents, Gibbs minimization and thermal entropy methods are established ingredients. [Beigi--Rahimi-Keshari](https://arxiv.org/abs/2311.09572v2) gives a prior one-mode variational route to Gaussian optimizers. The extracted feature here is the particular W^4/W^7 regularity package and its role in the multimode argument. No independent novelty claim is made for this auxiliary lemma.\n\n## Checks and limitations\n\nChecked the inverse factorization, the domain used in the eigenvalue equation, and the exponent 7 arising from the W^(7/2) norm.\n\nBounds may depend on k and B and need not be uniform as the regularization vanishes. A finite-mode number operator and bounded positive B are hypotheses. The lemma alone does not establish attainment or stationarity of the full two-input entropy functional.\n\n## Possible applications\n\nPotential use: regularize a bosonic variational problem so that subsequent traces against low-degree creation and annihilation expressions are defined.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000121",
+      "record_type": "instrument",
+      "title": "A thermal block decomposition preserves the scalar entropy term",
+      "forms": [
+        "inequality",
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-276"
+      ],
+      "source_paper_ids": [
+        "P-000084"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+          "label": "thm:thermal",
+          "line": 25,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L25",
+          "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+        },
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+          "label": "eq:thermal-table",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L64",
+          "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+        },
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+          "label": "eq:thermal-factors",
+          "line": 84,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L84",
+          "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "new-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000121.md",
+      "body": "# A thermal block decomposition preserves the scalar entropy term\n\n[Family 276](../families/openai-math-276.md) · [Source manuscript](../papers/P-000084.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nLet $X,Y$ have the same finite rectangular shape and satisfy $\\operatorname{Tr}XX^*=\\operatorname{Tr}YY^*=1$. Let $\\alpha,\\beta,\\eta,\\delta\\ge0$ sum to one and satisfy $\\alpha\\delta-\\beta\\eta=K^2$ with $K\\ge0$. Put\n\n$$T=\\begin{pmatrix}\\alpha XX^*+\\beta YY^*&KXY^*\\\\KYX^*&\\eta XX^*+\\delta YY^*\\end{pmatrix},\\quad U_0=\\alpha+\\beta,\\quad U_1=\\eta+\\delta,\\quad u=U_0U_1-K^2.$$\n\nWriting $h$ for binary entropy in nats and $g(u)=h((1+\\sqrt{1-4u})/2)$, the source proves\n\n$$S(T)\\ge(\\alpha+\\eta)S(XX^*)+(\\beta+\\delta)S(YY^*)+g(u),\\qquad 0\\le u\\le\\tfrac14.$$\n\nFor $u>0$, the coefficient relation is the line $U_1\\beta+U_0\\eta=u$. Its endpoints are\n\n$$ (\\alpha_1,\\beta_1,\\eta_1,\\delta_1)=(K^2/U_1,u/U_1,0,U_1),$$\n$$ (\\alpha_2,\\beta_2,\\eta_2,\\delta_2)=(U_0,0,u/U_0,K^2/U_0),$$\n\nwith weights $w_1=\\beta U_1/u$ and $w_2=\\eta U_0/u$. Both endpoint matrices factor through a two-by-two block matrix with one zero block, and both have the same scalar term $g(u)$. Entropy concavity therefore preserves that term in the mixture. The source separately handles $u=0$. Equality holds when $X=Y$.\n\n## Role in the source argument\n\nExtends the triangular block inequality to simultaneous thermal excitation and damping, without requiring a pure channel output.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [thm:thermal](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L25)\n- [eq:thermal-table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L64)\n- [eq:thermal-factors](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex#L84)\n\n## Antecedents and comparison\n\n[Tang, Zhu, Bai and Wang](https://arxiv.org/abs/2609.28592v1) is the source explicitly cited for the zero-block theorem and ordinary-damping additivity. [Fang](https://arxiv.org/abs/2609.14621v1) studies a converse for the generalized channel. The scalar one-use optimization has older antecedents. The candidate device here is the common-scalar endpoint decomposition; neither triangular entropy nor the binary optimizer is attributed to this extraction. A targeted phrase search found no independent prior instance of that decomposition.\n\n## Checks and limitations\n\nChecked the line equation, both weights, all coefficient recoveries and equality for X=Y. The bundled checks use exact rational coefficient samples and finite-dimensional noncommuting complex Gram matrices.\n\nThe determinant relation is a hypothesis; arbitrary four-coefficient block states are not covered. The equality case and finite numerical checks do not prove the general entropy inequality. Its analytic dependency is the triangular block theorem.\n\n## Possible applications\n\nPotential use: extend a zero-pattern matrix inequality along a coefficient segment when every endpoint has the same scalar contribution.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000122",
+      "record_type": "instrument",
+      "title": "Common Kraus columns retain conditional partner entropy",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-276"
+      ],
+      "source_paper_ids": [
+        "P-000084"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+          "label": "lem:partner-branch",
+          "line": 84,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L84",
+          "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+        },
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+          "label": "eq:partner-grams",
+          "line": 120,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L120",
+          "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+        },
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex",
+          "label": "cor:mixed-bound",
+          "line": 219,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L219",
+          "sha256": "d78c9e8b7d4a9623db2e23241fc20f047f6ad976f6d9ab4bc8fbd9ba98d2c542"
+        },
+        {
+          "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex",
+          "label": "eq:partner-marginal",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex#L34",
+          "sha256": "32360b66c1d91858469873fc16e89112ea428c9386114f57ff6f654bde72102f"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "thermal-extension-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000122.md",
+      "body": "# Common Kraus columns retain conditional partner entropy\n\n[Family 276](../families/openai-math-276.md) · [Source manuscript](../papers/P-000084.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nFor $\\gamma,\\nu\\in[0,1]$, define generalized amplitude damping by\n\n$$\\mathcal A_{\\gamma,\\nu}\\begin{pmatrix}1-p&z\\\\\\bar z&p\\end{pmatrix}=\\begin{pmatrix}1-t&\\sqrt{1-\\gamma}z\\\\\\sqrt{1-\\gamma}\\bar z&t\\end{pmatrix},\\qquad t=(1-\\gamma)p+\\gamma\\nu.$$\n\nSet $v(p)=\\gamma\\nu(1-\\nu)+\\gamma(1-\\gamma)(p-\\nu)^2$ and $e(p)=h((1+\\sqrt{1-4v(p)})/2)$ in nats. For every finite-dimensional CPTP partner $\\mathcal N$ and pure input\n\n$$\\psi=\\sqrt{1-p}|0\\rangle\\psi_0+\\sqrt p|1\\rangle\\psi_1,$$\n\nwith unit branch vectors that need not be orthogonal, the source's branch bound is\n\n$$S((\\mathcal A_{\\gamma,\\nu}\\otimes\\mathcal N)(|\\psi\\rangle\\langle\\psi|))\\ge e(p)+(1-p)S(\\mathcal N(|\\psi_0\\rangle\\langle\\psi_0|))+pS(\\mathcal N(|\\psi_1\\rangle\\langle\\psi_1|)).$$\n\nIf $V_\\ell$ are Kraus operators of $\\mathcal N$, the rectangular matrices with columns $V_\\ell\\psi_0$ and $V_\\ell\\psi_1$ retain all three operators $XX^*$, $YY^*$ and $XY^*$. This is the substitution into the thermal block inequality. The function $e$ is convex; recursion and entropy concavity give $S(\\mathcal A_{\\gamma,\\nu}^{\\otimes n}(\\rho))\\ge\\sum_j e(p_j)$ for arbitrary mixed input $\\rho$ with local populations $p_j$.\n\n## Role in the source argument\n\nKeeps the conditional partner output terms needed to bound an entire Holevo ensemble. Their weighted mean equals the partner marginal of the mean output; an unconstrained minimum-output bound alone would lose this information.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:partner-branch](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L84)\n- [eq:partner-grams](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L120)\n- [cor:mixed-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/output.tex#L219)\n- [eq:partner-marginal](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/partners.tex#L34)\n\n## Antecedents and comparison\n\n[Tang et al.](https://arxiv.org/abs/2609.28592v1) is a close antecedent for ordinary damping and pure-output channels. The source extends the branch argument through its thermal block inequality. Existing single-use optimizer formulas do not by themselves rule out entangled input advantages. This card records the thermal branch mechanism, with novelty provisional and relative to the sources compared.\n\n## Checks and limitations\n\nChecked the common-column identity for the cross operator, the determinant relation after channel substitution, and the population averaging used in recursion. No orthogonality of the branch vectors is used.\n\nThe channel and partner are finite dimensional. The stronger arbitrary-partner conclusion is stated in the manuscript but not in its selected Comparator challenge. Collective decoding is allowed; the product input ensemble does not imply optimal separate measurements.\n\n## Possible applications\n\nPotential use: retain an auxiliary channel or system in an entropy estimate instead of discarding its branch information before optimizing an ensemble.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000123",
+      "record_type": "instrument",
+      "title": "A tested-set conditioning budget gives an explicit threshold exponent",
+      "forms": [
+        "lemma",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-277"
+      ],
+      "source_paper_ids": [
+        "P-000085"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+          "label": "lem:tail-sampling",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L42",
+          "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+        },
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+          "label": "prop:conditioning-to-tail",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L83",
+          "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+        },
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex",
+          "label": "prop:song-conditioning",
+          "line": 195,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L195",
+          "sha256": "cad8395c2a47d66e59110a9c3c3d6d0fcd91326c019ae507af93671a69c5f689"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "quantitative-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000123.md",
+      "body": "# A tested-set conditioning budget gives an explicit threshold exponent\n\n[Family 277](../families/openai-math-277.md) · [Source manuscript](../papers/P-000085.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nLet $G$ be a finite two-player game with entangled value $v<1$ and answer-alphabet product $d\\ge1$. For a joint finite-dimensional strategy on $k$ repetitions, write $I_i$ for its binary wins, $W=\\sum_iI_i$, $E_C=\\{I_i=1\\text{ for }i\\in C\\}$ and $p_C=\\Pr(E_C)$. Fix $0<\\delta<1-v$ and $0<T\\le\\delta/4$.\n\nAssume, uniformly over every repetition length, strategy and proper tested set with $p_C>0$, that\n\n$$\\tau(C):=\\frac{\\log(1/p_C)+|C|\\log d}{k-|C|}\\le T\n\\quad\\Longrightarrow\\quad\n\\frac1{k-|C|}\\sum_{i\\notin C}\\Pr(I_i=1\\mid E_C)\\le v+\\delta/4.$$\n\nThen, with natural logarithms,\n\n$$\\Pr[W\\ge\\lceil(v+\\delta)k\\rceil]\\le\\exp\\!\\left(-\\frac{\\delta T}{16(1+\\log d)}k\\right)$$\n\nfor every $k\\ge1$, and for the supremum over finite-dimensional strategies. No attainment of the entangled value is needed.\n\nThe sampling step draws indices with replacement, so it makes no independence assumption on the indicators. A large upper tail supplies a short fixed tested set of sufficiently large probability whose conditional remaining win rate is too high. Independent tensor copies remove the lower bound on k without changing the exponent. A conditioning error $B\\tau^{1/4}$ permits $T=(\\delta/(4B))^4$ and hence a fifth-power threshold exponent.\n\n## Role in the source argument\n\nSeparates a probabilistic threshold conversion from the analytic conditioning estimate, allowing improved conditioning bounds to be reused without repeating the sampling argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:tail-sampling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L42)\n- [prop:conditioning-to-tail](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L83)\n- [prop:song-conditioning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/04-threshold.tex#L195)\n\n## Antecedents and comparison\n\n[Rao, Section 8](https://homes.cs.washington.edu/~anuprao/pubs/parrep.pdf) already converts tested-coordinate control into classical concentration; [Yuen](https://arxiv.org/abs/1604.04340v1) uses sampling with replacement; [Bavarian--Vidick--Yuen](https://arxiv.org/abs/1509.07466) proves threshold amplification for anchored games. [Song, TR26-199](https://eccc.weizmann.ac.il/report/2026/199/) supplies the conditioning input used here. The card isolates the explicit budget-to-rate formula and all-length step; it does not attribute tested-coordinate sampling itself as new.\n\n## Checks and limitations\n\nChecked the fixed-set selection argument, the constants in c/r and c(1+R/r), the proper-subset condition at large k, and N ceil(qk) >= ceil(qNk) in the tensor-copy step.\n\nThe conditioning hypothesis must hold uniformly for all lengths and all admitted strategies, not just one fixed strategy. An all-wins theorem is not by itself the required threshold estimate. The supplied Comparator uses delta^13; it is not evidence that the stronger delta^5 statement was kernel-checked in this batch.\n\n## Possible applications\n\nPotential use: convert a different, independently proved conditioning modulus into a threshold concentration rate, while retaining its parameter dependence.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000124",
+      "record_type": "instrument",
+      "title": "Reference-state rounding on question-support components",
+      "forms": [
+        "proof-mechanism",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-277"
+      ],
+      "source_paper_ids": [
+        "P-000085"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+          "label": "prop:root-conditioning",
+          "line": 35,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L35",
+          "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+        },
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+          "label": "eq:root-path-error",
+          "line": 126,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L126",
+          "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+        },
+        {
+          "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex",
+          "label": "cor:support-threshold",
+          "line": 223,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L223",
+          "sha256": "e39c02c77accf376849dbac57d9ed0fb1d78cd6340e4c3d600a55f01196bd1f5"
+        }
+      ],
+      "batch_id": "B002",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "new-combination-provisional",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000124.md",
+      "body": "# Reference-state rounding on question-support components\n\n[Family 277](../families/openai-math-277.md) · [Source manuscript](../papers/P-000085.md) · [Batch B002](../../batches/B002/README.md)\n\n## Mathematical content\n\nFor a finite question law $\\mu$, form the graph on positive-probability pairs $H=\\{(x,y):\\mu(x,y)>0\\}$, joining pairs sharing either local question. Let $H_j$ be its components, $\\mu_j=\\mu(\\cdot\\mid H_j)$, and\n\n$$\\kappa_\\mu=8\\max_j\\frac{|H_j|-1}{\\min_{z\\in H_j}\\mu_j(z)}.$$\n\nA singleton contributes zero. With the tested-set notation of the conditioning transfer, let $m=k-|C|$, $p=\\Pr(E_C)>0$, and $\\tau=(\\log(1/p)+|C|\\log d)/m$. The source bounds the conditional remaining success by\n\n$$\\frac1m\\sum_{i\\notin C}\\Pr(I_i=1\\mid E_C)\n\\le v+\\sqrt{\\frac{\\log(1/p)}{2m}}+4\\sqrt{\\kappa_\\mu\\tau}+2\\kappa_\\mu\\tau.$$\n\nThe exposure argument supplies common vectors with Alice-local and Bob-local approximations. Adjacent support pairs share an approximation. A path to a fixed component root, followed by weighted Cauchy--Schwarz, bounds the total squared replacement error by $\\kappa_\\mu p\\tau$. The root vectors define question-independent states for the component games. Relative entropy and Pinsker control the change in component frequencies after conditioning.\n\nUsing $T=\\delta^2/(1024(1+\\kappa_\\mu))$ in the transfer yields rate $\\delta^3/[16384(1+\\kappa_\\mu)(1+\\log d)]$.\n\n## Role in the source argument\n\nHandles zero entries and disconnected question support without changing the original game. Each player can identify its support component from the local question, so component strategies combine by tensoring near-optimal finite-dimensional strategies.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:root-conditioning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L35)\n- [eq:root-path-error](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L126)\n- [cor:support-threshold](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/build/sections/05-root-support.tex#L223)\n\n## Antecedents and comparison\n\n[Dinur--Harsha--Venkat--Yuen](https://arxiv.org/abs/1610.08349v2) uses connection graphs in classical multiplayer repetition. [Chailloux--Scarpa, corrected version](https://arxiv.org/abs/1310.7787v3) is a related distribution-dependent entangled repetition result. The source credits its common resolvent purification to the earlier OpenAI report. The candidate combination is the quantum component-root replacement with the explicit threshold constant, not graph paths or Pinsker inequality.\n\n## Checks and limitations\n\nChecked local identifiability of components, the path-length and minimum-mass estimate, and 1/32+1/8+1/512=81/512<1/4 in the final budget choice.\n\nThe constant depends on the smallest positive conditional mass in each component and may be large. The full conditioning theorem depends on the preceding exposure lemma. This is a fixed-distribution bound, not a universal cubic rate independent of the question law.\n\n## Possible applications\n\nPotential use: replace input-dependent quantum representatives by one reference per locally identifiable component when adjacent representatives share a controlled local approximation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -4671,6 +5120,82 @@
       "updated": "2026-10-12",
       "path": "catalog/papers/P-000081.md",
       "body": "# Uniform bounds for planar polynomial limit cycles\n\n[Paper index](../../tables/papers.md) · [Family 143](../families/openai-math-143.md)\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026.pdf)\n- [Citation and publication details](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/README.md)\n- Pinned revision: `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`\n\n## Extraction coverage\n\nThis manuscript belongs to family 143. The [family entry](../families/openai-math-143.md) preserves the direction paper’s account of the claims, instruments, established ingredients and caveats. The initial extraction is organized by family, so the links below are family associations, not a claim that every listed instrument occurs in this particular manuscript.\n\n## Instruments in the family\n\n- [MI-000068: Packets on saturated logarithmic flags and the separation theorem](../instruments/MI-000068.md)\n- [MI-000069: Absolute isolated-zero finiteness and projection count](../instruments/MI-000069.md)\n- [MI-000070: Finite passage templates and matching systems](../instruments/MI-000070.md)\n\n## Source-supplied citation\n\n```bibtex\n@misc{OAI:uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026,\n  author = {{OpenAI}},\n  title = {{Uniform bounds for planar polynomial limit cycles}},\n  howpublished = {OpenAI Math Release preprint\n                  \\href{https://github.com/openai/math/blob/main/preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026.pdf}{OAI:uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026}},\n  year = {2026}\n}\n```"
+    },
+    {
+      "id": "P-000082",
+      "record_type": "paper",
+      "title": "Entanglement with zero distillable secret key in local dimension ten",
+      "source_collection": "openai/math",
+      "upstream_slug": "Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026",
+      "source_date": "September 27, 2026",
+      "family_ids": [
+        "openai-math-272"
+      ],
+      "batch_id": "B002",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4f2ef49f1a1e797b4b4ab0f59e0474b14a2de188f851bd7ceec395d7b160763a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000082.md",
+      "body": "# Entanglement with zero distillable secret key in local dimension ten\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source constructs an entangled state on C^10 tensor C^10 with zero distillable key under its specified completed-protocol model, and a dimension-21 PPT channel whose square is not entanglement breaking.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000116: Four-effect coherence control for two-sided PPT images](../instruments/MI-000116.md)\n- [MI-000117: Symmetric and exterior squares turn rank loss into a product-free Choi range](../instruments/MI-000117.md)\n- [MI-000118: A two-block switch with an absorbing flag preserves an entangled Choi corner](../instruments/MI-000118.md)\n\n## Dependencies and review\n\nCP/Choi correspondence, PPT stability, product-vector range criterion; the zero-key conclusion additionally requires the full-transcript factorization theorem and an explicit algebraic certificate.\n\nRead the three extracted arguments and checked their dimensions, transpose conventions and stated hypotheses. The integer-pencil certificate and the infinite-history protocol theorem were not independently reconstructed. The headline is reported as a source claim, not certified by these checks.\n\nComparator statements inspected for the dimension-ten PPT pair and dimension-21 channel; the zero-key theorem is outside their scope. No Lean build performed.\n\n[Family context](../families/openai-math-272.md) · [Batch B002](../../batches/B002/README.md)"
+    },
+    {
+      "id": "P-000083",
+      "record_type": "paper",
+      "title": "The entropy photon-number inequality",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-entropy-photon-number-inequality-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-273"
+      ],
+      "batch_id": "B002",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "eda66bdd56073660e5b73e2fe2b67b6d12b02ee4b924f056809f872341ec13f7",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000083.md",
+      "body": "# The entropy photon-number inequality\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-photon-number-inequality-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the entropy photon-number inequality for arbitrary independent finite-energy bosonic inputs with any finite number of modes, allowing entanglement within each input.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000119: Four diagonal-form comparisons interpolate to a thermal hyperbolic weight](../instruments/MI-000119.md)\n- [MI-000120: Fourth-moment Gibbs regularization supplies seventh-moment control](../instruments/MI-000120.md)\n\n## Dependencies and review\n\nParallel sums and operator means; Herglotz/Stieltjes representation; Gibbs variational principle; energy-constrained entropy continuity; the full EPnI argument additionally uses minimum-specific Hessian and stationarity identities.\n\nInspected the interpolation construction and Gibbs regularity proof, including singular parameter limits and moment exponents. The full infinite-dimensional minimization and limiting EPnI proof were not independently verified.\n\nEntropyPhotonNumber Comparator statement and scope document inspected; no Lean build performed.\n\n[Family context](../families/openai-math-273.md) · [Batch B002](../../batches/B002/README.md)"
+    },
+    {
+      "id": "P-000084",
+      "record_type": "paper",
+      "title": "Classical capacity and entropy inequalities for generalized amplitude damping",
+      "source_collection": "openai/math",
+      "upstream_slug": "Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-276"
+      ],
+      "batch_id": "B002",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b65f0dd2472ad946f2a83e63d211c1ce5a010edaef50f4e24ee4d5546d233597",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000084.md",
+      "body": "# Classical capacity and entropy inequalities for generalized amplitude damping\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a scalar capacity formula and tensor-power additivity for every qubit generalized amplitude-damping channel, plus additivity with every finite-dimensional partner channel.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000121: A thermal block decomposition preserves the scalar entropy term](../instruments/MI-000121.md)\n- [MI-000122: Common Kraus columns retain conditional partner entropy](../instruments/MI-000122.md)\n\n## Dependencies and review\n\nTriangular block entropy inequality of Tang--Zhu--Bai--Wang; entropy concavity; rectangular Kraus representations; convexity of the population-dependent output entropy.\n\nChecked the endpoint mixture algebra, coefficient conditions, rectangular Kraus substitution and the scope of the supplied Comparator. The underlying triangular block theorem was traced to its cited antecedent, not independently proved in this batch.\n\nAmplitudeDamping Comparator inspected for tensor powers, the scalar optimum and operational capacity; arbitrary-partner additivity is outside that selected statement. No Lean build performed.\n\n[Family context](../families/openai-math-276.md) · [Batch B002](../../batches/B002/README.md)"
+    },
+    {
+      "id": "P-000085",
+      "record_type": "paper",
+      "title": "Threshold parallel repetition for finite-dimensional entangled games",
+      "source_collection": "openai/math",
+      "upstream_slug": "Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-277"
+      ],
+      "batch_id": "B002",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7cad74db9e5da70322993c16e2e7bba36330480a5b8486cf0d2c826651202961",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000085.md",
+      "body": "# Threshold parallel repetition for finite-dimensional entangled games\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source derives a universal fifth-power threshold exponent for finite entangled games from an external conditioning estimate, and a cubic exponent depending on the question distribution.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000123: A tested-set conditioning budget gives an explicit threshold exponent](../instruments/MI-000123.md)\n- [MI-000124: Reference-state rounding on question-support components](../instruments/MI-000124.md)\n\n## Dependencies and review\n\nSong conditioning estimate for the universal application; operator-entropy exposure estimates for support rounding; classical sampling, tensor-copy amplification and Pinsker inequality.\n\nChecked the transfer proof, the all-length tensor-copy step, the root-path estimate and the displayed exponent arithmetic. The exposure lemma and the external Song estimate were not fully re-proved. Fresh comparisons distinguish threshold events from all-wins repetition.\n\nEntangledGames Comparator inspected: universal delta^13 rate only. The paper states delta^5 and a distribution-dependent cubic rate. No Lean build performed.\n\n[Family context](../families/openai-math-277.md) · [Batch B002](../../batches/B002/README.md)"
     }
   ],
   "families": [
@@ -5573,6 +6098,115 @@
       "map_formalization_summary": "no",
       "path": "catalog/families/openai-math-268.md",
       "body": "# The spin-one Haldane gap\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000011](../papers/P-000011.md)\n- [P-000069](../papers/P-000069.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized; computer-assisted new criterion\n\nFor the pure spin-1 Heisenberg antiferromagnet on even periodic rings, the source claims a unique ground state for all even $`L \\ge 60`$ and a uniform gap: $`\\gamma_L>\\frac4{105}\\log\\frac{80}{79}>4.79\\times10^{-4}`$ for $`L \\ge 60`$ and $`>3.8\\times10^{-3}`$ for $`L \\ge 2304`$, versus the numerical 0.4105. Odd rings are not covered. A companion discharges Tasaki’s Assumption 2 for boundary-field chains. Haldane’s 1983 conjecture for the actual Heisenberg chain had no rigorous proof; the chain is not frustration-free, so the usual AKLT and frustration-free finite-size criteria do not directly establish this claim.\n\n## Extracted instruments.\n\n- [MI-000077: Coupled purity bootstrap](../instruments/MI-000077.md)\n\n- [MI-000078: Self-adjoint spatial transfer operator on bond histories](../instruments/MI-000078.md)\n\n- [MI-000079: Moment-to-spectrum extraction with exact-integer certificates](../instruments/MI-000079.md)\n\n## Reused.\n\nAizenman–Nachtergaele 1994; Suzuki’s quantum transfer matrix; Fannes–Nachtergaele–Werner MPS; Fox–Glynn truncation; Tasaki’s 2025 index theorem (companion).\n\n## Caveats.\n\nThe argument uses 27 thermal cases and 2 MPS contractions. The verifier was not run for this survey. Self-adjointness requires the real Cartesian decomposition, which restricts the scope of the criterion.\n\n## Recorded assessment\n\n- Novelty: new criterion\n- Formalization: no (computer-assisted, Python verifier)\n- Statement coverage: —\n- Dependencies: companion depends on main’s intermediate data\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-272",
+      "record_type": "family",
+      "title": "Entanglement, PPT composition and the obstruction to secret key",
+      "source_family": "272",
+      "source_collection": "openai/math",
+      "batch_id": "B002",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000082"
+      ],
+      "instrument_ids": [
+        "MI-000116",
+        "MI-000117",
+        "MI-000118"
+      ],
+      "headline": "The source constructs an entangled state on C^10 tensor C^10 with zero distillable key under its specified completed-protocol model, and a dimension-21 PPT channel whose square is not entanglement breaking.",
+      "central_instrument": "A four-effect coherence bound, a symmetric/exterior-square rank-loss construction, and a trace-preserving channel completion.",
+      "novelty_assessment": "mixed: candidate combinations and an operational inequality; component constructions have explicit antecedents",
+      "formalization_summary": "Comparator statements inspected for the dimension-ten PPT pair and dimension-21 channel; the zero-key theorem is outside their scope. No Lean build performed.",
+      "statement_faithfulness": "The two selected Comparator statements concern PPT composition, not the operational zero-key claim.",
+      "dependencies": "CP/Choi correspondence, PPT stability, product-vector range criterion; the zero-key conclusion additionally requires the full-transcript factorization theorem and an explicit algebraic certificate.",
+      "antecedents": "Unextendible product bases; polynomial constructions of completely entangled subspaces; two-block channel switches; flagged trace-preserving extensions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-272.md",
+      "body": "# Entanglement, PPT composition and the obstruction to secret key\n\n## Source manuscript and claim\n\n[Entanglement with zero distillable secret key in local dimension ten](../papers/P-000082.md), by OpenAI, September 27, 2026.\n\nThe source constructs an entangled state on C^10 tensor C^10 with zero distillable key under its specified completed-protocol model, and a dimension-21 PPT channel whose square is not entanglement breaking.\n\n## Extracted instruments\n\n- [MI-000116: Four-effect coherence control for two-sided PPT images](../instruments/MI-000116.md)\n- [MI-000117: Symmetric and exterior squares turn rank loss into a product-free Choi range](../instruments/MI-000117.md)\n- [MI-000118: A two-block switch with an absorbing flag preserves an entangled Choi corner](../instruments/MI-000118.md)\n\n## Dependencies and antecedents\n\nCP/Choi correspondence, PPT stability, product-vector range criterion; the zero-key conclusion additionally requires the full-transcript factorization theorem and an explicit algebraic certificate.\n\nUnextendible product bases; polynomial constructions of completely entangled subspaces; two-block channel switches; flagged trace-preserving extensions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the three extracted arguments and checked their dimensions, transpose conventions and stated hypotheses. The integer-pencil certificate and the infinite-history protocol theorem were not independently reconstructed. The headline is reported as a source claim, not certified by these checks.\n\nComparator statements inspected for the dimension-ten PPT pair and dimension-21 channel; the zero-key theorem is outside their scope. No Lean build performed.\n\nThe two selected Comparator statements concern PPT composition, not the operational zero-key claim.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/272.md) · [Batch record](../../batches/B002/README.md)"
+    },
+    {
+      "id": "openai-math-273",
+      "record_type": "family",
+      "title": "Entropy photon-number comparison through diagonal-form interpolation",
+      "source_family": "273",
+      "source_collection": "openai/math",
+      "batch_id": "B002",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000083"
+      ],
+      "instrument_ids": [
+        "MI-000119",
+        "MI-000120"
+      ],
+      "headline": "The source claims the entropy photon-number inequality for arbitrary independent finite-energy bosonic inputs with any finite number of modes, allowing entanglement within each input.",
+      "central_instrument": "Four-weight interpolation via a Stieltjes representation, together with moment-controlled Gibbs regularization.",
+      "novelty_assessment": "candidate interpolation combination; Gibbs regularity is a specialized auxiliary lemma, with historical novelty unresolved",
+      "formalization_summary": "EntropyPhotonNumber Comparator statement and scope document inspected; no Lean build performed.",
+      "statement_faithfulness": "Selected Comparator includes independent inputs, finite mean energy and a finite positive number of modes; channel-capacity consequences are outside that statement.",
+      "dependencies": "Parallel sums and operator means; Herglotz/Stieltjes representation; Gibbs variational principle; energy-constrained entropy continuity; the full EPnI argument additionally uses minimum-specific Hessian and stationarity identities.",
+      "antecedents": "Guha--Erkmen--Shapiro EPnI formulation; Kubo--Ando operator means; one-mode variational Gaussian optimizer results.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-273.md",
+      "body": "# Entropy photon-number comparison through diagonal-form interpolation\n\n## Source manuscript and claim\n\n[The entropy photon-number inequality](../papers/P-000083.md), by OpenAI, September 24, 2026.\n\nThe source claims the entropy photon-number inequality for arbitrary independent finite-energy bosonic inputs with any finite number of modes, allowing entanglement within each input.\n\n## Extracted instruments\n\n- [MI-000119: Four diagonal-form comparisons interpolate to a thermal hyperbolic weight](../instruments/MI-000119.md)\n- [MI-000120: Fourth-moment Gibbs regularization supplies seventh-moment control](../instruments/MI-000120.md)\n\n## Dependencies and antecedents\n\nParallel sums and operator means; Herglotz/Stieltjes representation; Gibbs variational principle; energy-constrained entropy continuity; the full EPnI argument additionally uses minimum-specific Hessian and stationarity identities.\n\nGuha--Erkmen--Shapiro EPnI formulation; Kubo--Ando operator means; one-mode variational Gaussian optimizer results. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nInspected the interpolation construction and Gibbs regularity proof, including singular parameter limits and moment exponents. The full infinite-dimensional minimization and limiting EPnI proof were not independently verified.\n\nEntropyPhotonNumber Comparator statement and scope document inspected; no Lean build performed.\n\nSelected Comparator includes independent inputs, finite mean energy and a finite positive number of modes; channel-capacity consequences are outside that statement.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/273.md) · [Batch record](../../batches/B002/README.md)"
+    },
+    {
+      "id": "openai-math-276",
+      "record_type": "family",
+      "title": "Thermal block entropy and generalized amplitude-damping capacity",
+      "source_family": "276",
+      "source_collection": "openai/math",
+      "batch_id": "B002",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000084"
+      ],
+      "instrument_ids": [
+        "MI-000121",
+        "MI-000122"
+      ],
+      "headline": "The source claims a scalar capacity formula and tensor-power additivity for every qubit generalized amplitude-damping channel, plus additivity with every finite-dimensional partner channel.",
+      "central_instrument": "A convex decomposition into two zero-block Gram matrices with the same scalar entropy contribution, followed by a common-Kraus branch bound.",
+      "novelty_assessment": "thermal extension is a candidate new combination; zero-block inequality and one-use optimizer have prior sources",
+      "formalization_summary": "AmplitudeDamping Comparator inspected for tensor powers, the scalar optimum and operational capacity; arbitrary-partner additivity is outside that selected statement. No Lean build performed.",
+      "statement_faithfulness": "The selected Comparator covers repeated uses of one channel, not the stronger arbitrary-partner assertion in the manuscript.",
+      "dependencies": "Triangular block entropy inequality of Tang--Zhu--Bai--Wang; entropy concavity; rectangular Kraus representations; convexity of the population-dependent output entropy.",
+      "antecedents": "Earlier one-use amplitude-damping optimizers, ordinary-damping additivity, and unital/entanglement-breaking special cases.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-276.md",
+      "body": "# Thermal block entropy and generalized amplitude-damping capacity\n\n## Source manuscript and claim\n\n[Classical capacity and entropy inequalities for generalized amplitude damping](../papers/P-000084.md), by OpenAI, September 24, 2026.\n\nThe source claims a scalar capacity formula and tensor-power additivity for every qubit generalized amplitude-damping channel, plus additivity with every finite-dimensional partner channel.\n\n## Extracted instruments\n\n- [MI-000121: A thermal block decomposition preserves the scalar entropy term](../instruments/MI-000121.md)\n- [MI-000122: Common Kraus columns retain conditional partner entropy](../instruments/MI-000122.md)\n\n## Dependencies and antecedents\n\nTriangular block entropy inequality of Tang--Zhu--Bai--Wang; entropy concavity; rectangular Kraus representations; convexity of the population-dependent output entropy.\n\nEarlier one-use amplitude-damping optimizers, ordinary-damping additivity, and unital/entanglement-breaking special cases. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nChecked the endpoint mixture algebra, coefficient conditions, rectangular Kraus substitution and the scope of the supplied Comparator. The underlying triangular block theorem was traced to its cited antecedent, not independently proved in this batch.\n\nAmplitudeDamping Comparator inspected for tensor powers, the scalar optimum and operational capacity; arbitrary-partner additivity is outside that selected statement. No Lean build performed.\n\nThe selected Comparator covers repeated uses of one channel, not the stronger arbitrary-partner assertion in the manuscript.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/276.md) · [Batch record](../../batches/B002/README.md)"
+    },
+    {
+      "id": "openai-math-277",
+      "record_type": "family",
+      "title": "Conditioning budgets and threshold repetition for entangled games",
+      "source_family": "277",
+      "source_collection": "openai/math",
+      "batch_id": "B002",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000085"
+      ],
+      "instrument_ids": [
+        "MI-000123",
+        "MI-000124"
+      ],
+      "headline": "The source derives a universal fifth-power threshold exponent for finite entangled games from an external conditioning estimate, and a cubic exponent depending on the question distribution.",
+      "central_instrument": "A quantitative conditioning-to-tail transfer and reference-state rounding on connected components of the question support.",
+      "novelty_assessment": "quantitative transfer and support-rounding combinations; established sampling and purification components are retained with attribution",
+      "formalization_summary": "EntangledGames Comparator inspected: universal delta^13 rate only. The paper states delta^5 and a distribution-dependent cubic rate. No Lean build performed.",
+      "statement_faithfulness": "The selected formal statement is weaker than the paper main theorem and excludes its distribution-dependent cubic estimate.",
+      "dependencies": "Song conditioning estimate for the universal application; operator-entropy exposure estimates for support rounding; classical sampling, tensor-copy amplification and Pinsker inequality.",
+      "antecedents": "Rao concentration; Yuen tested-coordinate sampling; anchored entangled repetition; connection-graph methods; earlier OpenAI resolvent purification.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-277.md",
+      "body": "# Conditioning budgets and threshold repetition for entangled games\n\n## Source manuscript and claim\n\n[Threshold parallel repetition for finite-dimensional entangled games](../papers/P-000085.md), by OpenAI, September 25, 2026.\n\nThe source derives a universal fifth-power threshold exponent for finite entangled games from an external conditioning estimate, and a cubic exponent depending on the question distribution.\n\n## Extracted instruments\n\n- [MI-000123: A tested-set conditioning budget gives an explicit threshold exponent](../instruments/MI-000123.md)\n- [MI-000124: Reference-state rounding on question-support components](../instruments/MI-000124.md)\n\n## Dependencies and antecedents\n\nSong conditioning estimate for the universal application; operator-entropy exposure estimates for support rounding; classical sampling, tensor-copy amplification and Pinsker inequality.\n\nRao concentration; Yuen tested-coordinate sampling; anchored entangled repetition; connection-graph methods; earlier OpenAI resolvent purification. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nChecked the transfer proof, the all-length tensor-copy step, the root-path estimate and the displayed exponent arithmetic. The exposure lemma and the external Song estimate were not fully re-proved. Fresh comparisons distinguish threshold events from all-wins repetition.\n\nEntangledGames Comparator inspected: universal delta^13 rate only. The paper states delta^5 and a distribution-dependent cubic rate. No Lean build performed.\n\nThe selected formal statement is weaker than the paper main theorem and excludes its distribution-dependent cubic estimate.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/277.md) · [Batch record](../../batches/B002/README.md)"
     },
     {
       "id": "openai-math-285",

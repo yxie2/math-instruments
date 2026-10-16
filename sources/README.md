@@ -5,6 +5,8 @@ The initial source collection is [openai/math](https://github.com/openai/math), 
 - [Source collection and manuscript README hashes](openai-math.json)
 - [Inspected source-file references and hashes](inspected-files.json)
 - [Direction-paper import and hashes](../editions/zenodo-23319145/coverage.yaml)
+- [Complete release inventory](release-inventory.json)
+- [Later-batch source manifests](batches/)
 
 The source repository's initial release contained 722 manuscripts. The pinned snapshot contains 719 after three withdrawals, still in 372 families. B001 selects 38 families from that collection.
 
