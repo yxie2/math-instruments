@@ -5502,6 +5502,428 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000161.md",
       "body": "# Random forbidden classes have a second moment stable under measure changes\n\n[Family 021](../families/openai-math-021.md) · [Source manuscript](../papers/P-000102.md) · [Batch B007](../../batches/B007/README.md)\n\n## Mathematical content\n\nAt each prime p<=w independently choose one uniform forbidden residue. Let I_j indicate that an integer j avoids all these classes, and let S count survivors in an interval of J integers. Put $V_0=\\prod_{p\\le w}(1-1/p)$. Then E S=J V0, and for each fixed delta>0,\n\n$$\\mathbb E(S-JV_0)^2=o((JV_0)^2)\\quad\\text{uniformly for }J\\ge w^\\delta.$$\n\nFor nonzero spacing h the pair probability divided by V0 squared is exactly\n\n$$2\\mathbf1_{2\\mid h}\\prod_{2<p\\le w}\\left(1-\\frac1{(p-1)^2}\\right)\\prod_{\\substack{2<p\\le w\\\\p\\mid h}}\\left(1+\\frac1{p-2}\\right).$$\n\nExpanding the last product over odd squarefree l gives $\\lambda_l=\\prod_{p\\mid l}(p-2)^{-1}$. The triangular average of $2\\mathbf1_{2l\\mid h}$ tends to 1/l and is uniformly O(1/l). The series $\\sum_l\\lambda_l/l$ converges, and its Euler product cancels the preceding product. This proves mean one for the off-diagonal pair factor. The diagonal contributes 1/(J V0)=o(1).\n\nThe stable version needs no normalization of the perturbed measure. Let mu be a finite positive measure carrying the same indexed indicators, with mass 1+O(zeta), single-point integrals V0(1+O(zeta)), and for i!=j,\n\n$$\\int I_iI_j\\,d\\mu\\le(1+O(\\zeta))\\mathbb P_{\\rm ind}(I_i=I_j=1),\\qquad0\\le\\zeta\\le1/2,$$\n\nwith uniform constants. Then $\\int(S-JV_0)^2d\\mu\\ll(\\zeta+o(1))(JV_0)^2$. Expand the square, using the upper second-moment bound, lower first-moment bound and upper total mass. A zero independent pair probability requires an exactly zero perturbed pair probability; an additive error there is not covered.\n\n## Role in the source argument\n\nTransfers small-variance survival counts to the weighted measures arising from structured prime boxes after the inverse step.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:random-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L183)\n- [eq:variance-pair-factor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/build/sections/variance.tex#L220)\n\n## Antecedents and comparison\n\nThe source identifies this as a truncated two-point version of [Gallagher singular-series averaging](https://www.cambridge.org/core/journals/mathematika/article/on-the-distribution-of-primes-in-short-intervals/DCE557AC8750333E68426FCEEC11858C). [Banks, Ford and Tao](https://arxiv.org/abs/1908.08613v3) provide related random-sieve context. The stable finite-measure formulation is the selected reusable variant.\n\n## Checks and limitations\n\nRead the divisor expansion, Euler-factor cancellation and finite-measure square expansion. Exhaustive small forbidden-class systems verify exact means, pair factors and variances. Controlled density perturbations verify the finite-measure comparison and preserve parity zeros.\n\nThe o(1) conclusion is asymptotic with fixed positive delta. Marginal survival estimates alone do not control variance; the pair upper bound and total mass are needed. The verification computes finite identities, not the claimed uniform asymptotic or the full Jacobsthal theorem.\n\n## Possible applications\n\nSecond-moment arguments for perturbed sieve distributions when only one-point accuracy and pairwise upper control survive a change of measure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000162",
+      "record_type": "instrument",
+      "title": "Support propagation creates an invariant convex set for a condensing map",
+      "forms": [
+        "criterion",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-322"
+      ],
+      "source_paper_ids": [
+        "P-000103"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+          "label": "prop:alignment",
+          "line": 218,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L218",
+          "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+        },
+        {
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+          "label": "eq:equality",
+          "line": 248,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L248",
+          "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+        },
+        {
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+          "label": "eq:contraction",
+          "line": 280,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L280",
+          "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+        },
+        {
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+          "label": "thm:condensing",
+          "line": 209,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L209",
+          "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-extremal-support-and-compact-parameter-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000162.md",
+      "body": "# Support propagation creates an invariant convex set for a condensing map\n\n[Family 322](../families/openai-math-322.md) · [Source manuscript](../papers/P-000103.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nThe source's geometric step admits this abstraction. Let E be a nonempty closed subset of the unit sphere of a real Banach space, and let g:E->E be continuous. Suppose every v and g(v) have a common norm-one support. Suppose also that every unit vector sharing a support with g(v) belongs to E. Then E contains a nonempty closed bounded convex set C with g(C) contained in C.\n\nStart with v0 in E. Given a finite convex hull contained in E, choose a strictly positive combination a of all its vertices and add g(a). A common support of a and g(a) takes value one on every old vertex, since their coefficients are positive. It therefore norms the enlarged hull; every point in that hull shares the support with g(a) and lies in E. Choose the combinations by repeatedly approximating all finite rational combinations, with a vanishing positive perturbation on all currently available vertices. The chosen a's are dense in the final closed convex hull C. Since their images are among the vertices, continuity gives g(C) contained in C.\n\nAssume in addition that, for a map b:C->K into a totally bounded metric space,\n\n$$\\|g(v)-g(v')\\|\\le\\gamma\\|v-v'\\|+L d_K(b(v),b(v')),\\qquad0\\le\\gamma<1.$$\n\nRefine each finite diameter cover of H by a finite small-diameter partition of the b-values. Letting the parameter mesh tend to zero gives $\\chi(g(H))\\le\\gamma\\chi(H)$ for the Kuratowski measure of noncompactness. Darbo's theorem supplies a fixed point of g in C. This does not assert that g is a norm contraction.\n\nIn the source, M>0 is an attained radial-distance defect, t is in (0,1), and the return map pairs opposite sphere contacts about ty and t f(y). Its positive radii obey s=p+M, r=u+M and all lie in [1-t,1+t]. The estimate is\n\n$$\\|g(v)-g(v')\\|\\le\\frac{up}{rs}\\|v-v'\\|+\\frac{2|u-u'|}{r}+\\frac{2u|p-p'|}{rs}.$$\n\nThus the two scalar parameters p,u suffice, and $\\gamma=(1-M/(1+t))^2<1$. A fixed direction aligns the two source and target chords. A separate chord argument is still needed to contradict M>0.\n\n## Role in the source argument\n\nObtains aligned extremal chords without imposing compactness, finite dimension or strict convexity on the ambient spheres.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:alignment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L218)\n- [eq:equality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L248)\n- [eq:contraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L280)\n- [thm:condensing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L209)\n\n## Antecedents and comparison\n\nThe fixed-point step is [Darbo’s theorem](https://www.numdam.org/item/RSMUP_1955__24__84_0/). The earlier attainment step uses standard [Banach ultrapowers](https://www.numdam.org/item/SEDP_1971-1972____A9_0/). The extracted contribution is the source’s support-propagation construction and its return-map estimate, not either classical theorem.\n\n## Checks and limitations\n\nChecked why strict positivity forces a common support on all earlier vertices, why the selected combinations are dense, and why partitioning both scalar parameters removes the additive error in the noncompactness bound. Finite face and parameter examples check these algebraic steps; finite sets cannot test a nonzero measure of noncompactness.\n\nThe closed extremal set, propagation rule and global parameter estimate must all be proved in an application. Merely having common supports for v and g(v) does not give the stated propagation rule. The fixed point alone is not the final sphere-isometry theorem.\n\n## Possible applications\n\nFixed-point arguments on extremal subsets of nonsmooth unit spheres when norm contraction fails but the error factors through finitely many bounded parameters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000163",
+      "record_type": "instrument",
+      "title": "Dual cotype gives bounded sign-indexed lifts with prescribed moments",
+      "forms": [
+        "criterion",
+        "construction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-326"
+      ],
+      "source_paper_ids": [
+        "P-000104"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+          "label": "eq:fixed-cotype",
+          "line": 77,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L77",
+          "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+        },
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+          "label": "eq:quotient-lift",
+          "line": 142,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L142",
+          "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+        },
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+          "label": "lem:lifts",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L153",
+          "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "established-duality-and-moment-comparison-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000163.md",
+      "body": "# Dual cotype gives bounded sign-indexed lifts with prescribed moments\n\n[Family 326](../families/openai-math-326.md) · [Source manuscript](../papers/P-000104.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nFor an integer m>=1, define c_m(Y) by\n\n$$\\Bigl(\\sum_{i=1}^m\\|y_i\\|^2\\Bigr)^{1/2}\\le c_m(Y)\\Bigl(\\mathbb E_\\epsilon\\|\\sum_i\\epsilon_i y_i\\|^2\\Bigr)^{1/2}.$$\n\nIf c_m(G*)<=D_g and c_m(F)<=D_f, with D_g,D_f>=1, set $a=(2LD_g\\sqrt m)^{-1}$, $b=(2LD_f\\sqrt m)^{-1}$, where the source uses the sufficient Kahane constant L=24. For any x_i in the unit ball of G there are P_epsilon in that ball with $\\mathbb E\\epsilon_iP_\\epsilon=ax_i$. For any y_j in the unit ball of F* there are Z_delta in that ball with $\\mathbb E\\delta_jZ_\\delta=by_j$.\n\nThe first moment map $U:L_\\infty(\\{-1,1\\}^m;G)\\to\\ell_2^m(G)$ is onto, with right inverse $(x_i)\\mapsto\\sum\\epsilon_i x_i$. Its adjoint is the Rademacher sum in L1(G*). Cotype and Kahane give $\\|U^*z^*\\|\\ge(LD_g)^{-1}\\|z^*\\|_2$. Quotient duality bounds the infimum lift norm by LD_g times the tuple norm. The factor two leaves slack, so no attainment of the infimum is assumed.\n\nFor the dual-valued lift, the map $V:(w_j)\\mapsto\\sum\\delta_jw_j$ from ell2^m(F) to L1(F) is bounded below by (L D_f)^-1. The functional $Vw\\mapsto b\\sum y_j(w_j)$ has norm at most one half. Hahn-Banach extends it, and finite probability-space duality represents the extension by Z in L_infinity(F*). No general vector-valued L1 duality on a nonatomic space is needed.\n\nThe same estimates hold in finite L2 sums because the fixed-length cotype inequality can be squared and averaged. If Y has cotype q, then $c_m(Y)\\le C_q(Y)m^{1/2-1/q}$.\n\n## Role in the source argument\n\nTurns vector tuples into uniformly bounded sign-indexed inputs while preserving the first moments needed by the source’s Walsh coefficient argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:fixed-cotype](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L77)\n- [eq:quotient-lift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L142)\n- [lem:lifts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L153)\n\n## Antecedents and comparison\n\nThe ingredients are classical moment comparison and duality, covered in [Pisier’s course notes](https://webusers.imj-prg.fr/~gilles.pisier/ihp-pisier.pdf). The source gives explicit sufficient constants and separates the primal quotient lift from the dual Hahn-Banach lift. No new Kahane inequality is claimed.\n\n## Checks and limitations\n\nRead the stopping-time moment comparison and both lift constructions. Exhaustive small sign cubes check moments and norm bounds for explicit Hilbert-space lifts; these examples do not solve the Banach-space optimization problem in general.\n\nThe primal lift requires cotype information about G*, not G. The assertion is existential; a linear selection of lifts or an efficient algorithm is not supplied. The fixed-length bound must be checked before using the constants.\n\n## Possible applications\n\nReplacing finite vector tuples by bounded random-sign data with exact first moments in Fourier, tensor or operator estimates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000164",
+      "record_type": "instrument",
+      "title": "A dyadic compact domain preserves fixed-length dual moments",
+      "forms": [
+        "construction",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-326"
+      ],
+      "source_paper_ids": [
+        "P-000104"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+          "label": "lem:compact-domain",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L15",
+          "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+        },
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+          "label": "eq:finite-level-lift",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L34",
+          "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+        },
+        {
+          "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+          "label": "eq:compact-walsh-decay",
+          "line": 203,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L203",
+          "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-compact-factorization-preserving-dual-moments",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000164.md",
+      "body": "# A dyadic compact domain preserves fixed-length dual moments\n\n[Family 326](../families/openai-math-326.md) · [Source manuscript](../papers/P-000104.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nFix m>=1 and Delta>=1. If X is Banach and c_m(X*)<=Delta, every nonzero finite-dimensional E subset X factors as\n\n$$E\\xrightarrow{\\iota}G\\xrightarrow{J}X,\\qquad J\\iota=\\operatorname{inclusion},\\quad\\|\\iota\\|\\le1,\\quad\\|J\\|\\le2,\\quad c_m(G^*)\\le12\\Delta,$$\n\nwhere J is injective and compact. The source constructs nested finite-dimensional E_l starting at E. Every tuple z in ell2^m(E_l) has an exact sign-moment lift H_l valued in E_(l+1), with L2 norm at most 3 Delta ||z||. Choose finitely many near-minimal lifts on a net, then correct the remaining tuple error by its explicit Rademacher sum; this explains why one finite enlargement works for every tuple.\n\nSet $\\mathcal H=(\\bigoplus_{l\\ge0}E_l)_{\\ell_2}$ and $j(z)=\\sum_{l\\ge0}2^{-l}z_l$. Its tail norm is bounded by $(\\sum_{l>L}4^{-l})^{1/2}$, so j is compact. Let G=H/ker(j), with quotient Q and JQ=j. The first coordinate defines iota. Near-minimal quotient representatives show J(B_G) lies in j(2B_H), hence J is compact.\n\nThe weighted shift $R(z_0,z_1,\\ldots)=(0,2z_0,2z_1,\\ldots)$ satisfies jR=j and QR=Q. Apply the finite-level lift to each coordinate of representatives of a tuple in G, shift the lifts one level, and multiply by two. Their L2 norm is at most 12 Delta times the tuple norm, and QR=Q makes all moments exact. Duality yields c_m(G*)<=12 Delta.\n\nIf X has ordinary AP, apply it to the compact set closure(J(B_G)). Finite-rank S_j on X then satisfy ||S_j J-J||->0, even if ||S_j|| is unbounded. This transfers any suitable uniform finite-rank operator estimate to J. In contrast, the finite-rank truncations of j need not kill ker(j), so they need not descend to G; compactness alone does not provide the finite-rank approximation of J.\n\n## Role in the source argument\n\nAllows the source to use AP rather than BAP while keeping the domain-dual moment estimate required by its uniform Walsh bound.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:compact-domain](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L15)\n- [eq:finite-level-lift](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L34)\n- [eq:compact-walsh-decay](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L203)\n\n## Antecedents and comparison\n\nCompact factorization and approximation on compact sets are established Banach-space methods; [Pisier](https://webusers.imj-prg.fr/~gilles.pisier/ihp-pisier.pdf) provides the type/cotype framework and [Gupta, Misra and Ray](https://arxiv.org/abs/2305.13270v2) the related tensor context. The selected construction retains fixed-length dual control through a dyadic quotient and shift. Priority is not certified.\n\n## Checks and limitations\n\nRead the finite-net correction, dyadic tail estimate, quotient compactness and shifted moment identity. Finite Hilbert models test exact shift compensation and moment reconstruction. A kernel example shows explicitly that a truncation need not descend to the quotient.\n\nThe space G varies with m and E. Its compact embedding is not asserted to have closed range or a bounded inverse on all of its image. The transfer to J requires AP of the target and an independently established uniform finite-rank estimate.\n\n## Possible applications\n\nPassing rank-independent estimates to compactly factored finite-dimensional inputs without imposing a uniform bound on AP approximants.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000165",
+      "record_type": "instrument",
+      "title": "A finite reflecting lattice lift transfers Markov type to odd edge sums",
+      "forms": [
+        "reduction",
+        "inequality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-327"
+      ],
+      "source_paper_ids": [
+        "P-000105"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "eq:edge-balance",
+          "line": 237,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L237",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        },
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "lem:edge-labels",
+          "line": 280,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L280",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        },
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "eq:odd-markov",
+          "line": 286,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L286",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-finite-lattice-lift-for-odd-edge-labels",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000165.md",
+      "body": "# A finite reflecting lattice lift transfers Markov type to odd edge sums\n\n[Family 327](../families/openai-math-327.md) · [Source manuscript](../papers/P-000105.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nA finite marked chain has an involution e->e* reversing the source and target of each edge, and edge probabilities satisfying $\\pi(e^-)q(e)=\\pi(e^+)q(e^*)$. Start in pi. If a normed space V has Markov type p with constant K and $g(e^*)=-g(e)$, then\n\n$$\\mathbb E\\left\\|\\sum_{i=1}^n g(E_i)\\right\\|^p\\le K^p n\\,\\mathbb E\\|g(E_1)\\|^p.$$\n\nThe labels need not be differences of a function on the original states. Choose one edge from each two-element reversal orbit, r in total, and assign its two orientations lattice displacements plus/minus the corresponding basis vector in Z^r. A fixed point of reversal has zero label and displacement. Lift the chain to S times Q_R, where $Q_R=\\{-R,\\ldots,R\\}^r$ and R>n. Reject any move leaving the box by staying at the full state.\n\nAccepted transitions satisfy detailed balance for pi times uniform(Q_R); rejections add only holding probabilities. The potential $\\Phi(s,a)=\\sum_j a_jg(e_j)$ has increment g(e) on accepted moves and zero on rejections. Its one-step cost is no larger than the original label cost. If the initial lattice point lies in Q_(R-n), every n-step proposal sequence is accepted. This event is independent of the original marked trajectory and has probability $\\alpha_R=((2(R-n)+1)/(2R+1))^r$. Therefore the lifted n-step potential cost is at least alpha_R times the desired edge-sum cost. Apply Markov type and let R tend to infinity.\n\nThe same bound holds if the finite span of the labels is finitely representable in a Markov-type space: transfer through embeddings with distortion tending to one. Enlarging the lattice box does not enlarge that span.\n\n## Role in the source argument\n\nMakes the source’s edge-labeled walk accessible to a Markov-type inequality originally formulated for maps on vertices.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:edge-balance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L237)\n- [lem:edge-labels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L280)\n- [eq:odd-markov](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L286)\n\n## Antecedents and comparison\n\nThe definition and smooth-space context come from [Naor, Peres, Schramm and Sheffield](https://arxiv.org/abs/math/0410422). The lift is a finite-box realization of an additive path coordinate with reversible boundary rejection. No new general Markov-type definition or prior smooth-space theorem is attributed to the source.\n\n## Checks and limitations\n\nRead the detailed-balance and independent-interior-event argument. Exhaustive short reversible walks with non-gradient labels check the Hilbert p=2 bound; explicit box transitions check balance and the potential increments. A directed-cycle control violates the bound when reversibility is removed.\n\nStationarity and edgewise reversibility are required. Reversibility only of the unmarked state chain does not suffice if the marks have incompatible probabilities. The construction grows rapidly with the number of edge orbits and is used as a proof device.\n\n## Possible applications\n\nControlling cocycle-like sums, currents and marked transition observables using a metric inequality for vertex maps.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000166",
+      "record_type": "instrument",
+      "title": "Ramsey averaging and transposed couplings build reversible chart transport",
+      "forms": [
+        "construction",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-327"
+      ],
+      "source_paper_ids": [
+        "P-000105"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "lem:order-averaging",
+          "line": 377,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L377",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        },
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "prop:chart-transport",
+          "line": 432,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L432",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        },
+        {
+          "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+          "label": "eq:chart-edge-mass",
+          "line": 490,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L490",
+          "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-order-averaging-and-reversible-coupling-package",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000166.md",
+      "body": "# Ramsey averaging and transposed couplings build reversible chart transport\n\n[Family 327](../families/openai-math-327.md) · [Source manuscript](../papers/P-000105.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nFor a finite ordered set Lambda and epsilon>0, the source constructs a finite B and a law nu on strictly increasing charts C:Lambda->[B] such that the laws of C(A) and C(A') have total-variation distance less than epsilon for every pair of increasing subtuples of equal length.\n\nFor each chart collect all signed differences of those tuple point masses in a finite direct sum of ell1 spaces. A separating dual functional is a finite family of bounded functions on tuples. Bin their values into a fixed number of colors. A sufficiently large finite Ramsey set makes every same-length comparison small for one chart, contradicting separation from zero. A convex combination of chart vectors therefore gives the desired law. This is an existence proof with no practical bound on B.\n\nNow let partial increasing bijections T_s:D_s->R_s be indexed by a finite set of letters with a fixed-point-free inverse involution, T_(s^-1)=T_s^-1. Couple two nu-charts by matching C(T_s(D_s)) with C'(D_s) maximally, then sample the full charts conditionally. Call the coupling lambda_s; both marginals are nu, and the full matching condition $C'(a)=C(T_s(a))$ for all a in D_s fails with probability at most epsilon. Define the inverse coupling by transposition.\n\nAt each step choose a fresh independent uniform letter s, then choose C' according to lambda_s(C,C')/nu(C), discarding zero-mass charts. The stationary edge mass is lambda_s(C,C') divided by the number of letters, invariant under (C,s,C')->(C',s^-1,C). Thus the marked chain is reversible, letters remain independent and uniform, and the rank match holds at every stationary step with probability at least 1-epsilon. The bound is averaged over stationary charts, not a uniform conditional success bound for each chart.\n\n## Role in the source argument\n\nEncodes finite pieces of ordered motion inside a stationary reversible walk while preserving the coordinate ranks needed by the source’s displacement argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:order-averaging](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L377)\n- [prop:chart-transport](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L432)\n- [eq:chart-edge-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L490)\n\n## Antecedents and comparison\n\nFinite Ramsey theory, separation and maximal coupling are classical. The extracted package couples partial ordered maps with a common chart law and uses transposition to impose detailed balance. The surrounding [Markov-type framework](https://arxiv.org/abs/math/0410422) is established; the package’s priority is not certified.\n\n## Checks and limitations\n\nRead the separation argument, conditional full-chart reconstruction and edge-mass identity. Explicit small translated charts verify total-variation matching, marginal preservation, inverse coupling and stationary balance. These computations do not prove the general Ramsey existence assertion.\n\nThe finite chart set may be enormous. Per-step error is a stationary probability; a length-n path may cost n epsilon by a union bound. The construction requires consistent inverse maps and does not turn an arbitrary directed motion into exact reversible transport.\n\n## Possible applications\n\nFinite reversible approximations of partial ordered dynamics when exact charts would not have an invariant probability law.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000167",
+      "record_type": "instrument",
+      "title": "Finite ell1 cuts retain a contractive affine reconstruction",
+      "forms": [
+        "construction",
+        "identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-332"
+      ],
+      "source_paper_ids": [
+        "P-000106"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "lem:cuts",
+          "line": 200,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L200",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:cut-vector",
+          "line": 228,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L228",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:affine-map",
+          "line": 240,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L240",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 1,
+      "subject": "Functional analysis",
+      "novelty_status": "established-cut-representation-with-explicit-ambient-reconstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000167.md",
+      "body": "# Finite ell1 cuts retain a contractive affine reconstruction\n\n[Family 332](../families/openai-math-332.md) · [Source manuscript](../papers/P-000106.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nGiven finitely many real ell1 vectors x_1,...,x_n, set v(k)=min_i x_i(k). For every nonempty proper B subset [n], define\n\n$$b_B(k)=\\left(\\min_{i\\in B}x_i(k)-\\max_{i\\notin B}x_i(k)\\right)_+,\\quad w_B=\\|b_B\\|_1.$$\n\nRetain only positive weights, at most 2^n-2 of them; each b_B is a nonnegative ell1 vector. Let z_i(B)=1_(i in B) and $T(u)=v+\\sum_Bu_Bb_B$. With $\\|u\\|_{1,w}=\\sum_Bw_B|u_B|$ and $\\|u\\|_H^2=\\sum_Bw_Bu_B^2$,\n\n$$T(z_i)=x_i,\\quad\\|x_i-x_j\\|_1=\\|z_i-z_j\\|_{1,w}=\\|z_i-z_j\\|_H^2,\\quad\\|T(u)-T(u')\\|_1\\le\\|u-u'\\|_{1,w}.$$\n\nAt each original coordinate, only the nested upper level sets have nonzero b_B, whose values are exactly the gaps between successive distinct data values. This gives reconstruction by telescoping. For each pair of data points all contributing signed gaps have the same sign, proving equality of distances. General contractivity follows from the triangle inequality. Infinite original coordinate support causes no difficulty because there are finitely many cuts and the b_B are summable. If all points coincide there are no positive cuts, and T is constant.\n\nThe construction remembers the ambient vectors, not only their distance matrix. Thus an arbitrary nonlinear modification u_i of the cut coordinates can be sent back to ell1, with both approximation and pairwise costs controlled. The image need not lie in the linear span of the original data.\n\n## Role in the source argument\n\nAllows nonlinear smoothing in a finite weighted cube and transfers the resulting points back to the given ambient ell1 space.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:cuts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L200)\n- [eq:cut-vector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L228)\n- [eq:affine-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L240)\n\n## Antecedents and comparison\n\nFinite cut representation is classical; it also appears explicitly in [Cheng, Wang and Xiang](https://arxiv.org/html/2609.08749v2). The selected feature here is the recorded contractive reconstruction into the original ambient ell1, needed when new points may leave the data subspace.\n\n## Checks and limitations\n\nRead the coordinate-level gap proof. Exact integer and rational examples test reconstruction, distance equality and contractivity, including ties, negative coordinates and repeated points.\n\nThe number of potential cuts is exponential in the number of data points. A general metric with a convenient Hilbert embedding need not admit this positive cut reconstruction. Complex coordinates require a separate realification argument.\n\n## Possible applications\n\nDesigning nonlinear modifications of finite ell1 data through weighted binary coordinates while controlling the cost in the original target space.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000168",
+      "record_type": "instrument",
+      "title": "A flat cubic converts quartic potential into martingale jump energy",
+      "forms": [
+        "inequality",
+        "proof-mechanism"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-332"
+      ],
+      "source_paper_ids": [
+        "P-000106"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "lem:flat",
+          "line": 290,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L290",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:remainder",
+          "line": 319,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L319",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "cor:martingale",
+          "line": 345,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L345",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 2,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-quartic-potential-for-flat-cut-martingales",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000168.md",
+      "body": "# A flat cubic converts quartic potential into martingale jump energy\n\n[Family 332](../families/openai-math-332.md) · [Source manuscript](../papers/P-000106.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nOn a finite weighted cube Q=[0,1]^B, use the weighted ell1 and Hilbert norms above and apply $\\phi(r)=3r^2-2r^3$ coordinatewise, writing Phi. For any binary vertex e, let $F_e(u)=\\|u-e\\|_H^4$, a=u-e and delta=u'-u. The source proves\n\n$$\\|\\Phi(u')-\\Phi(u)\\|_{1,w}^2\\le108\\{F_e(u')-F_e(u)-4\\|a\\|_H^2\\langle a,\\delta\\rangle_H\\}.$$\n\nFor either bit d, $|\\phi'(r)|\\le6|r-d|$. Integration and Cauchy-Schwarz give the increment bound $6\\|a\\|_H\\|\\delta\\|_H+3\\|\\delta\\|_H^2$. The remainder R has the exact form\n\n$$R=2\\|a\\|_H^2\\|\\delta\\|_H^2+(2\\langle a,\\delta\\rangle_H+\\|\\delta\\|_H^2)^2.$$\n\nConsequently $\\|a\\|_H^2\\|\\delta\\|_H^2\\le R/2$ and $\\|\\delta\\|_H^4\\le4R$. Squaring the increment estimate yields the constant 108.\n\nFor a Q-valued martingale M_m converging almost surely, and any initial-sigma-field-measurable binary e, conditional expectation kills the linear term. Summing and using bounded convergence for the potential and monotone convergence for the jumps gives\n\n$$\\mathbb E\\sum_{m\\ge0}\\|\\Phi(M_{m+1})-\\Phi(M_m)\\|_{1,w}^2\\le108\\{\\mathbb EF_e(M_\\infty)-\\mathbb EF_e(M_0)\\}.$$\n\nThe random center may depend on the starting state. Flatness at both binary endpoints is essential: replacing Phi by the identity would compare a quadratic small increment at e with a quartic remainder and fail uniformly.\n\n## Role in the source argument\n\nControls the cumulative squared ell1 cost of a nonlinear smoothed martingale by a terminal potential that equals a squared original-data distance.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:flat](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L290)\n- [eq:remainder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L319)\n- [cor:martingale](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L345)\n\n## Antecedents and comparison\n\nThe cubic is already used for nonlinear cut smoothing by [Cheng, Wang and Xiang](https://arxiv.org/html/2609.08749v2); it is not new here. The selected source mechanism is the quartic remainder and its martingale telescoping. General metric Markov-cotype martingale methods appear in [Mendel and Naor](https://arxiv.org/abs/1301.3963v2).\n\n## Checks and limitations\n\nRead the polynomial expansion and conditional cancellation. Rational cube examples check the inequality and exact remainder; finite revealing martingales check telescoping. A scalar identity-map control shows the necessity of endpoint flatness.\n\nThe center must be a binary vertex measurable initially, and the martingale must stay in the finite weighted cube. The bound does not assert that the cubic is a linear averaging operator or that its constant is optimal.\n\n## Possible applications\n\nConstructing dimension-independent nonlinear martingale-energy estimates when a map flattens near the discrete terminal states.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000169",
+      "record_type": "instrument",
+      "title": "Expected medians of stopped-walk endpoints control two smoothing costs",
+      "forms": [
+        "construction",
+        "inequality",
+        "identity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-332"
+      ],
+      "source_paper_ids": [
+        "P-000106"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:resolvent",
+          "line": 458,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L458",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:jump-identity",
+          "line": 523,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L523",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "eq:median",
+          "line": 577,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L577",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "lem:comparison",
+          "line": 385,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L385",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        },
+        {
+          "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "label": "rem:stationary",
+          "line": 557,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L557",
+          "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+        }
+      ],
+      "batch_id": "B008",
+      "source_item": 3,
+      "subject": "Functional analysis",
+      "novelty_status": "candidate-stopped-median-smoothing-for-ell1",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000169.md",
+      "body": "# Expected medians of stopped-walk endpoints control two smoothing costs\n\n[Family 332](../families/openai-math-332.md) · [Source manuscript](../papers/P-000106.md) · [Batch B008](../../batches/B008/README.md)\n\n## Mathematical content\n\nLet A be a finite stochastic matrix with stationary probability pi, t>=1 an integer, and x_i real ell1 data. Put p=1/(t+1), q=1-p and $G=p(I-qA)^{-1}$. For each i take three independent indices with law G_i and define\n\n$$y_i=\\mathbb E\\operatorname{med}(x_{J_1},x_{J_2},x_{J_3}),$$\n\nwhere the median is coordinatewise. The source derives\n\n$$\\sum_i\\pi_i\\|x_i-y_i\\|_1^2+t\\sum_{i,j}\\pi_i a_{ij}\\|y_i-y_j\\|_1^2\\le\\frac{3024}{t}\\sum_{s=1}^t\\sum_{i,j}\\pi_i(A^s)_{ij}\\|x_i-x_j\\|_1^2.$$\n\nIn cut coordinates, h=Gz solves h=pz+qAh, and y=T(Phi(h)). The majority of three independent Bernoulli(h) variables has mean 3h^2-2h^3, so the threshold decomposition proves the median identity exactly.\n\nConstruct an alive/dead chain: from alive i, die at i with probability p or move alive to j with probability q a_ij; dead states hold. Attach h_i while alive and z_i after death. This is a cube-valued martingale. With initial binary center e=z_(X0), its terminal quartic Hilbert potential is $\\|x_{X_S}-x_{X_0}\\|_1^2$, where S is independent geometric on nonnegative integers with mean t. If B is the stationary cut-space approximation cost and E_A the stationary one-step cut-space cost after Phi, the total expected squared martingale jump cost is exactly B+(q/p)E_A=B+t E_A. The death jump is necessary to count B.\n\nThe flat-cubic estimate gives B+t E_A<=108 times the geometric endpoint cost. For any stationary chain and metric data, Minkowski gives subadditivity of the square root of the endpoint cost D(s). It implies D(t)<=4W for W=t^-1 sum_(s=1)^t D(s), and decomposing S=t floor(S/t)+(S mod t) gives E D(S)<=28W. Combining yields 3024. Detailed balance is not used; zero pi_i are allowed.\n\nThis is a nonlinear modification of data, not a procedure for extending a Lipschitz map to every point of a source space. The source’s extension consequence invokes a separate theorem for dual Banach targets.\n\n## Role in the source argument\n\nSupplies explicit new points realizing the two terms in metric Markov cotype and explains their median interpretation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:resolvent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L458)\n- [eq:jump-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L523)\n- [eq:median](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L577)\n- [lem:comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L385)\n- [rem:stationary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L557)\n\n## Antecedents and comparison\n\n[Mendel and Naor](https://arxiv.org/html/1301.3963v2) ask the ell1 metric Markov-cotype question, provide a resolvent comparison, and state the dual-target extension theorem. The source adds the stopped-median construction and quartic energy estimate. The earlier [cubic cut smoothing](https://arxiv.org/abs/2609.08749v2) concerns metric cotype, a different invariant.\n\n## Checks and limitations\n\nRead the full stopped-chain, geometric comparison and median proofs. Finite stationary examples compare explicit triple-median enumeration with cut reconstruction, solve the resolvent, verify the exact jump accounting and test the displayed inequality. Examples include nonreversible cycles and zero stationary coordinates.\n\nStationarity is required for the jump-cost identity and endpoint comparison. New points can leave a subspace containing the data, so the construction does not prove the same result for every subspace of ell1. Numerical examples do not certify the general theorem or establish novelty.\n\n## Possible applications\n\nNonlinear regularization of ell1-valued data on a stationary finite chain, with simultaneous control of movement from the data and one-step oscillation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -7442,6 +7864,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000102.md",
       "body": "# A quadratic bound for Jacobsthal's function\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims h(k)<=C k^2/(log log(3k))^2 for Jacobsthal intervals and every k>=1, uniformly over positive moduli with at most k distinct prime factors and signed interval starts. This extraction selects two probabilistic auxiliary tools.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000160: Derivative weights turn harmonic sieve paths into a probability process](../instruments/MI-000160.md)\n- [MI-000161: Random forbidden classes have a second moment stable under measure changes](../instruments/MI-000161.md)\n\n## Dependencies and review\n\nPositive derivative weights solving coupled future-integral equations; a telescoping change of path measure; independent random forbidden residue classes; a summable divisor expansion and first/second-moment comparisons under finite positive measures.\n\nRead the derivative-weight proof and exact path-density conversion, and the complete independent-class variance argument with its stable version. The regeneration estimates, inverse incidence theorem and stopped-tree comparison needed for the final Jacobsthal bound were not fully audited.\n\nJacobsthalImproved.lean states the iterated-logarithm saving with an absolute positive constant, all k>=1, arbitrary signed starts and moduli with at most k prime factors. Jacobsthal.lean retains the weaker quadratic statement. The scope document and Comparator declarations were compared, but no Lean solution was built or kernel-checked. The extracted auxiliary mechanisms are not separate Comparator statements.\n\n[Family context](../families/openai-math-021.md) · [Batch B007](../../batches/B007/README.md)"
+    },
+    {
+      "id": "P-000103",
+      "record_type": "paper",
+      "title": "A positive solution to Tingley’s problem",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-positive-solution-to-Tingleys-problem-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-322"
+      ],
+      "batch_id": "B008",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "11db995a943e9f3f753c6bddaed3694a50e179ddf92dc93555cda8bb553d83ca",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000103.md",
+      "body": "# A positive solution to Tingley’s problem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that every surjective isometry between unit spheres of nonzero real Banach spaces has a unique surjective real-linear isometric extension. The selected mechanism constructs a convex invariant set of extremal directions and applies a classical fixed-point theorem.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000162: Support propagation creates an invariant convex set for a condensing map](../instruments/MI-000162.md)\n\n## Dependencies and review\n\nHahn-Banach supports; continuous radial contact from an interior point; an attained positive defect, obtained in the source by an ultrapower; a closed extremal set; finite partitions of bounded radius parameters; Darbo contraction of noncompactness.\n\nRead the source’s support, radial-contact, defect-attainment, invariant-set and noncompactness arguments, its chord comparison, and the fixed-point appendix. The card isolates the invariant-set mechanism; finite tests do not certify the universal sphere-isometry conclusion.\n\nTingleySphereIsometry.lean states the radial formula, real-linear isometric extension, surjectivity and uniqueness for arbitrary nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\n[Family context](../families/openai-math-322.md) · [Batch B008](../../batches/B008/README.md)"
+    },
+    {
+      "id": "P-000104",
+      "record_type": "paper",
+      "title": "The cotype–cotype conjecture under the approximation property",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-326"
+      ],
+      "batch_id": "B008",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "08c63c1bbfe72a384f4395c1e6fa0d23b1dc0c376e8c1f755ef5bcb95ff09c59",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000104.md",
+      "body": "# The cotype–cotype conjecture under the approximation property\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that a nonzero real Banach space with the ordinary approximation property is K-convex exactly when it and its dual have finite cotype, with possibly different finite exponents.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000163: Dual cotype gives bounded sign-indexed lifts with prescribed moments](../instruments/MI-000163.md)\n- [MI-000164: A dyadic compact domain preserves fixed-length dual moments](../instruments/MI-000164.md)\n\n## Dependencies and review\n\nFixed-length cotype constants; Kahane L1-L2 comparison; quotient norms and Hahn-Banach; finite nets with exact moment correction; dyadically weighted Hilbert sums; a quotient by the kernel of a compact map; AP on one compact image.\n\nRead the moment comparison and lifting proofs, the full compact-domain construction and the AP transfer to compact composites. The scalar rank-two coefficient lemma and the uniform Walsh-decay proof were not fully audited.\n\nCotype.lean defines ordinary approximation on compact sets, finite Rademacher cotype and the finite-cube Rademacher projection, and states the equivalence for nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\n[Family context](../families/openai-math-326.md) · [Batch B008](../../batches/B008/README.md)"
+    },
+    {
+      "id": "P-000105",
+      "record_type": "paper",
+      "title": "Nontrivial Markov Type Forces Superreflexivity",
+      "source_collection": "openai/math",
+      "upstream_slug": "Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-327"
+      ],
+      "batch_id": "B008",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6cc3369244a9324d53603131eb4a50eb10f95a2f1c56197c70765910cfbb5db6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000105.md",
+      "body": "# Nontrivial Markov Type Forces Superreflexivity\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that a real Banach space has nontrivial Markov type exactly when it admits an equivalent uniformly convex norm. The extracted tools convert edge increments and ordered partial motions into finite reversible chains.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000165: A finite reflecting lattice lift transfers Markov type to odd edge sums](../instruments/MI-000165.md)\n- [MI-000166: Ramsey averaging and transposed couplings build reversible chart transport](../instruments/MI-000166.md)\n\n## Dependencies and review\n\nEdgewise detailed balance; odd vector labels; finite lattice boxes with rejected boundary moves; finite representability; finite Ramsey and separation; equal-marginal couplings paired by transpose.\n\nRead the odd-edge-label proof, finite order averaging and reversible chart transport. The reduced-word action, linear-displacement construction and complete spreading-norm argument were not fully audited.\n\nMarkovType.lean states equivalence between a uniform Markov-type inequality for some exponent p>1 and existence of an equivalent uniformly convex norm, including the zero space. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\n[Family context](../families/openai-math-327.md) · [Batch B008](../../batches/B008/README.md)"
+    },
+    {
+      "id": "P-000106",
+      "record_type": "paper",
+      "title": "Metric Markov Cotype Two of <i>ℓ</i><sub>1</sub> ",
+      "source_collection": "openai/math",
+      "upstream_slug": "Metric-Markov-Cotype-Two-of-l1-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-332"
+      ],
+      "batch_id": "B008",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8b64d6e519795daabeb788ce81aa36574e8087da41f8252b9d8de62c63bc7316",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000106.md",
+      "body": "# Metric Markov Cotype Two of <i>ℓ</i><sub>1</sub> \n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims metric Markov cotype two for real ell1 with constant 12 sqrt(21), and consequently a universal Lipschitz extension bound from Hilbert space to ell1. Its construction and cost estimate in fact require only stationarity of the chain.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000167: Finite ell1 cuts retain a contractive affine reconstruction](../instruments/MI-000167.md)\n- [MI-000168: A flat cubic converts quartic potential into martingale jump energy](../instruments/MI-000168.md)\n- [MI-000169: Expected medians of stopped-walk endpoints control two smoothing costs](../instruments/MI-000169.md)\n\n## Dependencies and review\n\nFinite weighted upper cuts with ambient reconstruction; the cubic 3r^2-2r^3; a quartic convexity remainder; a geometrically killed stationary walk; a resolvent identity; a geometric-to-Cesaro endpoint comparison; a separate dual-target Lipschitz extension theorem.\n\nRead the complete elementary proof of the source’s cotype bound, its expected-median interpretation and its extension deduction. Retrieved Mendel-Naor’s question, extension statement and resolvent lemma, and Cheng-Wang-Xiang’s cut-smoothing construction. Finite tests audit identities and examples, not universal proof certification.\n\nNo family-specific formalization scope document is listed for family 332 in the pinned inventory. No Comparator comparison or Lean proof build is claimed.\n\n[Family context](../families/openai-math-332.md) · [Batch B008](../../batches/B008/README.md)"
     }
   ],
   "families": [
@@ -9106,6 +9604,32 @@
       "body": "# Kervaire invariant at the prime three\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000059](../papers/P-000059.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination claims a new element exists\n\nWith $`b_j\\in\\mathrm{Ext}^{2,4\\cdot3^{j+1}}`$, the survivors are exactly $`j\\in\\{0,2,3\\}`$: $`b_1`$ dies (Toda), $`b_j`$ dies for all $`j \\ge 4`$, and $`b_3`$ survives, giving an order-three element in $`\\pi_{322}S_{(3)}`$. This is a finite survivor list with a missing index $`j=1`$; the odd-primary Adams-family indexing differs from the classical prime-two Kervaire invariant convention. The result would also refute Belmont–Ray’s Conjecture 0.1(3). HHR’s 2011 odd-primary note explicitly left $`\\theta_{4}`$ at $`p=3`$ open.\n\n## Extracted instruments.\n\n- [MI-000104: Finite Euler bound](../instruments/MI-000104.md)\n\n- [MI-000105: Exact cyclic coefficient model and fixed geometry](../instruments/MI-000105.md)\n\n- [MI-000106: Lattice forcing from the known survivor](../instruments/MI-000106.md)\n\n## Reused.\n\nAdams–Novikov spectral sequence; Miller–Ravenel–Wilson 2-line; Toda differentials; Belmont–Ray CM detection via Lubin–Tate; Selick’s criterion; Amelotte’s $`\\theta_{3}`$; the positive branch uses a truncated extended-cube construction from the stem-106 element, followed by Moore-spectrum and Adams–Novikov corrections (23,384 unknowns in the finite calculation). This produces stem $`3\\cdot108-2=322`$; the ordinary ring cube would lie in stem $`3\\cdot106=318`$ and is not the claimed new element.\n\n## Caveats.\n\nThe claimed conclusion includes a new stable homotopy class. Its verification requires about 1,700 lines of differential calculations, with several statements specified only “up to nonzero scalar” entering a sign-sensitive character test. Although the paper has a reproducibility section, no code is supplied.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no\n- Antecedents: —"
     },
     {
+      "id": "openai-math-322",
+      "record_type": "family",
+      "title": "Support propagation and compact parameter errors in sphere geometry",
+      "source_family": "322",
+      "source_collection": "openai/math",
+      "batch_id": "B008",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000103"
+      ],
+      "instrument_ids": [
+        "MI-000162"
+      ],
+      "headline": "The source claims that every surjective isometry between unit spheres of nonzero real Banach spaces has a unique surjective real-linear isometric extension. The selected mechanism constructs a convex invariant set of extremal directions and applies a classical fixed-point theorem.",
+      "central_instrument": "Common supports preserve an extremal set under carefully chosen convex hulls; finitely many bounded scalar parameters turn a return-map estimate into contraction of the Kuratowski measure of noncompactness.",
+      "novelty_assessment": "Supporting functionals, ultrapowers and Darbo fixed points are established. The selected source-specific combination is the invariant extremal set and its scalar-parameter contraction estimate. The full sphere-isometry result and priority are not certified.",
+      "formalization_summary": "TingleySphereIsometry.lean states the radial formula, real-linear isometric extension, surjectivity and uniqueness for arbitrary nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.",
+      "statement_faithfulness": "No finite-dimensionality, separability, smoothness, strict convexity or reflexivity is assumed. For complex spaces viewed as real spaces the conclusion is real linearity, not complex linearity. The constructed invariant set is separable even when the ambient spaces are not.",
+      "dependencies": "Hahn-Banach supports; continuous radial contact from an interior point; an attained positive defect, obtained in the source by an ultrapower; a closed extremal set; finite partitions of bounded radius parameters; Darbo contraction of noncompactness.",
+      "antecedents": "Darbo supplies the fixed-point theorem and Dacunha-Castelle the Banach ultrapower background. Facial approaches to Tingley’s problem and the Mazur-Ulam theorem are prior methods, not new results of this extraction.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-322.md",
+      "body": "# Support propagation and compact parameter errors in sphere geometry\n\n## Source manuscript and claim\n\n[A positive solution to Tingley’s problem](../papers/P-000103.md), by OpenAI, September 23, 2026.\n\nThe source claims that every surjective isometry between unit spheres of nonzero real Banach spaces has a unique surjective real-linear isometric extension. The selected mechanism constructs a convex invariant set of extremal directions and applies a classical fixed-point theorem.\n\n## Extracted instruments\n\n- [MI-000162: Support propagation creates an invariant convex set for a condensing map](../instruments/MI-000162.md)\n\n## Dependencies and antecedents\n\nHahn-Banach supports; continuous radial contact from an interior point; an attained positive defect, obtained in the source by an ultrapower; a closed extremal set; finite partitions of bounded radius parameters; Darbo contraction of noncompactness.\n\nDarbo supplies the fixed-point theorem and Dacunha-Castelle the Banach ultrapower background. Facial approaches to Tingley’s problem and the Mazur-Ulam theorem are prior methods, not new results of this extraction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the source’s support, radial-contact, defect-attainment, invariant-set and noncompactness arguments, its chord comparison, and the fixed-point appendix. The card isolates the invariant-set mechanism; finite tests do not certify the universal sphere-isometry conclusion.\n\nTingleySphereIsometry.lean states the radial formula, real-linear isometric extension, surjectivity and uniqueness for arbitrary nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\nNo finite-dimensionality, separability, smoothness, strict convexity or reflexivity is assumed. For complex spaces viewed as real spaces the conclusion is real linearity, not complex linearity. The constructed invariant set is separable even when the ambient spaces are not.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/322.md) · [Batch record](../../batches/B008/README.md)"
+    },
+    {
       "id": "openai-math-325",
       "record_type": "family",
       "title": "The complete Crouzeix conjecture",
@@ -9136,6 +9660,88 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-325.md",
       "body": "# The complete Crouzeix conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000016](../papers/P-000016.md)\n- [P-000066](../papers/P-000066.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, all sizes, matrix-valued, arbitrary Hilbert space combination leaning new\n\nFor every bounded operator $`A`$ on a nonzero complex Hilbert space, including infinite-dimensional spaces, and every matrix polynomial $`P(z)=\\sum_k B_kz^k`$, the stated complete inequality is\n``` math\n\\left\\|\\sum_k A^k\\otimes B_k\\right\\|\n \\le2\\sup_{z\\in W(A)}\\|P(z)\\|\n =2\\max_{z\\in\\overline{W(A)}}\\|P(z)\\|.\n```\nThe constant 2 is sharp. The numerical range need not be closed in infinite dimension, which is why the supremum or its closure is used. The holomorphic extension concerns matrix-valued functions holomorphic on an open neighborhood of $`\\overline{W(A)}`$; rational functions must have all their poles outside $`\\overline{W(A)}`$. In this sense the closure is a complete 2-spectral set. Scalar proofs are presented in the 2026 preprints of Jin, Lorist–Schwenninger and Luo [source](../../direction/references.md#src:jin) [source](../../direction/references.md#src:lorist) [source](../../direction/references.md#src:luo). Lorist–Schwenninger explicitly explain why their proof and Jin’s do not directly give the completely bounded version.\n\n## Extracted instruments.\n\n- [MI-000107: Ordered density comparison](../instruments/MI-000107.md)\n\n- [MI-000108: Exterior Faber coefficients and the positive kernel](../instruments/MI-000108.md)\n\n- [MI-000109: Optimal metric and endpoint extremal](../instruments/MI-000109.md)\n\n## Reused.\n\nDelyon–Delyon and Crouzeix–Palencia double-layer positivity; exterior conformal maps and Faber polynomials; Paulsen’s similarity theorem; Stein 1952; Sz.-Nagy dilation; Katsnelson–Kheifets–Yuditskii colligations.\n\n## Caveats.\n\nThe structural theorem applies separately to each enclosing domain strictly containing $`\\overline{W(A)}`$; no limiting similarity on the closure is asserted. Luo’s scalar argument also uses a top singular pair [source](../../direction/references.md#src:luo), so that ingredient alone is not evidence of novelty. The relation between its boundary certificates and the matrix-valued argument here requires closer comparison.\n\n## Recorded assessment\n\n- Novelty: combination leaning new\n- Formalization: files, five challenges\n- Statement coverage: yes, full cb statement\n- Dependencies: no\n- Antecedents: Luo 2026 (novelty comparison incomplete)"
+    },
+    {
+      "id": "openai-math-326",
+      "record_type": "family",
+      "title": "Moment lifts and compact domains under ordinary approximation",
+      "source_family": "326",
+      "source_collection": "openai/math",
+      "batch_id": "B008",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000104"
+      ],
+      "instrument_ids": [
+        "MI-000163",
+        "MI-000164"
+      ],
+      "headline": "The source claims that a nonzero real Banach space with the ordinary approximation property is K-convex exactly when it and its dual have finite cotype, with possibly different finite exponents.",
+      "central_instrument": "Cotype on a dual gives bounded sign-indexed moment lifts. Nested finite-dimensional spaces and a dyadic shift turn those lifts into a compact factorization with a controlled fixed-length dual moment constant.",
+      "novelty_assessment": "Kahane comparison, Hahn-Banach and quotient duality are established. The compact domain retaining dual moment control is the selected candidate source-specific construction. The scalar Fourier-rank mechanism and full characterization are not certified here.",
+      "formalization_summary": "Cotype.lean defines ordinary approximation on compact sets, finite Rademacher cotype and the finite-cube Rademacher projection, and states the equivalence for nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.",
+      "statement_faithfulness": "Ordinary AP does not supply uniformly bounded approximating operators. Cotype does not generally pass from X* to the quotient E*. The constructed domain depends on a fixed tuple length m and the finite-dimensional subspace E; its estimate is not a uniform all-length cotype assertion.",
+      "dependencies": "Fixed-length cotype constants; Kahane L1-L2 comparison; quotient norms and Hahn-Banach; finite nets with exact moment correction; dyadically weighted Hilbert sums; a quotient by the kernel of a compact map; AP on one compact image.",
+      "antecedents": "Maurey-Pisier and Pisier supply the classical type, cotype and K-convexity background. Pisier’s earlier approximation results and Gupta-Misra-Ray’s tensor-norm formulation motivate the source. The elementary moment-lifting tools are credited separately from its compact construction.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-326.md",
+      "body": "# Moment lifts and compact domains under ordinary approximation\n\n## Source manuscript and claim\n\n[The cotype–cotype conjecture under the approximation property](../papers/P-000104.md), by OpenAI, September 23, 2026.\n\nThe source claims that a nonzero real Banach space with the ordinary approximation property is K-convex exactly when it and its dual have finite cotype, with possibly different finite exponents.\n\n## Extracted instruments\n\n- [MI-000163: Dual cotype gives bounded sign-indexed lifts with prescribed moments](../instruments/MI-000163.md)\n- [MI-000164: A dyadic compact domain preserves fixed-length dual moments](../instruments/MI-000164.md)\n\n## Dependencies and antecedents\n\nFixed-length cotype constants; Kahane L1-L2 comparison; quotient norms and Hahn-Banach; finite nets with exact moment correction; dyadically weighted Hilbert sums; a quotient by the kernel of a compact map; AP on one compact image.\n\nMaurey-Pisier and Pisier supply the classical type, cotype and K-convexity background. Pisier’s earlier approximation results and Gupta-Misra-Ray’s tensor-norm formulation motivate the source. The elementary moment-lifting tools are credited separately from its compact construction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the moment comparison and lifting proofs, the full compact-domain construction and the AP transfer to compact composites. The scalar rank-two coefficient lemma and the uniform Walsh-decay proof were not fully audited.\n\nCotype.lean defines ordinary approximation on compact sets, finite Rademacher cotype and the finite-cube Rademacher projection, and states the equivalence for nonzero real Banach spaces. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\nOrdinary AP does not supply uniformly bounded approximating operators. Cotype does not generally pass from X* to the quotient E*. The constructed domain depends on a fixed tuple length m and the finite-dimensional subspace E; its estimate is not a uniform all-length cotype assertion.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/326.md) · [Batch record](../../batches/B008/README.md)"
+    },
+    {
+      "id": "openai-math-327",
+      "record_type": "family",
+      "title": "Reversible lifts for edge labels and ordered charts",
+      "source_family": "327",
+      "source_collection": "openai/math",
+      "batch_id": "B008",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000105"
+      ],
+      "instrument_ids": [
+        "MI-000165",
+        "MI-000166"
+      ],
+      "headline": "The source claims that a real Banach space has nontrivial Markov type exactly when it admits an equivalent uniformly convex norm. The extracted tools convert edge increments and ordered partial motions into finite reversible chains.",
+      "central_instrument": "A reflecting lattice lift turns odd edge labels into a potential increment; finite Ramsey averaging and transposed couplings realize partial order maps while preserving stationary marginals and independent letters.",
+      "novelty_assessment": "Markov type, finite representability, Ramsey theory and maximal coupling are established. The selected constructions are candidate source-specific combinations supporting its walk argument. The superreflexivity characterization and priority are not certified.",
+      "formalization_summary": "MarkovType.lean states equivalence between a uniform Markov-type inequality for some exponent p>1 and existence of an equivalent uniformly convex norm, including the zero space. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.",
+      "statement_faithfulness": "Ordinary Markov type is distinct from Markov convexity and Rademacher type. Chains are finite, stationary and reversible; their size can depend on the tested time, while the Markov-type constant is uniform. Marked self-transitions may carry nonzero labels if their reverse mark is different.",
+      "dependencies": "Edgewise detailed balance; odd vector labels; finite lattice boxes with rejected boundary moves; finite representability; finite Ramsey and separation; equal-marginal couplings paired by transpose.",
+      "antecedents": "Ball introduced Markov type; Naor-Peres-Schramm-Sheffield established smooth-space implications. Brunel-Sucheston supplied the ordered-spreading background. The James-Enflo structural reduction and the source’s linear-displacement walk are additional inputs beyond the two extracted constructions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-327.md",
+      "body": "# Reversible lifts for edge labels and ordered charts\n\n## Source manuscript and claim\n\n[Nontrivial Markov Type Forces Superreflexivity](../papers/P-000105.md), by OpenAI, September 23, 2026.\n\nThe source claims that a real Banach space has nontrivial Markov type exactly when it admits an equivalent uniformly convex norm. The extracted tools convert edge increments and ordered partial motions into finite reversible chains.\n\n## Extracted instruments\n\n- [MI-000165: A finite reflecting lattice lift transfers Markov type to odd edge sums](../instruments/MI-000165.md)\n- [MI-000166: Ramsey averaging and transposed couplings build reversible chart transport](../instruments/MI-000166.md)\n\n## Dependencies and antecedents\n\nEdgewise detailed balance; odd vector labels; finite lattice boxes with rejected boundary moves; finite representability; finite Ramsey and separation; equal-marginal couplings paired by transpose.\n\nBall introduced Markov type; Naor-Peres-Schramm-Sheffield established smooth-space implications. Brunel-Sucheston supplied the ordered-spreading background. The James-Enflo structural reduction and the source’s linear-displacement walk are additional inputs beyond the two extracted constructions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the odd-edge-label proof, finite order averaging and reversible chart transport. The reduced-word action, linear-displacement construction and complete spreading-norm argument were not fully audited.\n\nMarkovType.lean states equivalence between a uniform Markov-type inequality for some exponent p>1 and existence of an equivalent uniformly convex norm, including the zero space. The scope document and Comparator declarations were compared. No Lean solution was built or kernel-checked, and the auxiliary instruments are not separate Comparator targets.\n\nOrdinary Markov type is distinct from Markov convexity and Rademacher type. Chains are finite, stationary and reversible; their size can depend on the tested time, while the Markov-type constant is uniform. Marked self-transitions may carry nonzero labels if their reverse mark is different.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/327.md) · [Batch record](../../batches/B008/README.md)"
+    },
+    {
+      "id": "openai-math-332",
+      "record_type": "family",
+      "title": "Nonlinear median smoothing through cuts and stopped martingales",
+      "source_family": "332",
+      "source_collection": "openai/math",
+      "batch_id": "B008",
+      "subject": "Functional analysis",
+      "source_paper_ids": [
+        "P-000106"
+      ],
+      "instrument_ids": [
+        "MI-000167",
+        "MI-000168",
+        "MI-000169"
+      ],
+      "headline": "The source claims metric Markov cotype two for real ell1 with constant 12 sqrt(21), and consequently a universal Lipschitz extension bound from Hilbert space to ell1. Its construction and cost estimate in fact require only stationarity of the chain.",
+      "central_instrument": "An exact cut representation retains a contractive map back to the ambient ell1. A cubic flat at binary endpoints converts a quartic Hilbert potential into martingale jump control. Geometric stopping produces an expected-median modification with both approximation and one-step costs.",
+      "novelty_assessment": "Cut metrics, cubic cut smoothing, resolvents and metric Markov cotype are established. The quartic martingale estimate and the stopped-median combination are candidate source-specific contributions. Their priority and the general theorem are not independently certified by finite examples.",
+      "formalization_summary": "No family-specific formalization scope document is listed for family 332 in the pinned inventory. No Comparator comparison or Lean proof build is claimed.",
+      "statement_faithfulness": "Metric Markov cotype allows nonlinear choices of new points in the full ambient space. It is different from Ball’s linear-average condition and from metric cotype. New points need not stay in the subspace spanned by the data. Zero stationary masses are permitted, and reversibility can be weakened to stationarity for the displayed construction.",
+      "dependencies": "Finite weighted upper cuts with ambient reconstruction; the cubic 3r^2-2r^3; a quartic convexity remainder; a geometrically killed stationary walk; a resolvent identity; a geometric-to-Cesaro endpoint comparison; a separate dual-target Lipschitz extension theorem.",
+      "antecedents": "Mendel-Naor formulate metric Markov cotype and its ell1 question and supply the extension framework and resolvent comparison. Deza-Laurent give the classical cut representation. Cheng-Wang-Xiang use the same cubic in metric cotype smoothing, a distinct invariant; this prevents attributing the cubic itself as new here.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-332.md",
+      "body": "# Nonlinear median smoothing through cuts and stopped martingales\n\n## Source manuscript and claim\n\n[Metric Markov Cotype Two of <i>ℓ</i><sub>1</sub> ](../papers/P-000106.md), by OpenAI, October 5, 2026.\n\nThe source claims metric Markov cotype two for real ell1 with constant 12 sqrt(21), and consequently a universal Lipschitz extension bound from Hilbert space to ell1. Its construction and cost estimate in fact require only stationarity of the chain.\n\n## Extracted instruments\n\n- [MI-000167: Finite ell1 cuts retain a contractive affine reconstruction](../instruments/MI-000167.md)\n- [MI-000168: A flat cubic converts quartic potential into martingale jump energy](../instruments/MI-000168.md)\n- [MI-000169: Expected medians of stopped-walk endpoints control two smoothing costs](../instruments/MI-000169.md)\n\n## Dependencies and antecedents\n\nFinite weighted upper cuts with ambient reconstruction; the cubic 3r^2-2r^3; a quartic convexity remainder; a geometrically killed stationary walk; a resolvent identity; a geometric-to-Cesaro endpoint comparison; a separate dual-target Lipschitz extension theorem.\n\nMendel-Naor formulate metric Markov cotype and its ell1 question and supply the extension framework and resolvent comparison. Deza-Laurent give the classical cut representation. Cheng-Wang-Xiang use the same cubic in metric cotype smoothing, a distinct invariant; this prevents attributing the cubic itself as new here. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete elementary proof of the source’s cotype bound, its expected-median interpretation and its extension deduction. Retrieved Mendel-Naor’s question, extension statement and resolvent lemma, and Cheng-Wang-Xiang’s cut-smoothing construction. Finite tests audit identities and examples, not universal proof certification.\n\nNo family-specific formalization scope document is listed for family 332 in the pinned inventory. No Comparator comparison or Lean proof build is claimed.\n\nMetric Markov cotype allows nonlinear choices of new points in the full ambient space. It is different from Ball’s linear-average condition and from metric cotype. New points need not stay in the subspace spanned by the data. Zero stationary masses are permitted, and reversibility can be weakened to stationarity for the displayed construction.\n\n[Batch record](../../batches/B008/README.md)"
     },
     {
       "id": "openai-math-340",
