@@ -1,0 +1,59 @@
+{
+  "batch": "B024",
+  "status": "passed",
+  "check_groups": {
+    "product_rank": {
+      "polynomial_models": 36,
+      "bidegree_factorizations": 108,
+      "positive_discrepancy_subsets": 96,
+      "fields": [
+        2,
+        3,
+        101
+      ],
+      "scope": "Small exact operator matrices and dimensional bottlenecks; no IMM trace lower bound or asymptotic circuit-size certification."
+    },
+    "occupation_moments": {
+      "exact_moments": 675,
+      "lower_comparisons": 252,
+      "scope": "Uniform weak-composition factorial moments and geometric comparisons. A negative factorial coefficient reverses the upper comparison."
+    },
+    "homogeneous_lookup": {
+      "Boolean_agreements": 94,
+      "block_homogeneity_checks": 300,
+      "zero_augmentation_controls": 300,
+      "scope": "Fixed finite-field lookup models; not the space-bounded evaluator or Turing-machine simulation."
+    },
+    "top_coefficient": {
+      "univariate_models": 225,
+      "translated_homogeneous_models": 120,
+      "maximum_degree": 14,
+      "characteristic": 2,
+      "scope": "Exact interpolation beyond the characteristic; not recursive word evaluation or a uniform field-construction space bound."
+    },
+    "Gaussian_center_absorption": {
+      "query_models": 105,
+      "maximum_query_discrepancy": 3.552713678800501e-15,
+      "unmodified_seed_covariance_error": 0.17361111111111127,
+      "scope": "Deterministic physical-query identity and Gaussian covariance, not an adaptive compiler accuracy theorem."
+    },
+    "stationary_mean_flow": {
+      "nonsymmetric_kernel_models": 36,
+      "wrong_transpose_failures": 36,
+      "maximum_final_momentum_initial_anchor_covariance": 2.064243114754922,
+      "scope": "Exact linear Gaussian flow via matrix exponentials; not general nonlinear transport-kernel estimates or implementable sampling."
+    },
+    "finite_field_coefficient": {
+      "exact_models": 96,
+      "aliasing_control_prime": 7,
+      "scope": "Finite multiplicative Fourier identity including no selected variables; does not verify counting-hierarchy closure levels."
+    },
+    "residue_sign": {
+      "exact_integer_models": 1675,
+      "maximum_integer_bits": 125,
+      "maximum_circular_error": 0.0002536607272935398,
+      "scope": "Residue-only recovery with a supplied product-size guarantee. The test harness stores the product solely to check results. No counting-hierarchy or prime-budget asymptotic certification."
+    }
+  },
+  "limitations": "Finite algebra and Gaussian examples do not certify the global complexity, circuit, machine-simulation or sampling claims."
+}
