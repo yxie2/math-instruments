@@ -5,5 +5,6 @@ Case studies investigate whether an extracted instrument can contribute to a fur
 | Study | Extracted input | Status |
 |---|---|---|
 | [CS-001: Signed restriction and fixed-depth circuit lower bounds](CS-001-signed-restriction/README.md) | Signed restriction lemma from family 112 | Described in the direction paper; separate application manuscript not included in this release |
+| [CS-002: Stationary descent and its information cost](CS-002-stationary-descent/README.md) | MI-000098: strict-descent obstruction; MI-000014: entropy comparison | [Public preprint with proofs](https://zenodo.org/records/23408425); historical priority of the finite formula unresolved |
 
 Further studies can be added with the [case-study template](../templates/case-study.md). A proposed application should identify the target problem and the missing argument; a completed study should supply its theorem, hypotheses, proof or evidence, and public citation.

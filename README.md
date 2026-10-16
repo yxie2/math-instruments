@@ -29,6 +29,12 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 
 <!-- catalogue-navigation:end -->
 
+## A use case: stationary descent
+
+How can a stationary process move downward on almost every step, and how much dependence must that behavior retain? [CS-002: Stationary descent and its information cost](case-studies/CS-002-stationary-descent/README.md) follows two extracted instruments, MI-000098 and MI-000014, into this probability question. The study develops a sharp atomless information bound and an explicit finite-state optimum whose value is invariant under rearranging the state probabilities.
+
+Read Ying Xie's preprint, [From Extracted Instruments to Mathematical Insight: A Case Study in Stationary Descent](https://zenodo.org/records/23408425), for the exploration, proofs, physical interpretation and comparison with earlier work. It illustrates how researchers can select a mechanism from the catalogue, adapt the question and investigate the resulting mathematics; historical priority of the finite formula remains unresolved.
+
 ## First release
 
 Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).

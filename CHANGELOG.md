@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added CS-002, a public preprint on stationary descent and its information cost, with the Zenodo record and a summary of the exploration and proved results.
+- Linked the study from the repository overview and case-study index, and recorded its use of MI-000098 and MI-000014 with reciprocal links.
+- Regenerated the instrument index and catalogue exports while preserving the original extraction descriptions and fixed import edition.
+
 ## 0.1.0 — 2026-10-12
 
 - Established the public catalogue and linked Ying Xie's direction preprint on Zenodo.
