@@ -19835,6 +19835,357 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000471.md",
       "body": "# Kill completed generators using a uniform weight gap\n\n[Family 069](../families/openai-math-069.md) · [Source manuscript](../papers/P-000254.md) · [Batch B046](../../batches/B046/README.md)\n\n## Mathematical content\n\nThe selected step concerns a filtered system of finite C[[h]]-modules with compatible finite-length weight structures, strict transition maps and homogeneous pro generators. Multiplication by h lowers weight by two. Suppose all target finite-length quotients have weights at most the same C, independent of the stage and length.\n\nFor a homogeneous source generator v of weight w, choose a with C-2a<w. If a later transition kills v modulo h^a, its images in every longer quotient lie in the h^a tail, whose weights are at most C-2a. Strictness and homogeneity force those images to vanish. Shorter quotients vanish too, so the completed image is zero. Finite generation and filteredness let one later transition kill all source generators.\n\nIn the source, logarithm exact sequences, stabilized images and mixed Hodge splitting supply these structures; a separate finite-rank comparison is then used to transfer the zero transition to non-torsion parameters. Those additional inputs are not consequences of the elementary weight-gap argument.\n\nThe uniform bound matters. For the system C[[h]] with every transition multiplication by h, each colimit modulo h^n is zero, but the module colimit is C((h)), not zero. Giving the generator at stage i weight 2i makes transitions weight preserving while the upper weight bound grows with i.\n\n## Role in the source argument\n\nBridges classwise finite-logarithm vanishing and a finite transition that kills an entire completed module.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [deform:colimit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-quantum-geometric-Langlands-at-irrational-level-October-4-2026/build/sections/05-deformation.tex#L356)\n\n## Antecedents and comparison\n\nStrict weight separation and finite generation, extracted from the source logarithm-colimit proof. No global specialization theorem is certified.\n\n## Checks and limitations\n\n234 finite weight models check the gap; thirty controls show how an increasing target bound permits nonzero h-power maps.\n\nThe checks do not prove the mixed Hodge, perfectness, stabilized-image or non-torsion rank inputs.\n\n## Possible applications\n\nDetecting when finite-order vanishing can be upgraded to completed-module vanishing without exchanging limits improperly.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000472",
+      "record_type": "instrument",
+      "title": "Split invariant measurable subspaces by killing a contracting graph",
+      "forms": [
+        "stationary-contracting-graph",
+        "measurable-invariant-subspace-splitting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-339"
+      ],
+      "source_paper_ids": [
+        "P-000255"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex",
+          "label": "nf:blocks",
+          "line": 234,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L234",
+          "sha256": "4a4dc4f12115e7d20f47b0f305d97e496fdfbf7b615b9cc9195d7ca8562a8e19"
+        },
+        {
+          "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex",
+          "label": "nf:lyapunov-bounds",
+          "line": 209,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L209",
+          "sha256": "4a4dc4f12115e7d20f47b0f305d97e496fdfbf7b615b9cc9195d7ca8562a8e19"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-stationarity-and-exponent-gap-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000472.md",
+      "body": "# Split invariant measurable subspaces by killing a contracting graph\n\n[Family 339](../families/openai-math-339.md) · [Source manuscript](../papers/P-000255.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nLet f preserve a probability measure and let an invertible measurable finite-dimensional cocycle preserve E=direct-sum E_i. Assume distinct exponents lambda_1<...<lambda_r and, for every epsilon>0, upper and lower bounds C_epsilon(v)^(+/-1) exp((lambda_i+/-epsilon)n) on each block, with tempered C_epsilon. Every measurable invariant subspace S splits almost everywhere as direct-sum (S intersect E_i). No tempered frame for S is needed.\n\nWrite E=E_< direct-sum E_r, K=S intersect E_< and I=projection_(E_r) S. In the measurable direct-sum norm, S/K is the graph of L:I -> E_</K. Invariance and the quotient norm give\n\n||L_(f^n v)|| <= C_epsilon(v)^2 exp((lambda_(r-1)-lambda_r+2epsilon)n) ||L_v||.\n\nChoose epsilon below half the exponent gap. The graph norm tends to zero. For every a>0, stationarity gives mu{||L||>a}=integral 1_{||L_(f^n v)||>a} dmu, which tends to zero by dominated convergence. Therefore L=0 almost everywhere, and induction splits S.\n\nThe underlying reusable principle is that a finite measurable nonnegative quantity with a stationary distribution cannot converge to zero along almost every forward orbit unless it is zero almost everywhere. The probability hypothesis supplies the finite measure needed here.\n\n## Role in the source argument\n\nSeparates invariant polynomial-relation subspaces into Lyapunov blocks before the source normal-form construction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [nf:blocks](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L234)\n- [nf:lyapunov-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L209)\n\n## Antecedents and comparison\n\nThe proof combines classical exponent separation with stationarity. [Kalinin-Sadovskaya, Normal forms for non-uniform contractions](https://doi.org/10.3934/jmd.2017014) is related primary context for measurable normal forms; its published abstract and bibliographic record were checked, not an exact lemma-by-lemma equivalence.\n\n## Checks and limitations\n\nThe complete selected argument was read. Finite periodic graph equations check the zero-graph conclusion for strictly contracting monodromy; equal-exponent and infinite-measure controls show why the gap and recurrence assumptions matter.\n\nFinite cycles do not verify a general measurable cocycle or establish the geometric source hypotheses. On the integer shift with counting measure, the nonzero graph L_n=2^(-n) tends to zero forward, illustrating why the stationarity argument needs finite measure.\n\n## Possible applications\n\nSeparating measurable invariant constraints into spectral or Lyapunov sectors without first controlling a frame for the constraint space.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000473",
+      "record_type": "instrument",
+      "title": "Solve a nonresonant recurrence by choosing the tempered time direction",
+      "forms": [
+        "two-sided-tempered-green-series",
+        "nonresonant-homological-equation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-339"
+      ],
+      "source_paper_ids": [
+        "P-000255"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex",
+          "label": "nf:homological",
+          "line": 274,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L274",
+          "sha256": "4a4dc4f12115e7d20f47b0f305d97e496fdfbf7b615b9cc9195d7ca8562a8e19"
+        },
+        {
+          "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex",
+          "label": "nf:tempered",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L187",
+          "sha256": "4a4dc4f12115e7d20f47b0f305d97e496fdfbf7b615b9cc9195d7ca8562a8e19"
+        },
+        {
+          "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex",
+          "label": "nf:lyapunov-bounds",
+          "line": 209,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L209",
+          "sha256": "4a4dc4f12115e7d20f47b0f305d97e496fdfbf7b615b9cc9195d7ca8562a8e19"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-green-series-with-tempered-bounds",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000473.md",
+      "body": "# Solve a nonresonant recurrence by choosing the tempered time direction\n\n[Family 339](../families/openai-math-339.md) · [Source manuscript](../papers/P-000255.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nSuppose the invertible cocycle L has a single exponent gamma!=0, with the two-sided tempered Lyapunov estimates stated in the source, and the forcing e_n is tempered. The recurrence q_(n+1)=L_n q_n+e_(n+1) has a unique tempered solution on each regular two-sided orbit.\n\nFor gamma<0, sum the past: q_n=e_n+sum_(j>=1) L_(n-1)...L_(n-j) e_(n-j). For gamma>0, sum inverse transport from the future: q_n=-sum_(j>=0) L_n^(-1)...L_(n+j)^(-1)e_(n+j+1). Slow regularization bounds a summand by a tempered prefactor times exp(2 delta |n|) exp((-|gamma|+3 delta)j). Choose 3 delta<|gamma|, and then let delta be arbitrarily small to get convergence and temperedness. Measurable partial sums give measurability.\n\nTwo solutions differ by a homogeneous orbit. A nonzero homogeneous orbit grows exponentially in the future for gamma>0 or in the past for gamma<0, so cannot be tempered. The argument also applies to finite triangular blocks sharing the same exponent, provided their diagonal Lyapunov estimates and tempered off-diagonal bounds give the stated product estimates.\n\nAt gamma=0 uniqueness can fail: for L=1 and e=0 every constant solution is tempered.\n\n## Role in the source argument\n\nRemoves nonresonant coefficients in the source finite-level normal coordinates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [nf:homological](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L274)\n- [nf:tempered](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L187)\n- [nf:lyapunov-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/build/sections/02-normal-forms.tex#L209)\n\n## Antecedents and comparison\n\nClassical Green-series resolution of a hyperbolic recurrence. [Kalinin-Sadovskaya](https://doi.org/10.3934/jmd.2017014) supplies related nonuniform normal-form context; the present extraction does not assert a new normal-form theorem.\n\n## Checks and limitations\n\nExact rational truncations test both orientations with alternating forcing; triangular matrix examples check the recurrence and summation order. A zero-exponent constant solution is a uniqueness control.\n\nTruncation checks cover finite examples, not general measurable convergence, the multiplicative ergodic theorem or the source geometric normal forms.\n\n## Possible applications\n\nCohomological equations and finite-jet normalization when forcing and norm comparisons are only tempered.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000474",
+      "record_type": "instrument",
+      "title": "Turn a weighted interval comparison into an integrated Jensen gap",
+      "forms": [
+        "symmetric-weight-fubini-cancellation",
+        "integrated-logarithmic-jensen-gap"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-344"
+      ],
+      "source_paper_ids": [
+        "P-000256"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex",
+          "label": "weighted:scalar",
+          "line": 25,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex#L25",
+          "sha256": "3a4fd66c92599567e6bad8ca3c969bea8f14344d624c1798c7f34c032eccd138"
+        },
+        {
+          "path": "preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex",
+          "label": "weighted:coefficient",
+          "line": 100,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex#L100",
+          "sha256": "3a4fd66c92599567e6bad8ca3c969bea8f14344d624c1798c7f34c032eccd138"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "explicit-kazdan-cancellation-reformulation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000474.md",
+      "body": "# Turn a weighted interval comparison into an integrated Jensen gap\n\n[Family 344](../families/openai-math-344.md) · [Source manuscript](../papers/P-000256.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nLet b>0, lambda=pi/b, p_0(t)=lambda^2/sin^2(lambda t), and let positive continuous p have bounded g=log(p/p_0). Let W>=0 be measurable, W(b-z)=W(z) almost everywhere, and W(z)/sin(lambda z) essentially bounded. On 0<x<y<b let nu_xy have density p_0/integral_x^y p_0.\n\nThen the integral over x<y of\n\nW(y-x)[log(integral_x^y p / integral_x^y p_0)-(g(x)+g(y))/2]\n\nequals the integral of W(y-x)[log E_(nu_xy) exp(g)-E_(nu_xy) g], and is therefore nonnegative. All quantities are finite because the averages and logarithmic averages of bounded g are bounded.\n\nThe cancellation is exact. Put K(z)=W(z)/sin(lambda z), I_W=integral_0^b W, and F(t)=integral_(0<x<t<y<b) K(y-x)sin(lambda x)sin(lambda y) dx dy. Fubini makes F absolutely continuous. Reflection symmetry gives F'(t)=I_W sin(lambda t)cos(lambda t), hence F(t)=I_W sin^2(lambda t)/(2 lambda). Thus p_0(t)F(t)/lambda=I_W/2: the integrated interval average of g equals (I_W/2)integral g. The integrated endpoint average has the same value by reflection symmetry.\n\nNo derivative of W and no integral of p_0 over the entire singular interval is used.\n\n## Role in the source argument\n\nCancels the linear endpoint terms after the source obtains logarithmic block comparisons along geodesics.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [weighted:scalar](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex#L25)\n- [weighted:coefficient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/03-weighted-comparison.tex#L100)\n\n## Antecedents and comparison\n\nThe source explicitly identifies this as a logarithmic form of [Kazdan, An Inequality Arising in Geometry](https://doi.org/10.1007/978-3-642-61876-5_14), Appendix E, especially E.4-E.8. The publisher title, attribution and preview were checked; the full appendix was not retrieved. Exact correspondence to those numbered equations remains source-attributed. No novelty claim is made for the cancellation.\n\n## Checks and limitations\n\nRead the full Fubini proof. Symbolic checks cover W=sin(z) and W=sin(z)(1+cos(2z)/2) at b=pi; quadrature checks a symmetric discontinuous weight. An asymmetric weight gives unequal linear coefficient densities.\n\nThese checks do not establish the global geodesic comparison, its matrix inputs or the metric classification. Removing weight symmetry invalidates this exact cancellation in general.\n\n## Possible applications\n\nTurning endpoint-normalized integral inequalities into convexity remainders while keeping singular model densities integrable on each interior interval.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000475",
+      "record_type": "instrument",
+      "title": "Differentiate an endpoint Schur complement without assuming endpoint order",
+      "forms": [
+        "endpoint-schur-square-completion",
+        "anchored-matrix-integral-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-344"
+      ],
+      "source_paper_ids": [
+        "P-000256"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex",
+          "label": "lag:schur",
+          "line": 420,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex#L420",
+          "sha256": "7b57614f4fcf41aeaa953619a44ab085893fb790f71b3c485a8e158a0bbbf1f6"
+        },
+        {
+          "path": "preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex",
+          "label": "eq:lag-square-completion",
+          "line": 502,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex#L502",
+          "sha256": "7b57614f4fcf41aeaa953619a44ab085893fb790f71b3c485a8e158a0bbbf1f6"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-schur-algebra-with-endpoint-anchors",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000475.md",
+      "body": "# Differentiate an endpoint Schur complement without assuming endpoint order\n\n[Family 344](../families/openai-math-344.md) · [Source manuscript](../papers/P-000256.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nWrite a smooth symmetric block matrix A(t) as [[V(t),C(t)],[C(t)^T,H(t)]], and suppose H'(t)>0 on the relevant intervals. For distinct endpoints with invertible Delta H=H(y)-H(x), put R=Delta C (Delta H)^(-1), Q=Delta V-Delta C (Delta H)^(-1)Delta C^T, and S(a)=V'(a)-C'(a)H'(a)^(-1)C'(a)^T.\n\nBlock congruence gives det(Delta A)=det(Delta H)det Q and Q(y,x)=-Q(x,y). For either endpoint a, the derivative with the appropriate sign is\n\npartial_y Q at a=y, or -partial_x Q at a=x\n= S(a)+(R-C'(a)H'(a)^(-1))H'(a)(R-C'(a)H'(a)^(-1))^T >= S(a).\n\nThis square uses positivity of H'(a), not positivity of Delta H. It therefore remains valid when the actual endpoints are reversed. Near an ordinary diagonal, Q(x,y)=(y-x)S(x)+O((y-x)^2).\n\nIn the source, additional geometric identities give Q(u,u+D)=0, with each moving endpoint staying inside one smooth chart interval. Starting or ending at these zeros and integrating yields Q(u+iD,v+jD)>=integral_u^v S(t+jD)dt and >=integral_u^v S(t+iD)dt for 0<u<v<D and i,j in {0,1}. These positive lower bounds require the cut-pair zeros and positive S; they do not follow from the derivative identity alone.\n\n## Role in the source argument\n\nHandles the four folded endpoint configurations without reversing a lower bound when x>y.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lag:schur](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex#L420)\n- [eq:lag-square-completion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/build/sections/02-lagrangian.tex#L502)\n\n## Antecedents and comparison\n\n[Boyd-Vandenberghe, Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf), Appendix A.5.5, gives the classical block determinant and quadratic minimization formulas; that section was read. The source packages their differential square with its geometric zero anchors.\n\n## Checks and limitations\n\nExact rational noncommuting block examples verify the square and determinant identity for positive and negative Delta H. A negative H prime supplies a sign control.\n\nThe finite matrix checks do not validate the source Lagrangian construction, cut-pair intersection dimension, or chart-pole avoidance. The anchored inequalities are conditional on those separately stated inputs.\n\n## Possible applications\n\nMatrix comparison estimates where endpoint order changes but the local derivative block remains positive.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000476",
+      "record_type": "instrument",
+      "title": "Separate free rank and torsion in a graded finite-cut count",
+      "forms": [
+        "graded-polynomial-module-finite-generation",
+        "gysin-free-rank-plus-twice-torsion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-345"
+      ],
+      "source_paper_ids": [
+        "P-000257"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex",
+          "label": "act:module-rank",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex#L20",
+          "sha256": "7e36525a4219cc93998f62769bfdd7fc7c6659bd2b7bef8a25d8e0b897b886ad"
+        },
+        {
+          "path": "preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex",
+          "label": "act:total-rank",
+          "line": 30,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex#L30",
+          "sha256": "7e36525a4219cc93998f62769bfdd7fc7c6659bd2b7bef8a25d8e0b897b886ad"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-graded-module-rank-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000476.md",
+      "body": "# Separate free rank and torsion in a graded finite-cut count\n\n[Family 345](../families/openai-math-345.md) · [Source manuscript](../papers/P-000257.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nLet H be a nonnegatively graded k[U]-module with deg U=2, and suppose H/UH is finite-dimensional. Lifts of a finite homogeneous basis generate H: subtract a linear combination modulo U and divide the remainder by U, decreasing the degree until the process stops.\n\nA polynomial with nonzero constant coefficient acts injectively, since the lowest nonzero homogeneous part of an element survives. Every torsion element is consequently killed by a power of U. Finite generation and Noetherianity give a common such power, so the torsion submodule T is finite-dimensional. Set t=dim(T/UT)=dim ker(U|H) and rho=rank_(k[U])(H/T). The torsion-free quotient is graded free, UH intersect T=UT, and dim(H/UH)=rho+t.\n\nIf a finite-dimensional graded space B fits the Gysin short exact pieces with contributions H/UH and a shifted ker U, then dim B=rho+2t. For sufficiently large D, dim H^D+dim H^(D-1)=rho, because torsion has disappeared and each free generator contributes in exactly one of these two degrees.\n\nThe source identifies this eventual rank with the reflection count at the half cut using additional weight-two Gysin and localization inputs. That geometric identification is not a consequence of the module calculation alone. A grading bounded below is essential for the generation argument: k[U,U^(-1)] has H/UH=0 but is nonzero and not finitely generated over k[U].\n\n## Role in the source argument\n\nMakes the source doubling count exact by separating free contributions from finite torsion.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [act:module-rank](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex#L20)\n- [act:total-rank](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/activation.tex#L30)\n\n## Antecedents and comparison\n\nClassical graded Nakayama induction and structure theory over k[U]. The selected proof is self-contained algebra once the source Gysin sequence is supplied; no new algebra theorem is claimed.\n\n## Checks and limitations\n\nExact nilpotent Jordan-block models check the torsion kernel/cokernel equality and eventual two-degree free-rank count, including free generators of both parities. The Laurent module is an analytic control for the missing lower degree bound.\n\nNo finite example establishes the equivariant cohomology model, localization or the closed-geodesic conclusion.\n\n## Possible applications\n\nExtracting stable free rank from high degrees while measuring finite-cut defects through torsion generators.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000477",
+      "record_type": "instrument",
+      "title": "Use a bounded death horizon to turn local persistence into global injectivity",
+      "forms": [
+        "bounded-death-persistence-injectivity",
+        "moving-index-band-exclusion"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-345"
+      ],
+      "source_paper_ids": [
+        "P-000257"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex",
+          "label": "trans:degree-gaps",
+          "line": 67,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex#L67",
+          "sha256": "3149a169ddf8451f3c1d0c0df3996e680db24581516559eb317c5d762ffd3ae8"
+        },
+        {
+          "path": "preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex",
+          "label": "trans:horizon-band",
+          "line": 91,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex#L91",
+          "sha256": "3149a169ddf8451f3c1d0c0df3996e680db24581516559eb317c5d762ffd3ae8"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "elementary-persistence-factorization-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000477.md",
+      "body": "# Use a bounded death horizon to turn local persistence into global injectivity\n\n[Family 345](../families/openai-math-345.md) · [Source manuscript](../papers/P-000257.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nFor a filtered homology system V_a -> V_b -> V_infinity, suppose every class in ker(V_a -> V_infinity) maps to zero by a+D, where D is uniform. If the transition V_a -> V_(a_+) is injective for some a_+>a+D, then V_a -> V_infinity is injective: a globally dying class is zero at a+D, hence at a_+, so injectivity kills it already at a. Over a field, the corresponding ordinary cohomology restriction is surjective.\n\nThe source obtains short-window injectivity away from moving degree bands. For finitely many event types, assume event times m ell_i, centers I_(i,m) satisfying |I_(i,m)-m Delta_i|<=n, and local contributions confined to |j-I_(i,m)|<=C_loc, with the neighboring exact-sequence degrees included in this bound. Put beta_i=Delta_i/ell_i and choose a_+ in (a+D,a+D+1). Any intervening event that can affect j satisfies\n\n|j-beta_i a|<=C_loc+n+beta_i(D+1).\n\nOutside all these fixed-width bands, the crossing sequences give the required injectivity. Combining it with bounded death excludes hidden globally dying classes in those degrees. The later equivariant gap isomorphisms need further Gysin and global nilpotence inputs and are not asserted by this extraction.\n\n## Role in the source argument\n\nSupplies the ordinary comparison step inside the source degree-gap lemma.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [trans:degree-gaps](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex#L67)\n- [trans:horizon-band](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/build/sections/transients.tex#L91)\n\n## Antecedents and comparison\n\nElementary persistence-map factorization and a triangle inequality for the event bands. The value is the explicit uniform interface, not a new general persistence theorem.\n\n## Checks and limitations\n\nFinite barcode models check that global death and the horizon condition force loss before the tested later cut; delayed-death controls violate the horizon. Event-time models check the fixed-width band formula.\n\nThe uniform death horizon and local crossing support are substantive geometric inputs, left unverified here. The finite models do not establish the full degree-gap lemma or transient bound.\n\n## Possible applications\n\nProving stability away from moving spectral or index bands when short-lived classes have a uniform lifetime bound.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000478",
+      "record_type": "instrument",
+      "title": "Detect a projective cup power using complementary boundary fillings",
+      "forms": [
+        "complementary-filling-monodromy",
+        "projective-cup-power-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-349"
+      ],
+      "source_paper_ids": [
+        "P-000258"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex",
+          "label": "lem:minmax-cover",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L69",
+          "sha256": "f4c65b710bcd16b16862d93c509836f3fc6f5212d383dd55e1d1df7291667627"
+        },
+        {
+          "path": "preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex",
+          "label": "lem:minmax-projective",
+          "line": 163,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L163",
+          "sha256": "f4c65b710bcd16b16862d93c509836f3fc6f5212d383dd55e1d1df7291667627"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-double-cover-and-projective-cohomology",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000478.md",
+      "body": "# Detect a projective cup power using complementary boundary fillings\n\n[Family 349](../families/openai-math-349.md) · [Source manuscript](../papers/P-000258.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nLet C(S^(m+1)) be finite-perimeter sets modulo null sets with volume symmetric-difference distance, and let their mod-two boundaries lie in the flat component of zero. The boundary map is a double cover with deck involution E -> E^c, provided the standard small-filling theorem is used. Its degree-one class lambda records whether a lifted loop ends at the initial filling or its complement.\n\nSet p=m+3 and Q=closed B^(m+2) times [-1,1]. Suppose q -> E_q is continuous in volume, E_(-q)=E_q^c on the boundary of Q, E_(0,-1) is empty and E_(0,1) is the whole sphere. The cycles partial[E_q] descend to Q/(q~-q on boundary), homeomorphic to RP^p. The vertical segment closes to a loop whose filling lift goes from empty to whole sphere, so the pulled-back lambda is the nonzero generator alpha in H^1(RP^p;F_2). Since H*(RP^p;F_2)=F_2[alpha]/(alpha^(p+1)), its pth power is nonzero.\n\nThe fillings give local branches of the pulled-back cover. They do not give a single filling on the quotient, which would trivialize the very cover being detected. Continuity in volume implies flat continuity of boundaries; it does not by itself imply no concentration of boundary mass.\n\n## Role in the source argument\n\nVerifies the topological detection property of a candidate sweepout independently of its later mass estimates.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:minmax-cover](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L69)\n- [lem:minmax-projective](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L163)\n\n## Antecedents and comparison\n\n[Hatcher, Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/ATch3.pdf), Theorem 3.19, p. 220, gives the projective cohomology ring; the statement and beginning of its proof were read. The source uses ordinary double-cover monodromy to identify its pullback generator.\n\n## Checks and limitations\n\nRead the selected covering and monodromy proofs and checked the dimension p=m+3 and boundary quotient. This topological criterion has an analytic review record; the finite program does not certify it.\n\nThe small-filling theorem is an external input. No claim that a geometric family satisfying all min-max regularity and mass conditions has been independently constructed.\n\n## Possible applications\n\nA topological test for antipodally glued parameter families of boundaries.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000479",
+      "record_type": "instrument",
+      "title": "Force a strict geometric gap by an odd constraint map and compactness",
+      "forms": [
+        "cup-power-forced-constraint-zero",
+        "compactness-exclusion-of-equality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-349"
+      ],
+      "source_paper_ids": [
+        "P-000258"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex",
+          "label": "lem:detection-gap",
+          "line": 201,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L201",
+          "sha256": "f4c65b710bcd16b16862d93c509836f3fc6f5212d383dd55e1d1df7291667627"
+        },
+        {
+          "path": "preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex",
+          "label": "eq:minmax-odd-map",
+          "line": 243,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L243",
+          "sha256": "f4c65b710bcd16b16862d93c509836f3fc6f5212d383dd55e1d1df7291667627"
+        }
+      ],
+      "batch_id": "B047",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-borsuk-ulam-and-rigidity-gap-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000479.md",
+      "body": "# Force a strict geometric gap by an odd constraint map and compactness\n\n[Family 349](../families/openai-math-349.md) · [Source manuscript](../papers/P-000258.md) · [Batch B047](../../batches/B047/README.md)\n\n## Mathematical content\n\nOn S^(m+1), let A_m consist of finite-perimeter sets with half the sphere volume and zero vector centroid. This class is nonempty, for example by two antipodal caps of suitable radius. Let gamma_m be the infimum of perimeter on A_m. BV compactness, continuity of volume and centroid under L1 convergence, and perimeter lower semicontinuity produce a minimizer.\n\nSpherical isoperimetry bounds perimeter below by sigma_m, the equatorial m-sphere area; equality at half volume requires a hemisphere. A hemisphere with pole a has centroid sigma_m a/(m+1), which is nonzero. Thus the constrained minimizer cannot be an equality case, and gamma_m>sigma_m. This argument gives a strict gap, without an explicit numerical gap or a characterization of the constrained minimizer.\n\nFor a cycle family Phi on a finite CW complex X, pull back the filling double cover. On that cover the map (x,E) -> (Vol(E)-sigma_(m+1)/2, integral_E y) takes values in R^(m+3) and changes sign under complementation. If it had no zero, normalization would give an equivariant map to S^(p-1), p=m+3, and a quotient map X -> RP^(p-1). The filling-cover class would be pulled back from RP^(p-1), forcing its pth cup power to vanish. Therefore any detecting family with (Phi*lambda)^p!=0 has a zero of this constraint map, and its maximal mass is at least gamma_m.\n\nThe general method separates two tasks: topology forces the constraints, and compactness plus an incompatible equality classification turns those constraints into a strict energy gap.\n\n## Role in the source argument\n\nRaises the source detecting-family mass threshold strictly above the equator level before min-max arguments.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:detection-gap](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L201)\n- [eq:minmax-odd-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/build/sections/minmax.tex#L243)\n\n## Antecedents and comparison\n\nThe cup-power step uses [Hatcher Theorem 3.19](https://pi.math.cornell.edu/~hatcher/AT/ATch3.pdf). The spherical isoperimetric inequality and its equality case were checked in [Boglein-Duzaar-Fusco](https://cvgmt.sns.it/media/doc/paper/2146/BDF-sphere-2013-05-09.pdf), Section 2.3, equation (2.2), p. 5. The gap argument is the standard direct method with exclusion of all equality cases; no new isoperimetric theorem is claimed.\n\n## Checks and limitations\n\nThe complete selected proof was read. Symbolic spherical-coordinate integrals check the hemisphere centroid in dimensions m=1,...,7. On S2, two antipodal caps of angular radius pi/3 have half volume, zero centroid and perimeter 2 pi sqrt(3), giving a feasible upper bound on gamma_1, not its optimum.\n\nFinite examples do not prove BV compactness or cup-product detection. No explicit optimal gamma_m, classification of constrained minimizers or source least-volume theorem is certified.\n\n## Possible applications\n\nVariational problems where a cohomological obstruction forces an odd collection of constraints incompatible with every unconstrained minimizer.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -24663,6 +25014,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000254.md",
       "body": "# Global quantum geometric Langlands at irrational level\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-quantum-geometric-Langlands-at-irrational-level-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-quantum-geometric-Langlands-at-irrational-level-October-4-2026/quantum-langlands.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-quantum-geometric-Langlands-at-irrational-level-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims global quantum geometric Langlands at irrational level.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000470: Use nonintegral inertia to force a twisted category to vanish](../instruments/MI-000470.md)\n- [MI-000471: Kill completed generators using a uniform weight gap](../instruments/MI-000471.md)\n\n## Dependencies and review\n\nStrong Kummer equivariance, Laurent de Rham complexes, conservative pullback, completed finite modules, strict weight maps and finite generation.\n\nRead the complete inertia, non-torsion rank and logarithm-colimit proofs. Extracted only the elementary inertia calculation and the conditional bounded-weight killing step; geometric perfectness, rank constancy and the global equivalence were not independently verified.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-069.md) · [Batch B046](../../batches/B046/README.md)"
+    },
+    {
+      "id": "P-000255",
+      "record_type": "paper",
+      "title": "Entropy equality and local symmetry in negative curvature",
+      "source_collection": "openai/math",
+      "upstream_slug": "Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-339"
+      ],
+      "batch_id": "B047",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5887435d6f5a8a3713c8bf82f059dc2a3f93471e7e25da185f2014d576db5e87",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000255.md",
+      "body": "# Entropy equality and local symmetry in negative curvature\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000472: Split invariant measurable subspaces by killing a contracting graph](../instruments/MI-000472.md)\n- [MI-000473: Solve a nonresonant recurrence by choosing the tempered time direction](../instruments/MI-000473.md)\n\n[Family review and dependencies](../families/openai-math-339.md) · [Batch B047](../../batches/B047/README.md)"
+    },
+    {
+      "id": "P-000256",
+      "record_type": "paper",
+      "title": "The metric Blaschke theorem",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-metric-Blaschke-theorem-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-344"
+      ],
+      "batch_id": "B047",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "60defa1433584014b9a141c14bff016de91dae641a71265bd716dc443e3a0366",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000256.md",
+      "body": "# The metric Blaschke theorem\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-metric-Blaschke-theorem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000474: Turn a weighted interval comparison into an integrated Jensen gap](../instruments/MI-000474.md)\n- [MI-000475: Differentiate an endpoint Schur complement without assuming endpoint order](../instruments/MI-000475.md)\n\n[Family review and dependencies](../families/openai-math-344.md) · [Batch B047](../../batches/B047/README.md)"
+    },
+    {
+      "id": "P-000257",
+      "record_type": "paper",
+      "title": "Infinitely many closed geodesic images on every Riemannian sphere",
+      "source_collection": "openai/math",
+      "upstream_slug": "Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-345"
+      ],
+      "batch_id": "B047",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1dcc05c88453d34cf261b109f5e44e15a5ddd4bd06a18309752411642d1d5e6f",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000257.md",
+      "body": "# Infinitely many closed geodesic images on every Riemannian sphere\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000476: Separate free rank and torsion in a graded finite-cut count](../instruments/MI-000476.md)\n- [MI-000477: Use a bounded death horizon to turn local persistence into global injectivity](../instruments/MI-000477.md)\n\n[Family review and dependencies](../families/openai-math-345.md) · [Batch B047](../../batches/B047/README.md)"
+    },
+    {
+      "id": "P-000258",
+      "record_type": "paper",
+      "title": "The Solomon–Yau least-volume theorem",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Solomon-Yau-least-volume-theorem-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-349"
+      ],
+      "batch_id": "B047",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "23429ed3b60faf6aa44b867abd0b4c42867374afb85c552b1bd0d56cbf710342",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000258.md",
+      "body": "# The Solomon–Yau least-volume theorem\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000478: Detect a projective cup power using complementary boundary fillings](../instruments/MI-000478.md)\n- [MI-000479: Force a strict geometric gap by an odd constraint map and compactness](../instruments/MI-000479.md)\n\n[Family review and dependencies](../families/openai-math-349.md) · [Batch B047](../../batches/B047/README.md)"
     }
   ],
   "families": [
@@ -30063,6 +30490,33 @@
       "body": "# Hermitian contact certificates and volume-preserving jet realization\n\n## Source manuscript and claim\n\n[Uniformization of complete Kähler manifolds with positive bisectional curvature](../papers/P-000223.md), by OpenAI, None.\n\nThe source claims uniformization of complete Kahler manifolds with positive holomorphic bisectional curvature.\n\n## Extracted instruments\n\n- [MI-000408: Certify a Hermitian determinant optimum by finitely many contact directions](../instruments/MI-000408.md)\n- [MI-000409: Realize a constant-volume finite jet by polynomial shears](../instruments/MI-000409.md)\n\n## Dependencies and antecedents\n\nStrict log-determinant concavity, finite-dimensional cone separation, divergence-free homogeneous vector fields and polynomial shear composition.\n\nJohn 1948; Andersen volume-preserving automorphisms; Forstneric-Larusson proof of Theorem 3.1. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete optimizer/contact lemma and constant-volume jet realization proof. Disc envelopes, curvature-flow inequalities, dynamical basin estimates and global uniformization were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nThe logarithmic optimal value is lower semicontinuous; continuity of the optimizing matrix is not asserted. Jet degree is fixed before the uniform degree/coefficient bounds are chosen.\n\n[Batch record](../../batches/B038/README.md)"
     },
     {
+      "id": "openai-math-339",
+      "record_type": "family",
+      "title": "Invariant measurable splittings and tempered Green series",
+      "source_family": "339",
+      "source_collection": "openai/math",
+      "batch_id": "B047",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000255"
+      ],
+      "instrument_ids": [
+        "MI-000472",
+        "MI-000473"
+      ],
+      "headline": "The source claims that entropy equality forces local symmetry in negative curvature.",
+      "central_instrument": "A contracting graph vanishes by stationarity, without a tempered frame. Nonzero Lyapunov exponents select a unique tempered Green-series solution.",
+      "novelty_assessment": "Classical measurable dynamics and nonresonant cohomological methods; no entropy-rigidity or historical-priority certification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean project was built.",
+      "statement_faithfulness": "The splitting argument uses an invariant probability measure. The recurrence requires two-sided tempered estimates and a nonzero single exponent.",
+      "dependencies": "Invariant direct sums, distinct exponent bounds with tempered prefactors, finite-dimensional quotient norms, measure invariance and tempered forcing.",
+      "antecedents": "Nonstationary normal forms and exponential-dichotomy Green series. Kalinin-Sadovskaya is related primary context; no claim of exact equivalence to every source hypothesis.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-339.md",
+      "body": "# Invariant measurable splittings and tempered Green series\n\n## Source manuscripts and claim\n\n- [Entropy equality and local symmetry in negative curvature](../papers/P-000255.md): selected passages extracted.\n\nThe source claims that entropy equality forces local symmetry in negative curvature.\n\n## Extracted instruments\n\n- [MI-000472: Split invariant measurable subspaces by killing a contracting graph](../instruments/MI-000472.md)\n- [MI-000473: Solve a nonresonant recurrence by choosing the tempered time direction](../instruments/MI-000473.md)\n\n## Dependencies and antecedents\n\nInvariant direct sums, distinct exponent bounds with tempered prefactors, finite-dimensional quotient norms, measure invariance and tempered forcing.\n\nNonstationary normal forms and exponential-dichotomy Green series. Kalinin-Sadovskaya is related primary context; no claim of exact equivalence to every source hypothesis.\n\n## Review and formalization scope\n\nRead the definitions of temperedness, slow regularization, Lyapunov bounds and both complete selected proofs. The global geometric construction and entropy-rigidity argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nThe splitting argument uses an invariant probability measure. The recurrence requires two-sided tempered estimates and a nonzero single exponent.\n\n[Batch record](../../batches/B047/README.md)"
+    },
+    {
       "id": "openai-math-340",
       "record_type": "family",
       "title": "Counterexample to the nearby Lagrangian conjecture",
@@ -30173,6 +30627,87 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-343.md",
       "body": "# Convex coordinate rearrangement and boundary-preserving area deformation\n\n## Source manuscript and claim\n\n[Symplectic Ball Packings in Higher Dimensions](../papers/P-000189.md), by OpenAI, None.\n\nThe source claims that closed symplectic balls in dimension 2n, n>=3, pack into the interior of a ball exactly under strict volume and pairwise capacity inequalities.\n\n## Extracted instruments\n\n- [MI-000340: Rearrange convex functions increasingly without losing convexity on a downward polytope](../instruments/MI-000340.md)\n- [MI-000341: Construct relative area primitives and preserve moment faces in a Moser deformation](../instruments/MI-000341.md)\n\n## Dependencies and antecedents\n\nConvex sublevel intervals, Fubini, relative primitives for zero-integral two-forms, exterior algebra and the Moser equation.\n\nSiegel-Yao, On Symplectic Packing Problems in Higher Dimensions, arXiv:2312.13224, for the conjectural context; classical rearrangement and Moser deformation methods. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete coordinate-rearrangement proof, relative-area primitive proof and Moser-with-outer-faces proof. Hamiltonian realization, fixed-point comparison, normal-cone transfer and higher-dimensional packing assembly were not audited.\n\nRead both BallPacking.lean and BallPackingNecessity.lean, plus the scope. They use capacity pi times squared radius, positive capacities, embeddings on neighborhoods of closed balls, disjoint closed images in the open target, and strict volume and pairwise inequalities. The inspected Comparator contains a sorry target, not a proof built or kernel-checked here.\n\nThe rearrangement domain has nonnegative face normals; that downward property is used to preserve previous coordinate monotonicity. The arithmetic rearrangement is separate from a Hamiltonian realization. Horizontal primitives are required for the moment-face preservation argument.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/343.md) · [Batch record](../../batches/B029/README.md)"
+    },
+    {
+      "id": "openai-math-344",
+      "record_type": "family",
+      "title": "Weighted Jensen cancellation and endpoint Schur bounds",
+      "source_family": "344",
+      "source_collection": "openai/math",
+      "batch_id": "B047",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000256"
+      ],
+      "instrument_ids": [
+        "MI-000474",
+        "MI-000475"
+      ],
+      "headline": "The source claims the metric Blaschke theorem.",
+      "central_instrument": "A symmetric interval weight cancels endpoint terms into an integrated Jensen gap. Completing a Schur-complement derivative square works in either endpoint order.",
+      "novelty_assessment": "Kazdan cancellation and classical Schur-complement algebra with a stated geometric interface. No metric Blaschke theorem or priority certification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean project was built.",
+      "statement_faithfulness": "Retain symmetry and endpoint integrability of the weight. Schur derivative bounds need H positive derivative and invertible endpoint difference; positive integrated bounds additionally require the source cut-pair zeros.",
+      "dependencies": "Bounded logarithmic ratios, symmetric measurable weights, Fubini, Jensen, smooth block matrices, positive derivative H, and separately established cut-pair identities.",
+      "antecedents": "Kazdan, An Inequality Arising in Geometry (1978), Appendix E; Boyd-Vandenberghe, Convex Optimization, Appendix A.5.5.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-344.md",
+      "body": "# Weighted Jensen cancellation and endpoint Schur bounds\n\n## Source manuscripts and claim\n\n- [The metric Blaschke theorem](../papers/P-000256.md): selected passages extracted.\n\nThe source claims the metric Blaschke theorem.\n\n## Extracted instruments\n\n- [MI-000474: Turn a weighted interval comparison into an integrated Jensen gap](../instruments/MI-000474.md)\n- [MI-000475: Differentiate an endpoint Schur complement without assuming endpoint order](../instruments/MI-000475.md)\n\n## Dependencies and antecedents\n\nBounded logarithmic ratios, symmetric measurable weights, Fubini, Jensen, smooth block matrices, positive derivative H, and separately established cut-pair identities.\n\nKazdan, An Inequality Arising in Geometry (1978), Appendix E; Boyd-Vandenberghe, Convex Optimization, Appendix A.5.5.\n\n## Review and formalization scope\n\nRead the full weighted scalar proof and full Schur-complement proposition. The source explicitly attributes the cancellation to Kazdan; only the publisher preview was retrieved for that appendix. Boyd-Vandenberghe A.5.5 was read directly. The geometric construction of the blocks and cut-pair zeros was not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nRetain symmetry and endpoint integrability of the weight. Schur derivative bounds need H positive derivative and invertible endpoint difference; positive integrated bounds additionally require the source cut-pair zeros.\n\n[Batch record](../../batches/B047/README.md)"
+    },
+    {
+      "id": "openai-math-345",
+      "record_type": "family",
+      "title": "Finite-cut module counts and bounded-death comparison",
+      "source_family": "345",
+      "source_collection": "openai/math",
+      "batch_id": "B047",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000257"
+      ],
+      "instrument_ids": [
+        "MI-000476",
+        "MI-000477"
+      ],
+      "headline": "The source claims infinitely many closed-geodesic images on every Riemannian sphere.",
+      "central_instrument": "A nonnegative graded polynomial module separates free rank from twice its torsion-generator count. Bounded death plus short-window injectivity gives injectivity into the global limit.",
+      "novelty_assessment": "Classical graded module and persistence arguments. The source geometric hypotheses and closed-geodesic theorem are not certified.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean project was built.",
+      "statement_faithfulness": "The module calculation needs a grading bounded below and positive degree of U. The persistence step uses a uniform death horizon and excludes every local event in the necessary degree window.",
+      "dependencies": "Finite-dimensional quotient H/UH, nonnegative grading, a specified Gysin exact sequence, uniform ordinary death, and bounded local degree support.",
+      "antecedents": "Graded Nakayama induction, modules over a polynomial PID, exact-sequence dimension counts and the elementary factorization of a persistence map through a later cut.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-345.md",
+      "body": "# Finite-cut module counts and bounded-death comparison\n\n## Source manuscripts and claim\n\n- [Infinitely many closed geodesic images on every Riemannian sphere](../papers/P-000257.md): selected passages extracted.\n\nThe source claims infinitely many closed-geodesic images on every Riemannian sphere.\n\n## Extracted instruments\n\n- [MI-000476: Separate free rank and torsion in a graded finite-cut count](../instruments/MI-000476.md)\n- [MI-000477: Use a bounded death horizon to turn local persistence into global injectivity](../instruments/MI-000477.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional quotient H/UH, nonnegative grading, a specified Gysin exact sequence, uniform ordinary death, and bounded local degree support.\n\nGraded Nakayama induction, modules over a polynomial PID, exact-sequence dimension counts and the elementary factorization of a persistence map through a later cut.\n\n## Review and formalization scope\n\nRead the complete finite-cut module lemma and complete degree-gap comparison proof. Extracted the algebraic rank calculation and its preliminary ordinary persistence step only. Localization, Gysin construction, uniform ordinary death and the later transient budget were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nThe module calculation needs a grading bounded below and positive degree of U. The persistence step uses a uniform death horizon and excludes every local event in the necessary degree window.\n\n[Batch record](../../batches/B047/README.md)"
+    },
+    {
+      "id": "openai-math-349",
+      "record_type": "family",
+      "title": "Complementary fillings, projective detection and a strict perimeter gap",
+      "source_family": "349",
+      "source_collection": "openai/math",
+      "batch_id": "B047",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000258"
+      ],
+      "instrument_ids": [
+        "MI-000478",
+        "MI-000479"
+      ],
+      "headline": "The source claims the Solomon-Yau least-volume theorem.",
+      "central_instrument": "Complementary fillings detect the projective generator; a nonzero cup power forces a zero of an odd volume-centroid map, and compactness excludes hemisphere equality.",
+      "novelty_assessment": "Classical covering-space detection, cup-power obstruction and compactness plus isoperimetric rigidity. No least-volume theorem or priority certification.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean project was built.",
+      "statement_faithfulness": "Use the filling double cover and mod-two cycles. Detection requires a nonzero pth cup power; an arbitrary family of cycles need not meet the constrained class.",
+      "dependencies": "Small fillings and the filling double cover, projective cohomology, BV compactness and lower semicontinuity, and the hemisphere equality case of spherical isoperimetry.",
+      "antecedents": "Hatcher Theorem 3.19; Boglein-Duzaar-Fusco, Section 2.3 equation (2.2); standard odd-map obstruction and the direct method.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-349.md",
+      "body": "# Complementary fillings, projective detection and a strict perimeter gap\n\n## Source manuscripts and claim\n\n- [The Solomon–Yau least-volume theorem](../papers/P-000258.md): selected passages extracted.\n\nThe source claims the Solomon-Yau least-volume theorem.\n\n## Extracted instruments\n\n- [MI-000478: Detect a projective cup power using complementary boundary fillings](../instruments/MI-000478.md)\n- [MI-000479: Force a strict geometric gap by an odd constraint map and compactness](../instruments/MI-000479.md)\n\n## Dependencies and antecedents\n\nSmall fillings and the filling double cover, projective cohomology, BV compactness and lower semicontinuity, and the hemisphere equality case of spherical isoperimetry.\n\nHatcher Theorem 3.19; Boglein-Duzaar-Fusco, Section 2.3 equation (2.2); standard odd-map obstruction and the direct method.\n\n## Review and formalization scope\n\nRead the filling-cover proof, projective criterion and complete detection-gap proof. Read the cited projective cohomology statement and spherical isoperimetry/equality statement directly. The source geometric sweepout construction, min-max implementation and headline least-volume argument were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean project was built.\n\nUse the filling double cover and mod-two cycles. Detection requires a nonzero pth cup power; an arbitrary family of cycles need not meet the constrained class.\n\n[Batch record](../../batches/B047/README.md)"
     },
     {
       "id": "openai-math-354",

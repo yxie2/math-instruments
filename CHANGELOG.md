@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B047: eight instruments from families 339, 344, 345 and 349, with seven finite/local check groups and explicit source-theorem limits. Strengthened manuscript-to-passage validation and added companion coverage manifests. Corrected the parenthesis-truncated CAT(0) companion path for family 337 against the pinned source tree.
+
 - Added automatically generated subject-level coverage counts so later extraction rounds can identify gaps without counting individual family rows.
 
 - Published the October 16 checkpoint through B046, including all merged batch PRs, a 44-program rerun, 764 source hashes and 911 exact label checks. Added explicit hypothesis counterexamples and a resume point for the remaining 161 families.
