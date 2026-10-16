@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Completed selected extraction coverage of all 372 pinned release families: 799 instruments and 526 manuscript records. Published the B047-B086 completion checkpoint, exact coverage audit and fresh 84-program finite verification audit.
+
 - Added B086: 10 selected instruments from 5 families and 5 manuscripts. Final five families: collision geometry, pattern centering, harmonic jet frames and collapsed-stratum composition. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B085: 8 selected instruments from 4 families and 4 manuscripts. Spherical balancing, critical compactness, integral Morse bounds, Bernstein certificates and logarithmic corrections. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
