@@ -56,6 +56,11 @@ def views(data):
         indexed = {r['source_family']: r for r in families}
         covered = sum(f['family'] in indexed for f in inventory['families'])
         pending = len(inventory['families'])-covered
+        subject_totals = Counter(f['subject'] for f in inventory['families'])
+        subject_covered = Counter(f['subject'] for f in inventory['families'] if f['family'] in indexed)
+        subject_rows = [[subject, subject_totals[subject], subject_covered[subject],
+                         subject_totals[subject]-subject_covered[subject]]
+                        for subject in sorted(subject_totals)]
         coverage_rows = []
         for f in inventory['families']:
             r = indexed.get(f['family'])
@@ -65,6 +70,9 @@ def views(data):
         outputs['tables/coverage.md'] = generated('Release coverage',
             f"The pinned release contains {inventory['family_count']} families and {inventory['unique_manuscript_count']} distinct manuscripts. The catalogue contains selected extractions for **{covered} families**; **{pending} families remain pending**.\n\n"+
             'Coverage means that selected instruments have been described. It does not mean every argument or companion manuscript has been independently reviewed. B001 imports the direction paper; later batches record their own source passages and review scope. The source-paper index and batch manifests give the manuscript-level detail.\n\n'+
+            '## Coverage by subject\n\n'+
+            table(['Subject', 'Release families', 'Catalogued families', 'Pending families'], subject_rows)+
+            '\n## Family details\n\n'+
             table(['Family', 'Subject', 'Source manuscripts', 'Extraction batch'], coverage_rows))
     outputs['tables/instruments.md'] = generated('Mathematical instruments',
         'Form labels describe the presentation of an instrument. Novelty and mathematical review are recorded separately.\n\n'+

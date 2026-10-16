@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added automatically generated subject-level coverage counts so later extraction rounds can identify gaps without counting individual family rows.
+
 - Published the October 16 checkpoint through B046, including all merged batch PRs, a 44-program rerun, 764 source hashes and 911 exact label checks. Added explicit hypothesis counterexamples and a resume point for the remaining 161 families.
 
 - Added B046: eight selected interfaces from families 054, 060, 062 and 069, with explicit antecedents and separation of local algebra from global geometry.

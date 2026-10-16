@@ -6,6 +6,30 @@ The pinned release contains 372 families and 719 distinct manuscripts. The catal
 
 Coverage means that selected instruments have been described. It does not mean every argument or companion manuscript has been independently reviewed. B001 imports the direction paper; later batches record their own source passages and review scope. The source-paper index and batch manifests give the manuscript-level detail.
 
+## Coverage by subject
+
+| Subject | Release families | Catalogued families | Pending families |
+| --- | --- | --- | --- |
+| Algebra | 18 | 7 | 11 |
+| Algebraic and complex geometry | 36 | 18 | 18 |
+| Combinatorics | 37 | 28 | 9 |
+| Convex and metric geometry | 15 | 8 | 7 |
+| Differential geometry | 29 | 9 | 20 |
+| Dynamical systems and ergodic theory | 12 | 5 | 7 |
+| Functional analysis | 11 | 9 | 2 |
+| Group theory | 14 | 8 | 6 |
+| Mathematical logic | 6 | 4 | 2 |
+| Mathematical physics | 25 | 14 | 11 |
+| Number theory | 31 | 22 | 9 |
+| Operator algebras | 19 | 13 | 6 |
+| Partial differential equations | 16 | 12 | 4 |
+| Probability and statistical mechanics | 29 | 7 | 22 |
+| Real and complex analysis | 16 | 9 | 7 |
+| Theoretical computer science | 40 | 24 | 16 |
+| Topology | 18 | 14 | 4 |
+
+## Family details
+
 | Family | Subject | Source manuscripts | Extraction batch |
 | --- | --- | --- | --- |
 | [001: Milne’s rationality conjecture and algebraic specialization](../catalog/families/openai-math-001.md) | Number theory | 1 | B042 |
