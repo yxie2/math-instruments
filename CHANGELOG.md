@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B025: eight algebraic and chain instruments from topology families 306, 310, 314 and 316. Eight exact check groups retain torsion, augmentation, stabilizers, exponent floors and nonprimitive Hopf generators; the global topology claims remain outside this audit.
+
 - Added B024: eight instruments from families 135, 137, 139 and 141, with eight finite check groups. Entries distinguish exact finite algebra and conditional sampling identities from the source global complexity claims.
 
 - Added B023: eight analytic bookkeeping instruments from families 081, 083, 085 and 086. Eight finite check groups retain overlapping descendants, dependent selection, birth times, noncommutation and terminal remainders; global analytic inputs are explicit.
