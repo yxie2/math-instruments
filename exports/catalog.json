@@ -10553,6 +10553,364 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000262.md",
       "body": "# A nilpotent centralizer realizes every allowed motion of its kernel filtration\n\n[Family 204](../families/openai-math-204.md) · [Source manuscript](../papers/P-000150.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nFor nilpotent t on a finite-dimensional complex V, put F_b=ker(t) intersect im(t^(b-1)). The group C(t)={g invertible:gt=tg} induces the full stabilizer of this filtration on ker(t). Its contragredient action likewise induces the full stabilizer of the corresponding filtration on ker(t*) in V*. The group C(t) is irreducible.\n\nWrite V as a direct sum of Jordan modules C[t]/(t^a). A module map from a row of length a to one of length b can send its kernel vector nontrivially to the target kernel vector exactly when a<=b. When a<=b, sending the cyclic generator to c t^(b-a) times the target generator realizes any desired coefficient c. These are precisely the entries permitted by preservation of F_b. Thus every filtration-preserving kernel matrix lifts to a commuting endomorphism.\n\nAn invertible kernel action makes the entire lift invertible. Otherwise its nonzero t-stable kernel would contain a nonzero vector annihilated by t, contradicting invertibility on ker(t). Applying the same reasoning to t* and taking inverse transpose proves the dual assertion.\n\nFinally C(t) is the determinant-nonzero open subset of the vector space End_(C[t])(V), so it is irreducible. Consequently finitely many nonempty open positioning requirements within C(t) can be met simultaneously. This does not assert that arbitrary independent, exact prescribed kernel and dual-kernel maps can both be realized by one element.\n\n## Role in the source argument\n\nMakes generic filtered-positioning bounds available using transformations that commute with the nilpotent operator.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [tail:centralizer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L360)\n\n## Antecedents and comparison\n\nThe source identifies this as dual to the quotient-filtration action in [Fresse, Section 3.6](https://arxiv.org/pdf/0706.3656v2). Its proof is elementary Jordan-module lifting; the centralizer action is established.\n\n## Checks and limitations\n\nRead the full proof and the cited quotient-filtration statement. Exact finite-field Jordan models lift random invertible allowed kernel matrices, verify commutation and full invertibility, and check the dual action.\n\nIrreducibility and the open-set conclusion are algebraic-geometric statements over the complex numbers; a small finite field need not meet every nonempty open set. Separate surjectivity on kernel and dual kernel is weaker than joint independent prescription.\n\n## Possible applications\n\nArranging several generic subspace positions while preserving a nilpotent endomorphism.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000263",
+      "record_type": "instrument",
+      "title": "Affine sign-pattern counting that retains boundary equalities",
+      "forms": [
+        "arrangement-count",
+        "boundary-bookkeeping"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-160"
+      ],
+      "source_paper_ids": [
+        "P-000151"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+          "label": "count:arrangement",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L12",
+          "sha256": "ca84ac51bf6c8539f2458bdc462c98ef465ea70afaa15496d0e6fcaec453c243"
+        },
+        {
+          "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+          "label": "count:arrangement-bound",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L16",
+          "sha256": "ca84ac51bf6c8539f2458bdc462c98ef465ea70afaa15496d0e6fcaec453c243"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-arrangement-count-with-explicit-zero-signs",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000263.md",
+      "body": "# Affine sign-pattern counting that retains boundary equalities\n\n[Family 160](../families/openai-math-160.md) · [Source manuscript](../papers/P-000151.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nFor s affine hyperplanes in R^e, the number of realized joint signs in {-,0,+} is at most\n\n$$\\sum_{d=0}^e\\binom{s}{d}\\sum_{j=0}^{e-d}\\binom{s}{j}\\le(e+1)^2(s+1)^e.$$\n\nStrict sign vectors correspond to convex regions of the complement. Adding a hyperplane splits at most as many regions as the induced arrangement on it has, so induction gives sum_(j=0)^e binom(s,j).\n\nFor a realized vector with zero signs, intersect all its zero hyperplanes. If this nonempty affine space A has codimension d, choose d equations with independent normals defining A; consistency makes the remaining zero equations consequences. There are at most binom(s,d) choices. Hyperplanes containing A force zero signs; the others give strict signs in dimension e-d. Summing the strict-region bound over choices and d proves the formula. Each term is bounded by (s+1)^e, giving the displayed coarse estimate.\n\nRepeated hyperplanes do not create new regions, and restricting the parameter space to any subset only removes sign vectors. This is useful when half-open interval labels must be counted exactly, rather than up to a measure-zero boundary.\n\n## Role in the source argument\n\nBounds literal label words in a low-dimensional parameter space even when the ambient number of coordinates is large.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [count:arrangement](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L12)\n- [count:arrangement-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L16)\n\n## Antecedents and comparison\n\nThe strict-region recurrence and general-position formula are classical; see [Stanley, Lemma 2.1 and Proposition 2.4](https://www.cis.upenn.edu/~cis6100/sp06stanley.pdf). The extracted proof explicitly partitions by the rank of zero equations. No new arrangement theorem is claimed.\n\n## Checks and limitations\n\nRead the full proof and the prior general-position formula. The verification program enumerates ternary sign patterns in small arrangements, testing strict feasibility by linear programming, with repeated and dependent hyperplanes.\n\nThe program uses numerical linear programming; it is a consistency check, not an exact proof of arbitrary real feasibility. The upper bound is intentionally coarse and does not establish the source coloring construction.\n\n## Possible applications\n\nCounting discretized parameter families without losing equality cases at cell boundaries.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000264",
+      "record_type": "instrument",
+      "title": "The first nonzero digit of a step transfers cyclic avoidance to product colorings",
+      "forms": [
+        "digit-product",
+        "progression-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-160"
+      ],
+      "source_paper_ids": [
+        "P-000151"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex",
+          "label": "transfer:product",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex#L13",
+          "sha256": "4d54ebb5b4605ad42c2111b5d4d723ac010cacd76da1bc04c581c5a04b04502d"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "established-digit-product-method-with-composite-base-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000264.md",
+      "body": "# The first nonzero digit of a step transfers cyclic avoidance to product colorings\n\n[Family 160](../families/openai-math-160.md) · [Source manuscript](../papers/P-000151.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nLet N,k>=2, and let c:Z/NZ->{0,1} have no monochromatic k-term progression with nonzero common difference. Repeated residues are allowed in this cyclic condition. For m>=1 color 0,...,N^m-1 by the m-tuple of colors of its base-N digits. This uses at most 2^m colors and has no monochromatic integer k-term progression.\n\nFor an integer progression a+j d with d>0, let i be maximal with N^i dividing d, and write d=N^i e. Its length inside the interval ensures i<m. The i-th digit of a+j d is\n\n$$\\left\\lfloor\\frac{a+j d}{N^i}\\right\\rfloor\\bmod N\n=\\left(\\left\\lfloor\\frac{a}{N^i}\\right\\rfloor+j e\\right)\\bmod N.$$\n\nSince e is not divisible by N, these digits form a cyclic progression with nonzero step. Their c-colors cannot all agree. Thus W_(2^m)(k)>N^m, and W_r(k)>N^floor(log_2 r) for r>=2 by allowing unused colors. No primality or unique factorization into prime powers is needed for the base N.\n\n## Role in the source argument\n\nConverts the source cyclic two-color construction into a bound uniform over larger numbers of colors.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [transfer:product](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex#L13)\n\n## Antecedents and comparison\n\nDigit and product colorings are established. [Fox-Hunter, Section 2 and Lemma 4.1](https://arxiv.org/html/2606.02541v1) explicitly use digit avoidance and finite-group product colorings. The source records the carry calculation needed for this interval transfer; it is not a new product-coloring principle.\n\n## Checks and limitations\n\nRead the complete transfer proof. Exhaustively enumerate binary cyclic colorings for N=2,...,8 and k=3,4,5, then check every integer progression in their two-digit lifts, including composite bases.\n\nThe cyclic hypothesis is stronger than avoidance only in 0,...,N-1 with no wraparound. This lemma does not supply such a cyclic coloring or the source lower bound for its size.\n\n## Possible applications\n\nTransferring modular progression-free constructions to longer intervals while controlling the number of colors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000265",
+      "record_type": "instrument",
+      "title": "A strict kernel-density deficit gives an explicit finite-host threshold",
+      "forms": [
+        "kernel-to-finite-transfer",
+        "collision-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-161"
+      ],
+      "source_paper_ids": [
+        "P-000152"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+          "label": "lem:finite-host",
+          "line": 612,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex#L612",
+          "sha256": "ad58e1e12522ae296a6ff7213afee0098338577013f15e152d6ccc2990df2742"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-sampling-transfer-with-explicit-deficit-budget",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000265.md",
+      "body": "# A strict kernel-density deficit gives an explicit finite-host threshold\n\n[Family 161](../families/openai-math-161.md) · [Source manuscript](../papers/P-000152.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nLet H be a finite simple graph with v vertices and m>=1 edges. Let U be a symmetric [0,1]-valued kernel on a finite probability space, with mu=E U>0 and Delta=mu^m-t(H,U)>0. Then some finite simple graph G on n vertices violates t(H,G)>=p(G)^m whenever\n\n$$n>\\frac{\\binom v2+m\\mu^m}{\\Delta},\\qquad p(G)=2|E(G)|/n^2.$$\n\nSample n independent labels from the kernel space and, conditional on these labels, independent Bernoulli edges for unordered distinct vertex pairs. Set all loops to zero. Then E p(G)=(1-1/n)mu. For injective maps of V(H), the expected edge product is exactly t(H,U). Noninjective maps occupy proportion at most binom(v,2)/n, so |E t(H,G)-t(H,U)| is bounded by that quantity.\n\nJensen and (1-1/n)^m>=1-m/n yield E p(G)^m>=mu^m-m mu^m/n. The displayed threshold makes this strictly larger than E t(H,G), so a realization has the required strict inequality. Such a realization has an edge automatically. For the source H, binom(35,2)=595 and m=66.\n\nThe collision estimate is essential: when two source edges collapse to the same unordered host pair, their indicators coincide, rather than representing independent Bernoulli trials.\n\n## Role in the source argument\n\nFinishes the transfer from a weighted negative-correlation witness to an ordinary finite simple graph.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-host](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex#L612)\n\n## Antecedents and comparison\n\nThis is an explicit finite form of the kernel-sampling method in [Lovasz-Szegedy, Limits of dense graph sequences](https://arxiv.org/abs/math/0408173). The novelty of a supplied violating kernel is a separate question; none is established by the transfer itself.\n\n## Checks and limitations\n\nRead the proof. Exact rational enumeration of labels and edge outcomes for small kernels checks expected densities, collision bounds and Jensen, including maps that reuse an edge.\n\nThe verification uses small patterns, including a triangle as a strict-deficit control. It does not construct or verify the source bipartite H deficit. The size estimate is a sufficient threshold and is not optimized.\n\n## Possible applications\n\nConverting any strict finite-kernel inequality into a quantitatively bounded finite witness.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000266",
+      "record_type": "instrument",
+      "title": "Orthogonal fixed-density interpolation preserves nonconstancy at an exact equality",
+      "forms": [
+        "graphon-interpolation",
+        "nonconstancy-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-161"
+      ],
+      "source_paper_ids": [
+        "P-000152"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex",
+          "label": "sec:consequences",
+          "line": 2,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex#L2",
+          "sha256": "69f3d43629ffc3c9c60a9e027d541c166ef281d2e63a5998777e25161c0c977a"
+        },
+        {
+          "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex",
+          "label": "cor:forcing",
+          "line": 336,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex#L336",
+          "sha256": "16c373c05576f0850ca9c1df04df84d28f5193aed68db85d5b8d85f622e7ec02"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-density-interpolation-conditional-on-a-supplied-deficit",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000266.md",
+      "body": "# Orthogonal fixed-density interpolation preserves nonconstancy at an exact equality\n\n[Family 161](../families/openai-math-161.md) · [Source manuscript](../papers/P-000152.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nSuppose H contains a cycle, has m edges, and a finite simple graph G supplies t(H,G)<p^m at p=p(G) in (0,1). Let W0 be its adjacency kernel. Independently take balanced signs a,b and W1(a,b)=p+delta ab, where 0<delta<=min(p,1-p).\n\nThe sign expansion gives t(H,W1)=sum_A p^(m-|A|) delta^|A|, summed over edge subsets A whose degrees are all even. The empty subset contributes p^m, and a cycle contributes a positive extra term. Hence t(H,W1)>p^m.\n\nOn the product of the two underlying spaces set Ws((x,a),(y,b))=(1-s)W0(x,y)+s W1(a,b). Every Ws has mean p and values in [0,1]. The centered summands depend on independent coordinates, so\n\n$$\\|W_s-p\\|_2^2=(1-s)^2p(1-p)+s^2\\delta^2>0.$$\n\nThe polynomial t(H,Ws) crosses p^m at an interior point s*, while this norm identity rules out a constant kernel there. In a finite probability space with positive atom masses, two Cauchy-Schwarz inequalities give t(C4,W)>=p^4, with equality forcing constant row means and constant row inner products. The diagonal pairs then force every row to equal p. Thus the nonconstant W at s* has t(C4,W)>p^4.\n\nSampling W gives expectations within O(1/n) of the K2, H and C4 densities and variances O(1/n), since disjoint vertex images use independent random variables. Chebyshev and a union bound select finite graphs whose edge and H densities approach p and p^m, but whose C4 densities approach a strictly larger value than p^4. This is a conditional failure of the forcing conclusion at one density.\n\n## Role in the source argument\n\nShows how the same strict density deficit would yield a nonquasirandom equality example, without cancellation to a constant kernel.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [sec:consequences](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex#L2)\n- [cor:forcing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex#L336)\n\n## Antecedents and comparison\n\nThe ingredients are standard sign expansion, interpolation and [finite-kernel sampling](https://arxiv.org/abs/math/0408173). The source assembles them as a consequence of its claimed deficit. No independent priority claim is made for this consequence.\n\n## Checks and limitations\n\nRead the complete proof. Exact even-subgraph expansions are checked for small cyclic and acyclic patterns. A triangle model supplies a numerical crossing, verifies the orthogonal norm identity and exhibits a positive C4 excess.\n\nThe small triangle model does not establish the source bipartite counterexample. A cycle is required for the strict upper endpoint. The finite graphs attain equality only asymptotically, and the argument does not work at every prescribed p.\n\n## Possible applications\n\nConstructing exact moment equalities that retain a measurable obstruction to uniformity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000267",
+      "record_type": "instrument",
+      "title": "Principal-unit first-order maps and prime-to-residue torsion reduction",
+      "forms": [
+        "local-linearization",
+        "torsion-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-179"
+      ],
+      "source_paper_ids": [
+        "P-000153"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+          "label": "lem:first-order",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L10",
+          "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+        },
+        {
+          "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex",
+          "label": "lem:torsion",
+          "line": 139,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex#L139",
+          "sha256": "7d8beb0c7d77cf3146f3d7646964bc302005c6ad0e0a3d9586929190c7210514"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "elementary-established-local-ring-facts",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000267.md",
+      "body": "# Principal-unit first-order maps and prime-to-residue torsion reduction\n\n[Family 179](../families/openai-math-179.md) · [Source manuscript](../papers/P-000153.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nLet O be a local domain with maximal ideal n and residue field k. For a nonzero t in n, the principal units 1+tO form a multiplicative group, and\n\n$$\\lambda_t:1+tO\\longrightarrow(k,+),\\qquad 1+tL\\longmapsto L\\bmod\\mathfrak n$$\n\nis a group homomorphism. The domain and t!=0 make L unique. Multiplication replaces L,M by L+M+tLM, whose residue is their sum. Inversion replaces L by -L/(1+tL), whose residue is -L. Negative exponents therefore give the same signed-sum rule as positive exponents.\n\nIf k has characteristic p and a finite-order element z of O has residue 1, its order is a power of p. Indeed, if its order is p^a m with p not dividing m, then z^(p^a) has order m. If m>1, cancel z^(p^a)-1 in the domain from the geometric-series identity; reducing the resulting sum gives m=0 in k, a contradiction. In particular prime-to-p torsion with residue 1 equals 1.\n\nThese two facts turn an exact multiplicative product relation among principal units into an additive relation among its first-order coefficients. The torsion argument cannot discard a p-power root of unity.\n\n## Role in the source argument\n\nConverts global character-product information into local linear equations in a common residue field.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:first-order](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L10)\n- [lem:torsion](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex#L139)\n\n## Antecedents and comparison\n\nThese are elementary established local-ring facts. The card records the hypotheses and proof needed by the source rather than claiming a new local theory.\n\n## Checks and limitations\n\nRead both proofs. Finite integer quotients at p=2,3,5,7 check product and inverse coefficients and the p-power behavior of principal units.\n\nFinite quotients have zero divisors and serve only as models of well-defined reductions from the integer domain. They do not replace the domain assumption or verify the source global character-product theorem.\n\n## Possible applications\n\nLinearizing multiplicative constraints at a ramified prime while preserving the necessary torsion-order restriction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000268",
+      "record_type": "instrument",
+      "title": "A binary identity couples two first-order character sums",
+      "forms": [
+        "binary-coefficient-identity",
+        "conditional-character-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-179"
+      ],
+      "source_paper_ids": [
+        "P-000153"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+          "label": "eq:three-elements",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L53",
+          "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+        },
+        {
+          "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+          "label": "eq:binary",
+          "line": 117,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L117",
+          "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+        },
+        {
+          "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+          "label": "eq:last-sum",
+          "line": 172,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L172",
+          "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "source-specific-conditional-obstruction-with-unverified-global-input",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000268.md",
+      "body": "# A binary identity couples two first-order character sums\n\n[Family 179](../families/openai-math-179.md) · [Source manuscript](../papers/P-000153.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nLet P be a finite odd-order group in the source's abelian character setting, J=sum_(x in P) x, and H0,H1,H2,H3 integral group-ring elements whose coefficients are all signs. Put\n\nc=(H0+H1+H2+H3)/2, d=(H0-H1+H2-H3)/2,\ng=(H0-H2)/2+i(H1-H3)/2, and b=(H1+H3)/2.\n\nThen d-c=-2b and g-c=(i-1)b-(H2+iH3). Coefficientwise sign parity gives H2+iH3=(1+i)J+2U for an integral Gaussian group-ring element U.\n\nWork in a local domain O containing the evaluated coefficients and i, at a prime over 2; assume each evaluated c_S is a unit. For a finite signed family of characters chi_S, with signs epsilon_S in {1,-1}, only chi_empty is trivial. Set r_S=d_S/c_S and w_S=g_S/c_S. The identities give r_S in 1+2O and w_S in 1+(1+i)O. Their first-order coefficients satisfy\n\n$$\\overline{(r_S-1)/2}+\\overline{(w_S-1)/(1+i)}=\\overline{J_S/c_S}.$$\n\nHere i reduces to 1 and 1-i reduces to 0. Now retain the crucial additional input: both R=product_S r_S^epsilon_S and W=product_S w_S^epsilon_S are odd-order roots of unity. They have residue 1, so R=W=1. Applying the two additive first-order maps and summing the displayed identity yields sum_S epsilon_S overline(J_S/c_S)=0.\n\nEvery nontrivial character kills J, whereas J_empty=|P| is odd and hence a unit. The sum has one nonzero term, a contradiction. In the source, the signed characters are indexed by subsets of prime divisors of u, and the hard alternating-product proposition supplies the odd-order input. That proposition is not proved by the binary identity.\n\nThe order-four row (1,1,1,-1) gives c=d=1 and g=i. Its ratio W=i has residue 1 at (1+i) but even order, showing why the retained hypothesis cannot be omitted.\n\n## Role in the source argument\n\nIsolates the last local obstruction after the source global arithmetic comparisons.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:three-elements](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L53)\n- [eq:binary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L117)\n- [eq:last-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L172)\n\n## Antecedents and comparison\n\nCharacter orthogonality and principal-unit linearization are classical. The selected coupling is a source-specific assembly. No novelty or validity conclusion about the full circulant-Hadamard classification follows without the unreviewed global input.\n\n## Checks and limitations\n\nRead the entire final contradiction. Check all 16 sign quadruples, the Gaussian divisibilities, first-order residues whenever c is a unit, a nontrivial C3 character sum over F4, and the order-four even-torsion control.\n\nThe local identities alone do not exclude circulant Hadamard matrices. The alternating products being odd-order roots of unity is a substantial independent premise and remains unaudited here.\n\n## Possible applications\n\nSearching for paired local linearizations whose sum isolates an augmentation character.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000269",
+      "record_type": "instrument",
+      "title": "Owned envelope intersections compose finite certificates against every reply",
+      "forms": [
+        "strategy-certificate",
+        "envelope-composition"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-187"
+      ],
+      "source_paper_ids": [
+        "P-000154"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+          "label": "def:claim",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L9",
+          "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7"
+        },
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+          "label": "lem:combination",
+          "line": 41,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L41",
+          "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7"
+        },
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+          "label": "sec:strategy",
+          "line": 1,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L1",
+          "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc"
+        },
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+          "label": "cor:finite-board",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L64",
+          "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "established-territory-method-with-source-specific-21-move-certificate",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000269.md",
+      "body": "# Owned envelope intersections compose finite certificates against every reply\n\n[Family 187](../families/openai-math-187.md) · [Source manuscript](../papers/P-000154.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nA full template (A,T,h), with finite A contained in T, means: whenever it is Maker's turn, A is already owned, and Breaker avoids T, Maker has already won or can force a win within h further actual claims of fresh cells. Additional stones outside these conditions are allowed.\n\nGiven a nonempty list of valid children (A_i,T_i,h_i) and a pivot p, set\n\n$$T=\\{p\\}\\cup\\bigcup_iT_i,\\quad\nA=\\left(\\bigcup_iA_i\\cup\\bigcap_iT_i\\right)\\setminus\\{p\\},\\quad\nh=1+\\max_i h_i.$$\n\nIf p is free, claim it. If it is already owned, make a fresh replacement move; it cannot be Breaker's because p belongs to T. Maker then owns every A_i and the entire intersection of the T_i. A legal Breaker reply cannot lie in that intersection, so at least one child envelope avoids the reply. All earlier Breaker stones avoid that child too. Apply its strategy. A reply outside the union of envelopes is covered by every child. This proves composition by induction, with no null Maker move.\n\nFor Snaky S={(0,0),(1,0),(2,0),(3,0),(3,1),(4,1)}, the six base templates are (S without one cell,S,1). The source certificate has 728 numbered cards, including these bases, with 898 additional inline composition nodes and 4,089 references. Every reference is to an earlier card; square-grid isometries transport templates. Inline coordinates stay in the current frame.\n\nThe complete reconstruction in this batch gives final A empty, |T|=251 and h=21, with T contained in {0,...,16}^2. It also checks the local reply condition at every composition node. Together with the read induction, these data yield the stated 21-move strategy. Fixing the first surviving child and a fixed enumeration for replacement moves gives one policy for every legal continuation. The same induction stays inside the final finite envelope; before any of the first 21 Maker moves at most 40 cells are occupied, so a fresh replacement exists in its 251 cells.\n\n## Role in the source argument\n\nTurns a compact finite certificate into a uniform strategy on an infinite board, including arbitrarily distant replies.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [def:claim](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L9)\n- [lem:combination](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L41)\n- [sec:strategy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L1)\n- [cor:finite-board](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L64)\n\n## Antecedents and comparison\n\n[Sieben (2008), Sections 2-3](https://math.colgate.edu/~integers/ig7/ig7.pdf) already uses territory intersections and proof sequences of core/neighborhood situations. The source contributes this concrete 21-move certificate and explicit actual-move bookkeeping. This comparison does not establish an exhaustive priority claim.\n\n## Checks and limitations\n\nThe short upstream verifier passed. A separately written stack parser reconstructs every numbered and inline node, checks all local reply classes including the outside class, checks the normalization identity at every node, and obtains the same endpoint. The exact pinned certificate is bundled with its SHA256, provenance and Apache 2.0 license.\n\nThis is complete finite certificate reconstruction plus a read mathematical induction, not a Lean proof build, an executable playing-policy test or a proof that 21 is optimal. The older 25- and 35-move certificates are outside this reconstruction.\n\n## Possible applications\n\nReusable proof certificates for monotone achievement games with unbounded opponent move spaces.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000270",
+      "record_type": "instrument",
+      "title": "Reduced envelopes normalize exactly and commute with template composition",
+      "forms": [
+        "certificate-normalization",
+        "set-calculus"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-187"
+      ],
+      "source_paper_ids": [
+        "P-000154"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+          "label": "r25:normalization",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L37",
+          "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+        },
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+          "label": "r25:composition",
+          "line": 55,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L55",
+          "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+        },
+        {
+          "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+          "label": "r25:intersection-identity",
+          "line": 100,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L100",
+          "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+        }
+      ],
+      "batch_id": "B020",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "explicit-normalization-of-established-core-neighborhood-semantics",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000270.md",
+      "body": "# Reduced envelopes normalize exactly and commute with template composition\n\n[Family 187](../families/openai-math-187.md) · [Source manuscript](../papers/P-000154.md) · [Batch B020](../../batches/B020/README.md)\n\n## Mathematical content\n\nA reduced template (P,E,h) requires Maker to own P and Breaker to avoid E. Neither P contained in E nor P disjoint from E is assumed. For disjoint Maker and Breaker positions, it has exactly the same admissible positions as the full template (P,P union E,h). Conversely (A,T,h) can be reduced to (A,T without A,h).\n\nFor nonempty children (P_j,E_j,h_j), put U=union P_j, V=union E_j, I=intersection E_j and H=U union I. At pivot x the reduced composition is\n\n$$P=H\\setminus\\{x\\},\\qquad E=(V\\setminus H)\\cup\\{x\\},\\qquad h=1+\\max_jh_j.$$\n\nThe identity\n\n$$U\\cup\\bigcap_j(P_j\\cup E_j)=U\\cup\\bigcap_jE_j$$\n\nproves that normalizing every child, then applying full composition, gives required set P and full envelope P union E. To see the identity, consider a cell outside U: it belongs to no P_j, so membership in every P_j union E_j is precisely membership in every E_j. Cells in U already belong to both sides.\n\nThus reduced certificates use the same soundness induction, including already-owned pivots and legal replacement moves. Removing owned cells from avoidance sets changes the representation, not the set of legal starting positions or the height bound.\n\n## Role in the source argument\n\nMakes the source reduced-envelope construction compatible with the full-envelope strategy proof and exposes a representation invariant.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [r25:normalization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L37)\n- [r25:composition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L55)\n- [r25:intersection-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L100)\n\n## Antecedents and comparison\n\n[Sieben (2008), Section 3](https://math.colgate.edu/~integers/ig7/ig7.pdf) uses disjoint core/neighborhood situations. The source allows overlap and supplies the explicit normalization and composition identity. This is an elementary equivalence, not a new game-theoretic principle.\n\n## Checks and limitations\n\nRead the full normalization and reduced-composition proof. Check exact equality with full composition at every node of the 21-move certificate and in random finite models allowing arbitrary overlap of P and E.\n\nThis verifies the representation conversion. It does not reconstruct the distinct 25-move table printed in the source appendix, nor does it reduce the number of moves automatically.\n\n## Possible applications\n\nConverting between compact certificate representations while preserving their strategic meaning.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -13405,6 +13763,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000150.md",
       "body": "# Tensor saturation for even spin groups\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000261: Nested filtration profiles determine the generic intersection exactly](../instruments/MI-000261.md)\n- [MI-000262: A nilpotent centralizer realizes every allowed motion of its kernel filtration](../instruments/MI-000262.md)\n\n## Dependencies and review\n\nHall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.\n\nRead the complete filtered-intersection and centralizer proofs. Real schedules, integral continuation, simultaneous switches, representation criteria and the full zero-tail construction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\n[Family context](../families/openai-math-204.md) · [Batch B019](../../batches/B019/README.md)"
+    },
+    {
+      "id": "P-000151",
+      "record_type": "paper",
+      "title": "Quantitative Superexponential Bounds for van der Waerden Numbers",
+      "source_collection": "openai/math",
+      "upstream_slug": "Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-160"
+      ],
+      "batch_id": "B020",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d34c41dfe21e93e2ad5c5c802e2dd809e8d65eec849c9858c81a960258546620",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000151.md",
+      "body": "# Quantitative Superexponential Bounds for van der Waerden Numbers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an absolute threshold K such that W_r(k)>k^(k floor(log_2 r)/100000) for all k>=K and all r>=2.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000263: Affine sign-pattern counting that retains boundary equalities](../instruments/MI-000263.md)\n- [MI-000264: The first nonzero digit of a step transfers cyclic avoidance to product colorings](../instruments/MI-000264.md)\n\n## Dependencies and review\n\nAffine rank, the hyperplane-region recurrence, base-N digits and monotonicity in the number of colors.\n\nRead the complete affine-comparison count and cyclic-to-interval product proof. The outer coloring, local dichotomy and random perturbation estimates were not audited.\n\nRead the scope document and QuantitativeVanDerWaerden.lean definitions and uniform_lower_bound target. The target keeps one threshold uniform in the color count. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-160.md) · [Batch B020](../../batches/B020/README.md)"
+    },
+    {
+      "id": "P-000152",
+      "record_type": "paper",
+      "title": "A counterexample to Sidorenko's conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-counterexample-to-Sidorenkos-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-161"
+      ],
+      "batch_id": "B020",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5087e4cf49b30230fc53864c509ca4d9f19db3ae04be92ed4352163411628ae5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000152.md",
+      "body": "# A counterexample to Sidorenko's conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a fixed bipartite graph H with 35 vertices and 66 edges and a finite nonempty simple graph G satisfying t(H,G)<p(G)^66.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000265: A strict kernel-density deficit gives an explicit finite-host threshold](../instruments/MI-000265.md)\n- [MI-000266: Orthogonal fixed-density interpolation preserves nonconstancy at an exact equality](../instruments/MI-000266.md)\n\n## Dependencies and review\n\nIndependent vertex labels and edge trials, collision probability, convexity, even-subgraph expansions, polynomial continuity and the C4 equality case.\n\nRead the complete finite-host lemma and both consequence proofs. The kernel, pinning, orbit and tail construction establishing the strict bipartite deficit was not audited.\n\nRead the scope document and SidorenkoCounterexample.lean pattern, density definitions and main target. The pattern is the incidence graph of 22 triples on 13 points; the forcing consequence is outside the selected target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-161.md) · [Batch B020](../../batches/B020/README.md)"
+    },
+    {
+      "id": "P-000153",
+      "record_type": "paper",
+      "title": "The circulant Hadamard conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-circulant-Hadamard-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-179"
+      ],
+      "batch_id": "B020",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7076bf095a28f98361d51b105adc69b0bfa4ffa8fa6d7f8de527dde9af871f1e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000153.md",
+      "body": "# The circulant Hadamard conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that positive orders of real circulant Hadamard matrices are exactly 1 and 4, with the corresponding exclusion of even Barker lengths other than 2 and 4.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000267: Principal-unit first-order maps and prime-to-residue torsion reduction](../instruments/MI-000267.md)\n- [MI-000268: A binary identity couples two first-order character sums](../instruments/MI-000268.md)\n\n## Dependencies and review\n\nLocal domains, first-order principal units, Gaussian integers, character orthogonality and a separately supplied global alternating-product theorem.\n\nRead the first-order lemma, torsion reduction proof and complete final binary contradiction. The local comparison and alternating-product proposition needed to supply odd torsion were not audited.\n\nRead the scope document and CirculantHadamard.lean and EvenBarker.lean definitions and targets. They assert the unrestricted positive-order classification and the positive even Barker classification, respectively. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-179.md) · [Batch B020](../../batches/B020/README.md)"
+    },
+    {
+      "id": "P-000154",
+      "record_type": "paper",
+      "title": "Snaky in 21 Maker moves",
+      "source_collection": "openai/math",
+      "upstream_slug": "Snaky-in-21-Maker-moves-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-187"
+      ],
+      "batch_id": "B020",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "80089278b8ec3aee28876f9a2d3cb5be68cee99aa4e342b74d71491543c64c15",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000154.md",
+      "body": "# Snaky in 21 Maker moves\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source gives a strategy for planar Snaky within 21 actual Maker moves, with a 251-cell support inside a 17 by 17 board.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000269: Owned envelope intersections compose finite certificates against every reply](../instruments/MI-000269.md)\n- [MI-000270: Reduced envelopes normalize exactly and commute with template composition](../instruments/MI-000270.md)\n\n## Dependencies and review\n\nFinite set unions and intersections, square-grid isometries, recursive certificate parsing, induction on height and legal fresh-move bookkeeping.\n\nRead the complete composition, strategy, finite-board and reduced-normalization arguments, certificate grammar and short upstream verifier. Ran the upstream 21-move verifier and a separately written parser checking all nodes and local reply classes. The older 25- and 35-move tables were not reconstructed in this batch.\n\nRead the scope and the definitions and targets in all three linked Comparators, excluding inspection of each literal entry in the older 35-move table. SnakyTwentyOne targets a legal 21-move strategy; SnakyCertificate targets older 35-move reconstruction data. Although the scope table describes SnakyConditional as conditional templates, its actual selected statement is a global 35-move legal strategy. The 251-cell finite-board restriction is not in the 21-move target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\n[Family context](../families/openai-math-187.md) · [Batch B020](../../batches/B020/README.md)"
     }
   ],
   "families": [
@@ -14727,6 +15161,60 @@
       "body": "# Erdős’s reciprocal-sum conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000050](../papers/P-000050.md)\n\n## Family description\n\nSource status as recorded in the direction paper: original label: companion only; repository also links a headline development, unbuilt new architecture\n\nThe source claims $`r_k(N)\\le C_kN\\exp(-c_k(\\log N)^{\\varepsilon_k})`$ for each fixed $`k\\ge3`$, with $`c_k,\\varepsilon_k>0`$, and hence progressions of every finite length in any set with divergent reciprocal sum. The dyadic deduction is valid: for a $`k`$-progression-free set $`A`$,\n``` math\n\\sum_{n\\in A\\cap[2^j,2^{j+1})}\\frac1n\n \\le 2^{-j}r_k(2^{j+1})\n \\ll_k \\exp(-c'_k j^{\\varepsilon_k}),\n```\nand the last expression is summable in $`j`$. By contrast, $`\\sum_{m\\ge2}\\exp(-(\\log m)^c)`$ diverges for $`0<c\\le1`$ and converges for $`c>1`$. The original discussion of the weaker Leng–Sah–Sawhney log-log bound must be understood in the former range; divergence is not true for every positive $`c`$. The 198-page source uses the LSS inverse theorem as an external input.\n\n## Extracted instruments.\n\n- [MI-000037: Triangular polynomial cells with descending precision budgets](../instruments/MI-000037.md)\n\n- [MI-000038: Shift comparison and positive counting](../instruments/MI-000038.md)\n\n- [MI-000039: Relative lifting with additive rank and exact marked projection](../instruments/MI-000039.md)\n\n## Reused.\n\nLSS inverse theorem; Schoen–Sisask almost-periodicity; Kelley–Meka sifting; Green–Tao polynomial orbits; Leng’s equidistribution; Candela–Sisask densification; CRT prime boxes.\n\n## Caveats.\n\nThe quantitative upper bound was not verified here. The repository documentation links a development for the reciprocal-sum consequence, beyond the lower-bound companion noted in the initial extraction; that development was not built here. The paper claims an improvement from log log to log for every k at once. The trace’s Part I never closed (“circularity concern unresolved”) and Part II ends in “claimed/asserted”. The argument has a long chain of dependencies. An appendix extends LSS to product groups of dimension $`(2+p)^A`$ with a step-drop lemma uniform in parameter count, which the model itself flagged as delicate.\n\n## Recorded assessment\n\n- Novelty: new architecture\n- Formalization: original: lower-bound companion; headline also linked, unbuilt\n- Statement coverage: —\n- Dependencies: no load-bearing\n- Antecedents: —"
     },
     {
+      "id": "openai-math-160",
+      "record_type": "family",
+      "title": "Counting affine boundary patterns and lifting cyclic colorings",
+      "source_family": "160",
+      "source_collection": "openai/math",
+      "batch_id": "B020",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000151"
+      ],
+      "instrument_ids": [
+        "MI-000263",
+        "MI-000264"
+      ],
+      "headline": "The source claims an absolute threshold K such that W_r(k)>k^(k floor(log_2 r)/100000) for all k>=K and all r>=2.",
+      "central_instrument": "An arrangement count retains equality signs at mesh boundaries, and the first nonzero base-N digit of a progression step transfers cyclic avoidance to an interval product coloring.",
+      "novelty_assessment": "Both extracted mechanisms are established arrangement and digit-product ideas. The source gives explicit boundary and composite-base bookkeeping. The central coloring construction behind its claimed superexponential two-color bound was not audited.",
+      "formalization_summary": "Read the scope document and QuantitativeVanDerWaerden.lean definitions and uniform_lower_bound target. The target keeps one threshold uniform in the color count. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Zero signs are counted, including dependent or repeated hyperplanes. Cyclic progressions have nonzero common difference but may repeat residues; the transfer does not require N prime.",
+      "dependencies": "Affine rank, the hyperplane-region recurrence, base-N digits and monotonicity in the number of colors.",
+      "antecedents": "Stanley, An Introduction to Hyperplane Arrangements, Lemma 2.1 and Proposition 2.4; classical Erdos-Turan digit constructions; Fox-Hunter product-coloring arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-160.md",
+      "body": "# Counting affine boundary patterns and lifting cyclic colorings\n\n## Source manuscript and claim\n\n[Quantitative Superexponential Bounds for van der Waerden Numbers](../papers/P-000151.md), by OpenAI, September 23, 2026.\n\nThe source claims an absolute threshold K such that W_r(k)>k^(k floor(log_2 r)/100000) for all k>=K and all r>=2.\n\n## Extracted instruments\n\n- [MI-000263: Affine sign-pattern counting that retains boundary equalities](../instruments/MI-000263.md)\n- [MI-000264: The first nonzero digit of a step transfers cyclic avoidance to product colorings](../instruments/MI-000264.md)\n\n## Dependencies and antecedents\n\nAffine rank, the hyperplane-region recurrence, base-N digits and monotonicity in the number of colors.\n\nStanley, An Introduction to Hyperplane Arrangements, Lemma 2.1 and Proposition 2.4; classical Erdos-Turan digit constructions; Fox-Hunter product-coloring arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete affine-comparison count and cyclic-to-interval product proof. The outer coloring, local dichotomy and random perturbation estimates were not audited.\n\nRead the scope document and QuantitativeVanDerWaerden.lean definitions and uniform_lower_bound target. The target keeps one threshold uniform in the color count. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\nZero signs are counted, including dependent or repeated hyperplanes. Cyclic progressions have nonzero common difference but may repeat residues; the transfer does not require N prime.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/160.md) · [Batch record](../../batches/B020/README.md)"
+    },
+    {
+      "id": "openai-math-161",
+      "record_type": "family",
+      "title": "Transferring a density deficit to finite witnesses and nonconstant equalities",
+      "source_family": "161",
+      "source_collection": "openai/math",
+      "batch_id": "B020",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000152"
+      ],
+      "instrument_ids": [
+        "MI-000265",
+        "MI-000266"
+      ],
+      "headline": "The source claims a fixed bipartite graph H with 35 vertices and 66 edges and a finite nonempty simple graph G satisfying t(H,G)<p(G)^66.",
+      "central_instrument": "A collision estimate and Jensen inequality give an explicit finite-host threshold. Orthogonal interpolation at fixed edge density turns a supplied strict deficit into a nonconstant exact-density equality.",
+      "novelty_assessment": "Kernel sampling, collision bounds, rank-one sign expansions and continuous interpolation are established mechanisms. The selected consequences are conditional on a strict deficit. The source-specific negative-correlation construction providing that deficit was not audited.",
+      "formalization_summary": "Read the scope document and SidorenkoCounterexample.lean pattern, density definitions and main target. The pattern is the incidence graph of 22 triples on 13 points; the forcing consequence is outside the selected target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Densities count all maps and use p=2|E|/n^2. Repeated host edges are not independent under sampling. The forcing transfer requires a cycle and supplies one density, not every density.",
+      "dependencies": "Independent vertex labels and edge trials, collision probability, convexity, even-subgraph expansions, polynomial continuity and the C4 equality case.",
+      "antecedents": "Lovasz-Szegedy dense graph limits and finite-kernel sampling; classical tensor-power and graph-density methods.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-161.md",
+      "body": "# Transferring a density deficit to finite witnesses and nonconstant equalities\n\n## Source manuscript and claim\n\n[A counterexample to Sidorenko's conjecture](../papers/P-000152.md), by OpenAI, September 23, 2026.\n\nThe source claims a fixed bipartite graph H with 35 vertices and 66 edges and a finite nonempty simple graph G satisfying t(H,G)<p(G)^66.\n\n## Extracted instruments\n\n- [MI-000265: A strict kernel-density deficit gives an explicit finite-host threshold](../instruments/MI-000265.md)\n- [MI-000266: Orthogonal fixed-density interpolation preserves nonconstancy at an exact equality](../instruments/MI-000266.md)\n\n## Dependencies and antecedents\n\nIndependent vertex labels and edge trials, collision probability, convexity, even-subgraph expansions, polynomial continuity and the C4 equality case.\n\nLovasz-Szegedy dense graph limits and finite-kernel sampling; classical tensor-power and graph-density methods. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite-host lemma and both consequence proofs. The kernel, pinning, orbit and tail construction establishing the strict bipartite deficit was not audited.\n\nRead the scope document and SidorenkoCounterexample.lean pattern, density definitions and main target. The pattern is the incidence graph of 22 triples on 13 points; the forcing consequence is outside the selected target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\nDensities count all maps and use p=2|E|/n^2. Repeated host edges are not independent under sampling. The forcing transfer requires a cycle and supplies one density, not every density.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/161.md) · [Batch record](../../batches/B020/README.md)"
+    },
+    {
       "id": "openai-math-171",
       "record_type": "family",
       "title": "Balanced mixtures, scattered moments and retained-event posteriors",
@@ -14863,6 +15351,33 @@
       "body": "# Discounted conditional expectations and partial-pairing matrix identities\n\n## Source manuscript and claim\n\n[Deterministic nonbipartite Ramanujan graphs in every fixed degree](../papers/P-000134.md), by OpenAI, September 23, 2026.\n\nThe source claims deterministic polynomial-time construction of simple connected nonbipartite d-regular Ramanujan graphs for every fixed d>=3 and all sufficiently large even sizes.\n\n## Extracted instruments\n\n- [MI-000228: Account-specific expectation discounts let one deterministic choice control many statistics](../instruments/MI-000228.md)\n- [MI-000229: Partial stub pairings have exact low-rank resolvent updates and centered pair cancellation](../instruments/MI-000229.md)\n\n## Dependencies and antecedents\n\nFinite averaging, positive-part Taylor estimates, centered stub incidence, nonbacktracking recurrences, Woodbury inversion and finite-population averaging.\n\nRaghavan and Wigderson-Xiao for conditional expectations and composed estimators; Foata-Zeilberger for the Ihara-Bass matrix polynomial; the source credits Henderson-Searle for the inverse update. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the discounted-account and scalar-excess proofs and the full path/exposure lemma with its centered-pair identity. The multistage spectral estimates and final exact repair were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\nStatistics are controlled through a weighted discounted total, not by separately minimizing each one. Pair-update formulas require more than two unresolved stubs. Formal power-series identities are not automatically convergent near a spectral edge.\n\n[Batch record](../../batches/B015/README.md)"
     },
     {
+      "id": "openai-math-179",
+      "record_type": "family",
+      "title": "First-order principal units and a conditional binary-character obstruction",
+      "source_family": "179",
+      "source_collection": "openai/math",
+      "batch_id": "B020",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000153"
+      ],
+      "instrument_ids": [
+        "MI-000267",
+        "MI-000268"
+      ],
+      "headline": "The source claims that positive orders of real circulant Hadamard matrices are exactly 1 and 4, with the corresponding exclusion of even Barker lengths other than 2 and 4.",
+      "central_instrument": "Two different small parameters at a prime over 2 yield additive first-order character sums. A binary coefficient identity makes their sum nonzero when supplied alternating products are odd-order roots of unity.",
+      "novelty_assessment": "Principal-unit linearization and prime-to-residue-characteristic torsion reduction are elementary established facts. The extracted obstruction isolates the source binary identity but retains the difficult global odd-order product input as an unverified assumption.",
+      "formalization_summary": "Read the scope document and CirculantHadamard.lean and EvenBarker.lean definitions and targets. They assert the unrestricted positive-order classification and the positive even Barker classification, respectively. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "The local ring is a domain, the small parameter is nonzero, and torsion order must be coprime to the residue characteristic. Residue one alone does not imply equality to one; the order-four example demonstrates this.",
+      "dependencies": "Local domains, first-order principal units, Gaussian integers, character orthogonality and a separately supplied global alternating-product theorem.",
+      "antecedents": "Classical principal-unit quotients, reduction of prime-to-p torsion and character sums. The source cites Kronecker for the preceding global root-of-unity criterion.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-179.md",
+      "body": "# First-order principal units and a conditional binary-character obstruction\n\n## Source manuscript and claim\n\n[The circulant Hadamard conjecture](../papers/P-000153.md), by OpenAI, September 23, 2026.\n\nThe source claims that positive orders of real circulant Hadamard matrices are exactly 1 and 4, with the corresponding exclusion of even Barker lengths other than 2 and 4.\n\n## Extracted instruments\n\n- [MI-000267: Principal-unit first-order maps and prime-to-residue torsion reduction](../instruments/MI-000267.md)\n- [MI-000268: A binary identity couples two first-order character sums](../instruments/MI-000268.md)\n\n## Dependencies and antecedents\n\nLocal domains, first-order principal units, Gaussian integers, character orthogonality and a separately supplied global alternating-product theorem.\n\nClassical principal-unit quotients, reduction of prime-to-p torsion and character sums. The source cites Kronecker for the preceding global root-of-unity criterion. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the first-order lemma, torsion reduction proof and complete final binary contradiction. The local comparison and alternating-product proposition needed to supply odd torsion were not audited.\n\nRead the scope document and CirculantHadamard.lean and EvenBarker.lean definitions and targets. They assert the unrestricted positive-order classification and the positive even Barker classification, respectively. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe local ring is a domain, the small parameter is nonzero, and torsion order must be coprime to the residue characteristic. Residue one alone does not imply equality to one; the order-four example demonstrates this.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/179.md) · [Batch record](../../batches/B020/README.md)"
+    },
+    {
       "id": "openai-math-180",
       "record_type": "family",
       "title": "Disjoint planar states and a matched disk identity",
@@ -14942,6 +15457,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-185.md",
       "body": "# Self-dual covering reductions and ordinal descent along a double ray\n\n## Source manuscript and claim\n\n[A Counterexample to the Infinite Matroid Packing/Covering Conjecture](../papers/P-000122.md), by OpenAI, September 24, 2026.\n\nThe source claims countable self-dual infinite matroids with neither an independent covering nor a packing/covering partition, and related failures of unrestricted intersection and individual covering and packing conjectures.\n\n## Extracted instruments\n\n- [MI-000202: Self-duality converts a mixed packing-covering witness into a full independent cover](../instruments/MI-000202.md)\n- [MI-000203: A local ultrafilter rank interface excludes independent covers on a double ray](../instruments/MI-000203.md)\n\n## Dependencies and antecedents\n\nInfinite-matroid maximal extension and duality; restriction closure; countable direct sums; an ultrafilter; an antitone ordinal rank; basis extensions and well-foundedness.\n\nBowler and Carmesin establish packing/covering and intersection equivalences. Bowler and Geschke construct self-dual uniform infinite matroids with additional set-theoretic hypotheses; that is background, not verification of the source local construction in ZFC. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the self-dual reduction, closure facts and complete double-ray assembly proof. The filter, local-basis and preceding local-matroid construction were not audited; their stated interface is retained as a hypothesis.\n\nInfiniteMatroid.lean states a countable self-dual pair with no independent covering and no mixed partition. InfiniteMatroidCorollaries.lean adds a partitional description and intersection, individual covering and packing consequences. These are unrestricted infinite-matroid statements in a setting with Choice, not finitary statements. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nSelf-duality is equality with the dual on the same labeled ground set. The ordinal descent needs strict decrease on every selected step; finite windows cannot certify an infinite counterexample.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/185.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-187",
+      "record_type": "family",
+      "title": "Finite envelope certificates for strategies against unrestricted replies",
+      "source_family": "187",
+      "source_collection": "openai/math",
+      "batch_id": "B020",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000154"
+      ],
+      "instrument_ids": [
+        "MI-000269",
+        "MI-000270"
+      ],
+      "headline": "The source gives a strategy for planar Snaky within 21 actual Maker moves, with a 251-cell support inside a 17 by 17 board.",
+      "central_instrument": "Conditional winning templates compose by owning the common intersection of child envelopes. The same algebra normalizes reduced envelopes, and a finite recursive certificate gives a bounded strategy against replies anywhere.",
+      "novelty_assessment": "Territory-based proof trees and core/neighborhood situations precede the release in Sieben (2008). The 21-move certificate and its particular composition data are source-specific. This batch reconstructs that entire finite certificate; it does not certify optimality of the move bound.",
+      "formalization_summary": "Read the scope and the definitions and targets in all three linked Comparators, excluding inspection of each literal entry in the older 35-move table. SnakyTwentyOne targets a legal 21-move strategy; SnakyCertificate targets older 35-move reconstruction data. Although the scope table describes SnakyConditional as conditional templates, its actual selected statement is a global 35-move legal strategy. The 251-cell finite-board restriction is not in the 21-move target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.",
+      "statement_faithfulness": "Every counted Maker move claims a fresh cell. Already-owned pivots require a fresh replacement move. Breaker may reply outside all envelopes. Heights decrease along chosen children; no final Breaker move is needed before winning.",
+      "dependencies": "Finite set unions and intersections, square-grid isometries, recursive certificate parsing, induction on height and legal fresh-move bookkeeping.",
+      "antecedents": "Sieben, Proof Trees for Weak Achievement Games (2008), Sections 2 and 3: territories, proof sequences and core/neighborhood situations.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-187.md",
+      "body": "# Finite envelope certificates for strategies against unrestricted replies\n\n## Source manuscript and claim\n\n[Snaky in 21 Maker moves](../papers/P-000154.md), by OpenAI, None.\n\nThe source gives a strategy for planar Snaky within 21 actual Maker moves, with a 251-cell support inside a 17 by 17 board.\n\n## Extracted instruments\n\n- [MI-000269: Owned envelope intersections compose finite certificates against every reply](../instruments/MI-000269.md)\n- [MI-000270: Reduced envelopes normalize exactly and commute with template composition](../instruments/MI-000270.md)\n\n## Dependencies and antecedents\n\nFinite set unions and intersections, square-grid isometries, recursive certificate parsing, induction on height and legal fresh-move bookkeeping.\n\nSieben, Proof Trees for Weak Achievement Games (2008), Sections 2 and 3: territories, proof sequences and core/neighborhood situations. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete composition, strategy, finite-board and reduced-normalization arguments, certificate grammar and short upstream verifier. Ran the upstream 21-move verifier and a separately written parser checking all nodes and local reply classes. The older 25- and 35-move tables were not reconstructed in this batch.\n\nRead the scope and the definitions and targets in all three linked Comparators, excluding inspection of each literal entry in the older 35-move table. SnakyTwentyOne targets a legal 21-move strategy; SnakyCertificate targets older 35-move reconstruction data. Although the scope table describes SnakyConditional as conditional templates, its actual selected statement is a global 35-move legal strategy. The 251-cell finite-board restriction is not in the 21-move target. These files specify targets with sorry placeholders; no Lean solution was built or kernel-checked.\n\nEvery counted Maker move claims a fresh cell. Already-owned pivots require a fresh replacement move. Breaker may reply outside all envelopes. Heights decrease along chosen children; no final Breaker move is needed before winning.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/187.md) · [Batch record](../../batches/B020/README.md)"
     },
     {
       "id": "openai-math-188",

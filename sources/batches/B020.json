@@ -1,0 +1,322 @@
+{
+  "batch_id": "B020",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T09:36:07.721311+00:00",
+  "scope": "Hashes of selected passages, inspected metadata and Comparator inputs, plus the fully reconstructed Snaky 21-move certificate, its executed upstream verifier and distribution license; no Lean proof build.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "lean/ComparatorChallenges/CirculantHadamard.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CirculantHadamard.lean",
+      "sha256": "397ec4f1ab8e02877f4a4d0b5a12d0c9b26a06bf768999479210b365c3acb647",
+      "bytes": 737
+    },
+    {
+      "path": "lean/ComparatorChallenges/EvenBarker.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EvenBarker.lean",
+      "sha256": "b4b6dbaa8ed4503d6381f4062818815e7c8474de4592e6a1b3f42057a86e25b2",
+      "bytes": 663
+    },
+    {
+      "path": "lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean",
+      "sha256": "1caa563bbf7a5602adb8cdbbc06aaf1e3d4d5fe27ed4bebf2bf44cf2937a6593",
+      "bytes": 943
+    },
+    {
+      "path": "lean/ComparatorChallenges/SidorenkoCounterexample.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SidorenkoCounterexample.lean",
+      "sha256": "489688f5c4eb60c6dd8cfe0ef69663aaf11e795d6252e9626972764a50187de9",
+      "bytes": 1764
+    },
+    {
+      "path": "lean/ComparatorChallenges/SnakyCertificate.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SnakyCertificate.lean",
+      "sha256": "591087a6b083d2b610bd863e0b5e7424f83d8ca8c3587cf77785570d06e8bedf",
+      "bytes": 70348
+    },
+    {
+      "path": "lean/ComparatorChallenges/SnakyConditional.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SnakyConditional.lean",
+      "sha256": "3ab27d66779b557d0efcc3cfcf8317c40511e3cc655da29e61e95ba3f34d45ea",
+      "bytes": 2069
+    },
+    {
+      "path": "lean/ComparatorChallenges/SnakyTwentyOne.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SnakyTwentyOne.lean",
+      "sha256": "6b26e6b265ec08aaf044c3564cb346d6a989cfbf92f0e102af741c6962c988f5",
+      "bytes": 2207
+    },
+    {
+      "path": "lean/docs/160.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/160.md",
+      "sha256": "8189153b6a5747cbcbea25920f90ab907091d789586e39c8154a153ebe6fdb98",
+      "bytes": 1004
+    },
+    {
+      "path": "lean/docs/161.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/161.md",
+      "sha256": "a1da28a997a9a27cad57f0862cd18e7502aa3129730d3bc7fd7a45fde14d3b1d",
+      "bytes": 946
+    },
+    {
+      "path": "lean/docs/179.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/179.md",
+      "sha256": "47cf8bcf69c2cdf41b6b03051d8ae6cf998773c8fd85b83f1b15c130f166ce60",
+      "bytes": 1160
+    },
+    {
+      "path": "lean/docs/187.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/187.md",
+      "sha256": "4faf4c5d8fb5957cbe0b2c0b4728d99acefee79b05180e61354298fe9c8a3782",
+      "bytes": 1431
+    },
+    {
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/README.md",
+      "sha256": "5087e4cf49b30230fc53864c509ca4d9f19db3ae04be92ed4352163411628ae5",
+      "bytes": 568
+    },
+    {
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex",
+      "sha256": "69f3d43629ffc3c9c60a9e027d541c166ef281d2e63a5998777e25161c0c977a",
+      "bytes": 5858
+    },
+    {
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex",
+      "sha256": "16c373c05576f0850ca9c1df04df84d28f5193aed68db85d5b8d85f622e7ec02",
+      "bytes": 18486
+    },
+    {
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+      "sha256": "ad58e1e12522ae296a6ff7213afee0098338577013f15e152d6ccc2990df2742",
+      "bytes": 28526
+    },
+    {
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/README.md",
+      "sha256": "d34c41dfe21e93e2ad5c5c802e2dd809e8d65eec849c9858c81a960258546620",
+      "bytes": 680
+    },
+    {
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+      "sha256": "ca84ac51bf6c8539f2458bdc462c98ef465ea70afaa15496d0e6fcaec453c243",
+      "bytes": 10130
+    },
+    {
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex",
+      "sha256": "4d54ebb5b4605ad42c2111b5d4d723ac010cacd76da1bc04c581c5a04b04502d",
+      "bytes": 7486
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/README.md",
+      "sha256": "80089278b8ec3aee28876f9a2d3cb5be68cee99aa4e342b74d71491543c64c15",
+      "bytes": 1130
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442",
+      "bytes": 23648
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+      "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc",
+      "bytes": 4905
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+      "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7",
+      "bytes": 5078
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/certificate.txt",
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04",
+      "bytes": 38367
+    },
+    {
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/verify_certificate.py",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/verification/verify_certificate.py",
+      "sha256": "0f59f80e38285b64c2962785f92d9d50bef874a917aa018d9b399cdeabdb3753",
+      "bytes": 4210
+    },
+    {
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/README.md",
+      "sha256": "7076bf095a28f98361d51b105adc69b0bfa4ffa8fa6d7f8de527dde9af871f1e",
+      "bytes": 525
+    },
+    {
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3",
+      "bytes": 9914
+    },
+    {
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex",
+      "sha256": "7d8beb0c7d77cf3146f3d7646964bc302005c6ad0e0a3d9586929190c7210514",
+      "bytes": 12667
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000263",
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+      "label": "count:arrangement",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L12",
+      "sha256": "ca84ac51bf6c8539f2458bdc462c98ef465ea70afaa15496d0e6fcaec453c243"
+    },
+    {
+      "instrument_id": "MI-000263",
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex",
+      "label": "count:arrangement-bound",
+      "line": 16,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/03-counting.tex#L16",
+      "sha256": "ca84ac51bf6c8539f2458bdc462c98ef465ea70afaa15496d0e6fcaec453c243"
+    },
+    {
+      "instrument_id": "MI-000264",
+      "path": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex",
+      "label": "transfer:product",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/sections/07-transfers.tex#L13",
+      "sha256": "4d54ebb5b4605ad42c2111b5d4d723ac010cacd76da1bc04c581c5a04b04502d"
+    },
+    {
+      "instrument_id": "MI-000265",
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex",
+      "label": "lem:finite-host",
+      "line": 612,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/kernel.tex#L612",
+      "sha256": "ad58e1e12522ae296a6ff7213afee0098338577013f15e152d6ccc2990df2742"
+    },
+    {
+      "instrument_id": "MI-000266",
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex",
+      "label": "sec:consequences",
+      "line": 2,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/consequences.tex#L2",
+      "sha256": "69f3d43629ffc3c9c60a9e027d541c166ef281d2e63a5998777e25161c0c977a"
+    },
+    {
+      "instrument_id": "MI-000266",
+      "path": "preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex",
+      "label": "cor:forcing",
+      "line": 336,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/build/sections/introduction.tex#L336",
+      "sha256": "16c373c05576f0850ca9c1df04df84d28f5193aed68db85d5b8d85f622e7ec02"
+    },
+    {
+      "instrument_id": "MI-000267",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "label": "lem:first-order",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L10",
+      "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+    },
+    {
+      "instrument_id": "MI-000267",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex",
+      "label": "lem:torsion",
+      "line": 139,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/products.tex#L139",
+      "sha256": "7d8beb0c7d77cf3146f3d7646964bc302005c6ad0e0a3d9586929190c7210514"
+    },
+    {
+      "instrument_id": "MI-000268",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "label": "eq:three-elements",
+      "line": 53,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L53",
+      "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+    },
+    {
+      "instrument_id": "MI-000268",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "label": "eq:binary",
+      "line": 117,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L117",
+      "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+    },
+    {
+      "instrument_id": "MI-000268",
+      "path": "preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex",
+      "label": "eq:last-sum",
+      "line": 172,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/build/sections/contradiction.tex#L172",
+      "sha256": "6aa2afed95cd8ecd8b0a28d71cc011ecf317af91bd356dd6406a7a0c17b145a3"
+    },
+    {
+      "instrument_id": "MI-000269",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+      "label": "def:claim",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L9",
+      "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7"
+    },
+    {
+      "instrument_id": "MI-000269",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex",
+      "label": "lem:combination",
+      "line": 41,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/templates.tex#L41",
+      "sha256": "d78a592bc2628a898b8b43bf237dfbdf4a1565c9bc11fd945db73e04a3b618f7"
+    },
+    {
+      "instrument_id": "MI-000269",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+      "label": "sec:strategy",
+      "line": 1,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L1",
+      "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc"
+    },
+    {
+      "instrument_id": "MI-000269",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex",
+      "label": "cor:finite-board",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/strategy.tex#L64",
+      "sha256": "6499d0bc16bddacf0f778a232aaf1bd8d9a54533375b9d95f384ff511b4864bc"
+    },
+    {
+      "instrument_id": "MI-000270",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "label": "r25:normalization",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L37",
+      "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+    },
+    {
+      "instrument_id": "MI-000270",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "label": "r25:composition",
+      "line": 55,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L55",
+      "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+    },
+    {
+      "instrument_id": "MI-000270",
+      "path": "preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex",
+      "label": "r25:intersection-identity",
+      "line": 100,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Snaky-in-21-Maker-moves-September-25-2026/build/route25.tex#L100",
+      "sha256": "601df4e6a6b16000bef93a6a64fb5017265381e14d7c6881721ee4b8bd603442"
+    }
+  ]
+}

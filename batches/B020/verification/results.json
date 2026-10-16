@@ -1,0 +1,60 @@
+{
+  "batch": "B020",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "checks": {
+    "affine_signs": {
+      "arrangements": 36,
+      "realized_patterns": 814,
+      "patterns_with_zeros": 557,
+      "method": "floating-point strict-feasibility linear programs, including duplicates"
+    },
+    "cyclic_digits": {
+      "valid_cyclic_colorings": 212,
+      "composite_base_colorings": 40,
+      "integer_progressions": 44052
+    },
+    "finite_host_transfer": {
+      "exact_expected_density_models": 18,
+      "strict_triangle_witness_threshold": 28,
+      "bipartite_counterexample_constructed": false
+    },
+    "constant_density_interpolation": {
+      "exact_even_subgraph_expansions": 9,
+      "triangle_model_root": 0.6666666666666669,
+      "nonconstant_variance": 0.05555555555555553,
+      "C4_excess": 0.0015432098765430224,
+      "source_H_deficit_verified": false
+    },
+    "principal_units": {
+      "product_and_inverse_models": 1044,
+      "domain_theorem_proved_by_finite_models": false,
+      "prime_to_residue_torsion_hypothesis_retained": true
+    },
+    "binary_first_order_obstruction": {
+      "all_sign_quadruples": 16,
+      "unit_denominator_cases": 8,
+      "order_four_even_torsion_control": true,
+      "alternating_product_input_verified": false
+    },
+    "snaky21_reconstruction": {
+      "nodes": 1620,
+      "references": 4089,
+      "inline_nodes": 898,
+      "local_reply_classes": 37042,
+      "normalizations": 1620,
+      "sha256": "3fa12d36a6d4dbb185e3f2808c8dfde13d85ee309afbca030d6ad17ae9fe3d04",
+      "numbered_cards": 728,
+      "final_required_cells": 0,
+      "final_support_cells": 251,
+      "final_height": 21,
+      "formal_proof_build": false,
+      "executable_playing_policy_tested": false
+    },
+    "reduced_envelopes": {
+      "overlapping_required_and_envelope_models": 1000,
+      "route25_table_reconstructed": false
+    }
+  },
+  "scope": "Finite mechanism models and full Snaky 21 certificate reconstruction; no Lean build or certification of the other headline claims."
+}
