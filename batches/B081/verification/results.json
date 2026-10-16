@@ -1,0 +1,79 @@
+{
+  "batch": "B081",
+  "status": "pass",
+  "elapsed_seconds": 0.084,
+  "scope": "Selected finite mechanisms and one discrete analogue; no headline or Lean certification.",
+  "checks": {
+    "conformal_constraints": {
+      "status": "pass",
+      "details": {
+        "pointwise_tensor_cases": 60,
+        "radial_spheres": 3,
+        "constant_flux_rotation": true
+      }
+    },
+    "area_envelope": {
+      "status": "pass",
+      "details": {
+        "tied_active_plane_sets": 25,
+        "right_minimum_left_maximum": true
+      }
+    },
+    "retained_freshness": {
+      "status": "pass",
+      "details": {
+        "adaptive_histories": 80,
+        "joint_remaining_bits_and_orders": true,
+        "forgotten_failure_control": true
+      }
+    },
+    "spectral_averaging": {
+      "status": "pass",
+      "details": {
+        "schur_poisson_pairs": 6,
+        "averaged_poisson_bounds": 3,
+        "scalar_atomic_family_has_continuous_average": true
+      }
+    },
+    "lorentz_frames": {
+      "status": "pass",
+      "details": {
+        "congruence_cases": 40,
+        "fixed_gram_unbounded_boost_control": true
+      }
+    },
+    "box_selection": {
+      "status": "pass",
+      "details": {
+        "affine_graph_scales": 9,
+        "layer_bound": true,
+        "locally_L2_fixed_center_divergence": true
+      }
+    },
+    "thermal_affinity": {
+      "status": "pass",
+      "details": {
+        "two_particle_kernel_dimension": 9,
+        "common_measure_cases": 40,
+        "cell_affinity_identity": true,
+        "diagonal_density_loses_coherence": true
+      }
+    },
+    "all_q_sandwich": {
+      "status": "pass",
+      "details": {
+        "graph_analogues": 30,
+        "powers": [
+          0.1,
+          0.3,
+          0.7,
+          1,
+          1.5,
+          2,
+          3.2
+        ],
+        "continuum_gradient_square_not_imported": true
+      }
+    }
+  }
+}

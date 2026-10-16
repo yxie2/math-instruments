@@ -1,0 +1,323 @@
+{
+  "batch_id": "B081",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:39:23.010034+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CKSBondiPenrose.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CKSBondiPenrose.lean",
+      "sha256": "079b6e8e26bec3dc1c67cd4aacc0bbc2af008adef3615599e3b9de2bebde686d",
+      "bytes": 193241
+    },
+    {
+      "path": "lean/ComparatorChallenges/HardSphere.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HardSphere.lean",
+      "sha256": "cd20c3a47cffa87359dade3ab4d69b625a5c15aa8d0c070932c968442e250b70",
+      "bytes": 20330
+    },
+    {
+      "path": "lean/ComparatorChallenges/PlanarAndersonSpectrum.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PlanarAndersonSpectrum.lean",
+      "sha256": "476c0769acc7d2ba1dbb2ae1b451a4c03786cc79df4affaa9cdd03c5669ff2cf",
+      "bytes": 958
+    },
+    {
+      "path": "lean/docs/260.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/260.md",
+      "sha256": "4780482ca9c7f7c38ffc9fab39443e0fff155e31dbf29d6380d0b5f6b1b1f16f",
+      "bytes": 1525
+    },
+    {
+      "path": "lean/docs/261.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/261.md",
+      "sha256": "05afb984b4c333c19850e62fbd2a7a119784802e9ff506809ec30e4cd42a4126",
+      "bytes": 1085
+    },
+    {
+      "path": "lean/docs/267.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/267.md",
+      "sha256": "f837b2fa9bf1421d74b51e418518c3968e7bcdc78d8e90ae08b12fe69f0002f0",
+      "bytes": 1194
+    },
+    {
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/README.md",
+      "sha256": "359af3d0930abf35da6e4269ed3c212fb6f5f849d1d27b9a7a742ddd403b511b",
+      "bytes": 805
+    },
+    {
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/02-state.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/02-state.tex",
+      "sha256": "fe919d0f279067f12b5c96deed89f5e368e20a30e6cb7a8fb6c673dbde5f629f",
+      "bytes": 20399
+    },
+    {
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex",
+      "sha256": "c94d80bde8dc628cdfa04fb9e39a06559fe873fb9cf89b5b1a48c9ef48d3ecde",
+      "bytes": 26749
+    },
+    {
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/README.md",
+      "sha256": "98b6c41969a2e643a4c3f511ce02c0ccea48170a5fc3443b8fb6cae10a441630",
+      "bytes": 807
+    },
+    {
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex",
+      "sha256": "cd99b3b976f0048a43b7cff547b6c647ce086b82603abd823b7178c716168abb",
+      "bytes": 33890
+    },
+    {
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790",
+      "bytes": 36501
+    },
+    {
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/README.md",
+      "sha256": "fef4d876bf40adfe7818bcc6b4fbc4e66535c118ab2e603ecdba1aa154b88c21",
+      "bytes": 820
+    },
+    {
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex",
+      "sha256": "442a226e97abaddd4d4a8a1f27869a59d564d9e8e9b62c204d6bfad7d452e846",
+      "bytes": 25912
+    },
+    {
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex",
+      "sha256": "dad5893c903ada9a0d902603915d4ff5ec86e3f11ada4b3bcb8a43616dbf7d15",
+      "bytes": 26690
+    },
+    {
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/README.md",
+      "sha256": "810b21c343e12de73f37d1e9fd0212b895d1fe5a26d7d343fcb10351d057b48a",
+      "bytes": 703
+    },
+    {
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex",
+      "sha256": "60c05a538e5b20f2ec825edbd29447c411dc4c9dd75525aac072e61e7f3a2885",
+      "bytes": 24342
+    },
+    {
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex",
+      "sha256": "835b8d67a544034a0e68934f5f4dbb50c03489f8e97140a25ac314c220684ef6",
+      "bytes": 38076
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000750",
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex",
+      "label": "en:conformal",
+      "line": 43,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex#L43",
+      "sha256": "835b8d67a544034a0e68934f5f4dbb50c03489f8e97140a25ac314c220684ef6"
+    },
+    {
+      "instrument_id": "MI-000750",
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex",
+      "label": "en:conformal-exact",
+      "line": 55,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/end_preparation.tex#L55",
+      "sha256": "835b8d67a544034a0e68934f5f4dbb50c03489f8e97140a25ac314c220684ef6"
+    },
+    {
+      "instrument_id": "MI-000751",
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex",
+      "label": "ct:metric-comparison",
+      "line": 307,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex#L307",
+      "sha256": "60c05a538e5b20f2ec825edbd29447c411dc4c9dd75525aac072e61e7f3a2885"
+    },
+    {
+      "instrument_id": "MI-000751",
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex",
+      "label": "ct:strict-compactness",
+      "line": 328,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex#L328",
+      "sha256": "60c05a538e5b20f2ec825edbd29447c411dc4c9dd75525aac072e61e7f3a2885"
+    },
+    {
+      "instrument_id": "MI-000751",
+      "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex",
+      "label": "ct:area-derivative",
+      "line": 407,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/build/sections/cuts.tex#L407",
+      "sha256": "60c05a538e5b20f2ec825edbd29447c411dc4c9dd75525aac072e61e7f3a2885"
+    },
+    {
+      "instrument_id": "MI-000752",
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/02-state.tex",
+      "label": "lem:conditional-freshness",
+      "line": 176,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/02-state.tex#L176",
+      "sha256": "fe919d0f279067f12b5c96deed89f5e368e20a30e6cb7a8fb6c673dbde5f629f"
+    },
+    {
+      "instrument_id": "MI-000753",
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex",
+      "label": "lem:spectral-averaging",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex#L37",
+      "sha256": "c94d80bde8dc628cdfa04fb9e39a06559fe873fb9cf89b5b1a48c9ef48d3ecde"
+    },
+    {
+      "instrument_id": "MI-000753",
+      "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex",
+      "label": "eq:spectral-cavity",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/build/09-spectral.tex#L61",
+      "sha256": "c94d80bde8dc628cdfa04fb9e39a06559fe873fb9cf89b5b1a48c9ef48d3ecde"
+    },
+    {
+      "instrument_id": "MI-000754",
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex",
+      "label": "ho:base-comparison",
+      "line": 105,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex#L105",
+      "sha256": "442a226e97abaddd4d4a8a1f27869a59d564d9e8e9b62c204d6bfad7d452e846"
+    },
+    {
+      "instrument_id": "MI-000754",
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex",
+      "label": "ho:positive-determinant",
+      "line": 121,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/holonomy_category.tex#L121",
+      "sha256": "442a226e97abaddd4d4a8a1f27869a59d564d9e8e9b62c204d6bfad7d452e846"
+    },
+    {
+      "instrument_id": "MI-000755",
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex",
+      "label": "ex:boxes",
+      "line": 150,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex#L150",
+      "sha256": "dad5893c903ada9a0d902603915d4ff5ec86e3f11ada4b3bcb8a43616dbf7d15"
+    },
+    {
+      "instrument_id": "MI-000755",
+      "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex",
+      "label": "ex:small-box",
+      "line": 157,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/build/sections/weak_exits.tex#L157",
+      "sha256": "dad5893c903ada9a0d902603915d4ff5ec86e3f11ada4b3bcb8a43616dbf7d15"
+    },
+    {
+      "instrument_id": "MI-000756",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "label": "prop:purification",
+      "line": 41,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex#L41",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790"
+    },
+    {
+      "instrument_id": "MI-000756",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "label": "eq:occupation-purification",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex#L54",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790"
+    },
+    {
+      "instrument_id": "MI-000756",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex",
+      "label": "lem:affinity",
+      "line": 48,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex#L48",
+      "sha256": "cd99b3b976f0048a43b7cff547b6c647ce086b82603abd823b7178c716168abb"
+    },
+    {
+      "instrument_id": "MI-000756",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex",
+      "label": "cmp:cell-affinity",
+      "line": 86,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/comparison.tex#L86",
+      "sha256": "cd99b3b976f0048a43b7cff547b6c647ce086b82603abd823b7178c716168abb"
+    },
+    {
+      "instrument_id": "MI-000757",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "label": "lem:sandwich",
+      "line": 553,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex#L553",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790"
+    },
+    {
+      "instrument_id": "MI-000757",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "label": "eq:all-q-sandwich",
+      "line": 560,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex#L560",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790"
+    },
+    {
+      "instrument_id": "MI-000757",
+      "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex",
+      "label": "eq:sandwich-form",
+      "line": 618,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/sections/slab.tex#L618",
+      "sha256": "50974871cdefa9d3cc9c6ab4b01e9e069e558d49ffd1ee5828b18afc9dc59790"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-260",
+      "extracted_slugs": [
+        "The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-Charged-Reduction-of-the-Spacetime-Penrose-Inequality-in-Spatial-Dimensions-at-Least-Four-October-5-2026",
+        "Spacetime-Penrose-inequalities-enclosing-area-charge-and-rigidity-October-5-2026",
+        "The-Kerr-Newman-Penrose-Inequality-for-Axisymmetric-Electrovacuum-Exteriors-October-5-2026",
+        "Electromagnetic-tails-and-the-Kerr-Newman-Penrose-inequality-October-5-2026",
+        "The-nonmaximal-anti-de-Sitter-Penrose-Inequality-and-original-data-rigidity-October-5-2026",
+        "The-Penrose-inequality-for-maximal-asymptotically-hyperbolic-initial-data-October-5-2026",
+        "A-local-Penrose-inequality-for-conformal-perturbations-of-Schwarzschild-anti-de-Sitter-data-October-5-2026",
+        "The-spacetime-Penrose-inequality-and-enclosing-area-September-27-2026",
+        "Conformal-flow-and-the-Riemannian-Penrose-inequality-with-minimizing-frontiers-September-27-2026",
+        "Equality-and-rigidity-in-the-spacetime-Penrose-inequality-September-27-2026",
+        "Boundary-graph-deformations-for-the-spacetime-Penrose-inequality-September-27-2026",
+        "Area-controlled-end-replacement-and-the-Bondi-Penrose-inequality-in-the-CKS-class-September-27-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-261",
+      "extracted_slugs": [
+        "Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "Pure-Point-Spectrum-for-the-Two-Dimensional-Anderson-Model-at-Every-Positive-Disorder-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-264",
+      "extracted_slugs": [
+        "Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "Generic-C1-Future-Inextendibility-Near-Rotating-Subextremal-Kerr-Spacetimes-September-23-2026",
+        "Quantitative-Near-Kerr-Evolution-and-Generic-C2-Future-Inextendibility-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-267",
+      "extracted_slugs": [
+        "Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "Quantum-Depletion-and-Momentum-Distribution-in-the-Dilute-Hard-Sphere-Bose-Gas-October-5-2026",
+        "Quantum-Depletion-for-Fixed-Bounded-Repulsive-Potentials-October-5-2026",
+        "A-density-uniform-condensate-bound-for-dilute-Bose-gases-September-27-2026",
+        "Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026"
+      ]
+    }
+  ]
+}
