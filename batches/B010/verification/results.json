@@ -1,0 +1,98 @@
+{
+  "batch": "B010",
+  "status": "passed",
+  "seed": 111118128131,
+  "scope": "Nine groups of finite mechanism checks; no full source theorem, Lean or priority certification.",
+  "checks": {
+    "sample_gluing": {
+      "exact_masks": 8,
+      "sample_value_pairs_per_mask": 64,
+      "expected_minimum": "0",
+      "minimum_expectation": "1/2"
+    },
+    "marked_pivots": {
+      "old_mark_and_movable_models": 56,
+      "interleavings_with_marks": 5720,
+      "max_pattern_count": 13,
+      "scope": "Binary rank-three matroids with repeated and zero labels."
+    },
+    "rank_budget": {
+      "random_exact_rank_chains": 500,
+      "max_total_loss": 2,
+      "changing_generator_negative_control": [
+        1,
+        1,
+        1
+      ]
+    },
+    "tree_quotas": {
+      "phase_quota_inequalities": 210,
+      "exhaustive_small_phase_markings": 124,
+      "two_tree_depth_one_case": "passed",
+      "scope": "General d pruning is an analytic argument, not exhaustively tested."
+    },
+    "scalar_encoding": {
+      "five_item_subclass_multisets": 6188,
+      "zero_patterns": 4,
+      "exact_item_sizes": 156,
+      "random_tuple_scale_checks": 500,
+      "prefix_inventory_models": 100
+    },
+    "periodic_counts": {
+      "instances": 161,
+      "actual_common_superstrings": 13746,
+      "nearest_mismatch_identities": 1363,
+      "constant_words": 9
+    },
+    "periodic_layers": {
+      "periodic_window_models": 100,
+      "original_turn_steps": 1650,
+      "scope": "Exact integer edge multisets, including multi-turn walks and empty windows."
+    },
+    "equality_projections": {
+      "full_slice_matrices": 55,
+      "largest_state_space": 126,
+      "minimum_numerical_difference_eigenvalue": -6.661338147750939e-15,
+      "tolerance": 1e-10
+    },
+    "exact_residual": {
+      "exact_cycle_examples": [
+        {
+          "states": 2,
+          "steps": 1,
+          "D": 4,
+          "denominator_bits": 3
+        },
+        {
+          "states": 3,
+          "steps": 5,
+          "D": 5,
+          "denominator_bits": 11
+        },
+        {
+          "states": 4,
+          "steps": 9,
+          "D": 5,
+          "denominator_bits": 19
+        },
+        {
+          "states": 5,
+          "steps": 19,
+          "D": 6,
+          "denominator_bits": 39
+        },
+        {
+          "states": 7,
+          "steps": 38,
+          "D": 6,
+          "denominator_bits": 77
+        }
+      ],
+      "insufficient_accuracy_residual": [
+        "-7/10",
+        "17/10"
+      ],
+      "scope": "Finite rational-law correction, not the global graph-switch mixing theorem."
+    }
+  }
+}

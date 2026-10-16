@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B010: nine instruments from algorithmic families 111, 118, 128 and 131, with exact source locators and nine finite check groups. The records retain adversary quantifiers, shared rank budgets, packing defects, bracket multiplicities and expected-time qualifications, and credit the established perfect-sampling reduction.
 - Added B009: nine instruments from families 328, 329, 330 and 374, with explicit source bindings and nine groups of finite checks. The records distinguish adaptive and weighted constructions, signed approximation obstructions, and exact transport sharpness from the source papers' global claims. Added shared numerical verification dependencies.
 - Added B008: eight auxiliary instruments from functional-analysis families 322, 326, 327 and 332, with exact source bindings, classical antecedents and eight groups of finite checks. The stopped-median construction credits the earlier cubic smoothing function and records the ambient-space and stationarity hypotheses.
 - Added B007: eight auxiliary instruments from number-theory families 012, 013, 020 and 021, with exact source labels, explicit hypotheses and eight groups of finite checks. The records separate selected sampling, algebraic and sieve mechanisms from the four headline theorem claims.

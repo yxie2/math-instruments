@@ -1,0 +1,374 @@
+{
+  "batch_id": "B010",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T07:04:15.671052+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BinPackingGap.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BinPackingGap.lean",
+      "sha256": "f72d9643f0dab3bdb18876f54b072f9720fc99491e3801f2a46214e90f7e2e50",
+      "bytes": 12523
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatroidProphet.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MatroidProphet.lean",
+      "sha256": "2bdb8a904832c5bc8e380d85951cca6f7cf535fc0c882b2b41384c2197dcadfa",
+      "bytes": 4003
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatroidSecretary.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MatroidSecretary.lean",
+      "sha256": "080223280bd1f873a416233c5eb5378900871d44a04f1e2d14bc51ec42f4c005",
+      "bytes": 8722
+    },
+    {
+      "path": "lean/ComparatorChallenges/Superstring.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Superstring.lean",
+      "sha256": "8930f17794dfd3ca55e5c238019e5ccecf8c189d2df87df83773d00d1f4d1d3a",
+      "bytes": 1549
+    },
+    {
+      "path": "lean/ComparatorChallenges/SwitchChain.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SwitchChain.lean",
+      "sha256": "b138abf5c2f30bf7124064f3b9c1464ff9110ca4647e6a2f1117b131f636e18e",
+      "bytes": 5706
+    },
+    {
+      "path": "lean/docs/111.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/111.md",
+      "sha256": "738413ac4597f53c1b01a5cbc6c649f7a763337f5a843c200ca004d6375ff0b2",
+      "bytes": 1497
+    },
+    {
+      "path": "lean/docs/118.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/118.md",
+      "sha256": "80b5b09ed991ee4ef6826e2ee1f2c94de69dd0ee639375fbcbf74ee00652814f",
+      "bytes": 1227
+    },
+    {
+      "path": "lean/docs/128.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/128.md",
+      "sha256": "958fd23004a8d911fe1ae7a0a0f320e7f549a36f5297132cdba95316ab302d39",
+      "bytes": 1007
+    },
+    {
+      "path": "lean/docs/131.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/131.md",
+      "sha256": "95890a0433c375da400f600f581f1eb352416bc25f720c3483767022ce3fba4c",
+      "bytes": 1176
+    },
+    {
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/README.md",
+      "sha256": "8b71593cc9f51b81f9b198ab913336767e78973f11147e246b7729a6ea7f8d5f",
+      "bytes": 685
+    },
+    {
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "sha256": "9e4288a40029c9e20093c4af781f8b4848a8bd00d1326a5157b2dd340d7387e5",
+      "bytes": 7808
+    },
+    {
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex",
+      "sha256": "11709cc764d4583c4d539ac0fb341c7840f4520a0f53e1cddbb966b6846851de",
+      "bytes": 10693
+    },
+    {
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/README.md",
+      "sha256": "95656f03444a7862f79de2ea8d24dbb8ddb6a1766ae0f84db775a3c697256622",
+      "bytes": 841
+    },
+    {
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "sha256": "bfbc5a9eaa0fae35fa0c87f06b8d0248250550e003390a6cce2c5c4a01e94f64",
+      "bytes": 25052
+    },
+    {
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex",
+      "sha256": "cf6e77bfba658b386de5178b54e093dee3b04ad78c976ed1e5aa558c5297d163",
+      "bytes": 9142
+    },
+    {
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/README.md",
+      "sha256": "50404ecb2485fe2bcaa4f257ad37052e9e94b41a3cb4b6457d3727d3a57b3c53",
+      "bytes": 770
+    },
+    {
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex",
+      "sha256": "07021eaab1c40f6d1bccdc8ca9de6c643c320874cae2759dae126cfd2e9afbe1",
+      "bytes": 10649
+    },
+    {
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex",
+      "sha256": "0252ceb139653ed30be09f0d7d791f2023d4fe036af532201f2153c39853aa69",
+      "bytes": 5228
+    },
+    {
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex",
+      "sha256": "d1941d858edbc5b80df829d1c923fe3d0c2b97d3a03a55fe57367ae0df247892",
+      "bytes": 18825
+    },
+    {
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/README.md",
+      "sha256": "c843b6e9097e56738b273acf3b5685dc91851eb793ff914ad666e42d77e5f19a",
+      "bytes": 723
+    },
+    {
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "sha256": "369ea35e5d8b70815aa79710b08f972bc4d05a5590d20e8fa23fefb5c725c017",
+      "bytes": 7543
+    },
+    {
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "sha256": "a524487c4d84cc840ac0b63871614ed2bc5f85e030c6cd56eeac71aa6c324e9d",
+      "bytes": 8770
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000179",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex",
+      "label": "lem:simulation",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex#L47",
+      "sha256": "0252ceb139653ed30be09f0d7d791f2023d4fe036af532201f2153c39853aa69"
+    },
+    {
+      "instrument_id": "MI-000179",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex",
+      "label": "eq:hidden-guarantee",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/setup.tex#L26",
+      "sha256": "0252ceb139653ed30be09f0d7d791f2023d4fe036af532201f2153c39853aa69"
+    },
+    {
+      "instrument_id": "MI-000180",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex",
+      "label": "lem:pivot-patterns",
+      "line": 94,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex#L94",
+      "sha256": "d1941d858edbc5b80df829d1c923fe3d0c2b97d3a03a55fe57367ae0df247892"
+    },
+    {
+      "instrument_id": "MI-000180",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex",
+      "label": "eq:pivot-pattern-bound",
+      "line": 105,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/transfer.tex#L105",
+      "sha256": "d1941d858edbc5b80df829d1c923fe3d0c2b97d3a03a55fe57367ae0df247892"
+    },
+    {
+      "instrument_id": "MI-000181",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex",
+      "label": "lem:rank-cost",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex#L54",
+      "sha256": "07021eaab1c40f6d1bccdc8ca9de6c643c320874cae2759dae126cfd2e9afbe1"
+    },
+    {
+      "instrument_id": "MI-000181",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex",
+      "label": "eq:common-generator-set",
+      "line": 68,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex#L68",
+      "sha256": "07021eaab1c40f6d1bccdc8ca9de6c643c320874cae2759dae126cfd2e9afbe1"
+    },
+    {
+      "instrument_id": "MI-000181",
+      "path": "preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex",
+      "label": "eq:rank-telescope-step",
+      "line": 83,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/One-Sample-Suffices-for-Matroid-Prophet-Inequalities-against-an-Almighty-Adversary-September-23-2026/build/sections/accounting.tex#L83",
+      "sha256": "07021eaab1c40f6d1bccdc8ca9de6c643c320874cae2759dae126cfd2e9afbe1"
+    },
+    {
+      "instrument_id": "MI-000182",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex",
+      "label": "lem:competing-trees",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex#L22",
+      "sha256": "cf6e77bfba658b386de5178b54e093dee3b04ad78c976ed1e5aa558c5297d163"
+    },
+    {
+      "instrument_id": "MI-000182",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex",
+      "label": "eq:tree-phase-quotas",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex#L61",
+      "sha256": "cf6e77bfba658b386de5178b54e093dee3b04ad78c976ed1e5aa558c5297d163"
+    },
+    {
+      "instrument_id": "MI-000182",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex",
+      "label": "eq:tree-projected-marking",
+      "line": 164,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/trees.tex#L164",
+      "sha256": "cf6e77bfba658b386de5178b54e093dee3b04ad78c976ed1e5aa558c5297d163"
+    },
+    {
+      "instrument_id": "MI-000183",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "label": "lem:encoding",
+      "line": 330,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex#L330",
+      "sha256": "bfbc5a9eaa0fae35fa0c87f06b8d0248250550e003390a6cce2c5c4a01e94f64"
+    },
+    {
+      "instrument_id": "MI-000183",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "label": "eq:item-size",
+      "line": 316,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex#L316",
+      "sha256": "bfbc5a9eaa0fae35fa0c87f06b8d0248250550e003390a6cce2c5c4a01e94f64"
+    },
+    {
+      "instrument_id": "MI-000183",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "label": "eq:primary-loss",
+      "line": 429,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex#L429",
+      "sha256": "bfbc5a9eaa0fae35fa0c87f06b8d0248250550e003390a6cce2c5c4a01e94f64"
+    },
+    {
+      "instrument_id": "MI-000183",
+      "path": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex",
+      "label": "eq:label-prefix-conservation",
+      "line": 454,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/instance.tex#L454",
+      "sha256": "bfbc5a9eaa0fae35fa0c87f06b8d0248250550e003390a6cce2c5c4a01e94f64"
+    },
+    {
+      "instrument_id": "MI-000184",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "label": "eq:block-functional",
+      "line": 20,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex#L20",
+      "sha256": "9e4288a40029c9e20093c4af781f8b4848a8bd00d1326a5157b2dd340d7387e5"
+    },
+    {
+      "instrument_id": "MI-000184",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "label": "eq:period-rule",
+      "line": 40,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex#L40",
+      "sha256": "9e4288a40029c9e20093c4af781f8b4848a8bd00d1326a5157b2dd340d7387e5"
+    },
+    {
+      "instrument_id": "MI-000184",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "label": "lem:counts",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex#L49",
+      "sha256": "9e4288a40029c9e20093c4af781f8b4848a8bd00d1326a5157b2dd340d7387e5"
+    },
+    {
+      "instrument_id": "MI-000184",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex",
+      "label": "eq:base-multiplicities",
+      "line": 87,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/02-counts.tex#L87",
+      "sha256": "9e4288a40029c9e20093c4af781f8b4848a8bd00d1326a5157b2dd340d7387e5"
+    },
+    {
+      "instrument_id": "MI-000185",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex",
+      "label": "lem:recorded",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex#L13",
+      "sha256": "11709cc764d4583c4d539ac0fb341c7840f4520a0f53e1cddbb966b6846851de"
+    },
+    {
+      "instrument_id": "MI-000185",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex",
+      "label": "lem:layers",
+      "line": 29,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex#L29",
+      "sha256": "11709cc764d4583c4d539ac0fb341c7840f4520a0f53e1cddbb966b6846851de"
+    },
+    {
+      "instrument_id": "MI-000185",
+      "path": "preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex",
+      "label": "eq:layer-properties",
+      "line": 31,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Polynomial-Time-2-Approximation-for-Shortest-Common-Superstring-September-24-2026/build/sections/03-layers.tex#L31",
+      "sha256": "11709cc764d4583c4d539ac0fb341c7840f4520a0f53e1cddbb966b6846851de"
+    },
+    {
+      "instrument_id": "MI-000186",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "label": "sl:comparison",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex#L13",
+      "sha256": "a524487c4d84cc840ac0b63871614ed2bc5f85e030c6cd56eeac71aa6c324e9d"
+    },
+    {
+      "instrument_id": "MI-000186",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "label": "sl:operator-comparison",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex#L33",
+      "sha256": "a524487c4d84cc840ac0b63871614ed2bc5f85e030c6cd56eeac71aa6c324e9d"
+    },
+    {
+      "instrument_id": "MI-000186",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "label": "sl:mu-one",
+      "line": 118,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex#L118",
+      "sha256": "a524487c4d84cc840ac0b63871614ed2bc5f85e030c6cd56eeac71aa6c324e9d"
+    },
+    {
+      "instrument_id": "MI-000186",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex",
+      "label": "sl:mu-two",
+      "line": 133,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/slice.tex#L133",
+      "sha256": "a524487c4d84cc840ac0b63871614ed2bc5f85e030c6cd56eeac71aa6c324e9d"
+    },
+    {
+      "instrument_id": "MI-000187",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "label": "exact:parameters",
+      "line": 40,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex#L40",
+      "sha256": "369ea35e5d8b70815aa79710b08f972bc4d05a5590d20e8fa23fefb5c725c017"
+    },
+    {
+      "instrument_id": "MI-000187",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "label": "exact:domination",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex#L61",
+      "sha256": "369ea35e5d8b70815aa79710b08f972bc4d05a5590d20e8fa23fefb5c725c017"
+    },
+    {
+      "instrument_id": "MI-000187",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "label": "exact:weights",
+      "line": 128,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex#L128",
+      "sha256": "369ea35e5d8b70815aa79710b08f972bc4d05a5590d20e8fa23fefb5c725c017"
+    },
+    {
+      "instrument_id": "MI-000187",
+      "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex",
+      "label": "exact:mixture",
+      "line": 144,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026/build/sections/exact-sampling.tex#L144",
+      "sha256": "369ea35e5d8b70815aa79710b08f972bc4d05a5590d20e8fa23fefb5c725c017"
+    }
+  ]
+}
