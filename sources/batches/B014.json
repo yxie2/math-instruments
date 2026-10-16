@@ -1,0 +1,330 @@
+{
+  "batch_id": "B014",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T08:05:00.706362+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Rokhlin.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Rokhlin.lean",
+      "sha256": "f1cb24d9b04f86273fd9895eef73da12dcda912a6c9e1fb90956ed6af2a8383d",
+      "bytes": 1190
+    },
+    {
+      "path": "lean/ComparatorChallenges/SelfSimilar.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SelfSimilar.lean",
+      "sha256": "95798462a1dfc33be8d3e67efc137b6193d9800776beb2fe6b3a27912fecb18d",
+      "bytes": 2253
+    },
+    {
+      "path": "lean/ComparatorChallenges/SelfSimilarCorollaries.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SelfSimilarCorollaries.lean",
+      "sha256": "400d5597f3beb90ea9e4e11aacaf9094737bb7c579245e8ceb795f268c8e481b",
+      "bytes": 2674
+    },
+    {
+      "path": "lean/ComparatorChallenges/ThreeTorus.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ThreeTorus.lean",
+      "sha256": "f73e804548a3348440244dd4f3e382acefeb47c48146f374d6dea5cdfdc83f12",
+      "bytes": 2995
+    },
+    {
+      "path": "lean/docs/144.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/144.md",
+      "sha256": "c4da13bb8027825775991976e888368a723668cd1503300a19e2153e8d664200",
+      "bytes": 1078
+    },
+    {
+      "path": "lean/docs/145.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/145.md",
+      "sha256": "ea72c0ad0646b0b425402ab4a0ccaa7f4aab5df3c1e0c71101f3ae5411fe04d9",
+      "bytes": 887
+    },
+    {
+      "path": "lean/docs/148.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/148.md",
+      "sha256": "340f3919c849c2485886b3df087cbb840cc770408f84c3fbbad7a4a0de898e60",
+      "bytes": 1453
+    },
+    {
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/README.md",
+      "sha256": "9d4dce6855fae27636224588a2552661d232ce12ca6dfea607d67c70fc86e091",
+      "bytes": 711
+    },
+    {
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex",
+      "sha256": "d8dff2aa92499b35e044ac41053733795d615877f8e8a5502840e3fce11d1bf9",
+      "bytes": 23305
+    },
+    {
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+      "sha256": "df27a7ce1bc7c09416ae53dcc7956440963282f7ab1dc8c00450546e3da043f5",
+      "bytes": 20619
+    },
+    {
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+      "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78",
+      "bytes": 20061
+    },
+    {
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/README.md",
+      "sha256": "d424bb87e55aea065c732431326db05fd9fdd456228fdc66f79d97649525935b",
+      "bytes": 1243
+    },
+    {
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e",
+      "bytes": 27828
+    },
+    {
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/README.md",
+      "sha256": "e302007f4899866a922f5d5acab6658b84f514a07e9ac74a97bbafd9294ec102",
+      "bytes": 663
+    },
+    {
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f",
+      "bytes": 30872
+    },
+    {
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24",
+      "bytes": 14781
+    },
+    {
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/README.md",
+      "sha256": "d4c00a7ac0c026874a3bd0f8d21b161f1df473bf43214bb69db05f662a702553",
+      "bytes": 718
+    },
+    {
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+      "sha256": "2e0107a5514bf09440d3809abc032c0c780add032cc760ef65d29971e5a85389",
+      "bytes": 12237
+    },
+    {
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac",
+      "bytes": 9765
+    },
+    {
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex",
+      "sha256": "cc737fb8e62e2c177d957eab1d130e04d814cf572d61d1eae42d83ef1e3b42d9",
+      "bytes": 11821
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000213",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+      "label": "lem:phase-tests",
+      "line": 65,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L65",
+      "sha256": "df27a7ce1bc7c09416ae53dcc7956440963282f7ab1dc8c00450546e3da043f5"
+    },
+    {
+      "instrument_id": "MI-000213",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+      "label": "eq:phase-tests",
+      "line": 78,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L78",
+      "sha256": "df27a7ce1bc7c09416ae53dcc7956440963282f7ab1dc8c00450546e3da043f5"
+    },
+    {
+      "instrument_id": "MI-000214",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+      "label": "lem:flat-vector",
+      "line": 23,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L23",
+      "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+    },
+    {
+      "instrument_id": "MI-000214",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+      "label": "eq:whitening",
+      "line": 293,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L293",
+      "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+    },
+    {
+      "instrument_id": "MI-000214",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+      "label": "eq:whitening-distance",
+      "line": 303,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L303",
+      "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+    },
+    {
+      "instrument_id": "MI-000214",
+      "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex",
+      "label": "eq:density-norm-bound",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex#L45",
+      "sha256": "d8dff2aa92499b35e044ac41053733795d615877f8e8a5502840e3fce11d1bf9"
+    },
+    {
+      "instrument_id": "MI-000215",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "label": "lem:entropy-cancellation",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L64",
+      "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+    },
+    {
+      "instrument_id": "MI-000215",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "label": "eq:dissociated-exponential",
+      "line": 92,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L92",
+      "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+    },
+    {
+      "instrument_id": "MI-000215",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "label": "eq:likely-word-bound",
+      "line": 127,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L127",
+      "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+    },
+    {
+      "instrument_id": "MI-000216",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "label": "eq:restricted-rectangle",
+      "line": 276,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L276",
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+    },
+    {
+      "instrument_id": "MI-000216",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "label": "lem:fixed-squares",
+      "line": 282,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L282",
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+    },
+    {
+      "instrument_id": "MI-000216",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "label": "eq:squares-first",
+      "line": 293,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L293",
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+    },
+    {
+      "instrument_id": "MI-000216",
+      "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "label": "eq:squares-second",
+      "line": 295,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L295",
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+    },
+    {
+      "instrument_id": "MI-000217",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "label": "def:pair-capacity",
+      "line": 14,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L14",
+      "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+    },
+    {
+      "instrument_id": "MI-000217",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "label": "lem:pair-bound",
+      "line": 37,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L37",
+      "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+    },
+    {
+      "instrument_id": "MI-000217",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "label": "eq:pair-flag",
+      "line": 152,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L152",
+      "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+    },
+    {
+      "instrument_id": "MI-000217",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+      "label": "eq:pair-one-level",
+      "line": 206,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L206",
+      "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+    },
+    {
+      "instrument_id": "MI-000218",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+      "label": "eq:entropy-smoothing",
+      "line": 34,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L34",
+      "sha256": "2e0107a5514bf09440d3809abc032c0c780add032cc760ef65d29971e5a85389"
+    },
+    {
+      "instrument_id": "MI-000218",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+      "label": "lem:two-point",
+      "line": 250,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L250",
+      "sha256": "2e0107a5514bf09440d3809abc032c0c780add032cc760ef65d29971e5a85389"
+    },
+    {
+      "instrument_id": "MI-000218",
+      "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex",
+      "label": "lem:conditional-gain",
+      "line": 57,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex#L57",
+      "sha256": "cc737fb8e62e2c177d957eab1d130e04d814cf572d61d1eae42d83ef1e3b42d9"
+    },
+    {
+      "instrument_id": "MI-000219",
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "label": "cls:first-bit-overlap",
+      "line": 224,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L224",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+    },
+    {
+      "instrument_id": "MI-000219",
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "label": "cls:prefix-sum",
+      "line": 87,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L87",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+    },
+    {
+      "instrument_id": "MI-000220",
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "label": "cls:compact-concentration",
+      "line": 128,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L128",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+    },
+    {
+      "instrument_id": "MI-000220",
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "label": "cls:cross-pairs",
+      "line": 277,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L277",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+    },
+    {
+      "instrument_id": "MI-000220",
+      "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+      "label": "cls:common-bin-mass",
+      "line": 327,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L327",
+      "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+    }
+  ]
+}

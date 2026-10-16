@@ -8186,6 +8186,413 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000212.md",
       "body": "# Four independent digit constraints bound a singular divisor after fixing labels\n\n[Family 191](../families/openai-math-191.md) · [Source manuscript](../papers/P-000126.md) · [Batch B013](../../batches/B013/README.md)\n\n## Mathematical content\n\nLet B be prime, h=B^k, and 2<=r divide L<B. For any fixed three labels, independently choose every digit d_iju uniformly from the L/r numbers in {1,...,L} with a prescribed residue modulo r. Residues may depend arbitrarily on the label, row and digit position; repeated labels still use fresh independent draws. Put C_ij=sum_(u<k) d_iju B^u modulo h. Every entry is a unit because its lowest digit is positive and below B.\n\nWrite the second Smith divisor as D=B^b. Conditional on the labels,\n\n$$\\Pr(b\\ge j)\\le(r/L)^{4j}\\quad(1\\le j\\le k).$$\n\nFurther condition on the first column and the first entries of columns two and three. Vanishing of all two-by-two minors modulo B^j requires C_iv=C_i1 C_11^(-1) C_1v modulo B^j for i,v in {2,3}. Each fixed target determines j base-B digits of one of four independent entries. Its probability is zero or (r/L)^j. Averaging preserves the bound uniformly over labels.\n\nWith theta=B(r/L)^4<1, the tail-sum identity gives E[D|labels]<=1+sum_(j=1)^k theta^j<=1/(1-theta). In particular, for the source parameters L=r^10, B<=200k^2L^3 and sufficiently large r, this conditional expectation is at most two. If labels are independent uniform on a set of size r^d and E is their collision event, E[D 1_E]<=2Pr(E)<=6r^(-d). Conditioning avoids incorrectly multiplying two dependent unconditional quantities.\n\n## Role in the source argument\n\nRetains a label-collision saving while controlling the singular divisor that appears in orbit and lattice estimates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [orb:conditional](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L151)\n- [orb:tail](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L171)\n- [orb:collision-moment](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/sections/04-orbits.tex#L225)\n\n## Antecedents and comparison\n\nThis is an elementary independent-coordinate small-ball argument and a tail-sum moment calculation. Its source-specific use is uniformity after fixing arbitrary labels, combined with the norm obstruction. No separate historical novelty claim is made for the conditioning principle.\n\n## Checks and limitations\n\nRead the conditioning and tail-sum proof. Exact small digit distributions, including repeated labels, check vanishing-minor probabilities, divisor moments and the conditional bound; arbitrary label signatures are included.\n\nIndependence of the four remaining entries after conditioning is essential. Label equality does not permit reusing digits. The bounded moment needs theta<1, even though the tail estimate itself does not.\n\n## Possible applications\n\nCombining rare algebraic-label events with singularity weights without assuming independence between those events and the weights.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000213",
+      "record_type": "instrument",
+      "title": "Separated integer frequencies reproduce a finite collection of phase averages",
+      "forms": [
+        "approximation",
+        "parameter-selection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-144"
+      ],
+      "source_paper_ids": [
+        "P-000127"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+          "label": "lem:phase-tests",
+          "line": 65,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L65",
+          "sha256": "df27a7ce1bc7c09416ae53dcc7956440963282f7ab1dc8c00450546e3da043f5"
+        },
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex",
+          "label": "eq:phase-tests",
+          "line": 78,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L78",
+          "sha256": "df27a7ce1bc7c09416ae53dcc7956440963282f7ab1dc8c00450546e3da043f5"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "established-fourier-principle-specialized-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000213.md",
+      "body": "# Separated integer frequencies reproduce a finite collection of phase averages\n\n[Family 144](../families/openai-math-144.md) · [Source manuscript](../papers/P-000127.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nLet P_j(z,w)=sum_nu c_(j,nu)(z) w^nu be finitely many Laurent polynomials in n unit-modulus variables, with finitely many coefficients in L1 of the circle. For any eta>0 there are positive integers L1,...,Ln such that every integral of P_j(z,e(L1 z),...,e(Ln z)) differs by less than eta from its integral over independent Haar phases and z. Here e(x)=exp(2 pi i x).\n\nLet D bound all absolute exponents. By Riemann-Lebesgue decay choose R so that the sum of the relevant nonconstant coefficient Fourier tails beyond R is below eta. Choose successively\n\n$$L_j>R+D\\sum_{i<j}L_i.$$\n\nIf nu is nonzero and j is its last nonzero coordinate, |sum_i nu_i L_i|>R. Each nonconstant monomial therefore contributes only a small Fourier coefficient; the constant term agrees exactly. Any additional finite lower bounds depending on earlier choices may be imposed at the same time.\n\nThis is approximation for finitely many fixed tests, not independence of the substituted phases as random variables. For coefficients with finite Fourier support in [-R,R], the same choice gives exact agreement. A test chosen afterward, w1 e(-L1 z), has diagonal integral one and product integral zero.\n\n## Role in the source argument\n\nReplaces auxiliary independent phases by one circle coordinate while retaining a finite list of spectral and moment tests.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:phase-tests](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L65)\n- [eq:phase-tests](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/04-blocks.tex#L78)\n\n## Antecedents and comparison\n\nThis is a direct application of the classical Riemann-Lebesgue lemma and a last-nonzero-coordinate argument. No separate novelty claim is made for the lemma.\n\n## Checks and limitations\n\nRead the frequency selection and error summation. Exact integer-frequency tests check vanishing of every nonconstant integral and the adaptive-test counterexample.\n\nThe frequencies depend on the tests and tolerance. Arbitrary measurable tests or tests chosen after the frequencies are fixed are not controlled.\n\n## Possible applications\n\nDeterministic realization of finitely many phase moments and diagonal approximation of product integrals.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000214",
+      "record_type": "instrument",
+      "title": "Spectral whitening fills zero-density sets without an inverse lower bound",
+      "forms": [
+        "normalization",
+        "functional-calculus"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-144"
+      ],
+      "source_paper_ids": [
+        "P-000127"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+          "label": "lem:flat-vector",
+          "line": 23,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L23",
+          "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+        },
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+          "label": "eq:whitening",
+          "line": 293,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L293",
+          "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+        },
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex",
+          "label": "eq:whitening-distance",
+          "line": 303,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L303",
+          "sha256": "ffc6467ea6a210a202af0c1843713bdd24d20db62d9ad5084fc4444eccb86b78"
+        },
+        {
+          "path": "preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex",
+          "label": "eq:density-norm-bound",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex#L45",
+          "sha256": "d8dff2aa92499b35e044ac41053733795d615877f8e8a5502840e3fce11d1bf9"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "established-spectral-calculus-specialized-zero-set-repair",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000214.md",
+      "body": "# Spectral whitening fills zero-density sets without an inverse lower bound\n\n[Family 144](../families/openai-math-144.md) · [Source manuscript](../papers/P-000127.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nLet U be unitary, let G have spectral measure p(z) dz on the circle, and suppose v has spectral measure dz for the same U. Put E={p=0}. The vector\n\n$$f'=\\bigl(\\mathbf1_{E^c}/\\sqrt p\\bigr)(U)G+\\mathbf1_E(U)v$$\n\nhas spectral density one and satisfies\n\n$$\\|f'-G\\|^2=\\int(\\sqrt p-1)^2\\,dz=\\|G\\|^2+1-2\\int\\sqrt p\\,dz.$$\n\nThe first multiplier can be unbounded, but it is defined on G because its squared integral against p dz is |E^c|. The two terms have disjoint spectral supports. On E, G vanishes and the second term supplies exactly Lebesgue density. No positive lower bound for p is needed. In a real Koopman setting, real vectors and symmetric densities give real corrected vectors through real even multipliers.\n\nThe source constructs an initial real flat vector for the twist S(theta,u,a)=(theta+phi(u),u,a). On an interval [u0,u1] where phi'>0 choose an integer m>0 with m(phi(u1)-phi(u0))=1, and set A(u)=1_[u0,u1] sqrt(m phi'(u)/2). Then A(u)(e(m theta)+e(-m theta)) is real and mean zero. The two orthogonal theta modes each push half of Lebesgue measure around the spectral circle.\n\nFor vectors F,G with spectral densities for the same U, the total variation estimate is ||p_F-p_G||_1 <= (||F||+||G||)||F-G||. Flat density gives an orthonormal integer orbit, but does not by itself give its completeness.\n\n## Role in the source argument\n\nCorrects an approximate spectral packet while retaining an exact distance estimate and handling vanishing density.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:flat-vector](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L23)\n- [eq:whitening](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L293)\n- [eq:whitening-distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/05-completion.tex#L303)\n- [eq:density-norm-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/build/sections/02-passages.tex#L45)\n\n## Antecedents and comparison\n\nThe mechanism is classical measurable functional calculus; [Taylor, Spectral Theory, Section 1](https://mtaylor.web.unc.edu/wp-content/uploads/sites/16915/2018/04/chap8.pdf) supplies a multiplication-operator formulation. The explicit zero-set patch and its use in this construction are the extracted interface.\n\n## Checks and limitations\n\nRead the flat-vector change of variables and whitening identity. Finite spectral-fiber models include zero densities, very small positive densities and multiplicity two; they check the identity and demonstrate that flatness need not imply cyclicity.\n\nThe auxiliary flat vector must belong to the same unitary representation. The correction need not be smooth, and an independent completeness argument remains necessary.\n\n## Possible applications\n\nNormalizing spectral vectors without dividing uniformly by a density, and separating spectral flatness from multiplicity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000215",
+      "record_type": "instrument",
+      "title": "Sublinear word entropy forces cancellation against dissociated characters under arbitrary coupling",
+      "forms": [
+        "entropy-bound",
+        "cancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-145"
+      ],
+      "source_paper_ids": [
+        "P-000128"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+          "label": "lem:entropy-cancellation",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L64",
+          "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+        },
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+          "label": "eq:dissociated-exponential",
+          "line": 92,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L92",
+          "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+        },
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+          "label": "eq:likely-word-bound",
+          "line": 127,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L127",
+          "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "candidate-entropy-and-dissociation-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000215.md",
+      "body": "# Sublinear word entropy forces cancellation against dissociated characters under arbitrary coupling\n\n[Family 145](../families/openai-math-145.md) · [Source manuscript](../papers/P-000128.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nOn a probability space let chi_l, indexed by a countable abelian group L, have modulus one, chi_0=1, products equal to constant phases times chi_(l+l'), and expectation zero for nonzero l. Let (l_m) be dissociated: every nonempty finite sum of distinct l_m with signs plus or minus one is nonzero. Suppose F_m take values in one fixed finite subset of the closed unit disk and the word entropy H_n=H(F_0,...,F_(n-1)), in nats, is o(n). Then\n\n$$\\frac1n\\sum_{m<n}|\\mathbb E F_m\\overline{\\chi_{l_m}}|\\longrightarrow0.$$\n\nThere is no independence assumption on F and chi. For deterministic |w_m|<=1 and 0<=theta<=1, expansion of the product bounds gives E exp(theta Re sum_m w_m chi_(l_m)) <= exp(2 theta^2 n): every nonconstant signed character product integrates to zero. Consequently the upper tail at epsilon n is at most exp(-epsilon^2 n/8).\n\nFor a>0, words having probability at least exp(-an) number at most exp(an). The total probability of all other words is at most H_n/(an). Align the phases of the expected correlations, apply the deterministic tail estimate separately to the likely words, and use a union bound. This bounds the average absolute correlation by\n\n$$\\varepsilon+H_n/(an)+\\exp(an-\\varepsilon^2n/8).$$\n\nTake a=sqrt(H_n/n)+n^(-1/2) and then let epsilon decrease after n tends to infinity. The character law is never conditioned on the realized word. Such conditioning would destroy the exponential estimate.\n\n## Role in the source argument\n\nCancels low-complexity names against structured oscillations even when both are defined on the same probability space.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:entropy-cancellation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L64)\n- [eq:dissociated-exponential](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L92)\n- [eq:likely-word-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex#L127)\n\n## Antecedents and comparison\n\nThe exponential step is an established dissociation principle; see [Green, Proposition 17](https://www.math.cmu.edu/~ploh/2006-additive-combinatorics/sources/Ben%20Green/Structural%20theory%20of%20set%20addition.pdf). The extracted interface combines it with entropy compression under arbitrary coupling. Targeted comparison does not establish priority for that combination.\n\n## Checks and limitations\n\nRead the product expansion and likely-word union bound. Finite Walsh-cube examples use words chosen from the same signs, checking the exponential estimate and entropy bound; controls remove dissociation or sublinear entropy.\n\nOrthogonality alone is weaker than dissociation. Linear word entropy can permit correlation one, as can repeated copies of one character with only one bit of word entropy.\n\n## Possible applications\n\nControlling averages of dependent observables when their sequence has few likely names.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000216",
+      "record_type": "instrument",
+      "title": "Triple independence fixes positive squares and preserves an operator rectangle under polar normalization",
+      "forms": [
+        "operator-rigidity",
+        "normalization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-145"
+      ],
+      "source_paper_ids": [
+        "P-000128"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+          "label": "eq:restricted-rectangle",
+          "line": 276,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L276",
+          "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+        },
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+          "label": "lem:fixed-squares",
+          "line": 282,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L282",
+          "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+        },
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+          "label": "eq:squares-first",
+          "line": 293,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L293",
+          "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+        },
+        {
+          "path": "preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+          "label": "eq:squares-second",
+          "line": 295,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L295",
+          "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "candidate-fixed-square-and-polar-rectangle-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000216.md",
+      "body": "# Triple independence fixes positive squares and preserves an operator rectangle under polar normalization\n\n[Family 145](../families/openai-math-145.md) · [Source manuscript](../papers/P-000128.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nLet F(x):H2->H1, G(y):H4->H3, K(c):H3->H1 and N(d):H4->H2 be strongly measurable contraction families between separable Hilbert spaces. Each triple of (x,y,c,d) has product law. Assume almost surely\n\n$$FN=KG,\\qquad F^*K=NG^*.$$\n\nAssume the essential spans of the ranges of each family and its adjoint fill their specified target and source spaces. Then all eight positive squares F*F, FF*, and the corresponding squares of G,K,N are independent of their parameters almost surely and are injective. Their polar parts are measurable unitaries and obey U_F U_N=U_K U_G.\n\nThe rectangle equations imply KK*F=FNN*, K*KG=GN*N, F*FN=NG*G and FF*K=KGG*. In each equation the three parameters are independent. Comparing two independent choices c,c' with the same x,d gives (K(c)K(c)*-K(c')K(c')*)F(x)=0. The essential range span of F makes the difference zero. The other equations and adjoints handle the remaining squares. Countable dense vector tests give a common conull operator equality. A vector in the kernel of a fixed source square is orthogonal to every essential adjoint range, hence is zero; target squares work likewise.\n\nPut A=|F| and B=|G|. From A^2N=NB^2, polynomial approximation gives AN=NB. The first rectangle becomes (U_F N-K U_G)B=0. The injective positive B has dense range, so cancellation is valid without an inverse bound. Uniqueness of the two polar decompositions of this common operator gives the unitary rectangle. Strong measurability follows by F(F*F+epsilon I)^(-1/2) as epsilon decreases to zero.\n\n## Role in the source argument\n\nRemoves varying positive factors from operator-valued rectangle data while retaining the algebraic identity.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:restricted-rectangle](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L276)\n- [lem:fixed-squares](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L282)\n- [eq:squares-first](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L293)\n- [eq:squares-second](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex#L295)\n\n## Antecedents and comparison\n\nFubini, positive functional calculus and polar uniqueness are classical. The source-specific input is the pair of rectangle equations with triple independence and essential-span reduction; this extraction makes those assumptions explicit rather than asserting a new general spectral theorem.\n\n## Checks and limitations\n\nRead the four square identities and dense-range cancellation. Finite matrix models with three-wise independent parameters, noncommuting coordinate gauges and ill-conditioned positive parts check both rectangle identities and the polar conclusion. Controls show why the independence and span assumptions matter.\n\nPairwise independence alone is not supplied by the proof. Without full spans the polar parts may be partial isometries. In infinite dimensions injectivity does not supply a bounded inverse.\n\n## Possible applications\n\nPassing from positive operator data to unitary cocycles under probabilistic rectangle constraints.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000217",
+      "record_type": "instrument",
+      "title": "A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales",
+      "forms": [
+        "entropy-bound",
+        "fractional-packing"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-148"
+      ],
+      "source_paper_ids": [
+        "P-000129"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+          "label": "def:pair-capacity",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L14",
+          "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+        },
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+          "label": "lem:pair-bound",
+          "line": 37,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L37",
+          "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+        },
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+          "label": "eq:pair-flag",
+          "line": 152,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L152",
+          "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+        },
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex",
+          "label": "eq:pair-one-level",
+          "line": 206,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L206",
+          "sha256": "e41d0918796a17c115e742d57abf22a39f462153f1fd250147fe0c9341b945ac"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "candidate-sumset-controlled-fine-pair-capacity-bound",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000217.md",
+      "body": "# A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales\n\n[Family 148](../families/openai-math-148.md) · [Source manuscript](../papers/P-000129.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nFor a finite law nu on F subset R, define c_ell as the largest sum of nonnegative weights w_e over unordered pairs with 2^(-ell)<=|x-y|<2^(1-ell), subject to (1/2)sum_(e contains x) w_e<=nu{x}. Thus 0<=c_ell<=1; for a two-point law the sole nonzero capacity is twice its smaller mass. With H^0_rho(nu)=H(floor(X/rho)), the source proves for every integer k>=1\n\n$$k(H(\\nu)-H^0_\\rho(\\nu))\\le\\log_2|kF|+60000k^4\\sum_{2^{-\\ell}\\le2\\rho}c_\\ell.$$\n\nThe constant does not depend on the least positive spacing in F. Reveal the sum Y of k independent samples, at entropy cost at most log2|kF|, and refine their known rho-grid cells by random nested cuts with reference scales rho_h=rho 4^(-h). Parents have length between rho_h/2 and 2rho_h, at most eight children, and new cut densities at most 20/rho_h.\n\nThe key one-level estimate is linear rather than a binary-entropy loss. Conditional on the parent cells let m_i be the means and a>0 the distance from all m_i to the new cuts. Put p_i=Pr(|X_i-m_i|>=a/(4k)) and t=sum p_i. Two or more exceptional coordinates have probability q<=min(t,t^2). The flag B={|Y-sum m_i|>=a/2} has probability at most t and is already known from Y. Outside B and the multiple-exception event all child labels equal their mean labels. Therefore\n\n$$H(\\text{child labels}\\mid Y,\\text{parent cells})\\le h_2(q)+3k(q+\\Pr B)\\le9k\\sum_i p_i.$$\n\nAveraging the cuts bounds each p_i by a constant times E|X_i-m_i|/rho_h. Independent pairs within the parent cells form a symmetric coupling with marginal nu; their band masses are feasible pair weights. Summing the geometric scale factors yields the displayed constant. The proof charges no separate entropy for B because the sum was revealed first.\n\n## Role in the source argument\n\nFinds useful small-distance pair mass from exact entropy that remains invisible at a coarse scale, with a sumset controlling the cost of conditioning.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [def:pair-capacity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L14)\n- [lem:pair-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L37)\n- [eq:pair-flag](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L152)\n- [eq:pair-one-level](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/pairs.tex#L206)\n\n## Antecedents and comparison\n\n[Varju, Proposition 21](https://arxiv.org/pdf/1602.00261v4) gives an earlier scale-local fair-pair decomposition. The selected estimate instead totals capacities below a scale using a sumset term and randomized refinements. No exhaustive novelty claim is made.\n\n## Checks and limitations\n\nRead the complete nested-partition and charging proof. Linear programs check capacities and finite-law inequalities; exact finite product distributions check the observed-sum child-label bound, including rare exceptional events.\n\nThe samples are independent conditional on their separate parent cells. Dropping the conditioning on Y can restore a p log(1/p) loss. Numerical capacity tests do not certify the general nested-partition argument.\n\n## Possible applications\n\nExtracting useful two-point submeasures from very finely clustered finite laws without a separation assumption.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000218",
+      "record_type": "instrument",
+      "title": "Two-point entropy gains survive future averaging when the pair is fixed by the past",
+      "forms": [
+        "entropy-increment",
+        "conditioning"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-148"
+      ],
+      "source_paper_ids": [
+        "P-000129"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+          "label": "eq:entropy-smoothing",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L34",
+          "sha256": "2e0107a5514bf09440d3809abc032c0c780add032cc760ef65d29971e5a85389"
+        },
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex",
+          "label": "lem:two-point",
+          "line": 250,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L250",
+          "sha256": "2e0107a5514bf09440d3809abc032c0c780add032cc760ef65d29971e5a85389"
+        },
+        {
+          "path": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex",
+          "label": "lem:conditional-gain",
+          "line": 57,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex#L57",
+          "sha256": "cc737fb8e62e2c177d957eab1d130e04d814cf572d61d1eae42d83ef1e3b42d9"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "established-two-point-gain-with-candidate-conditioning-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000218.md",
+      "body": "# Two-point entropy gains survive future averaging when the pair is fixed by the past\n\n[Family 148](../families/openai-math-148.md) · [Source manuscript](../papers/P-000129.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nFor bounded X define Hbar_s(X)=integral_0^1 H(floor(X/s+u))du, in bits. Equivalently Hbar_s(X)=h(X+V_s)-log2 s for independent uniform V_s on [0,s]. Write G_(s,t)=Hbar_s-Hbar_t and Delta_v=1-G_(v,2v). If J is an independent fair bit and 0<s<v<t, then\n\n$$G_{s,t}(X+vJ)-G_{s,t}(X)\\ge\\Delta_v(X)-s/v-v/t.$$\n\nAt scale v the entropy increase is exactly Delta_v, since V_v+vJ is uniform on [0,2v]. Comparing independently shifted fine and v-grids loses at most s/v: a fine cell crosses a random coarse boundary with that probability and then has at most two labels. At scale t, condition additionally on X; the two possible shifts lie in different cells with probability v/t, so the increase is at most v/t.\n\nHere is the conditional interface. Fix the past, hence a pair displacement v and a contraction R. Let tau be the random future law with E[tau|past]=D_R mu. If Delta_(v/|R|)(mu)>=delta, convexity of Delta gives E[Delta_v(tau)|past]>=delta. Individual future laws need not satisfy that lower bound.\n\nFor an integer M>4 use s=r/M,t=Mr and v in [r,4r). The endpoint loss is at most 5/M. If a past-measurable prefix law has a fair-pair decomposition of total weight c, with all its pair distances in this interval and each satisfying the averaged deficit bound, concavity and convolution monotonicity of G_(s,t) give expected entropy gain at least c(delta-5/M). It is at least c delta/2 when 5/M<=delta/2. These last properties use the integer ratio t/s=M^2. Conditioning on the future before fixing the deficit would not justify the step.\n\n## Role in the source argument\n\nConverts finite pair mass into an expected window gain while retaining the tail averaging that supplies nonsaturation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:entropy-smoothing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L34)\n- [lem:two-point](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/entropy.tex#L250)\n- [lem:conditional-gain](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex#L57)\n\n## Antecedents and comparison\n\n[Varju, Lemma 22 and Proposition 20](https://arxiv.org/pdf/1602.00261v4) establish the matching-scale identity and an earlier surrounding-window gain. The source gives the displayed endpoint losses and uses conditional Jensen averaging. These are compared as interfaces, not claimed to originate all two-point entropy methods.\n\n## Checks and limitations\n\nRead the smoothing and information proofs and conditional Jensen step. Piecewise exact integration over rational shift breakpoints checks the identities and gains; logarithms are evaluated numerically. Mixtures of future laws check the averaging direction.\n\nThe future average and selected displacement must be compatible with the same past. An unconditional average cannot be substituted after an additional selection depending on the future. The needed deficit of the averaged tail is an input here.\n\n## Possible applications\n\nEntropy growth in random environments when useful structure is chosen before the remaining randomness is revealed.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000219",
+      "record_type": "instrument",
+      "title": "A decoding-capacity contradiction forces measure overlap between the two first-bit branches",
+      "forms": [
+        "entropy-obstruction",
+        "overlap"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-153"
+      ],
+      "source_paper_ids": [
+        "P-000130"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+          "label": "cls:first-bit-overlap",
+          "line": 224,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L224",
+          "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+        },
+        {
+          "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+          "label": "cls:prefix-sum",
+          "line": 87,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L87",
+          "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "candidate-compact-decoding-interface-to-classical-entropy-methods",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000219.md",
+      "body": "# A decoding-capacity contradiction forces measure overlap between the two first-bit branches\n\n[Family 153](../families/openai-math-153.md) · [Source manuscript](../papers/P-000130.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nLet X=sum_(i>=0) u_i lambda^i for independent fair bits and 1/2<lambda<1. Define subprobabilities mu_i(A)=Pr(X in A,u_0=i). There is a nonzero finite measure xi dominated by both mu_0 and mu_1. This is overlap of measures, stronger than overlap of their supports, and requires no singularity assumption.\n\nOtherwise mu_0 and mu_1 would be mutually singular. For arbitrarily small eta>0 choose disjoint compact sets K0,K1 with Pr(X in K_(u0))>1-eta. Their separation is delta>0. Choose h with lambda^h<delta/3. The grid variable Q_n=floor(X/lambda^n) has at most L lambda^(-n)+2 values, where L=(1-lambda)^(-1).\n\nGiven Q_n and the first i bits, approximate the tail X^(i)=(X-s_(u|i))/lambda^i to error at most lambda^(n-i). For i<=n-h, nearest-compact-set decoding estimates u_i with error at most eta. The binary Fano inequality and entropy chain rule, in nats, yield\n\n$$n\\log2\\le H(Q_n)+H(u_0,\\ldots,u_{n-1}\\mid Q_n)\\le n\\log(1/\\lambda)+n h_2(\\eta)+O_{\\lambda,\\eta}(1).$$\n\nChoose eta with h2(eta)<log(2lambda), then let n tend to infinity, a contradiction. The finitely many final bits contribute only to the constant. Mutual singularity is the only negated premise: the conclusion is existence of a common positive measure, not a uniform explicit lower bound for its mass.\n\n## Role in the source argument\n\nObtains a positive common branch mass before applying the source's singular-concentration argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cls:first-bit-overlap](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L224)\n- [cls:prefix-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L87)\n\n## Antecedents and comparison\n\n[Garsia (1963)](https://msp.org/pjm/1963/13-4/pjm-v13-n4-p09-p.pdf) is an early primary source for entropy and singularity of infinite convolutions. The compact decoding proof here is recorded from the release manuscript; no priority claim for this exact overlap lemma is established.\n\n## Checks and limitations\n\nRead the compact approximation, decoder error and entropy chain. Finite prefix models check the entropy identities and grid cardinality bound; a rational-parameter control shows that atomic truncations can have zero exact first-bit overlap even when the limiting lemma applies.\n\nFinite-grid overlap is not a proof of common mass for the limiting measures. At lambda=1/2 the two first-bit measures are mutually singular up to their boundary, so the strict inequality is essential.\n\n## Possible applications\n\nRuling out exact symbolic decoding when the bit production rate exceeds the geometric observation capacity.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000220",
+      "record_type": "instrument",
+      "title": "Singular concentration and common branch mass produce many nearby opposite prefixes",
+      "forms": [
+        "mass-extraction",
+        "combinatorial-amplification"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-153"
+      ],
+      "source_paper_ids": [
+        "P-000130"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+          "label": "cls:compact-concentration",
+          "line": 128,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L128",
+          "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+        },
+        {
+          "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+          "label": "cls:cross-pairs",
+          "line": 277,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L277",
+          "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+        },
+        {
+          "path": "preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex",
+          "label": "cls:common-bin-mass",
+          "line": 327,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L327",
+          "sha256": "adf8f2def37053838a980a052ffa9d37bfffc83a4953007cb8ec54ceae68712e"
+        }
+      ],
+      "batch_id": "B014",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "candidate-common-mass-to-cross-prefix-neighbor-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000220.md",
+      "body": "# Singular concentration and common branch mass produce many nearby opposite prefixes\n\n[Family 153](../families/openai-math-153.md) · [Source manuscript](../papers/P-000130.md) · [Batch B014](../../batches/B014/README.md)\n\n## Mathematical content\n\nFor the fair-bit Bernoulli law with 1/2<lambda<1, assume singularity and let xi<=mu_0,mu_1 have mass b>0. There exist a in (0,L/2) and c>0 such that for every Q>1 and all sufficiently large n, at least c 2^n words u of length n starting with zero have at least Q(2lambda)^n distinct words v starting with one satisfying\n\n$$|s_u(\\lambda)-s_v(\\lambda)|\\le(L-a)\\lambda^n.$$\n\nThe constants a,c do not depend on Q; the threshold for n may. Choose a so the tail belongs to [a,L-a] with probability greater than 1-b/8. Singular concentration gives a compact K with Lebesgue measure below epsilon and mass above 1-epsilon, where epsilon<b/8 and 2 epsilon Q/a<b/4. For large n, at most 2epsilon/(a lambda^n) bins of length a lambda^n meet K. The two branch measures, restricted to central tails, have total common bin mass at least 3b/4.\n\nLet U_i(J) contain the length-n words starting with i whose central tail interval s_u+lambda^n[a,L-a] meets bin J. The branch mass in J is at most 2^(-n)|U_i(J)|. Discard bins with |U_1(J)|<Q(2lambda)^n; the lost common mass is less than b/4. Each zero-starting word meets at most C_a=ceil((L-2a)/a)+2 bins, so the surviving union contains at least b 2^n/(2C_a) words. Every such word shares a bin with the required number of one-starting words, and interval geometry gives the distance bound.\n\nThe finite mass principle is general: if K bins carry masses alpha_iJ<=2^(-n)|U_i(J)|, their common mass totals beta, and each left word occurs in at most C bins, then discarding right degrees below D leaves at least 2^n(beta-K 2^(-n)D)/C distinct left words, each sharing a bin with at least D right words.\n\n## Role in the source argument\n\nAmplifies positive common branch mass into many close prefix pairs, a combinatorial input to later arithmetic approximation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cls:compact-concentration](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L128)\n- [cls:cross-pairs](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L277)\n- [cls:common-bin-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/build/classification.tex#L327)\n\n## Antecedents and comparison\n\nCompact regularity and weighted high-degree pruning are elementary established tools. [Garsia (1963)](https://msp.org/pjm/1963/13-4/pjm-v13-n4-p09-p.pdf) provides entropy/singularity context, not an attribution of this exact neighbor statement. The source-specific combination and constants are retained without a novelty certificate.\n\n## Checks and limitations\n\nRead the restrictions, discarded-bin mass and bounded-incidence calculation. Exact finite interval models check the general mass principle, multiplicities and distance conclusion; they do not test singularity of a parameter.\n\nDistinct words may have equal prefix values. The threshold depends on Q and on compact approximation. This lemma alone does not give irreducible polynomial approximants or the claimed arithmetic classification.\n\n## Possible applications\n\nConverting concentrated overlapping measures into large bipartite families of close symbolic approximations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -10582,6 +10989,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000126.md",
       "body": "# A power improvement in the Heilbronn triangle lower bound\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims point sets in the unit square with every triangle of area at least c n^(-2+eta), for fixed positive constants and every sufficiently large n.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000210: A field-norm coefficient isolated in base digits excludes small determinant residues](../instruments/MI-000210.md)\n- [MI-000211: The determinant image of a stabilizer controls singular special-linear orbits](../instruments/MI-000211.md)\n- [MI-000212: Four independent digit constraints bound a singular divisor after fixing labels](../instruments/MI-000212.md)\n\n## Dependencies and review\n\nFinite-field coefficient conjugation; alternating monomial expansion without division by six; isolated digit sums and carry bounds; prime-power Smith form; stabilizer determinant image; independent digit conditioning.\n\nRead the full norm/digit and residue-orbit sections, including singular cases and fixed-label tails. The lattice enumeration, auxiliary cap, zero-determinant counts and geometric alteration were not audited.\n\nHeilbronnTriangle.lean states a fixed explicit positive exponent on an unbounded sequence of point-set sizes, and a consequence refuting the almost-n-minus-two upper bound. The paper claims a bound for every sufficiently large size, which is broader. Scope text and Comparator statements were compared. No Lean solution was built or kernel-checked; the auxiliary instruments are not separate certified targets.\n\n[Family context](../families/openai-math-191.md) · [Batch B013](../../batches/B013/README.md)"
+    },
+    {
+      "id": "P-000127",
+      "record_type": "paper",
+      "title": "A smooth three-torus diffeomorphism with simple Lebesgue spectrum",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-144"
+      ],
+      "batch_id": "B014",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9d4dce6855fae27636224588a2552661d232ce12ca6dfea607d67c70fc86e091",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000127.md",
+      "body": "# A smooth three-torus diffeomorphism with simple Lebesgue spectrum\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-smooth-three-torus-diffeomorphism-with-simple-Lebesgue-spectrum-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a smooth volume-preserving diffeomorphism of the three-torus with simple Lebesgue spectrum on mean-zero functions and a real cyclic vector whose integer iterates form an orthonormal basis.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000213: Separated integer frequencies reproduce a finite collection of phase averages](../instruments/MI-000213.md)\n- [MI-000214: Spectral whitening fills zero-density sets without an inverse lower bound](../instruments/MI-000214.md)\n\n## Dependencies and review\n\nRiemann-Lebesgue decay, separated integer frequencies, spectral measures, measurable functional calculus and orthogonal spectral projections.\n\nRead the finite phase-test proof, flat-vector construction, whitening formula and spectral-density continuity estimate. The iterative smooth construction and final cyclicity argument were not audited.\n\nThreeTorus.lean includes smoothness of the map and inverse, volume preservation, a real mean-zero orthonormal cyclic orbit, ergodicity and an intertwining spectral representation. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\n[Family context](../families/openai-math-144.md) · [Batch B014](../../batches/B014/README.md)"
+    },
+    {
+      "id": "P-000128",
+      "record_type": "paper",
+      "title": "Rokhlin's multiple-mixing problem for one transformation",
+      "source_collection": "openai/math",
+      "upstream_slug": "Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-145"
+      ],
+      "batch_id": "B014",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e302007f4899866a922f5d5acab6658b84f514a07e9ac74a97bbafd9294ec102",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000128.md",
+      "body": "# Rokhlin's multiple-mixing problem for one transformation\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that ordinary mixing of an invertible probability-preserving transformation implies mixing of all finite orders as successive gaps tend to infinity.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000215: Sublinear word entropy forces cancellation against dissociated characters under arbitrary coupling](../instruments/MI-000215.md)\n- [MI-000216: Triple independence fixes positive squares and preserves an operator rectangle under polar normalization](../instruments/MI-000216.md)\n\n## Dependencies and review\n\nDissociation, Fourier orthogonality, exponential Markov bounds, word entropy, Fubini, separability, positive square roots and polar uniqueness.\n\nRead the full entropy cancellation and fixed-squares proofs, including the preceding rectangle setup. The array structure, subsequent cancellation and global mixing implication were not audited.\n\nRokhlin.lean formulates the implication for measurable probability spaces and invertible measure-preserving transformations, with all positive successive gaps tending to infinity. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\n[Family context](../families/openai-math-145.md) · [Batch B014](../../batches/B014/README.md)"
+    },
+    {
+      "id": "P-000129",
+      "record_type": "paper",
+      "title": "The entropy-rate dimension formula for self-similar measures on the line",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-148"
+      ],
+      "batch_id": "B014",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d4c00a7ac0c026874a3bd0f8d21b161f1df473bf43214bb69db05f662a702553",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000129.md",
+      "body": "# The entropy-rate dimension formula for self-similar measures on the line\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the entropy-rate dimension formula for every finite self-similar law on the line with nonzero strictly contracting ratios, including signed and unequal ratios.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000217: A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales](../instruments/MI-000217.md)\n- [MI-000218: Two-point entropy gains survive future averaging when the pair is fixed by the past](../instruments/MI-000218.md)\n\n## Dependencies and review\n\nFinite entropy, fractional pair packing, independent samples, randomized nested cuts, observed-sum conditioning, shifted-grid entropy and Jensen averaging.\n\nRead the complete finite pair-bound proof, shifted-entropy definitions, two-point gain and conditional-gain lemma. Uniform nonsaturation and the global dimension argument were not audited.\n\nSelfSimilar and SelfSimilarCorollaries state the lower Hausdorff dimension formula and the no-exact-overlap homogeneous measure and attractor consequences. The rate uses entropy of complete composed affine maps. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\n[Family context](../families/openai-math-148.md) · [Batch B014](../../batches/B014/README.md)"
+    },
+    {
+      "id": "P-000130",
+      "record_type": "paper",
+      "title": "Arithmetic classification and non-Pisot singularity for Bernoulli convolutions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026",
+      "source_date": "October 3, 2026",
+      "family_ids": [
+        "openai-math-153"
+      ],
+      "batch_id": "B014",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d424bb87e55aea065c732431326db05fd9fdd456228fdc66f79d97649525935b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000130.md",
+      "body": "# Arithmetic classification and non-Pisot singularity for Bernoulli convolutions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 3, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-classification-and-non-Pisot-singularity-for-Bernoulli-convolutions-October-3-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an arithmetic singularity classification for Bernoulli convolutions and singular examples beyond reciprocal Pisot parameters, including a quartic Salem family and an explicit higher-degree example.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000219: A decoding-capacity contradiction forces measure overlap between the two first-bit branches](../instruments/MI-000219.md)\n- [MI-000220: Singular concentration and common branch mass produce many nearby opposite prefixes](../instruments/MI-000220.md)\n\n## Dependencies and review\n\nCompact approximation of mutually singular measures, binary Fano inequality, entropy chain rule, compact concentration, common submeasure mass and bounded bin incidence.\n\nRead the first-bit overlap and cross-pair proofs and their compact-concentration input. The irreducible polynomial approximation, arithmetic classification, Salem arguments and explicit certificates were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory for this family. No Lean statement or proof was certified for these extracted lemmas.\n\n[Family context](../families/openai-math-153.md) · [Batch B014](../../batches/B014/README.md)"
     }
   ],
   "families": [
@@ -11560,6 +12043,114 @@
       "map_formalization_summary": "no (companion only)",
       "path": "catalog/families/openai-math-143.md",
       "body": "# Hilbert’s sixteenth problem, uniform bounds\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000080](../papers/P-000080.md)\n- [P-000081](../papers/P-000081.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized (companion only) combination\n\nFor each degree d there is a finite B(d) bounding the number of limit cycles of every real planar polynomial vector field of degree $`\\le d`$: the uniform-boundedness assertion in the second part of Hilbert’s sixteenth problem. The bound is ineffective; Écalle–Ilyashenko individual finiteness is not used as a premise. The manuscript has 160 pages. The companion concerns the classical Liénard system $`\\dot x=y-F(x)`$, $`\\dot y=-x`$, with $`\\deg F\\le5`$; it claims at most two isolated periodic orbits. The repository supplies a formalization of this self-contained companion.\n\n## Extracted instruments.\n\n- [MI-000068: Packets on saturated logarithmic flags and the separation theorem](../instruments/MI-000068.md)\n\n- [MI-000069: Absolute isolated-zero finiteness and projection count](../instruments/MI-000069.md)\n\n- [MI-000070: Finite passage templates and matching systems](../instruments/MI-000070.md)\n\n## Reused.\n\nLion–Rolin and Opris preparation; Bierstone–Milman and Gabrielov uniform finiteness; Khovanskii’s Rolle; Gevrey truncation; Ilyashenko–Yakovenko cyclic systems; rotated vector fields to make cycles hyperbolic.\n\n## Caveats.\n\nThe paper cites Yeung 2025 for a gap in Ilyashenko 1991 at a differential-closure step and claims to repair it through differentiated implicit calculus. That assertion and Sections 6–8, which devote 80 pages to checking packet hypotheses for four transfer models, merit detailed examination. Degenerate singularities and polycycles are not named outside the introduction. The literature comparison was limited.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: companion (quintic Liénard) only\n- Statement coverage: —\n- Dependencies: no\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-144",
+      "record_type": "family",
+      "title": "Finite phase substitution and spectral normalization",
+      "source_family": "144",
+      "source_collection": "openai/math",
+      "batch_id": "B014",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000127"
+      ],
+      "instrument_ids": [
+        "MI-000213",
+        "MI-000214"
+      ],
+      "headline": "The source claims a smooth volume-preserving diffeomorphism of the three-torus with simple Lebesgue spectrum on mean-zero functions and a real cyclic vector whose integer iterates form an orthonormal basis.",
+      "central_instrument": "A superincreasing choice of integer frequencies reproduces finitely many product-phase integrals. Spectral functional calculus then normalizes a packet even where its spectral density vanishes.",
+      "novelty_assessment": "Both selected tools use established Fourier and spectral principles. Their concrete interfaces are useful extractions; the headline construction and its priority are not certified here.",
+      "formalization_summary": "ThreeTorus.lean includes smoothness of the map and inverse, volume preservation, a real mean-zero orthonormal cyclic orbit, ergodicity and an intertwining spectral representation. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.",
+      "statement_faithfulness": "Phase substitution is for a prescribed finite list of tests. A vector with flat spectral density need not be cyclic. The zero-density correction requires another flat vector for the same operator.",
+      "dependencies": "Riemann-Lebesgue decay, separated integer frequencies, spectral measures, measurable functional calculus and orthogonal spectral projections.",
+      "antecedents": "Fourier decay and the spectral theorem are classical. Taylor, Spectral Theory, Section 1 gives the normal-operator multiplication representation used in the comparison.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-144.md",
+      "body": "# Finite phase substitution and spectral normalization\n\n## Source manuscript and claim\n\n[A smooth three-torus diffeomorphism with simple Lebesgue spectrum](../papers/P-000127.md), by OpenAI, September 23, 2026.\n\nThe source claims a smooth volume-preserving diffeomorphism of the three-torus with simple Lebesgue spectrum on mean-zero functions and a real cyclic vector whose integer iterates form an orthonormal basis.\n\n## Extracted instruments\n\n- [MI-000213: Separated integer frequencies reproduce a finite collection of phase averages](../instruments/MI-000213.md)\n- [MI-000214: Spectral whitening fills zero-density sets without an inverse lower bound](../instruments/MI-000214.md)\n\n## Dependencies and antecedents\n\nRiemann-Lebesgue decay, separated integer frequencies, spectral measures, measurable functional calculus and orthogonal spectral projections.\n\nFourier decay and the spectral theorem are classical. Taylor, Spectral Theory, Section 1 gives the normal-operator multiplication representation used in the comparison. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the finite phase-test proof, flat-vector construction, whitening formula and spectral-density continuity estimate. The iterative smooth construction and final cyclicity argument were not audited.\n\nThreeTorus.lean includes smoothness of the map and inverse, volume preservation, a real mean-zero orthonormal cyclic orbit, ergodicity and an intertwining spectral representation. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nPhase substitution is for a prescribed finite list of tests. A vector with flat spectral density need not be cyclic. The zero-density correction requires another flat vector for the same operator.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/144.md) · [Batch record](../../batches/B014/README.md)"
+    },
+    {
+      "id": "openai-math-145",
+      "record_type": "family",
+      "title": "Entropy cancellation and parameter-independent operator squares",
+      "source_family": "145",
+      "source_collection": "openai/math",
+      "batch_id": "B014",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000128"
+      ],
+      "instrument_ids": [
+        "MI-000215",
+        "MI-000216"
+      ],
+      "headline": "The source claims that ordinary mixing of an invertible probability-preserving transformation implies mixing of all finite orders as successive gaps tend to infinity.",
+      "central_instrument": "A dissociated exponential estimate combines with a small word-entropy bound without independence of the observables. Triple independence and two operator rectangle identities make positive squares constant and permit polar normalization.",
+      "novelty_assessment": "Dissociated exponential bounds, entropy typical-set arguments and polar decomposition are established. The selected combinations and their exact dependence assumptions are candidate reusable interfaces, not a certification of the multiple-mixing claim.",
+      "formalization_summary": "Rokhlin.lean formulates the implication for measurable probability spaces and invertible measure-preserving transformations, with all positive successive gaps tending to infinity. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.",
+      "statement_faithfulness": "The cancellation lemma allows arbitrary dependence between the word and characters. The operator lemma instead requires product law for each triple and full essential spans for the families and their adjoints.",
+      "dependencies": "Dissociation, Fourier orthogonality, exponential Markov bounds, word entropy, Fubini, separability, positive square roots and polar uniqueness.",
+      "antecedents": "Green, Structure theory of set addition, Proposition 17 gives an earlier dissociated exponential estimate. Spectral and polar functional calculus are classical.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-145.md",
+      "body": "# Entropy cancellation and parameter-independent operator squares\n\n## Source manuscript and claim\n\n[Rokhlin's multiple-mixing problem for one transformation](../papers/P-000128.md), by OpenAI, September 23, 2026.\n\nThe source claims that ordinary mixing of an invertible probability-preserving transformation implies mixing of all finite orders as successive gaps tend to infinity.\n\n## Extracted instruments\n\n- [MI-000215: Sublinear word entropy forces cancellation against dissociated characters under arbitrary coupling](../instruments/MI-000215.md)\n- [MI-000216: Triple independence fixes positive squares and preserves an operator rectangle under polar normalization](../instruments/MI-000216.md)\n\n## Dependencies and antecedents\n\nDissociation, Fourier orthogonality, exponential Markov bounds, word entropy, Fubini, separability, positive square roots and polar uniqueness.\n\nGreen, Structure theory of set addition, Proposition 17 gives an earlier dissociated exponential estimate. Spectral and polar functional calculus are classical. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full entropy cancellation and fixed-squares proofs, including the preceding rectangle setup. The array structure, subsequent cancellation and global mixing implication were not audited.\n\nRokhlin.lean formulates the implication for measurable probability spaces and invertible measure-preserving transformations, with all positive successive gaps tending to infinity. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nThe cancellation lemma allows arbitrary dependence between the word and characters. The operator lemma instead requires product law for each triple and full essential spans for the families and their adjoints.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/145.md) · [Batch record](../../batches/B014/README.md)"
+    },
+    {
+      "id": "openai-math-148",
+      "record_type": "family",
+      "title": "Pair capacity and entropy gains before averaging the future",
+      "source_family": "148",
+      "source_collection": "openai/math",
+      "batch_id": "B014",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000129"
+      ],
+      "instrument_ids": [
+        "MI-000217",
+        "MI-000218"
+      ],
+      "headline": "The source claims the entropy-rate dimension formula for every finite self-similar law on the line with nonzero strictly contracting ratios, including signed and unequal ratios.",
+      "central_instrument": "Fair-pair capacity measures hidden entropy below a grid scale. A two-point entropy increment can then be averaged over future environments while keeping the selected pair and contraction fixed by the past.",
+      "novelty_assessment": "Fair-pair decomposition and entropy gain under convolution have explicit antecedents in Varju. The sumset-controlled capacity bound and conditioning interface are the selected candidate refinements; the global dimension formula is not certified here.",
+      "formalization_summary": "SelfSimilar and SelfSimilarCorollaries state the lower Hausdorff dimension formula and the no-exact-overlap homogeneous measure and attractor consequences. The rate uses entropy of complete composed affine maps. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.",
+      "statement_faithfulness": "Entropy is in bits. Scale-interval entropy is concave and convolution-monotone in the form used here when the coarse/fine ratio is an integer. Nonsaturation is required for the averaged tail, not for every realized future.",
+      "dependencies": "Finite entropy, fractional pair packing, independent samples, randomized nested cuts, observed-sum conditioning, shifted-grid entropy and Jensen averaging.",
+      "antecedents": "Varju, Absolute continuity of Bernoulli convolutions for algebraic parameters, Propositions 20 and 21 and Lemma 22, provide fair-pair decomposition and convolution entropy gain.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-148.md",
+      "body": "# Pair capacity and entropy gains before averaging the future\n\n## Source manuscript and claim\n\n[The entropy-rate dimension formula for self-similar measures on the line](../papers/P-000129.md), by OpenAI, September 24, 2026.\n\nThe source claims the entropy-rate dimension formula for every finite self-similar law on the line with nonzero strictly contracting ratios, including signed and unequal ratios.\n\n## Extracted instruments\n\n- [MI-000217: A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales](../instruments/MI-000217.md)\n- [MI-000218: Two-point entropy gains survive future averaging when the pair is fixed by the past](../instruments/MI-000218.md)\n\n## Dependencies and antecedents\n\nFinite entropy, fractional pair packing, independent samples, randomized nested cuts, observed-sum conditioning, shifted-grid entropy and Jensen averaging.\n\nVarju, Absolute continuity of Bernoulli convolutions for algebraic parameters, Propositions 20 and 21 and Lemma 22, provide fair-pair decomposition and convolution entropy gain. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite pair-bound proof, shifted-entropy definitions, two-point gain and conditional-gain lemma. Uniform nonsaturation and the global dimension argument were not audited.\n\nSelfSimilar and SelfSimilarCorollaries state the lower Hausdorff dimension formula and the no-exact-overlap homogeneous measure and attractor consequences. The rate uses entropy of complete composed affine maps. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nEntropy is in bits. Scale-interval entropy is concave and convolution-monotone in the form used here when the coarse/fine ratio is an integer. Nonsaturation is required for the averaged tail, not for every realized future.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/148.md) · [Batch record](../../batches/B014/README.md)"
+    },
+    {
+      "id": "openai-math-153",
+      "record_type": "family",
+      "title": "First-bit overlap and many nearby opposite prefixes",
+      "source_family": "153",
+      "source_collection": "openai/math",
+      "batch_id": "B014",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000130"
+      ],
+      "instrument_ids": [
+        "MI-000219",
+        "MI-000220"
+      ],
+      "headline": "The source claims an arithmetic singularity classification for Bernoulli convolutions and singular examples beyond reciprocal Pisot parameters, including a quartic Salem family and an explicit higher-degree example.",
+      "central_instrument": "Entropy capacity prevents the first bit from being measurable from the full sum in the overlapping regime. Under singularity, compact concentration turns the resulting common measure into many nearby prefixes with opposite first bits.",
+      "novelty_assessment": "Entropy obstructions and concentration arguments are classical. The selected decoding and bin-mass interfaces may be reusable, but neither the arithmetic classification nor historical priority is certified here.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory for this family. No Lean statement or proof was certified for these extracted lemmas.",
+      "statement_faithfulness": "First-bit overlap holds for every lambda in (1/2,1), without assuming singularity. The many-neighbor result additionally assumes singularity and counts distinct words, not necessarily distinct prefix values.",
+      "dependencies": "Compact approximation of mutually singular measures, binary Fano inequality, entropy chain rule, compact concentration, common submeasure mass and bounded bin incidence.",
+      "antecedents": "Garsia, Entropy and singularity of infinite convolutions (1963), is a primary antecedent for entropy methods in these measures. The exact extracted statements are not attributed to that paper.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-153.md",
+      "body": "# First-bit overlap and many nearby opposite prefixes\n\n## Source manuscript and claim\n\n[Arithmetic classification and non-Pisot singularity for Bernoulli convolutions](../papers/P-000130.md), by OpenAI, October 3, 2026.\n\nThe source claims an arithmetic singularity classification for Bernoulli convolutions and singular examples beyond reciprocal Pisot parameters, including a quartic Salem family and an explicit higher-degree example.\n\n## Extracted instruments\n\n- [MI-000219: A decoding-capacity contradiction forces measure overlap between the two first-bit branches](../instruments/MI-000219.md)\n- [MI-000220: Singular concentration and common branch mass produce many nearby opposite prefixes](../instruments/MI-000220.md)\n\n## Dependencies and antecedents\n\nCompact approximation of mutually singular measures, binary Fano inequality, entropy chain rule, compact concentration, common submeasure mass and bounded bin incidence.\n\nGarsia, Entropy and singularity of infinite convolutions (1963), is a primary antecedent for entropy methods in these measures. The exact extracted statements are not attributed to that paper. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the first-bit overlap and cross-pair proofs and their compact-concentration input. The irreducible polynomial approximation, arithmetic classification, Salem arguments and explicit certificates were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory for this family. No Lean statement or proof was certified for these extracted lemmas.\n\nFirst-bit overlap holds for every lambda in (1/2,1), without assuming singularity. The many-neighbor result additionally assumes singularity and counts distinct words, not necessarily distinct prefix values.\n\n[Batch record](../../batches/B014/README.md)"
     },
     {
       "id": "openai-math-156",

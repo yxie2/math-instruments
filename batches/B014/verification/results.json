@@ -1,0 +1,52 @@
+{
+  "batch": "B014",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "checks": {
+    "phase_tests": {
+      "exact_monomial_integrals": 77700,
+      "adaptive_test_discrepancy": 1
+    },
+    "spectral_whitening": {
+      "models": 120,
+      "max_distance_error": 4.440892098500626e-16,
+      "zero_and_tiny_densities": true,
+      "multiplicity_two_noncyclic_control": true
+    },
+    "dependent_entropy_cancellation": {
+      "dependent_codebook_models": 27,
+      "finite_bound_can_be_loose": true,
+      "linear_entropy_and_repeated_character_controls": true
+    },
+    "fixed_squares": {
+      "three_wise_independent_rectangles": 160,
+      "max_polar_error": 8.11587079283315e-11,
+      "missing_independence_and_span_controls": true
+    },
+    "pair_capacity": {
+      "finite_law_inequalities": 324,
+      "observed_sum_models": 16,
+      "spacing_as_small_as": "2^-40",
+      "unobserved_sum_rare_event_control": true,
+      "lp_and_logarithms_use_floating_point": true
+    },
+    "shifted_entropy": {
+      "two_point_models": 100,
+      "future_mixture_models": 60,
+      "max_matching_scale_error": 3.3306690738754696e-16,
+      "rational_breakpoint_integration_numeric_logarithms": true
+    },
+    "first_bit_capacity": {
+      "finite_entropy_models": 24,
+      "exact_atomic_branch_overlap_zero_for_all_tested_truncations": true,
+      "does_not_certify_limit_common_mass": true
+    },
+    "cross_prefix_bins": {
+      "mass_models": 35,
+      "positive_lower_bounds": 2,
+      "same_bin_word_pairs_checked": 77137,
+      "no_singularity_inference": true
+    }
+  },
+  "scope": "Selected finite models and negative controls; no global theorem, Lean build or priority certification."
+}

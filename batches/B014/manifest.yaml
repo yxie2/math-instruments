@@ -1,0 +1,28 @@
+id: B014
+title: Spectral normalization, dependent cancellation and conditional entropy gains
+date: '2026-10-16'
+source_commit: 1581d4cbdd69a0faf34b2089614fe2a814316a6a
+family_ids:
+- openai-math-144
+- openai-math-145
+- openai-math-148
+- openai-math-153
+instrument_ids:
+- MI-000213
+- MI-000214
+- MI-000215
+- MI-000216
+- MI-000217
+- MI-000218
+- MI-000219
+- MI-000220
+paper_ids:
+- P-000127
+- P-000128
+- P-000129
+- P-000130
+notes: New source-based extractions with exact manuscript bindings, selected argument
+  checks and targeted antecedent comparisons. No Lean project built; no exhaustive
+  proof or priority certification.
+next_instrument_id: MI-000221
+next_paper_id: P-000131

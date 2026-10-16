@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B014: eight instruments from families 144, 145, 148 and 153, with exact source locators and eight finite check groups. The records retain dependence and conditioning assumptions, credit classical spectral and entropy ingredients, and separate finite truncation checks from claims about limiting measures.
 - Added B013: nine instruments from families 188, 189, 190 and 191, with exact source bindings and ten finite check groups. The batch reproduces the 3,099 weighted-forest enumeration, separates copy hitting from binary repair, and retains singular and repeated-label cases in determinant sampling.
 - Added B012: eight instruments from families 173, 180, 181 and 185, with exact source passages and eight finite check groups. The records preserve raw-image conventions, incidence and external-neighbor conditions, and the unverified local input to the infinite-matroid assembly.
 - Added B011: eight instruments from families 126, 127, 132 and 192, with exact source locators and eight finite check groups. The batch records scope differences in the matching and sensitivity Comparator statements, and separates low-degree reporting gains from decision-tree depth claims.
