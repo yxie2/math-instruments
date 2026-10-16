@@ -1,0 +1,328 @@
+{
+  "batch_id": "B080",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:28:45.985088+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/FixedClauseThreshold.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FixedClauseThreshold.lean",
+      "sha256": "1c7c2b8f17e74a725a859dcdd19f4ee4da35c38230dde825cb257e78ea18c39b",
+      "bytes": 2103
+    },
+    {
+      "path": "lean/ComparatorChallenges/HoneycombFreeEnergy.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HoneycombFreeEnergy.lean",
+      "sha256": "30d5989a93216f9aea4f6bb23846090e24bd87b797ea1620d661de2bd9f99f81",
+      "bytes": 1927
+    },
+    {
+      "path": "lean/ComparatorChallenges/ThorpFirstReciprocal.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ThorpFirstReciprocal.lean",
+      "sha256": "ef587bd9705fab80eefa31aa07255c6db5b443720a7a8b4ea238a8ed8a30a6e4",
+      "bytes": 8269
+    },
+    {
+      "path": "lean/docs/235.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/235.md",
+      "sha256": "9358e46cd9f3104ceaf11000d5afe3eac26c48bebb7329f1a19fc5d3c55e987b",
+      "bytes": 2877
+    },
+    {
+      "path": "lean/docs/237.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/237.md",
+      "sha256": "a54f7576239850c680c1c10e3a76f948a9e6c9d035f07a37291ee56d140a3452",
+      "bytes": 3614
+    },
+    {
+      "path": "lean/docs/238.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/238.md",
+      "sha256": "90935144b3f4346476ff852911ad709fe354446bc383e291db4afb90a98aaa49",
+      "bytes": 9797
+    },
+    {
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/README.md",
+      "sha256": "808bcd231f64e5357e2fe966917c40fcc5eabeeb82a1f62edd7605049f87d878",
+      "bytes": 679
+    },
+    {
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex",
+      "sha256": "9f9821a5ed10bc9cb5bd75e6c603ecb5092ded99c00232e92a3daabc105f68f2",
+      "bytes": 5981
+    },
+    {
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex",
+      "sha256": "464c715e631fc30ecf0d671c40ad5f0646b3d87a5e697b074fa7507907081639",
+      "bytes": 8213
+    },
+    {
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/README.md",
+      "sha256": "2c56b3c4a99c39cf3b579a9346f2ba478e3ecdd0bc4e00fe18c6995497bf52b7",
+      "bytes": 905
+    },
+    {
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex",
+      "sha256": "ca948de5d37bdce68f6d984cdc70f2945524f8cb6a5ec4e3fa58cc9a43fb2564",
+      "bytes": 28756
+    },
+    {
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex",
+      "sha256": "be1162de63990d750a42cf9c647e2f2e7ae0d0d5936f7d7e61d025d170ee8dc3",
+      "bytes": 6679
+    },
+    {
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/README.md",
+      "sha256": "634f943e5ea5b8e742d071d0537089a6d223727808f0f65add5e6008a52443df",
+      "bytes": 545
+    },
+    {
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8",
+      "bytes": 38826
+    },
+    {
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/README.md",
+      "sha256": "6ffe68ff10251367eabd37260c36ea7c787452695cc98ff8057588d27004d364",
+      "bytes": 633
+    },
+    {
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "sha256": "41886877036bf4e43815777e693e2ca0673e9da84c0596cfefef8a4a2521fe3b",
+      "bytes": 15766
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000742",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex",
+      "label": "thm:midpoint",
+      "line": 245,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex#L245",
+      "sha256": "ca948de5d37bdce68f6d984cdc70f2945524f8cb6a5ec4e3fa58cc9a43fb2564"
+    },
+    {
+      "instrument_id": "MI-000742",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex",
+      "label": "moments:weighted-midpoints",
+      "line": 307,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex#L307",
+      "sha256": "ca948de5d37bdce68f6d984cdc70f2945524f8cb6a5ec4e3fa58cc9a43fb2564"
+    },
+    {
+      "instrument_id": "MI-000742",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex",
+      "label": "lem:midpoint-amplification",
+      "line": 349,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/03-moments.tex#L349",
+      "sha256": "ca948de5d37bdce68f6d984cdc70f2945524f8cb6a5ec4e3fa58cc9a43fb2564"
+    },
+    {
+      "instrument_id": "MI-000743",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex",
+      "label": "spectra:unitary",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex#L9",
+      "sha256": "be1162de63990d750a42cf9c647e2f2e7ae0d0d5936f7d7e61d025d170ee8dc3"
+    },
+    {
+      "instrument_id": "MI-000743",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex",
+      "label": "spectra:transfer",
+      "line": 76,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex#L76",
+      "sha256": "be1162de63990d750a42cf9c647e2f2e7ae0d0d5936f7d7e61d025d170ee8dc3"
+    },
+    {
+      "instrument_id": "MI-000743",
+      "path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex",
+      "label": "spectra:analytic",
+      "line": 132,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/build/sections/08-scalar-spectra.tex#L132",
+      "sha256": "be1162de63990d750a42cf9c647e2f2e7ae0d0d5936f7d7e61d025d170ee8dc3"
+    },
+    {
+      "instrument_id": "MI-000744",
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex",
+      "label": "lem:variance-deletion",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex#L33",
+      "sha256": "9f9821a5ed10bc9cb5bd75e6c603ecb5092ded99c00232e92a3daabc105f68f2"
+    },
+    {
+      "instrument_id": "MI-000744",
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex",
+      "label": "lem:pivotal",
+      "line": 76,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/concentration.tex#L76",
+      "sha256": "9f9821a5ed10bc9cb5bd75e6c603ecb5092ded99c00232e92a3daabc105f68f2"
+    },
+    {
+      "instrument_id": "MI-000745",
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex",
+      "label": "lem:replacement",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex#L62",
+      "sha256": "464c715e631fc30ecf0d671c40ad5f0646b3d87a5e697b074fa7507907081639"
+    },
+    {
+      "instrument_id": "MI-000745",
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex",
+      "label": "prop:forcing",
+      "line": 131,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex#L131",
+      "sha256": "464c715e631fc30ecf0d671c40ad5f0646b3d87a5e697b074fa7507907081639"
+    },
+    {
+      "instrument_id": "MI-000745",
+      "path": "preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex",
+      "label": "eq:forcing-general-cap",
+      "line": 208,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026/build/source/sections/forcing.tex#L208",
+      "sha256": "464c715e631fc30ecf0d671c40ad5f0646b3d87a5e697b074fa7507907081639"
+    },
+    {
+      "instrument_id": "MI-000746",
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "label": "R:renew:factorization",
+      "line": 30,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex#L30",
+      "sha256": "41886877036bf4e43815777e693e2ca0673e9da84c0596cfefef8a4a2521fe3b"
+    },
+    {
+      "instrument_id": "MI-000746",
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "label": "R:renew:reward",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex#L49",
+      "sha256": "41886877036bf4e43815777e693e2ca0673e9da84c0596cfefef8a4a2521fe3b"
+    },
+    {
+      "instrument_id": "MI-000747",
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "label": "R:renew:increments",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex#L63",
+      "sha256": "41886877036bf4e43815777e693e2ca0673e9da84c0596cfefef8a4a2521fe3b"
+    },
+    {
+      "instrument_id": "MI-000747",
+      "path": "preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex",
+      "label": "R:renew:growth",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026/build/sections/renewal.tex#L119",
+      "sha256": "41886877036bf4e43815777e693e2ca0673e9da84c0596cfefef8a4a2521fe3b"
+    },
+    {
+      "instrument_id": "MI-000748",
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "label": "lem:path-cylinder",
+      "line": 257,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L257",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8"
+    },
+    {
+      "instrument_id": "MI-000748",
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "label": "lem:energy-memory",
+      "line": 294,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L294",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8"
+    },
+    {
+      "instrument_id": "MI-000748",
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "label": "eq:h-1",
+      "line": 284,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L284",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8"
+    },
+    {
+      "instrument_id": "MI-000749",
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "label": "lem:sequential-tv",
+      "line": 359,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L359",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8"
+    },
+    {
+      "instrument_id": "MI-000749",
+      "path": "preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex",
+      "label": "prop:averaged-marginal",
+      "line": 378,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026/build/main.tex#L378",
+      "sha256": "081206e427387ed4b050613fa004d24d150203bf09de9018eea69bbc3f9801b8"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-232",
+      "extracted_slugs": [
+        "Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026"
+      ],
+      "inventory_only_slugs": [
+        "The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026",
+        "Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-235",
+      "extracted_slugs": [
+        "A-Limiting-Satisfiability-Threshold-for-Every-Fixed-Clause-Size-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "Linear-Variance-of-the-Random-3-SAT-Hitting-Time-October-5-2026",
+        "Variance-of-the-Random-k-SAT-Hitting-Time-September-27-2026",
+        "Computing-the-Random-3-SAT-Threshold-September-27-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-237",
+      "extracted_slugs": [
+        "Renewal-and-changes-of-law-for-critical-honeycomb-walks-September-26-2026"
+      ],
+      "inventory_only_slugs": [
+        "Radial-transfer-estimates-and-polygon-length-laws-for-honeycomb-walks-September-26-2026",
+        "Critical-honeycomb-chords-with-prescribed-boundary-endpoints-September-26-2026",
+        "Cylinder-loop-weights-and-planar-nesting-September-26-2026",
+        "Mass-and-covering-exponents-for-fixed-length-honeycomb-walks-September-26-2026",
+        "Signed-cylinder-propagation-and-marked-polygons-on-the-honeycomb-lattice-September-26-2026",
+        "Cylinder-amplitudes-and-logarithmic-bridge-length-windows-on-the-honeycomb-lattice-September-26-2026",
+        "Marked-polygon-correlations-and-one-arc-bounds-September-26-2026",
+        "Disk-transfer-representations-and-confined-bridge-mass-September-26-2026",
+        "Polynomial-vacuum-representations-and-bridge-mass-for-honeycomb-walks-September-26-2026",
+        "Critical-strip-crossing-mass-on-the-honeycomb-lattice-September-26-2026",
+        "Uniform-marked-polygon-estimates-and-sharp-finite-bridge-moments-September-26-2026",
+        "Cap-selected-amplitudes-and-triangle-chords-for-honeycomb-walks-September-26-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-238",
+      "extracted_slugs": [
+        "Optimal-order-mixing-of-the-Thorp-shuffle-September-26-2026"
+      ],
+      "inventory_only_slugs": [
+        "Random-coordinate-frames-and-partial-permutation-laws-September-26-2026",
+        "From-partial-permutation-information-to-Fourier-bounds-September-26-2026",
+        "Conditional-information-under-deterministic-coordinate-sweeps-September-26-2026",
+        "Conditional-permutations-in-a-revealed-switching-environment-September-26-2026",
+        "Routing-densities-and-representation-contraction-for-Thorp-sweeps-September-26-2026",
+        "Row-column-symmetry-and-contraction-of-coordinate-sweeps-September-26-2026",
+        "Random-subspace-tests-and-trace-smoothing-for-coordinate-sweeps-September-26-2026",
+        "Compatibility-entropy-and-the-spectrum-of-a-Thorp-sweep-September-26-2026",
+        "Signed-tensor-densities-and-diagram-budgets-for-coordinate-sweeps-September-26-2026",
+        "Conditional-coordinate-sweeps-and-analytic-transfer-September-26-2026",
+        "A-strict-four-row-permanent-inequality-and-permutation-moments-September-26-2026"
+      ]
+    }
+  ]
+}

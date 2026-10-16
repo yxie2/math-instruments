@@ -1,0 +1,78 @@
+{
+  "batch": "B080",
+  "status": "pass",
+  "elapsed_seconds": 0.168,
+  "scope": "Selected finite mechanisms; no headline or Lean certification.",
+  "checks": {
+    "midpoint_arrays": {
+      "status": "pass",
+      "details": {
+        "height_pairs": 361,
+        "quantile_entropy_cases": 50,
+        "weighted_midpoint_sum_checks": 30,
+        "dyadic_recursions": 6
+      }
+    },
+    "scalar_spectra": {
+      "status": "pass",
+      "details": {
+        "bernstein_moments": 16,
+        "fejer_moments": 9,
+        "zero_and_one_atoms": true,
+        "exponent_zero_jump": 0.5326560742155622
+      }
+    },
+    "omission_hazards": {
+      "status": "pass",
+      "details": {
+        "exhaustive_clause_sequences": 1024,
+        "variance": 0.407958984375,
+        "sum_squared_omission_delays": 1.640625,
+        "cooperative_killing_control": true
+      }
+    },
+    "clause_replacement": {
+      "status": "pass",
+      "details": {
+        "replacement_parameters": 149,
+        "active_power_comparisons": 30,
+        "exact_solution_set_counts": 765,
+        "telescoping_checks": 16
+      }
+    },
+    "renewal_rewards": {
+      "status": "pass",
+      "details": {
+        "exact_height_coefficients": 15,
+        "joint_discounted_reward": 2.2203275463755032,
+        "incorrect_independent_reward": 2.4084670748255337
+      }
+    },
+    "joint_increment_transfer": {
+      "status": "pass",
+      "details": {
+        "discounted_bad_piece_ratios": 9,
+        "truncated_reward_bounds": 9,
+        "balanced_length_exponent": "9/16",
+        "height_only_control": true
+      }
+    },
+    "shuffle_energy": {
+      "status": "pass",
+      "details": {
+        "coin_arrays_per_exposure": 256,
+        "exposure_counts": 4,
+        "energy_identities": 12,
+        "full_path_prefix_comparisons": 1765
+      }
+    },
+    "sequential_tv": {
+      "status": "pass",
+      "details": {
+        "injection_laws": 35,
+        "conditioning_refinement_checks": 35,
+        "uniform_individual_marginals_dependent_control": true
+      }
+    }
+  }
+}
