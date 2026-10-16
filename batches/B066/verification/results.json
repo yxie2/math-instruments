@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 1.436,
+  "checks": {
+    "ramification": {
+      "fiber_partitions_checked": 2732,
+      "scope": "Partition bounds only; no cover realization claimed."
+    },
+    "euler": {
+      "rational_function_cases": 13,
+      "scope": "Explicit p-independent rational-variable examples; no global reconstruction tested."
+    },
+    "totients": {
+      "subset_families": 18,
+      "scope": "No asymptotic supply of smooth shifted primes tested."
+    },
+    "size_bias": {
+      "exact_sampling_tuples": 404,
+      "symbolic_jacobians": 5
+    },
+    "nonresonance": {
+      "jordan_operators": 8,
+      "formal_conjugacy_order": 8,
+      "quadratic_resonance_retained": true
+    },
+    "conjugator": {
+      "exact_matrix_models": 18
+    },
+    "entropy_components": {
+      "restricted_mixtures": 45,
+      "positive_average_with_zero_components": true,
+      "scope": "Exact mixture bookkeeping; geometric and entropy-criterion inputs not tested."
+    },
+    "quadratic_fourier": {
+      "scalar_models": 30,
+      "diagonal_models": 3,
+      "max_error": 2.375877272697835e-14,
+      "scope": "Finite residue models including p=2; no global packet theorem tested."
+    }
+  },
+  "scope": "Selected finite reductions only; no field reconstruction, prime statistics, Langlands or packet equidistribution headline certified."
+}

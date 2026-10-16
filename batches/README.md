@@ -67,8 +67,9 @@
 | [B063](B063/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Frequency continuation, projection counts, affine-maximal reductions, bounded drift, Hartogs obstructions and holomorphic Fourier filters |
 | [B064](B064/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Zero traces, Sobolev pullback, harmonic equality barriers, atomic norms, phase insertion and scale-stable envelopes |
 | [B065](B065/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Squareclass density, truncated rank tails, lattice extensions, graph monodromy, annular roots and conditional primitive roots |
+| [B066](B066/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Ramification support, Euler exponents, totient fibers, size bias, weighted jets, compact conjugators, entropy and local Fourier duality |
 
-Future rounds use `B066` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B067` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

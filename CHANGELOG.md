@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B066: 8 selected instruments from 4 families and 8 manuscripts. Ramification support, Euler exponents, totient fibers, size bias, weighted jets, compact conjugators, entropy and local Fourier duality. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B065: 8 selected instruments from 4 families and 8 manuscripts. Squareclass density, truncated rank tails, lattice extensions, graph monodromy, annular roots and conditional primitive roots. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B064: 8 selected instruments from 4 families and 8 manuscripts. Zero traces, Sobolev pullback, harmonic equality barriers, atomic norms, phase insertion and scale-stable envelopes. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
