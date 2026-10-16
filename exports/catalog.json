@@ -13558,6 +13558,434 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000327.md",
       "body": "# Approximate separated couplings by graph plans with exact cell masses\n\n[Family 373](../families/openai-math-373.md) · [Source manuscript](../papers/P-000182.md) · [Batch B027](../../batches/B027/README.md)\n\n## Mathematical content\n\nLet mu be an absolutely continuous compactly supported probability measure on finitely many components separated by eta>0. Suppose a three-fold coupling pi is supported on triples from distinct components. Partition each component into cells A_i of diameter at most delta, with masses m_i, and put q_ijk=pi(A_i times A_j times A_k).\n\nSplit each source cell A_i into B_ijk of mass q_ijk. From every positive-mass piece, choose two Borel maps sending its normalized density to the normalized restrictions of mu on A_j and A_k. Gluing them gives T_2,T_3 preserving mu, since all three marginals of the array q equal m. The graph plan has exactly the same product-cell masses as pi.\n\nAll occupied blocks retain pairwise separation eta. The three-body Coulomb cost varies by at most 6 delta/eta^2 within any block, so\n\n$$\\left|\\int c\\,d(\\mathrm{id},T_2,T_3)_\\#\\mu-\\int c\\,d\\pi\\right|\\le6\\delta/\\eta^2.$$\n\nThe source constructs the required Borel transports using conditional distribution functions and conditional quantiles. Exceptional zero-density prefixes are assigned fixed distribution functions; generalized inverses are Borel through rational sublevel tests. Flat intervals have zero conditional probability. This supplies actual measurable maps without assuming densities are everywhere positive.\n\nApplying the construction to a separated optimal coupling proves equality of infima and finite epsilon approximants. It gives no deterministic optimizer and imposes no cyclic relation between T_2 and T_3.\n\n## Role in the source argument\n\nShows that the source nonattainment claim, if its support certificate holds, is compatible with arbitrarily accurate deterministic approximations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:equal-infima](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L11)\n- [lem:borel-transport](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/build/sections/infima.tex#L33)\n\n## Antecedents and comparison\n\n[Colombo-Di Marino](https://cvgmt.sns.it/media/doc/paper/2127/MultiColDim.pdf) already prove equality for Coulomb cost, including cyclic maps; their Lemma 2.3 is the cell-cost oscillation estimate. The present extraction records the source finite separated-cell construction and explicit Borel transport details, not a new equality-of-infima theorem.\n\n## Checks and limitations\n\nForty exact rational cell arrays verify source splitting and both pushed marginals; 2,400 separated Coulomb samples verify the stated oscillation bound.\n\nThe numerical models use intervals to check block algebra. They do not construct the source three-dimensional density, certify the Rosenblatt argument mechanically or establish the claimed optimal support.\n\n## Possible applications\n\nConstructing deterministic approximate transports while preserving marginals and controlling a cost singularity through support separation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000328",
+      "record_type": "instrument",
+      "title": "Certify tensor Gram blocks using integer-scaled orthogonal projections",
+      "forms": [
+        "scaled-tensor-projections",
+        "trace-free-hook-projection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-367"
+      ],
+      "source_paper_ids": [
+        "P-000183"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:positive-projections",
+          "line": 141,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L141",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:sym2",
+          "line": 127,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L127",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:sym3",
+          "line": 130,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L130",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:hook",
+          "line": 138,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L138",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "explicit-classical-tensor-projectors-in-source-normalization",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000328.md",
+      "body": "# Certify tensor Gram blocks using integer-scaled orthogonal projections\n\n[Family 367](../families/openai-math-367.md) · [Source manuscript](../papers/P-000183.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nWork over a five-dimensional Euclidean space. For rank two, let F'=F+F^T and v=tr(F'). Then Pi F=5F'-I v is ten times the orthogonal projection onto symmetric trace-free matrices.\n\nFor rank three, put F'=sum_{pi in S3} F^pi and v_i=sum_j F'_{jji}. Define (Jv)_ijk=delta_ij v_k+delta_ik v_j+delta_jk v_i. Since tr_12(Jv)=7v, the operator 7F'-Jv is 42 times the symmetric trace-free orthogonal projection.\n\nFor the hook component instead set F'=3(F+F^(12))-sum_pi F^pi and Bv=2delta_ij v_k-delta_ik v_j-delta_jk v_i. Then\n\n$$\\Pi F=8F'-B(\\operatorname{tr}_{12}F')$$\n\nis 48 times an orthogonal projection. Indeed P_0=S_12-Sym projects onto first-pair symmetric tensors H with H_ijk+H_ikj+H_jki=0. Their other traces equal -tr_12(H)/2. On this space tr_12(Bv)=8v and <H,Bz>=3<tr_12(H),z>, so subtracting B(tr_12 H)/8 is the orthogonal trace-free projection.\n\nThe unnormalized alternating sum is six times the alternating projection. All four operators are self-adjoint and positive semidefinite on the full tensor spaces, not only on inputs already satisfying their symmetry constraints. This lets a Gram block inherit nonnegativity from its scalar weight.\n\n## Role in the source argument\n\nSupplies the nonnegative tensor blocks in the source algebraic certificate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cert:positive-projections](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L141)\n- [cert:sym2](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L127)\n- [cert:sym3](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L130)\n- [cert:hook](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L138)\n\n## Antecedents and comparison\n\nThese are explicit realizations of classical orthogonal tensor projections. The integer scales and hook trace correction are the useful source normalizations.\n\n## Checks and limitations\n\nExact integer matrices of sizes 25 and 125 satisfy P^T=P and P^2=cP. Their ranks are 14, 30, 35 and 10 at scales 10, 42, 48 and 6 respectively; the specified trace-free conditions also pass.\n\nThis verifies the finite operators completely in dimension five, not the source polynomial coefficient tables or their assembly into a universal geometric inequality.\n\n## Possible applications\n\nExact positivity certificates for tensor-valued polynomial expressions without numerical eigenvalue tolerances.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000329",
+      "record_type": "instrument",
+      "title": "Retain trace-free structure to obtain sharp five-dimensional contraction constants",
+      "forms": [
+        "trace-free-spectral-bounds",
+        "symmetric-tensor-contraction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-367"
+      ],
+      "source_paper_ids": [
+        "P-000183"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:tensor-bounds",
+          "line": 310,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L310",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:trace-bounds",
+          "line": 316,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L316",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:five-sevenths",
+          "line": 318,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L318",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        },
+        {
+          "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex",
+          "label": "cert:mixed-bound",
+          "line": 321,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L321",
+          "sha256": "f8a7473a63bce4567b5a73f957989dd075eaf0ff7fa99a4bde4d8a9781e69217"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "classical-optimization-and-projection-with-explicit-sharp-constants",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000329.md",
+      "body": "# Retain trace-free structure to obtain sharp five-dimensional contraction constants\n\n[Family 367](../families/openai-math-367.md) · [Source manuscript](../papers/P-000183.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nLet A be a symmetric trace-free 5 by 5 matrix with |A|_F=1 and X a fully symmetric trace-free rank-three tensor. With theta=4/5,\n\n$$\\|A\\|_{op}^2\\le\\theta,\\quad |A^k|_F^2\\le\\theta^{k-1},\\quad |\\operatorname{tr}A^k|^2\\le\\theta^{k-2}\\ (k\\ge2),$$\n$$|\\operatorname{tr}A^3|^2\\le9/20,\\qquad |X:A|^2\\le(5/7)|X|^2.$$\n\nFor the cubic trace, stationary eigenvalues under sum alpha_i=0 and sum alpha_i^2=1 satisfy one quadratic equation, hence take two values. Multiplicities j and 5-j yield squared cubic trace (5-2j)^2/(5j(5-j)); its largest value is 9/20.\n\nFor the contraction, symmetrize zeta tensor A to B_ijk=(zeta_i A_jk+zeta_j A_ik+zeta_k A_ij)/3. Its trace is v=(2/3)A zeta. Its trace-free projection F=B-Jv/7 satisfies\n\n$$|F|^2=\\tfrac13|\\zeta|^2+\\tfrac{10}{21}|A\\zeta|^2\\le\\tfrac57|\\zeta|^2.$$\n\nSince <X:A,zeta>=<X,F>, duality proves the bound. Both displayed special constants are sharp for A=diag(4,-1,-1,-1,-1)/sqrt(20), taking zeta in the first coordinate and X proportional to the corresponding F.\n\nWhen g^2+|p|^2<=1, retain their dependence: for h,b>0, |g|^{2h}|p|^{2b} <= (h/(h+b))^h (b/(h+b))^b. Bounding the two factors separately by one loses this improvement.\n\n## Role in the source argument\n\nBounds the tensor and scalar factors used in the source graph-remainder estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [cert:tensor-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L310)\n- [cert:trace-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L316)\n- [cert:five-sevenths](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L318)\n- [cert:mixed-bound](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/build/sections/certificate-proof.tex#L321)\n\n## Antecedents and comparison\n\nThe arguments are constrained eigenvalue optimization, orthogonal projection and the elementary weighted product maximum. They are useful reusable inequalities without an established novelty claim.\n\n## Checks and limitations\n\nTwo hundred normalized tensor models pass; the cubic and contraction equality constants are checked exactly.\n\nRandom models do not replace the general proof. The full graph bounds and source certificate margins were not audited.\n\n## Possible applications\n\nSharper error budgets when tensors have trace constraints or scalar factors share a norm constraint.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000330",
+      "record_type": "instrument",
+      "title": "Resolve null-conic polarizations with an explicit nonsplit quotient sequence",
+      "forms": [
+        "null-conic-frame",
+        "nonsplit-trivial-quotient"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-372"
+      ],
+      "source_paper_ids": [
+        "P-000184"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "lem:conic-bundle",
+          "line": 17,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L17",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        },
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "eq:conic-quotient",
+          "line": 26,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L26",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        },
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "eq:conic-frame",
+          "line": 54,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L54",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "explicit-classical-conic-bundle-calculation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000330.md",
+      "body": "# Resolve null-conic polarizations with an explicit nonsplit quotient sequence\n\n[Family 372](../families/openai-math-372.md) · [Source manuscript](../papers/P-000184.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nParametrize the projective null conic in C3 by theta(z,w)=(z^2-w^2,i(z^2+w^2),2zw). Its bilinear orthogonal plane H_theta={p:theta.p=0} contains the null line N_theta=C theta. The degree-one columns\n\n$$h_1=(z,iz,w),\\qquad h_2=(-w,iw,z)$$\n\nsatisfy theta.h_j=0, h_1 cross h_2=i theta and theta=z h_1+w h_2. Thus H is O(-1) direct-sum O(-1), N is O(-2), and\n\n$$0\\longrightarrow O(-2)\\xrightarrow{(z,w)^T}O(-1)^2\\xrightarrow{(-w,z)}O\\longrightarrow0.$$\n\nThe formulas are homogeneous of the required degrees, so they descend to both projective charts, including their endpoints. For p=c h_1+d h_2, the induced bilinear form is p.p=(-wc+zd)^2.\n\nThere are no nonzero global holomorphic sections of H: its ambient components would be constant on the compact conic, and a constant vector orthogonal to every null vector is zero. Hence the quotient sequence does not split holomorphically. Nevertheless H itself has nonscalar holomorphic endomorphisms, since H=O(-1)^2. Any argument eliminating those endomorphisms needs additional transport information.\n\n## Role in the source argument\n\nIdentifies the polarization geometry used in the source coefficient-recovery comparison.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:conic-bundle](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L17)\n- [eq:conic-quotient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L26)\n- [eq:conic-frame](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L54)\n\n## Antecedents and comparison\n\nThe sequence is a classical projective-line exact sequence written in coordinates suited to the complex null cone. No new general bundle theorem is claimed.\n\n## Checks and limitations\n\nExact polynomial identities verify the null vector, frame, cross product and quotient norm. Forty-eight projective coordinate samples verify the ranks, including both chart endpoints.\n\nThese calculations do not prove the source holomorphic transport matching or its restriction on endomorphisms.\n\n## Possible applications\n\nKeeping track of null lines, quotient metrics and genuine bundle obstructions in complex geometric optics.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000331",
+      "record_type": "instrument",
+      "title": "Close a Hessian equation on the gradient and scalar trace ambiguity",
+      "forms": [
+        "finite-type-prolongation",
+        "pathwise-ode-uniqueness"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-372"
+      ],
+      "source_paper_ids": [
+        "P-000184"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "lem:finite-type",
+          "line": 150,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L150",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        },
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "eq:finite-type-hypothesis",
+          "line": 154,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L154",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        },
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "eq:finite-type-system",
+          "line": 180,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L180",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        },
+        {
+          "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex",
+          "label": "eq:finite-type-coefficients",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L187",
+          "sha256": "443d34bfc0b3998bedb4ea1fdc714ac0e66c74c51b090905f68e0479f1033016"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "elementary-finite-type-uniqueness-packaged-for-coefficient-recovery",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000331.md",
+      "body": "# Close a Hessian equation on the gradient and scalar trace ambiguity\n\n[Family 372](../families/openai-math-372.md) · [Source manuscript](../papers/P-000184.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nOn a connected open U in R^n, n>=2, suppose smooth real or complex functions satisfy eta_ij=sum_a B_ij^a eta_a+delta_ij q. Put v=grad(eta). For each s choose one i different from s, without summing over i. Commuting eta_iis and eta_sii gives\n\n$$\\partial_s q=\\partial_i\\sum_a B_{si}^a v_a-\\partial_s\\sum_a B_{ii}^a v_a.$$\n\nSubstitute the original equation for every derivative of v. This produces a closed homogeneous first-order system\n\n$$\\partial_s v_a=\\sum_b B_{as}^b v_b+\\delta_{as}q,\\qquad \\partial_s q=\\sum_b C_s^b v_b+d_s q,$$\n\nwhere C_s^b=partial_i B_si^b-partial_s B_ii^b+sum_a(B_si^a B_ai^b-B_ii^a B_as^b) and d_s=B_si^i-B_ii^s.\n\nIf eta vanishes on a nonempty open subset, then v=q=0 there. Along every piecewise smooth path the system becomes a homogeneous linear ODE, so zero initial data propagate. Connected open subsets of Euclidean space are path connected; hence eta=q=0 throughout U. The ability to choose i different from s is essential. In dimension one, eta''=q with arbitrary smooth eta provides no such uniqueness.\n\n## Role in the source argument\n\nRemoves a scalar Hessian ambiguity after equality of restricted transport blocks has been established.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:finite-type](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L150)\n- [eq:finite-type-hypothesis](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L154)\n- [eq:finite-type-system](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L180)\n- [eq:finite-type-coefficients](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/build/sections/coefficient-recovery.tex#L187)\n\n## Antecedents and comparison\n\nThis is a finite-type prolongation followed by ordinary differential equation uniqueness. The useful feature is the explicit closed system and the absence of a separate analytic unique-continuation theorem.\n\n## Checks and limitations\n\nTwo hundred forty exact coefficient closures and a symbolic variable-coefficient solution verify the displayed formulas.\n\nThe check does not establish that the elasticity comparison satisfies this Hessian relation; that is an additional source argument outside this audit.\n\n## Possible applications\n\nUniqueness for overdetermined scalar equations whose Hessian is controlled by first derivatives and one scalar trace term.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000332",
+      "record_type": "instrument",
+      "title": "Use an inverse profile to turn stability into a weighted defect inequality",
+      "forms": [
+        "inverse-profile-defect",
+        "weighted-stability-transform"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-375"
+      ],
+      "source_paper_ids": [
+        "P-000185"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+          "label": "eq:diffuse-variables",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L51",
+          "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+        },
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+          "label": "eq:diffuse-D",
+          "line": 60,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L60",
+          "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+        },
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+          "label": "eq:diffuse-q",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L61",
+          "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+        },
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex",
+          "label": "eq:q-stability",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L88",
+          "sha256": "0026de118ceddfdf48be06b7c723d169d24223361cd10b3dee3bf0e97ea635c0"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "explicit-established-antecedent-llwww-lemma-2-1",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000332.md",
+      "body": "# Use an inverse profile to turn stability into a weighted defect inequality\n\n[Family 375](../families/openai-math-375.md) · [Source manuscript](../papers/P-000185.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nFor an entire solution Delta v=v^3-v with |v|<1, put g(s)=tanh(s/sqrt(2)), U=g^{-1}(v), q=1-v^2, p=grad U, T=Hess U and D=1-|p|^2. Modica's bound gives 0<=D<=1. Direct differentiation yields\n\n$$\\Delta U=-\\sqrt2 vD,\\quad(-\\Delta+2\\sqrt2 vp\\cdot\\nabla+2q|p|^2)D=2|T|^2,$$\n$$(-\\Delta+3v^2-1)q=-q^2D.$$\n\nThe defect also has the exact energy interpretation W(v)-|grad v|^2/2=q^2D/4. If D vanishes at one point, the strong minimum principle gives D identically zero, then T=0, so v is a planar transition.\n\nFor a stable solution, use q eta as the scalar stability test. Integration by parts gives\n\n$$0\\le Q_v(q\\eta)=\\int q^2|\\nabla\\eta|^2-q^3D\\eta^2.$$\n\nThe gradient cross terms are absorbed exactly through the equation for q. This requires no smoothness of the zero set and converts nonplanarity into a nonnegative weighted defect mass.\n\n## Role in the source argument\n\nProvides a scalar test detecting nonplanar transition behavior before geometric surface estimates are available.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:diffuse-variables](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L51)\n- [eq:diffuse-D](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L60)\n- [eq:diffuse-q](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L61)\n- [eq:q-stability](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/01-diffuse.tex#L88)\n\n## Antecedents and comparison\n\nThese equations, the pointwise zero-defect rigidity and the weighted stability inequality occur in [Liu-Luo-Wang-Wei-Wei-Wu, Lemma 2.1](https://arxiv.org/pdf/2609.21680). The source itself cites that antecedent. The calculation is dimension independent; no novelty is assigned to it here.\n\n## Checks and limitations\n\nThe defect, energy discrepancy and ground-state-transform identities are verified symbolically.\n\nThe identities do not establish global stable classification in dimension seven. Modica, the minimum principle and integration by parts remain analytic inputs.\n\n## Possible applications\n\nMeasuring departure from a one-dimensional profile and constructing stability tests before a regular interface is known.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000333",
+      "record_type": "instrument",
+      "title": "Push overlapping lifted tests down by their Euclidean norm",
+      "forms": [
+        "immersed-test-pushdown",
+        "gradient-variance-gluing"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-375"
+      ],
+      "source_paper_ids": [
+        "P-000185"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+          "label": "lem:interface-immersed-test",
+          "line": 172,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L172",
+          "sha256": "07a905757ac037b7cb7799f706e9ad22e0bc9b85acaeee81d80b90beca8d5fc9"
+        },
+        {
+          "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex",
+          "label": "eq:L4",
+          "line": 186,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L186",
+          "sha256": "07a905757ac037b7cb7799f706e9ad22e0bc9b85acaeee81d80b90beca8d5fc9"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "classical-norm-gradient-identity-in-source-immersed-tube-construction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000333.md",
+      "body": "# Push overlapping lifted tests down by their Euclidean norm\n\n[Family 375](../families/openai-math-375.md) · [Source manuscript](../papers/P-000185.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nSuppose a compactly supported Lipschitz amplitude is defined on a lifted tube whose map to physical space is a local diffeomorphism. At a physical point let xi_j be its finitely many nonzero inverse branches and define xi=(sum_j xi_j^2)^{1/2}.\n\nCompact lifted support and local invertibility make the branch sum locally finite. The norm is Lipschitz even where it vanishes. Almost everywhere,\n\n$$\\sum_j|\\nabla\\xi_j|^2-|\\nabla\\xi|^2=\\min_b\\sum_j|\\nabla\\xi_j-\\xi_j b|^2\\ge0.$$\n\nFor sum xi_j^2>0 the minimizing vector is b=(sum xi_j grad xi_j)/(sum xi_j^2). On the common zero set all branch gradients vanish almost everywhere. Potential terms add exactly, regardless of their sign. Thus the physical quadratic form equals the lifted quadratic form minus the integral of this nonnegative variance.\n\nFor the normal map Phi(z,s)=z+s nu(z), Jacobian J=det(I+sA), and amplitude G(s)f(z,s), with G=1-tanh^2(s/sqrt(2)), the equation G''=(3g^2-1)G and normal integration by parts leave\n\n$$\\int G^2J|\\nabla f|^2+f^2[-J_sGG'+3(v(\\Phi)^2-g^2)G^2J].$$\n\nThe area formula counts all branches, so a globally injective normal tube is unnecessary. Caps can only be removed after establishing domination of the displayed terms.\n\n## Role in the source argument\n\nTransfers ambient stability to a lifted surface calculation while retaining an overlap correction that can later improve an error budget.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:interface-immersed-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L172)\n- [eq:L4](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/sections/04-interface.tex#L186)\n\n## Antecedents and comparison\n\nThe variance identity is the elementary least-squares formula underlying differentiation of a Euclidean norm. The source applies it to immersed normal tubes with exact potential accounting.\n\n## Checks and limitations\n\nOne hundred sixty exact rational branch models verify the variance identity and potential additivity for positive and negative potentials. The normal Jacobian integration-by-parts identity is checked symbolically.\n\nFinite branch algebra does not verify the global geometric hypotheses, domination for cap removal or the later curvature and reach estimates.\n\n## Possible applications\n\nCombining overlapping local tests into one physical test without paying an uncontrolled multiplicity factor.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000334",
+      "record_type": "instrument",
+      "title": "Add an explicit correction when moving a quadratic-envelope center",
+      "forms": [
+        "moving-center-envelope-convexity",
+        "quadratic-envelope-semigroup"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-377"
+      ],
+      "source_paper_ids": [
+        "P-000186"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+          "label": "lem:quadratic-envelopes",
+          "line": 256,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L256",
+          "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+        },
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+          "label": "eq:envelope-composition",
+          "line": 262,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L262",
+          "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+        },
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex",
+          "label": "eq:path-envelope-convexity",
+          "line": 268,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L268",
+          "sha256": "1b604397b3b347b9fd3e8ad6c946cffa8d2714094e15e61ce1065874f80f004e"
+        },
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex",
+          "label": "eq:limit-pde",
+          "line": 7,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex#L7",
+          "sha256": "50521fb6e7492fb3e866ca76d603200fa085b2159ada9d5a331361d47abf96eb"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 1,
+      "subject": "Partial differential equations",
+      "novelty_status": "source-moving-frame-correction-to-classical-quadratic-envelopes",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000334.md",
+      "body": "# Add an explicit correction when moving a quadratic-envelope center\n\n[Family 377](../families/openai-math-377.md) · [Source manuscript](../papers/P-000186.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nFor continuous f(x,t) with subquadratic spatial growth uniformly on compact time intervals, define P_l f(x,t)=sup_y[f(y,t+l)-|y-x|^2/(2l)] and M_l f(x,t)=inf_y[f(y,t-l)+|y-x|^2/(2l)]. The quadratic cost confines optimizers, gives continuity including l=0, and yields P_l P_h=P_{l+h}, with the analogous infimum identity.\n\nSuppose f is a viscosity subsolution of F[f]=D2f[(grad_x f,1),(grad_x f,1)]=0, using F>=0 for upper tests. For an affine center path x(l)=x_0+d l,\n\n$$l\\longmapsto P_l f(x_0+dl,t)+|d|^2l\\log l$$\n\nis convex, with l log l=0 at zero. If psi touches the envelope from above at l_0 and y_0 is an optimizer, Psi(y,l)=psi(l)+|y-x(l)|^2/(2l) touches f(y,t+l) from above. Put q=(y_0-x(l_0))/l_0. The Hessian of the cost in direction (q,1) equals |d|^2/l_0, so psi''+|d|^2/l_0>=0. Since (l log l)''=1/l, the correction supplies convexity.\n\nAt a fixed center the correction vanishes. Time reversal and sign change give concavity of the lower envelope for supersolutions. Uniform subquadratic control also keeps optimizers in one compact set under local uniform convergence, permitting convergence of the envelopes.\n\n## Role in the source argument\n\nControls changes in envelope slopes and the cost of shifting centers in the source propagation argument.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:quadratic-envelopes](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L256)\n- [eq:envelope-composition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L262)\n- [eq:path-envelope-convexity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/04-limiting-tools.tex#L268)\n- [eq:limit-pde](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/03-reduction.tex#L7)\n\n## Antecedents and comparison\n\n[Evans-Savin, Sections 2.4 and 3.1](https://www.math.columbia.edu/~savin/evans-savin.pdf) contain the same limiting PDE and quadratic slice comparisons. The source explicitly tracks the moving-center Hessian through the logarithmic correction; this targeted comparison does not establish first priority.\n\n## Checks and limitations\n\nThe cost semigroup and moving-center directional Hessian are symbolic identities. One hundred exact piecewise-affine supremum-envelope models satisfy composition.\n\nThe script checks the algebra of the viscosity test, not the universal viscosity argument, contact propagation or the source Liouville theorem.\n\n## Possible applications\n\nQuantitative envelope comparisons along moving paths when fixed-center convexity alone does not control travel.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000335",
+      "record_type": "instrument",
+      "title": "Enforce a barycenter while optimizing a variance-penalized envelope",
+      "forms": [
+        "barycentric-envelope-duality",
+        "finite-support-contact-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-377"
+      ],
+      "source_paper_ids": [
+        "P-000186"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+          "label": "lem:barycentric-envelope",
+          "line": 58,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L58",
+          "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+        },
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+          "label": "eq:barycentric-duality",
+          "line": 62,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L62",
+          "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+        },
+        {
+          "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex",
+          "label": "eq:barycentric-sandwich",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L45",
+          "sha256": "1fc42a48767b53a3f93fe874b34ade9f2528d24ced9c0c6192bfea86ff7577d8"
+        }
+      ],
+      "batch_id": "B028",
+      "source_item": 2,
+      "subject": "Partial differential equations",
+      "novelty_status": "classical-concave-envelope-duality-in-source-variance-penalized-form",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000335.md",
+      "body": "# Enforce a barycenter while optimizing a variance-penalized envelope\n\n[Family 377](../families/openai-math-377.md) · [Source manuscript](../papers/P-000186.md) · [Batch B028](../../batches/B028/README.md)\n\n## Mathematical content\n\nFor a continuous subquadratically growing slice f, let C_s f(x) be the supremum of sum_i theta_i f(y_i)-sum_i theta_i|y_i-x|^2/(2s) over finite probability configurations with mean x. Put g(y)=f(y)-|y|^2/(2s). Then\n\n$$C_s f(x)-\\frac{|x|^2}{2s}=\\min_A\\max_y\\{g(y)-A\\cdot(y-x)\\}.$$\n\nBoth extrema are attained. The dual objective grows at least |A|-C by testing y=x-A/|A|, so minimizing slopes stay bounded. The negative quadratic confines their maximizing positions. At a minimizing slope A_0, x belongs to the convex hull of the maximizing set: otherwise a separating direction would lower the maximum. A finite convex combination of maximizers then attains the primal value; at most m+1 points suffice in R^m.\n\nThe resulting affine majorant of g bounds the integral against every probability measure with mean x and finite second moment, so allowing such measures does not improve the value. It also identifies C_s f-|x|^2/(2s) as the least concave majorant of g. Common subquadratic control yields continuity and stability under local uniform limits.\n\nIf every finite configuration satisfies sum theta_i f(y_i)-f(x)<=kappa r, where r^2=sum theta_i|y_i-x|^2, then\n\n$$0\\le C_s f(x)-f(x)\\le\\kappa^2s/2.$$\n\nThis follows by completing the square in kappa r-r^2/(2s); equality requires r=kappa s. For f(x)=kappa|x| in one dimension, symmetric points at plus/minus kappa s attain equality at x=0.\n\n## Role in the source argument\n\nProduces finite contact configurations from a global horizontal Jensen defect.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:barycentric-envelope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L58)\n- [eq:barycentric-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L62)\n- [eq:barycentric-sandwich](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/build/manuscript/sections/05-envelope-contact.tex#L45)\n\n## Antecedents and comparison\n\nThis is classical concave-majorant duality and finite-dimensional convex separation expressed through a variance penalty. Its use in a nonlinear PDE contact argument is distinct from the duality statement itself.\n\n## Checks and limitations\n\nSixty finite-support linear programs agree with their affine-majorant duals and use at most m+1 active points. Forty-five exact absolute-value examples verify the continuum envelope formula.\n\nFinite LPs do not prove universal attainment or the source common-time subsolution rule. The latter is a separate unaudited analytic step.\n\n## Possible applications\n\nReplacing arbitrary probability mixtures by finite optimizing configurations with explicit supporting affine certificates.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -17018,6 +17446,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000182.md",
       "body": "# A counterexample to the Monge ansatz for the three-marginal Coulomb cost\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a smooth compactly supported probability density on R3, with smooth compactly supported square root, whose three-marginal Coulomb optimum is attained by a coupling but by no deterministic pair of maps, while the two infima agree.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000326: Rule out deterministic branches by testing selected subsets](../instruments/MI-000326.md)\n- [MI-000327: Approximate separated couplings by graph plans with exact cell masses](../instruments/MI-000327.md)\n\n## Dependencies and review\n\nBorel images under homeomorphisms, pushforward measure inequalities, nonatomic splitting, Borel transport between densities and a separated-cost oscillation estimate.\n\nRead the complete splitting and equal-infima sections, including the Borel conditional-quantile transport proof, plus the introduction. The dual Coulomb certificate, local minimizing branches and forcing of optimal support were not audited.\n\nRead CoulombCounterexample.lean and its scope. Its target includes smoothness of rho and sqrt(rho), compact support, finite attained Kantorovich value, strict failure of every deterministic optimizer, equal infima and finite epsilon-approximating graph plans. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\n[Family context](../families/openai-math-373.md) · [Batch B027](../../batches/B027/README.md)"
+    },
+    {
+      "id": "P-000183",
+      "record_type": "paper",
+      "title": "The critical dimension for one-phase Bernoulli minimizers",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-367"
+      ],
+      "batch_id": "B028",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e0a533137936a2b3779921606ad2d0d4eb47b84e15a15990c84b9241eb8f5e50",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000183.md",
+      "body": "# The critical dimension for one-phase Bernoulli minimizers\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims that seven is the critical dimension for nonflat one-homogeneous one-phase Bernoulli global minimizers, with the resulting sharp singular-set dimension bound.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000328: Certify tensor Gram blocks using integer-scaled orthogonal projections](../instruments/MI-000328.md)\n- [MI-000329: Retain trace-free structure to obtain sharp five-dimensional contraction constants](../instruments/MI-000329.md)\n\n## Dependencies and review\n\nSlot permutations, orthogonal symmetrization, trace adjoints, finite-dimensional Lagrange multipliers and Cauchy-Schwarz.\n\nRead the complete positive-projection and tensor-bound proofs and the main theorem. The coefficient tables, graph collection, universal certificate and geometric exclusion arguments were not audited.\n\nRead BernoulliNonflatInSeven.lean and its scope. The target only asserts existence of a nonzero nonflat one-homogeneous global minimizer in dimension seven, with arbitrary Sobolev competitors and volume-one Bernoulli energy. Classification through dimension six and the singular-set bound are outside it. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.\n\n[Family context](../families/openai-math-367.md) · [Batch B028](../../batches/B028/README.md)"
+    },
+    {
+      "id": "P-000184",
+      "record_type": "paper",
+      "title": "Global Uniqueness for the Smooth Isotropic Elasticity Inverse Problem",
+      "source_collection": "openai/math",
+      "upstream_slug": "Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-372"
+      ],
+      "batch_id": "B028",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7ad925c0e5d494e8c642e767990255b06011b9cc147edd5247f9773571c6966d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000184.md",
+      "body": "# Global Uniqueness for the Smooth Isotropic Elasticity Inverse Problem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims global uniqueness of both smooth isotropic Lame moduli in a three-dimensional bounded smooth connected domain from the full displacement-to-traction map.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000330: Resolve null-conic polarizations with an explicit nonsplit quotient sequence](../instruments/MI-000330.md)\n- [MI-000331: Close a Hessian equation on the gradient and scalar trace ambiguity](../instruments/MI-000331.md)\n\n## Dependencies and review\n\nHomogeneous conic parametrization, tautological line bundles, compactness of P1, commutation of third derivatives and linear ODE uniqueness.\n\nRead the complete conic-bundle and finite-type uniqueness proofs. Carleman estimates, physical amplitudes, transport matching and comparison rigidity were not audited.\n\nRead ElasticityUniqueness.lean and its scope. It requires smooth real moduli with mu>0 and 3lambda+2mu>0, and equality of the full physical DN pairing on the variational trace quotient. It asserts uniqueness, not reconstruction. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.\n\n[Family context](../families/openai-math-372.md) · [Batch B028](../../batches/B028/README.md)"
+    },
+    {
+      "id": "P-000185",
+      "record_type": "paper",
+      "title": "A positive resolution of De Giorgi's conjecture in dimension eight",
+      "source_collection": "openai/math",
+      "upstream_slug": "De-Giorgis-conjecture-in-dimension-eight-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-375"
+      ],
+      "batch_id": "B028",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3149fbde994e342ccc927ab53458d359be8bb357021a66b88966e788e6ffa6af",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000185.md",
+      "body": "# A positive resolution of De Giorgi's conjecture in dimension eight\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims stable rigidity for the quartic Allen-Cahn equation in dimension seven without an energy-growth assumption, and monotone rigidity in dimension eight.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000332: Use an inverse profile to turn stability into a weighted defect inequality](../instruments/MI-000332.md)\n- [MI-000333: Push overlapping lifted tests down by their Euclidean norm](../instruments/MI-000333.md)\n\n## Dependencies and review\n\nModica gradient bound, chain rule, ground-state transform, strong minimum principle, local inverse branches and the area formula.\n\nRead the complete inverse-profile/stability calculation and the lifted-test pushdown proof, plus both main theorem statements. Sharp normal comparison, global reach budgets and density removal were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-375.md) · [Batch B028](../../batches/B028/README.md)"
+    },
+    {
+      "id": "P-000186",
+      "record_type": "paper",
+      "title": "Uniform Interior $`C^{1,\\alpha}`$ Estimates for Infinity-Harmonic Functions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-377"
+      ],
+      "batch_id": "B028",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f99c43e3ffeb04dbcff060f4fd334ec5e810abe3c64d7e035cfb21bae2b1fc14",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000186.md",
+      "body": "# Uniform Interior $`C^{1,\\alpha}`$ Estimates for Infinity-Harmonic Functions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/interior-c1-infinity-harmonic.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims dimension-dependent uniform interior C1,alpha estimates for bounded infinity-harmonic functions in every dimension at least three, with a nonexplicit exponent at most one third.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000334: Add an explicit correction when moving a quadratic-envelope center](../instruments/MI-000334.md)\n- [MI-000335: Enforce a barycenter while optimizing a variance-penalized envelope](../instruments/MI-000335.md)\n\n## Dependencies and review\n\nCoercive quadratic optimization, viscosity upper tests, completion of squares, convex separation and finite-dimensional convex hulls.\n\nRead the complete quadratic-envelope and barycentric-envelope proofs, the limiting PDE definition and the main theorem. Common-time subsolution rules, contact propagation, final Liouville rigidity and the full compactness reduction were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\n[Family context](../families/openai-math-377.md) · [Batch B028](../../batches/B028/README.md)"
     }
   ],
   "families": [
@@ -20833,6 +21337,33 @@
       "body": "# Project compact jumps before comparing translated singular sets\n\n## Source manuscript and claim\n\n[Interior regularity of planar Mumford–Shah minimizers](../papers/P-000179.md), by OpenAI, None.\n\nThe source claims the full interior arc, crack-tip and triple-junction description of reduced planar Mumford-Shah absolute minimizers, with locally finitely many global crack components.\n\n## Extracted instruments\n\n- [MI-000320: Project a compact jump field to a decaying divergence-free field](../instruments/MI-000320.md)\n- [MI-000321: Use harmonic translation and amplitude variation to force an interaction to vanish](../instruments/MI-000321.md)\n\n## Dependencies and antecedents\n\nL2 orthogonal projection, local Poincare inequalities, exterior Fourier expansion, compact variational comparisons and the strong minimum principle.\n\nClassical Helmholtz-Hodge decomposition, finite-energy harmonic functions and harmonic minimum principles. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the compact-projection, translated-comparison and harmonic-interaction proofs completely, plus the main theorem and endpoint gradient corollary. Subsequent component-removal and full geometric classification arguments were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\nThe compact jump field is a gradient density off a zero-area set, not necessarily a distributional gradient on the whole plane. Linear energy growth is retained when passing from compact comparisons to infinite-plane interactions.\n\n[Batch record](../../batches/B027/README.md)"
     },
     {
+      "id": "openai-math-367",
+      "record_type": "family",
+      "title": "Exact tensor projections and sharp contraction estimates",
+      "source_family": "367",
+      "source_collection": "openai/math",
+      "batch_id": "B028",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000183"
+      ],
+      "instrument_ids": [
+        "MI-000328",
+        "MI-000329"
+      ],
+      "headline": "The source claims that seven is the critical dimension for nonflat one-homogeneous one-phase Bernoulli global minimizers, with the resulting sharp singular-set dimension bound.",
+      "central_instrument": "Integer multiples of orthogonal trace-free projections certify nonnegative tensor blocks. Sharp spectral and contraction bounds turn tensor graph terms into controlled scalar coefficients.",
+      "novelty_assessment": "Symmetrization, trace removal, Schur-type tensor decompositions and constrained eigenvalue optimization are classical. This extraction records explicit five-dimensional normalizations and sharp constants, not a certification of the source universal certificate or dimension theorem.",
+      "formalization_summary": "Read BernoulliNonflatInSeven.lean and its scope. The target only asserts existence of a nonzero nonflat one-homogeneous global minimizer in dimension seven, with arbitrary Sobolev competitors and volume-one Bernoulli energy. Classification through dimension six and the singular-set bound are outside it. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.",
+      "statement_faithfulness": "The tensor space is Euclidean dimension five. The matrices are scaled projections, not idempotent projections unless divided by their stated scale. The matrix A is symmetric trace-free with Frobenius norm one.",
+      "dependencies": "Slot permutations, orthogonal symmetrization, trace adjoints, finite-dimensional Lagrange multipliers and Cauchy-Schwarz.",
+      "antecedents": "Classical orthogonal tensor decomposition and constrained trace inequalities; no historical first-priority claim for these constants was established.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-367.md",
+      "body": "# Exact tensor projections and sharp contraction estimates\n\n## Source manuscript and claim\n\n[The critical dimension for one-phase Bernoulli minimizers](../papers/P-000183.md), by OpenAI, September 24, 2026.\n\nThe source claims that seven is the critical dimension for nonflat one-homogeneous one-phase Bernoulli global minimizers, with the resulting sharp singular-set dimension bound.\n\n## Extracted instruments\n\n- [MI-000328: Certify tensor Gram blocks using integer-scaled orthogonal projections](../instruments/MI-000328.md)\n- [MI-000329: Retain trace-free structure to obtain sharp five-dimensional contraction constants](../instruments/MI-000329.md)\n\n## Dependencies and antecedents\n\nSlot permutations, orthogonal symmetrization, trace adjoints, finite-dimensional Lagrange multipliers and Cauchy-Schwarz.\n\nClassical orthogonal tensor decomposition and constrained trace inequalities; no historical first-priority claim for these constants was established. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete positive-projection and tensor-bound proofs and the main theorem. The coefficient tables, graph collection, universal certificate and geometric exclusion arguments were not audited.\n\nRead BernoulliNonflatInSeven.lean and its scope. The target only asserts existence of a nonzero nonflat one-homogeneous global minimizer in dimension seven, with arbitrary Sobolev competitors and volume-one Bernoulli energy. Classification through dimension six and the singular-set bound are outside it. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.\n\nThe tensor space is Euclidean dimension five. The matrices are scaled projections, not idempotent projections unless divided by their stated scale. The matrix A is symmetric trace-free with Frobenius norm one.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/367.md) · [Batch record](../../batches/B028/README.md)"
+    },
+    {
       "id": "openai-math-369",
       "record_type": "family",
       "title": "Regularize reciprocal Green kernels while preserving one positive direction",
@@ -20885,6 +21416,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-370.md",
       "body": "# Keep weights and midpoint displacement in localized potential estimates\n\n## Source manuscript and claim\n\n[The Subcritical Hénon–Lane–Emden Conjecture](../papers/P-000181.md), by OpenAI, September 24, 2026.\n\nThe source claims nonexistence of positive entire subcritical Henon-Lane-Emden pairs in every dimension n>=2, with arbitrary real weights and positive exponents under its stated regularity.\n\n## Extracted instruments\n\n- [MI-000324: Pair two potential gradients before estimating a localized virial term](../instruments/MI-000324.md)\n- [MI-000325: Control interval endpoint defects using the sign of midpoint displacement](../instruments/MI-000325.md)\n\n## Dependencies and antecedents\n\nTonelli and Fubini under established convergence, weighted integration by parts, Newton-kernel homogeneity, interval overlap and odd-function pairing.\n\nClassical Rellich-Pohozaev identities; source references weighted identities of Phan and system identities of Mitidieri and Souplet. Their full primary proofs were not separately audited in this batch. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete localized virial and interval-pair proofs and the parameter definitions. Initial reductions, exact potential representation, pressure estimates and final uniform energy bound were not audited.\n\nRead HenonEmden.lean and its scope. Solutions are continuous globally and C2 off the origin; equations are required away from zero, p and q are individually positive, and the strict weighted subcritical inequality excludes equality. The inspected Comparator ends in sorry. It is a target statement, not a Lean proof built or kernel-checked here.\n\nThe extracted virial identity uses n>=3, weights A,B>-2 and exact Newtonian potentials after the source reductions. The interval comparison retains midpoint displacement and defines zero-weight unbounded endpoint terms without subtracting infinities.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/370.md) · [Batch record](../../batches/B027/README.md)"
+    },
+    {
+      "id": "openai-math-372",
+      "record_type": "family",
+      "title": "Null-conic polarization bundles and finite-type uniqueness",
+      "source_family": "372",
+      "source_collection": "openai/math",
+      "batch_id": "B028",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000184"
+      ],
+      "instrument_ids": [
+        "MI-000330",
+        "MI-000331"
+      ],
+      "headline": "The source claims global uniqueness of both smooth isotropic Lame moduli in a three-dimensional bounded smooth connected domain from the full displacement-to-traction map.",
+      "central_instrument": "An explicit null-conic frame identifies a nonsplit quotient bundle. An overdetermined Hessian relation closes on the gradient and one scalar, so zero data propagate along paths by ODE uniqueness.",
+      "novelty_assessment": "The conic bundle calculation is an explicit form of classical projective geometry, and prolongation to a finite first-order system is classical. Their role in coefficient recovery is extracted conditionally on the source unaudited analytic transport construction.",
+      "formalization_summary": "Read ElasticityUniqueness.lean and its scope. It requires smooth real moduli with mu>0 and 3lambda+2mu>0, and equality of the full physical DN pairing on the variational trace quotient. It asserts uniqueness, not reconstruction. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.",
+      "statement_faithfulness": "Orthogonality on the complex null conic is bilinear, not Hermitian. A trivial quotient does not make its exact sequence split, and vanishing global sections does not force all bundle endomorphisms to be scalar. The finite-type lemma needs dimension at least two.",
+      "dependencies": "Homogeneous conic parametrization, tautological line bundles, compactness of P1, commutation of third derivatives and linear ODE uniqueness.",
+      "antecedents": "Classical conic and Euler-sequence geometry; elementary finite-type prolongation of overdetermined differential systems.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-372.md",
+      "body": "# Null-conic polarization bundles and finite-type uniqueness\n\n## Source manuscript and claim\n\n[Global Uniqueness for the Smooth Isotropic Elasticity Inverse Problem](../papers/P-000184.md), by OpenAI, September 24, 2026.\n\nThe source claims global uniqueness of both smooth isotropic Lame moduli in a three-dimensional bounded smooth connected domain from the full displacement-to-traction map.\n\n## Extracted instruments\n\n- [MI-000330: Resolve null-conic polarizations with an explicit nonsplit quotient sequence](../instruments/MI-000330.md)\n- [MI-000331: Close a Hessian equation on the gradient and scalar trace ambiguity](../instruments/MI-000331.md)\n\n## Dependencies and antecedents\n\nHomogeneous conic parametrization, tautological line bundles, compactness of P1, commutation of third derivatives and linear ODE uniqueness.\n\nClassical conic and Euler-sequence geometry; elementary finite-type prolongation of overdetermined differential systems. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete conic-bundle and finite-type uniqueness proofs. Carleman estimates, physical amplitudes, transport matching and comparison rigidity were not audited.\n\nRead ElasticityUniqueness.lean and its scope. It requires smooth real moduli with mu>0 and 3lambda+2mu>0, and equality of the full physical DN pairing on the variational trace quotient. It asserts uniqueness, not reconstruction. The inspected Comparator contains a sorry placeholder; no Lean proof was built or kernel-checked.\n\nOrthogonality on the complex null conic is bilinear, not Hermitian. A trivial quotient does not make its exact sequence split, and vanishing global sections does not force all bundle endomorphisms to be scalar. The finite-type lemma needs dimension at least two.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/372.md) · [Batch record](../../batches/B028/README.md)"
     },
     {
       "id": "openai-math-373",
@@ -20942,6 +21500,33 @@
       "body": "# Cell moments, inverse-free energy testing and sharp transport instability\n\n## Source manuscript and claim\n\n[Sharp One-Third Stability of Brenier Maps](../papers/P-000110.md), by OpenAI, None.\n\nThe source claims a uniform W2-to-L2 exponent one third for Brenier maps from the uniform measure on any fixed compact convex body with interior in dimension at least two, and sharpness on a fixed cube with three target atoms.\n\n## Extracted instruments\n\n- [MI-000176: A midpoint coupling controls first-moment derivatives by cell-mass derivatives](../instruments/MI-000176.md)\n- [MI-000177: Test a mass Laplacian in its range to avoid an inverse-norm loss](../instruments/MI-000177.md)\n- [MI-000178: A thin tilted cell separates transport-map movement from target movement](../instruments/MI-000178.md)\n\n## Dependencies and antecedents\n\nFinite affine maximum potentials; positive-mass cell calculus and connected face Laplacian; triangular midpoint coupling; a quadratic concave test; weighted derivative norms; optimal-coupling monotonicity; convex-gradient interpolation and a separate finite-to-Borel limiting argument.\n\nKnothe and McCann supply the midpoint-coupling background, Kitagawa-Merigot-Thibert the cell Laplacian, and Delalande-Merigot convex-gradient interpolation. Letrouit gives instability examples on other source sets and formulates the convex-source square-root conjecture; its scope is compared directly. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full three-atom example, midpoint and moment proofs, cell differential and positive-mass arguments, fixed-mass path estimate and finite-target gradient interpolation. The final extension from finite to arbitrary Borel targets was not audited.\n\nBrenier.lean states both target-uniform one-third stability, including existence and unique optimal plans, and failure of every larger exponent for exactly three positive atoms in a fixed cube, for each dimension at least two. The family scope and Comparator declarations were compared. No Lean solution was built or kernel-checked; the auxiliary cards are not separate Comparator targets.\n\nThe source density is uniform on a convex body; the compact target container need not be convex. Constants may depend on that body and container but not atom count, masses or site separation. The finite cell estimates require positive masses and distinct interior-time sites. This is W2 stability, distinct from W1 estimates.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/374.md) · [Batch record](../../batches/B009/README.md)"
     },
     {
+      "id": "openai-math-375",
+      "record_type": "family",
+      "title": "Defect-weighted stability and overlap-safe test functions",
+      "source_family": "375",
+      "source_collection": "openai/math",
+      "batch_id": "B028",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000185"
+      ],
+      "instrument_ids": [
+        "MI-000332",
+        "MI-000333"
+      ],
+      "headline": "The source claims stable rigidity for the quartic Allen-Cahn equation in dimension seven without an energy-growth assumption, and monotone rigidity in dimension eight.",
+      "central_instrument": "The inverse transition profile makes departure from planarity a nonnegative defect. Taking the square root of the sum of branch squares pushes immersed tests to physical space while subtracting a nonnegative gradient variance.",
+      "novelty_assessment": "The inverse-profile equations and stability test already occur explicitly in Liu-Luo-Wang-Wei-Wei-Wu, Lemma 2.1, which was checked in the primary preprint. The branch variance is an elementary norm-gradient identity. Their use does not certify the source higher-dimensional rigidity claims.",
+      "formalization_summary": "No family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.",
+      "statement_faithfulness": "The equation and constants concern the scalar quartic potential. The inverse profile is used only for |v|<1. Physical stability allows all compact scalar tests; overlapping normal tubes require branch aggregation rather than an assumed globally injective tube.",
+      "dependencies": "Modica gradient bound, chain rule, ground-state transform, strong minimum principle, local inverse branches and the area formula.",
+      "antecedents": "Liu, Luo, Wang, Juncheng Wei, Yong Wei and Wu, arXiv:2609.21680, Lemma 2.1; classical quadratic-form transforms and norm-gradient inequalities.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-375.md",
+      "body": "# Defect-weighted stability and overlap-safe test functions\n\n## Source manuscript and claim\n\n[A positive resolution of De Giorgi's conjecture in dimension eight](../papers/P-000185.md), by OpenAI, September 26, 2026.\n\nThe source claims stable rigidity for the quartic Allen-Cahn equation in dimension seven without an energy-growth assumption, and monotone rigidity in dimension eight.\n\n## Extracted instruments\n\n- [MI-000332: Use an inverse profile to turn stability into a weighted defect inequality](../instruments/MI-000332.md)\n- [MI-000333: Push overlapping lifted tests down by their Euclidean norm](../instruments/MI-000333.md)\n\n## Dependencies and antecedents\n\nModica gradient bound, chain rule, ground-state transform, strong minimum principle, local inverse branches and the area formula.\n\nLiu, Luo, Wang, Juncheng Wei, Yong Wei and Wu, arXiv:2609.21680, Lemma 2.1; classical quadratic-form transforms and norm-gradient inequalities. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete inverse-profile/stability calculation and the lifted-test pushdown proof, plus both main theorem statements. Sharp normal comparison, global reach budgets and density removal were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\nThe equation and constants concern the scalar quartic potential. The inverse profile is used only for |v|<1. Physical stability allows all compact scalar tests; overlapping normal tubes require branch aggregation rather than an assumed globally injective tube.\n\n[Batch record](../../batches/B028/README.md)"
+    },
+    {
       "id": "openai-math-376",
       "record_type": "family",
       "title": "Universal computation in forced Navier–Stokes flows",
@@ -20979,6 +21564,33 @@
       "map_formalization_summary": "lemmas only",
       "path": "catalog/families/openai-math-376.md",
       "body": "# Universal computation in forced Navier–Stokes flows\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000006](../papers/P-000006.md)\n- [P-000029](../papers/P-000029.md)\n- [P-000036](../papers/P-000036.md)\n- [P-000040](../papers/P-000040.md)\n- [P-000043](../papers/P-000043.md)\n- [P-000049](../papers/P-000049.md)\n- [P-000051](../papers/P-000051.md)\n- [P-000076](../papers/P-000076.md)\n- [P-000078](../papers/P-000078.md)\n\n## Family description\n\nSource status as recorded in the direction paper: lemmas formalized; main paper not incremental\n\nFor each fixed positive computable viscosity $`\\nu`$, an effective procedure maps a Turing machine and input to a smooth mean-zero force on $`\\mathbb{T}^{3}`$, time-independent for $`t \\ge 1`$, such that Navier–Stokes from rest has a global smooth solution and a marked material particle enters a fixed region in finite time iff the machine halts. Variants: $`\\mathbb{R}^{3}`$ with compact support, force decaying faster than any power, an Eulerian velocity observer. The family contains nine closely related manuscripts.\n\n## Extracted instruments.\n\n- [MI-000113: Injective local compiler](../instruments/MI-000113.md)\n\n- [MI-000114: Effective parking and routing isotopy](../instruments/MI-000114.md)\n\n- [MI-000115: Scale-nested memories under rapidly vanishing forcing](../instruments/MI-000115.md)\n\n## Reused.\n\nMoore’s generalized shifts and gapped radix coding; Turing’s printing problem; Leray’s energy uniqueness; Helmholtz–Leray projection; heat-kernel bounds.\n\n## Caveats.\n\nFor a chosen smooth divergence-free $`U`$ with $`U(0)=0`$, setting $`f=U_t+(U\\cdot\\nabla)U-\\nu\\Delta U`$ makes the Navier–Stokes identity hold with zero pressure. This residual construction does not automatically establish the required mean-zero condition, effective description, bounded derivatives, spatial support, eventual stationarity or time decay of the force; the properties prescribed in each version still require proof. Stationary Euler solutions are not generally Beltrami. The cited Cardona–Miranda–Peralta-Salas–Presas construction uses Beltrami fields, a special class of stationary Euler flows, to realize computation. The forced constructions therefore have a different scope from that construction and from unforced or low-mode-controlled flows. Computation is exact-real reachability with no finite-precision tolerance, as the papers concede. No fresh literature search was completed for this entry.\n\n## Recorded assessment\n\n- Novelty: incremental\n- Formalization: of 9 manuscripts, engineering lemmas\n- Statement coverage: —\n- Dependencies: dependencies among nine public manuscripts; main self-contained\n- Antecedents: Agrachev–Sarychev (not engaged)"
+    },
+    {
+      "id": "openai-math-377",
+      "record_type": "family",
+      "title": "Quadratic envelopes with moving centers and barycentric constraints",
+      "source_family": "377",
+      "source_collection": "openai/math",
+      "batch_id": "B028",
+      "subject": "Partial differential equations",
+      "source_paper_ids": [
+        "P-000186"
+      ],
+      "instrument_ids": [
+        "MI-000334",
+        "MI-000335"
+      ],
+      "headline": "The source claims dimension-dependent uniform interior C1,alpha estimates for bounded infinity-harmonic functions in every dimension at least three, with a nonexplicit exponent at most one third.",
+      "central_instrument": "Quadratic envelopes obey a semigroup law and a moving-center convexity correction for the limiting PDE. A variance-penalized barycentric envelope has a finite-support dual certificate and a sharp Jensen-defect bound.",
+      "novelty_assessment": "Quadratic infimum/supremum convolutions and concave-envelope duality are classical. Evans-Savin already use the same limiting PDE and quadratic slice slopes. The source moving-center correction and constrained envelope formulation are extracted without certifying its higher-dimensional regularity theorem.",
+      "formalization_summary": "No family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.",
+      "statement_faithfulness": "The envelope assertions require subquadratic growth uniformly on compact time intervals. The viscosity equation is the limiting equation F[f]=D2f[(grad_x f,1),(grad_x f,1)], not the original infinity-Laplacian. Finite-configuration duality does not by itself prove the subsequent PDE subsolution rule.",
+      "dependencies": "Coercive quadratic optimization, viscosity upper tests, completion of squares, convex separation and finite-dimensional convex hulls.",
+      "antecedents": "Evans-Savin, C1,alpha regularity for infinity harmonic functions in two dimensions, Sections 2.4 and 3.1; classical Hopf-Lax and concave-envelope constructions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-377.md",
+      "body": "# Quadratic envelopes with moving centers and barycentric constraints\n\n## Source manuscript and claim\n\n[Uniform Interior $`C^{1,\\alpha}`$ Estimates for Infinity-Harmonic Functions](../papers/P-000186.md), by OpenAI, October 4, 2026.\n\nThe source claims dimension-dependent uniform interior C1,alpha estimates for bounded infinity-harmonic functions in every dimension at least three, with a nonexplicit exponent at most one third.\n\n## Extracted instruments\n\n- [MI-000334: Add an explicit correction when moving a quadratic-envelope center](../instruments/MI-000334.md)\n- [MI-000335: Enforce a barycenter while optimizing a variance-penalized envelope](../instruments/MI-000335.md)\n\n## Dependencies and antecedents\n\nCoercive quadratic optimization, viscosity upper tests, completion of squares, convex separation and finite-dimensional convex hulls.\n\nEvans-Savin, C1,alpha regularity for infinity harmonic functions in two dimensions, Sections 2.4 and 3.1; classical Hopf-Lax and concave-envelope constructions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete quadratic-envelope and barycentric-envelope proofs, the limiting PDE definition and the main theorem. Common-time subsolution rules, contact propagation, final Liouville rigidity and the full compactness reduction were not audited.\n\nNo family-specific scope document or Comparator target is listed. No Lean artifact was built or kernel-checked.\n\nThe envelope assertions require subquadratic growth uniformly on compact time intervals. The viscosity equation is the limiting equation F[f]=D2f[(grad_x f,1),(grad_x f,1)], not the original infinity-Laplacian. Finite-configuration duality does not by itself prove the subsequent PDE subsolution rule.\n\n[Batch record](../../batches/B028/README.md)"
     }
   ],
   "patterns": [

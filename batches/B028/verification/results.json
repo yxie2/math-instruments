@@ -1,0 +1,67 @@
+{
+  "batch": "B028",
+  "status": "passed",
+  "check_groups": {
+    "tensor_projections": {
+      "exact_projection_matrices": {
+        "symmetric_rank2": {
+          "size": 25,
+          "scale": 10,
+          "rank": 14
+        },
+        "symmetric_rank3": {
+          "size": 125,
+          "scale": 42,
+          "rank": 30
+        },
+        "hook_rank3": {
+          "size": 125,
+          "scale": 48,
+          "rank": 35
+        },
+        "alternating_rank3": {
+          "size": 125,
+          "scale": 6,
+          "rank": 10
+        }
+      },
+      "scope": "Exact operators on the full five-dimensional tensor spaces; source certificate coefficient tables not verified."
+    },
+    "tensor_bounds": {
+      "random_normalized_tensor_models": 200,
+      "sharp_cubic_and_contraction_constants": "exact",
+      "scope": "Finite models and equality constants; not the complete graph bounds or global algebraic certificate."
+    },
+    "conic_bundle": {
+      "symbolic_conic_and_quotient_identities": "passed",
+      "projective_frame_samples": 48,
+      "scope": "Exact bundle-map formulas; no transport matching or global inverse-problem theorem."
+    },
+    "finite_type": {
+      "exact_coefficient_closures": 240,
+      "variable_coefficient_solution": "exact",
+      "scope": "Checks the prolonged-system coefficients; pathwise ODE uniqueness remains the written argument."
+    },
+    "profile_defect": {
+      "defect_and_ground_state_identities": "exact",
+      "scope": "Symbolic identities conditional on the PDE and chain rule; no global stability classification."
+    },
+    "overlap_variance": {
+      "exact_branch_variance_models": 160,
+      "normal_jacobian_integration": "exact",
+      "scope": "Finite branch algebra and a symbolic integration-by-parts identity, not global immersed-tube compactness."
+    },
+    "quadratic_envelopes": {
+      "exact_semigroup_models": 100,
+      "moving_center_hessian": "exact",
+      "scope": "Cost composition and contact-Hessian algebra; not the full viscosity envelope theorem or Liouville theorem."
+    },
+    "barycentric_envelope": {
+      "finite_configuration_primal_dual_models": 60,
+      "maximum_duality_gap": 1.1185496973098452e-14,
+      "exact_absolute_value_envelopes": 45,
+      "scope": "Finite-support LP duality plus an exact continuum example; not universal attainment or the source PDE subsolution construction."
+    }
+  },
+  "limitations": "Selected finite algebra only; no Bernoulli dimension classification, elasticity uniqueness, Allen-Cahn rigidity or infinity-harmonic regularity certified; no Lean build."
+}
