@@ -15137,6 +15137,385 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000359.md",
       "body": "# Certify twisted second-homology vanishing by an exact Fox minor\n\n[Family 321](../families/openai-math-321.md) · [Source manuscript](../papers/P-000198.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nFor the presentation with relations x1 a1 x1^{-1}=a1^4, x2 a2 x2^{-1}=a2^3, x1=a2^{13}, and s x2 s^{-1}=a1^5, choose a primitive cube root zeta. The assignment (x1,a1,x2,a2,s)=(-1,zeta,zeta^2,-1,1) respects the relations and also x1^2=x2^3=1.\n\nApply the Fox product and inverse rules to the four relator words. With edges in the displayed generator order, the evaluated boundary vectors are the rows of\n\n$$D=\\begin{pmatrix}1-\\zeta&-2&0&0&0\\\\0&0&2&\\zeta^2-1&0\\\\1&0&0&-1&0\\\\0&-(1+\\zeta)&1&0&1-\\zeta^2\\end{pmatrix}.$$\n\nThe minor in columns x1,a1,x2,s is -4(1-zeta^2), which is nonzero. Hence C_2(B;L_rho)->C_1(B;L_rho) is injective and H_2(B;L_rho)=0. The finite plus construction preserves this vanishing for X. The calculation also checks the chain identity D(rho(g)-1)_g=0. All arithmetic can be done in Q[zeta]/(zeta^2+zeta+1), avoiding numerical decisions about a complex determinant.\n\n## Role in the source argument\n\nSupplies the explicit local-system homology input for the source tower obstruction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:presentation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L14)\n- [eq:character](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L92)\n- [lem:twisted-vanishing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L106)\n- [eq:fox-matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L137)\n- [eq:nonzero-minor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L161)\n\n## Antecedents and comparison\n\nFox differentiation and character specialization are standard. This card records a reproducible instance and its small determinant certificate; the matrix alone does not prove a D(2) counterexample.\n\n## Checks and limitations\n\nThe program independently differentiates all four words, reproduces all 20 entries, verifies the chain identity and computes the nonzero minor exactly as -4*z-8 in the cyclotomic quotient.\n\nThe separate tower theorem that would turn this homology input into a dimensional obstruction has not been verified.\n\n## Possible applications\n\nExact local-system homology calculations for finite presentations and plus constructions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000360",
+      "record_type": "instrument",
+      "title": "Prune using the original density before multiplying local fiber bounds",
+      "forms": [
+        "pre-deletion-density-pruning",
+        "multiplicative-fiber-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-073"
+      ],
+      "source_paper_ids": [
+        "P-000199"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+          "label": "reg:pruning-multiplication",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L131",
+          "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+        },
+        {
+          "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+          "label": "reg:local-fibre",
+          "line": 140,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L140",
+          "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+        },
+        {
+          "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+          "label": "reg:multiplied-fibre",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L151",
+          "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-density-pruning-with-explicit-pre-deletion-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000360.md",
+      "body": "# Prune using the original density before multiplying local fiber bounds\n\n[Family 073](../families/openai-math-073.md) · [Source manuscript](../papers/P-000199.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nLet rho be a source probability, nu a finite pin measure, and a_0<...<a_J dyadic depths. Suppose every retained pair (x,z) in G', with z in a depth-a_j cube Q, has local directional fiber mass at the next scale at most f_j rho(Q), measured in a superset E_j of G'.\n\nFor eta=R^{-e}, delete pairs whose source cube at any endpoint depth has rho(Q intersect G'_x)<eta rho(Q). At most (J+1)eta nu(total) pair mass is deleted. Call the remainder G''. No density assertion about G'' is needed.\n\nFix a final angular cap and call a cube hit if it contains a G'' witness in that cap. Geometric containment puts all pre-deletion G' mass in every hit child inside the parent's local test. Thus\n\n$$\\sum_{P\\subset Q,\\ P\\text{ hit}}\\rho(P)\\le\\eta^{-1}\\sum_{P\\text{ hit}}\\rho(P\\cap G'_x)\\le\\eta^{-1}f_j\\rho(Q).$$\n\nIteration gives the final cap mass at most eta^{-J}(product_j f_j)rho(Q_0). Radial containment uses separation from the pin. If the local tests instead use perpendicular distance to the full line through the pin and witness, bounded pin-source distances above suffice; no radial Lipschitz estimate near the pin is required.\n\n## Role in the source argument\n\nMakes scale-by-scale directional savings multiply without assuming a nonexistent density lower bound after the last deletion.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [reg:pruning-multiplication](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L131)\n- [reg:local-fibre](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L140)\n- [reg:multiplied-fibre](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L151)\n\n## Antecedents and comparison\n\nThe mechanism is standard pruning and tree multiplication. The pre-deletion density and the full-line variant are useful implementation details.\n\n## Checks and limitations\n\nOne hundred exact finite-tree models include sparse pruning and nonvacuous single-branch product bounds.\n\nThe geometric local-fiber estimates and child containment are hypotheses, not verified by the abstract tree models.\n\n## Possible applications\n\nMultiscale fiber estimates with controlled mass loss and changing retained supports.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000361",
+      "record_type": "instrument",
+      "title": "Control shifted collisions and Fourier energy by positive bin masses",
+      "forms": [
+        "positive-collision-binning",
+        "band-limited-collision-majorant"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-073"
+      ],
+      "source_paper_ids": [
+        "P-000199"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+          "label": "rec:binning",
+          "line": 114,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L114",
+          "sha256": "bfd6394d5fb7c62dc7392c22f30db04752deb9abaf5f05325b73eded200072b5"
+        },
+        {
+          "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+          "label": "rec:collision-fourier",
+          "line": 136,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L136",
+          "sha256": "bfd6394d5fb7c62dc7392c22f30db04752deb9abaf5f05325b73eded200072b5"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-cauchy-schwarz-and-sinc-majorant",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000361.md",
+      "body": "# Control shifted collisions and Fourier energy by positive bin masses\n\n[Family 073](../families/openai-math-073.md) · [Source manuscript](../papers/P-000199.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nFor finite positive measures eta,zeta on the line, let B_epsilon(eta)=sum_j eta([j epsilon,(j+1)epsilon))^2. Same-bin pairs give B_epsilon(eta)<=eta tensor eta{|s-s'|<=epsilon}. For fixed C>=1, every shifted interval |s-s'-u|<=C epsilon meets only boundedly many bin offsets. Cauchy-Schwarz gives sum_j b_j b_{j+h}<=sum_j b_j^2, so its pair mass is at most C' B_epsilon(eta), uniformly in u.\n\nSimilarly, summing the integrable offset weights (1+|h|)^{-2} yields\n\n$$\\iint(1+|s-s'|/\\epsilon)^{-2}\\,d\\eta(s)d\\zeta(s')\\le C'\\sqrt{B_\\epsilon(\\eta)B_\\epsilon(\\zeta)}.$$\n\nChoose K(t)=(sin(bt)/(bt))^2 with b small enough that K is bounded below on [-C,C] and its nonnegative Fourier transform is supported in [-1,1]. Fourier inversion then bounds the unshifted collision by C' epsilon int_{|r|<=epsilon^{-1}} |hat eta(r)|^2 dr, with the frequency convention absorbed into constants. No densities are assumed; atoms and singular measures are allowed.\n\n## Role in the source argument\n\nConverts positive distance collisions into the Fourier quantities entering the source recursive states.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [rec:binning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L114)\n- [rec:collision-fourier](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L136)\n\n## Antecedents and comparison\n\nThis uses classical binwise Cauchy-Schwarz and the triangular Fourier transform of squared sinc. It is not a new restriction estimate.\n\n## Checks and limitations\n\nEighty atomic measure models verify bin, shifted-collision and mixed-kernel bounds; 160 bounded-frequency Fourier comparisons use exact integration of exponential pairs.\n\nFinite atomic checks do not establish the source oscillatory estimates or nonlinear recursion.\n\n## Possible applications\n\nCollision energies and singular-measure estimates with uniform control over translated differences.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000362",
+      "record_type": "instrument",
+      "title": "Order thermal forms using positive Fourier coefficients and a covariance square",
+      "forms": [
+        "thermal-form-monotonicity",
+        "shifted-fourier-envelope"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-075"
+      ],
+      "source_paper_ids": [
+        "P-000200"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+          "label": "lemma:thermal-monotonicity",
+          "line": 35,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L35",
+          "sha256": "52d858ccee4ff03ca1dd0700fa0a53bd722f2f3fe14761730d3bec146d2fcffc"
+        },
+        {
+          "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+          "label": "eq:thermal-envelope",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L53",
+          "sha256": "52d858ccee4ff03ca1dd0700fa0a53bd722f2f3fe14761730d3bec146d2fcffc"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-griffiths-ginibre-method-in-circle-form-order",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000362.md",
+      "body": "# Order thermal forms using positive Fourier coefficients and a covariance square\n\n[Family 075](../families/openai-math-075.md) · [Source manuscript](../papers/P-000200.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nFor A(y)=sum_s lambda_s(1-cos(2 pi s y)), lambda_s>=0, let q_A(u) be the Fourier coefficients of exp(-A), F(A)=-log q_A(0), and K_A=exp(F(A)-A). Expanding each positive and negative character exponential shows q_A is a nonnegative even probability mass function on the integers.\n\nUnder K_A, every covariance of cos(2 pi u y) and cos(2 pi v y) is nonnegative. The two-copy change (x,z)->(x+z,x-z) converts that covariance into a sum of squares of integrals of sin(2 pi ux)sin(2 pi vx) times products of cosines, with nonnegative series coefficients. Differentiation with respect to lambda_v then gives coefficientwise monotonicity of q_A(u)/q_A(0).\n\nConsequently Delta_A(u)^2=2(1-q_A(u)/q_A(0)) decreases under adding a thermal form; Delta is subadditive by the L2 triangle inequality. F increases, while F(A+D)-F(A) decreases as A increases in form order. For P=sum P_j and P_lo<=P<=P_hi in this order, arbitrary shifts obey\n\n$$\\left|\\int\\chi_u(y)\\prod_j e^{-P_j(z_j-y)}dy\\right|\\le q_P(u)\\le e^{-F(P_{lo})}\\int\\chi_uK_{P_{hi}}.$$\n\nThe first bound follows by discarding phases in the convolution of nonnegative Fourier coefficients.\n\n## Role in the source argument\n\nControls label metrics and shifted products during the source thermal-channel updates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lemma:thermal-monotonicity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L35)\n- [eq:thermal-envelope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L53)\n\n## Antecedents and comparison\n\nThe source explicitly uses the Griffiths-Ginibre positive-correlation method. [Benassi, Lees and Ueltschi](https://arxiv.org/pdf/1611.06019), Theorem 1.1 and Corollary 1.2, provide established correlation/monotonicity context; the source supplies the displayed harmonic calculation.\n\n## Checks and limitations\n\nSixty periodic quadrature models check finite coefficient windows, all tested covariances, monotonicity, diminishing increments, triangle bounds and shifted envelopes.\n\nQuadrature is not a proof for all forms or Fourier modes. None of the later Fourier-convergence machinery is certified.\n\n## Possible applications\n\nPositive Fourier kernels with monotone metrics and controllable shifted convolutions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000363",
+      "record_type": "instrument",
+      "title": "Construct correlated letters with fixed marginals and a controlled noisy-sum cost",
+      "forms": [
+        "prescribed-marginal-gibbs-dual",
+        "correlation-plus-noisy-sum-information"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-075"
+      ],
+      "source_paper_ids": [
+        "P-000200"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+          "label": "entropy-foundations:variational",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L98",
+          "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+        },
+        {
+          "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+          "label": "entropy-foundations:dual",
+          "line": 137,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L137",
+          "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+        },
+        {
+          "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+          "label": "eq:source-1",
+          "line": 104,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L104",
+          "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-finite-entropy-duality-with-a-combined-information-budget",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000363.md",
+      "body": "# Construct correlated letters with fixed marginals and a controlled noisy-sum cost\n\n[Family 075](../families/openai-math-075.md) · [Source manuscript](../papers/P-000200.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nLet S be finite and nonempty, T a positive integer, and H a strictly positive kernel on TS-TS with values at most one. Assume that for every probability lambda on S, independent T-letter sums U,U' satisfy E H(U'-U)>=exp(-E). With c=-log H, there is an exchangeable law of X^T and Gamma, each X_i uniform on S and Z=sum X_i+Gamma in TS, such that\n\n$$D(X^T\\Vert U_S^{\\otimes T})+I(X^T;Z)+E c(\\Gamma)\\le E.$$\n\nMinimize T H(U_S)-H(X^T|Z)+E c(Z-sum X_i) on the finite polytope of prescribed marginals. Conditional entropy gives convexity and compactness gives attainment. The relative-interior marginal point supplies finite dual multipliers a_i. For fixed Z=z, Gibbs minimization gives minus the logarithm of sum_x exp(sum_i a_i(x_i))H(z-sum x_i); optimizing the output selects the largest such partition sum.\n\nPermutation averaging permits a_i=a. With lambda proportional to exp(a), the dual value becomes -T D(U_S||lambda)-log max_z E_{lambda^T} H(z-sum X_i). The maximum dominates the average over an independent sum z, so the moment hypothesis bounds this by E. Symmetrize a primal minimizer to obtain exchangeability. The identity T H(U_S)-H(X^T|Z)=D(X^T||U_S^T)+I(X^T;Z) retains both information costs.\n\n## Role in the source argument\n\nSupplies the correlated-letter input for the source entropy compression while preserving every one-letter marginal.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [entropy-foundations:variational](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L98)\n- [entropy-foundations:dual](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L137)\n- [eq:source-1](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L104)\n\n## Antecedents and comparison\n\nThis is finite Gibbs variational duality with linear marginal constraints. The useful feature is that divergence and noisy-output information are controlled together; neither may simply be discarded in later conditioning arguments.\n\n## Checks and limitations\n\nSix binary examples solve the primal constrained optimization and the symmetrized dual independently, with maximum gap below 1.3e-9, and verify the combined-cost identity.\n\nThe tests do not establish the hypothesis quantified over every lambda for the source kernels, nor the subsequent compression theorem.\n\n## Possible applications\n\nDesigning correlated finite inputs under exact marginal constraints and a joint information/error budget.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000364",
+      "record_type": "instrument",
+      "title": "Convert small information rate into domination after a likelihood truncation",
+      "forms": [
+        "likelihood-tail-domination",
+        "actual-product-relative-entropy"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-078"
+      ],
+      "source_paper_ids": [
+        "P-000201"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "lem:zero-information",
+          "line": 331,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L331",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        },
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "eq:likelihood-tail",
+          "line": 337,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L337",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        },
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "eq:product-information",
+          "line": 351,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L351",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-relative-entropy-truncation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000364.md",
+      "body": "# Convert small information rate into domination after a likelihood truncation\n\n[Family 078](../families/openai-math-078.md) · [Source manuscript](../papers/P-000201.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nFor probabilities pi absolutely continuous with respect to Lambda, write L=d pi/d Lambda and D=KL(pi||Lambda). The negative information part satisfies E_pi(log L)_-<=1/e because x log(1/x)<=1/e. Hence\n\n$$\\pi\\{\\log L>v\\}\\le(D+1/e)/v\\qquad(v>0).$$\n\nIf D=o(ell), choosing v=sqrt((D+1)ell)=o(ell) removes o(1) mass and leaves a subprobability bounded by exp(v)Lambda. This applies with Lambda=pi_C pi_{A|C} pi_{B|C}, whose divergence is I(A;B|C). The conclusion is domination on the exponential scale, not a claim that the original laws are close in total variation.\n\nConversely, if rho<=K product_i mu_i, then KL(rho||product_i rho_i)<=log K. Expand KL(rho||product_i mu_i) as that total correlation plus sum_i KL(rho_i||mu_i), and use nonnegativity of the marginal divergences.\n\n## Role in the source argument\n\nMoves between entropy-profile independence and pointwise product-law bounds used in geometric incidence comparisons.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:zero-information](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L331)\n- [eq:likelihood-tail](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L337)\n- [eq:product-information](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L351)\n\n## Antecedents and comparison\n\nThe argument is a standard information-density truncation and KL chain-rule decomposition. Its scale-sensitive conclusion is explicitly weaker than total-variation convergence.\n\n## Checks and limitations\n\nTwo hundred finite laws verify likelihood tails, retained domination and the product-marginal entropy inequality.\n\nThe source assumptions that information is sublinear at the selected geometric scales remain inputs.\n\n## Possible applications\n\nLarge-deviation and geometric arguments needing pointwise domination rather than only averaged entropy control.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000365",
+      "record_type": "instrument",
+      "title": "Replace several product comparison laws by the actual marginals of one retained core",
+      "forms": [
+        "simultaneous-actual-marginal-core",
+        "finite-pruning-product-domination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-078"
+      ],
+      "source_paper_ids": [
+        "P-000201"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "lem:marginal-core",
+          "line": 370,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L370",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        },
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "eq:core-comparison",
+          "line": 377,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L377",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        },
+        {
+          "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+          "label": "eq:core-actual",
+          "line": 388,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L388",
+          "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-pruning-with-simultaneous-comparison-bookkeeping",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000365.md",
+      "body": "# Replace several product comparison laws by the actual marginals of one retained core\n\n[Family 078](../families/openai-math-078.md) · [Source manuscript](../papers/P-000201.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nLet nu be a finite-space subprobability of mass m>0. For tuples of observations (F_l1,...,F_lk_l), suppose nu_{tuple}<=A_l product_j mu_lj, where the reference marginals mu_lj are probabilities. Put q=sum_l k_l, counting repeated observations with different reference laws separately.\n\nFor 0<eta<m/q, repeatedly delete all points with a factor value v whenever its current positive marginal is less than eta mu_lj(v). Once deleted, that factor value never reappears. Charging each pair ((l,j),v) once bounds total loss by q eta. The procedure terminates, leaving nu' of mass M>=m-q eta.\n\nEvery surviving value satisfies mu_lj(v)<=M rho_{F_lj}(v)/eta for rho=nu'/M. Since restriction preserves each old joint upper bound, substitution gives simultaneously\n\n$$\\rho_{F_{l1},...,F_{lk_l}}\\le A_lM^{k_l-1}\\eta^{-k_l}\\prod_j\\rho_{F_{lj}}.$$\n\nTaking eta=m/(2q) retains at least half the mass. Support counts cannot increase, while any old marginal upper bound gains exactly the normalization factor M^{-1}.\n\n## Role in the source argument\n\nMakes all later comparisons use the same retained law and its actual marginals, avoiding mismatched independent reference measures.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:marginal-core](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L370)\n- [eq:core-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L377)\n- [eq:core-actual](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L388)\n\n## Antecedents and comparison\n\nThis is a finite peeling construction. Its explicit constant and separate charging of repeated observations are the reusable details.\n\n## Checks and limitations\n\nOne hundred exact rational models with two simultaneous product comparisons and repeated observations remove 150 factor values and verify the retained mass and all resulting inequalities.\n\nThe original joint comparison constants and the geometric meaning of the observations are inputs.\n\n## Possible applications\n\nConsistent product domination under several overlapping observations and repeated restrictions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000366",
+      "record_type": "instrument",
+      "title": "Flatten a quadratic null hypersurface with an explicit conformal wave chart",
+      "forms": [
+        "rational-null-hyperquadric-chart",
+        "four-dimensional-wave-covariance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-079"
+      ],
+      "source_paper_ids": [
+        "P-000202"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+          "label": "rt:model",
+          "line": 11,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L11",
+          "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+        },
+        {
+          "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+          "label": "rt:conformal-chart",
+          "line": 486,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L486",
+          "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+        },
+        {
+          "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+          "label": "eq:conf",
+          "line": 515,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L515",
+          "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+        },
+        {
+          "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+          "label": "rt:conformal-covariance",
+          "line": 703,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L703",
+          "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 1,
+      "subject": "Real and complex analysis",
+      "novelty_status": "classical-conformal-geometry-with-explicit-coordinate-verification",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000366.md",
+      "body": "# Flatten a quadratic null hypersurface with an explicit conformal wave chart\n\n[Family 079](../families/openai-math-079.md) · [Source manuscript](../papers/P-000202.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nIn coordinates x=(t,b1,b2,y), let q(x)=ty-b1^2-b2^2 and Box=4 partial_t partial_y-partial_b1^2-partial_b2^2. After centering, a linear q-isometry removes a beta*y term from F=b2+beta*y+kq. The remaining chart, with v=(0,0,k,0), is\n\n$$\\Phi_v(x)=\\frac{x+v q(x)}{D(x)},\\qquad D(x)=1+2\\langle v,x\\rangle+q(v)q(x).$$\n\nIts inverse is Phi_{-v}; q(Phi_v(x))=q(x)/D(x), its differential rescales the metric by D^{-2}, and its b2 coordinate is (b2+kq)/D. Thus it flattens F=0 on a region where D is nonzero.\n\nFor w=D^{-1}, direct differentiation gives Box w=0 and Box(w Phi_v,j)=0 for each coordinate. The second-order chain coefficients are D^{-2} times the inverse metric, proving for every smooth test function U\n\n$$\\Box(w\\,U\\circ\\Phi_v)=w^3(\\Box U)\\circ\\Phi_v.$$\n\nThe induced transformation of a hyperquadric c+d t+a1 b1+a2 b2+beta y+hq is linear on coefficients and preserves a1^2+a2^2-4 beta d+4hc. Buffered domains bounded away from D=0 are needed for quantitative derivative estimates. Frequency projection and packet transport are additional arguments.\n\n## Role in the source argument\n\nProvides the algebraic coordinate change used to compare thin round-cone configurations with cylinder configurations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [rt:model](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L11)\n- [rt:conformal-chart](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L486)\n- [eq:conf](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L515)\n- [rt:conformal-covariance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L703)\n\n## Antecedents and comparison\n\nConformal spacetime geometry is classical; [Bateman’s paper](https://en.wikisource.org/wiki/The_Transformation_of_the_Electrodynamical_Equations) provides historical context for these transformations. The displayed wave identity is verified directly here rather than inferred from that historical citation.\n\n## Checks and limitations\n\nSymbolic checks verify the four inverse coordinates, 16 metric entries, five wave zero/first-order identities, 16 second-order chain coefficients and discriminant preservation.\n\nThe checks do not verify positive-band localization, packet association, error bounds or the local-smoothing theorem.\n\n## Possible applications\n\nExact coordinate changes for wave equations and null hypersurfaces, with explicit denominator control.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000367",
+      "record_type": "instrument",
+      "title": "Transfer labeled masses through cell capacities without exceeding available energy",
+      "forms": [
+        "fractional-cell-capacity-allocation",
+        "overlap-controlled-mass-transport"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-079"
+      ],
+      "source_paper_ids": [
+        "P-000202"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+          "label": "rt:capacity",
+          "line": 828,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L828",
+          "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+        }
+      ],
+      "batch_id": "B032",
+      "source_item": 2,
+      "subject": "Real and complex analysis",
+      "novelty_status": "elementary-proportional-allocation-with-error-budget",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000367.md",
+      "body": "# Transfer labeled masses through cell capacities without exceeding available energy\n\n[Family 079](../families/openai-math-079.md) · [Source manuscript](../papers/P-000202.md) · [Batch B032](../../batches/B032/README.md)\n\n## Mathematical content\n\nLet old cell capacities x_i and receiving energies y_j satisfy x_i<=A sum_{j in N(i)} y_j+epsilon_i, with A>=1 and epsilon_i>=0. Suppose each receiving cell j lies in at most D neighborhoods, D>=1. Let labeled assignments obey sum_lambda m_lambda,i<=x_i.\n\nWrite Y_i=sum_{j in N(i)}y_j. Proportionally trim each cell's assignments until their sum is at most A Y_i; the deleted mass is at most epsilon_i. If Y_i>0, transfer each retained assignment to j in N(i) with amount\n\n$$\\frac{m_{\\lambda i}y_j}{ADY_i}.$$\n\nFor each receiving cell, the total from one incident old cell is at most y_j/D, so the total over all labels and incidences is at most y_j. Summing over j gives exactly m_lambda,i/(AD). Aggregating contributions from different old cells to the same label incurs no further loss. If Y_i=0, all assignments in that cell are removed within epsilon_i.\n\n## Role in the source argument\n\nTransfers terminal fractional packet assignments after predecessor and overlap estimates have been supplied.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [rt:capacity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L828)\n\n## Antecedents and comparison\n\nThis is elementary proportional allocation. It exposes the exact AD factor, zero-capacity convention and additive error budget.\n\n## Checks and limitations\n\nOne hundred twenty exact rational allocation models verify every receiving capacity, the total deletion budget and each aggregated label mass, including zero-capacity cases.\n\nThe source predecessor energy and overlap bounds are hypotheses; no wave packet kernel is tested by this allocation calculation.\n\n## Possible applications\n\nTransporting several labeled resources under bounded overlap and additive approximation errors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -18901,6 +19280,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000198.md",
       "body": "# A Counterexample to Wall's D(2) Problem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 6, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/wall-d2-counterexample.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a finite D(2) complex with no homotopy-equivalent finite two-dimensional complex.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000358: Use a split third boundary to obtain a finite plus construction for all coefficients](../instruments/MI-000358.md)\n- [MI-000359: Certify twisted second-homology vanishing by an exact Fox minor](../instruments/MI-000359.md)\n\n## Dependencies and review\n\nVan Kampen, covering spaces, the degree-two Hurewicz theorem, split chain complexes, tensor/Hom functors and Fox derivatives evaluated at a character.\n\nRead the complete finite plus-construction proof and the full explicit construction section, including perfectness and the twisted-boundary computation. The tower obstruction and its character/torsion corollary were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\n[Family context](../families/openai-math-321.md) · [Batch B031](../../batches/B031/README.md)"
+    },
+    {
+      "id": "P-000199",
+      "record_type": "paper",
+      "title": "The Falconer distance conjecture in all dimensions",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-073"
+      ],
+      "batch_id": "B032",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "36b1bac6e2f559ae716d8e9eff9f7079d9bbfbfebe1052c118a61c1c180aad5d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000199.md",
+      "body": "# The Falconer distance conjecture in all dimensions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the Falconer distance conjecture in all dimensions: compact sets of Hausdorff dimension greater than half the ambient dimension determine a positive-measure distance set.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000360: Prune using the original density before multiplying local fiber bounds](../instruments/MI-000360.md)\n- [MI-000361: Control shifted collisions and Fourier energy by positive bin masses](../instruments/MI-000361.md)\n\n## Dependencies and review\n\nDyadic cubes, a geometric containment of hit children in one local fiber test, a union bound, Cauchy-Schwarz and the Fourier transform of squared sinc.\n\nRead the complete density-pruning/multiplication proof and positive-measure binning proof. The angular gain, thin-tube upgrade, profile recursion and final distance argument were not audited.\n\nRead PlanarFalconer.lean and FalconerAllDimensions.lean. They state the compact-set positive-distance-measure claims in dimension two and every dimension at least two. Both targets contain sorry; no Lean build was performed.\n\n[Family context](../families/openai-math-073.md) · [Batch B032](../../batches/B032/README.md)"
+    },
+    {
+      "id": "P-000200",
+      "record_type": "paper",
+      "title": "Almost-everywhere Fourier convergence in L log L",
+      "source_collection": "openai/math",
+      "upstream_slug": "Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-075"
+      ],
+      "batch_id": "B032",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "de35dc386817bfbdf3136c29530347dd7e76220cd759d1468125852ae0ba030d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000200.md",
+      "body": "# Almost-everywhere Fourier convergence in L log L\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims almost-everywhere convergence of all symmetric Fourier partial sums for every complex-valued L log L function on the circle.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000362: Order thermal forms using positive Fourier coefficients and a covariance square](../instruments/MI-000362.md)\n- [MI-000363: Construct correlated letters with fixed marginals and a controlled noisy-sum cost](../instruments/MI-000363.md)\n\n## Dependencies and review\n\nAbsolutely convergent Fourier series, torus Haar invariance, positive covariance, finite convex duality, conditional entropy and permutation symmetrization.\n\nRead the complete thermal positivity proof, prescribed-marginal variational proof and block-gluing proof. The global entropy-compression search, spectral update, live budgets and delayed-transform convergence argument were not audited.\n\nRead FourierLLogL.lean: full symmetric partial sums converge to f outside one measurable null set under integrability of |f|log(2+|f|). Its target contains sorry; no Lean build was performed.\n\n[Family context](../families/openai-math-075.md) · [Batch B032](../../batches/B032/README.md)"
+    },
+    {
+      "id": "P-000201",
+      "record_type": "paper",
+      "title": "Bochner–Riesz multipliers in three dimensions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-078"
+      ],
+      "batch_id": "B032",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4a1f00f2de12313806301d0cd9faa9f514ee2c2caef0d8b38a0d6cd41961f632",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000201.md",
+      "body": "# Bochner–Riesz multipliers in three dimensions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims the full strict Bochner-Riesz multiplier range in three dimensions.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000364: Convert small information rate into domination after a likelihood truncation](../instruments/MI-000364.md)\n- [MI-000365: Replace several product comparison laws by the actual marginals of one retained core](../instruments/MI-000365.md)\n\n## Dependencies and review\n\nThe bound x log(1/x)<=1/e, Markov inequality, KL decomposition into total correlation and marginal terms, and a terminating finite deletion procedure.\n\nRead the complete zero-information/product-domination and simultaneous actual-marginal replacement proofs. Projection incidence, characteristic traces, packet repayment and multiplier estimates were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\n[Family context](../families/openai-math-078.md) · [Batch B032](../../batches/B032/README.md)"
+    },
+    {
+      "id": "P-000202",
+      "record_type": "paper",
+      "title": "Critical local smoothing for the three-dimensional wave equation",
+      "source_collection": "openai/math",
+      "upstream_slug": "Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-079"
+      ],
+      "batch_id": "B032",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8454d5ff0709ccdf6fc3706f3a40cfb2467f601c73f1e45ed805439a51b57087",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000202.md",
+      "body": "# Critical local smoothing for the three-dimensional wave equation\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims critical local smoothing for the three-dimensional wave equation and strict-range multiplier consequences.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000366: Flatten a quadratic null hypersurface with an explicit conformal wave chart](../instruments/MI-000366.md)\n- [MI-000367: Transfer labeled masses through cell capacities without exceeding available energy](../instruments/MI-000367.md)\n\n## Dependencies and review\n\nRational coordinate transformations, the Lorentz quadratic form, the wave operator, chain rule and proportional fractional allocation.\n\nRead the full flattening-chart proof, conformal-wave-transport proof and cell-capacity lemma. Symbolic checks cover the algebraic chart identities; the packet localization, spectral projection errors and global smoothing proof are not certified.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\n[Family context](../families/openai-math-079.md) · [Batch B032](../../batches/B032/README.md)"
     }
   ],
   "families": [
@@ -19596,6 +20051,33 @@
       "body": "# From a degenerate squared seminorm to a dynamical measure obstruction\n\n## Source manuscript and claim\n\n[Ample rank-two bundles on the quadric surface without Griffiths-positive metrics](../papers/P-000178.md), by OpenAI, September 24, 2026.\n\nThe source claims a rank-two algebraic bundle G on P1 times P1 whose coordinatewise power pullbacks, twisted by O(1,1), are ample for every positive power but have no strictly Griffiths-positive smooth metric for all sufficiently large powers.\n\n## Extracted instruments\n\n- [MI-000318: Keep the zero-set atoms when turning a squared seminorm into curvature](../instruments/MI-000318.md)\n- [MI-000319: Two odd-order projective maps with a loxodromic product admit no finite invariant measure](../instruments/MI-000319.md)\n\n## Dependencies and antecedents\n\nLevi determinant, decreasing radial regularization, local integrability, distributional curvature, degree of O(-b), loxodromic annuli and finite permutations of a two-point support.\n\nRaufi and Berndtsson-Paun singular Hermitian metric theory; classical Furstenberg-type concentration of projective invariant measures. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full ruling reduction, logarithmic-curvature proof, invariant-measure proof and explicit matrix lemma. The construction of the quadratic limit and the ampleness proof were not audited.\n\nRead the family scope and QuadricBundles.lean, including algebraic transition charts, symmetric-section embedding, power pullback twist and strict positivity expressed using the dual metric Hessian. The target asserts eventual nonexistence with no effective threshold; the separate explicit very-ampleness bound is not selected. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nZeros of the seminorm may contribute curvature atoms and cannot be excised. The invariant-measure argument needs a finite positive measure. No numerical threshold for the source bundle family follows from this extraction.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/050.md) · [Batch record](../../batches/B026/README.md)"
     },
     {
+      "id": "openai-math-073",
+      "record_type": "family",
+      "title": "Multiply local fiber bounds and compare positive collision energies",
+      "source_family": "073",
+      "source_collection": "openai/math",
+      "batch_id": "B032",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000199"
+      ],
+      "instrument_ids": [
+        "MI-000360",
+        "MI-000361"
+      ],
+      "headline": "The source claims the Falconer distance conjecture in all dimensions: compact sets of Hausdorff dimension greater than half the ambient dimension determine a positive-measure distance set.",
+      "central_instrument": "Pruning low-density parent cells allows local fiber bounds to multiply. Positive binning controls shifted collisions and converts them into bounded-frequency Fourier energy even for singular measures.",
+      "novelty_assessment": "Density pruning, discrete Cauchy-Schwarz and a squared-sinc Fourier majorant are classical tools. The extraction records their exact roles and hypotheses without certifying the source distance theorem.",
+      "formalization_summary": "Read PlanarFalconer.lean and FalconerAllDimensions.lean. They state the compact-set positive-distance-measure claims in dimension two and every dimension at least two. Both targets contain sorry; no Lean build was performed.",
+      "statement_faithfulness": "The density lower bound is imposed on the pre-deletion pair set, not the final pruned set. The radial version needs pin-source separation, whereas the full-line-width version needs only bounded distances above and removal of diagonal pairs. Collision measures must be positive.",
+      "dependencies": "Dyadic cubes, a geometric containment of hit children in one local fiber test, a union bound, Cauchy-Schwarz and the Fourier transform of squared sinc.",
+      "antecedents": "Classical density pruning, positive-measure collision estimates and Fourier majorants; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-073.md",
+      "body": "# Multiply local fiber bounds and compare positive collision energies\n\n## Source manuscript and claim\n\n[The Falconer distance conjecture in all dimensions](../papers/P-000199.md), by OpenAI, September 23, 2026.\n\nThe source claims the Falconer distance conjecture in all dimensions: compact sets of Hausdorff dimension greater than half the ambient dimension determine a positive-measure distance set.\n\n## Extracted instruments\n\n- [MI-000360: Prune using the original density before multiplying local fiber bounds](../instruments/MI-000360.md)\n- [MI-000361: Control shifted collisions and Fourier energy by positive bin masses](../instruments/MI-000361.md)\n\n## Dependencies and antecedents\n\nDyadic cubes, a geometric containment of hit children in one local fiber test, a union bound, Cauchy-Schwarz and the Fourier transform of squared sinc.\n\nClassical density pruning, positive-measure collision estimates and Fourier majorants; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete density-pruning/multiplication proof and positive-measure binning proof. The angular gain, thin-tube upgrade, profile recursion and final distance argument were not audited.\n\nRead PlanarFalconer.lean and FalconerAllDimensions.lean. They state the compact-set positive-distance-measure claims in dimension two and every dimension at least two. Both targets contain sorry; no Lean build was performed.\n\nThe density lower bound is imposed on the pre-deletion pair set, not the final pruned set. The radial version needs pin-source separation, whereas the full-line-width version needs only bounded distances above and removal of diagonal pairs. Collision measures must be positive.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/073.md) · [Batch record](../../batches/B032/README.md)"
+    },
+    {
       "id": "openai-math-074",
       "record_type": "family",
       "title": "Kakeya maximal conjecture in ℝ³; Kakeya sets in ℝ⁴",
@@ -19626,6 +20108,87 @@
       "map_formalization_summary": "no",
       "path": "catalog/families/openai-math-074.md",
       "body": "# Kakeya maximal conjecture in ℝ³; Kakeya sets in ℝ⁴\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000032](../papers/P-000032.md)\n- [P-000058](../papers/P-000058.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination leaning new (3D) new framework (4D)\n\nThe sources claim $`\\|K_\\delta f\\|_{L^3(S^2)}\\le C_\\varepsilon\\delta^{-\\varepsilon}\\|f\\|_{L^3}`$ in $`\\mathbb{R}^{3}`$ (the maximal conjecture, stronger than the Wang–Zahl set conjecture), and every set in $`\\mathbb{R}^{4}`$ containing a unit segment in every direction has Hausdorff dimension 4, without measurability or compactness assumptions. The manuscripts have 97 and 175 pages. The earlier bound cited by the initial extraction in $`\\mathbb{R}^{4}`$ is 3.059.\n\n## Extracted instruments.\n\n- [MI-000013: Deformed critical-exponent surface with BV selection](../instruments/MI-000013.md)\n\n- [MI-000014: Two-frame entropy transfer of projection theorems](../instruments/MI-000014.md)\n\n- [MI-000015: Chart/horizon framework with narrowness trichotomy](../instruments/MI-000015.md)\n\n## Reused.\n\nGWZ 2026 convex-clustering estimate (reformulated as a weighted plank lemma, the real dependence of 4D on 3D); Ren–Wang, Wang–Wu; multilinear Kakeya; Hochman–Shmerkin entropy across scales; Orponen–Shmerkin; Christ’s quasiextremals; Basu–Pollack–Roy.\n\n## Caveats.\n\nThe two manuscripts total 272 pages and use nested limits, slow diagonal choices, triangular subsequences and almost-everywhere offsets. Their order of limits needs detailed checking beyond the selected comparisons made here. The three-dimensional argument cites another unformalized OpenAI restriction paper as an alternative route. The initial extraction identifies Rios–Sawyer as an uncited antecedent. Literature comparisons remain incomplete.\n\n## Recorded assessment\n\n- Novelty: combination leaning new; 4D framework new\n- Formalization: no\n- Statement coverage: —\n- Dependencies: 3D: alternative route only. 4D: cites 3D for a lemma that is really GWZ 2026\n- Antecedents: Rios–Sawyer"
+    },
+    {
+      "id": "openai-math-075",
+      "record_type": "family",
+      "title": "Positive thermal Fourier coefficients and marginal-constrained entropy minimization",
+      "source_family": "075",
+      "source_collection": "openai/math",
+      "batch_id": "B032",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000200"
+      ],
+      "instrument_ids": [
+        "MI-000362",
+        "MI-000363"
+      ],
+      "headline": "The source claims almost-everywhere convergence of all symmetric Fourier partial sums for every complex-valued L log L function on the circle.",
+      "central_instrument": "Positive Fourier expansions and a squared two-copy covariance identity give thermal monotonicity. A finite Gibbs dual constructs correlated letters with prescribed marginals while retaining both correlation cost and noisy-sum information.",
+      "novelty_assessment": "Thermal monotonicity belongs to the classical Griffiths-Ginibre method. Gibbs variational duality and marginal multipliers are established tools. The selected combined cost is useful, but no first-priority claim or full Fourier-convergence certification is made.",
+      "formalization_summary": "Read FourierLLogL.lean: full symmetric partial sums converge to f outside one measurable null set under integrability of |f|log(2+|f|). Its target contains sorry; no Lean build was performed.",
+      "statement_faithfulness": "Thermal coefficients are nonnegative and only nonnegative form increments are ordered. The variational hypothesis holds for every single-letter probability law on S; the constructed letters may be correlated and are not claimed independent.",
+      "dependencies": "Absolutely convergent Fourier series, torus Haar invariance, positive covariance, finite convex duality, conditional entropy and permutation symmetrization.",
+      "antecedents": "Griffiths-Ginibre correlation method, discussed in Benassi-Lees-Ueltschi 2016; classical Gibbs variational principle and entropy minimization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-075.md",
+      "body": "# Positive thermal Fourier coefficients and marginal-constrained entropy minimization\n\n## Source manuscript and claim\n\n[Almost-everywhere Fourier convergence in L log L](../papers/P-000200.md), by OpenAI, September 23, 2026.\n\nThe source claims almost-everywhere convergence of all symmetric Fourier partial sums for every complex-valued L log L function on the circle.\n\n## Extracted instruments\n\n- [MI-000362: Order thermal forms using positive Fourier coefficients and a covariance square](../instruments/MI-000362.md)\n- [MI-000363: Construct correlated letters with fixed marginals and a controlled noisy-sum cost](../instruments/MI-000363.md)\n\n## Dependencies and antecedents\n\nAbsolutely convergent Fourier series, torus Haar invariance, positive covariance, finite convex duality, conditional entropy and permutation symmetrization.\n\nGriffiths-Ginibre correlation method, discussed in Benassi-Lees-Ueltschi 2016; classical Gibbs variational principle and entropy minimization. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete thermal positivity proof, prescribed-marginal variational proof and block-gluing proof. The global entropy-compression search, spectral update, live budgets and delayed-transform convergence argument were not audited.\n\nRead FourierLLogL.lean: full symmetric partial sums converge to f outside one measurable null set under integrability of |f|log(2+|f|). Its target contains sorry; no Lean build was performed.\n\nThermal coefficients are nonnegative and only nonnegative form increments are ordered. The variational hypothesis holds for every single-letter probability law on S; the constructed letters may be correlated and are not claimed independent.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/075.md) · [Batch record](../../batches/B032/README.md)"
+    },
+    {
+      "id": "openai-math-078",
+      "record_type": "family",
+      "title": "From small information to product domination with actual retained marginals",
+      "source_family": "078",
+      "source_collection": "openai/math",
+      "batch_id": "B032",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000201"
+      ],
+      "instrument_ids": [
+        "MI-000364",
+        "MI-000365"
+      ],
+      "headline": "The source claims the full strict Bochner-Riesz multiplier range in three dimensions.",
+      "central_instrument": "A likelihood tail converts sublinear relative entropy into pointwise domination after removing a small mass. Iterative deletion of low-mass factor values replaces comparison marginals by the actual marginals of one common retained law.",
+      "novelty_assessment": "Likelihood truncation, KL decomposition and density pruning are standard. The simultaneous-marginal bookkeeping is a useful finite interface; no global multiplier theorem or first-priority result is certified.",
+      "formalization_summary": "The pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.",
+      "statement_faithfulness": "Small relative entropy compared with a growing scale yields subexponential domination after restriction; it does not imply small total variation by itself. The marginal-core constant includes the retained mass and counts repeated observations with different reference laws separately.",
+      "dependencies": "The bound x log(1/x)<=1/e, Markov inequality, KL decomposition into total correlation and marginal terms, and a terminating finite deletion procedure.",
+      "antecedents": "Classical information-density truncation, relative-entropy chain rules and pruning methods.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-078.md",
+      "body": "# From small information to product domination with actual retained marginals\n\n## Source manuscript and claim\n\n[Bochner–Riesz multipliers in three dimensions](../papers/P-000201.md), by OpenAI, September 24, 2026.\n\nThe source claims the full strict Bochner-Riesz multiplier range in three dimensions.\n\n## Extracted instruments\n\n- [MI-000364: Convert small information rate into domination after a likelihood truncation](../instruments/MI-000364.md)\n- [MI-000365: Replace several product comparison laws by the actual marginals of one retained core](../instruments/MI-000365.md)\n\n## Dependencies and antecedents\n\nThe bound x log(1/x)<=1/e, Markov inequality, KL decomposition into total correlation and marginal terms, and a terminating finite deletion procedure.\n\nClassical information-density truncation, relative-entropy chain rules and pruning methods. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete zero-information/product-domination and simultaneous actual-marginal replacement proofs. Projection incidence, characteristic traces, packet repayment and multiplier estimates were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\nSmall relative entropy compared with a growing scale yields subexponential domination after restriction; it does not imply small total variation by itself. The marginal-core constant includes the retained mass and counts repeated observations with different reference laws separately.\n\n[Batch record](../../batches/B032/README.md)"
+    },
+    {
+      "id": "openai-math-079",
+      "record_type": "family",
+      "title": "Conformal wave identities and capacity-respecting assignment transport",
+      "source_family": "079",
+      "source_collection": "openai/math",
+      "batch_id": "B032",
+      "subject": "Real and complex analysis",
+      "source_paper_ids": [
+        "P-000202"
+      ],
+      "instrument_ids": [
+        "MI-000366",
+        "MI-000367"
+      ],
+      "headline": "The source claims critical local smoothing for the three-dimensional wave equation and strict-range multiplier consequences.",
+      "central_instrument": "An explicit rational conformal chart flattens a null hyperquadric and obeys exact four-dimensional wave covariance. A cell-capacity formula transfers labeled masses while respecting target energy and overlap.",
+      "novelty_assessment": "Conformal spacetime transformations and wave covariance are classical; Bateman is a historical antecedent. Fractional capacity allocation is elementary. The extracted identities do not certify the source microlocal transport or local-smoothing estimates.",
+      "formalization_summary": "The pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.",
+      "statement_faithfulness": "The chart identities hold away from its denominator zero; quantitative use needs buffered domains. Exact conformal covariance alone does not preserve a chosen positive-frequency band or prove packet estimates. Capacity transfer loses the product of amplification and overlap constants.",
+      "dependencies": "Rational coordinate transformations, the Lorentz quadratic form, the wave operator, chain rule and proportional fractional allocation.",
+      "antecedents": "Classical conformal spacetime geometry, including Bateman, The Transformation of the Electrodynamical Equations; elementary capacity allocation.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-079.md",
+      "body": "# Conformal wave identities and capacity-respecting assignment transport\n\n## Source manuscript and claim\n\n[Critical local smoothing for the three-dimensional wave equation](../papers/P-000202.md), by OpenAI, September 24, 2026.\n\nThe source claims critical local smoothing for the three-dimensional wave equation and strict-range multiplier consequences.\n\n## Extracted instruments\n\n- [MI-000366: Flatten a quadratic null hypersurface with an explicit conformal wave chart](../instruments/MI-000366.md)\n- [MI-000367: Transfer labeled masses through cell capacities without exceeding available energy](../instruments/MI-000367.md)\n\n## Dependencies and antecedents\n\nRational coordinate transformations, the Lorentz quadratic form, the wave operator, chain rule and proportional fractional allocation.\n\nClassical conformal spacetime geometry, including Bateman, The Transformation of the Electrodynamical Equations; elementary capacity allocation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full flattening-chart proof, conformal-wave-transport proof and cell-capacity lemma. Symbolic checks cover the algebraic chart identities; the packet localization, spectral projection errors and global smoothing proof are not certified.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean build was performed.\n\nThe chart identities hold away from its denominator zero; quantitative use needs buffered domains. Exact conformal covariance alone does not preserve a chosen positive-frequency band or prove packet estimates. Capacity transfer loses the product of amplification and overlap constants.\n\n[Batch record](../../batches/B032/README.md)"
     },
     {
       "id": "openai-math-081",
