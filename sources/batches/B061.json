@@ -1,0 +1,408 @@
+{
+  "batch_id": "B061",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T17:38:05.408033+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ArtinCAT0.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ArtinCAT0.lean",
+      "sha256": "81e60d5355278668a02d5a5b606867229e4ddf9b0abf2d060adf08b1f2af944e",
+      "bytes": 2840
+    },
+    {
+      "path": "lean/ComparatorChallenges/ArtinParabolicIntersections.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ArtinParabolicIntersections.lean",
+      "sha256": "8619974ed895f0bee85f6fe6ac4902c44723fec6057e712adefba2b67ea3269f",
+      "bytes": 5274
+    },
+    {
+      "path": "lean/ComparatorChallenges/BooneHigman.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BooneHigman.lean",
+      "sha256": "8b929009afeb82c0d78ab00f51b714b09e6bf925b8b85c85a52e652f2ff9f8ce",
+      "bytes": 1238
+    },
+    {
+      "path": "lean/ComparatorChallenges/HarmonicArtin.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HarmonicArtin.lean",
+      "sha256": "89befd8aa588a749435709c576bf679644d96fbe3c4be98662c23255a28f527d",
+      "bytes": 2062
+    },
+    {
+      "path": "lean/ComparatorChallenges/Kervaire.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Kervaire.lean",
+      "sha256": "c0ca6bc43b25344f7340899007c2fc0150d7d63cf6b91c49edf1f574d1c9431f",
+      "bytes": 1122
+    },
+    {
+      "path": "lean/ComparatorChallenges/SimpleOvergroups.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SimpleOvergroups.lean",
+      "sha256": "72d81cb8600211d955645ef46129f11b4c348bc0b9d18078270ab67e9511bb80",
+      "bytes": 1354
+    },
+    {
+      "path": "lean/ComparatorChallenges/UniversalFInfinity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/UniversalFInfinity.lean",
+      "sha256": "f253bcdd8bce56b2cadf8e903f45fc3bff476ca546ef9f0b32123461575c2026",
+      "bytes": 779
+    },
+    {
+      "path": "lean/docs/250.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/250.md",
+      "sha256": "70c0c2c1d29dc52b123c6cd2aa9312e92be5f4b778ada422429e900eb24e5117",
+      "bytes": 2374
+    },
+    {
+      "path": "lean/docs/254.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/254.md",
+      "sha256": "327dfb32694d5072c4a47aff41da516a7cbe663634285577f344beb98d94d4e2",
+      "bytes": 2495
+    },
+    {
+      "path": "lean/docs/256.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/256.md",
+      "sha256": "cfdd3d6f0f0b54ca063598a73c8498b61485361292333d49ebd0974aba4e76b9",
+      "bytes": 1036
+    },
+    {
+      "path": "preprints/A-universal-group-of-type-F-infinity-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-universal-group-of-type-F-infinity-September-23-2026/README.md",
+      "sha256": "e46579a6bd90e1fb7e6c34130150c18bf9d413039413fc627166a96bdc40f603",
+      "bytes": 513
+    },
+    {
+      "path": "preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex",
+      "sha256": "596f77d6d2e858ba31a23a387515278d0df2c79d30d1807fadd8a01d4b374a58",
+      "bytes": 6580
+    },
+    {
+      "path": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/README.md",
+      "sha256": "1fc6cef7f15021312c5d3fc2c8e5b06cfa209e3800dda5ad30738900236ff76e",
+      "bytes": 587
+    },
+    {
+      "path": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex",
+      "sha256": "f154a495c522363cf9e48799f650a7433f548328b5d8ab7e71c832151c07d91c",
+      "bytes": 10665
+    },
+    {
+      "path": "preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/README.md",
+      "sha256": "8203943cf779408cf09baf8776edbba13fb6d3ffcf2b752c7a26ef069488c623",
+      "bytes": 618
+    },
+    {
+      "path": "preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex",
+      "sha256": "c8068114434f14cf252086ba061be5261358f6fcac630c540be92e8fd20e4afb",
+      "bytes": 33565
+    },
+    {
+      "path": "preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/README.md",
+      "sha256": "6c56363eb615d57f9429b563128491b30e68d53d1e5e5dc7d17cc3a5fd079868",
+      "bytes": 632
+    },
+    {
+      "path": "preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex",
+      "sha256": "b146bd83263f78d03e78d42c948f15e27cbdadaacaeef8e72ac17c5a2f65d067",
+      "bytes": 13023
+    },
+    {
+      "path": "preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/README.md",
+      "sha256": "2041b8617a44c2f57f04f3af452eff6d110ac1390c54483fc91c4c888bfb4b60",
+      "bytes": 605
+    },
+    {
+      "path": "preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex",
+      "sha256": "ab3a5089f555ce75b27e9e8f72a24dacf584a9be5bd311edaaa1f09fffbea27a",
+      "bytes": 29575
+    },
+    {
+      "path": "preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/README.md",
+      "sha256": "5ad6a313f645a29cf9d98d66af936977106ca3fec369d10bf1f30c2a32c9c6a5",
+      "bytes": 690
+    },
+    {
+      "path": "preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex",
+      "sha256": "01625b4197d6b826946592e40067bd25e3e882edac96833a96ae0237dca9d93f",
+      "bytes": 8013
+    },
+    {
+      "path": "preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/README.md",
+      "sha256": "d413a51051b8edcbf430c249086f95228f695cc8680c5b2d9ae9be63db90e5b0",
+      "bytes": 555
+    },
+    {
+      "path": "preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/01_intro.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/01_intro.tex",
+      "sha256": "1e951033e449d034ca4221cf29ab580f8f2e6e188496f5c16ed0b79a082d6130",
+      "bytes": 14202
+    },
+    {
+      "path": "preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/08_stabilizers.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/08_stabilizers.tex",
+      "sha256": "9cfceb9744fa8b4fea4d1cae255becb3ead856c486c8a6225f45a91fda2772b4",
+      "bytes": 14283
+    },
+    {
+      "path": "preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/README.md",
+      "sha256": "878d9edd3674fab3e534142ebd12d2db3f82ac775c8c509bec21782bd67ae3bb",
+      "bytes": 663
+    },
+    {
+      "path": "preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex",
+      "sha256": "f6938c62c5406bba29b0b98a41ab3575bcb09471142619e59b91339c4b12f91d",
+      "bytes": 32713
+    },
+    {
+      "path": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/README.md",
+      "sha256": "fb7fed8c2503f2c331251999ab29907f2121f456bb57c1e4f751c68b969812ed",
+      "bytes": 603
+    },
+    {
+      "path": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex",
+      "sha256": "a2158bf0a34c08e6c1b126d89d8ca400f9ecb1f48ab2993104101d63e13c80e4",
+      "bytes": 5354
+    },
+    {
+      "path": "preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/README.md",
+      "sha256": "0fe36e911ba779280fd2d8efb2f71761d64bf38f436a69755aab60640c75b8a3",
+      "bytes": 640
+    },
+    {
+      "path": "preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/build/source/sections/06-closure.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/build/source/sections/06-closure.tex",
+      "sha256": "7db216a5cf7ba0d6ebdca8d5af70b3f74598cbf46fb22695f2eb176ac93b5659",
+      "bytes": 66036
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000587",
+      "path": "preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex",
+      "label": "lem:mapping-torus",
+      "line": 20,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex#L20",
+      "sha256": "b146bd83263f78d03e78d42c948f15e27cbdadaacaeef8e72ac17c5a2f65d067"
+    },
+    {
+      "instrument_id": "MI-000587",
+      "path": "preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex",
+      "label": "lem:affine-limit",
+      "line": 73,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026/build/action.tex#L73",
+      "sha256": "b146bd83263f78d03e78d42c948f15e27cbdadaacaeef8e72ac17c5a2f65d067"
+    },
+    {
+      "instrument_id": "MI-000588",
+      "path": "preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex",
+      "label": "lem:action-monoid-normal-form",
+      "line": 219,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex#L219",
+      "sha256": "f6938c62c5406bba29b0b98a41ab3575bcb09471142619e59b91339c4b12f91d"
+    },
+    {
+      "instrument_id": "MI-000588",
+      "path": "preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex",
+      "label": "eq:action-monoid-relations",
+      "line": 212,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026/build/sections/encoding.tex#L212",
+      "sha256": "f6938c62c5406bba29b0b98a41ab3575bcb09471142619e59b91339c4b12f91d"
+    },
+    {
+      "instrument_id": "MI-000589",
+      "path": "preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex",
+      "label": "lem:idempotents",
+      "line": 60,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex#L60",
+      "sha256": "596f77d6d2e858ba31a23a387515278d0df2c79d30d1807fadd8a01d4b374a58"
+    },
+    {
+      "instrument_id": "MI-000589",
+      "path": "preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex",
+      "label": "eq:rank-one-difference",
+      "line": 99,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex#L99",
+      "sha256": "596f77d6d2e858ba31a23a387515278d0df2c79d30d1807fadd8a01d4b374a58"
+    },
+    {
+      "instrument_id": "MI-000589",
+      "path": "preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex",
+      "label": "eq:three-prefix-lists",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-universal-group-of-type-F-infinity-September-23-2026/build/sections/idempotents.tex#L39",
+      "sha256": "596f77d6d2e858ba31a23a387515278d0df2c79d30d1807fadd8a01d4b374a58"
+    },
+    {
+      "instrument_id": "MI-000590",
+      "path": "preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex",
+      "label": "lem:cartan-positive-null",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex#L54",
+      "sha256": "ab3a5089f555ce75b27e9e8f72a24dacf584a9be5bd311edaaa1f09fffbea27a"
+    },
+    {
+      "instrument_id": "MI-000590",
+      "path": "preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex",
+      "label": "eq:category-scaled-form",
+      "line": 90,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026/build/sections/category.tex#L90",
+      "sha256": "ab3a5089f555ce75b27e9e8f72a24dacf584a9be5bd311edaaa1f09fffbea27a"
+    },
+    {
+      "instrument_id": "MI-000591",
+      "path": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex",
+      "label": "lem:commuting-form",
+      "line": 126,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex#L126",
+      "sha256": "f154a495c522363cf9e48799f650a7433f548328b5d8ab7e71c832151c07d91c"
+    },
+    {
+      "instrument_id": "MI-000591",
+      "path": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex",
+      "label": "lem:centralizer-character",
+      "line": 193,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex#L193",
+      "sha256": "f154a495c522363cf9e48799f650a7433f548328b5d8ab7e71c832151c07d91c"
+    },
+    {
+      "instrument_id": "MI-000591",
+      "path": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex",
+      "label": "eq:busemann-difference",
+      "line": 230,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/sections/lengths.tex#L230",
+      "sha256": "f154a495c522363cf9e48799f650a7433f548328b5d8ab7e71c832151c07d91c"
+    },
+    {
+      "instrument_id": "MI-000592",
+      "path": "preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/01_intro.tex",
+      "label": "cor:arbitrary-intersections",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/01_intro.tex#L38",
+      "sha256": "1e951033e449d034ca4221cf29ab580f8f2e6e188496f5c16ed0b79a082d6130"
+    },
+    {
+      "instrument_id": "MI-000592",
+      "path": "preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/08_stabilizers.tex",
+      "label": "sec:consequences",
+      "line": 144,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Parabolic-intersections-in-Artin-groups-September-23-2026/build/sections/08_stabilizers.tex#L144",
+      "sha256": "9cfceb9744fa8b4fea4d1cae255becb3ead856c486c8a6225f45a91fda2772b4"
+    },
+    {
+      "instrument_id": "MI-000593",
+      "path": "preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex",
+      "label": "lem:cycle-phase",
+      "line": 167,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex#L167",
+      "sha256": "01625b4197d6b826946592e40067bd25e3e882edac96833a96ae0237dca9d93f"
+    },
+    {
+      "instrument_id": "MI-000593",
+      "path": "preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex",
+      "label": "eq:phase-definition",
+      "line": 68,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026/build/sections/phase.tex#L68",
+      "sha256": "01625b4197d6b826946592e40067bd25e3e882edac96833a96ae0237dca9d93f"
+    },
+    {
+      "instrument_id": "MI-000594",
+      "path": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex",
+      "label": "lem:fixed",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex#L12",
+      "sha256": "a2158bf0a34c08e6c1b126d89d8ca400f9ecb1f48ab2993104101d63e13c80e4"
+    },
+    {
+      "instrument_id": "MI-000594",
+      "path": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex",
+      "label": "eq:degree-derivative",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/sections/degree.tex#L119",
+      "sha256": "a2158bf0a34c08e6c1b126d89d8ca400f9ecb1f48ab2993104101d63e13c80e4"
+    },
+    {
+      "instrument_id": "MI-000595",
+      "path": "preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex",
+      "label": "ann:capping",
+      "line": 465,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex#L465",
+      "sha256": "c8068114434f14cf252086ba061be5261358f6fcac630c540be92e8fd20e4afb"
+    },
+    {
+      "instrument_id": "MI-000595",
+      "path": "preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex",
+      "label": "ann:capping-frequency",
+      "line": 476,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex#L476",
+      "sha256": "c8068114434f14cf252086ba061be5261358f6fcac630c540be92e8fd20e4afb"
+    },
+    {
+      "instrument_id": "MI-000595",
+      "path": "preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex",
+      "label": "ann:capping-length",
+      "line": 482,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026/build/source/annuli.tex#L482",
+      "sha256": "c8068114434f14cf252086ba061be5261358f6fcac630c540be92e8fd20e4afb"
+    },
+    {
+      "instrument_id": "MI-000596",
+      "path": "preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/build/source/sections/06-closure.tex",
+      "label": "close:virtually-free-endo",
+      "line": 928,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026/build/source/sections/06-closure.tex#L928",
+      "sha256": "7db216a5cf7ba0d6ebdca8d5af70b3f74598cbf46fb22695f2eb176ac93b5659"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-250",
+      "extracted_slugs": [
+        "Finite-algebraic-envelopes-and-the-Boone-Higman-conjecture-September-23-2026",
+        "Simple-F-infinity-overgroups-of-groups-with-decidable-word-problem-September-23-2026",
+        "A-universal-group-of-type-F-infinity-September-23-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-254",
+      "extracted_slugs": [
+        "Harmonic-heights-and-the-Artin-K-pi-1-conjecture-September-23-2026",
+        "An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026",
+        "Parabolic-intersections-in-Artin-groups-September-23-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-256",
+      "extracted_slugs": [
+        "Nonsingular-systems-of-equations-over-arbitrary-groups-October-5-2026",
+        "The-Kervaire-Theorem-for-Groups-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-258",
+      "extracted_slugs": [
+        "Baumslag-Solitar-free-one-relator-groups-are-hyperbolic-September-25-2026",
+        "Virtual-compact-specialness-of-hyperbolic-one-relator-groups-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}
