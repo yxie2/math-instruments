@@ -65,8 +65,9 @@
 | [B061](B061/README.md) | 4 new families; 10 instruments; 10 source manuscripts | Ten instruments from ten manuscripts: noninjective mapping tori, action monoids, additive idempotent diagrams, positive Cartan data, centralizer characters, finite witnesses, spectral cycles, unitary incidence, free-word caps and stable kernels. |
 | [B062](B062/README.md) | 4 new families; 9 instruments; 9 source manuscripts | Twisted absorption, germ rigidity, polar intertwiners, clock-and-shift obstructions, fourth-moment recovery and nontracial state controls |
 | [B063](B063/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Frequency continuation, projection counts, affine-maximal reductions, bounded drift, Hartogs obstructions and holomorphic Fourier filters |
+| [B064](B064/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Zero traces, Sobolev pullback, harmonic equality barriers, atomic norms, phase insertion and scale-stable envelopes |
 
-Future rounds use `B064` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B065` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
