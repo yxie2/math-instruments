@@ -29844,6 +29844,336 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000701.md",
       "body": "# Choose one affine correction that hides a coordinate on every input\n\n[Family 134](../families/openai-math-134.md) · [Source manuscript](../papers/P-000470.md) · [Batch B074](../../batches/B074/README.md)\n\n## Mathematical content\n\nLet a finite monoid M act linearly on a finite F2-vector space U. There exist l>=1 and beta:M^l->U such that for every v and every tuple d, some coordinate j makes a->v rho(d1...d_(j-1) a d_(j+1)...dl)+beta(d1,...,a,...,dl) constant on M. The same beta serves all v,d.\n\nPut m=|M| and q=|U|; trivial cases use beta=0. Choose beta independently uniformly at all tuples. Conditional on beta(d), constancy along a given coordinate line prescribes its other m-1 values, with probability q^(1-m). Noncentral points of different lines are disjoint, so the probability of no successful line is p_l=(1-q^(1-m))^l. A failure event reads only the radius-one Hamming neighborhood of d. Events at centers farther than two are jointly independent, giving dependency degree at most D_l=q(1+lm+l^2m^2).\n\nChoose l large enough that p_l<=1/(4D_l). The finite local lemma, or its proved bound u(1-u)^D with u=1/(2D_l), gives positive probability of avoiding every failure event. Thus beta can be fixed before v and d. Exhaustive finite search after choosing l is an effective existence procedure, but no useful runtime bound follows. The variable coordinate j is allowed to depend on the state and tuple; beta is not.\n\n## Role in the source argument\n\nAdds a deterministic correction so that one interval product can be omitted by suitable local tests.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:affine-line](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L162)\n- [rem:finite-affine-choice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/build/sections/02-algebra.tex#L257)\n\n## Antecedents and comparison\n\n[Erdos and Lovasz, Problems and results on 3-chromatic hypergraphs and some related questions](https://www.renyi.hu/~p_erdos/1975-34.pdf), section 2, printed pages 616-617, proves the dependency-graph bound 1/(4d); those pages were visually read. The local lemma is classical. The source applies it to affine coordinate-line failures; exact priority of that application is not established.\n\n## Checks and limitations\n\nExact small-neighborhood enumeration checks the failure probability. A finite two-element monoid model constructs a correction and checks every tuple and state; the displayed local-lemma inequality and dependency count are checked separately.\n\nOne finite model does not certify arbitrary monoids or the subsequent generalized star-height construction.\n\n## Possible applications\n\nMaking a fixed preprocessing correction work for every query while allowing the omitted coordinate to adapt.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000702",
+      "record_type": "instrument",
+      "title": "Measure subset-sum compression by a bounded-difference deficiency",
+      "forms": [
+        "subset-sum-support-deficiency",
+        "without-replacement-deficiency-variance"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-138"
+      ],
+      "source_paper_ids": [
+        "P-000471"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex",
+          "label": "lem:deficiency",
+          "line": 79,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex#L79",
+          "sha256": "7a5681c2a0ec43838737d517978a49d6b2d68125f6419526a00d053a283c00ba"
+        },
+        {
+          "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex",
+          "label": "lem:half-variance",
+          "line": 106,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex#L106",
+          "sha256": "7a5681c2a0ec43838737d517978a49d6b2d68125f6419526a00d053a283c00ba"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000702.md",
+      "body": "# Measure subset-sum compression by a bounded-difference deficiency\n\n[Family 138](../families/openai-math-138.md) · [Source manuscript](../papers/P-000471.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nFor fixed integer weights c_i, define Sigma(V)={sum_(i in I)c_i:I subset V} and d(V)=|V|-log2|Sigma(V)|. This is exactly the exponent saved by storing distinct sums. Adding an index replaces the support by a union with one translate, so 0<=d(V+i)-d(V)<=1. For disjoint U,V, the sumset bound |Sigma(U union V)|<=|Sigma(U)||Sigma(V)| gives d(U union V)>=d(U)+d(V). Equal-size sets related by one exchange have deficiencies differing by at most one.\n\nIf V_q is a uniform q-subset of [n], expose an ordered sample without replacement. Conditional continuations after two possible next indices are coupled by swapping those indices. Their final sets either agree or differ by one exchange, so the conditional expectation ranges over an interval of length at most one. Orthogonality of Doob martingale differences gives Var d(V_q)<=q. Coupling successive q using one random permutation also makes E d(V_q) nondecreasing. These statements use support cardinality, not Shannon entropy of the random subset sum.\n\n## Role in the source argument\n\nFinds restrictions likely to retain useful compression from repeated sums.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:deficiency](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex#L79)\n- [lem:half-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex#L106)\n\n## Antecedents and comparison\n\nThe sumset inequality and martingale bounded-difference argument are classical. The source uses them as a quantitative interface for a preliminary distinct-sum search; no new general concentration theorem is claimed.\n\n## Checks and limitations\n\nEnumerates subset supports for integer arrays with zeros, negative weights, repeated weights and distinct binary powers; checks increments, exchanges, superadditivity and every fixed-size variance.\n\nThe tests do not certify the preliminary search cost or the later sub-meet-in-the-middle exponent.\n\n## Possible applications\n\nQuantifying the stability of support compression under random restrictions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000703",
+      "record_type": "instrument",
+      "title": "Separate task starts, raw matches and reused arrays in prefix recomputation",
+      "forms": [
+        "prefix-recomputation-three-budget",
+        "early-mask-filter-occurrence-charging"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-138"
+      ],
+      "source_paper_ids": [
+        "P-000472"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/build/representation.tex",
+          "label": "lem:prefix",
+          "line": 436,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/build/representation.tex#L436",
+          "sha256": "8142cb361ca4f8862288fd5437bcd54adcedaf6011cf455aeb983cd771b1f985"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000703.md",
+      "body": "# Separate task starts, raw matches and reused arrays in prefix recomputation\n\n[Family 138](../families/openai-math-138.md) · [Source manuscript](../papers/P-000472.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nRaw tuple occurrences on each side have one bucket among q and a binary top mask of length m; a valid occurrence yields a distinct entry keyed by exact weight and mask. Equal entry keys must have the same bucket. Let J_L,J_R count raw occurrences, including repetitions and invalid overlaps, and U_L,U_R bound all distinct valid entries.\n\nA dictionary has capacity C. Left overflow skips its bucket. A nonempty completed left array is held while right tasks are explored depth first: overflow splits on the next mask bit, while overflow at a full mask is dropped. Compatible masks must be selected before raw tuple generation. At a fixed depth, right tasks have disjoint possible entries, and every overflow witnesses more than C entries. Hence the total number of tasks is at most 2q+2(m+1)U_R/C.\n\nIf a task with Z potential occurrences costs at most H+KZ, total generation work is at most H[2q+2(m+1)U_R/C]+K[J_L+(m+1)J_R]. Each right occurrence belongs to only one prefix at each depth; multiplying raw processing by the total task count would lose this benefit. Completed right arrays are disjoint and contribute at most U_R to final checks. Root checks reuse left entries at most U_L times in aggregate; nonroot tasks contribute at most 2(m+1)U_R in repeated left-array lengths. Total check-input length is therefore at most U_L+(2m+3)U_R.\n\n## Role in the source argument\n\nMakes a depth-first regeneration schedule compatible with small dictionaries without hiding repeated-work costs.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:prefix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/build/representation.tex#L436)\n\n## Antecedents and comparison\n\nPrefix-tree charging and distinct-versus-occurrence accounting are established techniques. The source gives three separate bounds for its asymmetric left-skip/right-refine schedule; exact priority of this formulation is not established.\n\n## Checks and limitations\n\nSimulated capped dictionaries count tasks, raw visits and every reused check array, including invalid duplicates and full-mask overflow. A late-filter control shows why depth charging needs early filtering.\n\nThe tests do not establish the source probabilistic resource bounds or complete Subset Sum algorithm.\n\n## Possible applications\n\nAuditing low-memory algorithms that trade storage for repeated generation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000704",
+      "record_type": "instrument",
+      "title": "Pay only a root-of-count cost when selecting on one data domain",
+      "forms": [
+        "common-domain-measurable-selection",
+        "selection-scale-cancellation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-140"
+      ],
+      "source_paper_ids": [
+        "P-000473"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/build/sections/alternative-selection.tex",
+          "label": "h:alt:selection",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/build/sections/alternative-selection.tex#L16",
+          "sha256": "e69c9fe4429dcb646c9acaef7f100f175e268a44d3ef05f499abee13a4c4b39e"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000704.md",
+      "body": "# Pay only a root-of-count cost when selecting on one data domain\n\n[Family 140](../families/openai-math-140.md) · [Source manuscript](../papers/P-000473.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nLet finite nonnegative measures eta_j, j=1,...,N, be supported on one measurable domain D of finite lambda-measure. Assume p>1 and integral g d eta_j<=U(integral_D g d lambda)^(1-1/p) for every measurable 0<=g<=1. For routes g_j>=0 with sum_j g_j<=1, put b_j=integral_D g_j d lambda. Holder on the finite index set gives sum_j integral g_j d eta_j<=U sum_j b_j^(1-1/p)<=N^(1/p) U lambda(D)^(1-1/p).\n\nA sufficient condition is eta_j=f_j lambda with ||f_j||_p<=U. Holder and g^(p/(p-1))<=g prove the test estimate. The test formulation itself need not be replaced by a strong Lp-density claim.\n\nIf U<=HL r^(beta-m(1-1/p)) and lambda(D)<=V r^m, the radius powers cancel exactly and the selection bound becomes N^(1/p) H V^(1-1/p) L r^beta. The common domain is essential to using sum b_j<=lambda(D); independently chosen reference domains do not automatically give the same normalization.\n\n## Role in the source argument\n\nControls a finite-memory routing choice among analytic continuation measures.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [h:alt:selection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/build/sections/alternative-selection.tex#L16)\n\n## Antecedents and comparison\n\nThis is a direct classical Holder estimate. Its value here is the shared-domain formulation and explicit cancellation of projection-volume powers, not a new selection inequality.\n\n## Checks and limitations\n\nFinite weighted spaces test fractional routes and density bounds. Disjoint equal cells attain the N^(1/p) factor; scale exponents are checked independently.\n\nThe required exact-projection estimates are dependencies, not established by this card.\n\n## Possible applications\n\nKeeping the number of available states from becoming a linear loss in a measure-selection bound.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000705",
+      "record_type": "instrument",
+      "title": "Bound message information by the correlation lost under projection",
+      "forms": [
+        "replica-information-correlation-loss",
+        "matching-pair-law-conditional-information"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-140"
+      ],
+      "source_paper_ids": [
+        "P-000474"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex",
+          "label": "lem:replica-information",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L34",
+          "sha256": "d5e45f55fba0d66b9553e1e1ff7232599ae319c8dac0bca4fbc9463312437d1c"
+        },
+        {
+          "path": "preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex",
+          "label": "eq:replica-chain-before",
+          "line": 52,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L52",
+          "sha256": "d5e45f55fba0d66b9553e1e1ff7232599ae319c8dac0bca4fbc9463312437d1c"
+        },
+        {
+          "path": "preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex",
+          "label": "eq:replica-chain-after",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L59",
+          "sha256": "d5e45f55fba0d66b9553e1e1ff7232599ae319c8dac0bca4fbc9463312437d1c"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000705.md",
+      "body": "# Bound message information by the correlation lost under projection\n\n[Family 140](../families/openai-math-140.md) · [Source manuscript](../papers/P-000474.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nLet Q be a joint law of S1,...,St with common marginal p and finite total correlation K=KL(Q||p^t). Let W be finite-valued, with every pair (Si,W) having the same law. Let B be independent of the tuple and W, and Ui=phi_B(Si). Write K' for the expected total correlation of the projected tuple conditional on B. Then t I(S1;W|B,U1)<=H(W)+K-K', with 0<=K'<=K.\n\nLet K_W and K'_W be the corresponding correlations conditional on W and on (B,W). Relative-entropy chain rules before and after projection give the exact identity\nt I(S1;W|B,U1)=I((Si);W|B,(Ui))+(K-K')-(K_W-K'_W).\nCoordinatewise data processing makes the last parenthesis nonnegative, and the first term is at most H(W). Finiteness of K and W justifies the subtractions. The same argument applies inside conditional experiments when the pair-law and independence hypotheses hold there.\n\nIf W is produced from data, sample Si independently from the posterior given those data, independently of W conditional on the data. Each pair (Si,W) then has the original signal-message law. This posterior coupling supplies the required hypothesis; merely matching the Si marginals does not.\n\n## Role in the source argument\n\nSeparates message capacity from the geometric task of estimating correlation retained by an independent projection.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:replica-information](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L34)\n- [eq:replica-chain-before](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L52)\n- [eq:replica-chain-after](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/build/sections/02-replicas.tex#L59)\n\n## Antecedents and comparison\n\n[Austin, Multi-variate correlation and mixtures of product measures](https://www.kybernetika.cz/content/2020/3/459/paper.pdf), Lemma 4.3 on printed page 474, records established total-correlation identities; that statement was read. [Lelarge and Miolane, arXiv:1611.03888v3](https://arxiv.org/abs/1611.03888v3), Proposition 16 on page 14, states and proves the posterior-resampling identity; both were read. The source combines chain rules into the displayed conditional-information interface; exhaustive priority is not established.\n\n## Checks and limitations\n\nFinite posterior models compute every entropy and correlation term and verify the exact identity for several projections. An equal-marginal but mismatched-pair example violates the proposed bound, testing the essential hypothesis.\n\nThese tests do not verify equal-label Gaussian measures, correlation-loss estimates or memory-sample lower bounds.\n\n## Possible applications\n\nUsing posterior replicas to divide a message-entropy budget across several statistically compatible signals.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000706",
+      "record_type": "instrument",
+      "title": "Close endpoint momentum using an invariant graph before differentiating action",
+      "forms": [
+        "invariant-graph-stationary-closure",
+        "periodic-action-first-variation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-147"
+      ],
+      "source_paper_ids": [
+        "P-000475"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026/build/sections/geometry.tex",
+          "label": "lem:stationary-closure",
+          "line": 382,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026/build/sections/geometry.tex#L382",
+          "sha256": "040cb2000cb18e53ec4082209d7cd9c307a265b6fcae65f117df73bd7152c4ec"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000706.md",
+      "body": "# Close endpoint momentum using an invariant graph before differentiating action\n\n[Family 147](../families/openai-math-147.md) · [Source manuscript](../papers/P-000475.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nAssume a twist-map collar foliated by individually invariant periodic graphs p=g(theta), with the stated uniqueness of its rational-rotation graphs. A chain with sufficiently small positive angular steps, theta_q=theta_0+2pi l, and interior equations S_2(theta_(j-1),theta_j)+S_1(theta_j,theta_(j+1))=0 determines momenta p_j=-S_1(theta_j,theta_(j+1)), including p_q=S_2(theta_(q-1),theta_q).\n\nThe generating relation makes every consecutive pair a map transition, including the last one. The entire orbit segment lies on the invariant graph through its first point. Periodicity of that graph and the endpoint angle advance force p_q=p_0, although endpoint stationarity was not assumed. The segment repeats as a periodic orbit of rotation l/q; rational-graph uniqueness identifies the graph for all such chains.\n\nFor a C1 family with fixed q,l, differentiate sum_j S(theta_j,theta_(j+1)). Interior variations cancel. The boundary term is -p_0 theta_0'+p_q theta_q', which vanishes because momenta agree and the endpoint advance is fixed. Thus the action is constant along the family. The invariant-graph input is the step that closes the otherwise unforced boundary term.\n\n## Role in the source argument\n\nSupplies exact periodic action identities before assuming analytic regularity.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:stationary-closure](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026/build/sections/geometry.tex#L382)\n\n## Antecedents and comparison\n\nThe first-variation boundary formula and invariant-graph argument are classical. The source uses them after a separate continuous-foliation reduction; that reduction is not independently certified here.\n\n## Checks and limitations\n\nGauge-transformed integrable generating functions check interior stationarity, momentum closure and phase-independent action for rational rotations.\n\nThe tests do not establish the existence or uniqueness of invariant graphs for a general billiard.\n\n## Possible applications\n\nAvoiding an implicit endpoint-stationarity assumption in periodic variational arguments.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000707",
+      "record_type": "instrument",
+      "title": "Control local occupation after stopping above a distant level",
+      "forms": [
+        "discrete-tanaka-occupation-bound",
+        "unconditional-return-probability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-147"
+      ],
+      "source_paper_ids": [
+        "P-000476"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex",
+          "label": "lem:discrete-tanaka",
+          "line": 34,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex#L34",
+          "sha256": "b88d5d8e3f7026b1d75af5c3cfff2cb547defedcc071cb2656da246912fe1b5f"
+        },
+        {
+          "path": "preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex",
+          "label": "sign:ramp-remainder",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex#L64",
+          "sha256": "b88d5d8e3f7026b1d75af5c3cfff2cb547defedcc071cb2656da246912fe1b5f"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000707.md",
+      "body": "# Control local occupation after stopping above a distant level\n\n[Family 147](../families/openai-math-147.md) · [Source manuscript](../papers/P-000476.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nLet X_m, 0<=m<=M, be an integrable real submartingale and V=sum_m E(Delta X_m)^2<infinity. For 0<h<R define C_h=sum_m E[1_(|X_m|<=h) min((Delta X_m)^2,h^2)]. Then C_h<=C h(h+R+sqrt(V))+C M h^2 min(1,V/(R-h)^2), with an absolute constant and no bound on X_0.\n\nUse Phi(x)=sqrt(h^2+x^2)+x, which is nonnegative, increasing and convex, with derivative in [0,2]. Its curvature on [-2h,2h] gives a Taylor remainder at least c h^-1 1_(|x|<=h) min((y-x)^2,h^2). Stop at the first X_m>R, capped at M and equal to zero if the chain starts above R. The nonnegative drift has the correct sign, and telescoping bounds the pre-stop cost by C h(h+R+sqrt(V)); the crossing overshoot is bounded by the largest increment.\n\nAfter the stop, subtract the predictable nonnegative drift. The resulting martingale starts at zero and has terminal second moment at most V. A return from above R to [-h,h] forces a fluctuation of at least R-h. Its unconditional probability is at most a constant times min(1,V/(R-h)^2). The remaining occupation costs at most M h^2 on this event. No conditioning on a rare crossing event is used.\n\n## Role in the source argument\n\nCharges visits near zero even when the initial value may be arbitrarily far away.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:discrete-tanaka](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex#L34)\n- [sign:ramp-remainder](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/build/sections/11-sign-test.tex#L64)\n\n## Antecedents and comparison\n\nConvex occupation estimates and martingale maximal inequalities are classical. The source combines stopping, an overshoot budget and an unconditional return estimate; exact priority of this formulation is not established.\n\n## Checks and limitations\n\nChecks the convex remainder numerically and computes finite random-walk occupation costs for large positive and negative starts, varying drift and jump sizes.\n\nThese finite models do not verify the source analytic row estimates or billiard sign-test argument.\n\n## Possible applications\n\nBounding local quadratic activity without assuming a controlled starting position.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000708",
+      "record_type": "instrument",
+      "title": "Trap trajectories on a compact maximum plateau of a finite affine minimum",
+      "forms": [
+        "affine-minimum-active-derivative",
+        "compact-plateau-finite-entry"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-149"
+      ],
+      "source_paper_ids": [
+        "P-000477"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex",
+          "label": "lem:trapping",
+          "line": 243,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex#L243",
+          "sha256": "c076318b4fd3ef4b310a74d6302c5a1bd382e2ba180d439f0201c7e7daba97cd"
+        },
+        {
+          "path": "preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex",
+          "label": "eq:right-derivative",
+          "line": 260,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex#L260",
+          "sha256": "c076318b4fd3ef4b310a74d6302c5a1bd382e2ba180d439f0201c7e7daba97cd"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000708.md",
+      "body": "# Trap trajectories on a compact maximum plateau of a finite affine minimum\n\n[Family 149](../families/openai-math-149.md) · [Source manuscript](../papers/P-000477.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nLet F=min_lambda L_lambda be a finite minimum of affine functions, globally bounded above by M, and let K={F=M} be nonempty and compact inside the interior of a control region B. Along a differentiable trajectory x'=f(x), its right derivative is min_(lambda active at x) r_lambda dot f(x). Inactive labels have a positive gap at that point, so for a short right interval they cannot affect the minimum; taking the minimum of the active first-order expansions proves the formula.\n\nAssume every active derivative is nonnegative on B. Then F(x(t)) is nondecreasing on each segment staying in B. If, in the relevant invariant class outside K, every active derivative is at least delta>0, F increases there by at least delta times elapsed time. The right-derivative-to-monotonicity step follows by adding a small positive linear function and using its compact-interval maximum.\n\nA trajectory starting in K remains there: monotonicity and F<=M pin its value to M, while K being strictly inside B excludes a first exit. A smooth vector field then has a global continuation because the trajectory stays in a compact subset of its domain. Any global trajectory in the class that eventually stays in B must enter K within the finite budget (M-F(x(t0)))/delta. Without the uniform positive delta, monotonicity alone need not give finite entry.\n\n## Role in the source argument\n\nTurns local active-face inequalities into a global compact trapping and eventual-entry statement.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:trapping](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex#L243)\n- [eq:right-derivative](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex#L260)\n\n## Antecedents and comparison\n\nThe derivative formula, first-exit argument and compact continuation are classical. The source-specific challenge is constructing the plateau and proving the uniform active-slope hypothesis; those inputs are kept separate here.\n\n## Checks and limitations\n\nExplicit contracting flows test active ties, monotonicity, invariance and entry-time budgets for a compact polyhedral plateau. An asymptotic-only example tests the need for a uniform positive slope bound.\n\nThe checks do not establish the source affine-label construction or permanence theorem.\n\n## Possible applications\n\nOrganizing a nonsmooth Lyapunov proof around a plateau rather than a single attracting point.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000709",
+      "record_type": "instrument",
+      "title": "Regroup weighted directed edges into nonnegative level-cut fluxes",
+      "forms": [
+        "weak-reversibility-level-cut-flux",
+        "all-pairs-weight-domination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-149"
+      ],
+      "source_paper_ids": [
+        "P-000478"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex",
+          "label": "lem:cut-flux",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex#L153",
+          "sha256": "df33be267c63470aa2ee876bb09e50c44074d0001ab2dadb957f8482d75172a1"
+        },
+        {
+          "path": "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex",
+          "label": "eq:cut-decomposition",
+          "line": 212,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex#L212",
+          "sha256": "df33be267c63470aa2ee876bb09e50c44074d0001ab2dadb957f8482d75172a1"
+        }
+      ],
+      "batch_id": "B075",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000709.md",
+      "body": "# Regroup weighted directed edges into nonnegative level-cut fluxes\n\n[Family 149](../families/openai-math-149.md) · [Source manuscript](../papers/P-000478.md) · [Batch B075](../../batches/B075/README.md)\n\n## Mathematical content\n\nLet a finite directed graph have a return path for every edge, positive rates k_e and positive vertex weights w_v. Assign real levels a(v), and suppose a(u)<a(z) implies w_z<=delta w_u for every pair of vertices. If delta sum_e k_e<min_e k_e for a nonempty edge set, then sum_e k_e w_(source e)[a(target e)-a(source e)]>=0.\n\nList distinct levels alpha_1<...<alpha_q and let Q_j be upward minus downward weighted flux across the cut at alpha_j. If a downward edge exists, its return path contains an upward edge e0 with lower source u. The all-pairs hypothesis bounds the entire downward flux by delta w_u sum_e k_e<k_e0 w_u, so Q_j>0. If no downward edge exists, Q_j>=0 directly.\n\nEach edge level difference is the signed sum of the consecutive gaps it crosses. Hence the original sum equals sum_j (alpha_(j+1)-alpha_j) Q_j. Repeated levels, disconnected components and an empty edge set are allowed. The chosen upward edge need not share a component with every downward edge, which is precisely why ordering only adjacent pairs would not justify this proof. For mass action, use a(y)=r dot y and w_y=x^y once the required monomial ordering has been established.\n\n## Role in the source argument\n\nIsolates the finite graph reason for inward motion of an active affine label.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:cut-flux](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex#L153)\n- [eq:cut-decomposition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex#L212)\n\n## Antecedents and comparison\n\n[Craciun, arXiv:1901.02544v1](https://arxiv.org/abs/1901.02544v1), Theorem 4.1, proof on pages 18-21, orders complexes and regroups cycle contributions across level gaps. That portion, including the single-cycle argument away from uncertainty regions, was read. The source gives a direct all-pairs domination estimate for general return-path graphs; exact priority of that finite formulation is not established.\n\n## Checks and limitations\n\nExact rational models test cut decompositions on cycles and disconnected weakly reversible graphs with tied levels. Removing return paths or weight separation produces negative flux controls.\n\nThe tests do not supply the source global monomial ordering or a persistence theorem.\n\n## Possible applications\n\nSeparating reaction-network geometry from a reusable finite weighted-graph inequality.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -38776,6 +39106,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000470.md",
       "body": "# Generalized Star Height at Most Four\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/Generalized-Star-Height-at-Most-Four-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Generalized-Star-Height-at-Most-Four-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000701: Choose one affine correction that hides a coordinate on every input](../instruments/MI-000701.md)\n\n[Family review and dependencies](../families/openai-math-134.md) · [Batch B074](../../batches/B074/README.md)"
+    },
+    {
+      "id": "P-000471",
+      "record_type": "paper",
+      "title": "Subset Sum in Time $`O(2^{0.49n})`$ ",
+      "source_collection": "openai/math",
+      "upstream_slug": "Subset-Sum-in-Time-2-power-0-49n-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-138"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1826bf86612a2983f86c105bfccae13fbc8b8ef13401e8112f5898bf8d7ff6cd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000471.md",
+      "body": "# Subset Sum in Time $`O(2^{0.49n})`$ \n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/subset-sum.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000702: Measure subset-sum compression by a bounded-difference deficiency](../instruments/MI-000702.md)\n\n[Family review and dependencies](../families/openai-math-138.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000472",
+      "record_type": "paper",
+      "title": "A Low-Space Algorithm for Worst-Case Subset Sum",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-138"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "fc871ee09cee0b82571e2cbf5783788af0b47209cbe8d872cfe1357a99504d2c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000472.md",
+      "body": "# A Low-Space Algorithm for Worst-Case Subset Sum\n\n## Source\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000703: Separate task starts, raw matches and reused arrays in prefix recomputation](../instruments/MI-000703.md)\n\n[Family review and dependencies](../families/openai-math-138.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000473",
+      "record_type": "paper",
+      "title": "Memory and precision in noiseless Gaussian regression",
+      "source_collection": "openai/math",
+      "upstream_slug": "Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-140"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "91e6c5617a782769dd0bf315a806c5ca831ad7c5846b73547751a6c68618ba3d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000473.md",
+      "body": "# Memory and precision in noiseless Gaussian regression\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Memory-and-precision-in-noiseless-Gaussian-regression-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000704: Pay only a root-of-count cost when selecting on one data domain](../instruments/MI-000704.md)\n\n[Family review and dependencies](../families/openai-math-140.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000474",
+      "record_type": "paper",
+      "title": "Posterior replicas and conditional information in Gaussian regression",
+      "source_collection": "openai/math",
+      "upstream_slug": "Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-140"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "236166b3796cb4260121412accb3447da065e52f3f497c1772a32835af3e2856",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000474.md",
+      "body": "# Posterior replicas and conditional information in Gaussian regression\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Posterior-replicas-and-conditional-information-in-Gaussian-regression-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000705: Bound message information by the correlation lost under projection](../instruments/MI-000705.md)\n\n[Family review and dependencies](../families/openai-math-140.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000475",
+      "record_type": "paper",
+      "title": "Continuous Phase Foliations Create Analytic Caustic Collars",
+      "source_collection": "openai/math",
+      "upstream_slug": "Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-147"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "af86507a68646ed3a3672e6cc2d519f59c46fd7b5acdf12dae973635f5ad5907",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000475.md",
+      "body": "# Continuous Phase Foliations Create Analytic Caustic Collars\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuous-Phase-Foliations-Create-Analytic-Caustic-Collars-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000706: Close endpoint momentum using an invariant graph before differentiating action](../instruments/MI-000706.md)\n\n[Family review and dependencies](../families/openai-math-147.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000476",
+      "record_type": "paper",
+      "title": "Rigidity of Smooth Billiards with a Continuous Caustic Collar",
+      "source_collection": "openai/math",
+      "upstream_slug": "Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-147"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2350a9a06a9692a0485afeedd209b2413e2115cbb9679e6da3836eb9c4d16012",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000476.md",
+      "body": "# Rigidity of Smooth Billiards with a Continuous Caustic Collar\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Rigidity-of-Smooth-Billiards-with-a-Continuous-Caustic-Collar-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000707: Control local occupation after stopping above a distant level](../instruments/MI-000707.md)\n\n[Family review and dependencies](../families/openai-math-147.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000477",
+      "record_type": "paper",
+      "title": "Uniform Permanence in Weakly Reversible Mass-Action Systems",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-149"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4104df10767c86b5ec8f5563228afcf16ce2239b324c9a8203f54588d2577327",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000477.md",
+      "body": "# Uniform Permanence in Weakly Reversible Mass-Action Systems\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/permanence.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000708: Trap trajectories on a compact maximum plateau of a finite affine minimum](../instruments/MI-000708.md)\n\n[Family review and dependencies](../families/openai-math-149.md) · [Batch B075](../../batches/B075/README.md)"
+    },
+    {
+      "id": "P-000478",
+      "record_type": "paper",
+      "title": "Boundedness and persistence of weakly reversible mass-action systems",
+      "source_collection": "openai/math",
+      "upstream_slug": "Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-149"
+      ],
+      "batch_id": "B075",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "461dccbb1ed432f1e70a60ca9fcc099fb2a9c1512cf39a2ee6e83326678e61fa",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000478.md",
+      "body": "# Boundedness and persistence of weakly reversible mass-action systems\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000709: Regroup weighted directed edges into nonnegative level-cut fluxes](../instruments/MI-000709.md)\n\n[Family review and dependencies](../families/openai-math-149.md) · [Batch B075](../../batches/B075/README.md)"
     }
   ],
   "families": [
@@ -42506,6 +42988,34 @@
       "body": "# Homogeneous lookup and top-coefficient extraction in small space\n\n## Source manuscript and claim\n\n[Simulating One-Tape Time in Two-Fifths-Power Space](../papers/P-000168.md), by OpenAI, September 25, 2026.\n\nThe source claims soft-O(T^(2/5)) bits to determine the halting outcome of a fixed one-writable-tape machine run for a supplied cap T, with fixed read-only heads and a uniform polylog-space initial-symbol access procedure.\n\n## Extracted instruments\n\n- [MI-000298: Homogenize every lookup block, including the constant table](../instruments/MI-000298.md)\n- [MI-000299: Extract the homogeneous term after translation without dividing by factorials](../instruments/MI-000299.md)\n\n## Dependencies and antecedents\n\nHomogeneous Boolean basis, finite-field arithmetic, Lagrange interpolation, enumeration with reused counters and field accumulators.\n\nClassical multilinear extension, projective homogenization and Lagrange leading-coefficient formulas; the source connects these with space-efficient tree evaluation. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the field setup, homogeneous lookup proof and top-coefficient proof. The weighted evaluator, block hierarchy and complete space recurrence were not audited.\n\nRead the scope and full OneTapeSpace.lean Comparator. The model includes unit head moves, cap-independent initial data, numerical coordinates of magnitude at most T, uncharged read-only input and no running-time bound. The selected target concerns outcome, not materializing the final tape. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nLookup tables are total Boolean functions. A constant-one Boolean function becomes a power of the augmentation coordinate, not the literal field constant. Interpolation requires degree strictly below field cardinality, not below characteristic.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/137.md) · [Batch record](../../batches/B024/README.md)"
     },
     {
+      "id": "openai-math-138",
+      "record_type": "family",
+      "title": "Subset-sum deficiency and prefix recomputation budgets",
+      "source_family": "138",
+      "source_collection": "openai/math",
+      "batch_id": "B075",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000471",
+        "P-000472"
+      ],
+      "instrument_ids": [
+        "MI-000702",
+        "MI-000703"
+      ],
+      "headline": "The family claims faster worst-case Subset Sum algorithms, including a low-space implementation.",
+      "central_instrument": "Support deficiency has bounded changes under sampling; prefix recomputation can be charged separately to distinct entries and raw occurrences.",
+      "novelty_assessment": "Selected local mechanisms are distinguished from the manuscripts headline claims. Primary comparisons identify established antecedents; exhaustive priority is not established.",
+      "formalization_summary": "The pinned inventory has no family scope document or linked Comparator for this family. No formal verification is claimed.",
+      "statement_faithfulness": "The support argument permits arbitrary integer weights. Prefix accounting requires filtering incompatible masks before tuple generation and retains duplicate and invalid occurrence identities.",
+      "dependencies": "Finite sumsets, sampling without replacement, martingale differences and binary prefix trees.",
+      "antecedents": "Classical support compression, bounded differences and output-sensitive enumeration.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-138.md",
+      "body": "# Subset-sum deficiency and prefix recomputation budgets\n\n## Source manuscripts and claim\n\n- [Subset Sum in Time $`O(2^{0.49n})`$ ](../papers/P-000471.md): selected passages extracted.\n- [A Low-Space Algorithm for Worst-Case Subset Sum](../papers/P-000472.md): selected passages extracted.\n\nThe family claims faster worst-case Subset Sum algorithms, including a low-space implementation.\n\n## Extracted instruments\n\n- [MI-000702: Measure subset-sum compression by a bounded-difference deficiency](../instruments/MI-000702.md)\n- [MI-000703: Separate task starts, raw matches and reused arrays in prefix recomputation](../instruments/MI-000703.md)\n\n## Dependencies and antecedents\n\nFinite sumsets, sampling without replacement, martingale differences and binary prefix trees.\n\nClassical support compression, bounded differences and output-sensitive enumeration.\n\n## Review and formalization scope\n\nRead the complete deficiency and random-restriction proofs, and the parent schedule, validity proof and full prefix-accounting proof. Both manuscripts receive extractions. Filtering moments, modular recovery and the claimed running-time exponents are not certified.\n\nThe pinned inventory has no family scope document or linked Comparator for this family. No formal verification is claimed.\n\nThe support argument permits arbitrary integer weights. Prefix accounting requires filtering incompatible masks before tuple generation and retains duplicate and invalid occurrence identities.\n\n[Batch record](../../batches/B075/README.md)"
+    },
+    {
       "id": "openai-math-139",
       "record_type": "family",
       "title": "Query-preserving Gaussian absorption and stationary mean flows",
@@ -42531,6 +43041,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-139.md",
       "body": "# Query-preserving Gaussian absorption and stationary mean flows\n\n## Source manuscript and claim\n\n[Subpolynomial query complexity for well-conditioned log-concave sampling](../papers/P-000169.md), by OpenAI, September 26, 2026.\n\nFor normalized C2 potentials with Hessian between I and 2I, the source claims exact value-and-gradient oracle query complexity at most C_epsilon d^epsilon for every epsilon>0, and at least c log d, for total-variation error 0.1.\n\n## Extracted instruments\n\n- [MI-000300: Absorb Gaussian center noise while preserving physical oracle queries](../instruments/MI-000300.md)\n- [MI-000301: A weighted-divergence kernel gives a stationary flow with an exact mean shift](../instruments/MI-000301.md)\n\n## Dependencies and antecedents\n\nGaussian linear algebra, deterministic query translation, weighted divergence, complete ODE flows and change of variables. Quantitative kernel construction uses additional transport and jet bounds.\n\nClassical Gaussian covariance compensation; generalized Stein identities; Ma-Chen-Fox skew-symmetric stationary-flow construction. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete compiler-absorption and stationary-flow proofs and the displayed kernel construction. The transport/jet estimates supplying the kernel, adaptive compiler accuracy theorem and oracle lower bound were not audited.\n\nRead the scope and full LogConcaveQuery.lean Comparator. The oracle is exact and adaptive; its complexity cap holds on every execution. Arithmetic and bit costs are not charged. The subpolynomial upper bound is not a polylogarithmic upper bound. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe center-shift identity must preserve physical oracle queries for every fixed seed. The stationary flow assumes a kernel and an exact initial law and contains the unknown mean, so it is an ideal comparison object rather than an implementable sampler by itself.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/139.md) · [Batch record](../../batches/B024/README.md)"
+    },
+    {
+      "id": "openai-math-140",
+      "record_type": "family",
+      "title": "Selection costs and posterior-replica information",
+      "source_family": "140",
+      "source_collection": "openai/math",
+      "batch_id": "B075",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000473",
+        "P-000474"
+      ],
+      "instrument_ids": [
+        "MI-000704",
+        "MI-000705"
+      ],
+      "headline": "The family claims memory-sample and precision lower bounds for exact Gaussian observations.",
+      "central_instrument": "A shared support makes selection among N continuations cost N^(1/p); replica correlation loss bounds conditional information in a finite message.",
+      "novelty_assessment": "Selected local mechanisms are distinguished from the manuscripts headline claims. Primary comparisons identify established antecedents; exhaustive priority is not established.",
+      "formalization_summary": "Read the complete scope and both named Comparators. They specify finite-state noiseless Gaussian regression, fixed-quadratic and subquadratic memory targets, exact equal-label measures and several block-information comparisons. The other six listed Comparators were not inspected. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "Selection uses one reference measure and one common domain. Replica signals must have matching joint laws with the message; equal signal marginals alone are insufficient, and side randomness is independent.",
+      "dependencies": "Holder inequalities, relative-entropy chain rules, coordinatewise data processing and posterior resampling.",
+      "antecedents": "Classical selection inequalities, total correlation and the Nishimori posterior-resampling identity.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-140.md",
+      "body": "# Selection costs and posterior-replica information\n\n## Source manuscripts and claim\n\n- [Memory and precision in noiseless Gaussian regression](../papers/P-000473.md): selected passages extracted.\n- [Posterior replicas and conditional information in Gaussian regression](../papers/P-000474.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Localization costs and information growth for exact Gaussian observations](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Localization-costs-and-information-growth-for-exact-Gaussian-observations-September-27-2026)\n- [Projection moments, positive cap domination, and Riesz estimates on the sphere](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Projection-moments-positive-cap-domination-and-Riesz-estimates-on-the-sphere-September-27-2026)\n- [Replacing Gaussian observations in memory-constrained inference](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Replacing-Gaussian-observations-in-memory-constrained-inference-September-27-2026)\n- [Subsphere methods for memory-sample lower bounds in noiseless Gaussian regression](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subsphere-methods-for-memory-sample-lower-bounds-in-noiseless-Gaussian-regression-September-27-2026)\n\nThe family claims memory-sample and precision lower bounds for exact Gaussian observations.\n\n## Extracted instruments\n\n- [MI-000704: Pay only a root-of-count cost when selecting on one data domain](../instruments/MI-000704.md)\n- [MI-000705: Bound message information by the correlation lost under projection](../instruments/MI-000705.md)\n\n## Dependencies and antecedents\n\nHolder inequalities, relative-entropy chain rules, coordinatewise data processing and posterior resampling.\n\nClassical selection inequalities, total correlation and the Nishimori posterior-resampling identity.\n\n## Review and formalization scope\n\nRead the complete common-domain selection proof, replica-information proof, posterior-coupling explanation and entropy-test discussion. Two of six manuscripts receive extractions; four companion approaches remain inventory-only. Projection density estimates and streaming iteration are not certified.\n\nRead the complete scope and both named Comparators. They specify finite-state noiseless Gaussian regression, fixed-quadratic and subquadratic memory targets, exact equal-label measures and several block-information comparisons. The other six listed Comparators were not inspected. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nSelection uses one reference measure and one common domain. Replica signals must have matching joint laws with the message; equal signal marginals alone are insufficient, and side randomness is independent.\n\n[Batch record](../../batches/B075/README.md)"
     },
     {
       "id": "openai-math-141",
@@ -42700,6 +43238,34 @@
       "body": "# Matrix growth geometry and positive dilation balances\n\n## Source manuscripts and claim\n\n- [Positive Metric Entropy for the Standard Map at Large Parameters](../papers/P-000283.md): selected passages extracted.\n\nThe source claims positive metric entropy for every sufficiently large parameter of the standard map.\n\n## Extracted instruments\n\n- [MI-000504: Read approximate tree geometry from determinant-one matrix growth](../instruments/MI-000504.md)\n- [MI-000505: Split a positive dilation balance without subtracting infinite masses](../instruments/MI-000505.md)\n\n## Dependencies and antecedents\n\nSingular-value decomposition, the sine triangle inequality, properness for vague convergence and monotone convergence for positive measures.\n\nGromov-product and real-tree limit geometry, as reviewed by Bestvina; classical positive potential and invariant decompositions.\n\n## Review and formalization scope\n\nRead the complete four-point and cancellation-truncation proofs, the local-limit proof, and the positive dilation decomposition. The cancellation-scarcity, fast-bridge and final entropy arguments were not certified.\n\nThe three targets specify positive area entropy for a full parameter tail, positive largest Lyapunov exponents, and an invariant positive-area hyperbolic ergodic component with finitely many cyclic Bernoulli pieces. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nThe matrix estimate is for real two-dimensional determinant-one matrices. The measure decomposition needs an invertible map on the supported space and locally finite positive measures; total masses may be infinite.\n\n[Batch record](../../batches/B051/README.md)"
     },
     {
+      "id": "openai-math-147",
+      "record_type": "family",
+      "title": "Closing variational chains and controlling occupation",
+      "source_family": "147",
+      "source_collection": "openai/math",
+      "batch_id": "B075",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000475",
+        "P-000476"
+      ],
+      "instrument_ids": [
+        "MI-000706",
+        "MI-000707"
+      ],
+      "headline": "The family claims rigidity of billiards with continuous invariant foliations or caustic collars.",
+      "central_instrument": "An invariant graph supplies the missing endpoint momentum condition; a stopped convexity argument bounds occupation without an initial-value bound.",
+      "novelty_assessment": "Selected local mechanisms are distinguished from the manuscripts headline claims. Primary comparisons identify established antecedents; exhaustive priority is not established.",
+      "formalization_summary": "The pinned inventory has no family scope document or linked Comparator for this family. No formal verification is claimed.",
+      "statement_faithfulness": "Stationary closure assumes the invariant graph collar and rational-graph uniqueness already established. The occupation lemma is for integrable submartingales with finite total squared increments.",
+      "dependencies": "Generating functions, invariant graphs, first variation, convex Taylor remainders and martingale maximal estimates.",
+      "antecedents": "Classical variational identities and discrete Tanaka-type arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-147.md",
+      "body": "# Closing variational chains and controlling occupation\n\n## Source manuscripts and claim\n\n- [Continuous Phase Foliations Create Analytic Caustic Collars](../papers/P-000475.md): selected passages extracted.\n- [Rigidity of Smooth Billiards with a Continuous Caustic Collar](../papers/P-000476.md): selected passages extracted.\n\nThe family claims rigidity of billiards with continuous invariant foliations or caustic collars.\n\n## Extracted instruments\n\n- [MI-000706: Close endpoint momentum using an invariant graph before differentiating action](../instruments/MI-000706.md)\n- [MI-000707: Control local occupation after stopping above a distant level](../instruments/MI-000707.md)\n\n## Dependencies and antecedents\n\nGenerating functions, invariant graphs, first variation, convex Taylor remainders and martingale maximal estimates.\n\nClassical variational identities and discrete Tanaka-type arguments.\n\n## Review and formalization scope\n\nRead the complete stationary-chain closure proof and discrete Tanaka proof. Both manuscripts receive extractions. Continuous-leaf graph regularity, analytic continuation and billiard rigidity are not certified.\n\nThe pinned inventory has no family scope document or linked Comparator for this family. No formal verification is claimed.\n\nStationary closure assumes the invariant graph collar and rational-graph uniqueness already established. The occupation lemma is for integrable submartingales with finite total squared increments.\n\n[Batch record](../../batches/B075/README.md)"
+    },
+    {
       "id": "openai-math-148",
       "record_type": "family",
       "title": "Pair capacity and entropy gains before averaging the future",
@@ -42725,6 +43291,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-148.md",
       "body": "# Pair capacity and entropy gains before averaging the future\n\n## Source manuscript and claim\n\n[The entropy-rate dimension formula for self-similar measures on the line](../papers/P-000129.md), by OpenAI, September 24, 2026.\n\nThe source claims the entropy-rate dimension formula for every finite self-similar law on the line with nonzero strictly contracting ratios, including signed and unequal ratios.\n\n## Extracted instruments\n\n- [MI-000217: A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales](../instruments/MI-000217.md)\n- [MI-000218: Two-point entropy gains survive future averaging when the pair is fixed by the past](../instruments/MI-000218.md)\n\n## Dependencies and antecedents\n\nFinite entropy, fractional pair packing, independent samples, randomized nested cuts, observed-sum conditioning, shifted-grid entropy and Jensen averaging.\n\nVarju, Absolute continuity of Bernoulli convolutions for algebraic parameters, Propositions 20 and 21 and Lemma 22, provide fair-pair decomposition and convolution entropy gain. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite pair-bound proof, shifted-entropy definitions, two-point gain and conditional-gain lemma. Uniform nonsaturation and the global dimension argument were not audited.\n\nSelfSimilar and SelfSimilarCorollaries state the lower Hausdorff dimension formula and the no-exact-overlap homogeneous measure and attractor consequences. The rate uses entropy of complete composed affine maps. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nEntropy is in bits. Scale-interval entropy is concave and convolution-monotone in the form used here when the coarse/fine ratio is an integer. Nonsaturation is required for the averaged tail, not for every realized future.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/148.md) · [Batch record](../../batches/B014/README.md)"
+    },
+    {
+      "id": "openai-math-149",
+      "record_type": "family",
+      "title": "Affine plateaux and ordered-cut flux",
+      "source_family": "149",
+      "source_collection": "openai/math",
+      "batch_id": "B075",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000477",
+        "P-000478"
+      ],
+      "instrument_ids": [
+        "MI-000708",
+        "MI-000709"
+      ],
+      "headline": "The family claims boundedness, persistence and classwise uniform permanence for weakly reversible mass-action systems.",
+      "central_instrument": "Active slopes control finite affine minima, while return paths make ordered-cut flux nonnegative under sufficiently strong weight separation.",
+      "novelty_assessment": "Selected local mechanisms are distinguished from the manuscripts headline claims. Primary comparisons identify established antecedents; exhaustive priority is not established.",
+      "formalization_summary": "Read the scope and complete MassAction Comparator. It targets global existence and bounds away from zero and infinity for every positive initial state of a weakly reversible network with positive constant rates. Its bound may depend on that initial state; it does not state the newer classwise uniform absorbing-set result. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The trapping conclusion assumes a compact plateau inside the control region and a uniform positive active-slope bound below it. The flux lemma requires all-pairs weight ordering, including across components.",
+      "dependencies": "Finite affine minima, right derivatives, compact ODE continuation and directed return paths.",
+      "antecedents": "Classical nonsmooth Lyapunov arguments and ordered reaction-flux decompositions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-149.md",
+      "body": "# Affine plateaux and ordered-cut flux\n\n## Source manuscripts and claim\n\n- [Uniform Permanence in Weakly Reversible Mass-Action Systems](../papers/P-000477.md): selected passages extracted.\n- [Boundedness and persistence of weakly reversible mass-action systems](../papers/P-000478.md): selected passages extracted.\n\nThe family claims boundedness, persistence and classwise uniform permanence for weakly reversible mass-action systems.\n\n## Extracted instruments\n\n- [MI-000708: Trap trajectories on a compact maximum plateau of a finite affine minimum](../instruments/MI-000708.md)\n- [MI-000709: Regroup weighted directed edges into nonnegative level-cut fluxes](../instruments/MI-000709.md)\n\n## Dependencies and antecedents\n\nFinite affine minima, right derivatives, compact ODE continuation and directed return paths.\n\nClassical nonsmooth Lyapunov arguments and ordered reaction-flux decompositions.\n\n## Review and formalization scope\n\nRead the compact-plateau proof, the active-increase statement and complete trapping proof, and the full finite cut-flux proof and its application. Both manuscripts receive extractions. The affine-label construction and the uniform active-increase proof are not certified.\n\nRead the scope and complete MassAction Comparator. It targets global existence and bounds away from zero and infinity for every positive initial state of a weakly reversible network with positive constant rates. Its bound may depend on that initial state; it does not state the newer classwise uniform absorbing-set result. Inspected theorem targets contain sorry; no separate solution or Lean build was checked.\n\nThe trapping conclusion assumes a compact plateau inside the control region and a uniform positive active-slope bound below it. The flux lemma requires all-pairs weight ordering, including across components.\n\n[Batch record](../../batches/B075/README.md)"
     },
     {
       "id": "openai-math-151",

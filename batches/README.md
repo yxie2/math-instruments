@@ -76,8 +76,9 @@
 | [B072](B072/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight instruments on supported matrix costs, dyadic energy increments, stable geometric grid keys, open repair, Fourier bounds, Poisson normalization and singular cone sections. |
 | [B073](B073/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Alphabet compression, partition histograms, sheared square coverings, simplex chords, pathwise game bounds and finite online policies |
 | [B074](B074/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Finite coefficient rings, integration jets, damping margins, overlap smoothing, parity duality, cycle potentials and sound language splits |
+| [B075](B075/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Subset-sum support, prefix budgets, common-domain selection, replica correlation, stationary action, occupation and affine trapping |
 
-Future rounds use `B075` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B076` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

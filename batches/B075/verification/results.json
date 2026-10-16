@@ -1,0 +1,79 @@
+{
+  "batch": "B075",
+  "status": "pass",
+  "elapsed_seconds": 0.324,
+  "scope": "Selected finite mechanisms and hypothesis controls; no source headline or Lean certification.",
+  "checks": {
+    "deficiency": {
+      "status": "pass",
+      "details": {
+        "integer_weight_arrays": 6,
+        "disjoint_support_pairs": 13122,
+        "exchange_checks": 8064,
+        "fixed_size_variances": 48
+      }
+    },
+    "prefix_recomputation": {
+      "status": "pass",
+      "details": {
+        "schedule_models": 90,
+        "refined_nodes": 184,
+        "full_mask_overflows": 70,
+        "late_filter_negative_control": true
+      }
+    },
+    "common_domain_selection": {
+      "status": "pass",
+      "details": {
+        "weighted_space_models": 160,
+        "sharp_disjoint_cell_models": 16,
+        "scale_checks": 48
+      }
+    },
+    "replica_information": {
+      "status": "pass",
+      "details": {
+        "posterior_models": 60,
+        "projection_models": 180,
+        "max_identity_error": 8.222589276130066e-16,
+        "mismatched_pair_negative_control": true
+      }
+    },
+    "stationary_closure": {
+      "status": "pass",
+      "details": {
+        "periodic_chains": 102,
+        "max_action_error": 1.7763568394002505e-15,
+        "nonconstant_graph_gauge": true
+      }
+    },
+    "occupation_bound": {
+      "status": "pass",
+      "details": {
+        "convex_remainders": 561,
+        "finite_submartingale_models": 45,
+        "starts_include_plus_minus100": true,
+        "checked_absolute_constant": 50
+      }
+    },
+    "affine_plateaux": {
+      "status": "pass",
+      "details": {
+        "trajectory_points": 2511,
+        "active_ties": 44,
+        "entry_time_budgets": 81,
+        "nonuniform_slope_negative_control": true
+      }
+    },
+    "ordered_flux": {
+      "status": "pass",
+      "details": {
+        "exact_directed_graphs": 105,
+        "level_cuts": 241,
+        "disconnected_and_tied_levels": true,
+        "return_path_negative_control": true,
+        "weight_separation_negative_control": true
+      }
+    }
+  }
+}
