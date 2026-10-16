@@ -22847,6 +22847,442 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000536.md",
       "body": "# Discard Fourier phases through a positive lattice Gaussian ratio\n\n[Family 239](../families/openai-math-239.md) · [Source manuscript](../papers/P-000305.md) · [Batch B054](../../batches/B054/README.md)\n\n## Mathematical content\n\nLet Lambda be a full-rank lattice in a Euclidean subspace E, let S be positive self-adjoint on E, and sample Y in Lambda* with mass proportional to exp(-pi|S^(-1)Y|^2). For independent Bernoulli-p vectors xi,xi' on a coordinate set J put X=xi-xi' and phi(t)=1-p+p exp(2pi i t). Poisson summation gives\n\nE_Y product_(i in J)|phi(uY_i+s_i)|^2 = E_X[exp(2pi i sum_i s_i X_i) f(uX)],\n\nwhere f(t)=sum_(lambda in Lambda)exp(-pi|S(lambda-projection_E t)|^2)/sum_(lambda in Lambda)exp(-pi|S lambda|^2). The ratio is nonnegative and at most one. Taking absolute values therefore bounds the product average uniformly over all phases by E_X f(uX).\n\nFor d=dim E and D(t)=dist(S projection_E t,S Lambda), reserving half the Gaussian exponent and using the centered translate bound yields f(t)<=2^(d/2)exp(-pi D(t)^2/2). Suppose that, after conditioning on xi' and the other coordinates of xi, subset sums in m remaining coordinates have pairwise quotient distance greater than 2R. At most one pattern lies within R of the required lattice translate. Its probability is at most b^m, b=max(p,1-p). Consequently the Fourier product average is at most b^m+2^(d/2)exp(-pi R^2/2).\n\nThe source chooses m proportional to tau N and R proportional to sqrt(N), using a preceding separation lemma. That separation and its probabilistic hypotheses are additional inputs, not consequences of Poisson summation.\n\n## Role in the source argument\n\nTurns the source separated quotient sums into Fourier decay uniform over arbitrary row phases.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:dual-fourier-average](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026/build/sections/04-lattice.tex#L253)\n- [eq:lattice-poisson-ratio](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026/build/sections/04-lattice.tex#L272)\n- [eq:lattice-gaussian-distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026/build/sections/04-lattice.tex#L308)\n\n## Antecedents and comparison\n\n[Regev-Stephens-Davidowitz, A Reverse Minkowski Theorem](https://arxiv.org/pdf/1611.05979), equation (5) and Claim 2.2 with its complete proof on PDF pages 9-10, give Poisson summation and the Gaussian translate maximum, with attribution to earlier lattice-Gaussian work. Those passages were read. The remaining Bernoulli conditioning step is elementary; no priority claim for the source random-matrix interface is made.\n\n## Checks and limitations\n\nTruncated one-dimensional dual and primal Gaussian sums are compared with explicit tail margins. Finite Bernoulli pattern enumeration checks phase removal, the Gaussian distance estimate and separated-pattern small-ball bounds.\n\nThe checks do not prove the source high-dimensional subset separation, simultaneous lattice event or sharp matrix singularity rate.\n\n## Possible applications\n\nObtaining Fourier small-ball bounds that remain valid under arbitrary deterministic phases once quotient subset sums are separated.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000537",
+      "record_type": "instrument",
+      "title": "Fix matrix channels before choosing a regular auxiliary coefficient",
+      "forms": [
+        "gronwall-fixed-kernel",
+        "projection-derivative-channel-rigidity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "source_paper_ids": [
+        "P-000306"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex",
+          "label": "rig:fixed-right-spaces",
+          "line": 43,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L43",
+          "sha256": "d9deee77f0feb5567f1e19301880d085ce2e273bf916a8a06614e3011a60678e"
+        },
+        {
+          "path": "preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex",
+          "label": "rig:fixed-left-spaces",
+          "line": 102,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L102",
+          "sha256": "d9deee77f0feb5567f1e19301880d085ce2e273bf916a8a06614e3011a60678e"
+        },
+        {
+          "path": "preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex",
+          "label": "rig:tanh",
+          "line": 171,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L171",
+          "sha256": "d9deee77f0feb5567f1e19301880d085ce2e273bf916a8a06614e3011a60678e"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-ode-rigidity-with-source-equality-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000537.md",
+      "body": "# Fix matrix channels before choosing a regular auxiliary coefficient\n\n[Family 262](../families/openai-math-262.md) · [Source manuscript](../papers/P-000306.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nSuppose locally absolutely continuous matrix blocks G_alpha satisfy |(G_alpha v)'|<=kappa|G_alpha v| almost everywhere for every fixed vector v. If G_alpha(x_0)v=0, Gronwall in both directions gives G_alpha(x)v=0 everywhere. Thus each kernel and row space is constant, including points outside the initial full-measure set. If G_alpha G_beta^T=0 almost everywhere for distinct labels, continuity makes the constant row spaces mutually orthogonal. Their total dimension is at most the physical matrix dimension m, so only finitely many are nonzero.\n\nThe source obtains this differential bound from pointwise choices G_alpha'=B_alpha G_alpha with uniformly bounded B_alpha, without first requiring a measurable choice of B_alpha. After its potential relation gives C^2 regularity, restrict G_alpha to its fixed row space and call the resulting full-column-rank matrix E. If B_alpha commutes with G_alpha G_alpha^T, E' lies in range(E). For P=E(E^T E)^(-1)E^T,\n\nP'=(I-P)E'(E^T E)^(-1)E^T+E(E^T E)^(-1)(E')^T(I-P)=0.\n\nThus the range is fixed as well. In constant bases the active matrix D is square and invertible, and B_0=D'D^(-1) is a regular, uniquely determined coefficient. Under the additional source identities alpha^2 I-B_0^2=(DD^T)^r>0 and D''=alpha^2 D-(r+1)(DD^T)^rD, it satisfies B_0'=r(B_0^2-alpha^2 I). A constant basis diagonalizing B_0 at one point diagonalizes it everywhere by ODE uniqueness. The scalar entries are -alpha tanh(r alpha(x-y_j)), yielding fixed-channel sech-squared profiles. Obtaining the pointwise equality relations is a separate task.\n\n## Role in the source argument\n\nPrevents rotating physical channels in the source proposed matrix equality classification.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [rig:fixed-right-spaces](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L43)\n- [rig:fixed-left-spaces](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L102)\n- [rig:tanh](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/build/sections/rigidity.tex#L171)\n\n## Antecedents and comparison\n\n[Benguria-Loss, A simple proof of a theorem of Laptev and Weidl](https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2000/0007/0002/MRL-2000-0007-0002-a005.pdf), Lemma 3 and its proof on printed pages 199-200, use M prime times M inverse, a matrix Riccati equation and fixed eigenvectors. Those passages were read. The selected source fixes possibly rectangular block spaces first; no new general ODE principle is claimed.\n\n## Checks and limitations\n\nExplicit rectangular matrix curves test the projection derivative and fixed kernels. Symbolic hyperbolic profiles test all active Riccati identities. A rotating-range example shows why range preservation is required.\n\nThese checks do not prove that every spectral equality case supplies the required pointwise matrix identities.\n\n## Possible applications\n\nRecovering fixed channels from almost-everywhere matrix relations even when the initial auxiliary coefficient has no chosen regular representative.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000538",
+      "record_type": "instrument",
+      "title": "Retain a noncommutative square in integrated trace duality",
+      "forms": [
+        "noncommuting-trace-square-defect",
+        "integrated-resolvent-legendre-duality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "source_paper_ids": [
+        "P-000307"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex",
+          "label": "eq:trace-square",
+          "line": 357,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L357",
+          "sha256": "51a13c2b744a15a4c39bf78e4a9e35453d647f9be12d70965dcee9c8f222cb14"
+        },
+        {
+          "path": "preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex",
+          "label": "eq:trace-duality",
+          "line": 370,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L370",
+          "sha256": "51a13c2b744a15a4c39bf78e4a9e35453d647f9be12d70965dcee9c8f222cb14"
+        },
+        {
+          "path": "preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex",
+          "label": "eq:trace-deficit",
+          "line": 383,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L383",
+          "sha256": "51a13c2b744a15a4c39bf78e4a9e35453d647f9be12d70965dcee9c8f222cb14"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-trace-square-with-source-integrated-deficit",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000538.md",
+      "body": "# Retain a noncommutative square in integrated trace duality\n\n[Family 262](../families/openai-math-262.md) · [Source manuscript](../papers/P-000307.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nFor R>0, D>=0 and t>0, the exact identity\n\nDelta_D(t)=||R^(-1/2)-R^(1/2)(tI+D)^(1/2)||_HS^2\n=tr(R^(-1)+R(tI+D)-2(tI+D)^(1/2))>=0\n\nrequires no commutation. The cross terms cancel adjacent inverse square roots, and cyclicity handles the remaining product. Equality is equivalent to R=(tI+D)^(-1/2).\n\nThe source takes X_s=(sI-B)^2+V>=bI uniformly in real s, with Hermitian B,V and b>0, and R(t)=pi^(-1)integral_R (X_s+tI)^(-1)ds. Set P=t^(-1/2)I-R, beta=sigma-1/2, 0<sigma<1, N=c_sigma integral_0^infinity t^beta P(t)dt, with c_sigma normalized so the scalar integral at V=1 equals one. Write p=1+sigma and q=p/sigma.\n\nIts half-line boundary matrices S,T give L=(S+T)/2=R^(-1), Z=(S-T)/2 and LZ+ZL+i[B,L]=0. The logarithmic determinant integral supplies the weighted balance needed for\n\ntr(NV)-tr(N^q)=c_sigma integral_0^infinity t^beta [tr(RZ^2)+q Delta_(N^(1/sigma))(t)]dt,\n\nprovided N>=0. The scalar power term comes from maximizing tr(ND)-tr(D^p)/p at D=N^(1/sigma). Both defects are nonnegative. The positivity assumption is on the entire symbol X_s; V itself may be indefinite. In the commuting case Z=0, R=(tI+V)^(-1/2), N=V^sigma and the deficit vanishes.\n\n## Role in the source argument\n\nPreserves an explicit noncommutative equality defect in the source trace estimate, which later feeds its matrix action inequality.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [eq:trace-square](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L357)\n- [eq:trace-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L370)\n- [eq:trace-deficit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/build/sections/trace.tex#L383)\n\n## Antecedents and comparison\n\nThe Hilbert-Schmidt square and scalar-power trace duality are classical. [Benguria-Loss](https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2000/0007/0002/MRL-2000-0007-0002-a005.pdf), Lemma 3, provides an earlier matrix Riccati method in this subject. The complete source trace proof was read; the particular integrated deficit is recorded without a claim of earliest priority or certification of the surrounding sharp spectral theorem.\n\n## Checks and limitations\n\nNoncommuting positive matrices test the exact square and its equality condition. Numerical resolvent integration tests the half-line Riccati algebra; scalar quadrature checks normalization and the integrated power-duality term.\n\nThe finite tests do not construct the source global matrix field, connecting paths or infinite-line spectral bound.\n\n## Possible applications\n\nTracking equality and coercivity in a matrix trace comparison without replacing products by unjustified commuting expressions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000539",
+      "record_type": "instrument",
+      "title": "Recognize an integrated divided-difference kernel as random unitary conjugation",
+      "forms": [
+        "gamma-gaussian-schur-multiplier",
+        "integrated-tangent-random-conjugation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "source_paper_ids": [
+        "P-000308"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex",
+          "label": "lem:average",
+          "line": 118,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L118",
+          "sha256": "40d96bf8f4992a54a801f6e59ab65bc0d5a1e2f9462b2cf7eeb14e9a0bdb22ec"
+        },
+        {
+          "path": "preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex",
+          "label": "eq:P-kernel",
+          "line": 120,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L120",
+          "sha256": "40d96bf8f4992a54a801f6e59ab65bc0d5a1e2f9462b2cf7eeb14e9a0bdb22ec"
+        },
+        {
+          "path": "preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex",
+          "label": "eq:gamma-mixture",
+          "line": 145,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L145",
+          "sha256": "40d96bf8f4992a54a801f6e59ab65bc0d5a1e2f9462b2cf7eeb14e9a0bdb22ec"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 3,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-gaussian-mixture-and-divided-difference-calculus",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000539.md",
+      "body": "# Recognize an integrated divided-difference kernel as random unitary conjugation\n\n[Family 262](../families/openai-math-262.md) · [Source manuscript](../papers/P-000308.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nLet B be Hermitian with eigenvalues z_i, 0<sigma<1 and a>0. Define a Schur multiplier in its eigenbasis by\n\nP_ij=integral_0^1 (1+tau(1-tau)(z_i-z_j)^2/a)^(sigma-1)dtau.\n\nDraw tau uniformly in [0,1], V with gamma shape 1-sigma and unit rate, and then T conditionally Gaussian with variance 2V tau(1-tau)/a. The gamma Laplace transform gives E exp(iTx)=integral_0^1(1+tau(1-tau)x^2/a)^(sigma-1)dtau. Hence P(Z)=E[exp(iTB) Z exp(-iTB)]. In particular the coefficient matrix is positive semidefinite with unit diagonal, and P is unital, trace-preserving, positive and self-adjoint for the Hermitian trace pairing. The same law works for every pair of eigenvalues, including repetitions.\n\nIn the source this kernel appears by integrating the divided-difference derivative at Y_s=(sI-B)^2+dI, with a=d+delta. Completing the square in tau(s-z_i)^2+(1-tau)(s-z_j)^2 leaves tau(1-tau)(z_i-z_j)^2; integration over s gives the displayed kernel. This representation permits trace inequalities for individual conjugations to be averaged. It does not say that every positive Schur multiplier is a mixture of this one-parameter conjugation group.\n\n## Role in the source argument\n\nConverts the source integrated tangent operator into an even probability average that can be removed in its specific trace pairing.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:average](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L118)\n- [eq:P-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L120)\n- [eq:gamma-mixture](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/build/sections/rank-one.tex#L145)\n\n## Antecedents and comparison\n\n[Hiai, Matrix Analysis: Matrix Monotone Functions, Matrix Means, and Majorization](https://www.jstage.jst.go.jp/article/iis/16/2/16_2_139/_pdf), Theorem 2.3.1 on printed page 159, states the classical divided-difference derivative formula with attribution to Daleckii-Krein; that statement was read. The gamma integral and Gaussian characteristic function give the averaging representation directly. No new general functional-calculus theorem is claimed.\n\n## Checks and limitations\n\nDeterministic quadrature compares the gamma mixture and displayed kernel, tests positive semidefiniteness with repeated eigenvalues, and checks trace preservation and self-adjointness on noncommuting inputs.\n\nThe checks do not verify the source rank-one field constraint or the full Lieb-Thirring conjecture.\n\n## Possible applications\n\nIdentifying a matrix multiplier as a concrete probability average so positivity and trace-pairing properties become transparent.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000540",
+      "record_type": "instrument",
+      "title": "Combine exact integer roots with a Chebyshev filter while budgeting coefficients",
+      "forms": [
+        "integer-zero-chebyshev-filter",
+        "weighted-polynomial-coefficient-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-274"
+      ],
+      "source_paper_ids": [
+        "P-000309"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex",
+          "label": "lem:polynomial",
+          "line": 21,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex#L21",
+          "sha256": "b0a0e4ab413a68311ed9143b32ac9c197ee568e02ec101e5add740b0440366b9"
+        },
+        {
+          "path": "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex",
+          "label": "eq:polynomial-construction",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex#L69",
+          "sha256": "b0a0e4ab413a68311ed9143b32ac9c197ee568e02ec101e5add740b0440366b9"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "sherstov-style-approximation-with-explicit-coefficient-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000540.md",
+      "body": "# Combine exact integer roots with a Chebyshev filter while budgeting coefficients\n\n[Family 274](../families/openai-math-274.md) · [Source manuscript](../papers/P-000309.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nFor integers m>=2r>=2, let ell=ceil(2sqrt(mr)log m), F(x)=product_(j=1)^r(1-x/j), and\n\np(x)=F(x) T_ell((m+r-2x)/(m-r))/T_ell((m+r)/(m-r)).\n\nThen p(0)=1, p vanishes at integers 1,...,r, and |p(x)|<=2m^(-3r) on [r,m]. Indeed the Chebyshev denominator is at least exp(2ell sqrt(r/m))/2>=m^(4r)/2, while |F|<=m^r there. No smallness is asserted between zero and the first roots at noninteger points.\n\nFor W_N(p)=sum_k |[x^k]p|N^k, coefficient convolution is submultiplicative. The root product costs at most (1+N)^r. The affine argument has W_N at most 3+2N, so the Chebyshev recurrence gives W_N(p)<=(1+N)^r[11(1+N)]^ell and degree at most r+ell. These bounds also hold when m>N.\n\nTaking r=ceil(N^a), m=ceil(N^b) with 0<a<b yields degree O(N^((a+b)/2)log N) and log W_N=O(N^((a+b)/2)(log N)^2). For every fixed u>(a+b)/2, both are at most N^u eventually, while |p(k)|<=exp(-N^a) at every integer 1<=k<=m. The coefficient norm pays for expansion of operator powers into many product terms.\n\n## Role in the source argument\n\nSupplies an integer count filter whose expansion cost can be included in the source localization induction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:polynomial](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex#L21)\n- [eq:polynomial-construction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/sections/polynomial.tex#L69)\n\n## Antecedents and comparison\n\n[Sherstov, Approximate inclusion-exclusion for arbitrary symmetric functions](https://web.cs.ucla.edu/~sherstov/pdf/incl-excl.pdf), Lemma 3.9 and its complete proof on manuscript page 17, multiply an approximate selector by an exact-root polynomial. That passage was read. The selected source tracks an additional W_N coefficient budget and explicitly allows m>N; no new general Chebyshev principle is claimed.\n\n## Checks and limitations\n\nExact rational polynomial coefficients check roots, normalization, integer error, degree and weighted coefficient bounds in finite parameter examples, including m>N.\n\nFinite examples do not establish the source asymptotic localization recurrence or quantum parity theorem.\n\n## Possible applications\n\nSpectral filters for integer-valued counts when later operator expansion requires coefficient control in addition to approximation error.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000541",
+      "record_type": "instrument",
+      "title": "Prune commuting reflections using probabilities in the current pruned state",
+      "forms": [
+        "pruned-prefix-probability-deletion",
+        "low-count-heavy-atom-recentering"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-274"
+      ],
+      "source_paper_ids": [
+        "P-000310"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex",
+          "label": "lem:retained-layer",
+          "line": 125,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L125",
+          "sha256": "2c391e1629621694fc08ca21e6492d91eabc46da8643ccf1f2fd1893741e5815"
+        },
+        {
+          "path": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex",
+          "label": "eq:pruning-atom",
+          "line": 187,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L187",
+          "sha256": "2c391e1629621694fc08ca21e6492d91eabc46da8643ccf1f2fd1893741e5815"
+        },
+        {
+          "path": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex",
+          "label": "prop:pruning",
+          "line": 233,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L233",
+          "sha256": "2c391e1629621694fc08ca21e6492d91eabc46da8643ccf1f2fd1893741e5815"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-hybrid-telescope-with-source-state-dependent-retention",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000541.md",
+      "body": "# Prune commuting reflections using probabilities in the current pruned state\n\n[Family 274](../families/openai-math-274.md) · [Source manuscript](../papers/P-000310.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nAt each layer of disjoint nonempty reflection gates I-2P_g on m qubits, evaluate q_g=||P_g psi||^2 in the exact state psi produced by the already pruned prefix. Retain gates with q_g>=m^(-6). Each deleted gate changes this state by less than 2m^(-3). Other gates in the layer commute with P_g and preserve that norm, so deleting at most m gates costs at most 2m^(-2). Across t layers, unitary telescoping gives ||U psi_0-W psi_0||<=2t m^(-2). This is an existence construction; computing the exact probabilities need not be efficient.\n\nThe source also proves regularity conditionally on an earlier uniform overlap-tail estimate for the pruned prefix: q_B ||1_(H_B>=m^h)psi||<=exp(-m^p) for every fixed 0<p<h<1 and product test B. For a retained gate, dividing by q_g gives arbitrarily subpolynomial mean count. For at most m^b retained gates, their total mean is at most m^(b+epsilon). Markov puts half the mass on outcomes of weight at most R=2m^(b+epsilon). There are at most (floor R+1)m^(floor R) such outcomes, even if they are correlated. One has probability at least exp(-m^(b+2epsilon)) eventually.\n\nRecenter the product test at this outcome. Its count differs from the old count by at most R, so a high old count implies a high recentered count. The uniform overlap-tail estimate, with intermediate exponents larger than b+2epsilon, absorbs the reciprocal outcome probability. This closes regularity of the next retained layer. The tail-transport premise is not supplied by the deletion telescope alone.\n\n## Role in the source argument\n\nSeparates a small output-vector error from the conditional regularity bootstrap used in the source parity argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:retained-layer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L125)\n- [eq:pruning-atom](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L187)\n- [prop:pruning](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/sections/06-pruning.tex#L233)\n\n## Antecedents and comparison\n\n[Nadimpalli-Parham-Vasconcelos-Yuen, On the Pauli Spectrum of QAC0](https://arxiv.org/pdf/2311.09631), Lemma 23 and Claim 24, use a gate-deletion telescope controlled by gate width in normalized Frobenius norm. Claim 24 and its complete proof on PDF page 25 were read. The selected source instead controls one evolving input state by actual projection probabilities; its regularity step needs additional tail information.\n\n## Checks and limitations\n\nSmall circuits compare original and adaptively pruned outputs against the cumulative probability bound. Correlated outcome distributions test the heavy-atom counting and Hamming recentering step.\n\nThe tests do not establish uniform tail transport, efficient classical pruning or the claimed parity lower bound.\n\n## Possible applications\n\nApproximating one circuit trajectory by removing commuting reflections that rarely act on its current state.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000542",
+      "record_type": "instrument",
+      "title": "Solve contact-length variations by separating row, column and height coordinates",
+      "forms": [
+        "contact-length-right-inverse",
+        "path-accumulation-geometric-calibration"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-275"
+      ],
+      "source_paper_ids": [
+        "P-000311"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex",
+          "label": "lem:contact-layout",
+          "line": 355,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L355",
+          "sha256": "0ec9f1b71d63ec0f5f3388e6bc960739e9ba971eae96b5abcac9eea9c6d449ad"
+        },
+        {
+          "path": "preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex",
+          "label": "lem:displacement",
+          "line": 411,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L411",
+          "sha256": "0ec9f1b71d63ec0f5f3388e6bc960739e9ba971eae96b5abcac9eea9c6d449ad"
+        },
+        {
+          "path": "preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex",
+          "label": "eq:displaced-geometric-bounds",
+          "line": 515,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L515",
+          "sha256": "0ec9f1b71d63ec0f5f3388e6bc960739e9ba971eae96b5abcac9eea9c6d449ad"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "source-gadget-linearization-with-classical-coordinate-elimination",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000542.md",
+      "body": "# Solve contact-length variations by separating row, column and height coordinates\n\n[Family 275](../families/openai-math-275.md) · [Source manuscript](../papers/P-000311.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nPlace original square-lattice vertices at spacing two. On each oriented edge use local coordinates (along-axis,height), with physical height sign sigma=1 on horizontal edges and -1 on vertical edges. A negative gadget has A=(1,0), B=(1,1); a positive gadget has A=(1/2,h), B=(3/2,h), h=sqrt(3)/2. Its unit contacts are LA,AR,AB in the negative case and LA,AB,BR in the positive case, plus BA contacts between consecutive positive gadgets. Every other pair is at least sqrt(2) apart.\n\nFor arbitrary desired first-order contact changes d_ij, the source constructs displacements with u_ij.(s_j-s_i)=d_ij and max|s_i|<=6m max|d_ij|, where m is the total site count. Set all original heights to zero. On each run of negative edges accumulate a_R=a_L+d_LA+d_AR, a_A=a_L+d_LA, a_B=a_A and z_B=sigma d_AB. On each path of positive elevated contacts accumulate their along-axis differences. Then set z_A=[d_LA-(a_A-a_L)/2]/(sigma h) and z_B=[d_BR-(a_R-a_B)/2]/(sigma h).\n\nRows set original x coordinates, columns set original y coordinates, and no ancilla belongs to both procedures. Thus lattice cycles create no scalar consistency condition. Every assignment is linear over Q(sqrt(3)) with polynomially many arithmetic operations. Rational rounding with per-site error at most tau/4 and input errors at most tau/4 gives contact errors below tau.\n\nAt base scale D and displacement bound S<=D/4, an actual contact length is D+d_ij+O(S^2/D), while every noncontact stays at least sqrt(2)D-2S apart. The construction solves the linearized constraints; it does not solve an exact nonlinear prescribed-length problem.\n\n## Role in the source argument\n\nAllows independent hopping calibration in the source Coulomb reduction without an ill-conditioned general linear solve.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:contact-layout](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L355)\n- [lem:displacement](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L411)\n- [eq:displaced-geometric-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/build/sections/01-finite-models.tex#L515)\n\n## Antecedents and comparison\n\nThe first-order formula is the classical rigidity-matrix derivative of Euclidean edge length. The source explicit row/column/height elimination and its complete contact classification were read. A targeted search did not identify an earlier matching gadget right inverse, but that does not establish novelty of the construction or the full reduction.\n\n## Checks and limitations\n\nFinite signed square-lattice layouts enumerate every pair distance and every contact, solve random contact assignments by the displayed construction, and check displacement bounds and nonlinear length remainders, including square cycles and extra positive-gadget contacts.\n\nThe checks do not establish the source hopping asymptotics, continuum encoding size or QMA-hardness.\n\n## Possible applications\n\nDesigning geometric interaction gadgets whose first-order edge lengths can be adjusted independently with explicit conditioning bounds.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000543",
+      "record_type": "instrument",
+      "title": "Eliminate high modes using coercivity in a form norm",
+      "forms": [
+        "form-norm-complement-elimination",
+        "quadratic-energy-error-from-mixed-block"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-275"
+      ],
+      "source_paper_ids": [
+        "P-000312"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex",
+          "label": "prop:complement",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex#L53",
+          "sha256": "5e24642cb15d92c3373268e614f50ecd20fe6a9231d63377a306b4007ba9621b"
+        },
+        {
+          "path": "preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex",
+          "label": "eq:8",
+          "line": 59,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex#L59",
+          "sha256": "5e24642cb15d92c3373268e614f50ecd20fe6a9231d63377a306b4007ba9621b"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-variational-square-completion",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000543.md",
+      "body": "# Eliminate high modes using coercivity in a form norm\n\n[Family 275](../families/openai-math-275.md) · [Source manuscript](../papers/P-000312.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nLet H be a lower-bounded closed quadratic form, Pi an orthogonal projection preserving its form domain, and E_Pi the infimum of its compression. For u=w+q, w=Pi u, suppose the shifted complementary form obeys H[q]-E_Pi||q||^2>=alpha||q||_V^2, alpha>0, and the mixed form obeys |H(q,w)|<=beta||w||||q||_V. Then\n\nH[u]-E_Pi||u||^2>=alpha||q||_V^2-2beta||w||||q||_V>=-(beta^2/alpha)||w||^2.\n\nConsequently E_Pi-beta^2/alpha<=inf spec(H)<=E_Pi. The upper bound uses compressed trial states; the lower bound applies to every normalized form-domain vector, so attainment of the full spectral infimum is unnecessary.\n\nThe source builds V from the many-particle H1 norm. A one-particle gap gives sum_l(I-P)_l>=I-Pi. Combining this gap with a small fraction of a kinetic lower bound gives complement coercivity of order 1/m. Positive electron-electron repulsion retains the diagonal lower bound, while Hardy and nuclear-replacement form estimates bound the coupling by a polynomial factor times lambda^(-2/3). Its square therefore gives a polynomial factor times lambda^(-4/3). These continuum estimates are hypotheses of the selected elimination step, not consequences of finite-dimensional compression.\n\n## Role in the source argument\n\nControls all spin sectors and all continuum states outside the localized orbital space in the source energy comparison.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:complement](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex#L53)\n- [eq:8](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/build/sections/many-body.tex#L59)\n\n## Antecedents and comparison\n\nThis is the classical variational square-completion form of a Schur-complement estimate. The full selected proof was read; its use of a form norm avoids requiring a bounded operator coupling on the entire continuum Hilbert space. No new general perturbation theorem is claimed.\n\n## Checks and limitations\n\nWeighted finite block forms compare their exact lowest eigenvalues with the beta-squared-over-alpha bound, including nontrivial form metrics. Two-level models check the error scale, and removing the complement gap produces a failing control.\n\nThe tests do not verify the source continuum Hardy, nuclear-replacement or orbital-gap estimates.\n\n## Possible applications\n\nJustifying an energy compression when the high-mode coupling is bounded only relative to a stronger form norm.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000544",
+      "record_type": "instrument",
+      "title": "Approximate a finite odd Gaussian formula from its output toward its leaves",
+      "forms": [
+        "outer-first-bounded-formula-approximation",
+        "odd-trigonometric-angle-encoding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-281"
+      ],
+      "source_paper_ids": [
+        "P-000313"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex",
+          "label": "lem:classical-trigonometric-density",
+          "line": 264,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex#L264",
+          "sha256": "31797348ed594459cda64196ac06935c5bf837762f2ea4d671de03ef2e34c3f8"
+        },
+        {
+          "path": "preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex",
+          "label": "eq:angle-density",
+          "line": 276,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex#L276",
+          "sha256": "31797348ed594459cda64196ac06935c5bf837762f2ea4d671de03ef2e34c3f8"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 1,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-cutoff-fourier-density-with-source-composition-order",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000544.md",
+      "body": "# Approximate a finite odd Gaussian formula from its output toward its leaves\n\n[Family 281](../families/openai-math-281.md) · [Source manuscript](../papers/P-000313.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nTake a fixed finite descendant formula with Gaussian seeds, odd transmitted columns, and jointly odd smooth local maps whose derivatives have polynomial growth. Let m*=clip(z,[-1,1]). Assume the source aggregation isometry controls the L2 change in an aggregate by the L2 change in its child column. For every eta>0 the output can be approximated by sin(2theta) within eta in L2, with theta an odd bounded formula using bounded odd seeds and transmitted columns and finite trigonometric local maps.\n\nFirst truncate Gaussian seeds smoothly and oddly; finite moments and polynomial derivative bounds control a fixed finite formula. Shrink the target and encode it as theta_kappa=(1/2)arcsin((1-kappa)m*). This is bounded, odd and Lipschitz, and sin(2theta_kappa)=(1-kappa)m*.\n\nReplace an outer map by a fixed bounded smooth Lipschitz approximation before approximating its inputs. Its now-fixed Lipschitz constant determines how accurate the next inner replacements must be. Repeat toward the leaves; a uniform Lipschitz bound over all approximation choices is unnecessary. Under a symmetric input law, odd symmetrization F(x)->(F(x)-F(-x))/2 does not increase Lp error against an odd target.\n\nFinally cut off inside a box, extend smoothly and periodically to a larger box, and approximate uniformly on the whole period by a finite Fourier sum. The global bound controls the probability outside the chosen box. Odd symmetrization leaves sine terms. The final error is at most 2||theta-theta_kappa||_2+kappa. This is qualitative approximation of a fixed finite expression, with no claimed efficient synthesis rate.\n\n## Role in the source argument\n\nPuts the source classical Gaussian optimization formula into bounded odd controls used by its later quantum compilation.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:classical-trigonometric-density](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex#L264)\n- [eq:angle-density](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/03-classical-optimization.tex#L276)\n\n## Antecedents and comparison\n\nThe ingredients are classical cutoff/mollification, symmetry projection and Fourier approximation. The complete source proof was read. Its useful bookkeeping choice is to fix each outer Lipschitz map before choosing the precision of its inputs; no new universal approximation theorem or quantitative complexity bound is claimed.\n\n## Checks and limitations\n\nDeterministic Gaussian quadrature checks angle encoding, odd symmetrization and outer-map error propagation. Smooth periodic Fourier approximants check global boundedness and final sine-output error in a finite model.\n\nThese models do not verify the infinite rooted aggregation construction, near-optimal classical energy or QAOA synthesis.\n\n## Possible applications\n\nConverting finite probabilistic formulas into bounded symmetric controls while keeping composition errors under explicit control.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000545",
+      "record_type": "instrument",
+      "title": "Prove an expectation inequality with an exact positive certificate modulo a derivative",
+      "forms": [
+        "rational-coercivity-modulo-divergence",
+        "signed-integrand-positive-expectation-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-281"
+      ],
+      "source_paper_ids": [
+        "P-000314"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex",
+          "label": "cert:identity-lemma",
+          "line": 117,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L117",
+          "sha256": "8943edb57f7b7560ce35af962ccdbe072c359bf6c0dd0992ef97862e9cd7b484"
+        },
+        {
+          "path": "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex",
+          "label": "cert:table",
+          "line": 163,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L163",
+          "sha256": "8943edb57f7b7560ce35af962ccdbe072c359bf6c0dd0992ef97862e9cd7b484"
+        },
+        {
+          "path": "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex",
+          "label": "cert:coercivity",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L166",
+          "sha256": "8943edb57f7b7560ce35af962ccdbe072c359bf6c0dd0992ef97862e9cd7b484"
+        },
+        {
+          "path": "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/signs.tex",
+          "label": "shape:D-rules",
+          "line": 424,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/signs.tex#L424",
+          "sha256": "48eda6c618cbbd6d95e6e7518c22888572900a951d7a4b4f3de2cbb3668a36b5"
+        }
+      ],
+      "batch_id": "B055",
+      "source_item": 2,
+      "subject": "Mathematical physics",
+      "novelty_status": "classical-auxiliary-function-method-with-source-rational-certificate",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000545.md",
+      "body": "# Prove an expectation inequality with an exact positive certificate modulo a derivative\n\n[Family 281](../families/openai-math-281.md) · [Source manuscript](../papers/P-000314.md) · [Batch B055](../../batches/B055/README.md)\n\n## Mathematical content\n\nConsider variables R,K,v,b,j,z,L with B=b-2v>=0, S=z+bv-2Rb>=0 and R,K,v,j,L>=0. Define a derivation D by D(R,K,v,b,j)=(2Rv,2vK+Rj,-Rb,-z-bv,-jv+Kb-L), and W(F)=D(F)+(v+R-K)F.\n\nSet A=1/13, C=53/24, k=19/16, T0=73/48, g=2331/10000, h=87/2500, x=4663/5000, y=6853/10000, m=-1051/400, n=-1073/500. Let Q=Avb+Cv^2+kKv-2kRb+T0 Rv, T=gRv+hjv, and\n\nF2=(Av-2kR)b^2+b[2Cv^2+2kKv+(g+2T0)Rv+hjv]+xv^2j+yv^3+mKv^2+nRv^2.\n\nThe identity d_b F2=2Q+T cancels every z-linear term after subtracting (z+Q)^2+ST+W(F2) from z^2-12Rvb^2+6v^4. The remaining polynomial, after retaining L(xv^2+hbv), is the sum of five nonnegative weighted squares and a polynomial with exactly 22 positive rational coefficients. The source lists every square and coefficient; the bundled check reproduces them independently by exact expansion. The v^4 coefficient is c=1661507/1521000000>1/1000.\n\nFor the analytic application take R=r^2, K=rs, v=r_x, w=r_xx, z=r_xxx, b=-w/r, j=s_x-(s/r)v, L=-r s_xx, with smooth quotient extensions. If f_x/f=r-s, then f W(F)=partial_x(rfF). Assuming every term integrable, rfF2 vanishes at both infinities, and all displayed signs hold, integration gives E_f[z^2-12vw^2+6v^4]>=c E_f[v^4]. The uncorrected integrand can be negative pointwise; the derivative correction is essential. The algebraic identity alone does not establish the sign or boundary hypotheses for a PDE solution.\n\n## Role in the source argument\n\nSupplies the source conditional strict-curvature estimate on a constant order-parameter interval.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [cert:identity-lemma](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L117)\n- [cert:table](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L163)\n- [cert:coercivity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/certificate.tex#L166)\n- [shape:D-rules](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/build/signs.tex#L424)\n\n## Antecedents and comparison\n\n[Fantuzzi-Goluskin-Huang-Chernyshenko, Bounds for deterministic and stochastic dynamical systems using sum-of-squares optimization](https://arxiv.org/pdf/1512.05599), Section 4, equations (4.4)-(4.10) and Proposition 3, add zero-mean differential expressions before imposing polynomial positivity. Those passages on PDF pages 8-9 were read. The present certificate uses a spatial divergence at fixed time and specific shape inequalities, rather than their stationary generator; the shared method is classical. No exhaustive novelty claim for the rational coefficients is made.\n\n## Checks and limitations\n\nExact symbolic expansion verifies cancellation, all five weighted squares, all 22 listed coefficients and the strict rational lower bound. A concrete sign-compatible assignment makes the uncorrected integrand negative, demonstrating that this is an integrated conclusion.\n\nThe checks do not prove the source backward/forward shape inequalities, passage to integrable order parameters, full support or QAOA optimality.\n\n## Possible applications\n\nFinding coercive expectation inequalities when pointwise positivity fails but a derivative with zero integral can redistribute the negative terms.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -28644,6 +29080,177 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000305.md",
       "body": "# The sharp singularity rate for biased symmetric sign matrices\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026/biased-symmetric-sign-singularity.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000536: Discard Fourier phases through a positive lattice Gaussian ratio](../instruments/MI-000536.md)\n\n[Family review and dependencies](../families/openai-math-239.md) · [Batch B054](../../batches/B054/README.md)"
+    },
+    {
+      "id": "P-000306",
+      "record_type": "paper",
+      "title": "Equality cases in the sharp one-dimensional matrix Lieb–Thirring inequality",
+      "source_collection": "openai/math",
+      "upstream_slug": "Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "aef31076e5a654582bf1e2cd715745875a1947f542fb58a25e2c8fa7122c5b01",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000306.md",
+      "body": "# Equality cases in the sharp one-dimensional matrix Lieb–Thirring inequality\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/sharp-one-dimensional-lieb-thirring-inequalities-matrix-potentials.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000537: Fix matrix channels before choosing a regular auxiliary coefficient](../instruments/MI-000537.md)\n\n[Family review and dependencies](../families/openai-math-262.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000307",
+      "record_type": "paper",
+      "title": "Sharp one-dimensional Lieb–Thirring inequalities for matrix potentials",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a6df3d55bbbc1a362100e565b2421091e02e5b043445db80f648a20bf0d6abce",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000307.md",
+      "body": "# Sharp one-dimensional Lieb–Thirring inequalities for matrix potentials\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/sharp-matrix-lieb-thirring.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000538: Retain a noncommutative square in integrated trace duality](../instruments/MI-000538.md)\n\n[Family review and dependencies](../families/openai-math-262.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000308",
+      "record_type": "paper",
+      "title": "Sharp one-dimensional Lieb–Thirring constants",
+      "source_collection": "openai/math",
+      "upstream_slug": "Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-262"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f8b2645ee0e5b735e7e216c1569d58c34762b33b3e213cc7bab6479b27309360",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000308.md",
+      "body": "# Sharp one-dimensional Lieb–Thirring constants\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000539: Recognize an integrated divided-difference kernel as random unitary conjugation](../instruments/MI-000539.md)\n\n[Family review and dependencies](../families/openai-math-262.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000309",
+      "record_type": "paper",
+      "title": "Product-projection localization and the QAC0 parity lower bound",
+      "source_collection": "openai/math",
+      "upstream_slug": "Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-274"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "841c4200ee865c1e49a3a19e7339c1707335b68dec4101f5a5e80b6805605b06",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000309.md",
+      "body": "# Product-projection localization and the QAC0 parity lower bound\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000540: Combine exact integer roots with a Chebyshev filter while budgeting coefficients](../instruments/MI-000540.md)\n\n[Family review and dependencies](../families/openai-math-274.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000310",
+      "record_type": "paper",
+      "title": "Regular trajectories, pruning and quantum parity",
+      "source_collection": "openai/math",
+      "upstream_slug": "Regular-trajectories-pruning-and-quantum-parity-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-274"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "51341a3d3657e7749fd2c274c2f36a2e855bff210a3ce8bb5e27d62d8a866fbc",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000310.md",
+      "body": "# Regular trajectories, pruning and quantum parity\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000541: Prune commuting reflections using probabilities in the current pruned state](../instruments/MI-000541.md)\n\n[Family review and dependencies](../families/openai-math-274.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000311",
+      "record_type": "paper",
+      "title": "Continuum Coulomb hardness with binary nuclear charges",
+      "source_collection": "openai/math",
+      "upstream_slug": "Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-275"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e1b4682d8949902a0d391e1f84dac383d7fd0e088f06e616ab5caa4e5e5bdf4c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000311.md",
+      "body": "# Continuum Coulomb hardness with binary nuclear charges\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000542: Solve contact-length variations by separating row, column and height coordinates](../instruments/MI-000542.md)\n\n[Family review and dependencies](../families/openai-math-275.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000312",
+      "record_type": "paper",
+      "title": "QMA-hardness of continuum Coulomb energy with unit nuclear charges",
+      "source_collection": "openai/math",
+      "upstream_slug": "QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-275"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "69be405cb2067d0ed64c535c33e38050372b2854bc2e88cb996aeb7eb65be5d5",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000312.md",
+      "body": "# QMA-hardness of continuum Coulomb energy with unit nuclear charges\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000543: Eliminate high modes using coercivity in a form norm](../instruments/MI-000543.md)\n\n[Family review and dependencies](../families/openai-math-275.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000313",
+      "record_type": "paper",
+      "title": "QAOA attains the SK ground-state energy in the thermodynamic-first limit",
+      "source_collection": "openai/math",
+      "upstream_slug": "QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-281"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "91d45954a65ec3235a7373e7440e21785fb2ff43c60f7fbfedffcf297fb84ff8",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000313.md",
+      "body": "# QAOA attains the SK ground-state energy in the thermodynamic-first limit\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000544: Approximate a finite odd Gaussian formula from its output toward its leaves](../instruments/MI-000544.md)\n\n[Family review and dependencies](../families/openai-math-281.md) · [Batch B055](../../batches/B055/README.md)"
+    },
+    {
+      "id": "P-000314",
+      "record_type": "paper",
+      "title": "Full support of the zero-temperature Sherrington-Kirkpatrick order parameter",
+      "source_collection": "openai/math",
+      "upstream_slug": "Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026",
+      "source_date": "September 27, 2026",
+      "family_ids": [
+        "openai-math-281"
+      ],
+      "batch_id": "B055",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8fe4cda415ff7baca5ee3e866185271f312b02d1662d318ea1377a6a5ec5ebc6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000314.md",
+      "body": "# Full support of the zero-temperature Sherrington-Kirkpatrick order parameter\n\n## Source\n\n- Author: OpenAI\n- Source date: September 27, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000545: Prove an expectation inequality with an exact positive certificate modulo a derivative](../instruments/MI-000545.md)\n\n[Family review and dependencies](../families/openai-math-281.md) · [Batch B055](../../batches/B055/README.md)"
     }
   ],
   "families": [
@@ -33169,6 +33776,36 @@
       "body": "# Small complete sets and low-cost graphings from markers\n\n## Source manuscript and claim\n\n[A group without fixed price](../papers/P-000197.md), by OpenAI, October 5, 2026.\n\nThe source claims a group with free probability-measure-preserving actions of different costs, hence without fixed price.\n\n## Extracted instruments\n\n- [MI-000356: Build a complete Borel set at the finite-class mass threshold](../instruments/MI-000356.md)\n- [MI-000357: Generate commuting edges from sparse markers and propagate a height window](../instruments/MI-000357.md)\n\n## Dependencies and antecedents\n\nCountable Borel relation enumeration, measure-preserving partial isomorphisms, separating partitions, independent marking, dominated convergence and commuting generator paths.\n\nGaboriau 2000, Proposition VI.23, for commuting-generator graphings; classical complete-section and finite-class counting arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full finite-class counting and small complete-set proofs, Bernoulli marker proof and height-extension upper-bound proof. Compression, deployment, finite-model transfer and cost lower bounds were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\nExceptional unhit orbits are included even when they have measure zero. Finite equivalence classes contribute the reciprocal-class-size integral. A cost upper bound alone cannot establish failure of fixed price.\n\n[Batch record](../../batches/B031/README.md)"
     },
     {
+      "id": "openai-math-262",
+      "record_type": "family",
+      "title": "Fixed matrix channels, trace defects and Gaussian conjugation averages",
+      "source_family": "262",
+      "source_collection": "openai/math",
+      "batch_id": "B055",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000306",
+        "P-000307",
+        "P-000308"
+      ],
+      "instrument_ids": [
+        "MI-000537",
+        "MI-000538",
+        "MI-000539"
+      ],
+      "headline": "The sources claim sharp scalar and finite-matrix one-dimensional Lieb-Thirring constants for 1/2<gamma<3/2, with all matrix equality cases classified.",
+      "central_instrument": "Differential inequalities fix row spaces before an auxiliary matrix is chosen measurably. A Hilbert-Schmidt square retains the noncommutative trace defect. An integrated tangent kernel is a probability average of conjugations.",
+      "novelty_assessment": "Gronwall, matrix Riccati equations, divided differences, Gaussian mixtures and trace duality have classical antecedents. The exact source assembly and equality classification are not certified by these selected checks.",
+      "formalization_summary": "The inspected Comparator states only the scalar nonnegative-potential inequality, the full unlimited negative-eigenvalue moment, both optimal constants and attainment at the explicit scalar profile. Its target proof contains sorry. It does not state the finite-matrix extension or classification of every matrix equality case. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "Channel rigidity is conditional on the source pointwise equality relations. The integrated comparison assumes uniform positivity of the complete symbol and N>=0, not positivity of the perturbation alone. Gaussian averaging requires 0<sigma<1.",
+      "dependencies": "Absolute continuity, Gronwall, orthogonal projections, matrix ODE uniqueness; half-line boundary maps, resolvent integrals, trace squares and scalar power duality; gamma and Gaussian probability mixtures.",
+      "antecedents": "Benguria-Loss matrix Riccati method; Daleckii-Krein functional-calculus derivatives as stated by Hiai; classical positive-definite Gaussian kernels.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-262.md",
+      "body": "# Fixed matrix channels, trace defects and Gaussian conjugation averages\n\n## Source manuscripts and claim\n\n- [Equality cases in the sharp one-dimensional matrix Lieb–Thirring inequality](../papers/P-000306.md): selected passages extracted.\n- [Sharp one-dimensional Lieb–Thirring inequalities for matrix potentials](../papers/P-000307.md): selected passages extracted.\n- [Sharp one-dimensional Lieb–Thirring constants](../papers/P-000308.md): selected passages extracted.\n\nThe sources claim sharp scalar and finite-matrix one-dimensional Lieb-Thirring constants for 1/2<gamma<3/2, with all matrix equality cases classified.\n\n## Extracted instruments\n\n- [MI-000537: Fix matrix channels before choosing a regular auxiliary coefficient](../instruments/MI-000537.md)\n- [MI-000538: Retain a noncommutative square in integrated trace duality](../instruments/MI-000538.md)\n- [MI-000539: Recognize an integrated divided-difference kernel as random unitary conjugation](../instruments/MI-000539.md)\n\n## Dependencies and antecedents\n\nAbsolute continuity, Gronwall, orthogonal projections, matrix ODE uniqueness; half-line boundary maps, resolvent integrals, trace squares and scalar power duality; gamma and Gaussian probability mixtures.\n\nBenguria-Loss matrix Riccati method; Daleckii-Krein functional-calculus derivatives as stated by Hiai; classical positive-definite Gaussian kernels.\n\n## Review and formalization scope\n\nRead both fixed-subspace proofs and the Riccati profile step, the complete integrated trace comparison, and the complete rank-one comparison including its Gaussian mixture. The earlier compactness-to-equality passage, matrix-field path construction and full spectral inequalities remain unverified.\n\nThe inspected Comparator states only the scalar nonnegative-potential inequality, the full unlimited negative-eigenvalue moment, both optimal constants and attainment at the explicit scalar profile. Its target proof contains sorry. It does not state the finite-matrix extension or classification of every matrix equality case. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nChannel rigidity is conditional on the source pointwise equality relations. The integrated comparison assumes uniform positivity of the complete symbol and N>=0, not positivity of the perturbation alone. Gaussian averaging requires 0<sigma<1.\n\n[Batch record](../../batches/B055/README.md)"
+    },
+    {
       "id": "openai-math-263",
       "record_type": "family",
       "title": "The ionization conjecture",
@@ -33353,6 +33990,62 @@
       "body": "# Entropy photon-number comparison through diagonal-form interpolation\n\n## Source manuscript and claim\n\n[The entropy photon-number inequality](../papers/P-000083.md), by OpenAI, September 24, 2026.\n\nThe source claims the entropy photon-number inequality for arbitrary independent finite-energy bosonic inputs with any finite number of modes, allowing entanglement within each input.\n\n## Extracted instruments\n\n- [MI-000119: Four diagonal-form comparisons interpolate to a thermal hyperbolic weight](../instruments/MI-000119.md)\n- [MI-000120: Fourth-moment Gibbs regularization supplies seventh-moment control](../instruments/MI-000120.md)\n\n## Dependencies and antecedents\n\nParallel sums and operator means; Herglotz/Stieltjes representation; Gibbs variational principle; energy-constrained entropy continuity; the full EPnI argument additionally uses minimum-specific Hessian and stationarity identities.\n\nGuha--Erkmen--Shapiro EPnI formulation; Kubo--Ando operator means; one-mode variational Gaussian optimizer results. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nInspected the interpolation construction and Gibbs regularity proof, including singular parameter limits and moment exponents. The full infinite-dimensional minimization and limiting EPnI proof were not independently verified.\n\nEntropyPhotonNumber Comparator statement and scope document inspected; no Lean build performed.\n\nSelected Comparator includes independent inputs, finite mean energy and a finite positive number of modes; channel-capacity consequences are outside that statement.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/273.md) · [Batch record](../../batches/B002/README.md)"
     },
     {
+      "id": "openai-math-274",
+      "record_type": "family",
+      "title": "Integer filters with coefficient budgets and state-dependent gate pruning",
+      "source_family": "274",
+      "source_collection": "openai/math",
+      "batch_id": "B055",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000309",
+        "P-000310"
+      ],
+      "instrument_ids": [
+        "MI-000540",
+        "MI-000541"
+      ],
+      "headline": "The sources claim bounded-error parity lower bounds for constant-depth quantum circuits with polynomially many zero-initialized ancillary qubits.",
+      "central_instrument": "A root polynomial times a normalized Chebyshev filter controls both integer-grid error and weighted coefficients. Deleting rare reflections on the actual pruned-prefix state admits a direct error telescope.",
+      "novelty_assessment": "Exact-root Chebyshev approximation and telescoping gate deletion have explicit earlier antecedents. The source adds a coefficient budget and a conditional regularity argument for state-dependent retention.",
+      "formalization_summary": "The inspected QACParity Comparator states the measured-output positive-advantage lower bound, and RegularParity states its below-two-thirds specialization. Both use zero ancillas and allow arbitrary final garbage; both target proofs contain sorry. Although the scope document also describes localization, neither inspected Comparator contains a separate localization or regular-trajectory theorem. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "The filter is small on positive integers, not throughout the interval adjacent to zero. Pruning uses probabilities in the current pruned state and commuting gates within each layer; regularity also needs the source uniform overlap-tail hypothesis.",
+      "dependencies": "Chebyshev growth, coefficient convolution, Markov and counting bounds, commuting projectors, unitary telescoping and state-dependent product tests.",
+      "antecedents": "Sherstov exact-root approximate inclusion-exclusion; Nadimpalli-Parham-Vasconcelos-Yuen wide-gate deletion.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-274.md",
+      "body": "# Integer filters with coefficient budgets and state-dependent gate pruning\n\n## Source manuscripts and claim\n\n- [Product-projection localization and the QAC0 parity lower bound](../papers/P-000309.md): selected passages extracted.\n- [Regular trajectories, pruning and quantum parity](../papers/P-000310.md): selected passages extracted.\n\nThe sources claim bounded-error parity lower bounds for constant-depth quantum circuits with polynomially many zero-initialized ancillary qubits.\n\n## Extracted instruments\n\n- [MI-000540: Combine exact integer roots with a Chebyshev filter while budgeting coefficients](../instruments/MI-000540.md)\n- [MI-000541: Prune commuting reflections using probabilities in the current pruned state](../instruments/MI-000541.md)\n\n## Dependencies and antecedents\n\nChebyshev growth, coefficient convolution, Markov and counting bounds, commuting projectors, unitary telescoping and state-dependent product tests.\n\nSherstov exact-root approximate inclusion-exclusion; Nadimpalli-Parham-Vasconcelos-Yuen wide-gate deletion.\n\n## Review and formalization scope\n\nRead the complete polynomial construction and the full projection-insertion, retained-layer and pruning proofs. The preceding tail-transport and localization induction are not certified.\n\nThe inspected QACParity Comparator states the measured-output positive-advantage lower bound, and RegularParity states its below-two-thirds specialization. Both use zero ancillas and allow arbitrary final garbage; both target proofs contain sorry. Although the scope document also describes localization, neither inspected Comparator contains a separate localization or regular-trajectory theorem. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nThe filter is small on positive integers, not throughout the interval adjacent to zero. Pruning uses probabilities in the current pruned state and commuting gates within each layer; regularity also needs the source uniform overlap-tail hypothesis.\n\n[Batch record](../../batches/B055/README.md)"
+    },
+    {
+      "id": "openai-math-275",
+      "record_type": "family",
+      "title": "Independent contact-length control and form-level removal of high modes",
+      "source_family": "275",
+      "source_collection": "openai/math",
+      "batch_id": "B055",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000311",
+        "P-000312"
+      ],
+      "instrument_ids": [
+        "MI-000542",
+        "MI-000543"
+      ],
+      "headline": "The sources claim QMA-hardness of continuum electronic Coulomb energy with binary-encoded positive nuclear charges and with unit nuclear charges.",
+      "central_instrument": "A structured three-dimensional contact layout has an explicit bounded right inverse for all first-order contact lengths. Form coercivity and a mixed-block estimate remove the continuum complement with a squared error.",
+      "novelty_assessment": "The square-completion elimination is classical. The contact right inverse exploits the source particular gadget geometry; targeted searching does not establish earliest priority or validate the full hardness reduction.",
+      "formalization_summary": "The shared Comparator defines spinful antisymmetric H1 forms and their spectral infima, binary and unit nuclear inputs, rational distinct positions, unary electron count, threshold gaps at least one, and deterministic polynomial-time many-one QMA hardness. Both hardness target proofs contain sorry. Basic codec and promise-disjointness proofs are present; no orbital truncation or binding premise is part of the target. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "Contact control is linearized, with an explicit quadratic remainder for actual lengths. Energy comparison is conditional on a coercive complement and a coupling bound in its form norm, and does not assume a ground eigenvector exists.",
+      "dependencies": "Pathwise coordinate accumulation, separated gadget heights, rational rounding and norm Taylor bounds; variational forms, Hardy estimates, one-particle gaps and square completion.",
+      "antecedents": "Classical rigidity-matrix linearization and bounded elimination of a gapped complementary space.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-275.md",
+      "body": "# Independent contact-length control and form-level removal of high modes\n\n## Source manuscripts and claim\n\n- [Continuum Coulomb hardness with binary nuclear charges](../papers/P-000311.md): selected passages extracted.\n- [QMA-hardness of continuum Coulomb energy with unit nuclear charges](../papers/P-000312.md): selected passages extracted.\n\nThe sources claim QMA-hardness of continuum electronic Coulomb energy with binary-encoded positive nuclear charges and with unit nuclear charges.\n\n## Extracted instruments\n\n- [MI-000542: Solve contact-length variations by separating row, column and height coordinates](../instruments/MI-000542.md)\n- [MI-000543: Eliminate high modes using coercivity in a form norm](../instruments/MI-000543.md)\n\n## Dependencies and antecedents\n\nPathwise coordinate accumulation, separated gadget heights, rational rounding and norm Taylor bounds; variational forms, Hardy estimates, one-particle gaps and square completion.\n\nClassical rigidity-matrix linearization and bounded elimination of a gapped complementary space.\n\n## Review and formalization scope\n\nRead the full contact classification and right-inverse construction, and the complete unit-charge complement-elimination proof. The single-well oracle, hopping calibration, nuclear replacement estimates and QMA reductions remain unverified.\n\nThe shared Comparator defines spinful antisymmetric H1 forms and their spectral infima, binary and unit nuclear inputs, rational distinct positions, unary electron count, threshold gaps at least one, and deterministic polynomial-time many-one QMA hardness. Both hardness target proofs contain sorry. Basic codec and promise-disjointness proofs are present; no orbital truncation or binding premise is part of the target. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nContact control is linearized, with an explicit quadratic remainder for actual lengths. Energy comparison is conditional on a coercive complement and a coupling bound in its form norm, and does not assume a ground eigenvector exists.\n\n[Batch record](../../batches/B055/README.md)"
+    },
+    {
       "id": "openai-math-276",
       "record_type": "family",
       "title": "Thermal block entropy and generalized amplitude-damping capacity",
@@ -33486,6 +34179,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-280.md",
       "body": "# Dense preimages and positivity from polynomial moments\n\n## Source manuscript and claim\n\n[Strongly rational unitary vertex operator algebras and conformal nets](../papers/P-000243.md), by OpenAI, September 25, 2026.\n\nThe source claims strong locality, unitary modules and complete rationality for strongly rational unitary VOAs.\n\n## Extracted instruments\n\n- [MI-000448: Use a heat factorization to identify a dense preimage domain](../instruments/MI-000448.md)\n- [MI-000449: Recover atomic positivity from every polynomial-square moment](../instruments/MI-000449.md)\n\n## Dependencies and antecedents\n\nInjective bounded annulus operators, dense finite-energy subspaces, Laplace analyticity and uniqueness of Fourier transforms.\n\nHenriques-Tener, Every conformal net has an associated unitary VOA, Lemma 7.9; classical polynomial-density arguments for moment measures. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete annulus range and positive-moments lemmas. The fusion construction, positivity identity and sector-exhaustion arguments were not audited.\n\nRead the scope document and selected VertexAlgebraNet definitions and main target. The target has sorry and concerns only the first construction step; modules and complete rationality are outside its stated scope. No Lean build.\n\nA preimage domain need not be the domain of a globally bounded inverse. Moment positivity requires all polynomials and the exponential-moment hypothesis.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/280.md) · [Batch record](../../batches/B043/README.md)"
+    },
+    {
+      "id": "openai-math-281",
+      "record_type": "family",
+      "title": "Bounded odd formula approximation and coercivity modulo a derivative",
+      "source_family": "281",
+      "source_collection": "openai/math",
+      "batch_id": "B055",
+      "subject": "Mathematical physics",
+      "source_paper_ids": [
+        "P-000313",
+        "P-000314"
+      ],
+      "instrument_ids": [
+        "MI-000544",
+        "MI-000545"
+      ],
+      "headline": "The sources claim QAOA attainment of the SK optimum in a thermodynamic-first limit and full support of zero-temperature SK minimizers.",
+      "central_instrument": "Approximate outer maps before their inputs to turn a finite odd Gaussian formula into bounded trigonometric controls. A rational polynomial identity turns an indefinite curvature integrand into positive terms after subtracting a zero-mean derivative.",
+      "novelty_assessment": "Cutoff, odd symmetrization and Fourier approximation are classical. Sum-of-squares bounds modulo zero-mean derivatives have an established auxiliary-function precedent. The source particular rational certificate is checked algebraically without certifying its PDE sign hypotheses.",
+      "formalization_summary": "SKValue states conditional Parisi value identities and convergence of finite Gaussian coefficient sums; it does not state convergence of QAOA circuit energies. SKFullSupport states full relative Stieltjes support and self-consistency moments for every admissible minimizer, without separately asserting existence. Both target proofs contain sorry. The scope document and every linked Comparator were read in full. No solution or Lean project was built.",
+      "statement_faithfulness": "Formula approximation is for a fixed finite expression, with no uniform circuit-size or derivative bound. The coercive expectation inequality requires all sign, integrability and boundary assumptions; the original integrand is not pointwise positive.",
+      "dependencies": "Gaussian moments and aggregation isometry, clipping, Lipschitz propagation and Fourier approximation; exact rational polynomial arithmetic, favorable sign constraints and integration by parts.",
+      "antecedents": "Classical smooth approximation in Lp; auxiliary-function and sum-of-squares bounds for expectations as in Fantuzzi-Goluskin-Huang-Chernyshenko.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-281.md",
+      "body": "# Bounded odd formula approximation and coercivity modulo a derivative\n\n## Source manuscripts and claim\n\n- [QAOA attains the SK ground-state energy in the thermodynamic-first limit](../papers/P-000313.md): selected passages extracted.\n- [Full support of the zero-temperature Sherrington-Kirkpatrick order parameter](../papers/P-000314.md): selected passages extracted.\n\nThe sources claim QAOA attainment of the SK optimum in a thermodynamic-first limit and full support of zero-temperature SK minimizers.\n\n## Extracted instruments\n\n- [MI-000544: Approximate a finite odd Gaussian formula from its output toward its leaves](../instruments/MI-000544.md)\n- [MI-000545: Prove an expectation inequality with an exact positive certificate modulo a derivative](../instruments/MI-000545.md)\n\n## Dependencies and antecedents\n\nGaussian moments and aggregation isometry, clipping, Lipschitz propagation and Fourier approximation; exact rational polynomial arithmetic, favorable sign constraints and integration by parts.\n\nClassical smooth approximation in Lp; auxiliary-function and sum-of-squares bounds for expectations as in Fantuzzi-Goluskin-Huang-Chernyshenko.\n\n## Review and formalization scope\n\nRead the complete bounded trigonometric approximation proof, the full rational certificate and integrated coercivity proof, and the derivative-rule/integration-by-parts lemma. The preceding shape inequalities, full-support theorem and quantum synthesis are not certified.\n\nSKValue states conditional Parisi value identities and convergence of finite Gaussian coefficient sums; it does not state convergence of QAOA circuit energies. SKFullSupport states full relative Stieltjes support and self-consistency moments for every admissible minimizer, without separately asserting existence. Both target proofs contain sorry. The scope document and every linked Comparator were read in full. No solution or Lean project was built.\n\nFormula approximation is for a fixed finite expression, with no uniform circuit-size or derivative bound. The coercive expectation inequality requires all sign, integrability and boundary assumptions; the original integrand is not pointwise positive.\n\n[Batch record](../../batches/B055/README.md)"
     },
     {
       "id": "openai-math-282",
