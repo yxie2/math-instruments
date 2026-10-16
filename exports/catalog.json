@@ -14765,6 +14765,378 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000351.md",
       "body": "# Push approximate invariance to a subgroup and extract a finite Folner set\n\n[Family 253](../families/openai-math-253.md) · [Source manuscript](../papers/P-000194.md) · [Batch B030](../../batches/B030/README.md)\n\n## Mathematical content\n\nLet H be a subgroup of a countable group J. Choose right-coset representatives t for Ht and write x=ht uniquely. Then pi(x)=h satisfies pi(kx)=k pi(x) for k in H. Pushing a probability nu forward to p=pi_*nu contracts every translation error: ||kp-p||_1<=||k nu-nu||_1.\n\nChoose finite E with p(E) close to one and normalize q=p 1_E/p(E). The exact truncation error is ||q-p||_1=2(1-p(E)), so the sum of errors for a finite set K grows by at most 4|K|(1-p(E)). Starting from sufficiently small errors makes sum_k||kq-q||_1<epsilon.\n\nFor the finite superlevel sets A_t={q>t}, layer cake gives int |A_t| dt=1 and int sum_k |kA_t symmetric-difference A_t| dt=sum_k||kq-q||_1. Consequently some nonempty finite A_t has summed boundary less than epsilon |A_t|. For empty K any singleton works. The source obtains the input probability from uniform shape-preserving matchings under a separately proved partition coupling.\n\n## Role in the source argument\n\nConverts the source approximate random matching invariance into finite Folner sets, including inheritance by subgroups.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:am-reiter](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L780)\n- [lem:am-reiter-folner](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L791)\n\n## Antecedents and comparison\n\nThis is the classical Reiter-to-Folner layer-cake argument, with an explicit right-coset projection and truncation budget. It is not a new amenability criterion.\n\n## Checks and limitations\n\nSixty rational probability models use a nonnormal subgroup of S3 and verify equivariance and contraction. Thirty exact finite distributions on the integers verify both layer-cake identities.\n\nThe tests do not produce the source almost-invariant partition laws, nor verify finite presentation or simplicity.\n\n## Possible applications\n\nConstructive extraction of finite approximate invariants from countably supported measures.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000352",
+      "record_type": "instrument",
+      "title": "Compare Radon masses to Haar volumes uniformly over translated set shapes",
+      "forms": [
+        "haar-translate-averaging",
+        "shape-independent-volume-comparison"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-255"
+      ],
+      "source_paper_ids": [
+        "P-000195"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex",
+          "label": "lem:haar-averaging",
+          "line": 330,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex#L330",
+          "sha256": "aae8340db7d3463154a253362ac812d51d8550c26a9ac2986b29384f5e5093c1"
+        },
+        {
+          "path": "preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex",
+          "label": "eq:haar-kernel-bounds",
+          "line": 361,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex#L361",
+          "sha256": "aae8340db7d3463154a253362ac812d51d8550c26a9ac2986b29384f5e5093c1"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-invariant-averaging-with-explicit-uniformity",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000352.md",
+      "body": "# Compare Radon masses to Haar volumes uniformly over translated set shapes\n\n[Family 255](../families/openai-math-255.md) · [Source manuscript](../papers/P-000195.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nLet L be a connected simply connected nilpotent Lie group with Haar measure mu and a left-invariant Riemannian metric. Suppose a Radon measure rho, compact positive-volume sets E_j and positive a_j satisfy K^{-1}a_j<=rho(zE_j)<=Ka_j for all z,j. Then a_j/mu(E_j) is comparable to a_0/mu(E_0), with constants independent of the shapes and diameters of E_j.\n\nFor E contained in B(R), Tonelli and unimodularity give\n\n$$\\mu(E)\\rho(B(T-R))\\le\\int_{B(T)}\\rho(zE)\\,d\\mu(z)\\le\\mu(E)\\rho(B(T+R)).$$\n\nFirst apply this to E_0 to obtain (KD_0)^{-1}q_0 mu(B(T))<=rho(B(T))<=KD_0q_0 mu(B(T)), where q_0=a_0/mu(E_0) and D_0 is a large-scale doubling constant. For each E_j choose T sufficiently large relative to its diameter and use the displayed bounds again. This gives (K^2D_0^2)^{-1}q_0<=a_j/mu(E_j)<=K^2D_0^2q_0. The radius depends on j; the final constants do not. Absolute continuity of rho is unnecessary.\n\n## Role in the source argument\n\nTurns uniform masses of boundary-image translates into bounded differences of logarithmic height characters.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:haar-averaging](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex#L330)\n- [eq:haar-kernel-bounds](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/boundary.tex#L361)\n\n## Antecedents and comparison\n\nThe proof is classical invariant integration plus doubling. The reusable point is uniformity across arbitrary compact shapes and allowance of singular Radon measures.\n\n## Checks and limitations\n\nOne hundred twenty finite Tonelli identities and 124 singular counting-measure interval examples are checked.\n\nThese models do not construct the source boundary homeomorphisms or establish their translate-mass assumptions.\n\n## Possible applications\n\nComparing geometric volume growth when the transported measure has no known density.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000353",
+      "record_type": "instrument",
+      "title": "Choose nested recurrence sets before sampling a sequence of transitions",
+      "forms": [
+        "backward-positive-convolution-recurrence",
+        "intermediate-state-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-255"
+      ],
+      "source_paper_ids": [
+        "P-000195"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex",
+          "label": "lem:backward-recurrence",
+          "line": 217,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L217",
+          "sha256": "f6ad33be077e42a55933973f0879b1fa744fab065f5979f5e40e66cdd86c3305"
+        },
+        {
+          "path": "preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex",
+          "label": "eq:recurrence-mass",
+          "line": 235,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L235",
+          "sha256": "f6ad33be077e42a55933973f0879b1fa744fab065f5979f5e40e66cdd86c3305"
+        },
+        {
+          "path": "preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex",
+          "label": "eq:recurrence-transition",
+          "line": 240,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L240",
+          "sha256": "f6ad33be077e42a55933973f0879b1fa744fab065f5979f5e40e66cdd86c3305"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-positive-operator-recurrence-with-quantitative-iteration",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000353.md",
+      "body": "# Choose nested recurrence sets before sampling a sequence of transitions\n\n[Family 255](../families/openai-math-255.md) · [Source manuscript](../papers/P-000195.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nLet J be second countable and unimodular, Q compact of positive finite Haar measure, and S subset Q of positive measure. For compactly supported probability measures sigma_j assume mu(Q supp sigma_j)<=D_j mu(Q). There are nested positive-measure sets S_0 subset ... subset S_h=S such that, writing a_j=mu(S_j)/mu(Q),\n\n$$a_{j-1}\\ge a_j^2/(2D_j),\\qquad \\Pr\\{xu_j\\in S_j\\}\\ge a_j/(2D_j)\\quad(x\\in S_{j-1}),$$\n\nwhere u_j has law sigma_j*check(sigma_j). Indeed the operator T_j associated with this law obeys int_A T_j1_A = int(int 1_A(zs^{-1})d sigma_j(s))^2 d mu(z)>=mu(A)^2/(D_j mu(Q)). Work backwards, retaining points where the transition probability is at least half the average lower bound.\n\nIndependent increments then keep every intermediate product x u_1...u_j in S_j with probability at least product_j a_j/(2D_j). For fixed h, subexponential initial density and subexponential D_j imply subexponential losses. Letting h grow would require a separate estimate because the repeated squaring compounds losses.\n\n## Role in the source argument\n\nProvides many product parameters while keeping all intermediate states inside a selected measurable set.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:backward-recurrence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L217)\n- [eq:recurrence-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L235)\n- [eq:recurrence-transition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/build/polynomial.tex#L240)\n\n## Antecedents and comparison\n\nThis is a positive-convolution Cauchy-Schwarz argument followed by backward thresholding. No new general recurrence theorem is claimed.\n\n## Checks and limitations\n\nSixty-eight exact three-stage cyclic-group models verify the convolution identity, retained masses and complete success probabilities.\n\nThe finite tests do not verify the later polynomial-image and geometric applications.\n\n## Possible applications\n\nMultistage sampling with state constraints and explicit mass budgets.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000354",
+      "record_type": "instrument",
+      "title": "Turn summed extension-count errors into a normalized coupling law",
+      "forms": [
+        "count-to-total-variation",
+        "star-coupling-normalization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-257"
+      ],
+      "source_paper_ids": [
+        "P-000196"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/04-sampling.tex",
+          "label": "sample:lem-coupling",
+          "line": 368,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/04-sampling.tex#L368",
+          "sha256": "2b772bc583d93d63357d7d231b6af9a8f41980656c0242fdd8324101ee7ddbd0"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-count-normalization-with-collision-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000354.md",
+      "body": "# Turn summed extension-count errors into a normalized coupling law\n\n[Family 257](../families/openai-math-257.md) · [Source manuscript](../papers/P-000196.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nFor L present branches, let A_i be their nonnegative extension counts, a>0 a common predicted count, Z=sum A_i and D=sum |A_i-a|. Then |Z-La|<=D. When Z>0,\n\n$$d_{TV}\\big((A_i/Z)_i,\\mathrm{Unif}_L\\big)\\le D/Z.$$\n\nThus D=o(La) ensures nonzero normalization and vanishing marginal error. In a random model it suffices that E D=o(lambda a) and L/lambda tends to one in probability: Markov converts expected summed deviations into the required estimate. This controls the average over all present assignments without demanding a simultaneous pointwise estimate for each count.\n\nApply the same calculation to counts of ordered distinct leaf lists. Uniform sampling of t distinct labels differs from iid uniform sampling on N labels by the collision probability, at most binom(t,2)/N. Exact agreement of branches on a prescribed coordinate set survives normalization because it is a support property of every star.\n\n## Role in the source argument\n\nBuilds the probability coupling used for common-coordinate geometric tests from conditional combinatorial counts.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [sample:lem-coupling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/04-sampling.tex#L368)\n\n## Antecedents and comparison\n\nThe normalization inequality and collision bound are elementary; their use avoids an unnecessary union bound over all assignments.\n\n## Checks and limitations\n\nOne hundred sixty exact normalization models and 243 exact collision bounds pass.\n\nThe required random-star first and second moment bounds are inputs to this card and were not verified.\n\n## Possible applications\n\nConverting approximate counting into couplings with controlled marginals and exact common data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000355",
+      "record_type": "instrument",
+      "title": "Bound dependent conditional tests through inductive means in a CAT(0) cone",
+      "forms": [
+        "cone-inductive-mean-test",
+        "dependent-test-decoupling"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-257"
+      ],
+      "source_paper_ids": [
+        "P-000196"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex",
+          "label": "energy:cone-mean",
+          "line": 190,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex#L190",
+          "sha256": "5aee558828dc59123c93b9843374646db514c195e81087ada676ad79c7f4e158"
+        },
+        {
+          "path": "preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex",
+          "label": "lem:conditional-test",
+          "line": 246,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex#L246",
+          "sha256": "5aee558828dc59123c93b9843374646db514c195e81087ada676ad79c7f4e158"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "sturm-mean-bound-in-a-conditional-coupling-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000355.md",
+      "body": "# Bound dependent conditional tests through inductive means in a CAT(0) cone\n\n[Family 257](../families/openai-math-257.md) · [Source manuscript](../papers/P-000196.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nIn a complete CAT(0) metric cone, the scalar product <h,u>=(||h||^2+||u||^2-d(h,u)^2)/2 is concave along geodesics. The cone radial identity is exact, so subtracting CAT(0) strong convexity of d(h,u)^2 proves this assertion. For the inductive mean m_1=V_1, m_j=[m_{j-1},V_j]_{1/j}, it gives average_j<h,V_j><=<h,m_t>.\n\nIf the V_j are iid, have barycenter zero and second moment one, the variance inequality yields E||m_j||^2<=(1-1/j)^2 E||m_{j-1}||^2+1/j^2, hence E||m_t||^2<=1/t.\n\nSuppose t coupled branches share a vector h with ||h||<=B, have vector norms at most M, each branch marginal is within eta in total variation of the target law, and the leaf tuple is within eta of the iid law. No independence of h and the leaves is needed: pointwise average<h,V_j><=B||m_t||. Consequently\n\n$$E_{target}\\langle h,V\\rangle\\le B\\sqrt{1/t+2M^2\\eta}+2BM\\eta.$$\n\nFor each fixed t let eta tend to zero, then let t tend to infinity. The bound is uniform over all such dependent bounded tests.\n\n## Role in the source argument\n\nControls geometric tests chosen after the random tables and group actions are known.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [energy:cone-mean](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex#L190)\n- [lem:conditional-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/build/sections/05-energy.tex#L246)\n\n## Antecedents and comparison\n\nThe iid mean estimate is [Sturm 2003, Theorem 4.7, proof (a)](https://publish.illinois.edu/ymb/files/2020/04/Sturm-2003-Probability-measures-on-metric-spaces-of-nonpositi.pdf). The source combines it with cone concavity and a conditional coupling.\n\n## Checks and limitations\n\nAll 3,279 tip lists of lengths one through seven in a tripod cone verify concavity and the second-moment bound exactly; 100 bounded-observable total-variation checks also pass.\n\nThe source coupling and displacement bounds are assumed. A tripod is a non-Hilbert example, not verification over all CAT(0) cones.\n\n## Possible applications\n\nUniform tests with data-dependent geometric observables when only the leaf marginals become independent.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000356",
+      "record_type": "instrument",
+      "title": "Build a complete Borel set at the finite-class mass threshold",
+      "forms": [
+        "small-complete-section",
+        "random-partition-marker"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-259"
+      ],
+      "source_paper_ids": [
+        "P-000197"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex",
+          "label": "compression:counting",
+          "line": 51,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex#L51",
+          "sha256": "e50593230e86100c675a8021a1ca3d4f0a1993882815595ba3baaa20c8b70572"
+        },
+        {
+          "path": "preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex",
+          "label": "compression:complete-set",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex#L69",
+          "sha256": "e50593230e86100c675a8021a1ca3d4f0a1993882815595ba3baaa20c8b70572"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-complete-section-construction-with-explicit-exceptional-remainder",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000356.md",
+      "body": "# Build a complete Borel set at the finite-class mass threshold\n\n[Family 259](../families/openai-math-259.md) · [Source manuscript](../papers/P-000197.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nFor a Borel subrelation T of a countable probability-measure-preserving relation, define kappa(T)=int 1/|[z]_T| d lambda(z), using zero for infinite classes. For every epsilon>0 there is a Borel set M meeting every T-class with lambda(M)<=kappa(T)+epsilon.\n\nOn classes of finite size k, choose the least point in a fixed Borel ordering. The k ordered sheets have equal measure by measure preservation of partial isomorphisms, so the selected sheet has mass lambda(Z_k)/k. Their union contributes exactly kappa(T).\n\nOn the infinite-class part, take finite Borel partitions increasing to a point-separating family. Let k_n(z) count atoms meeting the class, so k_n(z) tends to infinity. Mark atoms independently with probability p, let A be their union, and add the entire complement of its T-saturation. This meets every class for every marking. Its expected measure is p lambda(Z_inf)+int_{Z_inf}(1-p)^{k_n(z)}d lambda(z). Choose p small and then n large; dominated convergence makes the expectation smaller than epsilon. Some deterministic marking has that small mass.\n\n## Role in the source argument\n\nProvides the small complete sets needed to compress graphings relative to a supplied subrelation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [compression:counting](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex#L51)\n- [compression:complete-set](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/compression.tex#L69)\n\n## Antecedents and comparison\n\nThis is a classical complete-section principle. The explicit construction keeps the exceptional unhit classes and accounts exactly for finite classes.\n\n## Checks and limitations\n\nSeven finite models enumerate every atom marking and verify the expected complete-set mass and reciprocal-class-size identity.\n\nThe finite tests illustrate the identity; they do not replace the infinite-class dominated-convergence step or audit the subsequent compression theorem.\n\n## Possible applications\n\nCost bounds and measurable graph constructions requiring a small set that meets all classes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000357",
+      "record_type": "instrument",
+      "title": "Generate commuting edges from sparse markers and propagate a height window",
+      "forms": [
+        "commuting-marker-graphing",
+        "height-window-cost-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-259"
+      ],
+      "source_paper_ids": [
+        "P-000197"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex",
+          "label": "actions:small-marker",
+          "line": 169,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex#L169",
+          "sha256": "7d24f27417d52e5944c8d28bc80cb1b60d3c8fbe1696c58de4c678c605e672b3"
+        },
+        {
+          "path": "preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex",
+          "label": "actions:low",
+          "line": 208,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex#L208",
+          "sha256": "7d24f27417d52e5944c8d28bc80cb1b60d3c8fbe1696c58de4c678c605e672b3"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "gaboriau-product-construction-with-explicit-bernoulli-markers",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000357.md",
+      "body": "# Generate commuting edges from sparse markers and propagate a height window\n\n[Family 259](../families/openai-math-259.md) · [Source manuscript](../papers/P-000197.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nFor a Bernoulli action with an infinite-order element t, the set {x:x(1)<p} meets almost every t-orbit. Add N_p={x:x(t^n)>=p for all integers n}; this invariant exceptional set is null because the probability of avoiding p in N independent coordinates is (1-p)^N. The resulting C_p has measure p and meets every orbit.\n\nKeep all t-edges and restrict each of d generators j commuting with t to C_p. To realize j at z, move by t^n to C_p, apply j there, then return by t^{-n}; commutation gives zt^n j t^{-n}=zj. The graphing therefore has cost 1+dp and generates the full product-factor relation.\n\nIn the source height extension modulo M>100, d=100. Add the a-edges at heights 0 through 98, costing 99/M. Its defining word relation implies that availability at 99 consecutive source heights supplies the next height. Induction reaches every height, including edges ending back at height zero. The cost is at most 1+100p+99/M; letting p decrease to zero gives the source upper bound 1+99/M.\n\n## Role in the source argument\n\nConstructs the explicit action of small cost used in the source comparison between actions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [actions:small-marker](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex#L169)\n- [actions:low](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/build/group-actions.tex#L208)\n\n## Antecedents and comparison\n\nThe commuting-marker argument appears in [Gaboriau 2000, Proposition VI.23](https://perso.ens-lyon.fr/gaboriau/Travaux-Publi/Cout/Cout.pdf). The source gives explicit Bernoulli markers and a finite-height word propagation.\n\n## Checks and limitations\n\nOne thousand five hundred finite commuting-marker paths and twelve height-window inductions are checked.\n\nThe finite models do not verify the full group presentation, freeness of its action or the separate larger-cost lower bound.\n\n## Possible applications\n\nSparse generating graphings for commuting actions and finite cyclic extensions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000358",
+      "record_type": "instrument",
+      "title": "Use a split third boundary to obtain a finite plus construction for all coefficients",
+      "forms": [
+        "finite-plus-construction",
+        "split-boundary-coefficient-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-321"
+      ],
+      "source_paper_ids": [
+        "P-000198"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex",
+          "label": "prop:plus",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L16",
+          "sha256": "fdea8c88bc8417339528056e4629a39b3dbbc4024c4e564d8bff305747db5d5d"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex",
+          "label": "eq:split-boundary",
+          "line": 70,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L70",
+          "sha256": "fdea8c88bc8417339528056e4629a39b3dbbc4024c4e564d8bff305747db5d5d"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex",
+          "label": "eq:relative-complex",
+          "line": 93,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L93",
+          "sha256": "fdea8c88bc8417339528056e4629a39b3dbbc4024c4e564d8bff305747db5d5d"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "explicit-established-quillen-mannan-construction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000358.md",
+      "body": "# Use a split third boundary to obtain a finite plus construction for all coefficients\n\n[Family 321](../families/openai-math-321.md) · [Source manuscript](../papers/P-000198.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nLet B be finite, connected and at most two-dimensional, P=pi_1(B), and K the perfect normal closure of r elements. Attach r two-cells along them, obtaining B' with fundamental group G=P/K. The preimage bar B in the universal cover of B' is connected with fundamental group K, hence H_1(bar B;Z)=0.\n\nFor R=ZG, the relative chain complex of this cover pair is R^r in degree two. The long exact sequence makes H_2 of the simply connected cover surject onto R^r. Choose lifts of its standard basis and represent them by spheres using Hurewicz. Attach r three-cells along their projections to obtain X.\n\nWriting C_2(tilde X)=C_2(bar B) direct-sum R^r, projection q onto the new summand satisfies q partial_3=id. Thus partial_3 is injective and every map phi:C_3->M extends as phi q, proving H^3(X;M)=0 for every left R-module M. The relative complex is R^r --id--> R^r in degrees three and two. Degreewise splitting survives tensoring by every right R-module N, so H_*(B;N)=H_*(X;N). No flatness of N is needed.\n\n## Role in the source argument\n\nProduces the source finite D(2) complex while preserving the local-system homology used by its separate obstruction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:plus](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L16)\n- [eq:split-boundary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L70)\n- [eq:relative-complex](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/03-plus.tex#L93)\n\n## Antecedents and comparison\n\nThis is the finite Quillen plus construction; [Mannan 2009, Section 2](https://msp.org/agt/2009/9-3/agt-v9-n3-p06-s.pdf) gives the same finite two/three-cell mechanism and coefficient control. It is not a new plus-construction theorem.\n\n## Checks and limitations\n\nSixty split-boundary models reduced over non-field coefficient rings verify the left inverse and extension identities.\n\nThese are chain-algebra tests; attaching-sphere realization and the source obstruction to a two-dimensional model are not computed.\n\n## Possible applications\n\nFinite topology constructions preserving twisted homology with uniform control over coefficient modules.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000359",
+      "record_type": "instrument",
+      "title": "Certify twisted second-homology vanishing by an exact Fox minor",
+      "forms": [
+        "character-evaluated-fox-boundary",
+        "cyclotomic-minor-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-321"
+      ],
+      "source_paper_ids": [
+        "P-000198"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex",
+          "label": "eq:presentation",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L14",
+          "sha256": "f6348ca27344cd80ef0e1e8096aad5ab27a3d5821fb5c25b2ec0a8051f0b1ce5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex",
+          "label": "eq:character",
+          "line": 92,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L92",
+          "sha256": "f6348ca27344cd80ef0e1e8096aad5ab27a3d5821fb5c25b2ec0a8051f0b1ce5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex",
+          "label": "lem:twisted-vanishing",
+          "line": 106,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L106",
+          "sha256": "f6348ca27344cd80ef0e1e8096aad5ab27a3d5821fb5c25b2ec0a8051f0b1ce5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex",
+          "label": "eq:fox-matrix",
+          "line": 137,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L137",
+          "sha256": "f6348ca27344cd80ef0e1e8096aad5ab27a3d5821fb5c25b2ec0a8051f0b1ce5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex",
+          "label": "eq:nonzero-minor",
+          "line": 161,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L161",
+          "sha256": "f6348ca27344cd80ef0e1e8096aad5ab27a3d5821fb5c25b2ec0a8051f0b1ce5"
+        }
+      ],
+      "batch_id": "B031",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "standard-fox-calculus-in-a-specific-presentation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000359.md",
+      "body": "# Certify twisted second-homology vanishing by an exact Fox minor\n\n[Family 321](../families/openai-math-321.md) · [Source manuscript](../papers/P-000198.md) · [Batch B031](../../batches/B031/README.md)\n\n## Mathematical content\n\nFor the presentation with relations x1 a1 x1^{-1}=a1^4, x2 a2 x2^{-1}=a2^3, x1=a2^{13}, and s x2 s^{-1}=a1^5, choose a primitive cube root zeta. The assignment (x1,a1,x2,a2,s)=(-1,zeta,zeta^2,-1,1) respects the relations and also x1^2=x2^3=1.\n\nApply the Fox product and inverse rules to the four relator words. With edges in the displayed generator order, the evaluated boundary vectors are the rows of\n\n$$D=\\begin{pmatrix}1-\\zeta&-2&0&0&0\\\\0&0&2&\\zeta^2-1&0\\\\1&0&0&-1&0\\\\0&-(1+\\zeta)&1&0&1-\\zeta^2\\end{pmatrix}.$$\n\nThe minor in columns x1,a1,x2,s is -4(1-zeta^2), which is nonzero. Hence C_2(B;L_rho)->C_1(B;L_rho) is injective and H_2(B;L_rho)=0. The finite plus construction preserves this vanishing for X. The calculation also checks the chain identity D(rho(g)-1)_g=0. All arithmetic can be done in Q[zeta]/(zeta^2+zeta+1), avoiding numerical decisions about a complex determinant.\n\n## Role in the source argument\n\nSupplies the explicit local-system homology input for the source tower obstruction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:presentation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L14)\n- [eq:character](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L92)\n- [lem:twisted-vanishing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L106)\n- [eq:fox-matrix](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L137)\n- [eq:nonzero-minor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/build/sections/04-construction.tex#L161)\n\n## Antecedents and comparison\n\nFox differentiation and character specialization are standard. This card records a reproducible instance and its small determinant certificate; the matrix alone does not prove a D(2) counterexample.\n\n## Checks and limitations\n\nThe program independently differentiates all four words, reproduces all 20 entries, verifies the chain identity and computes the nonzero minor exactly as -4*z-8 in the cyclotomic quotient.\n\nThe separate tower theorem that would turn this homology input into a dimensional obstruction has not been verified.\n\n## Possible applications\n\nExact local-system homology calculations for finite presentations and plus constructions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -18453,6 +18825,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000194.md",
       "body": "# An infinite finitely presented simple amenable group\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an infinite finitely presented simple amenable group.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000350: Bound affine product-density perturbations independently of dimension](../instruments/MI-000350.md)\n- [MI-000351: Push approximate invariance to a subgroup and extract a finite Folner set](../instruments/MI-000351.md)\n\n## Dependencies and review\n\nDifferentiation of densities, integration by parts, independence and parity, resolvent identity, total variation contraction, finite truncation and layer cake.\n\nRead the full density-speed lemma, entire-field covariance proof, shape-matching conclusion and Reiter-to-Folner proof. The averaging-matrix estimates, partition coupling, finite presentation and simplicity constructions were not audited.\n\nRead SimpleAmenable.lean. Its target asks for one infinite finitely presented simple group with finite nonempty Folner sets for every finite set of translations and positive error. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\n[Family context](../families/openai-math-253.md) · [Batch B030](../../batches/B030/README.md)"
+    },
+    {
+      "id": "P-000195",
+      "record_type": "paper",
+      "title": "Quasi-isometric recognition of virtually polycyclic groups",
+      "source_collection": "openai/math",
+      "upstream_slug": "quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-255"
+      ],
+      "batch_id": "B031",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7739097214b777cfec85065eeb048ba28912a723fd9a91fc5eabfdc152bcea66",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000195.md",
+      "body": "# Quasi-isometric recognition of virtually polycyclic groups\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/quasi-isometric-recognition-of-virtually-polycyclic-groups-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims quasi-isometric recognition of virtually polycyclic groups, with a finite-index uniform-lattice realization in a possibly different solvable Lie group.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000352: Compare Radon masses to Haar volumes uniformly over translated set shapes](../instruments/MI-000352.md)\n- [MI-000353: Choose nested recurrence sets before sampling a sequence of transitions](../instruments/MI-000353.md)\n\n## Dependencies and review\n\nUnimodularity, large-scale volume doubling, Tonelli, Cauchy-Schwarz and independent conditional transitions.\n\nRead the full Haar-averaging and backward-recurrence proofs. The polynomial-image, stationary-profile, neighboring-label and recognition arguments were not audited.\n\nRead PolycyclicRecognition.lean: recognition, finite-index lattice realization and a uniform bounded-height theorem are stated as sorry targets. No Lean build was performed.\n\n[Family context](../families/openai-math-255.md) · [Batch B031](../../batches/B031/README.md)"
+    },
+    {
+      "id": "P-000196",
+      "record_type": "paper",
+      "title": "A hyperbolic group with no geometric CAT(0) action",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-257"
+      ],
+      "batch_id": "B031",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e9f8b6c01259045b4d385eaea90993b80ea64b8b4e79c9afa3037b8b6c40a572",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000196.md",
+      "body": "# A hyperbolic group with no geometric CAT(0) action\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-hyperbolic-group-with-no-geometric-CAT0-action-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a word-hyperbolic group with no geometric CAT(0) action, built from finite random presentation data.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000354: Turn summed extension-count errors into a normalized coupling law](../instruments/MI-000354.md)\n- [MI-000355: Bound dependent conditional tests through inductive means in a CAT(0) cone](../instruments/MI-000355.md)\n\n## Dependencies and review\n\nSummed conditional count deviations, Markov inequality, total variation, CAT(0) cone geometry, barycenter variance and inductive means.\n\nRead the full count-to-coupling proof, cone-mean lemma and uniform conditional-test proof. Random-table concentration, diagram estimates and final geometric obstruction were not audited.\n\nRead HyperbolicObstruction.lean and its scope: a finite aspherical model with linear filling, word-hyperbolic fundamental group, no geometric action on a nonempty proper complete CAT(0) space, and no homotopy-equivalent finite model with a locally CAT(-1) metric. Its target contains sorry; no build was performed.\n\n[Family context](../families/openai-math-257.md) · [Batch B031](../../batches/B031/README.md)"
+    },
+    {
+      "id": "P-000197",
+      "record_type": "paper",
+      "title": "A group without fixed price",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-group-without-fixed-price-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-259"
+      ],
+      "batch_id": "B031",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6f89b44fa44a0e29c63aef98ced24152842770841b5028b6b41fc80269fc0fcd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000197.md",
+      "body": "# A group without fixed price\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/unequal-costs-rank-100-amalgam.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-group-without-fixed-price-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a group with free probability-measure-preserving actions of different costs, hence without fixed price.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000356: Build a complete Borel set at the finite-class mass threshold](../instruments/MI-000356.md)\n- [MI-000357: Generate commuting edges from sparse markers and propagate a height window](../instruments/MI-000357.md)\n\n## Dependencies and review\n\nCountable Borel relation enumeration, measure-preserving partial isomorphisms, separating partitions, independent marking, dominated convergence and commuting generator paths.\n\nRead the full finite-class counting and small complete-set proofs, Bernoulli marker proof and height-extension upper-bound proof. Compression, deployment, finite-model transfer and cost lower bounds were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\n[Family context](../families/openai-math-259.md) · [Batch B031](../../batches/B031/README.md)"
+    },
+    {
+      "id": "P-000198",
+      "record_type": "paper",
+      "title": "A Counterexample to Wall's D(2) Problem",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Counterexample-to-Walls-D2-Problem-October-6-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026",
+      "source_date": "October 6, 2026",
+      "family_ids": [
+        "openai-math-321"
+      ],
+      "batch_id": "B031",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6673f480cadf60e185260e745cb81894e79158a42ddab2e8cbeda24371559835",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000198.md",
+      "body": "# A Counterexample to Wall's D(2) Problem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: October 6, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/wall-d2-counterexample.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Walls-D2-Problem-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a finite D(2) complex with no homotopy-equivalent finite two-dimensional complex.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000358: Use a split third boundary to obtain a finite plus construction for all coefficients](../instruments/MI-000358.md)\n- [MI-000359: Certify twisted second-homology vanishing by an exact Fox minor](../instruments/MI-000359.md)\n\n## Dependencies and review\n\nVan Kampen, covering spaces, the degree-two Hurewicz theorem, split chain complexes, tensor/Hom functors and Fox derivatives evaluated at a character.\n\nRead the complete finite plus-construction proof and the full explicit construction section, including perfectness and the twisted-boundary computation. The tower obstruction and its character/torsion corollary were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\n[Family context](../families/openai-math-321.md) · [Batch B031](../../batches/B031/README.md)"
     }
   ],
   "families": [
@@ -21314,6 +21762,87 @@
       "body": "# Dimension-free density perturbations and finite Folner extraction\n\n## Source manuscript and claim\n\n[An infinite finitely presented simple amenable group](../papers/P-000194.md), by OpenAI, September 23, 2026.\n\nThe source claims an infinite finitely presented simple amenable group.\n\n## Extracted instruments\n\n- [MI-000350: Bound affine product-density perturbations independently of dimension](../instruments/MI-000350.md)\n- [MI-000351: Push approximate invariance to a subgroup and extract a finite Folner set](../instruments/MI-000351.md)\n\n## Dependencies and antecedents\n\nDifferentiation of densities, integration by parts, independence and parity, resolvent identity, total variation contraction, finite truncation and layer cake.\n\nClassical Hellinger/Fisher-information calculations and Reiter-to-Folner arguments; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full density-speed lemma, entire-field covariance proof, shape-matching conclusion and Reiter-to-Folner proof. The averaging-matrix estimates, partition coupling, finite presentation and simplicity constructions were not audited.\n\nRead SimpleAmenable.lean. Its target asks for one infinite finitely presented simple group with finite nonempty Folner sets for every finite set of translations and positive error. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nThe density has a nonnegative even smooth compactly supported square root. Whole-field total variation follows from an exactly common independent outside factor, not from convergence of finitely many marginals. Subgroup projection uses right cosets for a left group action.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/253.md) · [Batch record](../../batches/B030/README.md)"
     },
     {
+      "id": "openai-math-255",
+      "record_type": "family",
+      "title": "Shape-independent Haar comparison and recurrence with intermediate constraints",
+      "source_family": "255",
+      "source_collection": "openai/math",
+      "batch_id": "B031",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000195"
+      ],
+      "instrument_ids": [
+        "MI-000352",
+        "MI-000353"
+      ],
+      "headline": "The source claims quasi-isometric recognition of virtually polycyclic groups, with a finite-index uniform-lattice realization in a possibly different solvable Lie group.",
+      "central_instrument": "Averaging translated sets compares Radon and Haar mass without absolute continuity. A positive convolution operator supplies nested sets whose successive random transitions remain in a prescribed measurable set.",
+      "novelty_assessment": "Both selected arguments use classical Tonelli, doubling and Cauchy-Schwarz tools. The extraction records uniformity in set shape and all intermediate-state constraints, without certifying global quasi-isometric recognition.",
+      "formalization_summary": "Read PolycyclicRecognition.lean: recognition, finite-index lattice realization and a uniform bounded-height theorem are stated as sorry targets. No Lean build was performed.",
+      "statement_faithfulness": "The Haar comparison constant is independent of set diameter but the averaging radius may depend on it. The recurrence increments have law sigma times inverse-sigma, and the number of stages is fixed for the subexponential conclusion.",
+      "dependencies": "Unimodularity, large-scale volume doubling, Tonelli, Cauchy-Schwarz and independent conditional transitions.",
+      "antecedents": "Classical invariant-measure averaging and positive convolution recurrence; no exhaustive priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-255.md",
+      "body": "# Shape-independent Haar comparison and recurrence with intermediate constraints\n\n## Source manuscript and claim\n\n[Quasi-isometric recognition of virtually polycyclic groups](../papers/P-000195.md), by OpenAI, September 24, 2026.\n\nThe source claims quasi-isometric recognition of virtually polycyclic groups, with a finite-index uniform-lattice realization in a possibly different solvable Lie group.\n\n## Extracted instruments\n\n- [MI-000352: Compare Radon masses to Haar volumes uniformly over translated set shapes](../instruments/MI-000352.md)\n- [MI-000353: Choose nested recurrence sets before sampling a sequence of transitions](../instruments/MI-000353.md)\n\n## Dependencies and antecedents\n\nUnimodularity, large-scale volume doubling, Tonelli, Cauchy-Schwarz and independent conditional transitions.\n\nClassical invariant-measure averaging and positive convolution recurrence; no exhaustive priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full Haar-averaging and backward-recurrence proofs. The polynomial-image, stationary-profile, neighboring-label and recognition arguments were not audited.\n\nRead PolycyclicRecognition.lean: recognition, finite-index lattice realization and a uniform bounded-height theorem are stated as sorry targets. No Lean build was performed.\n\nThe Haar comparison constant is independent of set diameter but the averaging radius may depend on it. The recurrence increments have law sigma times inverse-sigma, and the number of stages is fixed for the subexponential conclusion.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/255.md) · [Batch record](../../batches/B031/README.md)"
+    },
+    {
+      "id": "openai-math-257",
+      "record_type": "family",
+      "title": "Normalize combinatorial counts and test dependent vectors in CAT(0) cones",
+      "source_family": "257",
+      "source_collection": "openai/math",
+      "batch_id": "B031",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000196"
+      ],
+      "instrument_ids": [
+        "MI-000354",
+        "MI-000355"
+      ],
+      "headline": "The source claims a word-hyperbolic group with no geometric CAT(0) action, built from finite random presentation data.",
+      "central_instrument": "Small summed count error gives total-variation control after normalization. A coupling with repeated common data and almost-independent leaves bounds action-dependent tests using inductive cone means.",
+      "novelty_assessment": "Count normalization is elementary. The inductive-mean estimate is explicitly Sturm 2003, Theorem 4.7, proof (a). The source packages these tools into a conditional-test interface; global non-CAT action is not certified.",
+      "formalization_summary": "Read HyperbolicObstruction.lean and its scope: a finite aspherical model with linear filling, word-hyperbolic fundamental group, no geometric action on a nonempty proper complete CAT(0) space, and no homotopy-equivalent finite model with a locally CAT(-1) metric. Its target contains sorry; no build was performed.",
+      "statement_faithfulness": "The Comparator does not assert a two-dimensional witness or exclude every locally CAT(0) finite model. In the conditional test, the bounded common vector may depend on all table data; no independence from leaves is assumed. Limits are taken first in instance size, then in the fixed number of leaves.",
+      "dependencies": "Summed conditional count deviations, Markov inequality, total variation, CAT(0) cone geometry, barycenter variance and inductive means.",
+      "antecedents": "Sturm 2003, Definition 4.6 and Theorem 4.7, proof (a); elementary normalization and sampling without replacement.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-257.md",
+      "body": "# Normalize combinatorial counts and test dependent vectors in CAT(0) cones\n\n## Source manuscript and claim\n\n[A hyperbolic group with no geometric CAT(0) action](../papers/P-000196.md), by OpenAI, September 25, 2026.\n\nThe source claims a word-hyperbolic group with no geometric CAT(0) action, built from finite random presentation data.\n\n## Extracted instruments\n\n- [MI-000354: Turn summed extension-count errors into a normalized coupling law](../instruments/MI-000354.md)\n- [MI-000355: Bound dependent conditional tests through inductive means in a CAT(0) cone](../instruments/MI-000355.md)\n\n## Dependencies and antecedents\n\nSummed conditional count deviations, Markov inequality, total variation, CAT(0) cone geometry, barycenter variance and inductive means.\n\nSturm 2003, Definition 4.6 and Theorem 4.7, proof (a); elementary normalization and sampling without replacement. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full count-to-coupling proof, cone-mean lemma and uniform conditional-test proof. Random-table concentration, diagram estimates and final geometric obstruction were not audited.\n\nRead HyperbolicObstruction.lean and its scope: a finite aspherical model with linear filling, word-hyperbolic fundamental group, no geometric action on a nonempty proper complete CAT(0) space, and no homotopy-equivalent finite model with a locally CAT(-1) metric. Its target contains sorry; no build was performed.\n\nThe Comparator does not assert a two-dimensional witness or exclude every locally CAT(0) finite model. In the conditional test, the bounded common vector may depend on all table data; no independence from leaves is assumed. Limits are taken first in instance size, then in the fixed number of leaves.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/257.md) · [Batch record](../../batches/B031/README.md)"
+    },
+    {
+      "id": "openai-math-259",
+      "record_type": "family",
+      "title": "Small complete sets and low-cost graphings from markers",
+      "source_family": "259",
+      "source_collection": "openai/math",
+      "batch_id": "B031",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000197"
+      ],
+      "instrument_ids": [
+        "MI-000356",
+        "MI-000357"
+      ],
+      "headline": "The source claims a group with free probability-measure-preserving actions of different costs, hence without fixed price.",
+      "central_instrument": "Random finite-partition markers meet every infinite equivalence class after adding the unhit remainder. A commuting generator can be restricted to a small complete marker set without losing generated edges.",
+      "novelty_assessment": "Small complete sections and product graphing compression are established measured-equivalence methods. The commuting-marker construction is explicit in Gaboriau 2000, Proposition VI.23. The extracted height propagation supplies a concrete cost upper bound, not the distinct-cost lower bound.",
+      "formalization_summary": "The pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.",
+      "statement_faithfulness": "Exceptional unhit orbits are included even when they have measure zero. Finite equivalence classes contribute the reciprocal-class-size integral. A cost upper bound alone cannot establish failure of fixed price.",
+      "dependencies": "Countable Borel relation enumeration, measure-preserving partial isomorphisms, separating partitions, independent marking, dominated convergence and commuting generator paths.",
+      "antecedents": "Gaboriau 2000, Proposition VI.23, for commuting-generator graphings; classical complete-section and finite-class counting arguments.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-259.md",
+      "body": "# Small complete sets and low-cost graphings from markers\n\n## Source manuscript and claim\n\n[A group without fixed price](../papers/P-000197.md), by OpenAI, October 5, 2026.\n\nThe source claims a group with free probability-measure-preserving actions of different costs, hence without fixed price.\n\n## Extracted instruments\n\n- [MI-000356: Build a complete Borel set at the finite-class mass threshold](../instruments/MI-000356.md)\n- [MI-000357: Generate commuting edges from sparse markers and propagate a height window](../instruments/MI-000357.md)\n\n## Dependencies and antecedents\n\nCountable Borel relation enumeration, measure-preserving partial isomorphisms, separating partitions, independent marking, dominated convergence and commuting generator paths.\n\nGaboriau 2000, Proposition VI.23, for commuting-generator graphings; classical complete-section and finite-class counting arguments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full finite-class counting and small complete-set proofs, Bernoulli marker proof and height-extension upper-bound proof. Compression, deployment, finite-model transfer and cost lower bounds were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\nExceptional unhit orbits are included even when they have measure zero. Finite equivalence classes contribute the reciprocal-class-size integral. A cost upper bound alone cannot establish failure of fixed price.\n\n[Batch record](../../batches/B031/README.md)"
+    },
+    {
       "id": "openai-math-263",
       "record_type": "family",
       "title": "The ionization conjecture",
@@ -22064,6 +22593,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-316.md",
       "body": "# Cartier halving with an exponent floor and primitive square roots\n\n## Source manuscript and claim\n\n[The Stable Hurewicz Image of the Sphere at Two](../papers/P-000174.md), by OpenAI, September 25, 2026.\n\nThe source claims that the positive stable mod-two Hurewicz image of the sphere is spanned by Hopf-invariant-one and existing Kervaire-invariant-one images, with the corresponding sphere case of Eccles conjecture.\n\n## Extracted instruments\n\n- [MI-000310: Cartier halving carries an explicit Dickson exponent floor](../instruments/MI-000310.md)\n- [MI-000311: A decomposable primitive in a polynomial Hopf algebra has a primitive root](../instruments/MI-000311.md)\n\n## Dependencies and antecedents\n\nBinomial parity, Cartan formula, Dickson Jacobian, Milnor coinvariants, triangular polynomial derivations and Frobenius injectivity.\n\nCartier and Kameko squaring; Hung and Giambalvo-Peterson on polynomial and Dickson algebra transformations; elementary structure of polynomial Hopf algebras. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the Milnor quotient and coinvariant calculations, complete Cartier proof, suspension-kernel discussion and complete primitive-root proof. The Tor injection, full tensor obstruction, fourth-power exclusion and spherical-class classification were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nThe headline does not assert existence of Kervaire classes in new degrees. Above-floor monomials satisfy a strict exponent inequality and parity constraints. Primitive-root uniqueness uses injective Frobenius in both the algebra and its tensor square.\n\n[Batch record](../../batches/B025/README.md)"
+    },
+    {
+      "id": "openai-math-321",
+      "record_type": "family",
+      "title": "Finite plus constructions and exact twisted-boundary certificates",
+      "source_family": "321",
+      "source_collection": "openai/math",
+      "batch_id": "B031",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000198"
+      ],
+      "instrument_ids": [
+        "MI-000358",
+        "MI-000359"
+      ],
+      "headline": "The source claims a finite D(2) complex with no homotopy-equivalent finite two-dimensional complex.",
+      "central_instrument": "A split third boundary preserves twisted homology while killing a perfect normal subgroup. Evaluating Fox derivatives at a finite-order character yields a small exact certificate for twisted second-homology vanishing.",
+      "novelty_assessment": "The finite plus construction is classical and explicit in Mannan 2009, Section 2. Fox differentiation is standard. The source character and presentation give a concrete instance; its separate tower obstruction and global D(2) counterexample are not certified here.",
+      "formalization_summary": "The pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.",
+      "statement_faithfulness": "Finite normal generation is weaker than finite generation of the perfect subgroup. A split injection, not injectivity alone, gives vanishing for every coefficient module. The computed Fox matrix is written with boundary vectors as rows.",
+      "dependencies": "Van Kampen, covering spaces, the degree-two Hurewicz theorem, split chain complexes, tensor/Hom functors and Fox derivatives evaluated at a character.",
+      "antecedents": "Quillen plus construction; Mannan 2009, Section 2; Fox free differential calculus.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-321.md",
+      "body": "# Finite plus constructions and exact twisted-boundary certificates\n\n## Source manuscript and claim\n\n[A Counterexample to Wall's D(2) Problem](../papers/P-000198.md), by OpenAI, October 6, 2026.\n\nThe source claims a finite D(2) complex with no homotopy-equivalent finite two-dimensional complex.\n\n## Extracted instruments\n\n- [MI-000358: Use a split third boundary to obtain a finite plus construction for all coefficients](../instruments/MI-000358.md)\n- [MI-000359: Certify twisted second-homology vanishing by an exact Fox minor](../instruments/MI-000359.md)\n\n## Dependencies and antecedents\n\nVan Kampen, covering spaces, the degree-two Hurewicz theorem, split chain complexes, tensor/Hom functors and Fox derivatives evaluated at a character.\n\nQuillen plus construction; Mannan 2009, Section 2; Fox free differential calculus. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite plus-construction proof and the full explicit construction section, including perfectness and the twisted-boundary computation. The tower obstruction and its character/torsion corollary were not audited.\n\nThe pinned release inventory lists no linked formalization scope or Comparator for this family. No Lean project was inspected or built.\n\nFinite normal generation is weaker than finite generation of the perfect subgroup. A split injection, not injectivity alone, gives vanishing for every coefficient module. The computed Fox matrix is written with boundary vectors as rows.\n\n[Batch record](../../batches/B031/README.md)"
     },
     {
       "id": "openai-math-322",
