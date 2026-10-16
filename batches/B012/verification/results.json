@@ -1,0 +1,72 @@
+{
+  "batch": "B012",
+  "status": "passed",
+  "python": "3.13.12",
+  "seed": 2026101612,
+  "scope": "Selected finite identities and examples; no global theorem, priority or Lean certification.",
+  "checks": [
+    {
+      "check": "augmented matching-cover pruning",
+      "instances": 4396,
+      "exact": true,
+      "exhaustive": "all relations and R,C subsets on two labels; seeded larger cases"
+    },
+    {
+      "check": "unconditional transitive-blowup accounting",
+      "subsets": 110788,
+      "exact": true,
+      "hypothetical_deficit_graph_constructed": false
+    },
+    {
+      "check": "two disjoint planar incidence states",
+      "bipyramids": [
+        4,
+        6,
+        8
+      ],
+      "subset_cuts": 168,
+      "states": 9,
+      "exact": true
+    },
+    {
+      "check": "matched disk identities and directed-cycle signs",
+      "selections": 624,
+      "cycles": 134,
+      "arbitrary_cycle_negative_control": true,
+      "exact": true
+    },
+    {
+      "check": "overlap potential and full split trees",
+      "child_triples": 2000,
+      "trees": 12,
+      "total_duplicated_orders": 105,
+      "arithmetic": "floating logarithms"
+    },
+    {
+      "check": "pairing probabilities and folding cleanup",
+      "parity_probability_models": 2,
+      "complete_pairing_models": 12180,
+      "graphs": 4,
+      "external_neighbor_negative_control": true,
+      "exact": true
+    },
+    {
+      "check": "self-dual mixed-witness conversion",
+      "successful_witnesses": 324,
+      "ground_sizes": [
+        4,
+        6
+      ],
+      "ordered_matroid_pairs": 18,
+      "exact": true
+    },
+    {
+      "check": "double-ray orientation and rank propagation",
+      "finite_chains": 500,
+      "exact": true,
+      "constructs_infinite_matroid": false,
+      "constructs_ultrafilter": false,
+      "scope": "finite bookkeeping only; no finite approximation certifies the ordinal obstruction"
+    }
+  ]
+}
