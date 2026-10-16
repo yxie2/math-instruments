@@ -60,8 +60,9 @@
 | [B056](B056/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight instruments covering exact cocycle certificates, nonflat induction, coefficient-space Koszul filtrations, division-algebra bases, integral volume bounds, Sylow restriction, character recurrences and dominance chains |
 | [B057](B057/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Private lattice insertions, weighted Bass reductions, an explicit diagram obstruction, and Foulkes growth and shift mechanisms |
 | [B058](B058/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Affine moment and cover identities, triangular interpolation, paired-subspace rank budgets, fresh-test prediction and selection entropy |
+| [B059](B059/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Countable bit alignment, AEC small codes, sparse cochains, component persistence, nil-ideal periodicity and protected metric maps |
 
-Future rounds use `B059` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B060` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

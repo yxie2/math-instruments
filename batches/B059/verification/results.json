@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 6.033,
+  "checks": {
+    "matrix_split": {
+      "rectangular_models": 48,
+      "translated_torsor_bits": 9504,
+      "scope": "Finite windows verify the bit identity; row/column finiteness on omega is proved analytically."
+    },
+    "coherent_limits": {
+      "finite_directed_diagrams": 20,
+      "tagged_representatives": 764,
+      "scope": "Checks the coherent quotient model, not infinite AEC recovery or Replacement."
+    },
+    "sparse_cochains": {
+      "cochains": 80,
+      "gradient_controls": 20,
+      "field": 3,
+      "verified_support_bound": "L times number of nonzero curls"
+    },
+    "giant_component": {
+      "boundary_sets": 282,
+      "deleted_edge_models": 48,
+      "nested_giants": 48,
+      "scope": "Explicit finite mass bound; no assertion that these sizes meet the asymptotic threshold."
+    },
+    "faithful_strips": {
+      "noncommutative_coefficient_models": 60,
+      "coefficient_ring": "2 by 2 matrices over F2",
+      "scope": "Matrix actions and strip collection; abstract Steinberg faithfulness relies on the read presentation proof."
+    },
+    "matrix_periodicity": {
+      "matrix_models": 80,
+      "invertible_models": 27,
+      "ring": "F2 identity plus strictly upper triangular 3 by 3 matrices",
+      "non_two_primary_control": true
+    },
+    "masked_operators": {
+      "indexed_mask_models": 30,
+      "repeated_group_labels": true,
+      "max_factorization_error": 3.029719431066945e-16
+    },
+    "protected_transfer": {
+      "metric_pairs": 18,
+      "zero_compression_controls": 9,
+      "unitary_corrections": 36,
+      "max_metric_identity_error": 3.7072110247897555e-15,
+      "max_global_ratio": 1.0396489280788144,
+      "max_protected_ratio": 0.5008480519370566,
+      "scope": "Finite norm checks; observed ratios do not establish a dimension-free universal constant."
+    }
+  },
+  "scope": "Selected finite mechanisms only; no categoricity, complexity-separation, infinite-group or amenability headline theorem is certified."
+}

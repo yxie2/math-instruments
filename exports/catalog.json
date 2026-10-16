@@ -24427,6 +24427,364 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000569.md",
       "body": "# Protect entropy against an arbitrarily biased subsequence selector\n\n[Family 170](../families/openai-math-170.md) · [Source manuscript](../papers/P-000338.md) · [Batch B058](../../batches/B058/README.md)\n\n## Mathematical content\n\nSuppose a length-N stream law is pointwise at most C_0 times the iid uniform law on an alphabet of size A. A selector, with arbitrary dependent auxiliary randomness, outputs a deterministic-length ell subsequence in increasing order, or the reversed sequence with a fixed bijection applied to its symbols. For any prescribed tuple f, the event that f is output requires its occurrence in one of at most 2 binom(N,ell) position/orientation choices. Therefore\n\nPr(F=f)<=2 C_0 binom(N,ell) A^(-ell),\n\nand H(F)>=ell log A-log(2 C_0 binom(N,ell)). This remains true even if the selector is chosen adversarially from the entire stream. Conditioning on an event of probability at least c, including an event depending on auxiliary randomness, increases stream domination by at most 1/c.\n\nIn the source, A=Q_d Q_(d-1), Q_j=1+q+...+q^j, sigma=log q, N=floor(q^d sigma), and ell is comparable to k=floor(q sigma^(1+eta)). Since log A=(2d-1)sigma+O(1/q) and log(eN/ell)=(d-1)sigma-eta log sigma+O(1), the bound becomes H(F)>=d sigma ell+eta ell log sigma-O(k). The positive logarithmic surplus is what a separate compression argument would have to contradict.\n\nA related direction-sensitive event transfer states Q(E)<=(KL(P||Q)+P(E))/(1-e^(-1)). It follows by inserting f=-1_E into KL(P||Q)>=E_P f-log E_Q exp(f). This is a bound on the reference event mass Q(E) in terms of KL(P||Q), not a license to interchange the two measures.\n\n## Role in the source argument\n\nKeeps a quantitative entropy floor valid after adaptive selection and bounded-probability restrictions.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [base:stream-parameters](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L9)\n- [base:selection-entropy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L172)\n- [base:event-transfer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/build/sections/01-foundations.tex#L219)\n\n## Antecedents and comparison\n\nThe proof is the classical maximum-atom bound for Shannon entropy plus a union bound over possible selected positions. The rare-event estimate is a direct exponential variational bound for relative entropy. The source contribution at this extraction level is its explicit parameter balance and orientation/conditioning interface; no new general entropy principle is asserted.\n\n## Checks and limitations\n\nTwelve exhaustive small-stream models use the lexicographically largest or smallest subsequence in either orientation, under uniform and nonuniform dominated laws. Atom caps, entropy and auxiliary-dependent conditioning pass. A further 3,200 finite event comparisons check the stated KL direction.\n\nThe verification does not implement the source projective flags, geometric support learning or recursive compression, and therefore does not certify a Ramsey lower bound.\n\n## Possible applications\n\nMaintaining entropy lower bounds through data-dependent choices where treating the selected objects as independent would be invalid.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000570",
+      "record_type": "instrument",
+      "title": "Absorb a countable bit matrix with finite row and column translations",
+      "forms": [
+        "countable-triangular-torsor-alignment",
+        "finite-row-column-discrepancy-split"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-240"
+      ],
+      "source_paper_ids": [
+        "P-000339"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/02-aec.tex",
+          "label": "aec:bit",
+          "line": 86,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/02-aec.tex#L86",
+          "sha256": "db9cb36bdd356f32d7a513e1b280955151948af01c39aa328541ec4298a184fe"
+        },
+        {
+          "path": "preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex",
+          "label": "cat:countable-base",
+          "line": 499,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex#L499",
+          "sha256": "6584fc6ec2302148601375eb29e10be4231e5aad634b8eb9c2219b3af8700f48"
+        },
+        {
+          "path": "preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex",
+          "label": "cat:triangle-supports",
+          "line": 541,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex#L541",
+          "sha256": "6584fc6ec2302148601375eb29e10be4231e5aad634b8eb9c2219b3af8700f48"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "elementary-countable-allocation-in-source-torsors",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000570.md",
+      "body": "# Absorb a countable bit matrix with finite row and column translations\n\n[Family 240](../families/openai-math-240.md) · [Source manuscript](../papers/P-000339.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nLet a(n,k),a'(n,k) be binary matrices indexed by natural numbers, and put d=a+a' modulo two. Allocate the discrepancy by\n\nU_n={k<=n:d(n,k)=1}, and V_k={n<k:d(n,k)=1}.\n\nEvery U_n and V_k is finite, although there is no uniform bound on their sizes. The two regions partition the matrix, so 1_(k in U_n)+1_(n in V_k)=d(n,k).\n\nIn the source, row fibers are torsors for the finite subsets of a countable base order B and column fibers are torsors for the finite subsets of omega. Their bit relation obeys e(z+u,w+v)=e(z,w)+1_(b in u)+1_(n in v). After matching two countable dense orders without endpoints by back-and-forth, enumerate one base as b_k. Translate target row representatives by the images of U_n, and target column representatives by V_k. Their bits now agree with the source representatives. Extending equivariantly across each torsor preserves every bit, since both additional indicator terms are carried along by the same coordinate map.\n\nThe fiber systems for different parameter tuples are disjoint and have no additional cross-relations. Thus these local maps combine with any parameter-set bijection to give the source isomorphism for countable bases. The finiteness is per row or column; this construction does not supply an analogous uncountable decomposition.\n\n## Role in the source argument\n\nExplains why the source countable-base structures lose all apparent freedom in their bit matrices.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [aec:bit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/02-aec.tex#L86)\n- [cat:countable-base](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex#L499)\n- [cat:triangle-supports](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/build/sections/03-categoricity.tex#L541)\n\n## Antecedents and comparison\n\nThe allocation is the elementary lower/upper triangular decomposition of a countable array, combined with classical dense-order back-and-forth. No earliest-priority claim is made for this torsor implementation.\n\n## Checks and limitations\n\n48 rectangular windows verify the split and 9,504 arbitrary translated torsor bits. Support sizes satisfy the explicit row and column bounds.\n\nFinite windows do not prove countable back-and-forth or the source categoricity tail. Those selected countable arguments were read analytically; uncountable base bounds remain unaudited.\n\n## Possible applications\n\nRemoving countable arrays of local discrepancies when each row and column permits only finitely supported changes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000571",
+      "record_type": "instrument",
+      "title": "Recover a class and its strong maps from small pairs before uniformizing",
+      "forms": [
+        "aec-small-pair-recovery",
+        "set-coded-uniform-threshold-reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-240"
+      ],
+      "source_paper_ids": [
+        "P-000340"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex",
+          "label": "found:directed-colimits",
+          "line": 10,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L10",
+          "sha256": "946b6c9229d423618a4034dec2a1982eb9269f6e117246889af9dc70801f1667"
+        },
+        {
+          "path": "preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex",
+          "label": "found:small-code",
+          "line": 91,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L91",
+          "sha256": "946b6c9229d423618a4034dec2a1982eb9269f6e117246889af9dc70801f1667"
+        },
+        {
+          "path": "preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex",
+          "label": "found:uniform-reduction",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L151",
+          "sha256": "946b6c9229d423618a4034dec2a1982eb9269f6e117246889af9dc70801f1667"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "classical-hanf-reduction-with-explicit-small-pair-code",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000571.md",
+      "body": "# Recover a class and its strong maps from small pairs before uniformizing\n\n[Family 240](../families/openai-math-240.md) · [Source manuscript](../papers/P-000340.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nFix an infinite cardinal lambda and a finitary language of size at most lambda. An AEC with LS number at most lambda is determined by its models of size at most lambda together with its strong inclusions between those models, taken up to isomorphism as pairs. Representing small structures on ordinals and pairs by a distinguished subset gives a set of possible codes.\n\nFor an actual model M, its small strong submodels form a nonempty directed family covering M. The downward LS axiom gives an upper member for any two, and coherence makes their inclusions strong. Conversely, a directed union of allowed small models with allowed strong inclusions is a model. A strong inclusion M<=N is recovered by a directed presentation of N containing a nonempty directed subfamily with union M. Both membership and the strong relation are therefore definable in set theory from the code.\n\nThe required directed-union property follows from the chain axioms by cardinal induction: close smaller index sets under a chosen binary upper-bound operation, form their increasing sequence and apply the induction and chain union clauses. Coherent diagrams of embeddings have a direct limit obtained from tagged elements (i,x), identifying two when they agree in some common later model. Finitarity makes interpretations well-defined, and injectivity is preserved.\n\nIf one assumes the qualitative statement that every AEC categorical unboundedly often is categorical on a tail, each valid small code has a definable bound: either beyond all its categoricity cardinals, or at the start of a categorical tail. Replacement bounds these bounds for the set of codes at fixed lambda. A cardinal above all of them is a uniform threshold, with the same threshold in premise and conclusion. This proves an equivalence of formulations; it does not prove the assumed qualitative statement.\n\n## Role in the source argument\n\nSeparates set-theoretic uniformity over all AECs from the substantive transfer theorem for one AEC.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [found:directed-colimits](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L10)\n- [found:small-code](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L91)\n- [found:uniform-reduction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/build/sections/02-reduction-orders.tex#L151)\n\n## Antecedents and comparison\n\n[Vasey, Part I](https://arxiv.org/abs/1506.07024), Remark 1.3 on page 3, explicitly states the same qualitative/uniform equivalence by a Hanf-number argument; that remark was read. The source spells out the small-pair coding and directed presentations. The equivalence itself is not new.\n\n## Checks and limitations\n\n20 finite coherent diagrams with 764 tagged representatives check equality in a common later model, map coherence, the quotient identification and descent of compatible embeddings.\n\nThe finite diagram check does not verify transfinite induction, AEC recovery or Replacement. Those are analytic/set-theoretic arguments inspected in the selected proof, not computationally certified results.\n\n## Possible applications\n\nTurning a class-dependent eventual threshold into a uniform threshold when the relevant structures and maps have set-sized small codes.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000572",
+      "record_type": "instrument",
+      "title": "Concentrate an edge cochain by subtracting three prefix gradients",
+      "forms": [
+        "box-cochain-sparse-gauge",
+        "curl-to-support-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-243"
+      ],
+      "source_paper_ids": [
+        "P-000341"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/build/sections/03-support.tex",
+          "label": "lem:sparse-cochain",
+          "line": 114,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/build/sections/03-support.tex#L114",
+          "sha256": "aa234745e62400aa4c59d3fb436efcc46e753059aba0f71f9577e6091b927abc"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 1,
+      "subject": "Mathematical logic",
+      "novelty_status": "discrete-gauge-elimination-with-explicit-source-bound",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000572.md",
+      "body": "# Concentrate an edge cochain by subtracting three prefix gradients\n\n[Family 243](../families/openai-math-243.md) · [Source manuscript](../papers/P-000341.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nOn the positively oriented L by L by L grid, L>=2, let ell be an F3-valued edge cochain and let t count faces with nonzero oriented curl. A vertex potential phi can be chosen so that r=ell-partial^T phi has at most 2Lt nonzero edges; the displayed proof actually yields Lt. Subtracting a gradient preserves the functional ell(k) on every divergence-free flow k.\n\nFirst sum direction-1 entries from coordinate zero to i-1 to form phi_1. The residual has direction-1 entries zero, and its direction-2 and direction-3 increments in i are exactly the 12 and 13 curls. Choose a slice i_0 with at most t_23/L nonzero 23 curls. Sum the direction-2 entries on that slice to form a potential phi_2 independent of i; this makes direction-2 entries on the slice zero. Sum the remaining direction-3 entries along j=0 to form phi_3 independent of i,j.\n\nOn the chosen slice, each nonzero direction-3 entry must occur after a nonzero 23 curl on its line, costing at most L positions per curl. Copying these values across L slices costs at most L^2(t_23/L)=Lt_23 entries. Moving away from the slice creates at most Lt_12 and Lt_13 additional entries. Direction 1 remains zero, so total support is at most Lt. If t=0, the residual is zero, proving that every curl-free cochain on this box is a gradient.\n\n## Role in the source argument\n\nConverts few nonzero commutator tests into a short set of edge coordinates supporting a central-flow functional.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:sparse-cochain](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/build/sections/03-support.tex#L114)\n\n## Antecedents and comparison\n\nSuccessive gauge fixing and exactness of curl-free cochains on a contractible box are classical. The selected proof makes the support cost explicit and provides the slightly stronger intermediate Lt bound. This extraction does not assert earliest priority for that quantitative implementation.\n\n## Checks and limitations\n\n80 cochains on boxes of side 2,3,4,6 include 20 gradient controls. Exact F3 arithmetic verifies unchanged face curls, zero first-direction entries and the stronger support bound Lt.\n\nThe program does not construct all hereditarily finite objects or establish the small-orbit support and logic-transfer theorems.\n\n## Possible applications\n\nFinding sparse representatives of linear functionals on cycle spaces when only a few local curls are nonzero.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000573",
+      "record_type": "instrument",
+      "title": "Control all small components by a projection boundary budget",
+      "forms": [
+        "finite-box-component-mass-bound",
+        "nested-majority-component"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-243"
+      ],
+      "source_paper_ids": [
+        "P-000342"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex",
+          "label": "base:boundary",
+          "line": 79,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L79",
+          "sha256": "749e3fb84e6e064c9334caaabebc5fefcdb3b7f2f26e12b3acb761b9713d8b83"
+        },
+        {
+          "path": "preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex",
+          "label": "base:giant",
+          "line": 120,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L120",
+          "sha256": "749e3fb84e6e064c9334caaabebc5fefcdb3b7f2f26e12b3acb761b9713d8b83"
+        },
+        {
+          "path": "preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex",
+          "label": "base:small-components",
+          "line": 131,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L131",
+          "sha256": "749e3fb84e6e064c9334caaabebc5fefcdb3b7f2f26e12b3acb761b9713d8b83"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 2,
+      "subject": "Mathematical logic",
+      "novelty_status": "classical-projection-isoperimetry-in-source-deletion-regime",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000573.md",
+      "body": "# Control all small components by a projection boundary budget\n\n[Family 243](../families/openai-math-243.md) · [Source manuscript](../papers/P-000342.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nFor a nonempty vertex set R in the side-L three-dimensional box with |R|<=L^3/2, let delta R be its edge boundary and c=1-2^(-1/3). Then |delta R|>=c|R|^(2/3).\n\nIf the three coordinate-pair projections have sizes A,B,D, two applications of Cauchy-Schwarz give |R|^2<=ABD. One projection has size at least |R|^(2/3), indexing that many nonempty coordinate lines. At most |R|/L of those lines are full. Every other line contains a distinct boundary edge. Thus |delta R|>=|R|^(2/3)-|R|/L, which gives the constant c.\n\nDelete an edge set T. Summing the boundary estimate over components R of size at most half the box gives\n\nsum_(small components) |R|<=c^(-3/2)(2|T|)^(3/2),\n\nsince each deleted edge is counted at most twice. In the source |T|<=6 floor(L^(7/4)), so this mass is O(L^(21/8))=o(L^3). For sufficiently large L a unique component therefore has more than half the vertices. Under further deletions within the same regime, the new majority component is contained in the previous one. This monotonicity follows from component containment and the majority sizes, without making a noncanonical choice among small components.\n\n## Role in the source argument\n\nKeeps a defect away from a bounded set of assigned coordinates during the source counting-equivalence construction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [base:boundary](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L79)\n- [base:giant](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L120)\n- [base:small-components](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/build/sections/06-base-counting.tex#L131)\n\n## Antecedents and comparison\n\nThe projection inequality is the classical three-dimensional discrete Loomis-Whitney inequality, proved directly in the selected source by Cauchy-Schwarz. The component estimate is an elementary boundary summation. Retrieval of the original 1949 AMS PDF was blocked; no full-text audit of that historical paper is claimed.\n\n## Checks and limitations\n\n282 subsets verify projection and boundary estimates. Forty-eight edge-deletion models verify the explicit small-component mass bound and nested majority components when present.\n\nThe small numerical boxes are not claimed to satisfy the asymptotic 6 floor(L^(7/4)) guarantee. The checks do not prove the witnessed-choice separation.\n\n## Possible applications\n\nMaintaining a canonical large connected region throughout a sequence of sparse deletions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000574",
+      "record_type": "instrument",
+      "title": "Use faithful disjoint strips to justify stable group identities",
+      "forms": [
+        "steinberg-faithful-strip",
+        "outside-coordinate-centrality"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-247"
+      ],
+      "source_paper_ids": [
+        "P-000343"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex",
+          "label": "lem:strip",
+          "line": 43,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex#L43",
+          "sha256": "41a07b3ab471a24dcf17fc4e30abc1495202ef02e2875d5caf9f068bbde5a9ef"
+        },
+        {
+          "path": "preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex",
+          "label": "lem:stable-center",
+          "line": 68,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex#L68",
+          "sha256": "41a07b3ab471a24dcf17fc4e30abc1495202ef02e2875d5caf9f068bbde5a9ef"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-steinberg-strip-and-centrality-method",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000574.md",
+      "body": "# Use faithful disjoint strips to justify stable group identities\n\n[Family 247](../families/openai-math-247.md) · [Source manuscript](../papers/P-000343.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nFor a unital associative F2-algebra B, let St(B) have the stable Steinberg generators x_ij(a), mapping to elementary matrices. If S,T are disjoint finite coordinate sets, the subgroup generated by x_ij(a), i in S,j in T, is isomorphic to the additive group of S by T entry matrices. The roots commute, root addition collects one coefficient per entry, and the matrix image reads each coefficient directly because all products of these entry matrices are zero.\n\nA word supported on S normalizes the outgoing strip S by T and acts by left multiplication with its S matrix. On the incoming strip T by S it acts by right multiplication with the inverse S matrix. These assertions follow generator by generator from the Steinberg relations, preserving multiplication order over noncommutative B.\n\nIf z lies in the kernel of the stable matrix map, take finite S containing a representative of z and the root whose commutation is to be tested, and choose h outside S. Faithful strip actions show that z commutes with x_ih(a) and x_hj(1). Since x_ij(a)=[x_ih(a),x_hj(1)], it commutes with every root, so the stable kernel is central. The availability of a fresh coordinate is essential to this argument; it does not by itself prove injectivity or centrality at a fixed finite rank.\n\n## Role in the source argument\n\nSpecifies precisely where equality of matrix entries can be promoted to an abstract Steinberg-group identity.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:strip](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex#L43)\n- [lem:stable-center](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/build/sections/steinberg.tex#L68)\n\n## Antecedents and comparison\n\n[Weibel, The K-book, Chapter III](https://sites.math.rutgers.edu/~weibel/Kbook/Kbook.III.pdf), Theorem 5.2.1 on chapter pages 35-36, proves stable centrality with the same faithful one-column/one-row and outside-coordinate mechanism. Those pages, including definitions and the full centrality proof, were read. This is a classical instrument.\n\n## Checks and limitations\n\n60 models over the noncommutative coefficient ring M2(F2) verify strip collection and both outgoing and incoming conjugation formulas.\n\nThe program checks matrix actions. Faithfulness in the presented group is supplied by the inspected algebraic proof, and no fixed-rank stability or infinite residual-finiteness theorem is certified.\n\n## Possible applications\n\nSafely moving between elementary matrix calculations and abstract root-group relations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000575",
+      "record_type": "instrument",
+      "title": "Lift inverses and elementwise finite orders through a matrix-nil ideal",
+      "forms": [
+        "matrix-nil-ideal-inversion",
+        "finite-reduction-periodicity"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-247"
+      ],
+      "source_paper_ids": [
+        "P-000344"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/build/sections/finite-presentation.tex",
+          "label": "fp:matrix-periodicity",
+          "line": 439,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/build/sections/finite-presentation.tex#L439",
+          "sha256": "d4553f81f0262949ed7eb2ecad1939c5d1a9007a4da957e7930e1195b467fddd"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-nilpotent-lifting-and-powering",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000575.md",
+      "body": "# Lift inverses and elementwise finite orders through a matrix-nil ideal\n\n[Family 247](../families/openai-math-247.md) · [Source manuscript](../papers/P-000344.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nSuppose R=F2 direct-sum I as a vector space, with the F2 copy containing the identity, I a two-sided ideal, and M_d(I) nil for every d: each individual matrix over I is nilpotent. A square matrix over R is invertible exactly when its reduction over F2 is invertible.\n\nFor the nontrivial direction, lift the inverse of the reduction as a scalar matrix B. Then AB=I+U with U in M_n(I). If U^m=0, the finite series I+U+...+U^(m-1) is the inverse of I+U in characteristic two. This yields an inverse of A without a common nilpotence index.\n\nFor A invertible, let d be the finite order of its reduction in GL_n(F2). Then A^d=I+V for a nilpotent V. If V^m=0 and 2^e>=m, repeated squaring gives A^(d*2^e)=I+V^(2^e)=I. Thus each invertible matrix has finite order. The number d can have odd factors, so this argument does not make GL_n(R) a 2-group. Nor does it impose one exponent on all elements.\n\nThe source needs a further torsion theorem for the kernel of the Steinberg-to-elementary map before it can lift periodicity to its presented group. This matrix lemma supplies neither that theorem nor the existence of the required infinite algebra.\n\n## Role in the source argument\n\nExtracts matrix-group periodicity from a matrix-nil algebra while keeping the separate central-kernel problem visible.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [fp:matrix-periodicity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/build/sections/finite-presentation.tex#L439)\n\n## Antecedents and comparison\n\nFinite geometric inversion and (I+V)^(2^e)=I+V^(2^e) are classical. The matrix-nil hypothesis is the substantive algebra input, and the selected reduction introduces no claimed new general ring principle.\n\n## Checks and limitations\n\n80 matrix models over the noncommutative ring F2*I3 plus strictly upper triangular 3 by 3 matrices verify the invertibility equivalence. All 27 invertible samples satisfy the explicit geometric inverse and finite-order lift. An order-three matrix over F2 is a control against a false 2-group inference.\n\nThe test ring has a uniform nilpotence bound; the analytic proof only needs elementwise nilpotence. No infinite finitely presented algebra or Steinberg-kernel computation is tested.\n\n## Possible applications\n\nTransferring invertibility and finite-order information from a finite quotient through matrix-nil perturbations.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000576",
+      "record_type": "instrument",
+      "title": "Factor a sparse masked operator through edges with their labels retained",
+      "forms": [
+        "indexed-edge-frame-factorization",
+        "two-sided-sparse-mask-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-251"
+      ],
+      "source_paper_ids": [
+        "P-000345"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex",
+          "label": "eq:masked-operator",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex#L153",
+          "sha256": "b87ea54dd3fabd352b404a3f045b992f7838d2eb0041e44137094089561ac5a2"
+        },
+        {
+          "path": "preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex",
+          "label": "lem:masked",
+          "line": 166,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex#L166",
+          "sha256": "b87ea54dd3fabd352b404a3f045b992f7838d2eb0041e44137094089561ac5a2"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 1,
+      "subject": "Group theory",
+      "novelty_status": "classical-frame-factorization-with-repeated-label-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000576.md",
+      "body": "# Factor a sparse masked operator through edges with their labels retained\n\n[Family 251](../families/openai-math-251.md) · [Source manuscript](../papers/P-000345.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nLet s_1,...,s_n be a list in a countable group, allowing repeated elements, and let v_i be unit vectors in C^k. Suppose every synthesis matrix V_J of at most p of these indexed vectors has norm at most b_0. For |c(x,i)|<=1 define\n\n(T_c xi)(x)=sum_i c(x,i) v_i v_i^* xi(x s_i).\n\nAssume each row has at most p active labels, and each incoming column y has at most p labels i with c(y s_i^(-1),i) nonzero. Then ||T_c||<=b_0^2.\n\nKeep the edge index (x,i) in an auxiliary l2 space. Analysis sends xi to v_i^*xi(x s_i), multiplication applies c(x,i), and synthesis sums v_i times each edge coordinate at its source x. Thus T_c=S M_c F. Row sparsity bounds ||S|| by b_0. Regrouping the analysis norm by arrival y bounds ||F|| by b_0, since for each fixed label i there is exactly one possible source y s_i^(-1). The diagonal mask has norm at most one.\n\nIf two labels carry the same group element, they still give different edge coordinates. Their contributions to a common block are summed only during synthesis. Collapsing these labels prematurely would discard the multiplicity information used in both bounds.\n\n## Role in the source argument\n\nControls operator norm using local vector-family bounds despite coincidences among group shifts.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [eq:masked-operator](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex#L153)\n- [lem:masked](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/build/sections/weights.tex#L166)\n\n## Antecedents and comparison\n\nThis is an explicit analysis/multiplier/synthesis factorization, a classical Hilbert-space technique. The selected source makes the repeated-label bookkeeping and the two separate sparsity conditions precise. No earliest-priority claim is made for the interface.\n\n## Checks and limitations\n\n30 finite cyclic-group masks with repeated labels compare the assembled operator with the edge factorization and verify the three norm bounds. Maximum factorization error is below 4e-16.\n\nThe test does not construct masks from nonamenability or prove a lower distance from the translation commutant.\n\n## Possible applications\n\nBounding block operators from locally sparse incidence patterns without assuming distinct labels or shifts.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000577",
+      "record_type": "instrument",
+      "title": "Transfer nearby metrics while protecting a prescribed subspace",
+      "forms": [
+        "protected-schur-metric-transfer",
+        "exact-fixed-subspace-polar-correction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-251"
+      ],
+      "source_paper_ids": [
+        "P-000346"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex",
+          "label": "lem:priority",
+          "line": 514,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L514",
+          "sha256": "8be5e517acb8d306573f1494b691f727cbe3fdfc68379b87070fe369b26ed180"
+        },
+        {
+          "path": "preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex",
+          "label": "eq:priority-map",
+          "line": 564,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L564",
+          "sha256": "8be5e517acb8d306573f1494b691f727cbe3fdfc68379b87070fe369b26ed180"
+        },
+        {
+          "path": "preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex",
+          "label": "lem:truncate",
+          "line": 624,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L624",
+          "sha256": "8be5e517acb8d306573f1494b691f727cbe3fdfc68379b87070fe369b26ed180"
+        }
+      ],
+      "batch_id": "B059",
+      "source_item": 2,
+      "subject": "Group theory",
+      "novelty_status": "classical-block-factorization-with-source-protection-estimates",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000577.md",
+      "body": "# Transfer nearby metrics while protecting a prescribed subspace\n\n[Family 251](../families/openai-math-251.md) · [Source manuscript](../papers/P-000346.md) · [Batch B059](../../batches/B059/README.md)\n\n## Mathematical content\n\nLet A,B be positive Hilbert-space operators between I/2 and 2I, with A-B=h Gamma, Gamma self-adjoint, ||Gamma||<=1 and 0<=h<=1/8. Let P commute with B, let R=PE, and assume ||P Gamma P||<=eta<=1. There is an explicit invertible S_R satisfying S_R^* A S_R=B, S_R(R)=R, ||S_R-I||<=Ch and ||(S_R-I)P||<=Ch eta, with dimension-independent C.\n\nWhiten B and write B^(-1/2)AB^(-1/2)=[a b; b^* d] relative to R and its original orthogonal complement. Put E_0=d-b^*a^(-1)b and\n\nQ_R=[a^(-1/2), -a^(-1)b E_0^(-1/2); 0, E_0^(-1/2)],\nS_R=B^(-1/2)Q_R B^(1/2).\n\nMultiplication proves the metric identity, and the zero lower-left block preserves R. The spectral bounds give ||a-I||<=2h eta, ||b||<=2h, E_0>=1-2h and ||E_0-I||<=2h+4h^2/(1-2h). Functional calculus yields the two error scales. In particular eta=0 makes S_R exactly the identity on R. For nested protected subspaces R contained in R', S_(R')^(-1)S_R is B-unitary, O(h) globally and O(h eta) on R. No preservation of the original complementary subspace is asserted.\n\nTo fix an almost-fixed subspace exactly, let U be unitary with ||U-I||<=t<1/2 and ||(U-I)P||<=e<=1/2. In block form [a b;c d], replace U by I on R and the polar factor d(d^*d)^(-1/2) on its complement. The compression d is invertible because ||d-I||<1. Since d^*d=I-b^*b, the polar correction costs at most e^2, and the discarded blocks cost at most 2e. The resulting unitary fixes R and differs from U by at most 3e.\n\n## Role in the source argument\n\nLets the source compose metric transfers without disturbing coordinates needed by the next circuit layer.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:priority](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L514)\n- [eq:priority-map](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L564)\n- [lem:truncate](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/build/strong-ulam-stability.tex#L624)\n\n## Antecedents and comparison\n\nSchur-complement elimination and positive square roots are classical. [Higham, Computing the Polar Decomposition with Applications](https://eprints.maths.manchester.ac.uk/694/1/high86p.pdf), Section 2.1 and Lemma 2.1 on printed page 1161, records the polar formulas used for the final correction; that section was read. The source combines these ingredients with a designated-subspace error scale. Earliest priority of that precise interface is not established.\n\n## Checks and limitations\n\n18 complex metric pairs, including nine zero-compression controls and zero/full-subspace endpoints, verify transfer identities, protection and nested B-unitarity. Thirty-six unitary examples verify exact fixing and the 3e correction bound. Maximum metric residual is below 4e-15.\n\nObserved finite norm ratios do not establish a universal constant; the dimension-independent estimate rests on the inspected spectral argument. The global Ulam-stability construction is not tested.\n\n## Possible applications\n\nChanging inner products while preserving a designated subspace and repairing a nearly fixed subspace exactly.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -30851,6 +31209,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000338.md",
       "body": "# Sharp logarithmic exponents for fixed off-diagonal Ramsey numbers\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Sharp-Logarithmic-Exponents-for-Fixed-Off-Diagonal-Ramsey-Numbers-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000569: Protect entropy against an arbitrarily biased subsequence selector](../instruments/MI-000569.md)\n\n[Family review and dependencies](../families/openai-math-170.md) · [Batch B058](../../batches/B058/README.md)"
+    },
+    {
+      "id": "P-000339",
+      "record_type": "paper",
+      "title": "A CH obstruction to a prescribed categoricity threshold",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-240"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "aa69d4bdc7aad4ec0df4a9efe9134ce03b27d288f35faa81b1d1876d41d50595",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000339.md",
+      "body": "# A CH obstruction to a prescribed categoricity threshold\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000570: Absorb a countable bit matrix with finite row and column translations](../instruments/MI-000570.md)\n\n[Family review and dependencies](../families/openai-math-240.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000340",
+      "record_type": "paper",
+      "title": "Eventual categoricity for abstract elementary classes",
+      "source_collection": "openai/math",
+      "upstream_slug": "Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-240"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c55bde3fb2d0e067b2cc9c06e3490edfd2c57e3223ff8ef60182ad50347f8b6e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000340.md",
+      "body": "# Eventual categoricity for abstract elementary classes\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000571: Recover a class and its strong maps from small pairs before uniformizing](../instruments/MI-000571.md)\n\n[Family review and dependencies](../families/openai-math-240.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000341",
+      "record_type": "paper",
+      "title": "Choiceless polynomial time with counting does not capture polynomial time",
+      "source_collection": "openai/math",
+      "upstream_slug": "Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-243"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "18448adef344f40f1ab7b0d95ba6da08ba486ec1ea52c5609854ac29e15dc53e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000341.md",
+      "body": "# Choiceless polynomial time with counting does not capture polynomial time\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000572: Concentrate an edge cochain by subtracting three prefix gradients](../instruments/MI-000572.md)\n\n[Family review and dependencies](../families/openai-math-243.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000342",
+      "record_type": "paper",
+      "title": "Witnessed symmetric choice is strictly stronger than choiceless polynomial time with counting",
+      "source_collection": "openai/math",
+      "upstream_slug": "Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-243"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "da6f8bd0d5e47f5a47029ee9aa2323b864dd982a7bc82ee9041ac8d7c1b28c4b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000342.md",
+      "body": "# Witnessed symmetric choice is strictly stronger than choiceless polynomial time with counting\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000573: Control all small components by a projection boundary budget](../instruments/MI-000573.md)\n\n[Family review and dependencies](../families/openai-math-243.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000343",
+      "record_type": "paper",
+      "title": "An infinite finitely presented residually finite 2-group",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-infinite-finitely-presented-residually-finite-2-group-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-247"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "24a09dce240947d0085268d82f5d9e37096510d2597568ad51b380591f53f02c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000343.md",
+      "body": "# An infinite finitely presented residually finite 2-group\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/residually-finite-torsion.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-residually-finite-2-group-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000574: Use faithful disjoint strips to justify stable group identities](../instruments/MI-000574.md)\n\n[Family review and dependencies](../families/openai-math-247.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000344",
+      "record_type": "paper",
+      "title": "An infinite finitely presented periodic group",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-infinite-finitely-presented-periodic-group-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-247"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7dcfc9d3d95b9bfbabb9670a7a262969b6f9284c461364aef2e3d89ee7fa09f2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000344.md",
+      "body": "# An infinite finitely presented periodic group\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-infinite-finitely-presented-periodic-group-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000575: Lift inverses and elementwise finite orders through a matrix-nil ideal](../instruments/MI-000575.md)\n\n[Family review and dependencies](../families/openai-math-247.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000345",
+      "record_type": "paper",
+      "title": "Unitarizability implies amenability for discrete groups",
+      "source_collection": "openai/math",
+      "upstream_slug": "Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-251"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "686c7736655cbca2e9ab4328c15628d129cdbbc85b740f34fe75068cb151f8e4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000345.md",
+      "body": "# Unitarizability implies amenability for discrete groups\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unitarizability-Implies-Amenability-for-Countable-Groups-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000576: Factor a sparse masked operator through edges with their labels retained](../instruments/MI-000576.md)\n\n[Family review and dependencies](../families/openai-math-251.md) · [Batch B059](../../batches/B059/README.md)"
+    },
+    {
+      "id": "P-000346",
+      "record_type": "paper",
+      "title": "Strong Ulam Stability Characterizes Amenability",
+      "source_collection": "openai/math",
+      "upstream_slug": "Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-251"
+      ],
+      "batch_id": "B059",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5202e17f4a0f19444868d2f58601caa50930dc4694c14088b3aec0241f6207d2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000346.md",
+      "body": "# Strong Ulam Stability Characterizes Amenability\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/strong-ulam-stability.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strong-Ulam-Stability-Characterizes-Amenability-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000577: Transfer nearby metrics while protecting a prescribed subspace](../instruments/MI-000577.md)\n\n[Family review and dependencies](../families/openai-math-251.md) · [Batch B059](../../batches/B059/README.md)"
     }
   ],
   "families": [
@@ -35383,6 +35893,34 @@
       "body": "# Stable lattice quotients and phase-uniform Gaussian Fourier bounds\n\n## Source manuscripts and claim\n\n- [The sharp exponential rate of singularity for symmetric Bernoulli matrices](../papers/P-000304.md): selected passages extracted.\n- [The sharp singularity rate for biased symmetric sign matrices](../papers/P-000305.md): selected passages extracted.\n\nThe sources claim sharp exponential singularity rates for symmetric Bernoulli matrices and biased symmetric sign matrices.\n\n## Extracted instruments\n\n- [MI-000535: Minimize normalized covolume to obtain a stable orthogonal lattice quotient](../instruments/MI-000535.md)\n- [MI-000536: Discard Fourier phases through a positive lattice Gaussian ratio](../instruments/MI-000536.md)\n\n## Dependencies and antecedents\n\nDiscrete exterior-power lattices, saturation, determinant factorization, Poisson summation, Gaussian tails and Bernoulli pattern probabilities.\n\nCanonical stable lattice filtration and Gaussian estimates in Regev-Stephens-Davidowitz, with earlier Harder-Narasimhan, Stuhler, Grayson and Banaszczyk antecedents noted there.\n\n## Review and formalization scope\n\nRead the full determinant minimization and quotient proofs, and the full dual Fourier average proof. The lattice separation construction, exceptional-set bounds and claimed sharp singularity theorems were not certified.\n\nNo family scope document or Comparator target is listed in the pinned inventory. No formal verification is claimed.\n\nLattice quotients are orthogonal Euclidean quotients of primitive sublattices. Fourier decay is conditional on separated subset sums; positivity of the Gaussian ratio is what allows the phases to be discarded.\n\n[Batch record](../../batches/B054/README.md)"
     },
     {
+      "id": "openai-math-240",
+      "record_type": "family",
+      "title": "Countable torsor alignment and small-code uniformization",
+      "source_family": "240",
+      "source_collection": "openai/math",
+      "batch_id": "B059",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000339",
+        "P-000340"
+      ],
+      "instrument_ids": [
+        "MI-000570",
+        "MI-000571"
+      ],
+      "headline": "One source claims a CH obstruction to a specified categoricity threshold; its companion claims eventual categoricity with an unspecified uniform threshold.",
+      "central_instrument": "A triangular split absorbs any countable bit-matrix discrepancy using finite translations in each fiber. Directed presentations recover an AEC from small models and strong pairs, permitting a set-sized uniformity reduction.",
+      "novelty_assessment": "Countable back-and-forth, triangular allocation and directed-limit coding are classical. Vasey already states the qualitative/uniform equivalence in Remark 1.3. These selected mechanisms do not establish either source headline theorem.",
+      "formalization_summary": "The sole CHObstruction target uses set-coded relational structures, an explicit AEC definition and CH. It asserts LS number aleph_0, two models at beth_(omega_2)=h(aleph_0), and categoricity from beth_((2^aleph_1)^+) upward. Neither the separate eventual-categoricity theorem nor the canonical-point obstruction occurs in that target. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.",
+      "statement_faithfulness": "The matrix alignment uses countable enumerations and finite-support torsors with exactly the stated bit action. The coding reduction concerns finitary AECs with an infinite LS bound and includes their strong relation, not only their object isomorphism types.",
+      "dependencies": "Countable dense-order back-and-forth, finite-support binary groups, directed unions, coherence, the downward LS axiom and Replacement.",
+      "antecedents": "Classical directed-limit and Hanf-number arguments; Vasey, Shelah eventual categoricity in universal classes, Part I, Remark 1.3.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-240.md",
+      "body": "# Countable torsor alignment and small-code uniformization\n\n## Source manuscripts and claim\n\n- [A CH obstruction to a prescribed categoricity threshold](../papers/P-000339.md): selected passages extracted.\n- [Eventual categoricity for abstract elementary classes](../papers/P-000340.md): selected passages extracted.\n\nOne source claims a CH obstruction to a specified categoricity threshold; its companion claims eventual categoricity with an unspecified uniform threshold.\n\n## Extracted instruments\n\n- [MI-000570: Absorb a countable bit matrix with finite row and column translations](../instruments/MI-000570.md)\n- [MI-000571: Recover a class and its strong maps from small pairs before uniformizing](../instruments/MI-000571.md)\n\n## Dependencies and antecedents\n\nCountable dense-order back-and-forth, finite-support binary groups, directed unions, coherence, the downward LS axiom and Replacement.\n\nClassical directed-limit and Hanf-number arguments; Vasey, Shelah eventual categoricity in universal classes, Part I, Remark 1.3.\n\n## Review and formalization scope\n\nRead the basic torsor definition and complete countable-base alignment proof. Read the complete directed-limit, small-code and uniform-reduction arguments in the companion. No global categoricity-transfer proof was audited.\n\nThe sole CHObstruction target uses set-coded relational structures, an explicit AEC definition and CH. It asserts LS number aleph_0, two models at beth_(omega_2)=h(aleph_0), and categoricity from beth_((2^aleph_1)^+) upward. Neither the separate eventual-categoricity theorem nor the canonical-point obstruction occurs in that target. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.\n\nThe matrix alignment uses countable enumerations and finite-support torsors with exactly the stated bit action. The coding reduction concerns finitary AECs with an infinite LS bound and includes their strong relation, not only their object isomorphism types.\n\n[Batch record](../../batches/B059/README.md)"
+    },
+    {
       "id": "openai-math-241",
       "record_type": "family",
       "title": "Bounded feedback recovery and removal of generic oracle parameters",
@@ -35436,6 +35974,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-242.md",
       "body": "# Complete-witness uniqueness in arithmetic encodings\n\n## Source manuscript and claim\n\n[Single-fold Diophantine representations](../papers/P-000156.md), by OpenAI, September 24, 2026.\n\nThe source claims a single-fold polynomial representation of every recursively enumerable subset of N^n, with uniqueness of the entire natural-number witness tuple, and derives undecidability under an at-most-one-solution promise.\n\n## Extracted instruments\n\n- [MI-000273: Freeze inactive branches to preserve complete polynomial-witness uniqueness](../instruments/MI-000273.md)\n- [MI-000274: A shifted inverse identity gives one natural-number code for each rational](../instruments/MI-000274.md)\n- [MI-000275: Large-base binomial digits test binary containment with unique division witnesses](../instruments/MI-000275.md)\n\n## Dependencies and antecedents\n\nDisjoint guarded cases, natural slacks, reduced rational fractions, normalized modular inverses, Euclidean division, binomial expansion and Lucas parity.\n\nMatiyasevich single-fold constructions; Cantone-Cuzziol-Omodeo, On Diophantine Singlefold Specifications, Section 2; Julia Robinson large-base coefficient extraction; Jones-Matiyasevich binary masking and Lucas congruence. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the closure lemma, rational-code proof and complete binary-containment proof. The elliptic growth, Pell power construction and machine compiler were not audited.\n\nRead SingleFold.lean evaluation, whole-witness uniqueness and main target for every positive input arity. The at-most-one-solution undecidability consequence is not a separate selected target. These are target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nAll auxiliaries, including inactive branches, inequalities, normalization and nested calls, count in uniqueness. Binary masking is conditional here on a complete single-fold power graph; ordinary exponentiation evaluation is weaker.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/242.md) · [Batch record](../../batches/B021/README.md)"
+    },
+    {
+      "id": "openai-math-243",
+      "record_type": "family",
+      "title": "Sparse cochain representatives and persistent grid components",
+      "source_family": "243",
+      "source_collection": "openai/math",
+      "batch_id": "B059",
+      "subject": "Mathematical logic",
+      "source_paper_ids": [
+        "P-000341",
+        "P-000342"
+      ],
+      "instrument_ids": [
+        "MI-000572",
+        "MI-000573"
+      ],
+      "headline": "The sources claim that choiceless polynomial time with counting does not capture polynomial time and that one witnessed symmetric-choice occurrence strictly increases expressive power.",
+      "central_instrument": "Successive coordinate prefix sums replace an edge functional by a sparse representative modulo gradients. A discrete projection inequality controls the total size of components after edge deletion.",
+      "novelty_assessment": "The ingredients are discrete gauge elimination and the classical Loomis-Whitney projection inequality. Source quantitative bounds and their support interfaces are useful extractions without a new complexity-separation certification.",
+      "formalization_summary": "ChoicelessPolynomialTime specifies an eight-relation F3 linear query, explicit HF operational syntax and polynomial bounds on complete occurring-object closure; its target asserts isomorphism invariance, ordinary Turing polynomial time and nondefinability. WitnessedChoice separately defines witnessed iteration with automorphisms fixing every preceding state and the free parameters; its target is one total Boolean sentence with exactly one occurrence and a true-model class different from every choice-free sentence. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.",
+      "statement_faithfulness": "The cochain construction is on a box, over F3, with ordinary boundary rather than periodic coordinates. The giant-component assertion is asymptotic for the source deletion scale; finite tests instead check its explicit mass estimate.",
+      "dependencies": "Graph incidence, face curls, prefix sums, gradients, Cauchy-Schwarz, projection cardinalities and connected components.",
+      "antecedents": "Discrete exactness on contractible boxes; Loomis-Whitney projection inequality.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-243.md",
+      "body": "# Sparse cochain representatives and persistent grid components\n\n## Source manuscripts and claim\n\n- [Choiceless polynomial time with counting does not capture polynomial time](../papers/P-000341.md): selected passages extracted.\n- [Witnessed symmetric choice is strictly stronger than choiceless polynomial time with counting](../papers/P-000342.md): selected passages extracted.\n\nThe sources claim that choiceless polynomial time with counting does not capture polynomial time and that one witnessed symmetric-choice occurrence strictly increases expressive power.\n\n## Extracted instruments\n\n- [MI-000572: Concentrate an edge cochain by subtracting three prefix gradients](../instruments/MI-000572.md)\n- [MI-000573: Control all small components by a projection boundary budget](../instruments/MI-000573.md)\n\n## Dependencies and antecedents\n\nGraph incidence, face curls, prefix sums, gradients, Cauchy-Schwarz, projection cardinalities and connected components.\n\nDiscrete exactness on contractible boxes; Loomis-Whitney projection inequality.\n\n## Review and formalization scope\n\nRead the full sparse-cochain proof and its central-flow definitions in the first manuscript. Read the full boundary and persistent-component proofs in the witnessed-choice companion. Hereditary support transfer, full computation coding and the separation theorems remain unaudited.\n\nChoicelessPolynomialTime specifies an eight-relation F3 linear query, explicit HF operational syntax and polynomial bounds on complete occurring-object closure; its target asserts isomorphism invariance, ordinary Turing polynomial time and nondefinability. WitnessedChoice separately defines witnessed iteration with automorphisms fixing every preceding state and the free parameters; its target is one total Boolean sentence with exactly one occurrence and a true-model class different from every choice-free sentence. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.\n\nThe cochain construction is on a box, over F3, with ordinary boundary rather than periodic coordinates. The giant-component assertion is asymptotic for the source deletion scale; finite tests instead check its explicit mass estimate.\n\n[Batch record](../../batches/B059/README.md)"
     },
     {
       "id": "openai-math-244",
@@ -35519,6 +36085,34 @@
       "body": "# Crossing duality and energy-controlled probability flows\n\n## Source manuscript and claim\n\n[A Modulus Proof of Cannon’s Conjecture](../papers/P-000191.md), by OpenAI, September 23, 2026.\n\nThe source claims that a word-hyperbolic group with two-sphere boundary admits a proper cocompact isometric action on hyperbolic three-space with finite kernel.\n\n## Extracted instruments\n\n- [MI-000344: Turn a minimum-norm mixture of crossings into dual weights](../instruments/MI-000344.md)\n- [MI-000345: Use a tree energy budget to bound the frequency of unfavorable ancestors](../instruments/MI-000345.md)\n\n## Dependencies and antecedents\n\nFinite-dimensional convex optimization, a planar crossing/blocker input, conservation of tree probability and Jensen inequality.\n\nAlbin and Poggi-Corradini, Minimal subfamilies and the probabilistic interpretation for modulus on graphs, Theorem 5.1; classical blocking duality and Jensen inequality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete crossing/blocker and dual-weight proofs and the tree good-level proof. The scalar limit, magnification comparisons, capacity construction and global uniformization argument were not audited.\n\nRead CannonGeometricAction.lean. It defines thin Cayley triangles, a ray-quotient boundary and a proper cocompact action on the upper-half-space model, with finite kernel. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nCrossing intersection yields an upper bound for the dual energy, not an automatic equality of two arbitrary crossing moduli. The flow conclusion provides infinitely many good levels rather than a uniform bound at every level.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/246.md) · [Batch record](../../batches/B030/README.md)"
     },
     {
+      "id": "openai-math-247",
+      "record_type": "family",
+      "title": "Faithful Steinberg strips and nil-ideal matrix periodicity",
+      "source_family": "247",
+      "source_collection": "openai/math",
+      "batch_id": "B059",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000343",
+        "P-000344"
+      ],
+      "instrument_ids": [
+        "MI-000574",
+        "MI-000575"
+      ],
+      "headline": "The sources claim an infinite finitely presented residually finite 2-group and an infinite finitely presented periodic group built from a finitely presented matrix-nil algebra.",
+      "central_instrument": "Disjoint-coordinate strips are read faithfully by elementary matrices, allowing stable kernel centrality. Matrix-nil ideals permit finite geometric inverses and elementwise periodicity after reduction to F2.",
+      "novelty_assessment": "The Steinberg-strip/centrality argument is classical and appears in Weibel. Nilpotent geometric inversion and characteristic-two powering are also classical. The difficult algebra construction and fixed-rank kernel detection are not certified.",
+      "formalization_summary": "PeriodicGroup defines the Steinberg presentation and asserts an infinite finitely presented periodic Steinberg group in rank 12 over an F2-algebra, together with an abstract Burnside witness. It does not state residual finiteness, a 2-group conclusion or the nil-algebra theorem, despite the broader inventory family title. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Faithfulness is asserted for the strip subgroup, not the full Steinberg matrix map. Matrix periodicity assumes every matrix over the ideal is nilpotent; nilpotence of individual ideal elements alone is insufficient. No common exponent or 2-primary order conclusion follows.",
+      "dependencies": "Steinberg relations, disjoint root supports, noncommutative matrix multiplication, matrix-nil ideals and finite quotient orders.",
+      "antecedents": "Weibel, The K-book, Chapter III, Definitions 5.1-5.2 and Theorem 5.2.1; elementary geometric series and Frobenius powering of one matrix.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-247.md",
+      "body": "# Faithful Steinberg strips and nil-ideal matrix periodicity\n\n## Source manuscripts and claim\n\n- [An infinite finitely presented residually finite 2-group](../papers/P-000343.md): selected passages extracted.\n- [An infinite finitely presented periodic group](../papers/P-000344.md): selected passages extracted.\n\nThe sources claim an infinite finitely presented residually finite 2-group and an infinite finitely presented periodic group built from a finitely presented matrix-nil algebra.\n\n## Extracted instruments\n\n- [MI-000574: Use faithful disjoint strips to justify stable group identities](../instruments/MI-000574.md)\n- [MI-000575: Lift inverses and elementwise finite orders through a matrix-nil ideal](../instruments/MI-000575.md)\n\n## Dependencies and antecedents\n\nSteinberg relations, disjoint root supports, noncommutative matrix multiplication, matrix-nil ideals and finite quotient orders.\n\nWeibel, The K-book, Chapter III, Definitions 5.1-5.2 and Theorem 5.2.1; elementary geometric series and Frobenius powering of one matrix.\n\n## Review and formalization scope\n\nRead the full Steinberg strips section in the residual-finiteness manuscript and the entire matrix-periodicity proof in its companion. The finite algebra presentation, cancellation hierarchy, fixed-rank stability and residual detection are not audited.\n\nPeriodicGroup defines the Steinberg presentation and asserts an infinite finitely presented periodic Steinberg group in rank 12 over an F2-algebra, together with an abstract Burnside witness. It does not state residual finiteness, a 2-group conclusion or the nil-algebra theorem, despite the broader inventory family title. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.\n\nFaithfulness is asserted for the strip subgroup, not the full Steinberg matrix map. Matrix periodicity assumes every matrix over the ideal is nilpotent; nilpotence of individual ideal elements alone is insufficient. No common exponent or 2-primary order conclusion follows.\n\n[Batch record](../../batches/B059/README.md)"
+    },
+    {
       "id": "openai-math-248",
       "record_type": "family",
       "title": "Thompson’s group F is not amenable",
@@ -35575,6 +36169,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-249.md",
       "body": "# Local degree and quadratic cancellation for word equations\n\n## Source manuscript and claim\n\n[A finitely generated counterexample to the Eilenberg–Ganea conjecture](../papers/P-000192.md), by OpenAI, September 23, 2026.\n\nThe source claims a finitely generated residually finite group of integral cohomological dimension two and geometric dimension three.\n\n## Extracted instruments\n\n- [MI-000346: Localize SU(2) word-map degree by cyclic conjugation](../instruments/MI-000346.md)\n- [MI-000347: Convert exact translated relator counts into a uniform quadratic error](../instruments/MI-000347.md)\n\n## Dependencies and antecedents\n\nMapping degree, finite cyclic conjugation, ordinary finite-dimensional Sard perturbations, an aligned cellular boundary basis and unit-quaternion product estimates.\n\nGerstenhaber-Rothaus degree formula as stated in Frøyshov 2013, Proposition 2.1; standard degree theory and commutator estimates. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete localized degree proof, exact translated-count proof and uniform quadratic estimate. The geometric seed, acyclic level model, arbitrary-presentation comparison and transport obstruction were not audited.\n\nRead EilenbergGanea.lean. Its explicit height-kernel group is required to be finitely generated and residually finite, have integral cohomological dimension two, admit a three-dimensional classifying CW space and admit no two-dimensional one. The inspected Comparator contains a sorry target; no Lean build or kernel verification was performed.\n\nThe localized degree lemma requires coefficient-free words, a nonsingular exponent-sum matrix, simultaneous-conjugation invariance, identity containment and an isolating boundary. The quadratic bound requires exact translated multiplicities, not merely approximate abelian cancellation.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/249.md) · [Batch record](../../batches/B030/README.md)"
+    },
+    {
+      "id": "openai-math-251",
+      "record_type": "family",
+      "title": "Indexed-edge operator bounds and protected metric transfers",
+      "source_family": "251",
+      "source_collection": "openai/math",
+      "batch_id": "B059",
+      "subject": "Group theory",
+      "source_paper_ids": [
+        "P-000345",
+        "P-000346"
+      ],
+      "instrument_ids": [
+        "MI-000576",
+        "MI-000577"
+      ],
+      "headline": "The sources claim that unitarizability is equivalent to amenability and that strong Ulam stability characterizes amenability.",
+      "central_instrument": "A factorization through separately indexed edges bounds masked rank-one operators even with repeated group labels. Schur complements construct metric isometries preserving a designated subspace, and polar correction makes an approximately fixed subspace exact.",
+      "novelty_assessment": "Frame factorization, Schur-complement whitening and polar decomposition are classical. The retained-label and protected-subspace interfaces are explicit source implementations. No equivalence with amenability is certified.",
+      "formalization_summary": "DixmierAllDiscrete states amenability/unitarizability equivalence for all discrete groups and nonunitarizable witnesses bounded by 1+epsilon, with separability for countable groups. Dixmier separately states a separable witness bounded by 101 for countable nonamenable groups. There is no linked strong-Ulam-stability Comparator. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.",
+      "statement_faithfulness": "Both row and incoming-column sparsity are required. The transfer projection commutes with the reference metric and has small compressed perturbation; preservation means mapping the subspace onto itself, not preserving its original orthogonal complement.",
+      "dependencies": "Synthesis/analysis operators, Hilbert direct sums, positive square roots, Schur complements, spectral calculus and polar decomposition.",
+      "antecedents": "Classical frame bounds and block Gaussian elimination; Higham, Computing the Polar Decomposition with Applications, elementary polar formulas.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-251.md",
+      "body": "# Indexed-edge operator bounds and protected metric transfers\n\n## Source manuscripts and claim\n\n- [Unitarizability implies amenability for discrete groups](../papers/P-000345.md): selected passages extracted.\n- [Strong Ulam Stability Characterizes Amenability](../papers/P-000346.md): selected passages extracted.\n\nThe sources claim that unitarizability is equivalent to amenability and that strong Ulam stability characterizes amenability.\n\n## Extracted instruments\n\n- [MI-000576: Factor a sparse masked operator through edges with their labels retained](../instruments/MI-000576.md)\n- [MI-000577: Transfer nearby metrics while protecting a prescribed subspace](../instruments/MI-000577.md)\n\n## Dependencies and antecedents\n\nSynthesis/analysis operators, Hilbert direct sums, positive square roots, Schur complements, spectral calculus and polar decomposition.\n\nClassical frame bounds and block Gaussian elimination; Higham, Computing the Polar Decomposition with Applications, elementary polar formulas.\n\n## Review and formalization scope\n\nRead the complete indexed-mask proof and the full prescribed-subspace transfer and exact-fixing lemmas. Boundary actions, sparse flags, circuit comparisons and nonunitarizability obstructions remain unaudited.\n\nDixmierAllDiscrete states amenability/unitarizability equivalence for all discrete groups and nonunitarizable witnesses bounded by 1+epsilon, with separability for countable groups. Dixmier separately states a separable witness bounded by 101 for countable nonamenable groups. There is no linked strong-Ulam-stability Comparator. The scope document and all linked Comparators were read in full. Their headline targets have sorry proof bodies; some supporting definitions contain explicit proofs. No separate solution or Lean project was built.\n\nBoth row and incoming-column sparsity are required. The transfer projection commutes with the reference metric and has small compressed perturbation; preservation means mapping the subspace onto itself, not preserving its original orthogonal complement.\n\n[Batch record](../../batches/B059/README.md)"
     },
     {
       "id": "openai-math-252",

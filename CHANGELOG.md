@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B059: 8 selected instruments from 4 families and 8 manuscripts. Countable bit alignment, AEC small codes, sparse cochains, component persistence, nil-ideal periodicity and protected metric maps. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B058: 8 selected instruments from 4 families and 8 manuscripts. Affine moment and cover identities, triangular interpolation, paired-subspace rank budgets, fresh-test prediction and selection entropy. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B057: 8 selected instruments from 4 families and 8 manuscripts. Private lattice insertions, weighted Bass reductions, an explicit diagram obstruction, and Foulkes growth and shift mechanisms. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
