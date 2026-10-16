@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 0.138,
+  "checks": {
+    "squareclass": {
+      "convolution_cases": 24,
+      "noninvariant_negative_control": true
+    },
+    "rank_tail": {
+      "layer_cake_cases": 9,
+      "rare_outlier_mean_limit": 1,
+      "rare_outlier_distribution_mean": 0.5,
+      "scope": "No analytic rank-count estimate tested."
+    },
+    "sign_extension": {
+      "cocycle_triples": 512,
+      "split_iff_even_parameter": true
+    },
+    "denominators": {
+      "exact_vector_certificates": 195
+    },
+    "graph_cover": {
+      "voltage_covers": 48,
+      "bridge_negative_control": true
+    },
+    "annular_roots": {
+      "tame_coefficient_checks": 240,
+      "wild_term_valuations": [
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -4,
+        -4,
+        -4,
+        -5,
+        -5,
+        -5
+      ],
+      "scope": "Finite exact series and Laurent-valuation models; no global analytic theorem certified."
+    },
+    "kummer": {
+      "finite_field_cases": 1356
+    },
+    "reservoir": {
+      "quadratic_character_checks": 375,
+      "asymptotic_log_ratios": [
+        [
+          -53.948298140119114,
+          -99999998999907.89
+        ],
+        [
+          -930.9224472101789,
+          -9.99999999999999e+23
+        ],
+        [
+          -9907.896596280243,
+          -1e+34
+        ]
+      ],
+      "scope": "Conditional reduction only; no reservoir or exceptional-prime counting theorem tested."
+    }
+  },
+  "scope": "Selected reductions only; no Goldfeld, Margulis-Platonov, section-conjecture or unconditional primitive-root headline certified."
+}
