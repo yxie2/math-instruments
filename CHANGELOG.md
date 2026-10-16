@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B084: 8 selected instruments from 4 families and 4 manuscripts. Stable images, compatible filtrations, tree corrections, joint rounding and weighted graph identities. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B083: 8 selected instruments from 4 families and 4 manuscripts. Simplex slicing, boundary restoration, chain retractions, tensor kernels, maximal Roe controls and finite cofiber data. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B082: 8 selected instruments from 4 families and 4 manuscripts. Fermionic normal ordering, polynomial kernels, collision cutoffs, pinned mark lists, return constants and uniform covariance comparison. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
