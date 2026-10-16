@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "seed": 20261016,
+  "numpy_version": "2.4.4",
+  "checks": {
+    "tensor_square": {
+      "exact_tensor_examples": 60,
+      "negative_control_without_symmetry": "detected",
+      "scope": "The pointwise square identity only; not the integrated transport estimate."
+    },
+    "gaussian_operator": {
+      "Hermite_degrees": [
+        0,
+        14
+      ],
+      "kernel_degrees": [
+        0,
+        1
+      ],
+      "scope": "Gaussian polynomial model only; no assertion of general range density."
+    },
+    "weighted_projection": {
+      "complete_graph_examples": 30,
+      "max_fixed_point_residual": 9.801534583964155e-14,
+      "max_row_bound_ratio": 0.9353122592926295,
+      "max_iterations": 80,
+      "scope": "Finite numerical examples, not a proof that this iteration always converges."
+    },
+    "support_incidence": {
+      "grid_and_exponent_examples": 25,
+      "p_equals_two_negative_control": "detected",
+      "scope": "Defect and incidence identities; the dimension conclusion uses the written strict-convexity argument."
+    },
+    "covering_constants": {
+      "exact_rational_inequalities": 5,
+      "initial_doubling_bound": 76800,
+      "scope": "Constants in covering estimates, not a sampling of the infinite metric space."
+    },
+    "jacobian_compatibility": {
+      "exact_coefficient_examples": 60,
+      "noncommuting_pairs_detected": 596,
+      "signed_orthogonal_models": 4,
+      "max_sum_of_squares_error": 1.2700391452019221e-15,
+      "scope": "Coefficient identity and normal forms; not the global entropy inequality."
+    },
+    "cone_constants": {
+      "exact_simplex_dimensions": [
+        1,
+        12
+      ],
+      "interval_L_squared": "1/12",
+      "scope": "Cone and simplex constants only; the entropy bound remains a separate input."
+    }
+  },
+  "limitation": "Finite checks and examples do not certify the source theorems or mathematical novelty."
+}
