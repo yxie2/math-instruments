@@ -18,13 +18,13 @@ The aim is to identify new lemmas, constructions, inequalities, objects, structu
 
 | Browse | Contents |
 | --- | --- |
-| [Mathematical instruments](tables/instruments.md) | 124 extracted entries, each with a stable identifier |
-| [Source papers](tables/papers.md) | 85 manuscript records across the selected families |
-| [Problem families](tables/families.md) | 42 family accounts with claims, antecedents and caveats |
+| [Mathematical instruments](tables/instruments.md) | 134 extracted entries, each with a stable identifier |
+| [Source papers](tables/papers.md) | 89 manuscript records across the selected families |
+| [Problem families](tables/families.md) | 46 family accounts with claims, antecedents and caveats |
 | [Recurring patterns](catalog/patterns/README.md) | 11 approaches connecting the source arguments |
 | [Tables and review status](tables/README.md) | Family maps, formalization, dependencies and antecedents |
 | [Extraction batches](batches/README.md) | Extraction rounds and source versions |
-| [Release coverage](tables/coverage.md) | 42 of 372 families catalogued; 330 pending |
+| [Release coverage](tables/coverage.md) | 46 of 372 families catalogued; 326 pending |
 | [Use case studies](case-studies/README.md) | Subsequent investigations using extracted instruments |
 | [Catalogue exports](exports/README.md) | JSON and CSV for search and further analysis |
 
@@ -36,13 +36,13 @@ How can a stationary process move downward on almost every step, and how much de
 
 Read Ying Xie's preprint, [From Extracted Instruments to Mathematical Insight: A Case Study in Stationary Descent](https://zenodo.org/records/23408425), for the exploration, proofs, physical interpretation and comparison with earlier work. It illustrates how researchers can select a mechanism from the catalogue, adapt the question and investigate the resulting mathematics; historical priority of the finite formula remains unresolved.
 
-## First release
+## Extraction releases
 
-The catalogue now continues beyond the direction paper. [B002](batches/B002/README.md) adds nine instruments from four quantum-information families, with exact source locations, targeted antecedent comparisons and reproducible finite checks. The [coverage table](tables/coverage.md) tracks the remaining October-release families.
+The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md). B002 adds nine instruments from four quantum-information families; B003 adds ten from four geometric-inequality and dimension-reduction families. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) tracks the remaining October-release families.
 
 Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
 
-The source is the public [OpenAI mathematics repository](https://github.com/openai/math), pinned to revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` for this batch. Its initial release contained 722 manuscripts; the inspected snapshot contains 719 after three withdrawals. This project is maintained independently by Ying Xie.
+The source is the public [OpenAI mathematics repository](https://github.com/openai/math), pinned to revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` for B001. Its initial release contained 722 manuscripts; the inspected snapshot contains 719 after three withdrawals. This project is maintained independently by Ying Xie.
 
 The descriptions retain the source claims, qualifications and preliminary novelty assessments. Inclusion does not establish novelty or certify a proof. [Assessment and evidence](methodology/assessment.md) explains the separate treatment of mathematical review, formalization and reuse.
 

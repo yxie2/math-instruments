@@ -1,0 +1,370 @@
+{
+  "batch_id": "B003",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T05:23:05.712206+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CompactBanach.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CompactBanach.lean",
+      "sha256": "358a151d7684a0681e83111ebdf2c3a4f5f77eb253509a018422915c1711cb34",
+      "bytes": 1357
+    },
+    {
+      "path": "lean/ComparatorChallenges/DoublingHilbert.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DoublingHilbert.lean",
+      "sha256": "f7f9b905f01b3333bec0f1164075949eba47b536af2b60daa29032a6796b2d8a",
+      "bytes": 1003
+    },
+    {
+      "path": "lean/ComparatorChallenges/LogBrunnMinkowski.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LogBrunnMinkowski.lean",
+      "sha256": "53931ed19a6491a1d07e43dcd7b2bc1930ed5484a0135b44778a886f4212510f",
+      "bytes": 1124
+    },
+    {
+      "path": "lean/ComparatorChallenges/SubpolynomialLp.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SubpolynomialLp.lean",
+      "sha256": "651ac125ea27b18d0e3d23077a6cc3a3824e3ecadecf59fe2e29e20f2280d397",
+      "bytes": 1914
+    },
+    {
+      "path": "lean/docs/091.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/091.md",
+      "sha256": "acbcff0c78fd7c308009732bb529fc5b5c6f48e39aea0fb84d07fc2d84951177",
+      "bytes": 986
+    },
+    {
+      "path": "lean/docs/094.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/094.md",
+      "sha256": "b775e2436e3f78fab16d8dc27e6fd55e537ce140b16e40157f86c746eabd0156",
+      "bytes": 1058
+    },
+    {
+      "path": "lean/docs/098.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/098.md",
+      "sha256": "d0961af63a6a2f393ccf0a2d818879a71613ac2b8998eecb64d306bc4cabb0e8",
+      "bytes": 1147
+    },
+    {
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/README.md",
+      "sha256": "07cffc54205aa1a09b0de9d2ed8fa9c055c8cea7a1c6bf2eb69ec830f32fb9d3",
+      "bytes": 759
+    },
+    {
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7",
+      "bytes": 41962
+    },
+    {
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/README.md",
+      "sha256": "2f7c3a421e560d5d052d15db9836af0be339d4994e4243bfa5fc596081cc13fc",
+      "bytes": 1129
+    },
+    {
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex",
+      "sha256": "f68f46f8c461f671e3f1dfdbc2fe96ee83d5f53393313f25ee6f3edba69f40fe",
+      "bytes": 7039
+    },
+    {
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex",
+      "sha256": "36cfa7f101c91f44670595a71a84f29505a4e650614ecf3ff9a0783e776d04ee",
+      "bytes": 10768
+    },
+    {
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/README.md",
+      "sha256": "5c2966644bc315bcc69b7acbe66aa7b05aec81bfd365b5bd5bcaa8096240cc2a",
+      "bytes": 587
+    },
+    {
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e",
+      "bytes": 55367
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/README.md",
+      "sha256": "e373922741e532e8dd25e1fd62ed50c22d904500826c53dd0b62e39f665107c4",
+      "bytes": 553
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex",
+      "sha256": "507e24c5c22c15d537875ce39e9777b91a3e9c8a51776622521b86c2adeb4e2c",
+      "bytes": 5463
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/identities.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/identities.tex",
+      "sha256": "3726a4ff74c31c15f33f60f53ef2e6cf23ab1a38758e01886e8fb78c520c762c",
+      "bytes": 4503
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/reduction.tex",
+      "sha256": "f2c39bb83b42fd63d4fa1189d9f0d120d4490317d5fe117995f68458f44a5688",
+      "bytes": 4765
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex",
+      "sha256": "a4ff83463ed8aac5409de660da013161c12144cf8b431626c3ed2363112bd798",
+      "bytes": 7565
+    },
+    {
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/variance.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/variance.tex",
+      "sha256": "b3fd5c3b6a11895c2b3ceb26566869fb67b96966b4705700e80326b71a69a2e1",
+      "bytes": 3478
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000125",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex",
+      "label": "lem:tensor",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex#L10",
+      "sha256": "a4ff83463ed8aac5409de660da013161c12144cf8b431626c3ed2363112bd798"
+    },
+    {
+      "instrument_id": "MI-000125",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex",
+      "label": "eq:tensor-squares",
+      "line": 208,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/tensor.tex#L208",
+      "sha256": "a4ff83463ed8aac5409de660da013161c12144cf8b431626c3ed2363112bd798"
+    },
+    {
+      "instrument_id": "MI-000125",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/reduction.tex",
+      "label": "prop:variance",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/reduction.tex#L9",
+      "sha256": "f2c39bb83b42fd63d4fa1189d9f0d120d4490317d5fe117995f68458f44a5688"
+    },
+    {
+      "instrument_id": "MI-000125",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/variance.tex",
+      "label": "eq:dual-bound",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/variance.tex#L74",
+      "sha256": "b3fd5c3b6a11895c2b3ceb26566869fb67b96966b4705700e80326b71a69a2e1"
+    },
+    {
+      "instrument_id": "MI-000126",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex",
+      "label": "lem:density",
+      "line": 7,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex#L7",
+      "sha256": "507e24c5c22c15d537875ce39e9777b91a3e9c8a51776622521b86c2adeb4e2c"
+    },
+    {
+      "instrument_id": "MI-000126",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex",
+      "label": "eq:density-two-estimates",
+      "line": 85,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/density.tex#L85",
+      "sha256": "507e24c5c22c15d537875ce39e9777b91a3e9c8a51776622521b86c2adeb4e2c"
+    },
+    {
+      "instrument_id": "MI-000126",
+      "path": "preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/identities.tex",
+      "label": "eq:hessian",
+      "line": 106,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-logarithmic-Brunn-Minkowski-conjecture-September-23-2026/build/identities.tex#L106",
+      "sha256": "3726a4ff74c31c15f33f60f53ef2e6cf23ab1a38758e01886e8fb78c520c762c"
+    },
+    {
+      "instrument_id": "MI-000127",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "lem:weighted",
+      "line": 295,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L295",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000127",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "eq:sampling-dimension",
+      "line": 309,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L309",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000128",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "lem:localization",
+      "line": 392,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L392",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000128",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "lem:projection",
+      "line": 410,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L410",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000128",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "eq:average-row-sums",
+      "line": 433,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L433",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000129",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "eq:disjointness",
+      "line": 1079,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L1079",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000129",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "eq:antipodes",
+      "line": 1099,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L1099",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000129",
+      "path": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+      "label": "eq:exact-bounds",
+      "line": 92,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex#L92",
+      "sha256": "6f5d1172e36ab41c2700eafc4e7a73f9d7e8b07d8f59c1e600a831bacf54aa2e"
+    },
+    {
+      "instrument_id": "MI-000130",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "eq:set",
+      "line": 106,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L106",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000130",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "prop:doubling",
+      "line": 115,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L115",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000130",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "eq:tail",
+      "line": 124,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L124",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000131",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "lem:compact",
+      "line": 177,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L177",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000131",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "prop:energy",
+      "line": 248,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L248",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000131",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "eq:Hrate",
+      "line": 272,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L272",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000131",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "eq:omega",
+      "line": 341,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L341",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000132",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "cor:banach",
+      "line": 418,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L418",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000132",
+      "path": "preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex",
+      "label": "sec:banach",
+      "line": 415,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-doubling-Hilbert-subset-with-no-finite-dimensional-bi-Lipschitz-embedding-September-25-2026/build/main.tex#L415",
+      "sha256": "3eac74d00462787aec0f48599cdf51d6b14599c53fdbb247f16539d8cfdd06c7"
+    },
+    {
+      "instrument_id": "MI-000133",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex",
+      "label": "lem:linear-jacobian",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex#L13",
+      "sha256": "36cfa7f101c91f44670595a71a84f29505a4e650614ecf3ff9a0783e776d04ee"
+    },
+    {
+      "instrument_id": "MI-000133",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex",
+      "label": "eq:coefficient-symmetry",
+      "line": 52,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex#L52",
+      "sha256": "36cfa7f101c91f44670595a71a84f29505a4e650614ecf3ff9a0783e776d04ee"
+    },
+    {
+      "instrument_id": "MI-000133",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex",
+      "label": "eq:coefficients-commute",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/rigidity.tex#L64",
+      "sha256": "36cfa7f101c91f44670595a71a84f29505a4e650614ecf3ff9a0783e776d04ee"
+    },
+    {
+      "instrument_id": "MI-000134",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex",
+      "label": "eq:body-cone-density",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex#L26",
+      "sha256": "f68f46f8c461f671e3f1dfdbc2fe96ee83d5f53393313f25ee6f3edba69f40fe"
+    },
+    {
+      "instrument_id": "MI-000134",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex",
+      "label": "eq:body-cone-determinant",
+      "line": 54,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex#L54",
+      "sha256": "f68f46f8c461f671e3f1dfdbc2fe96ee83d5f53393313f25ee6f3edba69f40fe"
+    },
+    {
+      "instrument_id": "MI-000134",
+      "path": "preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex",
+      "label": "eq:body-cone-section",
+      "line": 93,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-sharp-entropy-bound-and-the-simplex-inequality-for-isotropic-constants-October-5-2026/build/manuscript/geometry.tex#L93",
+      "sha256": "f68f46f8c461f671e3f1dfdbc2fe96ee83d5f53393313f25ee6f3edba69f40fe"
+    }
+  ]
+}
