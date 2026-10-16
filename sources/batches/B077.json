@@ -1,0 +1,310 @@
+{
+  "batch_id": "B077",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:04:34.203724+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ClassicalON.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ClassicalON.lean",
+      "sha256": "c2f5f88455b811eb6b56c1ae80ff91f4e398e18e7c7fbeee6daca8da4122d696",
+      "bytes": 1961
+    },
+    {
+      "path": "lean/ComparatorChallenges/CriticalPercolation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CriticalPercolation.lean",
+      "sha256": "cff7e946579873434b64ed4679d21ad9f07ac77958af69952d28826136b7e528",
+      "bytes": 2253
+    },
+    {
+      "path": "lean/ComparatorChallenges/CriticalZ3.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CriticalZ3.lean",
+      "sha256": "34ea3ff4648b6ea92c3e7d94bcb7b66047a9d0fbd1f583c461c34636cbb854d8",
+      "bytes": 2184
+    },
+    {
+      "path": "lean/ComparatorChallenges/GammaPassage.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GammaPassage.lean",
+      "sha256": "45d7ca6a74cfb78260fc9f81a1595199550da1f0e28173c59794129f233c859e",
+      "bytes": 3997
+    },
+    {
+      "path": "lean/ComparatorChallenges/PlanarFirstPassage.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PlanarFirstPassage.lean",
+      "sha256": "0fcdfe4b24b1018585edf0cf3fa0ab4f7db78fc774ddd670ae5b6d454ee706de",
+      "bytes": 3880
+    },
+    {
+      "path": "lean/docs/212.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/212.md",
+      "sha256": "e78d41d6618323c4f74ca125a76f67a88bd3683b01e2083e94243c32f9d102d1",
+      "bytes": 1281
+    },
+    {
+      "path": "lean/docs/213.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/213.md",
+      "sha256": "c42f93f6e99657086bb87d66e4b8c84e13f501decad985dde4474b5a0bb3d728",
+      "bytes": 1491
+    },
+    {
+      "path": "lean/docs/215.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/215.md",
+      "sha256": "41ed31b3d5b0f9c0ce5df3604527f17b26eec23b225a7a2184f5a9c2d936ac30",
+      "bytes": 1031
+    },
+    {
+      "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/README.md",
+      "sha256": "f8a9d39b45a6e2cc9404779bb58a2b28fd33cec9a77cb5b21d82d8b22109e00c",
+      "bytes": 689
+    },
+    {
+      "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+      "sha256": "9a6cfd488b717ce61bde4403f61386894eb169775a3e21643a3f84a0be4dd396",
+      "bytes": 8554
+    },
+    {
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/README.md",
+      "sha256": "0d53a0daff41378f25f2502b1689c1a67687ee4a49944753be61f690ba1a7aa5",
+      "bytes": 613
+    },
+    {
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea",
+      "bytes": 14763
+    },
+    {
+      "path": "preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/README.md",
+      "sha256": "c03fb430ca90a6b5370ad51b909e01ad113dbdb30bf91ea393397b27e7d3bdbd",
+      "bytes": 645
+    },
+    {
+      "path": "preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex",
+      "sha256": "ced47d66649d01695e49af86916cc4fc9fcc1ed5cf624e06356d4696d4ea61d1",
+      "bytes": 22703
+    },
+    {
+      "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/README.md",
+      "sha256": "304d9e9ba124a4d1b4f8f46f3230d885ca31bde08a3415f5ff5670c929d914de",
+      "bytes": 608
+    },
+    {
+      "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+      "sha256": "84c4e09c3439e1d4d26b7ba619b78debde8ba61e48a8b32cecc293ba692ea13f",
+      "bytes": 13392
+    },
+    {
+      "path": "preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/README.md",
+      "sha256": "5cb6e3daf99a282b1dd55b17705da1bd076ba1f953c7f442e2e881747a3b9531",
+      "bytes": 808
+    },
+    {
+      "path": "preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex",
+      "sha256": "eaa30d409ebe443a9a25bcdd1aedc2b0560f7805fc51734a66932ee1a9656fae",
+      "bytes": 3423
+    },
+    {
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/README.md",
+      "sha256": "d794d2c0da89052786eea6966e7f6c4fffce06a6f3f1203b982729e6b536ac9e",
+      "bytes": 540
+    },
+    {
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0",
+      "bytes": 14907
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000718",
+      "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+      "label": "lem:busemann-basic",
+      "line": 55,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L55",
+      "sha256": "84c4e09c3439e1d4d26b7ba619b78debde8ba61e48a8b32cecc293ba692ea13f"
+    },
+    {
+      "instrument_id": "MI-000718",
+      "path": "preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex",
+      "label": "eq:calibration-defect",
+      "line": 68,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/No-bigeodesics-in-planar-first-passage-percolation-September-24-2026/build/sections/02-preliminaries.tex#L68",
+      "sha256": "84c4e09c3439e1d4d26b7ba619b78debde8ba61e48a8b32cecc293ba692ea13f"
+    },
+    {
+      "instrument_id": "MI-000719",
+      "path": "preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex",
+      "label": "df:convex-regularity",
+      "line": 9,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026/build/sections/differentiability/conclusion.tex#L9",
+      "sha256": "eaa30d409ebe443a9a25bcdd1aedc2b0560f7805fc51734a66932ee1a9656fae"
+    },
+    {
+      "instrument_id": "MI-000720",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:cone",
+      "line": 46,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L46",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000720",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:column-identity",
+      "line": 157,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L157",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000720",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:residual-sample",
+      "line": 173,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L173",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000721",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:joint",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L15",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000721",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:first-node-mass",
+      "line": 252,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L252",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000721",
+      "path": "preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex",
+      "label": "cmp:failure",
+      "line": 284,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026/build/comparison.tex#L284",
+      "sha256": "fdc1e885a229f50ecb2c1b3234b3464a2989ef94addb460fe2738d8ed48c96ea"
+    },
+    {
+      "instrument_id": "MI-000722",
+      "path": "preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex",
+      "label": "lem:conditioning",
+      "line": 447,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026/build/sections/clusters.tex#L447",
+      "sha256": "ced47d66649d01695e49af86916cc4fc9fcc1ed5cf624e06356d4696d4ea61d1"
+    },
+    {
+      "instrument_id": "MI-000723",
+      "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+      "label": "inp:kernel",
+      "line": 110,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L110",
+      "sha256": "9a6cfd488b717ce61bde4403f61386894eb169775a3e21643a3f84a0be4dd396"
+    },
+    {
+      "instrument_id": "MI-000723",
+      "path": "preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex",
+      "label": "inp:euclidean",
+      "line": 117,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026/build/sections/02-inputs.tex#L117",
+      "sha256": "9a6cfd488b717ce61bde4403f61386894eb169775a3e21643a3f84a0be4dd396"
+    },
+    {
+      "instrument_id": "MI-000724",
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "label": "kernels:multiplication",
+      "line": 108,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L108",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+    },
+    {
+      "instrument_id": "MI-000724",
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "label": "kernels:product",
+      "line": 111,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L111",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+    },
+    {
+      "instrument_id": "MI-000725",
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "label": "kernels:stability",
+      "line": 232,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L232",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+    },
+    {
+      "instrument_id": "MI-000725",
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "label": "kernels:core-mass",
+      "line": 284,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L284",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+    },
+    {
+      "instrument_id": "MI-000725",
+      "path": "preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex",
+      "label": "kernels:contraction",
+      "line": 299,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026/build/sections/05-kernels.tex#L299",
+      "sha256": "fd3502b5881218bd29f36de37aa948817803e33196e627fc526e5d4070003bd0"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-212",
+      "extracted_slugs": [
+        "No-bigeodesics-in-planar-first-passage-percolation-September-24-2026",
+        "Strict-convexity-and-differentiability-of-the-planar-exponential-first-passage-limit-shape-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-213",
+      "extracted_slugs": [
+        "Critical-bond-and-site-percolation-on-the-cubic-lattice-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "No-percolation-at-criticality-on-quasi-transitive-graphs-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-215",
+      "extracted_slugs": [
+        "Exponential-decay-in-two-dimensional-classical-On-models-September-23-2026",
+        "An-Isolated-Particle-Pole-for-the-Two-Dimensional-O3-Spin-Field-October-4-2026"
+      ],
+      "inventory_only_slugs": [
+        "The-canonical-massive-continuum-limit-of-the-two-dimensional-O3-model-October-4-2026",
+        "Exact-mass-asymptotics-for-the-two-dimensional-O4-lattice-model-October-5-2026",
+        "Sharp-mass-bounds-for-the-two-dimensional-O4-model-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-216",
+      "extracted_slugs": [
+        "The-Critical-Spin-Field-of-the-Planar-XY-Model-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "The-critical-logarithmic-correction-for-the-planar-XY-model-October-5-2026",
+        "Critical-Center-Magnetization-in-the-Planar-XY-Model-October-5-2026",
+        "Essential-Singularity-of-the-Correlation-Length-in-the-Planar-XY-Model-October-5-2026",
+        "The-critical-correlation-exponent-of-the-planar-XY-model-September-24-2026",
+        "BKT-universality-for-height-and-planar-spin-fields-September-24-2026"
+      ]
+    }
+  ]
+}
