@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 0.585,
+  "checks": {
+    "isotropic_trees": {
+      "models": 8,
+      "subset_ranks": 1312,
+      "partition_bounds": 240,
+      "max_isotropy_error": 3.0125571007091406e-11
+    },
+    "mst_separation": {
+      "linear_programs": 30,
+      "exact_kruskal_integrals": 120
+    },
+    "compression": {
+      "families": 36,
+      "smoothed_superset_checks": 377
+    },
+    "cutoff": {
+      "feasible_piecewise_linear_instances": 150,
+      "tied_cutoffs": 8,
+      "zero_and_one_endpoints": true
+    },
+    "pair_cover": {
+      "exhaustive_sampling_outcomes": 1025,
+      "constant_regimes": 449,
+      "scope": "Small analogues test the exact mechanism; h>=64 instances are not enumerated."
+    },
+    "read_k": {
+      "models": 30,
+      "one_sided_tail_checks": 900,
+      "incorrect_independence_control": true
+    },
+    "rejection": {
+      "exact_joint_laws": 16,
+      "pairwise_bounds": 48,
+      "simultaneous_optimality_counterexample": true
+    },
+    "capture": {
+      "supports": 40,
+      "enumerated_blocks": 72870,
+      "scope": "Combinatorial capture only; no influence headline or large-m low-degree bound tested."
+    },
+    "fourier_restriction": {
+      "restrictions": 54,
+      "max_mass_error": 3.3306690738754696e-16,
+      "nonmonotone_and_nonsymmetric_controls": true
+    }
+  },
+  "scope": "Selected finite mechanisms; no thin-tree, expectation-threshold, coloring or sharp-threshold headline theorem is certified."
+}
