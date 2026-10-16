@@ -26635,6 +26635,322 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000621.md",
       "body": "# Preserve a polynomial envelope exponent through anisotropic sampling\n\n[Family 080](../families/openai-math-080.md) · [Source manuscript](../papers/P-000390.md) · [Batch B064](../../batches/B064/README.md)\n\n## Mathematical content\n\nFor nested caps with scales K' >= K >=1, use native packet coordinates X_(K,v)(x,t)=((x-2vt)/K,t/K²), unit cells T, centers z_T and w_T(z)=(1+dist(X_(K,v)(z),T))^(-P). For a fixed child T' and its parent grid, the source proves, for sufficiently large P>k+2,\n\nsum_T w_T(z)w_T'(z_T)<=C_P w_T'(z),\n\nwith the same exponent P on both sides and a constant independent of K'/K. Put r=K/K' and a=1+d_T'(z). The parent-to-child coordinate map has spatial coefficients O(r), time coefficient r², determinant r^(k+2) and bounded normalized shear. Parent centers at child distance at least a/2 contribute O(a^(-P)) times a bounded parent lattice sum. For the remaining centers, if a is large, parent distance is at least ca/r; their contribution is at most C(a/r)^(-P) times a child-scale lattice sum O(r^(-(k+2))). This is O(a^(-P)r^(P-k-2)). Bounded a is handled by the first lattice bound.\n\nRestricting to d_T(z)>L gives the bound C_P[L^(-(P-k-1))+r^(P-k-2)]w_T'(z). When child distance is bounded, the second term is unnecessary. The exponent loss is avoided because P exceeds the anisotropic volume exponent k+2, not just the spatial dimension k.\n\n## Role in the source argument\n\nKeeps one envelope power available through a hierarchy of packet resamplings.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [p:convolution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/build/sections/packets.tex#L785)\n\n## Antecedents and comparison\n\nThis is a classical near/far lattice-convolution split with anisotropic volume bookkeeping. The source provides the same-exponent and tail formulation. No packet, restriction or endpoint theorem follows from this local estimate alone.\n\n## Checks and limitations\n\nFinite parent lattice windows in one spatial dimension test the scale map, shear determinant, near/far split and normalized envelope sums at several scale ratios. Window truncation is reported explicitly.\n\nPositive finite sums are partial sums, not certificates of a universal infinite-lattice upper bound. The general bound rests on the inspected lattice-tail proof.\n\n## Possible applications\n\nPreventing repeated multiscale convolution from exhausting the polynomial decay of packet weights.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000622",
+      "record_type": "instrument",
+      "title": "Transfer an integer density to squarefree squareclasses",
+      "forms": [
+        "squareclass-density-transfer",
+        "mobius-squarefree-density"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-006"
+      ],
+      "source_paper_ids": [
+        "P-000391"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/build/sections/11-conclusions.tex",
+          "label": "lem:squarefree-density",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/build/sections/11-conclusions.tex#L28",
+          "sha256": "0ba4282a656a44697fc8b123e8520956831f6ba8ccb93e584d5af2cd48918540"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000622.md",
+      "body": "# Transfer an integer density to squarefree squareclasses\n\n[Family 006](../families/openai-math-006.md) · [Source manuscript](../papers/P-000391.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nLet a property of nonzero signed integers be invariant under multiplication by positive integer squares. Write A(X) for its count among 0<|n|<=X and S(X) for its count among squarefree such n. If A(X)=2 delta X+o(X), then S(X)=2 delta X/zeta(2)+o(X), giving relative density delta among signed squarefree integers.\n\nThe unique decomposition n=d m² gives A(X)=sum_(m<=sqrt X) S(X/m²). Mobius inversion gives S(X)=sum_m mu(m) A(X/m²). For fixed M, the first M terms have the claimed asymptotic. The remaining terms have absolute value at most 2X sum_(m>M) m^(-2), uniformly in X, since A(Y)<=2Y. First send X to infinity and then M to infinity. This avoids an unjustified exchange of a growing summation range with a nonuniform little-o term.\n\n## Role in the source argument\n\nMoves density conclusions from all twists to their squarefree representatives.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:squarefree-density](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/build/sections/11-conclusions.tex#L28)\n\n## Antecedents and comparison\n\nThis is elementary Mobius inversion with a summable majorant. The source applies it to analytic ranks, but the extracted lemma does not establish the input rank densities.\n\n## Checks and limitations\n\nExact signed counts for several squareclass-invariant properties check both convolution identities. A noninvariant property supplies a negative control.\n\nFinite counts check the identities, not the existence of an asymptotic density for analytic ranks.\n\n## Possible applications\n\nTransferring arithmetic statistics between all integer parameters and squarefree representatives.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000623",
+      "record_type": "instrument",
+      "title": "Upgrade truncated rank tails to uniform integrability",
+      "forms": [
+        "truncated-tail-uniform-integrability",
+        "rank-density-to-mean-reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-006"
+      ],
+      "source_paper_ids": [
+        "P-000392"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex",
+          "label": "tail:count",
+          "line": 16,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex#L16",
+          "sha256": "404e13d0c21e534471398330459add0ce4e65dc18482c9c4140e5e934d4fc635"
+        },
+        {
+          "path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex",
+          "label": "eq:tail-dyadic-mass",
+          "line": 183,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex#L183",
+          "sha256": "404e13d0c21e534471398330459add0ce4e65dc18482c9c4140e5e934d4fc635"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000623.md",
+      "body": "# Upgrade truncated rank tails to uniform integrability\n\n[Family 006](../families/openai-math-006.md) · [Source manuscript](../papers/P-000392.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nOn a dyadic parameter block of size O(X), let the nonnegative integer statistic a satisfy a<=B_X=O(log X). Assume T_X(k)=#{a>k}<=C X/k² for a fixed lower threshold <=k<=K=floor((log X)^(3/5)). For a fixed sufficiently large integer R<=K, layer-cake summation gives\n\nsum_(a>R) a <= R T_X(R)+sum_(k=R)^(K-1) T_X(k)+B_X T_X(K)\n <= C' X/R+O(X (log X)^(-1/5)).\n\nThe final term handles values beyond the proved tail range; simply summing the tail estimate to infinity would be invalid. Summing over dyadic blocks, separating the finitely many small blocks and then taking a limsup, gives normalized tail mass O(1/R). Thus the statistics are uniformly integrable. Together with limiting mass one-half at each of 0 and 1, this implies limiting mean one-half. Density information alone does not control rare ranks whose size diverges. The source obtains the individual logarithmic bound through Jensen's formula and its tail count from separate analytic arguments; both are assumptions in this extracted transfer.\n\n## Role in the source argument\n\nIsolates the additional analytic estimate needed to pass from a density theorem to a mean theorem.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [tail:count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex#L16)\n- [eq:tail-dyadic-mass](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/build/sections/tail.tex#L183)\n\n## Antecedents and comparison\n\nThis is the standard uniform-integrability mechanism, with the source-specific cutoff K=(log X)^(3/5) producing the error exponent -1/5. No Goldfeld or mean-rank theorem is independently certified.\n\n## Checks and limitations\n\nExact layer-cake checks on finite heavy-tail arrays test truncation bookkeeping; a vanishing-frequency large outlier demonstrates that limiting rank frequencies need not determine a mean.\n\nThe arrays do not verify the analytic tail estimate for elliptic-curve twists.\n\n## Possible applications\n\nUpgrading distributional arithmetic information to moment information when estimates stop at a finite threshold.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000624",
+      "record_type": "instrument",
+      "title": "Detect splitting of a sign-action lattice extension modulo two",
+      "forms": [
+        "central-sign-extension-obstruction",
+        "mod-two-splitting-cocycle"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-018"
+      ],
+      "source_paper_ids": [
+        "P-000393"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex",
+          "label": "tor:sign-element",
+          "line": 147,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex#L147",
+          "sha256": "c20f68ca574e1839652e4142f6589eda1ddb068d63c9c2c79a209216672088ed"
+        },
+        {
+          "path": "preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex",
+          "label": "tor:sign-cocycle",
+          "line": 175,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex#L175",
+          "sha256": "c20f68ca574e1839652e4142f6589eda1ddb068d63c9c2c79a209216672088ed"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000624.md",
+      "body": "# Detect splitting of a sign-action lattice extension modulo two\n\n[Family 018](../families/openai-math-018.md) · [Source manuscript](../papers/P-000393.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nLet Gamma be finite, M a torsion-free lattice with Gamma action, and c a central involution acting as -1. An extension 1->M->E->Gamma->1 determines a class beta in H¹(Gamma/<c>, M/2M), and the extension splits if and only if beta=0.\n\nA lift z of c satisfies z² in M and z² fixed by c, hence z²=1. Choose lifts s_g with s_1=1 and s_c=z. Write s_g s_h=f(g,h)s_(gh) and z s_g z^(-1)=d_g s_g in additive lattice notation. Comparing products gives d_(gh)=d_g+g d_h+2 f(g,h). Modulo two this is a cocycle, with d_c=0, descending to the quotient. Changing s_g by a_g changes d_g by -2a_g; changing z by a changes d_g by (1-g)a. Thus the cohomology class is well defined.\n\nIf beta=0, change z to make every d_g even and then change s_g by d_g/2. All lifts commute with z. The centralizer of z maps onto Gamma and has kernel M^c=0, hence gives a complement. Conversely a complement supplies compatible lifts with zero class. If an involution r has an involutory lift, its d_r also obeys (1+r)d_r=0. This is a criterion for an existing extension, not a statement that every cohomology class is realizable.\n\n## Role in the source argument\n\nReplaces a lattice-extension splitting problem by a finite-coefficient obstruction.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [tor:sign-element](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex#L147)\n- [tor:sign-cocycle](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/build/paper/04-norm-tori.tex#L175)\n\n## Antecedents and comparison\n\nThe argument is elementary extension and cocycle algebra. The source identifies a corresponding sign computation in its number-field companion. No new classification of global normal subgroups is inferred.\n\n## Checks and limitations\n\nExplicit extensions of C2 times C2 by Z, with presentation t²=u^a and ztz^(-1)=t^(-1), test the cocycle, lift changes and parity obstruction for several integers a.\n\nFinite parameter tests illustrate the algebra; they do not establish the source global cohomological inputs.\n\n## Possible applications\n\nTesting when a finite quotient admits a compatible complement in a lattice extension.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000625",
+      "record_type": "instrument",
+      "title": "Clear rational denominators using local density and a full lattice",
+      "forms": [
+        "local-density-rational-span",
+        "primewise-denominator-clearing"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-018"
+      ],
+      "source_paper_ids": [
+        "P-000394"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/build/sections/characters.tex",
+          "label": "lem:chars-additive-span",
+          "line": 282,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/build/sections/characters.tex#L282",
+          "sha256": "334fbbe7fc2489262a7165941d57642300bf88e3527f2bf8d6f191dfecc70b43"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000625.md",
+      "body": "# Clear rational denominators using local density and a full lattice\n\n[Family 018](../families/openai-math-018.md) · [Source manuscript](../papers/P-000394.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nLet V be a finite-dimensional rational vector space and M an additive subgroup containing a full lattice Lambda. Suppose M is dense in V tensor Q_p for every prime p. Then M=V.\n\nFor x=p^(-j) lambda, choose a in M with a-x in Lambda tensor Z_p. Choose an integer m coprime to p, congruent to 1 modulo p^j, and divisible by all away-from-p denominators of a in a lattice basis. The Chinese remainder theorem allows this choice. Then ma-mx is integral at p by approximation and at every other prime by denominator clearing, so b=ma-mx belongs to Lambda. Also c=(m-1)x belongs to Lambda. Therefore x=ma-b-c is in M. Inverting each prime and using Bezout gives every rational lattice vector.\n\nThis extracts the final denominator-clearing step of the source additive-span proof. Its earlier assertion that the relevant group-generated additive subgroup contains a full lattice and is dense at each p is a separate input, not established here.\n\n## Role in the source argument\n\nTurns local spanning information into exact rational additive generation.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:chars-additive-span](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/build/sections/characters.tex#L282)\n\n## Antecedents and comparison\n\nThis is classical local-to-global arithmetic for lattices, proved by a concrete CRT certificate. No novelty is claimed for the abstract criterion.\n\n## Checks and limitations\n\nExact rational-vector examples construct m, b and c and verify x=ma-b-c with b,c integral for several primes and denominator powers.\n\nThe examples assume the required local approximation; they do not verify it for the source algebraic groups.\n\n## Possible applications\n\nConverting p-adic approximation at all primes into an exact additive generation statement.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000626",
+      "record_type": "instrument",
+      "title": "Place cyclic monodromy on a single cut of a skeleton cycle",
+      "forms": [
+        "cycle-cut-prescribed-sheet",
+        "cyclic-graph-voltage-cover"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-019"
+      ],
+      "source_paper_ids": [
+        "P-000395"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/build/sections/03-characters.tex",
+          "label": "lem:graph-character",
+          "line": 7,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/build/sections/03-characters.tex#L7",
+          "sha256": "b80bd44b81e5fc07556e15d4e82b7470919a67e133555ecd2405a49bf816d8ea"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000626.md",
+      "body": "# Place cyclic monodromy on a single cut of a skeleton cycle\n\n[Family 019](../families/openai-math-019.md) · [Source manuscript](../papers/P-000395.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nLet a connected graph contain an embedded circle and choose a point eta in the interior of one edge on that circle. Cut there, take p labeled copies, and glue the negative side in copy a to the positive side in copy a+1 modulo p. The resulting degree-p graph covering has monodromy +1 around the chosen circle, hence is connected. Away from eta it is the disjoint union of p copies of the cut graph.\n\nIf an analytic curve retracts onto the graph by tau, the same construction pulled back along tau is trivial over any U whose image avoids eta. In the source, eta is chosen at an irrational valuation on an annular skeleton while the ground value group is Q. Its retraction fiber is the singleton eta; placing eta in the prescribed interior region therefore keeps tau(U) away from the cut. The extracted instrument is this topological construction conditional on the skeleton and avoidance inputs. The source subsequently invokes analytic etale-cover constructions, proper GAGA and descent; those steps are not certified here.\n\n## Role in the source argument\n\nLocalizes nontrivial monodromy while retaining a chosen exterior sheet.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:graph-character](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/build/sections/03-characters.tex#L7)\n\n## Antecedents and comparison\n\n[Baker, Payne and Rabinoff, On the structure of non-Archimedean analytic curves](https://arxiv.org/abs/1404.0279), section 2.3, states the singleton-fiber property at a radius outside the value group. The cyclic graph cover itself is classical. The primary passage was read; no claim about the later algebraization is made.\n\n## Checks and limitations\n\nFinite graph voltage covers check local degree, connectedness, cycle monodromy and splitting after removal of the cut edge. Cutting a bridge gives a disconnected negative control.\n\nCombinatorial edge removal models avoidance of the cut interior. It does not prove existence of the source skeleton, analytic cover or descent.\n\n## Possible applications\n\nConstructing a cover with concentrated monodromy and a trivialization over an exterior region.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000627",
+      "record_type": "instrument",
+      "title": "Reduce tame roots of annular units to a coordinate root",
+      "forms": [
+        "annular-unit-tame-root",
+        "dominant-laurent-monomial-factorization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-019"
+      ],
+      "source_paper_ids": [
+        "P-000396"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-p-adic-section-conjecture-October-6-2026/build/sections/04-tame-roots.tex",
+          "label": "lem:annular-unit",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026/build/sections/04-tame-roots.tex#L20",
+          "sha256": "c086fb9715450d922c9958a35f94419c99987cf2e558587f8d30a8338384f170"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000627.md",
+      "body": "# Reduce tame roots of annular units to a coordinate root\n\n[Family 019](../families/openai-math-019.md) · [Source manuscript](../papers/P-000396.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nOver a complete algebraically closed p-adic field with value group Q, an analytic unit on an open annulus has the form u=c S^d(1+h), with integer d and |h|<1 pointwise. At a value-group radius, the reduction of the normalized unit and its inverse in the Laurent polynomial ring forces a unique dominant monomial. A change of dominant exponent would create a tie at a value-group radius, so one term dominates throughout. On every compact subannulus the remaining ratio has norm strictly below one.\n\nFor a prime ell different from p, the binomial series (1+h)^(1/ell) converges uniformly on compact subannuli and these local series agree. Since c has a root in the ground field, adjoining an ell-th root of S then supplies an ell-th root of u, also for negative d. On a disk a unit has constant absolute value. The tame assumption is essential to this series argument: for ell=p and h=p, the n-th binomial term has p-adic valuation -v_p(n!), so it does not tend to zero.\n\n## Role in the source argument\n\nSeparates tame Kummer behavior into a winding exponent and a small analytic unit.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:annular-unit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026/build/sections/04-tame-roots.tex#L20)\n\n## Antecedents and comparison\n\n[Baker, Payne and Rabinoff](https://arxiv.org/abs/1404.0279), Proposition 2.2(1), records the closed-annulus factorization and its Newton-polygon antecedent. Pages 4-5 were read. The open-annulus argument uses compact subannuli and compatible series. This is established background, not a new root-extraction theorem.\n\n## Checks and limitations\n\nExact binomial coefficients check p-adic integrality and convergence valuation bounds for tame degrees; the wild degree supplies a divergent-series control. Laurent valuation models check one dominant term across compact subannuli.\n\nFinite coefficients and valuation models do not verify the global section-conjecture proof. Divergence of this series does not assert nonexistence of roots in the algebraic closure.\n\n## Possible applications\n\nUnderstanding tame covers locally on annuli and separating coordinate monodromy from small-unit factors.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000628",
+      "record_type": "instrument",
+      "title": "Test Kummer splitting by two finite congruences",
+      "forms": [
+        "kummer-frobenius-congruence",
+        "primitive-root-index-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-029"
+      ],
+      "source_paper_ids": [
+        "P-000397"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01a-reduction.tex",
+          "label": "alg:splitting-test",
+          "line": 69,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01a-reduction.tex#L69",
+          "sha256": "1d8ea455588d7c1ab9fd9f9d17bb2003bb63ee65fa6bc6f54d6490e87b6904bf"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000628.md",
+      "body": "# Test Kummer splitting by two finite congruences\n\n[Family 029](../families/openai-math-029.md) · [Source manuscript](../papers/P-000397.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nLet a be a nonzero integer, q a prime, and p a prime not dividing aq. In the splitting field K_q=Q(zeta_q,a^(1/q)), p splits completely if and only if p=1 modulo q and a^((p-1)/q)=1 modulo p.\n\nThe excluded primes contain the discriminant primes of T^q-a, so reduction is separable and Frobenius is defined. Frobenius fixes zeta_q exactly when p=1 modulo q. Under that condition its ratio on a chosen root reduces to a^((p-1)/q), and reduction is injective on the q-th roots of unity. Thus both congruences are equivalent to trivial Frobenius on all generators. Equivalently, the cyclic group F_p^* shows that q divides the index (p-1)/ord_p(a) precisely under these conditions.\n\n## Role in the source argument\n\nTranslates a prime divisor of a multiplicative-order index into a splitting event suitable for prime counting.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [alg:splitting-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/build/sections/01a-reduction.tex#L69)\n\n## Antecedents and comparison\n\n[Pieter Moree, Artin's primitive root conjecture: a survey](https://arxiv.org/abs/math/0412262), section 4, page 8 of the retrieved PDF, gives this same criterion and reduction. The selected source argument is a reuse of classical background, not a new criterion.\n\n## Checks and limitations\n\nExhaustive small-prime tests compare the congruences, the number of distinct roots of T^q-a modulo p and divisibility of the multiplicative-order index.\n\nFinite-field tests do not prove the analytic splitting-prime estimates used elsewhere in the source.\n\n## Possible applications\n\nTurning failure of primitive-root generation into algebraic splitting conditions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000629",
+      "record_type": "instrument",
+      "title": "Delete order-index obstructions from a structured prime reservoir",
+      "forms": [
+        "conditional-primitive-root-reservoir",
+        "large-factor-product-exception-bound"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-029"
+      ],
+      "source_paper_ids": [
+        "P-000398"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex",
+          "label": "prop:reservoir",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L12",
+          "sha256": "cabd2f389ecd9e0c22c9291df52f4f346de402d64e0f04388a2c344ce891d02a"
+        },
+        {
+          "path": "preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex",
+          "label": "eq:large-factor-exceptions",
+          "line": 88,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L88",
+          "sha256": "cabd2f389ecd9e0c22c9291df52f4f346de402d64e0f04388a2c344ce891d02a"
+        },
+        {
+          "path": "preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex",
+          "label": "eq:controlled-factor-exceptions",
+          "line": 102,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L102",
+          "sha256": "cabd2f389ecd9e0c22c9291df52f4f346de402d64e0f04388a2c344ce891d02a"
+        }
+      ],
+      "batch_id": "B065",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000629.md",
+      "body": "# Delete order-index obstructions from a structured prime reservoir\n\n[Family 029](../families/openai-math-029.md) · [Source manuscript](../papers/P-000398.md) · [Batch B065](../../batches/B065/README.md)\n\n## Mathematical content\n\nFix finitely many positive prime bases. Assume a reservoir of at least c x/(log x)² primes x<p<2x with p=4rQ+1, Q>x^0.9 prime, and every prime factor ell of r between exp((log x)^0.1) and exp((log x)^0.3). Choose the prescribed progression by CRT so each odd base is a quadratic nonresidue; p=5 modulo 8 handles base 2. Quadratic reciprocity then makes every order index odd. A nontrivial index has a prime factor Q or one of the controlled ell.\n\nFor the Q obstruction and a fixed base q, put j=(p-1)/Q<2x^0.1. Such p divides the product of q^j-1 over this range. Comparing logarithms bounds their number by O_q(x^0.2/log x).\n\nFor each controlled ell, assume the uniform exceptional bound C_q x/[ell(ell-1)log x]+x^(1-eta), for a fixed eta>0. Summing gives O_q[x exp(-(log x)^0.1)/log x+exp((log x)^0.3)x^(1-eta)], which is o(x/(log x)²). The first term uses the telescoping majorant sum_(n>=L)1/[n(n-1)]; the second counts at most the upper endpoint many primes. A finite union over bases removes only o of the reservoir, leaving a positive lower bound of the same order. These are asymptotic comparisons; the very small source eta does not imply a practical numerical threshold. The reservoir and exceptional bounds remain assumptions.\n\n## Role in the source argument\n\nSeparates a simultaneous primitive-root conclusion into explicit analytic inputs and an elementary deletion argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [prop:reservoir](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L12)\n- [eq:large-factor-exceptions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L88)\n- [eq:controlled-factor-exceptions](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/build/sections/02-reduction.tex#L102)\n\n## Antecedents and comparison\n\nThe Kummer/index reduction is classical, as reviewed in [Moree, section 4](https://arxiv.org/abs/math/0412262). The structured reservoir is a source-specific conditional input. This card does not claim the unconditional resolution of Artin's conjecture.\n\n## Checks and limitations\n\nFinite CRT and quadratic-character checks verify the progression mechanism. Exact products test the large-factor divisibility count; logarithmic ratios check the direction of the asymptotic estimates without underflow.\n\nNo numerical test establishes either assumed analytic counting estimate or a usable threshold for the asymptotic lower bound.\n\n## Possible applications\n\nIdentifying precisely which prime-counting estimates would suffice for simultaneous generation by finitely many bases.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -34047,6 +34363,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000390.md",
       "body": "# Endpoint pointwise convergence for the Schrodinger equation in higher dimensions\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000621: Preserve a polynomial envelope exponent through anisotropic sampling](../instruments/MI-000621.md)\n\n[Family review and dependencies](../families/openai-math-080.md) · [Batch B064](../../batches/B064/README.md)"
+    },
+    {
+      "id": "P-000391",
+      "record_type": "paper",
+      "title": "Goldfeld's analytic density conjecture and the 2-converse for elliptic curves",
+      "source_collection": "openai/math",
+      "upstream_slug": "Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026",
+      "source_date": "October 7, 2026",
+      "family_ids": [
+        "openai-math-006"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "98fa24be409bb2117ffa48ab2aa0e0f39822a3651d716e4c50e755cb0154150c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000391.md",
+      "body": "# Goldfeld's analytic density conjecture and the 2-converse for elliptic curves\n\n## Source\n\n- Author: OpenAI\n- Source date: October 7, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000622: Transfer an integer density to squarefree squareclasses](../instruments/MI-000622.md)\n\n[Family review and dependencies](../families/openai-math-006.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000392",
+      "record_type": "paper",
+      "title": "The mean analytic rank of quadratic twists of elliptic curves",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026",
+      "source_date": "October 6, 2026",
+      "family_ids": [
+        "openai-math-006"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "3371966cbf268b5b510a93fcdd90b3806f3f68ecb8dd2cc1f69a4cb029ee1c92",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000392.md",
+      "body": "# The mean analytic rank of quadratic twists of elliptic curves\n\n## Source\n\n- Author: OpenAI\n- Source date: October 6, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000623: Upgrade truncated rank tails to uniform integrability](../instruments/MI-000623.md)\n\n[Family review and dependencies](../families/openai-math-006.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000393",
+      "record_type": "paper",
+      "title": "The Margulis–Platonov conjecture over global function fields",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-018"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e0b1e6315a05dd5b8942212d247015af0445ed37d8215a695bd4c86229e81166",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000393.md",
+      "body": "# The Margulis–Platonov conjecture over global function fields\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/margulis-platonov-global-function-fields.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000624: Detect splitting of a sign-action lattice extension modulo two](../instruments/MI-000624.md)\n\n[Family review and dependencies](../families/openai-math-018.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000394",
+      "record_type": "paper",
+      "title": "The Margulis–Platonov conjecture over number fields",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-018"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c23957715b3e84b8664345a453e91811a8966e2797bc5e5c9e004c96d34c4945",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000394.md",
+      "body": "# The Margulis–Platonov conjecture over number fields\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000625: Clear rational denominators using local density and a full lattice](../instruments/MI-000625.md)\n\n[Family review and dependencies](../families/openai-math-018.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000395",
+      "record_type": "paper",
+      "title": "Étale covers with a prescribed exterior sheet",
+      "source_collection": "openai/math",
+      "upstream_slug": "Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-019"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4413ac82c788ffbd13871e6a63bb719ffa07d7494ab4f2a69fcf4d1a67213852",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000395.md",
+      "body": "# Étale covers with a prescribed exterior sheet\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000626: Place cyclic monodromy on a single cut of a skeleton cycle](../instruments/MI-000626.md)\n\n[Family review and dependencies](../families/openai-math-019.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000396",
+      "record_type": "paper",
+      "title": "The p-adic section conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-p-adic-section-conjecture-October-6-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026",
+      "source_date": "October 6, 2026",
+      "family_ids": [
+        "openai-math-019"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f2d065bc9dbc40c450f4059e634785f6e2e16238368dfd307090cb572b18e360",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000396.md",
+      "body": "# The p-adic section conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: October 6, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000627: Reduce tame roots of annular units to a coordinate root](../instruments/MI-000627.md)\n\n[Family review and dependencies](../families/openai-math-019.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000397",
+      "record_type": "paper",
+      "title": "Primitive roots for every admissible integer base",
+      "source_collection": "openai/math",
+      "upstream_slug": "Primitive-roots-for-every-admissible-integer-base-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-029"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "020f0a3a37ffb00137c31fb151117eff68dddb447a108674c24587212e3b4079",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000397.md",
+      "body": "# Primitive roots for every admissible integer base\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/primitive-roots-all-integer-bases.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000628: Test Kummer splitting by two finite congruences](../instruments/MI-000628.md)\n\n[Family review and dependencies](../families/openai-math-029.md) · [Batch B065](../../batches/B065/README.md)"
+    },
+    {
+      "id": "P-000398",
+      "record_type": "paper",
+      "title": "Simultaneous primitive roots: a conditional lower bound for prime bases",
+      "source_collection": "openai/math",
+      "upstream_slug": "Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026",
+      "source_date": "October 4, 2026",
+      "family_ids": [
+        "openai-math-029"
+      ],
+      "batch_id": "B065",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b99359b0e9ff28ae15f8e4b838e585f75685000edcc2bcb198e3a614004273c3",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000398.md",
+      "body": "# Simultaneous primitive roots: a conditional lower bound for prime bases\n\n## Source\n\n- Author: OpenAI\n- Source date: October 4, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/simultaneous-primitive-roots-conditional-lower-bound-prime-bases.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000629: Delete order-index obstructions from a structured prime reservoir](../instruments/MI-000629.md)\n\n[Family review and dependencies](../families/openai-math-029.md) · [Batch B065](../../batches/B065/README.md)"
     }
   ],
   "families": [
@@ -34201,6 +34669,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-005.md",
       "body": "# Matched endpoint damping and moment-square upper certificates\n\n## Source manuscript and claim\n\n[Catalan's constant is irrational](../papers/P-000240.md), by OpenAI, September 24, 2026.\n\nThe source claims irrationality of Catalan s constant.\n\n## Extracted instruments\n\n- [MI-000442: Match logarithmic-kernel damping to the singular endpoint scales](../instruments/MI-000442.md)\n- [MI-000443: Turn negative moment squares into one-variable upper certificates](../instruments/MI-000443.md)\n\n## Dependencies and antecedents\n\nChebyshev expansions, endpoint-scaled damping, negative quadratic completion, geometric trial coefficients and uniform coercivity.\n\nHaagerup logarithmic-kernel identity in Garoufalidis-Popescu Lemma 3.1; classical quadratic duality. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete energy-reduction proof. The majorant construction, nonvanishing, finite-place estimates and final rational certificate were not audited.\n\nRead Catalan.lean in full. Its catalan_irrational target contains sorry. No Lean build or numerical irrationality-certificate audit.\n\nRegularization must match the same moments in pure and cross terms. Endpoint diagonal corrections are retained before taking suprema; n tends to infinity before damping tends to zero.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/005.md) · [Batch record](../../batches/B042/README.md)"
+    },
+    {
+      "id": "openai-math-006",
+      "record_type": "family",
+      "title": "Squareclass density transfer and rank-tail uniform integrability",
+      "source_family": "006",
+      "source_collection": "openai/math",
+      "batch_id": "B065",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000391",
+        "P-000392"
+      ],
+      "instrument_ids": [
+        "MI-000622",
+        "MI-000623"
+      ],
+      "headline": "The sources claim Goldfeld density and mean analytic rank for quadratic twists.",
+      "central_instrument": "Mobius inversion transfers squareclass-invariant density to squarefree representatives. A truncated tail estimate plus an individual logarithmic bound gives uniform integrability.",
+      "novelty_assessment": "The extracted arguments use classical ingredients. The particular source interfaces are recorded without certifying a new headline theorem or earliest priority.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "Density transfer assumes invariance under multiplication by positive integer squares. Mean-rank transfer assumes both the counting estimate and the individual rank bound; density alone is insufficient.",
+      "dependencies": "Mobius inversion, summable square tails, layer-cake sums and dyadic decomposition.",
+      "antecedents": "Classical Dirichlet convolution and the uniform-integrability criterion for convergence of means.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-006.md",
+      "body": "# Squareclass density transfer and rank-tail uniform integrability\n\n## Source manuscripts and claim\n\n- [Goldfeld's analytic density conjecture and the 2-converse for elliptic curves](../papers/P-000391.md): selected passages extracted.\n- [The mean analytic rank of quadratic twists of elliptic curves](../papers/P-000392.md): selected passages extracted.\n\nThe sources claim Goldfeld density and mean analytic rank for quadratic twists.\n\n## Extracted instruments\n\n- [MI-000622: Transfer an integer density to squarefree squareclasses](../instruments/MI-000622.md)\n- [MI-000623: Upgrade truncated rank tails to uniform integrability](../instruments/MI-000623.md)\n\n## Dependencies and antecedents\n\nMobius inversion, summable square tails, layer-cake sums and dyadic decomposition.\n\nClassical Dirichlet convolution and the uniform-integrability criterion for convergence of means.\n\n## Review and formalization scope\n\nRead the complete squarefree-density lemma, the stated tail-count input, the complete Jensen bound, the rank-weighted tail proof and the final mean reduction. The source analytic counting and Goldfeld arguments remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nDensity transfer assumes invariance under multiplication by positive integer squares. Mean-rank transfer assumes both the counting estimate and the individual rank bound; density alone is insufficient.\n\n[Batch record](../../batches/B065/README.md)"
     },
     {
       "id": "openai-math-007",
@@ -34377,6 +34873,62 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-017.md",
       "body": "# Irrationality exponent of π is 2\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000067](../papers/P-000067.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 867 files, not in catalogue combination bordering new logarithm extension requires a separate argument\n\nFor every $`\\nu>2`$ and all large q, $`|\\pi-p/q|\\ge q^{-\\nu}`$; hence the Flint–Hills series converges. The previous bound cited by the initial extraction is 7.103 (Zeilberger–Zudilin 2020). The threshold is ineffective.\n\n## Extracted instruments.\n\n- [MI-000007: Separated-weight interpolation](../instruments/MI-000007.md)\n\n- [MI-000008: Weighted transverse multiplicity](../instruments/MI-000008.md)\n\n- [MI-000009: Two ways to make the determinant small](../instruments/MI-000009.md)\n\n## Reused.\n\nLaurent’s interpolation determinants; Roth’s separated denominators; Philippon zero estimates; Demailly’s jets; Mondal’s weighted Bézout; Stacks Project.\n\n## Caveats.\n\nAn analogue with centers $`(r^j,jp_i/q_i)`$ for $`r\\in\\mathbb Q_{>0}\\setminus\\{1\\}`$ is a proposed extension. The claim $`\\mu(\\log r)=2`$ needs a separate proof, including the interpolation hypotheses, rational-height costs and determinant estimates. It is not established by the source comparison in this survey. The initial extraction also flags the interpolation argument’s nearest prior art as requiring closer comparison.\n\n## Recorded assessment\n\n- Novelty: combination bordering new\n- Formalization: files, not in catalogue\n- Statement coverage: yes (eventual bound and sSup form)\n- Dependencies: no\n- Antecedents: Masser 1981; Fischler–Nakamaye 2014"
+    },
+    {
+      "id": "openai-math-018",
+      "record_type": "family",
+      "title": "Sign-action extension obstructions and local denominator clearing",
+      "source_family": "018",
+      "source_collection": "openai/math",
+      "batch_id": "B065",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000393",
+        "P-000394"
+      ],
+      "instrument_ids": [
+        "MI-000624",
+        "MI-000625"
+      ],
+      "headline": "The sources claim the Margulis-Platonov conjecture over global function fields and number fields.",
+      "central_instrument": "A central involution acting by minus one reduces splitting of a lattice extension to a mod-two cocycle. Local density plus a full lattice yields a rational additive spanning criterion.",
+      "novelty_assessment": "The extracted arguments use classical ingredients. The particular source interfaces are recorded without certifying a new headline theorem or earliest priority.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The cohomological class is attached to an existing extension; no surjectivity onto all cohomology classes is claimed. The spanning criterion assumes local density and a full lattice and does not prove the source group-theoretic inputs.",
+      "dependencies": "Group extensions, cocycles, torsion-free lattices, rational denominators and the Chinese remainder theorem.",
+      "antecedents": "Classical extension cocycles and local-to-global lattice arithmetic; the function-field source explicitly relates its sign argument to its number-field companion.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-018.md",
+      "body": "# Sign-action extension obstructions and local denominator clearing\n\n## Source manuscripts and claim\n\n- [The Margulis–Platonov conjecture over global function fields](../papers/P-000393.md): selected passages extracted.\n- [The Margulis–Platonov conjecture over number fields](../papers/P-000394.md): selected passages extracted.\n\nThe sources claim the Margulis-Platonov conjecture over global function fields and number fields.\n\n## Extracted instruments\n\n- [MI-000624: Detect splitting of a sign-action lattice extension modulo two](../instruments/MI-000624.md)\n- [MI-000625: Clear rational denominators using local density and a full lattice](../instruments/MI-000625.md)\n\n## Dependencies and antecedents\n\nGroup extensions, cocycles, torsion-free lattices, rational denominators and the Chinese remainder theorem.\n\nClassical extension cocycles and local-to-global lattice arithmetic; the function-field source explicitly relates its sign argument to its number-field companion.\n\n## Review and formalization scope\n\nRead the complete sign-element lemma, its lift calculations and involution restriction, and the complete additive-span proof. Extract only the final general denominator-clearing implication from the latter. Global norm-torus and normal-subgroup arguments remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe cohomological class is attached to an existing extension; no surjectivity onto all cohomology classes is claimed. The spanning criterion assumes local density and a full lattice and does not prove the source group-theoretic inputs.\n\n[Batch record](../../batches/B065/README.md)"
+    },
+    {
+      "id": "openai-math-019",
+      "record_type": "family",
+      "title": "Graph-sheet monodromy and tame roots of annular units",
+      "source_family": "019",
+      "source_collection": "openai/math",
+      "batch_id": "B065",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000395",
+        "P-000396"
+      ],
+      "instrument_ids": [
+        "MI-000626",
+        "MI-000627"
+      ],
+      "headline": "The sources claim etale covers with a prescribed exterior sheet and the p-adic section conjecture.",
+      "central_instrument": "A cyclic voltage on one cycle edge gives a connected cover that splits away from the cut. A dominant Laurent monomial separates tame root extraction into a coordinate root and a convergent unit root.",
+      "novelty_assessment": "The extracted arguments use classical ingredients. The particular source interfaces are recorded without certifying a new headline theorem or earliest priority.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The graph construction assumes the selected cycle and a retraction whose forbidden region avoids the cut. The unit-root series requires the root degree prime to the residue characteristic.",
+      "dependencies": "Graph coverings, skeleton retractions, Newton polygons, Laurent units and p-adic binomial series.",
+      "antecedents": "Classical graph monodromy and annular units. Baker-Payne-Rabinoff, arXiv:1404.0279, Proposition 2.2 and section 2.3 provide the annular and singleton-fiber background.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-019.md",
+      "body": "# Graph-sheet monodromy and tame roots of annular units\n\n## Source manuscripts and claim\n\n- [Étale covers with a prescribed exterior sheet](../papers/P-000395.md): selected passages extracted.\n- [The p-adic section conjecture](../papers/P-000396.md): selected passages extracted.\n\nThe sources claim etale covers with a prescribed exterior sheet and the p-adic section conjecture.\n\n## Extracted instruments\n\n- [MI-000626: Place cyclic monodromy on a single cut of a skeleton cycle](../instruments/MI-000626.md)\n- [MI-000627: Reduce tame roots of annular units to a coordinate root](../instruments/MI-000627.md)\n\n## Dependencies and antecedents\n\nGraph coverings, skeleton retractions, Newton polygons, Laurent units and p-adic binomial series.\n\nClassical graph monodromy and annular units. Baker-Payne-Rabinoff, arXiv:1404.0279, Proposition 2.2 and section 2.3 provide the annular and singleton-fiber background.\n\n## Review and formalization scope\n\nRead both complete selected source proofs. Read pages 4-5 of the primary Baker-Payne-Rabinoff paper, including the annular-unit statement and the non-value-group singleton-fiber observation. Etale algebraization, descent and the section-conjecture argument remain unaudited.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe graph construction assumes the selected cycle and a retraction whose forbidden region avoids the cut. The unit-root series requires the root degree prime to the residue characteristic.\n\n[Batch record](../../batches/B065/README.md)"
     },
     {
       "id": "openai-math-020",
@@ -34620,6 +35172,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-028.md",
       "body": "# Shared entropy costs and uniform bounds from periodic obstructions\n\n## Source manuscript and claim\n\n[Bounded-Step Walks on Gaussian Primes](../papers/P-000161.md), by OpenAI, September 26, 2026.\n\nThe source claims that for each fixed step bound every connected component of the Gaussian-prime graph has uniformly bounded cardinality, and consequently no infinite injective walk with bounded steps exists.\n\n## Extracted instruments\n\n- [MI-000284: Pay a shared conditioning entropy once before averaging sampled coordinates](../instruments/MI-000284.md)\n- [MI-000285: A periodic graph without an infinite path has a finite-cell component bound](../instruments/MI-000285.md)\n\n## Dependencies and antecedents\n\nShannon entropy chain rule and subadditivity, uniform coordinate inclusion probabilities, locally finite path trees, lattice translations and a finite attachment-degree count.\n\nClassical Shannon entropy inequalities; Vardi, Prime percolation, Section 6, Proposition 6.2, as explicitly credited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete shared-conditioning lemma and periodic-component proposition. The finite sieve theorem, coverage-transfer schedule and geometric obstruction construction were not audited.\n\nRead GaussianMoat.lean, including Gaussian-prime vertices, the real step bound, the uniform finite component-cardinality target and its no-infinite-injective-walk consequence. The inspected Comparator files contain target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe sampled coordinate set is independent of all other random data; Y and the shared conditioning variable may depend on each other. The component bound is conditional on the existence of a periodic obstruction with no infinite path, and explicitly restores the finitely many removed Gaussian primes.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/028.md) · [Batch record](../../batches/B022/README.md)"
+    },
+    {
+      "id": "openai-math-029",
+      "record_type": "family",
+      "title": "Kummer splitting tests and conditional simultaneous primitive roots",
+      "source_family": "029",
+      "source_collection": "openai/math",
+      "batch_id": "B065",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000397",
+        "P-000398"
+      ],
+      "instrument_ids": [
+        "MI-000628",
+        "MI-000629"
+      ],
+      "headline": "The sources address Artin primitive roots and a conditional simultaneous-prime-base lower bound.",
+      "central_instrument": "A finite congruence detects splitting in a Kummer field. A reservoir of primes with structured p-1 survives deletion of index obstructions under explicit counting inputs.",
+      "novelty_assessment": "The extracted arguments use classical ingredients. The particular source interfaces are recorded without certifying a new headline theorem or earliest priority.",
+      "formalization_summary": "No Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The splitting test excludes primes dividing a q. The simultaneous conclusion remains conditional on the reservoir and the uniform small-factor exceptional-set estimate.",
+      "dependencies": "Finite-field cyclic groups, Frobenius, quadratic reciprocity, product divisibility and finite union bounds.",
+      "antecedents": "Classical Artin-Hooley reduction; Moree, arXiv:math/0412262, section 4, explicitly states the Kummer criterion.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-029.md",
+      "body": "# Kummer splitting tests and conditional simultaneous primitive roots\n\n## Source manuscripts and claim\n\n- [Primitive roots for every admissible integer base](../papers/P-000397.md): selected passages extracted.\n- [Simultaneous primitive roots: a conditional lower bound for prime bases](../papers/P-000398.md): selected passages extracted.\n\nThe sources address Artin primitive roots and a conditional simultaneous-prime-base lower bound.\n\n## Extracted instruments\n\n- [MI-000628: Test Kummer splitting by two finite congruences](../instruments/MI-000628.md)\n- [MI-000629: Delete order-index obstructions from a structured prime reservoir](../instruments/MI-000629.md)\n\n## Dependencies and antecedents\n\nFinite-field cyclic groups, Frobenius, quadratic reciprocity, product divisibility and finite union bounds.\n\nClassical Artin-Hooley reduction; Moree, arXiv:math/0412262, section 4, explicitly states the Kummer criterion.\n\n## Review and formalization scope\n\nRead the complete splitting-test proof and conditional reduction, including both exceptional-set estimates. Read pages 6-8 of Moree, including the same splitting criterion on page 8. No unconditional primitive-root theorem or analytic counting input is certified.\n\nNo Lean scope document or linked Comparator is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe splitting test excludes primes dividing a q. The simultaneous conclusion remains conditional on the reservoir and the uniform small-factor exceptional-set estimate.\n\n[Batch record](../../batches/B065/README.md)"
     },
     {
       "id": "openai-math-030",

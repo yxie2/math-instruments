@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B065: 8 selected instruments from 4 families and 8 manuscripts. Squareclass density, truncated rank tails, lattice extensions, graph monodromy, annular roots and conditional primitive roots. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B064: 8 selected instruments from 4 families and 8 manuscripts. Zero traces, Sobolev pullback, harmonic equality barriers, atomic norms, phase insertion and scale-stable envelopes. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B063: 8 selected instruments from 4 families and 8 manuscripts. Frequency continuation, projection counts, affine-maximal reductions, bounded drift, Hartogs obstructions and holomorphic Fourier filters. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
