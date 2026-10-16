@@ -19245,6 +19245,301 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000455.md",
       "body": "# Build a stable graph by summing neutral and expanding modes backward\n\n[Family 371](../families/openai-math-371.md) · [Source manuscript](../papers/P-000246.md) · [Batch B043](../../batches/B043/README.md)\n\n## Mathematical content\n\nConsider a split iteration w_(n+1)=A_n w_n+B_n u_n+F_n(v_n), u_(n+1)=D u_n+G_n(v_n), with ||A_n||<=1/8, uniformly bounded B_n, and ||D^(-1)||<=1. D may have eigenvalue 1. In the space with norm sup 2^n(||w_n||+K|u_n|), prescribe w_0 and impose\n\n$$u_n=-\\sum_{j\\ge n}D^{n-j-1}G_j(v_j).$$\n\nChoose K large enough to absorb the bounded u-to-w coupling, then make the nonlinear Lipschitz constants and linear errors small. Weighted summability of the forcing makes this a contraction. The neutral mode is controlled by the future forcing sum, rather than by strict contraction of D inverse.\n\nFor the source moving cutoff L_s=L exp(s/2), forcing is O(L_s^(-2-a)); its slab decay must satisfy 2 exp(-(2+a)M/2)<1. Uniform finite-coordinate strong continuity, a common contraction constant, and uniformly summable tails imply continuity of the resulting initial graph. Operator-norm continuity of the evolution operators is not needed for this conclusion.\n\n## Role in the source argument\n\nSelects modulation parameters so stable trajectories persist through all later slabs.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [nl:step](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/build/sections/nonlinear.tex#L76)\n- [nl:graph](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/build/sections/nonlinear.tex#L140)\n\n## Antecedents and comparison\n\nClassical Lyapunov-Perron construction. The useful extracted detail is handling a neutral block together with only strong parameter continuity.\n\n## Checks and limitations\n\nThree ninety-step finite-horizon fixed-point models include a neutral eigenvalue, check both recurrences and verify weighted decay.\n\nThe terminal-zero truncation is a finite model. It does not certify infinite-horizon existence, uniform PDE estimates or blowup.\n\n## Possible applications\n\nStable graph constructions with neutral directions and parameter-dependent evolution operators.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000456",
+      "record_type": "instrument",
+      "title": "Concentrate reserved sampling roles before adaptive selection",
+      "forms": [
+        "averaged-stationary-expander-sampling",
+        "unconditioned-rolewise-concentration"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-136"
+      ],
+      "source_paper_ids": [
+        "P-000247"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+          "label": "out:walk",
+          "line": 401,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L401",
+          "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-expander-sampling-with-selection-contract",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000456.md",
+      "body": "# Concentrate reserved sampling roles before adaptive selection\n\n[Family 136](../families/openai-math-136.md) · [Source manuscript](../papers/P-000247.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nFor a stationary finite Markov chain whose transition operator has mean-zero L2 norm at most lambda<1, bounded centered functions f_j at different times obey |Cov(f_s(X_s),f_t(X_t))|<=C lambda^|s-t| when their L2 norms are bounded by sqrt(C). Thus the average of q samples has variance at most C(1+lambda)/((1-lambda)q).\n\nIndependent auxiliary choices can be integrated out of off-diagonal terms; their conditional variances enter the diagonal bound. Chebyshev and a finite union bound give any prescribed fixed confidence for a fixed finite list of candidate roles using a sufficiently large fixed q.\n\nIn the source, uniform averaging over the output start coordinate makes walk positions stationary. Analyze every reserved true candidate before a minimum or uncertain acceptance selects one. Do not condition the concentration estimate on the realized answer path. A fixed number of fixed-degree walk labels and polynomial-support auxiliary choices yields polynomial support per output coordinate; the confidence is still an average over coordinates.\n\n## Role in the source argument\n\nSupplies local statistical access while preserving the later selection and read-budget accounting.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [out:walk](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L401)\n\n## Antecedents and comparison\n\nClassical spectral-gap variance estimates. The extraction records the unconditioned averaging contract, not a new concentration theorem.\n\n## Checks and limitations\n\nThirty-two time-varying-function models enumerate all 729 paths of a six-sample, three-state chain and verify the variance bound.\n\nNo per-start or success-conditioned guarantee follows from these tests. The complete adaptive reduction is outside scope.\n\n## Possible applications\n\nAnalyzing a finite list of candidates before an algorithm makes a data-dependent choice.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000457",
+      "record_type": "instrument",
+      "title": "Recover replica consensus and mean residual after clipping",
+      "forms": [
+        "spectral-gap-clipped-consensus",
+        "noncommuting-average-clip-residual"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-136"
+      ],
+      "source_paper_ids": [
+        "P-000247"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+          "label": "out:replica-gap",
+          "line": 654,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L654",
+          "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+        },
+        {
+          "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+          "label": "out:clip-mean",
+          "line": 1001,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L1001",
+          "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-nonexpansive-projection-gap-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000457.md",
+      "body": "# Recover replica consensus and mean residual after clipping\n\n[Family 136](../families/openai-math-136.md) · [Source manuscript](../papers/P-000247.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nLet J be orthogonal averaging onto vectors constant across each replica group. Assume AJ=J and ||A(I-J)X||<=(1-kappa)||(I-J)X|| with 0<kappa<=1. Let c be constant on each group and use the same coordinate clipping interval within a group. For F=clip(AX+c), E=||X-F||, and g=clip(JX+c), one has\n\n$$\\|X-JX\\|\\le E/\\kappa,\\qquad \\|JX-g\\|\\le E/\\kappa.$$\n\nIndeed g is in ran J and clipping is nonexpansive, so ||(I-J)F||<=||F-g||<=(1-kappa)||(I-J)X||. Project X-F to get the first inequality. Taking means gives ||JX-g||<=E+||JF-g||<=E+(1-kappa)||(I-J)X||. The base norm is identified with the norm of a repeated vector.\n\nThis never asserts J clip(Y)=clip(JY), an identity which is generally false.\n\n## Role in the source argument\n\nTurns small clipped fixed-point residual into synchronized replicas and a small base displacement.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [out:replica-gap](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L654)\n- [out:clip-mean](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L1001)\n\n## Antecedents and comparison\n\nClassical orthogonal projection, nonexpansiveness and spectral-gap algebra.\n\n## Checks and limitations\n\nThree hundred random replica models check both bounds, with a separate counterexample to exchanging clipping and averaging.\n\nThe source bounded-degree replica construction and global circuit soundness are separate inputs.\n\n## Possible applications\n\nConsensus or replicated fixed-point constructions with saturation constraints.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000458",
+      "record_type": "instrument",
+      "title": "Encode admissible permutations by independent inversion digits",
+      "forms": [
+        "natural-unit-interval-insertion-digits",
+        "admissible-word-q-product"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-169"
+      ],
+      "source_paper_ids": [
+        "P-000248"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+          "label": "graph:digits",
+          "line": 23,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L23",
+          "sha256": "0a90807bc64e1d2cfb402826297572f13856be07da344c53c95580b36a562008"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-insertion-enumeration-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000458.md",
+      "body": "# Encode admissible permutations by independent inversion digits\n\n[Family 169](../families/openai-math-169.md) · [Source manuscript](../papers/P-000248.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nLet G on [n] be given by a nondecreasing endpoint function h with h(i)>=i and edge i<j iff j<=h(i). Put l_a=# {b<a: {b,a} is an edge}. Call a permutation admissible if every adjacent ascent is an edge.\n\nDelete its largest letter a. If b,a,c were consecutive, adjacency of b,a gives h(b)>=a>c, so the newly consecutive pair b,c is allowed whenever it is an ascent. Conversely insert a at the beginning or immediately after any earlier neighbor. These are exactly the allowed slots. Reading those neighbors from left to right yields newly created inversion counts l_a,l_a-1,...,0, each once.\n\nSuccessive insertion gives a bijection with digits 0<=j_a<=l_a and inv_G(w)=sum j_a. In particular the inversion generating polynomial is product_a(1+q+...+q^l_a). Reversal swaps the nonedge-ascent and nonedge-descent conventions and complements the edge inversion count to |E(G)|.\n\n## Role in the source argument\n\nProvides explicit nonnegative inversion coordinates for the permutation indexing used later in the source.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [graph:digits](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L23)\n\n## Antecedents and comparison\n\nClassical largest-letter insertion enumeration; no first-priority claim.\n\n## Checks and limitations\n\nAll 64 natural unit interval graphs through five vertices, with 1,069 admissible words, satisfy the exact generating-polynomial identity.\n\nThe insertion formula alone supplies no elementary-basis shape map or positivity proof.\n\n## Possible applications\n\nSampling and enumerating constrained permutations with an additive statistic.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000459",
+      "record_type": "instrument",
+      "title": "Prove graph-alphabet commutation by switching odd path components",
+      "forms": [
+        "quantum-independent-set-commutation",
+        "odd-path-two-color-involution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-169"
+      ],
+      "source_paper_ids": [
+        "P-000248"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+          "label": "graph:commutation",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L98",
+          "sha256": "0a90807bc64e1d2cfb402826297572f13856be07da344c53c95580b36a562008"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "explicit-shareshian-wachs-involution-adaptation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000459.md",
+      "body": "# Prove graph-alphabet commutation by switching odd path components\n\n[Family 169](../families/openai-math-169.md) · [Source manuscript](../papers/P-000248.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nFor a natural unit interval graph define the alternating form Omega(b,a)=1 for an edge a<b, and zero for a nonedge. In the quantum torus X_m X_n=v^Omega(m,n) X_(m+n), let E_j be the sum of X_(sum I) over independent j-sets I. Then E_j E_k=E_k E_j.\n\nFor an ordered pair of independent sets I,J, their intersection consists of isolated doubled vertices. In the remaining induced graph, the earlier and later neighbors are cliques, so bipartiteness forces components to be increasing alternating paths. Switch membership in I,J on precisely the odd-vertex components. This exchanges the total set sizes, preserves the exponent vector, and preserves the skew weight: an odd path has equally many +1 and -1 edge contributions. The map is an involution.\n\nCommutation permits evaluating symmetric polynomials by e_j -> E_j. It does not prove positivity after expressing monomial symmetric functions in the elementary generators, because those expressions can involve subtraction.\n\n## Role in the source argument\n\nDefines a commuting graph alphabet inside a noncommutative torus for the source coloring kernel.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [graph:commutation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L98)\n\n## Antecedents and comparison\n\n[Shareshian-Wachs, Lemma 4.4 and Theorem 4.5](https://arxiv.org/pdf/1405.4629v2), pages 17-18, use the increasing-path description and odd-component color switch. Those passages were checked directly; the source adapts them to centered torus weights.\n\n## Checks and limitations\n\nExact Laurent coefficients agree in both orders for 11,627 independent-set pairs across all 64 natural unit interval graphs through five vertices.\n\nThese checks cover commutation only, not elementary positivity or the later coefficient transport.\n\n## Possible applications\n\nConstructing commutative generating alphabets within skew algebras.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000460",
+      "record_type": "instrument",
+      "title": "Smooth an indefinite second-order operator with small projected negative mass",
+      "forms": [
+        "indefinite-gaussian-covariance-path",
+        "projected-negative-mass-smoothing"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-172"
+      ],
+      "source_paper_ids": [
+        "P-000249"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+          "label": "pairs:bump",
+          "line": 42,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L42",
+          "sha256": "c3f8012afe9bcb9f03af1b3350ad4637432eb7b2ba848dd5c5c4787f3efbad31"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-gaussian-path-with-source-projected-control",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000460.md",
+      "body": "# Smooth an indefinite second-order operator with small projected negative mass\n\n[Family 172](../families/openai-math-172.md) · [Source manuscript](../papers/P-000249.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nLet C be real symmetric, U a d-by-k real matrix, and U C U^T=I_d. For every eta>0 there is a nonnegative compactly supported smooth b of positive integral with integral (D_C b)_- ||Ux||^2 < eta integral b, where D_C=(1/2)sum C_ij partial_i partial_j.\n\nWrite H=im U^T, V=ker U. C is positive definite on H. Choose S=epsilon P_H+L P_V with epsilon small and L large enough that S+C>0 by a Schur complement. Then tr(U S U^T) is arbitrarily small, and S+tC stays positive for 0<=t<=1 even if C is indefinite.\n\nFor the centered Gaussian density phi_Q, differentiation gives partial_t phi_(S+tC)=D_C phi_(S+tC). Hence b_*=integral_0^1 phi_(S+tC)dt has mass 1 and D_C b_*=phi_(S+C)-phi_S. Its weighted negative mass is at most tr(U S U^T). Smooth cutoff preserves the strict inequality for large radius, because derivatives have uniform Gaussian decay and r -> r_- is 1-Lipschitz.\n\n## Role in the source argument\n\nProduces a signed second derivative whose negative part has arbitrarily small energy in the observed directions.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [pairs:bump](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L42)\n\n## Antecedents and comparison\n\nClassical covariance differentiation and Schur complement, arranged to control only the U-projected moment.\n\n## Checks and limitations\n\nEighty indefinite two-dimensional covariance paths verify positivity and the Gaussian derivative identity numerically.\n\nFinite checks do not verify the cutoff limit, arbitrary-dimensional construction or the source tensor hypothesis.\n\n## Possible applications\n\nBuilding smooth signed stencils with small negative energy in selected directions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000461",
+      "record_type": "instrument",
+      "title": "Rationalize a convolution input while retaining exact cancellations and moments",
+      "forms": [
+        "convolution-preserved-quotient-cancellation",
+        "rational-stencil-strict-margin"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-172"
+      ],
+      "source_paper_ids": [
+        "P-000249"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+          "label": "pairs:rational",
+          "line": 151,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L151",
+          "sha256": "c3f8012afe9bcb9f03af1b3350ad4637432eb7b2ba848dd5c5c4787f3efbad31"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-convolution-moments-with-exact-constraint-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000461.md",
+      "body": "# Rationalize a convolution input while retaining exact cancellations and moments\n\n[Family 172](../families/openai-math-172.md) · [Source manuscript](../papers/P-000249.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nLet nu:Z^k -> Q have finite support, zero pushforward to each Z^k/Lambda_i, zero mass and first moment, and second moment C. Assume U C U^T=I. For every eta>0 the source constructs an integer n, finitely supported rational mu, and positive rational zeta with the same zero pushforwards, second moment sum mu(lambda)(lambda/n)(lambda/n)^T=zeta C, and sum mu(lambda)_-||U lambda/n||^2<eta zeta.\n\nUse the smoothing lemma to choose b, put d_n(lambda)=n^(2-k)b(lambda/n), and mu_n=nu*d_n. Pushforward commutes with convolution. Exact cancellation of the zeroth and first moments gives second moment (sum d_n)C before scaling, independently of approximation errors. Taylor expansion yields n^k mu_n(lambda)=D_C b(lambda/n)+O(1/n) uniformly on a fixed rescaled support, so weighted negative sums converge to the strict continuum bound.\n\nFix a sufficiently large n. On its finite support, perturb d_n to rational d. The strict positivity and negative-mass bounds survive by continuity. Setting mu=nu*d retains all cancellation and moment identities exactly. Directly rounding the entries of mu would not have this guarantee.\n\n## Role in the source argument\n\nTurns analytic smoothing into finite rational multiplicities used to form coordinate-permuted configurations.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [pairs:rational](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L151)\n\n## Antecedents and comparison\n\nClassical exact convolution-moment identities plus rational density in a finite-dimensional parameter space.\n\n## Checks and limitations\n\nOne hundred rational lattice convolutions verify total and first moments, second-moment scaling and every tested quotient class cancellation.\n\nThe finite algebra checks do not establish the asymptotic negative-part estimate or the initial tensor-to-stencil construction.\n\n## Possible applications\n\nConverting approximate analytic constructions into rational data under exact linear constraints.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000462",
+      "record_type": "instrument",
+      "title": "Expose returning sweep activity by shifting the rank",
+      "forms": [
+        "sweep-activity-shifted-rank-distance",
+        "single-crossing-return-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-183"
+      ],
+      "source_paper_ids": [
+        "P-000250"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex",
+          "label": "lem:activity-distance",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex#L61",
+          "sha256": "6bbb5204eac4d39bcdcb62c4aced0345d91958e1bd4ed5453f8e84f0abbaaf47"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 1,
+      "subject": "Combinatorics",
+      "novelty_status": "source-activity-to-endpoint-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000462.md",
+      "body": "# Expose returning sweep activity by shifting the rank\n\n[Family 183](../families/openai-math-183.md) · [Source manuscript](../papers/P-000250.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nSweep a generic planar configuration by increasing slope s, marking the k smallest values y_i-s x_i. The activity of a time interval is the number of distinct points whose membership changes. For activity at least b>=4, put c=floor(b/4). Classify the interval by whether at least b/2 active points were initially unmarked.\n\nIn that class, compare the endpoint sets at rank k+c. At least ceil(b/2)-c>=c initially unmarked active points lie outside the initial rank-(k+c) set E. Each enters rank k at some time and therefore moves below at least c+1 members of E. Because pairwise projection differences are affine, these reversed comparisons persist to the final time. Either at least c such points enter the final E prime, or one remains outside and forces c+1 original members outside. Thus endpoint distance is at least c.\n\nFor the other class apply the argument to complementary marks, giving rank k-c. Feasibility follows from the number of initially available active points. For b<4, positive activity already forces distinct endpoints since the sum of marked first coordinates strictly increases at every switch.\n\n## Role in the source argument\n\nReplaces membership changes that can cancel at endpoints by visible displacement at one of two nearby ranks.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:activity-distance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex#L61)\n\n## Antecedents and comparison\n\nThe source builds on classical sweep methods; the extraction isolates its single-crossing rank-shift argument without asserting historical novelty.\n\n## Checks and limitations\n\n2,386 sampled intervals across 25 generic configurations verify the class choice, rank feasibility and endpoint distance.\n\nThe examples do not test uniform packing or asymptotic halving-line bounds.\n\n## Possible applications\n\nControlling temporal participation in systems with single-crossing comparisons.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000463",
+      "record_type": "instrument",
+      "title": "Turn uniform small packing constants into a fixed exponent saving",
+      "forms": [
+        "uniform-packing-fixed-scale-power-gain",
+        "hereditary-active-subset-recurrence"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-183"
+      ],
+      "source_paper_ids": [
+        "P-000250"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex",
+          "label": "prop:packing-to-power",
+          "line": 12,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex#L12",
+          "sha256": "cd85f68ab7fabb432fc6c0fe63658fe0a3dffdcf4e66b24f1b6389e1ef76aef9"
+        }
+      ],
+      "batch_id": "B044",
+      "source_item": 2,
+      "subject": "Combinatorics",
+      "novelty_status": "classical-fixed-scale-induction-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000463.md",
+      "body": "# Turn uniform small packing constants into a fixed exponent saving\n\n[Family 183](../families/openai-math-183.md) · [Source manuscript](../papers/P-000250.md) · [Batch B044](../../batches/B044/README.md)\n\n## Mathematical content\n\nAssume that for every eta>0, once N/b>=R_eta, every generic N-point sweep at every rank has at most eta(N/b)^(4/3) step-disjoint intervals of activity at least b. Set a=4/3, eta=1/(4*2^a), and fix one integer q>=max(4,R_eta).\n\nFor N>=4q take d=floor(N/q), b=d-1, and greedily end blocks when activity reaches b. A step changes at most two memberships, so each block involves at most d<=N/q points. The packing hypothesis bounds completed blocks by q^a/4; adding the remainder gives at most q^a/2 blocks.\n\nWithin a block, all nonactive memberships are fixed. Restriction to active points is therefore a sweep at one fixed local rank, whose complexity is bounded by the same all-ranks function F. Hence F(N)<=sum_j F(t_j), with t_j<=N/q and at most q^a/2 terms. For epsilon=log(2)/(2 log(q)) and beta=a-epsilon, induction yields F(N)<=C N^beta, since (q^a/2)q^(-beta)=1/sqrt(2). The finitely many sizes below 4q are absorbed in C.\n\nUniformity over local ranks and hereditary restriction are essential. A nonquantitative R_eta gives existence of epsilon, not an explicit numerical saving.\n\n## Role in the source argument\n\nConverts the source uniform activity theorem into a genuine power improvement.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:packing-to-power](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex#L12)\n\n## Antecedents and comparison\n\nClassical fixed-scale induction, with the active-subset restriction providing the recursive interface.\n\n## Checks and limitations\n\n4,876 finite rounding models at 46 fixed scales verify the block-size arithmetic and exponent contraction.\n\nThe crucial uniform small-constant packing hypothesis is not proved or tested by this extraction.\n\n## Possible applications\n\nUpgrading uniform little-o packing estimates to power gains when an exact hereditary decomposition is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -23921,6 +24216,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000246.md",
       "body": "# Stable self-similar blowup for a supercritical defocusing Schrödinger equation on the torus\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims stable self-similar blowup for arbitrarily large odd-power defocusing NLS on the twelve-torus.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000454: Convert a Laguerre-tail recurrence into a strict disk constraint](../instruments/MI-000454.md)\n- [MI-000455: Build a stable graph by summing neutral and expanding modes backward](../instruments/MI-000455.md)\n\n## Dependencies and review\n\nLaguerre expansions, a purely imaginary recurrence parameter, telescoping flux, weighted sequence contraction and summable tails.\n\nRead the complete selected Laguerre recurrence, cone, nonlinear step and graph proofs. The free special-function asymptotics, spectral exclusion certificates and full PDE construction were not audited.\n\nRead the scope document and selected DefocusingNLS definitions and theorem targets. Targets and a Sobolev-product membership obligation contain sorry. Quantifier is arbitrarily large odd powers, not every sufficiently large odd power. No Lean build.\n\n[Family context](../families/openai-math-371.md) · [Batch B043](../../batches/B043/README.md)"
+    },
+    {
+      "id": "P-000247",
+      "record_type": "paper",
+      "title": "The PCP-for-PPAD conjecture: a quasilinear reduction",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-136"
+      ],
+      "batch_id": "B044",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "73e380cbff05915bde7caaa78a2cd22fba07e71fddd6006f8c9463be2f3a28c4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000247.md",
+      "body": "# The PCP-for-PPAD conjecture: a quasilinear reduction\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a quasilinear PCP theorem for PPAD.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000456: Concentrate reserved sampling roles before adaptive selection](../instruments/MI-000456.md)\n- [MI-000457: Recover replica consensus and mean residual after clipping](../instruments/MI-000457.md)\n\n## Dependencies and review\n\nStationary Markov covariance decay, Chebyshev bounds, finite union bounds, orthogonal averaging and nonexpansive clipping.\n\nRead the complete averaged-walk and clipping lemmas and the replica-gap hypotheses. The code, composition, geometry and PPAD reduction were not audited.\n\nNo formalization scope document is listed in the pinned inventory. No Lean build.\n\n[Family context](../families/openai-math-136.md) · [Batch B044](../../batches/B044/README.md)"
+    },
+    {
+      "id": "P-000248",
+      "record_type": "paper",
+      "title": "Elementary positivity of chromatic quasisymmetric functions",
+      "source_collection": "openai/math",
+      "upstream_slug": "Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-169"
+      ],
+      "batch_id": "B044",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "74ce310e94b166e1c01e3dbeb933eb2f113919e8b96c96e4830228492ced434a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000248.md",
+      "body": "# Elementary positivity of chromatic quasisymmetric functions\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims elementary positivity of chromatic quasisymmetric functions for natural unit interval graphs.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000458: Encode admissible permutations by independent inversion digits](../instruments/MI-000458.md)\n- [MI-000459: Prove graph-alphabet commutation by switching odd path components](../instruments/MI-000459.md)\n\n## Dependencies and review\n\nMonotone extensive endpoint functions, inversion counts, ordered bipartite path components and skew quantum-torus weights.\n\nRead the complete graph-alphabet section. Compared the two-color antecedent directly. The wall recursion, triangle construction and positivity witness were not audited.\n\nRead ElementaryPositivity.lean in full and the scope document. elementaryPositivityWitness contains sorry and asks for a permutation-indexed expansion over N[q] for every finite color alphabet. No Lean build.\n\n[Family context](../families/openai-math-169.md) · [Batch B044](../../batches/B044/README.md)"
+    },
+    {
+      "id": "P-000249",
+      "record_type": "paper",
+      "title": "A classification of finite Euclidean Ramsey configurations",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-172"
+      ],
+      "batch_id": "B044",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "530493f4f4ee69ce023b577afdbfdff7fb6ad1a3a24447487e3ca2be9acca8cb",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000249.md",
+      "body": "# A classification of finite Euclidean Ramsey configurations\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a classification of finite Euclidean Ramsey configurations.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000460: Smooth an indefinite second-order operator with small projected negative mass](../instruments/MI-000460.md)\n- [MI-000461: Rationalize a convolution input while retaining exact cancellations and moments](../instruments/MI-000461.md)\n\n## Dependencies and review\n\nSchur complements, Gaussian covariance differentiation, weighted cutoff estimates, signed convolution moments and rational approximation in finite support.\n\nRead the complete two-scale, smoothing and rational-weights proofs. The tensor stencil and Ramsey classification arguments were not audited.\n\nRead the scope document and EuclideanRamsey.lean in full. The classification target contains sorry. Six companion Comparators were acquired but not inspected; their stated scope is not proof verification. No Lean build.\n\n[Family context](../families/openai-math-172.md) · [Batch B044](../../batches/B044/README.md)"
+    },
+    {
+      "id": "P-000250",
+      "record_type": "paper",
+      "title": "A power saving for planar halving lines",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-power-saving-for-planar-halving-lines-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-183"
+      ],
+      "batch_id": "B044",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ef9b53ab01cc5236e9da009110ab392353213b9e924f0d91bd08cafc644542b9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000250.md",
+      "body": "# A power saving for planar halving lines\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a power saving for planar halving lines and k-sets.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000462: Expose returning sweep activity by shifting the rank](../instruments/MI-000462.md)\n- [MI-000463: Turn uniform small packing constants into a fixed exponent saving](../instruments/MI-000463.md)\n\n## Dependencies and review\n\nSingle-crossing affine comparisons, complementary ranks, greedy activity blocks, hereditary restriction and induction at one fixed scale.\n\nRead the complete finite activity and greedy lemmas and packing-to-power proof, including the subsequent conditional k-sensitive reduction. The uniform activity-packing theorem was not audited.\n\nRead HalvingLines.lean in full and the scope document. power_bounds contains sorry; it states existential positive exponent savings, with generic assumptions for all ranks. No Lean build.\n\n[Family context](../families/openai-math-183.md) · [Batch B044](../../batches/B044/README.md)"
     }
   ],
   "families": [
@@ -25949,6 +26320,33 @@
       "body": "# Product-rank bottlenecks and uniform-composition moments\n\n## Source manuscript and claim\n\n[Homogeneous depth-five lower bounds for iterated matrix multiplication](../papers/P-000167.md), by OpenAI, None.\n\nThe source claims a characteristic-zero lower bound n^(sqrt(n)/400) for homogeneous depth-five circuits computing the (1,1) entry of a product of n generic n-by-n matrices, for sufficiently large n, without a bottom-support restriction.\n\n## Extracted instruments\n\n- [MI-000296: Order positive degree discrepancies first to expose a rank bottleneck](../instruments/MI-000296.md)\n- [MI-000297: Uniform weak compositions are dominated in the nonnegative factorial basis](../instruments/MI-000297.md)\n\n## Dependencies and antecedents\n\nCommuting operators on disjoint variable groups, ranks through intermediate homogeneous spaces, stars-and-bars generating functions and elementary logarithmic inequalities.\n\nAmireddy-Garg-Kayal-Saha-Thankey degree residue; classical weak-composition and geometric factorial moments. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete product-rank proof and occupation-moment lemma. The IMM trace lower bound and the asymptotic word/path summation were not audited.\n\nRead the depth-five scope and DepthFive.lean Comparator, including the shared-DAG circuit model, repeated product inputs, gate count including leaves, characteristic-zero lower bound and all-field upper bound. These are inspected target statements with sorry placeholders; no Lean solution was built or kernel-checked.\n\nThe differential operator is multiplicative before taking a fixed bidegree component; the fixed-component map is not multiplicative. Moment comparison requires nonnegative coefficients in the falling-factorial basis.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/135.md) · [Batch record](../../batches/B024/README.md)"
     },
     {
+      "id": "openai-math-136",
+      "record_type": "family",
+      "title": "Unconditioned sampling and clipped replica consensus",
+      "source_family": "136",
+      "source_collection": "openai/math",
+      "batch_id": "B044",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000247"
+      ],
+      "instrument_ids": [
+        "MI-000456",
+        "MI-000457"
+      ],
+      "headline": "The source claims a quasilinear PCP theorem for PPAD.",
+      "central_instrument": "Stationary expander sampling controls all reserved roles before selection. A spectral gap controls replica disagreement and mean residual even after clipping.",
+      "novelty_assessment": "Classical covariance decay and nonexpansive projection arguments; their exact sampling and averaging contracts are the reusable content. No novelty certification.",
+      "formalization_summary": "No formalization scope document is listed in the pinned inventory. No Lean build.",
+      "statement_faithfulness": "Confidence is averaged over the starting coordinate, not uniform at each start or conditioned on a selected answer path. Clipping and averaging cannot be exchanged.",
+      "dependencies": "Stationary Markov covariance decay, Chebyshev bounds, finite union bounds, orthogonal averaging and nonexpansive clipping.",
+      "antecedents": "Classical expander sampling and spectral-gap consensus estimates.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-136.md",
+      "body": "# Unconditioned sampling and clipped replica consensus\n\n## Source manuscript and claim\n\n[The PCP-for-PPAD conjecture: a quasilinear reduction](../papers/P-000247.md), by OpenAI, September 25, 2026.\n\nThe source claims a quasilinear PCP theorem for PPAD.\n\n## Extracted instruments\n\n- [MI-000456: Concentrate reserved sampling roles before adaptive selection](../instruments/MI-000456.md)\n- [MI-000457: Recover replica consensus and mean residual after clipping](../instruments/MI-000457.md)\n\n## Dependencies and antecedents\n\nStationary Markov covariance decay, Chebyshev bounds, finite union bounds, orthogonal averaging and nonexpansive clipping.\n\nClassical expander sampling and spectral-gap consensus estimates. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete averaged-walk and clipping lemmas and the replica-gap hypotheses. The code, composition, geometry and PPAD reduction were not audited.\n\nNo formalization scope document is listed in the pinned inventory. No Lean build.\n\nConfidence is averaged over the starting coordinate, not uniform at each start or conditioned on a selected answer path. Clipping and averaging cannot be exchanged.\n\n[Batch record](../../batches/B044/README.md)"
+    },
+    {
       "id": "openai-math-137",
       "record_type": "family",
       "title": "Homogeneous lookup and top-coefficient extraction in small space",
@@ -26485,6 +26883,33 @@
       "body": "# Height-one lattice recovery and regular kernel reduction\n\n## Source manuscript and claim\n\n[Combinatorial invariance of Kazhdan–Lusztig polynomials](../papers/P-000218.md), by OpenAI, September 24, 2026.\n\nThe source claims combinatorial invariance of equal-parameter Kazhdan-Lusztig polynomials for arbitrary Coxeter systems.\n\n## Extracted instruments\n\n- [MI-000398: Recover a free full-rank lattice from height-one localizations](../instruments/MI-000398.md)\n- [MI-000399: Reduce a restriction kernel modulo a regular transverse label](../instruments/MI-000399.md)\n\n## Dependencies and antecedents\n\nUnique factorization, rational basis coordinates, nonzerodivisors on quotient modules, kernel saturation and product annihilators.\n\nClassical height-one recovery over polynomial rings and elementary regular-element base change; Braden-MacPherson/Fiebig sheaves provide the source setting. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete lattice lemma, moment-graph module assumptions and the saturation/generic-rank paragraph of the edge-image proof. The rest of the edge-image bound and global invariance argument were not audited.\n\nRead KLInvariance.lean: strong Bruhat order, normalized R/P families and the interval-order-isomorphism target. The final target contains sorry; no Lean build.\n\nFreeness is an essential input to the chosen lattice statement. Kernel reduction requires injectivity of the reducing label on every target and freeness of the original kernel; arbitrary partial sheaf kernels are not assumed free.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/168.md) · [Batch record](../../batches/B036/README.md)"
     },
     {
+      "id": "openai-math-169",
+      "record_type": "family",
+      "title": "Insertion coordinates and commuting graph alphabets",
+      "source_family": "169",
+      "source_collection": "openai/math",
+      "batch_id": "B044",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000248"
+      ],
+      "instrument_ids": [
+        "MI-000458",
+        "MI-000459"
+      ],
+      "headline": "The source claims elementary positivity of chromatic quasisymmetric functions for natural unit interval graphs.",
+      "central_instrument": "Largest-letter insertion gives independent inversion digits. A two-color path involution proves quantum-torus independent-set sums commute.",
+      "novelty_assessment": "The commutation proof explicitly adapts Shareshian-Wachs Lemma 4.4 and Theorem 4.5. These preliminary graph tools do not establish the later positivity claim.",
+      "formalization_summary": "Read ElementaryPositivity.lean in full and the scope document. elementaryPositivityWitness contains sorry and asks for a permutation-indexed expansion over N[q] for every finite color alphabet. No Lean build.",
+      "statement_faithfulness": "The graph must be a natural unit interval graph, not an arbitrary graph. Commuting positive elementary generators do not imply positive monomial evaluations.",
+      "dependencies": "Monotone extensive endpoint functions, inversion counts, ordered bipartite path components and skew quantum-torus weights.",
+      "antecedents": "Shareshian-Wachs, Chromatic quasisymmetric functions, Lemma 4.4 and Theorem 4.5; noncommutative poset symmetric functions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-169.md",
+      "body": "# Insertion coordinates and commuting graph alphabets\n\n## Source manuscript and claim\n\n[Elementary positivity of chromatic quasisymmetric functions](../papers/P-000248.md), by OpenAI, September 24, 2026.\n\nThe source claims elementary positivity of chromatic quasisymmetric functions for natural unit interval graphs.\n\n## Extracted instruments\n\n- [MI-000458: Encode admissible permutations by independent inversion digits](../instruments/MI-000458.md)\n- [MI-000459: Prove graph-alphabet commutation by switching odd path components](../instruments/MI-000459.md)\n\n## Dependencies and antecedents\n\nMonotone extensive endpoint functions, inversion counts, ordered bipartite path components and skew quantum-torus weights.\n\nShareshian-Wachs, Chromatic quasisymmetric functions, Lemma 4.4 and Theorem 4.5; noncommutative poset symmetric functions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete graph-alphabet section. Compared the two-color antecedent directly. The wall recursion, triangle construction and positivity witness were not audited.\n\nRead ElementaryPositivity.lean in full and the scope document. elementaryPositivityWitness contains sorry and asks for a permutation-indexed expansion over N[q] for every finite color alphabet. No Lean build.\n\nThe graph must be a natural unit interval graph, not an arbitrary graph. Commuting positive elementary generators do not imply positive monomial evaluations.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/169.md) · [Batch record](../../batches/B044/README.md)"
+    },
+    {
       "id": "openai-math-171",
       "record_type": "family",
       "title": "Balanced mixtures, scattered moments and retained-event posteriors",
@@ -26511,6 +26936,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-171.md",
       "body": "# Balanced mixtures, scattered moments and retained-event posteriors\n\n## Source manuscript and claim\n\n[The hypercube Ramsey number has linear order](../papers/P-000131.md), by OpenAI, September 23, 2026.\n\nThe source claims an absolute C with the diagonal hypercube Ramsey bound R(Q_n)<=C 2^n for every n>=0, using non-induced monochromatic copies.\n\n## Extracted instruments\n\n- [MI-000221: Robust witness menus admit balanced mixtures and simultaneous feasible profiles](../instruments/MI-000221.md)\n- [MI-000222: Separated product comparisons yield aggregate moments despite nearby dependencies](../instruments/MI-000222.md)\n- [MI-000223: Posterior domination retains the mass of a required event](../instruments/MI-000223.md)\n\n## Dependencies and antecedents\n\nFinite convex separation, fixed-point correspondences, bounded local dependence, moment expansion, nonnegative likelihoods and Bayes formula.\n\nThe source explicitly uses Kakutani's fixed-point theorem and standard probabilistic comparisons. The general mixture and posterior principles are not claimed as new. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete balanced-profile, scattered-moment and gated-posterior proofs. The long regime analysis, near-product samplers, resampling application and final cube embedding were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean statement or proof was certified for these extracted tools.\n\nOutput rules in the fixed-point argument must be independent of the mixed profiles. Moment bounds retain the success indicator. A gated posterior exception has small joint event mass, not necessarily small conditional probability given that event.\n\n[Batch record](../../batches/B015/README.md)"
+    },
+    {
+      "id": "openai-math-172",
+      "record_type": "family",
+      "title": "Indefinite Gaussian smoothing with exact rational constraints",
+      "source_family": "172",
+      "source_collection": "openai/math",
+      "batch_id": "B044",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000249"
+      ],
+      "instrument_ids": [
+        "MI-000460",
+        "MI-000461"
+      ],
+      "headline": "The source claims a classification of finite Euclidean Ramsey configurations.",
+      "central_instrument": "A positive covariance path integrates an indefinite heat operator into a difference of Gaussian densities. Convolution keeps quotient cancellations and moments exact through discretization and rational approximation.",
+      "novelty_assessment": "Gaussian differentiation, Schur complements, convolution moments and rational density are classical. Their constraint-preserving combination is the extracted interface; no priority claim.",
+      "formalization_summary": "Read the scope document and EuclideanRamsey.lean in full. The classification target contains sorry. Six companion Comparators were acquired but not inspected; their stated scope is not proof verification. No Lean build.",
+      "statement_faithfulness": "C may be indefinite, but U C U transpose must equal I. Rationalize the convolution input, not the constrained output, and preserve a strict inequality margin.",
+      "dependencies": "Schur complements, Gaussian covariance differentiation, weighted cutoff estimates, signed convolution moments and rational approximation in finite support.",
+      "antecedents": "Classical Gaussian heat identities and exact moment-preserving convolution.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-172.md",
+      "body": "# Indefinite Gaussian smoothing with exact rational constraints\n\n## Source manuscript and claim\n\n[A classification of finite Euclidean Ramsey configurations](../papers/P-000249.md), by OpenAI, September 23, 2026.\n\nThe source claims a classification of finite Euclidean Ramsey configurations.\n\n## Extracted instruments\n\n- [MI-000460: Smooth an indefinite second-order operator with small projected negative mass](../instruments/MI-000460.md)\n- [MI-000461: Rationalize a convolution input while retaining exact cancellations and moments](../instruments/MI-000461.md)\n\n## Dependencies and antecedents\n\nSchur complements, Gaussian covariance differentiation, weighted cutoff estimates, signed convolution moments and rational approximation in finite support.\n\nClassical Gaussian heat identities and exact moment-preserving convolution. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete two-scale, smoothing and rational-weights proofs. The tensor stencil and Ramsey classification arguments were not audited.\n\nRead the scope document and EuclideanRamsey.lean in full. The classification target contains sorry. Six companion Comparators were acquired but not inspected; their stated scope is not proof verification. No Lean build.\n\nC may be indefinite, but U C U transpose must equal I. Rationalize the convolution input, not the constrained output, and preserve a strict inequality margin.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/172.md) · [Batch record](../../batches/B044/README.md)"
     },
     {
       "id": "openai-math-173",
@@ -26700,6 +27152,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-181.md",
       "body": "# Overlap potentials and low-error vertex folding\n\n## Source manuscript and claim\n\n[A linear cycle-and-edge decomposition of every graph](../papers/P-000121.md), by OpenAI, September 24, 2026.\n\nThe source claims an absolute constant C such that every finite simple graph on n vertices has an edge partition into at most Cn simple cycles and single edges.\n\n## Extracted instruments\n\n- [MI-000200: A reciprocal-logarithm potential pays for overlapping recursive pieces](../instruments/MI-000200.md)\n- [MI-000201: Random pair folding makes a simple quotient with a linear collision budget](../instruments/MI-000201.md)\n\n## Dependencies and antecedents\n\nRecursive potential accounting; sparse vertex separators; uniform perfect pairings with a dummy vertex in odd size; loop and parallel-edge collision counts.\n\nConlon, Fox and Sudakov use sparse-cut charging in cycle decomposition. The probabilistic method and quotient cleanup are classical; the selected bookkeeping is specific to the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the overlap-potential argument and complete pair-folding proof. The full routing, batch-resolution and induction arguments were not audited.\n\nCycleDecomposition.lean states existence of an absolute positive linear constant for an exact edge partition into simple cycles and single edges, including edgeless graphs. It does not optimize the constant. Scope documents and Comparator declarations were compared. No Lean solution was built or kernel-checked; the extracted auxiliary results are not separately certified targets.\n\nLogarithms in the source are base two. Split pieces may overlap in vertices, counted with multiplicity. Folding preserves isolated quotient vertices and requires neighbor bounds at vertices outside the folding sets too.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/181.md) · [Batch record](../../batches/B012/README.md)"
+    },
+    {
+      "id": "openai-math-183",
+      "record_type": "family",
+      "title": "Activity-to-distance conversion and fixed-scale power gains",
+      "source_family": "183",
+      "source_collection": "openai/math",
+      "batch_id": "B044",
+      "subject": "Combinatorics",
+      "source_paper_ids": [
+        "P-000250"
+      ],
+      "instrument_ids": [
+        "MI-000462",
+        "MI-000463"
+      ],
+      "headline": "The source claims a power saving for planar halving lines and k-sets.",
+      "central_instrument": "Changing rank converts hidden membership activity into endpoint distance. A uniform small-constant packing hypothesis gives one fixed contraction scale and a genuine exponent saving.",
+      "novelty_assessment": "The second step is a classical scale-induction mechanism. The source all-rank activity input is the substantial separate hypothesis; no halving-line novelty or correctness certification.",
+      "formalization_summary": "Read HalvingLines.lean in full and the scope document. power_bounds contains sorry; it states existential positive exponent savings, with generic assumptions for all ranks. No Lean build.",
+      "statement_faithfulness": "Activity counts distinct participating points, not endpoint distance or switches. The packing estimate must be uniform in size and rank; the selected argument provides no numerical exponent without an explicit scale.",
+      "dependencies": "Single-crossing affine comparisons, complementary ranks, greedy activity blocks, hereditary restriction and induction at one fixed scale.",
+      "antecedents": "Classical sweep and crossing-number framework; fixed-scale recurrence improvement.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-183.md",
+      "body": "# Activity-to-distance conversion and fixed-scale power gains\n\n## Source manuscript and claim\n\n[A power saving for planar halving lines](../papers/P-000250.md), by OpenAI, September 25, 2026.\n\nThe source claims a power saving for planar halving lines and k-sets.\n\n## Extracted instruments\n\n- [MI-000462: Expose returning sweep activity by shifting the rank](../instruments/MI-000462.md)\n- [MI-000463: Turn uniform small packing constants into a fixed exponent saving](../instruments/MI-000463.md)\n\n## Dependencies and antecedents\n\nSingle-crossing affine comparisons, complementary ranks, greedy activity blocks, hereditary restriction and induction at one fixed scale.\n\nClassical sweep and crossing-number framework; fixed-scale recurrence improvement. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite activity and greedy lemmas and packing-to-power proof, including the subsequent conditional k-sensitive reduction. The uniform activity-packing theorem was not audited.\n\nRead HalvingLines.lean in full and the scope document. power_bounds contains sorry; it states existential positive exponent savings, with generic assumptions for all ranks. No Lean build.\n\nActivity counts distinct participating points, not endpoint distance or switches. The packing estimate must be uniform in size and rank; the selected argument provides no numerical exponent without an explicit scale.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/183.md) · [Batch record](../../batches/B044/README.md)"
     },
     {
       "id": "openai-math-185",

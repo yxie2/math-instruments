@@ -1,0 +1,208 @@
+{
+  "batch_id": "B044",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T13:27:34.645883+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ElementaryPositivity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ElementaryPositivity.lean",
+      "sha256": "7cdb9739c3f71939cb78efb4472721a95eda2c15cdf99e7ab2c8038b69f07bef",
+      "bytes": 2174
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamsey.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamsey.lean",
+      "sha256": "cb2ede9a1f7b6c2784acfcace10de725268779be904e8b81771e79044233ac0c",
+      "bytes": 1917
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamseyCircle.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamseyCircle.lean",
+      "sha256": "23fabb8603a8f3b916eca92a3e371f10ac55a1fa4bf0fa7c9bd33dfcc0712bba",
+      "bytes": 893
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamseyNine.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamseyNine.lean",
+      "sha256": "ab8ee7f671e70ade5db03334815dad6f6fc96010e2889b8be3b9fe2f81d99976",
+      "bytes": 1099
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamseyQuadratic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamseyQuadratic.lean",
+      "sha256": "18006dbc96b366ba98cc80c1b06946268555636481a3c3eed88b01b8ed42a364",
+      "bytes": 1504
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamseySpherical.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamseySpherical.lean",
+      "sha256": "399d877ea645bc6eff835c592f970fa6432238f729f9131559a335c2a6fa41e2",
+      "bytes": 730
+    },
+    {
+      "path": "lean/ComparatorChallenges/EuclideanRamseyTransitive.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EuclideanRamseyTransitive.lean",
+      "sha256": "81b6f2afdaff49bc8d2841d1cb1dc094b9d1e0fd12b82e8ab069212f032e397c",
+      "bytes": 955
+    },
+    {
+      "path": "lean/ComparatorChallenges/GrahamSpherical.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GrahamSpherical.lean",
+      "sha256": "9f3f1b2871826ef17cee8672fe2a9be1c50c2337e88213635474bbb28d75c170",
+      "bytes": 1781
+    },
+    {
+      "path": "lean/ComparatorChallenges/HalvingLines.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/HalvingLines.lean",
+      "sha256": "8011f6da81708ed7278237b87810ed246c80fa2669429aee4a4ec69cb8c2d075",
+      "bytes": 2197
+    },
+    {
+      "path": "lean/docs/169.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/169.md",
+      "sha256": "cc93e64bb07cf14db5ee3895fb9057f0b230456bf79beb5de6016535fb3f3e39",
+      "bytes": 1069
+    },
+    {
+      "path": "lean/docs/172.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/172.md",
+      "sha256": "8e6450e976cda5c347c5eeeb6e2ddbf218bdd7586ce564b7a874120ce7f7b348",
+      "bytes": 2287
+    },
+    {
+      "path": "lean/docs/183.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/183.md",
+      "sha256": "276ae3ef3a58367090659f808dd246d819254fb4ab5da911713825f9f74f83b0",
+      "bytes": 1001
+    },
+    {
+      "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/README.md",
+      "sha256": "530493f4f4ee69ce023b577afdbfdff7fb6ad1a3a24447487e3ca2be9acca8cb",
+      "bytes": 650
+    },
+    {
+      "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+      "sha256": "c3f8012afe9bcb9f03af1b3350ad4637432eb7b2ba848dd5c5c4787f3efbad31",
+      "bytes": 12037
+    },
+    {
+      "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/README.md",
+      "sha256": "ef9b53ab01cc5236e9da009110ab392353213b9e924f0d91bd08cafc644542b9",
+      "bytes": 553
+    },
+    {
+      "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex",
+      "sha256": "6bbb5204eac4d39bcdcb62c4aced0345d91958e1bd4ed5453f8e84f0abbaaf47",
+      "bytes": 12850
+    },
+    {
+      "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex",
+      "sha256": "cd85f68ab7fabb432fc6c0fe63658fe0a3dffdcf4e66b24f1b6389e1ef76aef9",
+      "bytes": 7957
+    },
+    {
+      "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/README.md",
+      "sha256": "74ce310e94b166e1c01e3dbeb933eb2f113919e8b96c96e4830228492ced434a",
+      "bytes": 655
+    },
+    {
+      "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+      "sha256": "0a90807bc64e1d2cfb402826297572f13856be07da344c53c95580b36a562008",
+      "bytes": 10872
+    },
+    {
+      "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/README.md",
+      "sha256": "73e380cbff05915bde7caaa78a2cd22fba07e71fddd6006f8c9463be2f3a28c4",
+      "bytes": 617
+    },
+    {
+      "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+      "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7",
+      "bytes": 62334
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000456",
+      "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+      "label": "out:walk",
+      "line": 401,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L401",
+      "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+    },
+    {
+      "instrument_id": "MI-000457",
+      "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+      "label": "out:replica-gap",
+      "line": 654,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L654",
+      "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+    },
+    {
+      "instrument_id": "MI-000457",
+      "path": "preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex",
+      "label": "out:clip-mean",
+      "line": 1001,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-PCP-for-PPAD-conjecture-a-quasilinear-reduction-September-25-2026/build/sections/06-outer-composition.tex#L1001",
+      "sha256": "a8d3c37e83118dec2dece536214bdd721d08d4660b303d8d3859d227261dcfc7"
+    },
+    {
+      "instrument_id": "MI-000458",
+      "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+      "label": "graph:digits",
+      "line": 23,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L23",
+      "sha256": "0a90807bc64e1d2cfb402826297572f13856be07da344c53c95580b36a562008"
+    },
+    {
+      "instrument_id": "MI-000459",
+      "path": "preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex",
+      "label": "graph:commutation",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elementary-Positivity-of-Chromatic-Quasisymmetric-Functions-September-24-2026/build/sections/02-graphs.tex#L98",
+      "sha256": "0a90807bc64e1d2cfb402826297572f13856be07da344c53c95580b36a562008"
+    },
+    {
+      "instrument_id": "MI-000460",
+      "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+      "label": "pairs:bump",
+      "line": 42,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L42",
+      "sha256": "c3f8012afe9bcb9f03af1b3350ad4637432eb7b2ba848dd5c5c4787f3efbad31"
+    },
+    {
+      "instrument_id": "MI-000461",
+      "path": "preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex",
+      "label": "pairs:rational",
+      "line": 151,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026/build/sections/04-pairs.tex#L151",
+      "sha256": "c3f8012afe9bcb9f03af1b3350ad4637432eb7b2ba848dd5c5c4787f3efbad31"
+    },
+    {
+      "instrument_id": "MI-000462",
+      "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex",
+      "label": "lem:activity-distance",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/finite.tex#L61",
+      "sha256": "6bbb5204eac4d39bcdcb62c4aced0345d91958e1bd4ed5453f8e84f0abbaaf47"
+    },
+    {
+      "instrument_id": "MI-000463",
+      "path": "preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex",
+      "label": "prop:packing-to-power",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/build/sections/recurrence.tex#L12",
+      "sha256": "cd85f68ab7fabb432fc6c0fe63658fe0a3dffdcf4e66b24f1b6389e1ef76aef9"
+    }
+  ]
+}

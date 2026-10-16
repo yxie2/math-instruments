@@ -1,0 +1,46 @@
+{
+  "batch": "B044",
+  "status": "passed",
+  "scope": "Eight finite groups only. No PCP, elementary positivity, Ramsey classification or halving-line theorem certified.",
+  "checks": {
+    "averaged_walk": {
+      "models": 32,
+      "paths_per_model": 729,
+      "maximum_bound_ratio": 0.6519057487508274,
+      "stationary_initial_state": true
+    },
+    "clipped_consensus": {
+      "models": 300,
+      "averaging_clipping_noncommutation_control": true
+    },
+    "insertion_digits": {
+      "graphs": 64,
+      "admissible_words": 1069,
+      "scope": "all natural unit interval graphs through five vertices"
+    },
+    "quantum_commutation": {
+      "graphs": 64,
+      "ordered_independent_set_pairs": 11627,
+      "exact_laurent_coefficients": true
+    },
+    "indefinite_gaussian_path": {
+      "models": 80,
+      "maximum_derivative_error": 2.2176515485083925e-10,
+      "scope": "covariance positivity and heat identity; no cutoff-limit test"
+    },
+    "exact_convolution_constraints": {
+      "rational_models": 100,
+      "scope": "moments and quotient cancellation; no asymptotic small-negative-part certification"
+    },
+    "activity_to_endpoint": {
+      "configurations": 25,
+      "intervals": 2386,
+      "scope": "generic sampled sweeps, not uniform activity packing"
+    },
+    "fixed_scale_power_gain": {
+      "rounding_models": 4876,
+      "fixed_scales": 46,
+      "scope": "conditional recurrence arithmetic; packing hypothesis not tested"
+    }
+  }
+}
