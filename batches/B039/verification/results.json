@@ -1,0 +1,44 @@
+{
+  "batch": "B039",
+  "status": "pass",
+  "scope": "Selected finite interfaces; no headline theorem or Lean build certified.",
+  "checks": {
+    "common_lowering": {
+      "exact_string_sums": 9,
+      "raiser_only_negative_control": true
+    },
+    "tensor_lefschetz": {
+      "positive_models": 68,
+      "negative_models": 32
+    },
+    "finite_cut_quotient": {
+      "exact_groebner_models": 30,
+      "unit_ideals": 15
+    },
+    "graded_flat_lift": {
+      "polynomial_isomorphism_models": 30,
+      "nonflat_target_negative_control": true,
+      "unbounded_below_negative_control": true
+    },
+    "coefficient_algebra": {
+      "exact_exterior_models": 100,
+      "nilpotent_even_unit_endomorphisms": true,
+      "augmentation_loss_control": true,
+      "symplectic_group_modelled": false
+    },
+    "finite_polarization": {
+      "rational_left_inverse_models": 7,
+      "exterior_coefficient_components": 4
+    },
+    "jet_length_test": {
+      "isolated_lengths": 5,
+      "infinite_length_negative_controls": 5,
+      "smaller_cutoff_controls": 4
+    },
+    "base_change_seam": {
+      "linear_space_transport_models": 312,
+      "seam_error": 1.5700924586837752e-16,
+      "closed_ball_tubes_modelled": false
+    }
+  }
+}
