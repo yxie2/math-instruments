@@ -1,0 +1,73 @@
+{
+  "batch": "B083",
+  "status": "pass",
+  "elapsed_seconds": 0.999,
+  "scope": "Selected finite mechanisms and chain-complex analogues; no topological headline or Lean certification.",
+  "checks": {
+    "simplex_slices": {
+      "status": "pass",
+      "details": {
+        "rational_simplex_slices": 336,
+        "monotone_naturality_checks": 6096,
+        "nonmonotone_permutation_control": true
+      }
+    },
+    "boundary_restoration": {
+      "status": "pass",
+      "details": {
+        "finite_compact_inputs": 300,
+        "whole_boundary_vectors_preserved": true,
+        "normalization_continuous_at_zero_control": true
+      }
+    },
+    "chain_retraction": {
+      "status": "pass",
+      "details": {
+        "graded_complements": 5,
+        "signed_tensor_homotopies": 5,
+        "total_image_larger_than_K": true,
+        "missing_sign_control": true
+      }
+    },
+    "joint_kernels": {
+      "status": "pass",
+      "details": {
+        "tensor_operator_lists": 4,
+        "nilpotent_zero_invertible_factors": true,
+        "interspersed_passive_factor": true
+      }
+    },
+    "matching_norms": {
+      "status": "pass",
+      "details": {
+        "block_supports": 9,
+        "matching_counts_and_diagonal_squares": true,
+        "infinite_universal_norm_not_computed": true
+      }
+    },
+    "multiplier_squares": {
+      "status": "pass",
+      "details": {
+        "matching_contractions": 30,
+        "positive_square_and_both_actions": true,
+        "finite_analogue_only": true
+      }
+    },
+    "cofiber_quotients": {
+      "status": "pass",
+      "details": {
+        "regular_graded_pieces": 7,
+        "zero_divisor_extra_cone_kernel": true,
+        "actual_spectrum_maps_not_tested": true
+      }
+    },
+    "finite_descent": {
+      "status": "pass",
+      "details": {
+        "localized_chain_cone_isomorphisms": 39,
+        "nonunit_denominator_controls": 4,
+        "finite_spectra_compactness_not_tested": true
+      }
+    }
+  }
+}

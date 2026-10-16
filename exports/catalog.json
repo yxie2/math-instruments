@@ -32652,6 +32652,336 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000765.md",
       "body": "# Upgrade sequential covariance limits to uniform trace estimates\n\n[Family 291](../families/openai-math-291.md) · [Source manuscript](../papers/P-000509.md) · [Batch B082](../../batches/B082/README.md)\n\n## Mathematical content\n\nIf self-adjoint X_j under states have every scalar moment converging to those of a centered finite-dimensional Gaussian quadratic q_B, their spectral laws converge weakly to that law, without any uniform operator norm bound. Bounded second moments give tightness; for an even 2r>d, the bound integral_(|x|>K)|x|^d<=C_r K^(d-2r) makes moments pass to each weak limit. The Gaussian quadratic has an exponential absolute moment and is moment determinate: equality of even moments gives an exponential moment for any competing law, and analytic characteristic functions then agree.\n\nIn the source, assume the ordered joint moment input along EVERY sequence of extreme traces whose finite covariance matrices converge. The fixed polynomial prescription gives scalar quadratic laws and difference second moments. Tracial Duhamel gives ||exp(itX)-exp(itY)||_(2,phi)<=|t| ||X-Y||_(2,phi). The covariance-normalized Gaussian estimates consequently bound each limiting invariance error and each of finitely many Fourier moments, with a strict tolerance margin.\n\nIf uniform bounds over extreme traces failed, choose a failing sequence, fix one failed test by a subsequence, and extract a convergent finite covariance matrix from the compact set of positive matrices with diagonal one. The assumed sequential input and strict margin contradict failure. No compact extreme trace boundary and no uniform convergence rate in covariance are required. For fixed N the squared invariance error is continuous affine in the trace and the Fourier absolute value is continuous convex; their closed convex sublevel sets contain every extreme trace, hence all traces by Krein-Milman.\n\n## Role in the source argument\n\nObtaining one approximation that works for all traces without assuming compactness of the extreme boundary.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:quadratic-moment-transfer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L143)\n- [eq:tracial-duhamel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L388)\n- [eq:extreme-uniform-estimates](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/build/sections/gaussian.tex#L413)\n\n## Antecedents and comparison\n\nThis combines the classical determinate method of moments, the Duhamel estimate and compactness by contradiction. The source-specific contribution being extracted is the choice of a finite covariance parameter and the order of quantifiers. No new general compactness theorem is claimed.\n\n## Checks and limitations\n\nGrowing-norm diagonal examples check bounded continuous spectral tests and higher-moment tail controls. Noncommuting matrices check tracial Duhamel, and convex mixtures check extension of finite error bounds from extreme states.\n\nFinite tests cannot prove the sequential joint-moment input. Pointwise convergence for each fixed trace would not justify the uniform conclusion; moving traces are essential.\n\n## Possible applications\n\nObtaining one approximation that works for all traces without assuming compactness of the extreme boundary.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000766",
+      "record_type": "instrument",
+      "title": "Slice a simplex naturally while limiting the number of nonvertex outputs",
+      "forms": [
+        "monotone-natural-simplex-slicing",
+        "mass-break-counting-compatible-parameters"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-302"
+      ],
+      "source_paper_ids": [
+        "P-000510"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+          "label": "lem:simplex-slicing",
+          "line": 98,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L98",
+          "sha256": "f9db3e50ee11d5a6a446fde53ce9ffbfcff71e0f9020381607d4d251e34a525c"
+        },
+        {
+          "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+          "label": "eq:simplex-slicing-formula",
+          "line": 113,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L113",
+          "sha256": "f9db3e50ee11d5a6a446fde53ce9ffbfcff71e0f9020381607d4d251e34a525c"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 1,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000766.md",
+      "body": "# Slice a simplex naturally while limiting the number of nonvertex outputs\n\n[Family 302](../families/openai-math-302.md) · [Source manuscript](../papers/P-000510.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nFor x=(x_0,...,x_j) in the probability simplex put s_a=sum_(b<a)x_b. Divide [0,1] into ell equal slices I_r. Define rho_r(x)_a as ell times the length of [s_a,s_(a+1)] intersect I_r. Each rho_r is a continuous simplex-valued map.\n\nA monotone map between vertex sets merges consecutive mass intervals, allowing empty fibers. Intersection length with a fixed slice is additive under such merging, so pushing forward x commutes with every rho_r, including for degeneracies. Thus the construction is natural in the simplex category.\n\nA nonvertex rho_r requires an internal break s_a strictly inside I_r. Distinct nonvertex slices require distinct breaks; there are only j. Breaks at slice endpoints and zero coordinates introduce no extra nonvertex values. Consequently, among any n>j selected factors at least one receives a vertex. The source uses this counting fact to organize compatible nullhomotopy parameters, but that further stable construction is not part of the extracted guarantee.\n\n## Role in the source argument\n\nDistributing homotopy parameters among many factors with a deterministic bound on how many remain away from vertices.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:simplex-slicing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L98)\n- [eq:simplex-slicing-formula](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L113)\n\n## Antecedents and comparison\n\nThis is an explicit cumulative-mass interval construction. A targeted search located the source formulation but did not establish its exact priority; absence of an independently located formula is not evidence of novelty.\n\n## Checks and limitations\n\nExact rational simplex grids check normalization, the at-most-j bound and naturality under all small monotone maps. An arbitrary vertex permutation supplies a control showing why monotonicity matters.\n\nThe finite checks do not prove the compatible Adams lift or quantitative nilpotence theorem. Naturality under arbitrary vertex permutations is not asserted.\n\n## Possible applications\n\nDistributing homotopy parameters among many factors with a deterministic bound on how many remain away from vertices.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000767",
+      "record_type": "instrument",
+      "title": "Restore whole cube-boundary slots after avoiding a sparse arrangement",
+      "forms": [
+        "compact-slot-boundary-restoration",
+        "boundary-fixing-radial-normalization"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-302"
+      ],
+      "source_paper_ids": [
+        "P-000510"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex",
+          "label": "lem:boundary-restoration",
+          "line": 499,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex#L499",
+          "sha256": "07dd9fe24e54987d78a311ff5af02cd07fcf3bdce5b223c411df0febe3329b27"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 2,
+      "subject": "Operator algebras",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000767.md",
+      "body": "# Restore whole cube-boundary slots after avoiding a sparse arrangement\n\n[Family 302](../families/openai-math-302.md) · [Source manuscript](../papers/P-000510.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nLet K be compact, f:K->([-1,1]^t)^n and g:K->(-2,2)^(tn) be continuous, with ||g-f||_infinity<1/2. Suppose g has at least s+1 nonzero whole slots at every point, 0<=s<n. Choose a continuous chi on [0,1] that is zero up to 3/4 and equals one at one, and set\ng'_j=(1-chi(||f_j||_infinity))g_j+chi(||f_j||_infinity)f_j.\nWhere chi is nonzero, a coordinate of f_j has magnitude greater than 3/4; the same coordinate of g_j has the same sign and magnitude greater than 1/4. The interpolation cannot make that slot zero. Thus g' retains at least s+1 nonzero slots and agrees with f at every original boundary slot.\n\nThe (s+1)st largest slot norm of g' is continuous and positive. Choose 0<delta<1 below its minimum over K. Then G_j=g'_j/max(delta,||g'_j||_infinity) lies in the cube and sends at least s+1 slots to its boundary. It is continuous at zero and fixes every original boundary slot as an entire vector, including its coordinates in the interior of [-1,1].\n\n## Role in the source argument\n\nMaking a newly obtained compression compatible with boundary coordinates fixed in earlier steps.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:boundary-restoration](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex#L499)\n\n## Antecedents and comparison\n\nThe proof uses elementary cutoff interpolation, compactness and radial normalization. Its source role is to preserve prior boundary constraints through successive avoidance steps; no new general normalization principle is claimed.\n\n## Checks and limitations\n\nFinite compact sets with multiple slot dimensions check sign preservation, boundary counts and exact preservation of whole boundary vectors. Small continuous examples check the normalization near zero.\n\nThe existence of a sufficiently close sparse-avoiding g is a separate and substantive hypothesis. Pointwise positivity on a noncompact input does not supply the chosen uniform delta.\n\n## Possible applications\n\nMaking a newly obtained compression compatible with boundary coordinates fixed in earlier steps.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000768",
+      "record_type": "instrument",
+      "title": "Turn a graded complement into a chain retraction that controls one kernel",
+      "forms": [
+        "kernel-compatible-chain-retraction",
+        "explicit-acyclic-summand-homotopy"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-305"
+      ],
+      "source_paper_ids": [
+        "P-000511"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+          "label": "frob:retraction",
+          "line": 242,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L242",
+          "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+        },
+        {
+          "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+          "label": "frob:retraction-identity",
+          "line": 254,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L254",
+          "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+        },
+        {
+          "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+          "label": "frob:tensor-homotopy",
+          "line": 334,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L334",
+          "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000768.md",
+      "body": "# Turn a graded complement into a chain retraction that controls one kernel\n\n[Family 305](../families/openai-math-305.md) · [Source manuscript](../papers/P-000511.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nFor a finite graded complex (V,D) and a degree-zero map S, set N=ker S and K=N intersect D^(-1)N. Then K is a subcomplex. Choose a graded complement N=K plus E. If De lies in N for e in E, then e lies in K and is zero; hence D is injective on E and DE intersects N trivially.\n\nChoose any graded complement C' to K plus E plus DE. Define h(De)=e and h=0 on K plus E plus C'. Let Q=Dh+hD. Its image lies in E plus DE, it is the identity there and vanishes on K. Thus Q^2=Q and DQ=QD. The map r=1-Q is a chain idempotent with r(N)=K, r|K=1 and 1-r=Dh+hD. Its total image is not claimed to equal K: surviving cohomology outside N may remain.\n\nFor finitely many such complexes, R=tensor_b r_b is chain homotopic to the identity via H=sum_b r_<b tensor h_b tensor 1_>b, with sign (-1)^(sum of degrees before b) on homogeneous tensors. Cross-slot differential terms cancel and the remaining terms telescope to DH+HD=1-R. A plain arbitrary vector-space projection would not ensure this chain identity.\n\n## Role in the source argument\n\nImproving factors to lie in a differential-compatible kernel while preserving cohomology and tensor pairings.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [frob:retraction](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L242)\n- [frob:retraction-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L254)\n- [frob:tensor-homotopy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L334)\n\n## Antecedents and comparison\n\nThis is the standard removal of a contractible pair, tailored to the subspace ker S without requiring DS=SD. The signed tensor homotopy is classical. Priority of this exact kernel-compatible formulation is not established.\n\n## Checks and limitations\n\nExact rational graded examples check r^2=r, Dr=rD, r(N)=K and the homotopy, including complements whose differential has extra components. Signed tensor products check telescoping and reject a missing-sign variant.\n\nThe construction is not a deformation retraction of all V onto K. It does not establish the source geometric hypotheses or obstruction theorem.\n\n## Possible applications\n\nImproving factors to lie in a differential-compatible kernel while preserving cohomology and tensor pairings.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000769",
+      "record_type": "instrument",
+      "title": "Read joint tensor annihilation as a bound on the number of active factors",
+      "forms": [
+        "joint-tensor-kernel-coordinate-decomposition",
+        "nilpotent-factor-safe-kernel-counting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-305"
+      ],
+      "source_paper_ids": [
+        "P-000511"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+          "label": "frob:tensor-kernel",
+          "line": 288,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L288",
+          "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+        },
+        {
+          "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+          "label": "frob:tensor-kernel-identity",
+          "line": 299,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L299",
+          "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000769.md",
+      "body": "# Read joint tensor annihilation as a bound on the number of active factors\n\n[Family 305](../families/openai-math-305.md) · [Source manuscript](../papers/P-000511.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nFor finite-dimensional V_i and endomorphisms S_i, let N_i=ker S_i. On the tensor product, S_i acts in its own slot and as the identity elsewhere, including passive factors. The intersection of the kernels of every triple product S_i S_j S_k is the sum of tensor subspaces with at least d-2 slots constrained to N_i.\n\nChoose complements V_i=N_i plus M_i. Decompose the domain as a direct sum indexed by the active set A of slots using M_i. For a fixed triple I, the operator kills summands with I not contained in A. On their complementary sum it is the tensor product of the injections S_i|M_i in slots I and identities elsewhere, hence injective. Intersecting these coordinate kernel sums over triples retains precisely |A|<=2.\n\nThe images S_i(M_i) may intersect N_i; no direct-sum decomposition of the images is used. Nilpotent S_i are therefore allowed. The same proof works for all k-fold products with at most k-1 active slots, and passive tensor factors do not change it.\n\n## Role in the source argument\n\nConverting a multilinear annihilation condition into a supply of factors that can be replaced by kernel-compatible representatives.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [frob:tensor-kernel](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L288)\n- [frob:tensor-kernel-identity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L299)\n\n## Antecedents and comparison\n\nThis is elementary tensor linear algebra over a field, using injectivity on a complementary DOMAIN. No diagonalization or simultaneous semisimplicity hypothesis is needed. The k-fold extension is an immediate form of the same argument.\n\n## Checks and limitations\n\nExact matrix ranks compare the stacked triple-product kernel with the predicted tensor sum, including nilpotent, zero and invertible factors and an interspersed passive factor.\n\nOver general rings, tensor products of injections need not remain injective without flatness assumptions. This finite identity does not certify the source disk-embedding obstruction.\n\n## Possible applications\n\nConverting a multilinear annihilation condition into a supply of factors that can be replaced by kernel-compatible representatives.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000770",
+      "record_type": "instrument",
+      "title": "Use matching decompositions to control every fixed-propagation representation",
+      "forms": [
+        "bounded-geometry-matching-maximal-norm",
+        "common-propagation-limit-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-307"
+      ],
+      "source_paper_ids": [
+        "P-000512"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+          "label": "ana:fixed-propagation",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L39",
+          "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+        },
+        {
+          "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+          "label": "ana:compacts",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L83",
+          "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000770.md",
+      "body": "# Use matching decompositions to control every fixed-propagation representation\n\n[Family 307](../families/openai-math-307.md) · [Source manuscript](../papers/P-000512.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nLet T have propagation at most R on ell^2(Z) tensor H_0, with compact matrix entries, and put N_R=sup_z |B(z,R)|. Its support is a bipartite graph of maximum degree N_R. Greedy edge coloring partitions it into at most 2N_R-1 matchings. The corresponding T_a each have at most one block in every row and column, so ||T_a||_op<=||T||_op and T_a^*T_a is diagonal.\n\nThe algebra of bounded diagonal compact entries is itself a C*-algebra. Every star representation of the algebraic Roe algebra is contractive on it. Therefore ||pi(T_a)||^2<=||T_a^*T_a||_op, and summation gives\n||T||_op<=||T||_max<=(2N_R-1)||T||_op.\nApplying this to differences transfers operator-norm convergence with ONE common propagation bound to maximal-norm convergence.\n\nOn a fixed finite vertex support, the operators already form the compact-operator C*-algebra, so their maximal and concrete norms agree exactly. Their closure is the compact ideal. None of these facts identifies the maximal and reduced norms on the entire completed algebra.\n\n## Role in the source argument\n\nJustifying concrete operator estimates inside a universal completion with the required support control visible.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ana:fixed-propagation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L39)\n- [ana:compacts](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L83)\n\n## Antecedents and comparison\n\n[Oyono-Oyono and Yu, arXiv:0902.2317v1](https://arxiv.org/abs/0902.2317v1), Lemma 2.1 on PDF page 3, was read for the classical statement. [Spakula and Willett, author text](https://math.hawaii.edu/~rufus/kcoarse2.pdf), Lemma 1.10 and its proof sketch on PDF page 4, were read for the matching/partial-isometry mechanism. The source supplies an explicit 2N_R-1 bound.\n\n## Checks and limitations\n\nFinite block matrices check greedy matching counts, decomposition, diagonal squares and component norm bounds.\n\nFinite matrices do not compute the universal norm of an infinite Roe algebra. Allowing the propagation bound to grow invalidates the stated convergence inference.\n\n## Possible applications\n\nJustifying concrete operator estimates inside a universal completion with the required support control visible.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000771",
+      "record_type": "instrument",
+      "title": "Extend bounded finite-propagation operators as multipliers by a positive square",
+      "forms": [
+        "matching-multiplier-positive-square",
+        "bounded-entry-roe-multiplier-extension"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-307"
+      ],
+      "source_paper_ids": [
+        "P-000512"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+          "label": "ana:multipliers",
+          "line": 106,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L106",
+          "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000771.md",
+      "body": "# Extend bounded finite-propagation operators as multipliers by a positive square\n\n[Family 307](../families/openai-math-307.md) · [Source manuscript](../papers/P-000512.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nA bounded finite-propagation D need not have compact entries, but DT and TD do for every algebraic Roe operator T, and their propagation remains finite. Reduce D to matching components. For a matching contraction, D^*D is diagonal and W=(1-D^*D)^(1/2) is a bounded diagonal operator. The identity\nT^*T-(DT)^*(DT)=(WT)^*(WT)\nhas every term in the algebraic Roe algebra. Applying arbitrary star representations yields ||DT||_max<=||T||_max. Apply the same argument to D^* and take adjoints for right multiplication.\n\nThe compatible left and right actions extend to a multiplier. Summing matching bounds gives ||D||_M<=(2N_R-1)||D||_op. The nondegenerate concrete representation, which contains the compact ideal, extends to multipliers and sends this one to D; hence the assignment is faithful and ||D||_op<=||D||_M. A single matching has equality of norms. Products and adjoints agree on the dense algebra and therefore after extension.\n\n## Role in the source argument\n\nTransporting bounded shifts and group-action operators into a maximal algebra without falsely requiring their entries to be compact.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [ana:multipliers](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L106)\n\n## Antecedents and comparison\n\nThis is standard multiplier theory, with the positive-square argument making contractivity independent of the concrete representation. Spakula-Willett Lemma 1.10 explicitly notes that its partial isometries are multipliers in the compact-entry case; that primary proof sketch was read.\n\n## Checks and limitations\n\nFinite block matching contractions verify the square identity, left and right contraction and multiplier product/adjoint identities. Noncompact-entry issues and infinite completion are outside these tests.\n\nFaithfulness of this assignment on finite-propagation operators does not imply faithfulness of the concrete representation on the entire maximal Roe algebra. No assembly-map counterexample is certified.\n\n## Possible applications\n\nTransporting bounded shifts and group-action operators into a maximal algebra without falsely requiring their entries to be compact.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000772",
+      "record_type": "instrument",
+      "title": "Determine an entire cofiber homology module from its cyclic generator",
+      "forms": [
+        "regular-element-cofiber-quotient",
+        "finite-diagram-all-degree-homology"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-308"
+      ],
+      "source_paper_ids": [
+        "P-000513"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+          "label": "real:cofiber-quotient",
+          "line": 61,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L61",
+          "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+        },
+        {
+          "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+          "label": "real:finite-identities",
+          "line": 32,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L32",
+          "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 1,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000772.md",
+      "body": "# Determine an entire cofiber homology module from its cyclic generator\n\n[Family 308](../families/openai-math-308.md) · [Source manuscript](../papers/P-000513.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nLet E be a ring spectrum with graded-commutative even coefficient ring R, and let a unit map u:S->Y identify E_*Y with R/J. Suppose b:S^d->Y and mu:Sigma^dY->Y, d even, satisfy mu composed with Sigma^d u homotopic to b. If the E-Hurewicz image of b is a x, with a a degree-zero unit and x in R_d acting injectively on R/J, then the cofiber has E-homology R/(J,x), via the composite unit map.\n\nEvery induced E-homology map is R-linear. Its shifted source is cyclic, and the specified homotopy fixes the generator image, so the map is multiplication by a x in EVERY degree. Injectivity makes the long exact sequence a sequence of cokernel short exact sequences. The unit a does not alter the ideal.\n\nThe source descends only finitely many objects, maps, homotopies and cofiber equivalences (with inverses and inverse homotopies) to one common ultrafilter-large set of primes. Coefficient linearity then computes the entire module there. It does not require intersecting one prime set for each of infinitely many homological degrees or descending full commutative algebra structures.\n\n## Role in the source argument\n\nAvoiding an unjustified infinite intersection of prime sets when a finite cyclic-module calculation controls every degree.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [real:cofiber-quotient](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L61)\n- [real:finite-identities](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L32)\n\n## Antecedents and comparison\n\nThis is the classical regular-element cofiber calculation. Its source use is to reduce all-degree identification to finite generator and coherence data. The needed attaching-map construction remains a separate input.\n\n## Checks and limitations\n\nFinite-degree polynomial bases check injective multiplication by a regular element, the quotient dimensions and independence of a unit scalar. A zero-divisor example displays the additional kernel term in a mapping cone.\n\nA cokernel-only calculation is false if multiplication is not injective. These algebraic checks do not construct spectrum maps or verify the source Hurewicz computation.\n\n## Possible applications\n\nAvoiding an unjustified infinite intersection of prime sets when a finite cyclic-module calculation controls every degree.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000773",
+      "record_type": "instrument",
+      "title": "Clear prime-to-p denominators before taking a finite cofiber",
+      "forms": [
+        "finite-spectrum-localization-denominator-clearing",
+        "localized-finite-mapping-cone-descent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-308"
+      ],
+      "source_paper_ids": [
+        "P-000513"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+          "label": "real:finite-descent",
+          "line": 483,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L483",
+          "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+        }
+      ],
+      "batch_id": "B083",
+      "source_item": 2,
+      "subject": "Topology",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000773.md",
+      "body": "# Clear prime-to-p denominators before taking a finite cofiber\n\n[Family 308](../families/openai-math-308.md) · [Source manuscript](../papers/P-000513.md) · [Batch B083](../../batches/B083/README.md)\n\n## Mathematical content\n\nFor finite CW spectra F_0,F_1, compactness of F_0 and the filtered-colimit description of localization give\n[(F_0)_(p),(F_1)_(p)]=[F_0,F_1] tensor Z_(p).\nThus a map between their p-localizations has the form f/s with p not dividing s. Multiplication by s is an equivalence after p-localization. Pre- or postcomposing by it identifies the cofiber of f/s with the p-localization of cofib(f).\n\nA stable map between finite CW spectra is represented after a finite suspension by a cellular map between finite CW models. Its finite mapping cone, desuspended, is again finite. Consequently p-localizations of finite CW spectra are closed under the finite suspensions and successive cofibers used in the source construction.\n\nThe conclusion concerns finite p-local spectra, namely localizations of finite spectra; it does not say the localized sphere is itself a finite integral CW spectrum. The denominator must be invertible at the chosen prime.\n\n## Role in the source argument\n\nPreserving a finite model while realizing a finite tower of maps initially given only after prime localization.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [real:finite-descent](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L483)\n\n## Antecedents and comparison\n\nThis is standard compact-object localization and finite mapping-cone theory. The source gives the denominator-clearing argument explicitly; no new finiteness theorem is claimed.\n\n## Checks and limitations\n\nFinite chain-complex analogues check an explicit mapping-cone isomorphism after clearing an invertible denominator. Reduction modulo several primes verifies the unit condition and contrasts a denominator divisible by p.\n\nChain-complex tests verify the algebraic analogy only. The spectrum-level compactness theorem and the existence of the source attaching maps are not numerically tested.\n\n## Possible applications\n\nPreserving a finite model while realizing a finite tower of maps initially given only after prime localization.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -42325,6 +42655,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000509.md",
       "body": "# Equivariant Jiang–Su Stability for Amenable Actions in the Unital Stably Finite Case\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000764: Normalize Gaussian quadratics without a lower covariance eigenvalue bound](../instruments/MI-000764.md)\n- [MI-000765: Upgrade sequential covariance limits to uniform trace estimates](../instruments/MI-000765.md)\n\n[Family review and dependencies](../families/openai-math-291.md) · [Batch B082](../../batches/B082/README.md)"
+    },
+    {
+      "id": "P-000510",
+      "record_type": "paper",
+      "title": "Filtered products and boundary-preserving compression in complex cobordism",
+      "source_collection": "openai/math",
+      "upstream_slug": "Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-302"
+      ],
+      "batch_id": "B083",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7c9ccada45ea8edfef5d027d60f89a5647d5bbcd99c3d2d198c4d5b862440a7a",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000510.md",
+      "body": "# Filtered products and boundary-preserving compression in complex cobordism\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000766: Slice a simplex naturally while limiting the number of nonvertex outputs](../instruments/MI-000766.md)\n- [MI-000767: Restore whole cube-boundary slots after avoiding a sparse arrangement](../instruments/MI-000767.md)\n\n[Family review and dependencies](../families/openai-math-302.md) · [Batch B083](../../batches/B083/README.md)"
+    },
+    {
+      "id": "P-000511",
+      "record_type": "paper",
+      "title": "A boundary-only obstruction to four-dimensional disk embedding",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-305"
+      ],
+      "batch_id": "B083",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "5f600e52f9369dd5ff331af7568a70d61319cb2f72157c687406f9ab64386e38",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000511.md",
+      "body": "# A boundary-only obstruction to four-dimensional disk embedding\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000768: Turn a graded complement into a chain retraction that controls one kernel](../instruments/MI-000768.md)\n- [MI-000769: Read joint tensor annihilation as a bound on the number of active factors](../instruments/MI-000769.md)\n\n[Family review and dependencies](../families/openai-math-305.md) · [Batch B083](../../batches/B083/README.md)"
+    },
+    {
+      "id": "P-000512",
+      "record_type": "paper",
+      "title": "Failure of rational injectivity for maximal coarse assembly",
+      "source_collection": "openai/math",
+      "upstream_slug": "Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-307"
+      ],
+      "batch_id": "B083",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6f9822a539cac4a0ae43473064aef42d97346ddba85ac2d60c4458db9aa8d2a9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000512.md",
+      "body": "# Failure of rational injectivity for maximal coarse assembly\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000770: Use matching decompositions to control every fixed-propagation representation](../instruments/MI-000770.md)\n- [MI-000771: Extend bounded finite-propagation operators as multipliers by a positive square](../instruments/MI-000771.md)\n\n[Family review and dependencies](../families/openai-math-307.md) · [Batch B083](../../batches/B083/README.md)"
+    },
+    {
+      "id": "P-000513",
+      "record_type": "paper",
+      "title": "Finite Smith–Toda Complexes at Varying Primes",
+      "source_collection": "openai/math",
+      "upstream_slug": "Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-308"
+      ],
+      "batch_id": "B083",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "b34e16183d3f8fc502ed12c6c734f84c471c9949d59d60714367adad07ead980",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000513.md",
+      "body": "# Finite Smith–Toda Complexes at Varying Primes\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000772: Determine an entire cofiber homology module from its cyclic generator](../instruments/MI-000772.md)\n- [MI-000773: Clear prime-to-p denominators before taking a finite cofiber](../instruments/MI-000773.md)\n\n[Family review and dependencies](../families/openai-math-308.md) · [Batch B083](../../batches/B083/README.md)"
     }
   ],
   "families": [
@@ -50603,6 +51009,33 @@
       "body": "# Trace-cone ideal recovery and rank signals preserved by block averaging\n\n## Source manuscript and claim\n\n[The trace cone classifies Razak–Jacelon stabilizations](../papers/P-000210.md), by OpenAI, September 25, 2026.\n\nThe source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.\n\n## Extracted instruments\n\n- [MI-000382: Recover the ideal lattice and trace finiteness ideals from the extended trace cone](../instruments/MI-000382.md)\n- [MI-000383: Preserve a lower spectral-rank signal under normalized block averaging](../instruments/MI-000383.md)\n\n## Dependencies and antecedents\n\nExtended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.\n\nElliott-Robert-Santiago, The cone of lower semicontinuous traces on a C*-algebra, Sections 3.1-3.2 and equation (3.4). The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the ideal-transport, folding and averaged-rank proofs and the fixed lower-data definitions. The approximation models, uniqueness and final classification arguments were not audited.\n\nInspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.\n\nUse extended lower-semicontinuous traces, including zero and infinite values. Internal matrix traces are unnormalized; only the separate candidate-averaging direction is normalized.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/301.md) · [Batch record](../../batches/B034/README.md)"
     },
     {
+      "id": "openai-math-302",
+      "record_type": "family",
+      "title": "Compatible simplex slices and boundary restoration",
+      "source_family": "302",
+      "source_collection": "openai/math",
+      "batch_id": "B083",
+      "subject": "Operator algebras",
+      "source_paper_ids": [
+        "P-000510"
+      ],
+      "instrument_ids": [
+        "MI-000766",
+        "MI-000767"
+      ],
+      "headline": "The family claims filtered-product vanishing and boundary compression in complex cobordism, with a radius-of-comparison companion.",
+      "central_instrument": "Distribute a simplex into slices with few nonvertex values; normalize nonzero slots while fixing every original boundary vector.",
+      "novelty_assessment": "The finite mechanisms are separated from the headline claims. Exact priority of source-specific formulations is not established.",
+      "formalization_summary": "No family scope is supplied in the inventory. No Lean verification is claimed.",
+      "statement_faithfulness": "Simplex naturality is for monotone maps. Boundary restoration assumes a compact input, a uniform perturbation below one half and avoidance of sparse slot vectors.",
+      "dependencies": "Interval intersection lengths, adjacent-block merging, order statistics of continuous functions and compactness.",
+      "antecedents": "Classical cumulative-mass slicing and cutoff/radial normalization.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-302.md",
+      "body": "# Compatible simplex slices and boundary restoration\n\n## Source manuscripts and claim\n\n- [Filtered products and boundary-preserving compression in complex cobordism](../papers/P-000510.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Radius of comparison equals half the mean dimension](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Radius-of-comparison-equals-half-the-mean-dimension-September-25-2026)\n\nThe family claims filtered-product vanishing and boundary compression in complex cobordism, with a radius-of-comparison companion.\n\n## Extracted instruments\n\n- [MI-000766: Slice a simplex naturally while limiting the number of nonvertex outputs](../instruments/MI-000766.md)\n- [MI-000767: Restore whole cube-boundary slots after avoiding a sparse arrangement](../instruments/MI-000767.md)\n\n## Dependencies and antecedents\n\nInterval intersection lengths, adjacent-block merging, order statistics of continuous functions and compactness.\n\nClassical cumulative-mass slicing and cutoff/radial normalization.\n\n## Review and formalization scope\n\nRead the complete simplex-slicing and boundary-restoration proofs and their notation. One companion is inventory-only. The compatible stable lift, nilpotence and stable avoidance arguments are not certified.\n\nNo family scope is supplied in the inventory. No Lean verification is claimed.\n\nSimplex naturality is for monotone maps. Boundary restoration assumes a compact input, a uniform perturbation below one half and avoidance of sparse slot vectors.\n\n[Batch record](../../batches/B083/README.md)"
+    },
+    {
       "id": "openai-math-303",
       "record_type": "family",
       "title": "Cutoff transport and finite-stage ideal membership",
@@ -50661,6 +51094,33 @@
       "body": "# Hilbert–Smith conjecture in every dimension\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000057](../papers/P-000057.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized new\n\nEvery locally compact second-countable Hausdorff group acting faithfully and jointly continuously on a connected Hausdorff second-countable topological manifold of positive finite dimension without boundary is a Lie group. The equivalent exclusion concerns faithful jointly continuous $`\\mathbb{Z}_p`$ actions on such manifolds, for every prime $`p`$. Pardon’s 2013 proof covered dimension 3 via Smith theory and geometrization; the surveyed argument does not use Yang’s theorem, Smith theory, cohomological dimension or cell-like maps.\n\n## Extracted instruments.\n\n- [MI-000022: Compact-source test categories](../instruments/MI-000022.md)\n\n- [MI-000023: Fixed sphere lattice / bounded comparison](../instruments/MI-000023.md)\n\n- [MI-000024: Character classes and equal parts in a fixed lattice](../instruments/MI-000024.md)\n\n## Reused.\n\nNewman 1931 and Pardon’s chart reduction; Kashiwara–Schapira duality; Balmer’s triangular Witt groups; Woolf’s cone lemma; Ranicki–Weiss cutoff; Hardt triviality; Dranishnikov–Ferry–Weinberger telescope; Čech theory and Haar averaging.\n\n## Caveats.\n\nSeveral steps require closer examination: whether the Balmer–Walter hypotheses pass to localizations of the generated categories; whether $`Rt_*`$ commutes with the infinite eigensheaf sums used; and whether the restricted pairing is isometric in the germ quotient. The odd stabilization $`d>n`$ is essential to the argument.\n\n## Recorded assessment\n\n- Novelty: new\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no\n- Antecedents: —"
     },
     {
+      "id": "openai-math-305",
+      "record_type": "family",
+      "title": "Chain retractions and tensor kernels",
+      "source_family": "305",
+      "source_collection": "openai/math",
+      "batch_id": "B083",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000511"
+      ],
+      "instrument_ids": [
+        "MI-000768",
+        "MI-000769"
+      ],
+      "headline": "The family claims boundary and tensor obstructions to four-dimensional disk embedding.",
+      "central_instrument": "Correct an arbitrary graded complement into a chain projection; decode joint tensor kernels without assuming semisimple operators.",
+      "novelty_assessment": "The finite mechanisms are separated from the headline claims. Exact priority of source-specific formulations is not established.",
+      "formalization_summary": "No family scope is supplied in the inventory. No Lean verification is claimed.",
+      "statement_faithfulness": "The vector spaces are finite-dimensional over a field. S has degree zero but need not commute with the differential. The retraction image need not equal the desired subcomplex.",
+      "dependencies": "Linear complements, square-zero differentials, Koszul signs and tensor-product injectivity over a field.",
+      "antecedents": "Classical contraction of an acyclic summand and coordinate decomposition of tensor kernels.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-305.md",
+      "body": "# Chain retractions and tensor kernels\n\n## Source manuscripts and claim\n\n- [A boundary-only obstruction to four-dimensional disk embedding](../papers/P-000511.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A marked tensor obstruction to four-dimensional disk embedding](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-marked-tensor-obstruction-to-four-dimensional-disk-embedding-September-24-2026)\n- [A PD4 group without an aspherical manifold model](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-PD4-group-without-an-aspherical-manifold-model-September-24-2026)\n\nThe family claims boundary and tensor obstructions to four-dimensional disk embedding.\n\n## Extracted instruments\n\n- [MI-000768: Turn a graded complement into a chain retraction that controls one kernel](../instruments/MI-000768.md)\n- [MI-000769: Read joint tensor annihilation as a bound on the number of active factors](../instruments/MI-000769.md)\n\n## Dependencies and antecedents\n\nLinear complements, square-zero differentials, Koszul signs and tensor-product injectivity over a field.\n\nClassical contraction of an acyclic summand and coordinate decomposition of tensor kernels.\n\n## Review and formalization scope\n\nRead the complete retraction, joint-kernel and explicit tensor-homotopy proofs. Two companions are inventory-only. No geometric or formal-data obstruction is certified.\n\nNo family scope is supplied in the inventory. No Lean verification is claimed.\n\nThe vector spaces are finite-dimensional over a field. S has degree zero but need not commute with the differential. The retraction image need not equal the desired subcomplex.\n\n[Batch record](../../batches/B083/README.md)"
+    },
+    {
       "id": "openai-math-306",
       "record_type": "family",
       "title": "Nilpotent lifting and finite congruence recurrence",
@@ -50686,6 +51146,60 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-306.md",
       "body": "# Nilpotent lifting and finite congruence recurrence\n\n## Source manuscript and claim\n\n[Purely cosmetic surgery on knots in the three-sphere](../papers/P-000171.md), by OpenAI, None.\n\nThe source claims that two orientation-preservingly homeomorphic Dehn fillings of a smooth nontrivial knot in S3 have the same unoriented slope, including the meridional slope.\n\n## Extracted instruments\n\n- [MI-000304: Lift a quasi-isomorphism through nilpotent labels and recover a positive power](../instruments/MI-000304.md)\n- [MI-000305: Preserve an integral pairing by repeating a mod-two unit](../instruments/MI-000305.md)\n\n## Dependencies and antecedents\n\nFinite nilpotent filtrations of mapping cones, Cayley-Hamilton, universal coefficients, localization, Nakayama and the exponent of a finite general linear group.\n\nClassical filtered-complex lifting, finite-dimensional recurrence and local algebra; no historical novelty is claimed for these algebraic lemmas. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the labelled-construction statement and proof, complete positive-power lemma, complete finite-lattice lemma and the recurrence portion of its application. The Floer counts, compactification, nonvanishing and geometric gluing inputs were not audited.\n\nNo family-specific scope document or Comparator target is listed for this family. No Lean artifact was built or kernel-checked.\n\nA filling homeomorphism need not preserve the surgery core or exterior. The algebra does not require labelled homology to be free over the coefficient ring or integral homology to be torsion-free. Repeated operations must genuinely be powers of one map.\n\n[Batch record](../../batches/B025/README.md)"
+    },
+    {
+      "id": "openai-math-307",
+      "record_type": "family",
+      "title": "Propagation-controlled maximal norms and multipliers",
+      "source_family": "307",
+      "source_collection": "openai/math",
+      "batch_id": "B083",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000512"
+      ],
+      "instrument_ids": [
+        "MI-000770",
+        "MI-000771"
+      ],
+      "headline": "The family claims failure of rational injectivity for coarse assembly, with maximal and reduced variants in separate manuscripts.",
+      "central_instrument": "Decompose a bounded-propagation operator into matchings to control every representation; construct multipliers using a positive square identity.",
+      "novelty_assessment": "The finite mechanisms are separated from the headline claims. Exact priority of source-specific formulations is not established.",
+      "formalization_summary": "The scope and selected CoarseAssembly definitions and main target were inspected. The 6648-line prerequisite development was not read in full. The target uses the concrete reduced locally compact Roe algebra, whereas the selected manuscript concerns the maximal completion. Its target contains sorry; no separate solution or Lean build was checked.",
+      "statement_faithfulness": "The discrete space has bounded geometry. Compact entries define local compactness without a uniform rank bound. Uniform propagation is retained when taking norm limits.",
+      "dependencies": "Bipartite edge coloring, contractivity on diagonal C*-algebras and double-centralizer extension.",
+      "antecedents": "Classical maximal Roe norm control and finite-propagation multiplier theory.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-307.md",
+      "body": "# Propagation-controlled maximal norms and multipliers\n\n## Source manuscripts and claim\n\n- [Failure of rational injectivity for maximal coarse assembly](../papers/P-000512.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A counterexample to the coarse Novikov conjecture](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-counterexample-to-the-coarse-Novikov-conjecture-September-23-2026)\n\nThe family claims failure of rational injectivity for coarse assembly, with maximal and reduced variants in separate manuscripts.\n\n## Extracted instruments\n\n- [MI-000770: Use matching decompositions to control every fixed-propagation representation](../instruments/MI-000770.md)\n- [MI-000771: Extend bounded finite-propagation operators as multipliers by a positive square](../instruments/MI-000771.md)\n\n## Dependencies and antecedents\n\nBipartite edge coloring, contractivity on diagonal C*-algebras and double-centralizer extension.\n\nClassical maximal Roe norm control and finite-propagation multiplier theory.\n\n## Review and formalization scope\n\nRead complete fixed-propagation, compact-ideal and multiplier proofs. One companion is inventory-only. The persistent class, transfer and sliding arguments are not certified.\n\nThe scope and selected CoarseAssembly definitions and main target were inspected. The 6648-line prerequisite development was not read in full. The target uses the concrete reduced locally compact Roe algebra, whereas the selected manuscript concerns the maximal completion. Its target contains sorry; no separate solution or Lean build was checked.\n\nThe discrete space has bounded geometry. Compact entries define local compactness without a uniform rank bound. Uniform propagation is retained when taking norm limits.\n\n[Batch record](../../batches/B083/README.md)"
+    },
+    {
+      "id": "openai-math-308",
+      "record_type": "family",
+      "title": "Finite cofiber data and prime-local realization",
+      "source_family": "308",
+      "source_collection": "openai/math",
+      "batch_id": "B083",
+      "subject": "Topology",
+      "source_paper_ids": [
+        "P-000513"
+      ],
+      "instrument_ids": [
+        "MI-000772",
+        "MI-000773"
+      ],
+      "headline": "The family claims finite Smith-Toda complexes at varying primes and a concrete height-four example.",
+      "central_instrument": "Determine the full homology of a cofiber from one cyclic generator; clear prime-to-p denominators to retain finite cell models.",
+      "novelty_assessment": "The finite mechanisms are separated from the headline claims. Exact priority of source-specific formulations is not established.",
+      "formalization_summary": "No family scope is supplied in the inventory. No Lean verification is claimed.",
+      "statement_faithfulness": "Multiplication by the attaching coefficient is injective on the cyclic homology quotient. Only finitely many stages and homotopies are descended to a common set of primes.",
+      "dependencies": "Coefficient linearity of generalized homology, long exact cofiber sequences, compactness of finite spectra and localization.",
+      "antecedents": "Classical regular-element cofiber calculations and localization of maps from finite spectra.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-308.md",
+      "body": "# Finite cofiber data and prime-local realization\n\n## Source manuscripts and claim\n\n- [Finite Smith–Toda Complexes at Varying Primes](../papers/P-000513.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [A finite Smith–Toda complex V(4) at the prime 1009](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-Smith-Toda-complex-V4-at-the-prime-1009-September-23-2026)\n\nThe family claims finite Smith-Toda complexes at varying primes and a concrete height-four example.\n\n## Extracted instruments\n\n- [MI-000772: Determine an entire cofiber homology module from its cyclic generator](../instruments/MI-000772.md)\n- [MI-000773: Clear prime-to-p denominators before taking a finite cofiber](../instruments/MI-000773.md)\n\n## Dependencies and antecedents\n\nCoefficient linearity of generalized homology, long exact cofiber sequences, compactness of finite spectra and localization.\n\nClassical regular-element cofiber calculations and localization of maps from finite spectra.\n\n## Review and formalization scope\n\nRead the complete cofiber-quotient and finite-descent proofs, with the finite-diagram setup. One companion is inventory-only. The construction and Hurewicz detection of the required attaching maps are not certified.\n\nNo family scope is supplied in the inventory. No Lean verification is claimed.\n\nMultiplication by the attaching coefficient is injective on the cyclic homology quotient. Only finitely many stages and homotopies are descended to a common set of primes.\n\n[Batch record](../../batches/B083/README.md)"
     },
     {
       "id": "openai-math-309",

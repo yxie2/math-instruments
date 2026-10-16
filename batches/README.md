@@ -84,8 +84,9 @@
 | [B080](B080/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Rounded height midpoints, scalar transfer spectra, SAT omission hazards, joint renewal laws and shuffle energy memory |
 | [B081](B081/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Conformal flux constraints, area envelopes, retained randomness, spectral averaging, Lorentz frames, box selection, thermal coherences and real trace powers |
 | [B082](B082/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Fermionic normal ordering, polynomial kernels, collision cutoffs, pinned mark lists, return constants and uniform covariance comparison |
+| [B083](B083/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Simplex slicing, boundary restoration, chain retractions, tensor kernels, maximal Roe controls and finite cofiber data |
 
-Future rounds use `B083` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B084` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

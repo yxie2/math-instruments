@@ -1,0 +1,227 @@
+{
+  "batch_id": "B083",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:53:55.831450+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CoarseAssembly.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CoarseAssembly.lean",
+      "sha256": "3bb933e58228d945cece0455156965d9f4c7c7beac013c15706f758922c87cfe",
+      "bytes": 338941
+    },
+    {
+      "path": "lean/docs/307.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/307.md",
+      "sha256": "849a787ee8675660b6c4f3e0a14a44b1207a9a2a495e656bf08d4b95aa287389",
+      "bytes": 1073
+    },
+    {
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/README.md",
+      "sha256": "5f600e52f9369dd5ff331af7568a70d61319cb2f72157c687406f9ab64386e38",
+      "bytes": 676
+    },
+    {
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415",
+      "bytes": 31315
+    },
+    {
+      "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/README.md",
+      "sha256": "6f9822a539cac4a0ae43473064aef42d97346ddba85ac2d60c4458db9aa8d2a9",
+      "bytes": 643
+    },
+    {
+      "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+      "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c",
+      "bytes": 16530
+    },
+    {
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/README.md",
+      "sha256": "7c9ccada45ea8edfef5d027d60f89a5647d5bbcd99c3d2d198c4d5b862440a7a",
+      "bytes": 730
+    },
+    {
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+      "sha256": "f9db3e50ee11d5a6a446fde53ce9ffbfcff71e0f9020381607d4d251e34a525c",
+      "bytes": 23486
+    },
+    {
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex",
+      "sha256": "07dd9fe24e54987d78a311ff5af02cd07fcf3bdce5b223c411df0febe3329b27",
+      "bytes": 24130
+    },
+    {
+      "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/README.md",
+      "sha256": "b34e16183d3f8fc502ed12c6c734f84c471c9949d59d60714367adad07ead980",
+      "bytes": 588
+    },
+    {
+      "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+      "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81",
+      "bytes": 22811
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000766",
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+      "label": "lem:simplex-slicing",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L98",
+      "sha256": "f9db3e50ee11d5a6a446fde53ce9ffbfcff71e0f9020381607d4d251e34a525c"
+    },
+    {
+      "instrument_id": "MI-000766",
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex",
+      "label": "eq:simplex-slicing-formula",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/02-filtered-products.tex#L113",
+      "sha256": "f9db3e50ee11d5a6a446fde53ce9ffbfcff71e0f9020381607d4d251e34a525c"
+    },
+    {
+      "instrument_id": "MI-000767",
+      "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex",
+      "label": "lem:boundary-restoration",
+      "line": 499,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/build/sections/03-stable-avoidance.tex#L499",
+      "sha256": "07dd9fe24e54987d78a311ff5af02cd07fcf3bdce5b223c411df0febe3329b27"
+    },
+    {
+      "instrument_id": "MI-000768",
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "label": "frob:retraction",
+      "line": 242,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L242",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+    },
+    {
+      "instrument_id": "MI-000768",
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "label": "frob:retraction-identity",
+      "line": 254,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L254",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+    },
+    {
+      "instrument_id": "MI-000768",
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "label": "frob:tensor-homotopy",
+      "line": 334,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L334",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+    },
+    {
+      "instrument_id": "MI-000769",
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "label": "frob:tensor-kernel",
+      "line": 288,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L288",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+    },
+    {
+      "instrument_id": "MI-000769",
+      "path": "preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex",
+      "label": "frob:tensor-kernel-identity",
+      "line": 299,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/sections/frobenius.tex#L299",
+      "sha256": "bee1c7c2426c2980ae0039d1e3c9523dede3a78a42c9c6ab330acf1bd5432415"
+    },
+    {
+      "instrument_id": "MI-000770",
+      "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+      "label": "ana:fixed-propagation",
+      "line": 39,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L39",
+      "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+    },
+    {
+      "instrument_id": "MI-000770",
+      "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+      "label": "ana:compacts",
+      "line": 83,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L83",
+      "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+    },
+    {
+      "instrument_id": "MI-000771",
+      "path": "preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex",
+      "label": "ana:multipliers",
+      "line": 106,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026/build/sections/04-maximal-index.tex#L106",
+      "sha256": "366d6cf9f8649c10d18b02a9b4929f8a17b28e2f1662c1f1941ddde2ad54b61c"
+    },
+    {
+      "instrument_id": "MI-000772",
+      "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+      "label": "real:cofiber-quotient",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L61",
+      "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+    },
+    {
+      "instrument_id": "MI-000772",
+      "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+      "label": "real:finite-identities",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L32",
+      "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+    },
+    {
+      "instrument_id": "MI-000773",
+      "path": "preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex",
+      "label": "real:finite-descent",
+      "line": 483,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026/build/sections/08-realization.tex#L483",
+      "sha256": "aa0dc41d591e7e1220e9d96e377667512768485389075f6aa1a895d3e32aef81"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-302",
+      "extracted_slugs": [
+        "Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "Radius-of-comparison-equals-half-the-mean-dimension-September-25-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-305",
+      "extracted_slugs": [
+        "A-boundary-only-obstruction-to-four-dimensional-disk-embedding-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-marked-tensor-obstruction-to-four-dimensional-disk-embedding-September-24-2026",
+        "A-PD4-group-without-an-aspherical-manifold-model-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-307",
+      "extracted_slugs": [
+        "Failure-of-rational-injectivity-for-maximal-coarse-assembly-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-counterexample-to-the-coarse-Novikov-conjecture-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-308",
+      "extracted_slugs": [
+        "Finite-Smith-Toda-Complexes-at-Varying-Primes-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-finite-Smith-Toda-complex-V4-at-the-prime-1009-September-23-2026"
+      ]
+    }
+  ]
+}
