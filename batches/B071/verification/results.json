@@ -1,0 +1,75 @@
+{
+  "batch": "B071",
+  "status": "pass",
+  "elapsed_seconds": 1.639,
+  "scope": "Selected finite models and identities; no source headline or Lean certification.",
+  "checks": {
+    "spectral": {
+      "status": "pass",
+      "details": {
+        "polynomial_commutators": 10,
+        "translation_order": 4,
+        "gauge_and_projector": true
+      }
+    },
+    "tensor_detection": {
+      "status": "pass",
+      "details": {
+        "polarized_tensor_models": 8,
+        "odd_sign_negative_controls": 1
+      }
+    },
+    "thresholds": {
+      "status": "pass",
+      "details": {
+        "monomial_valuations": 360,
+        "negative_thresholds": true,
+        "tower_models": 8
+      }
+    },
+    "neutral_generators": {
+      "status": "pass",
+      "details": {
+        "weight_kernel_vectors": 85,
+        "least_initial_examples": 21,
+        "cancellation_controls": 21,
+        "algebraic_unique_minimum_cases": 80
+      }
+    },
+    "section_interpolation": {
+      "status": "pass",
+      "details": {
+        "order_interpolations": 576,
+        "negative_slope_obstructions": 64,
+        "base_ratio_models": 5
+      }
+    },
+    "lattice_counts": {
+      "status": "pass",
+      "details": {
+        "unused_dilation_checks": 10,
+        "weighted_zero_values": [
+          3,
+          5
+        ],
+        "retraction_points": 270
+      }
+    },
+    "quadratic_waves": {
+      "status": "pass",
+      "details": {
+        "exact_gaussian_models": 80,
+        "max_error_bound_ratio": 0.999986572598656
+      }
+    },
+    "defect_rounding": {
+      "status": "pass",
+      "details": {
+        "rounding_examples": 45,
+        "dyadic_stages": 153,
+        "zero_defect": true,
+        "grid_to_circle": true
+      }
+    }
+  }
+}
