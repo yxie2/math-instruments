@@ -1,0 +1,286 @@
+{
+  "batch_id": "B030",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T11:31:11.145077+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/CannonGeometricAction.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/CannonGeometricAction.lean",
+      "sha256": "210b5bfe96ace15ecacccd7285095d2e2a5679c35f182257c02a9ce276190b54",
+      "bytes": 3896
+    },
+    {
+      "path": "lean/ComparatorChallenges/EilenbergGanea.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/EilenbergGanea.lean",
+      "sha256": "2cac9f3dccc0517a9a162bee18f3b2a470d728cad57714f7492f1ee95233bf1a",
+      "bytes": 4900
+    },
+    {
+      "path": "lean/ComparatorChallenges/SimpleAmenable.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SimpleAmenable.lean",
+      "sha256": "ff02a2468a0567cf22ae5ac7a7f95360c8038ad79c1df0a2a100ee2b18d0beeb",
+      "bytes": 505
+    },
+    {
+      "path": "lean/ComparatorChallenges/TorsionFreeHyperbolic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TorsionFreeHyperbolic.lean",
+      "sha256": "07a6d626a7698f4e5e1b5cc19326c7efaafd0addf336f27aa3a5c9ed115fe8a5",
+      "bytes": 1633
+    },
+    {
+      "path": "lean/docs/246.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/246.md",
+      "sha256": "db0e0226d99cd432d833eaccb72bd40b418c49aa6204468ae68edd98e0d81d6a",
+      "bytes": 894
+    },
+    {
+      "path": "lean/docs/249.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/249.md",
+      "sha256": "d415c1e48a740b7df71d58dbaaee6b6b6b6032f3d19a90d14ecb68d6ab6e575d",
+      "bytes": 947
+    },
+    {
+      "path": "lean/docs/252.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/252.md",
+      "sha256": "f05d035b3cde1cd3c82dab2e19c2544bd976a58c32e48d71898e1a5c177ef7e4",
+      "bytes": 954
+    },
+    {
+      "path": "lean/docs/253.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/253.md",
+      "sha256": "fbe78247b464030790442b05d88fde1af2c88b633fb8f0441119a60a5df62e25",
+      "bytes": 821
+    },
+    {
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/README.md",
+      "sha256": "8bd273b1a4da04baa0c8be80d28bb59d69ffa24b5d5feb3f7ec9751fcfb9fa42",
+      "bytes": 549
+    },
+    {
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+      "sha256": "78892678a3d24824d94893f13d61a6dd16479c103ccee4c0b396967de276c1f1",
+      "bytes": 22124
+    },
+    {
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+      "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee",
+      "bytes": 19624
+    },
+    {
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/README.md",
+      "sha256": "d713cfde5aa0c9c1fd01cf86798146efc83150bed279831aff27a3fb0d6d71a5",
+      "bytes": 708
+    },
+    {
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex",
+      "sha256": "281d2236acb9ee4e62915ae635813324a438a0a77d97dc23fe867fa991be5963",
+      "bytes": 7703
+    },
+    {
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+      "sha256": "9929a7cc140224b9a88ce20eb4b84471d97e4c704955b2a4f6503d2a3f1af570",
+      "bytes": 23648
+    },
+    {
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/README.md",
+      "sha256": "1b4be2fe9b0a580b94dcd907a3101f649032013925a09c53b87bcd4c24cb1e31",
+      "bytes": 620
+    },
+    {
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84",
+      "bytes": 42637
+    },
+    {
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/README.md",
+      "sha256": "4fa8a48ef020a341393427aa5b08c4f87ab4b91aeff247b7b6357b8932171da3",
+      "bytes": 665
+    },
+    {
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e",
+      "bytes": 17672
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000344",
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+      "label": "lem:planar-blocker",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L62",
+      "sha256": "78892678a3d24824d94893f13d61a6dd16479c103ccee4c0b396967de276c1f1"
+    },
+    {
+      "instrument_id": "MI-000344",
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex",
+      "label": "lem:dual-weights",
+      "line": 114,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/02_scalar.tex#L114",
+      "sha256": "78892678a3d24824d94893f13d61a6dd16479c103ccee4c0b396967de276c1f1"
+    },
+    {
+      "instrument_id": "MI-000345",
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+      "label": "eq:level-energy",
+      "line": 406,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L406",
+      "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+    },
+    {
+      "instrument_id": "MI-000345",
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+      "label": "eq:flow",
+      "line": 418,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L418",
+      "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+    },
+    {
+      "instrument_id": "MI-000345",
+      "path": "preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex",
+      "label": "lem:good-levels",
+      "line": 428,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026/build/sections/04_flow.tex#L428",
+      "sha256": "6c46ce99e4bb73d2e25217001a15fb2aab142754d13b793f164293f8c63654ee"
+    },
+    {
+      "instrument_id": "MI-000346",
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex",
+      "label": "lem:localized-degree",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/degree.tex#L17",
+      "sha256": "281d2236acb9ee4e62915ae635813324a438a0a77d97dc23fe867fa991be5963"
+    },
+    {
+      "instrument_id": "MI-000347",
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+      "label": "lem:exact-counts",
+      "line": 191,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L191",
+      "sha256": "9929a7cc140224b9a88ce20eb4b84471d97e4c704955b2a4f6503d2a3f1af570"
+    },
+    {
+      "instrument_id": "MI-000347",
+      "path": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex",
+      "label": "lem:quadratic-estimate",
+      "line": 225,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/sections/presentation.tex#L225",
+      "sha256": "9929a7cc140224b9a88ce20eb4b84471d97e4c704955b2a4f6503d2a3f1af570"
+    },
+    {
+      "instrument_id": "MI-000348",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "lem:rank-reduction",
+      "line": 185,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L185",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000348",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:trace-first",
+      "line": 212,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L212",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000348",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:trace-second",
+      "line": 213,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L213",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000348",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:rank-lower",
+      "line": 228,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L228",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000349",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:matrix-factorization",
+      "line": 244,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L244",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000349",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:rank-upper",
+      "line": 250,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L250",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000349",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:line-certificate",
+      "line": 273,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L273",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000349",
+      "path": "preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex",
+      "label": "eq:tensor-certificate",
+      "line": 279,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/build/sections/construction.tex#L279",
+      "sha256": "9ddffe7f11b0b0133f03cf60dd93947b8d47b911f3f0930c8e55512cba8d930e"
+    },
+    {
+      "instrument_id": "MI-000350",
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "label": "lem:am-density-speed",
+      "line": 402,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L402",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+    },
+    {
+      "instrument_id": "MI-000350",
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "label": "prop:am-field-covariance",
+      "line": 446,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L446",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+    },
+    {
+      "instrument_id": "MI-000350",
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "label": "eq:am-resolvent",
+      "line": 474,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L474",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+    },
+    {
+      "instrument_id": "MI-000351",
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "label": "eq:am-reiter",
+      "line": 780,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L780",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+    },
+    {
+      "instrument_id": "MI-000351",
+      "path": "preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex",
+      "label": "lem:am-reiter-folner",
+      "line": 791,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Infinite-Finitely-Presented-Simple-Amenable-Group-September-23-2026/build/sections/amenability.tex#L791",
+      "sha256": "31c06228eb7ea16f075832786132f523fdc2b9e34760ad27e252b89340c0cb84"
+    }
+  ]
+}

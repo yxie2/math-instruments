@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B030: eight selected finite and local mechanisms from families 246, 249, 252 and 253, separating established antecedents, local refinements and unverified global group claims.
+
 - Added B029: eight selected geometry mechanisms from families 333, 334, 343 and 354, including exact verification of the 23 rational interpolation bounds conditional on the source endpoint and derivative estimates.
 
 - Added B028: eight selected mechanisms from PDE families 367, 372, 375 and 377. Checks include exact full tensor projections, differential identities and finite envelope duality; established inverse-profile antecedents are explicit.
