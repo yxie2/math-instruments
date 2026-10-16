@@ -16232,6 +16232,357 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000383.md",
       "body": "# Preserve a lower spectral-rank signal under normalized block averaging\n\n[Family 301](../families/openai-math-301.md) · [Source manuscript](../papers/P-000210.md) · [Batch B034](../../batches/B034/README.md)\n\n## Mathematical content\n\nLet lambda_alpha be positive rational weights summing to one. Form the diagonal block average H_av of completely positive contractive candidates H_alpha in a separate normalized matrix/UHF direction; retain unnormalized traces on internal matrix directions. Orthogonality gives, for positive s, exact weighted averages of tau(H_alpha(s)), tau(H_alpha(s)^2), and d_tau((H_alpha(s)-eta)_+). An ordinary arithmetic average need not have these square or rank identities.\n\nSuppose y>=0, the v_alpha are contractions, 0<=g(t)<=1_{(eta,infinity)}(t), and\n\n$$\\left\\|T-y^2\\right\\|<\\epsilon^2/2,\\qquad T=\\sum_\\alpha\\lambda_\\alpha yv_\\alpha^*g(H_\\alpha(s))v_\\alpha y.$$\n\nCompress by p=1_{(epsilon,infinity)}(y). Then pTp>=(epsilon^2/2)p. Positivity and traciality yield\n\n$$d_\\tau((y-\\epsilon)_+)\\le\\frac{2\\|y\\|^2}{\\epsilon^2}\\,d_\\tau((H_{av}(s)-\\eta)_+).$$\n\nThe constant and eta are independent of candidate count, rational multiplicities and internal matrix size. For extended weights, an infinite right side is immediate; otherwise finite row comparison puts the relevant cuts in the normal trace's finite part, where compression and monotone convergence apply. Stable folding preserves these trace conventions.\n\n## Role in the source argument\n\nRetains a nonzero lower rank witness while simultaneously averaging approximation errors.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [st:folding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/02-structure.tex#L306)\n- [tc:rank-average](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L606)\n- [tc:fixed-slack](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/sections/06-tracial-cone.tex#L371)\n\n## Antecedents and comparison\n\nOrthogonal block functional calculus and spectral projection compression are classical. The extraction records the normalization convention and candidate-independent constant.\n\n## Checks and limitations\n\nSixty rank-deficient block models, with 180 noncommuting matrix pairs, verify trace, square, rank and lower-bound formulas. A scalar negative control shows ordinary arithmetic averaging does not preserve the square formula.\n\nFinite tests do not construct the stable folding or cover all extended weights; the selected proofs supply those steps.\n\n## Possible applications\n\nConvex approximation of operator maps with a spectral witness that must survive the averaging step.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000384",
+      "record_type": "instrument",
+      "title": "Implement a rational matrix shear with one interchange per rank",
+      "forms": [
+        "lower-triangular-bruhat-factorization",
+        "rank-counted-address-shear"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-109"
+      ],
+      "source_paper_ids": [
+        "P-000211"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+          "label": "lem:lower-lower",
+          "line": 19,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L19",
+          "sha256": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906"
+        },
+        {
+          "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex",
+          "label": "lem:matrix-shear",
+          "line": 49,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L49",
+          "sha256": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-bruhat-factorization-adapted-to-ordered-streams",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000384.md",
+      "body": "# Implement a rational matrix shear with one interchange per rank\n\n[Family 109](../families/openai-math-109.md) · [Source manuscript](../papers/P-000211.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nEvery rational m-by-m matrix A of rank a has A=E_1 Pi E_2, with E_1,E_2 invertible lower triangular and Pi a partial permutation matrix with a ones. Choose the topmost active nonzero row and its rightmost nonzero entry. Lower-triangular column operations clear its left entries; lower-triangular row operations clear below. Repeating on the remaining ordered indices gives LAR=Pi.\n\nFor a fixed finite matrix family, choose an odd prime q avoiding all factor denominators and nonzero diagonal numerators. The identities specialize over Z/q^b Z for every b. For ordered field groups H before D, transform D by E_2 and H by E_1^{-1}. Each one Pi_ij requires H_i+=D_j, implemented using only later-field arithmetic and one swap:\n\n$$D_j\\leftarrow D_j+H_i,\\quad(H_i,D_j)\\leftarrow(D_j,H_i),\\quad D_j\\leftarrow H_i-D_j.$$\n\nUndo the triangular transformations. The result is (H+AD,D), with exactly rank_Q(A) interchanges. The source's linear extra-work claim assumes its ordered-affine stream operations and fixed m; the finite algebra alone does not establish that tape cost.\n\n## Role in the source argument\n\nTurns a finite rank budget into a bound on expensive recursive address interchanges.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:lower-lower](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L19)\n- [lem:matrix-shear](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex#L49)\n\n## Antecedents and comparison\n\nThe factorization is classical Bruhat elimination, explicitly credited by the source. The useful interface is the one-swap realization of each partial-permutation entry.\n\n## Checks and limitations\n\nSixty exact rational eliminations and modular shear realizations, including singular matrices, perform 158 rank-counted swaps.\n\nNo tape implementation or interchange recurrence was executed; the source complexity claim is outside this check.\n\n## Possible applications\n\nSeparating inexpensive triangular updates from expensive field exchanges in ordered data layouts.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000385",
+      "record_type": "instrument",
+      "title": "Cancel synthetic characters without division and retain the FFT output order",
+      "forms": [
+        "negacyclic-synthetic-character-cancellation",
+        "retained-bit-reversal-transform-layout"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-109"
+      ],
+      "source_paper_ids": [
+        "P-000211"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+          "label": "lem:synthetic-characters",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L53",
+          "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+        },
+        {
+          "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex",
+          "label": "eq:stored-opposite",
+          "line": 127,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L127",
+          "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-nussbaumer-transform-with-explicit-stored-order-contract",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000385.md",
+      "body": "# Cancel synthetic characters without division and retain the FFT output order\n\n[Family 109](../families/openai-math-109.md) · [Source manuscript](../papers/P-000211.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nIn R_r=C[y]/(y^r+1), with r a power of two, multiplication by y^a is an exact signed permutation of the r coefficients and an isometry for their maximum norm. For a power of two t dividing 2r, set omega=y^{2r/t}. If t does not divide j, write j=2^v j_0 with j_0 odd. Shifting the sum index by t/2^{v+1} multiplies sum_{k=0}^{t-1}omega^{jk} by -1, so that sum vanishes. This avoids division by omega^j-1 in a ring with zero divisors.\n\nDefine F_t^+ and F_t^- with both sums normalized by 1/t. Character cancellation gives F_t^+F_t^-=I/t, and both maps are contractions. Decimation in frequency using the half-Hadamard butterfly writes frequency j at its bit-reversed address B_t(j). Reversing the recursion, with inverse monomial twists but the same half-Hadamard, consumes that layout and computes F_t^+B_t^{-1}.\n\nThus the actual procedures are B_t F_t^- and F_t^+ B_t^{-1}. A pointwise product between equally permuted arrays retains the same layout, so convolution can avoid materializing a separate frequency permutation.\n\n## Role in the source argument\n\nSupplies exact synthetic roots and a stored-order contract for the source transform/convolution pipeline.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:synthetic-characters](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L53)\n- [eq:stored-opposite](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/06-transforms.tex#L127)\n\n## Antecedents and comparison\n\nThe source identifies this as the Nussbaumer-Quandalle polynomial-transform method used in [Harvey and van der Hoeven 2021](https://annals.math.princeton.edu/2021/193-2/p04). The extraction emphasizes zero-divisor-safe cancellation and the normalization/layout contract.\n\n## Checks and limitations\n\nForty-eight exact rational transform models compare recursive stored order with direct transforms and check the I/t composite; all relevant character sums are checked.\n\nNo simultaneous butterfly-layer speedup, truncation error budget or final multiplication running time is certified.\n\n## Possible applications\n\nExact negacyclic transform implementations where signed coefficient moves are inexpensive and output order can remain implicit.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000386",
+      "record_type": "instrument",
+      "title": "Reduce a matching cardinality threshold using a sparse permutation network",
+      "forms": [
+        "sparse-cardinality-to-perfect-matching",
+        "network-witness-preserving-reduction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-120"
+      ],
+      "source_paper_ids": [
+        "P-000212"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+          "label": "uniform:network",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L27",
+          "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+        },
+        {
+          "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+          "label": "uniform:cardinality",
+          "line": 58,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L58",
+          "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-permutation-network-reduction-with-explicit-decoder",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000386.md",
+      "body": "# Reduce a matching cardinality threshold using a sparse permutation network\n\n[Family 120](../families/openai-math-120.md) · [Source manuscript](../papers/P-000212.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nFor a graph G on n vertices and 0<=k<=floor(n/2), put b=n-2k. Take a rearrangeable directed acyclic permutation network with s inputs and outputs, where s is the least power of two at least n. Its O(s log(s+2)) positions route every permutation by vertex-disjoint paths.\n\nSplit each position v into v_in,v_out with an idle edge; replace an arc u->v by u_out v_in. Attach each original vertex to its corresponding network input. Select b outputs and attach one mandatory sink to each. Retain original graph edges. In a perfect matching, a split pair is either idle or both endpoints are matched externally. Counting external inputs and outputs shows exactly b original vertices enter the network, leaving exactly k original edges in the decoded matching.\n\nConversely, route the b unmatched vertices of any size-k matching to the selected outputs, extending the assignment to a full permutation. Keep those paths and use idle edges elsewhere. The construction has size and construction time O(m+n log(n+2)); decoding selects original edge identifiers in linear constructed size. The network routing proof colors even cycles in the bipartite multigraph of input pairs versus output pairs and recurses on the two colors.\n\n## Role in the source argument\n\nReduces exact cardinality search to perfect matching without adding quadratically many edges.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [uniform:network](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L27)\n- [uniform:cardinality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L58)\n\n## Antecedents and comparison\n\nRearrangeable permutation networks are classical. The extracted bookkeeping is the sparse split-position gadget and direct original-edge decoder.\n\n## Checks and limitations\n\nAll 213 cardinality thresholds for simple graphs through four vertices are checked by independent exhaustive matching search, including isolates and k=0.\n\nFinite correctness checks are not a certificate for the source almost-linear matching solver or its randomized work bounds.\n\n## Possible applications\n\nSparse reductions that need both a yes/no equivalence and an explicit matching witness.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000387",
+      "record_type": "instrument",
+      "title": "Reduce perfect matching to maximum degree three with odd incidence paths",
+      "forms": [
+        "subcubic-perfect-matching-reduction",
+        "odd-path-incidence-gadget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-120"
+      ],
+      "source_paper_ids": [
+        "P-000212"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex",
+          "label": "uniform:degree",
+          "line": 105,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L105",
+          "sha256": "7c4f2d2ec41daf7f7d2113370d8f06c8f23de9ac87aa809135f357999342eed0"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-dahlhaus-karpinski-degree-reduction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000387.md",
+      "body": "# Reduce perfect matching to maximum degree three with odd incidence paths\n\n[Family 120](../families/openai-math-120.md) · [Source manuscript](../papers/P-000212.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nFor a loopless graph with no isolated vertices, replace a vertex of degree r by a path on 2r-1 vertices and attach its r original incidences to the odd positions. Every even position is matched internally to an odd one. Since there are r odd and r-1 even positions, exactly one odd position uses an external edge in any perfect matching. These external edges therefore decode to a perfect matching of the original graph.\n\nConversely, the odd position chosen by an original matching edge leaves even-length paths on each side, which can be matched internally. The new graph has maximum degree three and exactly sum_v(2 deg(v)-1)=4e-v vertices. Construction and both witness conversions take O(v+e). A degree-one vertex becomes a single port. An isolated vertex is detected separately and certifies that perfect matching is impossible.\n\n## Role in the source argument\n\nFeeds a bounded-degree perfect-matching subroutine while preserving explicit edge witnesses.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [uniform:degree](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/build/sections/09-uniformization.tex#L105)\n\n## Antecedents and comparison\n\nThe source credits this path replacement to Dahlhaus and Karpinski, [Perfect matching for regular graphs is AC0-hard for the general matching problem](https://www.sciencedirect.com/science/article/pii/0022000092900054), 1992. The publisher metadata was retrieved; its full text was not available in this audit. No new degree-reduction claim is made.\n\n## Checks and limitations\n\nAll 814 nonisolated simple graphs through five vertices are tested by exhaustive matching search; sizes, maximum degrees and decoded witnesses are checked.\n\nThe reduction does not prove the speed or correctness of the source matching engine.\n\n## Possible applications\n\nTransferring perfect-matching algorithms and witnesses to subcubic instances with only linear expansion.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000388",
+      "record_type": "instrument",
+      "title": "Telescope weighted curvature when parent and child masses do not conserve",
+      "forms": [
+        "nonconservative-tree-energy-telescope",
+        "mass-slack-curvature-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-121"
+      ],
+      "source_paper_ids": [
+        "P-000213"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+          "label": "lem:curvature-telescope",
+          "line": 159,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L159",
+          "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+        },
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+          "label": "eq:weighted-variance",
+          "line": 153,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L153",
+          "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+        },
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex",
+          "label": "eq:local-energy-telescope",
+          "line": 215,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L215",
+          "sha256": "be3b1762148c340cfcd2598f9e6a1b61c4aada72ff24dde25f47bd0595d7c265"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "classical-variance-telescope-with-explicit-mass-discrepancy",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000388.md",
+      "body": "# Telescope weighted curvature when parent and child masses do not conserve\n\n[Family 121](../families/openai-math-121.md) · [Source manuscript](../papers/P-000213.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nOn a finite rooted tree, let each nonterminal have parent mass m>0, child masses m_i>=0, W=sum m_i>0, displacements z,z_i, and z_r=sum z_i. Assume |z|<=m, |z_i|<=m_i, |z_r-z|<=e<=m. Interpret 0/0 as zero. Define R=m-W, a comparison gap G>=0, and slack h>=0 such that R+G<=h. Then\n\n$$K=\\sum_i z_i^2/m_i-z_r^2/W=\\sum_{m_i>0}(z_i-(z_r/W)m_i)^2/m_i\\ge0.$$\n\nWriting E=z^2/m, the local estimate is K<=sum E_i-E+3e+2R_-, because the displacement perturbation costs at most 3e and the denominator discrepancy costs at most 2R_-. If C is the total terminal mass, mass cancellation gives sum R_-<=sum h+C and sum G<=C+2sum h. Since terminal E<=mass, summing yields\n\n$$\\sum(K+G)\\le4C+3\\sum e+4\\sum h.$$\n\nThe source uses approximate edit costs as masses. Exact additivity is unnecessary, but dropping the mass-discrepancy charge would invalidate the energy argument.\n\n## Role in the source argument\n\nBounds the total cost of exceptional alignment-tree nodes with high curvature or a large comparison gap.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:curvature-telescope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L159)\n- [eq:weighted-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L153)\n- [eq:local-energy-telescope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/06-comparison.tex#L215)\n\n## Antecedents and comparison\n\nThe weighted variance identity and energy telescope are classical. The reusable refinement is the explicit two-sided accounting for nonconserved estimated masses.\n\n## Checks and limitations\n\nOne hundred exact rational nonconservative tree models verify variance, local hypotheses and the complete structural bound.\n\nThe abstract models do not validate the alignment geometry or source warmup estimates that supply the hypotheses.\n\n## Possible applications\n\nMultiscale analyses where available weights approximate costs rather than forming an exact conserved flow.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000389",
+      "record_type": "instrument",
+      "title": "Use fixed block masses to remove large predictable cost offsets from entropy regret",
+      "forms": [
+        "fixed-block-entropy-regret",
+        "within-block-innovation-control"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-121"
+      ],
+      "source_paper_ids": [
+        "P-000213"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+          "label": "lem:entropy",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L74",
+          "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+        },
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+          "label": "eq:entropy-penalty",
+          "line": 138,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L138",
+          "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+        },
+        {
+          "path": "preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex",
+          "label": "eq:entropy-regret",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L97",
+          "sha256": "6a09629e3e871a8296b2afea4554436f06b04b56f159e68f1a5e69892bc27812"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "optimistic-ftrl-antecedent-with-block-invariant-offsets",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000389.md",
+      "body": "# Use fixed block masses to remove large predictable cost offsets from entropy regret\n\n[Family 121](../families/openai-math-121.md) · [Source manuscript](../papers/P-000213.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nLet Q be a compact convex set of probability vectors in R^d, containing a strictly positive vector and having a fixed total mass in each coordinate block. Let f_0>=...>=f_S be coordinatewise monotone vectors in [0,1]^d. Set Delta_t=f_{t-1}-f_t, ghat_t=-f_{t-1}, and u_t=ghat_t+(1-2kappa)Delta_t, where 0<kappa<1/2. Suppose each within-block range of Delta_t is at most kappa/eta.\n\nLet rho_t maximize H(rho)+eta<sum_{j<t}u_j+ghat_t,rho> over Q. Then for every comparator rho* in Q and every prefix s,\n\n$$\\sum_{t\\le s}\\langle f_t+\\kappa\\Delta_t,\\rho_t\\rangle\\le\\sum_{t\\le s}\\langle f_t,\\rho^*\\rangle+\\frac{\\log d}{\\eta}+2\\kappa.$$\n\nSubtract the minimum decrement in each block. Its contribution is identical at every feasible vector, so only the remaining small range needs the exponential estimate exp((1-2kappa)x)<=1+(1-kappa)x for 0<=x<=kappa. Entropy optimality supplies the KL penalty on Q itself; summing its potential increments and using sum Delta_t<=1 proves the bound. L1 error at most zeta in each chosen distribution adds at most s zeta.\n\n## Role in the source argument\n\nControls refinement regret despite large cost changes that are nearly constant within each child block.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:entropy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L74)\n- [eq:entropy-penalty](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L138)\n- [eq:entropy-regret](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/build/sections/07-regret.tex#L97)\n\n## Antecedents and comparison\n\n[Rakhlin and Sridharan 2013, Section 2](https://proceedings.mlr.press/v30/Rakhlin13.pdf) supplies optimistic FTRL and exponential-weight antecedents. The source-specific lemma exploits invariant block masses to discard block offsets; no exhaustive priority claim is made.\n\n## Checks and limitations\n\n1,600 prefix regret checks use exact blockwise softmax maximizers; 910 steps violate the stronger global range bound while satisfying the within-block condition.\n\nTests use products of block simplexes. Arbitrary constrained action hulls and the numerical source optimizer are not computationally certified.\n\n## Possible applications\n\nOnline or iterative approximation where each component has fixed probability mass and costs move mostly by componentwise offsets.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000390",
+      "record_type": "instrument",
+      "title": "Preserve a global priority suffix while pruning only locally relevant list entries",
+      "forms": [
+        "largest-membership-priority-carry",
+        "one-sided-pruning-order"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-124"
+      ],
+      "source_paper_ids": [
+        "P-000214"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+          "label": "lem:carry",
+          "line": 13,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L13",
+          "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+        },
+        {
+          "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+          "label": "lem:prune",
+          "line": 35,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L35",
+          "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 1,
+      "subject": "Theoretical computer science",
+      "novelty_status": "elementary-order-filtering-with-local-global-distinction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000390.md",
+      "body": "# Preserve a global priority suffix while pruning only locally relevant list entries\n\n[Family 124](../families/openai-math-124.md) · [Source manuscript](../papers/P-000214.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nLet K_1,...,K_l be global upsets in a finite poset with a fixed linear-extension rank. A qualifying job has key (largest i with x in K_i, rank(x)), ordered lexicographically. For cutoff (d,r), replace the list by K_d intersect {rank>=r},K_{d+1},...,K_l. Its qualifier set is exactly the old jobs with key at least (d,r), and it preserves their old order. Rank suffixes are upsets.\n\nNow prune entries whose intersection with a child set W is empty. If x belongs to W and qualifies, every old entry containing x survives, so its largest retained old index equals its old largest index. A global qualifier y may lose larger indices, but cannot gain them. Hence if the new key of x is less than that of y, the old key comparison had the same direction.\n\nThis is a one-sided implication with x in W. It does not say that every global pair keeps its order after local pruning.\n\n## Role in the source argument\n\nMaintains the relevant inherited priority comparisons while shortening the source list representation.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:carry](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L13)\n- [lem:prune](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L35)\n\n## Antecedents and comparison\n\nThis is elementary ordered filtering. Its main reusable caution is the distinction between a local job whose memberships all survive and a global job that may lose memberships.\n\n## Checks and limitations\n\nTwo hundred random finite-poset models verify suffix selection, retained ordering and the one-sided pruning implication. An explicit outside-child pair reverses order under pruning.\n\nNo source global scheduling hierarchy or boundary invariant is constructed by these tests.\n\n## Possible applications\n\nLocally pruning a list-based priority representation while retaining the comparisons actually required by a recursive argument.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000391",
+      "record_type": "instrument",
+      "title": "Bound surviving upward-closed injections by a shared boundary slot",
+      "forms": [
+        "boundary-witness-capacity-bound",
+        "short-priority-list-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-124"
+      ],
+      "source_paper_ids": [
+        "P-000214"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+          "label": "lem:list-length",
+          "line": 126,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L126",
+          "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+        },
+        {
+          "path": "preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex",
+          "label": "lem:update-labels",
+          "line": 85,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L85",
+          "sha256": "74338dbc16a0368ac60223797959713c55aa7f5a3aecc924a8cb9485a2f2bdf1"
+        }
+      ],
+      "batch_id": "B035",
+      "source_item": 2,
+      "subject": "Theoretical computer science",
+      "novelty_status": "elementary-injection-into-boundary-witnesses",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000391.md",
+      "body": "# Bound surviving upward-closed injections by a shared boundary slot\n\n[Family 124](../families/openai-math-124.md) · [Source manuscript](../papers/P-000214.md) · [Batch B035](../../batches/B035/README.md)\n\n## Mathematical content\n\nSuppose a recursive interval has at most two inherited initial list entries, and new entries are upward-closed injections. Assume the injections are pairwise disjoint on the current parent W. Every injection surviving pruning on a child W' contains a job x in W', and every such high job has a strict successor z in a fixed boundary slot b' contained in W.\n\nUpward closure puts z in the same injection. Disjointness on W forces distinct surviving injections to use distinct members of b'. Therefore at most |b'| injections survive. In the source three-machine construction |b'|=3, giving at most five pruned entries in total.\n\nThe injections may overlap outside W; disjointness is needed only where the boundary witnesses lie. The bound is for the pruned list or its carry. Appending the next injection may temporarily create a sixth entry before pruning. Establishing the global upset and successor invariants is a separate input.\n\n## Role in the source argument\n\nLimits the amount of inherited list information in one same-direction run of the scheduling construction.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:list-length](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L126)\n- [lem:update-labels](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/build/lists.tex#L85)\n\n## Antecedents and comparison\n\nThe counting step is an elementary injection into a finite boundary set. It is a conditional compression certificate, not a new scheduling algorithm by itself.\n\n## Checks and limitations\n\nAll 2,426 tested boundary-witness families verify that four pairwise disjoint nonempty witness sets cannot fit in a three-element boundary.\n\nThe source global boundary and change-of-direction arguments were not audited, so the full five-entry invariant across the entire hierarchy is not independently certified.\n\n## Possible applications\n\nBounding the number of surviving disjoint monotone predicates using a small shared boundary.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -20224,6 +20575,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000210.md",
       "body": "# The trace cone classifies Razak–Jacelon stabilizations\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims classification of separable nuclear C*-algebras after Razak-Jacelon and compact-operator stabilization by extended trace cones.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000382: Recover the ideal lattice and trace finiteness ideals from the extended trace cone](../instruments/MI-000382.md)\n- [MI-000383: Preserve a lower spectral-rank signal under normalized block averaging](../instruments/MI-000383.md)\n\n## Dependencies and review\n\nExtended traces, positive spectral cuts, Cuntz comparison, orthogonal matrix blocks, finite-part reduction and normal monotone convergence.\n\nRead the ideal-transport, folding and averaged-rank proofs and the fixed lower-data definitions. The approximation models, uniqueness and final classification arguments were not audited.\n\nInspected TraceIdealTransportSupport.lean: the comparison concerns ideal weights, additive-idempotent ideal recovery, and transport of finite/zero ideals. Several supporting and target proofs contain sorry. Spatial classification and final intertwining are outside this comparison; no Lean build was performed.\n\n[Family context](../families/openai-math-301.md) · [Batch B034](../../batches/B034/README.md)"
+    },
+    {
+      "id": "P-000211",
+      "record_type": "paper",
+      "title": "Integer multiplication below n log n",
+      "source_collection": "openai/math",
+      "upstream_slug": "Integer-multiplication-below-n-log-n-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-109"
+      ],
+      "batch_id": "B035",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8d1ceff898a4e0e681679f91c4def485820be9e99f04e4861f2ce601a364723e",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000211.md",
+      "body": "# Integer multiplication below n log n\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Integer-multiplication-below-n-log-n-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims exact integer multiplication in O(n (log n)^(1-kappa)) time on one fixed finite-tape Turing machine, with kappa=2^(-182).\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000384: Implement a rational matrix shear with one interchange per rank](../instruments/MI-000384.md)\n- [MI-000385: Cancel synthetic characters without division and retain the FFT output order](../instruments/MI-000385.md)\n\n## Dependencies and review\n\nRational elimination, unit denominators modulo prime powers, ordered field updates, negacyclic coefficient rotations and radix-two transforms.\n\nRead the complete lower-triangular factorization, matrix-shear, synthetic character cancellation and stored-order transform arguments. The finite motifs, simultaneous-layer algorithm and final complexity assembly were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-109.md) · [Batch B035](../../batches/B035/README.md)"
+    },
+    {
+      "id": "P-000212",
+      "record_type": "paper",
+      "title": "Almost-Linear-Time Maximum-Cardinality Matching in General Graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-120"
+      ],
+      "batch_id": "B035",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "98814d9f99ee1c1e91d93e9c22fa58c74f5f45ab22f2220e5ab92ae316f48877",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000212.md",
+      "body": "# Almost-Linear-Time Maximum-Cardinality Matching in General Graphs\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-Linear-Time-Maximum-Cardinality-Matching-in-Sparse-General-Graphs-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims almost-linear-time exact maximum-cardinality matching and prescribed-degree factors in sparse general graphs.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000386: Reduce a matching cardinality threshold using a sparse permutation network](../instruments/MI-000386.md)\n- [MI-000387: Reduce perfect matching to maximum degree three with odd incidence paths](../instruments/MI-000387.md)\n\n## Dependencies and review\n\nRearrangeable permutation networks, alternating cycle coloring, perfect matching incidence counts and odd-path parity.\n\nRead the complete permutation-network, cardinality reduction and degree reduction proofs. The matching state, projection algorithm, dynamic backend and almost-linear complexity were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\n[Family context](../families/openai-math-120.md) · [Batch B035](../../batches/B035/README.md)"
+    },
+    {
+      "id": "P-000213",
+      "record_type": "paper",
+      "title": "An Almost-Linear Approximation Scheme for Edit Distance",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-121"
+      ],
+      "batch_id": "B035",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "e1374280e73075b3309a1792fa0da45f808e379d4348e586fc30004a0418e445",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000213.md",
+      "body": "# An Almost-Linear Approximation Scheme for Edit Distance\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Almost-Linear-Approximation-Scheme-for-Edit-Distance-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims an almost-linear randomized (1+epsilon)-approximation scheme for unit-cost edit distance.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000388: Telescope weighted curvature when parent and child masses do not conserve](../instruments/MI-000388.md)\n- [MI-000389: Use fixed block masses to remove large predictable cost offsets from entropy regret](../instruments/MI-000389.md)\n\n## Dependencies and review\n\nWeighted variance, signed mass telescopes, entropy/KL optimality, fixed block sums and monotone cost decrements.\n\nRead the comparison-cost and complete curvature proof, and the full fixed-block entropy proof. The seed scheme, band computation, numerical optimizer and running-time argument were not audited.\n\nInspected the final EditApproximation.lean target: distortion success at least 2/3, zero on every execution for equal strings, almost-linear expected work for polynomially bounded integer alphabets, and every-execution polynomial space. It contains sorry; the long supporting construction was not audited or built.\n\n[Family context](../families/openai-math-121.md) · [Batch B035](../../batches/B035/README.md)"
+    },
+    {
+      "id": "P-000214",
+      "record_type": "paper",
+      "title": "A Polynomial-Time Algorithm for Three-Machine Unit-Job Scheduling",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-124"
+      ],
+      "batch_id": "B035",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "d786b50fd852c2301b3480c304007c0be54aa6bec42441455a6355d105014336",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000214.md",
+      "body": "# A Polynomial-Time Algorithm for Three-Machine Unit-Job Scheduling\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-polynomial-time-algorithm-for-three-machine-unit-job-scheduling-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a deterministic polynomial-time optimal algorithm for three-machine unit-job scheduling with arbitrary acyclic precedence constraints.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000390: Preserve a global priority suffix while pruning only locally relevant list entries](../instruments/MI-000390.md)\n- [MI-000391: Bound surviving upward-closed injections by a shared boundary slot](../instruments/MI-000391.md)\n\n## Dependencies and review\n\nFinite posets, upward-closed sets, lexicographic keys, disjointness and successor witnesses in a three-job boundary.\n\nRead suffix-carry, pruning, update-label and list-length proofs, with schedule/poset definitions. Global boundary invariants, history flattening and the structural hierarchy were not audited.\n\nRead ThreeMachine.lean: one finite deterministic machine returns an optimal schedule or exact deadline answer on explicitly encoded acyclic instances, with polynomial bound exponent 150020. The target contains sorry; no Lean build was performed.\n\n[Family context](../families/openai-math-124.md) · [Batch B035](../../batches/B035/README.md)"
     }
   ],
   "families": [
@@ -21599,6 +22026,33 @@
       "body": "# Matrix multiplication exponent ω ≤ 9/4\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000028](../papers/P-000028.md)\n- [P-000045](../papers/P-000045.md)\n- [P-000052](../papers/P-000052.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, straight-line definition of $`\\omega`$ over $`\\mathbb{C}`$ new as a proof of an $`\\omega`$ bound\n\n$`\\omega(\\mathbb C)\\le9/4`$, compared with the previous bound 2.371177 cited by the initial extraction. The 13-page argument is non-constructive: it bounds every point of Strassen’s asymptotic spectrum and gives “no competitive finite matrix size”.\n\n## Extracted instruments.\n\n- [MI-000028: Finite separation of a shared leg and the shared-leg entropy inequality](../instruments/MI-000028.md)\n\n- [MI-000029: Spectral growth on polynomial multiplication](../instruments/MI-000029.md)\n\n- [MI-000030: Detecting characters](../instruments/MI-000030.md)\n\n## Reused.\n\nBini interpolation; Strassen’s asymptotic spectrum; combinatorial degeneration; method of types; Clebsch–Gordan exact sequence.\n\n## Caveats.\n\nThe stated theorem concerns $`\\mathbb C`$. The argument bounds spectral profiles through a specified collection of inequalities; a better exponent would require a further argument. No Lean build was performed for this survey.\n\n## Recorded assessment\n\n- Novelty: new as a proof of an ω bound\n- Formalization: supplied; unbuilt here\n- Statement coverage: yes, straight-line programs over ℂ\n- Dependencies: no\n- Antecedents: Alman–Li 2026"
     },
     {
+      "id": "openai-math-109",
+      "record_type": "family",
+      "title": "Rank-counted shears and retained-order synthetic Fourier transforms",
+      "source_family": "109",
+      "source_collection": "openai/math",
+      "batch_id": "B035",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000211"
+      ],
+      "instrument_ids": [
+        "MI-000384",
+        "MI-000385"
+      ],
+      "headline": "The source claims exact integer multiplication in O(n (log n)^(1-kappa)) time on one fixed finite-tape Turing machine, with kappa=2^(-182).",
+      "central_instrument": "Lower-triangular Bruhat factors make a rational shear cost one expensive interchange per rank. Synthetic Fourier transforms use signed coefficient permutations and consume their retained bit-reversed order directly.",
+      "novelty_assessment": "Bruhat elimination and Nussbaumer polynomial transforms are classical. The source-specific interfaces are extracted without certifying the claimed sub-n-log-n algorithm.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.",
+      "statement_faithfulness": "The matrix family and dimension are fixed before choosing the odd prime and input field width. Both Fourier signs are normalized by 1/t, so their composite is I/t, not I.",
+      "dependencies": "Rational elimination, unit denominators modulo prime powers, ordered field updates, negacyclic coefficient rotations and radix-two transforms.",
+      "antecedents": "Classical Bruhat decomposition and Nussbaumer transforms; Harvey-van der Hoeven 2021 provides the established multiplication framework cited by the source.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-109.md",
+      "body": "# Rank-counted shears and retained-order synthetic Fourier transforms\n\n## Source manuscript and claim\n\n[Integer multiplication below n log n](../papers/P-000211.md), by OpenAI, September 23, 2026.\n\nThe source claims exact integer multiplication in O(n (log n)^(1-kappa)) time on one fixed finite-tape Turing machine, with kappa=2^(-182).\n\n## Extracted instruments\n\n- [MI-000384: Implement a rational matrix shear with one interchange per rank](../instruments/MI-000384.md)\n- [MI-000385: Cancel synthetic characters without division and retain the FFT output order](../instruments/MI-000385.md)\n\n## Dependencies and antecedents\n\nRational elimination, unit denominators modulo prime powers, ordered field updates, negacyclic coefficient rotations and radix-two transforms.\n\nClassical Bruhat decomposition and Nussbaumer transforms; Harvey-van der Hoeven 2021 provides the established multiplication framework cited by the source. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete lower-triangular factorization, matrix-shear, synthetic character cancellation and stored-order transform arguments. The finite motifs, simultaneous-layer algorithm and final complexity assembly were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nThe matrix family and dimension are fixed before choosing the odd prime and input field width. Both Fourier signs are normalized by 1/t, so their composite is I/t, not I.\n\n[Batch record](../../batches/B035/README.md)"
+    },
+    {
       "id": "openai-math-111",
       "record_type": "family",
       "title": "One-sample simulation, marked pivots and a shared rank budget",
@@ -21683,6 +22137,87 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-118.md",
       "body": "# Competing tree quotas and conservative scalar packing encodings\n\n## Source manuscript and claim\n\n[Additive hardness and unbounded configuration gaps in bin packing](../papers/P-000112.md), by OpenAI, September 24, 2026.\n\nThe source claims unbounded additive gaps for both individual-copy and numerical-type configuration LPs, and NP-hardness of every fixed additive approximation gap in one-dimensional bin packing.\n\n## Extracted instruments\n\n- [MI-000182: Two trees separate individual multiple hits from shared one-hit quotas](../instruments/MI-000182.md)\n- [MI-000183: Scalar packing encodings retain a bounded defect budget through conservation](../instruments/MI-000183.md)\n\n## Dependencies and antecedents\n\nFinite rooted trees with uncontracted depth levels; exponentially growing within-phase quotas; two-color pruning; ten bounded integer count equations; separated rational scales; equal label inventories and prefix conservation.\n\nChalermsook-Chuzhoy use disjoint-branch constructions for fire containment. Large-base aggregation is classical, with a recent bin-packing use by Jansen-Pirotton-Tutas. The selected cards retain these attributions. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the competing-tree construction, scalar encoding proof, primary-defect count and label-prefix argument. The geometric coordinate construction, full soundness reduction, LP witness and complexity reductions were not audited.\n\nBinPackingGap.lean states the equal-LP unbounded gap, NP-hard gap reductions for every fixed nonnegative integer c, and existence of a fixed-additive polynomial algorithm iff P=NP, using explicit binary encodings and finite-alphabet machines. The scope documents and Comparator statements were compared; no Lean solution was built or kernel-checked. The auxiliary instruments are not separate certified Comparator results.\n\nThe LP statements distinguish physical copies from unrestricted numerical-type configurations. A feasible bin need not have an intended pattern; nonpositive primary scores and inventory conservation control the exceptions.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/118.md) · [Batch record](../../batches/B010/README.md)"
+    },
+    {
+      "id": "openai-math-120",
+      "record_type": "family",
+      "title": "Sparse matching reductions with explicit witness decoding",
+      "source_family": "120",
+      "source_collection": "openai/math",
+      "batch_id": "B035",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000212"
+      ],
+      "instrument_ids": [
+        "MI-000386",
+        "MI-000387"
+      ],
+      "headline": "The source claims almost-linear-time exact maximum-cardinality matching and prescribed-degree factors in sparse general graphs.",
+      "central_instrument": "A permutation network replaces dense unmatched-vertex connections in cardinality-to-perfect-matching reduction; odd-length incidence paths reduce degree to three with a local witness decoder.",
+      "novelty_assessment": "Permutation networks and degree-reduction matching gadgets are classical. The extraction records size and witness preservation, not the source fast matching engine.",
+      "formalization_summary": "No formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.",
+      "statement_faithfulness": "Original vertex records, including isolates, are retained. The threshold reduction asks for exact size k, equivalent to at least k by deleting matching edges. Degree reduction handles isolates before constructing odd paths.",
+      "dependencies": "Rearrangeable permutation networks, alternating cycle coloring, perfect matching incidence counts and odd-path parity.",
+      "antecedents": "Classical permutation networks; the source explicitly credits the path degree reduction to Dahlhaus-Karpinski 1992.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-120.md",
+      "body": "# Sparse matching reductions with explicit witness decoding\n\n## Source manuscript and claim\n\n[Almost-Linear-Time Maximum-Cardinality Matching in General Graphs](../papers/P-000212.md), by OpenAI, September 24, 2026.\n\nThe source claims almost-linear-time exact maximum-cardinality matching and prescribed-degree factors in sparse general graphs.\n\n## Extracted instruments\n\n- [MI-000386: Reduce a matching cardinality threshold using a sparse permutation network](../instruments/MI-000386.md)\n- [MI-000387: Reduce perfect matching to maximum degree three with odd incidence paths](../instruments/MI-000387.md)\n\n## Dependencies and antecedents\n\nRearrangeable permutation networks, alternating cycle coloring, perfect matching incidence counts and odd-path parity.\n\nClassical permutation networks; the source explicitly credits the path degree reduction to Dahlhaus-Karpinski 1992. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete permutation-network, cardinality reduction and degree reduction proofs. The matching state, projection algorithm, dynamic backend and almost-linear complexity were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nOriginal vertex records, including isolates, are retained. The threshold reduction asks for exact size k, equivalent to at least k by deleting matching edges. Degree reduction handles isolates before constructing odd paths.\n\n[Batch record](../../batches/B035/README.md)"
+    },
+    {
+      "id": "openai-math-121",
+      "record_type": "family",
+      "title": "Nonconservative tree curvature and entropy bounds with fixed block masses",
+      "source_family": "121",
+      "source_collection": "openai/math",
+      "batch_id": "B035",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000213"
+      ],
+      "instrument_ids": [
+        "MI-000388",
+        "MI-000389"
+      ],
+      "headline": "The source claims an almost-linear randomized (1+epsilon)-approximation scheme for unit-cost edit distance.",
+      "central_instrument": "A tree energy telescope charges both mass discrepancy and endpoint perturbation. Optimistic entropy minimization tolerates large blockwise cost decrements when only within-block ranges are small.",
+      "novelty_assessment": "Weighted variance and optimistic regularized learning are established. The extraction isolates the mass-slack and fixed-block hypotheses; no full edit-distance algorithm certification.",
+      "formalization_summary": "Inspected the final EditApproximation.lean target: distortion success at least 2/3, zero on every execution for equal strings, almost-linear expected work for polynomially bounded integer alphabets, and every-execution polynomial space. It contains sorry; the long supporting construction was not audited or built.",
+      "statement_faithfulness": "The comparison tree is fixed before refinement randomness. Warmup masses may fail to add; those discrepancies must be charged. The entropy feasible set has fixed mass in each block and contains a positive vector.",
+      "dependencies": "Weighted variance, signed mass telescopes, entropy/KL optimality, fixed block sums and monotone cost decrements.",
+      "antecedents": "Classical energy telescoping; Rakhlin-Sridharan optimistic FTRL and exponential weighting.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-121.md",
+      "body": "# Nonconservative tree curvature and entropy bounds with fixed block masses\n\n## Source manuscript and claim\n\n[An Almost-Linear Approximation Scheme for Edit Distance](../papers/P-000213.md), by OpenAI, September 24, 2026.\n\nThe source claims an almost-linear randomized (1+epsilon)-approximation scheme for unit-cost edit distance.\n\n## Extracted instruments\n\n- [MI-000388: Telescope weighted curvature when parent and child masses do not conserve](../instruments/MI-000388.md)\n- [MI-000389: Use fixed block masses to remove large predictable cost offsets from entropy regret](../instruments/MI-000389.md)\n\n## Dependencies and antecedents\n\nWeighted variance, signed mass telescopes, entropy/KL optimality, fixed block sums and monotone cost decrements.\n\nClassical energy telescoping; Rakhlin-Sridharan optimistic FTRL and exponential weighting. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the comparison-cost and complete curvature proof, and the full fixed-block entropy proof. The seed scheme, band computation, numerical optimizer and running-time argument were not audited.\n\nInspected the final EditApproximation.lean target: distortion success at least 2/3, zero on every execution for equal strings, almost-linear expected work for polynomially bounded integer alphabets, and every-execution polynomial space. It contains sorry; the long supporting construction was not audited or built.\n\nThe comparison tree is fixed before refinement randomness. Warmup masses may fail to add; those discrepancies must be charged. The entropy feasible set has fixed mass in each block and contains a positive vector.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/121.md) · [Batch record](../../batches/B035/README.md)"
+    },
+    {
+      "id": "openai-math-124",
+      "record_type": "family",
+      "title": "Priority-list compression under local pruning and boundary capacity",
+      "source_family": "124",
+      "source_collection": "openai/math",
+      "batch_id": "B035",
+      "subject": "Theoretical computer science",
+      "source_paper_ids": [
+        "P-000214"
+      ],
+      "instrument_ids": [
+        "MI-000390",
+        "MI-000391"
+      ],
+      "headline": "The source claims a deterministic polynomial-time optimal algorithm for three-machine unit-job scheduling with arbitrary acyclic precedence constraints.",
+      "central_instrument": "Suffix carries preserve global qualifier order; pruning preserves a specific one-sided comparison. Disjoint upward-closed injections are bounded by the capacity of a shared boundary slot.",
+      "novelty_assessment": "Order filtering and injection into a finite witness set are elementary established tools. Their organization in the source scheduling hierarchy is recorded without certifying that hierarchy or the global algorithm.",
+      "formalization_summary": "Read ThreeMachine.lean: one finite deterministic machine returns an optimal schedule or exact deadline answer on explicitly encoded acyclic instances, with polynomial bound exponent 150020. The target contains sorry; no Lean build was performed.",
+      "statement_faithfulness": "Priority keys use the largest membership index and a rank from a linear extension. Pruning comparison requires the first job to belong to the retained child set. The five-entry count holds after pruning; a temporary update can have six entries.",
+      "dependencies": "Finite posets, upward-closed sets, lexicographic keys, disjointness and successor witnesses in a three-job boundary.",
+      "antecedents": "Elementary order and finite-capacity arguments; no first-priority claim.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-124.md",
+      "body": "# Priority-list compression under local pruning and boundary capacity\n\n## Source manuscript and claim\n\n[A Polynomial-Time Algorithm for Three-Machine Unit-Job Scheduling](../papers/P-000214.md), by OpenAI, None.\n\nThe source claims a deterministic polynomial-time optimal algorithm for three-machine unit-job scheduling with arbitrary acyclic precedence constraints.\n\n## Extracted instruments\n\n- [MI-000390: Preserve a global priority suffix while pruning only locally relevant list entries](../instruments/MI-000390.md)\n- [MI-000391: Bound surviving upward-closed injections by a shared boundary slot](../instruments/MI-000391.md)\n\n## Dependencies and antecedents\n\nFinite posets, upward-closed sets, lexicographic keys, disjointness and successor witnesses in a three-job boundary.\n\nElementary order and finite-capacity arguments; no first-priority claim. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead suffix-carry, pruning, update-label and list-length proofs, with schedule/poset definitions. Global boundary invariants, history flattening and the structural hierarchy were not audited.\n\nRead ThreeMachine.lean: one finite deterministic machine returns an optimal schedule or exact deadline answer on explicitly encoded acyclic instances, with polynomial bound exponent 150020. The target contains sorry; no Lean build was performed.\n\nPriority keys use the largest membership index and a rank from a linear extension. Pruning comparison requires the first job to belong to the retained child set. The five-entry count holds after pruning; a temporary update can have six entries.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/124.md) · [Batch record](../../batches/B035/README.md)"
     },
     {
       "id": "openai-math-126",
