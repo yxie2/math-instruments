@@ -1,0 +1,316 @@
+{
+  "batch_id": "B008",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T06:30:25.029578+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/Cotype.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/Cotype.lean",
+      "sha256": "453f9a677d12383f0caa5ccfeb6fb5cf9da471d2a51cf25ff748d45392878a0d",
+      "bytes": 1745
+    },
+    {
+      "path": "lean/ComparatorChallenges/MarkovType.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MarkovType.lean",
+      "sha256": "c5be3acd0f01b53f937fe769eda54257f2f93f5aa2b6e9ea31ad93c450d4aba3",
+      "bytes": 2314
+    },
+    {
+      "path": "lean/ComparatorChallenges/TingleySphereIsometry.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TingleySphereIsometry.lean",
+      "sha256": "fee90b109d4640af4faeebb337b39e654e57c4db645f049d654d082f25fd7303",
+      "bytes": 1287
+    },
+    {
+      "path": "lean/docs/322.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/322.md",
+      "sha256": "5b8a07a1aa25bbca2c2a9ddd101fe2c7d2af88dceb7a975981f046e43e8f781c",
+      "bytes": 933
+    },
+    {
+      "path": "lean/docs/326.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/326.md",
+      "sha256": "3258a78b82f7c4329e9a3fe00daf5eafee62f441897e0d5e57f0865813201d3a",
+      "bytes": 850
+    },
+    {
+      "path": "lean/docs/327.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/327.md",
+      "sha256": "6e7aa05cf96fadd65581ba74de37c1a78b975a57431729313dbb03e931327948",
+      "bytes": 1031
+    },
+    {
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/README.md",
+      "sha256": "11db995a943e9f3f753c6bddaed3694a50e179ddf92dc93555cda8bb553d83ca",
+      "bytes": 557
+    },
+    {
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f",
+      "bytes": 35253
+    },
+    {
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/README.md",
+      "sha256": "8b64d6e519795daabeb788ce81aa36574e8087da41f8252b9d8de62c63bc7316",
+      "bytes": 532
+    },
+    {
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953",
+      "bytes": 23932
+    },
+    {
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/README.md",
+      "sha256": "6cc3369244a9324d53603131eb4a50eb10f95a2f1c56197c70765910cfbb5db6",
+      "bytes": 590
+    },
+    {
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4",
+      "bytes": 42458
+    },
+    {
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/README.md",
+      "sha256": "08c63c1bbfe72a384f4395c1e6fa0d23b1dc0c376e8c1f755ef5bcb95ff09c59",
+      "bytes": 668
+    },
+    {
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+      "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03",
+      "bytes": 11148
+    },
+    {
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+      "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e",
+      "bytes": 7416
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000162",
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "label": "prop:alignment",
+      "line": 218,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L218",
+      "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+    },
+    {
+      "instrument_id": "MI-000162",
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "label": "eq:equality",
+      "line": 248,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L248",
+      "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+    },
+    {
+      "instrument_id": "MI-000162",
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "label": "eq:contraction",
+      "line": 280,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L280",
+      "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+    },
+    {
+      "instrument_id": "MI-000162",
+      "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+      "label": "thm:condensing",
+      "line": 209,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L209",
+      "sha256": "c5c097b21493c47b0c8abbcc7c95f1c1ad800dac171a786fe77971bed7b6433f"
+    },
+    {
+      "instrument_id": "MI-000163",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+      "label": "eq:fixed-cotype",
+      "line": 77,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L77",
+      "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+    },
+    {
+      "instrument_id": "MI-000163",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+      "label": "eq:quotient-lift",
+      "line": 142,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L142",
+      "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+    },
+    {
+      "instrument_id": "MI-000163",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex",
+      "label": "lem:lifts",
+      "line": 153,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/preliminaries.tex#L153",
+      "sha256": "1b6e15e0df38d581c0d5884d2a646d1eadc9933167fe3c26e178f3f7e1ba832e"
+    },
+    {
+      "instrument_id": "MI-000164",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+      "label": "lem:compact-domain",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L15",
+      "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+    },
+    {
+      "instrument_id": "MI-000164",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+      "label": "eq:finite-level-lift",
+      "line": 34,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L34",
+      "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+    },
+    {
+      "instrument_id": "MI-000164",
+      "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex",
+      "label": "eq:compact-walsh-decay",
+      "line": 203,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/build/approximation.tex#L203",
+      "sha256": "6382a0d219e365c2f053181f3bd63d63bf0390afbedbfe95d67119651e2e7b03"
+    },
+    {
+      "instrument_id": "MI-000165",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "eq:edge-balance",
+      "line": 237,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L237",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000165",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "lem:edge-labels",
+      "line": 280,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L280",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000165",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "eq:odd-markov",
+      "line": 286,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L286",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000166",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "lem:order-averaging",
+      "line": 377,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L377",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000166",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "prop:chart-transport",
+      "line": 432,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L432",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000166",
+      "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex",
+      "label": "eq:chart-edge-mass",
+      "line": 490,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/build/main.tex#L490",
+      "sha256": "967be1ac13fe35f0a0dc48063d8bc9dc447163a3aaa86c793f924eef0b0c8ed4"
+    },
+    {
+      "instrument_id": "MI-000167",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "lem:cuts",
+      "line": 200,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L200",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000167",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:cut-vector",
+      "line": 228,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L228",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000167",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:affine-map",
+      "line": 240,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L240",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000168",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "lem:flat",
+      "line": 290,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L290",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000168",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:remainder",
+      "line": 319,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L319",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000168",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "cor:martingale",
+      "line": 345,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L345",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000169",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:resolvent",
+      "line": 458,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L458",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000169",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:jump-identity",
+      "line": 523,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L523",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000169",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "eq:median",
+      "line": 577,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L577",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000169",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "lem:comparison",
+      "line": 385,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L385",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    },
+    {
+      "instrument_id": "MI-000169",
+      "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "label": "rem:stationary",
+      "line": 557,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex#L557",
+      "sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953"
+    }
+  ]
+}

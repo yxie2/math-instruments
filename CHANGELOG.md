@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added B008: eight auxiliary instruments from functional-analysis families 322, 326, 327 and 332, with exact source bindings, classical antecedents and eight groups of finite checks. The stopped-median construction credits the earlier cubic smoothing function and records the ambient-space and stationarity hypotheses.
 - Added B007: eight auxiliary instruments from number-theory families 012, 013, 020 and 021, with exact source labels, explicit hypotheses and eight groups of finite checks. The records separate selected sampling, algebraic and sieve mechanisms from the four headline theorem claims.
 - Added B006: six auxiliary instruments from planar-model families 225, 226 and 233, with source-bound hypotheses, antecedent comparisons and finite checks. Negative controls distinguish selected analytic mechanisms from unverified global scaling-limit claims.
 - Added B005: six instruments from families 231, 234 and 236, with exact source passages, explicit credit for established covariance and coupling methods, and six groups of finite checks including negative controls for missing hypotheses.

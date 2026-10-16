@@ -1,0 +1,115 @@
+{
+  "batch": "B008",
+  "status": "passed",
+  "seed": 322326327332,
+  "scope": "Eight groups of finite checks. Infinite-dimensional, asymptotic, Lean and novelty claims are not certified.",
+  "checks": {
+    "invariant_face": {
+      "convex_face_steps": 40,
+      "compact_parameter_pairs": 6400,
+      "radius_examples": 300,
+      "noncontraction_local_ratio": 2.7999999999935996,
+      "scope": "Finite support and parameter algebra; no computation of a nonzero infinite-dimensional measure of noncompactness."
+    },
+    "sign_lifts": {
+      "hilbert_models": 24,
+      "maximum_moment_error": 4.7704895589362195e-18,
+      "scope": "Explicit Hilbert lifts on complete finite sign cubes; not arbitrary Banach quotient optimization."
+    },
+    "compact_shift": {
+      "tail_bounds": 28,
+      "shift_models": 4,
+      "maximum_shift_error": 0.0,
+      "kernel_truncation_negative_control": {
+        "full_image": 0,
+        "truncated_image": 1
+      },
+      "unbounded_norm_composite_examples": [
+        {
+          "index": 2,
+          "operator_norm": 2.0,
+          "composite_error": 0.25
+        },
+        {
+          "index": 4,
+          "operator_norm": 4.0,
+          "composite_error": 0.0625
+        },
+        {
+          "index": 8,
+          "operator_norm": 8.0,
+          "composite_error": 0.00390625
+        },
+        {
+          "index": 12,
+          "operator_norm": 12.0,
+          "composite_error": 0.000244140625
+        }
+      ],
+      "scope": "Finite truncations of shift and moment identities; not an infinite-dimensional compactness or AP proof."
+    },
+    "odd_edge_sums": {
+      "hilbert_time_checks": 180,
+      "maximum_ratio": 1.0000000000000009,
+      "lift_balance_checks": 1542,
+      "nonreversible_control": {
+        "time": 4,
+        "sum_squared": 16,
+        "invalid_bound": 4
+      },
+      "scope": "Exact finite-state moment recursions and reversible marked-box transitions; not the source linear-displacement construction."
+    },
+    "chart_transport": {
+      "models": [
+        {
+          "charts": 3,
+          "total_variation": 0.3333333333333333,
+          "stationary_success": 0.6666666666666666,
+          "worst_conditional_success_forward": 0
+        },
+        {
+          "charts": 7,
+          "total_variation": 0.14285714285714285,
+          "stationary_success": 0.857142857142857,
+          "worst_conditional_success_forward": 0
+        },
+        {
+          "charts": 19,
+          "total_variation": 0.05263157894736842,
+          "stationary_success": 0.9473684210526312,
+          "worst_conditional_success_forward": 0
+        }
+      ],
+      "scope": "Explicit two-point translated charts, maximal matching and reverse couplings; not general finite Ramsey bounds."
+    },
+    "cut_reconstruction": {
+      "models": 18,
+      "contractivity_examples": 270,
+      "maximum_positive_error": 7.105427357601002e-15,
+      "scope": "Exact finite integer cuts and floating contractivity; no enumeration of infinite original coordinate support."
+    },
+    "quartic_potential": {
+      "exact_rational_cases": 900,
+      "largest_increment_over_remainder": "26244/3325",
+      "finite_martingales": 6,
+      "identity_map_negative_control": {
+        "epsilon": "1/100",
+        "increment_squared": "1/10000",
+        "108_remainder": "27/25000000"
+      },
+      "scope": "Exact polynomial inequalities and finite martingale telescoping; flatness control is deliberately tested."
+    },
+    "stopped_medians": {
+      "stationary_examples": 48,
+      "maximum_median_identity_error": 1.2878587085651816e-14,
+      "maximum_actual_cost_over_cesaro_cost": 0.5873706010675434,
+      "maximum_geometric_over_cesaro_cost": 0.9181198619641271,
+      "includes": [
+        "reversible chains",
+        "nonreversible directed cycles",
+        "zero stationary coordinates"
+      ],
+      "scope": "Finite resolvents, triple-median enumeration, jump accounting and two-cost bounds; no general theorem or extension algorithm certification."
+    }
+  }
+}
