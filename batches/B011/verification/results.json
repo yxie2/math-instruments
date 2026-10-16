@@ -1,0 +1,224 @@
+{
+  "batch": "B011",
+  "status": "passed",
+  "seed": 126127132192,
+  "scope": "Eight groups of finite checks; no global source theorem, Lean build or priority certification.",
+  "checks": {
+    "psd_splitting": {
+      "recursive_PSD_families": 120,
+      "largest_error_to_bound_ratio": 0.2242111862971931,
+      "scope": "Numerical noncommuting and singular PSD families; no proof of all dimensions."
+    },
+    "local_channel": {
+      "enumerated_channels": [
+        {
+          "k": 6,
+          "terminal_bits": [
+            0,
+            0
+          ],
+          "column_data": 90,
+          "slice_size": 15,
+          "trace_square": "15",
+          "mean_zero_eigenvalue": 1.0
+        },
+        {
+          "k": 6,
+          "terminal_bits": [
+            0,
+            1
+          ],
+          "column_data": 90,
+          "slice_size": 20,
+          "trace_square": "50/9",
+          "mean_zero_eigenvalue": 0.666666666666667
+        },
+        {
+          "k": 6,
+          "terminal_bits": [
+            1,
+            0
+          ],
+          "column_data": 90,
+          "slice_size": 20,
+          "trace_square": "50/9",
+          "mean_zero_eigenvalue": 0.666666666666667
+        },
+        {
+          "k": 6,
+          "terminal_bits": [
+            1,
+            1
+          ],
+          "column_data": 90,
+          "slice_size": 15,
+          "trace_square": "35/8",
+          "mean_zero_eigenvalue": 0.5833333333333339
+        },
+        {
+          "k": 8,
+          "terminal_bits": [
+            0,
+            0
+          ],
+          "column_data": 840,
+          "slice_size": 70,
+          "trace_square": "700/81",
+          "mean_zero_eigenvalue": 0.44444444444444464
+        },
+        {
+          "k": 8,
+          "terminal_bits": [
+            0,
+            1
+          ],
+          "column_data": 840,
+          "slice_size": 56,
+          "trace_square": "952/135",
+          "mean_zero_eigenvalue": 0.40000000000000074
+        },
+        {
+          "k": 8,
+          "terminal_bits": [
+            1,
+            0
+          ],
+          "column_data": 840,
+          "slice_size": 56,
+          "trace_square": "952/135",
+          "mean_zero_eigenvalue": 0.40000000000000036
+        },
+        {
+          "k": 8,
+          "terminal_bits": [
+            1,
+            1
+          ],
+          "column_data": 840,
+          "slice_size": 70,
+          "trace_square": "700/81",
+          "mean_zero_eigenvalue": 0.444444444444445
+        }
+      ],
+      "larger_exact_binomial_sums": [
+        {
+          "k": 20,
+          "trace_square": 15.452081040510416,
+          "trace_over_k": 0.7726040520255207
+        },
+        {
+          "k": 40,
+          "trace_square": 24.540835832028137,
+          "trace_over_k": 0.6135208958007035
+        },
+        {
+          "k": 80,
+          "trace_square": 38.99770636252017,
+          "trace_over_k": 0.48747132953150213
+        },
+        {
+          "k": 160,
+          "trace_square": 61.618103979070895,
+          "trace_over_k": 0.3851131498691931
+        }
+      ],
+      "scope": "Finite channel identities; an asymptotic rate is not inferred from a numerical fit."
+    },
+    "stationary_coupling": {
+      "exact_stationary_permutations": 266,
+      "negative_control": "V=U-1, a=0, E(U-V)^2=1; unequal marginals."
+    },
+    "weighted_grading": {
+      "weighted_cube_models": 60,
+      "polynomial_parity_models": 30,
+      "largest_cube": 32,
+      "tolerance": 1e-08
+    },
+    "tournament_candidate_lists": {
+      "candidate_list_states_and_gate_indices": 16320,
+      "source_union_bound_parameters": 57,
+      "scope": "Small tournaments use their computed forbidden-set threshold."
+    },
+    "joint_profiles": {
+      "exhaustive_separated_center_bases": [
+        {
+          "d": 1,
+          "bits": 6,
+          "S": [
+            2,
+            6
+          ],
+          "J": [
+            0,
+            0
+          ]
+        },
+        {
+          "d": 2,
+          "bits": 8,
+          "S": [
+            3,
+            8
+          ],
+          "J": [
+            0,
+            0
+          ]
+        },
+        {
+          "d": 3,
+          "bits": 10,
+          "S": [
+            4,
+            10
+          ],
+          "J": [
+            0,
+            0
+          ]
+        }
+      ],
+      "exhaustive_twelve_bit_compositions": 12,
+      "scope": "Small-model recurrence and row-block identities, not the source final parameter separation."
+    },
+    "reporting_rule": {
+      "exact_finite_reporting_rules": 70,
+      "normalized_Gaussian_integrals": [
+        {
+          "m": 3,
+          "S": 0.03512737012840333,
+          "J": 1245.3838295620963,
+          "deficit_over_p_star": -1244.348702191968,
+          "conditional_variance_on_A": 1.158313803563817
+        },
+        {
+          "m": 5,
+          "S": 0.013163835629198081,
+          "J": 805.9040917481285,
+          "deficit_over_p_star": -804.8909279124994,
+          "conditional_variance_on_A": 1.0749365583385924
+        },
+        {
+          "m": 9,
+          "S": 0.004105114909746528,
+          "J": 487.9622570369014,
+          "deficit_over_p_star": -486.95815192199166,
+          "conditional_variance_on_A": 1.0398769085279564
+        },
+        {
+          "m": 17,
+          "S": 0.0011529255079162414,
+          "J": 375.96107526983724,
+          "deficit_over_p_star": -374.9599223443293,
+          "conditional_variance_on_A": 1.0196012320608883
+        }
+      ],
+      "scope": "Identity checks at small m; no numerical positive-gain or asymptotic certification claimed."
+    },
+    "observation_scores": {
+      "exact_finite_observations": 46,
+      "copy_counts_per_observation": 6,
+      "scope": "Fourier and score calculus; arbitrary tested partitions need not have a variance advantage."
+    }
+  }
+}

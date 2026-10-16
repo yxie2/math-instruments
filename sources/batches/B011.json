@@ -1,0 +1,356 @@
+{
+  "batch_id": "B011",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T07:16:42.119254+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/GotsmanLinial.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/GotsmanLinial.lean",
+      "sha256": "5c63b62186354758cea448deb11dfd42a0e729a2260c6ef5b7df1c0be3b5dcfc",
+      "bytes": 1672
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatchingAffineLift.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MatchingAffineLift.lean",
+      "sha256": "91a303abc9d0c63078fe88b97364bb6226d3ef2eaa75914025fcb70cc50f2ece",
+      "bytes": 1094
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatchingPSD.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MatchingPSD.lean",
+      "sha256": "bca289a73746ce865ebe6d5162949fe0776cb5da307898a3f4056d8d987c4b9b",
+      "bytes": 1831
+    },
+    {
+      "path": "lean/ComparatorChallenges/SensitivitySeparation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SensitivitySeparation.lean",
+      "sha256": "76405c3a09039be254192bdb453af6121987ffd3a3236a7303fc4979d9361eae",
+      "bytes": 1291
+    },
+    {
+      "path": "lean/ComparatorChallenges/SquareRootDegree.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/SquareRootDegree.lean",
+      "sha256": "72f48e513f3159bf80d25c7ed5afee9f3224f5c09c672777ead3f1ec7309ac4f",
+      "bytes": 1944
+    },
+    {
+      "path": "lean/docs/126.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/126.md",
+      "sha256": "a26a6efcfa8666482560d9c6eafbd1364fbf2e61a131a6c7b7bd4c07f5c79e4b",
+      "bytes": 1258
+    },
+    {
+      "path": "lean/docs/127.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/127.md",
+      "sha256": "a612cbc2218486fd07d4b118e3102776bf303a4e2f01d4e1f9817918a4a9d524",
+      "bytes": 888
+    },
+    {
+      "path": "lean/docs/132.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/132.md",
+      "sha256": "2fd45b173892a873ff619558717e4130f07c28ba29bc5c643383d5f3d5831157",
+      "bytes": 1050
+    },
+    {
+      "path": "lean/docs/192.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/192.md",
+      "sha256": "2541e439837779913e446e3584cdf4c2454b4734d3e83dccf775497efccf26cf",
+      "bytes": 1097
+    },
+    {
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/README.md",
+      "sha256": "64ff84ebe06ea43c928d1ff45be1613f9e639252075227075080308f65746a3c",
+      "bytes": 705
+    },
+    {
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "sha256": "c6e9dcfc8e7da0509259e94082eb008330ea53012c0e084e659b36d2970193c3",
+      "bytes": 8407
+    },
+    {
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex",
+      "sha256": "ea1e88293d6de95e93062685862eb8dce8056e8a9318a17f5d4ed71e5e54b8cc",
+      "bytes": 7305
+    },
+    {
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/README.md",
+      "sha256": "84469ed726d3f2f3123abf4f8ab614367bee6497618dc1e09e51dab7050d20b6",
+      "bytes": 622
+    },
+    {
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex",
+      "sha256": "0950fe55cbf65b1dd981e6e484bf0ff2fa82d9dfcd33c889a31c1980b116fac9",
+      "bytes": 2564
+    },
+    {
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex",
+      "sha256": "f00cb46648ee1f960255ce21d758ca91fce68e27377529822ce8c1f08c188387",
+      "bytes": 4403
+    },
+    {
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/04-edge-recovery.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/04-edge-recovery.tex",
+      "sha256": "29db4cc58b6d4cf57defab07afad01f58cbdc12701114f97c35cafe05e964bbb",
+      "bytes": 4553
+    },
+    {
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/05-parity-coupling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/05-parity-coupling.tex",
+      "sha256": "be96e3479406ea84f1aa40585f56ea642263c80449640ffd55e8a24d5e1f60f6",
+      "bytes": 3743
+    },
+    {
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/README.md",
+      "sha256": "c335a43cad97e5888b0cafa04223ab3409d396a1a230cb0d06ccdb5362f217ff",
+      "bytes": 678
+    },
+    {
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex",
+      "sha256": "8b4d0961376d0d486f9833781667489bf7d06718b284901fc2aefa395ea4e3a6",
+      "bytes": 10110
+    },
+    {
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex",
+      "sha256": "4f5439e4a2dadb6531d89dd800e7a0ad153770851b492b2feef992cf81baffd7",
+      "bytes": 3655
+    },
+    {
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/README.md",
+      "sha256": "a4fa1fcc486012abb41863cb4ebdb2fab2481fd29b4ad09064f2fa55e053f265",
+      "bytes": 749
+    },
+    {
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "sha256": "8e12855dbf6275d197ba61d4acbf0d3e1aabdd079ba83ca2d022a40475328fc0",
+      "bytes": 6007
+    },
+    {
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "sha256": "57ea4c0606a60b04dce3b5669a858dc0f9b9cbb79c90b2b5bd230a4e9cb7352b",
+      "bytes": 10792
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000188",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex",
+      "label": "lem:splitting",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex#L11",
+      "sha256": "4f5439e4a2dadb6531d89dd800e7a0ad153770851b492b2feef992cf81baffd7"
+    },
+    {
+      "instrument_id": "MI-000188",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex",
+      "label": "eq:two-matrix-splitting",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex#L36",
+      "sha256": "4f5439e4a2dadb6531d89dd800e7a0ad153770851b492b2feef992cf81baffd7"
+    },
+    {
+      "instrument_id": "MI-000188",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex",
+      "label": "eq:compressed-overlap",
+      "line": 66,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/splitting.tex#L66",
+      "sha256": "4f5439e4a2dadb6531d89dd800e7a0ad153770851b492b2feef992cf81baffd7"
+    },
+    {
+      "instrument_id": "MI-000189",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex",
+      "label": "lem:local-averaging",
+      "line": 65,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex#L65",
+      "sha256": "8b4d0961376d0d486f9833781667489bf7d06718b284901fc2aefa395ea4e3a6"
+    },
+    {
+      "instrument_id": "MI-000189",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex",
+      "label": "local:trace-formula",
+      "line": 152,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex#L152",
+      "sha256": "8b4d0961376d0d486f9833781667489bf7d06718b284901fc2aefa395ea4e3a6"
+    },
+    {
+      "instrument_id": "MI-000189",
+      "path": "preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex",
+      "label": "local:trace-bound",
+      "line": 188,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exponential-PSD-rank-of-positively-shifted-matching-matrices-October-5-2026/build/source/sections/local-averaging.tex#L188",
+      "sha256": "8b4d0961376d0d486f9833781667489bf7d06718b284901fc2aefa395ea4e3a6"
+    },
+    {
+      "instrument_id": "MI-000190",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex",
+      "label": "lem:coupling",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex#L13",
+      "sha256": "0950fe55cbf65b1dd981e6e484bf0ff2fa82d9dfcd33c889a31c1980b116fac9"
+    },
+    {
+      "instrument_id": "MI-000190",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex",
+      "label": "eq:g-increments",
+      "line": 29,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/02-coupling.tex#L29",
+      "sha256": "0950fe55cbf65b1dd981e6e484bf0ff2fa82d9dfcd33c889a31c1980b116fac9"
+    },
+    {
+      "instrument_id": "MI-000191",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex",
+      "label": "eq:grading",
+      "line": 70,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex#L70",
+      "sha256": "f00cb46648ee1f960255ce21d758ca91fce68e27377529822ce8c1f08c188387"
+    },
+    {
+      "instrument_id": "MI-000191",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex",
+      "label": "eq:tridiagonal",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/03-weighted-grading.tex#L97",
+      "sha256": "f00cb46648ee1f960255ce21d758ca91fce68e27377529822ce8c1f08c188387"
+    },
+    {
+      "instrument_id": "MI-000191",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/04-edge-recovery.tex",
+      "label": "lem:edges",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/04-edge-recovery.tex#L10",
+      "sha256": "29db4cc58b6d4cf57defab07afad01f58cbdc12701114f97c35cafe05e964bbb"
+    },
+    {
+      "instrument_id": "MI-000191",
+      "path": "preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/05-parity-coupling.tex",
+      "label": "eq:block-coupling",
+      "line": 71,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Average-Sensitivity-of-Polynomial-Threshold-Functions-September-25-2026/build/sections/05-parity-coupling.tex#L71",
+      "sha256": "be96e3479406ea84f1aa40585f56ea642263c80449640ffd55e8a24d5e1f60f6"
+    },
+    {
+      "instrument_id": "MI-000192",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "label": "lem:labelling",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex#L27",
+      "sha256": "c6e9dcfc8e7da0509259e94082eb008330ea53012c0e084e659b36d2970193c3"
+    },
+    {
+      "instrument_id": "MI-000192",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "label": "eq:predicate-definition",
+      "line": 79,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex#L79",
+      "sha256": "c6e9dcfc8e7da0509259e94082eb008330ea53012c0e084e659b36d2970193c3"
+    },
+    {
+      "instrument_id": "MI-000192",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex",
+      "label": "prop:recurrences",
+      "line": 8,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex#L8",
+      "sha256": "ea1e88293d6de95e93062685862eb8dce8056e8a9318a17f5d4ed71e5e54b8cc"
+    },
+    {
+      "instrument_id": "MI-000193",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "label": "lem:base",
+      "line": 142,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex#L142",
+      "sha256": "c6e9dcfc8e7da0509259e94082eb008330ea53012c0e084e659b36d2970193c3"
+    },
+    {
+      "instrument_id": "MI-000193",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex",
+      "label": "lem:blocks",
+      "line": 168,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/01-construction.tex#L168",
+      "sha256": "c6e9dcfc8e7da0509259e94082eb008330ea53012c0e084e659b36d2970193c3"
+    },
+    {
+      "instrument_id": "MI-000193",
+      "path": "preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex",
+      "label": "eq:recurrences",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-superquadratic-separation-between-sensitivity-and-block-sensitivity-September-25-2026/build/sections/02-recurrences.tex#L11",
+      "sha256": "ea1e88293d6de95e93062685862eb8dce8056e8a9318a17f5d4ed71e5e54b8cc"
+    },
+    {
+      "instrument_id": "MI-000194",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "label": "eq:indicator",
+      "line": 46,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex#L46",
+      "sha256": "57ea4c0606a60b04dce3b5669a858dc0f9b9cbb79c90b2b5bd230a4e9cb7352b"
+    },
+    {
+      "instrument_id": "MI-000194",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "label": "lem:report",
+      "line": 56,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex#L56",
+      "sha256": "57ea4c0606a60b04dce3b5669a858dc0f9b9cbb79c90b2b5bd230a4e9cb7352b"
+    },
+    {
+      "instrument_id": "MI-000194",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "label": "lem:gaussian",
+      "line": 120,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex#L120",
+      "sha256": "57ea4c0606a60b04dce3b5669a858dc0f9b9cbb79c90b2b5bd230a4e9cb7352b"
+    },
+    {
+      "instrument_id": "MI-000194",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex",
+      "label": "eq:gaussian-identity",
+      "line": 179,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/02-reporting.tex#L179",
+      "sha256": "57ea4c0606a60b04dce3b5669a858dc0f9b9cbb79c90b2b5bd230a4e9cb7352b"
+    },
+    {
+      "instrument_id": "MI-000195",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "label": "eq:averaging",
+      "line": 30,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L30",
+      "sha256": "8e12855dbf6275d197ba61d4acbf0d3e1aabdd079ba83ca2d022a40475328fc0"
+    },
+    {
+      "instrument_id": "MI-000195",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "label": "lem:transfer",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L47",
+      "sha256": "8e12855dbf6275d197ba61d4acbf0d3e1aabdd079ba83ca2d022a40475328fc0"
+    },
+    {
+      "instrument_id": "MI-000195",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "label": "lem:readout",
+      "line": 71,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L71",
+      "sha256": "8e12855dbf6275d197ba61d4acbf0d3e1aabdd079ba83ca2d022a40475328fc0"
+    },
+    {
+      "instrument_id": "MI-000195",
+      "path": "preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex",
+      "label": "prop:amplification",
+      "line": 94,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unbounded-Violations-of-the-Square-Root-Degree-Bound-September-26-2026/build/sections/01-observations.tex#L94",
+      "sha256": "8e12855dbf6275d197ba61d4acbf0d3e1aabdd079ba83ca2d022a40475328fc0"
+    }
+  ]
+}

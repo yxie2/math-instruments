@@ -4,9 +4,9 @@
 
 | Record | Count |
 | --- | --- |
-| Instruments | 187 |
-| Papers | 114 |
-| Families | 71 |
+| Instruments | 195 |
+| Papers | 118 |
+| Families | 75 |
 | Patterns | 11 |
 
 The 38 initial families form groups of 17 and 21. The initial paper reports 19 original headline-formalization labels, including two partially inspected families, and five companion-only labels when family 159 is counted. These historical labels are distinct from current evidence. Mixed novelty assessments are retained without an aggregate novelty total.

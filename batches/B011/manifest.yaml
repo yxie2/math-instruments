@@ -1,0 +1,28 @@
+id: B011
+title: Matrix splitting, sensitivity and low-degree observations
+date: '2026-10-16'
+source_commit: 1581d4cbdd69a0faf34b2089614fe2a814316a6a
+family_ids:
+- openai-math-126
+- openai-math-127
+- openai-math-132
+- openai-math-192
+instrument_ids:
+- MI-000188
+- MI-000189
+- MI-000190
+- MI-000191
+- MI-000192
+- MI-000193
+- MI-000194
+- MI-000195
+paper_ids:
+- P-000115
+- P-000116
+- P-000117
+- P-000118
+notes: New source-based extractions with exact manuscript bindings, selected argument
+  checks and targeted antecedent comparisons. No Lean project built; no exhaustive
+  proof or priority certification.
+next_instrument_id: MI-000196
+next_paper_id: P-000119
