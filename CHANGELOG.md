@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B050: 8 selected instruments from 4 families and 8 manuscripts. Eight selected instruments covering masked finite-field mixing, multiscale metric repair, population-radius budgets, rational support reduction, semigroup corners, configuration-tree tours, borrowed-memory replay and conditional tensor amplification.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B049: 8 selected instruments from 4 families and 8 manuscripts. One-pass scaling, covariance trace, affine slack centers, restricted empirical variance, residual exact sampling, capacity forests, binary curvature and Boolean compression.. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B048: 8 selected instruments from 4 families and 8 manuscripts. Affine balancing, exact projection products, fresh-noise comparisons, uniform sampling and nonlinear graph transport. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

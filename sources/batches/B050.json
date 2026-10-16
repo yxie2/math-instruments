@@ -1,0 +1,376 @@
+{
+  "batch_id": "B050",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T15:03:48.303869+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/ExactFourier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/ExactFourier.lean",
+      "sha256": "93b33a2b9f6543dd0b893c3a5a504df19a1a39476072c6d7ebe18133a820ef6d",
+      "bytes": 2005
+    },
+    {
+      "path": "lean/ComparatorChallenges/KMedianRecovery.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KMedianRecovery.lean",
+      "sha256": "5662777702dd2ddd42a30b1425a6e424272e1d7606ae74485e8ac46b8b866cc2",
+      "bytes": 4241
+    },
+    {
+      "path": "lean/ComparatorChallenges/KMedianRefinedRecovery.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KMedianRefinedRecovery.lean",
+      "sha256": "c2b3b927374907d3b4a915c9acce0d0ea9d1ed46ad327961697783c62f80ab94",
+      "bytes": 6514
+    },
+    {
+      "path": "lean/ComparatorChallenges/KMedianThreshold.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KMedianThreshold.lean",
+      "sha256": "13ce12ffdfd6261073c9ae9976335d67f0b168958864b52da73d03c9eac42314",
+      "bytes": 3856
+    },
+    {
+      "path": "lean/ComparatorChallenges/MetricKMedian.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/MetricKMedian.lean",
+      "sha256": "52b0567c1c72fddfc813d86788fdd646a8f480687226dd776ec5d4550a6c1b3a",
+      "bytes": 2206
+    },
+    {
+      "path": "lean/ComparatorChallenges/OneWayLiveness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/OneWayLiveness.lean",
+      "sha256": "875eb3b5bd7f84214e571fd1bb1257260c81cd583fb28517b401c987faa44c3b",
+      "bytes": 4190
+    },
+    {
+      "path": "lean/ComparatorChallenges/TwoWayComplementation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TwoWayComplementation.lean",
+      "sha256": "4e47aa239705ac77757073930d4d88e4128e30fba8341284a42c8958a927a6bb",
+      "bytes": 1452
+    },
+    {
+      "path": "lean/ComparatorChallenges/TwoWayDeterminization.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/TwoWayDeterminization.lean",
+      "sha256": "640df9524171535dca77e5ef7129b174886ed8a7bfe68de8d831f65931fc9de8",
+      "bytes": 3019
+    },
+    {
+      "path": "lean/ComparatorChallenges/UniformFourier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/UniformFourier.lean",
+      "sha256": "4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74",
+      "bytes": 13003
+    },
+    {
+      "path": "lean/ComparatorChallenges/UniformSparsestCut.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/UniformSparsestCut.lean",
+      "sha256": "27d55087cde8a7080de8d37e72843dd064103be505ef78e509af56bdffcd2eeb",
+      "bytes": 1618
+    },
+    {
+      "path": "lean/docs/117.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/117.md",
+      "sha256": "c06829a8727d9ea91579c3855dfbd26c0b6fe6d3a296514cdbe031896541a272",
+      "bytes": 1162
+    },
+    {
+      "path": "lean/docs/125.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/125.md",
+      "sha256": "045cdf6a61cca1122b8ed8cc7d39b0229c1b4307d4cb2eb23fdf762339f855b7",
+      "bytes": 2408
+    },
+    {
+      "path": "lean/docs/129.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/129.md",
+      "sha256": "b9bde7a3b1ef6192426292ad23087eb424c81c1f2e825743c3661fbfac89f336",
+      "bytes": 2306
+    },
+    {
+      "path": "lean/docs/130.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/130.md",
+      "sha256": "233cdd3c7fb22ee4cb8ba8d170a79dd3e3d4e30f513c940db55ec244a291c209",
+      "bytes": 1952
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/README.md",
+      "sha256": "dd9405ab717a224bdec887aba3b4296a771eb78dec7a08f84e987e3e4081d464",
+      "bytes": 682
+    },
+    {
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+      "sha256": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561",
+      "bytes": 21506
+    },
+    {
+      "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/README.md",
+      "sha256": "e5cc223464607cc58002a4f02831fa807a874ce4ac437b45e93db7c13990768b",
+      "bytes": 745
+    },
+    {
+      "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+      "sha256": "25e009e4373861790ddb7443a768bda3297a7840490c56fba365f9e5133aa6c4",
+      "bytes": 13098
+    },
+    {
+      "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/README.md",
+      "sha256": "f5bb2dcd69ddbfdced1a4b6a24187b6e327c32874a78c6aecc0a87d4f73ad8bb",
+      "bytes": 733
+    },
+    {
+      "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+      "sha256": "1bd484da75a974633246a35d5681bbafead91bb0697bba625894185329a960bf",
+      "bytes": 15577
+    },
+    {
+      "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/README.md",
+      "sha256": "2f4022278cc419c66e2c07e3f2e4d1104643d0133fb6c05d42a045c7cb142c89",
+      "bytes": 701
+    },
+    {
+      "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+      "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c",
+      "bytes": 33023
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md",
+      "sha256": "87f2088fb02c24eb9a304786fad9e6a6da5033f6dab009b671453ed96deff2d2",
+      "bytes": 598
+    },
+    {
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169",
+      "bytes": 14152
+    },
+    {
+      "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/README.md",
+      "sha256": "324a7099091b60559369e671d230687fd1e4a306237309d7dcfbe3e8ca18acd6",
+      "bytes": 855
+    },
+    {
+      "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+      "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87",
+      "bytes": 3645
+    },
+    {
+      "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/README.md",
+      "sha256": "4f3417210dd1740f1d13a47462c6e152f7c5cde6c76ab633a18bb12b7127cf8e",
+      "bytes": 720
+    },
+    {
+      "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+      "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6",
+      "bytes": 30820
+    },
+    {
+      "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/README.md",
+      "sha256": "e5f516135b3fcae14335e937973d810f6fb3c956ba7ddbb50c66894b1bc99173",
+      "bytes": 573
+    },
+    {
+      "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+      "sha256": "c7dd611ea248e3ec1350ac07deba42ab89245b0dd5c3716b6785d2957bd88ebf",
+      "bytes": 27699
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000496",
+      "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+      "label": "lem:matrix-walk",
+      "line": 81,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L81",
+      "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+    },
+    {
+      "instrument_id": "MI-000496",
+      "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+      "label": "lem:masked-pair-mixing",
+      "line": 136,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L136",
+      "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+    },
+    {
+      "instrument_id": "MI-000496",
+      "path": "preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex",
+      "label": "eq:four-masked-positions",
+      "line": 126,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026/build/source/sections/02-bit-tests.tex#L126",
+      "sha256": "c6bc5bd188dc961da40c156cce56971db389efe1fa98415d1bfce9ee76f5fe3c"
+    },
+    {
+      "instrument_id": "MI-000497",
+      "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+      "label": "lem:repair",
+      "line": 18,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L18",
+      "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+    },
+    {
+      "instrument_id": "MI-000497",
+      "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+      "label": "rep:eq:gram",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L47",
+      "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+    },
+    {
+      "instrument_id": "MI-000497",
+      "path": "preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex",
+      "label": "rep:eq:local",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026/build/source/repair.tex#L38",
+      "sha256": "45a0bac3630da674b7265ec4eb2247be2f2efc82ceb6edbb24cc0f832e73ff87"
+    },
+    {
+      "instrument_id": "MI-000498",
+      "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+      "label": "sam:computable-radius",
+      "line": 66,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L66",
+      "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+    },
+    {
+      "instrument_id": "MI-000498",
+      "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+      "label": "sam:radius-budget",
+      "line": 235,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L235",
+      "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+    },
+    {
+      "instrument_id": "MI-000498",
+      "path": "preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex",
+      "label": "sam:third-menu-budget",
+      "line": 248,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026/build/sections/sampling.tex#L248",
+      "sha256": "7b1c9c030233c9f1d2b6833ab9756f056c29925a141e3265d442eacb049e12a6"
+    },
+    {
+      "instrument_id": "MI-000499",
+      "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+      "label": "lem:affine-support",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L26",
+      "sha256": "c7dd611ea248e3ec1350ac07deba42ab89245b0dd5c3716b6785d2957bd88ebf"
+    },
+    {
+      "instrument_id": "MI-000499",
+      "path": "preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex",
+      "label": "eq:compression-denominator",
+      "line": 67,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Approximation-Threshold-for-Metric-k-Median-September-24-2026/build/sections/derandomization.tex#L67",
+      "sha256": "c7dd611ea248e3ec1350ac07deba42ab89245b0dd5c3716b6785d2957bd88ebf"
+    },
+    {
+      "instrument_id": "MI-000500",
+      "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+      "label": "amp:minimal-corner",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L28",
+      "sha256": "25e009e4373861790ddb7443a768bda3297a7840490c56fba365f9e5133aa6c4"
+    },
+    {
+      "instrument_id": "MI-000500",
+      "path": "preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex",
+      "label": "amp:relation-corner",
+      "line": 65,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026/build/sections/amplification.tex#L65",
+      "sha256": "25e009e4373861790ddb7443a768bda3297a7840490c56fba365f9e5133aa6c4"
+    },
+    {
+      "instrument_id": "MI-000501",
+      "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+      "label": "lem:sink-tree",
+      "line": 57,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L57",
+      "sha256": "1bd484da75a974633246a35d5681bbafead91bb0697bba625894185329a960bf"
+    },
+    {
+      "instrument_id": "MI-000501",
+      "path": "preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex",
+      "label": "lem:tree-tour",
+      "line": 128,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026/build/sections/machines.tex#L128",
+      "sha256": "1bd484da75a974633246a35d5681bbafead91bb0697bba625894185329a960bf"
+    },
+    {
+      "instrument_id": "MI-000502",
+      "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex",
+      "label": "loc:replay",
+      "line": 152,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/build/sections/local.tex#L152",
+      "sha256": "616e2707aabf2f7591a687331d4cb0f2fa486f92c3f7fe96a133b90faff60561"
+    },
+    {
+      "instrument_id": "MI-000503",
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "label": "def:finite-win",
+      "line": 16,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L16",
+      "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+    },
+    {
+      "instrument_id": "MI-000503",
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "label": "lem:amplification",
+      "line": 216,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L216",
+      "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+    },
+    {
+      "instrument_id": "MI-000503",
+      "path": "preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex",
+      "label": "gen:eq:weighted-cost",
+      "line": 258,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L258",
+      "sha256": "26813305e1cc8768198cfc3ed4501b1a059f47fbd501ea1e2ac9a40cd1379169"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-117",
+      "extracted_slugs": [
+        "Constant-factor-hardness-of-uniform-sparsest-cut-September-24-2026",
+        "Near-square-root-logarithmic-integrality-gaps-for-uniform-sparsest-cut-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-125",
+      "extracted_slugs": [
+        "Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026",
+        "The-Approximation-Threshold-for-Metric-k-Median-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-129",
+      "extracted_slugs": [
+        "An-exponential-state-lower-bound-for-two-way-nondeterministic-complementation-September-25-2026",
+        "An-exponential-two-way-deterministic-state-lower-bound-for-one-way-liveness-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-130",
+      "extracted_slugs": [
+        "An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026",
+        "Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}

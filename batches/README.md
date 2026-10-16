@@ -51,8 +51,9 @@
 | [B047](B047/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Measurable splittings, weighted comparison, finite-cut modules and topological gap detection |
 | [B048](B048/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Affine balancing, exact projection products, fresh-noise comparisons, uniform sampling and nonlinear graph transport |
 | [B049](B049/README.md) | 4 new families; 8 instruments; 8 source manuscripts | One-pass scaling, covariance trace, affine slack centers, restricted empirical variance, residual exact sampling, capacity forests, binary curvature and Boolean compression. |
+| [B050](B050/README.md) | 4 new families; 8 instruments; 8 source manuscripts | Eight selected instruments covering masked finite-field mixing, multiscale metric repair, population-radius budgets, rational support reduction, semigroup corners, configuration-tree tours, borrowed-memory replay and conditional tensor amplification. |
 
-Future rounds use `B050` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+Future rounds use `B051` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 
