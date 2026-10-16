@@ -21674,6 +21674,378 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000511.md",
       "body": "# Control percolation sprinkling by a positive connection-kernel series\n\n[Family 214](../families/openai-math-214.md) · [Source manuscript](../papers/P-000286.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nFor independent Bernoulli bond fields with parameters p and a, their union has parameter p'=p+(1-p)a. Let T_p(x,y) be the connection probability and Adj the graph adjacency matrix. Then T_(p')<=sum_(j>=0) a^j T_p(Adj T_p)^j entrywise.\n\nA finite simple union-open path splits at its j ordered second-field edges. The intervening first-field legs have disjoint open witnesses. Independence and the disjoint-witness inequality bound their joint probability by a^j times the product of their connection probabilities. Summing over intermediate vertices and j gives the series; extra walks in that sum only overcount.\n\nIf the maximum degree is d, T_p is bounded on counting-measure l2, and a d ||T_p||<1, the series converges in operator norm. It gives ||T_(p')||<=||T_p||/[1-a d ||T_p||]. Entrywise domination implies this bound because both kernels have nonnegative entries: apply the dominating form to absolute values of test vectors. No positive-semidefinite ordering between the two kernels is needed. Consequently, bounded T_(pc) with pc<1 implies boundedness at a strictly larger parameter and hence pc<p_(2-to-2). The difficult input is boundedness at pc itself.\n\n## Role in the source argument\n\nConverts the source proposed critical operator bound into an open interval above pc.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pre:sprinkling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L499)\n- [eq:s05](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L501)\n\n## Antecedents and comparison\n\n[Hutchcroft, Percolation on Hyperbolic Graphs](https://d-nb.info/1187112097/34), Lemma 2.4 and Corollary 2.6, state and prove the same connection-kernel comparison; PDF pages 9-10 were read. The source explicitly cites this antecedent. This extraction is a reusable classical instrument, not a novelty claim.\n\n## Checks and limitations\n\nExact enumeration of bond states on small graphs computes connection matrices at rational parameters and verifies domination by the rational Neumann resolvent. Norms are checked numerically against the scalar bound.\n\nEvery finite graph has bounded connection operators; these tests do not establish a nontrivial infinite-graph threshold gap or the source critical boundedness theorem.\n\n## Possible applications\n\nExtending a known connection-operator bound to nearby percolation parameters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000512",
+      "record_type": "instrument",
+      "title": "Balance restriction slopes with a bounded monotone average",
+      "forms": [
+        "elementary-modification-slope-balancing",
+        "bounded-average-termination"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-195"
+      ],
+      "source_paper_ids": [
+        "P-000287"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "lem:balance",
+          "line": 402,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L402",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        },
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "eq:transform",
+          "line": 419,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L419",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        },
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "eq:mixture",
+          "line": 614,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L614",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "chen-sun-modification-antecedent-with-algebraic-termination",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000512.md",
+      "body": "# Balance restriction slopes with a bounded monotone average\n\n[Family 195](../families/openai-math-195.md) · [Source manuscript](../papers/P-000287.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nLet X be a smooth integral projective complex surface that is an effective Cartier divisor in an integral Noetherian scheme W, with conormal J|X=O_X(H) ample. Let E be coherent torsion-free and P=E|X torsion-free of rank r>0. Normalize slope by mu(B)=c1(B).H/(rank(B)H^2), so tensoring by O_X(H) raises slope by one.\n\nWhen the largest and smallest Harder-Narasimhan slopes differ by more than one, take the last semistable quotient G of P, put B=ker(P->G), and replace E by ker(E->i_*G). The Cartier Tor sequence gives 0->G(H)->E'|X->B->0. The new restriction is torsion-free, and E' agrees with E off X. Its maximum slope cannot exceed the old maximum, while its average rises by rank(G)/r>=1/r. Since average never exceeds maximum, this process terminates with slope width at most one. The bound uses the initial maximum minus initial average, not a claim that every slope moves monotonically.\n\nThe value of width control is a mixture identity. For positive rank weights w_i summing to one, normalized first characters m_i and variances v_i=2q_i-m_i^2, the extension variance satisfies v=sum w_i v_i+sum w_i(m_i-mbar)^2. If the m_i differ from the balanced slopes by one common shift, their variance is at most 1/4. Thus a common upper bound v_i<=C gives v<=C+1/4, without requiring P itself to be semistable.\n\n## Role in the source argument\n\nProvides the narrow slope interval needed to compare the source upper and lower Chern-character bounds.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:balance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L402)\n- [eq:transform](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L419)\n- [eq:mixture](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L614)\n\n## Antecedents and comparison\n\n[Chen-Sun, Algebraic tangent cones of reflexive sheaves](https://arxiv.org/pdf/1808.02172), Theorem 1.4(I) and the exact modification sequence in the proof of Lemma 3.2, give optimal extensions by Hecke transforms; these passages were read. Their analytic reflexive-sheaf setting differs from the selected Noetherian Cartier-divisor lemma. The retrieved version calls the sequence antecedent Corollary 2.6.\n\n## Checks and limitations\n\nExact weighted slope models verify monotonicity of the maximum, the increase in mean, finite termination and the variance-mixture identity. These models check the numerical termination mechanism, not the existence of sheaf modifications.\n\nThe finite models do not verify the cone extension, Bogomolov hypotheses or the claimed counterexample.\n\n## Possible applications\n\nConverting a bounded spread of semistable factors into a quantitative bound for a possibly unstable extension.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000513",
+      "record_type": "instrument",
+      "title": "Extract a nonnegative variance from a Cartier-divisor lattice filtration",
+      "forms": [
+        "cartier-layer-chern-variance",
+        "punctured-triviality-numerical-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-195"
+      ],
+      "source_paper_ids": [
+        "P-000287"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "lem:lattice",
+          "line": 467,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L467",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        },
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "eq:Tor",
+          "line": 504,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L504",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        },
+        {
+          "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex",
+          "label": "eq:RR-variance",
+          "line": 582,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L582",
+          "sha256": "76d8de92a9ef5850d2f6f185812051aeedfa100885f96fe93ef9cd7b5d94dea0"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "source-layer-interface-with-classical-chern-character-core",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000513.md",
+      "body": "# Extract a nonnegative variance from a Cartier-divisor lattice filtration\n\n[Family 195](../families/openai-math-195.md) · [Source manuscript](../papers/P-000287.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nSuppose D=P^2 is an effective Cartier divisor in an integral Noetherian scheme V, with conormal I|D=O_D(1). Let L' be coherent torsion-free of rank N>0 and trivial on V minus D. For F=L'|D define v(F)=2ch2(F)/N-(c1(F)/N)^2. Then v(F)>=0, even though F itself need not be torsion-free.\n\nClearing denominators and twisting gives I^b O_V^N subset L' subset O_V^N for some b. Twisting preserves v. The quotient Q has finite layers Q_j=I^jQ/I^(j+1)Q, each a quotient of O_D(j)^N. With n_j=rank Q_j, one has 0<=n_j<=N and c1(Q_j)>=j n_j. Derived Cartier restriction gives [F]=[O_D^N]+sum_j([Q_j(1)]-[Q_j]), hence c1(F)=sum n_j and 2ch2(F)>=sum(2j+1)n_j. The key nonnegative identity is\n\nN sum_j(2j+1)n_j-(sum_j n_j)^2 = sum_j n_j(N-n_j)+2 sum_(j>l)n_j(N-n_l).\n\nThe source compares this lower bound with finite pushforward f:X->P^2. Writing H=f*O(1) and h=H^2, surface Riemann-Roch, Bogomolov and Hodge index give v(f_*G)<=1/4-[K_X^2-2c2(X)]/(12h) for every torsion-free H-slope-semistable G. A slope-width-one filtration adds at most 1/4 by the variance-mixture identity. If all extension hypotheses hold, the resulting necessary condition is K_X^2-2c2(X)<=6h. The calculation is an obstruction interface; it does not by itself furnish a surface or a counterexample ring.\n\n## Role in the source argument\n\nTurns agreement with a trivial bundle off the exceptional divisor into the source lower bound that conflicts with its proposed surface geometry.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:lattice](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L467)\n- [eq:Tor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L504)\n- [eq:RR-variance](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/build/paper.tex#L582)\n\n## Antecedents and comparison\n\nThe source proves the displayed layer inequality directly using standard Cartier restriction and Chern characters. Its upper comparison explicitly invokes classical surface Riemann-Roch, Bogomolov and Hodge index. The selected proof and algebraic completion of squares were read; a targeted comparison does not establish priority for the combined interface.\n\n## Checks and limitations\n\nExact bounded integer layer sequences verify the nonnegative identity, including equality cases. Symbolic computation checks the Riemann-Roch coefficient comparison and completion of squares; weighted rational examples check the 1/4 mixture allowance.\n\nThese algebraic checks do not establish the geometric prerequisites or the source headline nonexistence theorem. The linked formal target does not state that theorem.\n\n## Possible applications\n\nDeriving numerical obstructions from extensions across a negative divisor when a bundle is trivial on the complement.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000514",
+      "record_type": "instrument",
+      "title": "Cancel p-orbits to compare coefficient restriction with Brauer projection",
+      "forms": [
+        "modular-fixed-orbit-projection",
+        "normalizer-quotient-compatibility"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-202"
+      ],
+      "source_paper_ids": [
+        "P-000288"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex",
+          "label": "lem:normalizer-projection",
+          "line": 82,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L82",
+          "sha256": "d3b113b9aee36cffcadc85330eee7b1d48e968f98880edfb1e1fddc4c0b44681"
+        },
+        {
+          "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex",
+          "label": "eq:normalizer-projection",
+          "line": 90,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L90",
+          "sha256": "d3b113b9aee36cffcadc85330eee7b1d48e968f98880edfb1e1fddc4c0b44681"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "classical-brauer-homomorphism",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000514.md",
+      "body": "# Cancel p-orbits to compare coefficient restriction with Brauer projection\n\n[Family 202](../families/openai-math-202.md) · [Source manuscript](../papers/P-000288.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nLet k have characteristic p, X be finite, and Q a p-subgroup. Coefficient restriction Br_Q:(kX)^Q->k C_X(Q) is a unital algebra homomorphism. For the coefficient at g in C_X(Q) of a product, Q conjugates the pairs (a,b) with ab=g. Coefficient products are constant on each orbit; every nonfixed orbit has size divisible by p. Fixed pairs are precisely those with both factors in C_X(Q), proving multiplicativity.\n\nSuppose Q<=H<=N_X(Q) and C_X(Q)<=H. For central v in kX, let s_H(v) restrict coefficients to H and let pi_Q:kH->k[H/Q]. Every coset hQ is Q-conjugation invariant. The same orbit cancellation proves pi_Q(s_H(v))=pi_Q(Br_Q(v)). Both restricted elements are central in kH. Since a normal p-subgroup acts trivially on every simple kH-module, their central-character values agree on every block.\n\nFor a split coefficient field, composing a block central character of H with s_H therefore gives the unique residue character of a block of X: equality with Br_Q makes this composition multiplicative even though arbitrary coefficient restriction need not be an algebra map. The normalizer and centralizer hypotheses are part of the statement.\n\n## Role in the source argument\n\nMakes the source block assignment compatible with quotient characters used in its weight transform.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:normalizer-projection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L82)\n- [eq:normalizer-projection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L90)\n\n## Antecedents and comparison\n\n[Webb, A Course in Finite Group Representation Theory](https://www-users.cse.umn.edu/~webb/RepBook/RepBookLatex.pdf), Lemma 12.5.3 and Corollary 12.5.4, identify the classical Brauer quotient with fixed-point support and coefficient truncation; the complete passages were read in the author prepublication version, printed pages 245-246. The normalizer quotient identity is checked directly in the source.\n\n## Checks and limitations\n\nExact small group algebras test multiplicativity on all invariant orbit-basis pairs and compare quotient coefficients for central class sums. A wrong-characteristic example fails multiplicativity.\n\nThese checks do not validate the source chain inversion, curve specialization or Alperin weight theorem.\n\n## Possible applications\n\nReplacing a nonmultiplicative coefficient restriction by a multiplicative projection after passing to a normal p-subgroup quotient.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000515",
+      "record_type": "instrument",
+      "title": "Use dual-basis averaging to construct a central radical annihilator",
+      "forms": [
+        "higman-trace-radical-annihilation",
+        "double-casimir-block-detection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-202"
+      ],
+      "source_paper_ids": [
+        "P-000288"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex",
+          "label": "lem:defect-zero-detection",
+          "line": 483,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L483",
+          "sha256": "d3b113b9aee36cffcadc85330eee7b1d48e968f98880edfb1e1fddc4c0b44681"
+        },
+        {
+          "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex",
+          "label": "eq:averaging-tensor",
+          "line": 511,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L511",
+          "sha256": "d3b113b9aee36cffcadc85330eee7b1d48e968f98880edfb1e1fddc4c0b44681"
+        },
+        {
+          "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex",
+          "label": "eq:simple-block-scalars",
+          "line": 544,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L544",
+          "sha256": "d3b113b9aee36cffcadc85330eee7b1d48e968f98880edfb1e1fddc4c0b44681"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "classical-higman-trace",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000515.md",
+      "body": "# Use dual-basis averaging to construct a central radical annihilator\n\n[Family 202](../families/openai-math-202.md) · [Source manuscript](../papers/P-000288.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nFor a finite-dimensional symmetric algebra A over a field, let tau(ab) be its nondegenerate associative symmetric pairing and (v_i),(v_i*) dual bases. The canonical tensor sum v_i tensor v_i* makes H(a)=sum v_i a v_i* independent of the chosen bases and central. The identity tau(H(a)b)=Tr(L_b R_a) implies H(a) rad(A)=0: if b is in the radical, L_b is nilpotent and commutes with R_a, so the trace vanishes; replacing b by bc for arbitrary c and using nondegeneracy gives the assertion.\n\nFor A=kX with tau the identity coefficient, H(a)=sum_(x in X) x a x^(-1). The double contraction d=sum_(x,y)[x,y]=sum_i H(v_i)v_i* is also central and annihilates the radical. On a semisimple block M_s(k), where the pairing is t Tr with t nonzero, matrix units yield H(a)=t^(-1)Tr(a)I and d=t^(-2)I. These formulas still hold when the characteristic divides s; division by s is never used.\n\nOn a nonsemisimple block, a central element with nonzero residue scalar is a unit, so it cannot annihilate the nonzero radical. Thus d has zero residue scalar there and a nonzero scalar on a split semisimple block. The source further connects these blocks to ordinary defect-zero characters through its characteristic-zero commutator scalar |X|^2/chi(1)^2; that connection also needs its separate cocenter and modular block inputs.\n\n## Role in the source argument\n\nSupplies the source central detector used before its trace limit and generating-tuple count.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:defect-zero-detection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L483)\n- [eq:averaging-tensor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L511)\n- [eq:simple-block-scalars](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/sections/group.tex#L544)\n\n## Antecedents and comparison\n\n[Lorenz-Tokoly, Projective modules over Frobenius algebras and Hopf comodule algebras](https://arxiv.org/pdf/1008.4056), Section 2.4, Lemma 2 and Section 2.4.2, give the Higman trace, its trace identity and radical-annihilating image; these passages and proofs were read. The selected source spells out the group commutator and matrix-block contractions.\n\n## Checks and limitations\n\nExact group-algebra calculations verify the averaging trace identity, conjugacy-class support and radical annihilation in explicit small examples. Matrix-unit sums check both contractions in characteristics dividing the matrix size.\n\nFinite examples do not certify the full ordinary/modular character comparison or the source final local-global theorem.\n\n## Possible applications\n\nDetecting semisimple block contributions through central elements without dividing by representation dimensions.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000516",
+      "record_type": "instrument",
+      "title": "Transfer projectivity through internal norms without a monoidal evaluation",
+      "forms": [
+        "norm-map-projectivity-detection",
+        "nonmonoidal-evaluation-tensor-transfer"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-208"
+      ],
+      "source_paper_ids": [
+        "P-000289"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex",
+          "label": "lem:norm-projectivity",
+          "line": 23,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex#L23",
+          "sha256": "5c007e991b6d9678cda129c4ec1a4b2dd11c3fdfaebdbd22b7d98c01a1e4e876"
+        },
+        {
+          "path": "preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex",
+          "label": "lem:internal-norm-products",
+          "line": 53,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex#L53",
+          "sha256": "5c007e991b6d9678cda129c4ec1a4b2dd11c3fdfaebdbd22b7d98c01a1e4e876"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "classical-norm-criterion-with-internal-transfer-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000516.md",
+      "body": "# Transfer projectivity through internal norms without a monoidal evaluation\n\n[Family 208](../families/openai-math-208.md) · [Source manuscript](../papers/P-000289.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nFor a finite p-group H over a field k of characteristic p, a finite-dimensional kH-module M is projective exactly when the norm nu_H:M_H->M^H induced by sum_h h is an isomorphism. The regular module has one-dimensional coinvariants and invariants, and its norm identifies their generators. This proves one direction for all finite groups.\n\nFor the p-group converse, kH is local and self-injective and its socle is the line generated by N_H=sum_h h. Every nonzero left ideal meets that socle. If N_H m is nonzero, the map kH->M sending a to am is injective and splits. Remove free summands until the remainder M' has N_H M'=0. A nonzero remainder has nonzero coinvariants by Nakayama, so its zero norm cannot be an isomorphism. Thus an isomorphic norm forces M to be free.\n\nNow let C be a finite tensor category with exact tensor products and exact faithful k-linear evaluation omega=Hom(P,-) for a projective generator P. Exact evaluation preserves finite invariants, coinvariants and norms and reflects isomorphisms. If independent p-groups H_i act on X_i and every omega(X_i) is projective, their internal norms are isomorphisms. Independent actions give (X tensor Y)_(H times K)=X_H tensor Y_K and the analogous invariant identity, under which the product norm is the tensor product of the norms. Evaluation therefore proves omega(tensor_i X_i) projective for the product group. Restriction to any subgroup preserves projectivity. No identification omega(X tensor Y)=omega(X) tensor omega(Y) is required.\n\n## Role in the source argument\n\nAllows the source minimal-nonprojective-rank argument to use tensor products despite the evaluation functor not being monoidal.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:norm-projectivity](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex#L23)\n- [lem:internal-norm-products](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/projectivity.tex#L53)\n\n## Antecedents and comparison\n\n[Chebolu-Christensen-Minac, Ghosts in modular representation theory](https://arxiv.org/pdf/math/0609699), Proposition 2.1 and Proposition 4.6 in the retrieved version, use norm vanishing on projective-free modules and prove the socle-annihilator argument; those passages were read. The full selected source norm criterion and internal transfer proof were checked directly.\n\n## Checks and limitations\n\nExact cyclic p-group Jordan modules test the norm criterion and mixtures of free and nonfree summands. Independent group actions test tensor factorization of norm operators. The abstract internal-category step is supported by its proof, not simulated by these finite matrices.\n\nThis does not prove restricted tilting, Frobenius exactness or the existence of a fiber functor for every category.\n\n## Possible applications\n\nTransporting a tensor-product property through an exact faithful linear functor when the property is detected by a canonical morphism.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000517",
+      "record_type": "instrument",
+      "title": "Choose an independent Frobenius-constrained nullvector",
+      "forms": [
+        "moore-nullvector-selection",
+        "additive-polynomial-independence-certificate"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-208"
+      ],
+      "source_paper_ids": [
+        "P-000289"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex",
+          "label": "lem:moore-selection",
+          "line": 124,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex#L124",
+          "sha256": "19951f011bc05cfca9123ad3e3f81bf827e9805900093579ffb8842ae9d2dd39"
+        },
+        {
+          "path": "preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex",
+          "label": "eq:selected-embedding",
+          "line": 128,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex#L128",
+          "sha256": "19951f011bc05cfca9123ad3e3f81bf827e9805900093579ffb8842ae9d2dd39"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "classical-moore-core-with-source-reverse-selection",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000517.md",
+      "body": "# Choose an independent Frobenius-constrained nullvector\n\n[Family 208](../families/openai-math-208.md) · [Source manuscript](../papers/P-000289.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nLet k be perfect of characteristic p and let alpha_1,...,alpha_r be F_p-linearly independent. There exist F_p-linearly independent lambda_i with sum_i alpha_i lambda_i^(p^j)=0 for 0<=j<=r-2. For r=1 choose any nonzero lambda.\n\nFor r>=2 set beta_i=alpha_i^(p^(-(r-2))) and let B have rows (beta_i^(p^s))_i for s=0,...,r-2. A nonzero row relation would be an additive polynomial of degree at most p^(r-2) vanishing on the p^r-element prime-field span of the beta_i, impossible. Thus B has rank r-1.\n\nIts row space meets F_p^r only at zero. If c_i=f(beta_i) is prime-field valued for an additive polynomial f of degree at most p^(r-2), then f^p-f vanishes on all p^r points and has degree at most p^(r-1), so it is zero. A nonzero positive-degree f cannot satisfy f^p=f as a polynomial, and f has no constant term. Hence f=0.\n\nChoose a nonzero lambda in the one-dimensional kernel. Any prime-field relation among its coordinates lies in the annihilator of that kernel, namely the row space of B, and therefore vanishes. Finally the rows, in reverse order, are (alpha_i^(p^(-j)))_i; raising the nullvector equations to p^j yields the desired constraints. The source uses these as the equations forcing a chosen rank-support point to remain in the support of a restricted Steinberg module.\n\n## Role in the source argument\n\nSelects an injective elementary-abelian-group embedding compatible with the source chosen nonprojective support point.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:moore-selection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex#L124)\n- [eq:selected-embedding](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/build/sections/support.tex#L128)\n\n## Antecedents and comparison\n\n[Coulembier-Flake, A conjecture on the tensor ideal for an elementary p-group generated by the restriction of a Steinberg module](https://arxiv.org/pdf/2507.02722v1), Lemma 3.2.2 and Proposition 4.2.5/Corollary 4.2.7, give the Moore determinant criterion and the same support equations; their statements and the support proof were read. The reverse nullvector selection was checked in the source. No earliest-priority claim for that selection is made.\n\n## Checks and limitations\n\nExact arithmetic in finite extension fields of characteristics two, three and five constructs nullvectors, checks every Frobenius equation and checks prime-field independence of both coordinate lists. Dependent input coordinates supply a failure control.\n\nSolving the finite-field equations does not establish the rank-variety theorem, restricted tilting or the source categorical classification.\n\n## Possible applications\n\nSolving several Frobenius-linear constraints while preserving injectivity of an elementary-abelian-group embedding.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000518",
+      "record_type": "instrument",
+      "title": "Obstruct nonpositive curvature by incompatible torus orthogonality",
+      "forms": [
+        "centralizer-commutator-orthogonality",
+        "torus-shear-cat0-obstruction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-358"
+      ],
+      "source_paper_ids": [
+        "P-000290"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex",
+          "label": "eq:torus-gluing",
+          "line": 22,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L22",
+          "sha256": "efd9ecf990641fcbf876478cf8c3a72b6fae9f037af1289f890e3fd67a7c9537"
+        },
+        {
+          "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex",
+          "label": "thm:no-cat0-action",
+          "line": 87,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L87",
+          "sha256": "efd9ecf990641fcbf876478cf8c3a72b6fae9f037af1289f890e3fd67a7c9537"
+        },
+        {
+          "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex",
+          "label": "eq:torus-orthogonality",
+          "line": 171,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L171",
+          "sha256": "efd9ecf990641fcbf876478cf8c3a72b6fae9f037af1289f890e3fd67a7c9537"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 1,
+      "subject": "Differential geometry",
+      "novelty_status": "leeb-two-piece-graph-manifold-obstruction",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000518.md",
+      "body": "# Obstruct nonpositive curvature by incompatible torus orthogonality\n\n[Family 358](../families/openai-math-358.md) · [Source manuscript](../papers/P-000290.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nGlue two copies of a once-punctured torus times a circle along their boundary tori by h_2=h_1+f_1 and f_2=h_1. The matrix [[1,1],[1,0]] has determinant -1. Each boundary subgroup embeds as Z^2, with h_i a commutator in the surface group and f_i central in the corresponding vertex group. Thus h_i belongs to the commutator subgroup of the centralizer of f_i.\n\nSuppose the amalgamated group acts properly and cocompactly on a nonempty proper CAT(0) space. Compactness modulo the action and properness show that every translation-length infimum is attained. Infinite-order elements have positive length. The flat torus theorem gives one common invariant Euclidean plane on which the embedded boundary Z^2 acts as a translation lattice.\n\nThe cyclic minset of f_i splits as Y_i times R. Every centralizing element acts on the R factor by a constant translation, defining a homomorphism from its centralizer to R. This character vanishes on h_i. On the common plane, the resulting Pythagorean identity forces v(h_i) perpendicular to v(f_i). Writing u=v(h_1), v=v(f_1), the two conditions become <u,v>=0 and <u+v,u>=0. They force ||u||^2=0, contradicting a nonzero lattice vector.\n\nThus this group has no such CAT(0) action. Standard metric Cartan-Hadamard then excludes a locally CAT(0) metric on the closed manifold, and in particular a smooth metric of nonpositive sectional curvature. Constructing a metric with no conjugate points is a separate task.\n\n## Role in the source argument\n\nFixes the source topological obstruction before its no-conjugate-points metric is constructed.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [eq:torus-gluing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L22)\n- [thm:no-cat0-action](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L87)\n- [eq:torus-orthogonality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/topology.tex#L171)\n\n## Antecedents and comparison\n\n[Leeb, 3-manifolds with(out) metrics of nonpositive curvature](https://arxiv.org/pdf/dg-ga/9410002), Example 4.1, gives the two-piece orthogonal-basis compatibility obstruction; the complete example on pages 14-15 was read. The source cites Kapovich-Leeb for the broader group-action framework and supplies the minset argument explicitly. This is not a new topology obstruction.\n\n## Checks and limitations\n\nSymbolic Gram-matrix calculations verify the incompatible shear conditions. Exact enumeration of small integral gluing matrices checks when two bases can both be orthogonal for a positive diagonal Gram matrix.\n\nThe finite linear algebra does not prove the flat torus theorem or construct the source smooth metric without conjugate points.\n\n## Possible applications\n\nDetecting global curvature obstructions from incompatible geometric structures on a gluing torus.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000519",
+      "record_type": "instrument",
+      "title": "Optimize a boundary penalty in the dual energy norm",
+      "forms": [
+        "boundary-penalty-schur-complement",
+        "rank-one-dual-energy-improvement"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-358"
+      ],
+      "source_paper_ids": [
+        "P-000290"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex",
+          "label": "lem:turning-duality",
+          "line": 146,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L146",
+          "sha256": "6cdadc53f17a9be657bd154eff3b223b4ef66d57d69320feb9c09525163d58ad"
+        },
+        {
+          "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex",
+          "label": "eq:turning-minimum",
+          "line": 158,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L158",
+          "sha256": "6cdadc53f17a9be657bd154eff3b223b4ef66d57d69320feb9c09525163d58ad"
+        }
+      ],
+      "batch_id": "B052",
+      "source_item": 2,
+      "subject": "Differential geometry",
+      "novelty_status": "classical-cauchy-schwarz-and-rank-one-update",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000519.md",
+      "body": "# Optimize a boundary penalty in the dual energy norm\n\n[Family 358](../families/openai-math-358.md) · [Source manuscript](../papers/P-000290.md) · [Batch B052](../../batches/B052/README.md)\n\n## Mathematical content\n\nSuppose endpoint data X and nonnegative energy E satisfy |q^T X|^2<=S(q,q)E for every covector q, with S positive definite. For mu>0, a distinguished covector e and any real alpha, split p^T X=(p-alpha e)^T X+alpha e^T X. Cauchy-Schwarz gives\n\n|p^T X|^2 <= [S(p-alpha e,p-alpha e)+alpha^2/mu] [E+mu(e^T X)^2].\n\nMinimizing the first factor at alpha=S(p,e)/(S(e,e)+mu^(-1)) gives S(p,p)-S(p,e)^2/[S(e,e)+mu^(-1)]. This is the dual-energy improvement supplied by one measured boundary component. It is also the rank-one inverse identity p^T(S^(-1)+mu ee^T)^(-1)p when S is represented by a matrix.\n\nIn the source, E is the sum of a weighted L2 energy for xi and the Dirichlet energy integral[w_dot^2-F''w^2/2] with w vanishing at both ends and F''<=0. The endpoint functional has Gram form S(q,r)=integral q^T P r + <Phi_q,Phi_r>_(D*). Riesz representation supplies the initial dual bound. Its index form is bounded below by E+mu(e^T X)^2-(p^T X)^2/L, so proving that the optimized factor is at most L suffices for nonnegativity. That last uniform estimate is additional geometric work, not part of the algebraic identity.\n\n## Role in the source argument\n\nAllows a rank-one boundary contribution to compensate a potentially negative tangential term in the source returning-geodesic index form.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:turning-duality](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L146)\n- [eq:turning-minimum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/build/sections/turning.tex#L158)\n\n## Antecedents and comparison\n\nThe optimization is a classical completion of squares, equivalently the Sherman-Morrison rank-one inverse identity. The complete source duality proof was read; no novelty claim is made for the identity. Its use with this geometric energy is the source interface.\n\n## Checks and limitations\n\nExact rational Hilbert-space models verify the optimized inequality, the rank-one inverse formula and equality at a maximizing vector. They also show that no improvement occurs when S(p,e)=0.\n\nThe check does not establish the source uniform bound on S, turning-time margins or absence of conjugate points.\n\n## Possible applications\n\nImproving an energy estimate when a boundary condition controls only one linear component of the endpoint data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -27110,6 +27482,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000286.md",
       "body": "# Nonuniqueness of percolation on nonamenable quasi-transitive graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000510: Use stabilizer weights to obtain a finite invariant trace](../instruments/MI-000510.md)\n- [MI-000511: Control percolation sprinkling by a positive connection-kernel series](../instruments/MI-000511.md)\n\n[Family review and dependencies](../families/openai-math-214.md) · [Batch B051](../../batches/B051/README.md)"
+    },
+    {
+      "id": "P-000287",
+      "record_type": "paper",
+      "title": "A Complete Local Domain without a Small Cohen–Macaulay Module",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-195"
+      ],
+      "batch_id": "B052",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1a61d96d84ff4058dc5fd5785eb62dcc6cfdde032eabe8ffb7d83bc001961b74",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000287.md",
+      "body": "# A Complete Local Domain without a Small Cohen–Macaulay Module\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000512: Balance restriction slopes with a bounded monotone average](../instruments/MI-000512.md)\n- [MI-000513: Extract a nonnegative variance from a Cartier-divisor lattice filtration](../instruments/MI-000513.md)\n\n[Family review and dependencies](../families/openai-math-195.md) · [Batch B052](../../batches/B052/README.md)"
+    },
+    {
+      "id": "P-000288",
+      "record_type": "paper",
+      "title": "The Blockwise Alperin Weight Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Blockwise-Alperin-Weight-Conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-202"
+      ],
+      "batch_id": "B052",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "8645921f0ecba84e304a5ee80def51552b9e312ef976306b2ed565573249b8c6",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000288.md",
+      "body": "# The Blockwise Alperin Weight Conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000514: Cancel p-orbits to compare coefficient restriction with Brauer projection](../instruments/MI-000514.md)\n- [MI-000515: Use dual-basis averaging to construct a central radical annihilator](../instruments/MI-000515.md)\n\n[Family review and dependencies](../families/openai-math-202.md) · [Batch B052](../../batches/B052/README.md)"
+    },
+    {
+      "id": "P-000289",
+      "record_type": "paper",
+      "title": "Fiber functors for finite symmetric tensor categories in positive characteristic",
+      "source_collection": "openai/math",
+      "upstream_slug": "Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-208"
+      ],
+      "batch_id": "B052",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "91bf81f9148ce6c5402c5ad871096e05cee6155335637a8b38f68d35582cf568",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000289.md",
+      "body": "# Fiber functors for finite symmetric tensor categories in positive characteristic\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000516: Transfer projectivity through internal norms without a monoidal evaluation](../instruments/MI-000516.md)\n- [MI-000517: Choose an independent Frobenius-constrained nullvector](../instruments/MI-000517.md)\n\n[Family review and dependencies](../families/openai-math-208.md) · [Batch B052](../../batches/B052/README.md)"
+    },
+    {
+      "id": "P-000290",
+      "record_type": "paper",
+      "title": "A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-358"
+      ],
+      "batch_id": "B052",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "6264df797daca87f59094e56ea6849f068aa7d18a45efbb4ea604e26bb51da1b",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000290.md",
+      "body": "# A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000518: Obstruct nonpositive curvature by incompatible torus orthogonality](../instruments/MI-000518.md)\n- [MI-000519: Optimize a boundary penalty in the dual energy norm](../instruments/MI-000519.md)\n\n[Family review and dependencies](../families/openai-math-358.md) · [Batch B052](../../batches/B052/README.md)"
     }
   ],
   "families": [
@@ -30744,6 +31192,33 @@
       "body": "# Normalized length limits and bundles with prescribed cohomological roots\n\n## Source manuscript and claim\n\n[Lech's multiplicity conjecture](../papers/P-000147.md), by OpenAI, September 23, 2026.\n\nThe source claims e(R)<=e(S) for every flat local homomorphism of nonzero Noetherian local rings, without restrictions on dimensions, residue fields or characteristics.\n\n## Extracted instruments\n\n- [MI-000255: Vanishing normalized lengths pass through noninjective directed limits](../instruments/MI-000255.md)\n- [MI-000256: A finite flat product map realizes prescribed cohomological roots over every base ring](../instruments/MI-000256.md)\n\n## Dependencies and antecedents\n\nAdditive normalized length, finite generation, directed colimits, finite flat maps, cohomology of line bundles on P1 and tensor products of split complexes.\n\nFaltings normalized length; Cai-Lee-Ma-Schwede-Tucker, Section 2.2; Eisenbud-Schreyer, Betti numbers of graded modules and cohomology of vector bundles, Theorem 6.1. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the normalized-length definitions and limit lemma, plus the complete integral root-bundle construction. The uniform complex estimate, characteristic reductions, perfectoid inputs and global Lech theorem were not audited.\n\nRead the scope document and DuttaDomain.lean definitions and target. They cover the complete positive-characteristic domain Dutta comparison for short finite-free complexes, including convergence and finite-length Frobenius homology; the full flat-local theorem is outside that target. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.\n\nAll modules in each limit argument must belong to the same length category, with a common annihilating power. Zero normalized length does not imply the module is zero. Root-bundle cohomology is free over an arbitrary base ring; its extension to the exceptional divisor is a separate source comparison.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/194.md) · [Batch record](../../batches/B019/README.md)"
     },
     {
+      "id": "openai-math-195",
+      "record_type": "family",
+      "title": "Slope balancing and a divisor-layer variance obstruction",
+      "source_family": "195",
+      "source_collection": "openai/math",
+      "batch_id": "B052",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000287"
+      ],
+      "instrument_ids": [
+        "MI-000512",
+        "MI-000513"
+      ],
+      "headline": "The source claims a three-dimensional complete local complex domain with no nonzero finitely generated maximal Cohen-Macaulay module.",
+      "central_instrument": "Elementary modification raises the average restriction slope while bounding its maximum. A Cartier-divisor layer filtration produces a nonnegative Chern-character variance, which can be compared with semistable-factor upper bounds.",
+      "novelty_assessment": "Slope modification has an explicit Chen-Sun antecedent. The layer calculation and its numerical interface are source arguments built from standard restriction and Chern-character identities; no exhaustive priority claim.",
+      "formalization_summary": "The target asserts only existence of a three-dimensional complete Noetherian integrally closed local C-algebra with residue field C. It does not assert absence of a small Cohen-Macaulay module or the essentially finite-type counterexample. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The divisor is smooth and its conormal is ample. Balancing yields slope width at most one, not semistability. The layer variance need not be nonnegative for an arbitrary sheaf without the extension and punctured-triviality hypotheses.",
+      "dependencies": "Harder-Narasimhan filtrations, Cartier Tor sequence, coherent lattice filtrations, Chern characters, surface Riemann-Roch, Bogomolov and Hodge index inequalities.",
+      "antecedents": "Chen-Sun optimal extensions and Hecke transforms; standard surface and coherent-sheaf identities.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-195.md",
+      "body": "# Slope balancing and a divisor-layer variance obstruction\n\n## Source manuscripts and claim\n\n- [A Complete Local Domain without a Small Cohen–Macaulay Module](../papers/P-000287.md): selected passages extracted.\n\nThe source claims a three-dimensional complete local complex domain with no nonzero finitely generated maximal Cohen-Macaulay module.\n\n## Extracted instruments\n\n- [MI-000512: Balance restriction slopes with a bounded monotone average](../instruments/MI-000512.md)\n- [MI-000513: Extract a nonnegative variance from a Cartier-divisor lattice filtration](../instruments/MI-000513.md)\n\n## Dependencies and antecedents\n\nHarder-Narasimhan filtrations, Cartier Tor sequence, coherent lattice filtrations, Chern characters, surface Riemann-Roch, Bogomolov and Hodge index inequalities.\n\nChen-Sun optimal extensions and Hecke transforms; standard surface and coherent-sheaf identities.\n\n## Review and formalization scope\n\nRead the complete balancing, divisor-lattice and semistable-factor proofs and the final variance mixture calculation. The completed-cone extension and explicit surface construction remain unverified here.\n\nThe target asserts only existence of a three-dimensional complete Noetherian integrally closed local C-algebra with residue field C. It does not assert absence of a small Cohen-Macaulay module or the essentially finite-type counterexample. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.\n\nThe divisor is smooth and its conormal is ample. Balancing yields slope width at most one, not semistability. The layer variance need not be nonnegative for an arbitrary sheaf without the extension and punctured-triviality hypotheses.\n\n[Batch record](../../batches/B052/README.md)"
+    },
+    {
       "id": "openai-math-196",
       "record_type": "family",
       "title": "Counterexample to Kaplansky’s zero-divisor conjecture",
@@ -30864,6 +31339,33 @@
       "body": "# Annihilated resolvent poles and fixed-root Schur equations\n\n## Source manuscript and claim\n\n[A Counterexample to Kurosh’s Division-Ring Problem](../papers/P-000149.md), by OpenAI, September 23, 2026.\n\nThe source claims a countable characteristic-zero division ring algebraic over its actual center, generated as an algebra over that center by two elements, but infinite-dimensional over the center.\n\n## Extracted instruments\n\n- [MI-000259: Two vanishing couplings remove a simple resolvent pole and permit a fixed complement](../instruments/MI-000259.md)\n- [MI-000260: Fixed-root Schur equations are equivalent to a polynomial identity over truncated free coefficients](../instruments/MI-000260.md)\n\n## Dependencies and antecedents\n\nBlock inversion, formal Laurent series, spectral projections, finite geometric inverses, central polynomial interpolation and free-word truncations.\n\nClassical Schur-complement inversion and polynomial spectral idempotents. No priority claim is made for these elementary linear-algebra mechanisms. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete killed-pole and Schur-polynomial proofs. The spectral-response, cyclic-compatibility, eleven-block correction, central division realization and actual-center descent arguments were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nThe zero eigenvalue is semisimple and the derivative compressed to its kernel is invertible. Both couplings must annihilate the kernel at constant order. Fixed roots are distinct central scalars, although the coefficient ring itself is noncommutative.\n\n[Batch record](../../batches/B019/README.md)"
     },
     {
+      "id": "openai-math-202",
+      "record_type": "family",
+      "title": "Modular orbit cancellation and central radical annihilators",
+      "source_family": "202",
+      "source_collection": "openai/math",
+      "batch_id": "B052",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000288"
+      ],
+      "instrument_ids": [
+        "MI-000514",
+        "MI-000515"
+      ],
+      "headline": "The source claims the blockwise Alperin weight conjecture for every finite group and prime.",
+      "central_instrument": "Conjugation orbits of p-power size disappear in characteristic p, producing Brauer and quotient-compatible projections. Dual-basis averaging gives central elements annihilating the radical.",
+      "novelty_assessment": "Both mechanisms are classical modular representation theory: Brauer projection and the Higman trace. The source uses their explicit forms in its counting reduction.",
+      "formalization_summary": "No family scope document or linked Comparator target is listed in the pinned release inventory. No formal verification is claimed.",
+      "statement_faithfulness": "Brauer multiplicativity requires p-subgroup invariance in characteristic p. The dual-basis trace uses a nondegenerate symmetric associative form; conclusions for ordinary defect-zero characters need additional block theory.",
+      "dependencies": "Finite p-group orbits, normalizer and centralizer inclusions, simple modules, symmetric algebra pairings and nilpotent radicals.",
+      "antecedents": "Brauer morphisms, as in Webb; Higman trace and its radical-annihilation property, as in Lorenz-Tokoly.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-202.md",
+      "body": "# Modular orbit cancellation and central radical annihilators\n\n## Source manuscripts and claim\n\n- [The Blockwise Alperin Weight Conjecture](../papers/P-000288.md): selected passages extracted.\n\nThe source claims the blockwise Alperin weight conjecture for every finite group and prime.\n\n## Extracted instruments\n\n- [MI-000514: Cancel p-orbits to compare coefficient restriction with Brauer projection](../instruments/MI-000514.md)\n- [MI-000515: Use dual-basis averaging to construct a central radical annihilator](../instruments/MI-000515.md)\n\n## Dependencies and antecedents\n\nFinite p-group orbits, normalizer and centralizer inclusions, simple modules, symmetric algebra pairings and nilpotent radicals.\n\nBrauer morphisms, as in Webb; Higman trace and its radical-annihilation property, as in Lorenz-Tokoly.\n\n## Review and formalization scope\n\nRead the full normalizer-projection and averaging/defect-zero proofs, plus the zero-or-one-residue lemma for context. The geometric tuple-divisibility and full weight-count proof were not certified.\n\nNo family scope document or linked Comparator target is listed in the pinned release inventory. No formal verification is claimed.\n\nBrauer multiplicativity requires p-subgroup invariance in characteristic p. The dual-basis trace uses a nondegenerate symmetric associative form; conclusions for ordinary defect-zero characters need additional block theory.\n\n[Batch record](../../batches/B052/README.md)"
+    },
+    {
       "id": "openai-math-204",
       "record_type": "family",
       "title": "Filtered intersection bounds and nilpotent centralizer motion",
@@ -30889,6 +31391,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-204.md",
       "body": "# Filtered intersection bounds and nilpotent centralizer motion\n\n## Source manuscript and claim\n\n[Tensor saturation for even spin groups](../papers/P-000150.md), by OpenAI, September 24, 2026.\n\nThe source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.\n\n## Extracted instruments\n\n- [MI-000261: Nested filtration profiles determine the generic intersection exactly](../instruments/MI-000261.md)\n- [MI-000262: A nilpotent centralizer realizes every allowed motion of its kernel filtration](../instruments/MI-000262.md)\n\n## Dependencies and antecedents\n\nHall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.\n\nHall, On Representatives of Subsets, Theorem 1; Fresse, Betti numbers of Springer fibers in type A, Section 3.6. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete filtered-intersection and centralizer proofs. Real schedules, integral continuation, simultaneous switches, representation criteria and the full zero-tail construction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nGeneric means on a nonempty Zariski-open subset of the complex filtration stabilizer. The centralizer acts as the full stabilizer on the kernel and separately on the dual kernel; arbitrary independent prescribed motions on both are not asserted simultaneously.\n\n[Batch record](../../batches/B019/README.md)"
+    },
+    {
+      "id": "openai-math-208",
+      "record_type": "family",
+      "title": "Norm-based projectivity and Frobenius nullvector selection",
+      "source_family": "208",
+      "source_collection": "openai/math",
+      "batch_id": "B052",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000289"
+      ],
+      "instrument_ids": [
+        "MI-000516",
+        "MI-000517"
+      ],
+      "headline": "The source claims a fiber functor from every finite symmetric tensor category in positive characteristic to a finite level of the higher Verlinde tower.",
+      "central_instrument": "A projective-generator evaluation can transfer projectivity through internal norm maps without preserving tensor products. A Moore-matrix nullvector solves Frobenius constraints while retaining prime-field independence.",
+      "novelty_assessment": "Norm/projectivity and Moore determinants are classical. Coulembier-Flake explicitly supplies the Steinberg support equations. The source combines these interfaces; no full novelty certification.",
+      "formalization_summary": "No family scope document or linked Comparator target is listed in the pinned release inventory. No formal verification is claimed.",
+      "statement_faithfulness": "The converse norm criterion is for finite p-groups in characteristic p. Evaluation is exact faithful, not assumed monoidal. The nullvector selection requires prime-field independent input coordinates and a perfect field.",
+      "dependencies": "Local self-injective group algebras, socles, Nakayama, exact tensor products, invariants and coinvariants; additive polynomials, Frobenius automorphism and Moore matrices.",
+      "antecedents": "Classical projective-free norm vanishing; Coulembier-Flake rank-support description of restricted Steinberg modules.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-208.md",
+      "body": "# Norm-based projectivity and Frobenius nullvector selection\n\n## Source manuscripts and claim\n\n- [Fiber functors for finite symmetric tensor categories in positive characteristic](../papers/P-000289.md): selected passages extracted.\n\nThe source claims a fiber functor from every finite symmetric tensor category in positive characteristic to a finite level of the higher Verlinde tower.\n\n## Extracted instruments\n\n- [MI-000516: Transfer projectivity through internal norms without a monoidal evaluation](../instruments/MI-000516.md)\n- [MI-000517: Choose an independent Frobenius-constrained nullvector](../instruments/MI-000517.md)\n\n## Dependencies and antecedents\n\nLocal self-injective group algebras, socles, Nakayama, exact tensor products, invariants and coinvariants; additive polynomials, Frobenius automorphism and Moore matrices.\n\nClassical projective-free norm vanishing; Coulembier-Flake rank-support description of restricted Steinberg modules.\n\n## Review and formalization scope\n\nRead the complete norm criterion, internal norm-product proof, support-independence proof, Steinberg support calculation and Moore-selection lemma. Restricted tilting and the full fiber-functor construction remain unverified.\n\nNo family scope document or linked Comparator target is listed in the pinned release inventory. No formal verification is claimed.\n\nThe converse norm criterion is for finite p-groups in characteristic p. Evaluation is exact faithful, not assumed monoidal. The nullvector selection requires prime-field independent input coordinates and a perfect field.\n\n[Batch record](../../batches/B052/README.md)"
     },
     {
       "id": "openai-math-214",
@@ -33226,6 +33755,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-357.md",
       "body": "# Noncommuting inverse increments and factorial derivative budgets\n\n## Source manuscript and claim\n\n[Bi-Lipschitz Coordinates at Regular Points of Noncollapsed RCD Spaces](../papers/P-000226.md), by OpenAI, None.\n\nThe source claims bi-Lipschitz coordinates at every regular point of a noncollapsed RCD space.\n\n## Extracted instruments\n\n- [MI-000414: Compare positive matrix decrements with inverse increments without commutativity](../instruments/MI-000414.md)\n- [MI-000415: Control inverse-matrix derivatives without multiplying the exponential base](../instruments/MI-000415.md)\n\n## Dependencies and antecedents\n\nPositive matrix functional calculus, telescoping inverse increments, factorial ratios and multilinear Leibniz formulas.\n\nClassical resolvent order and ultradifferentiable inverse-function majorants. No exhaustive priority comparison for the chosen weight sequence. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead weighted inverse increments and the factorial convolution/inverse-coefficient proof. Heat-decrement inputs, summable directional pinching and the full coordinate iteration were not audited.\n\nNo formalization scope document is listed for this family in the pinned inventory. No Lean build was performed.\n\nFunctional calculus applies to each conjugated decrement separately, not to all matrices at once. The inverse-jet constant is independent of derivative order and of the exponential base B; it may depend on the inverse norm bound and factorial exponent.\n\n[Batch record](../../batches/B038/README.md)"
+    },
+    {
+      "id": "openai-math-358",
+      "record_type": "family",
+      "title": "Torus shear obstructions and boundary-penalty duality",
+      "source_family": "358",
+      "source_collection": "openai/math",
+      "batch_id": "B052",
+      "subject": "Differential geometry",
+      "source_paper_ids": [
+        "P-000290"
+      ],
+      "instrument_ids": [
+        "MI-000518",
+        "MI-000519"
+      ],
+      "headline": "The source claims a closed smooth three-manifold with no conjugate points but no metric of nonpositive sectional curvature.",
+      "central_instrument": "A torus shear conflicts with orthogonality forced by centralizer commutators. Optimizing a boundary penalty subtracts a rank-one term from a dual-energy bound.",
+      "novelty_assessment": "The topology obstruction is explicitly classical Leeb/Kapovich-Leeb geometry. The penalty identity is Cauchy-Schwarz and a Schur-complement calculation; the source uses it in a uniform geodesic estimate.",
+      "formalization_summary": "The target asserts a closed connected orientable smooth three-manifold with a smooth metric having no conjugate points for all geodesics and Jacobi fields, but no smooth nonpositive-sectional-curvature metric. The additional no-focal-points and CAT(0) consequences are outside the target. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The CAT(0) obstruction requires a proper cocompact action on a proper space and an embedded Z2 torus subgroup. The dual penalty uses mu>0 and an actual bound of the endpoint functional by the bulk energy.",
+      "dependencies": "Amalgamated product injections, flat torus/minset structure and centralizer characters; Hilbert-space duality, Cauchy-Schwarz and quadratic minimization.",
+      "antecedents": "Leeb two-piece graph-manifold incompatibility; classical minset splitting and rank-one inverse formulas.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-358.md",
+      "body": "# Torus shear obstructions and boundary-penalty duality\n\n## Source manuscripts and claim\n\n- [A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric](../papers/P-000290.md): selected passages extracted.\n\nThe source claims a closed smooth three-manifold with no conjugate points but no metric of nonpositive sectional curvature.\n\n## Extracted instruments\n\n- [MI-000518: Obstruct nonpositive curvature by incompatible torus orthogonality](../instruments/MI-000518.md)\n- [MI-000519: Optimize a boundary penalty in the dual energy norm](../instruments/MI-000519.md)\n\n## Dependencies and antecedents\n\nAmalgamated product injections, flat torus/minset structure and centralizer characters; Hilbert-space duality, Cauchy-Schwarz and quadratic minimization.\n\nLeeb two-piece graph-manifold incompatibility; classical minset splitting and rank-one inverse formulas.\n\n## Review and formalization scope\n\nRead the full topology obstruction and its two corollaries, and the full turning-duality proof with its energy setup. The neck construction, returning-geodesic uniform bounds and global no-conjugate-points argument were not certified.\n\nThe target asserts a closed connected orientable smooth three-manifold with a smooth metric having no conjugate points for all geodesics and Jacobi fields, but no smooth nonpositive-sectional-curvature metric. The additional no-focal-points and CAT(0) consequences are outside the target. The scope document and linked Comparator were read in full. The target proof contains sorry; no solution or Lean project was built.\n\nThe CAT(0) obstruction requires a proper cocompact action on a proper space and an embedded Z2 torus subgroup. The dual penalty uses mu>0 and an actual bound of the endpoint functional by the bulk energy.\n\n[Batch record](../../batches/B052/README.md)"
     },
     {
       "id": "openai-math-362",

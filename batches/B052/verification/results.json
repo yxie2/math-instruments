@@ -1,0 +1,61 @@
+{
+  "batch": "B052",
+  "status": "passed",
+  "checks": {
+    "slope_balance": {
+      "status": "passed",
+      "models": 540,
+      "modification_steps": 4978,
+      "arithmetic": "exact rational",
+      "scope": "Direct-sum slope models; no sheaf existence assertion."
+    },
+    "divisor_layers": {
+      "status": "passed",
+      "layer_sequences": 219450,
+      "equality_cases": 162,
+      "symbolic_identities": 4,
+      "scope": "Layer and Riemann-Roch arithmetic; geometric hypotheses not tested."
+    },
+    "modular_projection": {
+      "status": "passed",
+      "group_subgroup_cases": 5,
+      "orbit_basis_pairs": 472,
+      "central_quotient_checks": 21,
+      "wrong_characteristic_control": "fails as expected"
+    },
+    "higman_trace": {
+      "status": "passed",
+      "group_trace_pairs": 72,
+      "radical_line_annihilations": 6,
+      "matrix_examples": 40,
+      "characteristic_divides_size": true
+    },
+    "norm_projectivity": {
+      "status": "passed",
+      "jordan_module_examples": 930,
+      "independent_action_products": 38,
+      "scope": "Cyclic p-groups and ordinary matrix tensor products; no simulation of a tensor category."
+    },
+    "moore_selection": {
+      "status": "passed",
+      "extension_fields": 5,
+      "independent_inputs": 1008,
+      "frobenius_equations": 1176,
+      "dependent_input_controls": 5
+    },
+    "torus_gluing": {
+      "status": "passed",
+      "compatible_matrices": 8,
+      "obstructed_matrices": 224,
+      "source_shear": "forces a positive squared length to vanish"
+    },
+    "boundary_penalty": {
+      "status": "passed",
+      "inequality_examples": 160,
+      "sharp_models": 40,
+      "orthogonal_control": "no improvement"
+    }
+  },
+  "elapsed_seconds": 2.744,
+  "scope": "Selected finite identities and models only; no source headline theorem or Lean solution certified."
+}
