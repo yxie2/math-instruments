@@ -1,0 +1,268 @@
+{
+  "batch_id": "B032",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T11:46:56.156284+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/FalconerAllDimensions.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FalconerAllDimensions.lean",
+      "sha256": "7efce1d41b423d80591497b178804f3c508becea4d98fe19cebf342fefe6e696",
+      "bytes": 529
+    },
+    {
+      "path": "lean/ComparatorChallenges/FourierLLogL.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FourierLLogL.lean",
+      "sha256": "c4d23b5ee24bd446a0524df1e3af08c7ea7d293e079cc8c8d6030113bdb5ab3f",
+      "bytes": 821
+    },
+    {
+      "path": "lean/ComparatorChallenges/PlanarFalconer.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/PlanarFalconer.lean",
+      "sha256": "9ece965373d6e5a5f0e51766a71114659c5dfbc814ce940215a03f7a2f253f69",
+      "bytes": 450
+    },
+    {
+      "path": "lean/docs/073.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/073.md",
+      "sha256": "0ee505a263e39c8ac7064e89563187b88517f0d1b99ab98965f0012536ad0911",
+      "bytes": 965
+    },
+    {
+      "path": "lean/docs/075.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/075.md",
+      "sha256": "06cc6a7bad49a7027ddd37e5f2533268630d822c32024e3c47fd5394aa361be5",
+      "bytes": 964
+    },
+    {
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/README.md",
+      "sha256": "de35dc386817bfbdf3136c29530347dd7e76220cd759d1468125852ae0ba030d",
+      "bytes": 604
+    },
+    {
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+      "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892",
+      "bytes": 35700
+    },
+    {
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+      "sha256": "52d858ccee4ff03ca1dd0700fa0a53bd722f2f3fe14761730d3bec146d2fcffc",
+      "bytes": 34225
+    },
+    {
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/README.md",
+      "sha256": "4a1f00f2de12313806301d0cd9faa9f514ee2c2caef0d8b38a0d6cd41961f632",
+      "bytes": 704
+    },
+    {
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9",
+      "bytes": 35010
+    },
+    {
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/README.md",
+      "sha256": "8454d5ff0709ccdf6fc3706f3a40cfb2467f601c73f1e45ed805439a51b57087",
+      "bytes": 680
+    },
+    {
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0",
+      "bytes": 60091
+    },
+    {
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/README.md",
+      "sha256": "36b1bac6e2f559ae716d8e9eff9f7079d9bbfbfebe1052c118a61c1c180aad5d",
+      "bytes": 610
+    },
+    {
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+      "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7",
+      "bytes": 9519
+    },
+    {
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+      "sha256": "bfd6394d5fb7c62dc7392c22f30db04752deb9abaf5f05325b73eded200072b5",
+      "bytes": 26549
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000360",
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+      "label": "reg:pruning-multiplication",
+      "line": 131,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L131",
+      "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+    },
+    {
+      "instrument_id": "MI-000360",
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+      "label": "reg:local-fibre",
+      "line": 140,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L140",
+      "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+    },
+    {
+      "instrument_id": "MI-000360",
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex",
+      "label": "reg:multiplied-fibre",
+      "line": 151,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/02_regularization.tex#L151",
+      "sha256": "37cd6ce936b74846cdd4de2202edfb0338bdfeb4c45f0beaf7da370de12905e7"
+    },
+    {
+      "instrument_id": "MI-000361",
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+      "label": "rec:binning",
+      "line": 114,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L114",
+      "sha256": "bfd6394d5fb7c62dc7392c22f30db04752deb9abaf5f05325b73eded200072b5"
+    },
+    {
+      "instrument_id": "MI-000361",
+      "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex",
+      "label": "rec:collision-fourier",
+      "line": 136,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/sections/08_recursion.tex#L136",
+      "sha256": "bfd6394d5fb7c62dc7392c22f30db04752deb9abaf5f05325b73eded200072b5"
+    },
+    {
+      "instrument_id": "MI-000362",
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+      "label": "lemma:thermal-monotonicity",
+      "line": 35,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L35",
+      "sha256": "52d858ccee4ff03ca1dd0700fa0a53bd722f2f3fe14761730d3bec146d2fcffc"
+    },
+    {
+      "instrument_id": "MI-000362",
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex",
+      "label": "eq:thermal-envelope",
+      "line": 53,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/05-thermal.tex#L53",
+      "sha256": "52d858ccee4ff03ca1dd0700fa0a53bd722f2f3fe14761730d3bec146d2fcffc"
+    },
+    {
+      "instrument_id": "MI-000363",
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+      "label": "entropy-foundations:variational",
+      "line": 98,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L98",
+      "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+    },
+    {
+      "instrument_id": "MI-000363",
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+      "label": "entropy-foundations:dual",
+      "line": 137,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L137",
+      "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+    },
+    {
+      "instrument_id": "MI-000363",
+      "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex",
+      "label": "eq:source-1",
+      "line": 104,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/sections/03-entropy-foundations.tex#L104",
+      "sha256": "8f7a1e1ee7cfb12a555a916fe556cbcf0d0a2a265e13c7444bfc0966d6de9892"
+    },
+    {
+      "instrument_id": "MI-000364",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "lem:zero-information",
+      "line": 331,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L331",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000364",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "eq:likelihood-tail",
+      "line": 337,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L337",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000364",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "eq:product-information",
+      "line": 351,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L351",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000365",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "lem:marginal-core",
+      "line": 370,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L370",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000365",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "eq:core-comparison",
+      "line": 377,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L377",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000365",
+      "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex",
+      "label": "eq:core-actual",
+      "line": 388,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/sections/02-entropy.tex#L388",
+      "sha256": "9637553796d75bc6c6d8e546c73f2dd7e577b383d383e674b78fa600a2f88da9"
+    },
+    {
+      "instrument_id": "MI-000366",
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "label": "rt:model",
+      "line": 11,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L11",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+    },
+    {
+      "instrument_id": "MI-000366",
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "label": "rt:conformal-chart",
+      "line": 486,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L486",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+    },
+    {
+      "instrument_id": "MI-000366",
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "label": "eq:conf",
+      "line": 515,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L515",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+    },
+    {
+      "instrument_id": "MI-000366",
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "label": "rt:conformal-covariance",
+      "line": 703,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L703",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+    },
+    {
+      "instrument_id": "MI-000367",
+      "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex",
+      "label": "rt:capacity",
+      "line": 828,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/build/sections/07-round-transfer.tex#L828",
+      "sha256": "23a556f6c1ff28c9e757ca3b60dfa5a6aa280829ac0b112aa6e10e8777730af0"
+    }
+  ]
+}

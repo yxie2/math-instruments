@@ -1,0 +1,48 @@
+{
+  "batch": "B032",
+  "status": "passed",
+  "check_groups": {
+    "density_pruning": {
+      "exact_tree_pruning_models": 100,
+      "scope": "Abstract hit-cube multiplication; geometric angular containment is an input."
+    },
+    "collision_bins": {
+      "atomic_collision_models": 80,
+      "finite_band_fourier_bounds": 160,
+      "scope": "Atomic measures, including coincident atoms; constants chosen conservatively."
+    },
+    "thermal_forms": {
+      "circle_quadrature_models": 60,
+      "minimum_covariance": -1.6653345369377348e-15,
+      "scope": "Finite spectral windows and periodic quadrature, not all coefficients or the Fourier-convergence procedure."
+    },
+    "prescribed_marginal_variation": {
+      "primal_dual_prescribed_marginal_models": 6,
+      "maximum_duality_gap": 1.2481593536506352e-09,
+      "scope": "Finite binary models; no verification of the source all-distribution moment hypothesis or later entropy compression."
+    },
+    "likelihood_domination": {
+      "likelihood_and_actual_product_models": 200,
+      "scope": "Finite likelihood truncations and entropy decomposition."
+    },
+    "marginal_core": {
+      "exact_simultaneous_core_models": 100,
+      "removed_factor_values": 150,
+      "scope": "Repeated observations with different comparison marginals are counted separately."
+    },
+    "conformal_chart": {
+      "metric_entries": 16,
+      "inverse_coordinates": 4,
+      "wave_zero_and_first_order_identities": 5,
+      "wave_second_order_entries": 16,
+      "discriminant": "preserved",
+      "scope": "Exact rational chart identities away from D=0; no packet localization, band projection or transport estimate certified."
+    },
+    "capacity_allocation": {
+      "exact_fractional_allocation_models": 120,
+      "zero_capacity_label_cases": 16,
+      "scope": "Cell-capacity transfer conditional on the predecessor and overlap bounds."
+    }
+  },
+  "limitations": "Selected local and finite mechanisms only; no Falconer, L log L, Bochner-Riesz or local-smoothing theorem certified; no Lean build."
+}
