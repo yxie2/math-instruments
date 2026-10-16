@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 5.199,
+  "checks": {
+    "mapping_torus": {
+      "cyclic_endomorphisms": 189,
+      "stage_and_stable_letter_relations": 9876
+    },
+    "action_monoid": {
+      "words_with_all_reduction_orders": 2680,
+      "embedded_group_size": 6
+    },
+    "idempotent_differences": {
+      "rank_one_comparison_certificates": 19056,
+      "exact_telescoping_cycles": 1956,
+      "scope": "Checks the matrix identities and signed telescoping used in the proof, not arbitrary homological fillings."
+    },
+    "cartan": {
+      "positive_and_null_cases": 120,
+      "max_scaled_form_error": 1.0658141036401503e-14
+    },
+    "centralizer": {
+      "crystallographic_models": 80,
+      "noncommuting_centralizer_pairs": 80
+    },
+    "intersection_witness": {
+      "coordinate_subspace_models": 180,
+      "max_selected": 5,
+      "scope": "Abstract finite-rank descent; no pairwise Artin intersection theorem tested."
+    },
+    "weighted_cycles": {
+      "block_cycles": 24,
+      "max_phase_error": 4.440892098500626e-16,
+      "cut_at_one_controls": true
+    },
+    "fixed_plane": {
+      "tangent_models": 18,
+      "max_derivative_error": 1.0331120054597843e-08,
+      "scope": "Homotopy and regular-fiber derivative only; mod-two degree is inspected analytically, not numerically certified."
+    },
+    "capping": {
+      "capped_injection_instances": 420,
+      "max_pattern_difference": 2,
+      "scope": "Fixed explicit injections only; uniform constants for arbitrary injections use the source Morse argument."
+    },
+    "stable_virtual_free": {
+      "virtually_cyclic_endomorphisms": 132,
+      "scope": "Finite windows and finite quotients; no general Hopficity or ascending-torus finiteness theorem tested."
+    }
+  },
+  "scope": "Selected finite mechanisms; no embedding, Artin, group-equation or one-relator headline theorem is certified."
+}

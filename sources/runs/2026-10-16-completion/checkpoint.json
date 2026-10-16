@@ -1,7 +1,7 @@
 {
   "status": "active",
   "started_at_utc": "2026-10-16T14:05:43.156434+00:00",
-  "updated_at_utc": "2026-10-16T17:19:22.446424+00:00",
+  "updated_at_utc": "2026-10-16T17:28:32.673403+00:00",
   "baseline_commit": "98ea4a366e5f5d01efa7c37ae6eb912b450a5b7a",
   "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
   "baseline_counts": {
@@ -11,12 +11,12 @@
     "patterns": 14
   },
   "counts": {
-    "instruments": 577,
-    "papers": 346,
-    "families": 263,
+    "instruments": 586,
+    "papers": 355,
+    "families": 267,
     "patterns": 14
   },
-  "pending_families": 109,
+  "pending_families": 105,
   "release_complete": false,
   "completed_batches": [
     {
@@ -135,11 +135,20 @@
       "instruments": 8,
       "papers": 8,
       "published_at_utc": "2026-10-16T17:19:22.446424+00:00"
+    },
+    {
+      "id": "B060",
+      "pr": "https://github.com/yxie2/math-instruments/pull/62",
+      "commit": "d9f752f9aa4ee617bf05c12d733bc3864b76cb44",
+      "families": 4,
+      "instruments": 9,
+      "papers": 9,
+      "published_at_utc": "2026-10-16T17:28:32.673403+00:00"
     }
   ],
-  "next_batch": "B060",
-  "next_instrument": 578,
-  "next_paper": 347,
-  "catalogue_commit": "6626fda6e078725dddb6ab4dce6fbc997d5fe6a8",
+  "next_batch": "B061",
+  "next_instrument": 587,
+  "next_paper": 356,
+  "catalogue_commit": "d9f752f9aa4ee617bf05c12d733bc3864b76cb44",
   "scope": "Selected instrument extraction. Source headline claims, uninspected companion arguments, exhaustive novelty and Lean solutions are not certified."
 }
