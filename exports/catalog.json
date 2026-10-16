@@ -21302,6 +21302,378 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000503.md",
       "body": "# Amplify a finite tensor saving by weighting sectors by dimension\n\n[Family 130](../families/openai-math-130.md) · [Source manuscript](../papers/P-000282.md) · [Batch B050](../../batches/B050/README.md)\n\n## Mathematical content\n\nFix an invertible nonmonomial q by q matrix A and b>=2. Assume a specified word on exactly Q=q^b coordinates implements A tensor-power b using g<b q^(b-1) calls to A plus finitely many monomial factors. A call acts as A direct-sum I_(Q-q), up to permutation. This finite winning word is a hypothesis.\n\nFor j tensor groups, a call slot splits exactly as the direct sum of A tensor-power r with multiplicity binomial(j,r)(Q-q)^(j-r), for r=0,...,j. Weight sectors by their dimensions q^r, not by the number of sectors. If L_A(k) is scalar circuit cost and f(k)=L_A(k)/q^k, a call slot costs E f(K) per coordinate, with K binomial(j,q/Q). Each monomial slot costs at most one scalar multiplication per coordinate and is charged.\n\nSynchronizing the fixed word across j=floor(k/b) groups, then handling fewer than b remaining axes, gives f(k)<=C_0+g E f(K). Put rho=q/(Qb); the finite saving says g rho<1. Choose alpha in (0,1) with g rho^alpha<1. Concavity gives E(K+1)^alpha<=(rho k+1)^alpha. A strong induction, absorbing C_0 and finitely many small k, proves f(k)=O((k+1)^alpha), hence L_A(k)=O(q^k(k+1)^alpha).\n\nThe expectation is bookkeeping for an exact finite direct sum, not random approximation. This implication does not construct the winning word, prove that one exists, transfer the result to every Fourier length, or control coefficient magnitudes and numerical conditioning.\n\n## Role in the source argument\n\nPropagates the companion source proposed finite call saving to arbitrarily large Kronecker powers.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [def:finite-win](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L16)\n- [lem:amplification](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L216)\n- [gen:eq:weighted-cost](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/build/sections/02-generation.tex#L258)\n\n## Antecedents and comparison\n\n[Alman-Li, Kronecker Powers, Orthogonal Vectors, and the Asymptotic Spectrum](https://arxiv.org/abs/2509.14489), studies rebalancing and duality for depth-two linear circuits; the abstract was read as context only. That is a different size model from sequential invertible calls. The precise conditional binomial recurrence here was read in the source; no exhaustive novelty claim for it.\n\n## Checks and limitations\n\nExact small tensor matrices verify sector multiplicities and coordinate dimensions. Finite recurrences with explicitly hypothetical saving parameters test the concavity induction; a no-saving parameter choice fails its contraction condition.\n\nNo winning word is furnished by these recurrence tests, and no headline sub-n-log-n Fourier theorem is certified.\n\n## Possible applications\n\nConverting a proven fixed-size saving into an asymptotic improvement when exact block decomposition produces a contracting dimension-weighted recurrence.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000504",
+      "record_type": "instrument",
+      "title": "Read approximate tree geometry from determinant-one matrix growth",
+      "forms": [
+        "two-dimensional-growth-four-point-bound",
+        "cancellation-truncation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-146"
+      ],
+      "source_paper_ids": [
+        "P-000283"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+          "label": "scale:fourpoint",
+          "line": 28,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L28",
+          "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+        },
+        {
+          "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+          "label": "scale:R-comparison",
+          "line": 48,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L48",
+          "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+        },
+        {
+          "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+          "label": "scale:truncation",
+          "line": 79,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L79",
+          "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-singular-value-core-with-source-scale-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000504.md",
+      "body": "# Read approximate tree geometry from determinant-one matrix growth\n\n[Family 146](../families/openai-math-146.md) · [Source manuscript](../papers/P-000283.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet B_j be real 2 by 2 matrices with determinant one, D_j=||B_j||>=1, and a_j a most expanded unit input direction. Define R_jp=||B_j B_p^(-1)||/(D_j D_p) and Q_jp=max{|a_j wedge a_p|,D_j^(-2),D_p^(-2)}. Then Q_jp<=R_jp<=3Q_jp. The sine term follows by testing the input perpendicular to a_p; the other lower bounds use ||B||=||B^(-1)||. Decomposing an input along a_p and its perpendicular gives the sum of the three terms as an upper bound.\n\nThe sine triangle inequality implies Q_jp<=2 max{Q_jl,Q_lp}, hence R_jp<=6 max{R_jl,R_lp}. For a transfer cocycle with g(j,p)=log_M||B_j B_p^(-1)||, taking negative logarithms gives the Gromov-product inequality for B_i(j,p)=g(i,j)+g(i,p)-g(j,p), with additive error log_M 6. Dividing distances by a scale tending to infinity removes this error.\n\nThe same comparison truncates cancellation. Suppose g is the growth semimetric, 0<=g(u,v)<=|u-v|, and L=i-n,R=i+n,L'=i-s,R'=i+s with 1<=s<=n. Put D=n-min{g(i,L),g(i,R)} and ell=g(i,L)+g(i,R)-g(L,R). The shorter wings have growth at least s-D. Applying the four-point bound twice along L',L,R,R' gives their cancellation loss at least min{ell,2s-2D}-2 log_M 6. Thus cancellation over a long interval remains detectable at a shorter matched scale, up to the wing deficits and a uniform additive error when M>=2.\n\n## Role in the source argument\n\nSupplies tree-like limiting distance arrays and a controlled way to shorten long cancellations in the standard-map source.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [scale:fourpoint](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L28)\n- [scale:R-comparison](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L48)\n- [scale:truncation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L79)\n\n## Antecedents and comparison\n\n[Bestvina, Real trees in topology, geometry, and group theory](https://arxiv.org/pdf/math/9712210), Definition 2.10 and Lemma 2.13, give the Gromov-product condition and real-tree embedding context; those passages were read. The selected matrix estimate is proved directly in the source. This audit does not establish its historical priority.\n\n## Checks and limitations\n\nNumerical determinant-one matrix models check the singular-direction comparison and four-point bound, including nearly aligned directions. Transfer chains check the truncation bound. A three-dimensional determinant-one control shows that the same single-direction formula need not hold there.\n\nFinite matrix checks do not prove positive Lyapunov exponents, positive entropy or the source probability estimates.\n\n## Possible applications\n\nReducing cancellations in two-dimensional cocycles to approximate tree geometry and selecting comparable observation scales.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000505",
+      "record_type": "instrument",
+      "title": "Split a positive dilation balance without subtracting infinite masses",
+      "forms": [
+        "positive-dilation-potential-decomposition",
+        "local-subtraction-of-radon-measures"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-146"
+      ],
+      "source_paper_ids": [
+        "P-000283"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+          "label": "scale:decomposition",
+          "line": 513,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L513",
+          "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+        },
+        {
+          "path": "preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex",
+          "label": "scale:measure-decomposition",
+          "line": 520,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L520",
+          "sha256": "7fdf39eaafae86173b3b31dd4ef778901632782e31517d97fc967232bd107467"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-positive-potential-decomposition-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000505.md",
+      "body": "# Split a positive dilation balance without subtracting infinite masses\n\n[Family 146](../families/openai-math-146.md) · [Source manuscript](../papers/P-000283.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet S be a homeomorphism of a locally compact, sigma-compact space and let mu,nu be locally finite nonnegative Borel measures with S_*mu=mu+nu. Iteration gives mu=(S^(-b))_*mu+sum_(j=1)^b(S^(-j))_*nu. The positive partial sums are dominated by mu, so lambda=sum_(j>=1)(S^(-j))_*nu exists as a locally finite measure.\n\nDefine mu_infinity=mu-lambda on relatively compact Borel sets and extend consistently by exhaustion. This is nonnegative and avoids the undefined subtraction infinity-infinity on the whole space. Since S_*lambda=nu+lambda, local subtraction shows S_*mu_infinity=mu_infinity. Equivalently the decreasing remainders (S^(-b))_*mu tend locally to mu_infinity.\n\nIf translations tau_r preserve mu and nu and satisfy tau_r S^(-j)=S^(-j) tau_(r/2^j), then each summand, lambda and mu_infinity preserve those translations. In the source, S d(s,t)=d(2s,2t)/2 on the supported distance arrays. To obtain the balance from vague limits, composition with S must preserve compactly supported tests: the source checks properness away from affine arrays and proves that the initial-scale mass vanishes there. Invertibility is only needed on the supported limiting space, where it is established.\n\n## Role in the source argument\n\nSeparates terminal-scale contributions from a dilation-invariant remainder before the source final integral balance.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [scale:decomposition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L513)\n- [scale:measure-decomposition](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/build/sections/scales.tex#L520)\n\n## Antecedents and comparison\n\nThis is an elementary positive potential/invariant decomposition, not a new abstract measure theorem. A targeted search found general Riesz-decomposition antecedents but did not yield a checked exact priority reference. The complete selected source proof, including the local subtraction and properness argument, was read.\n\n## Checks and limitations\n\nExact discrete shift models with nonzero source and nonzero invariant remainder verify the balance, partial sums and limiting decomposition on finite windows. A finite cyclic-space control shows why a finite total-mass model forces nu=0.\n\nThe test does not construct or identify the limiting measures from standard-map trajectories, or validate the final entropy contradiction.\n\n## Possible applications\n\nSeparating injected mass from recurrent mass in scale-renormalization arguments with infinite total measure.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000506",
+      "record_type": "instrument",
+      "title": "Localize zero entropy under pointwise attraction",
+      "forms": [
+        "pointwise-attraction-entropy-localization",
+        "compactness-exceptional-block-budget"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-151"
+      ],
+      "source_paper_ids": [
+        "P-000284"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "lemma:localization",
+          "line": 15,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L15",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        },
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "eq:sparse-entropy-blocks",
+          "line": 45,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L45",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        },
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "eq:entropy-description-count",
+          "line": 83,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L83",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-variational-consequence-with-direct-block-proof",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000506.md",
+      "body": "# Localize zero entropy under pointwise attraction\n\n[Family 151](../families/openai-math-151.md) · [Source manuscript](../papers/P-000284.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet F be continuous on a nonempty compact metric space X, and let nonempty compact Z satisfy F(Z) subset Z, h_top(F|Z)=0, and d(F^n x,Z)->0 for every x. Then h_top(F)=0.\n\nFor a block length m and resolution epsilon, take P=s_Z(m,epsilon/4) Bowen balls of radius epsilon/2 whose union V contains Z, and Q such balls covering X. For each tau>0, pointwise attraction gives, at each x, a finite sample length k_x during which fewer than tau k_x iterates of F^m lie outside V. Openness preserves those visits near x. A finite subcover bounds the selected lengths by J. Concatenating these local segments along any orbit leaves a final remainder shorter than J, so at most tau r+J of its first r blocks begin outside V.\n\nRecord the exceptional subset and one ball index for each block. At most 2^r P^r Q^(tau r+J) descriptions occur, and equal descriptions keep two points within epsilon for mr iterates. The entropy at that resolution is at most [log 2+log P+tau log Q]/m. First let tau decrease to zero at fixed m, then let m tend to infinity. No uniform time after which every orbit stays in V is asserted.\n\nThe qualitative conclusion also follows from the variational principle: for every invariant probability, dominated convergence and invariance force the integral of d(x,Z) to be zero, so the measure is supported on Z.\n\n## Role in the source argument\n\nTransfers zero entropy of the source two attracting invariant sets to its entire compact phase space.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lemma:localization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L15)\n- [eq:sparse-entropy-blocks](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L45)\n- [eq:entropy-description-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L83)\n\n## Antecedents and comparison\n\n[Misiurewicz, A short proof of the variational principle](https://numdam.org/item/AST_1976__40__147_0.pdf), Section 3, supplies the classical variational principle; its statement was inspected. The direct exceptional-block coding proof was read in full in the source. The localization conclusion is not claimed as novel.\n\n## Checks and limitations\n\nFinite maps with attracting invariant cycles test the concatenated-block budget for every initial state and many lengths. Exact combinatorial counts test the description bound. These finite models illustrate the coding mechanism, not the general compactness argument.\n\nThis lemma alone does not prove attraction for the constructed C1 map, its regularity or its action on homology.\n\n## Possible applications\n\nProving zero entropy when all orbits approach a simple invariant set but entry times vary without a uniform bound.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000507",
+      "record_type": "instrument",
+      "title": "Bound radial orbit descriptions by a chain of label vectors",
+      "forms": [
+        "ordered-radius-itinerary-count",
+        "finite-product-zero-entropy-coding"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-151"
+      ],
+      "source_paper_ids": [
+        "P-000284"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "lemma:register-entropy",
+          "line": 116,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L116",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        },
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "eq:radius-itinerary-count",
+          "line": 159,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L159",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        },
+        {
+          "path": "preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex",
+          "label": "eq:register-separated-count",
+          "line": 180,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L180",
+          "sha256": "6f61591ce318e6493c58b4d9bb4a126786bf8345379a3efdd541f32aca9a15d8"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "elementary-monotone-interval-entropy-count",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000507.md",
+      "body": "# Bound radial orbit descriptions by a chain of label vectors\n\n[Family 151](../families/openai-math-151.md) · [Source manuscript](../papers/P-000284.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet Sigma be the sphere C union {infinity}. Suppose a continuous map T sends all of Sigma into D_A={|z|<=A}, and on this disk T(re^(i theta))=R(r)e^(i theta), where R:[0,A]->[0,A] is continuous, nondecreasing and R(0)=0. Then every fixed finite product T^q has zero topological entropy.\n\nPartition the radius interval into H short ordered intervals and the angle circle into K short arcs, fine enough to give epsilon-small polar cells. If b is the nondecreasing radius label, the length-N itinerary (b(r),b(Rr),...,b(R^(N-1)r)) is coordinatewise nondecreasing as a function of the initial radius r. Its distinct vectors form a chain in {1,...,H}^N. Their coordinate sums strictly increase at every change and range from N to NH, so there are at most 1+N(H-1) itineraries.\n\nThe angle stays fixed, including after a radius reaches zero by using its original angle. Thus at most K[1+N(H-1)] descriptions are needed in the disk. A fixed finite cover of Sigma^q accounts for time zero, while all later iterates lie in D_A^q. Therefore s_(Sigma^q)(n,epsilon)<=C{K[1+(n-1)(H-1)]}^q. This grows polynomially in n. The map outside the disk may be nonradial or nonmonotone; only its first-image containment is used.\n\n## Role in the source argument\n\nShows that the register dynamics on the source attracting sets add no entropy.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lemma:register-entropy](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L116)\n- [eq:radius-itinerary-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L159)\n- [eq:register-separated-count](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/build/source/entropy.tex#L180)\n\n## Antecedents and comparison\n\nThis is the elementary ordered-itinerary proof of zero entropy for monotone interval dynamics, combined with a fixed angular label and a finite transient. The complete source proof was read; no historical priority is asserted for this formulation.\n\n## Checks and limitations\n\nAll nondecreasing self-maps on small ordered finite sets are enumerated, and their radius-label itinerary counts are compared with 1+N(H-1). A nonmonotone eight-state map exceeds the bound and demonstrates the need for order.\n\nFinite ordered sets test the counting argument but do not establish continuity of any source register map or validate its global construction.\n\n## Possible applications\n\nBounding orbit complexity of saturated radial registers and products with a finite initial transient.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000508",
+      "record_type": "instrument",
+      "title": "Control stationary fluctuations relative to each dyadic block chord",
+      "forms": [
+        "stationary-dyadic-chord-square-summability",
+        "variance-loss-convolution"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-152"
+      ],
+      "source_paper_ids": [
+        "P-000285"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+          "label": "lem:dyadic",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L27",
+          "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+        },
+        {
+          "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+          "label": "eq:dyadic-convolution",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L33",
+          "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+        },
+        {
+          "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex",
+          "label": "eq:dyadic-square-sum",
+          "line": 39,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L39",
+          "sha256": "35eb53557a8b10c93b74fce35d3a27d7cd843812b74d28de3867900fa1600e89"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 1,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "classical-dyadic-core-with-source-stationary-chord-formulation",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000508.md",
+      "body": "# Control stationary fluctuations relative to each dyadic block chord\n\n[Family 152](../families/openai-math-152.md) · [Source manuscript](../papers/P-000285.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nFor a real stationary process with E Y_0^2<infinity, put A_h=2^(-h) sum_(t<2^h)Y_t and Z_h=2^(-h) max_(0<=u<=2^h)|sum_(t<u)Y_t-u A_h|. Define v_l=E A_(l-1)^2-E A_l^2. Adjacent half-block averages U,V and W=(U+V)/2 satisfy v_l=E(U-W)^2>=0, using stationarity but no independence. Telescoping gives sum v_l<=E Y_0^2.\n\nInterpolate the cumulative-sum polygon at dyadic meshes. Refining a mesh with 2^a intervals inserts midpoint displacements 2^(h-a-1)(U_j-W_j). A squared maximum is bounded by the sum of squares, so the normalized L2 size of this refinement is at most 2^(-a/2-1) sqrt(v_(h-a)). Summing refinements yields ||Z_h||_2<=one-half sum_(a=0)^(h-1)2^(-a/2)sqrt(v_(h-a)).\n\nThe convolution kernel has l1 norm 1/[2(1-2^(-1/2))]. Consequently sum_(h>=1)||Z_h||_2^2<= [4(1-2^(-1/2))^2]^(-1) E Y_0^2. The same bound holds at any deterministic starting time. The chord slope is the realized block average A_h, not E Y_0; replacing it by the mean is false in this generality, for example for a nonconstant stationary process that is constant along each sample path.\n\n## Role in the source argument\n\nProvides square-summable orbit-segment errors for stationary derivative logs without assuming an ergodic convergence rate.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:dyadic](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L27)\n- [eq:dyadic-convolution](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L33)\n- [eq:dyadic-square-sum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/02-stationary.tex#L39)\n\n## Antecedents and comparison\n\nA targeted search found general stationary maximal inequalities based on dyadic induction, but did not settle an exact antecedent for this chord-centered bound. Its full elementary source proof was checked. The interpolation and convolution steps are classical; no novelty certificate is attached to the formulation.\n\n## Checks and limitations\n\nExact randomly shifted periodic processes verify variance losses and finite sums of squared chord deviations. Numerical evaluation checks the square-root convolution bound. A stationary random constant process is a control against replacing the block chord by the process mean.\n\nThis estimate alone does not supply a uniform spatial derivative splitting, a smooth switch or the claimed obstruction to realization.\n\n## Possible applications\n\nFinding long stationary orbit segments with controlled deviations from their own linear trends when no quantitative mixing rate is available.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000509",
+      "record_type": "instrument",
+      "title": "Choose scales where a summable cost loses to a divergent test budget",
+      "forms": [
+        "weighted-cheap-scale-selection",
+        "summability-versus-scale-availability"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-152"
+      ],
+      "source_paper_ids": [
+        "P-000285"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex",
+          "label": "lem:cheap-scales",
+          "line": 64,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex#L64",
+          "sha256": "513443851f812a6ef0911e01d5cc2f93cd94a11bfbcb9f01be16ba1d30c2d05c"
+        },
+        {
+          "path": "preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex",
+          "label": "eq:word-rate-divergence",
+          "line": 503,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex#L503",
+          "sha256": "afae7bc3191c20fb060879b9e3e75c4f8c9391b9b0b74edd9e614967cbf9b301"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 2,
+      "subject": "Dynamical systems and ergodic theory",
+      "novelty_status": "elementary-weighted-pigeonhole-principle",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000509.md",
+      "body": "# Choose scales where a summable cost loses to a divergent test budget\n\n[Family 152](../families/openai-math-152.md) · [Source manuscript](../papers/P-000285.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet p>0, let J_i be pairwise disjoint finite nonempty sets of integer scales, and let R_i>0. Suppose sum_k B_k^p<infinity while sum_i |J_i| R_i^p=infinity. Then there are i tending to infinity and k_i in J_i such that B_(k_i)/R_i tends to zero. Otherwise some positive lower bound c holds for all sufficiently late tests, forcing sum_k B_k^p>=c^p sum_i |J_i|R_i^p=infinity.\n\nThere is also a finite quantitative form: over any finite collection of windows, min_(i,k in J_i)(B_k/R_i)^p is at most (sum_(k in union J_i) B_k^p)/(sum_i |J_i|R_i^p). Disjointness prevents counting the same cost infinitely often.\n\nThe source takes p=16, b_i=log_2 m_i, b_(i+1)=b_i+K_i, and J_i={b_i+j:ceil(K_i/16)<=j<=floor(K_i/8)}. Eventually |J_i|>=K_i/32, and the separately proved word-rate bound gives sum K_i R_i^16=infinity for R_i=ell_i/m_i. Selecting k=log_2(m_i D) gives B_k n=(B_k/R_i)D ell_i=o((D-1)ell_i), since D>=2. Thus partition costs bounded by C B_k 2^k become negligible relative to the available label information. The conclusion is a subsequence, not a uniform bound at all scales.\n\n## Role in the source argument\n\nMatches the source symbolic information scales to a fixed smooth model summable partition-cost sequence.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:cheap-scales](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/07-obstruction.tex#L64)\n- [eq:word-rate-divergence](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/build/sections/05-words.tex#L503)\n\n## Antecedents and comparison\n\nThe general statement is an elementary weighted pigeonhole argument. The complete source cheap-scale proof and word-rate divergence proof were read. No new general summability theorem or exhaustive priority claim is made.\n\n## Checks and limitations\n\nExact finite weighted windows verify the quantitative ratio bound. Explicit disjoint dyadic windows with a summable cost illustrate the decaying selected ratios; a repeated-window example fails selection if disjointness is removed.\n\nThe divergent word-rate budget and summable smooth-model budget are separate hypotheses; these tests do not establish either full construction.\n\n## Possible applications\n\nSelecting observation scales after an adversarial but summable error sequence has been fixed.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000510",
+      "record_type": "instrument",
+      "title": "Use stabilizer weights to obtain a finite invariant trace",
+      "forms": [
+        "inverse-stabilizer-mass-transport",
+        "normalized-invariant-operator-trace"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-214"
+      ],
+      "source_paper_ids": [
+        "P-000286"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+          "label": "pre:mass-transport",
+          "line": 235,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L235",
+          "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+        },
+        {
+          "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+          "label": "pre:trace",
+          "line": 268,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L268",
+          "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 1,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "aldous-lyons-invariant-trace",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000510.md",
+      "body": "# Use stabilizer weights to obtain a finite invariant trace\n\n[Family 214](../families/openai-math-214.md) · [Source manuscript](../papers/P-000286.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nLet a unimodular locally compact automorphism group act with finitely many vertex orbits and compact open stabilizers. For representatives o_i put sigma_i proportional to vol(Gamma_(o_i))^(-1), normalized to sum one. For every invariant nonnegative pair mass m, sum_i sigma_i sum_y m(o_i,y)=sum_i sigma_i sum_x m(x,o_i). On each pair orbit, outgoing and incoming counts are stabilizer volumes divided by the common intersection volume, so weighting cancels the numerator. Tonelli handles infinite nonnegative sums; absolute summability handles signed or complex masses.\n\nFor bounded invariant operators on counting-measure l2(V), define tr S=sum_i sigma_i S(o_i,o_i). This is a positive normalized trace. Cauchy-Schwarz makes the product diagonal sum absolutely convergent, and mass transport yields tr(AB)=tr(BA). For invariant A>=0 and self-adjoint B, positivity of A^(1/2)BA^(1/2) between -||B||A and ||B||A gives |tr(BA)|<=||B|| tr A. Also A(x,x)<=sigma_i^(-1)tr A on type i.\n\nThe weights specify the random root type. They do not replace counting measure in adjoints, positivity or operator norms. Equal weighting of unequal types generally destroys the trace identity.\n\n## Role in the source argument\n\nProvides averaged positive quantities and cyclic operator identities across different vertex types in the source critical-bound argument.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pre:mass-transport](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L235)\n- [pre:trace](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L268)\n\n## Antecedents and comparison\n\n[Aldous-Lyons, Processes on Unimodular Random Networks](https://arxiv.org/pdf/math/0603062), Section 5, pages 27-28 in the retrieved version, gives this trace and the mass-transport proof of cyclicity; those passages were read. The source specializes the construction to finitely many orbit types. This is an identified antecedent, not a new trace theorem.\n\n## Checks and limitations\n\nExact finite permutation-group models with unequal orbit sizes check the stabilizer weights, mass transport, trace cyclicity and diagonal bounds. An explicit unequal-type example fails cyclicity under equal type weights.\n\nFinite group models do not prove the infinite-graph mass-transport theorem or the source critical operator bound.\n\n## Possible applications\n\nUsing finite trace estimates on infinite invariant operator algebras with several geometric vertex types.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000511",
+      "record_type": "instrument",
+      "title": "Control percolation sprinkling by a positive connection-kernel series",
+      "forms": [
+        "percolation-sprinkling-neumann-series",
+        "entrywise-to-operator-threshold-continuation"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-214"
+      ],
+      "source_paper_ids": [
+        "P-000286"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+          "label": "pre:sprinkling",
+          "line": 499,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L499",
+          "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+        },
+        {
+          "path": "preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex",
+          "label": "eq:s05",
+          "line": 501,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L501",
+          "sha256": "612a0f5ad5ca17a7592e85687fce25d5743b3110948464d0887c7ee2b2fa8242"
+        }
+      ],
+      "batch_id": "B051",
+      "source_item": 2,
+      "subject": "Probability and statistical mechanics",
+      "novelty_status": "hutchcroft-2019-lemma-2.4",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000511.md",
+      "body": "# Control percolation sprinkling by a positive connection-kernel series\n\n[Family 214](../families/openai-math-214.md) · [Source manuscript](../papers/P-000286.md) · [Batch B051](../../batches/B051/README.md)\n\n## Mathematical content\n\nFor independent Bernoulli bond fields with parameters p and a, their union has parameter p'=p+(1-p)a. Let T_p(x,y) be the connection probability and Adj the graph adjacency matrix. Then T_(p')<=sum_(j>=0) a^j T_p(Adj T_p)^j entrywise.\n\nA finite simple union-open path splits at its j ordered second-field edges. The intervening first-field legs have disjoint open witnesses. Independence and the disjoint-witness inequality bound their joint probability by a^j times the product of their connection probabilities. Summing over intermediate vertices and j gives the series; extra walks in that sum only overcount.\n\nIf the maximum degree is d, T_p is bounded on counting-measure l2, and a d ||T_p||<1, the series converges in operator norm. It gives ||T_(p')||<=||T_p||/[1-a d ||T_p||]. Entrywise domination implies this bound because both kernels have nonnegative entries: apply the dominating form to absolute values of test vectors. No positive-semidefinite ordering between the two kernels is needed. Consequently, bounded T_(pc) with pc<1 implies boundedness at a strictly larger parameter and hence pc<p_(2-to-2). The difficult input is boundedness at pc itself.\n\n## Role in the source argument\n\nConverts the source proposed critical operator bound into an open interval above pc.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [pre:sprinkling](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L499)\n- [eq:s05](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/build/sections/preliminaries.tex#L501)\n\n## Antecedents and comparison\n\n[Hutchcroft, Percolation on Hyperbolic Graphs](https://d-nb.info/1187112097/34), Lemma 2.4 and Corollary 2.6, state and prove the same connection-kernel comparison; PDF pages 9-10 were read. The source explicitly cites this antecedent. This extraction is a reusable classical instrument, not a novelty claim.\n\n## Checks and limitations\n\nExact enumeration of bond states on small graphs computes connection matrices at rational parameters and verifies domination by the rational Neumann resolvent. Norms are checked numerically against the scalar bound.\n\nEvery finite graph has bounded connection operators; these tests do not establish a nontrivial infinite-graph threshold gap or the source critical boundedness theorem.\n\n## Possible applications\n\nExtending a known connection-operator bound to nearby percolation parameters.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -26662,6 +27034,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000282.md",
       "body": "# Finite tensor savings and exact Fourier circuits\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/main.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000503: Amplify a finite tensor saving by weighting sectors by dimension](../instruments/MI-000503.md)\n\n[Family review and dependencies](../families/openai-math-130.md) · [Batch B050](../../batches/B050/README.md)"
+    },
+    {
+      "id": "P-000283",
+      "record_type": "paper",
+      "title": "Positive Metric Entropy for the Standard Map at Large Parameters",
+      "source_collection": "openai/math",
+      "upstream_slug": "Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-146"
+      ],
+      "batch_id": "B051",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "033c06401f586c2945463213e88cfd9ab8745d5bd9e32fa0b64b39ac70398b01",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000283.md",
+      "body": "# Positive Metric Entropy for the Standard Map at Large Parameters\n\n## Source\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Positive-Metric-Entropy-for-the-Standard-Map-at-Large-Parameters-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000504: Read approximate tree geometry from determinant-one matrix growth](../instruments/MI-000504.md)\n- [MI-000505: Split a positive dilation balance without subtracting infinite masses](../instruments/MI-000505.md)\n\n[Family review and dependencies](../families/openai-math-146.md) · [Batch B051](../../batches/B051/README.md)"
+    },
+    {
+      "id": "P-000284",
+      "record_type": "paper",
+      "title": "A C^1 Counterexample to the Entropy Conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-151"
+      ],
+      "batch_id": "B051",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "7984f19384803ddd2f1283d4e510e551e94d0cde7b9359f7828e2602113503bd",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000284.md",
+      "body": "# A C^1 Counterexample to the Entropy Conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/article.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-C1-Counterexample-to-the-Entropy-Conjecture-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000506: Localize zero entropy under pointwise attraction](../instruments/MI-000506.md)\n- [MI-000507: Bound radial orbit descriptions by a chain of label vectors](../instruments/MI-000507.md)\n\n[Family review and dependencies](../families/openai-math-151.md) · [Batch B051](../../batches/B051/README.md)"
+    },
+    {
+      "id": "P-000285",
+      "record_type": "paper",
+      "title": "A zero-entropy system without a smooth positive-volume model",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026",
+      "source_date": null,
+      "family_ids": [
+        "openai-math-152"
+      ],
+      "batch_id": "B051",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c8d1247377eac90d2ed9fcd5998ea614ff584db6ea808dd582fad3dfb8306e2c",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000285.md",
+      "body": "# A zero-entropy system without a smooth positive-volume model\n\n## Source\n\n- Author: OpenAI\n- Source date: None\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-system-without-a-smooth-positive-volume-model-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000508: Control stationary fluctuations relative to each dyadic block chord](../instruments/MI-000508.md)\n- [MI-000509: Choose scales where a summable cost loses to a divergent test budget](../instruments/MI-000509.md)\n\n[Family review and dependencies](../families/openai-math-152.md) · [Batch B051](../../batches/B051/README.md)"
+    },
+    {
+      "id": "P-000286",
+      "record_type": "paper",
+      "title": "Nonuniqueness of percolation on nonamenable quasi-transitive graphs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-214"
+      ],
+      "batch_id": "B051",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "a5da66c9d680146b49b0b9e089230b6a9708e0b185b37625681d4bf88b235a6d",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000286.md",
+      "body": "# Nonuniqueness of percolation on nonamenable quasi-transitive graphs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Nonuniqueness-of-percolation-on-nonamenable-quasi-transitive-graphs-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000510: Use stabilizer weights to obtain a finite invariant trace](../instruments/MI-000510.md)\n- [MI-000511: Control percolation sprinkling by a positive connection-kernel series](../instruments/MI-000511.md)\n\n[Family review and dependencies](../families/openai-math-214.md) · [Batch B051](../../batches/B051/README.md)"
     }
   ],
   "families": [
@@ -29327,6 +29775,33 @@
       "body": "# Entropy cancellation and parameter-independent operator squares\n\n## Source manuscript and claim\n\n[Rokhlin's multiple-mixing problem for one transformation](../papers/P-000128.md), by OpenAI, September 23, 2026.\n\nThe source claims that ordinary mixing of an invertible probability-preserving transformation implies mixing of all finite orders as successive gaps tend to infinity.\n\n## Extracted instruments\n\n- [MI-000215: Sublinear word entropy forces cancellation against dissociated characters under arbitrary coupling](../instruments/MI-000215.md)\n- [MI-000216: Triple independence fixes positive squares and preserves an operator rectangle under polar normalization](../instruments/MI-000216.md)\n\n## Dependencies and antecedents\n\nDissociation, Fourier orthogonality, exponential Markov bounds, word entropy, Fubini, separability, positive square roots and polar uniqueness.\n\nGreen, Structure theory of set addition, Proposition 17 gives an earlier dissociated exponential estimate. Spectral and polar functional calculus are classical. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the full entropy cancellation and fixed-squares proofs, including the preceding rectangle setup. The array structure, subsequent cancellation and global mixing implication were not audited.\n\nRokhlin.lean formulates the implication for measurable probability spaces and invertible measure-preserving transformations, with all positive successive gaps tending to infinity. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nThe cancellation lemma allows arbitrary dependence between the word and characters. The operator lemma instead requires product law for each triple and full essential spans for the families and their adjoints.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/145.md) · [Batch record](../../batches/B014/README.md)"
     },
     {
+      "id": "openai-math-146",
+      "record_type": "family",
+      "title": "Matrix growth geometry and positive dilation balances",
+      "source_family": "146",
+      "source_collection": "openai/math",
+      "batch_id": "B051",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000283"
+      ],
+      "instrument_ids": [
+        "MI-000504",
+        "MI-000505"
+      ],
+      "headline": "The source claims positive metric entropy for every sufficiently large parameter of the standard map.",
+      "central_instrument": "Two-dimensional singular directions turn logarithmic matrix growth into approximate tree geometry. A positive dilation balance splits locally finite mass into backward images of a source and an invariant remainder.",
+      "novelty_assessment": "Classical singular-value geometry and positive potential decomposition. The source gives a specific scale-limit interface; no exhaustive novelty claim.",
+      "formalization_summary": "The three targets specify positive area entropy for a full parameter tail, positive largest Lyapunov exponents, and an invariant positive-area hyperbolic ergodic component with finitely many cyclic Bernoulli pieces. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The matrix estimate is for real two-dimensional determinant-one matrices. The measure decomposition needs an invertible map on the supported space and locally finite positive measures; total masses may be infinite.",
+      "dependencies": "Singular-value decomposition, the sine triangle inequality, properness for vague convergence and monotone convergence for positive measures.",
+      "antecedents": "Gromov-product and real-tree limit geometry, as reviewed by Bestvina; classical positive potential and invariant decompositions.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-146.md",
+      "body": "# Matrix growth geometry and positive dilation balances\n\n## Source manuscripts and claim\n\n- [Positive Metric Entropy for the Standard Map at Large Parameters](../papers/P-000283.md): selected passages extracted.\n\nThe source claims positive metric entropy for every sufficiently large parameter of the standard map.\n\n## Extracted instruments\n\n- [MI-000504: Read approximate tree geometry from determinant-one matrix growth](../instruments/MI-000504.md)\n- [MI-000505: Split a positive dilation balance without subtracting infinite masses](../instruments/MI-000505.md)\n\n## Dependencies and antecedents\n\nSingular-value decomposition, the sine triangle inequality, properness for vague convergence and monotone convergence for positive measures.\n\nGromov-product and real-tree limit geometry, as reviewed by Bestvina; classical positive potential and invariant decompositions.\n\n## Review and formalization scope\n\nRead the complete four-point and cancellation-truncation proofs, the local-limit proof, and the positive dilation decomposition. The cancellation-scarcity, fast-bridge and final entropy arguments were not certified.\n\nThe three targets specify positive area entropy for a full parameter tail, positive largest Lyapunov exponents, and an invariant positive-area hyperbolic ergodic component with finitely many cyclic Bernoulli pieces. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nThe matrix estimate is for real two-dimensional determinant-one matrices. The measure decomposition needs an invertible map on the supported space and locally finite positive measures; total masses may be infinite.\n\n[Batch record](../../batches/B051/README.md)"
+    },
+    {
       "id": "openai-math-148",
       "record_type": "family",
       "title": "Pair capacity and entropy gains before averaging the future",
@@ -29352,6 +29827,60 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-148.md",
       "body": "# Pair capacity and entropy gains before averaging the future\n\n## Source manuscript and claim\n\n[The entropy-rate dimension formula for self-similar measures on the line](../papers/P-000129.md), by OpenAI, September 24, 2026.\n\nThe source claims the entropy-rate dimension formula for every finite self-similar law on the line with nonzero strictly contracting ratios, including signed and unequal ratios.\n\n## Extracted instruments\n\n- [MI-000217: A sumset bound converts hidden grid entropy into fair-pair capacity at finer scales](../instruments/MI-000217.md)\n- [MI-000218: Two-point entropy gains survive future averaging when the pair is fixed by the past](../instruments/MI-000218.md)\n\n## Dependencies and antecedents\n\nFinite entropy, fractional pair packing, independent samples, randomized nested cuts, observed-sum conditioning, shifted-grid entropy and Jensen averaging.\n\nVarju, Absolute continuity of Bernoulli convolutions for algebraic parameters, Propositions 20 and 21 and Lemma 22, provide fair-pair decomposition and convolution entropy gain. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete finite pair-bound proof, shifted-entropy definitions, two-point gain and conditional-gain lemma. Uniform nonsaturation and the global dimension argument were not audited.\n\nSelfSimilar and SelfSimilarCorollaries state the lower Hausdorff dimension formula and the no-exact-overlap homogeneous measure and attractor consequences. The rate uses entropy of complete composed affine maps. Scope text and Comparator statements were read. No Lean solution was built or kernel-checked; the extracted auxiliary lemmas are not separately certified targets.\n\nEntropy is in bits. Scale-interval entropy is concave and convolution-monotone in the form used here when the coarse/fine ratio is an integer. Nonsaturation is required for the averaged tail, not for every realized future.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/148.md) · [Batch record](../../batches/B014/README.md)"
+    },
+    {
+      "id": "openai-math-151",
+      "record_type": "family",
+      "title": "Entropy localization and ordered radial itineraries",
+      "source_family": "151",
+      "source_collection": "openai/math",
+      "batch_id": "B051",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000284"
+      ],
+      "instrument_ids": [
+        "MI-000506",
+        "MI-000507"
+      ],
+      "headline": "The source claims a noninvertible C1 counterexample to the homological entropy lower bound, detected in second homology.",
+      "central_instrument": "Compactness turns pointwise attraction into a uniform small frequency of exceptional blocks. Ordered radial itineraries have only linearly many possibilities before taking finite products.",
+      "novelty_assessment": "The localization conclusion follows from the classical variational principle; the direct coding and radial chain count are elementary explicit proofs, not claimed as new entropy theorems.",
+      "formalization_summary": "The target is a nonbijective C1 map on a circle times a finite product of two-spheres, of dimension at least five, with zero topological entropy and a nonzero H2 eigenvector of eigenvalue two. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Attraction is pointwise to a compact forward-invariant set and need not have a uniform final entry time. Radial monotonicity concerns the initial radius, not monotonicity of each orbit in time.",
+      "dependencies": "Compactness, continuity, separated-set entropy, finite block covers and chains in a finite product order.",
+      "antecedents": "The variational principle for topological entropy, with Misiurewicz giving a classical proof; zero entropy of monotone interval maps.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-151.md",
+      "body": "# Entropy localization and ordered radial itineraries\n\n## Source manuscripts and claim\n\n- [A C^1 Counterexample to the Entropy Conjecture](../papers/P-000284.md): selected passages extracted.\n\nThe source claims a noninvertible C1 counterexample to the homological entropy lower bound, detected in second homology.\n\n## Extracted instruments\n\n- [MI-000506: Localize zero entropy under pointwise attraction](../instruments/MI-000506.md)\n- [MI-000507: Bound radial orbit descriptions by a chain of label vectors](../instruments/MI-000507.md)\n\n## Dependencies and antecedents\n\nCompactness, continuity, separated-set entropy, finite block covers and chains in a finite product order.\n\nThe variational principle for topological entropy, with Misiurewicz giving a classical proof; zero entropy of monotone interval maps.\n\n## Review and formalization scope\n\nRead both complete entropy lemmas and the introduction specifying noninvertibility and intermediate-degree homology. The construction, C1 regularity, attraction and homological eigenvalue are outside these checks.\n\nThe target is a nonbijective C1 map on a circle times a finite product of two-spheres, of dimension at least five, with zero topological entropy and a nonzero H2 eigenvector of eigenvalue two. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nAttraction is pointwise to a compact forward-invariant set and need not have a uniform final entry time. Radial monotonicity concerns the initial radius, not monotonicity of each orbit in time.\n\n[Batch record](../../batches/B051/README.md)"
+    },
+    {
+      "id": "openai-math-152",
+      "record_type": "family",
+      "title": "Stationary chord control and sparse cheap-scale selection",
+      "source_family": "152",
+      "source_collection": "openai/math",
+      "batch_id": "B051",
+      "subject": "Dynamical systems and ergodic theory",
+      "source_paper_ids": [
+        "P-000285"
+      ],
+      "instrument_ids": [
+        "MI-000508",
+        "MI-000509"
+      ],
+      "headline": "The source claims a zero-entropy ergodic system with no smooth positive-volume model in any finite dimension.",
+      "central_instrument": "Second-moment losses of adjacent block averages control maximal deviations from each block own chord. Divergent weighted scale budgets force a subsequence where any summable cost is negligible.",
+      "novelty_assessment": "Dyadic interpolation and convolution are classical tools; the exact stationary chord estimate is recorded from the source without a settled priority claim. The scale-selection step is an elementary summability contradiction.",
+      "formalization_summary": "The target gives a standard nonatomic invertible ergodic finite-entropy system with no measurable conjugacy to a smooth diffeomorphism preserving a strictly positive smooth density on any compact finite-dimensional manifold, including boundary. The source stronger zero-entropy conclusion is outside this target; arbitrary full-support or merely equivalent-to-volume measures are not excluded. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "The stationary estimate uses the random average of each block, not the process mean, and needs only a finite second moment. Scale selection needs divergent weighted availability in disjoint scale windows.",
+      "dependencies": "Stationarity, quadratic averaging identity, dyadic polygon interpolation, Minkowski inequality, summable convolution and a weighted pigeonhole argument.",
+      "antecedents": "Classical dyadic maximal and square-function methods; elementary summability versus divergent weighted budgets.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-152.md",
+      "body": "# Stationary chord control and sparse cheap-scale selection\n\n## Source manuscripts and claim\n\n- [A zero-entropy system without a smooth positive-volume model](../papers/P-000285.md): selected passages extracted.\n\nThe source claims a zero-entropy ergodic system with no smooth positive-volume model in any finite dimension.\n\n## Extracted instruments\n\n- [MI-000508: Control stationary fluctuations relative to each dyadic block chord](../instruments/MI-000508.md)\n- [MI-000509: Choose scales where a summable cost loses to a divergent test budget](../instruments/MI-000509.md)\n\n## Dependencies and antecedents\n\nStationarity, quadratic averaging identity, dyadic polygon interpolation, Minkowski inequality, summable convolution and a weighted pigeonhole argument.\n\nClassical dyadic maximal and square-function methods; elementary summability versus divergent weighted budgets.\n\n## Review and formalization scope\n\nRead the complete dyadic chord lemma, cheap-scale lemma and supporting word-rate proof, plus the introduction delimiting the realization problem. The smooth switching theorem and symbolic construction were not certified.\n\nThe target gives a standard nonatomic invertible ergodic finite-entropy system with no measurable conjugacy to a smooth diffeomorphism preserving a strictly positive smooth density on any compact finite-dimensional manifold, including boundary. The source stronger zero-entropy conclusion is outside this target; arbitrary full-support or merely equivalent-to-volume measures are not excluded. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nThe stationary estimate uses the random average of each block, not the process mean, and needs only a finite second moment. Scale selection needs divergent weighted availability in disjoint scale windows.\n\n[Batch record](../../batches/B051/README.md)"
     },
     {
       "id": "openai-math-153",
@@ -30360,6 +30889,33 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-204.md",
       "body": "# Filtered intersection bounds and nilpotent centralizer motion\n\n## Source manuscript and claim\n\n[Tensor saturation for even spin groups](../papers/P-000150.md), by OpenAI, September 24, 2026.\n\nThe source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.\n\n## Extracted instruments\n\n- [MI-000261: Nested filtration profiles determine the generic intersection exactly](../instruments/MI-000261.md)\n- [MI-000262: A nilpotent centralizer realizes every allowed motion of its kernel filtration](../instruments/MI-000262.md)\n\n## Dependencies and antecedents\n\nHall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.\n\nHall, On Representatives of Subsets, Theorem 1; Fresse, Betti numbers of Springer fibers in type A, Section 3.6. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete filtered-intersection and centralizer proofs. Real schedules, integral continuation, simultaneous switches, representation criteria and the full zero-tail construction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nGeneric means on a nonempty Zariski-open subset of the complex filtration stabilizer. The centralizer acts as the full stabilizer on the kernel and separately on the dual kernel; arbitrary independent prescribed motions on both are not asserted simultaneously.\n\n[Batch record](../../batches/B019/README.md)"
+    },
+    {
+      "id": "openai-math-214",
+      "record_type": "family",
+      "title": "Unimodular traces and sprinkling resolvents",
+      "source_family": "214",
+      "source_collection": "openai/math",
+      "batch_id": "B051",
+      "subject": "Probability and statistical mechanics",
+      "source_paper_ids": [
+        "P-000286"
+      ],
+      "instrument_ids": [
+        "MI-000510",
+        "MI-000511"
+      ],
+      "headline": "The source claims a nonuniqueness phase and critical mean-field laws on every nonamenable quasi-transitive graph.",
+      "central_instrument": "Inverse stabilizer weights make invariant diagonal averages into a finite trace. Independent sprinkling compares connection kernels through a positive Neumann series.",
+      "novelty_assessment": "Both selected mechanisms have explicit classical antecedents: Aldous-Lyons for invariant traces and Hutchcroft Lemma 2.4 for the same sprinkling inequality.",
+      "formalization_summary": "The targets include critical operator boundedness, pc<p_(2-to-2)<=pu, a single coupled interval with infinitely many infinite clusters, critical tail and susceptibility laws, exponential decay, and every finite symmetric Cayley generating set. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.",
+      "statement_faithfulness": "Root-type weights do not change the counting-measure Hilbert space. Sprinkling is an entrywise kernel comparison, not a positive-semidefinite order assertion, and its useful norm conclusion requires a convergent series.",
+      "dependencies": "Unimodular Haar stabilizer volumes, mass transport, absolute summability and positive square roots; product percolation, disjoint-witness inequality and Neumann-series convergence.",
+      "antecedents": "Benjamini-Lyons-Peres-Schramm mass transport; Aldous-Lyons invariant trace; Hutchcroft connection-operator sprinkling.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-214.md",
+      "body": "# Unimodular traces and sprinkling resolvents\n\n## Source manuscripts and claim\n\n- [Nonuniqueness of percolation on nonamenable quasi-transitive graphs](../papers/P-000286.md): selected passages extracted.\n\nThe source claims a nonuniqueness phase and critical mean-field laws on every nonamenable quasi-transitive graph.\n\n## Extracted instruments\n\n- [MI-000510: Use stabilizer weights to obtain a finite invariant trace](../instruments/MI-000510.md)\n- [MI-000511: Control percolation sprinkling by a positive connection-kernel series](../instruments/MI-000511.md)\n\n## Dependencies and antecedents\n\nUnimodular Haar stabilizer volumes, mass transport, absolute summability and positive square roots; product percolation, disjoint-witness inequality and Neumann-series convergence.\n\nBenjamini-Lyons-Peres-Schramm mass transport; Aldous-Lyons invariant trace; Hutchcroft connection-operator sprinkling.\n\n## Review and formalization scope\n\nRead the full weighted mass-transport, invariant-trace and sprinkling proofs. Also read the monotone endpoint-passage proof for context. The critical boundedness argument and nonuniqueness theorem remain unverified here.\n\nThe targets include critical operator boundedness, pc<p_(2-to-2)<=pu, a single coupled interval with infinitely many infinite clusters, critical tail and susceptibility laws, exponential decay, and every finite symmetric Cayley generating set. The scope document and all linked Comparator definitions and targets were read. Their target proofs contain sorry; no solution or Lean project was built.\n\nRoot-type weights do not change the counting-measure Hilbert space. Sprinkling is an entrywise kernel comparison, not a positive-semidefinite order assertion, and its useful norm conclusion requires a convergent series.\n\n[Batch record](../../batches/B051/README.md)"
     },
     {
       "id": "openai-math-221",
