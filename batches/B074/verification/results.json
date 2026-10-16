@@ -1,0 +1,86 @@
+{
+  "batch": "B074",
+  "status": "pass",
+  "elapsed_seconds": 0.522,
+  "scope": "Selected finite interfaces and hypothesis controls; no source headline or Lean certification.",
+  "checks": {
+    "coefficient_descent": {
+      "status": "pass",
+      "details": {
+        "exact_matrix_models": 80,
+        "prime_fields": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "strict_degree_negative_control": true,
+        "nonregular_denominator_control": true
+      }
+    },
+    "integration_jets": {
+      "status": "pass",
+      "details": {
+        "exact_word_jets": 80,
+        "noncommuting_first_columns": 2,
+        "truncation_checks": 2
+      }
+    },
+    "damped_products": {
+      "status": "pass",
+      "details": {
+        "products": 600,
+        "explicit_constant": 0.09607385741815415,
+        "minimum_observed_ratio": 0.8832549145325082,
+        "missing_factor_count_negative_control": 0.002175340646171308
+      }
+    },
+    "hypergeometric_smoothing": {
+      "status": "pass",
+      "details": {
+        "adjacent_hypergeometric_pairs": 350,
+        "common_component_mass": "2/3",
+        "hidden_label_posterior": "1/2"
+      }
+    },
+    "parity_lifts": {
+      "status": "pass",
+      "details": {
+        "source_graphs": 9,
+        "projected_systems": 492,
+        "dual_witnesses": 60,
+        "repeated_projection_cases": 382
+      }
+    },
+    "cycle_potentials": {
+      "status": "pass",
+      "details": {
+        "exhaustive_three_cycle_tables": 4096,
+        "zero_sum_tables": 32,
+        "singleton_models": 60,
+        "two_cycle_counterexample": true
+      }
+    },
+    "split_and_affine": {
+      "status": "pass",
+      "details": {
+        "expression_word_state_cases": 32764,
+        "missing_domain_negative_control": true,
+        "affine_composites": 100,
+        "singular_component_maps": 308
+      }
+    },
+    "affine_line_correction": {
+      "status": "pass",
+      "details": {
+        "exact_local_probability_models": 12,
+        "chosen_length": 13,
+        "dependency_bound": 1406,
+        "search_attempts": 1,
+        "all_tuple_state_checks": 16384,
+        "monoid": "multiplicative {0,1}",
+        "same_correction_for_all_states": true
+      }
+    }
+  }
+}
