@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B067: 8 selected instruments from 4 families and 8 manuscripts. Height pseudoinverses, elliptic torsion graphs, section norms, semiampleness descent, Hodge deficits, constants and p-curvature. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
+
 - Added B066: 8 selected instruments from 4 families and 8 manuscripts. Ramification support, Euler exponents, totient fibers, size bias, weighted jets, compact conjugators, entropy and local Fourier duality. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
 
 - Added B065: 8 selected instruments from 4 families and 8 manuscripts. Squareclass density, truncated rank tails, lattice extensions, graph monodromy, annular roots and conditional primitive roots. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.
