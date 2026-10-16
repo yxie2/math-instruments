@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 2.31,
+  "checks": {
+    "generalized_inverse": {
+      "exact_spectral_models": 24,
+      "varying_map_negative_control": "f_k=1/k, x_k=1 has f_k x_k tending to zero but identity kernel-complement projection."
+    },
+    "gluing": {
+      "torsion_graphs": 174,
+      "scope": "Kernel algebra only; polarization realization not tested."
+    },
+    "cyclic_norms": {
+      "section_characteristic_polynomials": 20,
+      "scope": "Finite flat cyclic algebras; not a test of nonflat analytic descent."
+    },
+    "norm_descent": {
+      "fiber_hyperplane_avoidance": 120,
+      "scope": "Tests simultaneous nonvanishing and norm gluing factor, not removable-singularity theory."
+    },
+    "hodge_gap": {
+      "pointwise_tensor_models": 160,
+      "orthogonality_models": 80,
+      "flat_constant_form_growth": 20,
+      "max_normalized_growth": 1.0,
+      "scope": "Tensor and flat-torus models only; no global Hodge-rank bound tested."
+    },
+    "constants": {
+      "constant_extension_models": 4,
+      "nonregular_base_control": "Q(sqrt(2)) over Q loses degree after using that same field as the base; geometric integrality is essential."
+    },
+    "nef_intersections": {
+      "toric_surface_models": 1176,
+      "non_nef_negative_control": true
+    },
+    "curvature": {
+      "arbitrary_coefficient_operators": 100,
+      "fixed_cyclic_partitions": {
+        "2": 2,
+        "3": 2,
+        "5": 2,
+        "7": 2
+      },
+      "scope": "Universal identities in truncated p-basis algebras; retained Laurent basis and global abundance untested."
+    }
+  },
+  "scope": "Selected finite mechanisms only; no Zilber-Pink, Iitaka, uniform-index or abundance headline certified."
+}

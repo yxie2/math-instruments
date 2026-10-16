@@ -1,0 +1,260 @@
+{
+  "batch_id": "B067",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T18:32:45.931769+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/LogKodairaFiberNegative.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/LogKodairaFiberNegative.lean",
+      "sha256": "b1a7cd8492a13f02998bd029cfea7952bf6a59344d3d67981e0d30059ef034aa",
+      "bytes": 9879
+    },
+    {
+      "path": "lean/docs/033.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/033.md",
+      "sha256": "ee8a912ca3648b62b35421d7f540e74dfaae0f9f6016ac0e6f4db2fecc67b330",
+      "bytes": 1245
+    },
+    {
+      "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/README.md",
+      "sha256": "1ada02f3bfd237cfb6f25e9b8b2b377ec4ddc1922c364e557f33a9e0aed7a4d9",
+      "bytes": 794
+    },
+    {
+      "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+      "sha256": "ccf90a69bb92271cde14d2fa9abd730a4a5770e6ffa11b23505d8150f15ec242",
+      "bytes": 23301
+    },
+    {
+      "path": "preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/README.md",
+      "sha256": "28b141206fbfeab900837c3b271431a83bf1546546d392a3af15a3be70d9a223",
+      "bytes": 638
+    },
+    {
+      "path": "preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex",
+      "sha256": "8f39f0520e003963c0e1f40da5935557d149e1584930bf6e8fd6befbe65b3db0",
+      "bytes": 53520
+    },
+    {
+      "path": "preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/README.md",
+      "sha256": "4cdd1865544e64de9db8712ef122dc8a839edccd07bcd63ff9e94a53810cd0cc",
+      "bytes": 645
+    },
+    {
+      "path": "preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex",
+      "sha256": "916bea1c8e8e538695d5530960cf092aa5754e1c6c5936697b543afd3c1e2bf2",
+      "bytes": 8374
+    },
+    {
+      "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/README.md",
+      "sha256": "86b12a6c71b094605952a3364832ad4abff44a634627051727bb9f7baa923ce2",
+      "bytes": 758
+    },
+    {
+      "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+      "sha256": "654fcc4b0113222ba26106a8e0b4333bba2d14fe552c8e64fec334603a675d16",
+      "bytes": 9650
+    },
+    {
+      "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/README.md",
+      "sha256": "9722ec9ec259874ff3862f2e48b391f6648b24c1991642e02c3aa0188dc6bb26",
+      "bytes": 585
+    },
+    {
+      "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+      "sha256": "1736e18a78a090f8a8287f5ac46d7544e418207a85c840e55363b006c9174dd0",
+      "bytes": 19692
+    },
+    {
+      "path": "preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/README.md",
+      "sha256": "2bb1d42ff41924f240f5555bc32330d5815aba644b7e12609dff63088b2798e4",
+      "bytes": 531
+    },
+    {
+      "path": "preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex",
+      "sha256": "131bfdcfdb24bf9616e8178a73a485a458d8ea8f724d7f921fd73d244511101b",
+      "bytes": 14799
+    },
+    {
+      "path": "preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/README.md",
+      "sha256": "882436c486cb6502de25f1ced0c810bb821e1f98c74ce1d610e6a62dfcc40fe4",
+      "bytes": 658
+    },
+    {
+      "path": "preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex",
+      "sha256": "7f7f3692325b65b1028584c5a7d64f6efe23020db40644addc1f510b8be4594a",
+      "bytes": 53131
+    },
+    {
+      "path": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/README.md",
+      "sha256": "66f84c15356172fe2b21fcfab50c8ae5f60f15236fcf165802b71daa173ecc86",
+      "bytes": 670
+    },
+    {
+      "path": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex",
+      "sha256": "4cfc0c7f805438ccd48dafecb334dd69fcf277efd1eee55a9186e692b63e7c4d",
+      "bytes": 6663
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000638",
+      "path": "preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex",
+      "label": "lemma:real-calculus",
+      "line": 33,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex#L33",
+      "sha256": "131bfdcfdb24bf9616e8178a73a485a458d8ea8f724d7f921fd73d244511101b"
+    },
+    {
+      "instrument_id": "MI-000639",
+      "path": "preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex",
+      "label": "lem:gluing",
+      "line": 387,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex#L387",
+      "sha256": "7f7f3692325b65b1028584c5a7d64f6efe23020db40644addc1f510b8be4594a"
+    },
+    {
+      "instrument_id": "MI-000640",
+      "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+      "label": "p1logcbfalt:finite",
+      "line": 47,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L47",
+      "sha256": "1736e18a78a090f8a8287f5ac46d7544e418207a85c840e55363b006c9174dd0"
+    },
+    {
+      "instrument_id": "MI-000640",
+      "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+      "label": "p1logcbfalt:section-test",
+      "line": 27,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L27",
+      "sha256": "1736e18a78a090f8a8287f5ac46d7544e418207a85c840e55363b006c9174dd0"
+    },
+    {
+      "instrument_id": "MI-000641",
+      "path": "preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex",
+      "label": "descent:semiample",
+      "line": 117,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex#L117",
+      "sha256": "916bea1c8e8e538695d5530960cf092aa5754e1c6c5936697b543afd3c1e2bf2"
+    },
+    {
+      "instrument_id": "MI-000642",
+      "path": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex",
+      "label": "lem:hodge-gap",
+      "line": 62,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex#L62",
+      "sha256": "4cfc0c7f805438ccd48dafecb334dd69fcf277efd1eee55a9186e692b63e7c4d"
+    },
+    {
+      "instrument_id": "MI-000643",
+      "path": "preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex",
+      "label": "lem:constants",
+      "line": 158,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex#L158",
+      "sha256": "8f39f0520e003963c0e1f40da5935557d149e1584930bf6e8fd6befbe65b3db0"
+    },
+    {
+      "instrument_id": "MI-000644",
+      "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+      "label": "lem:surface-nef",
+      "line": 80,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L80",
+      "sha256": "654fcc4b0113222ba26106a8e0b4333bba2d14fe552c8e64fec334603a675d16"
+    },
+    {
+      "instrument_id": "MI-000644",
+      "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+      "label": "eq:restriction-zero",
+      "line": 97,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L97",
+      "sha256": "654fcc4b0113222ba26106a8e0b4333bba2d14fe552c8e64fec334603a675d16"
+    },
+    {
+      "instrument_id": "MI-000645",
+      "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+      "label": "lem:cartier-curvature",
+      "line": 175,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L175",
+      "sha256": "ccf90a69bb92271cde14d2fa9abd730a4a5770e6ffa11b23505d8150f15ec242"
+    },
+    {
+      "instrument_id": "MI-000645",
+      "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+      "label": "eq:rank-one-pcurvature",
+      "line": 214,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L214",
+      "sha256": "ccf90a69bb92271cde14d2fa9abd730a4a5770e6ffa11b23505d8150f15ec242"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-016",
+      "extracted_slugs": [
+        "The-Abelian-Zilber-Pink-Conjecture-September-24-2026",
+        "The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "Quaternionic-Division-Points-on-Curves-in-the-Siegel-Threefold-September-24-2026",
+        "Elliptic-Squares-and-Zilber-Pink-for-Curves-in-A2-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-033",
+      "extracted_slugs": [
+        "Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026",
+        "B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026"
+      ],
+      "inventory_only_slugs": [
+        "Logarithmic-Kodaira-dimension-and-whole-fiber-variation-September-26-2026",
+        "The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026",
+        "Projective-Hodge-lines-and-ordinary-Iitaka-subadditivity-September-27-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-034",
+      "extracted_slugs": [
+        "Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026",
+        "Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026"
+      ],
+      "inventory_only_slugs": [
+        "Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026",
+        "Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026",
+        "Log-abundance-in-characteristic-zero-September-24-2026",
+        "Minimal-metrics-and-interior-injectivity-for-nef-adjoints-September-27-2026",
+        "Fourfold-nonvanishing-by-minimal-metrics-and-moving-jets-September-27-2026",
+        "Lifting-sections-from-the-reduced-support-of-an-adjoint-September-27-2026",
+        "Schnell-fiber-spaces-and-good-canonical-models-September-24-2026",
+        "Uniform-log-Iitaka-fibrations-and-bounded-moduli-denominators-October-4-2026",
+        "Uniform-Pluricanonical-Iitaka-Fibrations-October-3-2026",
+        "Relative-denominators-and-effective-systems-for-log-Calabi-Yau-fibrations-September-27-2026",
+        "Uniform-effective-log-Iitaka-fibrations-for-fourfolds-September-26-2026",
+        "Abundance-after-nonvanishing-for-compact-Kahler-fourfolds-September-27-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-035",
+      "extracted_slugs": [
+        "Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026",
+        "Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}

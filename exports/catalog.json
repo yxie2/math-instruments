@@ -27267,6 +27267,315 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000637.md",
       "body": "# Invert the polar operator in a self-dual lattice Gaussian integral\n\n[Family 015](../families/openai-math-015.md) · [Source manuscript](../papers/P-000406.md) · [Batch B066](../../batches/B066/README.md)\n\n## Mathematical content\n\nLet B be a nondegenerate symmetric bilinear form over Q_p, L a full self-dual lattice, and Haar measure self-dual with vol(L)=1. For an invertible B-self-adjoint P, put q_P(x)=B(Px,x)/2. Then\n\nintegral_L psi(q_P(x)) dx = omega(P)|det P|_p^(-1/2) integral_L psi(-q_(P^-1)(x)) dx,\n\nwhere |omega(P)|=1 and omega(T* P T)=omega(P) for every invertible T. Completing the square gives q_P(x)+B(x,y)=q_P(x+P^-1 y)-q_(P^-1)(y). Integrate over p^(-N)L and pair with compactly supported Fourier test functions: the resulting Gaussian constant stabilizes. Differencing its squared absolute value yields vol(p^(-N)L) vol(P^-1 p^N L)=|det P|_p^(-1), once q_P is integral on the latter lattice. Pair the Fourier identity with the self-dual indicator of L. A linear change of variables cancels its determinant against the normalization, proving phase invariance.\n\nFor a rank-two module over a local etale cubic algebra and multiplication P=u rho(alpha), det rho(alpha)=Norm(alpha)^2, giving a Norm(alpha)^(-1) factor and inverse parameter u^(-1)alpha^(-1). The polar operator is P, including at p=2; one must not discard the factor 1/2 in q_P.\n\n## Role in the source argument\n\nTrades a large-denominator quadratic phase for an inverse-parameter integral with explicit determinant decay.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:fourier-quadratic-transform](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equidistribution-of-Primitive-Quartic-Torus-Packets-for-Arbitrary-Orders-October-5-2026/build/manuscript/local-fourier.tex#L312)\n\n## Antecedents and comparison\n\nThis is Weil's classical quadratic Fourier formula. The source cites Weil, Chapter I section 14, and gives the normalization and stabilization argument in full, which was read. The historical Weil text itself was not retrieved in this batch.\n\n## Checks and limitations\n\nFinite residue sums model scalar and diagonal p-adic integrals at p=2,3,5, checking stabilized Gaussian constants, unit phases, inverse-parameter identities and scalar-square phase invariance.\n\nFinite diagonal models do not establish the source denominator-shell estimates, local densities or global quartic equidistribution.\n\n## Possible applications\n\nExtracting determinant decay from local oscillatory integrals while keeping the dyadic normalization correct.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000638",
+      "record_type": "instrument",
+      "title": "Transfer a polynomial generalized inverse to canonical height spaces",
+      "forms": [
+        "real-homomorphism-pseudoinverse",
+        "height-space-kernel-projection"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-016"
+      ],
+      "source_paper_ids": [
+        "P-000407"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex",
+          "label": "lemma:real-calculus",
+          "line": 33,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex#L33",
+          "sha256": "131bfdcfdb24bf9616e8178a73a485a458d8ea8f724d7f921fd73d244511101b"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 1,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000638.md",
+      "body": "# Transfer a polynomial generalized inverse to canonical height spaces\n\n[Family 016](../families/openai-math-016.md) · [Source manuscript](../papers/P-000407.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nFor polarized abelian varieties G,G' over the algebraic numbers, real homomorphisms act on both Lie spaces and H(G)=G(Qbar) tensor R, with canonical-height norm. For an integral homomorphism basis f_j, ample domination gives ||sum t_j f_j(x)||<=(sum |t_j| sqrt(C_j))||x||, uniformly over fields of definition. Thus convergence of real homomorphisms gives operator-norm convergence on height spaces.\n\nThe Lie action is faithful and the polarization adjoint lies in the real homomorphism space. For f, choose a real polynomial p with p(0)=0 and p(t)=1/t on the positive spectrum of f* f. Then f^dagger=p(f* f)f* is again a real homomorphism, and the Lie identities f^dagger f=P_(ker f)^perp and f f^dagger=P_im f become identities of real homomorphisms. They therefore hold on height spaces as well. For fixed f, ||f(x_i)||->0 implies ||P_(ker f)^perp(x_i)||->0 by boundedness of f^dagger. These real Lie subspaces need not be tangent spaces of abelian subvarieties; rationality is not inferred from real functional calculus.\n\n## Role in the source argument\n\nAllows normalized points at different height scales to be projected using limiting real homomorphisms.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lemma:real-calculus](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/build/sections/02-sequences.tex#L33)\n\n## Antecedents and comparison\n\n[Milne, Abelian Varieties](https://www.jmilne.org/math/CourseNotes/AVc.pdf), section 14, defines the Rosati adjoint and states its positivity; the definition, compatibility and positivity statement were read. Polynomial pseudoinverse construction is standard finite-dimensional spectral calculus. The arithmetic uniformity comes from the inspected source height-domination proof.\n\n## Checks and limitations\n\nFinite-rank matrices with exact prescribed singular spectra check polynomial inverse identities, projector transfer and the fixed-inverse estimate; varying singular values illustrate why a fixed map is required.\n\nMatrix models do not verify canonical heights or the source Zilber-Pink sequence theorem.\n\n## Possible applications\n\nTransferring a finite-dimensional faithful representation identity to another normed representation of the same homomorphism algebra.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000639",
+      "record_type": "instrument",
+      "title": "Force a full torsion graph from two polarization multipliers",
+      "forms": [
+        "mixed-elliptic-torsion-gluing",
+        "polarization-kernel-square-degree"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-016"
+      ],
+      "source_paper_ids": [
+        "P-000408"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex",
+          "label": "lem:gluing",
+          "line": 387,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex#L387",
+          "sha256": "7f7f3692325b65b1028584c5a7d64f6efe23020db40644addc1f510b8be4594a"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 2,
+      "subject": "Number theory",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000639.md",
+      "body": "# Force a full torsion graph from two polarization multipliers\n\n[Family 016](../families/openai-math-016.md) · [Source manuscript](../papers/P-000408.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nLet a principally polarized abelian surface A in characteristic zero be geometrically isogenous to a product of a non-CM elliptic curve and a CM elliptic curve. The two nonisogenous simple factors have unique elliptic images E,F in A, hence descend to the field of A. Their addition isogeny phi:E times F->A pulls the polarization back to a diagonal one with positive multipliers n_E,n_F. Its kernel has size n_E n_F and is contained in E[n_E] times F[n_F].\n\nBecause E,F are embedded, both kernel projections are injective. Therefore n_E n_F<=n_E² and n_E n_F<=n_F², forcing n_E=n_F=n. Both projections are then bijections onto full n-torsion, so the kernel is the graph of a field-defined isomorphism F[n]->E[n]. The isogeny degree is n² and its pullback polarization is n times the product. Every product-to-A isogeny factors through this addition map; its degree is at least n², with equality only when the two source factor maps have degree one.\n\n## Role in the source argument\n\nIdentifies the arithmetic gluing level with the minimal product-isogeny degree.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:gluing](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/paper.tex#L387)\n\n## Antecedents and comparison\n\nThis is classical polarized product gluing combined with uniqueness of nonisogenous simple factors. The inspected source proof uses only degree comparison and injective projections at the decisive step. No new classification of principally polarized surfaces or unlikely intersections is asserted.\n\n## Checks and limitations\n\nFinite groups (Z/nZ)² and invertible torsion maps check graph sizes and both projections; integer multiplier searches verify that the two size inequalities force equality.\n\nArbitrary finite torsion isomorphisms need not yield a principally polarized quotient; the tests check only the kernel argument after its geometric hypotheses.\n\n## Possible applications\n\nRecovering a common gluing level and minimal degree from polarization data.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000640",
+      "record_type": "instrument",
+      "title": "Preserve Iitaka dimension by integral finite pullback of section rings",
+      "forms": [
+        "finite-pullback-section-ring-integrality",
+        "iitaka-dimension-finite-map"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-033"
+      ],
+      "source_paper_ids": [
+        "P-000409"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+          "label": "p1logcbfalt:finite",
+          "line": 47,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L47",
+          "sha256": "1736e18a78a090f8a8287f5ac46d7544e418207a85c840e55363b006c9174dd0"
+        },
+        {
+          "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex",
+          "label": "p1logcbfalt:section-test",
+          "line": 27,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L27",
+          "sha256": "1736e18a78a090f8a8287f5ac46d7544e418207a85c840e55363b006c9174dd0"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000640.md",
+      "body": "# Preserve Iitaka dimension by integral finite pullback of section rings\n\n[Family 033](../families/openai-math-033.md) · [Source manuscript](../papers/P-000409.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nFor a dominant generically finite morphism pi:V'->V of normal projective complex varieties and a rational Cartier divisor D, kappa(V',pi*D)=kappa(V,D). Clear denominators and use Stein factorization to reduce to a finite map. Pullback embeds R(V,D) into R(V',pi*D). Each homogeneous upstairs section satisfies its monic characteristic polynomial over the finite function-field extension. The coefficient of order j is a rational section of jmD, and valuation inequalities above every prime divisor make it regular in the required downstairs divisorial lattice. Normality promotes these codimension-one conditions to global sections.\n\nThus the graded extension is integral and the section rings have the same transcendence degree. If no positive-degree section exists downstairs, the nonzero norm of an upstairs section rules out one upstairs. Finally, kappa(D)=0 forces every nonzero H^0(V,mD) to have dimension one: two independent sections would have a nonconstant ratio and a positive-dimensional rational image.\n\n## Role in the source argument\n\nKeeps complete plurisection systems under control when introducing generically finite auxiliary models.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [p1logcbfalt:finite](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L47)\n- [p1logcbfalt:section-test](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/build/sections/normalization.tex#L27)\n\n## Antecedents and comparison\n\nThe underlying characteristic-polynomial and norm construction is classical. [Stacks Project, Norms](https://stacks.math.columbia.edu/tag/0BCX), especially the finite integral normal-base construction, was read as an algebraic antecedent. The source applies the argument to graded divisorial sections.\n\n## Checks and limitations\n\nExact cyclic-cover algebras compute multiplication matrices, characteristic polynomials and norms of sections, checking coefficient degree bounds and integral equations.\n\nCyclic affine models test the algebra; they do not prove all geometric hypotheses of the source normalization or subadditivity.\n\n## Possible applications\n\nShowing that an auxiliary finite cover does not create additional Iitaka dimension.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000641",
+      "record_type": "instrument",
+      "title": "Descend a globally generated power through the finite Stein norm",
+      "forms": [
+        "analytic-semiampleness-norm-descent",
+        "stein-degree-global-generation-exponent"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-033"
+      ],
+      "source_paper_ids": [
+        "P-000410"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex",
+          "label": "descent:semiample",
+          "line": 117,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex#L117",
+          "sha256": "916bea1c8e8e538695d5530960cf092aa5754e1c6c5936697b543afd3c1e2bf2"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000641.md",
+      "body": "# Descend a globally generated power through the finite Stein norm\n\n[Family 033](../families/openai-math-033.md) · [Source manuscript](../papers/P-000410.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nLet r:P->S be proper surjective between connected compact complex manifolds, and A a holomorphic line bundle on S. In the Stein factorization P->T->S, let the finite map q have generic degree d. If r*(A^n) is globally generated, then A^(nd) is globally generated.\n\nConnected-fiber pushforward identifies upstairs sections with sections of q*(A^n), which remain globally generated. On the covering locus of q, define the norm of a function as its product over d sheets. Properness bounds this product near the omitted analytic subset; normality of S extends it holomorphically. If the function is nonzero on an entire fiber, apply the same argument to its inverse to see that the extended norm is nonzero there. Norm(q*c)=c^d, so norms of locally framed sections glue to sections of A^(nd).\n\nFor each base point, choose a section nonzero at every point of the finite fiber: each vanishing condition is a proper hyperplane, and finitely many such hyperplanes cannot exhaust the complex section space. Its norm is nonzero at the base point. The exponent nd is independent of the point. This handles branching and possible nonflatness without assuming that q_*O_T is locally free. Rational bundles are treated after clearing denominators.\n\n## Role in the source argument\n\nReturns semiampleness from auxiliary proper parameter spaces to the original compact base.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [descent:semiample](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/build/sections/descent.tex#L117)\n\n## Antecedents and comparison\n\n[Stacks Project, Norms](https://stacks.math.columbia.edu/tag/0BCX), describes norm line bundles, the power d on pullbacks, nonvanishing and norms over normal integral bases without finite-flat assumptions. Those passages were read. The inspected source provides the analytic bounded-extension version.\n\n## Checks and limitations\n\nRamified cyclic-cover norms check multiplicativity, the power on pullbacks and nonvanishing across a branch point. Exact finite hyperplane tests select sections simultaneously nonzero on a fiber.\n\nFinite flat cyclic examples do not test the analytic extension theorem for nonflat maps; that step rests on the inspected properness and normality proof.\n\n## Possible applications\n\nDescending a uniform basepoint-free exponent from a proper cover with positive-dimensional fibers.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000642",
+      "record_type": "instrument",
+      "title": "Use harmonic-exact orthogonality to force a Hodge norm growth gap",
+      "forms": [
+        "stretched-hodge-norm-gap",
+        "harmonic-exact-deficit"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-034"
+      ],
+      "source_paper_ids": [
+        "P-000411"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex",
+          "label": "lem:hodge-gap",
+          "line": 62,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex#L62",
+          "sha256": "4cfc0c7f805438ccd48dafecb334dd69fcf277efd1eee55a9186e692b63e7c4d"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000642.md",
+      "body": "# Use harmonic-exact orthogonality to force a Hodge norm growth gap\n\n[Family 034](../families/openai-math-034.md) · [Source manuscript](../papers/P-000411.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nLet M be compact Kahler of complex dimension 2n, D Kahler, H smooth closed semipositive of rank at most n, and z in H^(n,n)(M) with [H]^n z=0. For R>=1, the source proves\n\n||z||_(D+RH) <= R^((n-delta_n)/2)||z||_(D+H), delta_n=1/(binom(2n,n)+2).\n\nAt fixed R set omega=D+RH, Q=RH, and let gamma be the harmonic representative. In an omega-unitary frame let b_i in [0,1] be Q's eigenvalues. The derivative of the squared norm of the fixed representative with respect to log R has coefficient Tr Q-b_I-b_J on gamma_(I,bar J). Let e be n|gamma|² minus that derivative density. If rank Q=n, write K for its kernel, a=gamma_(K,bar K), d_0=n-Tr Q, and p=product_(b_i>0)b_i. Then e>=d_0|a|²+sum_(I,J)!=(K,K)|gamma_(I,bar J)|²; also (1-p)²<=d_0 and 1-p²<=2d_0.\n\nFor top forms A=omega^n/n! wedge gamma and B=Q^n/n! wedge gamma, these inequalities give |A-B|²<=N_n e and |B|²>=|gamma|²-2e, N_n=binom(2n,n). They also hold at smaller rank. A is harmonic while B is exact by [H]^n z=0, hence orthogonal. Integration gives (N_n+2) integral e>=||gamma||². Keeping the minimizing harmonic representative fixed gives an upper derivative for the minimum norm; nearby metric comparison makes that minimum locally Lipschitz. Integrating its almost-everywhere differential inequality yields the stated exponent. Without the annihilation condition, the uniform gap is not asserted.\n\n## Role in the source argument\n\nObtains a quantitative improvement over the largest possible middle-degree metric growth.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:hodge-gap](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/sections/hodge.tex#L62)\n\n## Antecedents and comparison\n\nThe ingredients are standard Hodge-Riemann/Lefschetz theory, the minimum-norm property and a tensor variation calculation. The complete source proof of the explicit constant was read. No primary antecedent with this exact gap was established, so no novelty conclusion is drawn.\n\n## Checks and limitations\n\nRandom exterior-tensor models check both pointwise inequalities. Two-cell models with exact harmonic/exact orthogonality check the integrated deficit, and flat-torus constant-form models check metric growth under the annihilation condition.\n\nThe finite models test the norm algebra, not a uniform rank bound for Hodge structures or the global index theorem.\n\n## Possible applications\n\nTurning a cohomological vanishing relation into a uniform quantitative loss in metric-growth exponent.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000643",
+      "record_type": "instrument",
+      "title": "Track geometric component counts through the constant field",
+      "forms": [
+        "constant-field-geometric-components",
+        "generic-fiber-arithmetic-degree"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-034"
+      ],
+      "source_paper_ids": [
+        "P-000412"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex",
+          "label": "lem:constants",
+          "line": 158,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex#L158",
+          "sha256": "8f39f0520e003963c0e1f40da5935557d149e1584930bf6e8fd6befbe65b3db0"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000643.md",
+      "body": "# Track geometric component counts through the constant field\n\n[Family 034](../families/openai-math-034.md) · [Source manuscript](../papers/P-000412.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nWork over a characteristic-zero field k. For an integral k-variety V, let k_V be the relative algebraic closure of k in k(V). Then [k_V:k] equals the number of geometric irreducible components, which form one Galois orbit, and is birationally invariant. If V is proper and normal, H^0(V,O_V)=k_V: properness makes global functions algebraic over k, while an algebraic element of the function field is integral over every local ring and hence regular by normality.\n\nIf V dominates a geometrically integral Z, the regular extension k(Z)/k is linearly disjoint from k_V/k. The compositum k_V k(Z), of degree [k_V:k] over k(Z), lies in the generic fiber's constant field. Therefore the arithmetic component degree cannot decrease on passage to the generic fiber. If X is normal projective with global functions k and X->Z is a contraction to a normal base, both X and Z are geometrically integral, and the normal projective generic fiber has global functions k(Z), by localization of f_*O_X=O_Z. This preserves arithmetic information that would be lost by immediately replacing k by its algebraic closure.\n\n## Role in the source argument\n\nTransfers a bound on a generic-fiber constant extension back to the arithmetic number of geometric components.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:constants](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/build/paper.tex#L158)\n\n## Antecedents and comparison\n\nThese are classical facts about regular extensions, linear disjointness, proper global functions and normality. The source packages them for arithmetic Stein-degree induction. No new constant-field theorem is claimed.\n\n## Checks and limitations\n\nExact irreducible constant-field polynomials remain irreducible over Q(t) in model extensions; tensor base changes and conjugate component factorizations check degree preservation. A non-geometrically-integral base supplies a failure of the disjointness step.\n\nFinite field-extension models do not prove the source uniform Stein-degree bound or boundedness inputs.\n\n## Possible applications\n\nKeeping Galois component counts visible during geometric induction.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000644",
+      "record_type": "instrument",
+      "title": "Detect numerical triviality from one ample intersection for a nef surface class",
+      "forms": [
+        "nef-ample-zero-numerical-triviality",
+        "effective-nef-component-restriction"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-035"
+      ],
+      "source_paper_ids": [
+        "P-000413"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+          "label": "lem:surface-nef",
+          "line": 80,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L80",
+          "sha256": "654fcc4b0113222ba26106a8e0b4333bba2d14fe552c8e64fec334603a675d16"
+        },
+        {
+          "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex",
+          "label": "eq:restriction-zero",
+          "line": 97,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L97",
+          "sha256": "654fcc4b0113222ba26106a8e0b4333bba2d14fe552c8e64fec334603a675d16"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 1,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000644.md",
+      "body": "# Detect numerical triviality from one ample intersection for a nef surface class\n\n[Family 035](../families/openai-math-035.md) · [Source manuscript](../papers/P-000413.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nOn an integral projective surface T, let H be ample Cartier and P nef rational Cartier. If P.H=0, then P is numerically trivial. For any integral curve C, a sufficiently large multiple of H has an effective Cartier member containing C. Its effective one-cycle has a positive coefficient at C and nonnegative P-degree on every component. The total degree is zero, forcing P.C=0. A nonzero effective Cartier divisor has positive H-degree by the ample degree of each curve component.\n\nConsequently, if N is a nonzero effective nef Cartier divisor on a projective threefold and N².H=0 for ample H, then N restricted to each prime surface component T of N is numerically trivial. The positive-coefficient sum of the nonnegative numbers N.H.T is zero, and the surface criterion applies to each restriction. This argument uses ampleness and effective cycles and does not require a smooth surface or a Hodge-index theorem.\n\n## Role in the source argument\n\nTurns a numerical-dimension-one intersection identity into exact numerical restrictions on every boundary component.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:surface-nef](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L80)\n- [eq:restriction-zero](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/build/sections/foundations.tex#L97)\n\n## Antecedents and comparison\n\nThis is elementary positivity of nef divisors and sufficiently positive ample systems, valid in any characteristic under the stated Cartier assumptions. No abundance conclusion follows without the source remaining arguments.\n\n## Checks and limitations\n\nExact toric surface intersection models and nonnegative effective-cycle sums check the zero-detection step. Non-nef classes orthogonal to an ample class provide a negative control.\n\nToric models do not verify the source boundary preparation, torsion or abundance theorem.\n\n## Possible applications\n\nReducing a vanishing global intersection to componentwise numerical triviality.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000645",
+      "record_type": "instrument",
+      "title": "Compute rank-one p-curvature by cyclic orbits of set partitions",
+      "forms": [
+        "rank-one-p-curvature-identity",
+        "cartier-fixed-connection-nilpotence"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-035"
+      ],
+      "source_paper_ids": [
+        "P-000414"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+          "label": "lem:cartier-curvature",
+          "line": 175,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L175",
+          "sha256": "ccf90a69bb92271cde14d2fa9abd730a4a5770e6ffa11b23505d8150f15ec242"
+        },
+        {
+          "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex",
+          "label": "eq:rank-one-pcurvature",
+          "line": 214,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L214",
+          "sha256": "ccf90a69bb92271cde14d2fa9abd730a4a5770e6ffa11b23505d8150f15ec242"
+        }
+      ],
+      "batch_id": "B067",
+      "source_item": 2,
+      "subject": "Algebraic and complex geometry",
+      "novelty_status": "classical-ingredients-with-source-specific-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000645.md",
+      "body": "# Compute rank-one p-curvature by cyclic orbits of set partitions\n\n[Family 035](../families/openai-math-035.md) · [Source manuscript](../papers/P-000414.md) · [Batch B067](../../batches/B067/README.md)\n\n## Mathematical content\n\nIn a commutative characteristic-p ring with derivation partial satisfying partial^p=0, multiplication by a obeys (partial+a)^p=a^p+partial^(p-1)(a), where the right side is a multiplication operator. The left side commutes with every multiplication operator, since its commutator is the p-fold iterated commutator partial^p, so it is determined by its value at 1. Iterated Leibniz expansion indexes that value by set partitions of p labels: a block of size j contributes partial^(j-1)(a). Cyclic permutation has p-element orbits except for the discrete and single-block partitions. All other contributions cancel modulo p, leaving exactly the two terms.\n\nFor a retained p-basis x_i with commuting coordinate partials, a closed form alpha=sum a_i dx_i with Cartier(alpha)=alpha has partial_i^(p-1)(a_i)=-a_i^p. This follows from alpha=dc+sum b_i^p x_i^(p-1)dx_i, Cartier(alpha)=sum b_i dx_i, and (p-1)!=-1. Thus D_i=partial_i+a_i satisfy D_i^p=0, [D_i,D_j]=0 and [D_i,x_j]=delta_ij. The local algebra statement does not require finite type once the p-basis and Cartier formula have been supplied.\n\n## Role in the source argument\n\nProduces the nilpotent commuting operators used for horizontal expansion in Laurent formal neighborhoods.\n\n## Source locations\n\nPinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. Exact labelled passages and hashes are recorded in the batch source manifest.\n\n- [lem:cartier-curvature](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L175)\n- [eq:rank-one-pcurvature](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/sections/cartier.tex#L214)\n\n## Antecedents and comparison\n\n[Katz, Nilpotent connections and the monodromy theorem](https://web.math.princeton.edu/~nmk/old/nilpconn.pdf), section 5, defines p-curvature, states and proves Cartier descent in Theorem 5.1, and uses Jacobson identities in Proposition 5.2. Printed pages 190-192 were read. The selected source gives a direct rank-one set-partition proof; no new Cartier theorem is claimed.\n\n## Checks and limitations\n\nExact operator matrices over finite truncated p-basis algebras check the p-th power identity for arbitrary a, its Cartier-fixed consequence for logarithmic units, commutators and the two exceptional cyclic partition orbits.\n\nTruncated algebras test the universal identities, not the existence of the source retained Laurent p-basis or its global formal line bundle.\n\n## Possible applications\n\nVerifying zero p-curvature locally without expanding all noncommutative words individually.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -34983,6 +35292,158 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000406.md",
       "body": "# Equidistribution of primitive quartic torus packets for arbitrary orders\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equidistribution-of-Primitive-Quartic-Torus-Packets-for-Arbitrary-Orders-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equidistribution-of-Primitive-Quartic-Torus-Packets-for-Arbitrary-Orders-October-5-2026/quartic-torus-packets.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equidistribution-of-Primitive-Quartic-Torus-Packets-for-Arbitrary-Orders-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000637: Invert the polar operator in a self-dual lattice Gaussian integral](../instruments/MI-000637.md)\n\n[Family review and dependencies](../families/openai-math-015.md) · [Batch B066](../../batches/B066/README.md)"
+    },
+    {
+      "id": "P-000407",
+      "record_type": "paper",
+      "title": "The abelian Zilber–Pink conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-Abelian-Zilber-Pink-Conjecture-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-016"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "2bb1d42ff41924f240f5555bc32330d5815aba644b7e12609dff63088b2798e4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000407.md",
+      "body": "# The abelian Zilber–Pink conjecture\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000638: Transfer a polynomial generalized inverse to canonical height spaces](../instruments/MI-000638.md)\n\n[Family review and dependencies](../families/openai-math-016.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000408",
+      "record_type": "paper",
+      "title": "The E×CM component of Zilber–Pink for curves in A2",
+      "source_collection": "openai/math",
+      "upstream_slug": "The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-016"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "882436c486cb6502de25f1ced0c810bb821e1f98c74ce1d610e6a62dfcc40fe4",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000408.md",
+      "body": "# The E×CM component of Zilber–Pink for curves in A2\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000639: Force a full torsion graph from two polarization multipliers](../instruments/MI-000639.md)\n\n[Family review and dependencies](../families/openai-math-016.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000409",
+      "record_type": "paper",
+      "title": "Orbifold and logarithmic Iitaka subadditivity",
+      "source_collection": "openai/math",
+      "upstream_slug": "Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026",
+      "source_date": "September 26, 2026",
+      "family_ids": [
+        "openai-math-033"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "9722ec9ec259874ff3862f2e48b391f6648b24c1991642e02c3aa0188dc6bb26",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000409.md",
+      "body": "# Orbifold and logarithmic Iitaka subadditivity\n\n## Source\n\n- Author: OpenAI\n- Source date: September 26, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000640: Preserve Iitaka dimension by integral finite pullback of section rings](../instruments/MI-000640.md)\n\n[Family review and dependencies](../families/openai-math-033.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000410",
+      "record_type": "paper",
+      "title": "B-semiampleness for compact log-smooth Kähler fibrations",
+      "source_collection": "openai/math",
+      "upstream_slug": "B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026",
+      "source_date": "September 10, 2026",
+      "family_ids": [
+        "openai-math-033"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "4cdd1865544e64de9db8712ef122dc8a839edccd07bcd63ff9e94a53810cd0cc",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000410.md",
+      "body": "# B-semiampleness for compact log-smooth Kähler fibrations\n\n## Source\n\n- Author: OpenAI\n- Source date: September 10, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000641: Descend a globally generated power through the finite Stein norm](../instruments/MI-000641.md)\n\n[Family review and dependencies](../families/openai-math-033.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000411",
+      "record_type": "paper",
+      "title": "Uniform indices for semi-log-canonical log Calabi–Yau pairs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-034"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "66f84c15356172fe2b21fcfab50c8ae5f60f15236fcf165802b71daa173ecc86",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000411.md",
+      "body": "# Uniform indices for semi-log-canonical log Calabi–Yau pairs\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/uniform-slc-index.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000642: Use harmonic-exact orthogonality to force a Hodge norm growth gap](../instruments/MI-000642.md)\n\n[Family review and dependencies](../families/openai-math-034.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000412",
+      "record_type": "paper",
+      "title": "Arithmetic Stein-degree bounds for log Calabi–Yau pairs",
+      "source_collection": "openai/math",
+      "upstream_slug": "Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026",
+      "source_date": "September 25, 2026",
+      "family_ids": [
+        "openai-math-034"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "28b141206fbfeab900837c3b271431a83bf1546546d392a3af15a3be70d9a223",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000412.md",
+      "body": "# Arithmetic Stein-degree bounds for log Calabi–Yau pairs\n\n## Source\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000643: Track geometric component counts through the constant field](../instruments/MI-000643.md)\n\n[Family review and dependencies](../families/openai-math-034.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000413",
+      "record_type": "paper",
+      "title": "Log abundance in numerical dimension one for threefolds in positive characteristic",
+      "source_collection": "openai/math",
+      "upstream_slug": "Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026",
+      "source_date": "October 5, 2026",
+      "family_ids": [
+        "openai-math-035"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "86b12a6c71b094605952a3364832ad4abff44a634627051727bb9f7baa923ce2",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000413.md",
+      "body": "# Log abundance in numerical dimension one for threefolds in positive characteristic\n\n## Source\n\n- Author: OpenAI\n- Source date: October 5, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000644: Detect numerical triviality from one ample intersection for a nef surface class](../instruments/MI-000644.md)\n\n[Family review and dependencies](../families/openai-math-035.md) · [Batch B067](../../batches/B067/README.md)"
+    },
+    {
+      "id": "P-000414",
+      "record_type": "paper",
+      "title": "Abundance in numerical dimension one for terminal threefolds in positive characteristic",
+      "source_collection": "openai/math",
+      "upstream_slug": "Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-035"
+      ],
+      "batch_id": "B067",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "1ada02f3bfd237cfb6f25e9b8b2b377ec4ddc1922c364e557f33a9e0aed7a4d9",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000414.md",
+      "body": "# Abundance in numerical dimension one for terminal threefolds in positive characteristic\n\n## Source\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\n## Extracted instruments\n\nSelected labelled passages were read for the following cards; this is not an audit of every argument.\n\n- [MI-000645: Compute rank-one p-curvature by cyclic orbits of set partitions](../instruments/MI-000645.md)\n\n[Family review and dependencies](../families/openai-math-035.md) · [Batch B067](../../batches/B067/README.md)"
     }
   ],
   "families": [
@@ -35422,6 +35883,34 @@
       "updated": "2026-10-16",
       "path": "catalog/families/openai-math-015.md",
       "body": "# Entropy on restricted components and local quadratic Fourier duality\n\n## Source manuscripts and claim\n\n- [Equidistribution of Prime-Degree Torus Packets with Arbitrary Local Type](../papers/P-000405.md): selected passages extracted.\n- [Equidistribution of primitive quartic torus packets for arbitrary orders](../papers/P-000406.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Equidistribution of Primitive Sextic Torus Packets](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Equidistribution-of-Primitive-Sextic-Torus-Packets-October-5-2026)\n\nThe sources concern equidistribution of prime-degree, quartic and sextic torus packets.\n\n## Extracted instruments\n\n- [MI-000636: Force positive entropy in almost every invariant component by domination](../instruments/MI-000636.md)\n- [MI-000637: Invert the polar operator in a self-dual lattice Gaussian integral](../instruments/MI-000637.md)\n\n## Dependencies and antecedents\n\nErgodic decomposition, entropy integration, compact tube coverings, p-adic Fourier transform and completing the square.\n\nClassical entropy decomposition and Weil quadratic Fourier transformation; the source cites ELMV for the ordinary-ball route.\n\n## Review and formalization scope\n\nRead the complete ball-to-entropy and restricted-component proofs, and the complete quadratic Fourier-transformation proof with its scalar-shift context. Two of three manuscripts receive extractions; the sextic companion is inventory-only. Packet counting, tightness and homogeneous classification are not independently established.\n\nDukePrimeDegree targets volume-weighted complete packets of totally real prime degree at least five, with multiplier discriminant tending to infinity, arbitrary local homothety type, weak Haar convergence and tightness. It has no quartic or sextic target. The scope document and complete linked Comparator were read. The target theorem bodies contain sorry; no separate solution or Lean build was checked.\n\nThe entropy argument assumes an invariant probability limit, ball estimates and an entropy criterion. The quadratic transform uses a self-dual lattice, correct polar operator and normalized Haar measure, including at p=2.\n\n[Batch record](../../batches/B066/README.md)"
+    },
+    {
+      "id": "openai-math-016",
+      "record_type": "family",
+      "title": "Real homomorphism inverses and mixed elliptic gluing",
+      "source_family": "016",
+      "source_collection": "openai/math",
+      "batch_id": "B067",
+      "subject": "Number theory",
+      "source_paper_ids": [
+        "P-000407",
+        "P-000408"
+      ],
+      "instrument_ids": [
+        "MI-000638",
+        "MI-000639"
+      ],
+      "headline": "The sources claim abelian Zilber-Pink and a mixed elliptic-CM component for curves in the Siegel moduli space.",
+      "central_instrument": "Polynomial functional calculus transfers a generalized inverse from Lie spaces to height spaces. Polarization degree and injective kernel projections force an equal-level torsion graph.",
+      "novelty_assessment": "The cards identify classical mechanisms and source-specific quantitative interfaces. No exhaustive novelty assessment or certification of the global headline is claimed.",
+      "formalization_summary": "No Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The real projector need not come from an abelian subvariety. The gluing argument requires two nonisogenous elliptic factors and a principal polarization.",
+      "dependencies": "Neron-Tate heights, faithful Lie actions, polarization adjoints, finite spectral calculus and isogeny degrees.",
+      "antecedents": "Classical Rosati adjoints, Moore-Penrose-type spectral calculus and polarized product gluing.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-016.md",
+      "body": "# Real homomorphism inverses and mixed elliptic gluing\n\n## Source manuscripts and claim\n\n- [The abelian Zilber–Pink conjecture](../papers/P-000407.md): selected passages extracted.\n- [The E×CM component of Zilber–Pink for curves in A2](../papers/P-000408.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Quaternionic division points on curves in the Siegel threefold](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quaternionic-Division-Points-on-Curves-in-the-Siegel-Threefold-September-24-2026)\n- [Elliptic squares and Zilber–Pink for curves in A2](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Elliptic-Squares-and-Zilber-Pink-for-Curves-in-A2-September-24-2026)\n\nThe sources claim abelian Zilber-Pink and a mixed elliptic-CM component for curves in the Siegel moduli space.\n\n## Extracted instruments\n\n- [MI-000638: Transfer a polynomial generalized inverse to canonical height spaces](../instruments/MI-000638.md)\n- [MI-000639: Force a full torsion graph from two polarization multipliers](../instruments/MI-000639.md)\n\n## Dependencies and antecedents\n\nNeron-Tate heights, faithful Lie actions, polarization adjoints, finite spectral calculus and isogeny degrees.\n\nClassical Rosati adjoints, Moore-Penrose-type spectral calculus and polarized product gluing.\n\n## Review and formalization scope\n\nRead both complete selected lemmas and their immediate setup. Two of four manuscripts receive extractions; the quaternionic and elliptic-square companions remain inventory-only. Height, orbit and unlikely-intersection estimates are not audited.\n\nNo Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe real projector need not come from an abelian subvariety. The gluing argument requires two nonisogenous elliptic factors and a principal polarization.\n\n[Batch record](../../batches/B067/README.md)"
     },
     {
       "id": "openai-math-017",
@@ -35869,6 +36358,90 @@
       "map_formalization_summary": "no",
       "path": "catalog/families/openai-math-032.md",
       "body": "# Rational Hodge conjecture for CM abelian varieties\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000001](../papers/P-000001.md)\n- [P-000021](../papers/P-000021.md)\n- [P-000022](../papers/P-000022.md)\n- [P-000070](../papers/P-000070.md)\n- [P-000079](../papers/P-000079.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized combination\n\nFor every complex CM abelian variety the cycle map onto rational Hodge classes is surjective in every codimension; with Milne’s results this gives the Tate conjecture for abelian varieties over finite fields and the Hodge standard conjecture for abelian varieties in all characteristics. The repository describes this as one of two results produced outside its fixed computation procedure. The withdrawn eightfolds paper is not cited. The other papers in this family use this result as an input, without supplying inputs to its proof.\n\n## Extracted instruments.\n\n- [MI-000010: Four-factor switch](../instruments/MI-000010.md)\n\n- [MI-000011: Surface criterion with fixed-input variation of a rank-two theta tensor](../instruments/MI-000011.md)\n\n- [MI-000012: Degree-one CM extraction](../instruments/MI-000012.md)\n\n## Reused.\n\nLefschetz (1,1), Galois trace descent, Hodge–Riemann, Borel–Harish-Chandra, Mumford GIT, Néron models, crystalline comparison, Milne’s Hodge-to-Tate theorems, Hazama and Abdulali for the generalized conjecture.\n\n## Caveats.\n\nThe source contains about 3,900 lines of unformalized TeX. The Satake normalization, covariance of the constant line and slope formula require consistent sign conventions. The continuity assertion is a central analytic step to check.\n\n## Recorded assessment\n\n- Novelty: combination\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no load-bearing (family 001 in a remark only); withdrawn papers never cited\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-033",
+      "record_type": "family",
+      "title": "Finite section-ring pullback and norm descent of global generation",
+      "source_family": "033",
+      "source_collection": "openai/math",
+      "batch_id": "B067",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000409",
+        "P-000410"
+      ],
+      "instrument_ids": [
+        "MI-000640",
+        "MI-000641"
+      ],
+      "headline": "The family concerns orbifold/logarithmic Iitaka inequalities and b-semiampleness.",
+      "central_instrument": "Integral section-ring extensions preserve Iitaka dimension. A norm along the finite Stein factor descends global generation with a uniform explicit exponent.",
+      "novelty_assessment": "The cards identify classical mechanisms and source-specific quantitative interfaces. No exhaustive novelty assessment or certification of the global headline is claimed.",
+      "formalization_summary": "The scope document and all 245 lines of LogKodairaFiberNegative were read. It targets only the negative-fiber branch of logarithmic additivity for stratum-smooth connected-fiber SNC pairs, with vanishing of every positive-degree log pluriform. The finite-dimension and negative-base branches are outside the target. The target has a sorry body and belongs to an inventory-only companion. No separate solution or Lean build was checked.",
+      "statement_faithfulness": "The section-ring argument uses normal projective varieties and rational Cartier divisors. Analytic semiampleness descent uses proper surjectivity, compactness and normality of the base, without finite flatness.",
+      "dependencies": "Codimension-one regularity, characteristic polynomials, Stein factorization, analytic norms and hyperplane avoidance.",
+      "antecedents": "Classical norm and section-ring arguments; Stacks Project Norms supplies the algebraic finite-map counterparts.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-033.md",
+      "body": "# Finite section-ring pullback and norm descent of global generation\n\n## Source manuscripts and claim\n\n- [Orbifold and logarithmic Iitaka subadditivity](../papers/P-000409.md): selected passages extracted.\n- [B-semiampleness for compact log-smooth Kähler fibrations](../papers/P-000410.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Logarithmic Kodaira dimension and whole-fiber variation](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Logarithmic-Kodaira-dimension-and-whole-fiber-variation-September-26-2026)\n- [The reverse logarithmic Kodaira inequality and additivity](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026)\n- [Projective Hodge lines and ordinary Iitaka subadditivity](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Projective-Hodge-lines-and-ordinary-Iitaka-subadditivity-September-27-2026)\n\nThe family concerns orbifold/logarithmic Iitaka inequalities and b-semiampleness.\n\n## Extracted instruments\n\n- [MI-000640: Preserve Iitaka dimension by integral finite pullback of section rings](../instruments/MI-000640.md)\n- [MI-000641: Descend a globally generated power through the finite Stein norm](../instruments/MI-000641.md)\n\n## Dependencies and antecedents\n\nCodimension-one regularity, characteristic polynomials, Stein factorization, analytic norms and hyperplane avoidance.\n\nClassical norm and section-ring arguments; Stacks Project Norms supplies the algebraic finite-map counterparts.\n\n## Review and formalization scope\n\nRead the complete divisorial section test, finite-pullback proof and analytic semiampleness-descent proof. Two of five manuscripts receive extractions; three companions remain inventory-only. Period positivity, Hodge-line comparison and subadditivity are not certified.\n\nThe scope document and all 245 lines of LogKodairaFiberNegative were read. It targets only the negative-fiber branch of logarithmic additivity for stratum-smooth connected-fiber SNC pairs, with vanishing of every positive-degree log pluriform. The finite-dimension and negative-base branches are outside the target. The target has a sorry body and belongs to an inventory-only companion. No separate solution or Lean build was checked.\n\nThe section-ring argument uses normal projective varieties and rational Cartier divisors. Analytic semiampleness descent uses proper surjectivity, compactness and normality of the base, without finite flatness.\n\n[Batch record](../../batches/B067/README.md)"
+    },
+    {
+      "id": "openai-math-034",
+      "record_type": "family",
+      "title": "Hodge metric growth gaps and arithmetic component counts",
+      "source_family": "034",
+      "source_collection": "openai/math",
+      "batch_id": "B067",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000411",
+        "P-000412"
+      ],
+      "instrument_ids": [
+        "MI-000642",
+        "MI-000643"
+      ],
+      "headline": "The family addresses abundance, uniform log Calabi-Yau indices and effective Iitaka fibrations.",
+      "central_instrument": "An exact-versus-harmonic orthogonality argument forces a quantitative loss in stretched middle-degree Hodge norm growth. Constant-field degrees count geometric components and persist into generic fibers.",
+      "novelty_assessment": "The cards identify classical mechanisms and source-specific quantitative interfaces. No exhaustive novelty assessment or certification of the global headline is claimed.",
+      "formalization_summary": "No Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "The Hodge estimate assumes a smooth semipositive closed form of rank at most half the complex dimension and a specific cohomological annihilation condition. Constant-field statements are in characteristic zero.",
+      "dependencies": "Hodge minimum norms, Lefschetz harmonicity, tensor norm variation, regular field extensions and linear disjointness.",
+      "antecedents": "Classical Hodge theory and constants in function fields. The explicit Hodge-gap constant is a source quantitative formulation; its earliest priority is not established.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-034.md",
+      "body": "# Hodge metric growth gaps and arithmetic component counts\n\n## Source manuscripts and claim\n\n- [Uniform indices for semi-log-canonical log Calabi–Yau pairs](../papers/P-000411.md): selected passages extracted.\n- [Arithmetic Stein-degree bounds for log Calabi–Yau pairs](../papers/P-000412.md): selected passages extracted.\n\nThe following companions are inventoried but have no extraction in this batch:\n\n- [Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026)\n- [Conditional good minimal models for compact Kähler fourfolds](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026)\n- [Log abundance in characteristic zero](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-in-characteristic-zero-September-24-2026)\n- [Minimal metrics and interior injectivity for nef adjoints](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Minimal-metrics-and-interior-injectivity-for-nef-adjoints-September-27-2026)\n- [Fourfold nonvanishing by minimal metrics and moving jets](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fourfold-nonvanishing-by-minimal-metrics-and-moving-jets-September-27-2026)\n- [Lifting sections from the reduced support of an adjoint](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lifting-sections-from-the-reduced-support-of-an-adjoint-September-27-2026)\n- [Schnell fiber spaces and good canonical models](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Schnell-fiber-spaces-and-good-canonical-models-September-24-2026)\n- [Uniform log Iitaka fibrations and bounded moduli denominators](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-log-Iitaka-fibrations-and-bounded-moduli-denominators-October-4-2026)\n- [Uniform Pluricanonical Iitaka Fibrations](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-Pluricanonical-Iitaka-Fibrations-October-3-2026)\n- [Relative denominators and effective systems for log Calabi-Yau fibrations](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-denominators-and-effective-systems-for-log-Calabi-Yau-fibrations-September-27-2026)\n- [Uniform effective log Iitaka fibrations for fourfolds](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-effective-log-Iitaka-fibrations-for-fourfolds-September-26-2026)\n- [Abundance after nonvanishing for compact Kähler fourfolds](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abundance-after-nonvanishing-for-compact-Kahler-fourfolds-September-27-2026)\n\nThe family addresses abundance, uniform log Calabi-Yau indices and effective Iitaka fibrations.\n\n## Extracted instruments\n\n- [MI-000642: Use harmonic-exact orthogonality to force a Hodge norm growth gap](../instruments/MI-000642.md)\n- [MI-000643: Track geometric component counts through the constant field](../instruments/MI-000643.md)\n\n## Dependencies and antecedents\n\nHodge minimum norms, Lefschetz harmonicity, tensor norm variation, regular field extensions and linear disjointness.\n\nClassical Hodge theory and constants in function fields. The explicit Hodge-gap constant is a source quantitative formulation; its earliest priority is not established.\n\n## Review and formalization scope\n\nRead the complete Hodge-gap proof and complete constants lemma with characteristic-zero conventions. Two of fourteen manuscripts receive extractions; twelve remain inventory-only. Uniform rank, index, minimal-model and abundance claims are not audited.\n\nNo Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.\n\nThe Hodge estimate assumes a smooth semipositive closed form of rank at most half the complex dimension and a specific cohomological annihilation condition. Constant-field statements are in characteristic zero.\n\n[Batch record](../../batches/B067/README.md)"
+    },
+    {
+      "id": "openai-math-035",
+      "record_type": "family",
+      "title": "Nef zero restrictions and a rank-one Cartier curvature identity",
+      "source_family": "035",
+      "source_collection": "openai/math",
+      "batch_id": "B067",
+      "subject": "Algebraic and complex geometry",
+      "source_paper_ids": [
+        "P-000413",
+        "P-000414"
+      ],
+      "instrument_ids": [
+        "MI-000644",
+        "MI-000645"
+      ],
+      "headline": "The sources claim numerical-dimension-one abundance for positive-characteristic threefolds.",
+      "central_instrument": "An ample-containing curve argument detects numerical triviality of a nef surface divisor. A cyclic partition expansion computes rank-one p-curvature and converts Cartier-fixed forms into nilpotent connection operators.",
+      "novelty_assessment": "The cards identify classical mechanisms and source-specific quantitative interfaces. No exhaustive novelty assessment or certification of the global headline is claimed.",
+      "formalization_summary": "No Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.",
+      "statement_faithfulness": "Numerical triviality requires nefness. The curvature identity assumes characteristic p and a derivation with p-th iterate zero; multivariable commutation additionally requires closedness.",
+      "dependencies": "Ample linear systems, nonnegative intersection degrees, p-bases, Cartier operator, Leibniz expansion and cyclic partition orbits.",
+      "antecedents": "Classical nef intersection positivity and Cartier descent; Katz records zero-p-curvature descent and Jacobson identities.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-035.md",
+      "body": "# Nef zero restrictions and a rank-one Cartier curvature identity\n\n## Source manuscripts and claim\n\n- [Log abundance in numerical dimension one for threefolds in positive characteristic](../papers/P-000413.md): selected passages extracted.\n- [Abundance in numerical dimension one for terminal threefolds in positive characteristic](../papers/P-000414.md): selected passages extracted.\n\nThe sources claim numerical-dimension-one abundance for positive-characteristic threefolds.\n\n## Extracted instruments\n\n- [MI-000644: Detect numerical triviality from one ample intersection for a nef surface class](../instruments/MI-000644.md)\n- [MI-000645: Compute rank-one p-curvature by cyclic orbits of set partitions](../instruments/MI-000645.md)\n\n## Dependencies and antecedents\n\nAmple linear systems, nonnegative intersection degrees, p-bases, Cartier operator, Leibniz expansion and cyclic partition orbits.\n\nClassical nef intersection positivity and Cartier descent; Katz records zero-p-curvature descent and Jacobson identities.\n\n## Review and formalization scope\n\nRead the complete surface-nef proof and its threefold restriction consequence, and the complete rank-one curvature proof with the retained p-basis assumptions. Both manuscripts receive extractions. Laurent vanishing, formal roots and abundance are not certified.\n\nNo Lean scope document is supplied for this family in the pinned inventory. No formal solution was built.\n\nNumerical triviality requires nefness. The curvature identity assumes characteristic p and a derivation with p-th iterate zero; multivariable commutation additionally requires closedness.\n\n[Batch record](../../batches/B067/README.md)"
     },
     {
       "id": "openai-math-038",
