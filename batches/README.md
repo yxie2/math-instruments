@@ -58,7 +58,9 @@
 
 | [B035](B035/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Rank-counted shears, synthetic FFT layout, sparse matching reductions, block entropy and priority-list compression |
 
-Future rounds use `B036` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
+| [B036](B036/README.md) | 4 new families; 8 instruments; 4 source manuscripts | Affine shadows, tiling stacks, rational snapping, product chains, singular interpolation and kernel saturation |
+
+Future rounds use `B037` and subsequent unused identifiers. Each batch records the source versions and the records it adds or revisits. A batch is an extraction event, not a new copy of the whole catalogue. The [release coverage table](../tables/coverage.md) lists catalogued and pending families.
 
 Use the [batch template](../templates/batch.yaml) and the [contribution guide](../CONTRIBUTING.md). Existing instrument and family identifiers remain stable across batches.
 

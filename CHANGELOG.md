@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B036: eight selected combinatorial and algebraic interfaces from families 155, 164, 166 and 168, with exact-cover decoding and singular-interpolation checks.
+
 - Added B035: eight selected algorithmic mechanisms from families 109, 120, 121 and 124, including exhaustive small-graph reduction checks and fixed-block entropy tests.
 
 - Added B034: eight selected operator-algebra mechanisms from families 294, 295, 299 and 301, with exact mixed-input cochain tests and explicit classical trace-cone attribution.
