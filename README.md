@@ -42,6 +42,8 @@ Read Ying Xie's preprint, [From Extracted Instruments to Mathematical Insight: A
 
 The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) tracks the remaining October-release families.
 
+The [October 16 checkpoint](sources/runs/2026-10-16/README.md) records 44 added extraction batches, three new cross-family patterns, and an aggregate audit of the finite checks and source bindings.
+
 Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
 
 The source is the public [OpenAI mathematics repository](https://github.com/openai/math), pinned to revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` for B001. Its initial release contained 722 manuscripts; the inspected snapshot contains 719 after three withdrawals. This project is maintained independently by Ying Xie.

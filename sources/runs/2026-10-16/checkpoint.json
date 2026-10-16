@@ -1,0 +1,814 @@
+{
+  "snapshot_at_utc": "2026-10-16T13:45:12.774257+00:00",
+  "started_at_utc": "2026-10-16T04:54:25+00:00",
+  "authorized_deadline_utc": "2026-10-16T13:54:25+00:00",
+  "catalogue_commit": "cbca4a96212a483e59800f2e34b7f1b32c19bc32",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "counts": {
+    "instruments": 471,
+    "papers": 254,
+    "families": 211,
+    "patterns": 14
+  },
+  "added": {
+    "extraction_batches": 44,
+    "curation_batches": 1,
+    "instruments": 356,
+    "paper_records": 173,
+    "families": 173,
+    "patterns": 3
+  },
+  "release_families": 372,
+  "pending_families": 161,
+  "release_complete": false,
+  "next_batch": "B047",
+  "next_instrument": "MI-000472",
+  "next_paper": "P-000255",
+  "candidate_next_families": [
+    "339",
+    "344",
+    "345",
+    "349"
+  ],
+  "verification": {
+    "checked_at_utc": "2026-10-16T13:43:51.088345+00:00",
+    "scope": "Finite programs rerun from isolated copies, plus exact source hashes and label-line bindings. No source headline theorem or Lean build certified.",
+    "source_manifests": 44,
+    "unique_source_files": 764,
+    "source_bindings": 911,
+    "fixed_edition_unchanged_since": "cd0f7b4",
+    "python": "3.13.12",
+    "batches": [
+      {
+        "batch": "B002",
+        "exit_code": 0,
+        "seconds": 0.451,
+        "program_sha256": "4133ff24aa6c3b0d1cf765608f52a75fa581a25671a68a4c28afcc5a9cb068bf"
+      },
+      {
+        "batch": "B003",
+        "exit_code": 0,
+        "seconds": 0.509,
+        "program_sha256": "98fece4ab963ba565a18b47064893dff9423b777f0b07fb7b074a5eb7b07886f"
+      },
+      {
+        "batch": "B004",
+        "exit_code": 0,
+        "seconds": 0.574,
+        "program_sha256": "1a8fa6ca95919786a71ac4e94d83f8427079895f94cd953101fb314de1689991"
+      },
+      {
+        "batch": "B005",
+        "exit_code": 0,
+        "seconds": 0.54,
+        "program_sha256": "e6e6972c76868efd0c4d3984c1b703f485f13653b72218b1df82c76e1fc0b891"
+      },
+      {
+        "batch": "B006",
+        "exit_code": 0,
+        "seconds": 8.899,
+        "program_sha256": "bba50c9231c3b7a5c1707672670d09b1940186e7d6e169d6ac7d63da706634dd"
+      },
+      {
+        "batch": "B007",
+        "exit_code": 0,
+        "seconds": 0.885,
+        "program_sha256": "e6a75a8c14a127e6e557d976c700f4c2066b2081f582ddd477b26fb4f6cc827e"
+      },
+      {
+        "batch": "B008",
+        "exit_code": 0,
+        "seconds": 0.776,
+        "program_sha256": "6dc731b0e0a39a892a2384e4b552f4c7b8455b99adb77f882727b90c84a40514"
+      },
+      {
+        "batch": "B009",
+        "exit_code": 0,
+        "seconds": 1.794,
+        "program_sha256": "70408ef6252858ebb970dbc0695304e18578ee9ebe0dd2086dbc4c0ad0fd24ea"
+      },
+      {
+        "batch": "B010",
+        "exit_code": 0,
+        "seconds": 8.03,
+        "program_sha256": "77ec4854aa1a358033eef116fd4f4a60649b2ed19d61845cbdde70f220d41bb1"
+      },
+      {
+        "batch": "B011",
+        "exit_code": 0,
+        "seconds": 1.688,
+        "program_sha256": "53c657cb7f8dfba55600569db2bf89bb99d63d3af06151bedc56e0576740d620"
+      },
+      {
+        "batch": "B012",
+        "exit_code": 0,
+        "seconds": 1.227,
+        "program_sha256": "3be7193329c1fa41abca44844dcfcb0107f2ca294c95b2e0bb9e0541ae06a7d1"
+      },
+      {
+        "batch": "B013",
+        "exit_code": 0,
+        "seconds": 6.263,
+        "program_sha256": "717019d0be73a6c6ea6dd25de8b2cdf46b16886b39aa306cd0c09701a9fc3649"
+      },
+      {
+        "batch": "B014",
+        "exit_code": 0,
+        "seconds": 5.752,
+        "program_sha256": "d74a9d9bc52bc29fea443e00d51199ccbac5e1f3b2809bf9340b809943bd6fd8"
+      },
+      {
+        "batch": "B015",
+        "exit_code": 0,
+        "seconds": 2.543,
+        "program_sha256": "47d3c4587d3cf2c142aeabdb89377de5d542f5a36e9b6b5d2499ebb2a6f56d0d"
+      },
+      {
+        "batch": "B016",
+        "exit_code": 0,
+        "seconds": 1.929,
+        "program_sha256": "f9fa888ae0ff4c5655e4a169f85d77c3d21e10bc1b65af28faa7043166161820"
+      },
+      {
+        "batch": "B017",
+        "exit_code": 0,
+        "seconds": 1.445,
+        "program_sha256": "536a503892b84456c36b2274646c5e18041b1f02d3593bcb035708b08ab37b3f"
+      },
+      {
+        "batch": "B018",
+        "exit_code": 0,
+        "seconds": 2.059,
+        "program_sha256": "a8a1db487388878e31439719a72d4db3ded96c2a26ad78aee25d78ebc4952bd9"
+      },
+      {
+        "batch": "B019",
+        "exit_code": 0,
+        "seconds": 2.334,
+        "program_sha256": "59f57ab0ac85b2db0a870f660ca5b35b2e7fdcf0f98a711371b4bac7917a3110"
+      },
+      {
+        "batch": "B020",
+        "exit_code": 0,
+        "seconds": 11.748,
+        "program_sha256": "c37ceed8387cc089f2183418c3464b9a4ba610fcbdc6a2a1834a7aae76098eb6"
+      },
+      {
+        "batch": "B021",
+        "exit_code": 0,
+        "seconds": 6.385,
+        "program_sha256": "8aaaca7b9e9bcd813817bd922e0b9994fbb1454c250b038933fe56400f9786f8"
+      },
+      {
+        "batch": "B022",
+        "exit_code": 0,
+        "seconds": 5.91,
+        "program_sha256": "83b43ff4ad358dff7803210b94b04b7f41828e3014ae28b39b33b9f56fd89347"
+      },
+      {
+        "batch": "B023",
+        "exit_code": 0,
+        "seconds": 9.89,
+        "program_sha256": "31c0055e0da9285d2b612090bd5d6d60dde464109006e914178e1b9aa3a18927"
+      },
+      {
+        "batch": "B024",
+        "exit_code": 0,
+        "seconds": 5.236,
+        "program_sha256": "0a68e5eed60473ddde34813036c86fdfef75e5dbbb874a1ef59782d036342a7b"
+      },
+      {
+        "batch": "B025",
+        "exit_code": 0,
+        "seconds": 0.474,
+        "program_sha256": "f97e572c5e2033200c1c211240b56ab759cc8f2e5bddfe8c4eb9297f8d8ae9c4"
+      },
+      {
+        "batch": "B026",
+        "exit_code": 0,
+        "seconds": 18.86,
+        "program_sha256": "db2cc00c61b7bd1b487dfb228699b239c7b0ffe336ddc3e1812d974c94adb62a"
+      },
+      {
+        "batch": "B027",
+        "exit_code": 0,
+        "seconds": 6.846,
+        "program_sha256": "c4bc02884c546d48ff84f6641040a6ec28dce6adb7f4e5a13b79a3e08f733d36"
+      },
+      {
+        "batch": "B028",
+        "exit_code": 0,
+        "seconds": 6.078,
+        "program_sha256": "3f8be186eb03f7815eec2ee217f00d20b946b3c1b3ec707a6eb012e2759c2bf7"
+      },
+      {
+        "batch": "B029",
+        "exit_code": 0,
+        "seconds": 5.943,
+        "program_sha256": "4d79bb2a184ca385a5e082cf312550ece47340939804765369a5973f1fef02b8"
+      },
+      {
+        "batch": "B030",
+        "exit_code": 0,
+        "seconds": 3.31,
+        "program_sha256": "655dec167fec29f0f7e800da4662187f6d4e5842f1ceb794089fdea12ea8cbf2"
+      },
+      {
+        "batch": "B031",
+        "exit_code": 0,
+        "seconds": 1.67,
+        "program_sha256": "1f03a6afa6d7e0038c214203301e3bf24290a411346c3821bfd362752f21a63b"
+      },
+      {
+        "batch": "B032",
+        "exit_code": 0,
+        "seconds": 3.982,
+        "program_sha256": "1e9959bf8f3f69a9e1a6c66e8430fd7fd9de562dec238f137fd4e22fe4e04851"
+      },
+      {
+        "batch": "B033",
+        "exit_code": 0,
+        "seconds": 8.212,
+        "program_sha256": "34818a11daa85c73227fc6b9bfb7e62ac2bc1db3deaede8f6ff3428001fb5f5b"
+      },
+      {
+        "batch": "B034",
+        "exit_code": 0,
+        "seconds": 2.362,
+        "program_sha256": "a61ec401e63ebf4ef0bdcd9a46454e31b0b97679f047908df3b9d1c66c343530"
+      },
+      {
+        "batch": "B035",
+        "exit_code": 0,
+        "seconds": 1.988,
+        "program_sha256": "0c264acb723cd36f3e29178a1ce3c995d8397a5e8a1549270f3e48e15b72a0ff"
+      },
+      {
+        "batch": "B036",
+        "exit_code": 0,
+        "seconds": 2.502,
+        "program_sha256": "e18ff244fa288469f6cb962ec1e4ac4c16a2b3acee625f60c58b6da60b65a377"
+      },
+      {
+        "batch": "B037",
+        "exit_code": 0,
+        "seconds": 2.17,
+        "program_sha256": "12310cd5d2205d337ffbda40fb08cff9d1fa6f8678f66faeb4254c1bbde87668"
+      },
+      {
+        "batch": "B038",
+        "exit_code": 0,
+        "seconds": 4.068,
+        "program_sha256": "ae98ff3517ae9a0d6a2ec0676bbda10cc0ff4fd94fd1dcd19ae7fdc4a03edca8"
+      },
+      {
+        "batch": "B039",
+        "exit_code": 0,
+        "seconds": 2.379,
+        "program_sha256": "9156847b4b4baa3eac48d40b10fcf6e79d9480e80e2bed7394d4d9fcbf3b28da"
+      },
+      {
+        "batch": "B040",
+        "exit_code": 0,
+        "seconds": 1.724,
+        "program_sha256": "fe2f12155b91a16091d27fd8f7fc533c0d722de556e47b3a2c06798bb2df93c3"
+      },
+      {
+        "batch": "B041",
+        "exit_code": 0,
+        "seconds": 2.233,
+        "program_sha256": "c93bd70c242247d6ebce8756206e569ef1ea054fc007116f8afc20b3f9947610"
+      },
+      {
+        "batch": "B042",
+        "exit_code": 0,
+        "seconds": 1.41,
+        "program_sha256": "3f261cd6354e0b091ef3c2c29968bf4ec9a1fd9f2cf147ca3e50197da26fb4fd"
+      },
+      {
+        "batch": "B043",
+        "exit_code": 0,
+        "seconds": 3.278,
+        "program_sha256": "3b5fd7b84863dd3146ea6303be6f8ab81f38ca40c7f02807cc0c43fb4e5971c1"
+      },
+      {
+        "batch": "B044",
+        "exit_code": 0,
+        "seconds": 0.72,
+        "program_sha256": "2df17e7a4506680b43642214dd8736a91017e420471ac05151111f667e2961b2"
+      },
+      {
+        "batch": "B046",
+        "exit_code": 0,
+        "seconds": 1.727,
+        "program_sha256": "7ed53ae21d04177800a484fb1e243d93eab234a2652f4d44a405bdec5fb4e5f9"
+      }
+    ],
+    "passed": true,
+    "catalogue_commit": "cbca4a96212a483e59800f2e34b7f1b32c19bc32",
+    "exact_label_regex_check": "passed for all 911 recorded labels"
+  },
+  "published_batches": [
+    {
+      "id": "B002",
+      "pr": "https://github.com/yxie2/math-instruments/pull/2",
+      "commit": "e24d0bcaaef84e055f765ff8d9e87136fea356af",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T05:14:09.375176+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B003",
+      "pr": "https://github.com/yxie2/math-instruments/pull/3",
+      "commit": "2864fef7bf2bcb812880c861d21273fad6897134",
+      "families": 4,
+      "instruments": 10,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T05:25:47.617581+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B004",
+      "pr": "https://github.com/yxie2/math-instruments/pull/4",
+      "commit": "013d267baac997f7c0d9dc4c26653686932ed2e1",
+      "families": 3,
+      "instruments": 7,
+      "papers": 3,
+      "published_at_utc": "2026-10-16T05:40:27.497968+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B005",
+      "pr": "https://github.com/yxie2/math-instruments/pull/5",
+      "commit": "6734825b3535cbc534bdcb6b151c3c47aea141fb",
+      "families": 3,
+      "instruments": 6,
+      "papers": 3,
+      "published_at_utc": "2026-10-16T05:48:48.505924+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B006",
+      "pr": "https://github.com/yxie2/math-instruments/pull/6",
+      "commit": "bcc05099da600f0f1d97805b16283404a4e1aeb8",
+      "families": 3,
+      "instruments": 6,
+      "papers": 3,
+      "published_at_utc": "2026-10-16T05:57:55.964931+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B007",
+      "pr": "https://github.com/yxie2/math-instruments/pull/7",
+      "commit": "3389aa6b65f4926e6fb79cccbbae880b29c558da",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T06:15:19.481578+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B008",
+      "pr": "https://github.com/yxie2/math-instruments/pull/8",
+      "commit": "dc8c84227ce50747e9c40a0c4b5f220085416fbe",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T06:31:44.013577+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B009",
+      "pr": "https://github.com/yxie2/math-instruments/pull/9",
+      "commit": "157bf9c640f5975664710529ea8df23a4aac63f2",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T06:47:41.550481+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B010",
+      "pr": "https://github.com/yxie2/math-instruments/pull/10",
+      "commit": "27b523808ab4ab59979ab4607d7ad8eba2421bf6",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T07:05:54.045924+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B011",
+      "pr": "https://github.com/yxie2/math-instruments/pull/11",
+      "commit": "1a66cd4d25474b540e0ed37461e81ae0e568df22",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T07:18:28.032435+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B012",
+      "pr": "https://github.com/yxie2/math-instruments/pull/12",
+      "commit": "5f895ceba28dbaa41415ae73d9c92ec290c00701",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T07:35:29.025688+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B013",
+      "pr": "https://github.com/yxie2/math-instruments/pull/13",
+      "commit": "dbb0c23b25f8ca27ce408a0875a741d7285a2cc4",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T07:48:49.914921+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B014",
+      "pr": "https://github.com/yxie2/math-instruments/pull/14",
+      "commit": "4478ecb02e22e0820d5d8143c83677e89b5257a7",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T08:06:59.566149+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B015",
+      "pr": "https://github.com/yxie2/math-instruments/pull/15",
+      "commit": "17865c10bf0fe053a5b7ca44d0b0e4bc24558dbc",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T08:20:09.400205+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B016",
+      "pr": "https://github.com/yxie2/math-instruments/pull/16",
+      "commit": "6ab6051bd42101f40a928f7cb95a6380cbeb4069",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T08:37:14.833343+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B017",
+      "pr": "https://github.com/yxie2/math-instruments/pull/17",
+      "commit": "84fd1415209d0fa412d4526dc527eb7985235f02",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T08:49:27.460324+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B018",
+      "pr": "https://github.com/yxie2/math-instruments/pull/18",
+      "commit": "e9ab1c4cbb19a1baeec196a0de913e5ec7debb33",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T09:06:56.717295+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B019",
+      "pr": "https://github.com/yxie2/math-instruments/pull/19",
+      "commit": "c846dfc0487549a15baf7bb037715c79e52f88fb",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T09:18:30.536598+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B020",
+      "pr": "https://github.com/yxie2/math-instruments/pull/20",
+      "commit": "aaddb465ae5219a3b1ce94b1bfe0b35c6f9985a6",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T09:37:19.851302+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B021",
+      "pr": "https://github.com/yxie2/math-instruments/pull/21",
+      "commit": "503ef19409a8a0f9318cc77dede6829c575779e8",
+      "families": 4,
+      "instruments": 9,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T09:48:15.062723+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B022",
+      "pr": "https://github.com/yxie2/math-instruments/pull/22",
+      "commit": "f1bd465b928e1e54c1bff91e688dae6359fcafae",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T10:03:36.960619+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B023",
+      "pr": "https://github.com/yxie2/math-instruments/pull/23",
+      "commit": "614f38f9305a1e3baf8ad176a858e92f6d020dae",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T10:14:52.594739+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B024",
+      "pr": "https://github.com/yxie2/math-instruments/pull/24",
+      "commit": "f31d60059c7c0e8b58a45010e326d274e2a0139e",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T10:29:25.794282+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B025",
+      "pr": "https://github.com/yxie2/math-instruments/pull/25",
+      "commit": "c62583311ee7322850478b64d6c75939f206d4fd",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T10:39:56.663701+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B026",
+      "pr": "https://github.com/yxie2/math-instruments/pull/26",
+      "commit": "6e2d8525d800e621f9e47b3eef3495c744626cc9",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T10:49:58.197452+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B027",
+      "pr": "https://github.com/yxie2/math-instruments/pull/27",
+      "commit": "6260024da02ac11bd7db7c5b05aa3421055d09a0",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:02:24.331168+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B028",
+      "pr": "https://github.com/yxie2/math-instruments/pull/28",
+      "commit": "915a1488e4fe04a29e0f44fd5fda0fe0ea72756e",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:11:05.637707+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B029",
+      "pr": "https://github.com/yxie2/math-instruments/pull/29",
+      "commit": "1549d8e79b1739d5b1499eb4ce2fa7125e881151",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:24:54.540402+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B030",
+      "pr": "https://github.com/yxie2/math-instruments/pull/30",
+      "commit": "64283403dd8695f8d67ee93cd02a0581e16d990d",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:32:20.148908+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B031",
+      "pr": "https://github.com/yxie2/math-instruments/pull/31",
+      "commit": "266cdf6224e24d3f7c605ae286edd72762e24c49",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:39:49.202292+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B032",
+      "pr": "https://github.com/yxie2/math-instruments/pull/32",
+      "commit": "31f5c45447567c969a5b553fa75ec41ef5d56115",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:51:52.094420+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B033",
+      "pr": "https://github.com/yxie2/math-instruments/pull/33",
+      "commit": "7f03e0880e75fb97aba83baa2189cb68f11ab9d0",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T11:59:36.772847+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B034",
+      "pr": "https://github.com/yxie2/math-instruments/pull/34",
+      "commit": "bdbd5142570a71bedf95318d7a5e766afefd0a6f",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:06:43.440622+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B035",
+      "pr": "https://github.com/yxie2/math-instruments/pull/35",
+      "commit": "22154814a4558c07948d5a712acc118376d8a8f3",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:19:03.072479+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B036",
+      "pr": "https://github.com/yxie2/math-instruments/pull/36",
+      "commit": "cc3637e839b21f0d5f6e60ca16c7a6794b8b7d8c",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:27:31.313883+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B037",
+      "pr": "https://github.com/yxie2/math-instruments/pull/37",
+      "commit": "1442a5cd4401253c880512da1b886b50ed2efecb",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:35:04.727585+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B038",
+      "pr": "https://github.com/yxie2/math-instruments/pull/38",
+      "commit": "0ec57f2f113ef75c7b84a27e04c9579ce4eb91f4",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:43:31.284315+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B039",
+      "pr": "https://github.com/yxie2/math-instruments/pull/39",
+      "commit": "086f2c87b47c27134addac735e9a0f7d75d70a22",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T12:52:39.897759+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B040",
+      "pr": "https://github.com/yxie2/math-instruments/pull/40",
+      "commit": "bce4dfe6e2ccbd2b3100b0f4c7acddc1aa133564",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:00:04.120350+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B041",
+      "pr": "https://github.com/yxie2/math-instruments/pull/41",
+      "commit": "399e3cbba37218b46d14c8825a3de3b4244bbb73",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:06:49.089836+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B042",
+      "pr": "https://github.com/yxie2/math-instruments/pull/42",
+      "commit": "3801c6083423d61a52aa621255bafd53a9949a73",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:17:00.575413+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B043",
+      "pr": "https://github.com/yxie2/math-instruments/pull/43",
+      "commit": "0822d6e60c572b6e924e3d2f9589467fd4b51998",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:23:15.407188+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B044",
+      "pr": "https://github.com/yxie2/math-instruments/pull/44",
+      "commit": "0d370ce65ccce9c473fcdacf24afb1c3f06b397a",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:29:45.364709+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B045",
+      "pr": "https://github.com/yxie2/math-instruments/pull/45",
+      "commit": "5f9976ae4f06aae6617074fe929cbb4e07c5e5ec",
+      "families": 0,
+      "instruments": 0,
+      "papers": 0,
+      "published_at_utc": "2026-10-16T13:36:32.289347+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    },
+    {
+      "id": "B046",
+      "pr": "https://github.com/yxie2/math-instruments/pull/46",
+      "commit": "cbca4a96212a483e59800f2e34b7f1b32c19bc32",
+      "families": 4,
+      "instruments": 8,
+      "papers": 4,
+      "published_at_utc": "2026-10-16T13:43:58.873466+00:00",
+      "catalogue_ci": "passed",
+      "successful_check_runs": 2
+    }
+  ],
+  "limitations": [
+    "Selected instruments only; family coverage is not a complete manuscript audit.",
+    "Finite/local checks do not certify source headline theorems.",
+    "No Lean solution was built or kernel-checked.",
+    "Antecedent comparisons are targeted, not exhaustive novelty certification."
+  ]
+}

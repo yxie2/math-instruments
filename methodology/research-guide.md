@@ -38,3 +38,5 @@ For a possible combined project, consider a constrained moment problem with a nu
 The [stationary-descent study](../case-studies/CS-002-stationary-descent/README.md) illustrates a completed exploration starting from extracted mechanisms. The suggestions on this page remain proposed uses.
 
 The [coverage table](../tables/coverage.md) lists unprocessed families. A catalogued family has selected instruments recorded; it does not mean that every manuscript or every proof in that family has been audited.
+
+[Small hypothesis controls](hypothesis-controls.md) give explicit counterexamples to several tempting shortcuts, including replacing spectral order by ordinary order or interchanging finite-order vanishing with completed vanishing.

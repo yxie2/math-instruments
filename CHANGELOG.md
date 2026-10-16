@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Published the October 16 checkpoint through B046, including all merged batch PRs, a 44-program rerun, 764 source hashes and 911 exact label checks. Added explicit hypothesis counterexamples and a resume point for the remaining 161 families.
+
 - Added B046: eight selected interfaces from families 054, 060, 062 and 069, with explicit antecedents and separation of local algebra from global geometry.
 
 - Added B045 curation: three cross-family patterns, a practical research guide, reproducible batch runners and an aggregate B002-B044 source/verification audit. Clarified coverage and evidence scopes.
