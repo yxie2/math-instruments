@@ -1,0 +1,277 @@
+{
+  "batch_id": "B078",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T20:15:29.413755+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BufferedIsing.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BufferedIsing.lean",
+      "sha256": "896555f3cc44c278e06872fd16506d0be5d102753c64159c2f05666ab898a16e",
+      "bytes": 5130
+    },
+    {
+      "path": "lean/ComparatorChallenges/DirectionalWalk.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/DirectionalWalk.lean",
+      "sha256": "8ad4588537c02fac9d123a9ba7fd780e9eda1575b48f674320733fad3938da11",
+      "bytes": 3388
+    },
+    {
+      "path": "lean/ComparatorChallenges/IsingFiniteness.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/IsingFiniteness.lean",
+      "sha256": "dd2c0c85d60f2fcc732b9e15203a0db8c2d019bacde1dd1efbc2cebb79d908ca",
+      "bytes": 2934
+    },
+    {
+      "path": "lean/docs/218.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/218.md",
+      "sha256": "1e56cf817147166594130cac3a34c1f559754f8df664ab950d8967ad3ef04423",
+      "bytes": 1160
+    },
+    {
+      "path": "lean/docs/220.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/220.md",
+      "sha256": "90b55d223fd20468ee5f1d481d3d16b76eb7a54ba2ffa2b160cf35f60980dce3",
+      "bytes": 2241
+    },
+    {
+      "path": "lean/docs/222.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/222.md",
+      "sha256": "3edd641684ef6c65973f830ea2a31d9d33aae077c73a2c60d3e93a527449fc98",
+      "bytes": 2127
+    },
+    {
+      "path": "preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/README.md",
+      "sha256": "b415b10582229033153d7ec6640d641d6916e20f41b87e51c4c53b516efbbe10",
+      "bytes": 644
+    },
+    {
+      "path": "preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex",
+      "sha256": "c212d9fe312dae726d94ab5d37ea04527361bcd0b57f60f5ad55c6a7c337b62a",
+      "bytes": 16949
+    },
+    {
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/README.md",
+      "sha256": "8cf765c4921f21f5a19a1f011ca958083c7ed4f97a7a9410402a74df75795b02",
+      "bytes": 722
+    },
+    {
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex",
+      "sha256": "551202e55d98cba2cdd8b846eda2eb4cdf1ec99a99e385e5ab646f411499d155",
+      "bytes": 28864
+    },
+    {
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/interface.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/interface.tex",
+      "sha256": "9c94f9a5da630782c04bf88f395d17ddfe822a88e1772ef8f4ef304ffd5216e1",
+      "bytes": 37613
+    },
+    {
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/README.md",
+      "sha256": "56e91ac0546208ba84469bb1a6c6acbd61c41fdac6a43564fd724462e4c637a8",
+      "bytes": 585
+    },
+    {
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "sha256": "b767d09b0d6cd7f79a47e2c2ac1873fe58a4a605cccd297e1063d8e8b8f98bf3",
+      "bytes": 9188
+    },
+    {
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/README.md",
+      "sha256": "a4b6efc1bd059f774e9c5331c5da5a5c4a668758cb3c21bf4371b8499b7b4de6",
+      "bytes": 708
+    },
+    {
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2",
+      "bytes": 38151
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000726",
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/interface.tex",
+      "label": "lem:conditional-gluing",
+      "line": 148,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/interface.tex#L148",
+      "sha256": "9c94f9a5da630782c04bf88f395d17ddfe822a88e1772ef8f4ef304ffd5216e1"
+    },
+    {
+      "instrument_id": "MI-000727",
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex",
+      "label": "eq:crossing-weighted-decay",
+      "line": 404,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex#L404",
+      "sha256": "551202e55d98cba2cdd8b846eda2eb4cdf1ec99a99e385e5ab646f411499d155"
+    },
+    {
+      "instrument_id": "MI-000727",
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex",
+      "label": "prop:torus-tests",
+      "line": 472,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex#L472",
+      "sha256": "551202e55d98cba2cdd8b846eda2eb4cdf1ec99a99e385e5ab646f411499d155"
+    },
+    {
+      "instrument_id": "MI-000727",
+      "path": "preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex",
+      "label": "eq:crossing-torus-tv",
+      "line": 486,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026/build/sections/crossings.tex#L486",
+      "sha256": "551202e55d98cba2cdd8b846eda2eb4cdf1ec99a99e385e5ab646f411499d155"
+    },
+    {
+      "instrument_id": "MI-000728",
+      "path": "preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex",
+      "label": "lem:departure-transfer",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex#L28",
+      "sha256": "c212d9fe312dae726d94ab5d37ea04527361bcd0b57f60f5ad55c6a7c337b62a"
+    },
+    {
+      "instrument_id": "MI-000728",
+      "path": "preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex",
+      "label": "eq:departure-transfer",
+      "line": 32,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex#L32",
+      "sha256": "c212d9fe312dae726d94ab5d37ea04527361bcd0b57f60f5ad55c6a7c337b62a"
+    },
+    {
+      "instrument_id": "MI-000729",
+      "path": "preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex",
+      "label": "lem:finite-supremum",
+      "line": 85,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-directional-zero-one-law-under-strict-ellipticity-September-23-2026/build/02-regeneration.tex#L85",
+      "sha256": "c212d9fe312dae726d94ab5d37ea04527361bcd0b57f60f5ad55c6a7c337b62a"
+    },
+    {
+      "instrument_id": "MI-000730",
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "label": "arr:limit",
+      "line": 579,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex#L579",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2"
+    },
+    {
+      "instrument_id": "MI-000731",
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "label": "arr:calculus",
+      "line": 685,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex#L685",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2"
+    },
+    {
+      "instrument_id": "MI-000731",
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "label": "arr:gaussian-log-derivative",
+      "line": 694,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex#L694",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2"
+    },
+    {
+      "instrument_id": "MI-000731",
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "label": "arr:replica-derivative",
+      "line": 704,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex#L704",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2"
+    },
+    {
+      "instrument_id": "MI-000731",
+      "path": "preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex",
+      "label": "arr:partition-moments",
+      "line": 742,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-free-energy-of-the-Ising-random-perceptron-September-24-2026/build/sections/arrays.tex#L742",
+      "sha256": "652a7008c48ae86eec858e722be0eee03c24782bc6f5f81b5995c8244d39c3a2"
+    },
+    {
+      "instrument_id": "MI-000732",
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "label": "lem:finite-conditioning",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L22",
+      "sha256": "b767d09b0d6cd7f79a47e2c2ac1873fe58a4a605cccd297e1063d8e8b8f98bf3"
+    },
+    {
+      "instrument_id": "MI-000732",
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "label": "def:actual-network",
+      "line": 50,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L50",
+      "sha256": "b767d09b0d6cd7f79a47e2c2ac1873fe58a4a605cccd297e1063d8e8b8f98bf3"
+    },
+    {
+      "instrument_id": "MI-000733",
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "label": "lem:loop-law",
+      "line": 86,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L86",
+      "sha256": "b767d09b0d6cd7f79a47e2c2ac1873fe58a4a605cccd297e1063d8e8b8f98bf3"
+    },
+    {
+      "instrument_id": "MI-000733",
+      "path": "preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex",
+      "label": "lem:finite-duality",
+      "line": 119,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Self-dual-random-cluster-interfaces-below-one-September-23-2026/build/sections/00-conventions.tex#L119",
+      "sha256": "b767d09b0d6cd7f79a47e2c2ac1873fe58a4a605cccd297e1063d8e8b8f98bf3"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-218",
+      "extracted_slugs": [
+        "Quenched-SLE3-limits-for-general-weak-random-bond-Ising-models-October-5-2026"
+      ],
+      "inventory_only_slugs": [
+        "Quenched-SLE3-Universality-for-the-Weak-Random-Bond-Ising-Model-October-5-2026",
+        "Logarithmic-Relative-Fluctuations-in-the-Weakly-Disordered-Planar-Ising-Model-October-5-2026",
+        "Conformal-universality-of-bulk-Ising-correlations-under-weak-interactions-September-23-2026",
+        "SLE3-universality-for-weak-finite-range-Ising-interactions-September-23-2026",
+        "Buffered-comparison-and-stopping-band-resolution-in-critical-Ising-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-220",
+      "extracted_slugs": [
+        "A-directional-zero-one-law-under-strict-ellipticity-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "A-directional-zero-one-law-for-finite-range-dependent-random-environments-October-5-2026",
+        "Directional-transience-implies-ballisticity-September-23-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-222",
+      "extracted_slugs": [
+        "The-free-energy-of-the-Ising-random-perceptron-September-24-2026"
+      ],
+      "inventory_only_slugs": [
+        "Microscopic-jamming-in-the-negative-spherical-perceptron-September-24-2026",
+        "The-spherical-perceptron-with-bi-orthogonally-invariant-disorder-September-24-2026",
+        "The-free-energy-of-the-spherical-random-perceptron-September-24-2026"
+      ]
+    },
+    {
+      "family_id": "openai-math-223",
+      "extracted_slugs": [
+        "Self-dual-random-cluster-interfaces-below-one-September-23-2026"
+      ],
+      "inventory_only_slugs": [
+        "Square-lattice-FK-interfaces-and-nested-loops-for-1-leq-q-lt-4-September-23-2026",
+        "Quenched-SLE-Universality-for-Weakly-Disordered-FK-Ising-Interfaces-October-5-2026",
+        "Thermal-FK-Ising-interfaces-and-massive-SLE-October-5-2026",
+        "Natural-Occupation-Measures-for-Critical-Square-Lattice-FK-Interfaces-October-5-2026",
+        "Conformal-Limits-of-Critical-Square-Lattice-Random-Cluster-Interfaces-October-5-2026"
+      ]
+    }
+  ]
+}
