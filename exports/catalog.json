@@ -10209,6 +10209,350 @@
       "updated": "2026-10-16",
       "path": "catalog/instruments/MI-000254.md",
       "body": "# A persistent block event yields a Gaussian-relative entropy deficit\n\n[Family 298](../families/openai-math-298.md) · [Source manuscript](../papers/P-000146.md) · [Batch B018](../../batches/B018/README.md)\n\n## Mathematical content\n\nWrite ||D||_(2,d)^2=sum_i tr_d(D_i^2). Fix p and v>0. Let E_d be the event that ||D_[p]||_(2,d)<=4 sqrt(vp) and some p-block projection decomposition P satisfies rank(P_l)<=2d/p and ||sum_l P_l D_[p] P_l||_(2,d)>=sqrt(p)/4. It is a deterministic Borel event: for each rank list the decomposition space is a compact unitary orbit, and the maximized compressed norm is continuous.\n\nFor independent variance-v GUE coordinates, a unitary delta-net with delta=1/(64 sqrt(v)) has at most (1+2/delta)^(2d^2) points. Replacing a witness by a net point changes the compressed norm by at most 2delta||D_[p]||, so a net point still has norm at least sqrt(p)/8. For a fixed rank list, the projected squared norm has law (v/d^2)Q, where Q is chi-squared with q=p sum_l r_l^2<=2d^2 degrees. Its moment E exp(Q/4)=2^(q/2) gives\n\n$$\\log\\gamma_d(E_d)\\le p\\log(d+1)+d^2\\left[2\\log(1+128\\sqrt v)+\\log2-\\frac p{256v}\\right].$$\n\nIf the bracket is below -8, then gamma_d(E_d)<=exp(-4d^2) for all sufficiently large d. Here p is fixed before d tends to infinity.\n\nFor a retained ensemble A with a block witness of compressed squared norm >p/2 and the same rank cap, adding independent sqrt(t)G has expected compressed noise energy <=2t. If 32t/p<1/8 and the first p second moments tend to vp after noise, Markov bounds give mu_d(E_d)>=1/2 eventually.\n\nMore generally, mu_d(E_d)>=a and gamma_d(E_d)<=exp(-c d^2) imply KL(mu_d||gamma_d)>=ac d^2-log2 by binary data processing. If all n Gaussian reference variances are v_i and E tr_d(Z_i^2)->v_i, the exact Gaussian cross-entropy formula gives\n\n$$\\limsup_d H_d(Z)\\le\\frac12\\sum_i\\log(2\\pi e v_i)-ac.$$\n\nThe source uses a=1/2,c=4 and keeps only one unit of the resulting two-unit deficit. Its structural witness and free-probability parameters are separate inputs.\n\n## Role in the source argument\n\nConverts block structure surviving Gaussian noise into a quantitative deficit for exactly the ensemble in the preceding card.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:matrixblocks](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L15)\n- [eq:event](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L61)\n- [lem:eventprob](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L79)\n\n## Antecedents and comparison\n\nBinary relative-entropy data processing, covering by unitary nets and chi-square moment bounds are classical. The source-specific candidate is their combination with a persistent spectral-block witness and a retained matrix law; no standalone novelty claim is made for the component inequalities.\n\n## Checks and limitations\n\nRead the block transfer, event proof and entropy calculation. Finite checks cover block dimensions, normalized covariance, conjugation Lipschitz bounds, chi-square tail estimates, binary data processing and explicit asymptotic parameter margins.\n\nThe rare-event estimate is asymptotic in d for fixed p; a large but fixed p is required. The existence of the source limiting tuple and its block witness is not proved by these tests. The entropy bound applies to the stated law, not every model with the same limiting moments.\n\n## Possible applications\n\nDeriving entropy deficits from a structural event that remains common under a model but exponentially rare under its Gaussian reference.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000255",
+      "record_type": "instrument",
+      "title": "Vanishing normalized lengths pass through noninjective directed limits",
+      "forms": [
+        "normalized-length",
+        "directed-limit"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-194"
+      ],
+      "source_paper_ids": [
+        "P-000147"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+          "label": "eq:normalized-finite-stage",
+          "line": 93,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L93",
+          "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+        },
+        {
+          "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+          "label": "eq:normalized-supremum",
+          "line": 102,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L102",
+          "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+        },
+        {
+          "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex",
+          "label": "lem:normalized-limit",
+          "line": 115,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L115",
+          "sha256": "38931d0133fe8c44c31a653d543be2584eb958952b46b24add619f20bf26578e"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "established-length-formalism-with-explicit-common-annihilator-use",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000255.md",
+      "body": "# Vanishing normalized lengths pass through noninjective directed limits\n\n[Family 194](../families/openai-math-194.md) · [Source manuscript](../papers/P-000147.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet lambda be a nonnegative additive length on a module category, monotone under submodules and quotients, with lambda(M)=sup_N lambda(N) over finitely generated submodules. Assume all modules under consideration, their direct sums and their colimits remain in this category. In the source this is ensured by one fixed power of the maximal ideal annihilating every module.\n\nDirect sums of zero-length modules have length zero: each finite generating set lies in a finite subsum. Sums and directed colimits of zero-length modules are quotients of such direct sums. For an increasing union M=union_n M_n, finite generation gives lambda(M)=sup_n lambda(M_n).\n\nIf M=colim_n M_n and lambda(M_n)->0, then lambda(M)=0 even when transition maps are not injective. Any finite generating set of N contained in M lifts to one stage, and hence lies in the image of every later stage. Therefore 0<=lambda(N)<=lambda(M_n) for all sufficiently large n. Take the limit and then the supremum over N.\n\nFor a p-power-root tower A_n over a regular local ring of dimension h, the source uses lambda(M_n tensor Lambda)=p^(-nh) length_(A_n)(M_n) on finite-stage presentations, then infima over presentations and suprema over finite submodules. These normalizations are compatible under flat tower extension. They allow nonzero modules of zero length: over the one-variable perfect root tower, quotients by successively smaller positive powers t^(1/p^n) have lengths p^(-n), and their colimit is the nonzero residue-field quotient of length zero.\n\n## Role in the source argument\n\nJustifies passing to infinite auxiliary modules and discarding length-zero errors without asserting actual acyclicity.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:normalized-finite-stage](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L93)\n- [eq:normalized-supremum](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L102)\n- [lem:normalized-limit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/lengths.tex#L115)\n\n## Antecedents and comparison\n\nThis uses the established normalized-length framework, including [Cai-Lee-Ma-Schwede-Tucker, Section 2.2](https://arxiv.org/pdf/2209.04046v4). The elementary finite-generator proof makes the noninjective-limit use explicit; it is not a new length theory.\n\n## Checks and limitations\n\nRead the proof and prior length formulation. Exact finite root-tower monomial quotients check normalization, additivity and decreasing lengths. Finite linear diagrams check that representatives of a finite generating set remain controlled by later images.\n\nThe common annihilating power is needed to stay inside the specified category. Finite truncations do not certify the infinite normalized-length construction or its additivity. Length zero is weaker than module vanishing.\n\n## Possible applications\n\nPassing almost-vanishing homology through noninjective approximation systems with a controlled additive size.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000256",
+      "record_type": "instrument",
+      "title": "A finite flat product map realizes prescribed cohomological roots over every base ring",
+      "forms": [
+        "cohomological-root-design",
+        "base-change"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-194"
+      ],
+      "source_paper_ids": [
+        "P-000147"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex",
+          "label": "lem:complex-root-bundle",
+          "line": 468,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex#L468",
+          "sha256": "0dc85aa420251208fa71d1c584fb7e8a14eb6fe8fe006ce67f57aa398cb0916d"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "established-Eisenbud-Schreyer-construction-with-integral-base-change-details",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000256.md",
+      "body": "# A finite flat product map realizes prescribed cohomological roots over every base ring\n\n[Family 194](../families/openai-math-194.md) · [Source manuscript](../papers/P-000147.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nFor distinct integers r1>...>rn, there is a vector bundle V of rank n! on P^n over Z such that, over every commutative ring A, V(a) has no cohomology if a equals any r_j. Otherwise its only cohomology is a finite free A-module in degree v(a)=#{j:r_j>a}, with Euler characteristic product_j(a-r_j).\n\nUse the multiplication map f:(P1)^n->P^n taking an ordered collection of binary linear forms to their product. It is proper with finite geometric fibers, hence finite. On every field fiber, equal-dimensional smooth source and target give flatness by the Cohen-Macaulay/regular dimension criterion. Fiberwise flatness over Z gives finite flatness globally. A generic characteristic-zero form has n! ordered factorizations, so the constant rank is n!.\n\nSet V=f_* O(-1-r1,...,-1-rn). Finite flatness gives a vector bundle and arbitrary base-change compatibility. The projection formula identifies the cohomology of V(a) with that of O(a-1-r1,...,a-1-rn) on (P1_A)^n. On P1_A, O(m) has free H0 of rank m+1 for m>=0, free H1 of rank -m-1 for m<=-2, and zero cohomology for m=-1. These integral cohomology complexes split, so their tensor product gives the claimed single degree, vanishing roots and product Euler polynomial. For n=0 use the rank-one bundle on P0.\n\nAn additive module length with lambda(A)=mu then gives Euler characteristic mu product_j(a-r_j). This last statement concerns the free cohomology modules; transfer to another geometric space requires the source's additional comparison lemma.\n\n## Role in the source argument\n\nDesigns the cohomological signs and zeros used in the uniform complex estimate.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:complex-root-bundle](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/build/sections/complex.tex#L468)\n\n## Antecedents and comparison\n\nThe construction is expressly adapted from [Eisenbud-Schreyer, Theorem 6.1](https://arxiv.org/pdf/0712.1843v3). The source records integral flatness and arbitrary base change for its auxiliary-ring application. No novelty is claimed for supernatural cohomology bundles themselves.\n\n## Checks and limitations\n\nRead the complete construction. Exact tensor-product cohomology counts check vanishing at every chosen root, the unique cohomological degree and Euler polynomial for varied root lists and twists.\n\nFinite rank calculations do not verify finite flatness of a morphism over every base. The bundle rank n! need not be minimal. The separate exceptional-divisor comparison is not audited here.\n\n## Possible applications\n\nChoosing cohomological degree and Euler-sign patterns uniformly across characteristics.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000257",
+      "record_type": "instrument",
+      "title": "Twisted central-idempotent selection reads a prescribed extinction time",
+      "forms": [
+        "twisted-selection",
+        "central-character"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-198"
+      ],
+      "source_paper_ids": [
+        "P-000148"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+          "label": "eq:selection-functor",
+          "line": 9,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L9",
+          "sha256": "2dbb052ffbf54fd4d553df2ea707806b9bf05ae8477565c7f8fde936f532d948"
+        },
+        {
+          "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex",
+          "label": "eq:selection-iterates",
+          "line": 361,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L361",
+          "sha256": "2dbb052ffbf54fd4d553df2ea707806b9bf05ae8477565c7f8fde936f532d948"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "classical-idempotent-and-pullback-bookkeeping-in-source-selection-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000257.md",
+      "body": "# Twisted central-idempotent selection reads a prescribed extinction time\n\n[Family 198](../families/openai-math-198.md) · [Source manuscript](../papers/P-000148.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet R be a unital algebra, e a central idempotent, and alpha an automorphism. Define H(Y)=alpha^*(eY), meaning that r acts as alpha(r) on the selected subspace. Set e_j=alpha^j(e). Then\n\n$$H^{\\circ j}(Y)\\cong(\\alpha^j)^*(e_0e_1\\cdots e_{j-1}Y).$$\n\nAt stage j, selection by e is the original action of e_j, and the next scalar restriction advances the twist to alpha^(j+1). Centrality makes every product image an R-submodule before twisting. If e_0,...,e_(m-2) act as identity on a nonzero Y_m and e_(m-1) acts as zero, the first m-1 iterates survive and the mth is zero.\n\nThe source obtains e_j=(1+z_j)/2 from shifted central involutions. If a finite quotient has independent central images z_0,...,z_(m-1), choose their character chi with signs +1 through m-2 and -1 at m-1. The character idempotent p_chi=|Z|^(-1) sum_(z in Z) chi(z)^(-1)z is nonzero, and C[F]p_chi supplies Y_m. This finite-dimensional module need not remain a module of the same quotient after twisting: alpha is applied to R, and preserving the quotient kernel is unnecessary.\n\nUnbounded extinction for one fixed finitely presented R additionally requires finite quotients with arbitrarily long independent sign windows. That existence is an input to this extracted mechanism, not a consequence of the elementary iteration identity.\n\n## Role in the source argument\n\nCreates module families with controlled iteration lifetimes before the source transfers them to finite-dimensional homological data.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [eq:selection-functor](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L9)\n- [eq:selection-iterates](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/02-selection-process.tex#L361)\n\n## Antecedents and comparison\n\nRestriction of scalars, commuting central idempotents and finite-group character projectors are classical. The special fixed group and its quotient construction supply the source-specific input and are outside this check.\n\n## Checks and limitations\n\nRead the induction and character-module argument. Exact finite sign algebras check all extinction positions and character idempotents. A quotient-kernel control shows why the twist must be taken over the original algebra.\n\nChoosing a different finite sign algebra for each m does not prove existence of one fixed finitely presented algebra with unbounded extinction. The source requires its separate group construction for that step.\n\n## Possible applications\n\nEncoding a finite stopping time in an iterated module functor while retaining a fixed ambient action.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000258",
+      "record_type": "instrument",
+      "title": "Derived tensor survival appears as separate bar summands in a square-zero extension",
+      "forms": [
+        "derived-bar-decomposition",
+        "projective-dimension"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-198"
+      ],
+      "source_paper_ids": [
+        "P-000148"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+          "label": "prop:bar-splitting",
+          "line": 20,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L20",
+          "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+        },
+        {
+          "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+          "label": "eq:bar-block",
+          "line": 74,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L74",
+          "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+        },
+        {
+          "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex",
+          "label": "cor:pd-detection",
+          "line": 158,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L158",
+          "sha256": "92e5ffec3428f1cdd06ba17d38ade2e0ae002c8481378a527b9245822673bb99"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "established-Minamoto-Yamaura-square-zero-formulas-with-explicit-bar-signs",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000258.md",
+      "body": "# Derived tensor survival appears as separate bar summands in a square-zero extension\n\n[Family 198](../families/openai-math-198.md) · [Source manuscript](../papers/P-000148.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet D be a finite-dimensional algebra over a field k, X a finite-dimensional D-bimodule, and A=D semidirect X the split extension with X^2=0. Inflate a left D-module N through A->D and put F=X tensor_D^L -. Then, with cohomological shifts,\n\n$$D\\otimes_A^{\\mathbf L}N\\simeq\\bigoplus_{r\\ge0}(F^rN)[r].$$\n\nThe ordinary k-bar resolution after tensoring with D has words D tensor A^(tensor n) tensor N in degree -n. Expand each internal A as D plus X. Every nonzero face preserves the number r of X entries: two X entries multiply to zero, and endpoint X actions vanish. This splits the actual complex by r.\n\nBetween its r X entries are r+1 blocks of D entries with lengths i_0,...,i_r. The component lies in degree -r-sum i_j. Multiplying it by (-1)^(sum_j(r-j)i_j) identifies its signs with the shifted multiple two-sided bar complex computing F^rN. Iterated free bar resolutions ensure genuinely derived tensors without flatness of X. Only finitely many summands occur in each total degree; no product completion is used.\n\nIf D has finite global dimension on both sides and N is finite-dimensional, F^tN=0 for some t implies pd_A(N)<infinity. The decomposition makes D tensor_A^L N bounded; tensoring with D/rad(D) preserves boundedness. A minimal A-projective resolution becomes a zero-differential complex after that tensor, and Nakayama forces it to terminate. Conversely, F^rN nonzero gives cohomology in some degree q<=0, hence a nonzero summand in degree q-r<=-r, so pd_A(N)>=r.\n\nReplacing F by ordinary tensor is invalid in general: higher Tor can survive even when the ordinary iterates conceal it.\n\n## Role in the source argument\n\nSeparates finite resolution existence from lower bounds on its length after the source constructs suitable iterates.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [prop:bar-splitting](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L20)\n- [eq:bar-block](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L74)\n- [cor:pd-detection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/build/sections/06-square-zero-and-conclusion.tex#L158)\n\n## Antecedents and comparison\n\nThe source identifies [Minamoto-Yamaura, Corollary 4.11 and Theorem 4.17](https://arxiv.org/pdf/1710.01469v1) as stronger prior formulas and perfectness criteria. This card preserves the direct bar grading, shift and nonflatness details; the projective-dimension mechanism is established.\n\n## Checks and limitations\n\nRead the full bar and minimal-resolution proofs. Exact finite-field bar differentials check d squared zero, preservation of X-count and homology in a nonflat dual-number example. Directed semisimple-base examples check extinction and survival through path counts.\n\nThe nonflat example is used only for the bar formula; its base does not have finite global dimension. A finite computation does not certify the source fixed-algebra counterexample or its simulation theorem.\n\n## Possible applications\n\nDetecting projective-dimension lower bounds and eventual perfectness from an iterated derived tensor functor.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000259",
+      "record_type": "instrument",
+      "title": "Two vanishing couplings remove a simple resolvent pole and permit a fixed complement",
+      "forms": [
+        "resolvent-regularization",
+        "schur-complement"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-201"
+      ],
+      "source_paper_ids": [
+        "P-000149"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+          "label": "lem:killed-pole",
+          "line": 14,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L14",
+          "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+          "label": "eq:killed-pole-limit",
+          "line": 30,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L30",
+          "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+        },
+        {
+          "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex",
+          "label": "eq:fixed-complement-inverse",
+          "line": 38,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L38",
+          "sha256": "0ebdd2b168bc2333e2fa5f0340f421b17bb0434eb0997c217074ef6a18925db5"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "classical-block-inverse-method-with-two-coupling-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000259.md",
+      "body": "# Two vanishing couplings remove a simple resolvent pole and permit a fixed complement\n\n[Family 201](../families/openai-math-201.md) · [Source manuscript](../papers/P-000149.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet M(xi) be a formal matrix series over a field E, with zero a semisimple eigenvalue of M0=M(0). Write Pi for the projection onto ker(M0) along im(M0), and suppose G=Pi M'(0) Pi restricted to the kernel is invertible. Then M(xi)^(-1) exists over E((xi)) with at most a simple pole.\n\nLet compatible series L(xi),B(xi) satisfy L(0)Pi=0 and Pi B(0)=0. If J is zero on ker(M0) and M0^(-1) on im(M0), then\n\n$$\\lim_{\\xi\\to0}L(\\xi)M(\\xi)^{-1}B(\\xi)=L(0)JB(0).$$\n\nHere the limit is the constant term of the regular resulting series. In the kernel/image decomposition, M has blocks xi G+O(xi^2), O(xi), O(xi), and invertible M0|im+O(xi). Block inversion gives a xi^(-1) kernel block, bounded off-diagonal blocks and the limiting inverse on the image. Both kernel couplings are O(xi), so every unwanted contribution vanishes.\n\nOne can use a fixed complementary idempotent instead of Pi. Suppose e^2=e, f=1-e, fM0f is invertible on fV and e:ker(M0)->eV is an isomorphism. Then L0 J B0=L0 f(fM0f)^(-1)f B0. For b=B0u in im(M0), solutions of M0x=b differ by ker(M0); exactly one has ex=0, and L0 has the same value on all of them.\n\nWith only one vanishing coupling, a finite extra constant can survive: M(xi)=xi, L(xi)=xi, B(xi)=1 gives product one although the proposed regular-part expression is zero.\n\n## Role in the source argument\n\nRemoves a resonant intermediate state when transferring a leading free-word coefficient to an auxiliary partner.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:killed-pole](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L14)\n- [eq:killed-pole-limit](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L30)\n- [eq:fixed-complement-inverse](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/transfer.tex#L38)\n\n## Antecedents and comparison\n\nThe proof is standard block inversion plus a choice of solution modulo a kernel. The source-specific value is the precise two-coupling condition and the fixed-complement replacement; historical novelty is not claimed.\n\n## Checks and limitations\n\nRead both conclusions. Finite block matrices, including nonorthogonal spectral decompositions and oblique complements, check the Laurent leading term and convergence. One-sided coupling and degenerate-derivative controls show why the hypotheses matter.\n\nA nonsemisimple zero or a singular compressed derivative can create higher poles. The statement is formal algebraic regularity, not a uniform numerical conditioning estimate near zero.\n\n## Possible applications\n\nRegularizing transfer functions whose input and output both suppress a resonant mode.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000260",
+      "record_type": "instrument",
+      "title": "Fixed-root Schur equations are equivalent to a polynomial identity over truncated free coefficients",
+      "forms": [
+        "noncommutative-schur-equations",
+        "nilpotent-lifting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-201"
+      ],
+      "source_paper_ids": [
+        "P-000149"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex",
+          "label": "lem:schur-polynomial",
+          "line": 207,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex#L207",
+          "sha256": "c8493d32cb1bde96f3bd47aa078cf4f1e1633384199045be560f6da804ce46b1"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "classical-spectral-interpolation-with-explicit-free-ring-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000260.md",
+      "body": "# Fixed-root Schur equations are equivalent to a polynomial identity over truncated free coefficients\n\n[Family 201](../families/openai-math-201.md) · [Source manuscript](../papers/P-000149.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet T_N=E<s1,s2>/(s1,s2)^(N+1), with E central. Suppose W in M_d(T_N) has constant term W0=sum_h lambda_h pi_h, where the lambda_h are distinct scalars and the pi_h are nonzero pairwise orthogonal algebraic idempotents summing to I. Put q(t)=product_h(t-lambda_h), f_h=I-pi_h and C_h=f_h(W-lambda_h I)f_h. Its constant term is invertible on the complement, so C_h has a finite geometric-series inverse there. Define\n\n$$S_h=\\pi_h(W-\\lambda_h I)\\pi_h-\\pi_hWf_hC_h^{-1}f_hW\\pi_h.$$\n\nThen q(W)=0 if and only if every S_h=0, despite noncommutativity of T_N.\n\nIf all Schur equations vanish, K_h u=u-C_h^(-1)f_hWpi_h u is a graph map into ker(W-lambda_h I). The assembled K=sum_h K_h pi_h has constant term I and is invertible; WK=KW0, hence q(W)=0.\n\nConversely, q(W)=0 gives polynomial idempotents P_h=product_(j!=h)(W-lambda_j I)/(lambda_h-lambda_j). All factors commute because they are polynomials in the same W with central coefficients. P_h reduces to pi_h. Normalize its graph by the invertible corner pi_h P_h pi_h; the complementary kernel equation uniquely determines that graph as -C_h^(-1) f_h W pi_h. Its remaining component is S_h=0.\n\nApplying this at every N identifies vanishing Schur equations through word degree N with the same fixed polynomial identity through degree N. Word order must be retained in every inverse and product.\n\n## Role in the source argument\n\nTurns a family of spectral correction conditions into one algebraic relation that can be retained at successive stages.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:schur-polynomial](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/sections/correction.tex#L207)\n\n## Antecedents and comparison\n\nNilpotent-ideal inversion, polynomial spectral projectors and Schur graph coordinates are established algebraic tools. This card records their finite free-algebra combination, without claiming a new spectral theorem.\n\n## Checks and limitations\n\nRead both directions. Exact arithmetic in truncated two-letter free algebras checks graph conjugation, polynomial idempotents and Schur equations, including perturbations that break the relation.\n\nRepeated roots invalidate the denominators and change the statement. Centrality of scalar roots is needed. Commutative polynomial tests alone would miss word-order mistakes.\n\n## Possible applications\n\nMaintaining exact algebraic relations during noncommutative formal deformation.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000261",
+      "record_type": "instrument",
+      "title": "Nested filtration profiles determine the generic intersection exactly",
+      "forms": [
+        "filtered-intersection",
+        "nested-support-matching"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-204"
+      ],
+      "source_paper_ids": [
+        "P-000150"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+          "label": "lem:filtered-intersection",
+          "line": 309,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L309",
+          "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+        },
+        {
+          "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+          "label": "tail:intersection-formula",
+          "line": 319,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L319",
+          "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 1,
+      "subject": "Algebra",
+      "novelty_status": "classical-Hall-matching-formula-in-filtered-positioning-interface",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000261.md",
+      "body": "# Nested filtration profiles determine the generic intersection exactly\n\n[Family 204](../families/openai-math-204.md) · [Source manuscript](../papers/P-000150.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nLet H=F1 contain F2 contain ... contain F_(s+1)=0 be a filtration of a finite-dimensional complex vector space and P its full invertible stabilizer. For A,C contained in H set a_b=dim(A intersect F_b), c_b=dim(C intersect F_b), f_b=dim F_b. On a nonempty Zariski-open subset of P,\n\n$$\\dim(A\\cap gC)=\\max\\left(0,\\max_b(a_b+c_b-f_b)\\right).$$\n\nEvery term is a lower bound by the dimension inequality inside F_b. To attain them, use coordinates adapted to the flag. A basis with profile a has a_b-a_(b+1) generic vectors supported in F_b, and likewise for c. Their allowed supports are nested. Hall's criterion therefore has only the suffix constraints: at level b, a_b+c_b vectors must fit into f_b coordinates. A matching from the deepest level outward leaves exactly the largest positive deficit unmatched.\n\nA matching exhibits a nonzero minor of that size, so generic rank attains the bound. Each separate list remains independent, making the combined rank deficiency exactly the intersection dimension. The stabilizer is transitive on subspaces with a prescribed profile, allowing A to be fixed and only C to move. Nonvanishing of the relevant minor is an open condition.\n\n## Role in the source argument\n\nControls intersections of incoming annihilators and outgoing kernels using all nilpotent filtration levels.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [lem:filtered-intersection](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L309)\n- [tail:intersection-formula](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L319)\n\n## Antecedents and comparison\n\nThe proof explicitly invokes [Hall, Theorem 1](https://doi.org/10.1112/jlms/s1-10.37.26). Generic rank through matching is established; the card preserves the complete filtration profile needed in the source application.\n\n## Checks and limitations\n\nRead the proof. Exhaustive small profiles compare the formula with a maximum matching. Random integer flag-preserving matrices check attained intersection dimensions after specialization to a finite field.\n\nThe ordinary ambient dimension inequality alone misses deeper filtration obstructions. A single finite-field sample can lie outside the open set, so tests seek an attained bound rather than asserting every sample is generic.\n\n## Possible applications\n\nComputing the unavoidable overlap under motions constrained to preserve a flag.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
+    },
+    {
+      "id": "MI-000262",
+      "record_type": "instrument",
+      "title": "A nilpotent centralizer realizes every allowed motion of its kernel filtration",
+      "forms": [
+        "nilpotent-centralizer",
+        "filtered-lifting"
+      ],
+      "form_assignment": "editorial-indexing",
+      "family_ids": [
+        "openai-math-204"
+      ],
+      "source_paper_ids": [
+        "P-000150"
+      ],
+      "source_binding": "exact-manuscript-and-labelled-passages",
+      "source_locations": [
+        {
+          "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex",
+          "label": "tail:centralizer",
+          "line": 360,
+          "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L360",
+          "sha256": "6f0fbfd4d69b55386440c8d32c4eb499ea5d6be8f4e6dae2c1776bbf8bcc6662"
+        }
+      ],
+      "batch_id": "B019",
+      "source_item": 2,
+      "subject": "Algebra",
+      "novelty_status": "established-centralizer-action-with-explicit-Jordan-lift",
+      "review_status": "source-and-selected-argument-checks",
+      "reuse_status": "proposed",
+      "case_study_ids": [],
+      "updated": "2026-10-16",
+      "path": "catalog/instruments/MI-000262.md",
+      "body": "# A nilpotent centralizer realizes every allowed motion of its kernel filtration\n\n[Family 204](../families/openai-math-204.md) · [Source manuscript](../papers/P-000150.md) · [Batch B019](../../batches/B019/README.md)\n\n## Mathematical content\n\nFor nilpotent t on a finite-dimensional complex V, put F_b=ker(t) intersect im(t^(b-1)). The group C(t)={g invertible:gt=tg} induces the full stabilizer of this filtration on ker(t). Its contragredient action likewise induces the full stabilizer of the corresponding filtration on ker(t*) in V*. The group C(t) is irreducible.\n\nWrite V as a direct sum of Jordan modules C[t]/(t^a). A module map from a row of length a to one of length b can send its kernel vector nontrivially to the target kernel vector exactly when a<=b. When a<=b, sending the cyclic generator to c t^(b-a) times the target generator realizes any desired coefficient c. These are precisely the entries permitted by preservation of F_b. Thus every filtration-preserving kernel matrix lifts to a commuting endomorphism.\n\nAn invertible kernel action makes the entire lift invertible. Otherwise its nonzero t-stable kernel would contain a nonzero vector annihilated by t, contradicting invertibility on ker(t). Applying the same reasoning to t* and taking inverse transpose proves the dual assertion.\n\nFinally C(t) is the determinant-nonzero open subset of the vector space End_(C[t])(V), so it is irreducible. Consequently finitely many nonempty open positioning requirements within C(t) can be met simultaneously. This does not assert that arbitrary independent, exact prescribed kernel and dual-kernel maps can both be realized by one element.\n\n## Role in the source argument\n\nMakes generic filtered-positioning bounds available using transformations that commute with the nilpotent operator.\n\n## Source locations\n\nThe statement is extracted from OpenAI's source manuscript at revision `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These links identify the exact labelled passages; the batch source manifest records their hashes.\n\n- [tail:centralizer](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/build/sections/06-zero-tail-completion.tex#L360)\n\n## Antecedents and comparison\n\nThe source identifies this as dual to the quotient-filtration action in [Fresse, Section 3.6](https://arxiv.org/pdf/0706.3656v2). Its proof is elementary Jordan-module lifting; the centralizer action is established.\n\n## Checks and limitations\n\nRead the full proof and the cited quotient-filtration statement. Exact finite-field Jordan models lift random invertible allowed kernel matrices, verify commutation and full invertibility, and check the dual action.\n\nIrreducibility and the open-set conclusion are algebraic-geometric statements over the complex numbers; a small finite field need not meet every nonempty open set. Separate surjectivity on kernel and dual kernel is weaker than joint independent prescription.\n\n## Possible applications\n\nArranging several generic subspace positions while preserving a nilpotent endomorphism.\n\nThese are proposed uses; no subsequent application is recorded for this instrument."
     }
   ],
   "papers": [
@@ -12985,6 +13329,82 @@
       "updated": "2026-10-16",
       "path": "catalog/papers/P-000146.md",
       "body": "# A finite-entropy separation of microstates and nonmicrostates free entropy\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 25, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a bounded self-adjoint finite tuple in a faithful normal tracial von Neumann algebra with both free entropies finite and microstates entropy at least one-half below nonmicrostates entropy.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000253: Retaining one ensemble transfers matrix entropy production to free Fisher information](../instruments/MI-000253.md)\n- [MI-000254: A persistent block event yields a Gaussian-relative entropy deficit](../instruments/MI-000254.md)\n\n## Dependencies and review\n\nGaussian smoothing, normalized de Bruijn identity, noncommutative polynomial derivatives, Fatou, unitary nets, chi-square tails and binary relative entropy.\n\nRead the variational Fisher formula, retained-ensemble flow proof, matrix block transfer and complete rare-event entropy argument. The free cumulant estimates, construction of the limiting tuple and full finite-entropy separation were not audited.\n\nThe scope document and FiniteEntropySeparation.lean target were inspected, including cutoff/limsup microstates entropy and semicircular-noise nonmicrostates entropy. Comparator statements were inspected, not proof builds: no Lean solution was built or kernel-checked. The auxiliary cards are not all separate formalization targets.\n\n[Family context](../families/openai-math-298.md) · [Batch B018](../../batches/B018/README.md)"
+    },
+    {
+      "id": "P-000147",
+      "record_type": "paper",
+      "title": "Lech's multiplicity conjecture",
+      "source_collection": "openai/math",
+      "upstream_slug": "Lechs-multiplicity-conjecture-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-194"
+      ],
+      "batch_id": "B019",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "0841f95f5334d526e35c4876913f4b5ee46b1f784bc27c9bd2511f309b2bae38",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000147.md",
+      "body": "# Lech's multiplicity conjecture\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Lechs-multiplicity-conjecture-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims e(R)<=e(S) for every flat local homomorphism of nonzero Noetherian local rings, without restrictions on dimensions, residue fields or characteristics.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000255: Vanishing normalized lengths pass through noninjective directed limits](../instruments/MI-000255.md)\n- [MI-000256: A finite flat product map realizes prescribed cohomological roots over every base ring](../instruments/MI-000256.md)\n\n## Dependencies and review\n\nAdditive normalized length, finite generation, directed colimits, finite flat maps, cohomology of line bundles on P1 and tensor products of split complexes.\n\nRead the normalized-length definitions and limit lemma, plus the complete integral root-bundle construction. The uniform complex estimate, characteristic reductions, perfectoid inputs and global Lech theorem were not audited.\n\nRead the scope document and DuttaDomain.lean definitions and target. They cover the complete positive-characteristic domain Dutta comparison for short finite-free complexes, including convergence and finite-length Frobenius homology; the full flat-local theorem is outside that target. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.\n\n[Family context](../families/openai-math-194.md) · [Batch B019](../../batches/B019/README.md)"
+    },
+    {
+      "id": "P-000148",
+      "record_type": "paper",
+      "title": "An algebra of infinite little finitistic dimension",
+      "source_collection": "openai/math",
+      "upstream_slug": "An-algebra-of-infinite-little-finitistic-dimension-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-198"
+      ],
+      "batch_id": "B019",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "ebe69f94d9b14a9c67df67d5cd72d56a9c22d6443a1e57b5c360a2ad14280f89",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000148.md",
+      "body": "# An algebra of infinite little finitistic dimension\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a fixed finite-dimensional complex algebra with finite-dimensional modules of finite projective dimension at least 2m-2 for every positive m, and an auxiliary extreme left/right finitistic-dimension asymmetry.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000257: Twisted central-idempotent selection reads a prescribed extinction time](../instruments/MI-000257.md)\n- [MI-000258: Derived tensor survival appears as separate bar summands in a square-zero extension](../instruments/MI-000258.md)\n\n## Dependencies and review\n\nCentral idempotents, scalar restriction, character projections, bar resolutions, derived tensors, minimal projective resolutions and Nakayama.\n\nRead the selection functor and final character-module argument, the full bar decomposition and projective-dimension corollary. The fixed finitely presented group, localization, bimodule rectification and ordinary simulation were not audited.\n\nRead the scope document, LittleFinitistic.lean and FinitisticAsymmetry.lean targets. They assert a fixed complex algebra, unbounded finite module projective dimensions, and left/right asymmetry including injective generation. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.\n\n[Family context](../families/openai-math-198.md) · [Batch B019](../../batches/B019/README.md)"
+    },
+    {
+      "id": "P-000149",
+      "record_type": "paper",
+      "title": "A Counterexample to Kurosh’s Division-Ring Problem",
+      "source_collection": "openai/math",
+      "upstream_slug": "A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026",
+      "source_date": "September 23, 2026",
+      "family_ids": [
+        "openai-math-201"
+      ],
+      "batch_id": "B019",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "f9142100c73c220d70c90b0c37dc5e2e003f5ed023fa52b6cabf3a5cbe133c71",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000149.md",
+      "body": "# A Counterexample to Kurosh’s Division-Ring Problem\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 23, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/paper.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims a countable characteristic-zero division ring algebraic over its actual center, generated as an algebra over that center by two elements, but infinite-dimensional over the center.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000259: Two vanishing couplings remove a simple resolvent pole and permit a fixed complement](../instruments/MI-000259.md)\n- [MI-000260: Fixed-root Schur equations are equivalent to a polynomial identity over truncated free coefficients](../instruments/MI-000260.md)\n\n## Dependencies and review\n\nBlock inversion, formal Laurent series, spectral projections, finite geometric inverses, central polynomial interpolation and free-word truncations.\n\nRead the complete killed-pole and Schur-polynomial proofs. The spectral-response, cyclic-compatibility, eleven-block correction, central division realization and actual-center descent arguments were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\n[Family context](../families/openai-math-201.md) · [Batch B019](../../batches/B019/README.md)"
+    },
+    {
+      "id": "P-000150",
+      "record_type": "paper",
+      "title": "Tensor saturation for even spin groups",
+      "source_collection": "openai/math",
+      "upstream_slug": "Tensor-Saturation-for-Even-Spin-Groups-September-24-2026",
+      "source_version": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "source_url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026",
+      "source_date": "September 24, 2026",
+      "family_ids": [
+        "openai-math-204"
+      ],
+      "batch_id": "B019",
+      "coverage": "selected instruments with exact source locators",
+      "source_readme_sha256": "c4ad3f5b603d13653d7496239d4ee0c9dd8eca0c649377061b8021f3ad1b2656",
+      "updated": "2026-10-16",
+      "path": "catalog/papers/P-000150.md",
+      "body": "# Tensor saturation for even spin groups\n\n## Source and claim\n\n- Author: OpenAI\n- Source date: September 24, 2026\n- [Manuscript directory](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026)\n- [Source PDF](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026.pdf)\n- [Source citation](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/README.md)\n- Pinned revision: `1581d4cbdd69a0faf34b2089614fe2a814316a6a`\n\nThe source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.\n\n## Extracted instruments\n\nThe following cards bind to labelled passages in this manuscript. They are selected extractions, not a claim that every argument in the paper has been reviewed.\n\n- [MI-000261: Nested filtration profiles determine the generic intersection exactly](../instruments/MI-000261.md)\n- [MI-000262: A nilpotent centralizer realizes every allowed motion of its kernel filtration](../instruments/MI-000262.md)\n\n## Dependencies and review\n\nHall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.\n\nRead the complete filtered-intersection and centralizer proofs. Real schedules, integral continuation, simultaneous switches, representation criteria and the full zero-tail construction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\n[Family context](../families/openai-math-204.md) · [Batch B019](../../batches/B019/README.md)"
     }
   ],
   "families": [
@@ -14691,6 +15111,33 @@
       "body": "# Serre’s positivity conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000048](../papers/P-000048.md)\n\n## Family description\n\nSource status as recorded in the direction paper: not formalized new device\n\nFor a commutative Noetherian regular local ring $`R`$ of dimension $`d`$ and nonzero finitely generated $`R`$-modules $`M,N`$ with $`\\ell_R(M\\otimes_R N)<\\infty`$ and $`\\dim_R M+\\dim_R N=d`$, the source claims $`\\chi^R(M,N)=\\sum_{i=0}^d(-1)^i\\ell_R(\\mathrm{Tor}_i^R(M,N))>0`$, without a restriction on characteristic or ramification. The previously open case was ramified mixed characteristic $`V[[x]]/(p-f)`$, $`p\\in\\mathfrak m^2`$, which Bhatt–Hochster–Ma still called “the most tantalizing problem that remains”. Load-bearing external inputs (Cai–Lee–Ma–Schwede–Tucker perfectoidization results, Land–Tamme cdh descent for truncating invariants, Ma’s Frobenius vanishing) were compared with their arXiv statements in the initial extraction.\n\n## Extracted instruments.\n\n- [MI-000065: Supported rational descent](../instruments/MI-000065.md)\n\n- [MI-000066: Rank quotient and supported asymptotic complexes](../instruments/MI-000066.md)\n\n- [MI-000067: Two norm comparisons instead of invariance of individual evaluations](../instruments/MI-000067.md)\n\n## Reused.\n\nSerre’s reduction to prime pairs via Roberts and Gillet–Soulé vanishing; Cohen–Gabber normalization; Faltings normalized length; CLMST perfectoidization in mixed characteristic and perfection plus Monsky and Roberts in characteristic p; Bhatt–Hochster–Ma’s “only $`H_{0}`$ survives” mechanism via a Koszul-polynomial trick.\n\n## Caveats.\n\nThe argument relies on several results from 2022–2026. Further checking should focus on the Verdier-quotient identification $`\\simeq\\mathrm{Perf}(H)`$ and its base change, spectral sequences on idempotent summands that need not lift to chain maps, and the interaction between ultralimits and ordinary limits. A December 2025 AI-generated note had already asserted the prime-quotient form; the paper treats it as a claim rather than an established theorem. The initial extraction retrieved primary sources directly but did not complete fresh searches for this family.\n\n## Recorded assessment\n\n- Novelty: new device\n- Formalization: no\n- Statement coverage: —\n- Dependencies: no (Lech paper cited as related)\n- Antecedents: Suslin–Voevodsky orbit lemma"
     },
     {
+      "id": "openai-math-194",
+      "record_type": "family",
+      "title": "Normalized length limits and bundles with prescribed cohomological roots",
+      "source_family": "194",
+      "source_collection": "openai/math",
+      "batch_id": "B019",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000147"
+      ],
+      "instrument_ids": [
+        "MI-000255",
+        "MI-000256"
+      ],
+      "headline": "The source claims e(R)<=e(S) for every flat local homomorphism of nonzero Noetherian local rings, without restrictions on dimensions, residue fields or characteristics.",
+      "central_instrument": "A supremum-over-finite-submodules length theory controls noninjective limits, while a product-of-projective-lines construction places cohomology in a prescribed degree over every base ring.",
+      "novelty_assessment": "The normalized length formalism is established work of Faltings and successors. The root-bundle construction is explicitly Eisenbud-Schreyer. The extracted source detail is their use over auxiliary non-Noetherian rings with uniform annihilator and base-change bookkeeping; the full multiplicity comparison was not audited.",
+      "formalization_summary": "Read the scope document and DuttaDomain.lean definitions and target. They cover the complete positive-characteristic domain Dutta comparison for short finite-free complexes, including convergence and finite-length Frobenius homology; the full flat-local theorem is outside that target. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.",
+      "statement_faithfulness": "All modules in each limit argument must belong to the same length category, with a common annihilating power. Zero normalized length does not imply the module is zero. Root-bundle cohomology is free over an arbitrary base ring; its extension to the exceptional divisor is a separate source comparison.",
+      "dependencies": "Additive normalized length, finite generation, directed colimits, finite flat maps, cohomology of line bundles on P1 and tensor products of split complexes.",
+      "antecedents": "Faltings normalized length; Cai-Lee-Ma-Schwede-Tucker, Section 2.2; Eisenbud-Schreyer, Betti numbers of graded modules and cohomology of vector bundles, Theorem 6.1.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-194.md",
+      "body": "# Normalized length limits and bundles with prescribed cohomological roots\n\n## Source manuscript and claim\n\n[Lech's multiplicity conjecture](../papers/P-000147.md), by OpenAI, September 23, 2026.\n\nThe source claims e(R)<=e(S) for every flat local homomorphism of nonzero Noetherian local rings, without restrictions on dimensions, residue fields or characteristics.\n\n## Extracted instruments\n\n- [MI-000255: Vanishing normalized lengths pass through noninjective directed limits](../instruments/MI-000255.md)\n- [MI-000256: A finite flat product map realizes prescribed cohomological roots over every base ring](../instruments/MI-000256.md)\n\n## Dependencies and antecedents\n\nAdditive normalized length, finite generation, directed colimits, finite flat maps, cohomology of line bundles on P1 and tensor products of split complexes.\n\nFaltings normalized length; Cai-Lee-Ma-Schwede-Tucker, Section 2.2; Eisenbud-Schreyer, Betti numbers of graded modules and cohomology of vector bundles, Theorem 6.1. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the normalized-length definitions and limit lemma, plus the complete integral root-bundle construction. The uniform complex estimate, characteristic reductions, perfectoid inputs and global Lech theorem were not audited.\n\nRead the scope document and DuttaDomain.lean definitions and target. They cover the complete positive-characteristic domain Dutta comparison for short finite-free complexes, including convergence and finite-length Frobenius homology; the full flat-local theorem is outside that target. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.\n\nAll modules in each limit argument must belong to the same length category, with a common annihilating power. Zero normalized length does not imply the module is zero. Root-bundle cohomology is free over an arbitrary base ring; its extension to the exceptional divisor is a separate source comparison.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/194.md) · [Batch record](../../batches/B019/README.md)"
+    },
+    {
       "id": "openai-math-196",
       "record_type": "family",
       "title": "Counterexample to Kaplansky’s zero-divisor conjecture",
@@ -14755,6 +15202,87 @@
       "map_formalization_summary": "yes",
       "path": "catalog/families/openai-math-197.md",
       "body": "# Counterexample to Kaplansky’s direct-finiteness conjecture\n\n[Family index](../../tables/families.md) · [Batch B001](../../batches/B001/README.md)\n\nThe statements and assessments below report the direction paper’s extraction. They do not certify the source proofs.\n\n## Source manuscripts\n\n- [P-000002](../papers/P-000002.md)\n- [P-000003](../papers/P-000003.md)\n- [P-000004](../papers/P-000004.md)\n- [P-000009](../papers/P-000009.md)\n\n## Family description\n\nSource status as recorded in the direction paper: Lean, 125 files, search certified at $`h \\le 217`$ new criterion\n\nThe construction gives a finite field of characteristic two, a finitely presented group G with odd torsion, and a, b in K\\[G\\] with $`ab=1,\\ ba\\ne1`$. Such a group would be non-sofic by Elek–Szabó, and the construction would also contradict Gottschalk’s surjunctivity conjecture.\n\n## Extracted instruments.\n\n- [MI-000043: The incidence criterion](../instruments/MI-000043.md)\n\n- [MI-000044: Polynomial pairing on a punctured affine space](../instruments/MI-000044.md)\n\n- [MI-000045: Hole trades with random slabs and the local lemma](../instruments/MI-000045.md)\n\n- [MI-000046: Character-twisted HNN packing and the sandwich certificate](../instruments/MI-000046.md)\n\n## Reused.\n\nElek–Szabó for non-soficity; Dykema–Juschenko reduction; HNN embedding; Newton interpolation; Lovász local lemma; Linnik via Xylouris.\n\n## Caveats.\n\nThe construction was not executed at the prescribed scale (q up to $`2^{217}`$, dimension $`\\ge 1200`$); the certificate is algebraic. The Lean statement does not include non-soficity. The repository supplies a formalization for the odd-characteristic companion, but not for the torsion-free companion dated 4 October.\n\n## Recorded assessment\n\n- Novelty: new criterion; parts combination\n- Formalization: files; search terminates at h ≤ 217\n- Statement coverage: yes (non-soficity excluded)\n- Dependencies: type-F corollary only\n- Antecedents: —"
+    },
+    {
+      "id": "openai-math-198",
+      "record_type": "family",
+      "title": "Shifted central selection and derived square-zero extensions",
+      "source_family": "198",
+      "source_collection": "openai/math",
+      "batch_id": "B019",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000148"
+      ],
+      "instrument_ids": [
+        "MI-000257",
+        "MI-000258"
+      ],
+      "headline": "The source claims a fixed finite-dimensional complex algebra with finite-dimensional modules of finite projective dimension at least 2m-2 for every positive m, and an auxiliary extreme left/right finitistic-dimension asymmetry.",
+      "central_instrument": "Iterating a twisted central idempotent reads successive sign constraints. A bar decomposition of a split square-zero extension turns genuinely derived tensor survival into projective-dimension information.",
+      "novelty_assessment": "Central character projections and bar decompositions are established. The square-zero projective-dimension formulas are explicitly prior work of Minamoto-Yamaura. The source-specific finite-presentation, lifting and simulation that would combine them into a fixed counterexample were not audited.",
+      "formalization_summary": "Read the scope document, LittleFinitistic.lean and FinitisticAsymmetry.lean targets. They assert a fixed complex algebra, unbounded finite module projective dimensions, and left/right asymmetry including injective generation. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.",
+      "statement_faithfulness": "The selection algebra is finitely presented, not asserted finite-dimensional at that stage. Twisting need not preserve a finite quotient kernel. Tensor powers in the extension formula are derived; ordinary tensors may miss higher Tor.",
+      "dependencies": "Central idempotents, scalar restriction, character projections, bar resolutions, derived tensors, minimal projective resolutions and Nakayama.",
+      "antecedents": "Classical finite-group character projectors and twisted modules; Minamoto-Yamaura, Homological dimension formulas for trivial extension algebras, Corollary 4.11, Lemma 4.13 and Theorem 4.17.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-198.md",
+      "body": "# Shifted central selection and derived square-zero extensions\n\n## Source manuscript and claim\n\n[An algebra of infinite little finitistic dimension](../papers/P-000148.md), by OpenAI, September 23, 2026.\n\nThe source claims a fixed finite-dimensional complex algebra with finite-dimensional modules of finite projective dimension at least 2m-2 for every positive m, and an auxiliary extreme left/right finitistic-dimension asymmetry.\n\n## Extracted instruments\n\n- [MI-000257: Twisted central-idempotent selection reads a prescribed extinction time](../instruments/MI-000257.md)\n- [MI-000258: Derived tensor survival appears as separate bar summands in a square-zero extension](../instruments/MI-000258.md)\n\n## Dependencies and antecedents\n\nCentral idempotents, scalar restriction, character projections, bar resolutions, derived tensors, minimal projective resolutions and Nakayama.\n\nClassical finite-group character projectors and twisted modules; Minamoto-Yamaura, Homological dimension formulas for trivial extension algebras, Corollary 4.11, Lemma 4.13 and Theorem 4.17. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the selection functor and final character-module argument, the full bar decomposition and projective-dimension corollary. The fixed finitely presented group, localization, bimodule rectification and ordinary simulation were not audited.\n\nRead the scope document, LittleFinitistic.lean and FinitisticAsymmetry.lean targets. They assert a fixed complex algebra, unbounded finite module projective dimensions, and left/right asymmetry including injective generation. These are target statements; no Lean solution was built or kernel-checked. The auxiliary cards are not separately certified formal results.\n\nThe selection algebra is finitely presented, not asserted finite-dimensional at that stage. Twisting need not preserve a finite quotient kernel. Tensor powers in the extension formula are derived; ordinary tensors may miss higher Tor.\n\n[Source formalization scope](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/198.md) · [Batch record](../../batches/B019/README.md)"
+    },
+    {
+      "id": "openai-math-201",
+      "record_type": "family",
+      "title": "Annihilated resolvent poles and fixed-root Schur equations",
+      "source_family": "201",
+      "source_collection": "openai/math",
+      "batch_id": "B019",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000149"
+      ],
+      "instrument_ids": [
+        "MI-000259",
+        "MI-000260"
+      ],
+      "headline": "The source claims a countable characteristic-zero division ring algebraic over its actual center, generated as an algebra over that center by two elements, but infinite-dimensional over the center.",
+      "central_instrument": "Two vanishing couplings remove a simple resolvent pole. Over a truncated free algebra, fixed-root Schur equations are equivalent to one central polynomial identity.",
+      "novelty_assessment": "Schur complements, spectral interpolation and nilpotent-ideal inversion are classical. The source packages them for its noncommutative correction process; the long lifting construction and division-ring conclusion were not audited.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.",
+      "statement_faithfulness": "The zero eigenvalue is semisimple and the derivative compressed to its kernel is invertible. Both couplings must annihilate the kernel at constant order. Fixed roots are distinct central scalars, although the coefficient ring itself is noncommutative.",
+      "dependencies": "Block inversion, formal Laurent series, spectral projections, finite geometric inverses, central polynomial interpolation and free-word truncations.",
+      "antecedents": "Classical Schur-complement inversion and polynomial spectral idempotents. No priority claim is made for these elementary linear-algebra mechanisms.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-201.md",
+      "body": "# Annihilated resolvent poles and fixed-root Schur equations\n\n## Source manuscript and claim\n\n[A Counterexample to Kurosh’s Division-Ring Problem](../papers/P-000149.md), by OpenAI, September 23, 2026.\n\nThe source claims a countable characteristic-zero division ring algebraic over its actual center, generated as an algebra over that center by two elements, but infinite-dimensional over the center.\n\n## Extracted instruments\n\n- [MI-000259: Two vanishing couplings remove a simple resolvent pole and permit a fixed complement](../instruments/MI-000259.md)\n- [MI-000260: Fixed-root Schur equations are equivalent to a polynomial identity over truncated free coefficients](../instruments/MI-000260.md)\n\n## Dependencies and antecedents\n\nBlock inversion, formal Laurent series, spectral projections, finite geometric inverses, central polynomial interpolation and free-word truncations.\n\nClassical Schur-complement inversion and polynomial spectral idempotents. No priority claim is made for these elementary linear-algebra mechanisms. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete killed-pole and Schur-polynomial proofs. The spectral-response, cyclic-compatibility, eleven-block correction, central division realization and actual-center descent arguments were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nThe zero eigenvalue is semisimple and the derivative compressed to its kernel is invertible. Both couplings must annihilate the kernel at constant order. Fixed roots are distinct central scalars, although the coefficient ring itself is noncommutative.\n\n[Batch record](../../batches/B019/README.md)"
+    },
+    {
+      "id": "openai-math-204",
+      "record_type": "family",
+      "title": "Filtered intersection bounds and nilpotent centralizer motion",
+      "source_family": "204",
+      "source_collection": "openai/math",
+      "batch_id": "B019",
+      "subject": "Algebra",
+      "source_paper_ids": [
+        "P-000150"
+      ],
+      "instrument_ids": [
+        "MI-000261",
+        "MI-000262"
+      ],
+      "headline": "The source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.",
+      "central_instrument": "Nested-support matching computes generic intersection dimensions, and the nilpotent centralizer realizes all motions preserving the induced filtration on the kernel.",
+      "novelty_assessment": "The intersection formula is a Hall-matching consequence and the centralizer action is explicitly compared with Fresse. The source-specific application is positioning subspaces in a zero-tail removal argument; the saturation theorem was not audited.",
+      "formalization_summary": "No family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.",
+      "statement_faithfulness": "Generic means on a nonempty Zariski-open subset of the complex filtration stabilizer. The centralizer acts as the full stabilizer on the kernel and separately on the dual kernel; arbitrary independent prescribed motions on both are not asserted simultaneously.",
+      "dependencies": "Hall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.",
+      "antecedents": "Hall, On Representatives of Subsets, Theorem 1; Fresse, Betti numbers of Springer fibers in type A, Section 3.6.",
+      "review_status": "source-and-selected-argument-checks",
+      "updated": "2026-10-16",
+      "path": "catalog/families/openai-math-204.md",
+      "body": "# Filtered intersection bounds and nilpotent centralizer motion\n\n## Source manuscript and claim\n\n[Tensor saturation for even spin groups](../papers/P-000150.md), by OpenAI, September 24, 2026.\n\nThe source claims scale-one tensor saturation for Spin(2n), n>=2, for dominant integral weights whose sum lies in the type-D root lattice, including half-integral spin weights and every positive stretching integer.\n\n## Extracted instruments\n\n- [MI-000261: Nested filtration profiles determine the generic intersection exactly](../instruments/MI-000261.md)\n- [MI-000262: A nilpotent centralizer realizes every allowed motion of its kernel filtration](../instruments/MI-000262.md)\n\n## Dependencies and antecedents\n\nHall matching, generic matrix rank, filtration-adapted bases, nilpotent Jordan modules and irreducible algebraic groups.\n\nHall, On Representatives of Subsets, Theorem 1; Fresse, Betti numbers of Springer fibers in type A, Section 3.6. The instrument cards identify the individual comparisons and their limits.\n\n## Review and formalization scope\n\nRead the complete filtered-intersection and centralizer proofs. Real schedules, integral continuation, simultaneous switches, representation criteria and the full zero-tail construction were not audited.\n\nNo family-specific Lean scope document was listed in the pinned inventory. No Lean proof was certified.\n\nGeneric means on a nonempty Zariski-open subset of the complex filtration stabilizer. The centralizer acts as the full stabilizer on the kernel and separately on the dual kernel; arbitrary independent prescribed motions on both are not asserted simultaneously.\n\n[Batch record](../../batches/B019/README.md)"
     },
     {
       "id": "openai-math-221",

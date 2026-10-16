@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added B019: eight instruments from algebra families 194, 198, 201 and 204, with exact source bindings and eight check groups. The extraction retains noninjective length limits, base change, genuinely derived tensor powers, two-sided pole annihilation, free-word order and filtered centralizer constraints.
+
 - Added B018: nine instruments from operator-algebra families 288, 292, 296 and 298, with exact source bindings and nine finite check groups. The records preserve cyclic-domain lifting, arbitrary tensor-factor unitaries, varying representation dimensions, backward cycle propagation and retention of the same entropy-comparison ensemble.
 
 - Added B017: eight instruments from number-theory families 022, 023, 024 and 025, with exact source bindings and eight finite check groups. The records preserve dependent orbit accounting, squarefree coefficient separation, exceptional preimages, exact phase visits and indexed descent; established concentration and padding methods are credited.
