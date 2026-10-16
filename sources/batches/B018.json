@@ -1,0 +1,336 @@
+{
+  "batch_id": "B018",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T09:05:43.154422+00:00",
+  "scope": "Hashes of cited source passages and inspected metadata/Comparator inputs; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/FactorGeneration.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FactorGeneration.lean",
+      "sha256": "2e6b0087e27aa2814dd212e5957af3b56670ea2ce07ae049a47908ada5581bb5",
+      "bytes": 1738
+    },
+    {
+      "path": "lean/ComparatorChallenges/FiniteEntropySeparation.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FiniteEntropySeparation.lean",
+      "sha256": "2f275332f0842bb846b3e557369f8bdd150d015617a5d14bddef6e7b9362767b",
+      "bytes": 5524
+    },
+    {
+      "path": "lean/ComparatorChallenges/KadisonSimilarity.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/KadisonSimilarity.lean",
+      "sha256": "6f8497039c46225fa8181d0f9955a116fec217d855291bfdb475a5ab326cf944",
+      "bytes": 4475
+    },
+    {
+      "path": "lean/ComparatorChallenges/NuclearUltrapower.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/NuclearUltrapower.lean",
+      "sha256": "8b9f2669322ca4de1a9977e701fc42fc0248511ad0a2998540da0c971d6d2107",
+      "bytes": 9376
+    },
+    {
+      "path": "lean/ComparatorChallenges/RelativeGeneration.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/RelativeGeneration.lean",
+      "sha256": "d8777c8421d1b134d75467b82277d46d4e0ae80cc6d3f8d4909a54abd4da6d70",
+      "bytes": 5992
+    },
+    {
+      "path": "lean/ComparatorChallenges/UniformCommutator.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/UniformCommutator.lean",
+      "sha256": "152688a0c92f3a06a9b9309d6741959dfcbbd53e2d66859d21dd214131288e10",
+      "bytes": 1538
+    },
+    {
+      "path": "lean/docs/288.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/288.md",
+      "sha256": "4090a2ae062ffc80424155a77db140dfda599e439c6ff7031d7360c3c9bf432c",
+      "bytes": 1234
+    },
+    {
+      "path": "lean/docs/292.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/292.md",
+      "sha256": "0c2e1f10e2cd722ad79305b9061aaf85ffdfb013887ce0a60898e04eab8b4674",
+      "bytes": 1016
+    },
+    {
+      "path": "lean/docs/296.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/296.md",
+      "sha256": "aaaf849da96ce5bece74765383abe338a9680488b34df1037bb2317186ed5a10",
+      "bytes": 1391
+    },
+    {
+      "path": "lean/docs/298.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/298.md",
+      "sha256": "59af2fab17f45319cd14542b9ca45bf7baf7decbd6c73f07e4d5b207582e594d",
+      "bytes": 1126
+    },
+    {
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/README.md",
+      "sha256": "f04174144ee47281ba4cddf814e8136282c99c4fa37e4c084f3bbef1aa109358",
+      "bytes": 730
+    },
+    {
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/02-conventions.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/02-conventions.tex",
+      "sha256": "0fc904da59f30a2323a55860ca5f0df8d0c73092cfcc92487fbd2aa424431fd7",
+      "bytes": 8252
+    },
+    {
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex",
+      "sha256": "984b6757922fd036049f4ecdd39d6cf2bda382837ba22622e76dc828d2653347",
+      "bytes": 6079
+    },
+    {
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex",
+      "sha256": "44389ad0027056aba86fe5110b8517f8776e8174e34fca79fb4646bc58248097",
+      "bytes": 9047
+    },
+    {
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/README.md",
+      "sha256": "76ed515a68e5eb8c9fb3afc2b64a5ea641aaa2d99ac4e394cb85002fa2d79af1",
+      "bytes": 665
+    },
+    {
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex",
+      "sha256": "3430077097c7d8fe307f5e2b7e8c63648a9a0e12a661441339cfc8c99cfd1c69",
+      "bytes": 9546
+    },
+    {
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b",
+      "bytes": 15435
+    },
+    {
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/README.md",
+      "sha256": "4cbcf90c41bde66ce63815aa32e78e0803bc97aa408e8a928f88f1b06fca82cc",
+      "bytes": 682
+    },
+    {
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a",
+      "bytes": 14808
+    },
+    {
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/README.md",
+      "sha256": "88ba083a2d303d8daeb9754894e82d2ec6641d74eba82b5bfa65726e344f0e41",
+      "bytes": 680
+    },
+    {
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d",
+      "bytes": 13690
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000246",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "lem:cb-implementation",
+      "line": 145,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L145",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000246",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "eq:intertwining-metric",
+      "line": 174,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L174",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000246",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "eq:metric-blocks",
+      "line": 181,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L181",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000247",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "lem:cyclic-factorization",
+      "line": 209,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L209",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000247",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "lem:cyclic-implementation",
+      "line": 257,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L257",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000247",
+      "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex",
+      "label": "eq:cyclic-column-lifts",
+      "line": 297,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/sections/preliminaries.tex#L297",
+      "sha256": "b651e215d0da5e939111450135193847923a5d573478289be4f9cf40aef0739a"
+    },
+    {
+      "instrument_id": "MI-000248",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex",
+      "label": "lem:square-root-trace",
+      "line": 23,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex#L23",
+      "sha256": "3430077097c7d8fe307f5e2b7e8c63648a9a0e12a661441339cfc8c99cfd1c69"
+    },
+    {
+      "instrument_id": "MI-000248",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex",
+      "label": "lem:weak-mixing-bound",
+      "line": 71,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/nuclear-finiteness.tex#L71",
+      "sha256": "3430077097c7d8fe307f5e2b7e8c63648a9a0e12a661441339cfc8c99cfd1c69"
+    },
+    {
+      "instrument_id": "MI-000249",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "label": "lem:varying-gap",
+      "line": 57,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex#L57",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b"
+    },
+    {
+      "instrument_id": "MI-000249",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "label": "eq:ultraproduct-norm",
+      "line": 78,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex#L78",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b"
+    },
+    {
+      "instrument_id": "MI-000249",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "label": "eq:lift-defects",
+      "line": 38,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex#L38",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b"
+    },
+    {
+      "instrument_id": "MI-000250",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "label": "lem:finite-predecessor-cycle",
+      "line": 325,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex#L325",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b"
+    },
+    {
+      "instrument_id": "MI-000250",
+      "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex",
+      "label": "eq:cycle-periodicity",
+      "line": 346,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/build/ultrapower-contradiction.tex#L346",
+      "sha256": "ee240cc9608363e36e1238db1353d0201d62b6f618a335844d075bf39e5aa21b"
+    },
+    {
+      "instrument_id": "MI-000251",
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "label": "lem:projection-continuity",
+      "line": 63,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex#L63",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d"
+    },
+    {
+      "instrument_id": "MI-000251",
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "label": "eq:projection-vector-lipschitz",
+      "line": 118,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex#L118",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d"
+    },
+    {
+      "instrument_id": "MI-000251",
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "label": "eq:generation-perturbation-size",
+      "line": 160,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex#L160",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d"
+    },
+    {
+      "instrument_id": "MI-000251",
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "label": "eq:generation-correlation",
+      "line": 163,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex#L163",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d"
+    },
+    {
+      "instrument_id": "MI-000252",
+      "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex",
+      "label": "lem:matrix-encoding",
+      "line": 303,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/build/sections/generation.tex#L303",
+      "sha256": "19a74014b332050fe0f62761bbaaf1e8d30222b0ed530c840e5baef2b413226d"
+    },
+    {
+      "instrument_id": "MI-000253",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/02-conventions.tex",
+      "label": "lem:variational",
+      "line": 36,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/02-conventions.tex#L36",
+      "sha256": "0fc904da59f30a2323a55860ca5f0df8d0c73092cfcc92487fbd2aa424431fd7"
+    },
+    {
+      "instrument_id": "MI-000253",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex",
+      "label": "lem:flow",
+      "line": 10,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex#L10",
+      "sha256": "984b6757922fd036049f4ecdd39d6cf2bda382837ba22622e76dc828d2653347"
+    },
+    {
+      "instrument_id": "MI-000253",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex",
+      "label": "eq:matrixibp",
+      "line": 74,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex#L74",
+      "sha256": "984b6757922fd036049f4ecdd39d6cf2bda382837ba22622e76dc828d2653347"
+    },
+    {
+      "instrument_id": "MI-000253",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex",
+      "label": "eq:matrix-free-fisher",
+      "line": 112,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/05-flow.tex#L112",
+      "sha256": "984b6757922fd036049f4ecdd39d6cf2bda382837ba22622e76dc828d2653347"
+    },
+    {
+      "instrument_id": "MI-000254",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex",
+      "label": "eq:matrixblocks",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L15",
+      "sha256": "44389ad0027056aba86fe5110b8517f8776e8174e34fca79fb4646bc58248097"
+    },
+    {
+      "instrument_id": "MI-000254",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex",
+      "label": "eq:event",
+      "line": 61,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L61",
+      "sha256": "44389ad0027056aba86fe5110b8517f8776e8174e34fca79fb4646bc58248097"
+    },
+    {
+      "instrument_id": "MI-000254",
+      "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex",
+      "label": "lem:eventprob",
+      "line": 79,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/build/sections/06-blocks.tex#L79",
+      "sha256": "44389ad0027056aba86fe5110b8517f8776e8174e34fca79fb4646bc58248097"
+    }
+  ]
+}

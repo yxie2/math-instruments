@@ -1,0 +1,81 @@
+{
+  "batch": "B018",
+  "python": "3.13.12",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "checks": {
+    "triangular_metric": {
+      "rectangular_models": 72,
+      "cb_similarity_theorem_tested": false
+    },
+    "cyclic_columns": {
+      "factorizations": 120,
+      "nonfaithful_lift_identities": 72,
+      "noncyclic_rank_control": true
+    },
+    "density_and_gap": {
+      "powers_stormer_models": 192,
+      "partial_trace_models": 240,
+      "invariant_component_subtracted_gap_models": 120,
+      "full_weak_mixing_hypothesis_realized": false
+    },
+    "varying_dimensions": {
+      "positive_spectral_minima": 24,
+      "perturbed_C3_models": 36,
+      "largest_tensor_dimension": 44,
+      "ultrafilter_limit_tested": false
+    },
+    "finite_predecessors": {
+      "cyclic_subset_models": 40896,
+      "admissible_cyclic_sets": 4660,
+      "periodic_character_checks": 23005,
+      "S3_endomorphisms": 10,
+      "S3_admissible_sets": 52,
+      "reducible_pullbacks": 4
+    },
+    "conditional_generation": {
+      "rank_drop_examples": 16,
+      "fixed_amplitude_margins": 90,
+      "Baire_or_factor_perturbation_theorem_tested": false
+    },
+    "matrix_encoding": {
+      "random_and_degenerate_models": 128
+    },
+    "retained_ensemble_flow": {
+      "basis_contractions": 48,
+      "noncommutative_word_derivatives": 192,
+      "exact_Gaussian_normalizations": 54,
+      "uniform_input_entropy_gain": 0.5671949260260811,
+      "integrated_Fisher_gain": 0.567194926026084,
+      "free_limit_tested": false
+    },
+    "structural_event": {
+      "projected_noise_normalizations": 27,
+      "chi_squared_tail_bounds": 36,
+      "unitary_conjugation_bounds": 9,
+      "binary_entropy_models": 256,
+      "explicit_asymptotic_margins": [
+        {
+          "v": 1,
+          "p": 100000,
+          "d": 1000000,
+          "bracket": -380.21222801071673
+        },
+        {
+          "v": 2,
+          "p": 200000,
+          "d": 2000000,
+          "bracket": -379.52362697323497
+        },
+        {
+          "v": 10,
+          "p": 1000000,
+          "d": 10000000,
+          "bracket": -377.92027223324436
+        }
+      ],
+      "source_tuple_existence_tested": false
+    }
+  },
+  "scope": "Finite identities, conditional interfaces and numerical checks; no infinite-dimensional or Lean proof certification."
+}
