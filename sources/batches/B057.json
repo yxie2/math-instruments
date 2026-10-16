@@ -1,0 +1,378 @@
+{
+  "batch_id": "B057",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "checked_at_utc": "2026-10-16T16:53:19.844094+00:00",
+  "scope": "Hashes of extracted passages and explicitly inspected metadata; no Lean proof build.",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/BassTorsionFree.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BassTorsionFree.lean",
+      "sha256": "da6e6d629a1c9c7cc3fcbeee11436437a1ecd9324ac184b95a3b3de7f15da001",
+      "bytes": 12541
+    },
+    {
+      "path": "lean/ComparatorChallenges/BassTrace.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/BassTrace.lean",
+      "sha256": "e52ea8e1f8feb2f39084de0e3102519adb6d975ce07ff1421c2b2f48bdf33f1b",
+      "bytes": 22880
+    },
+    {
+      "path": "lean/ComparatorChallenges/FiniteCongruenceGraph.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FiniteCongruenceGraph.lean",
+      "sha256": "2ee495def2e1228bf13df520f6c66699ec22b2cd3bc1ae7383a30957aae9f967",
+      "bytes": 2930
+    },
+    {
+      "path": "lean/ComparatorChallenges/FoulkesHowe.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/FoulkesHowe.lean",
+      "sha256": "ef2a1c1ff39cc2caf381d5704476288fe35c00d316d02dd0571e3c5590e7df19",
+      "bytes": 1809
+    },
+    {
+      "path": "lean/docs/206.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/206.md",
+      "sha256": "7ec6b952d44f014dc470bfd16f594ac3ef9d07ecc3a396b5e0684194f3a577c1",
+      "bytes": 1071
+    },
+    {
+      "path": "lean/docs/207.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/207.md",
+      "sha256": "6d16602bb8c9bc0e2931d5550f0cedd2b0b71e711955dd129a767a51e893231f",
+      "bytes": 1347
+    },
+    {
+      "path": "lean/docs/210.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/210.md",
+      "sha256": "9b8b9f5be621d2f91791632a668f718f5664624ea3ce1fae7c0187af6aa65ad2",
+      "bytes": 1048
+    },
+    {
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/README.md",
+      "sha256": "cb7a1010728cc9cf0ec26c3de8d6e190ada2c8282cba204841d2feb5fc0c8f72",
+      "bytes": 679
+    },
+    {
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/framework.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/framework.tex",
+      "sha256": "b11f8a77f629ce32aa0c57d380e04b91ef37223f0a25f7d27a2b928bf4c99f1d",
+      "bytes": 24425
+    },
+    {
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex",
+      "sha256": "daf0fc422c2bd8c7afb3676f86d5f03c9500c7090da18dca9f9b27c98254ebc4",
+      "bytes": 26468
+    },
+    {
+      "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/README.md",
+      "sha256": "676c018791a26c95b8bd6dec4264eabf36b3ff290eeaa0f0b254ab59466b90fa",
+      "bytes": 731
+    },
+    {
+      "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex",
+      "sha256": "f9b4cd32646b95f651ea87f5032bb8a8243c7111759c2a8805f7a47f11ed62b0",
+      "bytes": 7377
+    },
+    {
+      "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/README.md",
+      "sha256": "5e3ff2ea2dbfb38f813d4f85066f0100a05285fc3f26beb5ae745885a5f43e19",
+      "bytes": 596
+    },
+    {
+      "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex",
+      "sha256": "1e18d0f64c12b2a4e2bd09100b2a6acca90dc157d27747d2668d9481c62d19b8",
+      "bytes": 4863
+    },
+    {
+      "path": "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/README.md",
+      "sha256": "e27a19b241a7f6977211c7e79ca8ead21cf450993ab6be194032a9a217cef319",
+      "bytes": 671
+    },
+    {
+      "path": "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex",
+      "sha256": "c6f970b20a0bfee402da2e1e8714b9464cfd04548f6db88a1aaf85d9b7e2dea9",
+      "bytes": 37104
+    },
+    {
+      "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/README.md",
+      "sha256": "5a4b848bc17d626f37680a7c2253e3af83ef3e3dee92c1183a35c63ab237bbcf",
+      "bytes": 1605
+    },
+    {
+      "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex",
+      "sha256": "912a69db7319bae79afad44c5a5458cc59e2a7f63ce2b8498fce8b29a5c731e1",
+      "bytes": 5212
+    },
+    {
+      "path": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/README.md",
+      "sha256": "5f5804404f0a914e462893c557cfcb55f00e3a82069bbd714f4ff1a2dd98ff0c",
+      "bytes": 648
+    },
+    {
+      "path": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex",
+      "sha256": "6b4eb1977533b9b1503927a55687c72afd9dc68b05b27b94cf404413195dd2c2",
+      "bytes": 21542
+    },
+    {
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/README.md",
+      "sha256": "6c03293eef1c4977d9e0e019884114a9d82e3ff3db9ea0c8e477f6965a8a0393",
+      "bytes": 801
+    },
+    {
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/07-idempotents.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/07-idempotents.tex",
+      "sha256": "ca72f2ba10b02ded2f9f46ca92ed136708d5c4897b74d2c783ed780d2a5bf318",
+      "bytes": 10622
+    },
+    {
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex",
+      "sha256": "a5f083a3477fe17923c89801536f068932bb554c1abbd38fe33777a9bcc0489c",
+      "bytes": 7749
+    },
+    {
+      "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/README.md",
+      "sha256": "7c238b94ea7d25189ee0c98470fd8eb5ac2108ba4997cb8f8ffba2ff3f16f0f5",
+      "bytes": 596
+    },
+    {
+      "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex",
+      "sha256": "fe411f876406f7d8c871f142f1e3f5b1df5e6debf249c4b619127a2efd7ed5f8",
+      "bytes": 4747
+    }
+  ],
+  "instrument_locators": [
+    {
+      "instrument_id": "MI-000554",
+      "path": "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex",
+      "label": "n:controls",
+      "line": 22,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex#L22",
+      "sha256": "c6f970b20a0bfee402da2e1e8714b9464cfd04548f6db88a1aaf85d9b7e2dea9"
+    },
+    {
+      "instrument_id": "MI-000554",
+      "path": "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex",
+      "label": "n:compression",
+      "line": 64,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/build/sections/counting.tex#L64",
+      "sha256": "c6f970b20a0bfee402da2e1e8714b9464cfd04548f6db88a1aaf85d9b7e2dea9"
+    },
+    {
+      "instrument_id": "MI-000555",
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex",
+      "label": "lat:insertion",
+      "line": 113,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex#L113",
+      "sha256": "daf0fc422c2bd8c7afb3676f86d5f03c9500c7090da18dca9f9b27c98254ebc4"
+    },
+    {
+      "instrument_id": "MI-000555",
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex",
+      "label": "lat:persistent-fence",
+      "line": 158,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/lattices.tex#L158",
+      "sha256": "daf0fc422c2bd8c7afb3676f86d5f03c9500c7090da18dca9f9b27c98254ebc4"
+    },
+    {
+      "instrument_id": "MI-000555",
+      "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/framework.tex",
+      "label": "frm:normal-test",
+      "line": 26,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/build/sections/framework.tex#L26",
+      "sha256": "b11f8a77f629ce32aa0c57d380e04b91ef37223f0a25f7d27a2b928bf4c99f1d"
+    },
+    {
+      "instrument_id": "MI-000556",
+      "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex",
+      "label": "red:trace",
+      "line": 17,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex#L17",
+      "sha256": "fe411f876406f7d8c871f142f1e3f5b1df5e6debf249c4b619127a2efd7ed5f8"
+    },
+    {
+      "instrument_id": "MI-000556",
+      "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex",
+      "label": "red:reduction",
+      "line": 45,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex#L45",
+      "sha256": "fe411f876406f7d8c871f142f1e3f5b1df5e6debf249c4b619127a2efd7ed5f8"
+    },
+    {
+      "instrument_id": "MI-000556",
+      "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex",
+      "label": "red:exponential",
+      "line": 49,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/build/sections/02-reduction.tex#L49",
+      "sha256": "fe411f876406f7d8c871f142f1e3f5b1df5e6debf249c4b619127a2efd7ed5f8"
+    },
+    {
+      "instrument_id": "MI-000557",
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex",
+      "label": "lem:beta",
+      "line": 13,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex#L13",
+      "sha256": "a5f083a3477fe17923c89801536f068932bb554c1abbd38fe33777a9bcc0489c"
+    },
+    {
+      "instrument_id": "MI-000557",
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex",
+      "label": "eq:pfaffian-rotation",
+      "line": 109,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex#L109",
+      "sha256": "a5f083a3477fe17923c89801536f068932bb554c1abbd38fe33777a9bcc0489c"
+    },
+    {
+      "instrument_id": "MI-000557",
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex",
+      "label": "prop:detector",
+      "line": 141,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/08-detector.tex#L141",
+      "sha256": "a5f083a3477fe17923c89801536f068932bb554c1abbd38fe33777a9bcc0489c"
+    },
+    {
+      "instrument_id": "MI-000557",
+      "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/07-idempotents.tex",
+      "label": "lem:path-identities",
+      "line": 128,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/build/sections/07-idempotents.tex#L128",
+      "sha256": "ca72f2ba10b02ded2f9f46ca92ed136708d5c4897b74d2c783ed780d2a5bf318"
+    },
+    {
+      "instrument_id": "MI-000558",
+      "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex",
+      "label": "eq:mochizuki-chain-matrices",
+      "line": 44,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex#L44",
+      "sha256": "f9b4cd32646b95f651ea87f5032bb8a8243c7111759c2a8805f7a47f11ed62b0"
+    },
+    {
+      "instrument_id": "MI-000558",
+      "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex",
+      "label": "eq:mochizuki-matrix-composition",
+      "line": 53,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex#L53",
+      "sha256": "f9b4cd32646b95f651ea87f5032bb8a8243c7111759c2a8805f7a47f11ed62b0"
+    },
+    {
+      "instrument_id": "MI-000558",
+      "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex",
+      "label": "lem:triangular-naturality-failure",
+      "line": 88,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/build/source/sections/claimed-vanishing.tex#L88",
+      "sha256": "f9b4cd32646b95f651ea87f5032bb8a8243c7111759c2a8805f7a47f11ed62b0"
+    },
+    {
+      "instrument_id": "MI-000559",
+      "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex",
+      "label": "lem:model",
+      "line": 12,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex#L12",
+      "sha256": "1e18d0f64c12b2a4e2bd09100b2a6acca90dc157d27747d2668d9481c62d19b8"
+    },
+    {
+      "instrument_id": "MI-000559",
+      "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex",
+      "label": "eq:divisor",
+      "line": 23,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex#L23",
+      "sha256": "1e18d0f64c12b2a4e2bd09100b2a6acca90dc157d27747d2668d9481c62d19b8"
+    },
+    {
+      "instrument_id": "MI-000559",
+      "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex",
+      "label": "eq:norm-t",
+      "line": 28,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/build/sections/model.tex#L28",
+      "sha256": "1e18d0f64c12b2a4e2bd09100b2a6acca90dc157d27747d2668d9481c62d19b8"
+    },
+    {
+      "instrument_id": "MI-000560",
+      "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex",
+      "label": "lem:sumset",
+      "line": 15,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex#L15",
+      "sha256": "912a69db7319bae79afad44c5a5458cc59e2a7f63ce2b8498fce8b29a5c731e1"
+    },
+    {
+      "instrument_id": "MI-000560",
+      "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex",
+      "label": "prop:power",
+      "line": 70,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex#L70",
+      "sha256": "912a69db7319bae79afad44c5a5458cc59e2a7f63ce2b8498fce8b29a5c731e1"
+    },
+    {
+      "instrument_id": "MI-000560",
+      "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex",
+      "label": "eq:power",
+      "line": 78,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/sections/lower.tex#L78",
+      "sha256": "912a69db7319bae79afad44c5a5458cc59e2a7f63ce2b8498fce8b29a5c731e1"
+    },
+    {
+      "instrument_id": "MI-000561",
+      "path": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex",
+      "label": "lem:shift",
+      "line": 260,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex#L260",
+      "sha256": "6b4eb1977533b9b1503927a55687c72afd9dc68b05b27b94cf404413195dd2c2"
+    },
+    {
+      "instrument_id": "MI-000561",
+      "path": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex",
+      "label": "eq:norm",
+      "line": 286,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex#L286",
+      "sha256": "6b4eb1977533b9b1503927a55687c72afd9dc68b05b27b94cf404413195dd2c2"
+    }
+  ],
+  "manuscript_coverage": [
+    {
+      "family_id": "openai-math-206",
+      "extracted_slugs": [
+        "Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026",
+        "A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-207",
+      "extracted_slugs": [
+        "The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026",
+        "The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-209",
+      "extracted_slugs": [
+        "An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026",
+        "An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026"
+      ],
+      "inventory_only_slugs": []
+    },
+    {
+      "family_id": "openai-math-210",
+      "extracted_slugs": [
+        "Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026",
+        "Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026"
+      ],
+      "inventory_only_slugs": []
+    }
+  ]
+}

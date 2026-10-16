@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "elapsed_seconds": 2.873,
+  "checks": {
+    "compression": {
+      "nonabelian_tuple_models": 120,
+      "pair_corrections": 800,
+      "base_group": "S3; one or two repeated natural copies; n=7,8,11"
+    },
+    "private_insertions": {
+      "private_insertions": 54,
+      "persistent_fence_stages": 35
+    },
+    "idempotent_repair": {
+      "models": 16,
+      "maximum_idempotence_residual": 7.054901954579193e-16,
+      "maximum_class_trace_error": 4.440892098500626e-16,
+      "maximum_series_tail_bound": 1.9379422968741037e-24,
+      "scope": "Finite S3 group algebra with exponential weights; infinite-group convergence uses the analytic argument."
+    },
+    "pfaffian_descent": {
+      "skew_matrix_models": 32,
+      "maximum_pfaffian_size": 8,
+      "checks": [
+        "lift shifts",
+        "cocycle deletion",
+        "twisted cyclic rotation",
+        "repeated projected vertices"
+      ],
+      "scope": "Algebraic identities only; no sparse-cycle vanishing theorem is tested."
+    },
+    "mixed_naturality": {
+      "actual_commuting_squares": 2,
+      "projected_commutator": "g != 0",
+      "local_model": "Q[g] localized at (g); all four maps are isomorphisms",
+      "scope": "Failure of the specified strict functor assignment, not a disproof of its intended K-theory conclusion."
+    },
+    "residue_norm_detector": {
+      "frobenius_extension_degrees": 10,
+      "special_fiber_polynomial": "t^5-t+1 over F5",
+      "uniformizer_norm": "pi",
+      "ambient_linear_term": "-pi",
+      "scope": "Polynomial, residue-degree and norm data; no algebraic K-theory class is computed."
+    },
+    "sumsets_and_powers": {
+      "sumset_bounds": 160,
+      "polynomial_products_with_distinct_leading_values": 54
+    },
+    "differential_injectivity": {
+      "bihomogeneous_spaces": 57,
+      "injective_positive_weight_spaces": 24,
+      "controls": [
+        "nonzero kernel at equal degrees",
+        "characteristic-five derivative failure"
+      ]
+    }
+  },
+  "scope": "Selected finite arguments only; no headline theorem or infinite K-theory computation is certified."
+}
