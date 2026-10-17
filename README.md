@@ -44,6 +44,12 @@ Can an instrument from a depth-three circuit proof help at every fixed depth? [C
 
 Ying Xie's preprint, [From Signed Restrictions to Lower Bounds at Every Fixed Depth](https://zenodo.org/records/23429046), supplies the theorem, proofs and an explicit sufficient length threshold. The case study explains which ingredients come from the source and what the application adds.
 
+## A use case: quantum decoding
+
+Can errors on smaller quantum signal alphabets certify the error for the full alphabet? [CS-003: Quantum decoding and sharp subset bounds](case-studies/CS-003-quantum-subset/README.md) follows MI-000329 and MI-000787 from partial differential equations and geometry into quantum state discrimination. A constrained spectral calculation and exact polynomial certificates support two parts of the investigation; additional matrix arguments establish sharp subset bounds for mixed states under explicit assumptions.
+
+Ying Xie's preprint, [From Quantum Decoding to Sharp Subset Bounds: A Use Case for Extracted Mathematical Instruments](https://zenodo.org/records/23441704), supplies the proofs, an exact certificate for a restricted four-signal family and a noisy qutrit decoding example. It demonstrates cross-domain reuse while leaving the unrestricted sharp mixed-state subset problem open.
+
 ## Extraction releases
 
 The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) now accounts for **all 372 October-release families**, with selected instruments from each family. The catalogue contains **799 instruments and 526 manuscript records**; this does not mean all 719 release manuscripts received a complete extraction or proof review.
