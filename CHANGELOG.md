@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added CS-003, the quantum-decoding use case, with its Zenodo preprint and DOI (10.5281/zenodo.23441704), verified PDF hash, theorem assumptions and cross-domain source attribution. Linked MI-000329 and MI-000787 to the study, updated their reuse status and introduced the third case on the front page.
+
 - Published the CS-001 signed-restriction use case with its Zenodo preprint and DOI (10.5281/zenodo.23429046), theorem summary and source attribution. Updated MI-000083's reuse status and added a front-page introduction alongside the stationary-descent study.
 
 - Completed selected extraction coverage of all 372 pinned release families: 799 instruments and 526 manuscript records. Published the B047-B086 completion checkpoint, exact coverage audit and fresh 84-program finite verification audit.
