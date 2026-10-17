@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Published the CS-001 signed-restriction use case with its Zenodo preprint and DOI (10.5281/zenodo.23429046), theorem summary and source attribution. Updated MI-000083's reuse status and added a front-page introduction alongside the stationary-descent study.
+
 - Completed selected extraction coverage of all 372 pinned release families: 799 instruments and 526 manuscript records. Published the B047-B086 completion checkpoint, exact coverage audit and fresh 84-program finite verification audit.
 
 - Added B086: 10 selected instruments from 5 families and 5 manuscripts. Final five families: collision geometry, pattern centering, harmonic jet frames and collapsed-stratum composition. Exact source bindings, targeted primary comparisons and scoped finite checks accompany the records.

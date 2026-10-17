@@ -38,6 +38,12 @@ How can a stationary process move downward on almost every step, and how much de
 
 Read Ying Xie's preprint, [From Extracted Instruments to Mathematical Insight: A Case Study in Stationary Descent](https://zenodo.org/records/23408425), for the exploration, proofs, physical interpretation and comparison with earlier work. It illustrates how researchers can select a mechanism from the catalogue, adapt the question and investigate the resulting mathematics; historical priority of the finite formula remains unresolved.
 
+## A use case: signed restrictions
+
+Can an instrument from a depth-three circuit proof help at every fixed depth? [CS-001: Signed restriction and fixed-depth circuit lower bounds](case-studies/CS-001-signed-restriction/README.md) follows MI-000083 from family 112 into this question. The signed restriction estimate remains useful when earlier restrictions produce CNFs with many clauses. Adaptive averaging and quantitative sparsification extend the argument to the same polynomial-time language at every fixed depth, with a logarithmic improvement in the lower-bound exponent.
+
+Ying Xie's preprint, [From Signed Restrictions to Lower Bounds at Every Fixed Depth](https://zenodo.org/records/23429046), supplies the theorem, proofs and an explicit sufficient length threshold. The case study explains which ingredients come from the source and what the application adds.
+
 ## Extraction releases
 
 The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) now accounts for **all 372 October-release families**, with selected instruments from each family. The catalogue contains **799 instruments and 526 manuscript records**; this does not mean all 719 release manuscripts received a complete extraction or proof review.
