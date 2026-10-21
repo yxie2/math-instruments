@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: Please cite the direction paper for the research approach, and the repository
-  release or commit for the catalogue version used. Cite the original source manuscripts
-  for their mathematical results.
+message: Please cite the Phase I direction paper for instrument extraction or the Phase II
+  direction paper for reusable reasoning. Cite the repository release or commit for the
+  catalog version used and the original source manuscripts for their mathematical results.
 type: dataset
 title: 'Math Instruments: Extraction, Curation, and Applications'
 authors:
@@ -21,3 +21,13 @@ preferred-citation:
   year: 2026
   url: https://zenodo.org/records/23319145
   notes: Preprint
+references:
+- type: article
+  authors:
+  - family-names: Xie
+    given-names: Ying
+  title: 'From Mathematical Instruments to Reusable Reasoning: A Second Phase of Extraction
+    from AI-Generated Mathematics'
+  year: 2026
+  url: https://zenodo.org/records/23523260
+  notes: Second direction paper (Phase II); preprint

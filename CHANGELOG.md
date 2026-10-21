@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added the second direction paper, *From Mathematical Instruments to Reusable Reasoning*, with its Zenodo record (23523260), a Phase II overview, front-page links to both direction papers and citation metadata. The overview distinguishes the reported graph extraction and retrospective studies from proposed hypothesis suggestions and the separate data/software release.
+
 - Added CS-003, the quantum-decoding use case, with its Zenodo preprint and DOI (10.5281/zenodo.23441704), verified PDF hash, theorem assumptions and cross-domain source attribution. Linked MI-000329 and MI-000787 to the study, updated their reuse status and introduced the third case on the front page.
 
 - Published the CS-001 signed-restriction use case with its Zenodo preprint and DOI (10.5281/zenodo.23429046), theorem summary and source attribution. Updated MI-000083's reuse status and added a front-page introduction alongside the stationary-descent study.
