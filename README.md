@@ -6,9 +6,19 @@ A growing collection of mathematical instruments extracted from OpenAI’s resea
 
 The aim is to identify new lemmas, constructions, inequalities, objects, structures and proof mechanisms introduced in the source arguments. Extraction comes first; validity, novelty and possible reuse are then subjects for further study. The structured descriptions also give readers a route into the source papers.
 
-## Direction paper
+## Direction papers
+
+**Phase I: Mathematical instruments**
 
 **Ying Xie — [What the Machine Invented: Mining New Mathematical Instruments from OpenAI's October 2026 Release of AI-Generated Mathematics](https://zenodo.org/records/23319145)**. Preprint, 2026.
+
+Identifies reusable mathematical devices and recurring proof mechanisms in the source collection.
+
+**Phase II: Reusable reasoning**
+
+**Ying Xie — [From Mathematical Instruments to Reusable Reasoning: A Second Phase of Extraction from AI-Generated Mathematics](https://zenodo.org/records/23523260)**. Preprint, 2026.
+
+Reconstructs source-linked reasoning graphs with claims, joint-premise inferences, scope conditions and evidence. The six-paper study includes four OpenAI papers and two retrospective application papers by the author. Multiscale visualization connects the collection, individual arguments, inference steps and source passages. [Read about the second direction paper](direction/phase-ii-reusable-reasoning.md).
 
 [Research direction](direction/README.md) · [Extraction method](methodology/extraction.md) · [How to cite](CITATION.cff)
 
@@ -52,11 +62,11 @@ Ying Xie's preprint, [From Quantum Decoding to Sharp Subset Bounds: A Use Case f
 
 ## Extraction releases
 
-The catalogue continues beyond the direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) now accounts for **all 372 October-release families**, with selected instruments from each family. The catalogue contains **799 instruments and 526 manuscript records**; this does not mean all 719 release manuscripts received a complete extraction or proof review.
+The catalogue continues beyond the first direction paper through [numbered extraction batches](batches/README.md), covering quantum information, geometric inequalities, dimension reduction and analytic mechanisms. Each new batch records exact source locations, targeted antecedent comparisons and the scope of its checks. The [coverage table](tables/coverage.md) now accounts for **all 372 October-release families**, with selected instruments from each family. The catalogue contains **799 instruments and 526 manuscript records**; this does not mean all 719 release manuscripts received a complete extraction or proof review.
 
 The [completion checkpoint and audit](sources/runs/2026-10-16-completion/README.md) record the final 161 families, 328 added instruments and 40 merged batches. All 84 finite verification programs passed a fresh run; the provenance audit matched 1,618 source files and 1,586 label bindings. The [earlier October 16 checkpoint](sources/runs/2026-10-16/README.md) remains available as a historical record.
 
-Batch B001 imports the direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
+Batch B001 imports the first direction manuscript’s 38 family entries and all 115 instrument descriptions. The 81 source-paper records include related and companion manuscripts; 81 is a source-coverage count, not a count of separately extracted papers. The initial maps and all four manuscript tables are retained in the [fixed import edition](editions/zenodo-23319145/README.md).
 
 The source is the public [OpenAI mathematics repository](https://github.com/openai/math), pinned to revision `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` for B001. Its initial release contained 722 manuscripts; the inspected snapshot contains 719 after three withdrawals. This project is maintained independently by Ying Xie.
 
@@ -74,7 +84,7 @@ python scripts/validate_catalog.py
 
 ## Citation and attribution
 
-Cite the [direction paper](https://zenodo.org/records/23319145) for this research approach, identify the repository release or commit when using its curated records, and cite the linked source manuscripts for their mathematical contributions. Source references and hashes are recorded under [sources/](sources/README.md).
+Cite the [Phase I direction paper](https://zenodo.org/records/23319145) for instrument extraction and the [Phase II direction paper](https://zenodo.org/records/23523260) for reusable reasoning graphs and the proposed research methodology. Identify the repository release or commit when using its curated records, and cite the linked source manuscripts for their mathematical contributions. Source references and hashes are recorded under [sources/](sources/README.md).
 
 Maintainer: **Ying Xie**, Kennesaw State University — yxie2@kennesaw.edu.
 
