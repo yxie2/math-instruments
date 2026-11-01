@@ -20,6 +20,12 @@ Identifies reusable mathematical devices and recurring proof mechanisms in the s
 
 Reconstructs source-linked reasoning graphs with claims, joint-premise inferences, scope conditions and evidence. The six-paper study includes four OpenAI papers and two retrospective application papers by the author. Multiscale visualization connects the collection, individual arguments, inference steps and source passages. [Read about the second direction paper](direction/phase-ii-reusable-reasoning.md).
 
+**Phase III: Recursive reasoning exploration**
+
+**Ying Xie — [Recursive Reasoning Exploration: Mathematical Research through Evolving Reasoning Graphs](https://zenodo.org/records/23849757)**. Case study: *An Exact Certificate-Degree Theorem for Two-Term Tensor Decompositions*. Preprint, 2026.
+
+Develops Recursive Reasoning Exploration (RRE), in which research targets, arguments, checks and revisions extend the reasoning graph and inform subsequent exploration. The tensor-decomposition case study establishes an exact certificate-degree theorem and records six graph revisions with a replayable exploration history. [Read about the third direction paper](direction/phase-iii-recursive-reasoning-exploration.md).
+
 [Research direction](direction/README.md) · [Extraction method](methodology/extraction.md) · [How to cite](CITATION.cff)
 
 [Find an instrument for your problem](methodology/research-guide.md): a guide to exact constraints, adaptive choices and operator estimates, with concrete starting points and the hypotheses needed for reuse.
@@ -84,7 +90,7 @@ python scripts/validate_catalog.py
 
 ## Citation and attribution
 
-Cite the [Phase I direction paper](https://zenodo.org/records/23319145) for instrument extraction and the [Phase II direction paper](https://zenodo.org/records/23523260) for reusable reasoning graphs and the proposed research methodology. Identify the repository release or commit when using its curated records, and cite the linked source manuscripts for their mathematical contributions. Source references and hashes are recorded under [sources/](sources/README.md).
+Cite the [Phase I direction paper](https://zenodo.org/records/23319145) for instrument extraction, the [Phase II direction paper](https://zenodo.org/records/23523260) for reusable reasoning graphs, and the [Phase III direction paper](https://zenodo.org/records/23849757) for recursive reasoning exploration and its tensor certificate-degree case study. Identify the repository release or commit when using its curated records, and cite the linked source manuscripts for their mathematical contributions. Source references and hashes are recorded under [sources/](sources/README.md).
 
 Maintainer: **Ying Xie**, Kennesaw State University — yxie2@kennesaw.edu.
 
