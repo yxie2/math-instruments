@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: Please cite the Phase I direction paper for instrument extraction or the Phase II
-  direction paper for reusable reasoning. Cite the repository release or commit for the
-  catalog version used and the original source manuscripts for their mathematical results.
+message: Please cite the Phase I direction paper for instrument extraction, the Phase II
+  direction paper for reusable reasoning graphs, or the Phase III direction paper for
+  recursive reasoning exploration and its tensor certificate-degree case study. Cite the
+  repository release or commit for the catalog version used and the original source
+  manuscripts for their mathematical results.
 type: dataset
 title: 'Math Instruments: Extraction, Curation, and Applications'
 authors:
@@ -31,3 +33,16 @@ references:
   year: 2026
   url: https://zenodo.org/records/23523260
   notes: Second direction paper (Phase II); preprint
+- type: article
+  authors:
+  - family-names: Xie
+    given-names: Ying
+    affiliation: Kennesaw State University
+    orcid: https://orcid.org/0000-0002-8661-8877
+  title: 'Recursive Reasoning Exploration: Mathematical Research through Evolving Reasoning
+    Graphs: case study: An Exact Certificate-Degree Theorem for Two-Term Tensor Decompositions:
+    Phase III of the Math Instruments Program'
+  year: 2026
+  doi: 10.5281/zenodo.23849757
+  url: https://zenodo.org/records/23849757
+  notes: Third direction paper (Phase III); preprint
