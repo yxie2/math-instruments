@@ -44,6 +44,18 @@ An open-ended autonomous RRE run generated a counterexample to the 2019 Conca–
 
 The visualization makes the reasoning easier to follow through three complementary views: **All math routes** shows the successful route alongside inconclusive approaches; **Proof route** highlights the steps and dependencies establishing the result; and **Provenance** identifies inherited knowledge and published inputs. The animation presents the argument in logical order; the paper explains the exact certificate and the recorded research replay.
 
+### Classical entanglement of purification is nonadditive with three outcomes per party
+
+**Ying Xie.** Preprint, 2026. **Quantum information theory.**
+
+An RRE investigation produced an explicit classical probability table with three outcomes per party whose entanglement of purification per copy can be reduced by treating many copies together. The paper certifies a one-copy value of at least `0.07163132826` nats and a regularized value of at most `0.071592778856911368` nats. Rational entropy certificates establish the lower bound, while a direct classical covering construction supplies the upper bound without invoking the Chen–Winter theorem. The construction proves a strict gain for every copy count `n >= 10^12`; it is not a practical small-copy witness. The separation persists for strictly positive tables, while binary additivity remains open.
+
+[Read the paper (v11, PDF)](significant-results/SR-009-classical-purification/paper-v11.pdf) · [Zenodo record and DOI](https://zenodo.org/records/23935499)
+
+![Mathematical reasoning routes for classical ternary nonadditivity, including the All math routes, Proof route, and Provenance views.](significant-results/SR-009-classical-purification/reasoning-routes.gif)
+
+The animation follows the two branches needed for the result: a global one-copy lower bound and a cheaper many-copy construction. Its three views distinguish the full reasoning routes, proof dependencies and provenance, including the unresolved binary branches.
+
 ## Browse the collection
 
 <!-- catalogue-navigation:start -->
