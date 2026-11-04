@@ -1,0 +1,30 @@
+{
+  "title": "Classical entanglement of purification is nonadditive with three outcomes per party",
+  "author": "Ying Xie",
+  "affiliation": "Kennesaw State University",
+  "subject": "Quantum information theory",
+  "revision": "r11",
+  "zenodo_record": "https://zenodo.org/records/23935499",
+  "doi": "10.5281/zenodo.23935499",
+  "publication_date": "2026-11-04",
+  "source_package": "20261104T023212Z-classical-purification-acknowledgment-r11",
+  "files": [
+    {
+      "file": "paper-v11.pdf",
+      "role": "SR-009 revision r11 paper, downloaded from the published Zenodo record",
+      "sha256": "93f7d0e4b7931be7c1c43e1183f94d40067b59407603f69b77d058d4030b2131",
+      "bytes": 1148941,
+      "source_url": "https://zenodo.org/api/records/23935499/files/main.pdf/content",
+      "source_checksum": "md5:2f0d550398ad608478224bac15d848fc",
+      "source_package_path": "paper/main.pdf"
+    },
+    {
+      "file": "reasoning-routes.gif",
+      "role": "User-provided mathematical route animation",
+      "sha256": "b8de26b7b72a0e76ab3370abdfd1c3198238ba5915a855b8308d5a977a37b2ad",
+      "bytes": 3079750,
+      "source_package_path": "replay/SR009r7_math_route_map.gif"
+    }
+  ],
+  "verification_scope": "The PDF matches the Zenodo file checksum and the local r11 paper by SHA-256. The animation matches the specified local file by SHA-256. The source package records exact certificate checks; this publication check is not a new proof audit or novelty assessment."
+}
