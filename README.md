@@ -6,6 +6,12 @@ A growing collection of mathematical instruments extracted from OpenAI’s resea
 
 The aim is to identify new lemmas, constructions, inequalities, objects, structures and proof mechanisms introduced in the source arguments. Extraction comes first; validity, novelty and possible reuse are then subjects for further study. The structured descriptions also give readers a route into the source papers.
 
+## Growing Math Reasoning Graph
+
+![Animated 3D view of the integrated math reasoning graph growing in chronological order, then rotating to show links between arguments.](assets/growing-math-reasoning-graph.gif)
+
+The animation draws every reasoning graph in the integrated research atlas as one structure: **64,309 claims, 75,893 links and 4,217 argument groups**. The spiral arms hold 4,200 extraction batches in chronological order. The bright core holds the later autonomous RRE and ETH research runs. Gold arcs connect arguments that build on each other. Colours mark each claim's role: results, reviews, computations, scopes and definitions, open obligations, limits and counterexamples, and sources. The spiral arrangement is a display choice; positions inside each cluster follow the recorded links. Snapshot of 4 November 2026.
+
 ## Direction papers
 
 **Phase I: Mathematical instruments**
