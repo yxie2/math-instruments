@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Linked the SR-008 and SR-009 papers exclusively through their Zenodo records in the significant RRE results section. Removed the repository PDF copies and updated source metadata; retained both reasoning-route animations.
+
 - Added *Growing Math Reasoning Graph* as the first front-page section: an animated 3D view of the integrated reasoning graph (64,309 claims, 75,893 links, 4,217 argument groups) growing in chronological order.
 
 - Added SR-009, *Classical entanglement of purification is nonadditive with three outcomes per party*, to the significant RRE results section, with its v11 PDF, Zenodo record 23935499, quantum-information summary and animated reasoning routes.

@@ -44,7 +44,7 @@ Develops Recursive Reasoning Exploration (RRE), in which research targets, argum
 
 An open-ended autonomous RRE run generated a counterexample to the 2019 Conca–Welker conjecture about equations describing mutually perpendicular vectors. For nine vectors in eight dimensions, these equations contain hidden algebraic structure that is invisible when we look only at their solution points. The result holds over every field of characteristic different from two, for every nondegenerate symmetric bilinear form, and extends to all dimensions `d >= 8` with `n >= d + 1` vectors. An explicit certificate uses exact integer arithmetic to verify the central algebraic claims. The discovery changes our understanding of how the geometry of orthogonal vectors relates to the algebra of their equations.
 
-[Read the paper (v11, PDF)](significant-results/SR-008-orthogonal-frames/paper-v11.pdf) · [Zenodo record and DOI](https://zenodo.org/records/23908138)
+[Read the paper on Zenodo](https://zenodo.org/records/23908138)
 
 ![Mathematical reasoning routes for the orthogonal-frame counterexample, including the All math routes, Proof route, and Provenance views.](significant-results/SR-008-orthogonal-frames/reasoning-routes.gif)
 
@@ -56,7 +56,7 @@ The visualization makes the reasoning easier to follow through three complementa
 
 An RRE investigation produced an explicit classical probability table with three outcomes per party whose entanglement of purification per copy can be reduced by treating many copies together. The paper certifies a one-copy value of at least `0.07163132826` nats and a regularized value of at most `0.071592778856911368` nats. Rational entropy certificates establish the lower bound, while a direct classical covering construction supplies the upper bound without invoking the Chen–Winter theorem. The construction proves a strict gain for every copy count `n >= 10^12`; it is not a practical small-copy witness. The separation persists for strictly positive tables, while binary additivity remains open.
 
-[Read the paper (v11, PDF)](significant-results/SR-009-classical-purification/paper-v11.pdf) · [Zenodo record and DOI](https://zenodo.org/records/23935499)
+[Read the paper on Zenodo](https://zenodo.org/records/23935499)
 
 ![Mathematical reasoning routes for classical ternary nonadditivity, including the All math routes, Proof route, and Provenance views.](significant-results/SR-009-classical-purification/reasoning-routes.gif)
 
