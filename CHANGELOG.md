@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added SR-011, *Exact Complete Relative-Entropy Contraction of Finite Classical-to-Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24042111), scope summary, updated reasoning-route GIF and source metadata.
+
 - Added SR-010, *Exact Complete Relative-Entropy Contraction of Finite Classical Channels*, as the first significant RRE result, with its Zenodo paper link (23996418), scope summary, reasoning-route GIF and source metadata. No PDF was added.
 
 - Linked the SR-008 and SR-009 papers exclusively through their Zenodo records in the significant RRE results section. Removed the repository PDF copies and updated source metadata; retained both reasoning-route animations.
