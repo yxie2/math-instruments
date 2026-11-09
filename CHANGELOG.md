@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added SR-013, *Exact Information Contraction and Nonvanishing Divergence for Finite Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24068417), scope summary, reasoning-route GIF and source metadata.
+
 - Added SR-012, *Exact Complete Relative-Entropy Contraction of Finite Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24047595), scope summary, updated reasoning-route GIF and source metadata.
 
 - Added SR-011, *Exact Complete Relative-Entropy Contraction of Finite Classical-to-Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24042111), scope summary, updated reasoning-route GIF and source metadata.
