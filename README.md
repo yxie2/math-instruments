@@ -112,7 +112,9 @@ An RRE investigation produced an explicit classical probability table with three
 
 The animation follows the two branches needed for the result: a global one-copy lower bound and a cheaper many-copy construction. Its three views distinguish the full reasoning routes, proof dependencies and provenance, including the unresolved binary branches.
 
-## Browse the collection
+<a id="browse-the-collection"></a>
+
+## Phase I - Math Instrument Extraction
 
 The **Math Instruments** catalogue is the foundation of the project: a growing collection of mathematical instruments extracted from OpenAI’s research papers, with source references, structured descriptions, and studies of subsequent applications.
 
