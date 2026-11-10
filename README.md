@@ -22,7 +22,7 @@ The animation draws every reasoning graph in the integrated research atlas as on
 
 Identifies reusable mathematical devices and recurring proof mechanisms in the source collection.
 
-**Phase II: Reusable reasoning**
+**Phase II: Math Reasoning Graph**
 
 **Ying Xie — [From Mathematical Instruments to Reusable Reasoning: A Second Phase of Extraction from AI-Generated Mathematics](https://zenodo.org/records/23523260)**. Preprint, 2026.
 
