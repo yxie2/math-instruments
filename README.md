@@ -1,10 +1,12 @@
-# Math Instruments
+<a id="math-instruments"></a>
 
-**Extraction, Curation, and Applications**
+# Graph-RRE: Mathematical Discovery through Evolving Reasoning Graphs
 
-A growing collection of mathematical instruments extracted from OpenAI’s research papers, with source references, structured descriptions, and studies of subsequent applications.
+*RRE on Mathematical Reasoning Graphs — making mathematical reasoning visible, reusable, and teachable.*
 
-The aim is to identify new lemmas, constructions, inequalities, objects, structures and proof mechanisms introduced in the source arguments. Extraction comes first; validity, novelty and possible reuse are then subjects for further study. The structured descriptions also give readers a route into the source papers.
+Graph-RRE brings together mathematical reasoning graphs and Recursive Reasoning Exploration to support mathematical research with AI. It records proof dependencies, assumptions, sources, and documented exploration routes, then uses this evolving structure to investigate new problems. Built on the Math Instruments project, it connects reusable mathematical knowledge with new discoveries and potential applications in human research, collaboration, and education.
+
+**Mathematical instruments → reasoning graphs → recursive exploration and discovery.**
 
 ## Growing Math Reasoning Graph
 
@@ -111,6 +113,10 @@ An RRE investigation produced an explicit classical probability table with three
 The animation follows the two branches needed for the result: a global one-copy lower bound and a cheaper many-copy construction. Its three views distinguish the full reasoning routes, proof dependencies and provenance, including the unresolved binary branches.
 
 ## Browse the collection
+
+The **Math Instruments** catalogue is the foundation of the project: a growing collection of mathematical instruments extracted from OpenAI’s research papers, with source references, structured descriptions, and studies of subsequent applications.
+
+The aim is to identify new lemmas, constructions, inequalities, objects, structures and proof mechanisms introduced in the source arguments. Extraction comes first; validity, novelty and possible reuse are then subjects for further study. The structured descriptions also give readers a route into the source papers.
 
 <!-- catalogue-navigation:start -->
 
