@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added QMI-003, *Exact Robustness Frontiers and Fidelity Limits for Qubit Memories*, as the first significant RRE result, with its Zenodo paper link (24149093), scope summary, updated reasoning-route GIF and source metadata.
+
 - Added SR-013, *Exact Information Contraction and Nonvanishing Divergence for Finite Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24068417), scope summary, reasoning-route GIF and source metadata.
 
 - Added SR-012, *Exact Complete Relative-Entropy Contraction of Finite Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24047595), scope summary, updated reasoning-route GIF and source metadata.
