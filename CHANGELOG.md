@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Reordered the significant RRE results by assessed mathematical significance: SR-012, SR-013, QMI-002, SR-008, SR-010, QMI-003, SR-011, SR-009. Added QMI-002, *Unbounded Additive Gains and Uniform Lifetime Bounds for Controlled Qubit Memories*, with its Zenodo paper link (24212310), scope summary, r6 reasoning-route GIF, and source metadata.
+
 - Added QMI-003, *Exact Robustness Frontiers and Fidelity Limits for Qubit Memories*, as the first significant RRE result, with its Zenodo paper link (24149093), scope summary, updated reasoning-route GIF and source metadata.
 
 - Added SR-013, *Exact Information Contraction and Nonvanishing Divergence for Finite Quantum Channels*, as the first significant RRE result, with its Zenodo paper link (24068417), scope summary, reasoning-route GIF and source metadata.
